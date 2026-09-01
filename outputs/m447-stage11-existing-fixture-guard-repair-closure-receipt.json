@@ -1,0 +1,67 @@
+{
+  "milestone": "M447",
+  "operation": "dicebox.stage11.existing-fixture-guard-repair",
+  "status": "PASS_LOCAL_CODE_AND_RUST_TESTS",
+  "authorization": "D-609",
+  "sourceChange": {
+    "path": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "sha256": "7279B0F3FC53F1FD7A3F44B8D02812B2CF20F518B3B72000E84D99A6AE2359F2",
+    "change": "Added a bounded read-only acceptance branch for the exact existing test-owned backup-only topology and retained PROJECT_FIXTURE_EXISTS for absent, malformed, mismatched, unexpected-entry, or otherwise colliding directories.",
+    "preservation": "The accepted branch only rereads directory topology, primary absence, current expected backup envelope, and exact foreign marker bytes, then returns the existing fixture receipt without writing, deleting, or cleaning up."
+  },
+  "validation": {
+    "testCommand": "cargo test --manifest-path Cargo.toml --lib backup -- --nocapture",
+    "workingDirectory": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store",
+    "testsPassed": 13,
+    "testsFailed": 0,
+    "testsCovered": [
+      "reuses_exact_existing_backup_only_fixture_without_writing",
+      "rejects_existing_backup_fixture_when_topology_or_foreign_state_mismatches",
+      "rejects_existing_backup_fixture_with_foreign_marker_mismatch",
+      "backup_promotion_requires_an_absent_primary_and_current_backup",
+      "previews_and_promotes_one_exact_current_backup_without_changing_semantic_state",
+      "recovery_uses_but_never_promotes_a_valid_backup",
+      "recovers_the_last_valid_backup_after_primary_corruption",
+      "failed_promotion_after_backup_recovery_preserves_the_last_valid_backup",
+      "workspace_metadata_recovers_a_valid_backup_and_preserves_unknown_entries",
+      "workspace_metadata_failed_promotion_keeps_the_last_valid_backup",
+      "missing_background_detach_fails_closed_for_stale_present_multiple_and_backup_state",
+      "explains_backup_authority_and_blocks_unvalidated_project_state",
+      "migration_persistence_blocks_stale_current_unsupported_and_backup_authority"
+    ],
+    "cargoFmtCheck": "FAIL_BASELINE_PREEXISTING_FORMATTING_DRIFT: cargo fmt --manifest-path Cargo.toml -- --check reports existing formatting differences throughout lib.rs; the newly added M447 code was manually normalized and the focused tests pass.",
+    "desktopBuild": false,
+    "desktopLaunch": false,
+    "captureRunner": false
+  },
+  "authoritativePostTestReread": {
+    "projectRoot": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-backup-authoritative-recovery-promotion-self-test",
+    "directoryExists": true,
+    "exactEntries": [
+      "project.backup.json",
+      "foreign-note.txt"
+    ],
+    "projectJsonExists": false,
+    "projectBackupJsonLength": 758,
+    "projectBackupJsonSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteLength": 27,
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2",
+    "unexpectedEntries": false,
+    "lastApprovedApplicationSession": "MISSING",
+    "newSessionTransitionReceipt": false,
+    "recovery": "NOT_ATTEMPTED",
+    "desktopProcessRunning": false
+  },
+  "scopeBoundary": {
+    "temporaryTestDirectories": "Tests used isolated temp directories; the protected AppData fixture was not passed to the helper and was not modified.",
+    "foreignAndUnknownState": "Preserved",
+    "foundry": false,
+    "providers": false,
+    "credentials": false,
+    "browserStorage": false,
+    "playerPasswords": false,
+    "cleanup": false,
+    "retry": false
+  },
+  "nextBoundary": "M448: one fresh exact debug package build from the repaired Rust source with the existing backup-promotion self-test mode, followed by read-only artifact and protected-state verification; no launch or capture until separately authorized."
+}

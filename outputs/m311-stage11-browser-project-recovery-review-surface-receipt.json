@@ -1,0 +1,60 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m311-stage11-browser-project-recovery-review-surface-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M311",
+  "evidenceLabel": "local",
+  "status": "BLOCKED",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "target": {
+    "surface": "local packaged Tauri desktop",
+    "windowTitle": "DiceBox Campaign Helper",
+    "windowSelected": true,
+    "browserTabs": 0
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "operation": "capture packaged desktop accessibility and screenshot state",
+      "status": "BLOCKED",
+      "errorClass": "windows-window-capture",
+      "error": "SetIsBorderRequired failed: No such interface supported (0x80004002)"
+    },
+    {
+      "attempt": 2,
+      "operation": "refresh exact returned window and capture accessibility and screenshot state",
+      "status": "BLOCKED",
+      "errorClass": "windows-window-capture",
+      "error": "SetIsBorderRequired failed: No such interface supported (0x80004002)"
+    }
+  ],
+  "containment": {
+    "inputAttempted": false,
+    "projectStateRead": false,
+    "projectStateChanged": false,
+    "providerUsed": false,
+    "credentialsUsed": false,
+    "foundryUsed": false,
+    "tauriDevStopped": true,
+    "listener1420AfterStop": false
+  },
+  "recovery": {
+    "sameClassFailureCount": 2,
+    "retriesStopped": true,
+    "boundedReproduction": "A uniquely returned DiceBox Campaign Helper Tauri window was selected after a successful native dev launch; two fresh capture attempts failed before any UI input with the same Windows border-interface error.",
+    "nextAction": "M312 capture-layer recovery only: inspect and validate a supported alternate local observation boundary or a narrow capture-helper repair before another packaged UI attempt."
+  },
+  "doesNotProve": [
+    "rendered M310 project-recovery metadata",
+    "project-target proposal session approval or history in the packaged UI",
+    "project operation execution or persistent project mutation",
+    "browser diagnostics beyond the capture failure",
+    "provider or credential behavior",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

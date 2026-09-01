@@ -1,0 +1,66 @@
+{
+  "milestone": "M445",
+  "operation": "dicebox.stage11.current-driver-observation",
+  "status": "BLOCKED",
+  "runCount": 1,
+  "authorization": "D-607",
+  "captureReceipt": {
+    "path": "outputs/m445-stage11-current-driver-observation-receipt.json",
+    "sha256": "152D05BBF82F1C50AE1AFA6397E78D66DD4F51EBEE3FC0396A9820B4E47C08F4",
+    "runnerStatus": "PASS_TRANSPORT_ONLY",
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "A0547A959358FEDCAD585BCCC2D2C635700ECA544F0A6AF0CE02EFEFCBFC3DF0",
+    "exitCode": 0,
+    "stdout": [
+      "DBX_PROJECT_UI_SELF_TEST stage=loaded detail=backup-promotion-fixture",
+      "DBX_PROJECT_UI_SELF_TEST stage=blocked detail=PROJECT_FIXTURE_EXISTS: The backup-authoritative recovery fixture will not overwrite an existing test-owned project. · retry remove-test-owned-project-and-reread"
+    ],
+    "stderr": "Failed to unregister class Chrome_WidgetWin_0. Error = 1412",
+    "runnerProjectOrSessionInspection": false,
+    "runnerRecoveryInvocation": false
+  },
+  "authoritativeReread": {
+    "projectRoot": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-backup-authoritative-recovery-promotion-self-test",
+    "projectDirectoryExists": true,
+    "directoryEntries": [
+      "project.backup.json",
+      "foreign-note.txt"
+    ],
+    "projectJson": {
+      "exists": false
+    },
+    "projectBackupJson": {
+      "exists": true,
+      "length": 758,
+      "sha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B"
+    },
+    "foreignNote": {
+      "exists": true,
+      "length": 27,
+      "sha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+    },
+    "lastApprovedApplicationSession": "MISSING",
+    "newSessionTransitionReceipt": false,
+    "recoveryResult": "NOT_ATTEMPTED; trace blocked during fixture preparation",
+    "desktopProcessRunning": false
+  },
+  "sourceAttribution": {
+    "path": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "sha256": "426D40C04306176950705D8FE5EA454CD7C913B6C1DF53E36F26FACF50F6A63A",
+    "guard": "prepare_backup_authoritative_recovery_promotion_fixture_at returns PROJECT_FIXTURE_EXISTS when project_dir.exists()",
+    "caller": "apps/campaign-helper-desktop/src/App.tsx calls prepareBackupAuthoritativeRecoveryPromotionFixture() before preview/proposal/apply"
+  },
+  "finding": "The protected test-owned fixture directory exists with only the expected backup and foreign file, while its primary project.json is absent. The fixture preparer treats directory existence itself as a collision and blocks before preview; the bounded retry hint does not authorize deletion or cleanup. This is a fixture-preparation semantic blocker, not recovery evidence and not a transport failure.",
+  "validation": {
+    "noRetry": true,
+    "noRebuild": true,
+    "noLaunchAfterCapture": true,
+    "preservedUnknownAndForeignState": true,
+    "foundry": false,
+    "providers": false,
+    "credentials": false,
+    "playerPasswords": false,
+    "cleanup": false
+  },
+  "nextBoundary": "M446: read-only reconciliation of backup-authoritative fixture preparation semantics, prior fixture quarantine evidence, exact source/caller contract, and protected state before selecting a narrow repair or disposable-fixture boundary."
+}

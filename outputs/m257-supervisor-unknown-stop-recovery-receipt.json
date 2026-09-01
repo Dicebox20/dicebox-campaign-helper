@@ -1,0 +1,64 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m257-supervisor-unknown-stop-recovery",
+  "operation": "foundry.fixture.unknown-stop-recovery",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M257",
+  "evidenceLabel": "fixture",
+  "status": "PASS",
+  "readyClaim": false,
+  "noWrite": true,
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "port": 30002,
+    "pid": 15008,
+    "commandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB"
+  },
+  "preRecovery": {
+    "status": "UNKNOWN",
+    "http": { "status": 302, "location": "/license" },
+    "exactProcess": true,
+    "stateTargetMatches": true,
+    "exclusiveListener": true,
+    "receiptPath": "outputs/m256-fresh-fixture-runtime-supervisor-final-status-receipt.json"
+  },
+  "repairedStop": {
+    "receiptPath": "outputs/m257-supervisor-unknown-stop-receipt.json",
+    "status": "PASS",
+    "preStopReadiness": "UNKNOWN",
+    "ownershipEvidence": "exact-process-and-exclusive-port",
+    "normalStop": "failed-closed-requiring-force-fallback",
+    "forceFallback": "supervisor-authorized-after-exact-owner-reread",
+    "listenerDrain": { "remainingListeners": [], "elapsedMs": 41 },
+    "afterReread": "STALE-before-state-finalization"
+  },
+  "finalReread": {
+    "receiptPath": "outputs/m257-supervisor-final-status-receipt.json",
+    "status": "STOPPED",
+    "processAlive": false,
+    "listenerCount": 0,
+    "supervisorState": "stopped",
+    "configLockExists": true,
+    "configLockEntries": []
+  },
+  "filesystemPreservation": {
+    "worldManifestSha256": "06A0D73EB8F6578AEA29360B0D31F2D3AC371ABE5829FB4137009F5845F74B22",
+    "worldFiles": ["world.json"],
+    "balladWorldExists": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "documentSeeded": false
+  },
+  "blockers": [
+    "The original M256 /license readiness blocker remains unresolved.",
+    "The empty Config/options.json.lock was preserved and not quarantined by M257."
+  ],
+  "doesNotProve": [
+    "Foundry license activation or loaded runtime readiness",
+    "optional-module availability",
+    "active-GM or player behavior",
+    "native bindings, document mutation, authoritative reread, or gameplay recovery",
+    "Stage 9 acceptance or Ready-to-Play"
+  ]
+}

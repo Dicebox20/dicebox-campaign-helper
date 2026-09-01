@@ -1,0 +1,81 @@
+{
+  "milestone": "M449",
+  "operation": "dicebox.stage11.current-driver-observation",
+  "status": "BLOCKED",
+  "authorization": "D-611",
+  "runCount": 1,
+  "captureReceipt": {
+    "path": "outputs/m449-stage11-current-driver-observation-receipt.json",
+    "sha256": "3350B0C1D7DBCDCB1CA359A3B2F5CE01C75843FA35876D3F72650EC39A2B3AE7",
+    "runnerStatus": "PASS_TRANSPORT_ONLY",
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "D7E112BD1DFED053D30DFD356863BCBABAA25263ED9F068C01FE2DB9B71E0EC0",
+    "exitCode": 0,
+    "stdout": [
+      "DBX_PROJECT_UI_SELF_TEST stage=loaded detail=backup-promotion-fixture",
+      "DBX_PROJECT_RECOVERY operation=backup-promotion-fixture status=PASS project=dbx:project:desktop-backup-authoritative-recovery-promotion-self-test generation=1 content=c4d51cd20facce1bd948a32e9071608f2a7b642bc523fb274ab30351324b9d3b backupSha256=f5af1e42c838add5aeddee9abc3b5d2125932d539a750763aa9c764f004eac2b noFoundryWrite=true",
+      "DBX_PROJECT_UI_SELF_TEST stage=previewed detail=backup-promotion-preview",
+      "DBX_PROJECT_RECOVERY operation=backup-promotion-preview status=PREVIEW project=dbx:project:desktop-backup-authoritative-recovery-promotion-self-test generation=1 content=c4d51cd20facce1bd948a32e9071608f2a7b642bc523fb274ab30351324b9d3b backupSha256=f5af1e42c838add5aeddee9abc3b5d2125932d539a750763aa9c764f004eac2b previewSha256=bbc1bdaa1c905a009fbe110a8a6fc33b4415629e584db81bee70c44c86c2052f noWrite=true noFoundryWrite=true",
+      "DBX_PROJECT_UI_SELF_TEST stage=previewed detail=backup-promotion-proposal",
+      "DBX_PROJECT_UI_SELF_TEST stage=blocked detail=visible recovery proposal did not bind the exact command and target"
+    ],
+    "stderr": "[0828/205205.777:ERROR:ui\\gfx\\win\\window_impl.cc:172] Failed to unregister class Chrome_WidgetWin_0. Error = 1412",
+    "runnerProjectOrSessionInspection": false,
+    "runnerRecoveryInvocation": false
+  },
+  "authoritativeReread": {
+    "projectRoot": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-backup-authoritative-recovery-promotion-self-test",
+    "projectDirectoryExists": true,
+    "directoryEntries": [
+      "project.backup.json",
+      "foreign-note.txt"
+    ],
+    "projectJson": {
+      "exists": false
+    },
+    "projectBackupJson": {
+      "exists": true,
+      "length": 758,
+      "sha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B"
+    },
+    "foreignNote": {
+      "exists": true,
+      "length": 27,
+      "sha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+    },
+    "lastApprovedApplicationSession": "MISSING",
+    "newSessionTransitionReceipt": false,
+    "recoveryResult": "NOT_ATTEMPTED; trace blocked during proposal validation before approval/apply",
+    "desktopProcessRunning": false
+  },
+  "sourceAttribution": {
+    "appPath": "apps/campaign-helper-desktop/src/App.tsx",
+    "appSha256": "876104EA4FC653321B967DFFDCFA34EE4DAA92A123FEC05E14E3BDEA349A549C",
+    "appExpectation": "The M418 self-test requires proposal.projectId to equal the exact fixture ID and proposal.batch.commands[0].kind to equal project.recovery.backup-promote.",
+    "adapterPath": "apps/campaign-helper-desktop/src/project-recovery-proposal-adapter.ts",
+    "adapterSha256": "5079CCD21B839ECD9C81D2C6382DB0D8B4CC42E4A80620D9082D0195BF0FDA6A",
+    "adapterFinding": "The adapter normalizes dicebox.project.recovery.backup-promotion.preview to project.recovery.backup-promotion by removing the prefix and preview suffix, while the M418 self-test and apply guard require project.recovery.backup-promote. This deterministic operation-name mismatch explains the visible exact-command/target blocker; target identity remains the fixture ID in the normalized batch base.",
+    "proposalSessionPath": "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "proposalSessionSha256": "C54C12CFC27606375225A34E6667EBE6CF310B034D4C9F0FE4CDE4B6426A39E6",
+    "coreBatchPath": "packages/dicebox-core/src/proposal-batch.ts",
+    "coreBatchSha256": "BB78F1ED4B1AB32462D357808BF633702BBA7B5D710F78601CB6ABDD89ADC1E9",
+    "runnerPath": "tools/capture-exact-desktop-self-test.mjs",
+    "runnerSha256": "FBA08E2CAE1F05186A99E70D62E98FA0A2FBECD2E4B74F8B7DC8928E7EEA6C78"
+  },
+  "finding": "The repaired fixture helper now returns PASS and the no-write preview completes, but proposal validation stops before approval because the proposal command kind is not the exact kind required by the current UI self-test and apply guard. Transport exit 0 does not prove a recovery or committed state.",
+  "validation": {
+    "noRetry": true,
+    "noRebuild": true,
+    "noLaunchAfterCapture": true,
+    "protectedFixturePreserved": true,
+    "sessionTransition": false,
+    "recoveryInvocation": false,
+    "foundry": false,
+    "providers": false,
+    "credentials": false,
+    "browserStorage": false,
+    "playerPasswords": false,
+    "cleanup": false
+  },
+  "nextBoundary": "M450: read-only reconciliation of the M449 trace, current recovery proposal adapter, UI self-test/apply expectations, proposal-session/core validation, exact artifact/source hashes, and protected state before selecting one narrow correction; no capture retry."
+}

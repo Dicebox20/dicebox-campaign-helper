@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "0.1.0",
+  "operation": "campaign.ascendancy.foundry-preflight.static.receipt",
+  "status": "BLOCKED",
+  "evidenceClass": "deterministic",
+  "readyClaim": false,
+  "noWrite": true,
+  "command": "npm run foundry:preflight",
+  "target": { "worldId": "dbx-test-world", "foundry": "14.367", "system": "dnd5e", "systemVersion": "5.3.3" },
+  "observed": { "dataPathConfigured": false, "worldManifest": null, "diceboxModule": null, "liveRuntimeProbe": "not-tested" },
+  "blockedChecks": [
+    { "id": "data-path", "reason": "Set DICEBOX_FOUNDRY_DATA_PATH to a readable Foundry data path." },
+    { "id": "world-manifest", "reason": "World dbx-test-world was not found or its world.json is malformed." },
+    { "id": "dicebox-module-package", "reason": "Install the reviewed module package into the selected Foundry data path before the live probe." }
+  ],
+  "notes": [
+    "Read-only filesystem preflight only; Foundry was not launched and no world or module state was changed.",
+    "Manifest compatibility would not certify live API behavior, permissions, authority, native operations, reread, or Ready-to-Play status."
+  ],
+  "mutation": "disabled-until-exact-runtime-gate"
+}

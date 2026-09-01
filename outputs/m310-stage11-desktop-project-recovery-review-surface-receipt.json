@@ -1,0 +1,48 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m310-stage11-desktop-project-recovery-review-surface-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M310",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "implemented": [
+    "adds a desktop project-target review tray for the selected backup-authoritative recovery preview",
+    "normalizes the existing typed preview through the M308 project-recovery adapter and creates a M309 exact-key project proposal session",
+    "persists project proposal history through the project-specific session storage boundary without persisting project content or asset bytes",
+    "renders project-store/no-provider provenance, exact project generation and base hash, risk, human-review/local-project authority, operation kind, and receipt history",
+    "supports explicit session-only approval, rejection, cancellation, and stale invalidation",
+    "keeps project-store execution IPC and backup promotion out of the review tray"
+  ],
+  "validation": {
+    "focused": "PASS: 4 files / 24 tests",
+    "full": "PASS: 112 files / 600 tests",
+    "build": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS: 10/16, proposal-approval-history active",
+    "knowledgeBase": "PASS post-implementation rebuild: 443 sources / 478 facts / 427 decisions / 441 trials"
+  },
+  "recovery": {
+    "focusedRun": "No M310 test or build failure occurred.",
+    "reread": "The full repository gate, rebuilt database verifier, read-only summary query, and active-slice checker passed after implementation."
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "74B318C874DE9C0954AD4F7E9D3DB12E2C910B4F1692563DB4AC74CB6E6680C5",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "1A5DA96993B26C02BBAE4BD108DDACCA8FC52E3ED1BE6FE34E343B5DF1D8FDEB",
+    "apps/campaign-helper-desktop/src/project-recovery-proposal-adapter.ts": "5079CCD21B839ECD9C81D2C6382DB0D8B4CC42E4A80620D9082D0195BF0FDA6A",
+    "tests/desktop-project-proposal-review.test.ts": "D2934A13FEEA46C7951FC3167E62FA975A02A36E87A8D44D4B908A34512D8B5C",
+    "tests/knowledge-base-query.test.ts": "808A31D927DFAE1ECC77DF135138C8310F01DD7F87B34A667CDB623420FF0B70"
+  },
+  "doesNotProve": [
+    "browser or packaged-desktop observation",
+    "project operation execution or persistent project mutation",
+    "generic proposal conformance for ordinary create/save/save-as/rename or asset import",
+    "Technical Builder repository promotion",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

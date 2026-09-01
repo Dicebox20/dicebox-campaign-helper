@@ -1,0 +1,52 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-packaged-preview-adapter-reconciliation",
+  "milestone": "M563",
+  "status": "PASS_LOCAL_READ_ONLY_CORRECTION_SELECTED",
+  "capturedAt": "2026-08-30T00:17:30-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "reconciliation": {
+    "nativeReceipt": "MissingAssetDetachPreviewReceipt serializes registration with the validated background asset descriptor.",
+    "adapterAllowlist": "project-recovery-proposal-adapter.ts omits registration from the detach operation key allowlist, so strict key validation raises the packaged unknown-field blocker.",
+    "adapterNormalization": "Detach normalization validates scene receipts and hashes but does not validate the returned registration descriptor.",
+    "typescriptType": "MissingAssetDetachPreviewReceipt in project-store.ts omits the runtime registration field.",
+    "exactBlocker": "Project recovery preview contains an unknown field.",
+    "selectedCorrection": "Add registration to the detach preview type and exact adapter allowlist, validate it with assetRegistration(preview.registration, assetId), and add focused regression coverage while leaving the command payload and mutation/apply path unchanged."
+  },
+  "stateReread": {
+    "projectId": "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+    "projectSha256": "C120CFB3F679565E36833AB32D60055C74C583F2676C8A28E765AE3CF413BCAE",
+    "generation": 1,
+    "selectedMissingPngBlob": false,
+    "preservedWebpSha256": "C9778B200966A689A6FA2DFD5E4C6FAABCB3B266B00D2FD74E89D60435B6F78C",
+    "workspacePendingPreserved": true,
+    "targetProjectPendingFiles": [],
+    "approvalApplySessionCommit": false,
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_PARTIAL",
+    "stage12Started": false,
+    "readyToPlay": false,
+    "nextMilestone": "M564"
+  },
+  "nextBoundary": {
+    "milestone": "M564",
+    "scope": "Code-only detach preview adapter/type correction and focused regression tests; then local TypeScript/static/diff verification. No build, launch, capture, retry, session operation, fixture cleanup, or Stage 11 acceptance.",
+    "prohibited": [
+      "build",
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation or replacement",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M563 is read-only and records the exact packaged pre-approval blocker. The quick popup/close is expected exit-mode behavior; no packaged lifecycle success or Stage 11 claim is made."
+}

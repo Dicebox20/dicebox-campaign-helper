@@ -1,0 +1,43 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m7-placeable-read-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "officialReferences": [
+    "https://foundryvtt.com/api/classes/foundry.documents.Scene.html",
+    "https://foundryvtt.com/api/v14/modules/foundry.documents.html"
+  ],
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 27, "tests": 131, "status": "PASS" },
+    "embeddedPlaceableReadAdapter": {
+      "adapterId": "foundry.scene-placeable.read@14.367",
+      "officialEmbeddedCollectionRead": "PASS",
+      "officialEmbeddedDocumentRead": "PASS",
+      "exactParentChildIdentity": "PASS",
+      "layoutAndMediaPresenceSummary": "PASS",
+      "missingMalformedForeignAndUnknownOutcomes": "PASS",
+      "mutationMethodsAbsent": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 49,
+      "facts": 64,
+      "decisions": 39,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 38,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 embedded collection shape or permissions",
+    "Any Tile, Token, AmbientLight, AmbientSound, Drawing, or Note write",
+    "Approved media deployment, path authorization, rendering, or asset read-back",
+    "Runtime geometry, visibility, movement, ownership, reset, or cross-client behavior"
+  ],
+  "nextGate": "Probe the exact target-world embedded placeable document shape, permissions, media deployment policy, and authoritative write/read-back behavior before enabling M7 mutation."
+}

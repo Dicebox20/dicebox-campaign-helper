@@ -1,0 +1,134 @@
+{
+  "operation": "stage11-local-project-proposal-lifecycle-conformance",
+  "milestone": "M635",
+  "status": "PASS_LOCAL_PROJECT_LIFECYCLE_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T09:15:45-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "authority": {
+    "producer": "project-store",
+    "sourceId": "desktop.project.save",
+    "provider": null,
+    "reviewAuthority": "human-review/reviewer",
+    "targetAuthority": "local-project/no-active-GM",
+    "operation": "project.save",
+    "commandCount": 1,
+    "genericExecutor": false,
+    "foreignStateMutation": false
+  },
+  "target": {
+    "projectId": "dbx:project:m340-save",
+    "ownership": "test-owned in-memory local-project store fixture",
+    "freshLifecycleState": true,
+    "persistentNativeProjectCreated": false,
+    "sceneCountBefore": 2,
+    "sceneCountAfterApply": 2,
+    "sceneCountAfterUndo": 2,
+    "assetCountBefore": 0,
+    "assetCountAfterApply": 0,
+    "assetCountAfterUndo": 0
+  },
+  "previewAndApproval": {
+    "previewOperation": "dicebox.project.save.preview",
+    "previewStatus": "PREVIEW",
+    "previewNoWrite": true,
+    "previewNoFoundryWrite": true,
+    "requiresApproval": true,
+    "approvedBy": "reviewer",
+    "approvedSessionStatus": "approved",
+    "payloadContainsSceneBytes": false,
+    "payloadContainsAssetBytes": false,
+    "payloadContainsCredentials": false
+  },
+  "authoritativeLifecycle": {
+    "before": {
+      "generation": 2,
+      "contentSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "primaryByteSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "backupByteSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "activeSceneId": "dbx:scene:m340-secondary",
+      "semanticState": "Original Main / Original Secondary"
+    },
+    "afterApply": {
+      "generation": 3,
+      "contentSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "primaryByteSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "backupByteSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "activeSceneId": "dbx:scene:m340-main",
+      "semanticState": "Edited Main / Edited Secondary",
+      "matchedCatalogProjectRecoveryReread": true,
+      "nativeSaveReceipt": {
+        "status": "PASS",
+        "atomicReplace": true,
+        "directoryEntrySync": true,
+        "backupPreserved": true,
+        "noFoundryWrite": true
+      }
+    },
+    "afterUndo": {
+      "generation": 4,
+      "contentSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "primaryByteSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "backupByteSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+      "activeSceneId": "dbx:scene:m340-secondary",
+      "semanticState": "Original Main / Original Secondary",
+      "semanticContentRestored": true,
+      "matchedCatalogProjectRecoveryReread": true,
+      "nativeInverseRestoreReceipt": {
+        "status": "PASS",
+        "atomicReplace": true,
+        "directoryEntrySync": true,
+        "backupPreserved": true,
+        "noFoundryWrite": true
+      }
+    }
+  },
+  "history": {
+    "transitions": ["preview", "approve", "begin-apply", "commit-after-reread", "undo"],
+    "finalStatus": "undone",
+    "finalLength": 5,
+    "appendOnly": true,
+    "duplicateApply": false
+  },
+  "unknownOutcomeRecovery": {
+    "simulatedTransportFailure": true,
+    "rereadAttempted": true,
+    "rereadCount": 2,
+    "retryIssued": false,
+    "terminalCode": "PROJECT_SAVE_OUTCOME_UNKNOWN"
+  },
+  "validation": {
+    "focusedCommand": "npx vitest run --configLoader runner --no-file-parallelism --pool=forks --maxWorkers=1 --minWorkers=1 tests/project-save-executor.test.ts tests/desktop-project-proposal-review.test.ts",
+    "focusedTestFiles": "2/2",
+    "focusedTests": "16/16",
+    "workflowCheck": "PASS score 63; 10/16 gates; proposal-approval-history solely active",
+    "knowledgeBase": "PASS rebuild and verify; sources 1056, facts 897, decisions 780, trials 774, open items 135",
+    "sourceHashes": {
+      "apps/campaign-helper-desktop/src/project-save-executor.ts": "1B1A9A87AD7C823FC949F82A4879089DF495AC20BB06D5149A0472905FD74378",
+      "apps/campaign-helper-desktop/src/project-save-proposal-adapter.ts": "59CB89C97802E088DD6C8E2D31E0FCB2090F48B803F5A1579960EE4073EC6EFA",
+      "apps/campaign-helper-desktop/src/project-proposal-session.ts": "FC1C8BB3F7C1768E39B0B2633CB16A625402DF2F892C9EA10FCBE0A34B6A811A",
+      "apps/campaign-helper-desktop/src/project-store.ts": "326D8E284B5966A7DE1FD1997A0709C9F57C9EFE272BF79258A955748EB7D21A",
+      "packages/dicebox-core/src/proposal-batch.ts": "41F07357A5D27DFBC94D2B910225B9DF4E1EBF26DE6F039EC4217E397E20939C",
+      "tests/project-save-executor.test.ts": "7ABF68904DDA8C1AF1FFDAC9D90C6BA502C1C0B97C75003DB9C69F749AB4DEEF",
+      "tests/desktop-project-proposal-review.test.ts": "6CDC5DB8B5ECBF07ACDEE60F86EAB0B077300C89B0270B471FD3AE25FC52D577"
+    }
+  },
+  "safety": {
+    "nativeFilesystemMutation": false,
+    "browserStorage": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilder": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "externalState": "unchanged"
+  },
+  "limits": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M635 proves one current operation-specific local lifecycle and recovery contract. It does not prove contradiction-free authority, lifecycle, recovery, undo/redo, or commit evidence across all eleven producer families."
+  },
+  "recoveryDisposition": "No failure in the successful lifecycle; the separate unknown-outcome test reread once and stopped without retry. The fresh in-memory test-owned store was discarded after the test run; no native project or fixture cleanup occurred."
+}

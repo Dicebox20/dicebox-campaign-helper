@@ -1,0 +1,184 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m364-stage11-producer-family-reconciliation-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M364",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "browserStorageWrites": 0,
+  "providerCalls": 0,
+  "credentialCalls": 0,
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "auditBasis": {
+    "priorClosure": "outputs/m363-stage11-project-save-as-ui-execute-reread-receipt.json",
+    "priorClosureSha256": "B217CD2F2310105330A8B661A46436F3B1DE031A8948940B66851C812ECDC9EF",
+    "currentWorkflowCheck": "PASS; Stage 11 only active; 10/16 gates; readyClaim=false; no violations",
+    "currentToolingCheck": "PASS",
+    "currentFocusedValidation": "PASS: 5 test files; 102 tests; desktop review, save-as executor, proposal session, active-slice workflow, and KB query checks",
+    "currentKnowledgeBase": {
+      "sources": 542,
+      "facts": 571,
+      "decisions": 513,
+      "trials": 527,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "sourceReconciliation": [
+      "M363 closes only the exact zero-asset Save as new project UI boundary over the M353 typed project.save-as adapter/session/executor. Its packaged callback-driven self-test reread source and target project state, recovery files, catalog metadata, and workspace generation after process exit; target asset count was zero by explicit guard.",
+      "The ordinary project persistence family now has Create UI, zero-asset Save UI, Rename selected display name UI, and zero-asset Save-as UI closed at M357, M359, M361, and M363. Asset-bearing Save-as and generalized project producer-tray coverage remain open and are not inferred from the zero-asset closure.",
+      "In-memory editing/navigation and role-specific background, handout, audio, and token engines remain bounded by their operation-specific slices. M345 already closes typed handout registration, but the desktop file-import handler still calls the native registration engine directly and therefore remains a separate UI proposal/review/application boundary.",
+      "Read-only inspection, workspace metadata, migration, backup-authoritative promotion, missing-asset restore/detach, and broken-reference detach retain operation-specific authority. Fixture setup and stage receipts remain harness-only. Blocked and outcome-unknown evidence remains preserved; no retry or cleanup authority is introduced.",
+      "M364 reread current source, tests, receipts, active card, roadmap, and verified KB only. It executed no producer and made no project, workspace, runtime, browser, provider, credential, Foundry, deletion, cleanup, foreign-state, or player-password mutation."
+    ]
+  },
+  "producerFamilies": [
+    {
+      "family": "read-only inspection and compile",
+      "operations": ["list", "inspect recovery", "explain migration", "compile no-write Foundry preview"],
+      "coveredSlices": ["M1-M2", "M3-M8", "M276-M290", "M364 reread"],
+      "disposition": "closed read-only adapters; outside mutating acceptance"
+    },
+    {
+      "family": "workspace open and recent-order metadata",
+      "operations": ["open", "reload", "load with workspace generation"],
+      "coveredSlices": ["M232-M233", "M246", "M359-M363 rereads"],
+      "disposition": "explicit workspace command; UI integration and generalized tray acceptance remain separate"
+    },
+    {
+      "family": "ordinary project persistence",
+      "operations": ["create", "save", "save as", "rename"],
+      "coveredSlices": ["M339", "M340", "M351", "M353", "M355", "M357", "M359", "M361", "M363"],
+      "disposition": "Create, zero-asset Save UI, Rename UI, and zero-asset Save-as UI closed; asset-bearing Save-as and generalized producer acceptance remain open"
+    },
+    {
+      "family": "in-memory project editing and navigation",
+      "operations": ["add blank Scene", "switch active Scene", "close clean session"],
+      "coveredSlices": ["M343", "M351", "M363 editor promotion reread"],
+      "disposition": "bounded editor/persistence separation; broader UI acceptance remains open"
+    },
+    {
+      "family": "asset import and binding",
+      "operations": ["background", "handout", "audio", "token"],
+      "coveredSlices": ["M341", "M345", "M347", "M349", "M363 zero-asset preservation guard", "M364 reread"],
+      "disposition": "role-specific engines closed; handout UI, generalized tray coverage, asset-bearing Save-as, and broader asset acceptance remain open"
+    },
+    {
+      "family": "legacy migration persistence",
+      "operations": ["preview migration persist", "approve migration persist"],
+      "coveredSlices": ["M242", "M280-M284", "M364 reread"],
+      "disposition": "operation-specific adapter retained; not generalized into the product tray"
+    },
+    {
+      "family": "backup-authoritative promotion",
+      "operations": ["preview backup promotion", "approve backup promotion"],
+      "coveredSlices": ["M244", "M314-M315", "M364 reread"],
+      "disposition": "recovery-specific authority retained; no generic promotion or cleanup"
+    },
+    {
+      "family": "missing asset restore",
+      "operations": ["preview exact-byte restore", "approve exact-byte restore"],
+      "coveredSlices": ["M234-M235", "M248", "M316-M318", "M364 reread"],
+      "disposition": "recovery-specific exact-byte authority retained"
+    },
+    {
+      "family": "missing asset detach",
+      "operations": ["preview exact-one detach", "approve detach"],
+      "coveredSlices": ["M223", "M241", "M364 reread"],
+      "disposition": "recovery-specific authority retained; no generic cleanup"
+    },
+    {
+      "family": "broken Scene-reference detach",
+      "operations": ["preview selected detach", "approve detach"],
+      "coveredSlices": ["M241", "M364 reread"],
+      "disposition": "selected-reference authority retained; broader cleanup remains excluded"
+    },
+    {
+      "family": "test-owned fixture setup and stage receipts",
+      "operations": ["prepare fixtures", "finish self-test", "record stage receipt"],
+      "coveredSlices": ["M255-M266", "M323-M363", "M364 audit"],
+      "disposition": "harness-only; excluded from product tray and generic Stage 11 acceptance"
+    }
+  ],
+  "selectedNextSlice": {
+    "milestone": "M365",
+    "name": "exact handout asset registration UI proposal/review/application boundary",
+    "scope": "Route only the desktop Non-scene handout asset file-import action through the existing M345 project.asset.register-handout typed preview, target-bound proposal session, human reviewer approval, exact executor, authoritative project/catalog/asset rereads, inverse restore, and canonical editor update. Keep handout role metadata and bytes additive, keep the handout out of Scene background binding, and preserve unrelated assets and unknown state.",
+    "reason": "M345 already closes the narrow handout registration engine and inverse-restore boundary. The current App.tsx file-import handler still calls registerHandoutAsset directly, making this the smallest remaining asset UI boundary without adding Scene geometry, Foundry placement, asset-bearing Save-as, recovery breadth, or generalized tray authority.",
+    "requiredGates": [
+      "M364 reconciliation closure and M365 authorization synchronized in roadmap, active card, and verified KB",
+      "exact active project, generation, ordered Scene identity/content, and handout file media/byte hash reread before preview",
+      "metadata-only proposal payload with raw bytes excluded from generic proposal history",
+      "target-bound session and human reviewer approval before native project or asset write",
+      "authoritative project, catalog, asset-tree, Scene-content, and workspace rereads after apply",
+      "inverse restore removes only the selected handout registration while preserving its additive byte/blob tree and unrelated assets",
+      "outcome-unknown handout registration stops without retry and preserves the recovery session",
+      "no Scene background binding, Foundry write, provider, credential, browser, player-password, deletion, cleanup, or foreign-state activity"
+    ],
+    "excluded": [
+      "asset-bearing Save-as",
+      "background, audio, or token UI integration",
+      "project create/save/rename UI changes",
+      "migration, backup promotion, recovery breadth, or generic cleanup",
+      "generic Stage 11 acceptance",
+      "Foundry",
+      "providers and credentials",
+      "player passwords",
+      "deletion or broader undo authority",
+      "later stages"
+    ]
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "9CA1AE287F7B928EE1E447DD6E7B4CD84C213166EBD910A927C36DBBACEE5E63",
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "C54C12CFC27606375225A34E6667EBE6CF310B034D4C9F0FE4CDE4B6426A39E6",
+    "apps/campaign-helper-desktop/src/project-save-as-proposal-adapter.ts": "6F223CFDBF62D3590595BFBAB97226180B687009F321DE50D7ABA9A71D98EA02",
+    "apps/campaign-helper-desktop/src/project-save-as-executor.ts": "13B456D318DE37B7DCE8D5F6F54749B781DB8611E5522BFE60BD7A87B455197C",
+    "tests/desktop-project-proposal-review.test.ts": "9E34782DC0D9C1A8DB6B36F909C85DB07C19BB522B815D601CE8FD6FCD5F84BC",
+    "tests/project-save-as-executor.test.ts": "342012A17E722C58FFB47CEF4EAA0FB8D1A145D900B1B3A245479BE14D11D4A5",
+    "tests/knowledge-base-query.test.ts": "469771D732E1427EE6BFEC66A4C3C872ADAC63A8745817365E893D01678F5620",
+    "outputs/m362-stage11-producer-family-reconciliation-receipt.json": "1E483828D09774C350D5D18CA7C1771CFF6B218B79F03391CD020B623DB20262",
+    "outputs/m363-stage11-project-save-as-ui-execute-reread-receipt.json": "B217CD2F2310105330A8B661A46436F3B1DE031A8948940B66851C812ECDC9EF",
+    "docs/ACTIVE-PROGRAM-SLICE.json": "48C722EE5F538AD9DA5F9C110ECFBB5872083EBF63512460DB7684E8BEF197D5",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md": "543836B950B190FAE4098EB6EBCA4940AA17B74E52B4ACE9FB9E25B5C6FA8B41",
+    "database/seed.sql": "7D20D8C11B13B78B8A16ACCEAB3698000847B40612CDDEF353E92327C8B7113A",
+    "database/dicebox_campaign_helper_knowledge.sqlite": "EC5B5930B8D14EFC6DF178DB96574567B7B4FCFE5A82C1688CBC021480CF7436"
+  },
+  "prohibitedActivity": {
+    "projectWrites": false,
+    "workspaceWrites": false,
+    "provider": false,
+    "credentials": false,
+    "browser": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "unrelatedProject": false,
+    "foreignState": false,
+    "assetDeletionOrCleanup": false
+  },
+  "validation": {
+    "databaseIntegrity": "PASS: 542 sources; 571 facts; 513 decisions; 527 trials; 40 research subjects; 26 milestones",
+    "workflow": "PASS: 10/16 gates; Stage 11 only active; no violations",
+    "focusedTests": "PASS: 5 files; 102 tests; desktop review, save-as executor, proposal session, active-slice workflow, and KB query checks",
+    "tooling": "PASS: verify:tooling",
+    "readOnlySourceAudit": "PASS: M363 closure, current App/project-store/project-session/save-as/handout sources and tests, all eleven producer families, and all four Stage 11 clauses reread",
+    "execution": "NONE: M364 executed no producer and made no project, workspace, browser, provider, credential, Foundry, player-password, deletion, cleanup, or foreign-state mutation"
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "asset-bearing Save-as or generalized asset UI integration",
+    "M365 handout asset UI integration before implementation",
+    "Foundry execution or active-GM authority",
+    "Ready-to-Play"
+  ]
+}

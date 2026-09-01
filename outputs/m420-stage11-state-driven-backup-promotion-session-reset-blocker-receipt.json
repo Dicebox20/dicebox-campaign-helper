@@ -1,0 +1,26 @@
+{
+  "milestone": "M420",
+  "status": "BLOCKED_LOCAL_PACKAGED_SESSION_ONLY",
+  "readyClaim": false,
+  "runCount": 1,
+  "session": {
+    "projectId": "dbx:project:desktop-backup-authoritative-recovery-promotion-self-test",
+    "batchId": "dbx:proposal:desktop-project-recovery-dbx-project-desktop-backup-authoritative-recovery-promotion-self-test-1787962033368",
+    "status": "previewed",
+    "historyLength": 1,
+    "changed": false
+  },
+  "fixture": {
+    "primaryExists": false,
+    "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+  },
+  "process": {
+    "initialSessionRead": "blocked by live WebView LevelDB lock",
+    "exactProcessStoppedAfterReadAttempt": true,
+    "finalDesktopProcessCount": 0
+  },
+  "finding": "The one exact reset-mode package did not cancel or clear the previewed session. No recovery apply occurred.",
+  "recoveryDisposition": "No retry. M421 is read-only package/source/session reconciliation only.",
+  "doesNotProve": ["session reset", "backup promotion", "recovery apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

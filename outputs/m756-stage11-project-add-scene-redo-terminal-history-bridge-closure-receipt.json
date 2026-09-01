@@ -1,0 +1,44 @@
+{
+  "milestone": "M756",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY PROJECT.ADD-SCENE.PERSIST REDO BRIDGE/CLASSIFIER; STAGE 11 NOT ACCEPTED",
+  "scope": "Add one disjoint project.add-scene.persist-only read-only redo terminal-history receipt bridge and matched-reread classifier for undone-to-redo-to-redone.",
+  "sourceState": "Unborn project worktree with no HEAD; M756 changes only the bounded persistent add-Scene terminal-history source/test and governed receipt/card/roadmap/KB artifacts. No project, Foundry, runtime, provider, credential, browser/session, foreign, or player-role password state was changed.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "high",
+    "workerScope": "Implement only the project.add-scene.persist redo terminal-history receipt bridge and matched-reread classifier in apps/campaign-helper-desktop/src/project-add-scene-terminal-history.ts with focused coverage in tests/project-add-scene-terminal-history.test.ts.",
+    "workerOutcome": "The bounded Luna High worker was shut down after two bounded waits without returning an artifact; the Foreman completed the exact two-file scope locally. No worker files or runtime state changed."
+  },
+  "implementation": {
+    "coreSource": "packages/dicebox-core/src/proposal-batch.ts",
+    "coreSourceSha256": "A6EB857BCFD1973326B0DB562F652E83481301A7064E271D018ED0F6492C29B1",
+    "source": "apps/campaign-helper-desktop/src/project-add-scene-terminal-history.ts",
+    "sourceSha256": "9AC9511A2DF57A382400A6908AFA1848368CA2CBBD3D6D677AF5B90120333DA7",
+    "focusedTest": "tests/project-add-scene-terminal-history.test.ts",
+    "focusedTestSha256": "3A01E679C392D6DBFE5A6324C21A48402DB8FDF62AA337FDD56D621A1356CB29",
+    "bridge": "bridgeProjectPersistentAddSceneRedoToTerminalHistory validates one project.add-scene.persist-only undone→redo→redone receipt, exact identity, monotonic project generation, ordered Scene-set transition, asset preservation, and the six-receipt history.",
+    "classifier": "projectPersistentAddSceneRedoTerminalHistoryReceiptSchema revalidates the terminal-redone bridge output and requires matched post-redo target/revision/hash evidence.",
+    "bindings": "The canonical core map supplies the undone redo edge and matched reread status. The bridge requires history transitions [preview, approve, begin-apply, commit-after-reread, undo, redo], one exact ordered appended Scene, and exact matched target/revision/hash continuity.",
+    "safety": "The bridge is read-only and non-certifying: no transition invocation, no execution or transition authority, no generic executor, no project mutation, no Foundry write, foreign state preserved, readyClaim false, and Stage 12 not started. Existing M743/M745/M746/M747/M748/M750/M752/M754 evidence remains preserved."
+  },
+  "validation": {
+    "fixtureCorrection": "One initial focused fixture assertion used the byte-envelope hash for the history reread; it was corrected to use the authoritative content hash before final validation. This was a deterministic fixture mismatch, not a runtime failure or mutation.",
+    "focused": "PASS 1 file / 4 tests",
+    "related": "PASS 6 files / 22 tests",
+    "fullSuite": "PASS 174 test files / 846 tests",
+    "packageTypecheck": "PASS npm run build:packages",
+    "desktopBuild": "PASS npm run desktop:build (Vite large-chunk warning only)",
+    "tooling": "PASS npm run verify:tooling",
+    "knowledgeBase": "PASS M756 closure synchronization rebuild and verification at 1181 sources, 1020 facts, 888 decisions, 135 open items, 788 trials, 40 research subjects, and 26 milestones",
+    "workflow": "PASS Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations",
+    "diffHygiene": "PASS git diff --check",
+    "liveRuntime": "NOT RUN; no live Foundry/runtime or project mutation was authorized or performed."
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "decision": "M756 closes the bounded project.add-scene.persist redo terminal-history bridge/classifier gap with exact matched post-redo project/Scene reread evidence. It does not prove aggregate current authority, complete cross-producer continuity, packaged/runtime authority, or live active-GM/Foundry behavior."
+  },
+  "selectedNext": "M757 fresh read-only Stage 11 acceptance reconciliation across all four clauses and eleven producer-family obligations after M756; preserve Stage 11 partial status and keep Stage 12 excluded."
+}

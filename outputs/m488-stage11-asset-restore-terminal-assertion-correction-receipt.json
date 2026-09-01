@@ -1,0 +1,26 @@
+{
+  "operation": "dicebox.stage11.asset-restore.terminal-assertion-correction",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "milestone": "M488",
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "apps/campaign-helper-desktop/src/project-store.ts",
+    "tests/backup-promotion-ui-selftest.test.ts"
+  ],
+  "terminalAssertions": [
+    "committed selected WebP restore receipt",
+    "aggregate BLOCKED/REGISTERED_ASSET_BLOB_MISSING",
+    "selected WebP PRESENT_VALID and restoreEligible=false",
+    "unselected PNG MISSING and restoreEligible=true",
+    "exactly one remaining eligible asset, the PNG",
+    "inspection noWrite/noFoundryWrite"
+  ],
+  "validation": {
+    "vitest": "2 files, 10 tests passed",
+    "typescript": "Desktop no-emit project check passed",
+    "diffHygiene": "git diff --check passed"
+  },
+  "runtimeAction": false,
+  "foundryWrite": false,
+  "nonCertification": "This is local code evidence only; it does not accept Stage 11 or certify Foundry behavior or Ready-to-Play."
+}

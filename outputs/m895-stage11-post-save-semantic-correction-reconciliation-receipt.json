@@ -1,0 +1,110 @@
+{
+  "milestone": "M895",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile corrected M894 project.save semantic-redo validation against the complete Stage 11 matrix while preserving all evidence labels, authority locks, counts, and the parked runtime lane.",
+  "inputs": [
+    "outputs/m894-stage11-project-save-semantic-hash-transition-correction-closure-receipt.json",
+    "outputs/m893-stage11-post-aggregate-semantic-redo-reconciliation-receipt.json",
+    "outputs/m892-stage11-aggregate-semantic-redo-attachment-closure-receipt.json",
+    "outputs/m890-stage11-operation-specific-semantic-redo-composition-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-save-terminal-history.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "m894Disposition": {
+    "classification": "corrected fail-closed project.save semantic-redo validation",
+    "semanticHashTransition": "enforced by bridge and schema",
+    "equalSemanticHashRejected": true,
+    "exactHistoryIdentityContentEnvelopePreserved": true,
+    "aggregateAttachmentsPreserved": ["M886", "M890"],
+    "countsChanged": false,
+    "runtimeLaneReopened": false,
+    "authorityPromoted": false,
+    "backupPromotionUndoRedo": "NOT_APPLICABLE_ONE_WAY",
+    "foreignStatePreserved": true
+  },
+  "remainingGaps": [
+    "All four acceptance clauses remain partial across eleven producer families; M894 fixes only the project.save semantic transition.",
+    "Aggregate evidence remains typed and non-certifying; it does not prove cross-producer committed or recovered behavior or generic authority.",
+    "Other producer bridges, packaged runtime behavior, exact Foundry behavior, and GM/player behavior evidence remain bounded or incomplete.",
+    "The desktop runtime lane remains parked after the permitted M872 observation and M873 reconciliation."
+  ],
+  "selectedNext": {
+    "milestone": "M896",
+    "title": "Operation-specific audio-asset semantic redo composition",
+    "target": [
+      "apps/campaign-helper-desktop/src/project-audio-asset-terminal-history.ts",
+      "tests/project-audio-asset-terminal-history.test.ts"
+    ],
+    "scope": "One focused TypeScript composition using the existing strict project.asset.register-audio redo bridge and deterministic fixture; no production authority expansion.",
+    "reason": "The audio-asset bridge directly evidences strict semantic redo preservation and provides one disjoint producer gap after the corrected project.save and persistent project.add-scene compositions.",
+    "deterministicCheck": "Require exact project.asset.register-audio identity, matched rereads, generation advance, asset-tree/content preservation, Scene preservation, byte-envelope rotation, fail-closed drift rejection, and unchanged project.save semantic-hash inequality enforcement.",
+    "excluded": [
+      "runtime/browser/Foundry/provider/account activity",
+      "credentials or player-role passwords",
+      "project mutation or generic execution",
+      "aggregate authority or count changes",
+      "Stage 11 acceptance",
+      "Stage 12 entry",
+      "Ready-to-Play claim"
+    ]
+  },
+  "artifacts": {
+    "m894Source": {
+      "path": "apps/campaign-helper-desktop/src/project-save-terminal-history.ts",
+      "sha256": "695BDA230AE47B7D200F86D339F9B7E2639A73E1AA37DEAC34FBB516145128B2"
+    },
+    "m894FocusedTest": {
+      "path": "tests/project-save-terminal-history.test.ts",
+      "sha256": "50D5150544A3A27639F914E5FB2C32BB6542D48B4231C07154D9975000253A9C"
+    },
+    "m894ClosureReceipt": {
+      "path": "outputs/m894-stage11-project-save-semantic-hash-transition-correction-closure-receipt.json",
+      "sha256": "816BE79D62CFF7816C5147C60E9573725D4DB8B0EE05A67D6D336B00B88A1166"
+    }
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "packaged/runtime cross-producer behavior",
+    "aggregate Stage 11 acceptance",
+    "backup-promotion undo/redo support",
+    "generic execution or Foundry authority",
+    "Stage 12 entry",
+    "Ready-to-Play",
+    "M896 implementation or validation"
+  ],
+  "next": "Implement only the authorized M896 operation-specific audio-asset semantic redo composition after recording this reconciliation in the roadmap, active card, and rebuilt/verified knowledge base."
+}

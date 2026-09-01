@@ -1,0 +1,16 @@
+{
+  "milestone": "M475",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "fixture": "dbx:project:desktop-selected-missing-background-recovery-self-test",
+  "reconciliation": {
+    "m471Precondition": "PNG present; canonical WebP absent and eligible",
+    "m474Postcondition": "both canonical registered asset blobs present; inspection PASS; eligible=false",
+    "captureRunner": "captures child stdout/stderr and exits without invoking recovery or inspecting project/session state",
+    "nativeTrace": "the existing debug-only record_project_ui_self_test_progress command writes bounded UI stage records to child stdout, but M472 did not call it"
+  },
+  "conclusion": "The one authorized M474 app run is the only intervening action capable of moving the preserved WebP from missing to present; this is strong state-transition evidence of typed restore, but it is not a direct visible-lifecycle trace. The fixed fixture is consumed and must not be reset, deleted, or reused.",
+  "nextBoundary": "M476 code-only: create a separate fixed asset-restore fixture and add bounded native UI stage progress records to its exact test route; do not build, launch, capture, or mutate runtime state.",
+  "mutation": false,
+  "foundryWrite": false,
+  "evidenceLabel": "local"
+}

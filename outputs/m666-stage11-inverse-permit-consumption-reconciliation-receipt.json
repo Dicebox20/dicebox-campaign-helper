@@ -1,0 +1,8 @@
+{
+  "milestone": "M666",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL READ-ONLY",
+  "finding": "The M665 permit declares singleUse but has no persisted claim/consumption state or atomic outcome-unknown rule. Existing append-only journals provide history but do not bind a permit claim before adapter dispatch. A future executor must claim exactly once, persist the claim, and stop on uncertain persistence before dispatch or retry.",
+  "selectedNext": "M667 code-only: define a pure single-use permit claim/consumption state machine and receipt contract with fail-closed idempotency and outcome-unknown states.",
+  "excluded": ["executor dispatch", "adapter call", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
+}

@@ -1,0 +1,78 @@
+{
+  "milestone": "M892",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY AGGREGATE ATTACHMENT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Attach the exact M890 project.save and persistent project.add-scene semantic redo evidence to the Stage 11 aggregate ledger as a typed non-certifying sidecar, preserving the existing M886 attachment and all blockers/authority locks.",
+  "attachment": {
+    "field": "semanticRedoEvidence",
+    "receipt": "outputs/m890-stage11-operation-specific-semantic-redo-composition-closure-receipt.json",
+    "schemaVersion": "0.1.0",
+    "milestone": "M890",
+    "operations": [
+      {"operation": "project.save", "semantic": "redo-post-state", "matchedReread": true, "generationAdvanced": true, "envelopeRotated": true, "semanticHashChangedInFixture": true, "semanticHashValidation": "shape-only", "driftRejected": "content-hash/redo-receipt identity drift"},
+      {"operation": "project.add-scene.persist", "semantic": "redo-post-state", "matchedReread": true, "generationAdvanced": true, "envelopeRotated": true, "sceneAppended": true, "activeSceneSelected": true, "assetsPreserved": true, "driftRejected": "Scene-set/readback identity drift"}
+    ],
+    "saveSemanticHash": "shape-only",
+    "backupPromotionUndoRedo": "not-applicable-one-way",
+    "readOnly": true,
+    "nonCertifying": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "readyClaim": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false
+  },
+  "aggregatePreservation": {
+    "existingM886AttachmentPreserved": true,
+    "typedOperationKindCount": "unchanged",
+    "indexedOperationCount": 14,
+    "directProjectionCount": 16,
+    "producerFamilyCount": 11,
+    "redoBindingCount": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "existingDirectEvidencePreserved": true,
+    "existingBlockersPreserved": true,
+    "backupPromotionOneWayBoundaryPreserved": true
+  },
+  "validation": {
+    "focusedAggregateAttachmentSuite": "PASS: 2 files; 6 tests",
+    "fullRepositorySuite": "PASS: 199 files; 919 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: 10/16; violations 0",
+    "kbRebuild": "PASS: integrity ok; 1349 sources, 1147 facts, 989 decisions, 135 open items, 788 trials, 40 research subjects, and 26 milestones",
+    "kbVerify": "PASS: integrity ok"
+  },
+  "artifacts": {
+    "semanticRedoSource": {"path": "apps/campaign-helper-desktop/src/project-stage11-semantic-redo-evidence.ts", "sha256": "06E1821E6C86F5F74211E312EA365B808942FB41401DBD1697F62D35AA27E635"},
+    "aggregateSource": {"path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts", "sha256": "657553BB0EEDDCA1F701204FA8FE087B5B0F6F786EBE236B461282E0AB1F1DBF"},
+    "semanticRedoTest": {"path": "tests/project-stage11-semantic-redo-evidence.test.ts", "sha256": "E15CF53432DC00B85909235DF37839E45F11F488EEF771874FC8683917FB5B48"},
+    "aggregateTest": {"path": "tests/project-stage11-aggregate-evidence-ledger.test.ts", "sha256": "07CD8EF63A8ECABFFEDD4314A88A69167A70138A712A26BEF8AC29729F3C9ED1"}
+  },
+  "limits": {
+    "runtimeLaneReopened": false,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "aggregate Stage 11 acceptance",
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "fail-closed save semantic-hash transition validation beyond the existing bridge contract",
+    "packaged/runtime cross-producer behavior",
+    "generic execution or Foundry authority",
+    "backup-promotion undo/redo support",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform one read-only reconciliation of M892 against the full Stage 11 matrix; retain unchanged counts, the save semantic-hash limitation, the parked runtime lane, Stage 11 blocked, Stage 12 locked, and readyClaim false."
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-08-22",
+  "goalId": "O-112",
+  "outcome": "Deliver a playable Ascendancy Tram Scene with accepted visuals, working Dalton and Andrew access, a player-compatible fixture test, and exact Ballad promotion evidence.",
+  "acceptanceObservation": "A GM and a separate player-compatible client can use the Tram Scene without walking around the blocked Rush Hour board; Andrew opens routing, Dalton or Andrew opens repair, and the released east route corresponds to Core west.",
+  "owner": "DiceBox Campaign Helper Foreman",
+  "scopeBoundary": "Only the current Tram acceptance step may advance. Other Ascendancy Scenes, broad campaign progression, new macro experiments, and unrelated KB backlog items are parked.",
+  "baselineEvidence": [
+    "F-245: standalone Rush Hour dialog visually opened and accepted in the fixture",
+    "F-247: fixture routing projection exists with authoritative owned-document reread",
+    "F-252: reviewed texture-only visual refresh applied to 11 owned Tram Tiles"
+  ],
+  "activeLanes": {
+    "build": [],
+    "live": [
+      "andrew-routing-entry"
+    ],
+    "research": []
+  },
+  "failureControl": {
+    "stageId": "andrew-routing-entry",
+    "runtimeClass": "fixture-tram-andrew-routing-entry",
+    "failures": 0,
+    "recoveryMode": false,
+    "reproduction": null,
+    "validatedFix": null
+  },
+  "nextAction": "Reconcile the M175 native tramAccess subtype plan with current source, implement and deterministically validate only Andrew routing entry, then stage and collect a no-write fixture preview before one reviewed apply.",
+  "steps": [
+    {
+      "id": "fixture-visual-acceptance",
+      "label": "Accept the refreshed Tram artwork",
+      "status": "passed",
+      "acceptanceObservation": "The user sees a clean industrial Tram projection with an obvious blocked 6x6 rail board, gates, eastbound corridor, and six car bodies; no debug guide lines or dashed calibration boxes remain.",
+      "allowedScope": "A fixture-only no-write calibration manifest, native-coordinate overlay, drift receipt, tests, staging, read-only fixture View, the completed texture-source update to dbx:tile:tram-rail-grid, and one reviewed texture.anchorX/anchorY/fit migration for the 11 existing helper-owned Tram Tiles. The tool may not rescale the Scene, change Tile x/y/width/height, create/delete documents, or alter any other Foundry document; Blueprint geometry remains frozen.",
+      "deterministicCheck": "Tests prove the manifest landmarks, stored bounds, explicit top-left anchors, rendered canvas bounds, native canvas-to-client conversion, no calibration mutation calls, drift classification, and source-to-stage parity.",
+      "liveCheck": "At the maximized native viewport, show the calibration overlay once, capture its no-write receipt and screenshot, hide it, then capture a clean Scene screenshot for explicit user acceptance.",
+      "stopCondition": "Any unexpected document write or target mismatch stops immediately. After one overlay/runtime failure capture the exact error; a second same-class failure requires a bounded reproduction before another fixture attempt.",
+      "requiredEvidenceLabel": "player-accepted",
+      "evidence": {
+        "label": "player-accepted",
+        "receipt": "outputs/m183-fixture-tram-visual-acceptance-receipt.json",
+        "status": "PASS",
+        "userAcceptance": "accepted",
+        "observation": "The user explicitly accepted the corrected fixture screenshot showing one coherent 6x6 board, six separate tram cars, and the eastbound TO CORE rail after the 94/94 rendered-bounds reread.",
+        "artifacts": [
+          "outputs/m183-fixture-tram-visual-acceptance-receipt.json",
+          "outputs/m182-fixture-tram-anchor-clean-screenshot.png",
+          "outputs/m182-fixture-tram-anchor-calibration-live-receipt.json"
+        ]
+      }
+    },
+    {
+      "id": "andrew-routing-entry",
+      "label": "Prove Andrew opens the Rush Hour board",
+      "status": "in_progress",
+      "acceptanceObservation": "An Andrew-authorized token enters the reviewed routing Region and the correct Rush Hour board opens once without Scene activation side effects.",
+      "allowedScope": "One versioned native DiceBox RegionBehavior subtype and the one reviewed Andrew routing Region; no ExecuteScript behavior or foreign document change.",
+      "deterministicCheck": "Focused subtype, ownership, Region binding, and no-foreign-write tests pass.",
+      "liveCheck": "One fixture Andrew token-entry smoke test produces the visible board and an authoritative behavior/Region reread.",
+      "stopCondition": "Stop after the first exact failure; a second same-class failure requires a standalone reproduction before another fixture attempt.",
+      "requiredEvidenceLabel": "fixture",
+      "evidence": null
+    },
+    {
+      "id": "dalton-repair-entry",
+      "label": "Prove Dalton and Andrew open Tram repair",
+      "status": "pending",
+      "acceptanceObservation": "Dalton and the additionally authorized Andrew controller each open the same Dalton repair puzzle while Dalton remains the canonical puzzle identity.",
+      "allowedScope": "The existing Dalton repair Region and reviewed controller authorization only; no duplicate puzzle, Region, or Regionwright behavior.",
+      "deterministicCheck": "Identity and paired-controller tests pass without changing canonical stable IDs.",
+      "liveCheck": "One Dalton and one Andrew fixture entry visibly open the repair dialog with an authoritative reread.",
+      "stopCondition": "Capture the first exact identity or API failure; do not proliferate repair macros.",
+      "requiredEvidenceLabel": "fixture",
+      "evidence": null
+    },
+    {
+      "id": "player-compatible-fixture",
+      "label": "Prove no-bypass and player-compatible play",
+      "status": "pending",
+      "acceptanceObservation": "A separate player-compatible client sees the same Tram art, cannot walk around the board, and receives the intended puzzle access without GM-only UI assumptions.",
+      "allowedScope": "Read-only player observation plus owned fixture collision/access checks; no campaign progression or reset.",
+      "deterministicCheck": "Owned Wall, door, Tile, Region, and behavior IDs/counts reread exactly and foreign state is preserved.",
+      "liveCheck": "Separate client visual, collision, and puzzle-entry acceptance is recorded in one fixture receipt.",
+      "stopCondition": "Any timeout is outcome-unknown; reread before retry and stop after the second same-class failure.",
+      "requiredEvidenceLabel": "player-accepted",
+      "evidence": null
+    },
+    {
+      "id": "ballad-promotion",
+      "label": "Promote the accepted Tram slice to Ballad",
+      "status": "pending",
+      "acceptanceObservation": "The official Ballad Tram Scene has the accepted renderer/board/access behavior, correct Core west correspondence, and current GM plus player-compatible evidence.",
+      "allowedScope": "Fresh preview and explicitly approved helper-owned Tram renderer, Walls/doors, Tiles, Regions, and narrow access bindings only.",
+      "deterministicCheck": "Source/stage parity, exact target preview, stable/runtime IDs, hashes, coordinates, and preservation checks pass.",
+      "liveCheck": "Current active-GM authority, one approved apply, authoritative reread, and separate GM/player visual acceptance in Ballad.",
+      "stopCondition": "Any partial or unknown write triggers reread and recovery; never retry blindly or broaden scope.",
+      "requiredEvidenceLabel": "player-accepted",
+      "evidence": null
+    }
+  ]
+}

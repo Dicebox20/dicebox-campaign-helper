@@ -1,0 +1,51 @@
+{
+  "milestone": "M241",
+  "status": "PASS LOCAL PACKAGED",
+  "operation": "dicebox.project.broken-reference.detach",
+  "projectId": "dbx:project:desktop-broken-reference-detach-self-test-v2",
+  "targetSceneId": "dbx:scene:desktop-broken-reference-detach-self-test-target",
+  "assetId": "dbx:asset:sha256-e23764ba1c5f1c5a3b4dfff45a3224aadc43e75761f5b6368b0aa793a6371fef",
+  "assetRole": "handout",
+  "blockerCode": "BACKGROUND_ASSET_ROLE_MISMATCH",
+  "previewSha256": "433305c13e22721afdcf881f9abb26c3cefb223fe79bff3cd7900c6d00854bf5",
+  "generation": "1→2",
+  "contentSha256": "a5ef6777a313e1f0b112b47da9bbaea8c01d4c0f3293622b2b9786c535fd2391",
+  "setupExitCode": 0,
+  "freshRereadExitCode": 0,
+  "freshReread": {
+    "primaryStatus": "VALID",
+    "loadStatus": "PASS",
+    "handoutDescriptorPreserved": true,
+    "targetBindingAbsent": true,
+    "noWrite": true,
+    "noFoundryWrite": true
+  },
+  "ordinaryStartup": {
+    "boundedProbeSeconds": 4,
+    "processStoppedBy": "exact packaged executable identity after bounded probe",
+    "trackedByteIdentity": true,
+    "trackedPaths": [
+      { "path": "projects/desktop-broken-reference-detach-self-test-v2/project.json", "sha256": "54F67855EA7A5675549FAAC9CCDEC4312AEC572EFEF63BFEECFFC7EDCA65242E" },
+      { "path": "projects/desktop-broken-reference-detach-self-test-v2/project.backup.json", "sha256": "670EADA88E4A7A36D76FFC02A38CA5ADCCDBB80EA6134C865CAD077D914325F7" },
+      { "path": "workspace-index.json", "sha256": "1C207DAA9D49FEAE46A262A90D260418EFA39BF40EA5615E81916D6F16E9177B" },
+      { "path": "workspace-index.backup.json", "sha256": "7FBD2FBC848D67CBC6BAF1F59FE9BB95B4A6E191F14970F886B8D1EF615B7EAE" },
+      { "path": "assets/sha256/e23764ba1c5f1c5a3b4dfff45a3224aadc43e75761f5b6368b0aa793a6371fef", "sha256": "E23764BA1C5F1C5A3B4DFFF45A3224AADC43E75761F5B6368B0AA793A6371FEF" },
+      { "path": "workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending", "sha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43" }
+    ]
+  },
+  "validation": {
+    "rustProjectStoreTests": "44/44",
+    "focusedDesktopTests": "48/48",
+    "fullNpm": "89 files/436 tests",
+    "foundryWrites": 0,
+    "scope": "local packaged evidence only"
+  },
+  "excluded": [
+    "batch or automatic repair",
+    "arbitrary rebinding or replacement",
+    "descriptor/blob deletion or cleanup",
+    "migration or backup promotion authority",
+    "additional roles, placement, cross-process or universal durability certification",
+    "Stage 8 completion, alpha readiness, Foundry mutation, and vision implementation"
+  ]
+}

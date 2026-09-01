@@ -1,0 +1,34 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m398-stage11-backup-promotion-session-reconciliation-2026-08-28",
+  "milestone": "M398",
+  "evidenceLabel": "local-read-only",
+  "status": "PASS",
+  "readyClaim": false,
+  "inspection": {
+    "storageBoundary": "WebView localStorage persisted in the desktop EBWebView Local Storage LevelDB",
+    "inspectionMethod": "isolated read-only copy of the active LevelDB using ClassicLevel",
+    "proposalSessionCount": 17,
+    "nonterminalSessionCount": 4,
+    "exactProjectId": "dbx:project:desktop-backup-authoritative-recovery-promotion-self-test",
+    "exactStorageKey": "dicebox.project-proposal-session.v1:dbx%3Aproject%3Adesktop-backup-authoritative-recovery-promotion-self-test",
+    "exactBatchId": "dbx:proposal:desktop-project-rename-dbx-project-desktop-backup-authoritative-recovery-promotion-self-test-1787904274095",
+    "exactCommand": "project.rename",
+    "exactStatus": "cancelled",
+    "historyLength": 2,
+    "createdAt": "2026-08-28T08:04:34.092Z"
+  },
+  "stateMachineFinding": "cancelled is terminal and clearTerminalDesktopProjectProposalSession permits clearing only valid exact terminal sessions. previewSelectedBackupPromotionProposal creates and saves a new batch without the terminal-session preflight used by comparable callbacks, so save rejects the old batch even though it is terminal.",
+  "counts": {
+    "sessionWrites": 0,
+    "projectWrites": 0,
+    "workspaceWrites": 0,
+    "recoveryApplyOperations": 0,
+    "foundryWrites": 0,
+    "providerCalls": 0,
+    "credentialCalls": 0,
+    "deletionOperations": 0
+  },
+  "recoveryDisposition": "M399 is authorized only to add the existing exact terminal-clear/nonterminal-block preflight to the backup-promotion proposal callback with focused regression coverage and one bounded fresh fixture lifecycle.",
+  "doesNotProve": ["M397 packaged recovery lifecycle success", "generic session cleanup", "recovery breadth", "Stage 11 acceptance", "Foundry authority", "Stage 16 UI", "Ready-to-Play"]
+}

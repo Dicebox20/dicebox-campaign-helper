@@ -1,0 +1,169 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m360-stage11-producer-family-reconciliation-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M360",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "browserStorageWrites": 0,
+  "providerCalls": 0,
+  "credentialCalls": 0,
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "auditBasis": {
+    "priorClosure": "outputs/m359-stage11-project-save-ui-execute-reread-inverse-restore-receipt.json",
+    "priorClosureSha256": "3EA7E4EE34AA909BC34B9AEF30C0DB6965F25260D515DF402EBA1A63DCB0A0E9",
+    "currentWorkflowCheck": "PASS; Stage 11 only active; 10/16 gates; readyClaim=false; no violations",
+    "currentToolingCheck": "PASS",
+    "currentKnowledgeBase": {
+      "sources": 535,
+      "facts": 567,
+      "decisions": 509,
+      "trials": 523,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "sourceReconciliation": [
+      "M359 closes the exact zero-asset Save active project UI boundary over the M340 project.save engine, including metadata-only preview, target-bound session, reviewer approval, save reread, inverse restore, final reread, and canonical editor baseline update.",
+      "The current desktop Rename selected display name handler still calls native renameProjectBundle directly. The M339 metadata-only project.rename executor and the M322 review-surface/session path already provide exact target, workspace generation, content identity, reviewer approval, authoritative rereads, inverse undo, and outcome-unknown no-retry boundaries.",
+      "Save-as remains a separate content-bearing source-preserving path. Asset import/registration/binding, recovery, migration, backup promotion, add-Scene, and Foundry paths retain their existing operation-specific boundaries; M359 zero-asset safety does not authorize them.",
+      "The prior UIA selector-input blocker and outcome-unknown evidence remain preserved. M360 performs no selector input, project mutation, workspace mutation, browser/provider/credential/Foundry action, cleanup, deletion, or player-password action.",
+      "All four Stage 11 clauses remain partial. M361 is selected as the smallest next boundary: route only Rename selected display name through the existing M339 project.rename review/session/execution/inverse-reread path."
+    ]
+  },
+  "producerFamilies": [
+    {
+      "family": "read-only inspection and compile",
+      "operations": ["list", "inspect recovery", "explain migration", "compile no-write Foundry preview"],
+      "disposition": "closed read-only adapters; outside mutating acceptance"
+    },
+    {
+      "family": "workspace open and recent-order metadata",
+      "operations": ["open", "reload", "load with workspace generation"],
+      "disposition": "explicit workspace command; UI integration remains separate"
+    },
+    {
+      "family": "ordinary project persistence",
+      "operations": ["create", "save", "save as", "rename"],
+      "coveredSlices": ["M339", "M340", "M351", "M353", "M355", "M357", "M359"],
+      "disposition": "Create and zero-asset Save UI closed; save-as and Rename UI integration remain open"
+    },
+    {
+      "family": "in-memory project editing and navigation",
+      "operations": ["add blank Scene", "switch active Scene", "close clean session"],
+      "coveredSlices": ["M343", "M351"],
+      "disposition": "bounded editor/persistence separation; broader UI acceptance remains open"
+    },
+    {
+      "family": "asset import and binding",
+      "operations": ["background", "handout", "audio", "token"],
+      "coveredSlices": ["M341", "M345", "M347", "M349"],
+      "disposition": "role-specific engines closed; generalized UI tray remains open"
+    },
+    {
+      "family": "legacy migration persistence",
+      "operations": ["preview migration persist", "approve migration persist"],
+      "disposition": "operation-specific adapter retained"
+    },
+    {
+      "family": "backup-authoritative promotion",
+      "operations": ["preview backup promotion", "approve backup promotion"],
+      "disposition": "recovery-specific authority retained"
+    },
+    {
+      "family": "missing asset restore",
+      "operations": ["preview exact-byte restore", "approve exact-byte restore"],
+      "disposition": "recovery-specific authority retained"
+    },
+    {
+      "family": "missing asset detach",
+      "operations": ["preview exact-one detach", "approve detach"],
+      "disposition": "recovery-specific authority retained; no generic cleanup"
+    },
+    {
+      "family": "broken Scene-reference detach",
+      "operations": ["preview selected detach", "approve detach"],
+      "disposition": "selected-reference authority retained"
+    },
+    {
+      "family": "test-owned fixture setup and stage receipts",
+      "operations": ["prepare fixtures", "finish self-test", "record stage receipt"],
+      "disposition": "harness-only; excluded from product tray"
+    }
+  ],
+  "selectedNextSlice": {
+    "milestone": "M361",
+    "name": "exact project-rename UI proposal/review/application boundary",
+    "scope": "Route only the existing Rename selected display name action through the M339 typed project.rename preview, target-bound project proposal session, human reviewer approval, exact executor, authoritative rereads, inverse undo, and canonical workspace/editor metadata update. Preserve project content identity and generation, exact workspace generation, source/proposed display names, selector target binding, and no-cleanup/no-Foundry boundaries.",
+    "reason": "M339 already closes the metadata-only rename engine and M322 closes its review-surface/session entry. The direct Rename selected display name handler still calls native renameProjectBundle directly, making this the smallest remaining ordinary-persistence UI boundary. The earlier selector-input blocker is retained; a callback-driven exact test-owned package path may be used only after local implementation validation.",
+    "requiredGates": [
+      "M360 reconciliation and M361 authorization synchronized in roadmap, active card, and verified KB",
+      "exact selected PASS catalog target and current workspace/content reread before preview",
+      "metadata-only rename preview and target-bound session before native workspace write",
+      "human reviewer approval before rename",
+      "authoritative workspace/catalog/project reread proving content generation/hash unchanged",
+      "authoritative inverse undo and reread restoring the original display name",
+      "editor and catalog metadata updated only after final reread",
+      "no save-as, asset, recovery, migration, backup-promotion, Foundry, provider, credential, browser, player-password, deletion, cleanup, or foreign-state activity"
+    ],
+    "excluded": [
+      "project save-as UI integration",
+      "asset import, binding, or recovery UI integration",
+      "migration or backup promotion",
+      "generic Stage 11 acceptance",
+      "Foundry",
+      "providers and credentials",
+      "player passwords",
+      "deletion, cleanup, or broader undo authority",
+      "later stages"
+    ]
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "BF20F318EF5DAAAE137E40DBCBAD2222277BD207DEF73D4ED463E5A4DC530BBB",
+    "apps/campaign-helper-desktop/src/project-rename-proposal-adapter.ts": "9A49870765E165F9B29F45F6C2A242FC692E7ADF61A8E385C86E24825D27E368",
+    "apps/campaign-helper-desktop/src/project-rename-executor.ts": "DE22706A490AD8881164E9EAD9D0B632511E663DEA7DBF643C3A7B762AF73B32",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "16FD0CBD0B84AC44A34507EB5E4BCB18EF349288EBF0A83358F54E90B76FE2FE",
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "tests/desktop-project-proposal-review.test.ts": "36C44652865BC23A7B415C4079DDE8BC46E7B0EFEB3F005C450BEC2F93846590",
+    "tests/project-rename-executor.test.ts": "7DC4ACE5867AB3D7E5A196FCE03BEA6911F0D333BE85E7B980384B8020DBDDE3",
+    "tests/project-rename-proposal-session.test.ts": "C01E7A68A6304873656E8973C4CE00AF24FF5A2BCC24FA8A10177AC7D3B2F91D",
+    "outputs/m359-stage11-project-save-ui-execute-reread-inverse-restore-receipt.json": "3EA7E4EE34AA909BC34B9AEF30C0DB6965F25260D515DF402EBA1A63DCB0A0E9",
+    "outputs/m358-stage11-producer-family-reconciliation-receipt.json": "363B8BE916E3E9B3BBF6736B19DFBD956950B64D8C9240C71AE95EAF7CA2658D"
+  },
+  "prohibitedActivity": {
+    "projectWrites": false,
+    "workspaceWrites": false,
+    "provider": false,
+    "credentials": false,
+    "browser": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "unrelatedProject": false,
+    "foreignState": false,
+    "assetDeletionOrCleanup": false
+  },
+  "validation": {
+    "databaseIntegrity": "PASS: 535 sources; 567 facts; 509 decisions; 523 trials; 40 research subjects; 26 milestones",
+    "workflow": "PASS: 10/16 gates; Stage 11 only active; no violations",
+    "focusedTests": "PASS: M359 closure and M360 source/active-slice/KB checks",
+    "readOnlySourceAudit": "PASS: M359 receipt, current App/project-store/project-session/save/rename/save-as/asset sources and tests, all eleven producer families, and all four Stage 11 clauses reread",
+    "execution": "NONE: M360 executed no producer and made no project, workspace, browser, provider, credential, Foundry, player-password, deletion, cleanup, or foreign-state mutation"
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "project save-as or Rename UI integration",
+    "asset or recovery UI integration",
+    "Foundry execution or active-GM authority",
+    "Ready-to-Play"
+  ]
+}

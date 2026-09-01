@@ -1,0 +1,82 @@
+{
+  "milestone": "M252",
+  "operation": "compiler.iggwilv-legacy-fixture-evidence",
+  "status": "pass-local-foundation",
+  "evidenceLabel": "fixture",
+  "fixtureEvidence": {
+    "schemaVersion": "0.1.0",
+    "fixtureId": "dbx:fixture:iggwilv-final-chamber",
+    "fixtureKind": "iggwilv-final-chamber",
+    "evidenceSha256": "b3c1092ad40287cbb95ff33e89809647d94d00a63c47d604969fd9ef88bf18a0",
+    "source": {
+      "conversationId": "6a8d229e-48d4-83e8-bb79-defa7247e0ff",
+      "manifestSha256": "f15bd45ff3b600778b44d31d271c68521ac832c94a6e03ab66db883998f072dd",
+      "sceneUuid": "Scene.qn2AcIJc8oCKymiI",
+      "foundryVersion": "14.367",
+      "system": "dnd5e 5.3.3",
+      "rendererPath": "Puzzles/CastleOfDreams_IggwilvTower_Map_FinalChamber_Anchors_f96c1d5270.webp",
+      "rendererSha256": "f96c1d527002f758695e1095a273b85fb62d6b0c20827c1ec191ee9d7e33ae2e",
+      "rendererBytes": 136816,
+      "rendererDimensions": { "width": 1250, "height": 1250 },
+      "gridSize": 50,
+      "sceneRegions": 8
+    },
+    "transform": { "status": "unavailable", "reason": "Exact image-to-Scene scale and offset were not supplied by the reconciled corpus." },
+    "proposedObjectBounds": { "status": "unavailable", "reason": "Proposed object bounds were not supplied by the reconciled corpus." },
+    "acceptedObjectBounds": { "status": "unavailable", "reason": "GM-approved object bounds were not supplied by the reconciled corpus." },
+    "predictionDigest": { "status": "unavailable", "reason": "Prediction digest was not supplied by the reconciled corpus." },
+    "blueprintDigest": { "status": "unavailable", "reason": "Spatial Blueprint digest was not supplied by the reconciled corpus." },
+    "installerVerifierParity": {
+      "status": "blocked",
+      "specId": "dbx:foundry-spec:iggwilv-final-chamber",
+      "specSha256": "ccfc0afd42fecc077154ab9d65a175114d9af1604b14eba77dadcf29c9a83cdc",
+      "reportSource": "outputs/m249-foundry-artifact-spec-receipt.json",
+      "targetMatch": true,
+      "expectedWorkerSha256": "460f79b11ea457ec9efc3dcbe2c8d2c534516054d8247944f26096245df5cf35",
+      "installedWorkerSha256": "60be1aa71386c3457bd313e319e7133724e752e1077f396050a056e69e4425a2",
+      "promotion": "blocked",
+      "foreignArtifactsPreserved": true,
+      "blockers": ["Artifact dbx:foundry-artifact:worker SHA-256 drift: expected 460f79b11ea457ec9efc3dcbe2c8d2c534516054d8247944f26096245df5cf35, observed 60be1aa71386c3457bd313e319e7133724e752e1077f396050a056e69e4425a2."]
+    },
+    "authoritativeRegionReread": { "status": "unavailable", "reason": "No current authoritative Foundry Region reread was supplied by the reconciled corpus." },
+    "geometryAuthority": "spatial-blueprint",
+    "rendererRole": "renderer-only",
+    "macroRole": "legacy-transport-only",
+    "promotion": "blocked",
+    "noWrite": true,
+    "readyClaim": false,
+    "blockers": [
+      "Image-to-Scene transform is unavailable; exact scale and offset are unavailable.",
+      "Proposed object bounds are unavailable; no bounds may be inferred from pixels or names.",
+      "Accepted object bounds are unavailable; no GM-approved geometry is available.",
+      "Prediction digest is unavailable; prediction provenance is incomplete.",
+      "Spatial Blueprint digest is unavailable; geometry promotion is unavailable.",
+      "Canonical installer/verifier parity is blocked; promotion cannot proceed.",
+      "Authoritative Foundry Region reread is unavailable; supplied summaries are not live reread evidence."
+    ]
+  },
+  "deterministicChecks": {
+    "focusedTests": "PASS 3/3",
+    "packageTypecheck": "PASS",
+    "repositoryValidation": "PASS 95 test files / 488 tests",
+    "workflow": "PASS 8/16; Stage 9 solely active",
+    "desktopBuild": "PASS; pre-existing large-chunk warning only",
+    "tooling": "PASS",
+    "kb": "PASS rebuild and integrity verification",
+    "diffCheck": "PASS"
+  },
+  "noAssetTransfer": true,
+  "noInstallerExecution": true,
+  "noFoundryRuntimeCall": true,
+  "noProjectWrite": true,
+  "noSharedDocumentWrite": true,
+  "foreignStatePreserved": true,
+  "doesNotProve": [
+    "exact image-to-Scene transform",
+    "proposed or GM-accepted object bounds",
+    "prediction or Spatial Blueprint digest provenance",
+    "installer/verifier parity; known worker drift remains blocked",
+    "authoritative live Foundry Region reread",
+    "geometry authority, gameplay, player acceptance, Stage 9 completion, alpha readiness, or Ready-to-Play"
+  ]
+}

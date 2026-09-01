@@ -1,0 +1,65 @@
+{
+  "operation": "dicebox.program.rust-geometry-kernel",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "readyClaim": false,
+  "schemaVersion": "0.1.0",
+  "authority": {
+    "geometryOwner": "dicebox-geometry Rust crate",
+    "ipcCommand": "commit_geometry_batch",
+    "ipcCommandCount": 1,
+    "applicationOwner": "@dicebox/scene SceneCommand",
+    "externalWrite": false
+  },
+  "coverage": {
+    "transforms": true,
+    "offsetRelationships": true,
+    "relationshipCycleRejection": true,
+    "ambiguousOwnerRejection": true,
+    "spatialIndex": "rstar 0.13.0 RTree/AABB",
+    "polygonValidation": "geo 0.33.1 OGC Validation",
+    "lockedEntityRejection": true,
+    "outOfBoundsRejection": true,
+    "deterministicSerialization": true,
+    "atomicSemanticRevision": true,
+    "undoableThroughSceneCommand": true
+  },
+  "benchmark": {
+    "corpus": "10k-entities-one-relationship-one-commit-two-queries",
+    "entityCount": 10000,
+    "relationshipCount": 1,
+    "operationCount": 1,
+    "queryCount": 2,
+    "changedEntityCount": 2,
+    "elapsedMs": 151,
+    "budgetMs": 2000,
+    "deterministicReread": true,
+    "noExternalWrite": true
+  },
+  "verification": {
+    "rustUnitTests": "8/8 PASS",
+    "focusedTypeScriptTests": "3 files / 17 tests PASS",
+    "fullSuite": "83 files / 348 tests PASS",
+    "desktopBuild": "PASS",
+    "tauriDebugBuild": "PASS",
+    "tooling": "PASS",
+    "liveDesktopCommit": "PASS: packaged frontend invoked 10k native commit at revision 0, applied one SceneCommand revision, undid to revision 2, and issued a native reread from restored X=608",
+    "liveNativeReceipts": [
+      "beforeRevision=0 afterRevision=1 entities=10000 patches=1 beforeX=608 afterX=616 noWrite=true",
+      "beforeRevision=2 afterRevision=3 entities=10000 patches=1 beforeX=608 afterX=616 noWrite=true"
+    ],
+    "recovery": "Windows Computer Control failed at the capture layer with SetIsBorderRequired 0x80004002 before any click. Authoritative reread proved no click. The retry class was stopped and replaced by a packaged-app commit/undo/reread self-test over the same frontend and IPC boundary."
+  },
+  "hashes": {
+    "geometryCargo": "C95B9B52A2EDBC0C9A863DB25233C1443495490862A5176DFB4F230576624BB5",
+    "geometryBenchmark": "D6192B078B31319897039F4ED57C0BFC879E9A6C0D3985CE312FF41D26F4C47E",
+    "geometryKernel": "C6AC1A408B15B7B8866CFEDA1E925AF5A44BAD320B58644EDCE64B7FB9D70660",
+    "tauriCommand": "7B76CE4421B6681635A4F3CD2CAB4F0A31179B26E4488784D806A62553FC0AFA",
+    "typescriptAdapter": "7F080537B04B6019523FA1B6B6BBF4BA76E50F0D80DB7A7D985A8FA7E82296C6",
+    "sceneCommands": "79F3E9318684AB0AE5F492E4325298DFF05FFD182F36F880D55E6C47F9EC0DFF",
+    "desktopApp": "C82420221EE0ECBEF326AC6AB1781A0C7ED4BAA5A81A8320F5BC707A2479BB48",
+    "adapterTests": "B726B6F6FD312CA599245A0E03C2899262CD9AB4D3EE8DF717802D52EA7599DA",
+    "packagedDebugExecutable": "32679DD892F1DACF5CB5D5857021E870F736C9E9487CDAECF7B99EF9C9359553"
+  },
+  "blockers": []
+}

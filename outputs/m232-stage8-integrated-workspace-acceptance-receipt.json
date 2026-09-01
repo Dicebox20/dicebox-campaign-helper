@@ -1,0 +1,62 @@
+{
+  "operation": "dicebox.project.stage8-integrated-workspace-acceptance.packaged-restart-receipt",
+  "status": "PASS_LOCAL",
+  "sourceId": "SRC-M233-STAGE8-INTEGRATED-WORKSPACE-ACCEPTANCE-CLOSURE",
+  "decisionId": "D-267",
+  "scope": "One M232-authorized fixed-root test-owned ordinary-user workspace proof. It does not complete Stage 8, alpha, Foundry certification, or vision-assisted Spatial Blueprint work.",
+  "project": {
+    "projectId": "dbx:project:desktop-workspace-acceptance-self-test",
+    "generation": 2,
+    "contentSha256": "c95b3b251f614065b796d5a86e19d96820bb40a36509bd91b9d82e69715ad979",
+    "sceneOrder": [
+      "dbx:scene:desktop-workspace-acceptance-self-test-main",
+      "dbx:scene:desktop-workspace-acceptance-self-test-scene-2"
+    ],
+    "sceneSha256": [
+      "0aa864388ef466a59095daa0a2976724382f45a20ad442b8b9b81135dd6c248a",
+      "bba868a7d9d2816983dd7069cea8de7b6786aadb74a4a591db197f4a9e99f1fc"
+    ],
+    "activeSceneId": "dbx:scene:desktop-workspace-acceptance-self-test-scene-2",
+    "assetId": "dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "assetSha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "assetBinding": "Only Scene 2 names the registered PNG background.",
+    "workspaceDisplayName": "Stage 8 Workspace Acceptance Renamed",
+    "workspaceLastOpenedSequence": 12,
+    "projectBackup": {
+      "generation": 1,
+      "contentSha256": "0cf44680f7182075dacb708c4af8e0131b40a0e8352d189db8e9f122278c5050",
+      "status": "VALID"
+    }
+  },
+  "packagedAcceptance": {
+    "mode": "workspace-acceptance",
+    "result": "PASS: absent target created, same project renamed, two ordered Scenes retained with Scene 2 active, one registered background bound only to Scene 2, primary and backup envelopes validated, and no Foundry write."
+  },
+  "freshProcessReread": {
+    "mode": "workspace-acceptance-reread",
+    "result": "PASS: the fresh packaged process reread identical project ID, generation, content hash, ordered Scene hashes, active binding, workspace entry, backup disposition, and no Foundry write."
+  },
+  "ordinaryStartup": {
+    "mode": "no VITE_DBX_PROJECT_SELF_TEST",
+    "result": "PASS: ordinary packaged startup opened and closed with no active project and no self-test title; project, backup, and workspace-index bytes were unchanged.",
+    "beforeAfterSha256": {
+      "project.json": "DB15BF32604F3851F7E1A67BAF7865E8371E7869B3296DB92B51151926B45045",
+      "project.backup.json": "6D6E6FBEFF5CD58047A6DB91D55D8151515EE95B658D89065E11AEF3F5AA834E",
+      "workspace-index.json": "FF7940A4116F50383E3389BA8A4A1CD22C86A43A544D7001F466448D611F2C86"
+    }
+  },
+  "deterministicVerification": {
+    "desktopBuild": "PASS",
+    "focusedTests": "PASS: 4 files, 50 tests",
+    "workflowCheck": "PASS: 7 of 16 stages; real-project-workspaces remains the sole active stage.",
+    "knowledgeBase": "M232 authorization rebuild and integrity verification passed before implementation.",
+    "diffHygiene": "PASS: changed implementation/test paths."
+  },
+  "preservedBoundaries": [
+    "No Foundry process, fixture, document, macro, or adapter mutation occurred.",
+    "The test refuses to overwrite an existing fixed test-owned project ID.",
+    "No schema, asset-role, durability, deletion, broad recovery, migration, alpha, or vision capability change is claimed.",
+    "Google Docs and GitHub bridge publication remain scheduled communication mirrors and were not used as an implementation gate."
+  ],
+  "nextAction": "Reconcile current Stage 8 gaps against the local roadmap/card and reproducible KB before accepting any further workspace change."
+}

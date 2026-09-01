@@ -1,0 +1,11 @@
+{
+  "milestone": "M431",
+  "stage": 11,
+  "classification": "BLOCKED_LOCAL_PACKAGED",
+  "runCount": 1,
+  "package": {"bundle": "index-cHyFxhKM.js", "currentLifecycleMarker": true, "guardedStageMarker": true},
+  "terminal": {"exitCode": 0, "isRecoveryProof": false},
+  "postRunFixture": {"primaryExists": false, "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B", "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2", "desktopProcessCount": 0},
+  "recoveryDisposition": "No retry; terminal semantics require read-only reconciliation.",
+  "prohibitedActionsNotPerformed": ["retry", "session reset/clear", "recovery apply beyond the one observed callback attempt", "fixture/project mutation outside existing exact fixture route", "Foundry activity"]
+}

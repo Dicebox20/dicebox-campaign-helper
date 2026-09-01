@@ -1,0 +1,58 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m322-stage11-project-rename-review-surface-integration-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M322",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "implementation": {
+    "source": "apps/campaign-helper-desktop/src/App.tsx",
+    "tests": "tests/desktop-project-proposal-review.test.ts",
+    "reviewEntryPoint": "Review selected rename as proposal",
+    "sessionSeam": "createDesktopProjectRenameProposalSession",
+    "noApply": true,
+    "ipcCalls": 0,
+    "projectContentWrite": false,
+    "workspaceMetadataWrite": false,
+    "provider": null,
+    "credentials": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "behavior": [
+      "requires an exact selected PASS catalog entry and current content hash",
+      "creates the M320 metadata-only rename preview from current/proposed display names and workspace generation",
+      "routes the resulting batch through the M321 exact project-target session",
+      "renders human/no-provider provenance, project target, generation/base hash, medium risk, operation/history, and current-to-proposed names",
+      "reuses session-only approve/reject/cancel/stale/terminal-clear controls and preserves backup-recovery/Scene review paths",
+      "never exposes an Apply button or invokes native rename/project-store execution"
+    ]
+  },
+  "validation": {
+    "focusedTests": "4 desktop review/session/adapter files / 13 tests passed",
+    "desktopBuild": "TypeScript and Vite build passed",
+    "sourceHash": "08B4388C7EA96ED09AFC02B06B81827BB8614C56AC5E160A72C74391F6C4B28E",
+    "testHash": "04AAD837D8825B9EEAA0716A3C4E3E184B65FAF9DD0F7B40160040B6629DB8E3",
+    "sessionHash": "24428FA7E60F805A1D9DDBBA5AB9883877DE79AF8C78E7BA2FFF152AF7736C8B"
+  },
+  "selectedNextSlice": {
+    "milestone": "M323",
+    "name": "project-rename packaged no-write observation",
+    "scope": "Run one fresh exact packaged desktop observation of the selected rename review path with accessibility-first capture, visible metadata, session-only lifecycle transition, immediate rereads, and unchanged project/workspace bytes. Do not execute or persist rename, add other producers, use providers/credentials/browser storage, touch Foundry, or enter player passwords.",
+    "reason": "M320-M322 prove the pure envelope, exact session seam, and source/UI routing; a bounded packaged reread is required before any claim about the integrated review surface.",
+    "excluded": ["rename execution", "workspace metadata persistence", "project create/save/save-as", "asset import", "add Scene", "provider", "credentials", "browser storage", "Foundry", "Stage 11 acceptance", "later stages"]
+  },
+  "doesNotProve": [
+    "packaged desktop behavior for the rename review path",
+    "native project-store rename preview generation",
+    "rename execution or workspace metadata mutation",
+    "generic proposal conformance for create/save/save-as, asset import, or add-Scene",
+    "Technical Builder repository promotion",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

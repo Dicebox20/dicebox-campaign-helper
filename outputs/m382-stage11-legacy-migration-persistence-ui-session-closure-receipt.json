@@ -1,0 +1,67 @@
+{
+  "milestone": "M382",
+  "operation": "dicebox.project.migration.persist",
+  "status": "PASS LOCAL PACKAGED",
+  "projectId": "dbx:project:desktop-legacy-migration-persistence-self-test-v2",
+  "scope": "Exact legacy migration-persistence UI proposal/session boundary only; no backup promotion, asset recovery, deletion, cleanup, generic Stage 11 acceptance, provider, credential, browser, Foundry, or player-password authority.",
+  "proposal": {
+    "operation": "project.migration.persist",
+    "producer": "project-store",
+    "provider": null,
+    "targetBound": true,
+    "metadataOnly": true,
+    "rawBytesInHistory": false,
+    "reviewAuthority": "human-review",
+    "targetAuthority": "local-project",
+    "history": ["previewed", "approved", "applying", "committed"],
+    "historyLength": 4
+  },
+  "migration": {
+    "sourceSchemaVersion": "0.2.0",
+    "targetSchemaVersion": "0.3.0",
+    "generation": { "before": 1, "after": 2 },
+    "persistedLegacyContentSha256": "d9808d6c9f20de6e97c6f71aee14f30d172694db977de9a1f745e2d36f042eaf",
+    "resultingCurrentContentSha256": "9332a43ceed73e565bba236ca2f1d5949385e03455956d93b09203c3610779ad",
+    "previewSha256": "e8eb6028e04d495d729823a430e7fb0f0448df80be3b56488996f4631224e8e6",
+    "sceneCount": 2,
+    "assetCount": 1,
+    "semanticStateUnchanged": true,
+    "assetTreeUnchanged": true,
+    "workspaceUnchanged": true,
+    "foreignStateUnchanged": true,
+    "backupPreservesLegacyPrimary": true,
+    "authoritativeCurrentReread": true,
+    "directoryEntrySync": true
+  },
+  "rereads": {
+    "project": { "status": "PASS", "migrationStatus": "current", "generation": 2, "contentSha256Matched": true },
+    "recovery": { "status": "PASS", "primarySchemaVersion": "0.3.0", "backupSchemaVersion": "0.2.0", "noWrite": true },
+    "workspace": { "status": "PASS", "catalogTargetMatched": true, "generationMatched": true, "contentSha256Matched": true, "noWrite": true }
+  },
+  "deterministicValidation": {
+    "focusedTests": "100/100 across 3 suites",
+    "fullValidation": "124 files / 669 tests",
+    "desktopTypeScriptViteBuild": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS 10/16; active stage proposal-approval-history",
+    "foundryWrites": 0
+  },
+  "packagedSelfTest": {
+    "mode": "migration-persist-setup",
+    "callbackAssertions": "PASS",
+    "fixtureStateReread": "PASS",
+    "processExit": "outcome reached PASS callback, but debug Tauri process did not exit within 45 seconds and was stopped by exact executable identity",
+    "lifecycleLimitation": true
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "C7041F5A5A8D3C847812199E0754E2542F68FAB3E1BA8B2DC02694C7B60070C4",
+    "apps/campaign-helper-desktop/src/project-recovery-proposal-adapter.ts": "5079CCD21B839ECD9C81D2C6382DB0D8B4CC42E4A80620D9082D0195BF0FDA6A",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "C54C12CFC27606375225A34E6667EBE6CF310B034D4C9F0FE4CDE4B6426A39E6",
+    "apps/campaign-helper-desktop/src/project-store.ts": "6BFD20CB1AEA42A30918734CB43844048D78D051E8DA4183E9FC509CE4ADEFB5",
+    "tests/desktop-project-proposal-review.test.ts": "55F40C815148BE5C420B6A1FC6FEA85629E22E76688CECABECBABAB8809EE2F2",
+    "tests/desktop-shell-configuration.test.ts": "19BEA584737D53C97D71F602F5EBFB2EB214C2BC1215C58A2016B7010A6EE435",
+    "tests/knowledge-base-query.test.ts": "0A939FBA99A873BF8E533E0066E28E58B040B5C08B5FC39168D7FAF7FB30DFA7"
+  },
+  "noFoundryWrite": true,
+  "nextBoundary": "Fresh read-only producer-family reconciliation before selecting the next separately synchronized checklist target."
+}

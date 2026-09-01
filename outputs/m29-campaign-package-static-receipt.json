@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "0.1.0",
+  "operation": "campaign.package.compile.static.receipt",
+  "status": "reviewable",
+  "evidenceClass": "deterministic",
+  "readyClaim": false,
+  "noWrite": true,
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "compiler": {
+    "source": "packages/dicebox-compiler/src/campaign-package.ts",
+    "command": "npm run compile:campaign",
+    "campaignFixture": "packages/dicebox-core/src/campaign-test.ts",
+    "regionwrightHandoff": "packages/dicebox-core/src/ascendancy-handoff.ts",
+    "tramProjection": "packages/dicebox-compiler/src/tram-scene-plan.ts"
+  },
+  "compiledContent": {
+    "personalPuzzleCount": 6,
+    "cooperativeStageCount": 3,
+    "finalStationCount": 6,
+    "boundSceneAssetCount": 1,
+    "finalMapRequiredCount": 3,
+    "tramCanvas": "1536x1024",
+    "tramLogicalBoard": "6x6",
+    "tramAnchorCount": 36
+  },
+  "mapPolicy": {
+    "bound": "assets/maps/ascendancy-tram-depot-v2.png",
+    "unboundRooms": [
+      "dbx:room:signal-frequency-chamber",
+      "dbx:room:rune-mechanism-chamber",
+      "dbx:room:central-core-control-chamber"
+    ],
+    "reason": "Existing non-tram images are provisional style studies and are not silently promoted to campaign scenes."
+  },
+  "runtimePreflight": {
+    "observedWorld": "regionwright-testmap",
+    "observedFoundry": "14.365",
+    "targetFoundry": "14.367",
+    "observedSystem": "dnd5e 5.3.3",
+    "diceboxModuleInstalled": false,
+    "liveMutation": "not attempted",
+    "blocker": "Exact target world/runtime and installation destination require user confirmation."
+  },
+  "tests": {
+    "focusedCampaignPackageTests": 2,
+    "focusedCampaignIntegrationTests": 11,
+    "build": "pass"
+  },
+  "mutation": "disabled-until-exact-runtime-gate"
+}

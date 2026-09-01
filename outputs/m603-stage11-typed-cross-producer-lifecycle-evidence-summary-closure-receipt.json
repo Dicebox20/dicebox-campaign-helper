@@ -1,0 +1,84 @@
+{
+  "operation": "stage11-typed-cross-producer-lifecycle-evidence-summary",
+  "milestone": "M603",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T06:43:59-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "knowledgeBaseGate": {
+    "authorization": "D-748",
+    "rebuild": "PASS",
+    "integrity": "ok",
+    "counts": { "sources": 996, "facts": 863, "decisions": 748, "openItems": 135, "trials": 742 }
+  },
+  "implementation": {
+    "status": "PASS",
+    "source": "Typed non-executing cross-producer evidence summary derived from the M594 reconciled eleven-family disposition.",
+    "producerFamilyCount": 11,
+    "uniqueFamilyIds": true,
+    "everyEntryNonCertifying": true,
+    "everyEntryHasRemainingGap": true,
+    "visibleReadOnlySummary": true,
+    "aggregateStage11AcceptanceRemainsPartial": true,
+    "executionAuthorityAdded": false,
+    "approvalSemanticsChanged": false,
+    "applySemanticsChanged": false,
+    "persistenceSemanticsChanged": false,
+    "authorityBridgeAdded": false,
+    "visibleTestId": "cross-producer-lifecycle-evidence-summary"
+  },
+  "validation": {
+    "focusedVitest": "PASS: 4 files / 19 tests",
+    "desktopTypeScript": "PASS",
+    "diffCheck": "PASS",
+    "processReread": "desktop=0,cargo=0,rustc=0"
+  },
+  "artifacts": [
+    { "path": "apps/campaign-helper-desktop/src/project-review-producer-evidence.ts", "sha256": "7AEBD79FDAE4BCD59207A85245941D47FE2C7C1C078BE7AB046DE73A7101829C", "bytes": 4578 },
+    { "path": "apps/campaign-helper-desktop/src/App.tsx", "sha256": "5B3590087CB4A343895FCF6CD854235DA48D4868D14EB28615D01A4E89621FDF", "bytes": 505464 },
+    { "path": "tests/project-review-producer-evidence.test.ts", "sha256": "BB617DAC16C5368DA947267E0C075403E8BFFD7635169D039F0B68A6F08C6CCE", "bytes": 1627 }
+  ],
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M603 closes the local typed evidence-summary gap by rendering all eleven reconciled producer-family dispositions as non-certifying read-only metadata. A fresh artifact and packaged observation remain separately gated; no execution or authority bridge was added."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M604",
+    "title": "Stage 11 fresh cross-producer evidence-summary artifact",
+    "status": "authorized-next",
+    "scope": "Run exactly one desktop debug package build containing the M603 typed eleven-family evidence summary, then attest summary markers, family count, hashes, and process absence. Do not launch or capture."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-review-producer-evidence.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/project-review-producer-evidence.test.ts",
+    "outputs/m603-stage11-typed-cross-producer-lifecycle-evidence-summary-closure-receipt.json"
+  ]
+}

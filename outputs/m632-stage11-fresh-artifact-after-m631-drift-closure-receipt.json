@@ -1,0 +1,69 @@
+{
+  "operation": "stage11-fresh-artifact-after-m631-drift",
+  "milestone": "M632",
+  "status": "PASS_LOCAL_FRESH_ARTIFACT_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T08:51:52-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "invocationCount": 1,
+    "status": "PASS",
+    "rendererPath": "apps/campaign-helper-desktop/dist/assets/index-BOaLNkeL.js",
+    "rendererBytes": 2078043,
+    "rendererSha256": "C79D2087E4EE1DBE059A1D07EC7F154DC966382704D92B3ADC110F53A2938C5A",
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeBytes": 26887168,
+    "nativeSha256": "8A0E9A0F6F6AA434EDA6930DC243FD2E228A9438FE8DF5DAC9D15CB2E567CCA8"
+  },
+  "rendererMarkerReread": {
+    "operationHistoryTransitionCoverageMarker": true,
+    "operationSpecificHandlerBindingMarker": true,
+    "matrixTestId": true,
+    "operationRows": 14,
+    "historyStatesPerOperation": 11,
+    "coreTransitionProjectionConsumed": true,
+    "sourceBinding": "operation-handler-and-core-allowed-transitions",
+    "readOnlyMarker": true,
+    "nonCertifyingMarker": true,
+    "noExecutionAuthorityMarker": true,
+    "noGenericExecutorMarker": true,
+    "allRequiredTransitionTokensPresent": true
+  },
+  "processReread": {
+    "desktopProcessesAfterBuild": 0,
+    "cargoProcessesAfterBuild": 0,
+    "rustcProcessesAfterBuild": 0
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M632 produces the current owning artifact after M631 native drift, but it does not prove packaged accessibility visibility, transition execution, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, or aggregate authority across eleven producer families. No launch or capture occurred."
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": true,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/dist/assets/index-BOaLNkeL.js",
+    "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "outputs/m632-stage11-fresh-artifact-after-m631-drift-closure-receipt.json"
+  ]
+}

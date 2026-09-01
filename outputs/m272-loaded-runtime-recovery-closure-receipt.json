@@ -1,0 +1,65 @@
+{
+  "receiptVersion": 1,
+  "operation": "dicebox.foundry.loaded-runtime-recovery",
+  "status": "BLOCKED_AUTHENTICATION",
+  "evidenceClass": "blocked",
+  "timestamp": "2026-08-27T18:17:15.792Z",
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "port": 30002,
+    "foundryVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "authorization": {
+    "gate": "M272",
+    "oneClickMaximum": 1,
+    "nativeWorldLaunchClicks": 0,
+    "adminPasswordEntryConfirmed": true,
+    "adminPasswordValueRecorded": false
+  },
+  "observations": {
+    "supervisorStart": "PASS",
+    "serverReady": "PASS HTTP 302 /join",
+    "adminAuthentication": "BLOCKED: native /join rejected the newly generated fixture-local administrator secret",
+    "nativeWorldLaunch": "NOT_ATTEMPTED",
+    "clientSession": "UNOBSERVED",
+    "currentUser": "UNOBSERVED",
+    "activeGM": "UNOBSERVED",
+    "diceboxDaeMidiLoad": "UNOBSERVED",
+    "runtimeProfile": "UNOBSERVED",
+    "profileDiff": "UNOBSERVED",
+    "workerParity": "NOT_REPEATED: prior M270 current-worker parity remains the latest accepted observation"
+  },
+  "sourceReconciliation": {
+    "foundryConfigSource": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\dist\\core\\config.mjs",
+    "finding": "Foundry initializes --adminPassword only when no administrator password is already configured; a persisted existing administrator hash is not replaced by the launch argument.",
+    "credentialContentRead": false,
+    "credentialStoreModified": false
+  },
+  "recovery": {
+    "stop": "PASS exact-process-and-exclusive-port; normal stop failed closed and exact-owner force fallback succeeded",
+    "lockRecovery": "PASS empty owner-free options lock quarantined",
+    "finalStatus": "STOPPED",
+    "finalListenerCount": 0,
+    "finalLockPresent": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "preservation": {
+    "settingsChanged": false,
+    "usersChanged": false,
+    "campaignDocumentsChanged": false,
+    "bindingsChanged": false,
+    "behaviorExercised": false,
+    "foreignStateChanged": false,
+    "secretPersisted": false
+  },
+  "blockers": [
+    "The generated admin secret cannot authenticate against the existing v3 administrator configuration.",
+    "The prior administrator secret was intentionally not inspected, guessed, or persisted.",
+    "Loaded-runtime readiness and all dependent Stage 9 evidence remain unobserved."
+  ],
+  "readyClaim": false
+}

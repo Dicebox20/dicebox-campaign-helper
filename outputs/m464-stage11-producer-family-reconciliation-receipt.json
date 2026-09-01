@@ -1,0 +1,41 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M464",
+  "stage": "proposal-approval-history",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "evidenceLabel": "local",
+  "readyClaim": false,
+  "counts": {"projectWrites": 0, "workspaceWrites": 0, "sessionTransitions": 0, "foundryWrites": 0, "producerExecutions": 0},
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "producerFamilies": {
+    "readOnlyInspection": "closed read-only adapters; outside mutating acceptance",
+    "workspaceMetadata": "session-gated with dedicated executors and local review coverage",
+    "ordinaryPersistence": "Create, Save, Rename, and Save-as routes are exact-session-bound with operation-specific executors",
+    "inMemoryEditing": "Visible committed add-Scene preview, approval, apply, reread, and explicit undo is directly observed; durable persistence remains separate",
+    "assetImportBinding": "Handout, background, WAV audio, and PNG/WebP token routes retain exact typed UI closures",
+    "legacyMigration": "project.migration.persist remains target-bound and uses its typed migration engine",
+    "backupPromotion": "Visible preview, exact session, reviewer approval, and typed apply callbacks exist; M463 cleared the stale legacy session, but a fresh packaged recovery lifecycle is still required",
+    "assetRestore": "session-gated; no fresh packaged visible lifecycle selected",
+    "assetDetach": "session-gated; no fresh packaged visible lifecycle selected",
+    "brokenReferenceDetach": "session-gated; no fresh packaged visible lifecycle selected",
+    "fixtures": "test harness only and excluded from general product acceptance"
+  },
+  "currentEvidence": {
+    "m384": "14-kind local project review/apply coverage with dedicated operation-specific handlers",
+    "m386_m391": "no-write review readiness coverage aligned to the current 14-operation surface",
+    "m395": "visible committed in-memory add-Scene lifecycle",
+    "m451": "current recovery command mapping uses project.recovery.backup-promote",
+    "m463": "stale test-owned legacy recovery session cancelled, terminal-cleared, and reread MISSING without recovery apply"
+  },
+  "selectedNextSlice": {
+    "milestone": "M465",
+    "scope": "Build one fresh debug artifact for the existing backup-promotion-ui-execute route with terminal exit enabled, then attest artifacts and protected state only.",
+    "excluded": ["launch", "capture", "session transition", "proposal approval", "recovery apply", "project mutation", "retry", "Foundry activity"]
+  },
+  "doesNotProve": ["generic Stage 11 acceptance", "every-mutating-path acceptance", "recovery breadth", "Foundry or active-GM authority", "Stage 16 UI", "Ready-to-Play"]
+}

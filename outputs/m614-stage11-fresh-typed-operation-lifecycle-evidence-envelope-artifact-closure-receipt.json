@@ -1,0 +1,69 @@
+{
+  "operation": "stage11-fresh-typed-operation-lifecycle-evidence-envelope-artifact",
+  "milestone": "M614",
+  "status": "ARTIFACT_ATTESTED_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T07:30:21-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "buildCount": 1,
+    "frontendTypeScriptAndVite": "pass",
+    "nativeArtifact": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeBytes": 26887168,
+    "nativeSha256": "20A113C8D83AF905CAF94B493771EC042173970380F5BD3DC33C61E89F967BD1",
+    "rendererBundle": "apps/campaign-helper-desktop/dist/assets/index-CZX7-gWt.js",
+    "rendererBytes": 2067317,
+    "rendererSha256": "81EE9485588FA348AC6E1AE88CFF91D3DFC823C83FBD11BEB819F4DF0886D1C1"
+  },
+  "markers": {
+    "exactOperationKinds": "14/14",
+    "missingOperationKinds": [],
+    "typedEnvelopeSummary": true,
+    "typedEnvelopeTestId": true,
+    "readOnlyNonCertifyingMetadata": true,
+    "noExecutionAuthority": true,
+    "aggregateStage11Partial": true,
+    "genericOperationLifecycleExecutorAbsent": true,
+    "processesAfterBuild": {
+      "diceboxCampaignHelperDesktop": 0,
+      "cargo": 0,
+      "rustc": 0
+    }
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M614 attests a current native and renderer artifact containing M613’s exact 14-operation typed evidence envelope and visible read-only/non-certifying/no-execution markers. This artifact does not establish packaged accessibility behavior, cross-producer execution, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, aggregate authority, or Stage 11 acceptance."
+  },
+  "scope": {
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "nextBoundary": {
+    "milestone": "M615",
+    "title": "Stage 11 packaged typed operation-lifecycle evidence envelope observation",
+    "status": "requires-separate-authorization",
+    "scope": "Run one bounded accessibility-first observation against the exact M614 artifact, preserve the first PASS/partial/timeout/blocker, and reread process state. No retry, screenshot/UI-helper recovery, browser storage, session operation, fixture cleanup, project/runtime mutation, provider, credential, repository promotion, Technical Builder, Foundry, player-password, Stage 11 acceptance, Stage 12, or Ready-to-Play work."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/dist/assets/index-CZX7-gWt.js",
+    "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "outputs/m614-stage11-fresh-typed-operation-lifecycle-evidence-envelope-artifact-closure-receipt.json"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "receiptVersion": 1,
+  "operation": "ascendancy.fixture.status",
+  "status": "OBSERVED",
+  "evidenceClass": "fixture-only",
+  "readyClaim": false,
+  "noWrite": true,
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "activeGm": true
+  },
+  "authoritativeReread": true,
+  "allowedOperations": [
+    "status",
+    "preview-full-owned-reset",
+    "apply-full-owned-reset"
+  ],
+  "sceneSummary": [
+    { "roomId": "dbx:room:signal-frequency-chamber", "statePresent": false, "unknownStateKeys": [], "regionCount": 6, "wallCount": 8, "regionwrightFlaggedRegionCount": 5 },
+    { "roomId": "dbx:room:ascendancy-tram-depot", "statePresent": false, "unknownStateKeys": [], "regionCount": 39, "wallCount": 6, "regionwrightFlaggedRegionCount": 3 },
+    { "roomId": "dbx:room:rune-mechanism-chamber", "statePresent": false, "unknownStateKeys": [], "regionCount": 6, "wallCount": 8, "regionwrightFlaggedRegionCount": 5 },
+    { "roomId": "dbx:room:central-core-control-chamber", "statePresent": false, "unknownStateKeys": [], "regionCount": 9, "wallCount": 8, "regionwrightFlaggedRegionCount": 8 }
+  ],
+  "notes": [
+    "This is a redacted summary of the GM-only read-only dialog output. The runtime-provided receipt had harnessVersion 1.1.0.",
+    "No Scene, Wall, Region, RegionBehavior, Macro, or settings mutation was performed.",
+    "Fixture startup logged duplicate premium puzzle registration errors caused by the cache-buster and legacy companion import loading separate premium-module instances. This audit does not certify reset, progression, or Ready-to-Play."
+  ]
+}

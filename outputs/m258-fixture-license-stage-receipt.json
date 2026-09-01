@@ -1,0 +1,33 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:fixture-license-stage",
+  "operation": "foundry.fixture.stage-license",
+  "timestamp": "2026-08-27T13:35:14.368Z",
+  "evidenceClass": "fixture",
+  "readyClaim": false,
+  "noWrite": false,
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "target": {
+    "sourceRoot": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v2",
+    "destinationRoot": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "sourcePath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v2\\Config\\license.json",
+    "destinationPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Config\\license.json",
+    "relativePath": "Config/license.json"
+  },
+  "status": "PASS",
+  "source": {
+    "bytes": 836,
+    "sha256": "A61905EC3858FE8B90F7E5C473E1D207A3B5C7174DA904711FCA82AE637F13CE"
+  },
+  "destination": {
+    "bytes": 836,
+    "sha256": "A61905EC3858FE8B90F7E5C473E1D207A3B5C7174DA904711FCA82AE637F13CE"
+  },
+  "copyScope": [
+    "Config/license.json"
+  ],
+  "worldCopied": false,
+  "temporaryArtifact": false,
+  "blockers": []
+}

@@ -1,0 +1,62 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m314-stage11-fresh-packaged-project-recovery-observation-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M314",
+  "evidenceLabel": "local",
+  "status": "BLOCKED",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "target": {
+    "surface": "local packaged Tauri desktop",
+    "windowTitle": "DiceBox Campaign Helper",
+    "windowId": 199166,
+    "windowSelectedUniquely": true,
+    "app": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe"
+  },
+  "observation": {
+    "mode": "documented accessibility-only capture",
+    "includeScreenshot": false,
+    "includeText": true,
+    "accessibilityPresent": true,
+    "accessibilityTextLength": 19736,
+    "reviewHeadingRendered": true,
+    "reviewControlsFound": 5,
+    "preparedBackupPreviewPending": false,
+    "projectSelected": false,
+    "projectSessionOpen": false,
+    "proposalSessionStored": false,
+    "visibleStatus": "No persisted project is active; the visible foundation Scene is an unsaved template.",
+    "catalogStatus": "25 catalog entries · choose or create a project; no implicit fixture write"
+  },
+  "containment": {
+    "inputAttempted": false,
+    "projectStateRead": false,
+    "projectStateChanged": false,
+    "proposalSessionChanged": false,
+    "providerUsed": false,
+    "credentialsUsed": false,
+    "foundryUsed": false,
+    "browserStorageInspected": false,
+    "packagedProcessStoppedAfterObservation": true,
+    "listener1420AfterStop": false
+  },
+  "recovery": {
+    "capturePath": "M313 accessibility-only packaged observation",
+    "observationPathAvailable": true,
+    "acceptanceEvidenceAvailable": false,
+    "disposition": "M314 stopped before input because the fresh packaged instance had no selected persisted project, no open project session, and no prepared backup-authoritative preview. Authorize a separate bounded local fixture-preparation slice before another review observation."
+  },
+  "doesNotProve": [
+    "project-target proposal metadata or lifecycle",
+    "project/session state before or after approval",
+    "backup-authoritative promotion preview behavior",
+    "project operation execution or persistent project mutation",
+    "provider or credential behavior",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

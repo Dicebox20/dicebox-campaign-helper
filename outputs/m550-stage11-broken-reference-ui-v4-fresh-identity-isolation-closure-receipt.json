@@ -1,0 +1,84 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.v4-fresh-identity-isolation",
+  "milestone": "M550",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-29T23:12:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "changes": {
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": {
+      "sha256": "97B0C3C5D85E23261F0EBA7F308D40B6FC1CAF61CE8484515BDA19A820BF96B0",
+      "change": "Added fixed v4 identity and closed typed namespace, ordinary API rejection, and typed v4 load/save/clear wrappers."
+    },
+    "apps/campaign-helper-desktop/src/project-store.ts": {
+      "sha256": "8F1B7FE9C9892E4D37607CE8435910B82E2D038CF4D985F587B27A73458DABA0",
+      "change": "Added the v4 fixture-command adapter."
+    },
+    "apps/campaign-helper-desktop/src/App.tsx": {
+      "sha256": "A6D7F4D0BFFE39ECF380D570C26F32D8BDA71728E9A03A0BADA698FD8976FF2C",
+      "change": "Added v4 self-test mode, fixture route, scope selection, and session loader/persistence selection."
+    },
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs": {
+      "sha256": "6E922B4EFB2B1D5977CBBECDE85CC4AA34DD36B80957274F303AA7589C0AB50E",
+      "change": "Added the fixed v4 fixture identity and native fixture wrapper."
+    },
+    "apps/campaign-helper-desktop/src-tauri/src/lib.rs": {
+      "sha256": "6BBA7B6F7EBC0F71555CFA638ED31CBA6271AF12B313466A3C4855A5B68552EB",
+      "change": "Registered the debug-only v4 fixture command."
+    },
+    "tests/project-proposal-session.test.ts": {
+      "sha256": "0F4BEF6FAD6EE028281989DF60887DE870CF554DA65DA641A9F87235528E4000",
+      "change": "Added v4 cross-namespace isolation and terminal-clear coverage while preserving v3/v2 sessions."
+    },
+    "tests/broken-reference-ui-selftest.test.ts": {
+      "sha256": "4AB9812F790973B9E5DACC5DC7D528A1E0B5B278793DDA184027D4ECFA8336E7",
+      "change": "Added v4 route, fixture, namespace, and native-shell marker assertions."
+    }
+  },
+  "validation": {
+    "focusedVitest": "PASS: 2 files, 14 tests",
+    "desktopTypeScriptNoEmit": "PASS",
+    "nodeTypeScriptNoEmit": "PASS",
+    "diffCheck": "PASS",
+    "isolationCases": [
+      "v4 key is distinct from v2 and v3 keys",
+      "ordinary project-session API rejects v4 identity",
+      "v4 load/save/clear uses only the v4 closed namespace",
+      "v4 terminal clear does not remove v3 or v2 sessions",
+      "v3 and v2 sessions remain readable after v4 clear",
+      "v4 route selects fixed identity, fixture, loader, and scope"
+    ]
+  },
+  "preservation": {
+    "v2": "preserved",
+    "v3": "preserved",
+    "ordinaryApiBoundary": "preserved and extended to v4",
+    "sessionAuthorityGates": "preserved",
+    "browserStorageInspected": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "sessionOperation": false,
+    "fixtureMutation": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "nextBoundary": {
+    "milestone": "M551",
+    "scope": "One fresh exact v4 debug package build with marker and process reread only.",
+    "prohibited": [
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "v2/v3/v4 session operation",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M550 is local code/test evidence only; it does not certify artifact embedding, packaged behavior, Stage 11, Foundry authority, or Ready-to-Play."
+}

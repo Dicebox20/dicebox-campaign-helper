@@ -1,0 +1,65 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.artifact-build",
+  "milestone": "M531",
+  "status": "PASS_LOCAL_ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-29T21:20:06-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "broken-reference-detach-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "exitCode": 0,
+    "duration": "57.37s"
+  },
+  "artifacts": [
+    {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "6D0585A655370CEBFFFAB09078EAF7A7908E7DA2B2CEF473163FD3EC344DA793"
+    },
+    {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-Df_KD9pt.js",
+      "sha256": "2A54CBB703A8A8B4C63EA5E542CED5D885A0F2AF3FD22C1BA602DEDB4FC41322"
+    }
+  ],
+  "markerAttestation": {
+    "status": "PASS",
+    "markers": [
+      "broken-reference-detach-ui-execute",
+      "createDesktopBrokenReferenceUiOwnershipToken",
+      "createDesktopBrokenReferenceUiOwnedProposalBatch",
+      "classifyDesktopBrokenReferenceUiSessionOwnership",
+      "session-preflight",
+      "ownershipToken",
+      "TEST_OWNED_EXACT",
+      "BACKGROUND_ASSET_ROLE_MISMATCH",
+      "hasTargetProjectPendingArtifact",
+      "no session was replaced",
+      "finishProjectSelfTest",
+      "authoritative-reread"
+    ]
+  },
+  "processReread": "PASS: no desktop, Cargo, or Rustc process remained",
+  "validation": {
+    "artifactBuild": "PASS",
+    "sourcePackageTypeChecks": "PASS before build",
+    "focusedTests": "PASS: 4 files, 15 tests",
+    "workflow": "PASS: 10/16 gates, Ready-to-Play false"
+  },
+  "excludedActions": [
+    "launch",
+    "capture",
+    "browser-storage inspection",
+    "session clearing or replacement",
+    "approval/apply/recovery",
+    "fixture/project/runtime mutation",
+    "Foundry action",
+    "provider or credential access",
+    "player-role password creation"
+  ],
+  "nextBoundary": "M532: one timeout-aware exact packaged capture against this executable followed by trace/receipt and authoritative target/session/process reread; preserve any BLOCKED or timeout outcome and do not retry.",
+  "readyToPlay": false,
+  "notes": "The configured self-test exit flag makes the executable close promptly after its run; this artifact-only milestone did not launch it."
+}

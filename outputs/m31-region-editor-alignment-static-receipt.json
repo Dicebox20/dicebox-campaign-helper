@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "0.1.0",
+  "operation": "campaign.ascendancy.region-editor-alignment.static.receipt",
+  "status": "reviewable",
+  "evidenceClass": "deterministic",
+  "readyClaim": false,
+  "noWrite": true,
+  "sourceRoot": "C:\\Users\\rujie\\Documents\\Region Editor",
+  "contractSource": "packages/dicebox-core/src/ascendancy-handoff.ts",
+  "verifiedBoundaries": {
+    "pairFinalEdges": "dbx:pair:* origins",
+    "activationRound": "explicit finalActivation.activationRound; round changes reset activeUsers",
+    "sameRoundCompletion": "six intended roles required within one activation round",
+    "cooperativeHook": "regionwright.ascendancyCooperativeStage is entry-notification-only",
+    "cooperativeCompletion": "pairs[pairId].cooperativeComplete after advanceCooperativeStage"
+  },
+  "regionEditorEvidence": {
+    "tests": 126,
+    "testsPassed": 126,
+    "syntaxChecks": "pass",
+    "premiumBuild": "pass",
+    "liveFoundry": "not-exercised"
+  },
+  "notes": [
+    "This verifies source-level Region Editor alignment only; it does not certify live Foundry permissions, sockets, Region events, persistence, or read-back.",
+    "No live mutation was performed."
+  ]
+}

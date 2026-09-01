@@ -1,0 +1,27 @@
+{
+  "operation": "dicebox.desktop.self-test.capture",
+  "status": "PASS",
+  "executable": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+  "executableName": "dicebox-campaign-helper-desktop.exe",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": {
+    "text": "DBX_PROJECT_BROKEN_REFERENCE_UI_LIFECYCLE_FIXTURE_V3 status=PASS project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3 targetAsset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 scenes=2 noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=inspect status=BLOCKED project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3 blocker=BACKGROUND_ASSET_ROLE_MISMATCH eligible=false assets=0 pendingArtifacts=1 noWrite=true noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=broken-reference-detach-preview status=PREVIEW project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3 scene=dbx:scene:desktop-broken-reference-ui-lifecycle-self-test-v3-target asset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 blocker=BACKGROUND_ASSET_ROLE_MISMATCH generation=1 nextGeneration=2 previewSha256=02b48c488c08395069a3f2b89622e2bc911b1d29ce29c9a6e0058896017d18d7 descriptorPreserved=true noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=loaded detail=broken-reference-ui-lifecycle:session-preflight:MISSING;fixture-reread\nDBX_PROJECT_RECOVERY operation=broken-reference-detach-preview status=PREVIEW project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3 scene=dbx:scene:desktop-broken-reference-ui-lifecycle-self-test-v3-target asset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 blocker=BACKGROUND_ASSET_ROLE_MISMATCH generation=1 nextGeneration=2 previewSha256=02b48c488c08395069a3f2b89622e2bc911b1d29ce29c9a6e0058896017d18d7 descriptorPreserved=true noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=previewed detail=broken-reference-ui-lifecycle:recovery-proposal-session\nDBX_PROJECT_UI_SELF_TEST stage=approved detail=broken-reference-ui-lifecycle:reviewer-approval\nDBX_PROJECT_UI_SELF_TEST stage=applied detail=broken-reference-ui-lifecycle:typed-detach-apply\nDBX_PROJECT_RECOVERY operation=broken-reference-detach status=PASS project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3 scene=dbx:scene:desktop-broken-reference-ui-lifecycle-self-test-v3-target asset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 generation=2 targetBindingAbsent=true descriptorPreserved=true unrelatedReferencesUnchanged=true authoritativeInspection=true noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=inspect status=BLOCKED project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3 blocker=BACKGROUND_ASSET_ROLE_MISMATCH eligible=false assets=1 pendingArtifacts=1 noWrite=true noFoundryWrite=true\nDBX_PROJECT_RECEIPT operation=catalog status=PARTIAL entries=57 blocked=4 noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=blocked detail=broken-reference-ui-lifecycle:Broken-reference detach did not satisfy the exact authoritative reread and committed session; no retry was attempted.\n",
+    "truncated": false
+  },
+  "stderr": {
+    "text": "[0829/223640.053:ERROR:ui\\gfx\\win\\window_impl.cc:172] Failed to unregister class Chrome_WidgetWin_0. Error = 1412\r\n",
+    "truncated": false
+  },
+  "timeout": {
+    "timedOut": false,
+    "timeoutMs": 30000,
+    "graceMs": null,
+    "killRequested": false,
+    "childExitObserved": true,
+    "killError": null,
+    "childError": null
+  },
+  "noProjectOrSessionInspection": true,
+  "noRecoveryInvocationByRunner": true
+}

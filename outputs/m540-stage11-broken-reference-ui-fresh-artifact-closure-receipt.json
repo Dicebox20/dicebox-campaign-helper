@@ -1,0 +1,84 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.fresh-artifact-build",
+  "milestone": "M540",
+  "status": "PASS_LOCAL_ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-29T22:10:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "broken-reference-detach-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "exitCode": 0,
+    "attempts": 1,
+    "observedOutput": "Vite production build completed and Cargo finished the dev profile in 16.85s."
+  },
+  "artifacts": [
+    {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "292D18ABC0CF8F6128DE7094E3EF64C28048328BA217BEAFC47F02AE76F9F21F"
+    },
+    {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-a52c-334.js",
+      "sha256": "549508F13D4EF08CA8C1B23F0E53F8E6EAD23746230D2EB20D05489C899209A8"
+    }
+  ],
+  "markerAttestation": {
+    "status": "PASS",
+    "bundleMarkers": [
+      "broken-reference-detach-ui-execute",
+      "desktop-broken-reference-ui-lifecycle-self-test-v2",
+      "broken-reference-ui-self-test",
+      "loadDesktopBrokenReferenceUiSelfTestProposalSession",
+      "saveDesktopBrokenReferenceUiSelfTestProposalSession",
+      "assertBrokenReferenceUiSelfTestBatch",
+      "The broken-reference UI self-test target requires its closed typed session namespace.",
+      "The broken-reference UI self-test namespace requires its exact fixed test-owned project identity.",
+      "TEST_OWNED_EXACT",
+      "BACKGROUND_ASSET_ROLE_MISMATCH",
+      "no session was replaced",
+      "previewed",
+      "recovery-proposal-session",
+      "approved",
+      "reviewer-approval",
+      "applied",
+      "typed-detach-apply",
+      "no retry was attempted"
+    ],
+    "sourceMarkers": [
+      "const approved = await approveSelectedProjectProposal(projectProposalSession);",
+      "await progress(\"previewed\", \"recovery-proposal-session\");",
+      "await progress(\"approved\", \"reviewer-approval\");",
+      "await progress(\"applied\", \"typed-detach-apply\");",
+      "if (approved === null) throw",
+      "no standalone previewed or approved ref-only wait branch"
+    ],
+    "sourceAppSha256": "4DCCD811805CD1896F1B179FA0C8BE26074D84D9D1A2D7F586D2D90320B94D9A"
+  },
+  "processReread": "PASS: no desktop, Cargo, or Rustc process remained",
+  "validation": {
+    "artifactBuild": "PASS",
+    "embeddedSourcePackageTypeChecks": "PASS",
+    "workflow": "PASS: 10/16 gates, Ready-to-Play false",
+    "activeCardJson": "PASS"
+  },
+  "excludedActions": [
+    "launch",
+    "capture",
+    "browser-storage inspection",
+    "session transition, clearing, replacement, or recovery",
+    "fixture/project/runtime mutation",
+    "Foundry action",
+    "provider or credential access",
+    "player-role password creation"
+  ],
+  "nextBoundary": {
+    "milestone": "M541",
+    "scope": "One separately bounded timeout-aware packaged observation against this exact M540 executable, followed by trace and authoritative target/session/process reread; preserve any BLOCKED or timeout result and do not retry.",
+    "warning": "The earlier M536 timeout remains outcome-unknown and its preserved v2 session must not be inspected, cleared, replaced, or reused by assumption."
+  },
+  "readyToPlay": false,
+  "notes": "M540 attests a fresh artifact only. It does not certify the packaged lifecycle, approval, apply, reread, commit, Stage 11, Foundry authority, or Ready-to-Play. A quick popup close in exit mode is only transport behavior until the bounded app trace proves the required lifecycle."
+}

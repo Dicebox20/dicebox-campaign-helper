@@ -1,0 +1,98 @@
+{
+  "operation": "stage11-packaged-typed-operation-lifecycle-evidence-envelope-reconciliation",
+  "milestone": "M616",
+  "status": "PASS_LOCAL_READ_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T07:40:43-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "reconciliation": {
+    "knowledgeBaseIntegrity": "ok",
+    "knowledgeBaseCountsBeforeClosure": {
+      "sources": 1021,
+      "facts": 877,
+      "decisions": 760,
+      "openItems": 135,
+      "trials": 754
+    },
+    "queriedRecords": [
+      "SRC-M614-STAGE11-FRESH-TYPED-OPERATION-LIFECYCLE-EVIDENCE-ENVELOPE-ARTIFACT-CLOSURE",
+      "SRC-M615-STAGE11-PACKAGED-TYPED-OPERATION-LIFECYCLE-EVIDENCE-ENVELOPE-OBSERVATION-CLOSURE",
+      "SRC-M616-STAGE11-M615-PACKAGED-TYPED-OPERATION-LIFECYCLE-EVIDENCE-ENVELOPE-RECONCILIATION-AUTHORIZATION",
+      "F-861",
+      "F-862",
+      "D-760",
+      "D-761",
+      "T-761",
+      "T-762",
+      "O-116"
+    ],
+    "m615ReceiptSha256": "54D85DD4255394CB9E94DF9A73EE94E4F9E70DA16D0A225FB5EAD0624FAD216A",
+    "m615DirectPackagedEvidence": {
+      "exactM614NativeAndBundleIdentity": true,
+      "exactReturnedProcessPrefixedAppIdentity": true,
+      "exactTitleUniqueAfterPermittedRecovery": true,
+      "initialActivationFailurePreserved": true,
+      "oneAccessibilityRead": true,
+      "allFourteenOperationEntries": true,
+      "boundedEvidenceAndRemainingGaps": true,
+      "readOnlyNonCertifyingNoExecutionBoundary": true,
+      "noGenericExecutor": true,
+      "noPersistedProject": true,
+      "noProjectSession": true,
+      "noWriteFoundryPreview": true,
+      "processAbsenceAfterCleanup": true
+    },
+    "stage11Clauses": {
+      "humanReviewAndLocalProjectAuthority": "PARTIAL",
+      "operationSpecificApplyContract": "PARTIAL",
+      "crossProducerLifecycleAndRecovery": "PARTIAL",
+      "packagedEvidenceAndAuthorityBoundaries": "PARTIAL"
+    },
+    "remainingGaps": [
+      "The 14 operation kinds are visible in a typed non-certifying envelope, but the envelope is not yet bound to one canonical proposal-history state for every operation.",
+      "Cross-producer execution, authoritative reread, undo/redo, stale/timeout recovery, and commit evidence remain distributed across bounded slices.",
+      "Broader recovery/cleanup remains separately gated and cannot be inferred from the packaged metadata summary.",
+      "Technical Builder/repository and active-GM/Foundry authority remain distinct boundaries."
+    ],
+    "smallestRemainingGap": "A typed, read-only proposal-history binding for each existing operation-envelope entry that reports current history-state coverage without executing, approving, persisting, recovering, or adding authority.",
+    "sourceEdit": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "projectSessionRuntimeWrite": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M616 preserves the M615 packaged typed-envelope pass and its activation recovery. Direct visibility remains non-certifying and read-only; it does not prove a canonical operation-to-proposal-history binding or the distributed cross-producer lifecycle, recovery, commit, and authority evidence required for Stage 11 acceptance."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M617",
+    "title": "Stage 11 typed operation-to-proposal-history evidence binding implementation",
+    "status": "authorized-next",
+    "scope": "Add only a typed, read-only, non-certifying metadata binding from each existing exact 14-operation envelope entry to the existing proposal-history states and explicit coverage gap. Add focused deterministic/static coverage. Preserve all operation handlers, approval/apply/persistence/recovery/Foundry/provider/session/project/player-password boundaries. No generic executor or new authority. No build, launch, capture, UI action, Stage 11 acceptance, or Stage 12 work is authorized in M617."
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "changedPaths": [
+    "outputs/m616-stage11-packaged-typed-operation-lifecycle-evidence-envelope-reconciliation-closure-receipt.json"
+  ]
+}

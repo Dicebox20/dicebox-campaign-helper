@@ -1,0 +1,46 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-packaged-observation",
+  "milestone": "M578",
+  "status": "PASS_PACKAGED_CLEAN_SESSION_PREFLIGHT_BLOCKED",
+  "capturedAt": "2026-08-30T04:26:24-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "artifact": {
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "23D06502B710C96F7D1A6CD266C4D13AFF7645DAE5E9D454F0931A9C3991C7DF",
+    "runnerReceipt": "outputs/m578-stage11-selected-missing-asset-detach-packaged-observation-runner-receipt.json"
+  },
+  "runner": {
+    "exitCode": 0,
+    "timedOut": false,
+    "childExitObserved": true,
+    "fixture": "PASS: exact project dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1, two assets, two Scenes, generation 1, no Foundry write",
+    "inspection": "BLOCKED: REGISTERED_ASSET_BLOB_MISSING; eligible=true; assets=2; pendingArtifacts=1; noWrite=true; noFoundryWrite=true",
+    "lifecycle": "BLOCKED before loaded/previewed/approved/applied/typed detach/commit/authoritative reread because the exact selected-detach lifecycle fixture or clean session boundary was unavailable; no session was replaced",
+    "stderr": "Non-fatal Chromium window-class unregister warning; child exit was observed and runner exit code was 0"
+  },
+  "directReread": {
+    "projectPath": "C:\\Users\\rujie\\AppData\\Local\\com.dicebox.campaign-helper\\projects\\desktop-asset-detach-ui-lifecycle-self-test-v1",
+    "projectExists": true,
+    "projectJsonSha256": "C120CF3B679565E36833AB32D60055C74C583F2676C8A28E765AE3CF413BCAE",
+    "targetAssetRootExists": false,
+    "targetPendingFiles": [],
+    "processes": "none"
+  },
+  "preservation": {
+    "ordinarySessionEntry": "preserved; not inspected or changed",
+    "v1v2v3v4": "preserved",
+    "launch": false,
+    "captureAttempts": 1,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionReplacedOrCleared": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "reconciliationRequired": "M578 repeats the clean-session-preflight runtime class previously observed at M570. Per the contract, no further live retry is authorized until a read-only KB/source reconciliation and narrow correction boundary are recorded.",
+  "readyToPlay": false,
+  "notes": "The exit-mode popup/close was expected, but it is not acceptance evidence. M578 provides preserved packaged blocker evidence only; Stage 11 remains active and partial."
+}

@@ -1,0 +1,63 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m262-served-worker-20260827T194212000Z",
+  "operation": "foundry.fixture.served-worker-parity-audit",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-08-27T19:42:12.000Z",
+  "target": {
+    "dataRoot": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30003
+  },
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:30003/modules/dicebox-campaign-helper/src/foundry-live-bridge.js",
+    "path": "/modules/dicebox-campaign-helper/src/foundry-live-bridge.js",
+    "allowlisted": true,
+    "requestCount": 1
+  },
+  "canonical": {
+    "artifactId": "dbx:foundry-artifact:worker",
+    "version": "0.1.15",
+    "sha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "source": "packages/dicebox-foundry/src/foundry-live-bridge.js"
+  },
+  "source": {
+    "path": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\packages\\dicebox-foundry\\src\\foundry-live-bridge.js",
+    "sha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "byteLength": 12288
+  },
+  "served": {
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "sha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "byteLength": 12288,
+    "sourceServedParity": true,
+    "canonicalParity": true
+  },
+  "blockers": [],
+  "noWrite": true,
+  "noBrowser": true,
+  "credentialsEntered": false,
+  "clientSession": "not-observed",
+  "moduleExecution": "not-observed",
+  "activeGm": "not-observed",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "foreignStatePreserved": true,
+  "readyClaim": false,
+  "doesNotProve": [
+    "loaded-module-execution",
+    "client-session",
+    "active-gm-authority",
+    "bindings",
+    "behavior",
+    "authoritative-reread",
+    "Stage 9 acceptance"
+  ]
+}

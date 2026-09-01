@@ -1,0 +1,90 @@
+{
+  "receiptVersion": 1,
+  "supervisorVersion": "1.1.0",
+  "operation": "foundry.fixture.stop",
+  "target": "disposable-fixture",
+  "worldId": "dbx-test-world",
+  "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+  "port": 30002,
+  "timestamp": "2026-08-27T15:27:30.066Z",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "status": "PASS",
+  "evidenceClass": "process-stopped",
+  "idempotent": false,
+  "pid": 14256,
+  "preStopReadiness": "PASS",
+  "ownershipEvidence": "exact-process-and-exclusive-port",
+  "normal": {
+    "ok": false,
+    "status": 255,
+    "stdout": "",
+    "stderr": "ERROR: The process with PID 14256 (child process of PID 10276) could not be terminated.\r\nReason: This process can only be terminated forcefully (with /F option)."
+  },
+  "forced": {
+    "ok": true,
+    "status": 0,
+    "stdout": "SUCCESS: The process with PID 14256 (child process of PID 10276) has been terminated.",
+    "stderr": ""
+  },
+  "listenerDrain": {
+    "polls": 0,
+    "elapsedMs": 64,
+    "remainingListeners": []
+  },
+  "after": {
+    "receiptVersion": 1,
+    "supervisorVersion": "1.1.0",
+    "operation": "foundry.fixture.status",
+    "target": "disposable-fixture",
+    "worldId": "dbx-test-world",
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "port": 30002,
+    "timestamp": "2026-08-27T15:27:31.766Z",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "lifecycleOperation": {
+      "schemaVersion": 1,
+      "supervisorVersion": "1.1.0",
+      "token": "0d5acaa5-c59f-4aec-b9a2-aa483c98f4e0",
+      "ownerPid": 22088,
+      "action": "stop",
+      "acquiredAt": "2026-08-27T15:27:28.676Z"
+    },
+    "status": "STALE",
+    "evidenceClass": "stale-state",
+    "pid": 14256,
+    "listeners": [],
+    "state": {
+      "schemaVersion": 1,
+      "supervisorVersion": "1.1.0",
+      "status": "running",
+      "pid": 14256,
+      "startedAt": "2026-08-27T15:24:51.868Z",
+      "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+      "worldId": "dbx-test-world",
+      "port": 30002,
+      "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+      "entryPath": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+      "args": [
+        "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+        "--dataPath=C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+        "--world=dbx-test-world",
+        "--port=30002"
+      ],
+      "commandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB",
+      "processStartedAt": "2026-08-27T15:24:54.3796754Z",
+      "processPath": "C:\\Program Files\\nodejs\\node.exe",
+      "readyAt": "2026-08-27T15:25:04.644Z"
+    },
+    "blockers": []
+  },
+  "blockers": [],
+  "lifecycleLease": {
+    "action": "stop",
+    "ownerPid": 22088,
+    "acquiredAt": "2026-08-27T15:27:28.676Z",
+    "recoveredLease": null,
+    "released": true
+  }
+}

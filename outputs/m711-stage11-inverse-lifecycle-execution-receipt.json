@@ -1,0 +1,63 @@
+{
+  "milestone": "M711",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY FIXTURE-BOUND LIFECYCLE; STAGE 11 NOT ACCEPTED",
+  "scope": "Execute and validate one exact inverse operation through injected active-GM, claim-store, adapter, and terminal-receipt dependencies.",
+  "sourceState": "Unborn project worktree with no HEAD; the bounded implementation changed only the listed compiler and test files.",
+  "implementation": {
+    "entryPoint": "executeStagedInverseExecutorLifecycle",
+    "boundary": "The new lifecycle boundary accepts only a verified M709 orchestration input and one selected exact manifest operation.",
+    "authority": "It rereads the current active GM and resolves the exact claimed permit before any adapter call; GM drift and claim witness mismatch fail closed.",
+    "dispatch": "It invokes only the injected operation-specific adapter, validates the authoritative delete/restore readback against the exact plan operation, and maps known, unknown, foreign-conflict, and not-found outcomes without retry.",
+    "receipt": "It derives one deterministic terminal receipt, persists it through the injected terminal receipt store, and retains the store's authoritative post-append resolution; missing, unknown, or conflicting persistence remains blocked/uncertain.",
+    "liveBoundary": "No Foundry API, live runtime, browser, provider, credential, project, or foreign-state mutation is exposed; execution remains not-implemented and readyClaim remains false."
+  },
+  "changedPaths": [
+    "packages/dicebox-compiler/src/staged-inverse-executor-boundary.ts",
+    "tests/staged-inverse-proof-composition-bridge.test.ts"
+  ],
+  "validation": {
+    "focused": "2 inverse test files, 16/16 tests passed.",
+    "full": "153 test files, 791/791 tests passed.",
+    "packageBuild": "TypeScript package build passed.",
+    "desktopBuild": "Desktop TypeScript and production Vite build passed with the existing large-chunk warning.",
+    "tooling": "Tooling verification passed.",
+    "databaseBeforeRecording": "Rebuilt and verified at 1131 sources / 971 facts / 838 decisions / 787 trials / 40 research subjects / 26 milestones before M711 metadata recording.",
+    "workflow": "Active-slice checker passed before closure with Stage 11 active, 10/16 gates, readyClaim false, and no violations."
+  },
+  "fixtureEvidence": {
+    "committedOperation": "One exact delete-owned-create fixture reread owned absence, persisted a committed terminal receipt, and reread the persisted receipt.",
+    "unknownOperation": "One exact fixture unknown reread persisted an unknown terminal receipt; missing post-append reread remained status missing and no automatic retry was emitted.",
+    "dependencyOrder": ["current-gm-read", "claim-store-claim", "adapter", "terminal-receipt-store"]
+  },
+  "safety": {
+    "claimStoreInvocation": "fixture-only",
+    "claimStoreWrite": "fixture-only and governed by the injected store contract",
+    "receiptStoreInvocation": "fixture-only",
+    "adapterDispatch": "fixture-only injected adapter",
+    "executorContinuation": false,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "projectMutation": false,
+    "foreignStatePreserved": true,
+    "liveCertification": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "remainingGap": "M711 proves one injected operation lifecycle only. Stage 11 still lacks aggregate lifecycle evidence across all eleven producer families, packaged/runtime authority evidence, recovery lineage execution, undo/redo, and live active-GM/Foundry certification.",
+  "selectedNext": "M712 read-only Stage 11 acceptance reconciliation after M711; do not accept Stage 11 or begin Stage 12 until all four clauses and eleven producer families have direct required evidence.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Bounded implementation was suitable for Luna Extra High under the approved routing chart; Foreman completed the critical-path implementation locally because the prior worker platform usage limit was still active.",
+    "workerOutcome": "No worker files or external state were used for M711."
+  },
+  "excluded": [
+    "live Foundry calls",
+    "live runtime mutation",
+    "browser/provider/credential use",
+    "aggregate Stage 11 acceptance",
+    "Stage 12 work",
+    "player-role passwords"
+  ]
+}

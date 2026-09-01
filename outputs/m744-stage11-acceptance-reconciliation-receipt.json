@@ -1,0 +1,51 @@
+{
+  "milestone": "M744",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile M743's exact terminal-history evidence index and prior evidence against all four Stage 11 acceptance clauses and all eleven producer families.",
+  "sourceState": "Unborn project worktree with no HEAD; M744 is read-only and changes no implementation or runtime state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Independent read-only Stage 11 acceptance reconciliation after M743.",
+    "workerOutcome": "Worker returned a compact read-only reconciliation after two bounded waits; no files, runtime, or acceptance gates were changed and the receipt was reviewed by the Foreman.",
+    "foremanReview": "The Foreman reviewed the completed Terra worker receipt, then queried F-989/D-873 through the bounded read-only KB surface and reread M743/M742 and prior receipts, the active slice, the exact M743 index and focused test, the typed operation/history matrices, producer-family summary, recovery adapter, and review/apply coverage."
+  },
+  "clauses": {
+    "claimProvenance": "PASS bounded M700-M711 witness continuity and M743 exact artifact inventory; PARTIAL at aggregate Stage 11 scope because an evidence index does not itself prove every producer's current execution and commit history.",
+    "reviewAndAuthority": "PARTIAL: operation-specific human review, local-project target authority, and no-generic-executor/no-transition boundaries are explicit for all fourteen typed operation kinds, but direct current-authority evidence remains incomplete across producer families.",
+    "applyAndReceipts": "PARTIAL: M743 binds all fourteen typed operation kinds to exact bridge/test/receipt artifacts and records sixteen direct projections, but complete aggregate apply/receipt coverage and packaged/runtime authority remain unproven.",
+    "lifecycleAndRecovery": "PARTIAL: bounded committed and applicable inverse evidence exists in selected local projections and one injected inverse fixture, while rejected/cancelled/stale/applying/outcome-unknown/recovered/undone/redone coverage is not unified across producers; live active-GM/Foundry evidence remains incomplete."
+  },
+  "producerFamilies": [
+    { "family": "read-only inspection/compile", "status": "closed-read-only; non-mutating" },
+    { "family": "workspace open/recent metadata", "status": "operation-specific partial" },
+    { "family": "ordinary project persistence", "status": "fifteen bounded local-project terminal-history projections; aggregate lifecycle partial" },
+    { "family": "in-memory project editing/navigation", "status": "direct add-Scene commit/undo projection; aggregate lifecycle partial" },
+    { "family": "asset import/binding", "status": "direct audio, handout, token, background, restore, missing-asset detach, and broken-reference detach projections; aggregate lifecycle partial" },
+    { "family": "legacy migration persistence", "status": "commit-only terminal projection with typed rereads; aggregate lifecycle partial" },
+    { "family": "backup-authoritative promotion", "status": "commit-only terminal projection with approved session and authoritative recovery reread; aggregate lifecycle partial" },
+    { "family": "missing-asset restore", "status": "direct code-only terminal projection with selected/restored authoritative recovery reread" },
+    { "family": "missing-asset detach", "status": "direct code-only terminal projection with selected absence and post-detach reread" },
+    { "family": "broken Scene-reference detach", "status": "direct code-only terminal projection with selected-reference identity, primary-reference removal, permitted diagnostic preservation, and authoritative recovery reread" },
+    { "family": "test-owned fixture setup and stage receipts", "status": "test infrastructure only; non-certifying" }
+  ],
+  "evidence": {
+    "workflow": "PASS: Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations.",
+    "m743Delta": "M743 provides an exact read-only inventory for fourteen typed local-project operation kinds, plus the in-memory add-Scene and injected inverse projections, totaling sixteen direct projections.",
+    "knowledgeBase": "PASS after synchronized M744 seed: database rebuilt and verified at 1166 sources, 1005 facts, 873 decisions, 135 active-work rows, 787 trials, 40 research subjects, and 26 milestones; F-988/F-989/F-990 and D-871/D-872/D-873/D-874 reread through the bounded read-only query surface.",
+    "directProjectionCount": "16 total: 14 indexed typed local-project operation kinds, 1 additional in-memory local-project projection, and 1 injected inverse fixture projection.",
+    "remainingGaps": [
+      "Aggregate current-authority evidence remains incomplete across the eleven producer families.",
+      "Unified rejected/cancelled/stale/applying/outcome-unknown/committed/recovered/undone/redone lifecycle evidence remains incomplete; several operations are intentionally commit-only without an inverse.",
+      "Packaged/runtime authority and live active-GM/Foundry certification remain incomplete.",
+      "The Stage 11 live acceptance observation has not been accepted as an aggregate claim."
+    ]
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "decision": "M743 improves direct provenance visibility, but it does not prove aggregate current authority, unified lifecycle/recovery, packaged/runtime authority, or live active-GM/Foundry behavior. Stage 11 remains partial and Stage 12 remains excluded."
+  },
+  "selectedNext": "M745 fresh accepted Stage 11 bounded aggregate current-authority/lifecycle evidence slice; preserve the sixteen direct projections, no-generic-executor/no-transition boundary, unknown/recovery blockers, and Stage 12 exclusion."
+}

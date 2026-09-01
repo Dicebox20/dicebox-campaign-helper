@@ -1,0 +1,26 @@
+{
+  "operation": "dicebox.stage11.asset-restore.terminal-assertion-artifact",
+  "status": "BLOCKED_PRESERVED",
+  "milestone": "M489",
+  "artifact": {
+    "executableSha256": "C857A2AD13C026EB35BA7E5C21E062A64384C32A37AA28EBBAF997C11D54D32F",
+    "bundle": "apps/campaign-helper-desktop/dist/assets/index-B06km-1p.js",
+    "bundleSha256": "9810286F44960A27498F532DAE32C760DF261DFA50D32F745DA98E408E61548F"
+  },
+  "reread": {
+    "requiredWebpAssetIdPresent": false,
+    "requiredPngAssetIdPresent": false,
+    "missingBlobBlockerPresent": false,
+    "terminalPredicatePresent": false,
+    "desktopCargoOrRustcProcessRemaining": false
+  },
+  "blocker": {
+    "code": "VITE_SELF_TEST_MODE_OMITTED_AT_BUILD",
+    "detail": "The guarded self-test is selected by a VITE build-time variable. The M489 build did not receive VITE_DBX_PROJECT_SELF_TEST=asset-restore-ui-execute, so optimized output omitted the route and cannot be captured.",
+    "recovery": "M490 read-only reconciliation only. Do not rerun the build, launch, capture, reset, delete, or mutate the fixture."
+  },
+  "captureAttempted": false,
+  "runtimeMutation": false,
+  "foundryWrite": false,
+  "nonCertification": "This artifact blocker does not accept Stage 11 or certify Foundry behavior or Ready-to-Play."
+}

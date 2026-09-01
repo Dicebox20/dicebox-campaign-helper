@@ -1,0 +1,65 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-session-namespace-correction",
+  "milestone": "M572",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T00:55:30-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "change": {
+    "files": [
+      "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+      "apps/campaign-helper-desktop/src/App.tsx",
+      "tests/asset-detach-ui-selftest.test.ts"
+    ],
+    "behavior": "Added the exact asset-detach test-owned project-session scope/key and routed only the selected-detach self-test through it. The ordinary project-key API still rejects the fixed self-test identity and the prior ordinary entry remains untouched.",
+    "authority": "No browser-storage read/clear/replace operation, project mutation, proposal payload change, approval authority change, apply path change, authoritative reread change, or Foundry path change."
+  },
+  "verification": {
+    "focusedVitest": {
+      "command": "npx vitest run tests/asset-detach-ui-selftest.test.ts tests/project-proposal-session.test.ts --configLoader runner --no-file-parallelism --pool=forks --maxWorkers=1 --minWorkers=1",
+      "status": "PASS",
+      "files": 2,
+      "tests": 13
+    },
+    "desktopTypeScript": "PASS: npx tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.json",
+    "nodeTypeScript": "PASS: npx tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.node.json",
+    "diffHygiene": "PASS: git diff --check",
+    "processReread": "PASS: no desktop/Cargo/Rustc process remained"
+  },
+  "preservation": {
+    "ordinarySessionEntry": "untouched; not inspected",
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "52A921EB5E69B2CAAB51C7A5C1DD666F1F9B502550F60EBCFF981EED20046CA5",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "A903E9AB7C86F6E89C8A1AFAC70AAE5806460A6F8DB517B01E070B1A2F87337C",
+    "tests/asset-detach-ui-selftest.test.ts": "C0F7ADC306AB24C4D30F733B55068ACCA7E160AD6CA42EF41EC980D03ED8D2BD"
+  },
+  "nextBoundary": {
+    "milestone": "M573",
+    "scope": "One fresh exact debug artifact build containing M572, followed by exact executable/frontend marker, hash, and process reread. No launch or capture in M573.",
+    "prohibited": [
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation or clearing",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M572 closes the local namespace correction. The existing ordinary session is intentionally preserved; the new packaged artifact must prove the isolated test-owned key reaches the lifecycle without touching it."
+}

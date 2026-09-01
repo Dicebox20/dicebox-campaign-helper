@@ -1,0 +1,68 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m515-stage11-broken-reference-ui-artifact-closure-2026-08-29",
+  "milestone": "M515",
+  "evidenceLabel": "local",
+  "status": "ARTIFACT_ATTESTED",
+  "readyClaim": false,
+  "scope": "One fresh explicit-mode debug package build and exact executable/frontend artifact/process reread after M514 ownership correction",
+  "knowledgeBase": {
+    "queryMode": "read-only",
+    "relevantFacts": ["F-724", "F-723", "F-722"],
+    "relevantTrials": ["T-667", "T-666", "T-665"],
+    "relevantDecisions": ["D-665", "D-664", "D-663"]
+  },
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "broken-reference-detach-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "exitCode": 0,
+    "executable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "36073CE853B81EE0CADA686620B8EBE1F8A3BAEC9B035BB363C17134E62DAB6D"
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-BpjeFpGg.js",
+      "sha256": "64302CD0A262264718B084257959BEDB64A6EC01FBD7A219CAC673A77DDD693D"
+    }
+  },
+  "markerReread": {
+    "broken-reference-detach-ui-execute": true,
+    "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v1": true,
+    "BACKGROUND_ASSET_ROLE_MISMATCH": true,
+    "hasTargetProjectPendingArtifact": true,
+    "authoritative-reread-commit": true
+  },
+  "processReread": {
+    "desktop": 0,
+    "cargo": 0,
+    "rustc": 0
+  },
+  "validation": {
+    "build": "PASS",
+    "artifactMarkers": "PASS",
+    "processState": "PASS: no residual desktop/Cargo/Rustc process",
+    "independentWorkerReview": {
+      "worker": "Darwin",
+      "model": "gpt-5.6-luna",
+      "reasoning": "high",
+      "status": "PASS",
+      "finding": "Artifact hashes, route markers, ownership helper marker, and process absence match the local reread."
+    },
+    "launch": false,
+    "capture": false,
+    "fixtureMutation": false,
+    "sessionMutation": false,
+    "recoveryOrApply": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false
+  },
+  "nextBoundary": {
+    "milestone": "M516",
+    "scope": "One exact capture-runner invocation against this M515 executable, followed by trace, fixture/project/recovery/session, and process reread.",
+    "prohibited": ["rebuild", "second capture", "separate launch", "retry", "fixture reset", "deletion", "cleanup", "unrelated mutation", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

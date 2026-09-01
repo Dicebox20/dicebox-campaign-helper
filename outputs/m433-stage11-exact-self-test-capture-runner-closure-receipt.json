@@ -1,0 +1,8 @@
+{
+  "milestone": "M433",
+  "stage": 11,
+  "classification": "PASS_LOCAL_CODE_ONLY",
+  "runner": {"path": "tools/capture-exact-desktop-self-test.mjs", "cliExactExecutableOnly": true, "explicitOutputInsideOutputs": true, "boundedStdoutStderr": true, "preservesNonzeroExit": true},
+  "validation": {"focusedTestFiles": 3, "focusedTestsPassed": 18, "tooling": "PASS", "desktopSourceBuild": "PASS", "syntheticChildOnly": true},
+  "prohibitedActionsNotPerformed": ["package build/run", "desktop launch", "session/fixture/project operation", "recovery apply", "Foundry activity"]
+}

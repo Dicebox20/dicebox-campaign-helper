@@ -1,0 +1,44 @@
+{
+  "milestone": "M683",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY",
+  "scope": "Replace generic inverse adapter/readback exposure with exact operation-specific contracts bound to the manifest operation, without dispatch or runtime mutation.",
+  "implemented": {
+    "adapterEnvelope": "packages/dicebox-compiler/src/staged-inverse-adapter.ts adds an exact selection plus Foundry inverse-operation envelope, validates stableId/kind correspondence, and recomputes the canonical operation hash before an adapter could be used.",
+    "adapterSurface": "The adapter surface now exposes only deleteOwnedCreate and restoreUpdatePreimage with operation-specific readback results; generic readInverse, RuntimeBinding, and StagedReadback result exposure was removed.",
+    "readbackIdentity": "Delete and restore readbacks are bound to manifestId, sequence, stableId, idempotencyKey, and operationSha256, and dispatch-state validation compares every identity field with the exact manifest operation.",
+    "deleteEvidence": "Owned absence, preserved foreign conflict, and unknown delete outcomes are explicitly classified with binding-preservation and reread rules.",
+    "restoreEvidence": "Restore evidence carries expectedPreimageSha256 and an independently observed payload digest; preimage-matched requires equality, not-found requires null evidence, and unknown cannot assert a match.",
+    "preservation": "Foreign and unknown state remains visible and fail-closed; no adapter implementation, dispatch, receipt append, Foundry action, or runtime mutation was added."
+  },
+  "validation": {
+    "focused": "8 files / 27 tests passed across adapter contracts/readbacks, dispatch state, receipt ledger, pre-dispatch context, preflight orchestration, claim reread, and executor boundary contracts.",
+    "typecheck": "npx tsc --noEmit passed.",
+    "fullGate": "npm run check:full passed: workflow checker PASS (score 63; 10/16 gates), package and desktop builds passed, full Vitest passed 150 files / 765 tests, and tooling verification passed with no failures.",
+    "databaseBeforeImplementation": "M682 KB rebuild and read-only queries passed at 1103 sources / 943 facts / 810 decisions before implementation.",
+    "workflowAfterImplementation": "Active-slice checker remains PASS with Stage 11 proposal-approval-history as the only active stage and readyClaim false.",
+    "diff": "git diff --check passed."
+  },
+  "delegation": "A hidden Sol Medium read-only architecture audit independently identified missing operation identity, weak restore evidence, generic adapter results, and the required fail-closed delete/restore states. The worker changed no files, the Foreman reviewed its receipt, and it was closed after integration review.",
+  "safety": {
+    "adapterDispatch": "not-authorized-by-this-contract",
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "liveCertification": false,
+    "stage11Acceptance": false
+  },
+  "selectedNext": "M684 code-only terminal receipt append/post-append reread resolution contract; keep adapter dispatch, Foundry action, runtime mutation, and Stage 11 acceptance excluded.",
+  "evidence": [
+    "outputs/m682-stage11-claim-post-write-reread-receipt.json",
+    "packages/dicebox-compiler/src/staged-inverse-adapter.ts",
+    "packages/dicebox-compiler/src/staged-inverse-dispatch-state.ts",
+    "packages/dicebox-compiler/src/staged-inverse-receipt-ledger.ts",
+    "tests/staged-inverse-adapter-readback.test.ts",
+    "tests/staged-inverse-adapter-contract.test.ts",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "excluded": ["adapter dispatch", "receipt append", "receipt-store persistence", "Foundry action", "runtime mutation", "live certification", "Stage 11 acceptance"]
+}

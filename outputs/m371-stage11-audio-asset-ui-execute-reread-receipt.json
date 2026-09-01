@@ -1,0 +1,25 @@
+{
+  "milestone": "M371",
+  "status": "PASS FIXTURE/PACKAGED",
+  "date": "2026-08-28",
+  "scope": "Non-scene WAV audio asset UI proposal, approval, typed registration, reread, and inverse Scene-content restoration.",
+  "fixture": {
+    "projectId": "dbx:project:desktop-audio-ui-m371-self-test-v2",
+    "assetSha256": "d19d18a983a363cdce2d41623462760cd49b2b8f0694e2636037b5a10ee2e83d",
+    "assetMediaType": "audio/wav",
+    "assetByteLength": 16,
+    "traceSequence": ["loaded", "previewed", "approved", "applied", "pass"],
+    "postApply": { "generation": 2, "contentSha256": "3ae32c073bd9523829a2889644d46e1471d2b8ae9e32cb0dce4058eaa5a5d42c", "assetCount": 1 },
+    "finalReread": { "generation": 3, "contentSha256": "3dc6535bbbc8224b0f17af25bd6102a2e2cc83c6c7affbf395c75ba084974433", "assetCount": 1, "backupGeneration": 2, "backupContainsAudio": true }
+  },
+  "correction": "An expected first-generation missing backup was accepted before the first write; both post-write rereads require valid backup rotation. The initial v1 fixture stopped before writes and remains preserved with its nonterminal approved session.",
+  "validation": {
+    "focused": "2 files / 15 tests passed",
+    "full": "124 files / 666 tests passed",
+    "traceExecutableSha256": "F7A70648586889A4B053FD9E8D0F8AF8C95522695193273485EA1D3A25302776",
+    "finalExecutableSha256": "B4796EB263B8729A5BC7654FB24F86FB2F2252AB6367B99C9853FD4B9096E313",
+    "finalBundleSha256": "4BB7A2841244F8A212517237D27F016DEFF558F418C4998A08927B087A1701C0",
+    "cleanBundleSelfTestMarkers": "absent"
+  },
+  "limits": "This is local fixture/package evidence only. It does not certify Foundry behavior, active-GM authority, general Stage 11 completion, gameplay behavior, or later roadmap stages."
+}

@@ -1,0 +1,23 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M786",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "fixture",
+  "status": "PARTIAL FIXTURE; NATIVE UI OBSERVATION BLOCKED",
+  "target": { "dataPath": "work/foundry-fixture-data-v4", "worldId": "dbx-test-world", "port": 30003, "foundryVersion": "14.367", "system": "dnd5e@5.3.3" },
+  "stagedArtifact": {
+    "operation": "foundry.module.update",
+    "moduleSha256": "67749A9E81AA2E8A5842F3A6BBD81F5C34AB9A143BC7EDFEECB058778B50E6B7",
+    "sourceAndServedHashesMatch": true,
+    "diagnosticMarkersPresent": true,
+    "noWorldMutation": true
+  },
+  "authoritativeReread": { "supervisorStatus": "PASS", "worldDocumentWrites": 0, "balladTouched": false, "httpReady": true },
+  "observation": {
+    "nativeGmDialog": "NOT_OBSERVED",
+    "blocker": "The browser-control runtime required for native UI observation is unavailable in this session.",
+    "retry": "not-attempted",
+    "substituteEvaluator": "not-used"
+  },
+  "preservation": { "projectWrites": 0, "settingsWrites": 0, "foundryDocumentWrites": 0, "accountOrPasswordAction": false, "stage11Accepted": false, "stage12Started": false }
+}

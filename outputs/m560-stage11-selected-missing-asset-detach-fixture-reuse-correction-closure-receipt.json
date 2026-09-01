@@ -1,0 +1,57 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-fixture-reuse-correction",
+  "milestone": "M560",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T00:06:31-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "correction": {
+    "reuseBoundary": "Existing selected-detach fixture state is reused only after exact project envelope, scene JSON/hash, registered asset, regular-file, missing/present blob, backup, directory-entry, and target-owned pending-artifact rereads.",
+    "preservation": "Exact reuse returns the normal fixture receipt without writes, accepts unrelated workspace-index-pending diagnostics, and preserves the partial project and unrelated state.",
+    "driftHandling": "Project content drift returns PROJECT_FIXTURE_EXISTS with after-reread; foreign, reparse, malformed, or unknown state cannot enter the reuse path."
+  },
+  "verification": {
+    "nativeFixtureTest": "PASS: 1 test",
+    "nativeCoverage": "Exact reuse receipt equality, byte-identical primary/preserved WebP/unrelated workspace pending state, unrelated pending visibility, no backup/extra project entries, and drift refusal",
+    "vitest": "PASS: 3 files, 12 tests",
+    "desktopTypeScript": "PASS",
+    "nodeTypeScript": "PASS",
+    "diffCheck": "PASS",
+    "jsonChecks": "PASS: active card and receipts",
+    "processReread": "PASS: no desktop/Cargo/Rustc process remained"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs": "6D684D0AEB8DFAA792C4FAAD7BDD3CE402EA502C61135DC41718EAEC1BCC40B7",
+    "tests/asset-detach-ui-selftest.test.ts": "AD5916093C618A7E9ADC9CA7C73602669756BFC33D5F29683DE68345A558431C"
+  },
+  "preservation": {
+    "partialFixture": "preserved; no reset, deletion, cleanup, or repair",
+    "v1v2v3v4": "preserved",
+    "browserStorageInspected": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "sessionOperation": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "nextBoundary": {
+    "milestone": "M561",
+    "scope": "One explicitly configured debug package build with the selected-detach self-test mode and exit flag, followed by exact executable/bundle marker and process reread only. No launch or capture in M561.",
+    "prohibited": [
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation or replacement",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M560 closes only the local strict-reuse correction. The earlier popup was the expected exit-mode self-test behavior; packaged selected-detach lifecycle remains unobserved, so Stage 11 and Ready-to-Play remain unclaimed."
+}

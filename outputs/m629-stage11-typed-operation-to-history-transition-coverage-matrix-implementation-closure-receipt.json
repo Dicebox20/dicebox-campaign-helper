@@ -1,0 +1,78 @@
+{
+  "operation": "stage11-typed-operation-to-history-transition-coverage-matrix-implementation",
+  "milestone": "M629",
+  "status": "PASS_LOCAL_CODE_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T09:45:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "implementation": {
+    "source": "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "matrixExport": "TYPED_LOCAL_PROJECT_OPERATION_HISTORY_TRANSITION_COVERAGE",
+    "operationCount": 14,
+    "historyStateCountPerOperation": 11,
+    "sourceBinding": "Each row is derived from the existing operation-specific handler binding and the exact core transition projection.",
+    "metadataBoundary": {
+      "readOnly": true,
+      "nonCertifying": true,
+      "noExecutionAuthority": true,
+      "noGenericExecutor": true,
+      "noRuntimeTransition": true,
+      "noPersistence": true,
+      "noRecovery": true
+    }
+  },
+  "surface": {
+    "path": "apps/campaign-helper-desktop/src/App.tsx",
+    "testId": "typed-operation-history-transition-coverage",
+    "disclosure": "Proposal-review surface renders all 14 operation rows with their existing handlers and 11-state core transition projection as read-only, non-certifying metadata."
+  },
+  "validation": {
+    "focusedVitest": {
+      "files": 4,
+      "tests": 14,
+      "status": "PASS"
+    },
+    "desktopTypeScriptNoEmit": "PASS",
+    "desktopNodeTypeScriptNoEmit": "PASS",
+    "diffCheck": "PASS",
+    "jsonAndKnowledgeBaseMarkers": "PASS"
+  },
+  "stageDecision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M629 makes operation-specific transition coverage inspectable without adding runtime behavior. Transition execution, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, and aggregate authority across eleven producer families remain unproven."
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "sourceHashes": {
+    "packages/dicebox-core/src/proposal-batch.ts": "41F07357A5D27DFBC94D2B910225B9DF4E1EBF26DE6F039EC4217E397E20939C",
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts": "B5B337E674E775B6D33F87D65FB9023BAF7C649EE48C8D080AB1A90AB08CC584",
+    "apps/campaign-helper-desktop/src/App.tsx": "E164E9F49A17CCF87DD0798D2D34800522D654D6020A071EF29457CE9C9F48EA",
+    "tests/project-review-operation-history-binding.test.ts": "820355D751C21984EAE5E0EC913919B6BFA09A57AE02E681C1A3CF4D7D2B7FE1"
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/project-review-operation-history-binding.test.ts",
+    "outputs/m629-stage11-typed-operation-to-history-transition-coverage-matrix-implementation-closure-receipt.json"
+  ]
+}

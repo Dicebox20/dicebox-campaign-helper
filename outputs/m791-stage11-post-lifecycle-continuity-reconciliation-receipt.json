@@ -1,0 +1,8 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M791",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "finding": "M784 is locally verified and M786 proves it is served, but the fixed native current-active-GM dialog is not observed because browser control is unavailable. This cannot be inferred from source or hash evidence.",
+  "selectedNext": "M792 one human native-UI opening of the fixed GM diagnostic, followed by supervisor rereads.",
+  "preservation": { "runtime": false, "projectOrFoundryWrite": false, "accountOrPasswordAction": false, "stage11Accepted": false, "stage12Started": false }
+}

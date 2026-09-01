@@ -1,0 +1,40 @@
+{
+  "milestone": "M868",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "operation": "stage11.backup-promotion-recovery.aggregate-evidence-attachment",
+  "input": "M466",
+  "sourceSha256": "415BFF51C2FAA9574793667F0E6FDCE1BD2C356AA491C676CE52DDC845F0C4AE",
+  "aggregateLedgerSha256": "074333348531066C8096271B5991407FB3D23838C92CF8C280AEBF545BB17280",
+  "testSha256": [
+    "CFE82680EE8A7882F7770E52220824E7687F18473C2AF35BD1F5990495DD80C6",
+    "7AAA0342BCA33104859A6EAE26CFFFCBCA2149C27D2CBFE8EBBE28A2BF1C06E0"
+  ],
+  "validation": {
+    "focusedVitest": "5 files / 10 tests pass",
+    "packageTypecheck": "PASS",
+    "diffCheck": "PASS"
+  },
+  "result": {
+    "producerScopedOnly": true,
+    "recoveryObserved": true,
+    "authoritativeReread": true,
+    "preservationObserved": true,
+    "noFoundryWrite": true,
+    "modeledOperationCount": 14,
+    "noAuthorityGrant": true,
+    "noRecoveryAuthority": true,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "runtimeAction": false,
+  "doesNotProve": [
+    "generic Foundry authority",
+    "every-producer lifecycle coverage",
+    "aggregate recovery authority",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

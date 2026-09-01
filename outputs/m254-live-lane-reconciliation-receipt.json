@@ -1,0 +1,159 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m254-live-lane-reconciliation",
+  "operation": "foundry.live-lane.reconciliation",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M254",
+  "status": "blocked",
+  "evidenceLabel": "live",
+  "reconciliation": {
+    "schemaVersion": "0.1.0",
+    "reconciliationId": "dbx:reconciliation:m254-live-lane",
+    "operation": "foundry.live-lane.reconciliation",
+    "status": "blocked",
+    "evidenceClass": "blocked",
+    "target": {
+      "worldId": "dbx-test-world",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "packageId": "dicebox-campaign-helper",
+      "packageVersion": "0.1.15",
+      "adapterId": "program-scene-vertical-slice",
+      "adapterVersion": "0.1.15"
+    },
+    "sourceServedStatus": "matched",
+    "sourceServedFiles": [
+      { "relativePath": "module.json", "sourceSha256": "ca1e2b51434890902b4e8d8c8406c6111a40733210a0db1bc395dd9ce6c6cc13", "servedSha256": "ca1e2b51434890902b4e8d8c8406c6111a40733210a0db1bc395dd9ce6c6cc13", "sourceBytes": 684, "servedBytes": 684 },
+      { "relativePath": "src/entry-20260823-program-scene-v2.js", "sourceSha256": "8e7d2b2f1faf7f4158249ff9063903b0bb6e77b9bdb54a5085b0058c96398602", "servedSha256": "8e7d2b2f1faf7f4158249ff9063903b0bb6e77b9bdb54a5085b0058c96398602", "sourceBytes": 33, "servedBytes": 33 },
+      { "relativePath": "src/module.js", "sourceSha256": "91d74a361df0415d2b699c0a9b9840aca110866fd327b94a9db6d9fe278514aa", "servedSha256": "91d74a361df0415d2b699c0a9b9840aca110866fd327b94a9db6d9fe278514aa", "sourceBytes": 70758, "servedBytes": 70758 },
+      { "relativePath": "src/program-scene-vertical-slice.js", "sourceSha256": "94e834cfc4007cc64acc3b60f70029b001f7b3e69e494cc9575b5d19bdb17b48", "servedSha256": "94e834cfc4007cc64acc3b60f70029b001f7b3e69e494cc9575b5d19bdb17b48", "sourceBytes": 24415, "servedBytes": 24415 },
+      { "relativePath": "ascendancy-campaign-package.json", "sourceSha256": "a9047d7810dbb0c286ea874c53112d38680dd2da1fe366dd4cd76f16b69f16fd", "servedSha256": "a9047d7810dbb0c286ea874c53112d38680dd2da1fe366dd4cd76f16b69f16fd", "sourceBytes": 137823, "servedBytes": 137823 },
+      { "relativePath": "program-scene-vertical-slice-package.json", "sourceSha256": "825fe0e53baf7246cea603ae0cdc0e08add56d6321ea65b1289345a45548b6c9", "servedSha256": "825fe0e53baf7246cea603ae0cdc0e08add56d6321ea65b1289345a45548b6c9", "sourceBytes": 9518, "servedBytes": 9518 }
+    ],
+    "artifactDrift": { "status": "blocked", "promotion": "blocked", "targetMatch": true, "blockerCount": 1 },
+    "profileDiff": { "status": "blocked", "promotion": "blocked", "exactTargetMatch": false, "blockerCount": 4 },
+    "supervisor": { "status": "pass", "worldId": "dbx-test-world", "port": 30001, "worldDocumentWrites": 0, "balladTouched": false, "listenerMatches": true, "noWrite": true },
+    "preflight": {
+      "status": "blocked",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "moduleVersion": "0.1.15",
+      "checks": [
+        { "id": "data-path", "status": "pass" },
+        { "id": "world", "status": "pass" },
+        { "id": "core", "status": "pass" },
+        { "id": "system", "status": "pass" },
+        { "id": "module", "status": "pass" },
+        { "id": "midi-qol", "status": "unknown" },
+        { "id": "dae", "status": "unknown" },
+        { "id": "live-runtime-probe", "status": "not-tested" }
+      ],
+      "noWrite": true
+    },
+    "clients": [
+      { "context": "GM", "ready": true, "exactTargetMatch": true, "fingerprintId": "dbx:fingerprint:cbea3468", "isGM": true, "activeGmStatus": "observed", "activeGmIsCurrentUser": true, "noWrite": true },
+      { "context": "Player3", "ready": true, "exactTargetMatch": true, "fingerprintId": "dbx:fingerprint:cbea3468", "isGM": false, "activeGmStatus": "observed", "activeGmIsCurrentUser": false, "noWrite": true }
+    ],
+    "fixtureContexts": [ "GM", "Player3" ],
+    "programScenePreview": { "status": "pass", "noWrite": true, "applied": false, "existingComplete": true, "planSha256": "61d63fea89959e22ad1dd43256d585afee209a502979674cf4e3146d7b310643", "blockers": [] },
+    "blockers": [
+      "Artifact dbx:foundry-artifact:worker SHA-256 drift: expected 460f79b11ea457ec9efc3dcbe2c8d2c534516054d8247944f26096245df5cf35, observed 60be1aa71386c3457bd313e319e7133724e752e1077f396050a056e69e4425a2.",
+      "package: Package identity, version, or hash differs from the exact profile expectation.",
+      "adapter: Adapter identity, version, or hash differs from the exact profile expectation.",
+      "documentTypes: Observed document types differ from the exact profile expectation.",
+      "capabilities: Capability ID/state set differs from the exact profile expectation.",
+      "Exact preflight is blocked or unknown.",
+      "The exact live-runtime probe is not a passing preflight check.",
+      "GM fixture observation audit is blocked: Check authoritative-reread is blocked; exact behavior remains unresolved.",
+      "Player3 fixture observation audit is blocked: Check authoritative-reread is blocked; exact behavior remains unresolved."
+    ],
+    "promotion": "blocked",
+    "noWrite": true,
+    "readyClaim": false,
+    "preserveUnknown": true,
+    "foreignStatePreserved": true,
+    "canonicalSha256": "70becfe40575c5eebcf29c0b8bc51f801a68c30a4c6dad68de3859fa96f8a7f6"
+  },
+  "artifactEvidence": {
+    "specId": "dbx:foundry-spec:iggwilv-final-chamber",
+    "specSha256": "ccfc0afd42fecc077154ab9d65a175114d9af1604b14eba77dadcf29c9a83cdc",
+    "targetMatch": true,
+    "worker": {
+      "artifactId": "dbx:foundry-artifact:worker",
+      "expectedSha256": "460f79b11ea457ec9efc3dcbe2c8d2c534516054d8247944f26096245df5cf35",
+      "observedSha256": "60be1aa71386c3457bd313e319e7133724e752e1077f396050a056e69e4425a2",
+      "status": "hash-drift"
+    },
+    "foreignArtifactsPreserved": true
+  },
+  "runtimeProfileEvidence": {
+    "phase": "runtime-probe",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "observedAt": "2026-08-27T12:19:25.979Z",
+    "fingerprintId": "dbx:fingerprint:cbea3468",
+    "activeModuleIds": [ "dicebox-campaign-helper", "regionwright" ],
+    "documentTypeCount": 30,
+    "capabilityStates": {
+      "available": [ "bridge.describe", "bridge.health", "bridge.query", "bridge.execute.readonly", "foundry.runtime.probe", "foundry.document.read", "foundry.scene.read", "dnd5e.activities" ],
+      "unavailable": [ "foundry.scene.write", "foundry.scene.placeable.write", "foundry.region.write", "foundry.media.deploy", "foundry.document.write" ],
+      "unknown": [ "foundry.scene.placeable.read", "foundry.region.read", "foundry.users.active-gm", "dnd5e.activity-hooks" ]
+    },
+    "activeGm": { "status": "observed", "source": "game.users.activeGM", "userFingerprint": "redacted:bcff94f0", "isCurrentUser": true },
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "fixtureObservationEvidence": [
+    {
+      "context": "GM",
+      "receiptId": "dbx:receipt:fixture-observation-97216da1",
+      "auditStatus": "blocked",
+      "exactTargetMatch": true,
+      "observationStatuses": { "journal": "missing", "activity": "missing", "region": "foreign" },
+      "region": { "bindingFingerprint": "redacted:536d1acb", "childCount": 0, "shapeCount": 1 },
+      "blockers": [ "Check authoritative-reread is blocked; exact behavior remains unresolved." ],
+      "noWrite": true,
+      "noRawData": true
+    },
+    {
+      "context": "Player3",
+      "receiptId": "dbx:receipt:fixture-observation-1b7db2f9",
+      "auditStatus": "blocked",
+      "exactTargetMatch": true,
+      "observationStatuses": { "journal": "missing", "activity": "missing", "region": "foreign" },
+      "region": { "bindingFingerprint": "redacted:536d1acb", "childCount": 0, "shapeCount": 1 },
+      "blockers": [ "Check authoritative-reread is blocked; exact behavior remains unresolved." ],
+      "noWrite": true,
+      "noRawData": true
+    }
+  ],
+  "deterministicChecks": {
+    "composer": "PASS; schema validation and canonical hash verification",
+    "sourceServedSelectedFiles": "PASS; six selected source/served files byte-identical",
+    "exactRuntime": "PASS; Foundry 14.367 / D&D5e 5.3.3 observed in GM and Player3 contexts",
+    "supervisor": "PASS; listener matched, zero world document writes, Ballad untouched",
+    "scenePreview": "PASS; existingComplete=true, preview inspected and cancelled without apply",
+    "promotion": "BLOCKED; no write or Ready-to-Play claim"
+  },
+  "preservation": {
+    "noWrite": true,
+    "noInstall": true,
+    "noUpload": true,
+    "noSharedDocumentWrite": true,
+    "preserveUnknown": true,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "worker parity against the canonical verifier expectation",
+    "optional Midi-QOL or DAE availability",
+    "passing live-runtime preflight",
+    "seeded owned JournalEntry, Activity, or Region bindings",
+    "authoritative reread, resettable-world execution, or recovery certification",
+    "GM/player behavior certification or Stage 9 completion",
+    "alpha readiness or Ready-to-Play"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": "0.1.0",
+  "operation": "campaign.ascendancy.regionwright.handoff.static.receipt",
+  "status": "reviewable",
+  "evidenceClass": "deterministic",
+  "readyClaim": false,
+  "noWrite": true,
+  "sourceContext": "Ballad of Chauser Bill campaign test after Prime Arachnid defeat",
+  "helperSource": {
+    "contract": "packages/dicebox-core/src/ascendancy-handoff.ts",
+    "test": "tests/ascendancy-handoff.test.ts",
+    "documentation": "docs/ASCENDANCY-REGIONWRIGHT-HANDOFF-2026-08-21.md"
+  },
+  "regionEditorSource": {
+    "root": "C:\\Users\\rujie\\Documents\\Region Editor",
+    "moduleId": "regionwright",
+    "moduleVersion": "0.1.4",
+    "ascendancyVersion": 1,
+    "files": [
+      "premium/scripts/ascendancy-engine.js",
+      "premium/scripts/ascendancy.js",
+      "premium/scripts/premium-module.js",
+      "premium/styles/ascendancy.css",
+      "tests/ascendancy.test.mjs"
+    ],
+    "runtimeStatus": "source-observed-not-live-certified"
+  },
+  "stableIds": {
+    "personalPuzzleCount": 6,
+    "cooperativeStageCount": 3,
+    "finalStationCount": 6,
+    "andrewRouting": "dbx:puzzle:andrew-tram-routing",
+    "daltonRepair": "dbx:puzzle:dalton-tram-repair"
+  },
+  "ownership": {
+    "regionwrightPopupPersonalCount": 5,
+    "diceboxScenePersonalCount": 1,
+    "cooperativeInteraction": "physical-scene-region",
+    "cooperativePopup": false,
+    "andrewRushHourOwner": "dicebox-scene-engine",
+    "daltonRepairOwner": "regionwright-popup"
+  },
+  "progression": {
+    "pairToFinalEdges": [
+      "dbx:pair:aleister-sprocket",
+      "dbx:pair:dalton-andrew",
+      "dbx:pair:lawson-tactal"
+    ],
+    "cooperativeHookSemantics": "entry-notification-only; completion is pairs[pairId].cooperativeComplete"
+  },
+  "finalActivation": {
+    "roundMode": "same-round",
+    "roundField": "finalActivation.activationRound",
+    "roundInput": "explicit activationRound supplied by the Scene station event",
+    "resetOnRoundChange": true
+  },
+  "tramScene": {
+    "asset": "assets/maps/ascendancy-tram-depot-v2.png",
+    "canvas": "1536x1024",
+    "logicalBoard": "6x6",
+    "anchorCount": 36,
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "foundryContract": {
+    "apiRoot": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy",
+    "stateFlag": "flags.regionwright.ascendancy",
+    "regionFlag": "flags.regionwright.ascendancy.region",
+    "anchorFlag": "flags.regionwright.ascendancy.anchors",
+    "hooks": [
+      "regionwright.ascendancyPuzzleComplete",
+      "regionwright.ascendancyCooperativeStage",
+      "regionwright.ascendancyCoreUnlocked"
+    ],
+    "authority": "active GM rechecks permissions and authoritative Scene/Region state"
+  },
+  "notes": [
+    "This receipt proves the helper-side handoff is deterministic and schema-validated; it does not certify live Foundry APIs, permissions, sockets, Regions, or Tile read-back.",
+    "The chat-authored R-left-1 tram step remains provenance; the legal engine route uses R-left-2."
+  ]
+}

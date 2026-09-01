@@ -1,0 +1,27 @@
+{
+  "receiptVersion": 1,
+  "operation": "tram.rush-hour.fixture-stage",
+  "status": "PASS",
+  "evidenceLabel": "staged",
+  "target": {
+    "worldId": "dbx-test-world",
+    "dataPath": "work/foundry-fixture-data-v2/Data",
+    "port": 30001,
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3"
+  },
+  "module": {
+    "id": "dicebox-campaign-helper",
+    "manifest": "src/entry-20260825.js",
+    "adapter": "src/tram-rush-hour-dialog.js",
+    "adapterSha256": "8C13AA311FB5995DB0BEFBD9C3ED216F55A07C15E9542A738EA31BC713D4C8AA"
+  },
+  "noWorldMutation": true,
+  "notProven": [
+    "client module load",
+    "GM authority",
+    "visible dialog rendering",
+    "fixture or Ballad playability"
+  ],
+  "nextAction": "Join dbx-test-world as Gamemaster and run one GM-only visual dialog smoke test."
+}

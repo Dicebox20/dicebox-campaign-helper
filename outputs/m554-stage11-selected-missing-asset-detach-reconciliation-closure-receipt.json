@@ -1,0 +1,43 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-reconciliation",
+  "milestone": "M554",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "capturedAt": "2026-08-29T23:42:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "reconciliation": {
+    "route": "asset-detach-ui-execute",
+    "projectId": "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+    "fixedAssetRoles": "selected missing PNG plus preserved present WebP",
+    "fixturePath": "prepareAssetDetachUiLifecycleFixture / prepare_asset_detach_ui_lifecycle_fixture",
+    "proposalPath": "project.asset.detach through the existing typed project proposal session",
+    "sessionGate": "M378 session-gated preview, reviewer approval, applying history, typed detach, authoritative reread, commit",
+    "currentPackagedEvidence": "missing; M498 is code-only and M226 is older direct-engine evidence",
+    "projectFixtureState": "absent at the exact local app root; no existing project was reused or changed",
+    "browserStorage": "not inspected; persisted session MISSING is not claimed by this read-only boundary",
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "acceptanceDecision": {
+    "stage11": "REMAINS_ACTIVE_PARTIAL",
+    "reason": "The selected-detach route and typed authority gates are present, but current packaged artifact and visible lifecycle evidence are still missing. A fresh artifact must be built before one packaged observation.",
+    "readyToPlay": false,
+    "stage12Started": false
+  },
+  "nextBoundary": {
+    "milestone": "M555",
+    "type": "selected-missing-asset-detach-fresh-artifact",
+    "scope": "One repository-root debug package build with VITE_DBX_PROJECT_SELF_TEST=asset-detach-ui-execute and VITE_DBX_PROJECT_SELF_TEST_EXIT=1, followed only by exact executable/frontend marker and process reread.",
+    "prohibited": [
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation",
+      "fixture preparation",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 12 work"
+    ]
+  },
+  "notes": "M554 is read-only. It does not claim a clean persisted session, packaged behavior, Stage 11 acceptance, or Ready-to-Play."
+}

@@ -1,0 +1,19 @@
+{
+  "milestone": "M427",
+  "stage": 11,
+  "classification": "PASS_LOCAL_CODE_ONLY",
+  "scope": "Exact test-gated read-only proposal-session inspector",
+  "validation": {
+    "focusedTestFiles": 2,
+    "focusedTestsPassed": 16,
+    "desktopSourceBuild": "PASS"
+  },
+  "guarantees": [
+    "fixed exact project identifier",
+    "existing application session loader only",
+    "MISSING-only PASS",
+    "non-MISSING and loader errors fail BLOCKED",
+    "no cancel, clear, recovery apply, direct storage, or ordinary UI path"
+  ],
+  "prohibitedActionsNotPerformed": ["package build/run", "session transition", "recovery apply", "fixture/project mutation", "Foundry activity"]
+}

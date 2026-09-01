@@ -1,0 +1,56 @@
+{
+  "operation": "stage11-existing-session-blocker-reconciliation",
+  "milestone": "M639",
+  "status": "PASS_LOCAL_READ_ONLY_EXISTING_SESSION_BLOCKER_RECONCILIATION",
+  "capturedAt": "2026-08-30T10:02:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "inputs": {
+    "m638Receipt": "outputs/m638-stage11-packaged-project-save-ui-observation-receipt.json",
+    "activeCard": "docs/ACTIVE-PROGRAM-SLICE.json",
+    "sessionSource": "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "reviewSurface": "apps/campaign-helper-desktop/src/App.tsx",
+    "focusedTests": [
+      "tests/project-save-executor.test.ts",
+      "tests/desktop-project-proposal-review.test.ts"
+    ]
+  },
+  "m638PreservedFacts": {
+    "artifactMatch": true,
+    "exactTitleWindowCount": 1,
+    "accessibilityReads": 1,
+    "blocker": "An existing project proposal session must reach a terminal state and be cleared before replacement.",
+    "projectContentWrite": false,
+    "sessionCleared": false,
+    "sessionContentsRead": false,
+    "retry": false
+  },
+  "readOnlyFindings": {
+    "ordinaryScope": "The save-ui-execute route uses the ordinary exact-project proposal-session namespace.",
+    "replacementGuard": "A valid existing session with a different batch ID is never replaced; history cannot be shortened or rewritten.",
+    "terminalStatuses": ["rejected", "cancelled", "stale", "committed", "recovered", "undone", "redone"],
+    "clearGuard": "Only a valid exact session whose current history status is terminal may be removed; the clear receipt declares projectContentWrite=false.",
+    "nonterminalControls": "The visible review surface can reject previewed sessions or cancel/mark stale previewed or approved sessions. Unknown-outcome requires an authoritative reread before recovery and cannot be cleared directly.",
+    "sessionContents": "The exact persisted session contents and status remain intentionally uninspected.",
+    "projectBoundary": "No session helper writes project content, native project files, Foundry, credentials, or player passwords."
+  },
+  "selectedNextBoundary": {
+    "id": "M640",
+    "kind": "code-only dedicated save-ui-execute session namespace isolation",
+    "rationale": "Because the ordinary session's identity/status are intentionally unknown, terminalizing or clearing it would be unsafe. A dedicated closed test namespace can isolate only future save-ui-execute fixture session state, preserving the ordinary session untouched and requiring a separate artifact/observation gate afterward.",
+    "prohibitions": [
+      "No browser-storage inspection",
+      "No session transition or clear",
+      "No project/runtime mutation",
+      "No package build or launch",
+      "No Foundry, provider, credential, repository, or player-password action",
+      "No Stage 11 acceptance or Stage 12 work"
+    ]
+  },
+  "conclusion": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "receiptVersion": 1,
+  "operation": "ascendancy.install",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "readyClaim": false,
+  "noWrite": false,
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "target": {
+    "worldId": "the-ballad-of-chauser-bill",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "activeGm": true
+  },
+  "scenes": [
+    { "roomId": "dbx:room:signal-frequency-chamber", "sceneUuid": "Scene.SFEL1ztov0eHlfwJ", "wallCount": 12, "regionCount": 6, "reread": true },
+    { "roomId": "dbx:room:ascendancy-tram-depot", "sceneUuid": "Scene.9wZX8vHdEPCMtYsp", "wallCount": 12, "regionCount": 39, "reread": true },
+    { "roomId": "dbx:room:rune-mechanism-chamber", "sceneUuid": "Scene.Gqz4EsxbGGDoEq9K", "wallCount": 12, "regionCount": 6, "reread": true },
+    { "roomId": "dbx:room:central-core-control-chamber", "sceneUuid": "Scene.0RJlJEjh9MiYAwuT", "wallCount": 12, "regionCount": 9, "reread": true }
+  ],
+  "playerFacingMacroCount": 0,
+  "snapshot": {
+    "operation": "ascendancy.snapshot",
+    "status": "observed",
+    "packageId": "dicebox-campaign-helper",
+    "sceneCount": 4,
+    "wallCount": 48,
+    "regionCount": 60,
+    "redactedBindings": true,
+    "allExpectedStableIdsObserved": true,
+    "fullArtifact": "outputs/m40-ballad-ascendancy-live-snapshot.json",
+    "fullArtifactJsonValid": true
+  },
+  "handoff": {
+    "regionwrightOwns": ["popup-personal", "native-region-behavior", "teleports"],
+    "sceneEngineOwns": ["tram-movement"],
+    "helperOwns": ["scene", "wall", "base-region"],
+    "regionwrightWritesStillPending": true
+  }
+}

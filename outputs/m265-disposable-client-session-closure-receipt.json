@@ -1,0 +1,67 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m265-disposable-client-session-closure-20260827T145532163Z",
+  "operation": "foundry.fixture.disposable-client-session.closure",
+  "status": "BLOCKED",
+  "evidenceClass": "fixture",
+  "observedAt": "2026-08-27T14:55:32.163Z",
+  "target": {
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "worldId": "dbx-test-world",
+    "dataRoot": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "port": 30002
+  },
+  "syntheticUsername": "Codex Fixture GM",
+  "credentialsEntered": false,
+  "externalAccountUsed": false,
+  "joinSurface": {
+    "url": "http://127.0.0.1:30002/join",
+    "serverReadiness": "PASS",
+    "formObserved": true,
+    "usernameSubmitted": true,
+    "passwordSubmitted": false,
+    "sessionEstablished": false,
+    "error": "The requested User, Codex Fixture GM, does not exist."
+  },
+  "loadedDiceBoxReadiness": "not-observed",
+  "optionalModuleVisibility": "not-observed",
+  "currentUser": "not-observed",
+  "activeGm": "not-observed",
+  "stop": {
+    "normalTermination": "failed-closed",
+    "forceFallback": "PASS",
+    "immediateReread": "STALE-no-listener",
+    "finalStatus": "STOPPED",
+    "finalListeners": []
+  },
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "runtimeLockPresentAfterProbe": true,
+  "worldManifestSha256AfterProbe": "6E32A8616EC43CA6CAF585CDB8E6AEA40E3F9AC88F6978F809639BC3129D3425",
+  "noDocumentMutation": true,
+  "readyClaim": false,
+  "doesNotProve": [
+    "connected-client",
+    "loaded-dicebox-readiness",
+    "loaded-optional-module-behavior",
+    "permissions",
+    "current-user",
+    "active-gm-authority",
+    "bindings",
+    "document-mutation",
+    "authoritative-reread",
+    "recovery",
+    "Stage 9 acceptance"
+  ],
+  "sourceReceipts": [
+    "outputs/m265-supervisor-start-receipt.json",
+    "outputs/m265-supervisor-stop-receipt.json",
+    "outputs/m265-final-status-receipt.json"
+  ],
+  "blockers": [
+    "The synthetic fixture user does not exist; user provisioning requires a separate explicitly authorized setup mutation.",
+    "A runtime Config/options.json.lock was regenerated and requires the separately authorized M266 stopped-fixture recovery."
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M804",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile the typed M803 Foundry inverse observation with the existing cross-plane and aggregate evidence, then select one bounded next slice.",
+  "sourceState": "M803 is closed as one producer-scoped fixture observation. M804 changes no source, runtime, project, Foundry, provider, credential, browser/session, foreign, or player-role password state.",
+  "reconciliation": {
+    "clauses": {
+      "claimAndProvenance": "PARTIAL",
+      "reviewAndAuthority": "PARTIAL",
+      "applyAndReceipts": "PARTIAL",
+      "lifecycleAndRecovery": "PARTIAL"
+    },
+    "producerFamilyCount": 11,
+    "aggregate": {
+      "typedOperationCount": 14,
+      "directProjectionCount": 16,
+      "redoBindingCount": 9,
+      "currentAuthorityStatus": "partial",
+      "authority": "not-granted",
+      "stage11AcceptanceStatus": "blocked",
+      "stage12Started": false,
+      "readyClaim": false
+    },
+    "m803": {
+      "status": "PASS",
+      "producer": "foundry.program-scene.inverse",
+      "lifecycle": "preview-confirm-apply-authoritative-reread",
+      "observedLifecycleCount": 1,
+      "foreignStatePreserved": true,
+      "typedValidator": true,
+      "aggregateBindingPresent": false
+    },
+    "contradictionReview": "PASS; M803 remains a producer-scoped fixture observation and does not grant Foundry, execution, recovery, aggregate, Stage 11, or Stage 12 authority."
+  },
+  "validation": {
+    "workflow": "PASS: 10/16, proposal-approval-history solely active, readyClaim false, no violations",
+    "knowledgeBase": "PASS: read-only approved queries for M803 and current workflow/card state",
+    "liveRuntime": "NOT RUN"
+  },
+  "selectedNext": "M805 strict code-only binding of the M803 Foundry inverse evidence into the existing cross-plane and aggregate ledger.",
+  "preservation": {
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false,
+    "runtimeMutation": false,
+    "projectOrFoundryWrite": false,
+    "accountOrPasswordAction": false
+  }
+}

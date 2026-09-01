@@ -1,0 +1,37 @@
+{
+  "milestone": "M874",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL NATIVE CONFORMANCE; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "target": "dbx:project:desktop-cross-producer-commit-recovery-self-test-v3",
+  "operation": "dicebox.project.cross-producer.native-conformance",
+  "scenario": {
+    "projectCreate": {"status": "PASS", "generation": 1, "assetCount": 0},
+    "assetBindingCommit": {"status": "PASS", "generation": 2, "assetCount": 1, "approval": "operation-specific native test setup"},
+    "transition": {"status": "PASS", "beforeGeneration": 2, "committedGeneration": 3, "backupGeneration": 2, "primaryRemoved": true, "committedBindingPreservedInBackup": true},
+    "recoveryInspection": {"status": "PASS", "primary": "MISSING", "backup": "VALID", "generation": 2, "assetCount": 1, "noWrite": true},
+    "recoveryPreview": {"status": "PREVIEW", "requiresApproval": true, "primary": "MISSING", "backup": "VALID", "generation": 2, "assetCount": 1, "noWrite": true},
+    "recoveryApply": {"status": "PASS", "approved": true, "primaryRestored": true, "backupUnchanged": true, "semanticStateUnchanged": true, "assetTreeUnchanged": true, "workspaceUnchanged": true, "foreignStateUnchanged": true, "authoritativeCurrentReread": true},
+    "finalReread": {"status": "PASS", "generation": 2, "assetCount": 1, "primary": "VALID", "backup": "VALID", "boundAssetRestored": true, "foreignMarkerPreserved": true, "noFoundryWrite": true}
+  },
+  "validation": {
+    "focusedNativeTest": "PASS: 1 test",
+    "fullNativeCrate": "PASS: 61 tests; 0 failed",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "diffCheck": "PASS",
+    "runtimeRetry": false,
+    "desktopRuntime": "NOT_RUN"
+  },
+  "limits": {
+    "producerScopedOnly": true,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "genericExecutor": false,
+    "foundryAuthority": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "userOrForeignProjectTouched": false
+  },
+  "next": "Perform a fresh read-only Stage 11 reconciliation; retain the desktop runtime lane as parked and do not infer aggregate authority from this native test."
+}

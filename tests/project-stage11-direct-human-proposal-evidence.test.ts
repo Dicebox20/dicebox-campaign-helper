@@ -1,0 +1,57 @@
+import { describe, expect, it } from "vitest";
+import { createProjectStage11DirectHumanProposalEvidence } from "../apps/campaign-helper-desktop/src/project-stage11-direct-human-proposal-evidence";
+
+const m306 = () => ({
+  receiptVersion: 1,
+  receiptId: "dbx:receipt:m306-stage11-local-browser-human-proposal-acceptance-2026-08-27",
+  stageId: "proposal-approval-history",
+  milestone: "M306",
+  evidenceLabel: "local",
+  status: "PASS",
+  readyClaim: false,
+  browserTarget: "http://127.0.0.1:1420/",
+  runtimeOrProviderCall: false,
+  projectWrites: 0,
+  foundryWrites: 0,
+  initial: { sceneRevision: 0, selectedStableId: "dbx:apparatus:core", x: 608, y: 376 },
+  preview: { producer: "human", provider: "none", batchId: "dbx:proposal:desktop-human-1", batchRevision: 0, batchSha256: "9e826366f903d843443421016d8268da24e2c73a79a27723aac93cbd95e24df1", risk: "low", status: "previewed", reviewAuthority: "human-review/reviewer", targetAuthority: "local-project/active-GM-false", commands: 1, receipts: 1, dependencies: "none", sceneRevision: 0, x: 608, y: 376, stateChanged: false },
+  approval: { status: "approved", receipts: 2, sceneRevision: 0, x: 608, y: 376, stateChanged: false, applyEnabled: true },
+  apply: { status: "committed", sceneRevision: 1, x: 616, y: 376, receipts: 4, rereadMatched: true, resultSha256: "d8516a001595fb0d1957c38664956e8a51580dac271891d8a0bcc82ebad27519" },
+  undo: { status: "undone", sceneRevision: 2, x: 608, y: 376, receipts: 5, rereadMatched: true, resultSha256: "addc01c8a37b22c06558058107d187c60ec4789461754141e247ff2f0281d1d0" },
+  redo: { status: "redone", sceneRevision: 3, x: 616, y: 376, receipts: 6, rereadMatched: true, resultSha256: "341c6bff288a727c697e1b5b51e14bcf39c9af581cb12c06bc4805c76cf88113" },
+  browserDiagnostics: { warnings: [], errors: [] },
+  doesNotProve: ["persistent project or project-store generic integration", "Technical Builder repository promotion", "Foundry execution or active-GM authority", "Stage 11 acceptance", "Ready-to-Play"],
+});
+
+describe("M811 direct human proposal evidence", () => {
+  it("classifies the exact local-browser lifecycle without promotion", () => {
+    expect(createProjectStage11DirectHumanProposalEvidence(m306())).toMatchObject({
+      status: "PASS",
+      disposition: "one-producer-scoped-local-browser-observation",
+      observedLifecycleCount: 1,
+      producerScopedOnly: true,
+      localBrowserObserved: true,
+      previewNoWrite: true,
+      approvalNoWrite: true,
+      applyRereadMatched: true,
+      undoRereadMatched: true,
+      redoRereadMatched: true,
+      browserDiagnosticsEmpty: true,
+      noAuthorityGrant: true,
+      noCoverageClaim: true,
+      noFoundryAuthority: true,
+      noExecutionAuthority: true,
+      stage11AcceptanceStatus: "blocked",
+      stage12Started: false,
+      readyClaim: false,
+    });
+  });
+
+  it("fails closed for writes, drift, diagnostics, limits, or foreign fields", () => {
+    expect(() => createProjectStage11DirectHumanProposalEvidence({ ...m306(), projectWrites: 1 })).toThrow(/projectWrites/);
+    expect(() => createProjectStage11DirectHumanProposalEvidence({ ...m306(), apply: { ...m306().apply, rereadMatched: false } })).toThrow(/rereadMatched/);
+    expect(() => createProjectStage11DirectHumanProposalEvidence({ ...m306(), browserDiagnostics: { warnings: ["warning"], errors: [] } })).toThrow(/must be empty/);
+    expect(() => createProjectStage11DirectHumanProposalEvidence({ ...m306(), doesNotProve: ["promoted"] })).toThrow(/doesNotProve/);
+    expect(() => createProjectStage11DirectHumanProposalEvidence({ ...m306(), foreign: true })).toThrow(/unknown or missing/);
+  });
+});

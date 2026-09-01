@@ -1,0 +1,47 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m396-stage11-producer-family-reconciliation-2026-08-28",
+  "milestone": "M396",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "counts": {
+    "projectWrites": 0,
+    "workspaceWrites": 0,
+    "foundryWrites": 0,
+    "browserStorageWrites": 0,
+    "providerCalls": 0,
+    "credentialCalls": 0,
+    "producerExecutions": 0,
+    "deletionOperations": 0,
+    "cleanupOperations": 0
+  },
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "producerFamilies": {
+    "readOnlyInspection": "closed read-only adapters; outside mutating acceptance",
+    "workspaceMetadata": "operation-specific project/workspace paths; generalized acceptance remains partial",
+    "ordinaryPersistence": "Create, Save, Rename, and both Save-as UI routes are bounded by exact sessions and operation-specific executors",
+    "inMemoryEditing": "M395 directly observes the visible committed add-Scene lifecycle; durable save remains a separate M351/M359 boundary",
+    "assetImportBinding": "handout, background, WAV audio, and PNG/WebP token UI routes are exact operation-specific closures",
+    "legacyMigration": "M382 uses an exact target-bound project.migration.persist session and existing typed engine",
+    "backupPromotion": "M376 is locally session-gated, but its existing packaged modes invoke preview/engine directly rather than the visible proposal/approve/apply callbacks",
+    "assetRestore": "locally session-gated; packaged visible lifecycle remains unproven",
+    "assetDetach": "locally session-gated; packaged visible lifecycle remains unproven",
+    "brokenReferenceDetach": "locally session-gated; packaged visible lifecycle remains unproven",
+    "fixtures": "harness-only and excluded from product tray/generic Stage 11 acceptance"
+  },
+  "finding": "M395 closes visible committed in-memory editing. The next smallest direct-evidence gap is the first recovery route: M376 backup-promotion has an exact visible session gate but no test-owned packaged lifecycle that drives its visible callbacks.",
+  "selectedNextSlice": {
+    "milestone": "M397",
+    "name": "test-owned packaged backup-promotion UI lifecycle",
+    "scope": "Add only a test-gated exact-fixture self-test that establishes the existing missing-primary/valid-backup condition, drives visible recovery preview, project-session preview, reviewer approval, apply, and authoritative recovery reread callbacks, then reports a blocker-based terminal receipt. It may mutate only its exact disposable test-owned fixture through the existing bounded promotion engine.",
+    "excluded": ["other recovery paths", "deletion", "cleanup", "generic dispatch", "generic Stage 11 acceptance", "Foundry", "providers", "credentials", "browser storage", "player passwords", "Stage 16", "later stages"]
+  },
+  "doesNotProve": ["generic Stage 11 acceptance", "recovery breadth", "Foundry execution or active-GM authority", "Stage 16 UI", "Ready-to-Play"]
+}

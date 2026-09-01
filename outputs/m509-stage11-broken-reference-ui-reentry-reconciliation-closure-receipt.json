@@ -1,0 +1,54 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m509-stage11-broken-reference-ui-reentry-reconciliation-closure-2026-08-29",
+  "milestone": "M509",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "readyClaim": false,
+  "scope": "Read-only reconciliation of existing-fixture re-entry, native preparer behavior, App route, session boundary, and preservation rules",
+  "knowledgeBase": {
+    "queryMode": "read-only",
+    "relevantFacts": ["F-718", "F-717", "F-714", "F-322"],
+    "relevantTrials": ["T-661", "T-657"],
+    "relevantDecisions": ["D-659", "D-655", "D-281"]
+  },
+  "findings": {
+    "preparer": "prepare_broken_reference_ui_lifecycle_fixture_at currently returns PROJECT_FIXTURE_EXISTS for every existing project directory before rereading topology.",
+    "exactReusableTopology": "The existing fixed directory contains only project.json; the envelope has the fixed project ID, schema 0.3.0, generation 1, two exact Scenes, one registered handout asset whose valid blob is present, target background binding to that handout, and no backup.",
+    "inspectionContract": "Native inspection must remain BLOCKED with generation null, primary BLOCKED, backup MISSING, empty structured recovered Scenes/assets, one raw BACKGROUND_ASSET_ROLE_MISMATCH reference, noWrite, and noFoundryWrite.",
+    "sessionBoundary": "M508 created no proposal session and invoked no recovery/apply; the App route can reuse the fixture receipt and then perform its existing clean-session check after exact read-only validation.",
+    "preservation": "A validated reuse path must not write project, blob, workspace, backup, session, or foreign state; any topology drift must retain PROJECT_FIXTURE_EXISTS or a deterministic mismatch blocker."
+  },
+  "fixtureReread": {
+    "projectPath": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v1/project.json",
+    "directoryEntries": ["project.json"],
+    "projectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "generation": 1,
+    "contentSha256": "b1d49b4925e707e44681a35c0394fc6cd9ee49096689bbab28cfb00b09f1f986",
+    "sceneCount": 2,
+    "assetBlobSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "assetBlobPresentAndHashValid": true,
+    "backupPresent": false,
+    "workspaceGeneration": 82,
+    "workspaceEntryPresent": true,
+    "processCount": 0
+  },
+  "validation": {
+    "kbQueries": "PASS read-only",
+    "sourceAndReceiptReread": "PASS",
+    "focusedStaticEvidence": "M506 3 files / 18 tests PASS; no source/runtime change in M509",
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "fixtureMutation": false,
+    "sessionMutation": false,
+    "recoveryOrApply": false,
+    "foundryWrite": false
+  },
+  "nextBoundary": {
+    "milestone": "M510",
+    "scope": "Code-only native fixture re-entry correction: reuse only the exact existing test-owned topology after strict read-only validation, preserve refuse-to-overwrite behavior for drift, and add focused native/static tests.",
+    "prohibited": ["build", "launch", "capture", "fixture reset", "deletion", "cleanup", "session transition", "approval", "apply", "recovery", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

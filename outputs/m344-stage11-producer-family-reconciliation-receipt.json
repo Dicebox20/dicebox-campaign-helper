@@ -1,0 +1,206 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m344-stage11-producer-family-reconciliation-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M344",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "browserStorageWrites": 0,
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "auditBasis": {
+    "priorClosure": "outputs/m343-stage11-inmemory-add-scene-execute-reread-undo-receipt.json",
+    "priorClosureSha256": "F3580E791D7B918AEEC4451C84A74E9E6CF44F98BECC8368112F228E55BE0969",
+    "currentWorkflowCheck": "PASS; Stage 11 only active; 10/16 gates; readyClaim=false; no violations",
+    "currentToolingCheck": "PASS",
+    "currentKnowledgeBase": {
+      "sources": 510,
+      "facts": 546,
+      "decisions": 494,
+      "trials": 508,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "sourceReconciliation": [
+      "M343 closes the exact in-memory add-Scene proposal/session/undo boundary while keeping explicit persistence separate.",
+      "M340 closes one content-bearing project.save execution and M341 closes one PNG background registration/binding execution; both preserve operation-specific project-store authority.",
+      "The desktop still has direct create, save, save-as, rename, background, handout, audio, and token handlers; direct handlers are producer evidence, not Stage 11 acceptance.",
+      "The project session accepts project-store/no-provider batches plus exact rename and add-Scene batches; no handout-specific typed batch/session contract exists yet.",
+      "The remaining asset roles all retain raw bytes behind the project-store asset boundary; a PNG handout registration has no Scene binding and is the narrowest remaining persistent asset role."
+    ]
+  },
+  "producerFamilies": [
+    {
+      "family": "read-only inspection and compile",
+      "operations": ["list", "inspect recovery", "explain migration", "compile no-write Foundry preview"],
+      "persistentMutation": false,
+      "proposalProducer": false,
+      "authority": "typed project-store read/compile adapters",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "tests/project-workspace.test.ts"],
+      "disposition": "retain typed no-write receipts; outside mutating-producer acceptance"
+    },
+    {
+      "family": "workspace open and recent-order metadata",
+      "operations": ["open", "reload", "load with workspace generation"],
+      "persistentMutation": "workspace metadata may advance while project content remains read-only",
+      "proposalProducer": false,
+      "authority": "project-store load and workspace metadata touch",
+      "evidence": ["apps/campaign-helper-desktop/src/App.tsx", "apps/campaign-helper-desktop/src/project-store.ts", "tests/project-workspace.test.ts"],
+      "disposition": "retain explicit workspace command; no generic producer selected"
+    },
+    {
+      "family": "ordinary project persistence",
+      "operations": ["create", "save", "save as", "rename"],
+      "persistentMutation": true,
+      "proposalProducer": true,
+      "authority": "typed project-store IPC commands",
+      "coveredSlices": ["M339 metadata-only rename", "M340 content-bearing save"],
+      "remainingGap": ["create", "save-as", "broader family acceptance"],
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "apps/campaign-helper-desktop/src/project-save-proposal-adapter.ts", "outputs/m339-stage11-project-rename-execute-reread-undo-receipt.json", "outputs/m340-stage11-project-save-execute-reread-inverse-restore-receipt.json"],
+      "disposition": "retain operation-specific persistence authority; defer create/save-as"
+    },
+    {
+      "family": "in-memory project editing and navigation",
+      "operations": ["add blank Scene", "switch active Scene", "close clean session"],
+      "persistentMutation": false,
+      "editorMutation": true,
+      "proposalProducer": "add blank Scene is now typed and bounded; switch and clean close remain navigation/session commands",
+      "authority": "desktop editor state, later persisted only by explicit save",
+      "coveredSlices": ["M343 in-memory add-Scene proposal/session/undo"],
+      "remainingGap": ["persistent added-Scene save", "broader editor-producer acceptance"],
+      "evidence": ["apps/campaign-helper-desktop/src/project-add-scene-proposal-adapter.ts", "apps/campaign-helper-desktop/src/project-add-scene-executor.ts", "outputs/m343-stage11-inmemory-add-scene-execute-reread-undo-receipt.json"],
+      "disposition": "retain editor/persistence separation; defer persistent add-Scene save"
+    },
+    {
+      "family": "asset import and binding",
+      "operations": ["bind background", "register handout", "register audio", "register token"],
+      "persistentMutation": true,
+      "proposalProducer": true,
+      "authority": "typed asset validation plus project-store save",
+      "coveredSlices": ["M341 exact PNG background registration/binding"],
+      "remainingGap": ["PNG handout registration", "audio registration", "token registration", "broader asset-family acceptance"],
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "apps/campaign-helper-desktop/src/project-asset-binding-proposal-adapter.ts", "apps/campaign-helper-desktop/src/project-asset-binding-executor.ts", "outputs/m341-stage11-project-asset-binding-execute-reread-inverse-restore-receipt.json"],
+      "disposition": "select one exact PNG handout registration next; retain raw-byte/path exclusion and role-specific authority"
+    },
+    {
+      "family": "legacy migration persistence",
+      "operations": ["preview migration persist", "approve migration persist"],
+      "persistentMutation": true,
+      "proposalProducer": true,
+      "authority": "migration-specific preview and project-store persistence",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "outputs/m242-supported-legacy-migration-persistence-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"],
+      "disposition": "covered by operation-specific adapter; no generic authority expansion"
+    },
+    {
+      "family": "backup-authoritative promotion",
+      "operations": ["preview backup promotion", "approve backup promotion"],
+      "persistentMutation": true,
+      "proposalProducer": true,
+      "authority": "backup-recovery-specific preview and promotion routine",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "outputs/m244-backup-authoritative-recovery-promotion-receipt.json", "outputs/m318-stage11-packaged-project-proposal-input-boundary-recovery-receipt.json"],
+      "disposition": "retain recovery-specific authority; no promotion selected"
+    },
+    {
+      "family": "missing asset restore",
+      "operations": ["preview exact-byte restore", "approve exact-byte restore"],
+      "persistentMutation": true,
+      "proposalProducer": true,
+      "authority": "exact-byte restore preview and create-new-only recovery routine",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "outputs/m213-missing-background-blob-recovery-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"],
+      "disposition": "covered by operation-specific adapter; candidate bytes remain outside generic history"
+    },
+    {
+      "family": "missing asset detach",
+      "operations": ["preview exact-one detach", "approve detach"],
+      "persistentMutation": true,
+      "proposalProducer": true,
+      "authority": "selected missing-background detach preview and recovery",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "outputs/m226-missing-background-detach-recovery-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"],
+      "disposition": "covered by operation-specific adapter; no batch repair selected"
+    },
+    {
+      "family": "broken Scene-reference detach",
+      "operations": ["preview selected broken-reference detach", "approve detach"],
+      "persistentMutation": true,
+      "proposalProducer": true,
+      "authority": "selected Scene/asset/blocker-specific detach preview and recovery",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "outputs/m241-broken-reference-detach-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"],
+      "disposition": "covered by operation-specific adapter; no generic detach authority"
+    },
+    {
+      "family": "test-owned fixture setup and stage receipts",
+      "operations": ["prepare fixtures", "finish self-test", "record stage receipt"],
+      "persistentMutation": true,
+      "proposalProducer": false,
+      "authority": "test harness and fixed test-owned targets",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "tests/project-workspace.test.ts"],
+      "disposition": "harness-only; exclude from product proposal UI and generic producer acceptance"
+    }
+  ],
+  "selectedNextSlice": {
+    "milestone": "M345",
+    "name": "exact PNG handout asset registration proposal/session/execute/reread/inverse-restore boundary",
+    "scope": "Add one typed human/no-provider project-store proposal adapter, exact project proposal-session acceptance, and executor for registering one PNG handout asset on a fresh test-owned project. Bind exact project/generation/content identity, hash-derived asset identity, handout role, label/provenance metadata, and candidate descriptor while keeping candidate bytes and paths behind the typed asset/project-store adapter. Require preview, reviewer approval, authoritative catalog/project/recovery rereads, one atomic save, inverse restore of the original Scene content and active selection, preservation of the newly registered content-addressed asset tree, append-only history, and no Foundry/provider/credential/browser/player-password activity.",
+    "reason": "After M343, PNG handout registration is the smallest remaining persistent asset producer: it uses the existing image/asset validation boundary, adds no Scene binding or workspace metadata, and can prove role-specific content persistence without collapsing raw bytes into generic proposal history. The native merge-only asset store preserves the new content-addressed entry, so this slice does not invent deletion or cleanup authority.",
+    "requiredGates": [
+      "exact project/session identity",
+      "metadata-only generic proposal payload",
+      "human reviewer approval before write",
+      "handout role and PNG/hash identity validation",
+      "authoritative catalog/project/recovery reread before and after apply",
+      "one atomic save and inverse Scene/content restore bound to the post-apply generation",
+      "new content-addressed handout asset tree entry remains valid and preserved",
+      "append-only history with undo",
+      "raw bytes and paths excluded from generic batch/session history",
+      "no Foundry/provider/credential/browser/player-password activity"
+    ],
+    "excluded": [
+      "audio role",
+      "token role",
+      "background binding beyond closed M341 slice",
+      "create",
+      "save-as",
+      "asset recovery/detach",
+      "workspace persistence",
+      "browser/provider/credentials",
+      "Foundry",
+      "player passwords",
+      "Stage 11 acceptance",
+      "later stages"
+    ]
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "ordinary create or save-as proposal/execution",
+    "audio or token asset producers",
+    "asset recovery or detach",
+    "asset deletion, cleanup, or garbage collection",
+    "Foundry execution or active-GM authority",
+    "Ready-to-Play"
+  ],
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "AA6FC8D2EB0835384205C41D0C509C70727754AA00C8CBD2A7EF27F2A7806CBB",
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "16FD0CBD0B84AC44A34507EB5E4BCB18EF349288EBF0A83358F54E90B76FE2FE",
+    "apps/campaign-helper-desktop/src/project-add-scene-proposal-adapter.ts": "A5D767DAAA83AF6D2CBD4BA220ADC9179A6A037147688B120484E922D7EA03B1",
+    "apps/campaign-helper-desktop/src/project-add-scene-executor.ts": "2A3EFB974326CC685893B91DE0B8A02ECE7B30F776926F0930460147EE6911D6",
+    "tests/project-add-scene.test.ts": "E5DD3DA516EC5D337BD675C5622E72D158879F56035C4105E6BC9354D7BD06D3",
+    "tests/project-workspace.test.ts": "F933365959966F7F5CEDFFC71FDE76B1DFC93901E3E71B88EE35A74D217AD796",
+    "tests/desktop-shell-configuration.test.ts": "2CA3BF2B44996B47134A28B9727DF07A8E8E5D638712FAF0B243CA0ADAFC6244",
+    "outputs/m339-stage11-project-rename-execute-reread-undo-receipt.json": "8BA4B00B96B9604B9B697FF7560278136884C3FCF14B7083FC14E0FFC66C065C",
+    "outputs/m340-stage11-project-save-execute-reread-inverse-restore-receipt.json": "5A67B3C1C2FCC50536F7F2A4B16541280E9F4FEE07279566AFFEC56A34474495",
+    "outputs/m341-stage11-project-asset-binding-execute-reread-inverse-restore-receipt.json": "14A58FE5FB87E13C6546EF533578E000BF8FF668631450BAAB6D659EC78C9D37",
+    "outputs/m342-stage11-producer-family-reconciliation-receipt.json": "B01DE21EADE60A0AA2BE106489F379684D02E0C101FF2FE01391468B542D9AEA",
+    "outputs/m343-stage11-inmemory-add-scene-execute-reread-undo-receipt.json": "F3580E791D7B918AEEC4451C84A74E9E6CF44F98BECC8368112F228E55BE0969"
+  }
+}

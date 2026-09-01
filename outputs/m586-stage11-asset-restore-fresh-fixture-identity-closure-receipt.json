@@ -1,0 +1,110 @@
+{
+  "operation": "stage11-asset-restore-fresh-fixture-identity-and-session-namespace-correction",
+  "milestone": "M586",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T06:18:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "change": {
+    "fixtureIdentity": {
+      "preservedV1": "dbx:project:desktop-asset-restore-trace-self-test",
+      "addedV2": "dbx:project:desktop-asset-restore-trace-self-test-v2",
+      "nativeCommand": "prepare_asset_restore_trace_fixture_v2",
+      "nativeHelper": "prepare_asset_restore_trace_fixture_v2_at"
+    },
+    "sessionNamespace": {
+      "scope": "asset-restore-ui-self-test-v2",
+      "typedKeyHelper": "desktopAssetRestoreUiV2SelfTestSessionStorageKey",
+      "typedLoad": "loadDesktopAssetRestoreUiV2SelfTestProposalSession",
+      "typedSave": "saveDesktopAssetRestoreUiV2SelfTestProposalSession",
+      "typedTerminalClear": "clearTerminalDesktopAssetRestoreUiV2SelfTestProposalSession",
+      "ordinaryNamespacePreserved": true,
+      "v1NamespacePreserved": true
+    },
+    "route": {
+      "mode": "asset-restore-ui-execute",
+      "usesV2ProjectIdentity": true,
+      "usesV2FixturePreparation": true,
+      "setsV2PersistenceScope": true,
+      "usesV2SessionLoadSaveClear": true,
+      "postRestoreRereadRouteRemainsV1ReadOnly": true,
+      "typedPreviewApprovalApplyRereadUnchanged": true,
+      "noGenericExecutor": true,
+      "noFoundryWrite": true
+    }
+  },
+  "validation": {
+    "vitest": {
+      "command": "npm test -- tests/backup-promotion-ui-selftest.test.ts tests/project-proposal-session.test.ts tests/desktop-shell-configuration.test.ts",
+      "status": "PASS",
+      "files": 3,
+      "tests": 33
+    },
+    "desktopTypeScript": {
+      "command": "npx tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.json",
+      "status": "PASS"
+    },
+    "nodeTypeScript": {
+      "command": "npx tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.node.json",
+      "status": "PASS"
+    },
+    "nativeUnitTest": {
+      "command": "cargo test --manifest-path apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/Cargo.toml asset_restore_trace_v2_fixture_uses_distinct_project_identity_and_is_idempotent",
+      "status": "PASS",
+      "tests": 1
+    },
+    "diffCheck": "PASS"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "0C9796D57FCDB6F450B8799A3489FD43846A169DE6D5FFF08C13C26CBA7C7165",
+    "apps/campaign-helper-desktop/src/project-store.ts": "017637A322CC311BE2E79F22E21DABF0FDAF8D2A7F5A231E493CE2F5AA4F0A0B",
+    "apps/campaign-helper-desktop/src/App.tsx": "FFB5BDB42E4DD969FFC16A9598CF0079211059C3EFA89A2D45E50A17DEF6B85C",
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs": "59636AFAC8B3DA61BA0D33E21D665B2E6E3A092527EECDAE0C38D7472C9E0AE1",
+    "apps/campaign-helper-desktop/src-tauri/src/lib.rs": "74557BB22380C9CFC7D37CF02680C317B89DF4AFE13D4EBBD234DAD822859443",
+    "tests/project-proposal-session.test.ts": "9D614865651539768FFAD841D0B81BD778B040E61B6C9046557FEBFF57A77467",
+    "tests/backup-promotion-ui-selftest.test.ts": "54CE31B0E565480D7D5CBBDDDB29D6705C762CA57BC74B8DEAF90ACAA517DBC2",
+    "tests/desktop-shell-configuration.test.ts": "41615C443DEB2F189FAA8EAC5441B1D63B188CBBD8D1AFA0F58ABB276368212F"
+  },
+  "reread": {
+    "v1ProjectExists": true,
+    "v1AssetTreeExists": false,
+    "v2ProjectExists": false,
+    "v2AssetTreeExists": false,
+    "desktopProcessCount": 0,
+    "cargoProcessCount": 0,
+    "rustcProcessCount": 0,
+    "projectRuntimeMutation": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "browserStorageInspected": false,
+    "playerRolePasswords": "untouched"
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M586 closes only the additive code/test isolation correction. No packaged artifact or runtime observation was performed, so the corrected asset-restore lifecycle remains pending its separately authorized artifact and capture gates."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M587",
+    "title": "Stage 11 asset-restore fresh artifact build",
+    "status": "authorized-m587-one-build",
+    "scope": "Run exactly one configured debug package build with VITE_DBX_PROJECT_SELF_TEST=asset-restore-ui-execute and VITE_DBX_PROJECT_SELF_TEST_EXIT=1, then attest the exact executable/frontend markers, hashes, and process absence. No launch or capture.",
+    "excluded": "No launch, capture, retry, browser-storage inspection, session operation or clearing, fixture cleanup/reset, project/runtime mutation, provider, credential, Foundry, player-password, Stage 11 acceptance, Stage 12, or Ready-to-Play action in M587."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "apps/campaign-helper-desktop/src/project-store.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "apps/campaign-helper-desktop/src-tauri/src/lib.rs",
+    "tests/project-proposal-session.test.ts",
+    "tests/backup-promotion-ui-selftest.test.ts",
+    "tests/desktop-shell-configuration.test.ts",
+    "outputs/m586-stage11-asset-restore-fresh-fixture-identity-closure-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m778-stage11-project-create-redo-terminal-history-bridge-2026-08-31",
+  "milestone": "M778",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Add one strict project.create undone-to-redo-to-redone terminal-history receipt bridge and matched authoritative reread classifier.",
+  "sources": {
+    "bridge": "apps/campaign-helper-desktop/src/project-create-terminal-history.ts",
+    "bridgeSha256": "A9F7F8A6308386BADB853C8F2931B24435C9EA02093808FF939E9C3D681CC297",
+    "test": "tests/project-create-terminal-history.test.ts",
+    "testSha256": "B5FE278ECF15A556AC8068BE99898940260AF6F7750E55204469940A5017C40B"
+  },
+  "validation": "PASS: npx vitest run tests/project-create-terminal-history.test.ts (1 file, 4 tests); npm run build:packages; git diff --check.",
+  "result": "The pure bridge accepts only a canonical redone project.create proposal history with exact batch/target identity, an undone absent target, a later present authoritative reread matching the original first-generation content/Scene/asset identity, and a matched post-redo reread. It fails closed for foreign targets, non-redone history, and reread drift.",
+  "authority": {
+    "target": "local-project",
+    "apply": "operation-specific",
+    "aggregate": "not-granted",
+    "execution": "not-implemented",
+    "transitionInvocation": "not-invoked",
+    "rereadInvocation": "not-invoked",
+    "genericExecutor": false
+  },
+  "preservation": {
+    "projectOrFixtureWrite": false,
+    "browserOrRuntimeAction": false,
+    "foundryWrite": false,
+    "accountOrPasswordAction": false,
+    "providerOrCredentialAction": false,
+    "stage11Accepted": false,
+    "stage12Started": false
+  },
+  "nextAction": "Reconcile M778 with the current aggregate/producers before selecting one further bounded Stage 11 gap; preserve all fixture/runtime limits and the Stage 12 lock."
+}

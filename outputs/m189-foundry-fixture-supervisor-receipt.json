@@ -1,0 +1,70 @@
+{
+  "receiptVersion": 1,
+  "operation": "foundry.fixture.lifecycle-supervisor",
+  "status": "PASS",
+  "evidenceClass": "fixture-process",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v2",
+    "worldId": "dbx-test-world",
+    "port": 30001,
+    "foundryVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "outcome": {
+    "commands": [
+      "npm run foundry:fixture:start",
+      "npm run foundry:fixture:status",
+      "npm run foundry:fixture:stop",
+      "npm run foundry:fixture:restart",
+      "npm run foundry:fixture:recover-lock"
+    ],
+    "idempotentStart": "PASS",
+    "idempotentStop": "PASS",
+    "exactRestart": "PASS",
+    "restartSeconds": 12.3,
+    "finalPid": 26080,
+    "listener": "0.0.0.0:30001",
+    "http": {
+      "status": 302,
+      "location": "/join"
+    },
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "recovery": {
+    "initialState": "The prior fixture used a persistent wrapper plus a child Foundry process and had no supervisor ownership record.",
+    "boundedReproduction": "Two restart attempts failed after a verified stop because the tooling checked Data/Config/options.json.lock while Foundry 14 uses <dataPath>/Config/options.json.lock.",
+    "rootCause": "The fixture layout correctly stores worlds and packages under <dataPath>/Data, but Foundry runtime configuration and proper-lockfile state live directly under <dataPath>/Config.",
+    "validatedFix": "Both the launch guard and lifecycle supervisor now inspect the root Config lock. Restart waits for process exit, verifies exact ownership, quarantines only an empty stale lock, starts one detached Foundry process, and rereads PID, command line, listener, and HTTP readiness.",
+    "quarantinePaths": [
+      "work/foundry-fixture-data-v2/Config/dicebox-lock-quarantine/options.json.lock-2026-08-24T12-21-05-619Z",
+      "work/foundry-fixture-data-v2/Config/dicebox-lock-quarantine/options.json.lock-2026-08-24T12-21-34-698Z"
+    ],
+    "unknownOutcomePolicy": "Run status and reread exact PID/listener/HTTP state before any retry. Foreign or unmanaged listeners remain blocked."
+  },
+  "sourceHashes": {
+    "tools/foundry-fixture-supervisor.mjs": "3B8C37A84C993EAEC57A35BE0AF639FEBC13DEF22D99232D8BDB46B93CF5F2C4",
+    "tools/foundry-fixture-supervisor.d.mts": "737FC484F167498E2CE0E1AA1B46ADA6A4B3F5355E44C33A2E2A26D8A407B2C6",
+    "tools/foundry-server.mjs": "E787D97E18C92692E1F70050AB5594281FBF5986825090C3915810FCF2FE793B",
+    "tests/foundry-fixture-supervisor.test.ts": "45AEB9F35399A2FAB1837DB615E088A89D16654D889672E98F0D105F7AA32B58",
+    "tests/foundry-server-guard.test.ts": "0687D9A56CD4603594BE9C71B6022F21C55C45EC2E82CAFA1980233D46F1B1D7",
+    "docs/FOUNDRY-FIXTURE-SERVER-SUPERVISOR.md": "94B62CE25C22AF3574CAF449A97CB52285E2BEFAFF88C469CD35AB44D08A5CD2",
+    "docs/ACTIVE-PROGRAM-SLICE.json": "5D0C1F68AC963B9E7A58C62BCFB0FD791810B9F5204FF7176CA90FFEB6E457F0"
+  },
+  "verification": {
+    "focused": "11/11 PASS before final hardening; final supervisor and guard coverage 13/13 within the full suite",
+    "full": "86 files / 365 tests PASS",
+    "build": "PASS",
+    "workflowCheck": "PASS",
+    "tooling": "PASS"
+  },
+  "sources": [
+    "Foundry 14.367 resources/app/dist/init.mjs acquireLockFile and signal shutdown implementation",
+    "Foundry 14.367 bundled proper-lockfile lib/lockfile.js default stale=10000 and .lock directory behavior",
+    "https://foundryvtt.com/article/configuration/",
+    "https://nodejs.org/api/child_process.html#optionsdetached"
+  ],
+  "nextGate": "Restore the joined fixture GM client and continue the separate program-authored Scene preview/apply/reread stage. Process readiness does not prove client, module, active-GM, or world-document readiness."
+}

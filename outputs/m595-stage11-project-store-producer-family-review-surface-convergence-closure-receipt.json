@@ -1,0 +1,82 @@
+{
+  "operation": "stage11-project-store-producer-family-review-surface-convergence",
+  "milestone": "M595",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T06:08:39-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "implementation": {
+    "status": "PASS",
+    "contract": "TYPED_LOCAL_PROJECT_REVIEW_APPLY_OPERATION_CONTRACTS",
+    "operationKinds": 14,
+    "authority": "human-review over local-project target",
+    "applyAuthority": "operation-specific",
+    "genericExecutor": false,
+    "contractUse": "inspectTypedLocalProjectReviewApplyCoverage consumes the exact operation contract matrix",
+    "preservation": "existing operation-specific handlers, sessions, approval, apply, reread, and recovery paths unchanged"
+  },
+  "validation": {
+    "focusedVitest": "PASS 3 files / 16 tests",
+    "desktopTypeScript": "PASS",
+    "nodeTypeScript": "PASS",
+    "diffCheck": "PASS",
+    "processReread": {
+      "desktop": 0,
+      "cargo": 0,
+      "rustc": 0
+    }
+  },
+  "sourceHashes": {
+    "reviewCoverage": "4C760DFDBB2EC86E1DF4316B8E3A413FC332C0CCF32FD3789E16395A4454F958",
+    "reviewCoverageTest": "FDC88D6C45BF955556A9DAC78ABFE86EA87A0FA0071C48B559706DAF08523035",
+    "reviewAcceptanceTest": "9D4E3651EF5810441F884B9BC2ADD02A9367BB18D3B513F41C44243C51089A36",
+    "app": "5D4F133D94E981030C07E91AE7EBA7C2F2A647164CC43BABFDE910966D0CC3FE"
+  },
+  "preservation": {
+    "projectRuntime": "no write",
+    "sessions": "no operation",
+    "fixtures": "no cleanup or reset",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M595 closes the local no-write review-surface contract for the 14 operation kinds, but it does not establish packaged artifact behavior, aggregate every-producer lifecycle acceptance, repository/Technical Builder promotion, or active-GM/Foundry authority."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M596",
+    "title": "Stage 11 fresh review-surface artifact",
+    "status": "authorized-m596-one-build",
+    "scope": "Run exactly one configured desktop debug package build with the review-surface contract embedded, then attest exact operation-contract markers, hashes, and process absence.",
+    "excluded": "No launch, capture, retry, browser-storage inspection, session operation or clearing, fixture cleanup, project/runtime mutation, provider, credential, repository promotion, Technical Builder, Foundry, player-password action, Stage 11 acceptance, Stage 12, or Ready-to-Play action in M596."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "tests/project-review-apply-coverage.test.ts",
+    "tests/project-review-apply-acceptance.test.ts",
+    "outputs/m595-stage11-project-store-producer-family-review-surface-convergence-closure-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql"
+  ]
+}

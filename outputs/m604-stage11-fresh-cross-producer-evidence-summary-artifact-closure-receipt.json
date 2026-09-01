@@ -1,0 +1,93 @@
+{
+  "operation": "stage11-fresh-cross-producer-evidence-summary-artifact",
+  "milestone": "M604",
+  "status": "ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-30T06:47:06-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "status": "PASS",
+    "frontendTypeScript": "PASS",
+    "nodeTypeScript": "PASS",
+    "viteBuild": "PASS",
+    "rustBuild": "PASS",
+    "buildCount": 1,
+    "launch": false,
+    "capture": false,
+    "retry": false
+  },
+  "artifacts": {
+    "nativeExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "6B31EB3465CAFAB908368DD8EB4671D784784D90A3B54BBD0A5EE285B79C4A72",
+      "bytes": 26883072,
+      "role": "compiled native Tauri shell"
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-jxIhuPMh.js",
+      "sha256": "39F1883C3F820D45B16301276C61C2B43717F0F0C1D96EC073C615DEF76F6EF7",
+      "bytes": 2060897,
+      "role": "compiled renderer containing the typed eleven-family non-certifying evidence summary"
+    }
+  },
+  "markerAttestation": {
+    "expectedProducerFamilyCount": 11,
+    "presentProducerFamilyCount": 11,
+    "allProducerFamilyIdsPresent": true,
+    "missingProducerFamilyIds": [],
+    "summarySourceMarker": true,
+    "visibleSummaryMarker": true,
+    "nonCertifyingMarker": true,
+    "noExecutionAuthorityMarker": true,
+    "partialAggregateMarker": true,
+    "interpretation": "The current renderer bundle contains the M603 typed cross-producer evidence summary. Its entries are explicitly non-certifying and non-executing; the native executable remains the compiled shell artifact."
+  },
+  "processReread": {
+    "desktopProcessCount": 0,
+    "cargoProcessCount": 0,
+    "rustcProcessCount": 0
+  },
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": true,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M604 attests a fresh owning artifact containing the M603 exact eleven-family non-certifying evidence summary. Packaged observation remains separately gated; no execution or authority bridge was added."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M605",
+    "title": "Stage 11 packaged cross-producer evidence-summary observation",
+    "status": "authorized-next",
+    "scope": "Run exactly one bounded packaged accessibility-first observation against the exact M604 artifact set, preserve the first PASS, timeout, or blocker, and reread process state. Do not retry or begin Stage 12."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/dist/assets/index-jxIhuPMh.js",
+    "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "outputs/m604-stage11-fresh-cross-producer-evidence-summary-artifact-closure-receipt.json"
+  ]
+}

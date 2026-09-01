@@ -1,0 +1,53 @@
+{
+  "milestone": "M646",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL READ-ONLY; STAGE 11 PARTIAL",
+  "capturedAt": "2026-08-30",
+  "scope": "Read-only reconciliation of the Stage 11 four-clause map after M645. No build, launch, browser/session/project/runtime operation, provider, credential, Technical Builder, or Foundry action occurred.",
+  "evidenceConsulted": [
+    "outputs/m298-stage11-proposal-system-gap-audit-receipt.json",
+    "outputs/m302-stage11-desktop-generic-review-application-receipt.json",
+    "outputs/m594-stage11-producer-family-acceptance-reconciliation-closure-receipt.json",
+    "outputs/m603-stage11-typed-cross-producer-lifecycle-evidence-summary-closure-receipt.json",
+    "outputs/m634-stage11-packaged-operation-to-history-transition-coverage-reconciliation-closure-receipt.json",
+    "outputs/m635-stage11-local-project-proposal-lifecycle-conformance-receipt.json",
+    "outputs/m645-stage11-observable-save-ui-packaged-observation-receipt.json",
+    "packages/dicebox-core/src/proposal-batch.ts",
+    "packages/dicebox-compiler/src/staged-executor.ts",
+    "packages/dicebox-codex-adapter/src/index.ts"
+  ],
+  "clauses": {
+    "inspectableBatchesAndMetadata": {
+      "status": "PARTIAL",
+      "directEvidence": "The typed generic batch/lifecycle vocabulary, 14-operation coverage, and operation-specific handlers are deterministic and packaged-visible; M645 directly proves one project.save producer lifecycle.",
+      "remaining": "No current reconciliation proves the exact Foundry staged-executor producer maps its active-GM/runtime-gated plan into the generic batch metadata without authority leakage."
+    },
+    "reviewLifecycleRecovery": {
+      "status": "PARTIAL",
+      "directEvidence": "M635/M645 prove preview, explicit approval, one apply, reread, inverse restore, append-only history, and no-retry-on-unknown for one local project.save path.",
+      "remaining": "The corresponding Foundry staged-executor lifecycle must be mapped to generic approve/reject/edit/cancel/stale/unknown/reread/recovery semantics; local project proof cannot be generalized."
+    },
+    "sharedVocabularyWithoutSharedAuthority": {
+      "status": "PARTIAL",
+      "directEvidence": "The existing shared vocabulary explicitly distinguishes review state, local-project authority, repository promotion, and current-active-GM runtime authority.",
+      "remaining": "The current evidence lacks a focused contradiction check that the Foundry staged-executor adapter retains its exact profile/current-active-GM gates when represented by the shared proposal contract."
+    },
+    "everyMutatingPathAcceptance": {
+      "status": "PARTIAL",
+      "directEvidence": "Multiple operation-specific project and recovery families have bounded deterministic and packaged receipts; the matrix preserves their remaining gaps rather than claiming coverage.",
+      "remaining": "There is no complete inventory-backed acceptance mapping for the Foundry staged-executor family, so an every-mutating-path claim is not justified."
+    }
+  },
+  "producerDisposition": {
+    "projectStore": "M635/M645 now supply current local and direct packaged project.save lifecycle evidence; remain producer-scoped.",
+    "foundryStagedExecutor": "Selected as the one smallest remaining authority-gated mutating producer family for a read-only M647 conformance audit.",
+    "technicalBuilder": "Repository handoff is not a product mutation authority and remains separately review-only; it is not selected as a substitute for Foundry execution evidence."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M647",
+    "title": "Foundry staged-executor proposal-batch conformance audit",
+    "scope": "Read only the current generic proposal-batch core, Foundry staged-executor/journal/adapter sources and tests, exact Stage 9 evidence receipts, current Stage 11 evidence map, and KB. Map fields and lifecycle transitions; classify direct, indirect, or missing evidence; select at most one later bounded implementation or verification slice.",
+    "exclusions": ["Foundry launch or write", "active-GM action", "provider or credential use", "browser action", "project/session mutation", "Technical Builder execution", "Stage 11 acceptance", "Stage 12", "Ready-to-Play"]
+  },
+  "limits": "This reconciliation does not accept Stage 11 or establish a runtime Foundry result."
+}

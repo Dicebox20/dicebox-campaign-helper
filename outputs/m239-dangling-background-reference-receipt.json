@@ -1,0 +1,74 @@
+{
+  "operation": "dicebox.stage8.dangling-background-reference.m239-closure",
+  "status": "PASS_LOCAL_CLOSED",
+  "date": "2026-08-26",
+  "scope": "One read-only diagnostic for persisted Scene background references that are missing from registered background metadata or point at a registered non-background role.",
+  "projectId": "dbx:project:desktop-dangling-background-reference-self-test",
+  "packagedSetup": {
+    "status": "PASS",
+    "processExitCode": 0,
+    "generation": 1,
+    "sceneCount": 2,
+    "assetDescriptorCount": 2,
+    "primaryDisposition": "BLOCKED",
+    "backupDisposition": "MISSING",
+    "brokenSceneReferences": [
+      {
+        "source": "projects/desktop-dangling-background-reference-self-test/project.json",
+        "sceneId": "dbx:scene:desktop-dangling-background-reference-self-test-missing",
+        "assetId": "dbx:asset:sha256-275f1bcbbb585c71e3b2184304eccfa0e37de92022ca3b6f4e9c10df32318d85",
+        "blockerCode": "BACKGROUND_ASSET_MISSING",
+        "retry": "after-reread"
+      },
+      {
+        "source": "projects/desktop-dangling-background-reference-self-test/project.json",
+        "sceneId": "dbx:scene:desktop-dangling-background-reference-self-test-role",
+        "assetId": "dbx:asset:sha256-4c4b6a3be1314ab86138bef4314dde022e600960d8689a2c8f8631802d20dab6",
+        "blockerCode": "BACKGROUND_ASSET_ROLE_MISMATCH",
+        "retry": "never"
+      }
+    ],
+    "noWrite": true,
+    "noFoundryWrite": true
+  },
+  "freshPackagedReread": {
+    "status": "PASS",
+    "processExitCode": 0,
+    "primaryDisposition": "BLOCKED",
+    "backupDisposition": "MISSING",
+    "brokenSceneReferenceCount": 2,
+    "blockerCodes": ["BACKGROUND_ASSET_MISSING", "BACKGROUND_ASSET_ROLE_MISMATCH"],
+    "noWrite": true,
+    "noFoundryWrite": true
+  },
+  "ordinaryStartupNoWrite": {
+    "status": "PASS_FILESYSTEM_EVIDENCE",
+    "processExitedBeforeStop": false,
+    "stopDisposition": "stopped only after the bounded probe by exact executable identity",
+    "checkedPaths": [
+      "projects/desktop-dangling-background-reference-self-test/project.json",
+      "projects/desktop-dangling-background-reference-self-test/project.backup.json",
+      "workspace-index.json",
+      "workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending",
+      "assets/sha256/275f1bcbbb585c71e3b2184304eccfa0e37de92022ca3b6f4e9c10df32318d85",
+      "assets/sha256/4c4b6a3be1314ab86138bef4314dde022e600960d8689a2c8f8631802d20dab6"
+    ],
+    "byteIdentity": true,
+    "unrelatedRuntimePendingArtifactPreserved": true,
+    "noFoundryWrite": true
+  },
+  "localValidation": {
+    "rustProjectStoreTests": "43/43",
+    "focusedDesktopTests": "27/27",
+    "fullNpmValidation": "89 test files / 431 tests",
+    "windowsNativeDebugBuild": "PASS",
+    "workflowCheck": "PASS · 7/16 · real-project-workspaces sole active stage",
+    "database": "integrity ok · 296 sources / 332 facts / 281 decisions / 295 trials",
+    "processLifecycle": "setup and fresh reread exited with code 0; ordinary process stopped after filesystem probe"
+  },
+  "excluded": [
+    "automatic detach, rebind, replacement, cleanup, migration, or backup promotion",
+    "additional asset roles, arbitrary media or paths, placement, geometry, cross-process certification, or universal durability",
+    "Foundry mutation, Stage 8 completion, alpha readiness, and vision-assisted Spatial Blueprint implementation"
+  ]
+}

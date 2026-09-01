@@ -1,0 +1,28 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m400-stage11-backup-promotion-lifecycle-handoff-reconciliation-2026-08-28",
+  "milestone": "M400",
+  "evidenceLabel": "local-read-only",
+  "status": "PASS",
+  "readyClaim": false,
+  "findings": {
+    "exactProcess": "stopped",
+    "exactSession": "project.recovery.backup-promotion / previewed / one receipt",
+    "projectPrimary": "missing",
+    "recoveryApply": false,
+    "testProgressTransport": "existing Rust allowlisted record_project_ui_self_test_progress command",
+    "m397ProgressCalls": "absent"
+  },
+  "counts": {
+    "sessionWrites": 0,
+    "projectWrites": 0,
+    "workspaceWrites": 0,
+    "recoveryApplyOperations": 0,
+    "foundryWrites": 0,
+    "providerCalls": 0,
+    "credentialCalls": 0,
+    "deletionOperations": 0
+  },
+  "recoveryDisposition": "M401 may add only existing bounded lifecycle progress telemetry; no rerun or session transition is authorized.",
+  "doesNotProve": ["root cause of process exit", "packaged recovery lifecycle success", "generic telemetry authority", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

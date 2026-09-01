@@ -1,0 +1,78 @@
+{
+  "operation": "stage11-asset-restore-exact-reread-predicate-correction",
+  "milestone": "M590",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T05:40:30-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "implementation": {
+    "status": "PASS",
+    "helper": "isAssetRestoreUiTerminalInspection",
+    "helperLocation": "apps/campaign-helper-desktop/src/project-store.ts",
+    "applyCallSite": "apps/campaign-helper-desktop/src/App.tsx:1705-1733",
+    "packagedTerminalCallSite": "apps/campaign-helper-desktop/src/App.tsx:4127-4143",
+    "behavior": "Accept aggregate BLOCKED only when the selected asset is PRESENT_VALID and non-eligible, the explicitly expected remaining assets are MISSING background assets with REGISTERED_ASSET_BLOB_MISSING and restoreEligible, all other registered assets are PRESENT_VALID and non-eligible, pending artifacts are valid, broken references are absent, and no-write/no-Foundry state is true. Accept PASS only when no expected remaining asset exists.",
+    "nativeRestoreChanged": false,
+    "genericBlockedAcceptance": false
+  },
+  "validation": {
+    "focusedVitest": "PASS 1 file / 9 tests",
+    "desktopTypeScript": "PASS",
+    "nodeTypeScript": "PASS",
+    "diffCheck": "PASS",
+    "processReread": {
+      "desktop": 0,
+      "cargo": 0,
+      "rustc": 0
+    }
+  },
+  "sourceHashes": {
+    "projectStore": "863F5A3D7DEE50852A13DDE968A5293667FAEFD912DC70937053832B14D9B946",
+    "app": "9E960E9A7BD4F88A4A1E283C5D6479A36EFEC94906B16A74CF8C6CBBE970D1A1",
+    "focusedTest": "2B1D8C270696DF119FEED4DC3B49A24E9DDF4D2293392F47ABEED1EF6D4B6922"
+  },
+  "preservation": {
+    "consumedV2Fixture": "not reset or retried",
+    "v1Fixture": "untouched",
+    "ordinarySessionNamespace": "untouched",
+    "nativeProjectStore": "unchanged",
+    "foundry": "no write",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M590 closes only the local predicate correction. A fresh additive fixture/session identity, artifact, and packaged observation are still required before the asset-restore producer can be accepted, and Stage 11 remains an every-producer aggregate gate."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M591",
+    "title": "Stage 11 asset-restore fresh v3 fixture and session identity",
+    "status": "authorized-m591-code-only",
+    "scope": "Add a distinct test-owned v3 fixture identity and dedicated typed proposal-session namespace for the corrected asset-restore execute route, preserving v1/v2 and ordinary state. Run focused source/session/native fixture tests, TypeScript checks, diff hygiene, and process reread only.",
+    "excluded": "No build, launch, capture, retry, browser-storage inspection, session operation or clearing, fixture reset/cleanup, project/runtime mutation, provider, credential, Foundry, player-password action, Stage 11 acceptance, Stage 12, or Ready-to-Play action in M591."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-store.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/backup-promotion-ui-selftest.test.ts",
+    "outputs/m590-stage11-asset-restore-exact-reread-predicate-closure-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql"
+  ]
+}

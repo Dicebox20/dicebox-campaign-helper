@@ -1,0 +1,50 @@
+{
+  "milestone": "M704",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY",
+  "scope": "Require and preserve the exact matched claim persistence-resolution witness through pre-dispatch/preflight and M688 pre-persistence proof validation.",
+  "sourceState": "Unborn project worktree with no HEAD; the bounded worker and Foreman operated on the current project snapshot.",
+  "delegation": {
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "medium",
+    "workerScope": "Pure staged-inverse pre-dispatch, preflight, proof boundaries, and minimum compatibility fixtures/tests.",
+    "workerReceipt": "Three staged-inverse boundary files and five compatibility test files changed; 18/18 focused tests and package typecheck/full desktop build passed.",
+    "foremanReview": "Reviewed the propagated witness checks and closed the worker before the full repository gate."
+  },
+  "implementation": {
+    "preDispatch": "The pre-dispatch context now requires a matched claim persistence-resolution witness whose canonical reread equals the authoritative claim reread.",
+    "preflight": "Preflight requires the witness, preserves it in selected and blocked outputs, and validates the witness against the claim before continuing pure selection.",
+    "proof": "M688 proof input requires the same witness, compares it with preflight and claim state, and carries it into the proof output; forged or mismatched witnesses fail closed.",
+    "compatibility": "Downstream composition fixtures carry the exact witness through the updated contracts."
+  },
+  "changedPaths": [
+    "packages/dicebox-compiler/src/staged-inverse-pre-dispatch-context.ts",
+    "packages/dicebox-compiler/src/staged-inverse-preflight-orchestration.ts",
+    "packages/dicebox-compiler/src/staged-inverse-pre-persistence-proof.ts",
+    "tests/staged-inverse-executor-composition.test.ts",
+    "tests/staged-inverse-pre-dispatch-context.test.ts",
+    "tests/staged-inverse-pre-persistence-proof.test.ts",
+    "tests/staged-inverse-preflight-orchestration.test.ts",
+    "tests/staged-inverse-proof-composition-bridge.test.ts"
+  ],
+  "validation": {
+    "focused": "5 test files, 18/18 tests passed.",
+    "full": "153 test files, 785/785 tests passed; TypeScript build passed; desktop production build passed with the existing bundle-size warning; tooling verification passed; workflow checker passed.",
+    "knowledgeBaseBeforeImplementation": "schema-plus-seed rebuild and verify passed at 1124 sources, 964 facts, 831 decisions, 787 trials, 40 research subjects, and 26 milestones.",
+    "readyClaim": false
+  },
+  "safety": {
+    "claimStoreInvocation": false,
+    "claimStoreWrite": false,
+    "dependencyInvocation": false,
+    "adapterDispatch": "not-authorized-by-this-contract",
+    "executorContinuation": false,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "foreignStatePreserved": true,
+    "liveCertification": false,
+    "stage11Acceptance": false
+  },
+  "selectedNext": "M705 read-only reconciliation of witness continuity across M700-M704 and a fresh audit of the four Stage 11 acceptance clauses and eleven producer paths.",
+  "recovery": "The full gate found no compatibility failures; all updated preflight/proof consumers passed repository-wide validation."
+}

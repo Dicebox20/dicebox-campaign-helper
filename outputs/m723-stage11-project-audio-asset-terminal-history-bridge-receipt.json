@@ -1,0 +1,69 @@
+{
+  "milestone": "M723",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bridge one existing operation-specific local-project project.asset.register-audio execution receipt into typed terminal history.",
+  "sourceState": "Unborn project worktree with no HEAD; M723 changes only the bounded bridge/test/receipt and governance records.",
+  "artifactHashes": {
+    "bridgeSha256": "FDD4714DD72F4AF9B306DF4875A270DE0178F784BE4B8DE4D8577641C46966DD",
+    "testSha256": "D3D58E5196CC1472F539E35312A8071BF2BC5FC8B7A0FCF5AD92AA1700EB1129",
+    "receiptSha256BeforeFinalization": "EB4A6BB48E8D7D6AAB781ED20FC5F56698A5E9E7EAB182C078A10E21CB4CC1DD"
+  },
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Bounded project.asset.register-audio terminal-history bridge and focused test.",
+    "workerOutcome": "Worker completed the bounded bridge and focused test, reporting the two in-scope paths, 2/2 focused tests, desktop TypeScript, desktop build, and active-slice PASS. The worker was closed after receipt review.",
+    "foremanReview": "The Foreman reread D-851/F-968, the existing audio-asset executor/proposal adapter, and prior terminal-history bridges; reviewed the worker implementation; corrected one compile-only fixture typing issue; and reran focused/full/build/tooling/workflow/KB checks. No runtime or Foundry action occurred."
+  },
+  "implementation": {
+    "entryPoint": "apps/campaign-helper-desktop/src/project-audio-asset-terminal-history.ts:bridgeProjectAudioAssetRegistrationExecutionToTerminalHistory",
+    "schema": "projectAudioAssetTerminalHistoryReceiptSchema.parse/safeParse",
+    "acceptedOperation": "dicebox.project.asset.register-audio.execute",
+    "terminalSequence": ["preview", "approve", "begin-apply", "commit-after-reread", "undo"],
+    "checks": [
+      "exact project and operation identity",
+      "content-addressed audio descriptor and persisted asset-byte evidence",
+      "before/apply/undo authoritative reread identity and monotonic generations",
+      "Scene preservation and inverse Scene restoration",
+      "additive asset-tree preservation through inverse restore",
+      "backup rotation and atomic native save receipts",
+      "matched commit and undo history rereads",
+      "fail-closed tamper, non-persistent, and Foundry-writing evidence"
+    ]
+  },
+  "validation": {
+    "focused": "PASS: 2 tests in tests/project-audio-asset-terminal-history.test.ts",
+    "fullRepository": "PASS: 159 test files / 803 tests",
+    "build": "PASS: package typecheck, desktop typecheck, and Vite production build",
+    "foundryOrRuntime": "NOT RUN; excluded by M723",
+    "tooling": "PASS: npm.cmd run verify:tooling",
+    "knowledgeBase": "PASS: rebuild and verification after M723 seed synchronization",
+    "workflow": "PASS: active-slice checker reports Stage 11 proposal-approval-history at 10/16 with no violations"
+  },
+  "safety": {
+    "bridgeOnly": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "noGenericExecutor": true,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed before closeout; aggregate producer acceptance remains partial",
+    "stage12": "NOT STARTED",
+    "decision": "M723 closes one audio asset producer seam but does not accept Stage 11 or authorize Stage 12."
+  },
+  "remainingGaps": [
+    "Aggregate producer coverage and direct current-authority evidence remain incomplete across all eleven producer families.",
+    "Unified stale, outcome-unknown, recovered, undone, and redone lifecycle evidence remains incomplete.",
+    "Packaged/runtime authority and live active-GM/Foundry evidence remain incomplete.",
+    "Stage 11 acceptance requires a fresh read-only reconciliation after this seam."
+  ],
+  "selectedNext": "M724 read-only Stage 11 acceptance reconciliation after M723; preserve live Foundry/runtime and Stage 12 exclusions."
+}

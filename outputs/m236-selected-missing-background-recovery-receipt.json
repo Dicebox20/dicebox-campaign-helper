@@ -1,0 +1,70 @@
+{
+  "operation": "dicebox.stage8.selected-missing-background-recovery.m236-closure",
+  "status": "PASS_LOCAL_CLOSED",
+  "date": "2026-08-26",
+  "scope": "One explicit selected registered-background recovery target among multiple independently eligible missing blobs.",
+  "projectId": "dbx:project:desktop-selected-missing-background-recovery-self-test",
+  "packagedSetup": {
+    "status": "PASS",
+    "assetIds": [
+      "dbx:asset:sha256-275f1bcbbb585c71e3b2184304eccfa0e37de92022ca3b6f4e9c10df32318d85",
+      "dbx:asset:sha256-e23764ba1c5f1c5a3b4dfff45a3224aadc43e75761f5b6368b0aa793a6371fef"
+    ],
+    "evidence": "Packaged setup accessibility reread reported two distinct test-owned asset identities and no Foundry write."
+  },
+  "localCorrection": {
+    "status": "PASS",
+    "evidence": "The selected stable ID and exact candidate bytes use the existing restore preview/approval path; multiple blockers are allowed only when all are independently eligible missing backgrounds; authoritative recovery reread preserves the unselected missing asset.",
+    "rustProjectStoreTests": 41,
+    "focusedTypeScriptTests": 24,
+    "nativeBuild": "PASS"
+  },
+  "correctedPackagedAction": {
+    "status": "PASS",
+    "processExitCode": 0,
+    "selectedAssetId": "dbx:asset:sha256-275f1bcbbb585c71e3b2184304eccfa0e37de92022ca3b6f4e9c10df32318d85",
+    "selectedDisposition": "PRESENT_VALID",
+    "unselectedAssetId": "dbx:asset:sha256-e23764ba1c5f1c5a3b4dfff45a3224aadc43e75761f5b6368b0aa793a6371fef",
+    "unselectedDisposition": "MISSING",
+    "noFoundryWrite": true
+  },
+  "freshPackageReread": {
+    "status": "PASS",
+    "processExitCode": 0,
+    "byteIdentity": true,
+    "selectedDisposition": "PRESENT_VALID",
+    "unselectedDisposition": "MISSING",
+    "unselectedRemainsEligible": true,
+    "noFoundryWrite": true
+  },
+  "ordinaryStartupByteIdentity": {
+    "status": "PASS",
+    "processExitCode": 0,
+    "processRunningAfterWait": true,
+    "byteIdentity": true,
+    "trackedPaths": [
+      "projects/desktop-selected-missing-background-recovery-self-test/project.json",
+      "projects/desktop-selected-missing-background-recovery-self-test/project.backup.json",
+      "workspace-index.json",
+      "workspace-index.backup.json",
+      "assets/sha256/275f1bcbbb585c71e3b2184304eccfa0e37de92022ca3b6f4e9c10df32318d85",
+      "assets/sha256/e23764ba1c5f1c5a3b4dfff45a3224aadc43e75761f5b6368b0aa793a6371fef"
+    ],
+    "foreignState": "NO_FOREIGN_FILE_PRESENT_IN_MINIMAL_FIXTURE; fixed-root foreign-state preservation is covered by Rust regressions",
+    "noFoundryWrite": true
+  },
+  "workflowCheck": "PASS",
+  "database": {
+    "integrity": "ok",
+    "sources": 291,
+    "facts": 327,
+    "decisions": 276,
+    "trials": 290
+  },
+  "excluded": [
+    "batch repair, cleanup, deletion, garbage collection, rebind, migration, backup promotion, or new roles/schemas",
+    "directory-entry durability or cross-process authority",
+    "Foundry mutation",
+    "Stage 8 completion, alpha readiness, or vision implementation"
+  ]
+}

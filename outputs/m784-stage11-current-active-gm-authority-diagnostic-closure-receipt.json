@@ -1,0 +1,20 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M784",
+  "status": "PASS LOCAL CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "One package-owned fixed redacted no-write current-active-GM identity diagnostic/control.",
+  "result": "The reader fails closed unless the immutable package descriptor, exact Foundry 14.367/D&D5e 5.3.3 target, current identified GM user, and Foundry activeGM identity all match. The observed receipt makes no permission or execution claim and never returns an identity.",
+  "validation": "PASS: npx vitest run tests/foundry-package.test.ts (1 file, 11 tests); npm run build:packages; git diff --check.",
+  "hashes": {
+    "sourceSha256": "67749A9E81AA2E8A5842F3A6BBD81F5C34AB9A143BC7EDFEECB058778B50E6B7",
+    "testSha256": "3F721C5ACE3CE17FD34B527FF7B1FC7B14351AF7F2B8A8F84C32AA0712846AE9"
+  },
+  "preservation": {
+    "runtime": false,
+    "projectOrFoundryWrite": false,
+    "accountOrPasswordAction": false,
+    "stage11Accepted": false,
+    "stage12Started": false
+  },
+  "nextAction": "Fresh read-only Stage 11 reconciliation before selecting one bounded next gap."
+}

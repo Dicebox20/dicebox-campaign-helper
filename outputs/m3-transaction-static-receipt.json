@@ -1,0 +1,46 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m3-transaction-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": {
+      "files": 7,
+      "tests": 26,
+      "status": "PASS"
+    },
+    "transactionStates": [
+      "previewed",
+      "approved",
+      "apply-ready",
+      "applying",
+      "unknown-outcome",
+      "committed",
+      "recovered"
+    ],
+    "database": {
+      "integrity": "ok",
+      "sources": 26,
+      "facts": 41,
+      "decisions": 16,
+      "activeWork": 19,
+      "trials": 15,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Approval token authenticity outside the typed boundary",
+    "Durable transaction journal persistence",
+    "Foundry Document creation or update",
+    "Foundry read-back and failure injection",
+    "Utility Harness behavior",
+    "Visible Chrome behavior",
+    "MCP bridge connectivity",
+    "campaign-world mutation"
+  ],
+  "nextGate": "Implement the exact Foundry adapter port and durable journal fixture only after exact M0/M1/M2 runtime evidence is available."
+}

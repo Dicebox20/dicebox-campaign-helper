@@ -1,0 +1,578 @@
+{
+  "status": "observed",
+  "packageId": "dicebox-campaign-helper",
+  "scenes": [
+    {
+      "semanticId": "dbx:room:ascendancy-tram-depot",
+      "binding": "redacted:9wZX8vHdEPCMtYsp",
+      "walls": [
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-north-west",
+          "binding": "redacted:4XeCJPf3YMhRqVqf"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-north-east",
+          "binding": "redacted:cM6RBwrNonduSg5e"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-south-west",
+          "binding": "redacted:C8TD76VO93X6B4Sh"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-south-east",
+          "binding": "redacted:3lkF9EGMm0jY3ZLs"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-west-north",
+          "binding": "redacted:lkFfSwje6iA1e2WN"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-west-south",
+          "binding": "redacted:9bPxU2EXOTOIT2om"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-east-north",
+          "binding": "redacted:GxsKyGBseTf2lBo6"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:ascendancy-tram-depot-east-south",
+          "binding": "redacted:HRcHAyZaztFe29H8"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:tram-door-north",
+          "binding": "redacted:GmyHqiFgGHDAXVyV"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:tram-door-south",
+          "binding": "redacted:RSy77L2oUTFcz5Mz"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:tram-door-west",
+          "binding": "redacted:6e5Sl2IGoC3NLnWz"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:tram-door-east",
+          "binding": "redacted:wPk50ldDRiuXsSDI"
+        }
+      ],
+      "regions": [
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r1-c1",
+          "binding": "redacted:ODYNtCzVURFjOZhq"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r1-c3",
+          "binding": "redacted:hpz1MbEfPrfR0aCF"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r1-c2",
+          "binding": "redacted:GmOQDJ0JEwyHeTki"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r1-c4",
+          "binding": "redacted:P7w6aCfniDJtLxQf"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r1-c5",
+          "binding": "redacted:6Q7NrFSWRRurDAOO"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r1-c6",
+          "binding": "redacted:6Dfbh04nyQb4RUvZ"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r2-c1",
+          "binding": "redacted:D6AOtPP3UyQTRFqM"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r2-c2",
+          "binding": "redacted:0h45jGSipGh4MitF"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r2-c3",
+          "binding": "redacted:69JleQFEQIcAN7N8"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r2-c4",
+          "binding": "redacted:TxcbGP71vp4fV7WS"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r2-c5",
+          "binding": "redacted:IrVSmTbxRObn4RBi"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r2-c6",
+          "binding": "redacted:avFxwNcCb3UXpbOU"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r3-c1",
+          "binding": "redacted:h6IrXfZvVrO66Z77"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r3-c2",
+          "binding": "redacted:T7mc1NqxPC0qQ96A"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r3-c3",
+          "binding": "redacted:c9JCNwLu7qVWIl9B"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r3-c4",
+          "binding": "redacted:1lbVyL3UUN8NQoLe"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r3-c5",
+          "binding": "redacted:YiBVKOUdnsfhDVSL"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r3-c6",
+          "binding": "redacted:l3ttGIpyF3UY7nbl"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r4-c1",
+          "binding": "redacted:p2Wu52KfZnj9yxUj"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r4-c2",
+          "binding": "redacted:6amKeqzgwytIAfI9"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r4-c3",
+          "binding": "redacted:FN84uHV3cBJqogkY"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r4-c4",
+          "binding": "redacted:3P88urU6WBvp1szs"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r4-c5",
+          "binding": "redacted:uG1FdYoe722aYBoa"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r4-c6",
+          "binding": "redacted:uLkiygMELRrMbptS"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r5-c1",
+          "binding": "redacted:VPTHSvZqtnscFwQ9"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r5-c3",
+          "binding": "redacted:A2o34Ti0ACwylCrc"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r5-c2",
+          "binding": "redacted:EvbNQtT0pNQXOkfs"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r5-c4",
+          "binding": "redacted:KBW74M3V1hXLDRN0"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r5-c5",
+          "binding": "redacted:ZFD01guagPE5uaQj"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r5-c6",
+          "binding": "redacted:EwVk9nZjcrlriSeV"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r6-c1",
+          "binding": "redacted:awW0X3NAJwCwOt3A"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r6-c2",
+          "binding": "redacted:g8DCIoI8sMgBlXL3"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r6-c3",
+          "binding": "redacted:0nQxj8EdlTtbuBFR"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r6-c4",
+          "binding": "redacted:kmeMHY4rz7ueKvZq"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r6-c5",
+          "binding": "redacted:G6sNIGMq7HtYPcO9"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-slot-r6-c6",
+          "binding": "redacted:cZ0FIyCrzqBx24CZ"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-dalton-repair",
+          "binding": "redacted:zarhLrfQ91wKaxPU"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-cooperative",
+          "binding": "redacted:YZInjh5yjDp0Lt2o"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:tram-exit",
+          "binding": "redacted:VTA9vBCFvpqCit5M"
+        }
+      ]
+    },
+    {
+      "semanticId": "dbx:room:central-core-control-chamber",
+      "binding": "redacted:0RJlJEjh9MiYAwuT",
+      "walls": [
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-north-west",
+          "binding": "redacted:HiOWGmAX9PL3959M"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-north-east",
+          "binding": "redacted:sdq7N2giIbYpYpm1"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-south-west",
+          "binding": "redacted:N1sXFTO1d9drgGvW"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-south-east",
+          "binding": "redacted:nf9ZCdqVTSDNY3p6"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-west-north",
+          "binding": "redacted:v3mT2J0WUfCc5LE8"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-west-south",
+          "binding": "redacted:Vu6ObxrgGEi54zK1"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-east-north",
+          "binding": "redacted:gmUxRFxpuSJFW1t6"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:core-door-north",
+          "binding": "redacted:7m9M61nNITq1qzDF"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:central-core-control-chamber-east-south",
+          "binding": "redacted:NOhDK7JfJe2cwPHt"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:core-door-south",
+          "binding": "redacted:JmUW7l670uXteuCF"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:core-door-west",
+          "binding": "redacted:8vzI30tGVpV8KAIj"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:core-door-east",
+          "binding": "redacted:KHjP0M3YT2XGadPI"
+        }
+      ],
+      "regions": [
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-aleister-station",
+          "binding": "redacted:lnwKLM7lDzcG5mZg"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-dalton-station",
+          "binding": "redacted:QFCcrnql7ujEBj47"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-sprocket-station",
+          "binding": "redacted:CYhaBObUtYjvh6Rc"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-andrew-station",
+          "binding": "redacted:L9ihPmgKDFrL8zZU"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-lawson-station",
+          "binding": "redacted:BmdpwmJSkGFtf7vs"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-tactal-station",
+          "binding": "redacted:Lh921feh8AKQrs2L"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-security-room",
+          "binding": "redacted:ADwm96Fp0jHYUyno"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-entry",
+          "binding": "redacted:JSgl5ml6V2VimstJ"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:core-exit",
+          "binding": "redacted:bDXdMai05NmQzhxe"
+        }
+      ]
+    },
+    {
+      "semanticId": "dbx:room:rune-mechanism-chamber",
+      "binding": "redacted:Gqz4EsxbGGDoEq9K",
+      "walls": [
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-north-west",
+          "binding": "redacted:H0Viu5QHlhgfVmql"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-south-west",
+          "binding": "redacted:yrVFGuzgcPRjxi7Q"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-north-east",
+          "binding": "redacted:tamE1gzV8fTXztgj"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-south-east",
+          "binding": "redacted:LyLKd4AIvVhJNggb"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-west-north",
+          "binding": "redacted:JsrXhmf8dvz5J9th"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-west-south",
+          "binding": "redacted:Gcoa27PM2kIqguKN"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-east-north",
+          "binding": "redacted:1sziKBEclBGC9I9B"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:rune-mechanism-chamber-east-south",
+          "binding": "redacted:ZlcEeJIcRpKUQxFk"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:rune-door-north",
+          "binding": "redacted:2H4gsSuOdWSXeWc0"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:rune-door-south",
+          "binding": "redacted:ppfDnk2SgOvYPsGB"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:rune-door-west",
+          "binding": "redacted:0mdlVEmm2PKIZIcq"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:rune-door-east",
+          "binding": "redacted:RvJa8fIsgSo9ZlbH"
+        }
+      ],
+      "regions": [
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:rune-lawson-memory",
+          "binding": "redacted:YjJLhBeyygX4rvej"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:rune-tactal-slotting",
+          "binding": "redacted:JA7a2OFSu3tjX8k1"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:rune-order-right",
+          "binding": "redacted:1zm91dyiLDiyNJR3"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:rune-order-left",
+          "binding": "redacted:SIPNDrNXdayvGyej"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:rune-entry",
+          "binding": "redacted:CzLGIKhEd3PISmlS"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:rune-exit",
+          "binding": "redacted:aNYxphKngDcCehid"
+        }
+      ]
+    },
+    {
+      "semanticId": "dbx:room:signal-frequency-chamber",
+      "binding": "redacted:SFEL1ztov0eHlfwJ",
+      "walls": [
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-north-west",
+          "binding": "redacted:mCHyIeddKmFfWLEc"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-north-east",
+          "binding": "redacted:utK4UV3ZGeUVTkJk"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-south-west",
+          "binding": "redacted:GfoEyd5a3ch26xlN"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-south-east",
+          "binding": "redacted:gUpfnlpN9Lqn5yTh"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-west-north",
+          "binding": "redacted:lGirnhrqOTiKABlQ"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-west-south",
+          "binding": "redacted:Gc9jF1SuRkGCVsBo"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-east-north",
+          "binding": "redacted:SLjR1cQaiA0kbZ9U"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:wall:signal-frequency-chamber-east-south",
+          "binding": "redacted:uWGUiFe2A9wYQr3c"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:signal-door-north",
+          "binding": "redacted:jPYpjTusmIP50e2F"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:signal-door-south",
+          "binding": "redacted:qJzkqyOpaZRiQY20"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:signal-door-west",
+          "binding": "redacted:pkc3TmAnpzmSkFNs"
+        },
+        {
+          "kind": "wall",
+          "semanticId": "dbx:anchor:signal-door-east",
+          "binding": "redacted:zDdmpKCZUcjGwImc"
+        }
+      ],
+      "regions": [
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:signal-aleister-frequency",
+          "binding": "redacted:4yTYBZbCNvbbK9wx"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:signal-sprocket-circuit",
+          "binding": "redacted:f7WbznAlZbvRYD36"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:signal-cooperative-left",
+          "binding": "redacted:osTElhCn6FYzcOhY"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:signal-cooperative-right",
+          "binding": "redacted:AapaBRrS5dSntz9e"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:signal-entry",
+          "binding": "redacted:t4tWSGq8irHHw9my"
+        },
+        {
+          "kind": "region",
+          "semanticId": "dbx:region:signal-exit",
+          "binding": "redacted:kjg6WkmVqr11zz3i"
+        }
+      ]
+    }
+  ]
+}

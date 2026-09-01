@@ -1,0 +1,27 @@
+{
+  "operation": "dicebox.desktop.self-test.capture",
+  "status": "PASS",
+  "executable": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+  "executableName": "dicebox-campaign-helper-desktop.exe",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": {
+    "text": "DBX_PROJECT_ASSET_DETACH_UI_LIFECYCLE_FIXTURE status=PASS project=dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1 assets=2 scenes=2 generation=1 noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=inspect status=BLOCKED project=dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1 blocker=REGISTERED_ASSET_BLOB_MISSING eligible=true assets=2 pendingArtifacts=1 noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=loaded detail=asset-detach-ui-lifecycle:fixture-reread\nDBX_PROJECT_RECOVERY operation=detach-preview status=PREVIEW project=dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1 generation=1 nextGeneration=2 asset=dbx:asset:sha256-a72382d260ebdf7948e618a3908a8e569f5cf9bbd3f1d804ee456a9fa1222568 affectedScenes=1 resultingContentSha256=f51d05a12436943d58d0be4eef6d48729360c72e8833aff7bd296fd8fc601d44 previewSha256=1208b06ecb76ed3ed693943d3b96045a38669657a51b5cbfcaa3200e717abce0 noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=blocked detail=asset-detach-ui-lifecycle:Project recovery preview contains an unknown field.\n",
+    "truncated": false
+  },
+  "stderr": {
+    "text": "[0830/001529.387:ERROR:ui\\gfx\\win\\window_impl.cc:172] Failed to unregister class Chrome_WidgetWin_0. Error = 1412\r\n",
+    "truncated": false
+  },
+  "timeout": {
+    "timedOut": false,
+    "timeoutMs": 30000,
+    "graceMs": null,
+    "killRequested": false,
+    "childExitObserved": true,
+    "killError": null,
+    "childError": null
+  },
+  "noProjectOrSessionInspection": true,
+  "noRecoveryInvocationByRunner": true
+}

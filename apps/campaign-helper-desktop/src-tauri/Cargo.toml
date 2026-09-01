@@ -1,0 +1,32 @@
+[package]
+name = "dicebox-campaign-helper-desktop"
+version = "0.1.0"
+description = "Local-first semantic campaign authoring for Foundry VTT"
+authors = ["DiceBox Campaign Helper"]
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "dicebox_campaign_helper_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2.6.3", features = [] }
+
+[dependencies]
+dicebox-geometry = { path = "crates/dicebox-geometry" }
+dicebox-project-store = { path = "crates/dicebox-project-store" }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.145"
+tauri = { version = "2.11.5", features = [] }
+reqwest = { version = "0.12.28", default-features = false, features = ["json", "rustls-tls"] }
+keyring = { version = "=4.1.5", default-features = false, features = ["v1", "windows-native-keyring-store"] }
+
+[profile.dev]
+incremental = true
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

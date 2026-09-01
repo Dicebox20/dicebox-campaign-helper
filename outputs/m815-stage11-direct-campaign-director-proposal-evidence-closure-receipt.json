@@ -1,0 +1,33 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m815-stage11-direct-campaign-director-proposal-evidence-closure-2026-08-31",
+  "milestone": "M815",
+  "stageId": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "operation": "typed-direct-campaign-director-proposal-evidence-validation",
+  "inputReceipt": "outputs/m303-stage11-local-browser-proposal-acceptance-receipt.json",
+  "source": "apps/campaign-helper-desktop/src/project-stage11-direct-campaign-director-proposal-evidence.ts",
+  "sourceSha256": "AD938469871F3AE519A965E2E21948302C0410D5EA5D639AB4495CE2A6AEC9AC",
+  "test": "tests/project-stage11-direct-campaign-director-proposal-evidence.test.ts",
+  "testSha256": "3564D9A605705C0CF4BBEF5D861E8C5DFBDF01DB6A46914400A7B0ED8D71D7A0",
+  "validation": {
+    "focusedTests": "PASS: 1 file / 2 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "diffHygiene": "PASS: git diff --check",
+    "observation": "M303 only; campaign-director local-browser preview/approval/apply-reread/undo/redo/stale lifecycle"
+  },
+  "boundaries": {
+    "readOnly": true,
+    "browserOrRuntimeRerun": false,
+    "providerCalls": 0,
+    "credentialAccess": 0,
+    "projectWrites": 0,
+    "foundryWrites": 0,
+    "aggregateAttachment": false,
+    "authorityGranted": false,
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false
+  }
+}

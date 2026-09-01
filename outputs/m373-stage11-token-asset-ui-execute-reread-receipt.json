@@ -1,0 +1,15 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m373-stage11-token-asset-ui-2026-08-28",
+  "milestone": "M373",
+  "evidenceLabel": "fixture",
+  "status": "PASS",
+  "readyClaim": false,
+  "projectId": "dbx:project:desktop-token-ui-m373-self-test-v1",
+  "lifecycle": ["loaded", "previewed", "approved", "applied", "pass"],
+  "asset": {"assetId":"dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460","role":"token","mediaType":"image/png","byteLength":68,"sha256":"431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460"},
+  "rereads": {"before":{"generation":1,"assetCount":0,"backup":"MISSING"},"afterApply":{"generation":2,"contentSha256":"e13ef169231778badae8fee8aa2d1b98640ec9a9a990220c5f11a7f42654909c","assetCount":1,"backup":"VALID"},"afterInverseRestore":{"generation":3,"contentSha256":"008c7a188b14aa373033245ed172de72f1c3fa4697298411dfa96d64d9b35a43","assetCount":1,"backupGeneration":2}},
+  "assertions": {"metadataOnlyPreview":true,"reviewerApprovalBeforeWrite":true,"assetTreePreserved":true,"sceneContentRestored":true,"activeSceneRestored":true,"noFoundryWrite":true,"outcomeUnknownRetry":false},
+  "validation": {"focusedTests":"2 files / 17 tests PASS","desktopBuild":"PASS","workflow":"PASS; Stage 11 only active; 10/16 gates; no violations","packagedExitCode":0,"diskReread":"PASS"},
+  "doesNotProve": ["generic Stage 11 acceptance","recovery or cleanup breadth","Foundry execution or active-GM authority","Stage 16 UI","Ready-to-Play"]
+}

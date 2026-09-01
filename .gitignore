@@ -1,0 +1,12 @@
+node_modules/
+coverage/
+dist/
+target/
+*.tsbuildinfo
+
+# Local Codex, fixture, and trace workspaces; reproducible source stays in the repository.
+.codex-trusted-read-*/
+.*-target/
+work/
+%SystemDrive%/
+*.inspect.ndjson

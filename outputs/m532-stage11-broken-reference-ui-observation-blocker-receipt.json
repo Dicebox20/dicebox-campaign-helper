@@ -1,0 +1,54 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.packaged-observation",
+  "milestone": "M532",
+  "status": "BLOCKED_PRESERVED",
+  "capturedAt": "2026-08-29T21:23:54-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "captureTransport": {
+    "status": "PASS",
+    "exitCode": 0,
+    "signal": null,
+    "timedOut": false,
+    "childExitObserved": true,
+    "killRequested": false,
+    "runnerReceipt": "outputs/m532-stage11-broken-reference-ui-observation-receipt.json"
+  },
+  "appObservation": {
+    "fixture": "PASS",
+    "inspection": "BLOCKED",
+    "blockerCode": "BACKGROUND_ASSET_ROLE_MISMATCH",
+    "preview": "PREVIEW",
+    "sessionPreflight": "PASS:previewed",
+    "ownership": "OWNERSHIP_UNPROVEN",
+    "reportedOwnershipFields": {
+      "exactProject": true,
+      "exactProducer": false,
+      "exactCommand": true,
+      "exactBase": true
+    },
+    "lifecycleProgressed": false,
+    "sessionReplaced": false,
+    "retry": false
+  },
+  "stateReread": {
+    "targetProjectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "workspaceIndexSha256": "F6A79A51B6A1790D4278F19286B859ABD22D83578634B5F8889C7F8AFBC4BC5B",
+    "workspacePendingSha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+    "assetSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "targetProjectGeneration": 1,
+    "targetProjectBackup": "absent-as-reread",
+    "preservedAgainstPriorBaseline": true,
+    "browserStorageInspected": false,
+    "sessionStorageChanged": false,
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "diagnostics": {
+    "stderr": "Chrome_WidgetWin_0 unregister Error=1412; recorded as environmental diagnostic only",
+    "noRecoveryInvocationByRunner": true,
+    "noFoundryWrite": true
+  },
+  "nextBoundary": "M533: read-only reconcile the M532 persisted-session blocker, M520 outcome uncertainty, M529/M530 ownership contract, and safe isolated rerun or typed recovery boundary; do not inspect browser storage, clear/replace the session, recapture, retry, or mutate runtime/project state.",
+  "readyToPlay": false,
+  "notes": "The configured self-test exit behavior explains the quick popup close. This receipt does not certify the lifecycle or Stage 11."
+}

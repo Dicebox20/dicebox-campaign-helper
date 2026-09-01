@@ -1,0 +1,66 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m771-stage11-page-main-no-write-runtime-evidence-transport-reconciliation-2026-08-31",
+  "milestone": "M771",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "status": "PASS READ-ONLY RECONCILIATION; M770 BLOCKER PRESERVED",
+  "readyClaim": false,
+  "scope": "Read-only reconciliation of existing browser, page-main, and bridge transports after M770.",
+  "m770Binding": {
+    "receipt": "outputs/m770-stage11-packaged-runtime-current-authority-observation-blocker-receipt.json",
+    "visibleGamemasterGate": "PASS",
+    "exactFixture": "work/foundry-fixture-data-v4 / dbx-test-world / 30003",
+    "queryDispatch": "not-invoked"
+  },
+  "transportInventory": [
+    {
+      "id": "supported-browser-read-only-evaluator",
+      "source": "browser control contract and M770 direct observation",
+      "status": "blocked-for-page-main",
+      "finding": "The evaluator supports read-only page inspection but did not expose the Foundry page-main global; the M770 fixed query was therefore not dispatched."
+    },
+    {
+      "id": "dicebox-foundry-page-main-live-bridge",
+      "source": "tools/dicebox-foundry-live-bridge.mjs; tools/harness-manifest.json",
+      "status": "not-applicable",
+      "finding": "The fixed bridge is intentionally constrained to the-ballad-of-chauser-bill, elected GM handshake, and its eight named operations. It does not target dbx-test-world or expose runtime-evidence. Reconfiguration or socket use is outside M771."
+    },
+    {
+      "id": "mcp-loopback-stdio",
+      "source": "tools/dbx-test-bridge.ts; tools/collect-stdio-receipt.ts; tools/harness-manifest.json",
+      "status": "not-runtime-connected",
+      "finding": "The stdio adapter deliberately constructs a safe-mode profile and never discovers a world, opens a socket, or enables mutation; it cannot observe the live fixture."
+    },
+    {
+      "id": "package-owned-helper-api",
+      "source": "work/foundry-fixture-data-v4/Data/modules/dicebox-campaign-helper/src/module.js",
+      "status": "available-only-inside-page-main",
+      "finding": "The installed module exposes a fixed runtime-evidence query with mutation disabled, but no existing v4 user-visible no-write diagnostic control renders its redacted result to the DOM."
+    }
+  ],
+  "decision": {
+    "existingSupportedNoWriteTransport": false,
+    "selectedNextSlice": "M772 package-owned visible read-only runtime-evidence diagnostic control",
+    "rationale": "A fixed module-owned GM-visible control can invoke the already allowlisted query in Foundry page-main and render only a redacted structured receipt for browser reread, without arbitrary scripts, eval, generic executors, or raw sockets."
+  },
+  "preservation": {
+    "browserOrRuntimeAction": false,
+    "sourceMutation": false,
+    "foundryWrites": 0,
+    "projectWrites": 0,
+    "settingsWrites": 0,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11Accepted": false,
+    "stage12Started": false
+  },
+  "doesNotProve": [
+    "M770 runtime-evidence query result",
+    "runtime API authority",
+    "desktop proposal/approval state",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "milestone": "M462",
+  "stage": "proposal-approval-history",
+  "status": "ARTIFACT_ATTESTED",
+  "build": {
+    "invocations": 1,
+    "mode": "backup-promotion-ui-session-reset",
+    "terminalExitEnabled": true,
+    "frontendBuild": "PASS",
+    "wrapperExit": "unknown-after-detached-cargo",
+    "executableSha256": "91CE5A5488F5619A4A3AC7687636B5C2FE20ED1880F35B0AA309097A14DC44F1",
+    "bundle": "apps/campaign-helper-desktop/dist/assets/index-8gkU1yA5.js",
+    "bundleSha256": "088DE44BD9D694FAE671E7CCC9FD9AC6A4CFBC7F7AD621A59F94A6427A5EFC60",
+    "resetMarkerPresent": true,
+    "missingRereadMarkerPresent": true
+  },
+  "protectedState": {
+    "projectPrimaryExists": false,
+    "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2",
+    "desktopProcessCount": 0
+  },
+  "limitations": "The build wrapper did not report a terminal exit after detached Cargo; executable and bundle attestations are evidence of current artifacts, not an exit-code claim.",
+  "excludedActions": ["desktop launch", "capture", "session transition", "recovery apply", "project mutation", "retry", "Foundry activity"],
+  "evidenceLabel": "local"
+}

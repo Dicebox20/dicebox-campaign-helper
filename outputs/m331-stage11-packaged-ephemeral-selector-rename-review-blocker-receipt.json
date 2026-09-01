@@ -1,0 +1,93 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m331-stage11-packaged-ephemeral-selector-rename-review-blocker-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M331",
+  "evidenceLabel": "local",
+  "status": "BLOCKED",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "projectStoreWrites": 0,
+  "sessionOnlyWrites": 0,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "target": {
+    "surface": "local packaged Tauri desktop",
+    "windowTitle": "DiceBox Campaign Helper",
+    "windowId": 7801072,
+    "windowSelectedUniquely": true,
+    "app": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+    "projectId": "dbx:project:desktop-backup-authoritative-recovery-promotion-self-test",
+    "projectSelectionVerified": false,
+    "requestedDisplayName": "M244 backup recovery fixture"
+  },
+  "observation": {
+    "mode": "documented accessibility-only capture",
+    "includeScreenshot": false,
+    "includeText": true,
+    "accessibilityPresent": true,
+    "freshPackagedWindow": true,
+    "focusStatus": "Project catalog focus: PASS · exact selector focused · no project selected or persisted.",
+    "catalogElement": "143 combo box Stored projects ID: project-catalog",
+    "initialCatalog": "blank Select a project placeholder; 25 catalog entries",
+    "renameReviewVisible": true,
+    "renameSession": "none",
+    "selectedTargetVisible": false,
+    "projectContentChanged": false,
+    "workspaceChanged": false,
+    "foreignStateChanged": false,
+    "providerUsed": false,
+    "credentialsUsed": false,
+    "foundryUsed": false,
+    "browserStorageInspected": false,
+    "playerPasswordsUsed": false
+  },
+  "lifecycle": {
+    "selectionAttempt": {
+      "inputMethod": "supported keyboard type_text into the exact focused catalog",
+      "requestedValue": "M244 backup recovery fixture",
+      "result": "NO_VERIFIED_SELECTION_TRANSITION",
+      "reread": "The exact packaged window remained visible with the catalog blank, no project ID, no requested display name, focus PASS status, and no stored proposal session.",
+      "retryPolicy": "Stopped immediately under the M331 unsupported-input/target-transition stop condition; no alternate input, click, coordinate, set_value, or guessed-focus retry was attempted."
+    },
+    "proposalCreated": false,
+    "sessionTransition": false
+  },
+  "fixtureReread": {
+    "primaryExists": false,
+    "backupExists": true,
+    "quarantineExists": true,
+    "backupSha256": "f5af1e42c838add5aeddee9abc3b5d2125932d539a750763aa9c764f004eac2b",
+    "quarantineSha256": "f5af1e42c838add5aeddee9abc3b5d2125932d539a750763aa9c764f004eac2b",
+    "backupUnchanged": true,
+    "foreignMarker": "preserve-m244-foreign-state",
+    "foreignMarkerSha256": "9a5350aad8c13c79b978db42d3b339e75c54a96c4df9815eb2a8bf5d8f1203f2",
+    "foreignMarkerUnchanged": true,
+    "unrelatedProjectsTouched": false
+  },
+  "validation": {
+    "kb": "PASS before observation: schema-plus-seed rebuild and verifier at 486 sources, 521 facts, 470 decisions, 135 open items, 484 trials",
+    "workflowBeforeSlice": "PASS structural gates; Stage 11 proposal-approval-history active; failures 0; recovery mode false",
+    "packagedAccessibility": "PASS: exact fresh window, focus PASS status, blank catalog, rename entry, and no-session state reread without screenshot",
+    "keyboardSelection": "BLOCKED: exact display-name type_text produced no verified selection transition",
+    "protectedState": "PASS: no project, proposal/session, workspace, or foreign-byte change",
+    "processClosure": "PASS: exact Tauri process stopped and port 1420 is free"
+  },
+  "recoveryDisposition": "Preserve the no-write state and authorize M332 for a bounded package-owned ephemeral selector-selection recovery path. Do not retry the packaged selector input through another unsupported method.",
+  "selectedNextSlice": {
+    "milestone": "M332",
+    "name": "ephemeral project-selector recovery",
+    "scope": "Narrow package-owned, explicitly test-gated ephemeral selector recovery and local validation only; no persistent project mutation, proposal/session creation, rename execution, provider, credentials, browser storage, Foundry, or player-password activity."
+  },
+  "doesNotProve": [
+    "exact project selection",
+    "selected-project rename metadata visibility",
+    "project.rename proposal creation or session lifecycle",
+    "native project-store rename behavior",
+    "provider or credential behavior",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

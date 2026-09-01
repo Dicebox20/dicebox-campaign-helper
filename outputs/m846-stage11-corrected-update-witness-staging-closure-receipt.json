@@ -1,0 +1,18 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M846",
+  "operation": "foundry.module.update",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "fixture": "v4",
+  "destinationRoot": "work/foundry-fixture-data-v4/Data",
+  "sourceAndStagedProgramSceneSha256": "916196925B1F8A3D225F75210DA0645FBE42C200BB826B38736E056E463FBABD",
+  "allowlistFiles": 30,
+  "preAndPostStatus": "STOPPED/no listener",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "runtimeAction": false,
+  "stage11AcceptanceStatus": "blocked",
+  "stage12Started": false,
+  "readyClaim": false
+}

@@ -1,0 +1,72 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.v3-session-boundary-reconciliation",
+  "milestone": "M549",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "capturedAt": "2026-08-29T23:04:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidence": {
+    "receipts": [
+      "outputs/m545-stage11-broken-reference-ui-v3-packaged-observation-blocker-receipt.json",
+      "outputs/m546-stage11-broken-reference-ui-v3-post-apply-reconciliation-closure-receipt.json",
+      "outputs/m547-stage11-broken-reference-ui-v3-acceptance-predicate-correction-closure-receipt.json",
+      "outputs/m548-stage11-broken-reference-ui-v3-fresh-artifact-closure-receipt.json"
+    ],
+    "source": [
+      "apps/campaign-helper-desktop/src/App.tsx:1804-1830",
+      "apps/campaign-helper-desktop/src/App.tsx:4301-4305",
+      "apps/campaign-helper-desktop/src/project-proposal-session.ts:210-236"
+    ]
+  },
+  "reconciliation": {
+    "m545SessionBoundary": {
+      "preflight": "MISSING",
+      "approval": "APPROVED",
+      "apply": "PASS",
+      "approvedSessionCommit": "persisted by apply callback before final UI terminal predicate",
+      "terminalPass": "rejected by the pre-M547 aggregate inspection predicate"
+    },
+    "currentV3Namespace": {
+      "projectId": "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3",
+      "scope": "broken-reference-ui-self-test-v3",
+      "artifact": "M548 embeds M547 but does not alter session state",
+      "cleanMissingBoundary": "not established; cannot be inferred from artifact freshness"
+    },
+    "sourceRules": {
+      "persistence": "The M545 apply callback calls persistProjectProposalSession on the committed session in the v3 scope.",
+      "entryGate": "The self-test requires sessionPreflight === MISSING before it prepares the ownership token and starts the lifecycle.",
+      "storageBoundary": "Browser/local storage inspection is not authorized, so the current persisted value is not reread directly."
+    },
+    "conclusion": "The v3 namespace cannot be treated as a clean MISSING boundary for a new packaged observation. Reusing it would conflate M545 committed-session evidence with M547 packaged-predicate evidence. A fixed additive v4 identity and closed namespace is the smallest safe boundary."
+  },
+  "preservation": {
+    "v1ProjectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "v2ProjectSha256": "33EFC91239F5C9455DB87F5A46A511DD8B6F2114D7502CDF5232C2D5E105F3B4",
+    "v3ProjectSha256": "255927904F6EE364299ED98D298F386D38B64C21D526840423F0ABC5C00D1095",
+    "v3BackupSha256": "09BF1E39627AD1631F5605ACC275F713F150F104BE7F59836E1793DB0CC96885",
+    "workspacePrimarySha256": "58FC41EAC3ED0B94A0103488A716268C847EFA330B5C1A987C8A78B3392D39AA",
+    "workspaceBackupSha256": "BD962775571A79F94F73F1CDC690DBC7DDB9C8260828EDC950DCAB39DC154F09",
+    "workspacePendingSha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+    "assetSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "runtimeMutation": false,
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "selectedBoundary": {
+    "milestone": "M550",
+    "type": "local-code-only",
+    "projectId": "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v4",
+    "scope": "broken-reference-ui-self-test-v4",
+    "requirements": [
+      "fixed additive v4 project identity",
+      "closed typed v4 session namespace",
+      "ordinary API rejection for v4",
+      "v4 route/fixture/session loader selection",
+      "v3 and v1/v2 preservation tests",
+      "no build, launch, capture, storage inspection, session operation, fixture reset, or runtime mutation"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M549 is read-only reconciliation. It does not certify M547 packaged behavior, Stage 11, Foundry authority, or Ready-to-Play."
+}

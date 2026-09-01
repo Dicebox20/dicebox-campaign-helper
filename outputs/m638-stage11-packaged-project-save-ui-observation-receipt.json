@@ -1,0 +1,101 @@
+{
+  "operation": "stage11-packaged-project-save-ui-observation",
+  "milestone": "M638",
+  "status": "BLOCKED_LOCAL_PACKAGED_EXISTING_NONTERMINAL_SESSION",
+  "capturedAt": "2026-08-30T09:34:51-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "artifact": {
+    "rendererPath": "apps/campaign-helper-desktop/dist/assets/index-B0ZjUYIf.js",
+    "rendererSha256": "6EAF17F4BE0D17DCF7F8E505DC45FDCCEE7F597E8B7F9B44A5B769019FBC06E9",
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeSha256": "EC74E0BFE0F1FDDB9D2E14AB50CDC1B1FDFE797EC2AE36B3D4246E4CF92E207D",
+    "configuredMode": "save-ui-execute",
+    "configuredProjectId": "dbx:project:desktop-multiscene-self-test",
+    "artifactMatch": true
+  },
+  "windowSelection": {
+    "returnedApp": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+    "returnedWindowCount": 2,
+    "exactTitleCandidateCount": 1,
+    "exactTitle": "DiceBox Campaign Helper",
+    "accessibilityReadCount": 1,
+    "accessibilityRead": "PASS_DIRECT_PACKAGED_BLOCKER"
+  },
+  "observedSurface": {
+    "title": "DiceBox Project Save UI Self-Test BLOCKED · An existing project proposal session must reach a terminal state and be cleared before replacement.",
+    "activeProjectId": "dbx:project:desktop-multiscene-self-test",
+    "activeSceneId": "dbx:scene:desktop-multiscene-self-test-scene-2",
+    "loadedGeneration": 6,
+    "loadedSceneCount": 2,
+    "loadedAssetCount": 0,
+    "proposalSessionState": "EXISTING_NONTERMINAL_SESSION_BLOCKS_REPLACEMENT",
+    "previewObserved": false,
+    "approvalObserved": false,
+    "applyObserved": false,
+    "authoritativePostApplyRereadObserved": false,
+    "inverseRestoreObserved": false,
+    "appendOnlyHistoryObserved": false,
+    "noFoundryWriteMarkerVisible": true,
+    "blockerText": "An existing project proposal session must reach a terminal state and be cleared before replacement.",
+    "sessionCleared": false,
+    "sessionContentsRead": false
+  },
+  "protectedStateReread": {
+    "primaryPath": "C:\\Users\\rujie\\AppData\\Local\\com.dicebox.campaign-helper\\projects\\desktop-multiscene-self-test\\project.json",
+    "primarySha256Before": "646596938948A8CDB5C7BB26AE499D13DE69ED5ABFA9C472A8987E10BE46D76F",
+    "primarySha256After": "646596938948A8CDB5C7BB26AE499D13DE69ED5ABFA9C472A8987E10BE46D76F",
+    "backupSha256Before": "400EE3C900D316CB2B2F61558B481A4DF89CD0D25DED8CEAD562EC7818814418",
+    "backupSha256After": "400EE3C900D316CB2B2F61558B481A4DF89CD0D25DED8CEAD562EC7818814418",
+    "workspaceSha256Before": "0BB5AAFCF94565F28AAE38A4F4135FC70B88C4003F369A29CC52C9DD5D6CF461",
+    "workspaceSha256After": "0BB5AAFCF94565F28AAE38A4F4135FC70B88C4003F369A29CC52C9DD5D6CF461",
+    "projectGeneration": 6,
+    "backupGeneration": 5,
+    "sceneCount": 2,
+    "assetCount": 0,
+    "foreignStateChanged": false,
+    "projectWrite": false
+  },
+  "processReread": {
+    "stoppedExactPid": 1476,
+    "remainingExactProcessCount": 0,
+    "desktopProcessCount": 0,
+    "cargoProcessCount": 0,
+    "rustcProcessCount": 0
+  },
+  "recovery": {
+    "closeControlAttempt": "The observed Close control returned a window-bounds-changed error before a confirmed action.",
+    "uiCloseRetried": false,
+    "secondAccessibilityRead": false,
+    "exactProcessStoppedByResolvedPath": true,
+    "retryIssued": false,
+    "outcome": "The packaged self-test stopped before proposal replacement; no session or project mutation occurred."
+  },
+  "safety": {
+    "browserStorageContentsRead": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilder": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "foreignStateMutation": false,
+    "unrelatedProjectMutation": false,
+    "cleanupOrDeletion": false
+  },
+  "validation": {
+    "workflowCheckBeforeObservation": "PASS score 63; 10/16 gates; proposal-approval-history solely active",
+    "exactArtifactHashMatch": true,
+    "exactTitleSelection": true,
+    "oneAccessibilityRead": true,
+    "authoritativeProtectedStateReread": true,
+    "processReread": true
+  },
+  "limits": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M638 directly observes the existing-session blocker in the packaged surface but proves no lifecycle transition. The existing nonterminal session remains untouched; a separately authorized session-only recovery/preflight is required before another packaged observation."
+  },
+  "nextBoundary": "M639: read-only reconcile the M638 existing-session blocker and current session recovery controls, then select one exact session-only recovery or stop boundary; no project write, browser-storage inspection, retry, or Stage 11 acceptance."
+}

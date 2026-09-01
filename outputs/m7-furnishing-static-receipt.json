@@ -1,0 +1,50 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m7-furnishing-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "officialReferences": [
+    "https://foundryvtt.com/api/classes/foundry.documents.Scene.html",
+    "https://foundryvtt.com/api/v14/modules/foundry.documents.html"
+  ],
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 26, "tests": 126, "status": "PASS" },
+    "capabilityRegistry": {
+      "scenePlaceableReadWriteIds": "PASS",
+      "mediaDeploymentGate": "PASS",
+      "modulePlaceableWritesUnavailableByDefault": "PASS"
+    },
+    "furnishingProjectionPlan": {
+      "strictSchema": "PASS",
+      "canonicalPlaceableOrder": "PASS",
+      "officialEmbeddedApiBindings": "PASS",
+      "approvedAssetHashResolutionWithoutLocator": "PASS",
+      "FootprintClearanceAndBounds": "PASS",
+      "anchorRegionAndRelationValidation": "PASS",
+      "blueprintGeometryPreservation": "PASS",
+      "placeableMediaAndGmPreviewGate": "PASS",
+      "mutationDisabledUntilExactRuntimeGate": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 48,
+      "facts": 63,
+      "decisions": 38,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 37,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 placeable collection shape or permissions",
+    "Any Tile, Token, AmbientLight, AmbientSound, Drawing, or Note write",
+    "Approved media deployment, path authorization, rendering, or asset read-back",
+    "Runtime geometry, visibility, movement, ownership, reset, or cross-client behavior"
+  ],
+  "nextGate": "Probe exact Scene embedded placeable collections, permissions, approved media deployment policy, and read-back behavior before enabling M7 projection."
+}

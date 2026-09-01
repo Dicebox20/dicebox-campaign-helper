@@ -1,0 +1,28 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m374-stage11-producer-family-reconciliation-2026-08-28",
+  "milestone": "M374",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "counts": {"projectWrites":0,"workspaceWrites":0,"foundryWrites":0,"browserStorageWrites":0,"providerCalls":0,"credentialCalls":0,"producerExecutions":0},
+  "stage11Disposition": {"generalizedBatchTray":"partial","lifecycleAndRecovery":"partial","sharedVocabularyWithoutSharedAuthority":"partial","everyMutatingPathAcceptance":"partial"},
+  "producerFamilies": [
+    {"family":"read-only inspection and compile","disposition":"closed read-only adapters; outside mutating acceptance"},
+    {"family":"workspace open and recent-order metadata","disposition":"explicit command; generalized tray acceptance remains separate"},
+    {"family":"ordinary project persistence","disposition":"Create, Save, Rename, and both Save-as UI routes are proposal/executor bounded"},
+    {"family":"in-memory project editing and navigation","disposition":"bounded editor/persistence separation; broader UI acceptance remains open"},
+    {"family":"asset import and binding","disposition":"handout, background, WAV audio, and PNG/WebP token UI routes are proposal/executor bounded"},
+    {"family":"legacy migration persistence","disposition":"operation-specific adapter retained; not generalized into product tray"},
+    {"family":"backup-authoritative promotion","disposition":"recovery-specific authority retained; no generic promotion or cleanup"},
+    {"family":"missing asset restore","disposition":"recovery-specific exact-byte authority retained"},
+    {"family":"missing asset detach","disposition":"recovery-specific authority retained; no generic cleanup"},
+    {"family":"broken Scene-reference detach","disposition":"selected-reference authority retained; broader cleanup remains excluded"},
+    {"family":"test-owned fixture setup and stage receipts","disposition":"harness-only; excluded from product tray and generic Stage 11 acceptance"}
+  ],
+  "auditBasis": {"priorClosure":"outputs/m373-stage11-token-asset-ui-execute-reread-receipt.json","priorClosureSha256":"C5B9BA7F4AC7A35D0BDCC5F3F669D10B240A0A69B88C5273642872974A2B03A9","workflow":"PASS; Stage 11 only active; 10/16 gates; score 63; no violations","knowledgeBase":{"sources":563,"facts":590,"decisions":531,"trials":545,"openItems":135}},
+  "remainingGaps": ["broader recovery/deletion/cleanup UI","generalized producer-family approval-tray acceptance","every-mutating-path acceptance and all four Stage 11 clauses","Foundry/active-GM/player behavior","future Stage 16 UI"],
+  "selectedNextSlice": {"milestone":"M375","name":"generalized producer-family approval-tray reconciliation authorization","scope":"Read-only specification and test-gap reconciliation for whether the existing review tray can be promoted from operation-specific controls to a generalized acceptance surface; no producer execution, recovery expansion, or Stage 11 completion.","excluded":["producer execution","recovery/deletion/cleanup","Foundry","providers/credentials","player passwords","Stage 16","later stages"]},
+  "doesNotProve": ["generic Stage 11 acceptance","recovery/deletion/cleanup","Foundry execution or active-GM authority","Stage 16 UI","Ready-to-Play"]
+}

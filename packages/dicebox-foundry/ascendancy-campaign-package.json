@@ -1,0 +1,4426 @@
+{
+  "schemaVersion": "0.1.0",
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "campaign": {
+    "schemaVersion": "0.1.0",
+    "scenarioId": "dbx:campaign-test:chauser-bill-prime-arachnid-aftermath",
+    "title": "Ballad of Chauser Bill — Prime Arachnid aftermath test",
+    "status": "read-only-test-fixture",
+    "source": {
+      "kind": "chat-campaign-source",
+      "chatUrl": "https://chatgpt.com/c/6a2dbc07-5518-83e8-ae7a-7ac6065acefe",
+      "sourceFilter": "original-campaign-design-after-prime-arachnid-defeat",
+      "excludedMaterial": [
+        "later Regionwright setup notes not present in the original campaign design section",
+        "cinematic/video reference images and their airlock/industrial-bay map studies"
+      ]
+    },
+    "teams": [
+      {
+        "teamId": "dbx:team:aleister-sprocket",
+        "label": "Aleister + Sprocket",
+        "members": [
+          {
+            "actorId": "dbx:actor:aleister",
+            "name": "Aleister"
+          },
+          {
+            "actorId": "dbx:actor:sprocket",
+            "name": "Sprocket"
+          }
+        ],
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "stageIds": [
+          "dbx:stage:aleister-frequency-calibration",
+          "dbx:stage:aleister-sprocket-frequency-circuit-matching",
+          "dbx:stage:sprocket-wire-grid"
+        ]
+      },
+      {
+        "teamId": "dbx:team:dalton-andrew",
+        "label": "Dalton + Andrew",
+        "members": [
+          {
+            "actorId": "dbx:actor:dalton",
+            "name": "Dalton"
+          },
+          {
+            "actorId": "dbx:actor:andrew-mcconaughey",
+            "name": "Andrew McConaughey"
+          }
+        ],
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "stageIds": [
+          "dbx:stage:dalton-tram-repair",
+          "dbx:stage:dalton-andrew-troubleshooting",
+          "dbx:stage:andrew-tram-logistics"
+        ]
+      },
+      {
+        "teamId": "dbx:team:lawson-tactal",
+        "label": "Lawson + Tactal",
+        "members": [
+          {
+            "actorId": "dbx:actor:lawson-burnheart",
+            "name": "Lawson Burnheart"
+          },
+          {
+            "actorId": "dbx:actor:tactal",
+            "name": "Tactal"
+          }
+        ],
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "stageIds": [
+          "dbx:stage:lawson-rune-memory",
+          "dbx:stage:lawson-tactal-rune-order",
+          "dbx:stage:tactal-heavy-slotting"
+        ]
+      }
+    ],
+    "rooms": [
+      {
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "label": "Signal / Frequency Chamber",
+        "mapRole": "team-puzzle-room",
+        "teamId": "dbx:team:aleister-sprocket",
+        "assetId": "dbx:asset:map-signal-frequency-chamber",
+        "spatialBlueprintId": "dbx:blueprint:signal-frequency-chamber",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "gridlessRenderer": true,
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ]
+      },
+      {
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "label": "Ascendancy Tram Depot",
+        "mapRole": "tram-depot",
+        "teamId": "dbx:team:dalton-andrew",
+        "assetId": "dbx:asset:map-ascendancy-tram-depot",
+        "spatialBlueprintId": "dbx:blueprint:ascendancy-tram-depot",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "gridlessRenderer": true,
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ]
+      },
+      {
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "label": "Rune Mechanism Chamber",
+        "mapRole": "team-puzzle-room",
+        "teamId": "dbx:team:lawson-tactal",
+        "assetId": "dbx:asset:map-rune-mechanism-chamber",
+        "spatialBlueprintId": "dbx:blueprint:rune-mechanism-chamber",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "gridlessRenderer": true,
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ]
+      },
+      {
+        "roomId": "dbx:room:central-core-control-chamber",
+        "label": "Central Core Control Chamber",
+        "mapRole": "final-control-room",
+        "assetId": "dbx:asset:map-central-core-control-chamber",
+        "spatialBlueprintId": "dbx:blueprint:central-core-control-chamber",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "gridlessRenderer": true,
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ]
+      }
+    ],
+    "stages": [
+      {
+        "stageId": "dbx:stage:aleister-frequency-calibration",
+        "teamId": "dbx:team:aleister-sprocket",
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "ordinal": 1,
+        "kind": "personal",
+        "owner": "regionwright-minigame",
+        "label": "Frequency Calibration",
+        "objective": "Aleister tunes all four frequency generators until each current waveform matches its target.",
+        "participants": [
+          "dbx:actor:aleister",
+          "dbx:actor:sprocket"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "frequency-calibration",
+          "requirements": [
+            "Four separate generators.",
+            "Discrete frequency 1–5, phase 1–5, and amplitude 1–3 controls.",
+            "A correct station locks and reveals a unique signal signature for the physical cooperative puzzle.",
+            "This stage does not perform station-to-circuit matching."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "bounded-reset"
+      },
+      {
+        "stageId": "dbx:stage:aleister-sprocket-frequency-circuit-matching",
+        "teamId": "dbx:team:aleister-sprocket",
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "ordinal": 2,
+        "kind": "cooperative",
+        "owner": "foundry-region",
+        "label": "Frequency-to-Circuit Matching",
+        "objective": "The pair uses visible logic clues before physically connecting calibrated stations to circuit boards; wrong guesses cause catastrophic resonance feedback sufficient to down, but not kill, a character.",
+        "participants": [
+          "dbx:actor:aleister",
+          "dbx:actor:sprocket"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "physical-frequency-circuit-matching",
+          "requirements": [
+            "Calibrated stations and circuit boards are physical Scene objects.",
+            "Regions handle the physical connections.",
+            "The matching must not collapse into safe process of elimination.",
+            "Wrong connections are visibly telegraphed and use bounded near-lethal nonlethal damage."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "near-lethal-nonlethal"
+      },
+      {
+        "stageId": "dbx:stage:sprocket-wire-grid",
+        "teamId": "dbx:team:aleister-sprocket",
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "ordinal": 3,
+        "kind": "personal",
+        "owner": "regionwright-minigame",
+        "label": "Circuit Routing",
+        "objective": "Sprocket routes the selected circuit as an actual graph from source to destination.",
+        "participants": [
+          "dbx:actor:aleister",
+          "dbx:actor:sprocket"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "circuit-routing-graph",
+          "requirements": [
+            "Approximately 5×5 rotatable board.",
+            "Component rotations expose active ports.",
+            "Validation traverses compatible adjacent ports from SOURCE.",
+            "DESTINATION must be reached and prohibited shorts/branches rejected."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "bounded-reset"
+      },
+      {
+        "stageId": "dbx:stage:dalton-tram-repair",
+        "teamId": "dbx:team:dalton-andrew",
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "ordinal": 1,
+        "kind": "personal",
+        "owner": "regionwright-minigame",
+        "label": "Tram Repair",
+        "objective": "Dalton repairs the disabled trams required for the depot puzzle.",
+        "participants": [
+          "dbx:actor:dalton",
+          "dbx:actor:andrew-mcconaughey"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "tram-repair-diagnostics",
+          "requirements": [
+            "The six trams are tram-B, tram-C, tram-O, tram-Q, tram-R, and tram-X.",
+            "The diagnostic has POWER, CONTROL, BRAKES, and DRIVE subsystems.",
+            "Each tram has roughly three faults and a component tray.",
+            "Repairing a tram immediately makes it operational and available to Andrew."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "bounded-reset"
+      },
+      {
+        "stageId": "dbx:stage:dalton-andrew-troubleshooting",
+        "teamId": "dbx:team:dalton-andrew",
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "ordinal": 2,
+        "kind": "cooperative",
+        "owner": "foundry-region",
+        "label": "In-Scene Tram Troubleshooting",
+        "objective": "Dalton and Andrew troubleshoot the repaired tram physically in the Scene; no unconfirmed popup minigame is introduced.",
+        "participants": [
+          "dbx:actor:dalton",
+          "dbx:actor:andrew-mcconaughey"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "in-scene-tram-troubleshooting",
+          "requirements": [
+            "The interaction remains physically around the tram.",
+            "Dalton reads diagnostics while Andrew performs the retained percussive-maintenance interaction.",
+            "The exact Region event sequence must be observed against the installed Foundry/Regionwright runtime before implementation."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "outcome-unknown-reread"
+      },
+      {
+        "stageId": "dbx:stage:andrew-tram-logistics",
+        "teamId": "dbx:team:dalton-andrew",
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "ordinal": 3,
+        "kind": "scene",
+        "owner": "foundry-region",
+        "label": "Tram Routing Controller",
+        "objective": "Andrew solves the logical Rush Hour tram-routing board in the Foundry Scene; Foundry Tiles are only its visual projection.",
+        "participants": [
+          "dbx:actor:dalton",
+          "dbx:actor:andrew-mcconaughey"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "rush-hour-tram-routing",
+          "requirements": [
+            "Canonical logical board is 6×6 and is represented by Scene rail geometry, Tiles, and Regions.",
+            "Only repaired trams are selectable and legal movement follows axis, occupancy, and board bounds.",
+            "The chat-authored six-move list is retained as provenance, but its R-left-1 step is geometrically illegal before Q-down-2 on the declared board.",
+            "The engine's verified six-move solution must be generated by BFS and accepted only when every move is legal before Tile animation.",
+            "The Scene canvas bounds and logical board footprint must be recorded together so anchors and Tiles cannot drift from the created map."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "bounded-reset"
+      },
+      {
+        "stageId": "dbx:stage:lawson-rune-memory",
+        "teamId": "dbx:team:lawson-tactal",
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "ordinal": 1,
+        "kind": "personal",
+        "owner": "regionwright-minigame",
+        "label": "Rune Memory",
+        "objective": "Lawson discovers the five duplicated rune designs in the memory board.",
+        "participants": [
+          "dbx:actor:lawson-burnheart",
+          "dbx:actor:tactal"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "rune-memory-matching",
+          "requirements": [
+            "Twenty cards arranged approximately 5×4.",
+            "Five matching rune pairs plus ten unique decoy runes.",
+            "Matching pairs remain face-up and emit the five rune IDs.",
+            "Shuffle occurs once at initialization; reopening cannot reshuffle the board."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "bounded-reset"
+      },
+      {
+        "stageId": "dbx:stage:lawson-tactal-rune-order",
+        "teamId": "dbx:team:lawson-tactal",
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "ordinal": 2,
+        "kind": "cooperative",
+        "owner": "foundry-region",
+        "label": "Rune Order Deduction",
+        "objective": "Lawson and Tactal use environmental clues to determine the correct order of the five physical rune objects.",
+        "participants": [
+          "dbx:actor:lawson-burnheart",
+          "dbx:actor:tactal"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "in-scene-rune-order-deduction",
+          "requirements": [
+            "The five discovered IDs correspond to physical Scene objects.",
+            "The pair determines the correct order in-scene.",
+            "This is not converted into a JavaScript popup puzzle.",
+            "The resolved order is the input to Tactal's slotting stage."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "outcome-unknown-reread"
+      },
+      {
+        "stageId": "dbx:stage:tactal-heavy-slotting",
+        "teamId": "dbx:team:lawson-tactal",
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "ordinal": 3,
+        "kind": "personal",
+        "owner": "regionwright-minigame",
+        "label": "Heavy Rune Slotting",
+        "objective": "Tactal inserts the five heavy runes in the agreed order using a force/timing challenge.",
+        "participants": [
+          "dbx:actor:lawson-burnheart",
+          "dbx:actor:tactal"
+        ],
+        "finalSpec": {
+          "status": "final-chat-spec",
+          "mechanic": "heavy-rune-force-timing",
+          "requirements": [
+            "Five heavy rune objects, five receiving sockets, and a force apparatus.",
+            "The next rune must match the agreed order.",
+            "Each rune takes approximately two successful force applications in the optimal timing zone.",
+            "Bad timing costs progress on the current insertion but does not remove completed runes; wrong rune selection is rejected without a full reset."
+          ]
+        },
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.version + game.system.id + game.system.version",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getEmbeddedCollection(\"RegionBehavior\")",
+          "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+        ],
+        "failurePolicy": "bounded-reset"
+      }
+    ],
+    "finale": {
+      "stageId": "dbx:stage:six-person-simultaneous-activation",
+      "roomId": "dbx:room:central-core-control-chamber",
+      "label": "Six-person simultaneous activation",
+      "participantIds": [
+        "dbx:actor:aleister",
+        "dbx:actor:sprocket",
+        "dbx:actor:dalton",
+        "dbx:actor:andrew-mcconaughey",
+        "dbx:actor:lawson-burnheart",
+        "dbx:actor:tactal"
+      ],
+      "activationCount": 6,
+      "objective": "All six players activate their stations together to unlock the Core Security Room; no additional deduction is required.",
+      "foundryApis": [
+        "Hooks.once(\"ready\")",
+        "game.version + game.system.id + game.system.version",
+        "game.users.activeGM / User permissions",
+        "fromUuid | game.scenes.get",
+        "scene.getEmbeddedCollection(\"Region\")",
+        "RegionDocument.shapes | RegionDocument.behaviors",
+        "region.getEmbeddedCollection(\"RegionBehavior\")",
+        "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events"
+      ],
+      "mutation": "disabled-until-exact-runtime-gate"
+    },
+    "foundryApis": [
+      "Hooks.once(\"ready\")",
+      "game.version + game.system.id + game.system.version",
+      "game.users.activeGM / User permissions",
+      "fromUuid | game.scenes.get",
+      "scene.getEmbeddedCollection(\"Region\")",
+      "scene.getEmbeddedDocument(\"Region\", id)",
+      "RegionDocument.shapes | RegionDocument.behaviors",
+      "region.getEmbeddedCollection(\"RegionBehavior\")",
+      "CONFIG.RegionBehavior.dataModels | RegionBehaviorType.events",
+      "authoritative reread through fromUuid / embedded-document getters"
+    ],
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "regionwrightHandoff": {
+    "schemaVersion": "0.1.0",
+    "handoffId": "dbx:handoff:ascendancy-regionwright",
+    "scenarioId": "dbx:campaign-test:chauser-bill-prime-arachnid-aftermath",
+    "source": {
+      "regionEditorRoot": "C:\\Users\\rujie\\Documents\\Region Editor",
+      "moduleId": "regionwright",
+      "moduleVersion": "0.1.4",
+      "ascendancyVersion": 1,
+      "files": [
+        {
+          "path": "premium/scripts/ascendancy-engine.js",
+          "role": "deterministic personal and progression engine"
+        },
+        {
+          "path": "premium/scripts/ascendancy.js",
+          "role": "Foundry adapter, flags, sockets, Regions, and API"
+        },
+        {
+          "path": "premium/scripts/premium-module.js",
+          "role": "module API registration"
+        },
+        {
+          "path": "premium/styles/ascendancy.css",
+          "role": "personal minigame presentation"
+        },
+        {
+          "path": "tests/ascendancy.test.mjs",
+          "role": "Regionwright engine and integration evidence"
+        }
+      ],
+      "apiRoot": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy",
+      "stateFlag": "flags.regionwright.ascendancy",
+      "regionFlag": "flags.regionwright.ascendancy.region",
+      "mapAnchorFlag": "flags.regionwright.ascendancy.anchors",
+      "hooks": [
+        "regionwright.ascendancyPuzzleComplete",
+        "regionwright.ascendancyCooperativeStage",
+        "regionwright.ascendancyCoreUnlocked"
+      ],
+      "runtimeCertification": "source-observed-not-live-certified"
+    },
+    "characters": [
+      {
+        "actorId": "dbx:actor:aleister",
+        "label": "Aleister",
+        "intendedOwner": "player-role",
+        "runtimeUserId": null
+      },
+      {
+        "actorId": "dbx:actor:sprocket",
+        "label": "Sprocket",
+        "intendedOwner": "player-role",
+        "runtimeUserId": null
+      },
+      {
+        "actorId": "dbx:actor:dalton",
+        "label": "Dalton",
+        "intendedOwner": "player-role",
+        "runtimeUserId": null
+      },
+      {
+        "actorId": "dbx:actor:andrew-mcconaughey",
+        "label": "Andrew McConaughey",
+        "intendedOwner": "player-role",
+        "runtimeUserId": null
+      },
+      {
+        "actorId": "dbx:actor:lawson-burnheart",
+        "label": "Lawson Burnheart",
+        "intendedOwner": "player-role",
+        "runtimeUserId": null
+      },
+      {
+        "actorId": "dbx:actor:tactal",
+        "label": "Tactal",
+        "intendedOwner": "player-role",
+        "runtimeUserId": null
+      }
+    ],
+    "personalPuzzles": [
+      {
+        "puzzleId": "dbx:puzzle:aleister-frequency",
+        "externalId": "aleister-frequency",
+        "characterId": "dbx:actor:aleister",
+        "authorizedControllerCharacterIds": [
+          "dbx:actor:aleister"
+        ],
+        "pairId": "dbx:pair:aleister-sprocket",
+        "stageOrder": 1,
+        "owner": "regionwright-popup",
+        "interaction": "regionwright-browser-minigame",
+        "regionwrightEntryPoint": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.open",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})",
+          "Hooks.callAll(\"regionwright.ascendancyPuzzleComplete\", ...)"
+        ],
+        "popup": true
+      },
+      {
+        "puzzleId": "dbx:puzzle:sprocket-circuit",
+        "externalId": "sprocket-circuit",
+        "characterId": "dbx:actor:sprocket",
+        "authorizedControllerCharacterIds": [
+          "dbx:actor:sprocket"
+        ],
+        "pairId": "dbx:pair:aleister-sprocket",
+        "stageOrder": 3,
+        "owner": "regionwright-popup",
+        "interaction": "regionwright-browser-minigame",
+        "regionwrightEntryPoint": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.open",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})",
+          "Hooks.callAll(\"regionwright.ascendancyPuzzleComplete\", ...)"
+        ],
+        "popup": true
+      },
+      {
+        "puzzleId": "dbx:puzzle:dalton-tram-repair",
+        "externalId": "dalton-tram-repair",
+        "characterId": "dbx:actor:dalton",
+        "authorizedControllerCharacterIds": [
+          "dbx:actor:dalton",
+          "dbx:actor:andrew-mcconaughey"
+        ],
+        "pairId": "dbx:pair:dalton-andrew",
+        "stageOrder": 1,
+        "owner": "regionwright-popup",
+        "interaction": "regionwright-browser-minigame",
+        "regionwrightEntryPoint": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.open",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})",
+          "Hooks.callAll(\"regionwright.ascendancyPuzzleComplete\", ...)"
+        ],
+        "popup": true
+      },
+      {
+        "puzzleId": "dbx:puzzle:andrew-tram-routing",
+        "externalId": "andrew-tram-routing",
+        "characterId": "dbx:actor:andrew-mcconaughey",
+        "authorizedControllerCharacterIds": [
+          "dbx:actor:andrew-mcconaughey"
+        ],
+        "pairId": "dbx:pair:dalton-andrew",
+        "stageOrder": 3,
+        "owner": "dicebox-scene",
+        "interaction": "foundry-scene-controller",
+        "regionwrightEntryPoint": null,
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})"
+        ],
+        "popup": false
+      },
+      {
+        "puzzleId": "dbx:puzzle:lawson-rune-memory",
+        "externalId": "lawson-rune-memory",
+        "characterId": "dbx:actor:lawson-burnheart",
+        "authorizedControllerCharacterIds": [
+          "dbx:actor:lawson-burnheart"
+        ],
+        "pairId": "dbx:pair:lawson-tactal",
+        "stageOrder": 1,
+        "owner": "regionwright-popup",
+        "interaction": "regionwright-browser-minigame",
+        "regionwrightEntryPoint": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.open",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})",
+          "Hooks.callAll(\"regionwright.ascendancyPuzzleComplete\", ...)"
+        ],
+        "popup": true
+      },
+      {
+        "puzzleId": "dbx:puzzle:tactal-rune-slotting",
+        "externalId": "tactal-rune-slotting",
+        "characterId": "dbx:actor:tactal",
+        "authorizedControllerCharacterIds": [
+          "dbx:actor:tactal"
+        ],
+        "pairId": "dbx:pair:lawson-tactal",
+        "stageOrder": 3,
+        "owner": "regionwright-popup",
+        "interaction": "regionwright-browser-minigame",
+        "regionwrightEntryPoint": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.open",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})",
+          "Hooks.callAll(\"regionwright.ascendancyPuzzleComplete\", ...)"
+        ],
+        "popup": true
+      }
+    ],
+    "cooperativeStages": [
+      {
+        "cooperativeId": "dbx:cooperative:aleister-sprocket-frequency-circuit",
+        "pairId": "dbx:pair:aleister-sprocket",
+        "externalId": "aleister-sprocket",
+        "stageOrder": 2,
+        "owner": "dicebox-foundry-region",
+        "interaction": "physical-scene-region",
+        "popup": false,
+        "regionFlagPath": "flags.regionwright.ascendancy.region",
+        "handoffApi": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.advanceCooperativeStage",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})"
+        ]
+      },
+      {
+        "cooperativeId": "dbx:cooperative:dalton-andrew-tram-troubleshooting",
+        "pairId": "dbx:pair:dalton-andrew",
+        "externalId": "dalton-andrew",
+        "stageOrder": 2,
+        "owner": "dicebox-foundry-region",
+        "interaction": "physical-scene-region",
+        "popup": false,
+        "regionFlagPath": "flags.regionwright.ascendancy.region",
+        "handoffApi": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.advanceCooperativeStage",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})"
+        ]
+      },
+      {
+        "cooperativeId": "dbx:cooperative:lawson-tactal-rune-order",
+        "pairId": "dbx:pair:lawson-tactal",
+        "externalId": "lawson-tactal",
+        "stageOrder": 2,
+        "owner": "dicebox-foundry-region",
+        "interaction": "physical-scene-region",
+        "popup": false,
+        "regionFlagPath": "flags.regionwright.ascendancy.region",
+        "handoffApi": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.advanceCooperativeStage",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})"
+        ]
+      }
+    ],
+    "finalActivation": {
+      "stageId": "dbx:stage:six-person-simultaneous-activation",
+      "prerequisitePairIds": [
+        "dbx:pair:aleister-sprocket",
+        "dbx:pair:dalton-andrew",
+        "dbx:pair:lawson-tactal"
+      ],
+      "stationCharacterIds": [
+        "dbx:actor:aleister",
+        "dbx:actor:sprocket",
+        "dbx:actor:dalton",
+        "dbx:actor:andrew-mcconaughey",
+        "dbx:actor:lawson-burnheart",
+        "dbx:actor:tactal"
+      ],
+      "owner": "dicebox-foundry-region",
+      "popup": false,
+      "regionFlagPath": "flags.regionwright.ascendancy.region",
+      "handoffApi": "game.modules.get(\"regionwright\")?.api?.premium?.ascendancy.activateStation",
+      "completionHook": "regionwright.ascendancyCoreUnlocked",
+      "roundSemantics": {
+        "mode": "same-round",
+        "roundField": "finalActivation.activationRound",
+        "roundInput": "explicit activationRound supplied by the Scene station event",
+        "resetOnRoundChange": true,
+        "completionRequiresSameRound": true
+      },
+      "foundryApis": [
+        "Hooks.once(\"ready\")",
+        "game.users.activeGM / User permissions",
+        "fromUuid | game.scenes.get",
+        "scene.getEmbeddedCollection(\"Region\")",
+        "scene.getEmbeddedDocument(\"Region\", id)",
+        "RegionDocument.shapes | RegionDocument.behaviors",
+        "region.getFlag(\"regionwright\", \"ascendancy\")",
+        "scene.update({\"flags.regionwright.ascendancy\": state})",
+        "Hooks.callAll(\"regionwright.ascendancyCoreUnlocked\", ...)"
+      ]
+    },
+    "rooms": [
+      {
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "label": "Signal / Frequency Chamber",
+        "assetId": "dbx:asset:map-signal-frequency-chamber",
+        "spatialBlueprintId": "dbx:blueprint:signal-frequency-chamber",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})"
+        ],
+        "canvas": null,
+        "logicalBoard": null
+      },
+      {
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "label": "Ascendancy Tram Depot",
+        "assetId": "dbx:asset:map-ascendancy-tram-depot",
+        "spatialBlueprintId": "dbx:blueprint:ascendancy-tram-depot",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})",
+          "scene.getEmbeddedCollection(\"Tile\")",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+          "scene.updateEmbeddedDocuments(\"Region\", ...)"
+        ],
+        "canvas": {
+          "width": 1536,
+          "height": 1024
+        },
+        "logicalBoard": {
+          "rows": 6,
+          "columns": 6,
+          "origin": {
+            "x": 420,
+            "y": 210
+          },
+          "cellWidth": 110,
+          "cellHeight": 95,
+          "anchorCount": 36
+        }
+      },
+      {
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "label": "Rune Mechanism Chamber",
+        "assetId": "dbx:asset:map-rune-mechanism-chamber",
+        "spatialBlueprintId": "dbx:blueprint:rune-mechanism-chamber",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})"
+        ],
+        "canvas": null,
+        "logicalBoard": null
+      },
+      {
+        "roomId": "dbx:room:central-core-control-chamber",
+        "label": "Central Core Control Chamber",
+        "assetId": "dbx:asset:map-central-core-control-chamber",
+        "spatialBlueprintId": "dbx:blueprint:central-core-control-chamber",
+        "geometryOwner": "spatial-blueprint",
+        "renderer": "scene-background",
+        "foundryApis": [
+          "Hooks.once(\"ready\")",
+          "game.users.activeGM / User permissions",
+          "fromUuid | game.scenes.get",
+          "scene.getEmbeddedCollection(\"Region\")",
+          "scene.getEmbeddedDocument(\"Region\", id)",
+          "RegionDocument.shapes | RegionDocument.behaviors",
+          "region.getFlag(\"regionwright\", \"ascendancy\")",
+          "scene.update({\"flags.regionwright.ascendancy\": state})"
+        ],
+        "canvas": null,
+        "logicalBoard": null
+      }
+    ],
+    "progressionEdges": [
+      {
+        "edgeId": "dbx:edge:frequency-to-signal-cooperative",
+        "fromId": "dbx:puzzle:aleister-frequency",
+        "toId": "dbx:cooperative:aleister-sprocket-frequency-circuit",
+        "kind": "personal-complete-to-cooperative"
+      },
+      {
+        "edgeId": "dbx:edge:signal-cooperative-to-circuit",
+        "fromId": "dbx:cooperative:aleister-sprocket-frequency-circuit",
+        "toId": "dbx:puzzle:sprocket-circuit",
+        "kind": "cooperative-complete-to-personal"
+      },
+      {
+        "edgeId": "dbx:edge:repair-to-tram-cooperative",
+        "fromId": "dbx:puzzle:dalton-tram-repair",
+        "toId": "dbx:cooperative:dalton-andrew-tram-troubleshooting",
+        "kind": "personal-complete-to-cooperative"
+      },
+      {
+        "edgeId": "dbx:edge:tram-cooperative-to-routing",
+        "fromId": "dbx:cooperative:dalton-andrew-tram-troubleshooting",
+        "toId": "dbx:puzzle:andrew-tram-routing",
+        "kind": "cooperative-complete-to-personal"
+      },
+      {
+        "edgeId": "dbx:edge:memory-to-rune-cooperative",
+        "fromId": "dbx:puzzle:lawson-rune-memory",
+        "toId": "dbx:cooperative:lawson-tactal-rune-order",
+        "kind": "personal-complete-to-cooperative"
+      },
+      {
+        "edgeId": "dbx:edge:rune-cooperative-to-slotting",
+        "fromId": "dbx:cooperative:lawson-tactal-rune-order",
+        "toId": "dbx:puzzle:tactal-rune-slotting",
+        "kind": "cooperative-complete-to-personal"
+      },
+      {
+        "edgeId": "dbx:edge:aleister-sprocket-pair-to-final",
+        "fromId": "dbx:pair:aleister-sprocket",
+        "toId": "dbx:stage:six-person-simultaneous-activation",
+        "kind": "pair-complete-to-final"
+      },
+      {
+        "edgeId": "dbx:edge:dalton-andrew-pair-to-final",
+        "fromId": "dbx:pair:dalton-andrew",
+        "toId": "dbx:stage:six-person-simultaneous-activation",
+        "kind": "pair-complete-to-final"
+      },
+      {
+        "edgeId": "dbx:edge:lawson-tactal-pair-to-final",
+        "fromId": "dbx:pair:lawson-tactal",
+        "toId": "dbx:stage:six-person-simultaneous-activation",
+        "kind": "pair-complete-to-final"
+      },
+      {
+        "edgeId": "dbx:edge:final-to-core-unlocked",
+        "fromId": "dbx:stage:six-person-simultaneous-activation",
+        "toId": "dbx:room:central-core-control-chamber",
+        "kind": "final-complete-to-core-unlocked"
+      }
+    ],
+    "contract": {
+      "readOnlyProgramSource": true,
+      "regionwrightMustNotDuplicateRules": true,
+      "cooperativePopup": false,
+      "andrewsRushHourOwner": "dicebox-scene-engine",
+      "daltonRepairOwner": "regionwright-popup",
+      "macroOwnership": {
+        "mode": "none-in-current-campaign",
+        "macroIds": [],
+        "policy": "explicit-player-owner-if-introduced",
+        "inheritedPermissionsAccepted": false,
+        "foundryField": "ownership.default",
+        "readbackRequired": true
+      },
+      "cooperativeStageHookSemantics": "regionwright.ascendancyCooperativeStage is an entry notification only; advancement completion is read from pairs[pairId].cooperativeComplete after advanceCooperativeStage",
+      "stateAuthority": "Foundry Scene state mediated by active GM; DiceBox semantic truth remains program-side",
+      "runtimeBindingPolicy": "semantic IDs canonical; external IDs and UUIDs unresolved until exact runtime",
+      "mutation": "disabled-until-exact-runtime-gate",
+      "completionReceipt": [
+        "regionwright.ascendancyPuzzleComplete",
+        "regionwright.ascendancyCooperativeStage",
+        "regionwright.ascendancyCoreUnlocked"
+      ],
+      "foundryApis": [
+        "Hooks.once(\"ready\")",
+        "game.users.activeGM / User permissions",
+        "fromUuid | game.scenes.get",
+        "scene.getEmbeddedCollection(\"Region\")",
+        "scene.getEmbeddedDocument(\"Region\", id)",
+        "RegionDocument.shapes | RegionDocument.behaviors",
+        "region.getFlag(\"regionwright\", \"ascendancy\")",
+        "scene.update({\"flags.regionwright.ascendancy\": state})",
+        "Hooks.callAll(\"regionwright.ascendancyCoreUnlocked\", ...)",
+        "authoritative reread through fromUuid / embedded-document getters"
+      ]
+    }
+  },
+  "tramSceneProjection": {
+    "schemaVersion": "0.1.0",
+    "planId": "dbx:plan:tram-scene-projection",
+    "operation": "tram-scene.projection.preview",
+    "scene": {
+      "semantic": {
+        "id": "dbx:scene:ascendancy-tram-depot",
+        "kind": "scene"
+      },
+      "expectedBindingGeneration": 0
+    },
+    "backgroundAsset": {
+      "semantic": {
+        "id": "dbx:asset:map-ascendancy-tram-depot",
+        "kind": "asset"
+      },
+      "expectedWidth": 1536,
+      "expectedHeight": 1024
+    },
+    "canvas": {
+      "width": 1536,
+      "height": 1024
+    },
+    "logicalBoard": {
+      "origin": {
+        "x": 420,
+        "y": 210
+      },
+      "cellWidth": 110,
+      "cellHeight": 95,
+      "columns": 6,
+      "rows": 6
+    },
+    "rendererRequirements": {
+      "projection": "orthographic-top-down",
+      "noPerspective": true,
+      "backgroundRole": "renderer-only",
+      "visibleWalls": true,
+      "visibleDoors": true,
+      "trackLayout": {
+        "kind": "enclosed-six-by-six-orthogonal-routing-yard",
+        "rows": 6,
+        "columns": 6,
+        "boardOrigin": {
+          "x": 420,
+          "y": 210
+        },
+        "cellWidth": 110,
+        "cellHeight": 95,
+        "fixedTramCars": "tile-projection-only",
+        "noFootBypass": true,
+        "ingress": {
+          "anchorId": "dbx:anchor:tram-yard-ingress",
+          "position": {
+            "x": 420,
+            "y": 447.5
+          }
+        },
+        "exit": {
+          "anchorId": "dbx:anchor:tram-yard-exit",
+          "position": {
+            "x": 1080,
+            "y": 447.5
+          },
+          "destination": "core-controls-rail"
+        },
+        "coreRail": {
+          "from": {
+            "x": 1080,
+            "y": 447.5
+          },
+          "to": {
+            "x": 1512,
+            "y": 447.5
+          }
+        }
+      }
+    },
+    "tileProjection": {
+      "owner": "foundry-scene-tile-projection",
+      "source": "canonical-logical-board",
+      "fixedTramCars": "tile-projection-only",
+      "tileCreateApi": "scene.createEmbeddedDocuments(\"Tile\", ...)",
+      "regionCreateApi": "scene.createEmbeddedDocuments(\"Region\", ...)",
+      "tileMoveApi": "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+      "regionMoveApi": "scene.updateEmbeddedDocuments(\"Region\", ...)",
+      "footprintOwner": "dicebox-scene-engine",
+      "pieces": [
+        {
+          "tileId": "dbx:tile:tram-x",
+          "footprintRegionId": "dbx:region:tram-x-footprint",
+          "tramId": "dbx:tram:x",
+          "orientation": "horizontal",
+          "length": 2
+        },
+        {
+          "tileId": "dbx:tile:tram-o",
+          "footprintRegionId": "dbx:region:tram-o-footprint",
+          "tramId": "dbx:tram:o",
+          "orientation": "vertical",
+          "length": 3
+        },
+        {
+          "tileId": "dbx:tile:tram-q",
+          "footprintRegionId": "dbx:region:tram-q-footprint",
+          "tramId": "dbx:tram:q",
+          "orientation": "vertical",
+          "length": 3
+        },
+        {
+          "tileId": "dbx:tile:tram-b",
+          "footprintRegionId": "dbx:region:tram-b-footprint",
+          "tramId": "dbx:tram:b",
+          "orientation": "vertical",
+          "length": 2
+        },
+        {
+          "tileId": "dbx:tile:tram-c",
+          "footprintRegionId": "dbx:region:tram-c-footprint",
+          "tramId": "dbx:tram:c",
+          "orientation": "horizontal",
+          "length": 2
+        },
+        {
+          "tileId": "dbx:tile:tram-r",
+          "footprintRegionId": "dbx:region:tram-r-footprint",
+          "tramId": "dbx:tram:r",
+          "orientation": "horizontal",
+          "length": 3
+        }
+      ]
+    },
+    "anchors": [
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c1",
+        "regionId": "dbx:region:tram-slot-r1-c1",
+        "row": 0,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c2",
+        "regionId": "dbx:region:tram-slot-r1-c2",
+        "row": 0,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c3",
+        "regionId": "dbx:region:tram-slot-r1-c3",
+        "row": 0,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c4",
+        "regionId": "dbx:region:tram-slot-r1-c4",
+        "row": 0,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c5",
+        "regionId": "dbx:region:tram-slot-r1-c5",
+        "row": 0,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c6",
+        "regionId": "dbx:region:tram-slot-r1-c6",
+        "row": 0,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c1",
+        "regionId": "dbx:region:tram-slot-r2-c1",
+        "row": 1,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c2",
+        "regionId": "dbx:region:tram-slot-r2-c2",
+        "row": 1,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c3",
+        "regionId": "dbx:region:tram-slot-r2-c3",
+        "row": 1,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c4",
+        "regionId": "dbx:region:tram-slot-r2-c4",
+        "row": 1,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c5",
+        "regionId": "dbx:region:tram-slot-r2-c5",
+        "row": 1,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c6",
+        "regionId": "dbx:region:tram-slot-r2-c6",
+        "row": 1,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c1",
+        "regionId": "dbx:region:tram-slot-r3-c1",
+        "row": 2,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c2",
+        "regionId": "dbx:region:tram-slot-r3-c2",
+        "row": 2,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c3",
+        "regionId": "dbx:region:tram-slot-r3-c3",
+        "row": 2,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c4",
+        "regionId": "dbx:region:tram-slot-r3-c4",
+        "row": 2,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c5",
+        "regionId": "dbx:region:tram-slot-r3-c5",
+        "row": 2,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c6",
+        "regionId": "dbx:region:tram-slot-r3-c6",
+        "row": 2,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c1",
+        "regionId": "dbx:region:tram-slot-r4-c1",
+        "row": 3,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c2",
+        "regionId": "dbx:region:tram-slot-r4-c2",
+        "row": 3,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c3",
+        "regionId": "dbx:region:tram-slot-r4-c3",
+        "row": 3,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c4",
+        "regionId": "dbx:region:tram-slot-r4-c4",
+        "row": 3,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c5",
+        "regionId": "dbx:region:tram-slot-r4-c5",
+        "row": 3,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c6",
+        "regionId": "dbx:region:tram-slot-r4-c6",
+        "row": 3,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c1",
+        "regionId": "dbx:region:tram-slot-r5-c1",
+        "row": 4,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c2",
+        "regionId": "dbx:region:tram-slot-r5-c2",
+        "row": 4,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c3",
+        "regionId": "dbx:region:tram-slot-r5-c3",
+        "row": 4,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c4",
+        "regionId": "dbx:region:tram-slot-r5-c4",
+        "row": 4,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c5",
+        "regionId": "dbx:region:tram-slot-r5-c5",
+        "row": 4,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c6",
+        "regionId": "dbx:region:tram-slot-r5-c6",
+        "row": 4,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c1",
+        "regionId": "dbx:region:tram-slot-r6-c1",
+        "row": 5,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c2",
+        "regionId": "dbx:region:tram-slot-r6-c2",
+        "row": 5,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c3",
+        "regionId": "dbx:region:tram-slot-r6-c3",
+        "row": 5,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c4",
+        "regionId": "dbx:region:tram-slot-r6-c4",
+        "row": 5,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c5",
+        "regionId": "dbx:region:tram-slot-r6-c5",
+        "row": 5,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c6",
+        "regionId": "dbx:region:tram-slot-r6-c6",
+        "row": 5,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 732.5
+        }
+      }
+    ],
+    "exitRegionId": "dbx:region:tram-exit",
+    "geometryOwner": "spatial-blueprint",
+    "tileOwner": "foundry-scene-tile-projection",
+    "foundryApis": [
+      "Hooks.once(\"ready\")",
+      "game.version + game.system.id + game.system.version",
+      "game.users.activeGM / User permissions",
+      "fromUuid | game.scenes.get",
+      "scene.getEmbeddedCollection(\"Tile\")",
+      "scene.getEmbeddedCollection(\"Region\")",
+      "scene.getEmbeddedDocument(\"Region\", id)",
+      "RegionDocument.shapes | RegionDocument.behaviors",
+      "scene.createEmbeddedDocuments(\"Tile\", ...)",
+      "scene.createEmbeddedDocuments(\"Region\", ...)",
+      "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+      "scene.updateEmbeddedDocuments(\"Region\", ...)",
+      "authoritative reread through fromUuid / embedded-document getters"
+    ],
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "spatialBlueprints": [
+    {
+      "schemaVersion": "0.1.0",
+      "blueprintId": "dbx:blueprint:signal-frequency-chamber",
+      "name": "Signal / Frequency Chamber",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "width": 1536,
+        "height": 1024
+      },
+      "grid": {
+        "size": 64,
+        "unitsPerCell": 5
+      },
+      "scale": {
+        "pixelsPerUnit": 12.8,
+        "unit": "grid-unit"
+      },
+      "levels": [
+        {
+          "levelId": "dbx:level:ascendancy-ground",
+          "label": "Ground",
+          "elevation": 0
+        }
+      ],
+      "walls": [
+        {
+          "wallId": "dbx:wall:signal-frequency-chamber-north-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 688,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:signal-frequency-chamber-north-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 848,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:signal-frequency-chamber-south-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 1000
+          },
+          "b": {
+            "x": 688,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:signal-frequency-chamber-south-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 848,
+            "y": 1000
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:signal-frequency-chamber-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 24,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:signal-frequency-chamber-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 1512,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        }
+      ],
+      "regions": [],
+      "anchors": [
+        {
+          "anchorId": "dbx:anchor:signal-door-north",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 24
+          },
+          "clearance": 80
+        },
+        {
+          "anchorId": "dbx:anchor:signal-door-south",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 1000
+          },
+          "clearance": 80
+        },
+        {
+          "anchorId": "dbx:anchor:signal-aleister-frequency",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 270,
+            "y": 235
+          },
+          "clearance": 56
+        },
+        {
+          "anchorId": "dbx:anchor:signal-sprocket-circuit",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1266,
+            "y": 235
+          },
+          "clearance": 56
+        }
+      ]
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "blueprintId": "dbx:blueprint:ascendancy-tram-depot",
+      "name": "Ascendancy Tram Depot",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "width": 1536,
+        "height": 1024
+      },
+      "grid": {
+        "size": 64,
+        "unitsPerCell": 5
+      },
+      "scale": {
+        "pixelsPerUnit": 12.8,
+        "unit": "grid-unit"
+      },
+      "levels": [
+        {
+          "levelId": "dbx:level:ascendancy-ground",
+          "label": "Ground",
+          "elevation": 0
+        }
+      ],
+      "walls": [
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-north",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-south",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 1000
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 24,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-east-north",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 1512,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 367.5
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-east-south",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 1512,
+            "y": 527.5
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-north",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 420,
+            "y": 210
+          },
+          "b": {
+            "x": 1080,
+            "y": 210
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-south",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 420,
+            "y": 780
+          },
+          "b": {
+            "x": 1080,
+            "y": 780
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-west-north",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 420,
+            "y": 210
+          },
+          "b": {
+            "x": 420,
+            "y": 400
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-west-south",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 420,
+            "y": 495
+          },
+          "b": {
+            "x": 420,
+            "y": 780
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-east-north",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 1080,
+            "y": 210
+          },
+          "b": {
+            "x": 1080,
+            "y": 400
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-east-south",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 1080,
+            "y": 495
+          },
+          "b": {
+            "x": 1080,
+            "y": 780
+          },
+          "thickness": 8
+        }
+      ],
+      "regions": [],
+      "anchors": [
+        {
+          "anchorId": "dbx:anchor:tram-door-east",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1512,
+            "y": 447.5
+          },
+          "clearance": 47.5
+        },
+        {
+          "anchorId": "dbx:anchor:tram-yard-ingress",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 420,
+            "y": 447.5
+          },
+          "clearance": 47.5
+        },
+        {
+          "anchorId": "dbx:anchor:tram-yard-exit",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1080,
+            "y": 447.5
+          },
+          "clearance": 47.5
+        },
+        {
+          "anchorId": "dbx:anchor:tram-dalton-repair",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1270,
+            "y": 230
+          },
+          "clearance": 72
+        },
+        {
+          "anchorId": "dbx:anchor:tram-cooperative",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1270,
+            "y": 750
+          },
+          "clearance": 72
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r1-c1",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 475,
+            "y": 257.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r1-c2",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 585,
+            "y": 257.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r1-c3",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 695,
+            "y": 257.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r1-c4",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 805,
+            "y": 257.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r1-c5",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 915,
+            "y": 257.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r1-c6",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1025,
+            "y": 257.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r2-c1",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 475,
+            "y": 352.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r2-c2",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 585,
+            "y": 352.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r2-c3",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 695,
+            "y": 352.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r2-c4",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 805,
+            "y": 352.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r2-c5",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 915,
+            "y": 352.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r2-c6",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1025,
+            "y": 352.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r3-c1",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 475,
+            "y": 447.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r3-c2",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 585,
+            "y": 447.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r3-c3",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 695,
+            "y": 447.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r3-c4",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 805,
+            "y": 447.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r3-c5",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 915,
+            "y": 447.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r3-c6",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1025,
+            "y": 447.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r4-c1",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 475,
+            "y": 542.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r4-c2",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 585,
+            "y": 542.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r4-c3",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 695,
+            "y": 542.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r4-c4",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 805,
+            "y": 542.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r4-c5",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 915,
+            "y": 542.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r4-c6",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1025,
+            "y": 542.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r5-c1",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 475,
+            "y": 637.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r5-c2",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 585,
+            "y": 637.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r5-c3",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 695,
+            "y": 637.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r5-c4",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 805,
+            "y": 637.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r5-c5",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 915,
+            "y": 637.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r5-c6",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1025,
+            "y": 637.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r6-c1",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 475,
+            "y": 732.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r6-c2",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 585,
+            "y": 732.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r6-c3",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 695,
+            "y": 732.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r6-c4",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 805,
+            "y": 732.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r6-c5",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 915,
+            "y": 732.5
+          },
+          "clearance": 40
+        },
+        {
+          "anchorId": "dbx:anchor:tram-slot-r6-c6",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1025,
+            "y": 732.5
+          },
+          "clearance": 40
+        }
+      ]
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "blueprintId": "dbx:blueprint:rune-mechanism-chamber",
+      "name": "Rune Mechanism Chamber",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "width": 1536,
+        "height": 1024
+      },
+      "grid": {
+        "size": 64,
+        "unitsPerCell": 5
+      },
+      "scale": {
+        "pixelsPerUnit": 12.8,
+        "unit": "grid-unit"
+      },
+      "levels": [
+        {
+          "levelId": "dbx:level:ascendancy-ground",
+          "label": "Ground",
+          "elevation": 0
+        }
+      ],
+      "walls": [
+        {
+          "wallId": "dbx:wall:rune-mechanism-chamber-north-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 688,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:rune-mechanism-chamber-north-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 848,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:rune-mechanism-chamber-south-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 1000
+          },
+          "b": {
+            "x": 688,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:rune-mechanism-chamber-south-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 848,
+            "y": 1000
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:rune-mechanism-chamber-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 24,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:rune-mechanism-chamber-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 1512,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        }
+      ],
+      "regions": [],
+      "anchors": [
+        {
+          "anchorId": "dbx:anchor:rune-door-north",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 24
+          },
+          "clearance": 80
+        },
+        {
+          "anchorId": "dbx:anchor:rune-door-south",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 1000
+          },
+          "clearance": 80
+        },
+        {
+          "anchorId": "dbx:anchor:rune-lawson-memory",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 300,
+            "y": 240
+          },
+          "clearance": 56
+        },
+        {
+          "anchorId": "dbx:anchor:rune-tactal-slotting",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1236,
+            "y": 240
+          },
+          "clearance": 56
+        }
+      ]
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "blueprintId": "dbx:blueprint:central-core-control-chamber",
+      "name": "Central Core Control Chamber",
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "bounds": {
+        "width": 1536,
+        "height": 1024
+      },
+      "grid": {
+        "size": 64,
+        "unitsPerCell": 5
+      },
+      "scale": {
+        "pixelsPerUnit": 12.8,
+        "unit": "grid-unit"
+      },
+      "levels": [
+        {
+          "levelId": "dbx:level:ascendancy-ground",
+          "label": "Ground",
+          "elevation": 0
+        }
+      ],
+      "walls": [
+        {
+          "wallId": "dbx:wall:central-core-control-chamber-north-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 688,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:central-core-control-chamber-north-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 848,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:central-core-control-chamber-south-west",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 1000
+          },
+          "b": {
+            "x": 688,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:central-core-control-chamber-south-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 848,
+            "y": 1000
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:central-core-control-chamber-west-north",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 24,
+            "y": 367.5
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:central-core-control-chamber-west-south",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 24,
+            "y": 527.5
+          },
+          "b": {
+            "x": 24,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:central-core-control-chamber-east",
+          "levelId": "dbx:level:ascendancy-ground",
+          "a": {
+            "x": 1512,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        }
+      ],
+      "regions": [],
+      "anchors": [
+        {
+          "anchorId": "dbx:anchor:core-door-north",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 24
+          },
+          "clearance": 80
+        },
+        {
+          "anchorId": "dbx:anchor:core-door-south",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 1000
+          },
+          "clearance": 80
+        },
+        {
+          "anchorId": "dbx:anchor:core-door-west",
+          "kind": "door",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 24,
+            "y": 447.5
+          },
+          "clearance": 47.5
+        },
+        {
+          "anchorId": "dbx:anchor:core-aleister-station",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 384,
+            "y": 365
+          },
+          "clearance": 56
+        },
+        {
+          "anchorId": "dbx:anchor:core-sprocket-station",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 365
+          },
+          "clearance": 56
+        },
+        {
+          "anchorId": "dbx:anchor:core-dalton-station",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1152,
+            "y": 365
+          },
+          "clearance": 56
+        },
+        {
+          "anchorId": "dbx:anchor:core-andrew-station",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 384,
+            "y": 670
+          },
+          "clearance": 56
+        },
+        {
+          "anchorId": "dbx:anchor:core-lawson-station",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 768,
+            "y": 670
+          },
+          "clearance": 56
+        },
+        {
+          "anchorId": "dbx:anchor:core-tactal-station",
+          "kind": "interaction",
+          "levelId": "dbx:level:ascendancy-ground",
+          "position": {
+            "x": 1152,
+            "y": 670
+          },
+          "clearance": 56
+        }
+      ]
+    }
+  ],
+  "regionPlans": [
+    {
+      "schemaVersion": "0.1.0",
+      "planId": "dbx:plan:signal-frequency-chamber-regions",
+      "roomId": "dbx:room:signal-frequency-chamber",
+      "sceneId": "dbx:scene:signal-frequency-chamber",
+      "canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "regions": [
+        {
+          "regionId": "dbx:region:signal-aleister-frequency",
+          "label": "Aleister frequency station",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 120,
+            "y": 120,
+            "width": 300,
+            "height": 230
+          },
+          "interaction": "popup-personal",
+          "owner": "regionwright-popup",
+          "popup": true,
+          "behaviorBinding": "dbx:puzzle:aleister-frequency",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:signal-sprocket-circuit",
+          "label": "Sprocket circuit station",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 1116,
+            "y": 120,
+            "width": 300,
+            "height": 230
+          },
+          "interaction": "popup-personal",
+          "owner": "regionwright-popup",
+          "popup": true,
+          "behaviorBinding": "dbx:puzzle:sprocket-circuit",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:signal-cooperative-left",
+          "label": "Physical frequency circuit left",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 180,
+            "y": 500,
+            "width": 360,
+            "height": 220
+          },
+          "interaction": "physical-cooperative",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:cooperative:aleister-sprocket-frequency-circuit",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:signal-cooperative-right",
+          "label": "Physical frequency circuit right",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 996,
+            "y": 500,
+            "width": 360,
+            "height": 220
+          },
+          "interaction": "physical-cooperative",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:cooperative:aleister-sprocket-frequency-circuit",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:signal-entry",
+          "label": "Signal chamber entry",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 680,
+            "y": 24,
+            "width": 176,
+            "height": 72
+          },
+          "interaction": "teleport-entry",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": null,
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:signal-exit",
+          "label": "Signal chamber exit",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 680,
+            "y": 928,
+            "width": 176,
+            "height": 72
+          },
+          "interaction": "teleport-exit",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": null,
+          "macroBinding": null
+        }
+      ],
+      "teleports": [
+        {
+          "teleportId": "dbx:teleport:signal-to-core",
+          "fromRegionId": "dbx:region:signal-exit",
+          "toRegionId": "dbx:region:core-entry",
+          "mode": "cross-scene",
+          "owner": "dicebox-foundry-region",
+          "activeGMRequired": true,
+          "mutation": "disabled-until-exact-runtime-gate"
+        }
+      ],
+      "geometryOwner": "spatial-blueprint",
+      "coordinateSource": "campaign-helper-orthogonal-coordinate-plan",
+      "foundryApis": [
+        "Hooks.once(\"ready\")",
+        "game.version + game.system.id + game.system.version",
+        "game.users.activeGM / User permissions",
+        "fromUuid | game.scenes.get",
+        "scene.getEmbeddedCollection(\"Region\")",
+        "scene.getEmbeddedDocument(\"Region\", id)",
+        "RegionDocument.shapes | RegionDocument.behaviors",
+        "region.getEmbeddedCollection(\"RegionBehavior\")",
+        "authoritative reread through fromUuid / embedded-document getters"
+      ],
+      "macroPolicy": {
+        "mode": "none-in-current-campaign",
+        "playerFacingMacroIds": [],
+        "explicitPlayerOwnershipRequiredIfAdded": true,
+        "inheritedPermissionsAccepted": false,
+        "readbackRequired": true
+      },
+      "mutation": "disabled-until-exact-runtime-gate"
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "planId": "dbx:plan:ascendancy-tram-depot-regions",
+      "roomId": "dbx:room:ascendancy-tram-depot",
+      "sceneId": "dbx:scene:ascendancy-tram-depot",
+      "canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "regions": [
+        {
+          "regionId": "dbx:region:tram-slot-r1-c1",
+          "label": "Tram anchor 1,1",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 420,
+            "y": 210,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r1-c1",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r1-c2",
+          "label": "Tram anchor 1,2",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 530,
+            "y": 210,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r1-c2",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r1-c3",
+          "label": "Tram anchor 1,3",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 640,
+            "y": 210,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r1-c3",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r1-c4",
+          "label": "Tram anchor 1,4",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 750,
+            "y": 210,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r1-c4",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r1-c5",
+          "label": "Tram anchor 1,5",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 860,
+            "y": 210,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r1-c5",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r1-c6",
+          "label": "Tram anchor 1,6",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 970,
+            "y": 210,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r1-c6",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r2-c1",
+          "label": "Tram anchor 2,1",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 420,
+            "y": 305,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r2-c1",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r2-c2",
+          "label": "Tram anchor 2,2",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 530,
+            "y": 305,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r2-c2",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r2-c3",
+          "label": "Tram anchor 2,3",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 640,
+            "y": 305,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r2-c3",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r2-c4",
+          "label": "Tram anchor 2,4",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 750,
+            "y": 305,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r2-c4",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r2-c5",
+          "label": "Tram anchor 2,5",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 860,
+            "y": 305,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r2-c5",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r2-c6",
+          "label": "Tram anchor 2,6",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 970,
+            "y": 305,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r2-c6",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r3-c1",
+          "label": "Tram anchor 3,1",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 420,
+            "y": 400,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r3-c1",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r3-c2",
+          "label": "Tram anchor 3,2",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 530,
+            "y": 400,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r3-c2",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r3-c3",
+          "label": "Tram anchor 3,3",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 640,
+            "y": 400,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r3-c3",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r3-c4",
+          "label": "Tram anchor 3,4",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 750,
+            "y": 400,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r3-c4",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r3-c5",
+          "label": "Tram anchor 3,5",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 860,
+            "y": 400,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r3-c5",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r3-c6",
+          "label": "Tram anchor 3,6",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 970,
+            "y": 400,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r3-c6",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r4-c1",
+          "label": "Tram anchor 4,1",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 420,
+            "y": 495,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r4-c1",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r4-c2",
+          "label": "Tram anchor 4,2",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 530,
+            "y": 495,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r4-c2",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r4-c3",
+          "label": "Tram anchor 4,3",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 640,
+            "y": 495,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r4-c3",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r4-c4",
+          "label": "Tram anchor 4,4",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 750,
+            "y": 495,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r4-c4",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r4-c5",
+          "label": "Tram anchor 4,5",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 860,
+            "y": 495,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r4-c5",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r4-c6",
+          "label": "Tram anchor 4,6",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 970,
+            "y": 495,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r4-c6",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r5-c1",
+          "label": "Tram anchor 5,1",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 420,
+            "y": 590,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r5-c1",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r5-c2",
+          "label": "Tram anchor 5,2",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 530,
+            "y": 590,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r5-c2",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r5-c3",
+          "label": "Tram anchor 5,3",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 640,
+            "y": 590,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r5-c3",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r5-c4",
+          "label": "Tram anchor 5,4",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 750,
+            "y": 590,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r5-c4",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r5-c5",
+          "label": "Tram anchor 5,5",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 860,
+            "y": 590,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r5-c5",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r5-c6",
+          "label": "Tram anchor 5,6",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 970,
+            "y": 590,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r5-c6",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r6-c1",
+          "label": "Tram anchor 6,1",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 420,
+            "y": 685,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r6-c1",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r6-c2",
+          "label": "Tram anchor 6,2",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 530,
+            "y": 685,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r6-c2",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r6-c3",
+          "label": "Tram anchor 6,3",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 640,
+            "y": 685,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r6-c3",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r6-c4",
+          "label": "Tram anchor 6,4",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 750,
+            "y": 685,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r6-c4",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r6-c5",
+          "label": "Tram anchor 6,5",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 860,
+            "y": 685,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r6-c5",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-slot-r6-c6",
+          "label": "Tram anchor 6,6",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 970,
+            "y": 685,
+            "width": 110,
+            "height": 95
+          },
+          "interaction": "tram-anchor",
+          "owner": "dicebox-scene-engine",
+          "popup": false,
+          "behaviorBinding": "dbx:anchor:tram-slot-r6-c6",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-dalton-repair",
+          "label": "Dalton tram repair station",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 1120,
+            "y": 120,
+            "width": 300,
+            "height": 220
+          },
+          "interaction": "popup-personal",
+          "owner": "regionwright-popup",
+          "popup": true,
+          "behaviorBinding": "dbx:puzzle:dalton-tram-repair",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-cooperative",
+          "label": "Physical tram troubleshooting station",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 1120,
+            "y": 640,
+            "width": 300,
+            "height": 220
+          },
+          "interaction": "physical-cooperative",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:cooperative:dalton-andrew-tram-troubleshooting",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:tram-exit",
+          "label": "Tram rail to Core controls",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 1080,
+            "y": 400,
+            "width": 390,
+            "height": 95
+          },
+          "interaction": "teleport-exit",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:tram:core-rail-access",
+          "macroBinding": null
+        }
+      ],
+      "teleports": [
+        {
+          "teleportId": "dbx:teleport:tram-to-core",
+          "fromRegionId": "dbx:region:tram-exit",
+          "toRegionId": "dbx:region:core-entry-west",
+          "mode": "cross-scene",
+          "owner": "dicebox-foundry-region",
+          "activeGMRequired": true,
+          "mutation": "disabled-until-exact-runtime-gate"
+        }
+      ],
+      "geometryOwner": "spatial-blueprint",
+      "coordinateSource": "campaign-helper-orthogonal-coordinate-plan",
+      "foundryApis": [
+        "Hooks.once(\"ready\")",
+        "game.version + game.system.id + game.system.version",
+        "game.users.activeGM / User permissions",
+        "fromUuid | game.scenes.get",
+        "scene.getEmbeddedCollection(\"Region\")",
+        "scene.getEmbeddedDocument(\"Region\", id)",
+        "RegionDocument.shapes | RegionDocument.behaviors",
+        "region.getEmbeddedCollection(\"RegionBehavior\")",
+        "authoritative reread through fromUuid / embedded-document getters"
+      ],
+      "macroPolicy": {
+        "mode": "none-in-current-campaign",
+        "playerFacingMacroIds": [],
+        "explicitPlayerOwnershipRequiredIfAdded": true,
+        "inheritedPermissionsAccepted": false,
+        "readbackRequired": true
+      },
+      "mutation": "disabled-until-exact-runtime-gate"
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "planId": "dbx:plan:rune-mechanism-chamber-regions",
+      "roomId": "dbx:room:rune-mechanism-chamber",
+      "sceneId": "dbx:scene:rune-mechanism-chamber",
+      "canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "regions": [
+        {
+          "regionId": "dbx:region:rune-lawson-memory",
+          "label": "Lawson rune memory station",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 120,
+            "y": 120,
+            "width": 360,
+            "height": 240
+          },
+          "interaction": "popup-personal",
+          "owner": "regionwright-popup",
+          "popup": true,
+          "behaviorBinding": "dbx:puzzle:lawson-rune-memory",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:rune-tactal-slotting",
+          "label": "Tactal heavy rune station",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 1056,
+            "y": 120,
+            "width": 360,
+            "height": 240
+          },
+          "interaction": "popup-personal",
+          "owner": "regionwright-popup",
+          "popup": true,
+          "behaviorBinding": "dbx:puzzle:tactal-rune-slotting",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:rune-order-left",
+          "label": "Physical rune order left",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 180,
+            "y": 500,
+            "width": 360,
+            "height": 220
+          },
+          "interaction": "physical-cooperative",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:cooperative:lawson-tactal-rune-order",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:rune-order-right",
+          "label": "Physical rune order right",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 996,
+            "y": 500,
+            "width": 360,
+            "height": 220
+          },
+          "interaction": "physical-cooperative",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:cooperative:lawson-tactal-rune-order",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:rune-entry",
+          "label": "Rune chamber entry",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 680,
+            "y": 24,
+            "width": 176,
+            "height": 72
+          },
+          "interaction": "teleport-entry",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": null,
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:rune-exit",
+          "label": "Rune chamber exit",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 680,
+            "y": 928,
+            "width": 176,
+            "height": 72
+          },
+          "interaction": "teleport-exit",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": null,
+          "macroBinding": null
+        }
+      ],
+      "teleports": [
+        {
+          "teleportId": "dbx:teleport:rune-to-core",
+          "fromRegionId": "dbx:region:rune-exit",
+          "toRegionId": "dbx:region:core-entry",
+          "mode": "cross-scene",
+          "owner": "dicebox-foundry-region",
+          "activeGMRequired": true,
+          "mutation": "disabled-until-exact-runtime-gate"
+        }
+      ],
+      "geometryOwner": "spatial-blueprint",
+      "coordinateSource": "campaign-helper-orthogonal-coordinate-plan",
+      "foundryApis": [
+        "Hooks.once(\"ready\")",
+        "game.version + game.system.id + game.system.version",
+        "game.users.activeGM / User permissions",
+        "fromUuid | game.scenes.get",
+        "scene.getEmbeddedCollection(\"Region\")",
+        "scene.getEmbeddedDocument(\"Region\", id)",
+        "RegionDocument.shapes | RegionDocument.behaviors",
+        "region.getEmbeddedCollection(\"RegionBehavior\")",
+        "authoritative reread through fromUuid / embedded-document getters"
+      ],
+      "macroPolicy": {
+        "mode": "none-in-current-campaign",
+        "playerFacingMacroIds": [],
+        "explicitPlayerOwnershipRequiredIfAdded": true,
+        "inheritedPermissionsAccepted": false,
+        "readbackRequired": true
+      },
+      "mutation": "disabled-until-exact-runtime-gate"
+    },
+    {
+      "schemaVersion": "0.1.0",
+      "planId": "dbx:plan:central-core-control-chamber-regions",
+      "roomId": "dbx:room:central-core-control-chamber",
+      "sceneId": "dbx:scene:central-core-control-chamber",
+      "canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "regions": [
+        {
+          "regionId": "dbx:region:core-aleister-station",
+          "label": "Aleister final activation",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 234,
+            "y": 275,
+            "width": 300,
+            "height": 180
+          },
+          "interaction": "final-station",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:actor:aleister",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-sprocket-station",
+          "label": "Sprocket final activation",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 618,
+            "y": 275,
+            "width": 300,
+            "height": 180
+          },
+          "interaction": "final-station",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:actor:sprocket",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-dalton-station",
+          "label": "Dalton final activation",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 1002,
+            "y": 275,
+            "width": 300,
+            "height": 180
+          },
+          "interaction": "final-station",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:actor:dalton",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-andrew-station",
+          "label": "Andrew final activation",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 234,
+            "y": 580,
+            "width": 300,
+            "height": 180
+          },
+          "interaction": "final-station",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:actor:andrew-mcconaughey",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-lawson-station",
+          "label": "Lawson final activation",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 618,
+            "y": 580,
+            "width": 300,
+            "height": 180
+          },
+          "interaction": "final-station",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:actor:lawson-burnheart",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-tactal-station",
+          "label": "Tactal final activation",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 1002,
+            "y": 580,
+            "width": 300,
+            "height": 180
+          },
+          "interaction": "final-station",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:actor:tactal",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-security-room",
+          "label": "Core Security Room",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 500,
+            "y": 410,
+            "width": 536,
+            "height": 200
+          },
+          "interaction": "physical-cooperative",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:stage:six-person-simultaneous-activation",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-entry",
+          "label": "Core chamber north entry",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 680,
+            "y": 24,
+            "width": 176,
+            "height": 72
+          },
+          "interaction": "teleport-entry",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": null,
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-entry-west",
+          "label": "Core chamber west rail entry",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 24,
+            "y": 400,
+            "width": 176,
+            "height": 95
+          },
+          "interaction": "teleport-entry",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": "dbx:tram:core-rail-access",
+          "macroBinding": null
+        },
+        {
+          "regionId": "dbx:region:core-exit",
+          "label": "Core chamber exit",
+          "shape": "rectangle",
+          "bounds": {
+            "x": 680,
+            "y": 928,
+            "width": 176,
+            "height": 72
+          },
+          "interaction": "teleport-exit",
+          "owner": "dicebox-foundry-region",
+          "popup": false,
+          "behaviorBinding": null,
+          "macroBinding": null
+        }
+      ],
+      "teleports": [
+        {
+          "teleportId": "dbx:teleport:core-to-signal",
+          "fromRegionId": "dbx:region:core-exit",
+          "toRegionId": "dbx:region:signal-entry",
+          "mode": "cross-scene",
+          "owner": "dicebox-foundry-region",
+          "activeGMRequired": true,
+          "mutation": "disabled-until-exact-runtime-gate"
+        },
+        {
+          "teleportId": "dbx:teleport:core-to-rune",
+          "fromRegionId": "dbx:region:core-exit",
+          "toRegionId": "dbx:region:rune-entry",
+          "mode": "cross-scene",
+          "owner": "dicebox-foundry-region",
+          "activeGMRequired": true,
+          "mutation": "disabled-until-exact-runtime-gate"
+        }
+      ],
+      "geometryOwner": "spatial-blueprint",
+      "coordinateSource": "campaign-helper-orthogonal-coordinate-plan",
+      "foundryApis": [
+        "Hooks.once(\"ready\")",
+        "game.version + game.system.id + game.system.version",
+        "game.users.activeGM / User permissions",
+        "fromUuid | game.scenes.get",
+        "scene.getEmbeddedCollection(\"Region\")",
+        "scene.getEmbeddedDocument(\"Region\", id)",
+        "RegionDocument.shapes | RegionDocument.behaviors",
+        "region.getEmbeddedCollection(\"RegionBehavior\")",
+        "authoritative reread through fromUuid / embedded-document getters"
+      ],
+      "macroPolicy": {
+        "mode": "none-in-current-campaign",
+        "playerFacingMacroIds": [],
+        "explicitPlayerOwnershipRequiredIfAdded": true,
+        "inheritedPermissionsAccepted": false,
+        "readbackRequired": true
+      },
+      "mutation": "disabled-until-exact-runtime-gate"
+    }
+  ],
+  "staticVisualTileProjection": {
+    "schemaVersion": "0.1.0",
+    "rendererPolicy": "geometry-neutral-backgrounds-only",
+    "tiles": [
+      {
+        "tileId": "dbx:tile:signal-door-north",
+        "sceneId": "dbx:scene:signal-frequency-chamber",
+        "label": "Signal north door",
+        "bounds": {
+          "x": 680,
+          "y": 24,
+          "width": 176,
+          "height": 72
+        },
+        "sort": 30,
+        "visibility": "always-visible",
+        "assetRole": "signal-door",
+        "assetPath": "assets/tiles/ascendancy-core-door.svg",
+        "nativeCorrespondence": [
+          "dbx:region:signal-entry"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:signal-door-south",
+        "sceneId": "dbx:scene:signal-frequency-chamber",
+        "label": "Signal south door",
+        "bounds": {
+          "x": 680,
+          "y": 928,
+          "width": 176,
+          "height": 72
+        },
+        "sort": 30,
+        "visibility": "always-visible",
+        "assetRole": "signal-door",
+        "assetPath": "assets/tiles/ascendancy-core-door.svg",
+        "nativeCorrespondence": [
+          "dbx:region:signal-exit"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:signal-central-resonator",
+        "sceneId": "dbx:scene:signal-frequency-chamber",
+        "label": "Signal central resonator",
+        "bounds": {
+          "x": 568,
+          "y": 330,
+          "width": 400,
+          "height": 300
+        },
+        "sort": 10,
+        "visibility": "always-visible",
+        "assetRole": "signal-central-resonator",
+        "assetPath": "assets/tiles/ascendancy-signal-resonator.svg",
+        "nativeCorrespondence": [
+          "dbx:blueprint:signal-frequency-chamber"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:signal-aleister-console",
+        "sceneId": "dbx:scene:signal-frequency-chamber",
+        "label": "Aleister frequency console",
+        "bounds": {
+          "x": 180,
+          "y": 175,
+          "width": 180,
+          "height": 120
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "signal-frequency-console",
+        "assetPath": "assets/tiles/ascendancy-signal-console.svg",
+        "nativeCorrespondence": [
+          "dbx:region:signal-aleister-frequency"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:signal-sprocket-console",
+        "sceneId": "dbx:scene:signal-frequency-chamber",
+        "label": "Sprocket circuit console",
+        "bounds": {
+          "x": 1176,
+          "y": 175,
+          "width": 180,
+          "height": 120
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "signal-circuit-console",
+        "assetPath": "assets/tiles/ascendancy-signal-console.svg",
+        "nativeCorrespondence": [
+          "dbx:region:signal-sprocket-circuit"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:signal-cooperative-left-console",
+        "sceneId": "dbx:scene:signal-frequency-chamber",
+        "label": "Signal cooperative left relay",
+        "bounds": {
+          "x": 270,
+          "y": 560,
+          "width": 180,
+          "height": 100
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "signal-cooperative-relay",
+        "assetPath": "assets/tiles/ascendancy-signal-relay.svg",
+        "nativeCorrespondence": [
+          "dbx:region:signal-cooperative-left"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:signal-cooperative-right-console",
+        "sceneId": "dbx:scene:signal-frequency-chamber",
+        "label": "Signal cooperative right relay",
+        "bounds": {
+          "x": 1086,
+          "y": 560,
+          "width": 180,
+          "height": 100
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "signal-cooperative-relay",
+        "assetPath": "assets/tiles/ascendancy-signal-relay.svg",
+        "nativeCorrespondence": [
+          "dbx:region:signal-cooperative-right"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:rune-door-north",
+        "sceneId": "dbx:scene:rune-mechanism-chamber",
+        "label": "Rune north door",
+        "bounds": {
+          "x": 680,
+          "y": 24,
+          "width": 176,
+          "height": 72
+        },
+        "sort": 30,
+        "visibility": "always-visible",
+        "assetRole": "rune-door",
+        "assetPath": "assets/tiles/ascendancy-core-door.svg",
+        "nativeCorrespondence": [
+          "dbx:region:rune-entry"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:rune-door-south",
+        "sceneId": "dbx:scene:rune-mechanism-chamber",
+        "label": "Rune south door",
+        "bounds": {
+          "x": 680,
+          "y": 928,
+          "width": 176,
+          "height": 72
+        },
+        "sort": 30,
+        "visibility": "always-visible",
+        "assetRole": "rune-door",
+        "assetPath": "assets/tiles/ascendancy-core-door.svg",
+        "nativeCorrespondence": [
+          "dbx:region:rune-exit"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:rune-central-engine",
+        "sceneId": "dbx:scene:rune-mechanism-chamber",
+        "label": "Rune central engine",
+        "bounds": {
+          "x": 568,
+          "y": 330,
+          "width": 400,
+          "height": 300
+        },
+        "sort": 10,
+        "visibility": "always-visible",
+        "assetRole": "rune-central-engine",
+        "assetPath": "assets/tiles/ascendancy-rune-engine.svg",
+        "nativeCorrespondence": [
+          "dbx:blueprint:rune-mechanism-chamber"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:rune-lawson-archive",
+        "sceneId": "dbx:scene:rune-mechanism-chamber",
+        "label": "Lawson rune archive",
+        "bounds": {
+          "x": 210,
+          "y": 180,
+          "width": 180,
+          "height": 120
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "rune-memory-archive",
+        "assetPath": "assets/tiles/ascendancy-rune-archive.svg",
+        "nativeCorrespondence": [
+          "dbx:region:rune-lawson-memory"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:rune-tactal-forge",
+        "sceneId": "dbx:scene:rune-mechanism-chamber",
+        "label": "Tactal rune forge",
+        "bounds": {
+          "x": 1146,
+          "y": 180,
+          "width": 180,
+          "height": 120
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "rune-slotting-forge",
+        "assetPath": "assets/tiles/ascendancy-rune-forge.svg",
+        "nativeCorrespondence": [
+          "dbx:region:rune-tactal-slotting"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:rune-order-left-plinth",
+        "sceneId": "dbx:scene:rune-mechanism-chamber",
+        "label": "Rune cooperative left plinth",
+        "bounds": {
+          "x": 270,
+          "y": 560,
+          "width": 180,
+          "height": 100
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "rune-order-plinth",
+        "assetPath": "assets/tiles/ascendancy-rune-plinth.svg",
+        "nativeCorrespondence": [
+          "dbx:region:rune-order-left"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:rune-order-right-plinth",
+        "sceneId": "dbx:scene:rune-mechanism-chamber",
+        "label": "Rune cooperative right plinth",
+        "bounds": {
+          "x": 1086,
+          "y": 560,
+          "width": 180,
+          "height": 100
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "rune-order-plinth",
+        "assetPath": "assets/tiles/ascendancy-rune-plinth.svg",
+        "nativeCorrespondence": [
+          "dbx:region:rune-order-right"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:tram-rail-grid",
+        "sceneId": "dbx:scene:ascendancy-tram-depot",
+        "label": "Tram fixed rail grid",
+        "bounds": {
+          "x": 420,
+          "y": 210,
+          "width": 660,
+          "height": 570
+        },
+        "sort": 10,
+        "visibility": "always-visible",
+        "assetRole": "tram-fixed-rail-grid",
+        "assetPath": "assets/tiles/ascendancy-tram-rail-grid.svg",
+        "nativeCorrespondence": [
+          "dbx:blueprint:ascendancy-tram-depot"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:tram-core-rail",
+        "sceneId": "dbx:scene:ascendancy-tram-depot",
+        "label": "Tram eastbound Core rail",
+        "bounds": {
+          "x": 1080,
+          "y": 400,
+          "width": 432,
+          "height": 95
+        },
+        "sort": 11,
+        "visibility": "always-visible",
+        "assetRole": "tram-eastbound-core-rail",
+        "assetPath": "assets/tiles/ascendancy-tram-core-rail.svg",
+        "nativeCorrespondence": [
+          "dbx:region:tram-exit",
+          "dbx:anchor:tram-door-east"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:tram-gate-ingress",
+        "sceneId": "dbx:scene:ascendancy-tram-depot",
+        "label": "Tram ingress gate",
+        "bounds": {
+          "x": 408,
+          "y": 400,
+          "width": 24,
+          "height": 95
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "tram-gate",
+        "assetPath": "assets/tiles/ascendancy-tram-gate.svg",
+        "nativeCorrespondence": [
+          "dbx:anchor:tram-yard-ingress"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:tram-gate-yard-exit",
+        "sceneId": "dbx:scene:ascendancy-tram-depot",
+        "label": "Tram yard-exit gate",
+        "bounds": {
+          "x": 1068,
+          "y": 400,
+          "width": 24,
+          "height": 95
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "tram-gate",
+        "assetPath": "assets/tiles/ascendancy-tram-gate.svg",
+        "nativeCorrespondence": [
+          "dbx:anchor:tram-yard-exit"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:tram-gate-core-door",
+        "sceneId": "dbx:scene:ascendancy-tram-depot",
+        "label": "Tram core-door gate",
+        "bounds": {
+          "x": 1500,
+          "y": 400,
+          "width": 24,
+          "height": 95
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "tram-gate",
+        "assetPath": "assets/tiles/ascendancy-tram-gate.svg",
+        "nativeCorrespondence": [
+          "dbx:anchor:tram-door-east"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-west-rail-gate",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core west rail gate",
+        "bounds": {
+          "x": 24,
+          "y": 400,
+          "width": 176,
+          "height": 95
+        },
+        "sort": 30,
+        "visibility": "always-visible",
+        "assetRole": "core-west-rail-gate",
+        "assetPath": "assets/tiles/ascendancy-core-west-rail-gate.svg",
+        "nativeCorrespondence": [
+          "dbx:anchor:core-door-west",
+          "dbx:region:core-entry-west"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-door-north",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core north door",
+        "bounds": {
+          "x": 680,
+          "y": 24,
+          "width": 176,
+          "height": 72
+        },
+        "sort": 30,
+        "visibility": "always-visible",
+        "assetRole": "core-door",
+        "assetPath": "assets/tiles/ascendancy-core-door.svg",
+        "nativeCorrespondence": [
+          "dbx:anchor:core-door-north",
+          "dbx:region:core-entry"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-door-south",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core south door",
+        "bounds": {
+          "x": 680,
+          "y": 928,
+          "width": 176,
+          "height": 72
+        },
+        "sort": 30,
+        "visibility": "always-visible",
+        "assetRole": "core-door",
+        "assetPath": "assets/tiles/ascendancy-core-door.svg",
+        "nativeCorrespondence": [
+          "dbx:anchor:core-door-south",
+          "dbx:region:core-exit"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-central-surface",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core central security surface",
+        "bounds": {
+          "x": 500,
+          "y": 410,
+          "width": 536,
+          "height": 200
+        },
+        "sort": 10,
+        "visibility": "always-visible",
+        "assetRole": "core-central-surface",
+        "assetPath": "assets/tiles/ascendancy-core-central-surface.svg",
+        "nativeCorrespondence": [
+          "dbx:region:core-security-room"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-station-aleister",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core aleister activation pad",
+        "bounds": {
+          "x": 294,
+          "y": 320,
+          "width": 180,
+          "height": 90
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "core-final-station-pad",
+        "assetPath": "assets/tiles/ascendancy-core-station-pad.svg",
+        "nativeCorrespondence": [
+          "dbx:region:core-aleister-station"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-station-sprocket",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core sprocket activation pad",
+        "bounds": {
+          "x": 678,
+          "y": 320,
+          "width": 180,
+          "height": 90
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "core-final-station-pad",
+        "assetPath": "assets/tiles/ascendancy-core-station-pad.svg",
+        "nativeCorrespondence": [
+          "dbx:region:core-sprocket-station"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-station-dalton",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core dalton activation pad",
+        "bounds": {
+          "x": 1062,
+          "y": 320,
+          "width": 180,
+          "height": 90
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "core-final-station-pad",
+        "assetPath": "assets/tiles/ascendancy-core-station-pad.svg",
+        "nativeCorrespondence": [
+          "dbx:region:core-dalton-station"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-station-andrew",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core andrew activation pad",
+        "bounds": {
+          "x": 294,
+          "y": 625,
+          "width": 180,
+          "height": 90
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "core-final-station-pad",
+        "assetPath": "assets/tiles/ascendancy-core-station-pad.svg",
+        "nativeCorrespondence": [
+          "dbx:region:core-andrew-station"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-station-lawson",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core lawson activation pad",
+        "bounds": {
+          "x": 678,
+          "y": 625,
+          "width": 180,
+          "height": 90
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "core-final-station-pad",
+        "assetPath": "assets/tiles/ascendancy-core-station-pad.svg",
+        "nativeCorrespondence": [
+          "dbx:region:core-lawson-station"
+        ]
+      },
+      {
+        "tileId": "dbx:tile:core-station-tactal",
+        "sceneId": "dbx:scene:central-core-control-chamber",
+        "label": "Core tactal activation pad",
+        "bounds": {
+          "x": 1062,
+          "y": 625,
+          "width": 180,
+          "height": 90
+        },
+        "sort": 20,
+        "visibility": "always-visible",
+        "assetRole": "core-final-station-pad",
+        "assetPath": "assets/tiles/ascendancy-core-station-pad.svg",
+        "nativeCorrespondence": [
+          "dbx:region:core-tactal-station"
+        ]
+      }
+    ]
+  },
+  "assets": {
+    "bound": [
+      {
+        "assetId": "dbx:asset:map-ascendancy-tram-depot",
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "status": "final-map-required",
+        "path": null,
+        "renderer": "scene-background",
+        "geometryOwner": "spatial-blueprint"
+      },
+      {
+        "assetId": "dbx:asset:map-signal-frequency-chamber",
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "status": "scene-bound",
+        "path": "assets/maps/ascendancy-signal-frequency-chamber-v2.png",
+        "renderer": "scene-background",
+        "geometryOwner": "spatial-blueprint"
+      },
+      {
+        "assetId": "dbx:asset:map-rune-mechanism-chamber",
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "status": "scene-bound",
+        "path": "assets/maps/ascendancy-rune-mechanism-chamber-v2.png",
+        "renderer": "scene-background",
+        "geometryOwner": "spatial-blueprint"
+      },
+      {
+        "assetId": "dbx:asset:map-central-core-control-chamber",
+        "roomId": "dbx:room:central-core-control-chamber",
+        "status": "final-map-required",
+        "path": null,
+        "renderer": "scene-background",
+        "geometryOwner": "spatial-blueprint"
+      }
+    ],
+    "unbound": []
+  },
+  "blockers": [
+    {
+      "blockerId": "dbx:blocker:exact-foundry-runtime",
+      "status": "open",
+      "reason": "The exact Foundry/D&D5e runtime, active-GM authority, native Region behavior, and authoritative reread have not been exercised for this package.",
+      "prevents": [
+        "live-world-mutation",
+        "ready-to-play-claim"
+      ]
+    },
+    {
+      "blockerId": "dbx:blocker:regionwright-integration-receipt",
+      "status": "open",
+      "reason": "The Region Editor task has not yet returned a target-bound receipt proving the four region plans, Regionwright entry hooks, teleports, and behavior bindings were connected in the intended world.",
+      "prevents": [
+        "live-world-mutation",
+        "ready-to-play-claim"
+      ]
+    },
+    {
+      "blockerId": "dbx:blocker:reviewed-map-renderers",
+      "status": "open",
+      "reason": "The Tram routing-yard and Core west-entry renderer backgrounds require review against the frozen Spatial Blueprint before any scene installation.",
+      "prevents": [
+        "live-world-mutation",
+        "ready-to-play-claim"
+      ]
+    }
+  ],
+  "mutation": "disabled-until-exact-runtime-gate"
+}

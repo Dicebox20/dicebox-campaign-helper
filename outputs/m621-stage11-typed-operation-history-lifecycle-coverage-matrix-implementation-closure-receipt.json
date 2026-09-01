@@ -1,0 +1,93 @@
+{
+  "operation": "stage11-typed-operation-history-lifecycle-coverage-matrix-implementation",
+  "milestone": "M621",
+  "status": "PASS_LOCAL_CODE_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T08:15:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "implementation": {
+    "source": "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "matrixExport": "TYPED_LOCAL_PROJECT_OPERATION_HISTORY_LIFECYCLE_COVERAGE",
+    "matrixOperationCount": 14,
+    "matrixHistoryStateCount": 11,
+    "observedHistoryStates": [
+      "previewed",
+      "approved"
+    ],
+    "unobservedHistoryStates": [
+      "rejected",
+      "cancelled",
+      "stale",
+      "applying",
+      "unknown-outcome",
+      "committed",
+      "recovered",
+      "undone",
+      "redone"
+    ],
+    "perOperationCoverage": "Each existing operation-specific binding entry is represented exactly once and retains its handler, complete state vocabulary, observed preview/approval states, and explicit later-state gap.",
+    "metadataBoundary": {
+      "readOnly": true,
+      "nonCertifying": true,
+      "noExecutionAuthority": true,
+      "noGenericExecutor": true,
+      "noTransitions": true,
+      "noPersistence": true,
+      "noRecovery": true,
+      "noProjectSessionMutation": true
+    }
+  },
+  "surface": {
+    "path": "apps/campaign-helper-desktop/src/App.tsx",
+    "testId": "typed-operation-history-lifecycle-coverage-matrix",
+    "disclosure": "Proposal-review surface renders the matrix as an open read-only, non-certifying disclosure and explicitly states that it does not transition history, execute, persist, recover, or add authority."
+  },
+  "validation": {
+    "focusedVitest": {
+      "files": 4,
+      "tests": 10,
+      "status": "PASS"
+    },
+    "desktopTypeScriptNoEmit": "PASS",
+    "desktopNodeTypeScriptNoEmit": "PASS",
+    "diffCheck": "PASS",
+    "jsonAndKnowledgeBaseMarkers": "PASS"
+  },
+  "stageDecision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "The matrix improves inspectability of the existing metadata boundary but supplies no runtime lifecycle evidence. History transitions, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, and aggregate authority across eleven producer families remain unproven."
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts": "0462A6DEDE2CF51BB3679A6C547DBA4E38AE52F5E292093B3D343DA63B42A739",
+    "apps/campaign-helper-desktop/src/App.tsx": "1995C245C0F3D9AE6047A10FC9C5466302A2E87A43E972143449FCF2AE01C1C4",
+    "tests/project-review-operation-history-binding.test.ts": "6D28C9983DB40C8434F69496BEE130A7FE8F836B4270FED5DBF5203F854947C9"
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/project-review-operation-history-binding.test.ts",
+    "outputs/m621-stage11-typed-operation-history-lifecycle-coverage-matrix-implementation-closure-receipt.json"
+  ]
+}

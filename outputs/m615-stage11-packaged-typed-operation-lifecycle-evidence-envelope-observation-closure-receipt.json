@@ -1,0 +1,83 @@
+{
+  "operation": "stage11-packaged-typed-operation-lifecycle-evidence-envelope-observation",
+  "milestone": "M615",
+  "status": "PASS_PACKAGED_TYPED_OPERATION_LIFECYCLE_EVIDENCE_ENVELOPE_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T07:33:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "packaged",
+  "artifactIdentity": {
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeBytes": 26887168,
+    "nativeSha256": "20A113C8D83AF905CAF94B493771EC042173970380F5BD3DC33C61E89F967BD1",
+    "rendererPath": "apps/campaign-helper-desktop/dist/assets/index-CZX7-gWt.js",
+    "rendererBytes": 2067317,
+    "rendererSha256": "81EE9485588FA348AC6E1AE88CFF91D3DFC823C83FBD11BEB819F4DF0886D1C1"
+  },
+  "targetSelection": {
+    "returnedAppId": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+    "returnedWindowId": 14354718,
+    "returnedWindowTitle": "DiceBox Campaign Helper",
+    "exactTitleCandidateCount": 1,
+    "activationRecoveryUsed": true,
+    "initialActivationError": "failed to activate captured window",
+    "recovery": "fresh list_apps selection, exact-title uniqueness, get_window, then direct accessibility read"
+  },
+  "accessibilityEvidence": {
+    "readCount": 1,
+    "screenshotCaptured": false,
+    "documentTextLength": 17293,
+    "typedEnvelopeSummaryVisible": true,
+    "typedEnvelopeEntriesVisible": 14,
+    "allExactOperationKindsVisible": true,
+    "boundedEvidenceVisibleForEachEntry": true,
+    "remainingGapVisibleForEachEntry": true,
+    "readOnlyNonCertifyingMetadataVisible": true,
+    "noExecutionAuthorityVisible": true,
+    "aggregateStage11PartialVisible": true,
+    "noGenericExecutorVisible": true,
+    "noPersistedProjectVisible": true,
+    "noProjectSessionVisible": true,
+    "noWriteFoundryPreviewVisible": true
+  },
+  "processReread": {
+    "exactPathBefore": 1,
+    "stoppedPid": 26088,
+    "exactPathAfter": 0,
+    "desktopProcessesAfter": 0,
+    "cargoProcessesAfter": 0,
+    "rustcProcessesAfter": 0
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M615 directly observes the current M614 packaged typed 14-operation evidence envelope after one permitted target-selection recovery. The surface is explicitly read-only/non-certifying/no-execution and contains no project or session, but this does not prove aggregate cross-producer execution, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, or Stage 11 acceptance."
+  },
+  "scope": {
+    "launchCount": 1,
+    "captureCount": 1,
+    "retryCount": 0,
+    "uiActionCount": 0,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "nextBoundary": {
+    "milestone": "M616",
+    "title": "Stage 11 packaged typed-envelope observation reconciliation",
+    "status": "requires-separate-authorization",
+    "scope": "Read-only reconcile M615 direct packaged evidence against all four Stage 11 clauses, the exact 14-operation contract, eleven producer families, and M610-M615 receipts; preserve the first activation recovery and packaged pass; select at most one smallest next gap. No source edit, build, launch, capture, retry, UI action, browser storage, session operation, fixture cleanup, project/runtime mutation, provider, credential, repository promotion, Technical Builder, Foundry, player-password, Stage 11 acceptance, Stage 12, or Ready-to-Play work."
+  },
+  "changedPaths": [
+    "outputs/m615-stage11-packaged-typed-operation-lifecycle-evidence-envelope-observation-closure-receipt.json"
+  ]
+}

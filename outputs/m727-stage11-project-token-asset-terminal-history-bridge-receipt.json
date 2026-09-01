@@ -1,0 +1,68 @@
+{
+  "milestone": "M727",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bridge one existing operation-specific local-project project.asset.register-token execution receipt into typed terminal history.",
+  "sourceState": "Unborn project worktree with no HEAD; M727 changes only the bounded bridge/test/receipt and governance records.",
+  "artifactHashes": {
+    "bridgeSha256": "ADB4FAA4C0B125854BDE939A19909E917807519939A9D6203FF801A94A9A8486",
+    "testSha256": "A14F1B3B890426C10F17C2D0B8F7C694E4209616922FBA74EDAB2AF39FD75E83"
+  },
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Bounded project.asset.register-token terminal-history bridge and focused test.",
+    "workerOutcome": "Worker did not return a compact receipt within two bounded waits and was closed; no worker output was used. The Foreman implemented the authorized scope locally.",
+    "foremanReview": "The Foreman reread D-855/F-972, the existing token-asset executor/proposal adapter, and prior audio/handout terminal-history validation before implementation."
+  },
+  "implementation": {
+    "entryPoint": "apps/campaign-helper-desktop/src/project-token-asset-terminal-history.ts:bridgeProjectTokenAssetRegistrationExecutionToTerminalHistory",
+    "schema": "projectTokenAssetTerminalHistoryReceiptSchema.parse/safeParse",
+    "acceptedOperation": "dicebox.project.asset.register-token.execute",
+    "terminalSequence": ["preview", "approve", "begin-apply", "commit-after-reread", "undo"],
+    "checks": [
+      "exact project and operation identity",
+      "content-addressed token descriptor and persisted asset-byte evidence",
+      "before/apply/undo authoritative reread identity and monotonic generations",
+      "Scene preservation and inverse Scene restoration",
+      "additive asset-tree preservation through inverse restore",
+      "backup rotation and atomic native save receipts",
+      "matched commit and undo history rereads",
+      "fail-closed tamper, non-persistent, and Foundry-writing evidence"
+    ]
+  },
+  "validation": {
+    "focused": "PASS: 2 M727 tests and 2 M725 regression tests",
+    "fullRepository": "PASS: 161 test files / 807 tests",
+    "build": "PASS: package typecheck, desktop typecheck, Node typecheck, and Vite production build",
+    "tooling": "PASS: npm.cmd run verify:tooling",
+    "knowledgeBase": "PASS: seed synchronized, database rebuilt, integrity verified, and focused KB query tests passed",
+    "workflow": "PASS: active-slice checker reports Stage 11 proposal-approval-history at 10/16 with no violations",
+    "foundryOrRuntime": "NOT RUN; excluded by M727"
+  },
+  "safety": {
+    "bridgeOnly": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "noGenericExecutor": true,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed before closeout; aggregate producer acceptance remains partial",
+    "stage12": "NOT STARTED",
+    "decision": "M727 closes one token asset producer seam but does not accept Stage 11 or authorize Stage 12."
+  },
+  "remainingGaps": [
+    "Aggregate producer coverage and direct current-authority evidence remain incomplete across all eleven producer families.",
+    "Unified stale, outcome-unknown, recovered, undone, and redone lifecycle evidence remains incomplete.",
+    "Packaged/runtime authority and live active-GM/Foundry evidence remain incomplete.",
+    "Stage 11 acceptance requires a fresh read-only reconciliation after this seam."
+  ],
+  "selectedNext": "M728 read-only Stage 11 acceptance reconciliation after M727; preserve live Foundry/runtime and Stage 12 exclusions."
+}

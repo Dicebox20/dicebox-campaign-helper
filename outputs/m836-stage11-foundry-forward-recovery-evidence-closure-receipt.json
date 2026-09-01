@@ -1,0 +1,31 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M836",
+  "operation": "stage11.foundry-forward-recovery-evidence.validate",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "source": "outputs/m830-stage11-owned-scene-restoration-recovery-drill-closure-receipt.json",
+  "sourceReceiptSha256": "D7D45E996853EF980DF13748D06631305FF945959118200928E9FDE3F100915D",
+  "classifiedObservation": {
+    "milestone": "M830",
+    "producer": "foundry.program-scene.forward",
+    "lifecycle": "preview-approved-create-unknown-authoritative-recovery-reread"
+  },
+  "observedLifecycleCount": 1,
+  "producerScopedOnly": true,
+  "foundryMutationObserved": true,
+  "authoritativeReread": true,
+  "recoveredFromUnknown": true,
+  "noRetry": true,
+  "foreignStatePreserved": true,
+  "aggregateAuthorityGranted": false,
+  "stage11AcceptanceStatus": "blocked",
+  "stage12Started": false,
+  "readyClaim": false,
+  "sourceSha256": "514286353CE9F1399CD71031BA558C3E7FC71812AD1011B1C4068CB70612F384",
+  "testSha256": "04044BA20333012873FD70688AB480C086482AD5718838B2765F0E8911B61F4F",
+  "focusedTests": "1 file / 2 tests",
+  "packageTypeCheck": "PASS",
+  "diffCheck": "PASS",
+  "nextAction": "Fresh read-only Stage 11 reconciliation before selecting at most one bounded remaining gap."
+}

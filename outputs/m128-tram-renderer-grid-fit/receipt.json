@@ -1,0 +1,21 @@
+{
+  "operation": "ascendancy.coordinate-overlay",
+  "status": "STATIC_REVIEW",
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "candidateTramRenderer": "C:\\Users\\rujie\\.codex\\generated_images\\01a0231c-57b9-76c3-ba81-12dbac16fddc\\exec-8d0d2468-7f18-43eb-b6a5-0c0794eca1da.png",
+  "noWrite": true,
+  "rooms": [
+    {
+      "roomId": "dbx:room:ascendancy-tram-depot",
+      "renderer": "C:\\Users\\rujie\\.codex\\generated_images\\01a0231c-57b9-76c3-ba81-12dbac16fddc\\exec-8d0d2468-7f18-43eb-b6a5-0c0794eca1da.png",
+      "rendererPath": "C:\\Users\\rujie\\.codex\\generated_images\\01a0231c-57b9-76c3-ba81-12dbac16fddc\\exec-8d0d2468-7f18-43eb-b6a5-0c0794eca1da.png",
+      "rendererSha256": "c1a4fa4f2acffcf8a7593afe4ca85dfc6a5e096557169b4a2b4077874402255d",
+      "rendererStatus": "candidate-unbound",
+      "rendererReviewOnly": true,
+      "overlay": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\outputs\\m128-tram-renderer-grid-fit\\ascendancy-tram-depot-overlay.svg",
+      "walls": 11,
+      "doors": 3,
+      "regions": 39
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m284-fresh-tab-runtime-profile-retry-closure-2026-08-27",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M284",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-08-27T20:14:01.368Z",
+  "status": "PASS",
+  "readyClaim": false,
+  "stage9Accepted": false,
+  "target": {
+    "dataRoot": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "moduleId": "dicebox-campaign-helper",
+    "moduleVersion": "0.1.15",
+    "moduleSourceSha256": "dcc0c8e5f581d4949c29445d836536e170069151f11e1ecb61fd8a43b35561d7",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "ownerEvidence": "exact-process-and-exclusive-port"
+  },
+  "session": {
+    "tabsBefore": 0,
+    "freshTabsCreated": 1,
+    "routeBefore": "/join",
+    "routeAfter": "/game",
+    "user": "Gamemaster",
+    "gmIdentityObserved": true,
+    "userPasswordEntered": false,
+    "administratorPasswordEntered": false,
+    "tabsAfter": 0,
+    "nativeUiEvidence": [
+      "Gamemaster [GM]",
+      "Prepare DiceBox Ascendancy",
+      "Repair DiceBox Ascendancy maps and geometry",
+      "Apply DiceBox Program Scene vertical slice"
+    ]
+  },
+  "diagnostic": {
+    "surface": "package-owned-serialized-redacted-json-log",
+    "schemaVersion": "0.1.0",
+    "diagnosticId": "dbx:diagnostic:a510da05",
+    "packageId": "dicebox-campaign-helper",
+    "redacted": true,
+    "noWrite": true,
+    "runtimeFingerprint": "dbx:fingerprint:a510da05",
+    "exactTargetMatch": true,
+    "activeModuleIds": [
+      "dicebox-campaign-helper"
+    ],
+    "documentTypeCount": 34,
+    "activeGm": {
+      "status": "observed",
+      "isCurrentUser": true
+    },
+    "readiness": {
+      "status": "blocked",
+      "summary": {
+        "pass": 8,
+        "blocked": 1,
+        "unknown": 2,
+        "total": 11
+      },
+      "blockerCheckIds": [
+        "activity-api-surface",
+        "region-behavior-api-surface",
+        "exact-runtime-behavior"
+      ]
+    },
+    "capabilities": {
+      "available": 8,
+      "unavailable": 5,
+      "unknown": 4
+    }
+  },
+  "preservation": {
+    "browserReset": false,
+    "alternateBrowserSelected": false,
+    "credentialsOrSessionsRead": false,
+    "cookiesStorageOrProfilesRead": false,
+    "moduleSettingsChanged": false,
+    "optionalModulesChanged": false,
+    "packageStaged": false,
+    "assetUpload": false,
+    "installerOrBindingExecuted": false,
+    "workerRepair": false,
+    "campaignDocumentWrites": 0,
+    "behaviorExercised": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "foreignStatePreserved": true
+  },
+  "recovery": {
+    "stopStatus": "PASS",
+    "normalStop": "FAILED_CLOSED",
+    "forceFallback": "PASS",
+    "followUpStatus": "STOPPED",
+    "remainingListeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "blockers": [
+    "The D&D5e Activity API surface remains incomplete.",
+    "The RegionBehavior API and registry surface remains incomplete.",
+    "Exact-runtime behavior, permissions, sender semantics, and authoritative read-back remain unproven.",
+    "Stage 9 acceptance remains pending."
+  ],
+  "doesNotProve": [
+    "full RuntimeProfile promotion",
+    "active-GM mutation authority",
+    "stable bindings",
+    "seeded document execution",
+    "GM/player behavior",
+    "authoritative campaign reread",
+    "unknown-outcome recovery",
+    "Stage 9 acceptance",
+    "Ready-to-Play"
+  ]
+}

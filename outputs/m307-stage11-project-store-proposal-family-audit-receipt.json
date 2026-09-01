@@ -1,0 +1,162 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m307-stage11-project-store-proposal-family-audit-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M307",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "operationFamilies": [
+    {
+      "family": "read-only inspection and preview",
+      "operations": ["list", "inspect recovery", "explain migration", "compile no-write Foundry preview"],
+      "persistentMutation": false,
+      "proposalProducer": false,
+      "disposition": "excluded from mutating-path acceptance; retain typed no-write receipts"
+    },
+    {
+      "family": "workspace open and recent-order metadata",
+      "operations": ["open", "reload", "load with workspace generation"],
+      "persistentMutation": "workspace metadata may advance while project content remains read-only",
+      "base": "project identity plus expected workspace index generation",
+      "proposalProducer": false,
+      "disposition": "ordinary explicit workspace command; eventually requires normalized command history/reread but not recovery-preview adaptation"
+    },
+    {
+      "family": "ordinary project persistence",
+      "operations": ["create", "save", "save as", "rename"],
+      "persistentMutation": true,
+      "base": "project generation and/or workspace index generation; serialized ordered Scene collection",
+      "approval": "direct user command only; no generic preview or separate approval",
+      "history": "typed operation receipt and backup/generation state, not generic append-only history",
+      "proposalProducer": true,
+      "disposition": "later generic command-envelope integration required"
+    },
+    {
+      "family": "in-memory project editing",
+      "operations": ["add blank Scene", "switch active Scene", "close clean session"],
+      "persistentMutation": false,
+      "editorMutation": true,
+      "base": "current ordered Scene collection and active Scene identity",
+      "proposalProducer": "add Scene is mutating; switch/clean close are navigation/session commands",
+      "disposition": "add Scene eventually requires the human local-project proposal vocabulary; navigation and clean close do not"
+    },
+    {
+      "family": "asset import and binding",
+      "operations": ["bind background", "register handout", "register audio", "register token"],
+      "persistentMutation": true,
+      "base": "project generation, ordered Scenes, active Scene, exact candidate bytes and SHA-256 stable asset identity",
+      "approval": "file selection plus embedded registration approval, but no inspectable generic preview",
+      "history": "save receipt only",
+      "proposalProducer": true,
+      "disposition": "later generic asset-command integration required; preserve exact-byte and role invariants"
+    },
+    {
+      "family": "legacy migration persistence",
+      "operations": ["preview migration persist", "approve migration persist"],
+      "persistentMutation": true,
+      "base": "project identity, source schema, generation, persisted/result content hashes, protected state, asset tree, preview SHA-256",
+      "approval": "explicit approved=true bound to exact preview",
+      "reread": "authoritative current primary plus semantic/backup/asset preservation receipt",
+      "proposalProducer": true,
+      "disposition": "ready for pure generic project-operation adapter"
+    },
+    {
+      "family": "backup-authoritative promotion",
+      "operations": ["preview backup promotion", "approve backup promotion"],
+      "persistentMutation": true,
+      "base": "missing primary, valid backup bytes, generation, content/protected-state/asset-tree hashes, preview SHA-256",
+      "approval": "explicit approved=true bound to exact preview",
+      "reread": "primary restored, backup/workspace/foreign/semantic/asset state unchanged, authoritative current reread",
+      "proposalProducer": true,
+      "disposition": "ready for pure generic project-operation adapter"
+    },
+    {
+      "family": "missing asset restore",
+      "operations": ["preview exact-byte restore", "approve exact-byte restore"],
+      "persistentMutation": true,
+      "base": "project/asset identity, generation, content/protected-state hash, exact candidate bytes and SHA-256, preview SHA-256",
+      "approval": "explicit approved=true bound to exact preview and retransmitted bytes",
+      "reread": "create-new-only target and authoritative asset hash",
+      "proposalProducer": true,
+      "disposition": "ready for pure generic project-operation adapter; command payload must not embed raw bytes"
+    },
+    {
+      "family": "missing asset detach",
+      "operations": ["preview exact-one detach", "approve detach"],
+      "persistentMutation": true,
+      "base": "project/asset identity, generation, current/result content and Scene hashes, protected state, asset tree, preview SHA-256",
+      "approval": "explicit approved=true bound to exact preview",
+      "reread": "selected references/descriptor only, unselected and foreign state preserved",
+      "proposalProducer": true,
+      "disposition": "ready for pure generic project-operation adapter"
+    },
+    {
+      "family": "broken Scene-reference detach",
+      "operations": ["preview selected broken-reference detach", "approve detach"],
+      "persistentMutation": true,
+      "base": "project/Scene/asset/blocker identity, generation, current/result hashes, protected state, asset tree, preview SHA-256",
+      "approval": "explicit approved=true bound to exact preview",
+      "reread": "selected Scene reference only; descriptor and foreign state preserved",
+      "proposalProducer": true,
+      "disposition": "ready for pure generic project-operation adapter"
+    },
+    {
+      "family": "test-owned fixture setup and stage receipt",
+      "operations": ["prepare fixtures", "finish self-test", "record project stage receipt"],
+      "persistentMutation": true,
+      "proposalProducer": false,
+      "disposition": "harness-only authority; exclude from product proposal UI and retain fixed test-owned targets"
+    }
+  ],
+  "sharedFindings": [
+    "five recovery/migration families already provide no-write preview, explicit exact approval, deterministic target hashes, authoritative reread, and preservation receipts",
+    "those five families use operation-specific React state and receipts and do not enter the generic ProposalBatch envelope or append-only lifecycle history",
+    "ordinary create/save/save-as/rename, asset import, and add-Scene paths remain direct mutating commands without a generic preview",
+    "the existing desktop proposal session is Scene-target-keyed and cannot safely host project-operation targets without a later explicit session generalization",
+    "raw asset bytes must remain outside generic command/history persistence even when an asset operation is normalized"
+  ],
+  "selectedNextSlice": {
+    "milestone": "M308",
+    "name": "pure project-operation recovery proposal adapter",
+    "scope": "normalize the five existing migration/recovery preview receipt types into generic local-project ProposalBatch envelopes with opaque allowlisted operation commands, exact project base revision/hash, medium/high risk, human-review authority, no raw bytes, and no execution or desktop session integration",
+    "reason": "these families already satisfy their domain-specific preview and exact-approval invariants, so a pure adapter adds shared vocabulary without modifying persistence, UI, or authority",
+    "excluded": ["ordinary create/save/save-as/rename", "asset import execution", "raw byte persistence", "desktop session generalization", "project mutation", "browser", "Foundry"]
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "apps/campaign-helper-desktop/src/App.tsx": "3B2A287D2FA88675218B219C357CFEE6AD93DD62B27DE79C12781528827DF225",
+    "apps/campaign-helper-desktop/src-tauri/src/lib.rs": "5A8E08447ABF5F628AC24AEFB0B7EB3C81282BDD5A91298F3F04E5448D533EA1",
+    "tests/project-workspace.test.ts": "F933365959966F7F5CEDFFC71FDE76B1DFC93901E3E71B88EE35A74D217AD796",
+    "tests/desktop-shell-configuration.test.ts": "7561648B70A17F1364E56910741FD05EB2DD6C3DDDEB912EAF85A9E0702CF4AD"
+  },
+  "evidenceReceiptHashes": {
+    "outputs/m205-real-project-workspace-receipt.json": "9E0C7820A891E25D5E0A6E1A641AC1F1D58C9901C7C8B68A11CE06B2B91BFBFA",
+    "outputs/m207-workspace-metadata-receipt.json": "E022D1B64BEA8678451B32107069008803BB20B6C8F0A6097FBEC852C21C4030",
+    "outputs/m213-missing-background-blob-recovery-receipt.json": "8A8C59D1D457D734C5ED36C36D5806425362FF25589EE21EC3CD4936DFFD2418",
+    "outputs/m226-missing-background-detach-recovery-receipt.json": "3F7C63931E9F126C4FA657A8F18086282C46EB40267735729EA4A424F967621A",
+    "outputs/m241-broken-reference-detach-receipt.json": "1E22378698AEECFCB57B368581C06BA55D3435B8D61C7507B3E3E6B3A76122AC",
+    "outputs/m242-supported-legacy-migration-persistence-receipt.json": "38DF08F04BF2AFCD8D6EF1066EB5C58A5259254316F0239CCC0F571A7AEA93C8",
+    "outputs/m244-backup-authoritative-recovery-promotion-receipt.json": "DE2E735EE8181908B0FBD42D2AA3650AB82C69286EA805FEE28A616CCBCC7FFE",
+    "outputs/m246-stage8-workspace-checklist-audit-receipt.json": "952DD9D9444CC1A0B387033DFA23D066D2EE2C10EBA9353466F08F1D79C3A70F"
+  },
+  "doesNotProve": [
+    "generic project-operation adapter implementation",
+    "desktop project-operation proposal session or UI integration",
+    "generic conformance of every ordinary project mutation",
+    "Technical Builder repository promotion",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

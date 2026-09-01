@@ -1,0 +1,75 @@
+{
+  "operation": "stage11-packaged-save-ui-session-isolation-observation",
+  "milestone": "M642",
+  "status": "PARTIAL_LOCAL_PACKAGED_PERSISTENCE_REREAD_UI_WINDOW_EPHEMERAL",
+  "capturedAt": "2026-08-30T10:31:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "artifact": {
+    "rendererSha256": "A51052FECC8962D844BD35EDDECF105CDB597715E08672F8A63912C310C4FA49",
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeSha256": "39FD1E0C0B8502191F6A74439C63F308F0F13FABF9F7ACA5F9A670B757E4C7BF",
+    "configuredMode": "save-ui-execute",
+    "configuredProjectId": "dbx:project:desktop-multiscene-self-test",
+    "exitMode": true,
+    "artifactMatch": true
+  },
+  "windowObservation": {
+    "launches": 1,
+    "returnedAppIdentityMatched": true,
+    "returnedWindowCount": 2,
+    "exactTitleWindowCount": 1,
+    "exactTitle": "DiceBox Campaign Helper",
+    "accessibilityReadAttempts": 1,
+    "successfulAccessibilityReads": 0,
+    "result": "The exact titled window disappeared before get_window_state could rehydrate its returned handle.",
+    "retry": false,
+    "screenshotOrInput": false
+  },
+  "authoritativeTargetReread": {
+    "projectId": "dbx:project:desktop-multiscene-self-test",
+    "before": {
+      "primaryFileSha256": "646596938948A8CDB5C7BB26AE499D13DE69ED5ABFA9C472A8987E10BE46D76F",
+      "backupFileSha256": "400EE3C900D316CB2B2F61558B481A4DF89CD0D25DED8CEAD562EC7818814418",
+      "workspaceFileSha256": "0BB5AAFCF94565F28AAE38A4F4135FC70B88C4003F369A29CC52C9DD5D6CF461",
+      "generation": 6,
+      "contentSha256": "cd05e06e91c3224f65f0e1373af48ae7565b9f0828de29a9f14b6ecdb69941fd"
+    },
+    "after": {
+      "primaryFileSha256": "013F0C2E80E923FBCCB14269E75262618088FB19F0146ED6A75A318929B3A4B7",
+      "backupFileSha256": "1555E1BE833713B14B0604AC20E077F8AABB35A9CD5B7F916B29114444189FF1",
+      "workspaceFileSha256": "0BB5AAFCF94565F28AAE38A4F4135FC70B88C4003F369A29CC52C9DD5D6CF461",
+      "generation": 8,
+      "contentSha256": "501dd689cad4a297ce6426f02be3a4e5f99c71de85d945dbc5cbdaad59996baf",
+      "backupGeneration": 7,
+      "sceneCount": 2,
+      "assetCount": 0,
+      "activeSceneId": "dbx:scene:desktop-multiscene-self-test-scene-2",
+      "restoredScene2Name": "Scene 2",
+      "restoredScene2Sha256": "3c0b33907b0a2868dd91dfe8b6120882f5c93672789194b4b6fbf3ae5a2caac4",
+      "backupAppliedScene2Name": "Scene 2 M359 UI Save Probe",
+      "backupAppliedScene2Sha256": "122a547258b4283c5ff852a3e9ac3e70bb76aefff2e9fbb8c34d640c5f279abe"
+    },
+    "interpretation": "The generation-6 to generation-8 primary/backup rotation and restored versus applied Scene 2 content are consistent with one save followed by inverse restoration, but no live accessibility title/history session evidence was captured and this receipt does not certify a packaged lifecycle pass."
+  },
+  "processesAfterReread": {
+    "desktop": 0,
+    "cargo": 0,
+    "rustc": 0
+  },
+  "preservation": {
+    "browserStorageInspected": false,
+    "ordinarySessionReadOrOperated": false,
+    "secondLaunch": false,
+    "projectMutationOutsideAuthorizedTestTarget": false,
+    "foundryWrite": false,
+    "providerCredentialRepositoryOrPlayerPasswordAction": false
+  },
+  "nextBoundary": "M643: read-only reconcile the ephemeral exit-mode window against the exact self-test exit path and native reread, then select one no-retry exact artifact/observation configuration that can expose a direct terminal accessibility state.",
+  "conclusion": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false
+  }
+}

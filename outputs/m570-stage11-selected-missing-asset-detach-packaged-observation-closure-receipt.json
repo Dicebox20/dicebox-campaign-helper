@@ -1,0 +1,61 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-packaged-observation",
+  "milestone": "M570",
+  "status": "PASS_PACKAGED_CLEAN_SESSION_PREFLIGHT_BLOCKED",
+  "capturedAt": "2026-08-30T00:46:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "runner": {
+    "operation": "dicebox.desktop.self-test.capture",
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "97550AEAF793067DF32BCD734E1E0BF191972C042DD4FF1EFF9E2A0DC6A56259",
+    "exitCode": 0,
+    "signal": null,
+    "timeout": {
+      "timedOut": false,
+      "timeoutMs": 30000,
+      "childExitObserved": true,
+      "stderr": "Chromium reported a non-fatal window-class unregister warning during exit."
+    }
+  },
+  "lifecycle": {
+    "fixture": "PASS: exact project dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1, two assets, two Scenes, generation 1, no Foundry write",
+    "inspection": "BLOCKED: REGISTERED_ASSET_BLOB_MISSING; selected asset eligible; two assets; one pending artifact; no write; no Foundry write",
+    "sessionPreflight": "BLOCKED: exact clean-session boundary was unavailable; existing proposal session was not replaced",
+    "approval": "UNOBSERVED: clean-session preflight blocked before approval",
+    "apply": "UNOBSERVED: clean-session preflight blocked before apply",
+    "commit": "UNOBSERVED: no committed session or authoritative reread emitted"
+  },
+  "preservation": {
+    "partialResult": "preserved",
+    "targetProject": "not created or mutated by this run",
+    "browserStorageInspected": false,
+    "separateLaunch": false,
+    "secondCapture": false,
+    "retry": false,
+    "fixtureCleanup": false,
+    "sessionReplacement": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "processes": "PASS: no desktop/Cargo/Rustc process remained"
+  },
+  "nextBoundary": {
+    "milestone": "M571",
+    "scope": "Read-only reconcile the M570 clean-session preflight blocker against the session namespace implementation and preserved target state; select one narrow correction without inspecting or clearing browser storage.",
+    "prohibited": [
+      "second capture",
+      "separate launch",
+      "retry",
+      "browser-storage inspection",
+      "session replacement or clearing",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "The popup/close was expected from exit mode and the capture exited cleanly. The app correctly refused to replace the existing ordinary project-key proposal session left by the prior partial run; M571 must reconcile this without storage inspection or cleanup."
+}

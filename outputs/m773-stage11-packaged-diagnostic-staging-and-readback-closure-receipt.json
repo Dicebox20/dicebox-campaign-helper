@@ -1,0 +1,32 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m773-stage11-packaged-diagnostic-staging-and-readback-closure-2026-08-31",
+  "milestone": "M773",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "fixture",
+  "status": "PASS FIXTURE READBACK; NON-CERTIFYING",
+  "readyClaim": false,
+  "target": { "dataPath": "work/foundry-fixture-data-v4", "worldId": "dbx-test-world", "port": 30003, "foundryVersion": "14.367", "system": "dnd5e@5.3.3", "package": "dicebox-campaign-helper@0.1.15" },
+  "stagedArtifact": {
+    "moduleSha256": "B7329E018062CEF2AB73416F90B097648F37F7A11B44C9112F86BB553D1EF597",
+    "entrySha256": "DB39BC0362EF23574813A4F5EF69265ED3EACE31FE75B510747662A84AE66779",
+    "entry": "src/entry-20260823-program-scene-v2.js -> module.js?dbx=0.1.17",
+    "stageOperation": "foundry.module.update",
+    "noWorldMutation": true
+  },
+  "runtimeReadback": {
+    "visibleActiveGm": "Gamemaster [GM]",
+    "control": "Show DiceBox Runtime Evidence Diagnostics",
+    "operation": "dicebox.runtime-evidence.diagnostic",
+    "status": "OBSERVED",
+    "redacted": true,
+    "noWrite": true,
+    "exactTargetMatch": true,
+    "readiness": { "status": "blocked", "pass": 10, "blocked": 1, "unknown": 0, "total": 11 },
+    "remainingBlocker": "Exact-runtime behavior and permission proof remains separately blocked."
+  },
+  "authoritativeReread": { "supervisorStatus": "PASS", "pid": 14220, "worldDocumentWrites": 0, "balladTouched": false, "sourceAndStagedHashesMatch": true },
+  "preservation": { "projectWrites": 0, "settingsWrites": 0, "foundryDocumentWrites": 0, "providerOrCredentialActivity": false, "playerPasswordsGenerated": false, "stage11Accepted": false, "stage12Started": false },
+  "notes": ["The first update attempt used the fixture parent rather than its owned Data directory and was refused before mutation; the corrected explicit Data root update passed.", "The supervisor performed its standard exact-owned restart recovery; this is fixture process evidence, not live behavior or authority certification."],
+  "next": "M774 may only reconcile the new fixture evidence with the still-partial Stage 11 clauses and select one bounded remaining gap."
+}

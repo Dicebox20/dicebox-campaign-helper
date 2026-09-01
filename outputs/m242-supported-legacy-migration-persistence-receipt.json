@@ -1,0 +1,85 @@
+{
+  "milestone": "M242",
+  "operation": "dicebox.project.migration.persist",
+  "status": "PASS LOCAL PACKAGED",
+  "projectId": "dbx:project:desktop-legacy-migration-persistence-self-test-v2",
+  "sourceSchemaVersion": "0.2.0",
+  "targetSchemaVersion": "0.3.0",
+  "generation": {
+    "before": 1,
+    "after": 2
+  },
+  "persistedLegacyContentSha256": "d9808d6c9f20de6e97c6f71aee14f30d172694db977de9a1f745e2d36f042eaf",
+  "resultingCurrentContentSha256": "9332a43ceed73e565bba236ca2f1d5949385e03455956d93b09203c3610779ad",
+  "previewSha256": "e8eb6028e04d495d729823a430e7fb0f0448df80be3b56488996f4631224e8e6",
+  "assetSha256": "2a040b0881c18593d21859f4107cee1c9c5f40521161b2acdf3b392b8158e05a",
+  "packaged": {
+    "setupExitCode": 0,
+    "freshRereadExitCode": 0,
+    "sceneCount": 2,
+    "assetCount": 1,
+    "semanticStateUnchanged": true,
+    "assetTreeUnchanged": true,
+    "workspaceUnchanged": true,
+    "foreignStateUnchanged": true,
+    "backupPreservesLegacyPrimary": true,
+    "authoritativeCurrentReread": true,
+    "directoryEntrySync": true,
+    "noFoundryWrite": true
+  },
+  "freshReread": {
+    "currentPrimarySchema": "0.3.0",
+    "legacyBackupSchema": "0.2.0",
+    "generation": 2,
+    "contentSha256": "9332a43ceed73e565bba236ca2f1d5949385e03455956d93b09203c3610779ad",
+    "trackedByteIdentity": true,
+    "trackedPathCount": 6
+  },
+  "ordinaryStartup": {
+    "probeSeconds": 4,
+    "exactProcessStopped": true,
+    "trackedByteIdentity": true,
+    "trackedPaths": [
+      { "path": "projects/desktop-legacy-migration-persistence-self-test-v2/project.json", "sha256": "DBFA5EF810A180AD894A416D7FCCAC11DA13D51768EEEA3637914ED19FA20406" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test-v2/project.backup.json", "sha256": "3C9C40227E51BC42D886C0C118DB0271B6CC665050B93F14D7E4FC026C5374FD" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test-v2/foreign-note.txt", "sha256": "A44E47B8874E2F207281C82C756F4D3A5CF1F27002E083C15E5AA2F3826269A2" },
+      { "path": "workspace-index.json", "sha256": "86149B41798986676A3A519761669345766265943F0AAD6E2B27FC2FD2E66EBA" },
+      { "path": "workspace-index.backup.json", "sha256": "495E587E87819D84D5E1CE756021A3EE3188C5B3B2569E953A045674E01789C6" },
+      { "path": "assets/sha256/2a040b0881c18593d21859f4107cee1c9c5f40521161b2acdf3b392b8158e05a", "sha256": "2A040B0881C18593D21859F4107CEE1C9C5F40521161B2ACDF3B392B8158E05A" },
+      { "path": "workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending", "sha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test/project.json", "sha256": "0F59BCAADE5A3DB1341C169573623C32FC22BA67D7D0E801DFE46211EED4ED1A" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test/project.backup.json", "sha256": "D2FDC04B96A0A789573F54EC180D48F115F14B1F587128369DDDBB969ED3137A" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test/foreign-note.txt", "sha256": "A44E47B8874E2F207281C82C756F4D3A5CF1F27002E083C15E5AA2F3826269A2" }
+    ]
+  },
+  "deterministicCoverage": {
+    "supportedSchemas": ["0.1.0", "0.2.0"],
+    "blockedCases": [
+      "approval absent",
+      "stale preview",
+      "current schema",
+      "unsupported schema",
+      "backup present or backup-authoritative recovery"
+    ]
+  },
+  "validation": {
+    "rustProjectStoreTests": "46/46",
+    "focusedDesktopAndKbTests": "50/50",
+    "implementationFullNpm": "89 files/438 tests",
+    "closureValidation": "PASS 89 files/439 tests",
+    "nativeWindowsBuild": "PASS",
+    "foundryWrites": 0,
+    "scope": "local packaged evidence only"
+  },
+  "excluded": [
+    "backup-authoritative recovery or promotion",
+    "unsupported or arbitrary migration adapters",
+    "batch or automatic migration",
+    "semantic edits during migration",
+    "cleanup, deletion, rebinding, additional roles, or placement",
+    "cross-process or universal durability certification",
+    "Stage 8 or alpha completion",
+    "Foundry authority or mutation",
+    "vision-assisted Spatial Blueprint implementation"
+  ]
+}

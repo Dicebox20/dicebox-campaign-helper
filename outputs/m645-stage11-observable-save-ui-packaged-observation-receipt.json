@@ -1,0 +1,40 @@
+{
+  "milestone": "M645",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL BOUNDED OBSERVATION",
+  "observedAt": "2026-08-30",
+  "scope": "One exact M644 exit=0 packaged desktop launch, one accessibility read, explicit exact-process stop, and one exact target/process reread.",
+  "artifact": {
+    "renderer": "apps/campaign-helper-desktop/dist/assets/index-CzAzTyyB.js",
+    "rendererSha256": "3E7AE186D330EA9374DEB905453AF955DDFC7B07EEBF0F617B7E32F5251986DF",
+    "nativeSha256": "5F432884D2EB0CBA481C18495F940A9EA400E5F7AC53A68AB95A0E2C8400C0BF"
+  },
+  "accessibilityObservation": {
+    "windowTitle": "DiceBox Campaign Helper",
+    "terminalTitle": "DiceBox Project Save UI Execute PASS · dbx:project:desktop-multiscene-self-test · preview→approval→save→reread→inverse-restore · generation 10 · history 5 · no Foundry write",
+    "projectId": "dbx:project:desktop-multiscene-self-test",
+    "generation": 10,
+    "historyEntries": 5,
+    "terminalState": "undone / clean / active",
+    "foundryWrite": false
+  },
+  "authoritativeReread": {
+    "primaryGeneration": 10,
+    "primarySha256": "EB2FD02AB209CCBADD918C7D21FD933A23D3B6D14975D66990DE4E9B96DF232B",
+    "backupGeneration": 9,
+    "backupSha256": "C9E1BF2D6A4EF873C2B84A73267C91255BDB7C97CA60AC3F42025D04C546ECD2",
+    "workspaceSha256": "0BB5AAFCF94565F28AAE38A4F4135FC70B88C4003F369A29CC52C9DD5D6CF461",
+    "remainingExactTargetPids": []
+  },
+  "preservation": {
+    "ordinarySessionInspected": false,
+    "ordinarySessionChanged": false,
+    "browserStorageInspected": false,
+    "retries": 0,
+    "providerOrCredentialAction": false,
+    "foundryAction": false,
+    "playerPasswordAction": false
+  },
+  "limits": "This is producer-scoped local packaged evidence only. It does not accept aggregate Stage 11, begin Stage 12, or certify Ready-to-Play.",
+  "next": "M646 read-only reconciliation of the remaining Stage 11 clause/family evidence."
+}

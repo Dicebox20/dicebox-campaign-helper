@@ -1,0 +1,27 @@
+{
+  "operation": "m184.google-doc.architecture-update",
+  "status": "PASS",
+  "evidenceClass": "project",
+  "documentId": "14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o",
+  "documentTitle": "Dice Box Campaign Helper — Ideas & Architecture",
+  "documentUrl": "https://docs.google.com/document/d/14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o/edit",
+  "tabId": "t.0",
+  "beforeRevisionId": "AIroW36FkBFRNR28i5fm2uK4-GgqrNY0hAd5Tj7FeUjLBJuy81zC4Y2QbJ5o0RjQz4IwDJZReLEse7jPP3JqgNbaNiYDNDCj5-kSKYD9Zio",
+  "afterRevisionId": "AIroW37D-yzMeFfmcXMUUWWmFRvLxNJs_2Cgq4tb604T7TFVrIdxFL6l5IGEN3FqTzLxC4V51UA7fqoVlh_V8N5X7fvgU6n510Yz-8Ao6aY",
+  "sectionMarker": "Architecture Decision Update — 2026-08-23",
+  "markerParagraphIndex": 1019,
+  "protectedControlsDetected": false,
+  "authoritativeReadback": true,
+  "readbackVerified": [
+    "desktop/editor decision",
+    "semantic/editor architecture",
+    "image-provider decision",
+    "AI architecture decision",
+    "OpenAI/Codex account decision",
+    "program roadmap and current gate",
+    "priority reconciliation",
+    "M184 KB identifiers"
+  ],
+  "foundryMutationPerformed": false,
+  "campaignMutationPerformed": false
+}

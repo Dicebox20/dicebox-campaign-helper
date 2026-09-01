@@ -1,0 +1,41 @@
+{
+  "milestone": "M864",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "operation": "stage11.packaged-project-asset-restore.aggregate-evidence-attachment",
+  "input": "M593",
+  "sourceSha256": "66D0AF1DECF85ED9906D35149EF3267ECD498D41095DF431C3E5F4ABE0B399CC",
+  "aggregateLedgerSha256": "6B86C4D8B0F23F659639F21C24273C3D025B2A3574DE3052AF2AA07E8365C8CE",
+  "testSha256": [
+    "55D6EEF5B2CD263BD079BA37CFEC085BB4E355ACF4A98DF3A05ECFA84DB5F066",
+    "4FBD2957FB358CCFFF06AE0DB4323186A6E24CC652C77FFADA971BB209A0ED98"
+  ],
+  "validation": {
+    "focusedVitest": "3 files / 6 tests pass",
+    "packageTypecheck": "PASS",
+    "diffCheck": "PASS"
+  },
+  "result": {
+    "producerScopedOnly": true,
+    "packagedLifecycleObserved": true,
+    "authoritativeReread": true,
+    "preservationObserved": true,
+    "noFoundryWrite": true,
+    "noProviderCredentialActivity": true,
+    "noPlayerRolePasswordActivity": true,
+    "modeledOperationCount": 14,
+    "noAuthorityGrant": true,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "runtimeAction": false,
+  "doesNotProve": [
+    "generic Foundry authority",
+    "every-producer lifecycle coverage",
+    "aggregate recovery authority",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

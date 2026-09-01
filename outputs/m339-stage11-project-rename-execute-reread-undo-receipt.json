@@ -1,0 +1,98 @@
+{
+  "milestone": "M339",
+  "stage": "proposal-approval-history",
+  "status": "PASS",
+  "evidenceLabel": "fixture",
+  "operation": "dicebox.project.rename.execute",
+  "target": {
+    "projectId": "dbx:project:desktop-directory-entry-durability-self-test",
+    "ownership": "explicit test-owned project-store fixture",
+    "catalogStatus": "PARTIAL",
+    "catalogEntryStatus": "PASS",
+    "catalogEntryBlockerCount": 1,
+    "catalogEntryBlockerScope": "unrelated fixture entry; exact target remained PASS"
+  },
+  "approvedSession": {
+    "producer": "human/no-provider",
+    "reviewAuthority": "human-review/reviewer",
+    "targetAuthority": "local-project/no-active-GM",
+    "commandKind": "project.rename",
+    "commandCount": 1,
+    "historyTransitions": [
+      "preview",
+      "approve",
+      "begin-apply",
+      "commit-after-reread",
+      "undo"
+    ],
+    "finalHistoryStatus": "undone",
+    "finalHistoryLength": 5
+  },
+  "authoritativeLifecycle": {
+    "before": {
+      "displayName": "Stage 8 Workspace Acceptance Renamed",
+      "workspaceIndexGeneration": 29,
+      "projectGeneration": 2,
+      "contentSha256": "f3700e1bf246923a1961892448b7bf3ec25b1355a43ffcddfab3f4f7afb52751"
+    },
+    "afterApply": {
+      "displayName": "M339 Native Rename Probe",
+      "workspaceIndexGeneration": 30,
+      "projectGeneration": 2,
+      "contentSha256": "f3700e1bf246923a1961892448b7bf3ec25b1355a43ffcddfab3f4f7afb52751"
+    },
+    "afterUndo": {
+      "displayName": "Stage 8 Workspace Acceptance Renamed",
+      "workspaceIndexGeneration": 31,
+      "projectGeneration": 2,
+      "contentSha256": "f3700e1bf246923a1961892448b7bf3ec25b1355a43ffcddfab3f4f7afb52751"
+    },
+    "contentGenerationPreserved": true,
+    "contentHashPreserved": true,
+    "readBeforeApply": true,
+    "readAfterApply": true,
+    "readAfterUndo": true,
+    "inverseUndoUsedCurrentPostApplyWorkspaceGeneration": true
+  },
+  "nativeReceipts": {
+    "apply": {
+      "operation": "dicebox.workspace-metadata.rename",
+      "status": "PASS",
+      "indexGeneration": 30,
+      "atomicReplace": true,
+      "directoryEntrySync": true,
+      "backupPreserved": true,
+      "noFoundryWrite": true
+    },
+    "undo": {
+      "operation": "dicebox.workspace-metadata.rename",
+      "status": "PASS",
+      "indexGeneration": 31,
+      "atomicReplace": true,
+      "directoryEntrySync": true,
+      "backupPreserved": true,
+      "noFoundryWrite": true
+    }
+  },
+  "packagedRun": {
+    "windowStatus": "DiceBox Project Rename Execute PASS · dbx:project:desktop-directory-entry-durability-self-test · Stage 8 Workspace Acceptance Renamed → M339 Native Rename Probe → Stage 8 Workspace Acceptance Renamed · content unchanged · history 5 · no Foundry write",
+    "bundlePath": "apps/campaign-helper-desktop/dist/assets/index-DhO4oIXi.js",
+    "bundleSha256": "dc9cec7def62e26bcad0715880f9cfe022f9b40a88cf9861e9f9e296254b6108",
+    "executablePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "6b2d477fc06571f092e97e607ef4a22587cb2027852c49c8f0bff6a3bb3a1d04",
+    "sourceFidelityMarker": "dbx:desktop:source-fidelity:m334"
+  },
+  "durablePostRunReread": {
+    "workspaceIndexGeneration": 31,
+    "displayName": "Stage 8 Workspace Acceptance Renamed",
+    "projectGeneration": 2,
+    "contentSha256": "f3700e1bf246923a1961892448b7bf3ec25b1355a43ffcddfab3f4f7afb52751",
+    "projectJsonSha256": "bdc48e4e9da154ec618e4b0e40feff1dec9bef759df33a718e01486b02e0de10",
+    "backupJsonSha256": "477d695b8d3a03b16297630aaf68ec5fca0dd08fc9cb5e509099e3f4b03156aa",
+    "noProjectContentWrite": true,
+    "noFoundryWrite": true
+  },
+  "recoveryDisposition": "none; both native operations returned PASS and authoritative rereads matched; no retry was issued",
+  "unknownOutcomeRetryPolicy": "a native transport failure would reread once and stop without retry",
+  "fixtureState": "restored to the exact pre-run display name; project content and the exact fixture's two persisted envelope files were reread after closure"
+}

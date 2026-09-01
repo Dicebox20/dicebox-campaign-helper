@@ -1,0 +1,14 @@
+{
+  "milestone": "M856",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "operation": "stage11.update-witness.aggregate-evidence-attachment",
+  "inputs": ["M848", "M854"],
+  "sourceSha256": "48424EDEF82984C028658C8BAB132BEB832CAAF77B7DFE4A0F4FE43A4929C364",
+  "aggregateLedgerSha256": "BE975E156FE5CFB064BAB9EBDD2C88B2299E84816954EFF05FAA8F5462362ADC",
+  "testSha256": ["5619A190D9CBFD25A9694B92A422D8EC279588B8C1F5BEDB0344B527B8C78974", "F1664DEAFBD3493FF6B2734F9D33C0569ED6F8DF4AE60F379655C3DB18165D4B"],
+  "validation": {"focusedVitest": "2 files / 4 tests pass", "packageTypecheck": "PASS", "diffCheck": "PASS"},
+  "result": {"producerScopedOnly": true, "foundryMutationObserved": true, "authoritativeReread": true, "restorationReread": true, "independentNoWriteReread": true, "modeledOperationCount": 14, "noAuthorityGrant": true, "stage11AcceptanceStatus": "blocked", "stage12Started": false, "readyClaim": false},
+  "runtimeAction": false,
+  "doesNotProve": ["generic Foundry authority", "cross-producer coverage", "Stage 11 acceptance", "Stage 12 entry", "Ready-to-Play"]
+}

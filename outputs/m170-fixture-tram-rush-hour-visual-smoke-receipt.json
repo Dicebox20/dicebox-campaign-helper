@@ -1,0 +1,43 @@
+{
+  "receiptVersion": 1,
+  "operation": "tram.rush-hour.fixture-visual-smoke",
+  "status": "PASS",
+  "evidenceLabel": "fixture",
+  "readyClaim": false,
+  "target": {
+    "worldId": "dbx-test-world",
+    "url": "http://localhost:30001/game",
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3",
+    "executor": "Gamemaster [GM]"
+  },
+  "module": {
+    "id": "dicebox-campaign-helper",
+    "adapter": "src/tram-rush-hour-dialog.js",
+    "adapterSha256": "8C13AA311FB5995DB0BEFBD9C3ED216F55A07C15E9542A738EA31BC713D4C8AA"
+  },
+  "fixtureDocumentWrite": {
+    "type": "Macro",
+    "id": "jqQ0vjwhVdLpYEGo",
+    "name": "DiceBox Fixture Tram Rush Hour Smoke Test",
+    "scope": "GM-only wrapper that calls game.diceboxTramRushHour.open()",
+    "sceneOrCampaignDocumentsChanged": false
+  },
+  "visibleAcceptance": {
+    "dialogOpened": true,
+    "initialLegalMoveVisible": "Car B up 1",
+    "executedMove": "Car B up 1",
+    "postMoveLegalMoveVisible": "Car B down 1",
+    "resetControlVisible": true,
+    "consoleErrors": []
+  },
+  "notProven": [
+    "Tram Scene renderer binding",
+    "Walls, doors, Regions, or Tile projections",
+    "Dalton or Andrew puzzle access",
+    "player-compatible acceptance",
+    "Ballad target state",
+    "Ready-to-Play certification"
+  ],
+  "nextAction": "Use the fixture-only Scene plan to preview the current Tram renderer, owned Walls/doors, static anchors, and six car Tile projections."
+}

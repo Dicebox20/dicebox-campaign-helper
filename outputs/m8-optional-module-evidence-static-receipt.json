@@ -1,0 +1,43 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m8-optional-module-evidence-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "officialReferences": [
+    "https://github.com/tposney/midi-qol",
+    "https://foundryvtt.com/packages/dae",
+    "https://foundryvtt.com/api/v14/classes/foundry.documents.RegionDocument.html"
+  ],
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 38, "tests": 177, "status": "PASS" },
+    "optionalModuleApiEvidence": {
+      "schemaAndSafeModeFallback": "PASS",
+      "gameModulesMetadataObservation": "PASS",
+      "documentedMidiMethodsPresence": "PASS",
+      "daeCallableApiNotInferred": "PASS",
+      "noOptionalMethodOrWorkflowInvocation": "PASS",
+      "installedNamespaceRouting": "PASS",
+      "mutationDisabled": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 59,
+      "facts": 74,
+      "decisions": 49,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 48,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Midi-QOL completeItemUse/applyTokenDamage behavior, workflow hooks, permissions, active-GM routing, sender semantics, outcomes, and read-back",
+    "DAE public callable API, schema, ownership, permissions, behavior, and read-back",
+    "Optional-module interaction with native D&D5e Activity, ActiveEffect, and RegionBehavior owners"
+  ],
+  "nextGate": "Compare this invocation-free evidence against an exact Foundry 14.367/D&D5e 5.3.3 fixture, then bind only a reviewed optional adapter after behavior, authority, permission, hook, ownership, and authoritative read-back evidence passes."
+}

@@ -1,0 +1,103 @@
+{
+  "operation": "stage11-packaged-review-surface-observation",
+  "milestone": "M597",
+  "status": "PASS_REVIEW_SURFACE_WITH_UI_HELPER_BLOCKER",
+  "capturedAt": "2026-08-30T06:19:38-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "packaged",
+  "artifacts": {
+    "nativeExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "409BDB043CE23205E3939680E5B51A67A09D6C761272DBFAC46411BF6243A629",
+      "bytes": 26878976,
+      "matchesM596": true
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-CO6vHEDV.js",
+      "sha256": "E19C181DC0FF5D771923CA3F242BECE3F2A6322D78168F89C97F00E1E38ECBCF",
+      "bytes": 2052976,
+      "matchesM596": true
+    }
+  },
+  "observation": {
+    "launch": "exact M596 native executable",
+    "returnedUiWindow": {
+      "title": "DiceBox Campaign Helper",
+      "windowId": 590864,
+      "uniqueTitleMatch": true
+    },
+    "reviewSurfaceVisible": true,
+    "localProjectAuthorityVisible": true,
+    "explicitApprovalReadinessVisible": true,
+    "operationSpecificApplyReadinessVisible": true,
+    "noGenericExecutorBoundaryVisible": true,
+    "noWriteProjectStateVisible": true,
+    "noPersistedProjectActive": true,
+    "noProjectSessionOpen": true,
+    "noFoundryWrite": true,
+    "surfaceEvidence": [
+      "Project recovery proposal review is exposed as a distinct review region.",
+      "The surface states that preview and approval persist proposal history locally while approval does not invoke project-store execution.",
+      "Separate apply controls are exposed for migration, create, rename, save, save-as, handout, audio, token, and background operations.",
+      "The surface reports no persisted project active and no project session open, so no project-content mutation was available or performed."
+    ]
+  },
+  "uiHelperRecovery": {
+    "firstResultPreserved": true,
+    "accessibilityObservation": "PASS",
+    "screenshotRefresh": "BLOCKED",
+    "screenshotRefreshError": "SetIsBorderRequired failed: No such interface supported (0x80004002)",
+    "closeAction": "BLOCKED",
+    "closeActionError": "coordinate input geometry is unavailable",
+    "retry": false,
+    "interpretation": "The packaged review surface was observed through the returned accessibility tree. The screenshot-backed refresh and UI close helper failures are preserved as a local automation blocker and are not treated as product-behavior failure."
+  },
+  "processReread": {
+    "desktopProcessCount": 0,
+    "cargoProcessCount": 0,
+    "rustcProcessCount": 0,
+    "cleanup": "The exact process launched for this observation was stopped by its resolved PID after the UI close helper failed; no other process target was selected."
+  },
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": false,
+    "artifactSetChanged": false,
+    "launch": true,
+    "accessibilityCapture": true,
+    "screenshotCapture": "attempted_once_blocked",
+    "uiClose": "attempted_once_blocked",
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M597 confirms the packaged desktop review surface visibly exposes local-project review, explicit approval, operation-specific apply boundaries, and no-generic-executor/no-write messaging against the exact M596 artifact set. The local Windows UI helper could not provide a screenshot refresh or close action, so this is bounded packaged evidence with an automation blocker, not aggregate Stage 11 acceptance."
+  },
+  "nextBoundary": {
+    "milestone": "M598",
+    "title": "Stage 11 packaged review-surface reconciliation",
+    "status": "requires-reconciliation",
+    "scope": "Reconcile M597 packaged review-surface evidence with the four Stage 11 acceptance clauses and determine the narrow next bounded action. Do not begin Stage 12 unless all Stage 11 clauses have direct evidence."
+  },
+  "changedPaths": [
+    "outputs/m597-stage11-packaged-review-surface-observation-closure-receipt.json"
+  ]
+}

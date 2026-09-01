@@ -1,0 +1,83 @@
+{
+  "operation": "stage11-packaged-operation-to-proposal-history-evidence-binding-observation",
+  "milestone": "M619",
+  "status": "PASS_PACKAGED_OPERATION_HISTORY_BINDING_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T07:54:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "packaged",
+  "artifactIdentity": {
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeBytes": 26887168,
+    "nativeSha256": "E47D8B0E88621A105F003B1D1B3CE10A98BFDE158665F5B361FD802ABB1EC3B8",
+    "rendererPath": "apps/campaign-helper-desktop/dist/assets/index-DyVmys-l.js",
+    "rendererBytes": 2070296,
+    "rendererSha256": "0ED9BD0589645CA5CC97C9A260994F6B5D818A6E49E0A470C82BD93E7D89739C"
+  },
+  "targetSelection": {
+    "returnedAppId": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+    "returnedWindowId": 3278978,
+    "returnedWindowTitle": "DiceBox Campaign Helper",
+    "exactTitleCandidateCount": 1,
+    "activationRecoveryUsed": false,
+    "selection": "exact process-prefixed app identity and exact title"
+  },
+  "accessibilityEvidence": {
+    "readCount": 1,
+    "screenshotCaptured": false,
+    "documentTextLength": 20000,
+    "operationHistoryBindingVisible": true,
+    "exactOperationEntriesVisible": 14,
+    "allExactOperationKindsVisible": true,
+    "historyStateVocabularyVisible": 11,
+    "allHistoryStatesVisible": true,
+    "boundedPreviewApprovalVisible": true,
+    "laterLifecycleGapVisible": true,
+    "readOnlyNonCertifyingMetadataVisible": true,
+    "noExecutionAuthorityVisible": true,
+    "noGenericHistoryExecutorVisible": true,
+    "noPersistedProject": true,
+    "noProjectSession": true,
+    "noWriteFoundryPreview": true
+  },
+  "processReread": {
+    "exactPathBefore": 1,
+    "stoppedPid": 25704,
+    "exactPathAfter": 0,
+    "desktopProcessesAfter": 0,
+    "cargoProcessesAfter": 0,
+    "rustcProcessesAfter": 0
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M619 directly observes the current M618 packaged operation-to-proposal-history binding. The surface exposes all 14 entries, all 11 existing states, bounded preview/approval coverage, and explicit later-state gaps as read-only/non-certifying/no-execution metadata, but this does not prove history transitions, cross-producer execution, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, aggregate authority, or Stage 11 acceptance."
+  },
+  "scope": {
+    "launchCount": 1,
+    "captureCount": 1,
+    "retryCount": 0,
+    "uiActionCount": 0,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "nextBoundary": {
+    "milestone": "M620",
+    "title": "Stage 11 packaged operation-to-proposal-history binding reconciliation",
+    "status": "requires-separate-authorization",
+    "scope": "Read-only reconcile M619 direct packaged evidence against all four Stage 11 clauses, exact 14-operation contract, 11-state history vocabulary, eleven producer families, and M614-M619 receipts; preserve the direct pass and select at most one smallest next gap. No source edit, build, launch, capture, retry, UI action, browser storage, session operation, fixture cleanup, project/runtime mutation, provider, credential, repository promotion, Technical Builder, Foundry, player-password, Stage 11 acceptance, Stage 12, or Ready-to-Play work."
+  },
+  "changedPaths": [
+    "outputs/m619-stage11-packaged-operation-to-proposal-history-evidence-binding-observation-closure-receipt.json"
+  ]
+}

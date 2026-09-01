@@ -1,0 +1,44 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m299-stage11-generic-proposal-batch-core-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M299",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "implemented": [
+    "strict versioned producer-neutral proposal-batch, command, actor, base, authority, reread, receipt, and history schemas",
+    "separate review-authority and target-authority domains, including explicit active-GM requirement consistency",
+    "canonical topological command ordering with lexical tie-breaking and duplicate, missing, self, unsorted, and cyclic dependency rejection",
+    "deterministic canonical SHA-256 batch identity with previous-revision hash binding and tamper rejection",
+    "preview, approve, reject, edit, cancel, stale, apply, unknown-outcome, reread recovery, commit, undo, and redo transitions",
+    "stale base validation, reviewer-role validation, Foundry GM-role precheck, and retry prohibition before authoritative reread",
+    "append-only normalized receipt history with contiguous identities, monotonic time, legal transitions, and batch revision/hash binding"
+  ],
+  "validation": {
+    "focused": "PASS: 1 file / 7 tests",
+    "focusedWithWorkflowAndKb": "PASS: 3 files / 92 tests",
+    "full": "PASS: 106 files / 577 tests",
+    "build": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS: 10/16, proposal-approval-history active",
+    "knowledgeBase": "PASS: 419 sources / 454 facts / 403 decisions / 417 trials"
+  },
+  "sourceHashes": {
+    "packages/dicebox-core/src/proposal-batch.ts": "BB78F1ED4B1AB32462D357808BF633702BBA7B5D710F78601CB6ABDD89ADC1E9",
+    "packages/dicebox-core/src/index.ts": "06A59FAA32868BEB5CA53882A5F5D2D273FDF4C5EDF2F4E9D08BEE566B937B1F",
+    "tests/proposal-batch.test.ts": "68778BE7AC85A39A42F446A46E812B1EB3C5FC69F56DD2A2559BF5CDE5C53367",
+    "tests/active-slice-workflow.test.ts": "EF5958B6437830586550D52275C5E57C032B170D181084BB1E2777D35791C5BE",
+    "tests/knowledge-base-query.test.ts": "8F58EAD428B3A9F2D84ECF17F28E5622F32376029CE5AFEAA8E071CFEA2516AF"
+  },
+  "doesNotProve": [
+    "producer adapter integration",
+    "desktop approval-tray behavior",
+    "project or Foundry execution",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M811",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Strictly validate the existing M306 direct local-browser human proposal lifecycle receipt.",
+  "sourceState": "M810 authorization and KB rebuild/verification completed before implementation. M811 added only a pure typed validator and focused test; no browser, runtime, project, Foundry, provider, credential, foreign, or player-role password state changed.",
+  "classification": {
+    "sourceMilestone": "M306",
+    "evidenceLabel": "local",
+    "producer": "human",
+    "lifecycle": "preview-approval-apply-reread-undo-redo",
+    "observedLifecycleCount": 1,
+    "producerScopedOnly": true,
+    "previewNoWrite": true,
+    "approvalNoWrite": true,
+    "applyRereadMatched": true,
+    "undoRereadMatched": true,
+    "redoRereadMatched": true,
+    "browserDiagnosticsEmpty": true,
+    "projectWrites": 0,
+    "foundryWrites": 0,
+    "runtimeOrProviderCall": false
+  },
+  "preservation": {
+    "noAuthorityGrant": true,
+    "noCoverageClaim": true,
+    "noFoundryAuthority": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedTests": "PASS: 1 file / 2 tests",
+    "packageTypeCheck": "PASS",
+    "diffCheck": "PASS",
+    "failClosedCoverage": "PASS: write, drift, diagnostics, non-certification, and foreign-field cases are rejected"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-stage11-direct-human-proposal-evidence.ts": "A2135E51204DA6A50BD4E2A48C9390F6621C5B09550D1AEA975583E02CAFF737",
+    "tests/project-stage11-direct-human-proposal-evidence.test.ts": "2A5BA80E5940BA64EB6E8C3D721B1485E94CBC62AA595F5FC569E87CB6D8B4B4"
+  },
+  "nextAction": "Fresh read-only Stage 11 reconciliation before selecting one bounded remaining gap."
+}

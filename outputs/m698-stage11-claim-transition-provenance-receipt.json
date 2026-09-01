@@ -1,0 +1,48 @@
+{
+  "milestone": "M698",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY",
+  "scope": "Harden claim transition/event provenance so post-write outcomes cannot directly establish claimed state and only a distinct authoritative reread can do so, without store invocation or execution.",
+  "implemented": {
+    "postWrite": "claim-committed and claim-persistence-unknown events require authoritativeReread false and transition to unknown.",
+    "reread": "Only a distinct reread-claimed event with authoritativeReread true establishes claimed; reread-available returns an available state.",
+    "identity": "Exact claim, permit, manifest, idempotency, and active-GM identity is preserved across transitions.",
+    "compatibility": "Updated six downstream inverse test fixtures from the old one-step commit-to-claimed shape to the explicit commit-to-unknown then reread-to-claimed sequence."
+  },
+  "delegation": "A hidden Sol Medium implementation worker completed the canonical claim transition patch and focused tests; the Foreman reviewed and closed it, then adapted the six stale downstream fixtures required by the new provenance contract.",
+  "validation": {
+    "focused": "9 inverse test files / 39 tests passed, covering claim transitions, claim-store resolution, executor boundary, preflight, proof, composition, and receipt paths.",
+    "typecheck": "npx tsc --noEmit passed.",
+    "fullGate": "npm run check:full passed: workflow checker PASS with score 63, 10/16 gates, proposal-approval-history active and readyClaim false; package and desktop builds passed; 153 test files and 781 tests passed; tooling verification passed.",
+    "diff": "git diff --check passed."
+  },
+  "safety": {
+    "claimStoreInvocation": false,
+    "dependencyInvocation": false,
+    "adapterDispatch": false,
+    "executorContinuation": false,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "foreignStatePreserved": true,
+    "readyClaim": false,
+    "liveCertification": false,
+    "stage11Acceptance": false
+  },
+  "selectedNext": "M699 read-only reconciliation of M698 transition/event provenance against claim-store persistence/resolution and downstream inverse boundaries; keep writes, dispatch, runtime execution, and Stage 11 acceptance excluded.",
+  "evidence": [
+    "packages/dicebox-compiler/src/staged-inverse-permit-claim.ts",
+    "tests/staged-inverse-permit-claim.test.ts",
+    "tests/staged-inverse-permit-claim-store.test.ts",
+    "tests/staged-inverse-executor-boundary.test.ts",
+    "tests/staged-inverse-executor-composition.test.ts",
+    "tests/staged-inverse-pre-persistence-proof.test.ts",
+    "tests/staged-inverse-pre-dispatch-context.test.ts",
+    "tests/staged-inverse-preflight-orchestration.test.ts",
+    "tests/staged-inverse-receipt-ledger.test.ts",
+    "tests/staged-inverse-proof-composition-bridge.test.ts",
+    "outputs/m697-stage11-claim-state-schema-reconciliation-receipt.json",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "excluded": ["claim-store invocation", "claim-store writes", "dependency invocation", "adapter dispatch", "executor continuation", "Foundry invocation", "runtime mutation", "automatic retry", "live certification", "Stage 11 acceptance"]
+}

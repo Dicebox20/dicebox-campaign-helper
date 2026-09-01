@@ -1,0 +1,17 @@
+{
+  "operation": "dicebox.stage11.producer-clause-coverage-reconciliation",
+  "status": "PASS_READ_ONLY",
+  "milestone": "M496",
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial: generic core, adapters, sessions, and 14 local-project operation kinds exist; non-local authority remains distinct",
+    "lifecycleAndRecovery": "partial: backup promotion and asset restore have direct package evidence; detach families need current lifecycle reconciliation",
+    "sharedVocabularyWithoutSharedAuthority": "partial: local-project vocabulary is broad; Technical Builder/repository and Foundry/active-GM remain correctly distinct",
+    "everyMutatingPathAcceptance": "partial: local-project review/apply is broad, but no cross-authority or detach-family acceptance claim is justified"
+  },
+  "localProjectOperationKinds": ["project.add-scene", "project.recovery.backup-promote", "project.migration.persist", "project.create", "project.rename", "project.save", "project.save-as", "project.asset.register-handout", "project.asset.register-audio", "project.asset.register-token", "project.asset.bind", "project.broken-reference.detach", "project.asset.restore", "project.asset.detach"],
+  "directPackagedEvidence": ["backup promotion", "selected asset restore", "post-restore authoritative inspection"],
+  "nextBoundary": "M497 read-only selected asset detach reconciliation",
+  "runtimeMutation": false,
+  "foundryWrite": false,
+  "readyClaim": false
+}

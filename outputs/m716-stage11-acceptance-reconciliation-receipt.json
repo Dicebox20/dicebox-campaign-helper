@@ -1,0 +1,57 @@
+{
+  "milestone": "M716",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile M715 and prior evidence against all four Stage 11 acceptance clauses and eleven producer families.",
+  "sourceState": "Unborn project worktree with no HEAD; M716 is read-only and changes no implementation or runtime state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Independent read-only Stage 11 acceptance reconciliation.",
+    "workerOutcome": "Worker independently confirmed Stage 11 remains partial at 10/16 gates and selected M717 project.add-scene.persist terminal-history bridging as the smallest next seam.",
+    "foremanReview": "Local source, M715 receipt, active-card, workflow, and KB rereads agree with the worker result; the worker was closed after receipt review."
+  },
+  "clauses": {
+    "claimProvenance": "PASS bounded M700-M711 witness continuity; PARTIAL at aggregate Stage 11 scope because M713 and M715 cover only project.save and project.rename.",
+    "reviewAndAuthority": "PARTIAL: fourteen local operations declare human review and operation-specific authority, but direct current-authority evidence is incomplete across producer families.",
+    "applyAndReceipts": "PARTIAL: direct terminal projections exist for one injected inverse fixture, project.save, and project.rename, not every producer.",
+    "lifecycleAndRecovery": "PARTIAL: successful terminal undone is covered for two local operations; stale, unknown, recovered, and redone evidence is not unified. Packaged/runtime and live active-GM/Foundry evidence remain incomplete."
+  },
+  "producerFamilies": [
+    { "family": "read-only inspection/compile", "status": "closed-read-only; non-mutating" },
+    { "family": "workspace open/recent metadata", "status": "operation-specific partial" },
+    { "family": "ordinary project persistence", "status": "bounded slices closed; aggregate partial" },
+    { "family": "in-memory project editing/navigation", "status": "bounded slices closed; aggregate partial" },
+    { "family": "asset import/binding", "status": "role-specific aggregate partial" },
+    { "family": "legacy migration persistence", "status": "operation-specific partial" },
+    { "family": "backup-authoritative promotion", "status": "bounded packaged; aggregate partial" },
+    { "family": "missing-asset restore", "status": "current packaged pass; aggregate partial" },
+    { "family": "missing-asset detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "broken Scene-reference detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "test-owned fixture setup and stage receipts", "status": "test infrastructure only; non-certifying" }
+  ],
+  "evidence": {
+    "workflow": "PASS: Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations.",
+    "m715Delta": "M715 adds one project.rename terminal-history bridge with exact identity, display-name transition, rereads, commit/undo history, unchanged content, and fail-closed tamper handling.",
+    "directRemainingGaps": [
+      "Fourteen operation contracts still lack complete direct current-authority and terminal-history evidence across all producer paths.",
+      "Only one injected inverse fixture plus project.save and project.rename have direct terminal projection; cross-producer history remains partial.",
+      "Unified stale, unknown, recovered, undone, and redone coverage is incomplete.",
+      "Packaged/runtime authority and live active-GM/Foundry certification remain incomplete."
+    ]
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "decision": "Stage 11 cannot be accepted and Stage 12 cannot begin from current evidence."
+  },
+  "selectedNext": "M717 code-only project.add-scene.persist terminal-history bridge using its existing exact before/apply/undo rereads and operation-specific authority.",
+  "excluded": [
+    "live Foundry calls",
+    "live runtime mutation",
+    "aggregate Stage 11 acceptance",
+    "Stage 12 work",
+    "browser/provider/credential use",
+    "player-role passwords"
+  ]
+}

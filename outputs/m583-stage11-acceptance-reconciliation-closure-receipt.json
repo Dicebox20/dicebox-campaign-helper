@@ -1,0 +1,53 @@
+{
+  "operation": "dicebox.stage11.acceptance-reconciliation",
+  "milestone": "M583",
+  "status": "PASS_LOCAL_READ_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T05:10:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "inputs": {
+    "priorPackagedReceipt": "outputs/m582-stage11-selected-missing-asset-detach-packaged-observation-closure-receipt.json",
+    "priorArtifactReceipt": "outputs/m581-stage11-selected-missing-asset-detach-fresh-artifact-closure-receipt.json",
+    "priorAcceptanceReconciliation": "outputs/m553-stage11-broken-reference-ui-acceptance-reconciliation-closure-receipt.json",
+    "activeCard": "docs/ACTIVE-PROGRAM-SLICE.json",
+    "roadmap": "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "knowledgeBaseQuery": "read-only facts, trials, blockers, and decisions for selected missing-asset detach and Stage 11"
+  },
+  "reconciliation": {
+    "selectedDetachSlice": "CLOSED by M582: exact M581 packaged executable reached fixture reuse, blocked inspection, loaded, previewed, approved, applied, typed detach, authoritative reread, terminal inspection, and self-test PASS.",
+    "selectedDetachPreservation": "Direct reread confirms current generation 2, backup generation 1, one valid WebP asset retained, selected missing PNG descriptor absent from current and retained in backup, Scene 1 cleared, Scene 2 preserved, target asset root absent, target pending files empty, unrelated pending state preserved, no Foundry write, and process count 0.",
+    "transportAndWindow": "Runner exit code was 0 and child exit was observed. The non-fatal Chromium window-class warning did not alter the lifecycle result. The exit-mode popup/close is expected and is not acceptance evidence by itself.",
+    "stage11Clauses": {
+      "inspectableCommandBatches": "PARTIAL at product scope; generic core and operation-specific adapters exist, but M582 covers one selected-detach producer and does not prove every mutating producer in one current acceptance envelope.",
+      "reviewerApprovalAndEditing": "PARTIAL at product scope; local review-surface and typed coverage are present, while the full producer-family acceptance remains split across bounded evidence packets.",
+      "staleHistoryUndoRecovery": "PARTIAL at product scope; direct reread, history, undo, and recovery evidence exists for bounded slices, but aggregate every-producer coverage is not established by M582.",
+      "currentAuthorityBoundaries": "PARTIAL; repository, active-GM, Foundry, and later runtime authority remain separately gated and are not certified by this local packaged fixture observation."
+    },
+    "checker": "The active-slice checker passed with no violations at score 63/16 gates 10, with proposal-approval-history still solely active and readyClaim false."
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "reason": "M582 closes the selected missing-asset detach packaged lifecycle gap identified by M553, but a single bounded fixture lifecycle cannot satisfy the current every-mutating-producer Stage 11 acceptance observation or certify separately gated repository/active-GM/Foundry behavior.",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false
+  },
+  "scope": {
+    "readOnly": true,
+    "sourceEdit": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "nextBoundary": {
+    "milestone": "M584",
+    "scope": "Fresh read-only Stage 11 producer-family and clause gap audit using M582, the current active card, roadmap, source/test evidence, receipts, and KB; select one smallest synchronized next boundary without implementation or runtime action.",
+    "prohibited": "No source edit, build, launch, capture, retry, browser-storage inspection, session operation, fixture cleanup, project/runtime mutation, provider/credential use, Foundry/player-password action, Stage 11 acceptance, Stage 12 work, or Ready-to-Play claim."
+  }
+}

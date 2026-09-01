@@ -1,0 +1,92 @@
+{
+  "operation": "stage11-cross-producer-summary-accessibility-disclosure-implementation",
+  "milestone": "M609",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T07:08:43-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "implementation": {
+    "changedBehavior": "The existing cross-producer lifecycle evidence <details> disclosure is now open by default, exposing the typed eleven-family read-only summary and its non-certifying/no-execution explanation in the accessibility tree without a user action.",
+    "preservedBoundaries": [
+      "read-only summary",
+      "non-certifying status",
+      "no execution, approval, persistence, recovery, or authority bridge",
+      "operation handlers unchanged",
+      "no Foundry/provider/session/project/player-password behavior changed"
+    ],
+    "sourceFiles": [
+      {
+        "path": "apps/campaign-helper-desktop/src/App.tsx",
+        "sha256": "CCCE588CB957A64E158A419CE3EEEFAD3B159688CEA6D5B911F1BD39B946A6A8",
+        "change": "cross-producer details changed to open-by-default"
+      },
+      {
+        "path": "tests/project-review-producer-evidence.test.ts",
+        "sha256": "61DC644DD4472AA353A1005C417B9248B576D7A1CD4EA6EBE9AD00F8497DBFB1",
+        "change": "focused source guard requires open disclosure and explanatory boundary"
+      },
+      {
+        "path": "apps/campaign-helper-desktop/src/project-review-producer-evidence.ts",
+        "sha256": "7AEBD79FDAE4BCD59207A85245941D47FE2C7C1C078BE7AB046DE73A7101829C",
+        "change": "unchanged typed eleven-family summary source"
+      }
+    ]
+  },
+  "validation": {
+    "focusedVitest": {
+      "command": "npm test -- tests/project-review-producer-evidence.test.ts tests/project-review-apply-coverage.test.ts tests/project-review-apply-acceptance.test.ts tests/desktop-project-proposal-review.test.ts",
+      "status": "PASS",
+      "files": 4,
+      "tests": 19
+    },
+    "desktopTypeScript": {
+      "command": "npx.cmd tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.json",
+      "status": "PASS"
+    },
+    "diffCheck": {
+      "command": "git diff --check",
+      "status": "PASS"
+    },
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "processes": {
+      "desktop": 0,
+      "cargo": 0,
+      "rustc": 0
+    }
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M609 closes the local disclosure/accessibility implementation gap only. The typed eleven-family summary is now exposed by default in source, but a fresh owning artifact and one separately authorized packaged accessibility observation are still required before any Stage 11 clause can advance."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M610",
+    "title": "Stage 11 fresh cross-producer summary disclosure artifact",
+    "status": "authorized-next",
+    "scope": "Run exactly one fresh desktop debug package build containing the M609 disclosure change, then attest the open disclosure marker, typed eleven-family summary markers, explicit non-certifying/no-execution markers, exact artifact hashes, and process absence. Do not launch, capture, retry, inspect browser storage, operate sessions, mutate project/runtime state, use providers or credentials, promote repository work, execute Technical Builder or Foundry work, use player passwords, accept Stage 11, or begin Stage 12."
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/project-review-producer-evidence.test.ts",
+    "outputs/m609-stage11-cross-producer-summary-accessibility-disclosure-implementation-closure-receipt.json"
+  ]
+}

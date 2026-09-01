@@ -1,0 +1,139 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m381-stage11-producer-family-reconciliation-2026-08-28",
+  "milestone": "M381",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "counts": {
+    "projectWrites": 0,
+    "workspaceWrites": 0,
+    "foundryWrites": 0,
+    "browserStorageWrites": 0,
+    "providerCalls": 0,
+    "credentialCalls": 0,
+    "producerExecutions": 0,
+    "deletionOperations": 0,
+    "cleanupOperations": 0
+  },
+  "auditBasis": {
+    "m380ReceiptSha256": "DD1C449BA34B0E94C3E7A76F50DB2E317259BDA9450C3AA5F148F67DEBB80C1E",
+    "currentSourceHashes": {
+      "app": "FC3BA526D40991F076FA7FCAD6FC2F7868C3C9F6A34F85E3062C39D41756355A",
+      "projectRecoveryProposalAdapter": "5079CCD21B839ECD9C81D2C6382DB0D8B4CC42E4A80620D9082D0195BF0FDA6A",
+      "projectProposalSession": "C54C12CFC27606375225A34E6667EBE6CF310B034D4C9F0FE4CDE4B6426A39E6",
+      "projectStore": "6BFD20CB1AEA42A30918734CB43844048D78D051E8DA4183E9FC509CE4ADEFB5",
+      "desktopProjectProposalReviewTests": "63A12BB0FFE254B1EAE97CBFA23FC3DC20FF1B83BC818288829CE73CD4281998",
+      "projectRecoveryProposalAdapterTests": "2B3558BCFB755889F682CB2BB125963F4B626C35C058A907C6F19E03ADA646E3",
+      "projectProposalSessionTests": "213262666C2D24C035A028B29A882FDF8F04DE77D5663B37404579A99F5977B1",
+      "projectWorkspaceTests": "F933365959966F7F5CEDFFC71FDE76B1DFC93901E3E71B88EE35A74D217AD796"
+    },
+    "workflow": {
+      "status": "PASS",
+      "activeStage": "proposal-approval-history",
+      "passedGates": 10,
+      "totalGates": 16,
+      "score": 63,
+      "violations": []
+    },
+    "knowledgeBase": {
+      "mode": "read-only",
+      "sources": 569,
+      "facts": 596,
+      "decisions": 537,
+      "trials": 550,
+      "activeWork": 105,
+      "milestones": 26
+    }
+  },
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "producerFamilies": [
+    {
+      "family": "read-only inspection and compile",
+      "disposition": "closed read-only adapters; outside mutating acceptance"
+    },
+    {
+      "family": "workspace open and recent-order metadata",
+      "disposition": "operation-specific proposal/executor path; generalized tray remains separate"
+    },
+    {
+      "family": "ordinary project persistence",
+      "disposition": "Create, Save, Rename, and both Save-as UI routes are proposal/executor bounded"
+    },
+    {
+      "family": "in-memory project editing and navigation",
+      "disposition": "bounded editor/persistence separation; broader UI acceptance remains open"
+    },
+    {
+      "family": "asset import and binding",
+      "disposition": "handout, background, WAV audio, and PNG/WebP token UI routes are proposal/executor bounded"
+    },
+    {
+      "family": "legacy migration persistence",
+      "disposition": "typed preview exists, but desktop approval directly invokes persistence outside the shared project proposal session; selected M382"
+    },
+    {
+      "family": "backup-authoritative promotion",
+      "disposition": "M376 requires an exact approved recovery proposal session and authoritative reread"
+    },
+    {
+      "family": "missing asset restore",
+      "disposition": "M377 requires an exact approved recovery proposal session; candidate bytes remain outside generic history"
+    },
+    {
+      "family": "missing asset detach",
+      "disposition": "M378 requires an exact approved recovery proposal session; no cleanup authority"
+    },
+    {
+      "family": "broken Scene-reference detach",
+      "disposition": "M380 now requires an exact approved recovery proposal session, typed exact-one engine, authoritative reread, and commit-after-reread"
+    },
+    {
+      "family": "test-owned fixture setup and stage receipts",
+      "disposition": "harness-only; excluded from product tray and generic Stage 11 acceptance"
+    }
+  ],
+  "remainingGaps": [
+    "exact legacy migration persistence UI session boundary",
+    "generalized producer-family approval-tray acceptance",
+    "every-mutating-path acceptance and all four Stage 11 clauses",
+    "broader recovery/deletion/cleanup UI, which remains separately gated",
+    "packaged recovery UI fixture evidence",
+    "Foundry/active-GM/player behavior",
+    "future Stage 16 UI"
+  ],
+  "selectedNextSlice": {
+    "milestone": "M382",
+    "name": "legacy migration persistence UI proposal/session gate",
+    "scope": "Replace only the direct desktop migration-persistence approval route with a metadata-only target-bound project proposal session, reviewer approval, the existing typed migration persistence engine, authoritative project/recovery/workspace rereads, and commit after matched reread while preserving the exact legacy backup and semantic state.",
+    "excluded": [
+      "backup promotion",
+      "asset restore or detach",
+      "broken-reference detach",
+      "deletion",
+      "cleanup",
+      "generic Stage 11 acceptance",
+      "Foundry",
+      "providers",
+      "credentials",
+      "player passwords",
+      "Stage 16",
+      "later stages"
+    ]
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "all mutating producer paths using one shared session",
+    "broader recovery/deletion/cleanup authority",
+    "packaged recovery UI execution",
+    "Foundry execution or active-GM authority",
+    "Stage 16 UI",
+    "Ready-to-Play"
+  ]
+}

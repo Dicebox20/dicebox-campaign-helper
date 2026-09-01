@@ -1,0 +1,22 @@
+{
+  "operation": "ascendancy.coordinate-overlay",
+  "status": "STATIC_REVIEW",
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "candidateTramRenderer": "assets/maps/ascendancy-tram-depot-routing-yard-v5-neutral.png",
+  "candidateCoreRenderer": null,
+  "noWrite": true,
+  "rooms": [
+    {
+      "roomId": "dbx:room:ascendancy-tram-depot",
+      "renderer": "assets/maps/ascendancy-tram-depot-routing-yard-v5-neutral.png",
+      "rendererPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\assets\\maps\\ascendancy-tram-depot-routing-yard-v5-neutral.png",
+      "rendererSha256": "3ac1063ef341faf4c5f6dd21cdcfc1ebf347ee12a9597146ca9d383704d4b1af",
+      "rendererStatus": "candidate-unbound",
+      "rendererReviewOnly": true,
+      "overlay": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\outputs\\m128-tram-renderer-grid-fit-ascendancy-tram-depot-routing-yard-v5-neutral-png\\ascendancy-tram-depot-overlay.svg",
+      "walls": 11,
+      "doors": 3,
+      "regions": 39
+    }
+  ]
+}

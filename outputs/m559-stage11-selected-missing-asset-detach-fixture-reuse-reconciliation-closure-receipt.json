@@ -1,0 +1,66 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-fixture-reuse-reconciliation",
+  "milestone": "M559",
+  "status": "PASS_LOCAL_READ_ONLY_REUSE_BOUNDARY_SELECTED",
+  "capturedAt": "2026-08-29T23:55:56-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "reconciliation": {
+    "projectId": "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+    "projectPath": "C:\\Users\\rujie\\AppData\\Local\\com.dicebox.campaign-helper\\projects\\desktop-asset-detach-ui-lifecycle-self-test-v1\\project.json",
+    "projectSha256": "C120CFB3F679565E36833AB32D60055C74C583F2676C8A28E765AE3CF413BCAE",
+    "generation": 1,
+    "sceneCount": 2,
+    "registeredAssetCount": 2,
+    "backup": "absent",
+    "selectedMissingPng": {
+      "assetId": "dbx:asset:sha256-a72382d260ebdf7948e618a3908a8e569f5cf9bbd3f1d804ee456a9fa1222568",
+      "blobPresent": false,
+      "bindingPresent": true
+    },
+    "preservedPresentWebp": {
+      "assetId": "dbx:asset:sha256-c9778b200966a689a6fa2dfd5e4c6faabcb3b266b00d2fd74e89d60435b6f78c",
+      "blobSha256": "C9778B200966A689A6FA2DFD5E4C6FAABCB3B266B00D2FD74E89D60435B6F78C",
+      "bindingPresent": true,
+      "identityMatchesCorrectedUi": true
+    },
+    "targetProjectPendingFiles": [],
+    "workspacePending": {
+      "relativePath": "workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending",
+      "sha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+      "targetOwned": false,
+      "preserved": true
+    },
+    "strictRefuseOverwrite": true,
+    "reuseDecision": "A strict read-only reuse branch is required; the current preparer still refuses any existing project directory before rereading it.",
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureMutation": false,
+    "projectRuntimeMutation": false,
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_PARTIAL",
+    "selectedNextBoundary": "One code-only strict exact reuse branch for this fixed test-owned project, with drift/foreign/reparse/unknown state blocked and no writes; then focused tests before a fresh artifact or packaged observation.",
+    "stage12Started": false,
+    "readyToPlay": false
+  },
+  "nextBoundary": {
+    "milestone": "M560",
+    "scope": "Code-only strict exact reuse for the existing selected-detach fixture: reread and validate the exact project/assets/scene topology and target-owned pending state, return the normal fixture receipt without writes, and add focused native/static regression coverage. Preserve the partial fixture and unrelated workspace pending state; no build, launch, capture, retry, browser-storage inspection, session operation, cleanup, or Stage 11 acceptance.",
+    "prohibited": [
+      "build",
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation or replacement",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "notes": "M559 is read-only. The corrected partial fixture is exact for reuse except that the current preparer refuses existing directories; this is a separate code-only boundary. No packaged lifecycle success or Ready-to-Play claim is made."
+}

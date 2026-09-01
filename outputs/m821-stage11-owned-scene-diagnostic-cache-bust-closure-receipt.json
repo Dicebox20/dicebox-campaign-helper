@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M821",
+  "operation": "foundry.module.canonical-entry.cache-bust",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "entry": {
+    "path": "packages/dicebox-foundry/src/entry-20260823-program-scene-v2.js",
+    "moduleUrl": "./module.js?dbx=0.1.18",
+    "sha256": "12444661DB4CCE5D53B6F7A7CBB50B66ACFEB1D08784FFC8ED2BD7985D2E1B06"
+  },
+  "test": {
+    "path": "tests/foundry-package.test.ts",
+    "sha256": "CCA1D8B0364A6C57BD7ECC97F095A314CF7DD9F965738481A778E96C6AA37BF9",
+    "command": "npx vitest run tests/foundry-package.test.ts",
+    "result": "1 file / 13 tests passed"
+  },
+  "validation": ["npm run build:packages", "git diff --check"],
+  "notPerformed": ["package staging", "Foundry launch", "browser use", "document mutation", "provider or credential use", "player-password change"],
+  "authority": {"runtime": "not-observed", "execution": "not-granted", "stage11": "blocked", "stage12": "locked"},
+  "readyClaim": false,
+  "nextAction": "Perform a fresh read-only Stage 11 reconciliation before selecting one bounded remaining gap."
+}

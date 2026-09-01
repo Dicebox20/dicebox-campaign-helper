@@ -1,0 +1,53 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m19-stdio-receipt-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 53, "tests": 234, "status": "PASS" },
+    "stdioReceipt": {
+      "status": "PASS",
+      "collector": "bridge:stdio:receipt",
+      "compositor": "createStdioTransportReceipt",
+      "schema": "StdioTransportReceiptSchema",
+      "targetFingerprintBound": true,
+      "foundryApiBoundaryNamed": true,
+      "foundryApiEvidence": "not-exercised",
+      "boundedCountsOnly": true,
+      "operationNamesOnly": true,
+      "noRawData": true,
+      "noWrite": true,
+      "readOnly": true,
+      "mutationEnabled": false,
+      "networkEnabled": false,
+      "unknownOutcomeBlocked": true,
+      "collisionSafeOptionalOutput": true
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 75,
+      "facts": 90,
+      "decisions": 65,
+      "openItems": 21,
+      "activeWork": 19,
+      "trials": 64,
+      "researchSubjects": 40,
+      "milestones": 20
+    }
+  },
+  "notProven": [
+    "Live Foundry Hooks.once(ready) lifecycle or game.version/game.system observation",
+    "Live game.users.activeGM, User permission, socket, or authority behavior",
+    "Native Document/embedded-document operation and authoritative reread",
+    "MCP negotiation, loopback transport, exact target receipt, or Ready-to-Play certification"
+  ],
+  "nextGate": "Replace the local-safe-mode profile with a reviewed exact Foundry adapter only after the disposable Foundry 14.367 / D&D5e 5.3.3 fixture, active-GM route, redaction, approval, and recovery gates are available.",
+  "officialReferences": [
+    "https://foundryvtt.com/api/functions/hookEvents.ready.html",
+    "https://foundryvtt.com/api/classes/foundry.abstract.Document.html",
+    "https://foundryvtt.com/api/v14/modules/foundry.documents.html"
+  ]
+}

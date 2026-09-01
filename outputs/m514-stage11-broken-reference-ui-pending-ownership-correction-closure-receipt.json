@@ -1,0 +1,59 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m514-stage11-broken-reference-ui-pending-ownership-correction-closure-2026-08-29",
+  "milestone": "M514",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "readyClaim": false,
+  "scope": "Pure target-project pending-artifact ownership helper and broken-reference UI entry/terminal guard correction",
+  "knowledgeBase": {
+    "queryMode": "read-only",
+    "relevantFacts": ["F-723", "F-722", "F-720"],
+    "relevantTrials": ["T-666", "T-665", "T-663"],
+    "relevantDecisions": ["D-664", "D-663", "D-660"]
+  },
+  "implementation": {
+    "appSource": "apps/campaign-helper-desktop/src/App.tsx",
+    "projectStoreSource": "apps/campaign-helper-desktop/src/project-store.ts",
+    "staticTest": "tests/broken-reference-ui-selftest.test.ts",
+    "ownershipTest": "tests/pending-artifact-ownership.test.ts",
+    "sha256": {
+      "appSource": "2687907817FFE76BFDCBF5311D0903E10A31D53D36189C0CCCA87994BA68F0BF",
+      "projectStoreSource": "EC9F8AECE8BB67B031AF6FA25A1BDC1F6FF762D749967932A68C38740ABDD4F2",
+      "staticTest": "B6FAFF0CF318CABCF52B6ADD837C431F2B0083180F110D837E6F8F69186C5498",
+      "ownershipTest": "486E5D75525D87C926AAB8A630E7C4059293FACB778DE6B09087BF2B78DD9C0E"
+    },
+    "changes": [
+      "Added hasTargetProjectPendingArtifact with stable project-ID validation and exact projects/<target-slug>/ relative-path ownership.",
+      "Applied the helper to both broken-reference UI entry and terminal reread guards.",
+      "Preserved the complete pendingArtifacts inspection array and unrelated workspace/project evidence for diagnostics.",
+      "Added pure tests for target-owned, unrelated-project, workspace-index, near-prefix, malformed-ID, and empty pending state; updated route static assertions."
+    ]
+  },
+  "validation": {
+    "vitestFocusedTests": "PASS: 4 files / 20 tests",
+    "typescript": "PASS: npx tsc --noEmit --project apps/campaign-helper-desktop/tsconfig.json",
+    "diffCheck": "PASS: git diff --check",
+    "hiddenReview": {
+      "worker": "Kant",
+      "model": "gpt-5.6-luna",
+      "reasoning": "high",
+      "status": "PASS",
+      "finding": "Exact ownership, both guards, near-prefix rejection, unrelated-state preservation, and no native/schema change verified."
+    },
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "fixtureMutation": false,
+    "sessionMutation": false,
+    "recoveryOrApply": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false
+  },
+  "nextBoundary": {
+    "milestone": "M515",
+    "scope": "One explicit-mode debug package build with exact artifact/process reread after the M514 App correction.",
+    "prohibited": ["launch", "capture", "second build", "retry", "fixture reset", "deletion", "cleanup", "session transition", "approval", "apply", "recovery", "native transport/schema change", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

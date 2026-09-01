@@ -1,0 +1,28 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M803",
+  "operation": "stage11.foundry-inverse-evidence.validate",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "source": "outputs/m802-stage11-owned-foundry-scene-inverse-execution-closure-receipt.json",
+  "sourceReceiptSha256": "32292A5E9D2ADB28417D4FC051C576D15770D0B29D8BD8010F6FEF2EF7A1C68D",
+  "classifiedObservation": {
+    "milestone": "M802",
+    "producer": "foundry.program-scene.inverse",
+    "lifecycle": "preview-confirm-apply-authoritative-reread"
+  },
+  "observedLifecycleCount": 1,
+  "producerScopedOnly": true,
+  "foundryMutationObserved": true,
+  "foreignStatePreserved": true,
+  "authoritativeReread": true,
+  "noRetry": true,
+  "aggregateAuthorityGranted": false,
+  "stage11AcceptanceStatus": "blocked",
+  "stage12Started": false,
+  "readyClaim": false,
+  "focusedTests": "1 file / 2 tests",
+  "packageTypeCheck": "PASS",
+  "diffCheck": "PASS",
+  "nextAction": "Fresh read-only Stage 11 reconciliation before selecting one bounded remaining gap."
+}

@@ -1,0 +1,43 @@
+{
+  "operation": "ascendancy.fixture.apply-full-owned-reset",
+  "status": "PARTIAL_KNOWN_OUTCOME",
+  "evidenceClass": "fixture-only",
+  "readyClaim": false,
+  "worldMutationPerformed": true,
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "activeGm": true
+  },
+  "trigger": "A reviewed preview followed by one approved fixture-reset confirmation. The apply dialog receipt was not available to the harness after the click.",
+  "authoritativePostOperationAudit": true,
+  "sceneReadback": [
+    {
+      "roomId": "dbx:room:signal-frequency-chamber",
+      "statePresent": true,
+      "stateSceneUuidMatchesScene": true,
+      "puzzleCount": 6,
+      "pairCount": 3,
+      "unknownStateKeys": []
+    },
+    {
+      "roomId": "dbx:room:ascendancy-tram-depot",
+      "statePresent": false,
+      "unknownStateKeys": []
+    },
+    {
+      "roomId": "dbx:room:rune-mechanism-chamber",
+      "statePresent": false,
+      "unknownStateKeys": []
+    },
+    {
+      "roomId": "dbx:room:central-core-control-chamber",
+      "statePresent": false,
+      "unknownStateKeys": []
+    }
+  ],
+  "recoveryPolicy": "Do not retry. Preserve the live Ballad world untouched; investigate fixture-harness partial-write cause and use only its reviewed recovery path after a new preview and authoritative reread.",
+  "redaction": "Runtime UUIDs, plan token, and full scene flags are intentionally omitted."
+}

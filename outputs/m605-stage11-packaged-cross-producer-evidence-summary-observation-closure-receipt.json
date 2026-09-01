@@ -1,0 +1,93 @@
+{
+  "operation": "stage11-packaged-cross-producer-evidence-summary-observation",
+  "milestone": "M605",
+  "status": "BLOCKED_PACKAGED_ACCESSIBILITY_TARGET_SELECTION",
+  "capturedAt": "2026-08-30T06:52:24-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "packaged",
+  "artifacts": {
+    "nativeExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "matchesM604": true,
+      "sha256": "6B31EB3465CAFAB908368DD8EB4671D784784D90A3B54BBD0A5EE285B79C4A72",
+      "bytes": 26883072
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-jxIhuPMh.js",
+      "matchesM604": true,
+      "sha256": "39F1883C3F820D45B16301276C61C2B43717F0F0C1D96EC073C615DEF76F6EF7",
+      "bytes": 2060897
+    }
+  },
+  "observation": {
+    "launch": "one bounded explicit launch of the exact M604 executable",
+    "returnedAppId": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+    "returnedWindows": [
+      {
+        "windowId": 9963824,
+        "title": "DiceBox Campaign Helper"
+      },
+      {
+        "windowId": 14747652,
+        "title": "C:\\Users\\rujie\\Documents\\codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe"
+      }
+    ],
+    "targetSelection": "BLOCKED",
+    "blocker": "The Computer Use selection guard compared the returned process-prefixed app identifier to the explicit executable path and did not select the returned app. The preserved list_apps result contained one exact DiceBox Campaign Helper title and a second executable-title window, but no get_window, activation, accessibility capture, screenshot, or UI action was performed after the guard failed.",
+    "visibleSummaryEstablished": false,
+    "producerFamilyCountEstablished": false,
+    "nonCertifyingBoundaryEstablished": false,
+    "noExecutionAuthorityEstablished": false,
+    "noWriteProjectStateEstablished": false,
+    "noFoundryWritePerformed": true
+  },
+  "processReread": {
+    "launchedExecutableProcessId": 6888,
+    "desktopProcessCountAfterCleanup": 0,
+    "cargoProcessCountAfterCleanup": 0,
+    "rustcProcessCountAfterCleanup": 0,
+    "cleanup": "The exact executable path was resolved through Win32_Process and the launched PID was stopped; reread found no matching desktop, Cargo, or Rustc process."
+  },
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": false,
+    "artifactSetChanged": false,
+    "launch": true,
+    "accessibilityCapture": false,
+    "screenshotCapture": false,
+    "uiHelperRetry": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M605 preserves a packaged target-selection blocker before accessibility observation. It does not establish the eleven-family summary or any authority/no-write UI evidence; no retry is authorized until the blocker is reconciled."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M606",
+    "title": "Stage 11 M605 packaged target-selection blocker reconciliation",
+    "status": "authorized-next",
+    "scope": "Perform read-only KB and artifact/active-card reconciliation of the preserved M605 target-selection blocker, identify the smallest locally validated recovery if permitted, and keep Stage 11 active. Do not retry M605 or begin Stage 12 until explicitly reauthorized by the reconciled card."
+  },
+  "changedPaths": [
+    "outputs/m605-stage11-packaged-cross-producer-evidence-summary-observation-closure-receipt.json"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m497-stage11-asset-detach-lifecycle-reconciliation-2026-08-29",
+  "milestone": "M497",
+  "evidenceLabel": "local",
+  "status": "PASS_READ_ONLY",
+  "readyClaim": false,
+  "scope": "Selected missing-background asset-detach source, fixture, adapter/session/review path, tests, and existing evidence reconciliation only",
+  "producer": {
+    "preview": "previewMissingAssetDetach(projectId, assetId)",
+    "proposal": "createProjectRecoveryProposalBatch → previewProposalBatch → createDesktopProjectProposalSession → persisted session",
+    "apply": "approved exact project.asset.detach command → applying session → detachMissingAsset(preview) → inspectProjectRecovery → committed session",
+    "exactTargetGuards": ["selected eligible missing background", "matching project ID", "matching approved command kind", "next generation and content hash", "asset ID", "no Foundry write"],
+    "preservation": ["asset tree unchanged", "workspace unchanged", "foreign state unchanged", "prior envelope backup", "no retry on failed reread"]
+  },
+  "evidence": {
+    "existingPackagedReceipt": "outputs/m226-missing-background-detach-recovery-receipt.json",
+    "existingSessionGateReceipt": "outputs/m378-stage11-asset-detach-ui-session-gate-receipt.json",
+    "currentStaticCoverage": ["tests/desktop-project-proposal-review.test.ts", "tests/project-review-apply-acceptance.test.ts"],
+    "gap": "The M226 packaged self-test invokes the typed preview and detach engine directly; it predates and does not exercise the M378 visible proposal-session, reviewer-approval, applying, and commit path. Static coverage verifies the session route but is not direct packaged lifecycle evidence."
+  },
+  "disposition": {
+    "stage11": "partial",
+    "nextBoundary": "M498 code-only: add one distinct test-owned, debug-gated selected-asset-detach UI lifecycle route through the existing session/reviewer/apply/reread path and focused static coverage. No runtime execution in M498.",
+    "excluded": ["build", "launch", "capture", "fixture or project mutation", "reset", "deletion", "cleanup", "provider", "credential", "player password", "Foundry", "Stage 11 acceptance", "Ready-to-Play"]
+  }
+}

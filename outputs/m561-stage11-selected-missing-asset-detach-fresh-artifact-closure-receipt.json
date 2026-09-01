@@ -1,0 +1,84 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-fresh-artifact",
+  "milestone": "M561",
+  "status": "PASS_LOCAL_ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-30T00:09:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "build": {
+    "command": "VITE_DBX_PROJECT_SELF_TEST=asset-detach-ui-execute VITE_DBX_PROJECT_SELF_TEST_EXIT=1 npm run desktop:tauri:build",
+    "attempts": 1,
+    "exitCode": 0,
+    "frontendCompilation": "PASS",
+    "rustCompilation": "PASS"
+  },
+  "artifacts": {
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "732BB18EFDC76DB8B5E8A2B96BC6447FBD82BD5AD93A32BD841902A0B08400E8",
+    "frontendBundle": "apps/campaign-helper-desktop/dist/assets/index-Ct8vGdTP.js",
+    "frontendBundleSha256": "1EDBBA31F2DBD8201A84E7B1BA10066A2B035665E3BD96A40E311E830466AC90"
+  },
+  "markers": {
+    "frontend": [
+      "asset-detach-ui-execute",
+      "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+      "dbx:asset:sha256-a72382d260ebdf7948e618a3908a8e569f5cf9bbd3f1d804ee456a9fa1222568",
+      "dbx:asset:sha256-c9778b200966a689a6fa2dfd5e4c6faabcb3b266b00d2fd74e89d60435b6f78c",
+      "prepare_asset_detach_ui_lifecycle_fixture",
+      "prepareAssetDetachUiLifecycleFixture",
+      "project.asset.detach",
+      "authoritative-reread",
+      "noFoundryWrite",
+      "targetRemainsAbsent",
+      "assetTreeUnchanged"
+    ],
+    "executable": [
+      "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+      "prepare_asset_detach_ui_lifecycle_fixture",
+      "project.asset.detach",
+      "noFoundryWrite",
+      "targetRemainsAbsent",
+      "assetTreeUnchanged",
+      "desktop-asset-detach-ui-lifecycle-self-test-v1",
+      "workspace-index-pending"
+    ],
+    "result": "PASS: all required artifact markers present in their owning artifact"
+  },
+  "processReread": "PASS: no desktop/Cargo/Rustc process remained",
+  "preservation": {
+    "partialFixture": "preserved; no reset, deletion, cleanup, or repair",
+    "v1v2v3v4": "preserved",
+    "browserStorageInspected": false,
+    "launch": false,
+    "capture": false,
+    "sessionOperation": false,
+    "fixtureMutation": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-store.ts": "BD762628F6A4FB5B21250D1FC289EADC45D9EE8463B34333E46DCF75C0745E19",
+    "apps/campaign-helper-desktop/src/App.tsx": "71FEF29B49EF3A81DF19B7A27E0648BB8FDD48E26615CDA0A67FF5F7D87F5F66",
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs": "6D684D0AEB8DFAA792C4FAAD7BDD3CE402EA502C61135DC41718EAEC1BCC40B7",
+    "tests/asset-detach-ui-selftest.test.ts": "AD5916093C618A7E9ADC9CA7C73602669756BFC33D5F29683DE68345A558431C"
+  },
+  "nextBoundary": {
+    "milestone": "M562",
+    "scope": "One timeout-aware packaged observation against this exact M561 executable, allowing only selected-detach fixture reuse, typed proposal/session lifecycle, authoritative reread, preservation checks, and process reread. Preserve any partial or timeout result without retry.",
+    "prohibited": [
+      "second capture",
+      "separate launch",
+      "retry",
+      "browser-storage inspection",
+      "session operation or replacement",
+      "fixture reset/deletion/cleanup",
+      "unrelated mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M561 attests the current corrected artifact only. The popup/close remains expected exit-mode behavior; no packaged lifecycle, session, or Stage 11 acceptance is claimed."
+}

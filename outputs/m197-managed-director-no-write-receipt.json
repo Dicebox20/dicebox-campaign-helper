@@ -1,0 +1,41 @@
+{
+  "operation": "dicebox.campaign-director.app-server.live",
+  "status": "PASS",
+  "provider": "chatgpt-subscription",
+  "account": {
+    "authMode": "chatgpt",
+    "planType": "plus",
+    "emailPresent": true,
+    "secretsReturned": false
+  },
+  "initialized": true,
+  "threadId": "01a034fa-b1e7-79f1-929b-f1d8bbf30dde",
+  "turnId": "01a034fa-b2cb-7a51-9dc1-a0559cc08839",
+  "completionObserved": true,
+  "completionStatus": "completed",
+  "response": {
+    "id": "managed-01a034fa-b1e7-79f1-929b-f1d8bbf30dde",
+    "status": "completed",
+    "output": [
+      {
+        "type": "function_call",
+        "call_id": "managed-01a034fa-b1e7-79f1-929b-f1d8bbf30dde-call",
+        "name": "propose_scene_command",
+        "arguments": "{\"commandId\":\"managed-director-m197\",\"baseRevision\":4,\"entityId\":\"dbx:apparatus:core\",\"deltaX\":8,\"deltaY\":0,\"reason\":\"Proposed position delta only; not executed or committed.\"}"
+      }
+    ]
+  },
+  "noWrite": true,
+  "approvalRequired": true,
+  "implicitExecution": false,
+  "runtimeAuthority": false,
+  "secretsReturned": false,
+  "approvals": [],
+  "stderr": [
+    "{\"timestamp\":\"2026-08-24T18:13:59.997815Z\",\"level\":\"WARN\",\"fields\":{\"message\":\"ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\"},\"target\":\"codex_skills::interface\"}\n",
+    "{\"timestamp\":\"2026-08-24T18:13:59.997934Z\",\"level\":\"WARN\",\"fields\":{\"message\":\"ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\"},\"target\":\"codex_skills::interface\"}\n",
+    "{\"timestamp\":\"2026-08-24T18:14:00.018483Z\",\"level\":\"WARN\",\"fields\":{\"message\":\"Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\"},\"target\":\"codex_core::shell_snapshot\"}\n",
+    "{\"timestamp\":\"2026-08-24T18:14:00.337257Z\",\"level\":\"WARN\",\"fields\":{\"message\":\"ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/\"},\"target\":\"codex_skills::interface\"}\n",
+    "{\"timestamp\":\"2026-08-24T18:14:00.337314Z\",\"level\":\"WARN\",\"fields\":{\"message\":\"ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/\"},\"target\":\"codex_skills::interface\"}\n"
+  ]
+}

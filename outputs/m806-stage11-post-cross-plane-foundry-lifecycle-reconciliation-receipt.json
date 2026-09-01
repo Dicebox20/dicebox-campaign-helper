@@ -1,0 +1,57 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M806",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile the M805 cross-plane/aggregate Foundry binding with the independent cross-producer lifecycle report and select one bounded slice.",
+  "sourceState": "M805 is closed as code-only evidence composition. M806 changes no source, runtime, project, Foundry, provider, credential, browser/session, foreign, or player-role password state.",
+  "reconciliation": {
+    "clauses": {
+      "claimAndProvenance": "PARTIAL",
+      "reviewAndAuthority": "PARTIAL",
+      "applyAndReceipts": "PARTIAL",
+      "lifecycleAndRecovery": "PARTIAL"
+    },
+    "producerFamilyCount": 11,
+    "modeledLifecycle": {
+      "operationCount": 14,
+      "modeledOnly": true,
+      "terminalHistoryIndexCount": 14,
+      "reviewTerminalEvidenceCount": 42,
+      "applyingUnknownEvidenceCount": 42,
+      "recoveryResultEvidenceCount": 56,
+      "undoRedoEvidenceCount": 28,
+      "directFoundryAttachmentPresent": false
+    },
+    "m803": {
+      "producer": "foundry.program-scene.inverse",
+      "lifecycle": "preview-confirm-apply-authoritative-reread",
+      "observedLifecycleCount": 1,
+      "foreignStatePreserved": true,
+      "crossPlaneBindingPresent": true,
+      "lifecycleReportAttachmentPresent": false
+    },
+    "aggregate": {
+      "currentAuthorityStatus": "partial",
+      "authority": "not-granted",
+      "stage11AcceptanceStatus": "blocked",
+      "stage12Started": false,
+      "readyClaim": false
+    },
+    "contradictionReview": "PASS; direct M803 evidence remains producer-scoped fixture evidence and is not modeled lifecycle coverage or authority."
+  },
+  "validation": {
+    "workflow": "PASS: 10/16, proposal-approval-history solely active, readyClaim false, no violations",
+    "knowledgeBase": "PASS: M805 closure and current card/KB were reread",
+    "liveRuntime": "NOT RUN"
+  },
+  "selectedNext": "M807 strict code-only typed attachment of the direct M803 Foundry observation to the modeled lifecycle report.",
+  "preservation": {
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false,
+    "runtimeMutation": false,
+    "projectOrFoundryWrite": false,
+    "accountOrPasswordAction": false
+  }
+}

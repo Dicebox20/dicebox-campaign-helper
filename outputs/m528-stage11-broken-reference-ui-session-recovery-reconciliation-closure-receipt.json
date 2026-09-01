@@ -1,0 +1,91 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m528-stage11-broken-reference-ui-session-recovery-reconciliation-2026-08-29",
+  "milestone": "M528",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "readyClaim": false,
+  "scope": "Read-only reconciliation of the valid previewed persisted project proposal session exposed by M527",
+  "kbConsultation": {
+    "facts": ["F-737"],
+    "decisions": ["D-678"],
+    "trials": ["T-680"],
+    "databaseRebuild": "PASS: integrity ok",
+    "databaseVerification": "PASS: integrity ok"
+  },
+  "sourceReread": {
+    "appFile": "apps/campaign-helper-desktop/src/App.tsx",
+    "appSha256": "694AFCBE82A607D694459859287E95A27B58DA6D14C367E8D71293C97E6FCBC2",
+    "selfTestSessionSuppressionLines": [1143, 1148],
+    "selfTestSessionSuppression": "Any project self-test mode leaves the React projectProposalSession unloaded until explicit review, so projectProposalSession === null is expected during this route.",
+    "inMemoryGuardLines": [4239, 4240],
+    "persistedLoadLine": 4246,
+    "redactedPreflightLines": [4248, 4262, 4265],
+    "redactedPreflight": "M527 reports PASS:previewed from the typed exact-key loader and the route blocks before lifecycle without exposing raw session data or clearing it.",
+    "sessionModule": "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "sessionModuleSha256": "0302A1CEE87FD275EBADF8B8DEAE30620CDEEF3B98017256D644C24CDCF2EC1C",
+    "acceptedProducerLine": 94,
+    "acceptedCommandLine": 109,
+    "terminalClearLines": [249, 257],
+    "terminalClearContract": "A valid session may be cleared only after its history status is terminal; previewed is nonterminal and cannot be silently cleared."
+  },
+  "m527Evidence": {
+    "receipt": "outputs/m527-stage11-broken-reference-ui-observation-receipt.json",
+    "blockerReceipt": "outputs/m527-stage11-broken-reference-ui-observation-blocker-receipt.json",
+    "blockerReceiptSha256": "430BBAE76609700A97DEAF44CFDC02B4E5111C79FA18D256BEAFFF2FB59AEEA8",
+    "sessionPreflight": "PASS:previewed",
+    "meaning": "The exact project key contains a valid proposal session whose history currently ends at previewed; this does not establish self-test origin, exact command, exact fixture binding, or safe recovery."
+  },
+  "ownershipReconciliation": {
+    "exactProjectKeyValidated": true,
+    "validSession": true,
+    "nonterminal": true,
+    "selfTestCreatedIt": false,
+    "brokenReferenceCommandProven": false,
+    "exactFixtureBindingProven": false,
+    "safeToCancel": false,
+    "safeToClear": false,
+    "safeToReplace": false,
+    "safeToApproveOrApply": false,
+    "m520OutcomeUnknownCausalOrigin": true,
+    "conclusion": "PASS:previewed is sufficient to identify valid nonterminal state, but not sufficient to authorize mutation or claim exact test ownership."
+  },
+  "authoritativeStateReread": {
+    "targetProjectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "targetGeneration": 1,
+    "targetContentSha256": "b1d49b4925e707e44681a35c0394fc6cd9ee49096689bbab28cfb00b09f1f986",
+    "sceneCount": 2,
+    "registeredHandoutBlobSha256": "3AE001FC27B1A7E8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "backupPresent": false,
+    "workspaceSha256": "F6A79A51B6A1790D4278F19286B859ABD22D83578634B5F8889C7F8AFBC4BC5B",
+    "workspacePendingSha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+    "workspacePendingTargetOwned": false,
+    "assetBlobSha256": "3AE001FC27B1A7E8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "processes": {"desktop": 0, "cargo": 0, "rustc": 0},
+    "persistentProjectMutationObserved": false
+  },
+  "workerReview": {
+    "agent": "Mill",
+    "modelRoute": "Sol Medium",
+    "status": "PASS",
+    "filesEdited": false,
+    "conclusionsMatchLocalReread": true,
+    "recommendation": "Add one pure code-only ownership classifier that emits only redacted categorical/boolean results; do not expose storage key, IDs, actors, timestamps, hashes, payload, validation reason, or raw session."
+  },
+  "validation": {
+    "ownershipProven": false,
+    "readOnly": true,
+    "browserStorageInspection": false,
+    "sessionMutation": false,
+    "projectMutation": false,
+    "recoveryOrApply": false,
+    "captureRetry": false,
+    "build": false,
+    "launch": false,
+    "fixtureMutation": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false,
+    "nextBoundary": "M529 code-only redacted ownership classifier comparing the validated session to the deterministic broken-reference fixture; emit TEST_OWNED_EXACT or OWNERSHIP_UNPROVEN and no mutation"
+  },
+  "doesNotProve": ["self-test session ownership", "exact broken-reference command binding", "exact fixture/base binding", "safe cancellation or clearance", "typed approval/apply", "authoritative reread commit", "packaged UI lifecycle completion", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

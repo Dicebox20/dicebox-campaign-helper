@@ -1,0 +1,56 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m294-stage10-campaign-director-conversation-core-2026-08-27",
+  "stageId": "campaign-director-chat",
+  "milestone": "M294",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "stageAccepted": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "conversationFileWrites": 0,
+  "foundryWrites": 0,
+  "implemented": [
+    "versioned serializable conversation, message, turn, citation, and context-budget schemas",
+    "deterministic explain, inspect, plan-preview, and execute-recover intent classification",
+    "single-active-stream delta accumulation with cancel, blocked, offline, and retry transitions",
+    "history-preserving retry chains with strict attempt increments",
+    "source-tagged cited answer receipts and approval-required no-write proposal receipts",
+    "stable DiceBox ID, revision, role, status, error, retry-chain, citation, and budget validation",
+    "serialization round-trip, stale-transition blocking, tamper blocking, and secret redaction",
+    "shared provider limits and redaction helpers without a circular module dependency"
+  ],
+  "validation": {
+    "focused": {
+      "status": "PASS",
+      "testFiles": 3,
+      "tests": 86
+    },
+    "full": {
+      "status": "PASS",
+      "workflow": "PASS at 9/16 with campaign-director-chat solely active",
+      "build": "PASS",
+      "testFiles": 104,
+      "tests": 565,
+      "tooling": "PASS"
+    }
+  },
+  "sourceHashes": {
+    "packages/dicebox-director/src/shared.ts": "CA2132311EBF4EC4FC6C69C3CC79402F289DFA9F47662ACA2FE3CCE4AC993068",
+    "packages/dicebox-director/src/conversation.ts": "6A21DA78A3AB49B90129F40FDD172D05C9BBEFA08A198D51CCF7265AD3C7A4FA",
+    "packages/dicebox-director/src/index.ts": "DFF4903042BDBA2FCF2176797B1F4CA5DF0283982094E4B9881E72CBDD61601C",
+    "tests/campaign-director-conversation.test.ts": "7D9D8F3B22126C5D9677FE1ECB9C9D11A818C1F5A6A333DBEB6B7EE19290422D",
+    "tests/campaign-director.test.ts": "0982B4BA4219267897894F12C3108F4100D6E53BFC25DE6A77E9476E4E464B3F",
+    "tests/knowledge-base-query.test.ts": "8F43FE02EBBAD70FD0A632099C9694DB0147CA379303076A8F0FFC34693F7634",
+    "tests/active-slice-workflow.test.ts": "6D3E113BF90537DC751A25008BD5AF01696582D570108802312131529D8D261E"
+  },
+  "doesNotProve": [
+    "desktop conversation integration or durable project-local persistence",
+    "live managed or API-key provider streaming, cancellation, or retry",
+    "a user-facing cited project answer and proposal in one conversation",
+    "proposal approval or execution",
+    "Stage 10 acceptance",
+    "Foundry behavior or Ready-to-Play"
+  ]
+}

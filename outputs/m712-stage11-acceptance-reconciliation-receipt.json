@@ -1,0 +1,73 @@
+{
+  "milestone": "M712",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile Stage 11 after M711 one-operation fixture lifecycle evidence against all four clauses and eleven producer families.",
+  "sourceState": "Unborn project worktree with no HEAD; M712 is read-only and changes no implementation or runtime state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Independent read-only Stage 11 acceptance reconciliation.",
+    "workerOutcome": "Worker result was pending during local record preparation; Foreman completed the authoritative local reread and will review the worker receipt before any promotion.",
+    "foremanReview": "M711 proves one injected inverse lifecycle only. Existing local-project producer evidence remains operation-specific or aggregate-partial, and packaged/runtime authority is not complete."
+  },
+  "clauses": {
+    "claimProvenance": "PASS bounded M700-M711 inverse witness and fixture receipt continuity; PARTIAL at aggregate Stage 11 scope.",
+    "reviewAndAuthority": "PARTIAL: the inverse fixture rereads the active GM and exact claim, but direct current authority and exact-target approval evidence is not complete for every producer family.",
+    "applyAndReceipts": "PARTIAL: one injected inverse operation now persists and rereads a terminal receipt; the eleven-producer aggregate does not.",
+    "lifecycleAndRecovery": "PARTIAL: known/unknown inverse outcomes are bounded, but unified stale, recovery, undo, redo, and cross-producer lifecycle evidence is absent.",
+    "packagedAndRuntimeAuthority": "PARTIAL: bounded package evidence exists elsewhere, but complete packaged/runtime authority and lifecycle observation remains absent."
+  },
+  "producerFamilies": [
+    { "family": "read-only inspection/compile", "status": "closed-read-only; non-mutating" },
+    { "family": "workspace open/recent metadata", "status": "operation-specific partial" },
+    { "family": "ordinary project persistence", "status": "bounded slices closed; aggregate partial" },
+    { "family": "in-memory project editing/navigation", "status": "bounded slices closed; aggregate partial" },
+    { "family": "asset import/binding", "status": "role-specific aggregate partial" },
+    { "family": "legacy migration persistence", "status": "operation-specific partial" },
+    { "family": "backup-authoritative promotion", "status": "bounded packaged; aggregate partial" },
+    { "family": "missing-asset restore", "status": "current packaged pass; aggregate partial" },
+    { "family": "missing-asset detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "broken Scene-reference detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "test-owned fixture setup and stage receipts", "status": "test infrastructure only; non-certifying" }
+  ],
+  "evidence": {
+    "knowledgeBaseBeforeRecording": "Rebuilt and verified at 1132 sources / 972 facts / 839 decisions / 787 trials / 40 research subjects / 26 milestones.",
+    "workflow": "Active-slice checker passed with Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, and no violations.",
+    "m711Delta": "M711 adds one fixture-bound active-GM/claim/adapter/readback/terminal-receipt lifecycle and explicit unknown/missing persistence behavior; it does not add live authority.",
+    "directRemainingGaps": [
+      "The generic proposal-history layer still exposes review/approval coverage without aggregate terminal lifecycle evidence.",
+      "Operation-specific local-project handlers are not unified by a committed/unknown/recovered/undone/redone history receipt envelope.",
+      "All eleven producer families do not yet have direct current-authority, apply-reread, and terminal-receipt evidence.",
+      "Packaged/runtime authority and live active-GM/Foundry certification remain incomplete."
+    ]
+  },
+  "safety": {
+    "claimStoreInvocation": false,
+    "claimStoreWrite": false,
+    "receiptStoreInvocation": false,
+    "dependencyInvocation": false,
+    "adapterDispatch": "not-authorized-by-this-contract",
+    "executorContinuation": false,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "foreignStatePreserved": true,
+    "liveCertification": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; readyClaim:false",
+    "stage12": "NOT STARTED",
+    "decision": "Stage 11 cannot be accepted and Stage 12 cannot begin from this evidence."
+  },
+  "selectedNext": "M713 code-only local-project terminal-history bridge for one existing operation-specific persistence handler: consume its exact approved target/result/reread into a typed terminal lifecycle receipt without creating generic executor authority; preserve unknown/recovery blockers and live/runtime exclusions.",
+  "excluded": [
+    "live Foundry calls",
+    "live runtime mutation",
+    "browser/provider/credential use",
+    "aggregate Stage 11 acceptance",
+    "Stage 12 work",
+    "player-role passwords"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m264-optional-module-staging-closure-20260827T143547456Z",
+  "operation": "foundry.fixture.optional-module-stage.closure",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "observedAt": "2026-08-27T14:35:47.456Z",
+  "target": {
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "worldId": "dbx-test-world",
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "port": 30002
+  },
+  "packages": [
+    {
+      "id": "dae",
+      "version": "14.0.13",
+      "manifestSha256": "1C3DDFC329779EC9D842E05D53A0EBA8082E07419DF27E34F4823E0AA7F71DC2",
+      "fileCount": 52,
+      "byteLength": 1010690,
+      "inventoryParity": true
+    },
+    {
+      "id": "midi-qol",
+      "version": "14.0.11",
+      "manifestSha256": "6168AD185149891E8E98DDDA06A45F0AEC4A7627E299B0B74F6B1AB54364A2D6",
+      "fileCount": 122,
+      "byteLength": 9268097,
+      "inventoryParity": true
+    }
+  ],
+  "stagingReceipt": "outputs/m264-optional-module-staging-receipt.json",
+  "supervisorReceipt": "outputs/m264-supervisor-final-status-receipt.json",
+  "supervisorStatus": "STOPPED",
+  "listeners": [],
+  "worldEntries": ["data", "world.json"],
+  "worldManifestSha256": "027306C9EB117F40CC9591F72715DD32B1FF7999F8490798AF18AD951256046F",
+  "stagingWorldDocumentRead": false,
+  "stagingUserCollectionRead": false,
+  "finalWorldFilesystemReread": true,
+  "finalWorldManifestHashRead": true,
+  "worldCopied": false,
+  "normalDataLaunched": false,
+  "normalDataMutated": false,
+  "overwrite": false,
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "optionsLockPresent": false,
+  "noWriteOutsideIsolatedDestination": true,
+  "loadedBehavior": "not-observed",
+  "activeGm": "not-observed",
+  "readyClaim": false,
+  "doesNotProve": [
+    "loaded-optional-module-behavior",
+    "permissions",
+    "active-gm-authority",
+    "client-session",
+    "bindings",
+    "document-mutation",
+    "authoritative-reread",
+    "recovery",
+    "Stage 9 acceptance"
+  ]
+}

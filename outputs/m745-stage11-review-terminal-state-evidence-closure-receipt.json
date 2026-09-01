@@ -1,0 +1,42 @@
+{
+  "milestone": "M745",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY REVIEW-TERMINAL LIFECYCLE EVIDENCE; STAGE 11 NOT ACCEPTED",
+  "scope": "Add a disjoint read-only projection for rejected, cancelled, and stale review-terminal outcomes across the existing fourteen typed local-project operation kinds.",
+  "sourceState": "Unborn project worktree with no HEAD; M745 changes only local TypeScript, UI disclosure, tests, roadmap/card, and reproducible KB artifacts.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Independent read-only M745 slice-selection review against the post-M744 typed history and authority surfaces.",
+    "workerOutcome": "Worker returned a compact receipt confirming the selected review-terminal slice and exact core transition sources; the Foreman reviewed it and closed the worker. No worker files or runtime state changed."
+  },
+  "implementation": {
+    "source": "apps/campaign-helper-desktop/src/project-review-terminal-state-evidence.ts",
+    "sourceSha256": "D74975CC94F77D9A9C918DD80C7D320F4FA1FD2919E05F43F1694D62AD8D9790",
+    "focusedTest": "tests/project-review-terminal-state-evidence.test.ts",
+    "focusedTestSha256": "3A9EDEF07B09E8E9F3D8108020DF4FAE2BAAE569C3AA20AB2102CDCC0E6C8D2D",
+    "uiIntegration": "apps/campaign-helper-desktop/src/App.tsx",
+    "uiIntegrationSha256": "C23111C3BAC712B8E3B8CEE392E046307CF574939EBE5BCC7CDC00ACB18C2EF9",
+    "projection": "42 exact rows: fourteen existing typed operation kinds × rejected/cancelled/stale review-terminal states.",
+    "bindings": "rejected: previewed -> rejected via reject; cancelled: previewed|approved -> cancelled via cancel; stale: previewed|approved -> stale via invalidate-stale; every terminal state has no allowed transitions after it.",
+    "safety": "Projection is read-only, non-certifying, no-apply, no-execution, no-generic-executor, and transition-not-invoked. M743 artifact index, project store, session storage, runtime, Foundry, providers, credentials, foreign state, and player-role passwords were not changed."
+  },
+  "validation": {
+    "focused": "PASS 3 tests",
+    "related": "PASS 6 files / 20 tests",
+    "fullSuite": "PASS 170 test files / 826 tests",
+    "packageTypecheck": "PASS npm run build:packages",
+    "desktopBuild": "PASS npm run desktop:build (Vite large-chunk warning only)",
+    "tooling": "PASS npm run verify:tooling",
+    "knowledgeBase": "PASS rebuild and verification at 1167 sources, 1006 facts, 874 decisions, 135 open items, 787 trials, 40 research subjects, and 26 milestones",
+    "workflow": "PASS Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations",
+    "diffHygiene": "PASS git diff --check",
+    "liveRuntime": "NOT RUN; no live Foundry/runtime or project mutation was authorized or performed."
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "decision": "M745 closes one bounded review-terminal lifecycle evidence gap and does not prove aggregate current authority, applying/unknown/commit/recovery/undo/redo lifecycle, packaged/runtime authority, or live active-GM/Foundry behavior."
+  },
+  "selectedNext": "M746 fresh bounded applying/unknown-outcome lifecycle and authoritative-reread evidence slice; preserve the 16 direct projections, M745 review-terminal projection, unknown/recovery blockers, and Stage 12 exclusion."
+}

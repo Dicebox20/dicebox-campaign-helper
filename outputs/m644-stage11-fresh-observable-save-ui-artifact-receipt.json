@@ -1,0 +1,7 @@
+{
+  "operation":"stage11-fresh-observable-save-ui-artifact","milestone":"M644","status":"PASS_LOCAL_FRESH_ARTIFACT_PARTIAL_STAGE11","capturedAt":"2026-08-30T10:00:00-07:00","goalId":"O-116","stage":"proposal-approval-history","evidenceLabel":"local",
+  "build":{"count":1,"mode":"save-ui-execute","projectId":"dbx:project:desktop-multiscene-self-test","exitMode":"0","frontend":"PASS","native":"PASS"},
+  "artifact":{"renderer":"apps/campaign-helper-desktop/dist/assets/index-CzAzTyyB.js","rendererSha256":"3E7AE186D330EA9374DEB905453AF955DDFC7B07EEBF0F617B7E32F5251986DF","native":"apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe","nativeSha256":"5F432884D2EB0CBA481C18495F940A9EA400E5F7AC53A68AB95A0E2C8400C0BF","markers":["save-ui-execute","project-save-ui-self-test","desktop.project.save","clearTerminalDesktopProjectSaveUiSelfTestProposalSession","inverse-restore","no Foundry write"]},
+  "preservation":{"launch":false,"browserStorageInspected":false,"sessionOperation":false,"projectMutation":false,"retry":false,"processesAfterBuild":{"desktop":0,"cargo":0,"rustc":0}},
+  "nextBoundary":"M645: one exact artifact accessibility-first observation with explicit stop/reread after direct terminal surface capture.","conclusion":{"stage11":"REMAINS_ACTIVE_AND_PARTIAL","stage12":"NOT_STARTED","readyToPlay":false}
+}

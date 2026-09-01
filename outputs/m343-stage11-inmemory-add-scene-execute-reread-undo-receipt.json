@@ -1,0 +1,104 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m343-stage11-inmemory-add-scene-execute-reread-undo-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M343",
+  "evidenceLabel": "fixture",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": false,
+  "projectWrites": 0,
+  "projectPersistenceWrites": 0,
+  "workspaceWrites": 0,
+  "inMemoryEditorMutations": 2,
+  "foundryWrites": 0,
+  "providerCalls": 0,
+  "credentialCalls": 0,
+  "browserStorageWrites": 0,
+  "target": {
+    "projectId": "dbx:project:desktop-add-scene-self-test",
+    "initialSceneIds": [
+      "dbx:scene:desktop-add-scene-self-test-main",
+      "dbx:scene:desktop-add-scene-self-test-scene-2"
+    ],
+    "addedSceneId": "dbx:scene:desktop-add-scene-self-test-scene-3",
+    "addedOrdinal": 3,
+    "activeSceneBefore": "dbx:scene:desktop-add-scene-self-test-main",
+    "activeSceneAfterApply": "dbx:scene:desktop-add-scene-self-test-scene-3",
+    "activeSceneAfterUndo": "dbx:scene:desktop-add-scene-self-test-main"
+  },
+  "proposal": {
+    "producer": { "kind": "human", "sourceId": "desktop.project.add-scene", "provider": null },
+    "reviewAuthority": { "domain": "human-review", "requiredRole": "reviewer" },
+    "targetAuthority": { "domain": "local-project", "requiredActiveGm": false },
+    "risk": "medium",
+    "payload": "metadata-only IDs, ordinals, counts, active Scene identities, and pre/post Scene state digests",
+    "rawSceneJsonInGenericPayload": false,
+    "rawBytesInGenericPayload": false,
+    "pathsInGenericPayload": false,
+    "automaticSave": false
+  },
+  "lifecycle": {
+    "historyStatus": "undone",
+    "historyLength": 5,
+    "transitions": ["preview", "approve", "begin-apply", "commit-after-reread", "undo"],
+    "beforeSceneCount": 2,
+    "afterApplySceneCount": 3,
+    "afterUndoSceneCount": 2,
+    "afterUndoDigestMatchesBefore": true,
+    "staleRejectedBeforeWrite": true,
+    "unapprovedRejectedBeforeWrite": true,
+    "outcomeUnknownStopsRetry": true
+  },
+  "rereads": {
+    "before": "exact project, ordered Scene IDs, active Scene, and Scene-state digest",
+    "afterApply": "exact three-Scene ordered collection, deterministic added Scene, active added Scene, and proposed digest",
+    "afterUndo": "exact original two-Scene ordered collection, original active Scene, and original digest",
+    "authoritativeInMemoryRead": true,
+    "nativeProjectStoreRead": false,
+    "noFoundryWrite": true
+  },
+  "validation": {
+    "focused": "5 files / 46 tests passed",
+    "full": "118 test files / 625 tests passed",
+    "desktopBuild": true,
+    "tauriDebugBuild": true,
+    "packagedWindowTitle": "DiceBox In-Memory Add Scene Execute PASS · dbx:project:desktop-add-scene-self-test · 2 → 3 → 2 Scenes · active dbx:scene:desktop-add-scene-self-test-scene-3 restored to dbx:scene:desktop-add-scene-self-test-main · history 5 · no project persistence · no Foundry write",
+    "packagedExecutableOwnersAfterStop": 0,
+    "distBundleSha256": "B1C68C27D20B2EE24D7899605AA454C2F3ABBC3DB31F4475A0388FAB6A42B52D",
+    "packagedExecutableSha256": "7DF58D0736D2EDF4FBD072FFA309EF420A4FDCA97AF6FE7A147F5C5CFD422368",
+    "workflowCheck": "PASS before closure recording; proposal-approval-history only active; no violations; readyClaim=false",
+    "knowledgeBaseBeforeClosure": "PASS rebuild and verify; sources 509, facts 544, decisions 493, trials 507, research subjects 40, milestones 26"
+  },
+  "prohibitedActivity": {
+    "projectContent": false,
+    "projectPersistence": false,
+    "workspace": false,
+    "provider": false,
+    "credentials": false,
+    "browser": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "unrelatedProject": false,
+    "foreignState": false
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-add-scene-proposal-adapter.ts": "A5D767DAAA83AF6D2CBD4BA220ADC9179A6A037147688B120484E922D7EA03B1",
+    "apps/campaign-helper-desktop/src/project-add-scene-executor.ts": "2A3EFB974326CC685893B91DE0B8A02ECE7B30F776926F0930460147EE6911D6",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "16FD0CBD0B84AC44A34507EB5E4BCB18EF349288EBF0A83358F54E90B76FE2FE",
+    "apps/campaign-helper-desktop/src/App.tsx": "AA6FC8D2EB0835384205C41D0C509C70727754AA00C8CBD2A7EF27F2A7806CBB",
+    "tests/project-add-scene.test.ts": "E5DD3DA516EC5D337BD675C5622E72D158879F56035C4105E6BC9354D7BD06D3",
+    "tests/knowledge-base-query.test.ts": "9DFFC1A689CEDB4E990FE2842DB22167D9C482E22EA9D53A2F5CCF573FD2A4F9",
+    "docs/ACTIVE-PROGRAM-SLICE.json": "C14307D7DB25F55A3558937AABD7F09CF60AD1A50E36F382772D762F8CFDA03A",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md": "E8939A3C49D29FC166D5BCFD2BAF720A3CDCB23F7DF081BDEF41044A9BFD7249",
+    "database/seed.sql": "30DD62F1C04B40FF6676FF0104A69520BE4DB5756705B4EC19439852A369C6FF"
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "ordinary create or save-as proposal/execution",
+    "remaining handout/audio/token asset producers",
+    "durable persistence of an added Scene",
+    "Foundry execution or active-GM authority",
+    "Ready-to-Play"
+  ]
+}

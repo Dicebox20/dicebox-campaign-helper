@@ -1,0 +1,36 @@
+{
+  "operation": "dicebox.real-project-workspace.packaged-local",
+  "status": "PASS",
+  "evidenceLabel": "local",
+  "observedAt": "2026-08-24T12:26:43-07:00",
+  "packagedExecutable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+  "buildStatus": "PASS",
+  "externalWindowTitleObserved": false,
+  "externalEnvelopeReread": true,
+  "catalogStatus": "PASS",
+  "source": {
+    "projectId": "dbx:project:workspace-self-test-1787599603315",
+    "sceneId": "dbx:scene:workspace-self-test-1787599603315-main",
+    "generation": 1,
+    "contentSha256": "beb8d8a96920dba0fca89fb1644054b06a4cd45a7f89baf7e2149d1a89430aaf",
+    "sceneSha256": "ce5c79c243b9249082219879e38c31a3ef625db1dd2272f2ed7c972f77718669",
+    "entityCount": 0,
+    "assetCount": 0
+  },
+  "saveAsTarget": {
+    "projectId": "dbx:project:workspace-self-test-1787599603315-copy",
+    "sceneId": "dbx:scene:workspace-self-test-1787599603315-main",
+    "generation": 1,
+    "contentSha256": "db6de4a4769fb41ba30a0ddc71baaa18842d647b6a2a65f4a829634da4263e5f",
+    "sceneSha256": "ce5c79c243b9249082219879e38c31a3ef625db1dd2272f2ed7c972f77718669",
+    "entityCount": 0,
+    "assetCount": 0
+  },
+  "sourcePreserved": true,
+  "sceneHashEquivalent": true,
+  "fixtureEntityLeak": false,
+  "fixtureAssetLeak": false,
+  "arbitraryPathAuthority": false,
+  "foundryWrite": false,
+  "certificationBoundary": "single-desktop-process-only; cross-process locking and directory-entry crash durability remain pending"
+}

@@ -1,0 +1,54 @@
+{
+  "milestone": "M885",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "inputs": [
+    "M884 proposal undo/redo composition closure",
+    "M882 proposal unknown/recovery composition closure",
+    "M880 proposal edit/revision composition closure",
+    "existing operation-specific terminal-history bridges",
+    "current aggregate/cross-plane/producer evidence",
+    "proposal-batch/session sources",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "clauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "m884Disposition": {
+    "classification": "producer-scoped deterministic TypeScript committed undo/redo lifecycle composition",
+    "countsChanged": false,
+    "runtimeLaneReopened": false,
+    "genericExecutorAdded": false,
+    "foundryAuthorityGranted": false,
+    "authoritativeReread": true,
+    "operationSpecificPostStateSemantics": "NOT_PROVIDED_BY_GENERIC_CORE",
+    "foreignStatePreserved": true
+  },
+  "selectedNext": "M886 code-only operation-specific undo/redo post-state semantic validation composition; no runtime retry, aggregate wrapper, or Stage 12 action.",
+  "doesNotProve": [
+    "operation-specific post-state revision/hash semantics for the composed sessions",
+    "every-producer proposal/approval/history/recovery authority",
+    "packaged/runtime cross-producer recovery",
+    "aggregate Stage 11 acceptance",
+    "generic execution or Foundry authority",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "milestone": "M446",
+  "operation": "dicebox.stage11.fixture-preparation-semantics-reconciliation",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "authorization": "D-608",
+  "inputs": {
+    "m445BlockerReceipt": {
+      "path": "outputs/m445-stage11-current-driver-observation-blocker-receipt.json",
+      "sha256": "6B50C4AA45162BDC7A0FE78885F60E5E95B78CA658F06D0E592F8B03B84D9266"
+    },
+    "m445RawReceipt": {
+      "path": "outputs/m445-stage11-current-driver-observation-receipt.json",
+      "sha256": "152D05BBF82F1C50AE1AFA6397E78D66DD4F51EBEE3FC0396A9820B4E47C08F4"
+    },
+    "priorQuarantineReceipt": {
+      "path": "outputs/m410-stage11-recoverable-fixture-quarantine-receipt.json",
+      "sha256": "636E0DAB654640F268CEBB1BB6B2A8645DEB2FED4C73739B17AA2210E8960A20"
+    },
+    "priorFirstCollisionReceipt": {
+      "path": "outputs/m397-stage11-backup-promotion-ui-lifecycle-blocker-receipt.json",
+      "sha256": "09CB3A50BC838D1221EB838F9E4D60F191DA173A3D4D53BAAFB5A7BD6800E8DE"
+    }
+  },
+  "sourceReconciliation": {
+    "rustPath": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "rustSha256": "426D40C04306176950705D8FE5EA454CD7C913B6C1DF53E36F26FACF50F6A63A",
+    "guard": "prepare_backup_authoritative_recovery_promotion_fixture_at rejects any existing project_dir before reading primary/backup/foreign topology",
+    "callerPath": "apps/campaign-helper-desktop/src/App.tsx",
+    "callerSha256": "876104EA4FC653321B967DFFDCFA34EE4DAA92A123FEC05E14E3BDEA349A549C",
+    "callerOrder": "fixture preparation precedes preview, proposal, approval, typed apply, and authoritative reread"
+  },
+  "protectedFixtureReread": {
+    "projectRoot": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-backup-authoritative-recovery-promotion-self-test",
+    "directoryExists": true,
+    "exactEntries": [
+      "project.backup.json",
+      "foreign-note.txt"
+    ],
+    "projectJsonExists": false,
+    "projectBackupJsonLength": 758,
+    "projectBackupJsonSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteLength": 27,
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2",
+    "unexpectedEntries": false
+  },
+  "boundaryReconciliation": {
+    "m397AndM445CollisionClass": "same fixture-directory collision; prior recovery/quarantine evidence is preserved and no further runtime retry is authorized",
+    "currentSession": "last approved application-level reread MISSING; no new transition receipt",
+    "recovery": "not attempted",
+    "process": "no desktop process",
+    "foreignState": "preserved",
+    "rawStorage": "not inspected or used as current-state evidence"
+  },
+  "selectedNextBoundary": {
+    "milestone": "M447",
+    "type": "code-only",
+    "scope": "Add a narrow read-only acceptance branch for the exact fixed test-owned backup-only topology (primary absent, valid expected backup, exact foreign marker, no unexpected entries), returning the existing fixture receipt without rewriting any file; retain PROJECT_FIXTURE_EXISTS for all other existing directories and add focused tests for acceptance/rejection/preservation.",
+    "reason": "This preserves the protected backup and foreign state, avoids deletion/cleanup, and repairs the exact semantic mismatch between an already-prepared fixture and a preparer that treats directory existence alone as overwrite risk."
+  },
+  "prohibitedActionsNotPerformed": [
+    "fixture deletion",
+    "fixture cleanup",
+    "fixture overwrite",
+    "source change",
+    "package build",
+    "desktop launch",
+    "capture retry",
+    "session transition/reset/clear",
+    "recovery apply",
+    "provider or credential access",
+    "browser storage access",
+    "Foundry activity",
+    "player-password activity"
+  ]
+}

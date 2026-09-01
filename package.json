@@ -1,0 +1,75 @@
+{
+  "name": "dicebox-campaign-helper",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:packages && npm run build -w @dicebox/campaign-helper-desktop",
+    "build:packages": "tsc --noEmit",
+    "test": "vitest run --configLoader runner --no-file-parallelism --pool=forks --maxWorkers=1 --minWorkers=1",
+    "check": "npm run build && npm test",
+    "verify:tooling": "node tools/verify-tooling.mjs",
+    "foundry:preflight": "node tools/foundry-preflight.mjs",
+    "foundry:stage": "node tools/stage-foundry-module.mjs",
+    "foundry:stage-optional": "node tools/stage-optional-foundry-modules.mjs",
+    "foundry:fixture-provision": "node tools/provision-disposable-fixture.mjs",
+    "foundry:fixture-user": "node tools/provision-fixture-user.mjs",
+    "foundry:update": "node tools/update-foundry-module.mjs",
+    "foundry:live-bridge": "node tools/dicebox-foundry-live-bridge.mjs",
+    "foundry:launch-guard": "node tools/foundry-server.mjs",
+    "foundry:fixture:start": "node tools/foundry-fixture-supervisor.mjs start",
+    "foundry:fixture:open": "node tools/foundry-fixture-supervisor.mjs open",
+    "foundry:fixture:status": "node tools/foundry-fixture-supervisor.mjs status",
+    "foundry:fixture:stop": "node tools/foundry-fixture-supervisor.mjs stop",
+    "foundry:fixture:close": "node tools/foundry-fixture-supervisor.mjs close",
+    "foundry:fixture:restart": "node tools/foundry-fixture-supervisor.mjs restart",
+    "foundry:fixture:recover-lock": "node tools/foundry-fixture-supervisor.mjs recover-lock",
+    "foundry:fixture-license-stage": "node tools/stage-fixture-license.mjs",
+    "bridge:stdio": "tsx tools/dbx-test-bridge.ts",
+    "bridge:stdio:receipt": "tsx tools/collect-stdio-receipt.ts",
+    "foundry:evidence-audit": "tsx tools/audit-foundry-evidence.ts",
+    "foundry:fixture-observation-audit": "tsx tools/audit-foundry-fixture-observation.ts",
+    "foundry:fixture-observation-bundle-audit": "tsx tools/audit-foundry-fixture-observation-bundle.ts",
+    "foundry:fixture-round-audit": "tsx tools/audit-foundry-fixture-round.ts",
+    "foundry:artifact-spec:current": "tsx tools/write-current-foundry-artifact-spec.ts",
+    "browser:world-launch-repro": "node tools/browser-driver-world-launch-repro.mjs",
+    "foundry:fixture-plan": "tsx tools/print-foundry-fixture-plan.ts",
+    "kb:query": "python database/query_knowledge.py",
+    "check:full": "npm run workflow:check && npm run check && npm run verify:tooling",
+    "test:first-round": "npm run check:full",
+    "compile:campaign": "tsx tools/print-campaign-package.ts",
+    "compile:campaign:write": "tsx tools/write-campaign-package.ts",
+    "compile:program-scene-slice": "tsx tools/write-program-scene-vertical-slice.ts",
+    "maps:overlay": "tsx tools/render-ascendancy-coordinate-overlays.ts",
+    "maps:tram-graybox": "tsx tools/render-tram-graybox.ts",
+    "maps:tram-calibration-plan": "tsx tools/print-tram-calibration-plan.ts",
+    "maps:tram-calibration-package": "tsx tools/write-tram-calibration-package.ts",
+    "maps:tram-routing-fixture-package": "tsx tools/write-tram-routing-fixture-package.ts",
+    "maps:universal-export": "tsx tools/write-universal-battlemap-export.ts",
+    "workflow:check": "node tools/check-active-slice.mjs docs/ACTIVE-PROGRAM-SLICE.json",
+    "workflow:test": "node tools/check-active-slice-self-test.mjs",
+    "desktop:dev": "npm run dev -w @dicebox/campaign-helper-desktop",
+    "desktop:build": "npm run build -w @dicebox/campaign-helper-desktop",
+    "desktop:tauri:dev": "node tools/run-tauri-desktop.mjs dev",
+    "desktop:tauri:build": "node tools/run-tauri-desktop.mjs build"
+    ,"codex:app-server:probe": "node tools/run-codex-app-server-slice.mjs probe"
+    ,"codex:app-server:job": "node tools/run-codex-app-server-slice.mjs job"
+    ,"codex:app-server:director": "node tools/run-campaign-director-app-server-slice.mjs"
+    ,"codex:app-server:account-metadata": "node tools/run-codex-account-metadata-probe.mjs"
+    ,"director:proposal": "tsx tools/run-campaign-director-slice.ts"
+  },
+  "dependencies": {
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@openai/codex": "^0.149.1",
+    "@types/node": "^22.15.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

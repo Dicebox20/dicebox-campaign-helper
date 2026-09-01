@@ -1,0 +1,98 @@
+{
+  "operation": "stage11-m607-packaged-cross-producer-evidence-summary-partial-reconciliation",
+  "milestone": "M608",
+  "status": "PASS_LOCAL_READ_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T07:05:29-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "reconciliation": {
+    "knowledgeBaseIntegrity": "ok",
+    "knowledgeBaseCountsBeforeClosure": {
+      "sources": 1006,
+      "facts": 870,
+      "decisions": 753,
+      "openItems": 135,
+      "trials": 747
+    },
+    "queriedReceipts": [
+      "outputs/m604-stage11-fresh-cross-producer-evidence-summary-artifact-closure-receipt.json",
+      "outputs/m605-stage11-packaged-cross-producer-evidence-summary-observation-closure-receipt.json",
+      "outputs/m606-stage11-m605-packaged-target-selection-reconciliation-closure-receipt.json",
+      "outputs/m607-stage11-corrected-packaged-cross-producer-evidence-summary-observation-closure-receipt.json"
+    ],
+    "m605ReceiptSha256": "A53D75295D4FAEEDE9130EEDD263E853DEBB8E463E00716AE003526F11BEBB02",
+    "m606ReceiptSha256": "EE1C7EA2B1AE35578A1E157719B37687BAFC41671D35B0418E43E2435C38DBF3",
+    "m607ReceiptSha256": "BC9AAE40DEC7ABC18F7949AE44FCF48DF7145ACFC43A7C7BC671394F78DDE490",
+    "m604ArtifactHashesStillMatch": true,
+    "m604NativeSha256": "6B31EB3465CAFAB908368DD8EB4671D784784D90A3B54BBD0A5EE285B79C4A72",
+    "m604FrontendSha256": "39F1883C3F820D45B16301276C61C2B43717F0F0C1D96EC073C615DEF76F6EF7",
+    "directObserved": [
+      "returned process-prefixed app identity matched",
+      "exactly one DiceBox Campaign Helper title selected",
+      "one accessibility read completed",
+      "aggregate 11 families / Stage 11 acceptance remains partial heading",
+      "typed 14-operation contract",
+      "no persisted project",
+      "no project session",
+      "no-write Foundry preview boundary",
+      "zero desktop/Cargo/Rustc processes after exact cleanup"
+    ],
+    "notObserved": [
+      "eleven family entries",
+      "per-family bounded dispositions",
+      "per-family remaining gaps",
+      "explicit non-certifying summary detail",
+      "explicit no-execution summary detail"
+    ],
+    "sourceReconciliation": {
+      "appSourcePath": "apps/campaign-helper-desktop/src/App.tsx",
+      "appSourceSha256": "5B3590087CB4A343895FCF6CD854235DA48D4868D14EB28615D01A4E89621FDF",
+      "summaryImplementation": "The M603 cross-producer list is inside a <details> element without an open attribute; the summary heading is visible while its list and explanatory paragraph are collapsed from the accessibility text.",
+      "producerSummarySourcePath": "apps/campaign-helper-desktop/src/project-review-producer-evidence.ts",
+      "producerSummarySourceSha256": "7AEBD79FDAE4BCD59207A85245941D47FE2C7C1C078BE7AB046DE73A7101829C",
+      "focusedTestCoverage": "tests/project-review-producer-evidence.test.ts proves the typed data and source markers, but does not require the cross-producer <details> disclosure to be open."
+    },
+    "classification": "PACKAGED_DISCLOSURE_STATE_GAP",
+    "stage11Clauses": {
+      "humanReviewAndLocalProjectAuthority": "PARTIAL",
+      "operationSpecificApplyContract": "PARTIAL",
+      "crossProducerLifecycleAndRecovery": "PARTIAL",
+      "packagedEvidenceAndAuthorityBoundaries": "PARTIAL"
+    },
+    "projectSessionRuntimeWrite": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M608 reconciles the M607 partial result as a disclosure-state gap in the current source: the cross-producer entries and non-certifying explanation are nested under a closed details element. The source data remains typed and non-executing, but packaged direct evidence remains incomplete. The smallest safe next step is a local code-only accessibility disclosure change with deterministic coverage; no relaunch or UI expansion is authorized in M608."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M609",
+    "title": "Stage 11 cross-producer summary accessibility disclosure implementation",
+    "status": "authorized-next",
+    "scope": "Edit only the existing cross-producer summary disclosure and focused static/accessibility-oriented coverage so the eleven typed non-certifying entries and explanatory boundary are exposed in the packaged accessibility tree by default. Preserve read-only/no-execution behavior, all operation handlers and authority gates, and all no-Foundry/provider/session/project/player-password boundaries. No build, launch, capture, UI action, or Stage 12 work is authorized in M609."
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "uiExpansion": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "changedPaths": [
+    "outputs/m608-stage11-m607-packaged-cross-producer-evidence-summary-partial-reconciliation-closure-receipt.json"
+  ]
+}

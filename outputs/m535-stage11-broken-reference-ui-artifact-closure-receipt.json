@@ -1,0 +1,69 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.artifact-build",
+  "milestone": "M535",
+  "status": "PASS_LOCAL_ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-29T21:55:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "broken-reference-detach-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "exitCode": 0,
+    "attempts": 1,
+    "cargoProfileDuration": "30.69s"
+  },
+  "artifacts": [
+    {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "579A3A11CA370C4E01FADD2662ED5C077B34C9A199708ACD43818ABCCF8A4594"
+    },
+    {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-BR0A5TDQ.js",
+      "sha256": "3ABE6E65E021467A46764E226ABBFD0305DDEB3208CC7017E5456FB65A09D79A"
+    }
+  ],
+  "markerAttestation": {
+    "status": "PASS",
+    "markers": [
+      "broken-reference-detach-ui-execute",
+      "DESKTOP_BROKEN_REFERENCE_UI_SELF_TEST_PROJECT_ID",
+      "desktop-broken-reference-ui-lifecycle-self-test-v2",
+      "broken-reference-ui-self-test",
+      "loadDesktopBrokenReferenceUiSelfTestProposalSession",
+      "saveDesktopBrokenReferenceUiSelfTestProposalSession",
+      "assertBrokenReferenceUiSelfTestBatch",
+      "The broken-reference UI self-test target requires its closed typed session namespace.",
+      "The broken-reference UI self-test namespace requires its exact fixed test-owned project identity.",
+      "TEST_OWNED_EXACT",
+      "BACKGROUND_ASSET_ROLE_MISMATCH",
+      "no session was replaced",
+      "finishProjectSelfTest",
+      "authoritative-reread"
+    ]
+  },
+  "processReread": "PASS: no desktop, Cargo, or Rustc process remained",
+  "validation": {
+    "artifactBuild": "PASS",
+    "sourcePackageTypeChecks": "PASS",
+    "focusedTests": "PASS: 4 files, 17 tests",
+    "workflow": "PASS: 10/16 gates, Ready-to-Play false",
+    "diffCheck": "PASS"
+  },
+  "excludedActions": [
+    "launch",
+    "capture",
+    "browser-storage inspection",
+    "session clearing or replacement",
+    "approval/apply/recovery",
+    "fixture/project/runtime mutation",
+    "Foundry action",
+    "provider or credential access",
+    "player-role password creation"
+  ],
+  "nextBoundary": "M536: one timeout-aware exact packaged capture against this executable followed by trace/receipt and authoritative target/session/process reread; preserve any BLOCKED or timeout result and do not retry.",
+  "readyToPlay": false,
+  "notes": "The bundle contains the live M534 namespace, fixed target, wrapper, producer, and guard markers. The standalone key-helper symbol is not a required runtime marker and was tree-shaken because the route uses the closed wrapper directly. This artifact pass does not certify the packaged lifecycle or Stage 11."
+}

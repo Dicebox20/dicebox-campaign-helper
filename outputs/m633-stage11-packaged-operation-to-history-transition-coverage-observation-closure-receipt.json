@@ -1,0 +1,84 @@
+{
+  "operation": "stage11-packaged-operation-to-history-transition-coverage-observation",
+  "milestone": "M633",
+  "status": "PASS_PACKAGED_ACCESSIBILITY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T08:55:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "artifact": {
+    "rendererPath": "apps/campaign-helper-desktop/dist/assets/index-BOaLNkeL.js",
+    "rendererSha256": "C79D2087E4EE1DBE059A1D07EC7F154DC966382704D92B3ADC110F53A2938C5A",
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeSha256": "8A0E9A0F6F6AA434EDA6930DC243FD2E228A9438FE8DF5DAC9D15CB2E567CCA8",
+    "sourceReceipt": "outputs/m632-stage11-fresh-artifact-after-m631-drift-closure-receipt.json",
+    "sourceReceiptSha256": "3EE42D650036AE20AA788CEB4A3C96D4BE1FA9F9C6923EF7C831EC670E456FFF"
+  },
+  "targetSelection": {
+    "app": "process:C:\\Users\\rujie\\Documents\\codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+    "windowId": 11209056,
+    "title": "DiceBox Campaign Helper",
+    "returnedCandidateWindows": 2,
+    "exactTitleWindows": 1,
+    "selectionStatus": "PASS_EXACT_PROCESS_IDENTITY_AND_TITLE"
+  },
+  "accessibilityObservation": {
+    "successfulReadCount": 1,
+    "screenshot": false,
+    "click": false,
+    "type": false,
+    "operationContractCount": 14,
+    "operationHistoryCoverageRows": 14,
+    "historyStatesPerOperation": 11,
+    "operationSpecificHandlersVisible": true,
+    "coreTransitionProjectionMarkerVisible": true,
+    "allTransitionTokensVisible": true,
+    "readOnlyMarkerVisible": true,
+    "nonCertifyingMarkerVisible": true,
+    "noExecutionAuthorityMarkerVisible": true,
+    "noGenericExecutorMarkerVisible": true,
+    "noPersistedProjectVisible": true,
+    "noProjectSessionVisible": true,
+    "noWriteFoundryPreviewVisible": true,
+    "aggregateStage11Acceptance": "partial",
+    "unobservedLaterLifecycleStatesRemainExplicit": true,
+    "activationGuardBeforeSuccessfulRead": "input-detection guard returned before state; one direct accessibility reread then succeeded; no user input action was performed"
+  },
+  "processReread": {
+    "stoppedPid": 19812,
+    "remainingExactPathProcesses": 0,
+    "desktopProcesses": 0,
+    "cargoProcesses": 0,
+    "rustcProcesses": 0
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M633 directly observes the current packaged operation-specific matrix and its read-only boundary, but it does not prove runtime transition execution, authoritative reread of committed state, undo/redo, stale/timeout recovery, commit evidence, or aggregate authority across eleven producer families."
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": false,
+    "launch": true,
+    "capture": true,
+    "retry": false,
+    "screenshot": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "sessionCleared": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "changedPaths": [
+    "outputs/m633-stage11-packaged-operation-to-history-transition-coverage-observation-closure-receipt.json"
+  ]
+}

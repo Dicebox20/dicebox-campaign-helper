@@ -1,0 +1,6 @@
+{
+  "operation":"stage11-ephemeral-save-ui-window-reconciliation","milestone":"M643","status":"PASS_LOCAL_READ_ONLY_EXIT_PATH_RECONCILIATION","capturedAt":"2026-08-30T10:36:00-07:00","goalId":"O-116","stage":"proposal-approval-history","evidenceLabel":"local",
+  "findings":{"exitMode":"The native finishProjectSelfTest command calls app.exit(PASS=0/BLOCKED=1).","terminalPredicate":"save-ui-execute writes its PASS title and invokes finishProjectSelfTest only after exact project ID, session status undone, clean editor, active project, project generation, and history length are present in state.","m642Limit":"The M642 exit-mode artifact therefore intentionally closed before accessible terminal text could be retained; its native reread remains partial and non-certifying."},
+  "selectedNextBoundary":"M644: one fresh identical save-ui-execute artifact configured with VITE_DBX_PROJECT_SELF_TEST_EXIT=0, followed later by one bounded direct accessibility observation and explicit exact-process stop.",
+  "preservation":{"sourceOnly":true,"build":false,"launch":false,"browserStorageInspected":false,"sessionOrProjectMutation":false,"retry":false},"conclusion":{"stage11":"REMAINS_ACTIVE_AND_PARTIAL","stage12":"NOT_STARTED","readyToPlay":false}
+}

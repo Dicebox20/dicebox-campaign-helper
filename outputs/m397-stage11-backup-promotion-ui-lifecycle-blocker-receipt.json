@@ -1,0 +1,25 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m397-stage11-backup-promotion-ui-lifecycle-blocker-2026-08-28",
+  "milestone": "M397",
+  "evidenceLabel": "local-packaged",
+  "status": "BLOCKED",
+  "readyClaim": false,
+  "implementationValidation": {
+    "focusedTests": "3 files / 16 tests PASS",
+    "desktopBuild": "PASS"
+  },
+  "runtimeObservations": [
+    "The first rebuilt-package observation safely blocked with PROJECT_FIXTURE_EXISTS; the exact old test-owned fixture was reread and moved recoverably to m397-quarantine with backup and foreign-marker SHA-256 values preserved.",
+    "The fresh exact fixture then reached the new M397 mode and safely blocked before preview/apply: an existing project proposal session was nonterminal and the self-test refused to replace or clear it."
+  ],
+  "counts": {
+    "foundryWrites": 0,
+    "providerCalls": 0,
+    "credentialCalls": 0,
+    "deletionOperations": 0,
+    "recoveryApplyOperations": 0
+  },
+  "recoveryDisposition": "Second same-class project-proposal-session failure: no further M397 runtime retry. The existing session is preserved; M398 must inspect its exact stored state read-only and select one recovery boundary only if supported by the current session contract.",
+  "doesNotProve": ["packaged backup-promotion UI lifecycle success", "recovery breadth", "generic Stage 11 acceptance", "Foundry execution or active-GM authority", "Stage 16 UI", "Ready-to-Play"]
+}

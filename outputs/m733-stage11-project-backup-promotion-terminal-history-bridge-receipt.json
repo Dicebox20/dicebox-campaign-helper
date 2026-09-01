@@ -1,0 +1,66 @@
+{
+  "milestone": "M733",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bridge the existing approved project.recovery.backup-promote session, PASS promotion receipt, and authoritative recovery inspection reread into typed terminal history.",
+  "sourceState": "Unborn project worktree with no HEAD; M733 changes only the bounded bridge, focused test, receipt, and synchronized governance records.",
+  "artifactHashes": {
+    "bridgeSha256": "E5D30AAAD207864F0B81706F43168675EFD99D20EFA861BC58ACBEF51130C78B",
+    "testSha256": "28C10DFF3AF771FBF5E10484EB1C71A4D89A5269EF0F3C41B8F8D17F7A50B9E2"
+  },
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Bounded project.recovery.backup-promote terminal-history bridge and focused test.",
+    "workerOutcome": "Worker did not return a compact receipt within two bounded waits and was closed; no worker output was used. The Foreman recovered the authorized scope locally.",
+    "foremanReview": "The Foreman reread D-861/F-978, the existing recovery proposal adapter, backup-promotion receipt, session callback, authoritative inspection path, and prior local terminal-history bridges before implementation."
+  },
+  "implementation": {
+    "entryPoint": "apps/campaign-helper-desktop/src/project-backup-promotion-terminal-history.ts:bridgeProjectBackupPromotionExecutionToTerminalHistory",
+    "schema": "projectBackupPromotionTerminalHistoryReceiptSchema.parse/safeParse",
+    "acceptedOperation": "dicebox.project.recovery.backup-promotion",
+    "terminalSequence": ["preview", "approve", "begin-apply", "commit-after-reread"],
+    "inverse": "Not available for this source operation; the bridge is commit-only and does not invent undo authority.",
+    "checks": [
+      "exact local-project project.recovery.backup-promote target, provider-free producer, and command payload",
+      "approved-to-committed session history with matched promotion reread",
+      "primary restoration, backup preservation, semantic/asset/workspace/foreign-state preservation, and directory sync",
+      "authoritative recovery inspection matches the promotion identity and valid primary/backup dispositions",
+      "foreign, malformed, Foundry-writing, blocked, and altered recovery evidence fails closed"
+    ]
+  },
+  "validation": {
+    "focused": "PASS: 2 M733 bridge tests",
+    "fullRepository": "PASS: 164 test files / 813 tests",
+    "build": "PASS: package typecheck, desktop typecheck, Node typecheck, and Vite production build",
+    "tooling": "PASS: npm.cmd run verify:tooling",
+    "knowledgeBase": "PASS: synchronized seed, database rebuilt, integrity verified, and focused KB query tests passed",
+    "workflow": "PASS BEFORE CLOSEOUT: active-slice checker reports Stage 11 proposal-approval-history at 10/16 with no violations",
+    "foundryOrRuntime": "NOT RUN; excluded by M733"
+  },
+  "safety": {
+    "bridgeOnly": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "noGenericExecutor": true,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed before closeout; aggregate producer acceptance remains partial",
+    "stage12": "NOT STARTED",
+    "decision": "M733 closes one recovery terminal-history projection but does not accept Stage 11 or authorize Stage 12."
+  },
+  "remainingGaps": [
+    "Aggregate producer coverage and direct current-authority evidence remain incomplete across all eleven producer families.",
+    "Unified stale, outcome-unknown, recovered, undone, and redone lifecycle evidence remains incomplete.",
+    "Packaged/runtime authority and live active-GM/Foundry evidence remain incomplete.",
+    "Stage 11 acceptance requires a fresh read-only reconciliation after this seam."
+  ],
+  "selectedNext": "M734 read-only Stage 11 acceptance reconciliation after M733; preserve live Foundry/runtime and Stage 12 exclusions."
+}

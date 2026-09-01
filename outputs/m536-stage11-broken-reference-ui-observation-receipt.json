@@ -1,0 +1,27 @@
+{
+  "operation": "dicebox.desktop.self-test.capture",
+  "status": "BLOCKED",
+  "executable": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+  "executableName": "dicebox-campaign-helper-desktop.exe",
+  "exitCode": null,
+  "signal": "SIGTERM",
+  "stdout": {
+    "text": "DBX_PROJECT_BROKEN_REFERENCE_UI_LIFECYCLE_FIXTURE status=PASS project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v2 targetAsset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 scenes=2 noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=inspect status=BLOCKED project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v2 blocker=BACKGROUND_ASSET_ROLE_MISMATCH eligible=false assets=0 pendingArtifacts=1 noWrite=true noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=broken-reference-detach-preview status=PREVIEW project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v2 scene=dbx:scene:desktop-broken-reference-ui-lifecycle-self-test-v2-target asset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 blocker=BACKGROUND_ASSET_ROLE_MISMATCH generation=1 nextGeneration=2 previewSha256=3cdfbbbf00cbf3a16d4dcff7503100881e015a88da62c8a6949a71c3b7abaab8 descriptorPreserved=true noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=loaded detail=broken-reference-ui-lifecycle:session-preflight:MISSING;fixture-reread\nDBX_PROJECT_RECOVERY operation=broken-reference-detach-preview status=PREVIEW project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v2 scene=dbx:scene:desktop-broken-reference-ui-lifecycle-self-test-v2-target asset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 blocker=BACKGROUND_ASSET_ROLE_MISMATCH generation=1 nextGeneration=2 previewSha256=3cdfbbbf00cbf3a16d4dcff7503100881e015a88da62c8a6949a71c3b7abaab8 descriptorPreserved=true noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=previewed detail=broken-reference-ui-lifecycle:recovery-proposal-session\n",
+    "truncated": false
+  },
+  "stderr": {
+    "text": "",
+    "truncated": false
+  },
+  "timeout": {
+    "timedOut": true,
+    "timeoutMs": 30000,
+    "graceMs": 5000,
+    "killRequested": true,
+    "childExitObserved": true,
+    "killError": null,
+    "childError": null
+  },
+  "noProjectOrSessionInspection": true,
+  "noRecoveryInvocationByRunner": true
+}

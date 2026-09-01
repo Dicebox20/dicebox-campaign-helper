@@ -1,0 +1,63 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m312-stage11-capture-layer-recovery-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M312",
+  "evidenceLabel": "local",
+  "status": "BLOCKED",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "target": {
+    "surface": "local Vite web surface used only as an alternate observation boundary",
+    "url": "http://127.0.0.1:1420/",
+    "packagedNativeWindow": false,
+    "exactPackagedWindowRecaptured": false
+  },
+  "observation": {
+    "reviewHeadingRendered": true,
+    "reviewSectionRendered": true,
+    "controlsFound": [
+      "Review backup preview as proposal",
+      "Approve project recovery proposal",
+      "Reject project proposal",
+      "Cancel project proposal",
+      "Mark project proposal stale"
+    ],
+    "controlsEnabled": false,
+    "sessionText": "Project recovery proposal session not loaded.",
+    "tauriInternalsPresent": false,
+    "nativeProjectStoreAvailable": false,
+    "validForPackagedProjectEvidence": false
+  },
+  "containment": {
+    "inputAttempted": false,
+    "proposalSessionChanged": false,
+    "projectStateRead": false,
+    "projectStateChanged": false,
+    "providerUsed": false,
+    "credentialsUsed": false,
+    "foundryUsed": false,
+    "browserStorageInspected": false,
+    "viteDevStopped": true,
+    "listener1420AfterStop": false
+  },
+  "recovery": {
+    "inheritedSameClassFailureCount": 2,
+    "alternateBoundaryValidated": false,
+    "narrowCaptureHelperRepairApplied": false,
+    "retriesStopped": true,
+    "boundedReproduction": "The web-only Vite surface renders the M310 review markup, but it has no Tauri internals or native project store; all five project-recovery controls are disabled and no project-target session is loaded.",
+    "disposition": "No valid packaged observation boundary was found. Preserve the M311 Windows capture blocker, do not retry capture, and authorize a later bounded capture-helper or foreground-observation recovery slice."
+  },
+  "doesNotProve": [
+    "packaged desktop project-recovery metadata",
+    "project-target proposal session state or lifecycle in Tauri",
+    "project operation execution or persistent project mutation",
+    "provider or credential behavior",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

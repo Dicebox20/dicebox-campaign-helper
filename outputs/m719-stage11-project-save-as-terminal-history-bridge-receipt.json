@@ -1,0 +1,62 @@
+{
+  "milestone": "M719",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bridge one existing operation-specific local-project save-as execution receipt into typed terminal history.",
+  "sourceState": "Unborn project worktree with no HEAD; M719 changes one bridge module and one focused test file, with no live runtime or Foundry access.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Implement only apps/campaign-helper-desktop/src/project-save-as-terminal-history.ts with the requested bridge and schema exports; do not change tests or other files.",
+    "workerOutcome": "The bounded worker was closed before returning a patch. The Foreman then implemented and reviewed the same disjoint scoped module locally; no worker result was promoted.",
+    "foremanReview": "Pure bridge with no runtime, persistence, or Foundry calls. It records a committed save-as lifecycle only; it does not invent undo evidence where the existing executor has no inverse operation."
+  },
+  "implementation": {
+    "entryPoint": "apps/campaign-helper-desktop/src/project-save-as-terminal-history.ts:bridgeProjectSaveAsExecutionToTerminalHistory",
+    "schema": "projectSaveAsTerminalHistoryReceiptSchema.parse/safeParse",
+    "acceptedOperation": "dicebox.project.save-as.execute",
+    "terminalSequence": ["preview", "approve", "begin-apply", "commit-after-reread"],
+    "checks": [
+      "Exact local-project save-as operation and distinct source/target identities",
+      "Before reread proves target absence and afterApply reread proves target creation",
+      "Source generation, Scene collection, active Scene, asset collection, and hashes are preserved",
+      "Workspace index advances exactly once and save-as durability receipts attest atomic replace, directory sync, and no Foundry write",
+      "Matched commit reread is retained in proposal history",
+      "Foreign, malformed, non-persistent, Foundry-writing, and non-terminal evidence fails closed",
+      "No inverse/undo claim is emitted because the existing save-as executor has no inverse operation"
+    ]
+  },
+  "validation": {
+    "focused": "PASS: 2 tests",
+    "fullRepository": "PASS: 157 test files / 799 tests",
+    "build": "PASS: package typecheck and desktop production build",
+    "foundryOrRuntime": "NOT RUN; excluded by M719",
+    "tooling": "PASS: verify:tooling",
+    "knowledgeBase": "PASS: database rebuild, integrity verification, and 72 focused KB tests",
+    "workflow": "PASS: 10/16 gates; Stage 11 active; readyClaim false"
+  },
+  "safety": {
+    "bridgeOnly": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "noGenericExecutor": true,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed before closeout; aggregate producer acceptance remains partial",
+    "stage12": "NOT STARTED",
+    "decision": "M719 closes one save-as producer seam but does not accept Stage 11 or authorize Stage 12."
+  },
+  "remainingGaps": [
+    "Aggregate current-authority, apply-reread, and terminal-receipt evidence remains incomplete across eleven producer families.",
+    "Unified stale, unknown, recovered, undone, and redone coverage remains incomplete across operation-specific handlers.",
+    "Packaged/runtime authority and live active-GM/Foundry certification remain incomplete."
+  ],
+  "selectedNext": "M720 read-only Stage 11 acceptance reconciliation after M719; preserve live/runtime and Stage 12 exclusions."
+}

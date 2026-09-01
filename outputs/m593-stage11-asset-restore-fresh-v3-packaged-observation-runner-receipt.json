@@ -1,0 +1,27 @@
+{
+  "operation": "dicebox.desktop.self-test.capture",
+  "status": "PASS",
+  "executable": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+  "executableName": "dicebox-campaign-helper-desktop.exe",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": {
+    "text": "DBX_PROJECT_ASSET_RESTORE_TRACE_FIXTURE_V3 status=PASS project=dbx:project:desktop-asset-restore-trace-self-test-v3 assets=2 scenes=2 generation=1 noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=inspect status=BLOCKED project=dbx:project:desktop-asset-restore-trace-self-test-v3 blocker=REGISTERED_ASSET_BLOB_MISSING eligible=true assets=2 pendingArtifacts=1 noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=loaded detail=asset-restore-trace:isolated-fixture-reread\nDBX_PROJECT_UI_SELF_TEST stage=previewed detail=asset-restore-trace:exact-webp-preview\nDBX_PROJECT_RECOVERY operation=preview status=PREVIEW project=dbx:project:desktop-asset-restore-trace-self-test-v3 generation=1 asset=dbx:asset:sha256-3505e78b9965cadb25ee3709e95a6f2ea361fccf8545637954254045ddd75aaf candidateSha256=3505e78b9965cadb25ee3709e95a6f2ea361fccf8545637954254045ddd75aaf previewSha256=ece6c8b1b43468bc6c862986c626c3406abf6f8b5263a66ea19aacbe11c0aa0c noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=approved detail=asset-restore-trace:reviewer-approved\nDBX_PROJECT_UI_SELF_TEST stage=applied detail=asset-restore-trace:typed-apply\nDBX_PROJECT_RECOVERY operation=restore status=PASS project=dbx:project:desktop-asset-restore-trace-self-test-v3 generation=1 asset=dbx:asset:sha256-3505e78b9965cadb25ee3709e95a6f2ea361fccf8545637954254045ddd75aaf authoritativeSha256=3505e78b9965cadb25ee3709e95a6f2ea361fccf8545637954254045ddd75aaf previewSha256=ece6c8b1b43468bc6c862986c626c3406abf6f8b5263a66ea19aacbe11c0aa0c envelopeUnchanged=true projectStateUnchanged=true scenesUnchanged=true workspaceUnchanged=true backupsUnchanged=true foreignUnchanged=true createNewOnly=true noProjectWrite=true noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=inspect status=BLOCKED project=dbx:project:desktop-asset-restore-trace-self-test-v3 blocker=REGISTERED_ASSET_BLOB_MISSING eligible=true assets=2 pendingArtifacts=1 noWrite=true noFoundryWrite=true\nDBX_PROJECT_RECEIPT operation=catalog status=PARTIAL entries=61 blocked=6 noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=pass detail=asset-restore-trace:authoritative-reread\n",
+    "truncated": false
+  },
+  "stderr": {
+    "text": "[0830/055914.721:ERROR:ui\\gfx\\win\\window_impl.cc:172] Failed to unregister class Chrome_WidgetWin_0. Error = 1412\r\n",
+    "truncated": false
+  },
+  "timeout": {
+    "timedOut": false,
+    "timeoutMs": 30000,
+    "graceMs": null,
+    "killRequested": false,
+    "childExitObserved": true,
+    "killError": null,
+    "childError": null
+  },
+  "noProjectOrSessionInspection": true,
+  "noRecoveryInvocationByRunner": true
+}

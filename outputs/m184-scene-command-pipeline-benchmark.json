@@ -1,0 +1,25 @@
+{
+  "operation": "m184.scene-command-pipeline-benchmark",
+  "status": "PASS",
+  "evidenceClass": "local-benchmark",
+  "workload": {
+    "entityCount": 10000,
+    "relationshipCount": 4000,
+    "typedCommandCount": 500,
+    "humanCommandCount": 250,
+    "aiCommandCount": 250
+  },
+  "results": {
+    "indexMs": 5.3566,
+    "commitMs": 566.1913999999999,
+    "validateMs": 11.699299999999994,
+    "serializeMs": 25.80589999999995,
+    "parseMs": 24.402499999999918,
+    "changedEntityCount": 4001,
+    "serializedBytes": 1918700,
+    "sha256": "79D43884FDECF58FE20EB127C712DF2FD0AADBADC5F957EA7FAAAECACAB572C1",
+    "validationErrorCount": 0
+  },
+  "conclusionBoundary": "Validates one deterministic shared command/relationship/serialization model in Node.js; does not prove Rust IPC, polygon Boolean robustness, renderer performance, or target desktop behavior.",
+  "timestamp": "2026-08-24T00:37:00.155Z"
+}

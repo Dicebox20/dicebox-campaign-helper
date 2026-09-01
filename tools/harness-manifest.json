@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "project": "dicebox-campaign-helper",
+  "target": {
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3",
+    "readinessRule": "blocker-based"
+  },
+  "lanes": [
+    {
+      "id": "contract",
+      "kind": "deterministic",
+      "command": "npm run check",
+      "proves": ["TypeScript contracts", "unit and package tests"],
+      "doesNotProve": ["live Foundry behavior", "permission routing"]
+    },
+    {
+      "id": "static-package",
+      "kind": "deterministic",
+      "command": "npm run verify:tooling",
+      "proves": ["manifest identity", "ES module syntax", "read-only mutation boundary", "KB integrity"],
+      "doesNotProve": ["Foundry import", "canvas behavior"]
+    },
+    {
+      "id": "utility-e2e",
+      "kind": "isolated-browser",
+      "adapter": "Region Editor Utility Harness / Playwright",
+      "receiptSchema": "HarnessLaneReceiptSchema",
+      "baseUrlEnv": "UTILITY_HARNESS_URL",
+      "artifacts": ["html report", "trace", "screenshot", "video", "redacted JSON receipt"],
+      "requiredArtifactKinds": ["html-report", "redacted-json"],
+      "supportsSocketProof": false,
+      "requires": ["reviewed fixture", "known harness URL"]
+    },
+    {
+      "id": "visible-chrome",
+      "kind": "operator-visible",
+      "adapter": "Supported Chrome connector: user.openTabs -> exact Gamemaster snapshot -> user.claimTab",
+      "receiptSchema": "HarnessLaneReceiptSchema",
+      "contexts": ["GM", "Player3"],
+      "gmSelectionContract": "GmHarnessReceiptSchema",
+      "profileHint": "Dicebox20 / Chrome Profile 8",
+      "proves": ["real browser rendering", "console/runtime evidence", "cross-client observation"],
+      "requiredArtifactKinds": ["screenshot", "redacted-json"],
+      "requires": ["exact world", "exact build fingerprint", "manual approval for writes"]
+    },
+    {
+      "id": "mcp-loopback",
+      "kind": "gated-developer-bridge",
+      "adapter": "DMF-style fixed-operation loopback bridge; DiceBox page-main adapter is a separate exact-world lane",
+      "transport": "127.0.0.1 websocket or stdio",
+      "stdioAdapter": "createFixedOperationStdioServer",
+      "receiptSchema": "StdioTransportReceiptSchema",
+      "receiptCommand": "npm run bridge:stdio:receipt",
+      "foundryApiBoundary": "Hooks.once(\"ready\"), game.version, game.system, game.users.activeGM, fromUuid, game.journal.get, native Document/embedded-document APIs, authoritative reread",
+      "framing": "bounded JSON lines; one request and one response per line",
+      "maxJsonLineBytes": 65536,
+      "networkEnabledByDefault": false,
+      "mutationEnabledByDefault": false,
+      "worldId": "dbx-test-world",
+      "allowedOperations": ["status", "fixture.select", "plan.preview", "plan.applyApproved", "snapshot.redacted", "reset.owned"],
+      "requires": ["harness enabled", "active GM", "approval token", "request id"]
+    },
+    {
+      "id": "dicebox-foundry-page-main",
+      "kind": "gated-developer-bridge",
+      "adapter": "DiceBox Foundry page-main live bridge",
+      "hostCommand": "npm run foundry:live-bridge",
+      "transport": "127.0.0.1 websocket with MCP stdio facade",
+      "protocol": "dicebox-foundry-live-bridge/1",
+      "worldId": "the-ballad-of-chauser-bill",
+      "allowedOperations": ["bridge.status", "harness.status", "helper.readiness", "ascendancy.preview", "ascendancy.install", "ascendancy.repair.preview", "ascendancy.repair", "ascendancy.snapshot"],
+      "foundrySettings": ["enableVerificationHarness", "enableMcpTestBridge", "verificationWorldId"],
+      "requires": ["both DiceBox settings enabled", "exact Ballad world", "elected active GM", "preview token", "explicit approved install"],
+      "forbidden": ["scripts", "new Function", "macros", "arbitrary Document payloads", "foreign-state deletion"]
+    },
+    {
+      "id": "live-foundry",
+      "kind": "exact-runtime",
+      "adapter": "versioned Foundry/D&D5e adapter",
+      "receiptSchema": "HarnessLaneReceiptSchema",
+      "runtimeEvidenceSchema": "FoundryRuntimeEvidenceSchema",
+      "runtimeEvidenceAuditCommand": "npm run foundry:evidence-audit",
+      "fixturePlanSchema": "FoundryFixturePlanSchema",
+      "fixturePlanCommand": "npm run foundry:fixture-plan",
+      "fixtureObservationSchema": "FoundryFixtureObservationReceiptSchema",
+      "fixtureObservationAuditCommand": "npm run foundry:fixture-observation-audit",
+      "fixtureObservationBundleSchema": "FoundryFixtureObservationBundleAuditSchema",
+      "fixtureObservationBundleAuditCommand": "npm run foundry:fixture-observation-bundle-audit",
+      "fixtureRoundEvidenceSchema": "FoundryFixtureRoundEvidenceSchema",
+      "fixtureRoundEvidenceAuditCommand": "npm run foundry:fixture-round-audit",
+      "fixtureRoundHarnessSchema": "FoundryFixtureRoundHarnessAuditSchema",
+      "proves": ["document use", "authority routing", "read-back", "recovery", "runtime sovereignty"],
+      "requiredArtifactKinds": ["runtime-receipt", "redacted-json"],
+      "requires": ["Foundry 14.367", "D&D5e 5.3.3", "GM and Player3", "disposable or explicitly approved world"]
+    }
+  ],
+  "mcpPolicy": {
+    "readOnlyDefault": true,
+    "approvalRequiredFor": ["plan.applyApproved", "reset.owned"],
+    "forbidden": ["eval", "new Function", "arbitrary macro execution", "raw database edits", "arbitrary document mutation", "public execute-as-GM"]
+  }
+}

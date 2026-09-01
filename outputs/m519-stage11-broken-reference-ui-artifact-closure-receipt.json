@@ -1,0 +1,51 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m519-stage11-broken-reference-ui-artifact-2026-08-29",
+  "milestone": "M519",
+  "evidenceLabel": "local",
+  "status": "ARTIFACT_ATTESTED",
+  "readyClaim": false,
+  "scope": "One explicit-mode debug package build and exact artifact/process reread",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "mode": "broken-reference-detach-ui-execute",
+    "terminalExitFlag": "1",
+    "exitCode": 0,
+    "frontendCompilation": "PASS",
+    "nativePackaging": "PASS",
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "99CD8005786DBEE59F261D41E1527B7965FCFD374EC2D3E90240475D19BE53BC",
+    "bundle": "apps/campaign-helper-desktop/dist/assets/index-I2giF0aC.js",
+    "bundleSha256": "0D4986B434CA770660AB17DFA5EAFEEC40933BBA81B985B157B53D7282993619"
+  },
+  "markers": {
+    "mode": true,
+    "project": true,
+    "roleMismatch": true,
+    "targetOwnershipHelper": true,
+    "generationUndefinedPredicateSource": "inspection.generation !== undefined",
+    "generationUndefinedPredicateBundle": "inspection.generation !== void 0",
+    "authoritativeRereadCommit": true
+  },
+  "processReread": {
+    "desktop": 0,
+    "cargo": 0,
+    "rustc": 0
+  },
+  "runtimeDisposition": {
+    "launch": false,
+    "capture": false,
+    "fixtureMutation": false,
+    "projectMutation": false,
+    "sessionMutation": false,
+    "recoveryOrApply": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false
+  },
+  "nextBoundary": {
+    "milestone": "M520",
+    "scope": "One exact capture-runner invocation against the M519 executable followed by trace, fixture/project/recovery/session, authoritative reread, and process reread.",
+    "prohibited": ["rebuild", "second capture", "separate launch", "retry", "fixture reset", "deletion", "cleanup", "unrelated mutation", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

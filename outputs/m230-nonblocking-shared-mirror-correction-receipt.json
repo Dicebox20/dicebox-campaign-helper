@@ -1,0 +1,31 @@
+{
+  "operation": "dicebox.governance.nonblocking-shared-mirror-correction",
+  "status": "PASS_LOCAL_GOVERNANCE",
+  "sourceId": "SRC-M230-NONBLOCKING-SHARED-MIRROR-CORRECTION",
+  "decisionId": "D-264",
+  "factId": "F-304",
+  "trialId": "T-277",
+  "scope": "Scheduled Google Docs and private GitHub mirror publication is non-blocking; the local roadmap, active card, and schema-plus-seed KB remain the immediate authority for governed delivery.",
+  "sharedIdeaDocument": {
+    "documentId": "14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o",
+    "title": "Dice Box Campaign Helper — Ideas & Architecture",
+    "tabId": "t.0",
+    "revisionId": "AIroW37veRtxT343_ge3oFeHUYSxILlGFYM_zQkHQdZmp5MgH58d8A3JPSSC80I82ZFuIIMUvvmDiL3Nsg3PTOsmwRoOs8Dv9J78BJMfUno",
+    "insertedRange": [141680, 142647],
+    "verification": "Revision-guarded connector update and targeted connector reread; the Windows-incompatible trusted-read helper was diagnosed and the connector-native full/targeted read fallback preserved target, revision, tab, anchor, and control awareness checks."
+  },
+  "verification": {
+    "workflowCheck": "PASS: 7 of 16 stages; real-project-workspaces remains the only active stage.",
+    "focusedTests": "PASS: active-slice workflow and KB query tests.",
+    "fullCheck": "PASS: workflow check, TypeScript/package build, full test suite, and tooling verification.",
+    "knowledgeBase": "PASS: schema-plus-seed rebuild and integrity verification.",
+    "diffHygiene": "PASS: git diff --check for governance paths."
+  },
+  "preservedBoundaries": [
+    "source reread and local roadmap/card plus KB reconciliation remain mandatory",
+    "scheduled mirrors cannot accept or authorize a project change",
+    "explicit approval, exact-target authority, foreign-state preservation, disclosure limits, and Foundry gates remain mandatory",
+    "no product, project-store, GitHub bridge, or Foundry mutation occurred for this governance closure"
+  ],
+  "nextAction": "Authorize and implement the prepared bounded Stage 8 workspace-acceptance bundle through the local roadmap/card and KB gate without waiting for a routine mirror write."
+}

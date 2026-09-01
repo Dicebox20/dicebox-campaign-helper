@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "0.1.0",
+  "operation": "campaign.final-map-assets.static.receipt",
+  "status": "reviewable",
+  "evidenceClass": "deterministic",
+  "readyClaim": false,
+  "noWrite": true,
+  "sourceContext": "Current Ballad of Chauser Bill campaign fixture after placeholder and rough tram-map filtering",
+  "assets": [
+    {
+      "assetId": "dbx:asset:map-ascendancy-tram-depot",
+      "path": "assets/maps/ascendancy-tram-depot-v2.png",
+      "dimensions": "1536x1024",
+      "sha256": "665fcaebf6f85965fa90b6d7c5aad116ec62900b7637105001902332e5ab0b32",
+      "foundryRole": "gridless scene background",
+      "geometryContract": "36 DiceBox tram anchors plus Dalton repair Region and tram exit",
+      "nativeApiStatus": "not-exercised"
+    },
+    {
+      "assetId": "dbx:asset:map-signal-frequency-chamber",
+      "path": "assets/maps/ascendancy-signal-frequency-chamber-v1.png",
+      "dimensions": "1536x1024",
+      "sha256": "b9cec09e05519981dda31a061317c6dd4c603936edee24e0a090a2d6358e4b66",
+      "foundryRole": "gridless scene background",
+      "geometryContract": "Campaign Helper orthogonal Region plan",
+      "nativeApiStatus": "not-exercised"
+    },
+    {
+      "assetId": "dbx:asset:map-rune-mechanism-chamber",
+      "path": "assets/maps/ascendancy-rune-mechanism-chamber-v1.png",
+      "dimensions": "1536x1024",
+      "sha256": "9a3155abb1f646430ea9bbbf291cdb9f2d6bba9b58305fcb89c49bff5e89d037",
+      "foundryRole": "gridless scene background",
+      "geometryContract": "Campaign Helper orthogonal Region plan",
+      "nativeApiStatus": "not-exercised"
+    },
+    {
+      "assetId": "dbx:asset:map-central-core-control-chamber",
+      "path": "assets/maps/ascendancy-central-core-control-chamber-v1.png",
+      "dimensions": "1536x1024",
+      "sha256": "1c1ef835a40bcf7267596bf143ee1984ca6a21e084c6054cc9ddd0ac243ec914",
+      "foundryRole": "gridless scene background",
+      "geometryContract": "Campaign Helper orthogonal Region plan",
+      "nativeApiStatus": "not-exercised"
+    }
+  ],
+  "mapPolicy": {
+    "geometryOwner": "spatial-blueprint",
+    "rendererOnly": true,
+    "coordinatePlans": "packages/dicebox-compiler/src/ascendancy-region-plan.ts",
+    "allFourRenderersBound": true,
+    "diagonalLayoutsUsed": false
+  },
+  "blockers": [
+    "Exact Foundry 14.367 / D&D5e 5.3.3 runtime and authoritative read-back remain unexercised.",
+    "Region Editor target-bound connection receipt remains pending."
+  ],
+  "mutation": "disabled-until-exact-runtime-gate"
+}
