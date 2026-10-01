@@ -1,0 +1,53 @@
+{
+  "milestone": "M751",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile the current Stage 11 evidence against all four acceptance clauses and eleven producer-family obligations after M750, then select one fresh bounded next slice.",
+  "sourceState": "Unborn project worktree with no HEAD; M751 is read-only and changes no implementation, project, Foundry, runtime, provider, credential, browser/session, foreign, or player-role password state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Independent broad read-only reconciliation of the active card, roadmap, KB M743-M750 records, closure receipts, Stage 11 acceptance clauses, and eleven producer-family evidence summaries.",
+    "workerOutcome": "Terra Extra High worker returned a compact receipt confirming all four clauses remain partial, the sixteen direct projections and 170 lifecycle/evidence rows, all eleven producer-family dispositions, KB/workflow integrity, no contradiction, and the smallest next slice: M752 project.save-only redo terminal-history receipt bridge and matched-reread classifier. The Foreman reviewed and closed the worker. No files, runtime state, proposals, projects, or stages changed."
+  },
+  "clauses": {
+    "claimProvenance": "PARTIAL: M743's sixteen exact terminal-history projections and M745-M750 closure receipts are provenance-linked, but aggregate producer execution/commit provenance is not proven.",
+    "reviewAndAuthority": "PARTIAL: human-review, local-project target, operation-specific apply authority, and no-generic-executor vocabulary remain explicit; current execution authority is not established across producer families.",
+    "applyAndReceipts": "PARTIAL: fourteen typed bridges, tests, receipts, and direct projections are indexed, and M750 directly binds the project.save undo bridge/schema; aggregate apply/commit receipt continuity and packaged/runtime authority remain incomplete.",
+    "lifecycleAndRecovery": "PARTIAL: M745 provides 42 review-terminal rows, M746 42 applying/unknown rows, M747 56 recovery-result rows, M748 28 undo/redo rows, and M750 2 project.save handler/classifier rows. These are read-only mappings/evidence; project.save redo remains unprojected/unproven, aggregate lifecycle behavior, and live active-GM/Foundry evidence remain unproven."
+  },
+  "producerFamilies": [
+    { "family": "read-only inspection/compile", "status": "closed, non-mutating" },
+    { "family": "workspace open/recent metadata", "status": "operation-specific partial" },
+    { "family": "ordinary project persistence", "status": "bounded slices closed; aggregate partial; M750 undo binding direct, redo unproven" },
+    { "family": "in-memory editing/navigation", "status": "bounded slices closed; aggregate partial" },
+    { "family": "asset import/binding", "status": "role-specific bounded evidence; aggregate partial" },
+    { "family": "legacy migration persistence", "status": "operation-specific partial" },
+    { "family": "backup-authoritative promotion", "status": "bounded packaged evidence; aggregate partial" },
+    { "family": "missing-asset restore", "status": "current packaged pass; aggregate partial" },
+    { "family": "missing-asset detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "broken Scene-reference detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "test-owned fixture/setup receipts", "status": "infrastructure only; non-certifying" }
+  ],
+  "evidence": {
+    "workflow": "PASS: Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations.",
+    "directProjectionCount": "16 total: fourteen indexed typed local-project operation kinds, one additional in-memory add-Scene projection, and one injected inverse fixture projection.",
+    "lifecycleEvidenceRows": "170 total: M745 42 review-terminal + M746 42 applying/unknown + M747 56 recovery-result + M748 28 undo/redo + M750 2 project.save handler/classifier rows.",
+    "m750Binding": "PASS: project.save committed→undo→undone and undone→redo→redone semantics use the canonical core map and exact matched target/revision/hash reread requirement; the undo row binds the actual bridge/schema objects, while redo is unprojected/unproven.",
+    "knowledgeBase": "PASS pre-closure synchronization state: 1175 sources, 1014 facts, 882 decisions, 135 open items, 787 trials, 40 research subjects, and 26 milestones; M750 F-999/D-883 were reread through the bounded read-only query surface.",
+    "projectionHashReview": "PASS: M743, M745, M746, M747, M748, M749, and M750 closure receipts and recorded source/test/UI hashes were reviewed; no contradictory projection source was found."
+  },
+  "remainingGaps": [
+    "Project.save redo operation-specific terminal-history receipt bridge and matched-reread classifier remain unprojected/unproven.",
+    "Aggregate current-authority evidence remains incomplete across the eleven producer families.",
+    "Full cross-producer lifecycle and recovery continuity remains incomplete for intentionally commit-only paths.",
+    "Packaged/runtime authority and direct live active-GM/Foundry evidence remain incomplete.",
+    "The Stage 11 live acceptance observation has not been accepted as an aggregate claim."
+  ],
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "decision": "M751 confirms M750 is internally consistent and directly binds the project.save undo bridge/classifier, but the redo bridge/classifier, aggregate authority, complete cross-producer continuity, packaged/runtime authority, and live active-GM/Foundry evidence remain incomplete. Stage 11 stays partial and Stage 12 remains excluded."
+  },
+  "selectedNext": "M752 fresh bounded code-only project.save redo terminal-history receipt bridge and matched-reread classifier, with exact post-redo target/revision/hash reread and no executor or transition invocation."
+}

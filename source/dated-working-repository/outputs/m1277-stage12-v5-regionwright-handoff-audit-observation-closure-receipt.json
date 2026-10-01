@@ -1,0 +1,84 @@
+{
+  "receiptVersion": 1,
+  "operation": "stage12.v5.regionwright.handoff-audit-observation",
+  "milestone": "M1277",
+  "status": "BLOCKED_TYPED_CONTRACT_DRIFT",
+  "evidenceClass": "fixture",
+  "readyClaim": false,
+  "noWrite": true,
+  "authoritativeReread": true,
+  "retryAllowed": false,
+  "foreignStatePreserved": true,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v5",
+    "worldId": "dbx-test-world",
+    "port": 30004,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "exactTargetMatch": true,
+    "browserTabId": "13",
+    "browserUrl": "http://127.0.0.1:30004/game",
+    "userName": "Gamemaster",
+    "activeGm": true,
+    "credentialsEnteredByAgent": false
+  },
+  "preReread": {
+    "browser": "Joined `/game` as `Gamemaster [GM]`; Region Controls exposed; no dialog before the audit.",
+    "v5Supervisor": { "status": "PASS", "pid": 8132, "port": 30004, "stateTargetMatches": true, "listenerCount": 1, "worldDocumentWrites": 0, "balladTouched": false },
+    "v4Supervisor": { "status": "PASS", "pid": 10676, "port": 30003, "stateTargetMatches": true, "listenerCount": 1, "worldDocumentWrites": 0, "balladTouched": false }
+  },
+  "audit": {
+    "control": "Audit Ascendancy Regionwright handoff",
+    "invocationCount": 1,
+    "status": "BLOCKED",
+    "evidenceClass": "target-bound",
+    "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+    "noWrite": true,
+    "authoritativeReread": true,
+    "rooms": [
+      { "roomId": "dbx:room:signal-frequency-chamber", "sceneUuid": "Scene.MYXiqAXWsxQ0EGbv", "helperRegionCount": 6, "regionwrightBehaviorCount": 0 },
+      { "roomId": "dbx:room:ascendancy-tram-depot", "sceneUuid": "Scene.0hCBRbhZeR9DVbuO", "helperRegionCount": 39, "regionwrightBehaviorCount": 0 },
+      { "roomId": "dbx:room:rune-mechanism-chamber", "sceneUuid": "Scene.jmFrAeOrOmWu2trK", "helperRegionCount": 6, "regionwrightBehaviorCount": 0 },
+      { "roomId": "dbx:room:central-core-control-chamber", "sceneUuid": "Scene.iryfWASzRGB6djwH", "helperRegionCount": 10, "regionwrightBehaviorCount": 0 }
+    ],
+    "helperRegionCount": 61,
+    "expectedHelperRegionCount": 60,
+    "regionwrightBehaviorCount": 0,
+    "expectedRegionwrightBehaviorCount": 22,
+    "teleportsPassed": 0,
+    "expectedTeleports": 5,
+    "ownedBehaviorKeys": [],
+    "playerFacingMacroCount": 0,
+    "andrewSceneOwnedBehaviorCount": 0,
+    "scenesCreated": 0,
+    "wallsCreated": 0,
+    "regionsCreated": 0,
+    "readbackErrors": [
+      { "issue": "missing-teleport-behavior", "teleportId": "dbx:teleport:signal-to-core", "expectedDestinationRegionId": "dbx:region:core-entry" },
+      { "issue": "missing-teleport-behavior", "teleportId": "dbx:teleport:tram-to-core", "expectedDestinationRegionId": "dbx:region:core-entry-west" },
+      { "issue": "missing-teleport-behavior", "teleportId": "dbx:teleport:rune-to-core", "expectedDestinationRegionId": "dbx:region:core-entry" },
+      { "issue": "missing-teleport-behavior", "teleportId": "dbx:teleport:core-to-signal", "expectedDestinationRegionId": "dbx:region:signal-entry" },
+      { "issue": "missing-teleport-behavior", "teleportId": "dbx:teleport:core-to-rune", "expectedDestinationRegionId": "dbx:region:rune-entry" },
+      { "issue": "helper-region-count", "observed": 61, "expected": 60 },
+      { "issue": "regionwright-behavior-count", "observed": 0, "expected": 22 },
+      { "issue": "teleport-pass-count", "observed": 0, "expected": 5 }
+    ],
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "dialog": { "opened": 1, "closeInvocations": 1, "applyInvocations": 0, "installInvocations": 0, "approvalInvocations": 0 },
+  "postReread": {
+    "browser": { "url": "http://127.0.0.1:30004/game", "visibleUser": "Gamemaster [GM]", "activeGm": true, "dialogs": 0, "regionControlsStillExposed": true },
+    "v5Supervisor": { "status": "PASS", "pid": 8132, "port": 30004, "worldDocumentWrites": 0, "balladTouched": false, "stateTargetMatches": true, "listenerCount": 1 },
+    "v4Supervisor": { "status": "PASS", "pid": 10676, "port": 30003, "worldDocumentWrites": 0, "balladTouched": false, "stateTargetMatches": true, "listenerCount": 1 }
+  },
+  "sourceTopology": {
+    "regionwrightModuleScript": { "path": "work/foundry-fixture-data-v5/Data/modules/regionwright/scripts/module.js", "bytes": 8322, "sha256": "75AB2FFD5FEF83BF92C16999E8C8551794CE4146D0CAFB2AA9DD92B03C17A75F" },
+    "ascendancyInstaller": { "path": "work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js", "bytes": 23106, "sha256": "5C89E5DFC31CE9FAAC4D3884A367C68CB68524A1AD012AE42496B4D789EF8D17" },
+    "interpretation": "The loaded fixed audit completed an authoritative no-write reread but was correctly blocked by helper-region and missing-behavior/teleport contract drift. This is blocker evidence, not behavior certification."
+  },
+  "actions": { "auditInvocations": 1, "installInvocations": 0, "previewInvocations": 0, "approvalInvocations": 0, "applyInvocations": 0, "dialogCloseInvocations": 1, "restartInvocations": 0, "settingsWrites": 0, "documentMutations": 0, "rawStorageInspections": 0, "playerPasswordActions": 0 },
+  "workflow": { "status": "PASS", "score": 69, "passedGates": 11, "totalGates": 16, "activeStage": "scene-authoring-breadth", "violations": [], "readyClaim": false },
+  "preservation": { "v4": "untouched", "foreignState": "preserved", "playerPasswords": "not entered/generated/assigned/persisted", "tramCore": "preserved", "ballad": "not touched", "external": "not touched" },
+  "nextBoundary": "M1278: local/staged Regionwright package and audit-contract reconciliation for the 61-versus-60 helper-region drift; no live retry, install, approval, Apply, or behavior mutation until the contract is reconciled."
+}

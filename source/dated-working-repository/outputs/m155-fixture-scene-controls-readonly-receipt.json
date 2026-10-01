@@ -1,0 +1,33 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m155-fixture-scene-controls-readonly",
+  "operation": "ascendancy.fixture.scene-controls.audit",
+  "status": "PASS",
+  "evidenceClass": "full_function",
+  "readyClaim": false,
+  "noWorldMutation": true,
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "userRole": "Gamemaster",
+    "activeGm": true
+  },
+  "sourceStage": {
+    "moduleVersion": "0.1.4",
+    "entry": "src/entry-20260825.js",
+    "manifestSha256": "38828AF425834BA8E57A55BE6CECA57ED4B406870CF7D7C865F48124FA30A7C3",
+    "installerSha256": "FFFB439942619C5AFFC10E5AB74B43EF9AA3107C989F1551FF5CFCE2E7C5BC83"
+  },
+  "observedControls": [
+    "Prepare DiceBox Ascendancy",
+    "Repair DiceBox Ascendancy maps and geometry"
+  ],
+  "consoleWarningsOrErrors": [],
+  "notes": [
+    "The fixture module was updated from the reviewed source and the fixture client was reloaded once.",
+    "This receipt proves only the fixture control-registration repair and does not authorize or report an installer, repair, Scene, Wall, Tile, Region, Macro, RegionBehavior, puzzle, reset, or progression action.",
+    "Ballad was not opened, read, or modified by this operation."
+  ]
+}

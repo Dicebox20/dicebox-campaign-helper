@@ -1,0 +1,57 @@
+{
+  "milestone": "M769",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile all four Stage 11 acceptance clauses and eleven producer-family obligations after M768, then select one bounded next slice.",
+  "sourceState": "Unborn project worktree with no HEAD; M769 is read-only reconciliation evidence and changes no source, project, Foundry, runtime, provider, credential, browser/session, foreign, or player-role password state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Read-only Stage 11 acceptance reconciliation after M768: review the aggregate current-authority and producer-coverage report, direct evidence index, producer-family summary, bounded redo receipts, current card, roadmap, and KB.",
+    "workerOutcome": "The bounded Terra Extra High worker timed out after two bounded waits and was closed without a receipt. The Foreman completed the reconciliation locally from the authoritative active card, roadmap, M768 receipt, evidence index, producer-family summary, and rebuilt KB; no worker receipt was accepted."
+  },
+  "reconciliation": {
+    "clauses": {
+      "claimAndProvenance": "PARTIAL",
+      "reviewAndAuthority": "PARTIAL",
+      "applyAndReceipts": "PARTIAL",
+      "lifecycleAndRecovery": "PARTIAL"
+    },
+    "producerFamilies": [
+      { "family": "read-only inspection/compile", "disposition": "CLOSED; NON-MUTATING" },
+      { "family": "workspace open/recent metadata", "disposition": "OPERATION-SPECIFIC PARTIAL" },
+      { "family": "ordinary project persistence", "disposition": "BOUNDED REDO SLICES CLOSED; AGGREGATE PARTIAL" },
+      { "family": "in-memory editing/navigation", "disposition": "BOUNDED REDO SLICE CLOSED; AGGREGATE PARTIAL" },
+      { "family": "asset import/binding", "disposition": "BIND, AUDIO, HANDOUT, AND TOKEN REDO BRIDGES CLOSED; AGGREGATE COVERAGE PARTIAL" },
+      { "family": "legacy migration persistence", "disposition": "OPERATION-SPECIFIC PARTIAL; ONE-WAY SOURCE OPERATION" },
+      { "family": "backup-authoritative promotion", "disposition": "BOUNDED PACKAGED EVIDENCE; AGGREGATE PARTIAL" },
+      { "family": "missing-asset restore", "disposition": "CURRENT PACKAGED PASS; AGGREGATE PARTIAL; ONE-WAY RECOVERY OPERATION" },
+      { "family": "missing-asset detach", "disposition": "CURRENT PACKAGED PASS; AGGREGATE PARTIAL; ONE-WAY RECOVERY OPERATION" },
+      { "family": "broken Scene-reference detach", "disposition": "CURRENT PACKAGED PASS; AGGREGATE PARTIAL; ONE-WAY RECOVERY OPERATION" },
+      { "family": "test-owned fixture/setup receipts", "disposition": "INFRASTRUCTURE ONLY; NON-CERTIFYING" }
+    ],
+    "directProjectionCount": 16,
+    "lifecycleEvidenceRows": 186,
+    "redoBindings": ["project.save", "project.rename", "project.add-scene.persist", "project.asset.bind", "project.asset.register-audio", "project.asset.register-handout", "project.asset.register-token", "project.add-scene.commit-in-memory"],
+    "aggregateReport": "M768 exact aggregate current-authority and producer-coverage classifier passes with currentAuthorityStatus=partial, stage11AcceptanceStatus=blocked, and aggregate authority not granted.",
+    "remainingGaps": [
+      "Aggregate current authority remains unproven beyond the read-only partial classifier.",
+      "Cross-producer lifecycle and recovery continuity remains incomplete.",
+      "Packaged/runtime authority and direct active-GM/Foundry evidence remain incomplete.",
+      "The aggregate Stage 11 acceptance claim is not supported; Stage 12 remains locked."
+    ],
+    "contradictionReview": "PASS; no contradiction found among M768 evidence, M768 aggregate classifier output, active card, roadmap, direct evidence index, producer-family summary, and authoritative KB rebuild."
+  },
+  "validation": {
+    "workflow": "PASS Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations",
+    "knowledgeBase": "PASS current post-M768 state at 1193 sources, 1032 facts, 900 decisions, 135 open items, 788 trials, 40 research subjects, and 26 milestones",
+    "liveRuntime": "NOT RUN; live Foundry/runtime, project mutation, providers, credentials, browser/session, and repository promotion remain outside this reconciliation."
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "readyClaim": false,
+    "decision": "M769 confirms the aggregate classifier is internally consistent but remains non-certifying. Stage 11 still lacks packaged/runtime authority and direct active-GM/Foundry evidence, so Stage 12 cannot begin."
+  },
+  "selectedNext": "M770 one exact packaged/runtime current-authority evidence observation with human-visible active-GM/Foundry gates; preserve all local evidence, stop on unknown outcome, and keep Stage 11 acceptance and Stage 12 excluded until reread supports them."
+}

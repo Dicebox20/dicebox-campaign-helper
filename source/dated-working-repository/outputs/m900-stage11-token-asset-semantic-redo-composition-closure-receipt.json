@@ -1,0 +1,90 @@
+{
+  "milestone": "M900",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY COMPOSITION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Compose the existing strict project.asset.register-token redo bridge with a typed semantic receipt using a deterministic in-memory fixture.",
+  "composition": {
+    "bridge": "apps/campaign-helper-desktop/src/project-token-asset-terminal-history.ts",
+    "semanticLayer": "apps/campaign-helper-desktop/src/project-stage11-token-asset-semantic-redo-evidence.ts",
+    "fixture": "tests/project-stage11-token-asset-semantic-redo-evidence.test.ts",
+    "operation": "project.asset.register-token.redo",
+    "semantic": "redo-post-state",
+    "sourceReceiptStrictlyParsed": true,
+    "matchedReread": true,
+    "generationAdvanced": true,
+    "contentHashChanged": true,
+    "assetTreePreserved": true,
+    "contentAddressedTokenRegistrationPreserved": true,
+    "scenePreserved": true,
+    "envelopeRotated": true,
+    "driftRejected": "token-asset/content/Scene/envelope/readback identity drift"
+  },
+  "safety": {
+    "readOnlyEvidence": true,
+    "nonCertifying": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noProjectMutation": true,
+    "noFoundryWrite": true,
+    "foreignStatePreserved": true,
+    "backupPromotionUndoRedo": "NOT_APPLICABLE_ONE_WAY",
+    "readyClaim": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false
+  },
+  "validation": {
+    "focused": "PASS: 2 files; 6 tests",
+    "fullRepositorySuite": "PASS: 202 files; 926 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheckBeforeClosure": "PASS: 10/16; violations 0",
+    "diffCheck": "PASS: git diff --check",
+    "semanticNegativeCoverage": [
+      "equal content hash or semantic post-state drift",
+      "foreign token descriptor drift",
+      "Scene serialization/identity drift",
+      "transition-authority drift"
+    ]
+  },
+  "artifacts": {
+    "semanticLayer": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-token-asset-semantic-redo-evidence.ts",
+      "sha256": "3A65C813160E90B1E1E78221FDC5C7A25B1E6BADA59BC1AFDCD15D7D704A9F9F"
+    },
+    "focusedTest": {
+      "path": "tests/project-stage11-token-asset-semantic-redo-evidence.test.ts",
+      "sha256": "141CC0556387ED6024D449DC9389EC0A8213E8F20215934B237C28422891737C"
+    },
+    "bridge": {
+      "path": "apps/campaign-helper-desktop/src/project-token-asset-terminal-history.ts",
+      "sha256": "16AB5C2618F7D208626A1C47BA1B7BAC8F713BBF0274DEBA1F466D4AFCC46847"
+    },
+    "bridgeTest": {
+      "path": "tests/project-token-asset-terminal-history.test.ts",
+      "sha256": "9D942E6F0E0F6A0DB6B0CC1B106D420AC7CEA879F2A2F231C1D9D212A696ABB5"
+    }
+  },
+  "limits": {
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "aggregateSemanticAttachment": false,
+    "runtimeLaneReopened": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "backup-promotion undo/redo support",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform one read-only reconciliation of M900 against the complete Stage 11 matrix; retain all counts and authority locks, then select at most one directly evidenced next gap."
+}

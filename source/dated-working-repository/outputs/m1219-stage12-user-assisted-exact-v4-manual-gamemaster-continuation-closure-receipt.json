@@ -1,0 +1,60 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1219-stage12-user-assisted-exact-v4-manual-gamemaster-continuation-closure",
+  "operation": "stage12.user-assisted-exact-v4.manual-gamemaster-continuation",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1219",
+  "status": "BLOCKED_USER_ACTION_REQUIRED",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-09-07",
+  "authorization": "docs/ACTIVE-PROGRAM-SLICE.json acceptedStage12M1219UserAssistedExactV4ManualGamemasterContinuation",
+  "fixture": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "port": 30003,
+    "worldId": "dbx-test-world",
+    "restart": "PASS_exact-v4",
+    "joinSurface": "Exact DiceBox Disposable Ascendancy Fixture join form was observed in the Codex in-app browser during the authorized run.",
+    "manualAuthentication": "NOT_PERFORMED",
+    "currentPlayersObserved": "0 / 2",
+    "requiredUserAction": "User must manually enter Gamemaster with a blank password and submit the visible join form. The agent did not type, select, or automate credentials.",
+    "browserHandoff": "The CUA-created browser tab was not retained as a persistent interactable tab between calls; no user authentication event was observed."
+  },
+  "mutation": {
+    "loadedIdentity": "NOT_REACHED",
+    "runtimeProfile": "NOT_REACHED",
+    "activeGm": "NOT_REACHED",
+    "preview": "NOT_REACHED",
+    "approval": "NOT_REACHED",
+    "nativeSceneWrites": 0,
+    "nativeChildWrites": 0,
+    "authoritativeReread": "NOT_REACHED",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "foreignStatePreserved": true
+  },
+  "finalSupervisor": {
+    "status": "stopped",
+    "pid": 19780,
+    "listener": false,
+    "stopRecovery": "forced process-tree termination after normal termination returned status 255",
+    "stateReceipt": "work/foundry-fixture-data-v4/.dicebox-supervisor/state.json",
+    "stopReceipt": "outputs/foundry-fixture-supervisor-last-receipt.json"
+  },
+  "blockers": [
+    "Manual Gamemaster blank-password authentication was not completed by the user, so loaded identity, active-GM authority, and the M1217 control could not be observed.",
+    "The single M1219 restart was stopped safely after the visible join boundary; a later attempt requires a separately authorized continuation."
+  ],
+  "doesNotProve": [
+    "loaded current M1217 identity",
+    "active-GM runtime authority",
+    "four helper-owned Ascendancy Scenes",
+    "native Scene/Wall/Region/Tile authority",
+    "Regionwright mechanics or RegionBehavior",
+    "player behavior or acceptance",
+    "persistent-world promotion",
+    "Stage 12 acceptance",
+    "Ready-to-Play"
+  ],
+  "nextBoundary": "On user resumption, select a new separately authorized user-assisted exact-v4 boundary; do not retry M1219 within its closed scope.",
+  "readyClaim": false
+}

@@ -1,0 +1,46 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M854",
+  "operation": "program-scene.update-witness.reread",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "fixture": {
+    "dataRoot": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundry": "14.367",
+    "system": "dnd5e 5.3.3",
+    "user": "Gamemaster",
+    "password": "blank"
+  },
+  "sourceAndStagedProgramSceneSha256": "3A063C2DEC5A4BF7AD7B6B13CE602FF4EDCF32071C419E3AD7C5D265274113AB",
+  "control": {
+    "label": "Show DiceBox owned-Scene witness reread",
+    "visibleToGamemaster": true
+  },
+  "observation": {
+    "status": "OBSERVED",
+    "noWrite": true,
+    "stableId": "dbx:scene:desktop-shell-fixture",
+    "complete": true,
+    "counts": { "walls": 5, "regions": 2, "tiles": 1 },
+    "updateWitnessBaseline": "absent",
+    "foreignWorldScenes": 1,
+    "authoritativeReread": true,
+    "noGenericQuery": true,
+    "noUpdateInvoked": true,
+    "retryPerformed": false,
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "closure": {
+    "tabClosed": true,
+    "finalFixtureStatus": "STOPPED/no listener",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "stage11AcceptanceStatus": "blocked",
+  "stage12Started": false,
+  "readyClaim": false
+}

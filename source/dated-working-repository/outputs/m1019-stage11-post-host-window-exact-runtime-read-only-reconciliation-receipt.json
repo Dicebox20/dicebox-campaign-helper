@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1019",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; M1020 SELECTED",
+  "evidenceClass": "deterministic",
+  "scope": "Reconcile M1018 exact-runtime evidence against the complete Stage 11 authority matrix and select one directly evidenced next gap.",
+  "inputs": {
+    "runtimeReceipt": "outputs/m1018-stage11-host-window-recovery-and-final-exact-runtime-reread-receipt.json",
+    "runtimeReceiptSha256": "C64E7137308D211BAE4B7C0DD72E239C317C06EE26CE17690205934FA88B4D7C",
+    "aggregateSource": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "aggregateCurrentAuthoritySource": "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "workflowCard": "docs/ACTIVE-PROGRAM-SLICE.json",
+    "knowledgeBase": "database/dicebox_campaign_helper_knowledge.sqlite"
+  },
+  "reconciliation": {
+    "target": "dbx-test-world / Foundry 14.367 / dnd5e 5.3.3 / DiceBox 0.1.15",
+    "runtimeViewport": "1920x863",
+    "runtimeVisibleUser": "Gamemaster [GM]",
+    "runtimeVisibleScene": "DiceBox Tram Routing Projection",
+    "runtimeNoWrite": true,
+    "foreignStatePreserved": true,
+    "runtimeEvidence": "PASS",
+    "aggregateRuntimeBinding": "MISSING",
+    "producerFamilyCount": 11,
+    "modeledOperationCount": 14,
+    "directProjectionCount": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthorityRedoEntries": 9,
+    "handlerClassifierAggregateAttachments": 10,
+    "semanticAggregateAttachments": 9,
+    "stage11Clauses": "4 PARTIAL",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "crossProducerContinuity": "unproven",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "selectedGap": {
+    "milestone": "M1020",
+    "description": "Attach the exact M1018 fresh exact-runtime/current-authority receipt to the Stage 11 aggregate ledger as one strict producer-scoped non-certifying field.",
+    "requiredBoundaries": [
+      "preserve exact M1018 receipt identity and target/profile/viewport details",
+      "preserve Gamemaster [GM], active Scene, no-write, foreign-state, and extension-noise classification",
+      "preserve all existing counts and authority states",
+      "fail closed on target, browser, viewport, control, write, authority, or Stage 11 drift",
+      "do not invoke runtime, mutation, generic execution, credentials, player passwords, or authority promotion"
+    ]
+  },
+  "validation": {
+    "knowledgeBase": "PASS: rebuilt and verified before reconciliation; 1594 sources, 1268 facts, 1231 decisions, 135 open items, 857 trials.",
+    "aggregateEvidenceSuite": "PASS: 1 file / 29 tests.",
+    "workflow": "PASS: 10/16 gates, proposal-approval-history active, zero violations, readyClaim false.",
+    "packageTypeCheck": "PASS",
+    "gitDiffCheck": "PASS"
+  },
+  "limits": {
+    "readOnly": true,
+    "runtimeRetry": false,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete aggregate current authority",
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer committed/recovered continuity",
+    "project mutation or generic execution",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1019 closure and M1020 authorization, rebuild and verify the KB, then implement only the strict typed aggregate attachment."
+}

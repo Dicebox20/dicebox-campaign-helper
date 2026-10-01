@@ -1,0 +1,51 @@
+{
+  "milestone": "M700",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY",
+  "scope": "Bind reread-claimed transitions to an exact matched claim-store persistence-resolution witness and reject forged witness/event combinations.",
+  "sourceState": "Unborn project worktree with no HEAD; the bounded worker and Foreman operated on the current project snapshot.",
+  "delegation": {
+    "model": "gpt-5.6-sol",
+    "reasoningEffort": "medium",
+    "workerScope": "Canonical claim-state/claim-store boundary and focused claim tests only.",
+    "workerReceipt": "2 test files, 10/10 tests passed, full build passed; worker changed no roadmap, KB, store invocation, persistence write, dispatch, runtime, or Stage 11 acceptance surface.",
+    "foremanReview": "Reviewed the worker boundary, integrated one shared downstream claim fixture, and closed the worker after receipt review."
+  },
+  "changedPaths": [
+    "packages/dicebox-compiler/src/staged-inverse-permit-claim.ts",
+    "packages/dicebox-compiler/src/staged-inverse-permit-claim-store.ts",
+    "tests/staged-inverse-permit-claim.test.ts",
+    "tests/staged-inverse-claim-fixture.ts",
+    "tests/staged-inverse-executor-composition.test.ts",
+    "tests/staged-inverse-pre-dispatch-context.test.ts",
+    "tests/staged-inverse-pre-persistence-proof.test.ts",
+    "tests/staged-inverse-preflight-orchestration.test.ts",
+    "tests/staged-inverse-receipt-ledger.test.ts",
+    "tests/staged-inverse-proof-composition-bridge.test.ts"
+  ],
+  "implementation": {
+    "claimTransition": "reread-claimed requires a structurally exact matched persistence-resolution witness with matching observation time and pending claim identity.",
+    "resolutionSchema": "Matched resolutions require an exact claimed reread; missing, unknown, and conflicting states reject forged reread combinations while preserving fail-closed retry semantics.",
+    "downstreamFixtures": "Six downstream claim fixtures now construct the same exact matched witness before entering claimed state."
+  },
+  "validation": {
+    "focused": "7 test files, 29/29 tests passed.",
+    "full": "153 test files, 782/782 tests passed; TypeScript build passed; desktop production build passed with the existing bundle-size warning; tooling verification passed; workflow checker passed.",
+    "knowledgeBaseBeforeImplementation": "schema-plus-seed rebuild and verify passed at 1120 sources, 960 facts, 827 decisions, 787 trials, 40 research subjects, and 26 milestones.",
+    "readyClaim": false
+  },
+  "safety": {
+    "claimStoreInvocation": false,
+    "claimStoreWrite": false,
+    "dependencyInvocation": false,
+    "adapterDispatch": "not-authorized-by-this-contract",
+    "executorContinuation": false,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "foreignStatePreserved": true,
+    "liveCertification": false,
+    "stage11Acceptance": false
+  },
+  "selectedNext": "M701 read-only reconciliation of M700 witness-bound transitions against claim-store resolution, legacy executor boundary, and downstream proof/composition consumers; no code or runtime action until reconciliation.",
+  "recovery": "The worker flagged six downstream fixtures as requiring the new witness shape; the Foreman added one shared exact-witness fixture helper, reran the affected suites, then reran the full gate successfully."
+}

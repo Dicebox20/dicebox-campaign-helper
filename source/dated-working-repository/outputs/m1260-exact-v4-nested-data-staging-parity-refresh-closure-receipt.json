@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1260",
+  "operation": "foundry.module.update-and-source-staged-parity",
+  "status": "PASS_STAGED_PARITY",
+  "evidenceClass": "local-staged",
+  "target": {
+    "destinationRoot": "work/foundry-fixture-data-v4/Data",
+    "packageId": "dicebox-campaign-helper",
+    "exactNestedDataTarget": true,
+    "worldId": "dbx-test-world"
+  },
+  "update": {
+    "invocations": 1,
+    "operation": "foundry.module.update",
+    "status": "PASS",
+    "noWorldMutation": true,
+    "updaterOwnedFileCount": 35,
+    "sourceStagedMatches": 35,
+    "mismatches": []
+  },
+  "identity": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1259",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1259",
+    "installerBytes": 81788,
+    "installerSha256": "579f96e4948bbfc7b508f29cbde57e2dd331ddee89c6be1f0464f9eaffbfe731",
+    "moduleBytes": 114787,
+    "moduleSha256": "cee29eb17aac6b53da42e2f35aaca4b521dc4f2338e24f4252f79b62891eee1f",
+    "sidecarBytes": 511,
+    "sidecarSha256": "6b91eec18d9962cbc0205e2e60c2430490261c33e54ab201db1eb40a20605ef1"
+  },
+  "contract": {
+    "servedGet": false,
+    "fixtureRestart": false,
+    "browserControl": false,
+    "install": false,
+    "preview": false,
+    "apply": false,
+    "foreignStatePreserved": true,
+    "playerPasswordStateUntouched": true,
+    "balladTouched": false,
+    "readyClaim": false
+  },
+  "disposition": "One exact nested-Data update targeted the existing DiceBox module directory and the authoritative reread found all 35 updater-owned source/staged files byte- and SHA-256-identical, including the M1259 installer/module/sidecar identity. This proves staged filesystem parity only; no served, loaded, runtime, installer, native, persistent-world, player, Stage 12, or Ready-to-Play claim is made.",
+  "next": "M1261: restart/reopen exact-v4 once and reread served/loaded M1259 identity under the manual Gamemaster gate; no installer invocation."
+}

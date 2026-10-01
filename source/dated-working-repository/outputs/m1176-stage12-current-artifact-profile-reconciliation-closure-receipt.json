@@ -1,0 +1,111 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1176-current-artifact-profile-reconciliation-closure",
+  "milestone": "M1176",
+  "status": "CLOSED_M1176_TYPED_PROFILE_DIFF_BLOCKED_PREVIEW_APPROVAL",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.current-artifact-profile-reconciliation.closure",
+  "inputs": {
+    "artifactSpec": "outputs/m1172-current-foundry-artifact-spec-receipt.json",
+    "parityObservation": "outputs/m1173-stage12-current-candidate-diagnostic-parity-and-observation-closure-receipt.json",
+    "runtimeProfile": "outputs/m1175-stage12-exact-gamemaster-runtime-profile-observation-closure-receipt.json"
+  },
+  "target": {
+    "packageId": "dicebox-campaign-helper",
+    "packageVersion": "0.1.15",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "worldId": "dbx-test-world"
+  },
+  "artifactGate": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1172",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1172",
+    "specSha256": "3f96c3f259693fb48f09d2ee9c3b11a853573c8d49a197de2b3c1ed345644943",
+    "artifactCount": 5,
+    "artifactMatches": 5,
+    "status": "PASS_CURRENT_M1172_CANONICAL_ARTIFACTS",
+    "artifacts": {
+      "adapter": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+      "installer": "600f24da6339b2557c9969391085e0950a02e63008f290cecb2bf89f4f916e53",
+      "package": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+      "runtime": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b",
+      "worker": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87"
+    }
+  },
+  "parityGate": {
+    "stageReceipt": "outputs/m1173-stage12-current-candidate-diagnostic-parity-and-observation-closure-receipt.json",
+    "sourceStagedFiles": 6,
+    "sourceStagedMatches": 6,
+    "servedRequests": 1,
+    "servedStatus": 200,
+    "servedBytes": 40732,
+    "servedSha256": "600f24da6339b2557c9969391085e0950a02e63008f290cecb2bf89f4f916e53",
+    "sourceStagedServedParity": true,
+    "status": "PASS_M1173_CURRENT_SIX_FILE_AND_SERVED_PARITY"
+  },
+  "runtimeProfileGate": {
+    "profileReceipt": "outputs/m1175-stage12-exact-gamemaster-runtime-profile-observation-closure-receipt.json",
+    "schemaVersion": "0.1.0",
+    "runtimeFingerprint": "dbx:fingerprint:cbea3468",
+    "profileFingerprint": "dbx:fingerprint:cbea3468",
+    "documentTypeCount": 34,
+    "capabilityCount": 17,
+    "targetExact": true,
+    "manualGamemasterJoin": true,
+    "currentUserMatchesActiveGm": true,
+    "queryCount": 1,
+    "noWrite": true,
+    "executionAuthority": false,
+    "unavailableCapabilities": [
+      "foundry.document.write",
+      "foundry.media.deploy",
+      "foundry.region.write",
+      "foundry.scene.placeable.write",
+      "foundry.scene.write"
+    ],
+    "unknownCapabilities": [
+      "dnd5e.activity-hooks",
+      "foundry.region.read",
+      "foundry.scene.placeable.read",
+      "foundry.users.active-gm"
+    ],
+    "status": "PASS_CURRENT_EXACT_TARGET_PROFILE_OBSERVED"
+  },
+  "profileDiff": {
+    "artifactBoundProfileFields": "unavailable-in-fixed-profile-surface",
+    "hashDrift": false,
+    "identityInferred": false,
+    "unknownAndUnavailablePreserved": true,
+    "classification": "SEPARATE_EVIDENCE_REQUIRED_NOT_HASH_DRIFT",
+    "status": "BLOCKED_ARTIFACT_BOUND_PROFILE_FIELDS_UNAVAILABLE"
+  },
+  "promotionGate": {
+    "status": "BLOCKED",
+    "reason": "Current artifact identity and exact RuntimeProfile are each clean, but the fixed profile does not expose complete artifact-bound package/adapter fields; no authority or package binding is inferred.",
+    "previewApproval": false,
+    "authoritativeReread": false,
+    "runtimeBinding": false,
+    "payload": false,
+    "proposal": false,
+    "dispatch": false,
+    "liveCreation": false,
+    "readyClaim": false
+  },
+  "lifecycle": {
+    "runtimeReopened": false,
+    "stagingPerformed": false,
+    "servedGetPerformed": false,
+    "installerInvoked": false,
+    "documentsOrAssetsMutated": false,
+    "foreignStatePreserved": true,
+    "finalRuntimeState": "M1175 STOPPED/no listeners/zero world-document writes/no Ballad",
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "The fixed RuntimeProfile surface omits complete artifact-bound package/adapter fields; this remains an explicit unavailable-evidence boundary rather than hash drift.",
+    "The fixed M1141 candidate preview still requires an approval envelope and authoritative reread before any creation route.",
+    "Approved Signal/Rune live creation, post-creation authoritative reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain unproved."
+  ],
+  "nextBoundary": "M1177: local fixed approval-envelope replay of the M1141 Signal/Rune preview; no runtime, apply, binding, payload, proposal, dispatch, or document creation."
+}

@@ -1,0 +1,73 @@
+{
+  "operation": "dicebox.project.fixed-root-mutation-lease-packaged-receipt",
+  "status": "PASS",
+  "evidenceLabel": "local",
+  "capturedAt": "2026-08-26",
+  "scope": "D-261 fixed app-local advisory exclusion for project-store and workspace-index mutations only",
+  "implementation": {
+    "leasePath": "fixed app-local root / dicebox-project-store.mutation.lock",
+    "callerSuppliedPath": false,
+    "collisionCode": "PROJECT_STORE_BUSY",
+    "collisionRetry": "after-holder-exit-and-reread",
+    "release": [
+      "normal Rust scope exit",
+      "operating-system process termination"
+    ],
+    "readOnlyOperations": [
+      "catalog",
+      "recovery inspection",
+      "migration explanation",
+      "Foundry preview"
+    ]
+  },
+  "deterministic": {
+    "rustProjectStoreTests": 38,
+    "collisionTest": "fixed_root_mutation_lease_blocks_project_and_workspace_writes_without_blocking_reads",
+    "collisionProof": [
+      "project save is blocked",
+      "workspace-index touch is blocked",
+      "primary project bytes, backup disposition, asset tree, and absent workspace index remain unchanged",
+      "catalog remains readable",
+      "after lease drop, workspace touch and project save succeed"
+    ],
+    "typedDesktopChecks": [
+      "fixed adapter returns typed ProjectStoreFailure",
+      "self-test accepts only PROJECT_STORE_BUSY with retry guidance",
+      "normal package build and ordinary startup are no-write"
+    ]
+  },
+  "packagedTwoProcessProof": {
+    "testProjectId": "dbx:project:desktop-mutation-lease-self-test-m227",
+    "holder": "separate fixed-root test process holds byte range 0 of the store-owned lease file for 25 seconds",
+    "blockedCompetitor": {
+      "catalogBeforeAndAfter": "PARTIAL/no-write with no test project entry",
+      "create": "PROJECT_STORE_BUSY",
+      "projectWrittenWhileHeld": false,
+      "workspaceIndexWrittenWhileHeld": false,
+      "foundryWrite": false
+    },
+    "releasedRetry": {
+      "generation": 1,
+      "contentSha256": "889c905bc3461547b9286f9e7cce53237d7cbfc0e32573dd798fa7a834c26b64",
+      "sceneCount": 1,
+      "assetCount": 0,
+      "authoritativeLoadMatched": true,
+      "foundryWrite": false
+    },
+    "ordinaryStartup": {
+      "projectFileSha256": "2474481768EACFBC77F6C9EA41AB5DE820E21F3DA4E15B542F9A4067C31B11D9",
+      "projectMtimeUnchanged": true,
+      "catalogOnly": true,
+      "foundryWrite": false
+    }
+  },
+  "excluded": [
+    "network or cross-machine locking",
+    "caller-chosen lock paths",
+    "lock stealing, timeout, or stale cleanup",
+    "directory-entry crash durability",
+    "project deletion or broad recovery",
+    "Foundry mutation",
+    "Stage 8 completion or alpha certification"
+  ]
+}

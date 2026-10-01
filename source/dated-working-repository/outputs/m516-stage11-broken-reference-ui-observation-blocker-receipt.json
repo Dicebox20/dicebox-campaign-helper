@@ -1,0 +1,73 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m516-stage11-broken-reference-ui-observation-blocker-2026-08-29",
+  "milestone": "M516",
+  "evidenceLabel": "local",
+  "status": "BLOCKED_PRESERVED",
+  "readyClaim": false,
+  "scope": "One exact packaged broken-reference UI lifecycle observation and authoritative source/state reread",
+  "capture": {
+    "receipt": "outputs/m516-stage11-broken-reference-ui-observation-receipt.json",
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "transportExitCode": 0,
+    "fixtureSetup": "PASS",
+    "inspection": "BLOCKED",
+    "blockerCode": "BACKGROUND_ASSET_ROLE_MISMATCH",
+    "pendingArtifactsReported": 1,
+    "uiStage": "blocked",
+    "noProjectOrSessionInspection": true,
+    "noRecoveryInvocationByRunner": true,
+    "retryDisposition": "No retry: the same exact artifact would deterministically encounter the same source guard mismatch."
+  },
+  "findings": {
+    "fixtureAndInspection": "Strict fixture reuse passed; recovery inspection intentionally returned BLOCKED with generation absent, primary BLOCKED, backup MISSING, empty structured Scene/asset lists, one BACKGROUND_ASSET_ROLE_MISMATCH reference, noWrite, and noFoundryWrite.",
+    "pendingArtifact": "The one valid pending artifact is global workspace-index-pending; the target broken-reference project directory contains only project.json and no project-pending artifact. M514 target ownership filtering is present in the fresh package.",
+    "generationContract": "Native ProjectRecoveryInspectionReceipt serializes generation as an optional field and omits it when None; the TypeScript receipt type models generation as optional, so the blocked runtime value is undefined. The broken-reference App guard currently requires inspection.generation !== null, which rejects the valid omitted/undefined blocked field before session creation.",
+    "sessionBoundary": "No project/session inspection, proposal session, reviewer approval, typed apply, recovery invocation, or session replacement occurred.",
+    "exactGuardUncertainty": "The capture trace does not emit the individual predicate, but the native omission plus TypeScript optional type and current !== null guard establish the deterministic null/undefined mismatch; the pending helper no longer matches the unrelated workspace artifact."
+  },
+  "fixtureReread": {
+    "projectPath": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v1/project.json",
+    "directoryEntries": ["project.json"],
+    "projectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "generation": 1,
+    "contentSha256": "b1d49b4925e707e44681a35c0394fc6cd9ee49096689bbab28cfb00b09f1f986",
+    "sceneCount": 2,
+    "assetBlobSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "assetBlobPresentAndHashValid": true,
+    "backupPresent": false,
+    "workspaceGeneration": 82,
+    "workspaceSha256": "F6A79A51B6A1790D4278F19286B859ABD22D83578634B5F8889C7F8AFBC4BC5B",
+    "workspaceEntryPresent": true
+  },
+  "pendingArtifactReread": {
+    "artifactKind": "workspace-index-pending",
+    "path": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending",
+    "sha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+    "valid": true,
+    "unrelatedToTarget": true
+  },
+  "processReread": {
+    "desktop": 0,
+    "cargo": 0,
+    "rustc": 0
+  },
+  "validation": {
+    "captureTransport": "PASS",
+    "authoritativeReread": "PASS",
+    "retry": false,
+    "reset": false,
+    "deletion": false,
+    "fixtureMutation": false,
+    "sessionMutation": false,
+    "recoveryOrApply": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false
+  },
+  "nextBoundary": {
+    "milestone": "M517",
+    "scope": "Read-only reconcile the native omitted-generation contract, TypeScript optional receipt type, broken-reference App generation guard, focused tests, and preserved state; select at most one narrow correction.",
+    "prohibited": ["source edit", "build", "launch", "capture", "retry", "fixture reset", "deletion", "cleanup", "session transition", "approval", "apply", "recovery", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

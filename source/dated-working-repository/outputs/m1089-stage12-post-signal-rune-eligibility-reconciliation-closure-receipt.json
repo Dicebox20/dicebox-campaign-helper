@@ -1,0 +1,78 @@
+{
+  "receiptType": "stage12-post-signal-rune-eligibility-reconciliation-closure",
+  "milestone": "M1089",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "reconciliation": {
+    "m1088EligibilityGate": "ready",
+    "manifestId": "dbx:manifest:m1086-signal-rune-renderers",
+    "requiredAssetIds": [
+      "dbx:asset:map-rune-mechanism-chamber",
+      "dbx:asset:map-signal-frequency-chamber"
+    ],
+    "dependentDocumentIds": [
+      "dbx:scene:rune-mechanism-chamber",
+      "dbx:scene:signal-frequency-chamber"
+    ],
+    "eligibilityReadback": true,
+    "noWrite": true,
+    "documentCreated": false,
+    "m7SignalItems": 6,
+    "m7SignalSteps": 6,
+    "m7RuneItems": 6,
+    "m7RuneSteps": 6,
+    "m7Mutation": "disabled-until-exact-runtime-gate"
+  },
+  "previewBoundary": {
+    "signalStatus": "blocked",
+    "runeStatus": "blocked",
+    "blockedFindings": [
+      "RUNTIME_NOT_READY",
+      "FOUNDRY_VERSION_MISMATCH",
+      "SYSTEM_VERSION_MISMATCH",
+      "FOUNDRY_SCENE_READ_UNAVAILABLE",
+      "FOUNDRY_SCENE_PLACEABLE_READ_UNAVAILABLE",
+      "FOUNDRY_SCENE_PLACEABLE_WRITE_UNAVAILABLE",
+      "FOUNDRY_USERS_ACTIVE-GM_UNAVAILABLE",
+      "FOUNDRY_MEDIA_DEPLOY_UNAVAILABLE",
+      "GM_AUTHORITY_REQUIRED"
+    ],
+    "receiptStatus": "previewed",
+    "interpretation": "M7 preview is deterministic and no-write, but exact Foundry runtime/profile, placeable/media capabilities, and active authorized GM remain unproven."
+  },
+  "boundaries": {
+    "externalFetch": false,
+    "assetUpload": false,
+    "servedByteClaim": false,
+    "dependentDocumentsCreated": false,
+    "campaignPackageBindingChanged": false,
+    "installerChanged": false,
+    "tramOrCoreTouched": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "remainingGates": {
+    "ExactFoundryRuntimeProfile": "requires-read-only-observation-of-Foundry-14.367-and-dnd5e-5.3.3",
+    "ActiveAuthorizedGM": "requires-current-runtime-authority-observation",
+    "SignalRunePreviewApprovalAndReread": "not-attempted",
+    "TramCoreRendererBinding": "final-map-required",
+    "RegionwrightIntegrationReceipt": "not-proven",
+    "PackageInstallerPromotion": "not-proven",
+    "Stage12Acceptance": "not-accepted",
+    "ReadyToPlay": "not-claimed"
+  },
+  "nextAction": "M1090 exact runtime/profile and active-GM read-only preview gate"
+}

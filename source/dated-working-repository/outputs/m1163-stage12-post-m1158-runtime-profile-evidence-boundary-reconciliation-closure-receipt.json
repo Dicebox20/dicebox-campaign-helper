@@ -1,0 +1,32 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1163-post-m1158-runtime-profile-evidence-boundary-reconciliation-closure",
+  "milestone": "M1163",
+  "status": "CLOSED_M1163_RUNTIME_PROFILE_STALE_CANDIDATE_TRANSPORT_NOT_EXPOSED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.post-m1158.runtime-profile-evidence-boundary.reconcile.closure",
+  "observationReceipt": "outputs/m1163-stage12-post-m1158-runtime-profile-evidence-boundary-reconciliation-receipt.json",
+  "closure": {
+    "sourceStagedServedParity": "pass",
+    "runtimeProfileFreshness": "stale-before-m1158",
+    "candidateTransportSource": "local-only",
+    "candidateTransportRuntimeExposure": "not-exposed",
+    "authoritativeCampaignReread": "unproved",
+    "runtimeReopened": false,
+    "installerInvoked": false,
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "verification": {
+    "workflowCheck": "PASS 11/16",
+    "knowledgeBaseRebuildBeforeBoundary": "PASS",
+    "jsonValidation": "PASS",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "remainingBlockers": [
+    "A current fixed read-only runtime diagnostic is needed to expose candidate transport disposition without invoking it.",
+    "Active-GM authority and authoritative campaign reread remain unproved."
+  ],
+  "nextBoundary": "M1164: fixed GM-gated read-only candidate-transport runtime diagnostic implementation and focused validation; no candidate install/repair."
+}

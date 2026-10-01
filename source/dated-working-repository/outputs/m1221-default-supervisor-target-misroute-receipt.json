@@ -1,0 +1,31 @@
+{
+  "receiptVersion": 1,
+  "operation": "foundry.fixture.target-resolution",
+  "boundary": "M1221",
+  "status": "PASS_CONTAINED_WRONG_TARGET",
+  "requestedTarget": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003
+  },
+  "attemptedTarget": {
+    "dataPath": "work/foundry-fixture-data-v2",
+    "worldId": "dbx-test-world",
+    "port": 30001,
+    "pid": 21312
+  },
+  "startStatus": "PASS",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "containment": {
+    "stopStatus": "PASS",
+    "normalTerminationStatus": 255,
+    "forcedTerminationStatus": 0,
+    "listenerDrain": "PASS",
+    "finalV2State": "STOPPED",
+    "v4StateChanged": false
+  },
+  "cause": "The supervisor CLI defaults to work/foundry-fixture-data-v2 and port 30001 when explicit environment overrides are absent.",
+  "correction": "Run the supervisor with DICEBOX_FIXTURE_DATA_PATH set to work/foundry-fixture-data-v4 and DICEBOX_FIXTURE_PORT set to 30003; carry no v2 evidence into the v4 checklist.",
+  "readyClaim": false
+}

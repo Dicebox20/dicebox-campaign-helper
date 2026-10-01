@@ -1,0 +1,41 @@
+{
+  "milestone": "M866",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "operation": "stage11.packaged-project-broken-reference.aggregate-evidence-attachment",
+  "input": "M552",
+  "sourceSha256": "079EF2CEC750A3A114C16A8D31F567A69E5099B47C508FA3E401D1ED194DDDEF",
+  "aggregateLedgerSha256": "F4E43CFC3FBDB02D923064300CE00DE94317E2EE888DDD676D3A7204B5D54903",
+  "testSha256": [
+    "B0BB0B76226BF038997459D721C892468A83738DB58830E913024C0AA977BC6D",
+    "9521724799DB2B14DE529914907F915C6AF3AF8C2E15A1D19DE4300E5AB774DD"
+  ],
+  "validation": {
+    "focusedVitest": "4 files / 8 tests pass",
+    "packageTypecheck": "PASS",
+    "diffCheck": "PASS"
+  },
+  "result": {
+    "producerScopedOnly": true,
+    "packagedLifecycleObserved": true,
+    "authoritativeReread": true,
+    "preservationObserved": true,
+    "noFoundryWrite": true,
+    "noProviderCredentialActivity": true,
+    "noPlayerRolePasswordActivity": true,
+    "modeledOperationCount": 14,
+    "noAuthorityGrant": true,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "runtimeAction": false,
+  "doesNotProve": [
+    "generic Foundry authority",
+    "every-producer lifecycle coverage",
+    "aggregate recovery authority",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

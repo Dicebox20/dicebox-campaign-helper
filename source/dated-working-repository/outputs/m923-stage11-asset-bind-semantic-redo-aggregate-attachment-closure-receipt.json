@@ -1,0 +1,127 @@
+{
+  "milestone": "M923",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY AGGREGATE ATTACHMENT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Attach the exact M908 asset-bind project.asset.bind semantic-redo closure receipt to the Stage 11 aggregate ledger as one strict typed, non-certifying producer-scoped field without changing modeled counts or authority.",
+  "inputs": [
+    "outputs/m922-stage11-next-bounded-aggregate-semantic-redo-gap-reconciliation-receipt.json",
+    "outputs/m908-stage11-project-asset-bind-semantic-redo-composition-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-asset-bind-semantic-redo-aggregate-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-asset-bind-semantic-redo-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-asset-binding-terminal-history.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "tests/project-stage11-asset-bind-semantic-redo-aggregate-evidence.test.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "evidence": {
+    "sourceMilestone": "M908",
+    "sourceReceipt": "outputs/m908-stage11-project-asset-bind-semantic-redo-composition-closure-receipt.json",
+    "operation": "project.asset.bind.redo",
+    "semantic": "redo-post-state",
+    "assetDescriptorPreserved": true,
+    "contentAddressedAssetIdentityPreserved": true,
+    "bindingTransitionPreserved": true,
+    "matchedReread": true,
+    "generationAdvanced": true,
+    "assetCountPreserved": true,
+    "sceneCollectionPreserved": true,
+    "activeScenePreserved": true,
+    "assetTreePreserved": true,
+    "assetBytesNonPersistentOnRedo": true,
+    "semanticContentChanged": true,
+    "envelopeRotated": true,
+    "aggregateAttachment": "one-producer-scoped-non-certifying",
+    "driftRejected": "asset descriptor/binding/content/Scene/asset-tree/reread/authority drift"
+  },
+  "boundary": {
+    "producerScopedOnly": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "aggregateAuthority": "not-granted",
+    "countsChanged": false,
+    "foreignStatePreserved": true,
+    "runtimeLaneReopened": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAggregateAuthorityIndexedRedoBindingEntries": [
+      "project.create",
+      "project.save",
+      "project.rename",
+      "project.add-scene.persist",
+      "project.asset.bind",
+      "project.asset.register-audio",
+      "project.asset.register-handout",
+      "project.asset.register-token",
+      "project.add-scene.commit-in-memory"
+    ],
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "countScopePreserved": true,
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source/test separately indexes 9 redo entries, including the supplemental project.add-scene.commit-in-memory row; these are not collapsed into one measure."
+  },
+  "validation": {
+    "focusedEvidenceSuite": "PASS: 2 files; 12 tests",
+    "relatedStage11EvidenceSuite": "PASS: 30 files; 70 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "fullRepositorySuite": "PASS: 213 files; 960 tests",
+    "databaseRebuildAndVerifyBeforeClosure": "PASS: sources 1408, facts 1176, decisions 1047, open items 135, trials 788, research subjects 40, milestones 26",
+    "negativeCoverage": "PASS: foreign, altered, incomplete, semantic, boundary, count, and authority drift fail closed",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "artifacts": {
+    "aggregateAttachmentLayer": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-asset-bind-semantic-redo-aggregate-evidence.ts",
+      "sha256": "C7CEE25F23825B3B0AA9E21C858A3D5A61E7495957B8CD47570263B4821A54E3"
+    },
+    "aggregateLedger": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "sha256": "436B4ED6749B178D0BBD3FD2407A576A165DE015CFC0A33657FD17EB1E988AD1"
+    },
+    "focusedAttachmentTest": {
+      "path": "tests/project-stage11-asset-bind-semantic-redo-aggregate-evidence.test.ts",
+      "sha256": "608A2819AE94B6AF98FF319CB167E8EAEB3B6690CCAD732A04A6C669889CF07C"
+    },
+    "aggregateLedgerTest": {
+      "path": "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+      "sha256": "59D252DF263CF7AD258CB9919940ECB3BD975EC0932C8EB8E7AA2ACBF8E4B0C7"
+    }
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "backup-promotion undo/redo support",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform one read-only reconciliation of M923 against the complete Stage 11 matrix; retain all count scopes, authority locks, runtime parking, and Stage 11/Stage 12 non-certification."
+}

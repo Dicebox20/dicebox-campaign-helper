@@ -1,0 +1,48 @@
+{
+  "operation": "ascendancy.coordinate-overlay",
+  "status": "STATIC_REVIEW",
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "noWrite": true,
+  "rooms": [
+    {
+      "roomId": "dbx:room:signal-frequency-chamber",
+      "renderer": "assets/maps/ascendancy-signal-frequency-chamber-v2.png",
+      "rendererStatus": "scene-bound",
+      "rendererReviewOnly": false,
+      "overlay": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\outputs\\m110-ascendancy-coordinate-overlays\\signal-frequency-chamber-overlay.svg",
+      "walls": 6,
+      "doors": 2,
+      "regions": 6
+    },
+    {
+      "roomId": "dbx:room:ascendancy-tram-depot",
+      "renderer": "assets/maps/ascendancy-tram-depot-v3.png",
+      "rendererStatus": "final-map-required",
+      "rendererReviewOnly": true,
+      "overlay": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\outputs\\m110-ascendancy-coordinate-overlays\\ascendancy-tram-depot-overlay.svg",
+      "walls": 11,
+      "doors": 3,
+      "regions": 39
+    },
+    {
+      "roomId": "dbx:room:rune-mechanism-chamber",
+      "renderer": "assets/maps/ascendancy-rune-mechanism-chamber-v2.png",
+      "rendererStatus": "scene-bound",
+      "rendererReviewOnly": false,
+      "overlay": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\outputs\\m110-ascendancy-coordinate-overlays\\rune-mechanism-chamber-overlay.svg",
+      "walls": 6,
+      "doors": 2,
+      "regions": 6
+    },
+    {
+      "roomId": "dbx:room:central-core-control-chamber",
+      "renderer": "assets/maps/ascendancy-central-core-control-chamber-v2.png",
+      "rendererStatus": "final-map-required",
+      "rendererReviewOnly": true,
+      "overlay": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\outputs\\m110-ascendancy-coordinate-overlays\\central-core-control-chamber-overlay.svg",
+      "walls": 7,
+      "doors": 3,
+      "regions": 10
+    }
+  ]
+}

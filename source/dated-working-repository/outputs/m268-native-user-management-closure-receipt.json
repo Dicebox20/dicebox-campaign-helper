@@ -1,0 +1,109 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m268-native-user-management-closure-2026-08-27",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M268",
+  "evidenceLabel": "fixture",
+  "status": "PASS",
+  "readyClaim": false,
+  "stage9Accepted": false,
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "port": 30002
+  },
+  "authority": {
+    "actionTimeConfirmationReceived": true,
+    "surface": "foundry-native-ui",
+    "routesUsed": [
+      "/join",
+      "/setup",
+      "/players",
+      "/game"
+    ],
+    "existingPasswordGuessed": false,
+    "externalCredentialEntered": false,
+    "passwordOrSessionStoreInspected": false,
+    "directLevelDbWrite": false
+  },
+  "administratorSecret": {
+    "source": "generated-fixture-local-process-environment",
+    "valueRecorded": false,
+    "sourcePersisted": false,
+    "statePersisted": false,
+    "receiptPersisted": false,
+    "reportPersisted": false
+  },
+  "nativeUserManagement": {
+    "createdUserCount": 1,
+    "usersReread": [
+      {
+        "name": "Codex Fixture GM",
+        "role": 4,
+        "roleName": "GAMEMASTER"
+      },
+      {
+        "name": "Gamemaster",
+        "role": 4,
+        "roleName": "GAMEMASTER"
+      }
+    ],
+    "syntheticUserMatches": 1,
+    "credentialFieldsRecorded": false,
+    "authoritativeRereadSurface": "/players"
+  },
+  "preservation": {
+    "normalFoundryDataTouched": false,
+    "balladTouched": false,
+    "campaignDocumentWrites": 0,
+    "settingsChanged": false,
+    "telemetryPreferenceChanged": false,
+    "tourCompletedOrDismissed": false,
+    "bindingsChanged": false,
+    "behaviorExercised": false,
+    "foreignStateChanged": false
+  },
+  "recovery": {
+    "initialSupervisorStopStatus": "BLOCKED",
+    "initialTerminationAttempted": false,
+    "reason": "Windows did not expose command or process identity through the supervisor status surface after native world deactivation.",
+    "exactOwnershipProof": {
+      "pid": 6628,
+      "pidMatches": true,
+      "processPathMatches": true,
+      "entryPathMatches": true,
+      "dataPathMatches": true,
+      "worldMatches": true,
+      "portMatches": true,
+      "administratorMarkerMatches": true,
+      "soleListenerMatches": true
+    },
+    "forceTerminationAttempted": true,
+    "pidAliveAfter": false,
+    "listenerCountAfter": 0,
+    "supervisorStaleStateReconciled": true,
+    "emptyOwnerFreeLockQuarantined": true
+  },
+  "finalReread": {
+    "supervisorStatus": "STOPPED",
+    "evidenceClass": "process-state",
+    "listeners": [],
+    "stateStatus": "stopped",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "artifacts": [
+    "outputs/m268-final-native-user-stop-receipt.json",
+    "outputs/m268-final-native-user-status-receipt.json",
+    "outputs/m268-final-native-user-status-reread-receipt.json",
+    "outputs/m268-final-native-user-final-stop-receipt.json",
+    "outputs/m268-final-native-user-stopped-reread-receipt.json",
+    "outputs/m268-final-native-user-lock-recovery-receipt.json"
+  ],
+  "blockers": [
+    "Loaded DiceBox and optional-module readiness remain unproved.",
+    "Seeded bindings and a live staged execution remain unproved.",
+    "GM/player behavior and authoritative campaign-document reread remain unproved.",
+    "Stage 9 acceptance remains pending."
+  ]
+}

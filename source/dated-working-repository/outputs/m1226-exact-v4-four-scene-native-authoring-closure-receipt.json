@@ -1,0 +1,66 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1226",
+  "operation": "ascendancy.base-four-scenes.create",
+  "evidenceClass": "fixture",
+  "status": "PASS_SAME_PROCESS_AUTHORING",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "exactTargetMatch": true,
+    "activeGm": true
+  },
+  "approval": {
+    "approvalGranted": true,
+    "approvalCount": 1,
+    "source": "explicit user clarification of full project-scoped machine/tool permission"
+  },
+  "nativeWriteAccounting": {
+    "status": "OBSERVED",
+    "nativeWriteCalls": 20,
+    "nativeWriteCallsResolved": 20,
+    "nativeWriteCallsUnknown": 0,
+    "sceneCreates": 4,
+    "initialLevelUpdates": 4,
+    "embeddedCalls": 12,
+    "childDocuments": {
+      "walls": 40,
+      "regions": 61,
+      "tiles": 29
+    }
+  },
+  "runtimeReread": {
+    "successNotificationObserved": true,
+    "sceneDirectoryObserved": [
+      "Ascendancy Tram Depot",
+      "Central Core Control Chamber",
+      "Rune Mechanism Chamber",
+      "Semantic Scene Fixture",
+      "Signal / Frequency Chamber"
+    ],
+    "fixedControlPostWriteReread": "executed by the package-owned control before its success notification; not separately surfaced as a dialog",
+    "signalRuneReread": {
+      "status": "OBSERVED",
+      "selectedRoomsComplete": 2,
+      "childrenPerRoom": { "walls": 8, "regions": 6, "tiles": 7 },
+      "foreignStatePreserved": true
+    }
+  },
+  "supervisorReread": {
+    "status": "PASS",
+    "fixtureState": "running",
+    "worldDocumentWrites": 0,
+    "worldDocumentWritesMeaning": "supervisor counter; not native-write accounting",
+    "balladTouched": false
+  },
+  "remainingBlockers": [
+    "A fresh stop/reopen post-restart reread of all four owned rooms is not yet observed.",
+    "Tram/Core child persistence is not independently surfaced by the current Signal/Rune-only reread control.",
+    "Stage 12 and Ready-to-Play remain unproven."
+  ]
+}

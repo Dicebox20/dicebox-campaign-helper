@@ -1,0 +1,57 @@
+{
+  "milestone": "M767",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile all four Stage 11 acceptance clauses and eleven producer-family obligations after M766, then select one bounded next slice.",
+  "sourceState": "Unborn project worktree with no HEAD; M767 is read-only reconciliation evidence and changes no source, project, Foundry, runtime, provider, credential, browser/session, foreign, or player-role password state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Read-only Stage 11 acceptance reconciliation after M766: inventory all four clauses and eleven producer families, verify direct/lifecycle evidence, classify remaining blockers, and select one bounded next slice.",
+    "workerOutcome": "The bounded Terra Extra High worker timed out after two bounded waits and was closed without a receipt. The Foreman completed the reconciliation locally from the authoritative active card, roadmap, M765/M766 receipts, evidence index, and rebuilt KB; no worker receipt was accepted."
+  },
+  "reconciliation": {
+    "clauses": {
+      "claimAndProvenance": "PARTIAL",
+      "reviewAndAuthority": "PARTIAL",
+      "applyAndReceipts": "PARTIAL",
+      "lifecycleAndRecovery": "PARTIAL"
+    },
+    "producerFamilies": [
+      { "family": "read-only inspection/compile", "disposition": "CLOSED; NON-MUTATING" },
+      { "family": "workspace open/recent metadata", "disposition": "OPERATION-SPECIFIC PARTIAL" },
+      { "family": "ordinary project persistence", "disposition": "BOUNDED REDO SLICES CLOSED; AGGREGATE PARTIAL" },
+      { "family": "in-memory editing/navigation", "disposition": "BOUNDED REDO SLICE CLOSED; AGGREGATE PARTIAL" },
+      { "family": "asset import/binding", "disposition": "BIND, AUDIO, HANDOUT, AND TOKEN REDO BRIDGES CLOSED; AGGREGATE COVERAGE PARTIAL" },
+      { "family": "legacy migration persistence", "disposition": "OPERATION-SPECIFIC PARTIAL; ONE-WAY SOURCE OPERATION" },
+      { "family": "backup-authoritative promotion", "disposition": "BOUNDED PACKAGED EVIDENCE; AGGREGATE PARTIAL" },
+      { "family": "missing-asset restore", "disposition": "CURRENT PACKAGED PASS; AGGREGATE PARTIAL; ONE-WAY RECOVERY OPERATION" },
+      { "family": "missing-asset detach", "disposition": "CURRENT PACKAGED PASS; AGGREGATE PARTIAL; ONE-WAY RECOVERY OPERATION" },
+      { "family": "broken Scene-reference detach", "disposition": "CURRENT PACKAGED PASS; AGGREGATE PARTIAL; ONE-WAY RECOVERY OPERATION" },
+      { "family": "test-owned fixture/setup receipts", "disposition": "INFRASTRUCTURE ONLY; NON-CERTIFYING" }
+    ],
+    "directProjectionCount": 16,
+    "lifecycleEvidenceRows": 186,
+    "redoBindings": ["project.save", "project.rename", "project.add-scene.persist", "project.asset.bind", "project.asset.register-audio", "project.asset.register-handout", "project.asset.register-token", "project.add-scene.commit-in-memory"],
+    "remainingGaps": [
+      "Aggregate current authority remains incomplete.",
+      "Cross-producer lifecycle and recovery continuity remains incomplete.",
+      "The eight applicable operation-specific redo bridges are locally evidenced; one-way create, save-as, migration, and recovery operations remain commit-only and do not acquire invented redo semantics.",
+      "Packaged/runtime authority and direct active-GM/Foundry evidence remain incomplete.",
+      "The aggregate Stage 11 acceptance claim is not supported."
+    ],
+    "contradictionReview": "PASS; no contradiction found among M766 evidence, M765, the active card, roadmap, terminal-history evidence index, producer-family summary, and authoritative KB rebuild."
+  },
+  "validation": {
+    "workflow": "PASS Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations",
+    "knowledgeBase": "PASS current post-M766 state at 1191 sources, 1030 facts, 898 decisions, 135 open items, 788 trials, 40 research subjects, and 26 milestones",
+    "liveRuntime": "NOT RUN; live Foundry/runtime, project mutation, providers, credentials, browser/session, and repository promotion remain outside this reconciliation."
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "readyClaim": false,
+    "decision": "M767 confirms Stage 11 remains partial after M766. All eight applicable operation-specific redo bridges now have bounded local evidence; one-way producer operations retain commit-only semantics. Aggregate current authority, cross-producer continuity, packaged/runtime authority, and live active-GM/Foundry evidence remain incomplete."
+  },
+  "selectedNext": "M768 code-only aggregate current-authority and producer-coverage reconciliation bridge/classifier; preserve all eight operation-specific redo projections, Stage 11 partial status, and keep live runtime, Stage 11 acceptance, and Stage 12 excluded."
+}

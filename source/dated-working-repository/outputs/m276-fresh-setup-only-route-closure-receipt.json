@@ -1,0 +1,100 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m276-fresh-setup-only-route-closure-2026-08-27",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M276",
+  "evidenceLabel": "fixture",
+  "status": "PASS",
+  "readyClaim": false,
+  "stage9Accepted": false,
+  "sourceReconciliation": {
+    "setupViewSource": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\dist\\server\\views\\setup.mjs",
+    "setupViewSha256": "B7E0205867F70F9BD1ED7A08E9B97D9345FF6483EBAD64E13228D014A8B33EC6",
+    "joinViewSource": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\dist\\server\\views\\join.mjs",
+    "joinViewSha256": "71AE1328E1EC16FC317ED0ECA9A439154B98697D601A20FF96ABBB3018A5E07F",
+    "finding": "Foundry redirects active-world requests to /join; first administrator configuration is exposed by setup mode without an active world."
+  },
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30003,
+    "setupOnly": true,
+    "worldArgumentOmitted": true,
+    "commandFingerprint": "EA44BDE97A1BFA9FD6BE96ED948567AE8080B2DD053560C35B83B76A666DFE36"
+  },
+  "launch": {
+    "supervisorStartStatus": "PASS",
+    "httpStatus": 302,
+    "httpLocation": "/setup",
+    "nativeSetupObserved": true,
+    "exactProcessAndExclusivePort": true,
+    "commandArgs": [
+      "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+      "--dataPath=C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4",
+      "--port=30003"
+    ]
+  },
+  "nativeObservation": {
+    "url": "http://127.0.0.1:30003/setup",
+    "title": "Foundry Virtual Tabletop",
+    "administratorConfigurationVisible": true,
+    "browserCredentialEntryByAgent": false,
+    "browserFormSubmissionByAgent": false,
+    "worldLaunchClicked": false,
+    "usagePromptChoiceByAgent": false
+  },
+  "postHandoffState": {
+    "adminMarkerPresenceObserved": true,
+    "adminMarkerContentsInspected": false,
+    "adminMarkerHashInspected": false,
+    "credentialValueRecorded": false,
+    "credentialValuePersistedInReceipt": false
+  },
+  "recovery": {
+    "stopStatus": "PASS",
+    "normalTermination": "FAILED_CLOSED",
+    "forceFallback": "PASS",
+    "finalSupervisorStatus": "STOPPED",
+    "finalStateStatus": "stopped",
+    "finalListenerCount": 0,
+    "finalWorldDocumentWrites": 0,
+    "finalBalladTouched": false,
+    "emptyOwnerFreeOptionsLockOnlyQuarantine": true
+  },
+  "preservation": {
+    "v3Changed": false,
+    "v2Changed": false,
+    "foreignStateChanged": false,
+    "levelDbContentsInspected": false,
+    "credentialContentsInspected": false,
+    "worldDocumentsMutated": false
+  },
+  "artifacts": [
+    "outputs/m276-setup-only-supervisor-receipt.json",
+    "outputs/m276-setup-only-status-after-user-action.json",
+    "outputs/m276-setup-only-stop-after-user-action.json",
+    "outputs/m276-setup-only-final-status-after-user-action.json",
+    "tools/foundry-server.mjs",
+    "tools/foundry-fixture-supervisor.mjs",
+    "tests/foundry-server-guard.test.ts",
+    "tests/foundry-fixture-supervisor.test.ts"
+  ],
+  "doesNotProve": [
+    "loaded DiceBox runtime",
+    "optional-module behavior",
+    "active-gm authority",
+    "client session",
+    "stable bindings",
+    "campaign document mutation",
+    "authoritative campaign reread",
+    "unknown-outcome recovery exercise",
+    "Stage 9 acceptance",
+    "alpha readiness"
+  ],
+  "blockers": [
+    "Stage 9 live execution and evidence gates remain pending; the setup-only route establishes the safe entry boundary only."
+  ]
+}

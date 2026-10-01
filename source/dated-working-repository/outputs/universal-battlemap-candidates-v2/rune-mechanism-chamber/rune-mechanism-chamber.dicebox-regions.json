@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "dicebox-universal-battlemap-region-sidecar",
+  "geometryOwner": "spatial-blueprint",
+  "source": {
+    "blueprintId": "dbx:blueprint:rune-mechanism-chamber",
+    "regionPlanId": "dbx:plan:rune-mechanism-chamber-regions",
+    "roomId": "dbx:room:rune-mechanism-chamber",
+    "sceneId": "dbx:scene:rune-mechanism-chamber",
+    "rendererPath": "assets/maps/manual-rune-mechanism-chamber-v5-neutral.png",
+    "rendererSha256": "f99d384d70de9727dcf09b644745cb7d4c6e704451828caea79e2da043272c00",
+    "width": 1536,
+    "height": 1024
+  },
+  "regions": [
+    {
+      "regionId": "dbx:region:rune-lawson-memory",
+      "label": "Lawson rune memory station",
+      "bounds": {
+        "x": 120,
+        "y": 120,
+        "width": 360,
+        "height": 240
+      },
+      "interaction": "popup-personal",
+      "owner": "regionwright-popup",
+      "behaviorBinding": "dbx:puzzle:lawson-rune-memory"
+    },
+    {
+      "regionId": "dbx:region:rune-tactal-slotting",
+      "label": "Tactal heavy rune station",
+      "bounds": {
+        "x": 1056,
+        "y": 120,
+        "width": 360,
+        "height": 240
+      },
+      "interaction": "popup-personal",
+      "owner": "regionwright-popup",
+      "behaviorBinding": "dbx:puzzle:tactal-rune-slotting"
+    },
+    {
+      "regionId": "dbx:region:rune-order-left",
+      "label": "Physical rune order left",
+      "bounds": {
+        "x": 180,
+        "y": 500,
+        "width": 360,
+        "height": 220
+      },
+      "interaction": "physical-cooperative",
+      "owner": "dicebox-foundry-region",
+      "behaviorBinding": "dbx:cooperative:lawson-tactal-rune-order"
+    },
+    {
+      "regionId": "dbx:region:rune-order-right",
+      "label": "Physical rune order right",
+      "bounds": {
+        "x": 996,
+        "y": 500,
+        "width": 360,
+        "height": 220
+      },
+      "interaction": "physical-cooperative",
+      "owner": "dicebox-foundry-region",
+      "behaviorBinding": "dbx:cooperative:lawson-tactal-rune-order"
+    },
+    {
+      "regionId": "dbx:region:rune-entry",
+      "label": "Rune chamber entry",
+      "bounds": {
+        "x": 680,
+        "y": 24,
+        "width": 176,
+        "height": 72
+      },
+      "interaction": "teleport-entry",
+      "owner": "dicebox-foundry-region",
+      "behaviorBinding": null
+    },
+    {
+      "regionId": "dbx:region:rune-exit",
+      "label": "Rune chamber exit",
+      "bounds": {
+        "x": 680,
+        "y": 928,
+        "width": 176,
+        "height": 72
+      },
+      "interaction": "teleport-exit",
+      "owner": "dicebox-foundry-region",
+      "behaviorBinding": null
+    }
+  ],
+  "importBoundary": "Universal VTT does not carry DiceBox Regions, RegionBehaviors, puzzle state, or Foundry UUID bindings."
+}

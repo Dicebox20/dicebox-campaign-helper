@@ -1,0 +1,66 @@
+{
+  "receiptType": "stage12-post-signal-rune-attestation-reconciliation-closure",
+  "milestone": "M1087",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "reconciliation": {
+    "manifestId": "dbx:manifest:m1086-signal-rune-renderers",
+    "requiredAssetIds": [
+      "dbx:asset:map-rune-mechanism-chamber",
+      "dbx:asset:map-signal-frequency-chamber"
+    ],
+    "gateStatus": "ready",
+    "attestationSource": "provided-bytes",
+    "dependentDocumentIds": [],
+    "dependentDocumentCreation": "not-authorized-and-not-attempted",
+    "tramCoreStatus": "final-map-required",
+    "packageMutation": "disabled-until-exact-runtime-gate",
+    "servedByteClaim": false,
+    "runtimeState": "not-modeled",
+    "nativeMapping": "not-proven",
+    "geometryOwner": "spatial-blueprint"
+  },
+  "remainingGates": {
+    "SignalRuneDependentDocumentScope": "not-yet-bound",
+    "TramCoreRendererBinding": "final-map-required",
+    "ExactFoundryActiveGMReadback": "not-proven",
+    "RegionwrightIntegrationReceipt": "not-proven",
+    "PackageInstallerPromotion": "not-proven",
+    "Stage12Acceptance": "not-accepted",
+    "ReadyToPlay": "not-claimed"
+  },
+  "validation": {
+    "providedByteGateReadback": "passed-ready",
+    "campaignPackageReadback": "passed",
+    "dependentGateImplementationReadback": "passed",
+    "kbRebuild": "passed",
+    "kbVerification": "passed",
+    "workflowTest": "14 passed"
+  },
+  "boundaries": {
+    "externalFetch": false,
+    "assetUpload": false,
+    "servedByteClaim": false,
+    "dependentDocumentsCreated": false,
+    "campaignPackageBindingChanged": false,
+    "installerChanged": false,
+    "tramOrCoreTouched": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "decision": "Select one compiler-only dependent-document eligibility scope for the exact Signal and Rune Scene IDs, conditioned on a ready two-asset attestation gate; do not create documents or change the campaign package.",
+  "nextAction": "M1088 compiler-only Signal/Rune dependent-document eligibility scope"
+}

@@ -1,0 +1,90 @@
+{
+  "milestone": "M244",
+  "operation": "dicebox.project.recovery.backup-promotion",
+  "status": "PASS LOCAL PACKAGED",
+  "projectId": "dbx:project:desktop-backup-authoritative-recovery-promotion-self-test",
+  "generation": 1,
+  "contentSha256": "c4d51cd20facce1bd948a32e9071608f2a7b642bc523fb274ab30351324b9d3b",
+  "backupByteSha256": "f5af1e42c838add5aeddee9abc3b5d2125932d539a750763aa9c764f004eac2b",
+  "previewSha256": "97f6586ec34045548c9c21004947238870a81fd8bb6df120549e726d3c8e99de",
+  "packaged": {
+    "setupExitCode": 0,
+    "promotionExitCode": 0,
+    "freshRereadExitCode": 0,
+    "primaryMissingBeforePromotion": true,
+    "backupValidCurrentSchema": true,
+    "previewNoWrite": true,
+    "primaryRestored": true,
+    "backupUnchanged": true,
+    "generationPreserved": true,
+    "contentHashPreserved": true,
+    "semanticStatePreserved": true,
+    "workspaceStatePreserved": true,
+    "foreignStatePreserved": true,
+    "assetStatePreserved": true,
+    "authoritativeReread": true,
+    "noFoundryWrite": true
+  },
+  "ordinaryStartup": {
+    "probeSeconds": 4,
+    "exactProcessIdentityVerified": true,
+    "exactProcessStopped": true,
+    "trackedByteIdentity": true,
+    "trackedPathCount": 13,
+    "unchangedPathCount": 13,
+    "changedPaths": [],
+    "trackedPaths": [
+      { "path": "projects/desktop-backup-authoritative-recovery-promotion-self-test/project.json", "sha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B" },
+      { "path": "projects/desktop-backup-authoritative-recovery-promotion-self-test/project.backup.json", "sha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B" },
+      { "path": "projects/desktop-backup-authoritative-recovery-promotion-self-test/foreign-note.txt", "sha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test-v2/project.json", "sha256": "DBFA5EF810A180AD894A416D7FCCAC11DA13D51768EEEA3637914ED19FA20406" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test-v2/project.backup.json", "sha256": "3C9C40227E51BC42D886C0C118DB0271B6CC665050B93F14D7E4FC026C5374FD" },
+      { "path": "projects/desktop-legacy-migration-persistence-self-test-v2/foreign-note.txt", "sha256": "A44E47B8874E2F207281C82C756F4D3A5CF1F27002E083C15E5AA2F3826269A2" },
+      { "path": "projects/desktop-audio-asset-role-self-test/project.json", "sha256": "F208C66F7BE749A54906444EF34EB8D4834E028932786C5B3936CBB415C4718F" },
+      { "path": "projects/desktop-audio-asset-role-self-test/project.backup.json", "sha256": "808C1D6F1768426111894628C28638E59A1A10A6A3311B26DB08BD2024C5EB20" },
+      { "path": "assets/sha256/2a040b0881c18593d21859f4107cee1c9c5f40521161b2acdf3b392b8158e05a", "sha256": "2A040B0881C18593D21859F4107CEE1C9C5F40521161B2ACDF3B392B8158E05A" },
+      { "path": "assets/sha256/d19d18a983a363cdce2d41623462760cd49b2b8f0694e2636037b5a10ee2e83d", "sha256": "D19D18A983A363CDCE2D41623462760CD49B2B8F0694E2636037B5A10EE2E83D" },
+      { "path": "workspace-index.json", "sha256": "4F62B67C713F23EC0C3377ACD9994E26E70452F7B5867A05DC93B60DCE767D4D" },
+      { "path": "workspace-index.backup.json", "sha256": "E7323C04ACA97F963A2E64D10DC03853F94E2E8ECACADCE08A2F890F885E7847" },
+      { "path": "workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending", "sha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43" }
+    ]
+  },
+  "deterministicCoverage": {
+    "accepted": [
+      "missing primary with valid current-schema 0.3.0 backup",
+      "hash-bound no-write preview",
+      "explicit approval and exact-one promotion",
+      "byte-identical backup preservation",
+      "same-generation/content authoritative reread"
+    ],
+    "blockedCases": [
+      "present or corrupt primary",
+      "missing, malformed, legacy, unsupported, or invalid backup",
+      "stale or changed preview state",
+      "batch or automatic recovery",
+      "cleanup, deletion, asset/workspace mutation, or Foundry write"
+    ]
+  },
+  "validation": {
+    "rustProjectStoreTests": "49/49",
+    "focusedProjectDesktopTests": "32/32",
+    "fullNpm": "89 files/445 tests",
+    "tooling": "PASS",
+    "workflow": "PASS 7/16; real-project-workspaces active; no violations",
+    "knowledgeBase": "PASS 307 sources/343 facts/292 decisions/306 trials; integrity ok",
+    "nativeWindowsBuild": "PASS",
+    "foundryWrites": 0,
+    "scope": "local packaged evidence only"
+  },
+  "excluded": [
+    "corrupt-primary replacement or quarantine",
+    "legacy or unsupported backup migration",
+    "batch, automatic, or universal recovery",
+    "cleanup, deletion, or garbage collection",
+    "asset/workspace mutation",
+    "cross-process or universal durability certification",
+    "Stage 8 or alpha completion",
+    "Foundry authority or mutation",
+    "vision-assisted Spatial Blueprint implementation"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m401-stage11-backup-promotion-lifecycle-telemetry-closure-2026-08-28",
+  "milestone": "M401",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "implementationValidation": {
+    "focusedTests": "4 files / 20 tests PASS",
+    "desktopBuild": "PASS",
+    "workflowCheck": "PASS"
+  },
+  "telemetryBoundary": {
+    "transport": "existing debug-only record_project_ui_self_test_progress",
+    "stages": ["loaded", "previewed", "approved", "applied", "pass", "blocked"],
+    "detail": "fixed phase label or blocker reason truncated to 512 characters",
+    "projectContent": false,
+    "sessionPayload": false,
+    "credentials": false,
+    "executionAuthority": false
+  },
+  "counts": {
+    "fixtureRuns": 0,
+    "sessionWrites": 0,
+    "projectWrites": 0,
+    "recoveryApplyOperations": 0,
+    "foundryWrites": 0,
+    "providerCalls": 0,
+    "credentialCalls": 0,
+    "deletionOperations": 0
+  },
+  "recoveryDisposition": "M402 must reread the preserved previewed session and select any future observation separately; M401 does not authorize a retry.",
+  "doesNotProve": ["packaged backup-promotion UI lifecycle success", "process-exit root cause", "generic telemetry authority", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

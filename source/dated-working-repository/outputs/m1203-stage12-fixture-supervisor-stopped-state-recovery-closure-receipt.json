@@ -1,0 +1,71 @@
+{
+  "receiptVersion": "0.1.0",
+  "receiptId": "dbx:receipt:m1203-stage12-fixture-supervisor-stopped-state-recovery-closure-2026-09-06",
+  "milestone": "M1203",
+  "stage": "scene-authoring-breadth",
+  "status": "PASS_LOCAL_M1203_STOPPED_STATE_RECOVERY",
+  "capturedAt": "2026-09-06",
+  "goalId": "O-116",
+  "evidenceClass": "local",
+  "acceptance": {
+    "observedStoppedState": true,
+    "recordedPid": 344,
+    "recordedPidReuseObservedAs": "Chrome",
+    "listeners": [],
+    "realStatusAfterRepair": "STOPPED",
+    "realEvidenceClass": "process-state",
+    "realProcessAction": "none",
+    "listenerPresentCase": "BLOCKED ownership-mismatch in focused regression",
+    "noListenerReusedPidCase": "STOPPED in focused regression"
+  },
+  "implementation": {
+    "supervisorSource": "tools/foundry-fixture-supervisor.mjs",
+    "supervisorSourceSha256": "F4CBBB63ACA23EBB6E6E5D1B70AD16D0FBE02352311479E38A597A42FF04CE34",
+    "supervisorTest": "tests/foundry-fixture-supervisor.test.ts",
+    "supervisorTestSha256": "0A7433636E9259539A715213EE07F2B258C2A9A3CB601175C857A31FCE480F2A",
+    "databaseSummaryTest": "tests/knowledge-base-query.test.ts",
+    "databaseSummaryTestSha256": "E1E783618ECFB7279743CC882A9083E81821FEE7360B1371EDCB41C462BE4494",
+    "behavior": "A persisted stopped state is terminal when the fixture port is clear, even if the operating system reused the recorded PID. Any remaining listener keeps the state fail-closed as BLOCKED ownership-mismatch."
+  },
+  "validation": {
+    "focusedTests": "PASS 2 files / 94 tests",
+    "fullSuite": "PASS 288 files / 1217 tests",
+    "packageTypecheck": "PASS npm run build:packages",
+    "database": {
+      "status": "PASS",
+      "integrity": "ok",
+      "sources": 1915,
+      "facts": 1492,
+      "decisions": 1517,
+      "activeWork": 105,
+      "trials": 1094,
+      "subjects": 41,
+      "milestones": 37
+    },
+    "workflow": {
+      "status": "PASS",
+      "score": 69,
+      "passedGates": 11,
+      "totalGates": 16,
+      "activeStage": "scene-authoring-breadth",
+      "readyClaim": false,
+      "violations": []
+    }
+  },
+  "preservation": {
+    "runtimeReopened": false,
+    "fixtureRestarted": false,
+    "reusedProcessTerminated": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "worldDataChanged": false,
+    "accountsOrPasswordsChanged": false,
+    "tram": "historical-only",
+    "core": "not-invoked",
+    "player": "not-invoked",
+    "foreignState": "preserved",
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "next": "Perform database-first reconciliation of M1203 against the remaining persistent-world, final-map, player/Regionwright, and player-accepted gates; select at most one next bounded boundary. Keep Tram/Core/player/Ballad and readyClaim blocked."
+}

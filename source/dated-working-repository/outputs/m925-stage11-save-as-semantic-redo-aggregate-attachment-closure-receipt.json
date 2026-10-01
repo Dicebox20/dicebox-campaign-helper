@@ -1,0 +1,126 @@
+{
+  "milestone": "M925",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY AGGREGATE ATTACHMENT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Attach the exact M910 project.save-as semantic-redo closure receipt to the Stage 11 aggregate ledger as one strict typed, non-certifying producer-scoped field without changing modeled counts or authority.",
+  "inputs": [
+    "outputs/m924-stage11-post-asset-bind-semantic-redo-aggregate-attachment-reconciliation-receipt.json",
+    "outputs/m910-stage11-project-save-as-semantic-redo-composition-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-save-as-semantic-redo-aggregate-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-save-as-semantic-redo-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-save-as-terminal-history.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "tests/project-stage11-save-as-semantic-redo-aggregate-evidence.test.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "evidence": {
+    "sourceMilestone": "M910",
+    "sourceReceipt": "outputs/m910-stage11-project-save-as-semantic-redo-composition-closure-receipt.json",
+    "operation": "project.save-as.redo",
+    "semantic": "redo-post-state",
+    "sourceAndTargetIdentityPreserved": true,
+    "targetAbsentBeforeRedo": true,
+    "targetPresentAfterRedo": true,
+    "sourcePreserved": true,
+    "generationAdvanced": true,
+    "contentPreserved": true,
+    "sceneCollectionPreserved": true,
+    "assetCollectionPreserved": true,
+    "matchedReread": true,
+    "targetCreationIntegrityPreserved": true,
+    "aggregateAttachment": "one-producer-scoped-non-certifying",
+    "driftRejected": "source/target/absence-presence/content/Scene/assets/reread/authority drift"
+  },
+  "boundary": {
+    "producerScopedOnly": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "aggregateAuthority": "not-granted",
+    "countsChanged": false,
+    "foreignStatePreserved": true,
+    "runtimeLaneReopened": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAggregateAuthorityIndexedRedoBindingEntries": [
+      "project.create",
+      "project.save",
+      "project.rename",
+      "project.add-scene.persist",
+      "project.asset.bind",
+      "project.asset.register-audio",
+      "project.asset.register-handout",
+      "project.asset.register-token",
+      "project.add-scene.commit-in-memory"
+    ],
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "countScopePreserved": true,
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source/test separately indexes 9 redo entries, including the supplemental project.add-scene.commit-in-memory row; these are not collapsed into one measure."
+  },
+  "validation": {
+    "focusedEvidenceSuite": "PASS: 2 files; 13 tests",
+    "relatedStage11EvidenceSuite": "PASS: 32 files; 73 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "fullRepositorySuite": "PASS: 214 files; 964 tests",
+    "databaseRebuildAndVerifyBeforeClosure": "PASS: sources 1412, facts 1178, decisions 1051, open items 135, trials 788, research subjects 40, milestones 26",
+    "negativeCoverage": "PASS: foreign, altered, incomplete, source-target, boundary, count, and authority drift fail closed",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "artifacts": {
+    "aggregateAttachmentLayer": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-save-as-semantic-redo-aggregate-evidence.ts",
+      "sha256": "821CDF5E8712F0F0AF24AC5D8ABB913DEAB420136EEA05746D7ECBD766BF3CFE"
+    },
+    "aggregateLedger": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "sha256": "997C182BBA91690F4ADC279D5F1E0CED2904BE6D690CDD8F2FB07FD18C628B4E"
+    },
+    "focusedAttachmentTest": {
+      "path": "tests/project-stage11-save-as-semantic-redo-aggregate-evidence.test.ts",
+      "sha256": "DBDAD5B1707E6F5FDC0B03B8A5C3DDA554D4440D411CD61F5B169267349C4DFA"
+    },
+    "aggregateLedgerTest": {
+      "path": "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+      "sha256": "B4F976B0C52A87B3115B1A04427E833841FDB5FFA02B7720784CC2BF39D831D6"
+    }
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "byte-level envelope rotation for project.rename or project.create",
+    "backup-promotion undo/redo support",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform one read-only reconciliation of M925 against the complete Stage 11 matrix; retain all count scopes, authority locks, runtime parking, and Stage 11/Stage 12 non-certification."
+}

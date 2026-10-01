@@ -1,0 +1,75 @@
+{
+  "receiptType": "stage12-exact-runtime-profile-active-gm-preview-gate-closure",
+  "milestone": "M1090",
+  "status": "closed-blocked",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "observation": {
+    "foundryProcessObserved": false,
+    "browserSurfaceInspected": true,
+    "foundryBrowserSurfaceObserved": false,
+    "currentExactRuntimeProfileObserved": false,
+    "currentActiveAuthorizedGMObserved": false,
+    "historicalOrStaticReceiptsFound": true,
+    "historicalEvidenceSubstituted": false,
+    "target": {
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3"
+    },
+    "requiredCapabilities": [
+      "foundry.scene.read",
+      "foundry.scene.placeable.read",
+      "foundry.scene.placeable.write",
+      "foundry.media.deploy",
+      "foundry.users.active-gm"
+    ],
+    "result": "No current exact runtime/profile or active-GM evidence is available; the Signal/Rune M7 preview remains blocked."
+  },
+  "preservedLocalEvidence": {
+    "signalRuneEligibility": "ready",
+    "dependentDocumentIds": [
+      "dbx:scene:rune-mechanism-chamber",
+      "dbx:scene:signal-frequency-chamber"
+    ],
+    "signalM7ItemsAndSteps": "6/6",
+    "runeM7ItemsAndSteps": "6/6",
+    "previewStatus": "blocked",
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "boundaries": {
+    "runtimeStarted": false,
+    "runtimeInvoked": false,
+    "activeGMImplied": false,
+    "previewApplied": false,
+    "documentsCreated": false,
+    "assetsDeployed": false,
+    "campaignPackageChanged": false,
+    "installerInvoked": false,
+    "nativeDocumentsCreated": false,
+    "tramOrCoreTouched": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "remainingGates": {
+    "CurrentExactRuntimeProfile": "required-before-native-preview",
+    "CurrentActiveAuthorizedGM": "required-before-native-preview",
+    "SignalRunePreviewApprovalAndAuthoritativeReread": "not-attempted",
+    "TramCoreRendererBinding": "final-map-required",
+    "RegionwrightIntegrationReceipt": "not-proven",
+    "PackageInstallerPromotion": "not-proven",
+    "Stage12Acceptance": "not-accepted",
+    "ReadyToPlay": "not-claimed"
+  },
+  "nextAction": "Hold Stage 12 at the exact runtime/profile and active-GM gate until current evidence is available; do not retry or write from static/local evidence."
+}

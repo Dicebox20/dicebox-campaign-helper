@@ -1,0 +1,12 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m376-stage11-backup-promotion-ui-session-gate-2026-08-28",
+  "milestone": "M376",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "scope": "Exact missing-primary backup-promotion UI session gate only",
+  "implementation": {"proposalCommand":"project.recovery.backup-promote","requiresApprovedSession":true,"beginApplyPersisted":true,"authoritativeRecoveryReread":true,"commitAfterReread":true,"noRetryOnRereadFailure":true,"noFoundryWrite":true},
+  "validation": {"focusedTests":"2 files / 14 tests PASS","desktopBuild":"PASS","workflow":"PASS; Stage 11 only active; 10/16 gates; no violations","diffHygiene":"PASS"},
+  "doesNotProve": ["packaged UI fixture execution","other recovery UI paths","recovery/deletion/cleanup breadth","generic Stage 11 acceptance","Foundry execution or active-GM authority","Stage 16 UI","Ready-to-Play"]
+}

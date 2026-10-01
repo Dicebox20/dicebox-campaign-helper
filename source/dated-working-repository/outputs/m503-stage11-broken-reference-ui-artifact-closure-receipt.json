@@ -1,0 +1,41 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m503-stage11-broken-reference-ui-artifact-closure-2026-08-29",
+  "milestone": "M503",
+  "evidenceLabel": "local",
+  "status": "ARTIFACT_ATTESTED",
+  "readyClaim": false,
+  "buildEnvironment": {
+    "VITE_DBX_PROJECT_SELF_TEST": "broken-reference-detach-ui-execute",
+    "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+  },
+  "artifact": {
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "2F53CFB269A8DE261E9056CB67AC7B3A4D9B9886973D82532E8843F531189A5C",
+    "bundle": "apps/campaign-helper-desktop/dist/assets/index-CiuRdtuF.js",
+    "bundleSha256": "FE68F039B4AF7C5952AD00D5F54D484BE593E6D96AD0CAF3B1E4F0BC329853D3"
+  },
+  "requiredMarkersPresent": [
+    "broken-reference-detach-ui-execute",
+    "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v1",
+    "BACKGROUND_ASSET_ROLE_MISMATCH",
+    "prepare_broken_reference_ui_lifecycle_fixture",
+    "authoritative-reread-commit"
+  ],
+  "typeOnlyMarkerExpectedAbsent": "BrokenReferenceUiLifecycleFixtureReceipt",
+  "processState": {
+    "desktop": false,
+    "cargo": false,
+    "rustc": false
+  },
+  "runtimeMutation": false,
+  "launch": false,
+  "capture": false,
+  "foundryWrite": false,
+  "nextBoundary": {
+    "milestone": "M504",
+    "scope": "One exact packaged capture against the M503 executable followed by trace, fixture, recovery, and process reread.",
+    "prohibited": ["rebuild", "launch separately", "recapture", "retry", "reset", "delete", "cleanup", "unrelated fixture/project mutation", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI execution", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

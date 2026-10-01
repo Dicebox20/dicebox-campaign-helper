@@ -1,0 +1,54 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m508-stage11-broken-reference-ui-observation-blocker-2026-08-29",
+  "milestone": "M508",
+  "evidenceLabel": "local",
+  "status": "BLOCKED_PRESERVED",
+  "readyClaim": false,
+  "captureRunner": {
+    "status": "PASS",
+    "exitCode": 0,
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "applicationStderr": "Failed to unregister class Chrome_WidgetWin_0. Error = 1412"
+  },
+  "trace": {
+    "fixture": "BLOCKED; code=PROJECT_FIXTURE_EXISTS; retry=remove-test-owned-project-and-reread; noFoundryWrite=true",
+    "uiSelfTest": "BLOCKED; broken-reference-ui-lifecycle:PROJECT_FIXTURE_EXISTS: The broken-reference UI lifecycle fixture will not overwrite an existing test-owned project.",
+    "noProjectOrSessionInspection": true,
+    "noRecoveryInvocationByRunner": true
+  },
+  "deterministicMismatch": "The corrected route now passes the intended guard contract in source, but the native refuse-to-overwrite preparer rejects the already-created M504 fixture before inspection; the retry hint is not deletion or reset authority.",
+  "fixtureReread": {
+    "projectPath": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v1/project.json",
+    "directoryEntries": ["project.json"],
+    "projectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "schemaVersion": "0.3.0",
+    "generation": 1,
+    "contentSha256": "b1d49b4925e707e44681a35c0394fc6cd9ee49096689bbab28cfb00b09f1f986",
+    "sceneCount": 2,
+    "assetBlobSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "assetBlobPresentAndHashValid": true,
+    "assetBlobByteLength": 14,
+    "primaryPresent": true,
+    "backupPresent": false,
+    "workspaceGeneration": 82,
+    "workspaceEntryPresent": true,
+    "foreignStateChanged": false
+  },
+  "processState": {
+    "desktop": false,
+    "cargo": false,
+    "rustc": false
+  },
+  "retry": false,
+  "fixtureResetOrDeletion": false,
+  "sessionMutation": false,
+  "recoveryOrApply": false,
+  "foundryWrite": false,
+  "nextBoundary": {
+    "milestone": "M509",
+    "scope": "Read-only reconciliation of the fixed-fixture re-entry guard, exact existing topology, current self-test route, session state, and preservation rules before any code-only reuse correction.",
+    "prohibited": ["capture retry", "rebuild", "launch", "fixture reset", "deletion", "cleanup", "session transition", "approval", "apply", "recovery", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

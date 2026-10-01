@@ -1,0 +1,210 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m367-stage11-asset-bearing-save-as-ui-execute-reread-2026-08-28",
+  "capturedAt": "2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M367",
+  "evidenceLabel": "fixture",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": false,
+  "runtimeOrProviderCall": false,
+  "scope": {
+    "accepted": "Close the exact desktop asset-bearing Save as new project UI boundary over the typed source-preserving project.save-as adapter/session/executor.",
+    "excluded": [
+      "background/audio/token UI integration",
+      "recovery breadth",
+      "generic cleanup or deletion",
+      "generic Stage 11 acceptance",
+      "Foundry runtime control",
+      "provider and credential execution",
+      "browser storage beyond the exact proposal session",
+      "player-role passwords",
+      "external publication",
+      "later roadmap stages"
+    ]
+  },
+  "counts": {
+    "projectWrites": 3,
+    "fixtureSetupProjectWrites": 2,
+    "projectPersistenceWrites": 1,
+    "workspaceWrites": 2,
+    "foundryWrites": 0,
+    "providerCalls": 0,
+    "credentialCalls": 0,
+    "browserStorageWrites": 1,
+    "producerExecutions": 1
+  },
+  "proposal": {
+    "operation": "project.save-as",
+    "sourceProjectId": "dbx:project:desktop-asset-save-as-m367-source-self-test-v1",
+    "targetProjectId": "dbx:project:desktop-asset-save-as-m367-target-self-test-v1",
+    "sourceGeneration": 2,
+    "sourceAssetCount": 1,
+    "sourceAssetCollectionSha256": "866e98cdf89714ed1ba69afc5715a3ff2826fa24ab36606623d39bdb654672da",
+    "targetAbsent": true,
+    "metadataOnly": true,
+    "rawBytesIncluded": false,
+    "unrestrictedPathsIncluded": false,
+    "automaticSave": false,
+    "approvalBeforeWrite": true
+  },
+  "target": {
+    "source": {
+      "projectId": "dbx:project:desktop-asset-save-as-m367-source-self-test-v1",
+      "generation": 2,
+      "contentSha256": "1fb8ee91eec3411a6955d4849cff6b27655798d792ee9012b71afed4c6b2d19a",
+      "sceneCount": 2,
+      "activeSceneId": "dbx:scene:desktop-asset-save-as-m367-source-self-test-v1-scene-2",
+      "assetCount": 1,
+      "assetCollectionSha256": "866e98cdf89714ed1ba69afc5715a3ff2826fa24ab36606623d39bdb654672da",
+      "backup": {
+        "generation": 1,
+        "contentSha256": "721e21bd12e5430c64f907f753c409785a5c44a663b649b34f904648ab0db46f",
+        "disposition": "VALID"
+      }
+    },
+    "copy": {
+      "projectId": "dbx:project:desktop-asset-save-as-m367-target-self-test-v1",
+      "generation": 1,
+      "contentSha256": "6eda65e581bfbcbf3e46e4ea6f1264f9f097e7b40a982ae4a7de445682965d09",
+      "sceneCount": 2,
+      "activeSceneId": "dbx:scene:desktop-asset-save-as-m367-source-self-test-v1-scene-2",
+      "assetCount": 1,
+      "assetCollectionSha256": "866e98cdf89714ed1ba69afc5715a3ff2826fa24ab36606623d39bdb654672da",
+      "backup": {
+        "disposition": "MISSING_FIRST_GENERATION_EXPECTED"
+      }
+    },
+    "sourcePreserved": true,
+    "targetCreated": true,
+    "orderedSceneIdentityPreserved": true,
+    "assetTreePreserved": true,
+    "asset": {
+      "assetId": "dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+      "sha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+      "mediaType": "image/png",
+      "byteLength": 68,
+      "relativePath": "assets/sha256/431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+      "role": "handout",
+      "fileSha256MatchesDescriptor": true,
+      "sourceAndTargetDescriptorEqual": true,
+      "registrationPreserved": true
+    }
+  },
+  "lifecycle": {
+    "historyStatus": "committed",
+    "historyLength": 4,
+    "transitions": [
+      "previewed",
+      "approved",
+      "applying",
+      "committed-after-reread"
+    ],
+    "sourceGenerationBefore": 2,
+    "sourceGenerationAfter": 2,
+    "targetGeneration": 1,
+    "staleRejected": true,
+    "foreignRejected": true,
+    "unapprovedRejected": true,
+    "collisionRejected": true,
+    "outcomeUnknownNoRetry": true
+  },
+  "rereads": {
+    "before": ["catalog", "source project", "target absence", "recovery", "workspace"],
+    "after": ["source project", "target project", "catalog", "source recovery", "target recovery", "workspace"],
+    "completeAssetTree": true,
+    "sourcePreservation": true,
+    "uiPromotionAfterCommittedReread": true,
+    "foundryReread": false
+  },
+  "nativeReceipts": {
+    "sourceFixtureCreate": "generation 1, two Scenes, zero assets",
+    "sourceAssetSave": "generation 2, one PRESENT_VALID handout PNG",
+    "targetSaveAs": "generation 1, one PRESENT_VALID handout PNG, atomic replace, directory-entry sync, source preserved",
+    "targetFirstGenerationBackup": "absent by invariant",
+    "catalogAfterTarget": "PARTIAL with exact target PASS and 48 entries",
+    "recoveryAfterTarget": "source and target PASS with registered asset reread"
+  },
+  "workspace": {
+    "generationBefore": 59,
+    "generationAfter": 61,
+    "primaryGenerationAfter": 61,
+    "backupGenerationAfter": 60,
+    "primaryContentSha256": "6df1d47ce18b961792da5747efdc0f780fd91de4511fa5391c91beb822f58eb7",
+    "backupContentSha256": "cdfedc96f6ee1fde37bc72be7d7715e0690f3e99d8e440bbaffea600e4775dd0"
+  },
+  "packagedSelfTest": {
+    "mode": "save-as-assets-ui-execute",
+    "result": "PASS",
+    "callbackStages": ["loaded", "named", "previewed", "approved", "applied", "pass"],
+    "traceExecutable": "apps/campaign-helper-desktop/.m367-trace-target/debug/dicebox-campaign-helper-desktop.exe",
+    "traceExecutableSha256": "04EA849132277872986780098E8D9556ACFFD248494C1339169591C4A57806B2",
+    "traceBundle": "apps/campaign-helper-desktop/dist/assets/index-1deFRZpp.js",
+    "traceBundleSha256": "9E7C4538E2D620E986A4BB3CF3362225AC322CCE8B64E207F007CF69D59F3424",
+    "reportedProcessExitCode": 0,
+    "authorityNote": "The callback-driven stage receipt and authoritative target rereads establish PASS; the process exit code is retained as supplemental evidence only."
+  },
+  "validation": {
+    "focused": "PASS: 3 files, 87 tests",
+    "full": "PASS: 124 files, 661 tests",
+    "packageTypecheck": "PASS",
+    "desktopBuild": "PASS",
+    "finalCleanPackage": {
+      "path": "apps/campaign-helper-desktop/.m367-final-target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "613AD8504DD2E5D4756CE3DC4F3F39B936CE4606C3E5EF3F55FA1A37FF02E2BA",
+      "selfTestEnvironment": "unset"
+    },
+    "finalCleanBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-BseaGKZ8.js",
+      "sha256": "DC9187252B306CDF81EC53EB77D59779EB3C72877F55DADAC2E379C683F413E6",
+      "selfTestLiteralAbsent": true
+    },
+    "tooling": "PASS",
+    "workflow": "PASS before M367/M368 closure synchronization; Stage 11 only active",
+    "knowledgeBase": "PASS before M367/M368 closure synchronization",
+    "diffCheck": "PASS"
+  },
+  "prohibitedActivity": {
+    "foundry": false,
+    "provider": false,
+    "credentials": false,
+    "browser": false,
+    "playerPasswords": false,
+    "deletion": false,
+    "cleanup": false,
+    "foreignState": false,
+    "unrelatedProject": false,
+    "retryAfterOutcomeUnknown": false
+  },
+  "recoveryDisposition": {
+    "initialBlockedAttempt": "Workspace metadata generation was stale because the self-test loaded the source without binding the current catalog generation.",
+    "correction": "Reread the catalog and pass its current workspace index generation into the source load before preview.",
+    "failedAttemptMutatedProject": false,
+    "successfulTargetCreatedOnce": true,
+    "overwriteOrDelete": false,
+    "preservedFixtures": true
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "other asset-role UI integration",
+    "broader recovery or cleanup",
+    "Foundry authority or live-world behavior",
+    "active-GM/player acceptance",
+    "Ready-to-Play",
+    "later roadmap stages"
+  ],
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "BFF262D4F03DF287B68AD4A2E1376B87093A3189AD838D09159D023ED3651CAB",
+    "apps/campaign-helper-desktop/src/project-store.ts": "6BFD20CB1AEA42A30918734CB43844048D78D051E8DA4183E9FC509CE4ADEFB5",
+    "apps/campaign-helper-desktop/src/project-save-as-proposal-adapter.ts": "CEC5A36D80ECED1338262B5FE5DFD4DCA7030058CADAFA7B40F506A58ABD9421",
+    "apps/campaign-helper-desktop/src/project-save-as-executor.ts": "2E012F0AC7A1F9D4537680615AD7215409549BDF29EC52772A352C24A305F8E4",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "C54C12CFC27606375225A34E6667EBE6CF310B034D4C9F0FE4CDE4B6426A39E6",
+    "tests/project-save-as-executor.test.ts": "886BA1ED831DC627A4BC87880A3E2DEC228AD541A05177E68B44BD1EF140B610",
+    "tests/desktop-project-proposal-review.test.ts": "5F73EE1AB0B593CEC054D1EDD67E9E163D4714E3F251524C197361AA78AFF174",
+    "tests/desktop-shell-configuration.test.ts": "F41810FD410E040F647BB4673D2AE98B9EA93FBDF32ED020C33F1387A072CAA1",
+    "tests/knowledge-base-query.test.ts": "43C7FCC1AB6FC9AC9D752D888420B6AE06F1A8D042A33BBE5392C8EC8320A928",
+    "apps/campaign-helper-desktop/src-tauri/src/lib.rs": "4F5B78FB7F83B0E07458A8065E9E055EF2CB1C7F4AFA5FC89F7D88F379EC105C"
+  },
+  "recoveryDispositionNote": "The test-owned source and target remain on disk for reread. No user or foreign data was deleted, overwritten, or cleaned up."
+}

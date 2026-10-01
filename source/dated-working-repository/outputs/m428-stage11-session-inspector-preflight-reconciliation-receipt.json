@@ -1,0 +1,15 @@
+{
+  "milestone": "M428",
+  "stage": 11,
+  "classification": "PASS_LOCAL_READ_ONLY",
+  "inspector": {"mode": "backup-promotion-ui-session-inspect", "existingLoader": true, "missingOnlyPass": true},
+  "fixture": {
+    "root": "C:\\Users\\rujie\\AppData\\Local\\com.dicebox.campaign-helper\\projects\\desktop-backup-authoritative-recovery-promotion-self-test",
+    "primaryExists": false,
+    "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+  },
+  "desktopProcessCount": 0,
+  "rawArtifactUsedAsCurrentState": false,
+  "prohibitedActionsNotPerformed": ["package build/run", "storage/session operation", "recovery apply", "fixture/project mutation", "Foundry activity"]
+}

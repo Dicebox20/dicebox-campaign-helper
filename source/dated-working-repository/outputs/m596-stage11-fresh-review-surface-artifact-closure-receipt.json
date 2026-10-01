@@ -1,0 +1,102 @@
+{
+  "operation": "stage11-fresh-review-surface-artifact-build",
+  "milestone": "M596",
+  "status": "ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-30T06:14:30-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "status": "PASS",
+    "frontendTypeScript": "PASS",
+    "nodeTypeScript": "PASS",
+    "viteBuild": "PASS",
+    "rustBuild": "PASS",
+    "launch": false,
+    "capture": false,
+    "retry": false
+  },
+  "artifacts": {
+    "nativeExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "409BDB043CE23205E3939680E5B51A67A09D6C761272DBFAC46411BF6243A629",
+      "bytes": 26878976,
+      "role": "compiled native Tauri shell"
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-CO6vHEDV.js",
+      "sha256": "E19C181DC0FF5D771923CA3F242BECE3F2A6322D78168F89C97F00E1E38ECBCF",
+      "bytes": 2052976,
+      "role": "compiled renderer containing the TypeScript review contract"
+    }
+  },
+  "markerAttestation": {
+    "frontendBundle": {
+      "operationKinds": 14,
+      "allOperationKindsPresent": true,
+      "allMappedApplyHandlersPresent": true,
+      "contractMatrix": true,
+      "humanReviewAuthority": true,
+      "localProjectAuthority": true,
+      "operationSpecificApplyAuthority": true,
+      "noGenericExecutor": true,
+      "genericExecutorSymbolAbsent": true
+    },
+    "nativeExecutable": {
+      "compiledShellPresent": true,
+      "rendererContractDuplicatedInNativeBinary": false,
+      "interpretation": "The Tauri build owns renderer contract strings in the frontend bundle and native IPC/shell strings in the executable; absence of renderer-only handler names from the native binary is expected artifact separation, not a contract failure."
+    }
+  },
+  "processReread": {
+    "desktopProcessCount": 0,
+    "cargoProcessCount": 0,
+    "rustcProcessCount": 0
+  },
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": true,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M596 attests the current owning artifact set and confirms the renderer contract is embedded in the frontend bundle while the native executable owns the shell. Packaged review-surface behavior remains unobserved and separately gated."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M597",
+    "title": "Stage 11 packaged review-surface observation",
+    "status": "authorized-m597-one-observation",
+    "scope": "Run one bounded packaged review-surface observation against the exact M596 artifact set, using the existing local-project review/session surface and preserving the first PASS, timeout, or blocker result.",
+    "excluded": "No second capture, retry, separate launch, browser-storage inspection, session replacement or clearing, fixture cleanup, project/runtime mutation, provider, credential, repository promotion, Technical Builder, Foundry, player-password action, Stage 11 acceptance, Stage 12, or Ready-to-Play action in M597."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/dist/assets/index-CO6vHEDV.js",
+    "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "outputs/m596-stage11-fresh-review-surface-artifact-closure-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql"
+  ]
+}

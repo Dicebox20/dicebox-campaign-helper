@@ -1,0 +1,19 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1208-stage12-regionwright-fixture-entrypoint-contract-authorization",
+  "milestone": "M1208",
+  "stage": "scene-authoring-breadth",
+  "goalId": "O-116",
+  "evidenceClass": "local",
+  "status": "AUTHORIZED_PREIMPLEMENTATION",
+  "authorization": {
+    "target": "work/foundry-fixture-data-v4 / dbx-test-world / port 30003",
+    "runtime": "Foundry 14.367 / dnd5e 5.3.3",
+    "identity": "one manually typed blank-password Gamemaster only",
+    "operation": "local static Regionwright v4 entrypoint and source/staged parity contract"
+  },
+  "reason": "M1206 activated Regionwright and observed no distinct surface. Existing v4 source already contains the init-phase fixture-control registration, so the smallest sound next boundary is a local static contract that proves the staged entrypoint and records intentional divergence before any live follow-up.",
+  "allowed": ["read external provenance files", "read staged v4 files", "add one deterministic local test", "node syntax checks", "package type-check", "workflow/database verification", "closure receipt"],
+  "prohibited": ["edit or copy external/staged Regionwright code", "fixture/browser/runtime start", "staging", "installer/control click", "Return to Setup", "administrator credential access or retry", "Player3 join", "Regionwright builder/handoff/audit/puzzle/RegionBehavior/mechanics", "document/asset/Scene/Region/Tile/Wall/settings/User/password/foreign-state mutation", "Tram/Core/Ballad action", "Stage 12 acceptance", "Ready-to-Play claim"],
+  "readyClaim": false
+}

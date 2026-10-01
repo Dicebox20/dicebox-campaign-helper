@@ -1,0 +1,35 @@
+{
+  "receiptVersion": 1,
+  "operation": "foundry.fixture.m1221-manual-login-closure",
+  "milestone": "M1221",
+  "status": "BLOCKED_USER_ACTION_REQUIRED",
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundry": "14.367",
+    "system": "dnd5e 5.3.3",
+    "pid": 26968
+  },
+  "preAuthObservation": {
+    "persistentPanelTab": "5",
+    "url": "http://127.0.0.1:30003/join",
+    "joinFormVisible": true,
+    "currentPlayers": "0 / 2",
+    "userConfirmedJoined": false,
+    "loadedIdentityObserved": false,
+    "agentEnteredCredentials": false
+  },
+  "stop": {
+    "status": "PASS",
+    "normalTerminationStatus": 255,
+    "forcedTerminationStatus": 0,
+    "finalAuthoritativeStatus": "STOPPED",
+    "listener": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "blockers": ["Manual Gamemaster blank-password entry and joined-state confirmation never occurred."],
+  "nextAction": "Require a future user-resumed, separately authorized exact-v4 continuation; do not retry M1221 inside this closed boundary.",
+  "readyClaim": false
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M992",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY HANDOUT ASSET REDO HANDLER/CLASSIFIER AGGREGATE-LEDGER RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reread the exact M991 handout asset redo handler/classifier aggregate-ledger attachment against the complete Stage 11 aggregate/current-authority surfaces and select one smallest directly evidenced next gap without implementation, runtime activity, project mutation, or authority promotion.",
+  "sourceReceipts": {
+    "m991": "outputs/m991-stage11-project-handout-asset-redo-handler-classifier-aggregate-ledger-attachment-closure-receipt.json",
+    "m990": "outputs/m990-stage11-post-project-handout-asset-redo-handler-classifier-reconciliation-receipt.json",
+    "m989": "outputs/m989-stage11-project-handout-asset-redo-handler-classifier-evidence-closure-receipt.json",
+    "m918": "outputs/m918-stage11-handout-asset-semantic-redo-aggregate-attachment-closure-receipt.json"
+  },
+  "reconciliation": {
+    "m991ReceiptSha256": "7CADC5C2D7C53936100A8A4E49D0C5E8CBE650840FBFA675FFC5B8F1E441E7F5",
+    "aggregateSource": "apps/campaign-helper-desktop/src/project-stage11-project-handout-asset-redo-handler-classifier-aggregate-evidence.ts",
+    "aggregateSourceSha256": "C2FB5D1AE0D27A766A226261131AB87F30EC9CF1D8D76A6BE387A9EEC68129B4",
+    "ledgerSource": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "ledgerSourceSha256": "F7E78C418A87E2E80B9AF1C08E9DFF9BC61EB1E85408F0A28E9EF1BB585BA38E",
+    "producer": "project.asset.register-handout",
+    "operation": "project.asset.register-handout.redo",
+    "handler": "bridgeProjectHandoutAssetRegistrationRedoToTerminalHistory",
+    "rereadClassifier": "projectHandoutAssetRedoTerminalHistoryReceiptSchema",
+    "bindingStatus": "bound-operation-specific",
+    "matchedRereadRequired": true,
+    "handoutAssetIdentityPreserved": true,
+    "contentAddressedRegistrationPreserved": true,
+    "assetTreePreserved": true,
+    "scenePreserved": true,
+    "generationAdvanced": true,
+    "contentHashChanged": true,
+    "envelopeRotated": true,
+    "byteHashAndEnvelopeEvidence": "source-receipt-only",
+    "sourceInvocation": false,
+    "rereadInvocation": false,
+    "operationCount": 14,
+    "operationCountChanged": false,
+    "separateSemanticAggregateAttachmentPresent": true,
+    "handlerClassifierAggregateAttachmentPresent": true
+  },
+  "aggregateReview": {
+    "handlerClassifierAggregateAttachments": 6,
+    "semanticAggregateAttachments": 9,
+    "stage11PartialClauses": 4,
+    "producerFamilies": 11,
+    "operationCount": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "runtime": "PARKED",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "countsChanged": false
+  },
+  "nextGap": {
+    "milestone": "M993",
+    "producer": "project.asset.register-audio",
+    "operation": "project.asset.register-audio.redo",
+    "bridge": "bridgeProjectAudioAssetRegistrationRedoToTerminalHistory",
+    "rereadClassifier": "projectAudioAssetRedoTerminalHistoryReceiptSchema",
+    "provenance": [
+      "outputs/m760-stage11-project-audio-asset-register-redo-terminal-history-bridge-closure-receipt.json",
+      "outputs/m896-stage11-audio-asset-semantic-redo-composition-closure-receipt.json",
+      "outputs/m916-stage11-audio-asset-semantic-redo-aggregate-attachment-closure-receipt.json"
+    ],
+    "selectionReason": "The exact audio redo bridge, typed semantic evidence, and semantic aggregate attachment already exist, while no dedicated typed handler/classifier evidence layer is present. This is one directly evidenced producer-scoped gap adjacent to the completed handout layer."
+  },
+  "validation": {
+    "knowledgeBaseRebuild": "PASS: sources 1542; facts 1242; decisions 1181; open items 135; trials 831; research subjects 40; milestones 26",
+    "knowledgeBaseVerification": "PASS: integrity ok; activity_hits 35; active_work 105; subjects 40; milestones 26",
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history active; zero violations; readyClaim false; next M992 before closure",
+    "surfaceReread": "PASS: M991 receipt, active card, roadmap, aggregate ledger, current-authority surface, complete Stage 11 matrix, producer-family boundaries, M989/M990/M991 provenance, and rebuilt read-only KB agree",
+    "negativeCoverage": "PASS: no implementation, runtime, browser, Foundry, project, provider, credential, account, player-password, authority, transition, generic-executor, Stage 11 acceptance, Stage 12, or Ready-to-Play action occurred"
+  },
+  "next": "M993: bind the existing project.asset.register-audio redo terminal-history handler and matched-reread classifier into one strict typed local non-certifying evidence surface; preserve six handler/classifier aggregate attachments, nine semantic aggregate attachments, fixed counts, authority locks, runtime parking, Stage 11 BLOCKED, Stage 12 LOCKED, and readyClaim false."
+}

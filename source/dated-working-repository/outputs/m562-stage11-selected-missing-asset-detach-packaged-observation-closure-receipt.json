@@ -1,0 +1,73 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-packaged-observation",
+  "milestone": "M562",
+  "status": "PASS_PACKAGED_BLOCKED_PREVIEW_ADAPTER",
+  "capturedAt": "2026-08-30T00:15:30-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "runner": {
+    "receipt": "outputs/m562-stage11-selected-missing-asset-detach-packaged-observation-runner-receipt.json",
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "exitCode": 0,
+    "timedOut": false,
+    "childExitObserved": true,
+    "stderr": "Chromium teardown warning only: Failed to unregister class Chrome_WidgetWin_0; no app failure indicated.",
+    "noRecoveryInvocationByRunner": true
+  },
+  "lifecycle": {
+    "fixture": "PASS: exact existing selected-detach fixture reused",
+    "inspection": "BLOCKED aggregate recovery inspection with REGISTERED_ASSET_BLOB_MISSING; no-write/no-Foundry",
+    "loaded": "PASS: fixture-reread",
+    "preview": "PREVIEW: selected missing PNG, one affected Scene, no-write/no-Foundry",
+    "terminal": "BLOCKED before approval: Project recovery preview contains an unknown field.",
+    "approval": false,
+    "apply": false,
+    "authoritativeCommit": false,
+    "sessionOperation": false
+  },
+  "reconciliation": {
+    "nativePreviewField": "registration is serialized by MissingAssetDetachPreviewReceipt",
+    "adapterAllowlist": "project-recovery-proposal-adapter.ts omitted registration from the detach operation key allowlist",
+    "adapterValidation": "detach normalization did not validate the returned registration before building the typed command",
+    "typescriptType": "MissingAssetDetachPreviewReceipt also omitted registration",
+    "selectedCorrection": "Add registration to the detach preview type and exact adapter allowlist, validate it with the existing assetRegistration guard, and add focused regression coverage. Do not alter the mutation/apply path."
+  },
+  "stateReread": {
+    "projectId": "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+    "projectSha256": "C120CFB3F679565E36833AB32D60055C74C583F2676C8A28E765AE3CF413BCAE",
+    "generation": 1,
+    "backup": false,
+    "selectedMissingPngBlob": false,
+    "preservedWebpSha256": "C9778B200966A689A6FA2DFD5E4C6FAABCB3B266B00D2FD74E89D60435B6F78C",
+    "workspacePendingPreserved": true,
+    "targetProjectPendingFiles": [],
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "preservation": {
+    "browserStorageInspected": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "nextBoundary": {
+    "milestone": "M563",
+    "scope": "Read-only reconcile the packaged preview blocker against native receipt fields, adapter allowlist/type, focused tests, and preserved state; select at most one narrow adapter correction.",
+    "prohibited": [
+      "source edit",
+      "build",
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation or replacement",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "The quick popup/close is expected exit-mode behavior. M562 is direct packaged transport and pre-approval blocker evidence; it does not certify selected-detach lifecycle, Stage 11, or Ready-to-Play."
+}

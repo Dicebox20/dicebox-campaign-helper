@@ -1,0 +1,56 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m308-stage11-project-recovery-proposal-adapter-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M308",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "pureNoWriteAdapter": true,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "normalizedPreviewTypes": [
+    "dicebox.project.migration.persist.preview",
+    "dicebox.project.recovery.backup-promotion.preview",
+    "dicebox.project.asset.restore.preview",
+    "dicebox.project.asset.detach.preview",
+    "dicebox.project.broken-reference.detach.preview"
+  ],
+  "implemented": [
+    "validates exact operation-specific preview keys and required no-write/approval/status attestations",
+    "normalizes five project migration/recovery preview families into hash-valid generic ProposalBatch envelopes",
+    "preserves project-store provenance, no provider, human-review authority, local-project target authority, exact generation, and deterministic project base hash",
+    "assigns medium/high risk by operation and emits one dependency-free opaque allowlisted command",
+    "retains stable IDs and hashes only; raw restore bytes and receipt paths never enter generic payloads",
+    "rejects unsupported operations, non-preview statuses, missing approval/no-write attestations, malformed IDs/hashes/generations, tampered restore identity, and unknown keys"
+  ],
+  "validation": {
+    "focused": "PASS: 3 files / 26 tests",
+    "full": "PASS: 110 files / 594 tests",
+    "build": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS: 10/16, proposal-approval-history active",
+    "knowledgeBase": "PASS pre-closure: 439 sources / 474 facts / 423 decisions / 437 trials"
+  },
+  "recovery": {
+    "firstFocusedRun": "one safety assertion matched allowed hash field names as though they were raw bytes, and one optional broken-reference field was treated as required",
+    "boundedFix": "narrowed forbidden-field assertions and modeled the two optional receipt fields explicitly",
+    "reread": "reduced reproductions, focused adapter/workspace tests, and the complete repository gate passed"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-recovery-proposal-adapter.ts": "5079CCD21B839ECD9C81D2C6382DB0D8B4CC42E4A80620D9082D0195BF0FDA6A",
+    "tests/project-recovery-proposal-adapter.test.ts": "2B3558BCFB755889F682CB2BB125963F4B626C35C058A907C6F19E03ADA646E3",
+    "tests/knowledge-base-query.test.ts": "B5F8E84844D67789DC4EE1FA8433F26072646DEB574EEA5DC46E1D3A39D4D02A"
+  },
+  "doesNotProve": [
+    "project-target session persistence",
+    "desktop UI integration",
+    "project operation execution or persistent project mutation",
+    "ordinary create/save/save-as/rename or asset import generic proposals",
+    "Technical Builder repository promotion",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

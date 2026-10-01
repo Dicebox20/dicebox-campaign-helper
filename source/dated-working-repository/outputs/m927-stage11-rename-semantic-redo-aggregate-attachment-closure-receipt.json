@@ -1,0 +1,122 @@
+{
+  "milestone": "M927",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY AGGREGATE ATTACHMENT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Attach the exact M902 project.rename semantic-redo closure receipt to the Stage 11 aggregate ledger as one strict typed, non-certifying producer-scoped field without changing modeled counts, authority, or the explicit no-byte-hash-rotation boundary.",
+  "inputs": [
+    "outputs/m926-stage11-post-save-as-semantic-redo-aggregate-attachment-reconciliation-receipt.json",
+    "outputs/m902-stage11-project-rename-semantic-redo-composition-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-rename-semantic-redo-aggregate-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-rename-semantic-redo-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-rename-terminal-history.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "tests/project-stage11-rename-semantic-redo-aggregate-evidence.test.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "evidence": {
+    "sourceMilestone": "M902",
+    "sourceReceipt": "outputs/m902-stage11-project-rename-semantic-redo-composition-closure-receipt.json",
+    "operation": "project.rename.redo",
+    "semantic": "redo-post-state",
+    "matchedReread": true,
+    "generationAdvanced": true,
+    "displayNameChanged": true,
+    "contentPreserved": true,
+    "metadataEnvelopePreserved": true,
+    "byteHashRotation": "NOT_CLAIMED; rename bridge exposes metadata integrity flags but no byte hashes",
+    "aggregateAttachment": "one-producer-scoped-non-certifying",
+    "driftRejected": "display-name/content/metadata-envelope/readback identity drift"
+  },
+  "boundary": {
+    "producerScopedOnly": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "aggregateAuthority": "not-granted",
+    "countsChanged": false,
+    "foreignStatePreserved": true,
+    "runtimeLaneReopened": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAggregateAuthorityIndexedRedoBindingEntries": [
+      "project.create",
+      "project.save",
+      "project.rename",
+      "project.add-scene.persist",
+      "project.asset.bind",
+      "project.asset.register-audio",
+      "project.asset.register-handout",
+      "project.asset.register-token",
+      "project.add-scene.commit-in-memory"
+    ],
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "countScopePreserved": true,
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source/test separately indexes 9 redo entries, including the supplemental project.add-scene.commit-in-memory row; these are not collapsed into one measure."
+  },
+  "validation": {
+    "focusedEvidenceSuite": "PASS: 2 files; 14 tests",
+    "relatedStage11EvidenceSuite": "PASS: 30 files; 78 tests (all project-stage11-*.test.ts)",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "fullRepositorySuite": "PASS: 215 files; 968 tests",
+    "databaseRebuildAndVerifyBeforeClosure": "PASS: sources 1416, facts 1180, decisions 1055, open items 135, trials 788, research subjects 40, milestones 26",
+    "negativeCoverage": "PASS: exact source identity, display-name, content, metadata-envelope, byte-hash boundary, authority, count, incomplete, and aggregate drift fail closed",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "artifacts": {
+    "aggregateAttachmentLayer": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-rename-semantic-redo-aggregate-evidence.ts",
+      "sha256": "F73CAE42A67810FA20F67D8493668EE3D6E6D1EBAFC300487C41A99BF0BD0FFB"
+    },
+    "aggregateLedger": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "sha256": "C31065DBE6CC06A86D81E5D1CF80378F74C476BFADE81554CD81C4BCBA3EE2B1"
+    },
+    "focusedAttachmentTest": {
+      "path": "tests/project-stage11-rename-semantic-redo-aggregate-evidence.test.ts",
+      "sha256": "F5F8B0C2FDB95C7C6E511DC959923E1DE15222F64B5367C77F09890E6870849A"
+    },
+    "aggregateLedgerTest": {
+      "path": "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+      "sha256": "1D07BD1194E9928E8BACB1F4E6D3D7A1EC6F47DFFBB1942035E8037D229D6018"
+    }
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "byte-level envelope rotation for project.rename",
+    "backup-promotion undo/redo support",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform only the authorized M928 post-rename-semantic-redo-aggregate-attachment read-only reconciliation against the complete Stage 11 matrix; retain all count scopes, authority locks, runtime parking, and Stage 11/Stage 12 non-certification."
+}

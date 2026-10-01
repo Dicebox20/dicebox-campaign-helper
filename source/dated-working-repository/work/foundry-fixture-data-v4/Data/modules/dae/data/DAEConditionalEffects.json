@@ -1,0 +1,161 @@
+{
+  "name": "DAEConditionalEffects",
+  "type": "feat",
+  "img": "systems/dnd5e/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Sample conditional effects for DAE. Each effect has an enableCondition that is evaluated against the actor's roll data. When the condition is true, the effect is applied to the actor.</p>"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "daeCondBleeding0",
+      "name": "Bleeding",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {},
+      "transfer": false,
+      "origin": null,
+      "description": "<p>Applied when HP is above 0 and at or below half maximum.</p>",
+      "statuses": [
+        "bleeding"
+      ],
+      "flags": {
+        "dae": {
+          "enableCondition": "attributes.hp.value > 0 && (attributes.hp.value <= attributes.hp.max/2)",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [],
+          "disableIncapacitated": false
+        },
+        "core": {
+          "overlay": true
+        }
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 2,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.357",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "daeCondDeadNpc00",
+      "name": "Dead",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {},
+      "transfer": false,
+      "origin": null,
+      "description": "<p>Applied to NPCs when HP reaches 0.</p>",
+      "statuses": [
+        "dead"
+      ],
+      "flags": {
+        "dae": {
+          "enableCondition": "actorType===\"npc\" && attributes.hp.value <= 0",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [],
+          "disableIncapacitated": false
+        },
+        "core": {
+          "overlay": true
+        }
+      },
+      "sort": 100,
+      "start": null,
+      "showIcon": 2,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.357",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      }
+    },
+    {
+      "_id": "daeCondUnconsc00",
+      "name": "Unconscious",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {},
+      "transfer": false,
+      "origin": null,
+      "description": "<p>Applied to PCs when HP reaches 0.</p>",
+      "statuses": [
+        "unconscious"
+      ],
+      "flags": {
+        "dae": {
+          "enableCondition": "actorType === \"character\" && attributes.hp.value <= 0",
+          "disableCondition": "",
+          "stackable": "noneName",
+          "durationExpression": "",
+          "macroRepeat": "none",
+          "specialDuration": [],
+          "disableIncapacitated": false
+        },
+        "core": {
+          "overlay": true
+        }
+      },
+      "sort": 200,
+      "start": null,
+      "showIcon": 2,
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "14.357",
+        "systemId": "dnd5e",
+        "systemVersion": "5.2.4",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null,
+        "exportSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.2.4",
+    "coreVersion": "14.357",
+    "createdTime": null,
+    "modifiedTime": null,
+    "lastModifiedBy": null
+  }
+}

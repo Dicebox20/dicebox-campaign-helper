@@ -1,0 +1,61 @@
+{
+  "receiptType": "stage12-renderer-attestation-readiness-envelope-closure",
+  "milestone": "M1084",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "envelope": {
+    "sceneCount": 4,
+    "evidenceClassByScene": [
+      {"scene":"signal-frequency-chamber","evidenceClass":"documented-only","nextGate":"manifest-and-byte-attestation-required","dependentDocumentEligibility":"blocked"},
+      {"scene":"ascendancy-tram-depot","evidenceClass":"final-map-required","nextGate":"blocked-by-final-map","dependentDocumentEligibility":"blocked"},
+      {"scene":"rune-mechanism-chamber","evidenceClass":"documented-only","nextGate":"manifest-and-byte-attestation-required","dependentDocumentEligibility":"blocked"},
+      {"scene":"central-core-control-chamber","evidenceClass":"final-map-required","nextGate":"blocked-by-final-map","dependentDocumentEligibility":"blocked"}
+    ],
+    "observedSha256": null,
+    "attestationStatus": "not-observed",
+    "approvedManifest": "required-for-scene-bound-rows",
+    "expectedByteLength": "required-from-approved-manifest",
+    "authority": {
+      "renderer": "scene-background",
+      "geometry": "spatial-blueprint",
+      "dependentDocuments": "blocked",
+      "nativeMapping": "not-proven",
+      "runtime": "not-modeled"
+    },
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "validation": {
+    "focusedTestFiles": 3,
+    "focusedTests": 19,
+    "packageTypeCheck": "passed",
+    "desktopProductionBuild": "passed",
+    "workflowTest": "14 passed",
+    "rawFieldRejection": true,
+    "crossSceneDriftRejection": true,
+    "sourceMatrixEquality": true,
+    "buildWarning": "existing Vite chunk-size warning only"
+  },
+  "boundaries": {
+    "packageChanged": false,
+    "installerChanged": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "assetsFetchedOrTransferred": false,
+    "byteAttestationPerformed": false,
+    "dependentDocumentsCreated": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "nextAction": "M1085 post-attestation-readiness read-only reconciliation"
+}

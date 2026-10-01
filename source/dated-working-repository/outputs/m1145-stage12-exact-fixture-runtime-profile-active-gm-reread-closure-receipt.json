@@ -1,0 +1,111 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1145",
+  "status": "PASS_EXACT_FIXTURE_REREAD_READY_BLOCKED",
+  "evidenceClass": "fixture",
+  "operation": "dicebox.stage12.exact-fixture-runtime-profile-active-gm-served-package-reread",
+  "authorization": {
+    "source": "acceptedStage12M1145ExactFixtureRuntimeProfileReread",
+    "manualJoin": "Gamemaster typed manually; password left blank; no autocomplete suggestion selected",
+    "scope": "one exact fixture reopen, one read-only package diagnostic, authoritative stopped-state reread"
+  },
+  "runtimeTarget": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30001,
+    "moduleId": "dicebox-campaign-helper",
+    "moduleLoadPath": "modules/dicebox-campaign-helper/src/module.js?dbx=0.1.18",
+    "runtimeFingerprint": "dbx:fingerprint:cbea3468",
+    "exactTargetMatch": true,
+    "activeModuleIds": ["dicebox-campaign-helper", "regionwright"],
+    "documentTypeCount": 34,
+    "servedPackageEvidence": "PACKAGE_OWNED_READ_ONLY_DIAGNOSTIC_AND_LOADED_MODULE_LOG"
+  },
+  "fixtureLifecycle": {
+    "precondition": "STALE supervisor state with no listener",
+    "reopen": {
+      "status": "PASS",
+      "pid": 27864,
+      "launchGuard": "PASS",
+      "recovery": "PASS; quarantined only owner lock work/foundry-fixture-data-v2/Config/dicebox-lock-quarantine/options.json.lock-2026-09-06T08-50-46-368Z",
+      "listener": "PASS",
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    },
+    "manualJoin": {
+      "status": "PASS",
+      "username": "Gamemaster",
+      "password": "blank",
+      "dropdownSelection": false,
+      "joinedUrl": "http://localhost:30001/game",
+      "observedIdentity": "Gamemaster [GM]"
+    },
+    "finalReread": {
+      "status": "STOPPED",
+      "listeners": [],
+      "worldDocumentWrites": 0,
+      "balladTouched": false,
+      "supervisorReceipt": "outputs/foundry-fixture-supervisor-last-receipt.json",
+      "supervisorReceiptSha256": "61C593C362D01FFF15738C0F29D6B3C62A9F5780E562F8AE4EDE9D5A8222EA00"
+    }
+  },
+  "activeGmDiagnostic": {
+    "schemaVersion": "0.1.0",
+    "operation": "dicebox.current-active-gm-authority.diagnostic",
+    "status": "OBSERVED",
+    "evidenceClass": "runtime-observation",
+    "currentUserIsGm": true,
+    "currentUserMatchesActiveGm": true,
+    "redacted": true,
+    "noWrite": true,
+    "noPermissionClaim": true,
+    "noExecutionAuthority": true,
+    "readyClaim": false,
+    "remainingBlockers": [
+      "This snapshot does not probe or prove document-write permission, proposal authority, execution authority, or Stage 11 acceptance."
+    ]
+  },
+  "readOnlyRuntimeDiagnostic": {
+    "diagnosticId": "dbx:diagnostic:cbea3468",
+    "packageId": "dicebox-campaign-helper",
+    "exactTargetMatch": true,
+    "activeGm": {"status": "observed", "isCurrentUser": true},
+    "readiness": {"status": "blocked", "pass": 10, "blocked": 1, "unknown": 0, "total": 11},
+    "blocker": "Exact-runtime behavior and permission proof remains unverified; static API presence and deterministic fixtures do not certify live behavior, permissions, sender semantics, or read-back.",
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "m1144Identity": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1144",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1144",
+    "specSha256": "AC81CF0D975BF590D8CA7A8B74DF0E6A262B4BAC7221F1E8D978E1408B503343",
+    "packageSha256": "2F257477F02AAC0A60B01D6C0AEFEF738484BE5C437A708BD293945CCF90645F",
+    "adapterSha256": "3A063C2DEC5A4BF7AD7B6B13CE602FF4EDCF32071C419E3AD7C5D265274113AB",
+    "installerSha256": "FFFB439942619C5AFFC10E5AB74B43EF9AA3107C989F1551FF5CFCE2E7C5BC83",
+    "workerSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "staticRuntimeSha256": "31D9655E77EED5E0E94DAB33421E63537A14251DF994296C3C039CE019192A1B",
+    "servedByteHash": "NOT_OBSERVED; module-load and redacted diagnostic evidence only",
+    "profileDiff": "NOT_EMITTABLE_WITHOUT_SCHEMA_VALID_CURRENT_RUNTIMEPROFILE"
+  },
+  "preservation": {
+    "packageBytesEdited": false,
+    "adapterBytesEdited": false,
+    "packageStaged": false,
+    "installerInvoked": false,
+    "settingsOrUserMutated": false,
+    "passwordCreatedOrPersisted": false,
+    "documentsOrAssetsMutated": false,
+    "foreignStatePreserved": true,
+    "balladTouched": false,
+    "readyClaim": false,
+    "stage12Accepted": false
+  },
+  "blockers": [
+    "The exact fixture, current GM identity, module load, and redacted package diagnostic are observed, but no served-byte hash or complete schema-valid RuntimeProfile/profile-diff is available.",
+    "The read-only diagnostic explicitly does not prove document-write permission, proposal authority, execution authority, live read-back, or Stage 11 acceptance.",
+    "The first-release Signal/Rune creation gate therefore remains closed; no approval/apply decision is inferred from this reread."
+  ],
+  "nextBoundary": "M1146: reconcile the M1145 fixture observation with the M1144 verifier and M1141 Signal/Rune candidate, then produce the smallest fail-closed source/staged/served/profile gate; do not create or stage runtime documents until the gate and explicit approval are present."
+}

@@ -1,0 +1,48 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1174-packet-c-candidate-promotion-boundary-audit",
+  "milestone": "M1174",
+  "packet": "candidate-promotion-boundary",
+  "status": "PASS_PREVIEW_PROMOTION_BOUNDARY_BLOCKED",
+  "evidenceClass": "local",
+  "scope": "Read-only replay of the M1141 Signal/Rune fresh-Scene candidate preview and promotion contract.",
+  "replay": {
+    "focusedTestFiles": 3,
+    "focusedTestsPassed": 11,
+    "focusedTestsFailed": 0,
+    "candidatePreviewReceipt": "outputs/m1141-stage12-foreign-scene-preserving-fresh-scene-candidate-preview-closure-receipt.json",
+    "previewStatus": "PREVIEWED",
+    "rooms": [
+      "dbx:room:signal-frequency-chamber",
+      "dbx:room:rune-mechanism-chamber"
+    ],
+    "excludedRooms": [
+      "dbx:room:ascendancy-tram-depot",
+      "dbx:room:central-core-control-chamber"
+    ],
+    "foreignScenes": [
+      "AneddhKAAfk5HlsA",
+      "p9Mbi0CJWe9KvJhH"
+    ]
+  },
+  "promotionBoundary": {
+    "noWrite": true,
+    "apply": false,
+    "approvalRequired": true,
+    "authoritativeRereadRequired": true,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "dispatch": "disabled",
+    "liveCreationAuthorized": false,
+    "foreignState": "preserve",
+    "readyClaim": false
+  },
+  "historicalDrift": {
+    "m1141ReceiptTestHash": "98DAAE4BD8CF9FFAE576A461B7DED47C3A3C2AD44573681FEF713EEA4DE17CA5",
+    "currentTestHash": "98DAAE4BD8CF9FFAE576A461B7DED47C3A3C2AD44573681FEF713EEA4DE17CA5",
+    "status": "RECEIPT_DRIFT_CONFIRMED_HISTORICAL_RECEIPT_PRESERVED"
+  },
+  "runtime": false,
+  "mutation": false,
+  "nextBoundary": "Merge with Packet B; preview approval remains unavailable until current profile and exact authority gates are closed."
+}

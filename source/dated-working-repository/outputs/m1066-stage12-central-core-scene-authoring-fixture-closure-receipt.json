@@ -1,0 +1,55 @@
+{
+  "operation": "dicebox.stage12.m1066.central-core-scene-authoring-fixture.closure",
+  "status": "PASS",
+  "milestone": "M1066",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "SRC-M1066-STAGE12-CENTRAL-CORE-SCENE-AUTHORING-FIXTURE-AUTHORIZATION",
+    "D-M1066-STAGE12-CENTRAL-CORE-SCENE-AUTHORING-FIXTURE-AUTHORIZATION",
+    "F-M1065-CLOSURE",
+    "F-063",
+    "F-064",
+    "D-192",
+    "D-194"
+  ],
+  "changedPaths": [
+    "packages/dicebox-compiler/src/ascendancy-scene-authoring-fixture.ts",
+    "packages/dicebox-compiler/src/index.ts",
+    "tests/ascendancy-scene-authoring-fixture.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "outputs/m1066-stage12-central-core-scene-authoring-fixture-closure-receipt.json"
+  ],
+  "implementation": {
+    "composition": "createAscendancyCentralCoreSceneAuthoringFixture composes the existing Central Core Spatial Projection Plan, Region plan, 29-entry Background Object preview, and M1064 M7 furnishing plan through explicit Scene, Blueprint, Region, and plan IDs.",
+    "sourceCounts": "The composed fixture preserves deterministic Spatial Projection Scene/Wall/Region steps, the ten Central Core Region entries and two teleports, ten Central Core Background Object projection IDs, and six M7 furnishing items/steps covering every placeable kind.",
+    "authority": "The schema labels renderer-neutral Scene semantics, Spatial Blueprint geometry, Region/teleport intent, visual-workflow Background Objects, M7 native placeable plan authority, and runtime not-modeled state separately.",
+    "boundary": "The composed fixture preserves source plan identity/equality, rejects cross-Scene identity drift and raw document/execute-shaped fields, and exposes no raw Foundry document or execution path. Mutation remains disabled-until-exact-runtime-gate."
+  },
+  "validation": {
+    "focusedTests": "PASS: tests/ascendancy-scene-authoring-fixture.test.ts, tests/ascendancy-furnishing-plan-fixture.test.ts, tests/spatial-projection-plan.test.ts, tests/ascendancy-region-plan.test.ts, and tests/background-object-preview.test.ts passed 5 files / 19 tests.",
+    "packageBuild": "PASS: npm run build:packages; TypeScript compiler completed with no errors.",
+    "desktopBuild": "PASS: npm run desktop:build; TypeScript checks and Vite production build completed successfully. Existing chunk-size warning remains non-blocking.",
+    "workflowCheck": "PASS before closure: 11/16 gates, zero violations, scene-authoring-breadth active, readyClaim false.",
+    "runtimeBoundary": "PASS: no campaign-package change, installer behavior change, Foundry session, native document creation, asset transfer, Blueprint edit/promotion, project mutation, Ballad access, player surface, provider, credential, account, or player-password action occurred."
+  },
+  "observation": {
+    "disposition": "PASS LOCAL COMPOSED SCENE-AUTHORING FIXTURE",
+    "meaning": "M1066 provides deterministic cross-plane composition evidence for one nontrivial Central Core Scene while preserving each source authority and keeping runtime/native execution closed.",
+    "nextGap": "M1067: perform a read-only reconciliation of M1066 against the Stage 12 authoring-breadth checklist, M7/Spatial Blueprint/Region/Background Object authority, and exact runtime gates before selecting further work.",
+    "certificationBoundary": "Stage 12 remains active and non-certifying; Stage 11 remains blocked; Ready-to-Play remains false; Ballad and player surfaces remain untouched."
+  },
+  "doesNotProve": [
+    "native Wall/Region/Tile/Token/AmbientLight/AmbientSound/Drawing/Note creation",
+    "asset upload or media deployment",
+    "live Scene readback",
+    "package or installer integration",
+    "Spatial Blueprint promotion",
+    "live Ballad behavior",
+    "Stage 12 acceptance",
+    "Ready-to-Play"
+  ],
+  "nextAction": "Perform only M1067: read-only reconcile the M1066 composed Central Core Scene fixture against the Stage 12 checklist and cross-plane authority before selecting any later boundary."
+}

@@ -1,0 +1,69 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1147",
+  "status": "PASS_SERVED_WORKER_PARITY_PROFILE_REMAINS_BLOCKED",
+  "evidenceClass": "fixture",
+  "operation": "dicebox.stage12.exact-served-worker-hash-attestation",
+  "implementation": {
+    "wrapperPath": "tools/run-m1147-exact-served-worker-attestation.ts",
+    "wrapperSha256": "B60519715B842B177FA0F5B116177845C73FFE812D62D00752F96330FF6326EE",
+    "packageJsonSha256": "0D6265A2903FF14B2A42E231C233C191C2331E306C2ED4766C2C2ECD04DB68E3",
+    "generatedReceiptPath": "outputs/m1147-stage12-exact-served-worker-attestation-receipt.json",
+    "generatedReceiptSha256": "C326478FDF5E695D606EB9DF924480FFE0D495C4258123452DE87F85CECA9172"
+  },
+  "target": {
+    "dataRoot": "work/foundry-fixture-data-v2",
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30001
+  },
+  "request": {
+    "method": "GET",
+    "path": "/modules/dicebox-campaign-helper/src/foundry-live-bridge.js",
+    "url": "http://127.0.0.1:30001/modules/dicebox-campaign-helper/src/foundry-live-bridge.js",
+    "allowlisted": true,
+    "requestCount": 1,
+    "browser": false,
+    "credentialsEntered": false
+  },
+  "parity": {
+    "httpStatus": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "byteLength": 12288,
+    "sourceSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "servedSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "m1144CanonicalSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "sourceServedParity": true,
+    "canonicalParity": true
+  },
+  "lifecycle": {
+    "reopen": "PASS exact owner-controlled restart",
+    "pid": 11164,
+    "lockRecovery": "PASS; quarantined only owner lock",
+    "stop": "PASS with reviewed force fallback",
+    "finalStatus": "STOPPED",
+    "finalListeners": [],
+    "supervisorReceipt": "outputs/foundry-fixture-supervisor-last-receipt.json",
+    "supervisorReceiptSha256": "F6B7D5FF37BB0E2D6B367043E00C06827112EA8FA79242B68A36C0686ECFFDB9",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "preservation": {
+    "browserLogin": false,
+    "credentials": false,
+    "packageStaged": false,
+    "installerInvoked": false,
+    "documentsOrAssetsMutated": false,
+    "foreignStatePreserved": true,
+    "readyClaim": false,
+    "stage12Accepted": false
+  },
+  "remainingBlockers": [
+    "complete schema-valid RuntimeProfile/profile-diff is still unavailable",
+    "candidate-specific Signal/Rune installer/transport boundary remains unresolved",
+    "live document-write permission, proposal/execution authority, authoritative reread, and Stage 11 acceptance remain unproved"
+  ],
+  "nextBoundary": "M1148: refresh the M1146 candidate gate with the M1147 served-worker parity, preserve remaining profile/authority blockers, and do not stage or create runtime documents."
+}

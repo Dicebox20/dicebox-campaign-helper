@@ -1,0 +1,46 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1127",
+  "status": "PASS_WITH_UNRESOLVED_IDENTITY",
+  "evidenceClass": "fixture",
+  "operation": "dicebox.ascendancy.signal-rune.native-document.exact-runtime-parent-child-identity-reread",
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "activeGm": true,
+    "user": "Gamemaster"
+  },
+  "runtimeUi": {
+    "url": "http://localhost:30001/game",
+    "gmVisible": true,
+    "sceneInventoryVisible": true,
+    "signalSceneNameVisible": true,
+    "runeSceneNameVisible": true,
+    "sceneActivation": false,
+    "parentUuidGenerationExposed": false,
+    "ownedChildIdsUuidsExposed": false,
+    "foreignOwnershipDistinguished": false
+  },
+  "supervisor": {
+    "pid": 25108,
+    "port": 30001,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "status": "PASS"
+  },
+  "observed": {
+    "signalParentSceneId": "AneddhKAAfk5HlsA",
+    "runeParentSceneId": "p9Mbi0CJWe9KvJhH",
+    "activeScene": "Semantic Scene Fixture",
+    "viewingScene": "DiceBox Tram Routing Projection"
+  },
+  "unresolved": ["parent-uuid", "parent-generation", "owned-child-bindings", "foreign-child-classification"],
+  "boundaries": {
+    "noWrite": true,
+    "runtimeMutation": false,
+    "stage12Acceptance": "NOT_CLAIMED",
+    "readyClaim": false
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M805",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bind the exact M803 typed Foundry inverse observation through the existing cross-plane and Stage 11 aggregate evidence ledger.",
+  "sourceState": "M804 authorization and KB rebuild/verification completed before implementation. M805 changed only typed evidence composition and focused tests; no runtime, browser, fixture, project, provider, credential, foreign, or player-role password state changed.",
+  "binding": {
+    "input": "M803 exact redacted M802 receipt",
+    "outputField": "foundryInverseEvidence",
+    "producer": "foundry.program-scene.inverse",
+    "lifecycle": "preview-confirm-apply-authoritative-reread",
+    "observedLifecycleCount": 1,
+    "foreignStatePreserved": true,
+    "authorityLabel": "producer-scoped-fixture-observed",
+    "aggregateAuthority": "not-granted"
+  },
+  "preservation": {
+    "operationCount": 14,
+    "directProjectionCount": 16,
+    "redoBindingCount": 9,
+    "currentAuthorityStatus": "partial",
+    "readOnlyClassifier": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noFoundryAuthority": true,
+    "noProjectMutation": true,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedTests": "PASS: 3 files / 7 tests",
+    "packageTypeCheck": "PASS",
+    "diffCheck": "PASS",
+    "failClosedCoverage": "PASS: malformed, foreign, unconfirmed, drifted, and promoted M803 inputs are rejected"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-cross-plane-current-authority-evidence.ts": "1C434513DF3357B184184F9099204F2D4B7EC217F611975288159C9DB8E8E3FD",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts": "3FBCA52AB9177FA43DCFA761DD1885E79E099E5DD9D6F8B9019D8EB44F72DBFF",
+    "tests/project-cross-plane-current-authority-evidence.test.ts": "07FA56E500C798038F8E69C395B4AC1C362F4CB3107E4B141C6BB1C2C911369A",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts": "BAB77A667A7AE8A4ABABCDF3B3D8FF75F0E80B39CC9AB5286978C12F43F1A1F7"
+  },
+  "nextAction": "Fresh read-only Stage 11 reconciliation before selecting one bounded remaining gap."
+}

@@ -1,0 +1,63 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1212-exact-nested-data-parity-preflight",
+  "operation": "foundry.module.update.m1212.preflight",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1212",
+  "status": "READY_FOR_AUTHORIZED_UPDATE",
+  "evidenceLabel": "local",
+  "observedAt": "2026-09-07",
+  "target": {
+    "dataRoot": "work/foundry-fixture-data-v4/Data",
+    "moduleRoot": "work/foundry-fixture-data-v4/Data/modules/dicebox-campaign-helper",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemVersion": "dnd5e 5.3.3"
+  },
+  "supervisor": {
+    "persistedStatus": "stopped",
+    "listenerOnPort30003": false,
+    "worldDocumentWrites": "not invoked",
+    "balladTouched": "not invoked"
+  },
+  "sourceArtifactIdentity": {
+    "packageSpecId": "dbx:foundry-spec:current-product-0.1.15-m1211",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1211",
+    "packageSha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+    "coreV5Sha256": "8ba721e5b8499323bdcc868284dbf20c53a2ba07ec919f1bf9e923d89238ef11"
+  },
+  "allowlistAudit": {
+    "files": 35,
+    "matchingFiles": 33,
+    "mismatches": [
+      {
+        "relativePath": "ascendancy-campaign-package.json",
+        "sourceBytes": 159683,
+        "stagedBytes": 159926,
+        "sourceSha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+        "stagedSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+        "reason": "staged package is the prior M1188 artifact"
+      },
+      {
+        "relativePath": "assets/maps/manual-central-core-control-chamber-v5-neutral.png",
+        "sourceBytes": 3163116,
+        "stagedBytes": null,
+        "sourceSha256": "8ba721e5b8499323bdcc868284dbf20c53a2ba07ec919f1bf9e923d89238ef11",
+        "stagedSha256": null,
+        "reason": "new M1210-bound Core v5 renderer is absent from the stage"
+      }
+    ]
+  },
+  "boundary": {
+    "readOnly": true,
+    "noFoundryLaunch": true,
+    "noFixtureWrite": true,
+    "noServing": true,
+    "noBrowser": true,
+    "noLogin": true,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "nextAction": "Use only the already-authorized single update against the exact Data root, then reread all 35 entries and supervisor/listener state."
+}

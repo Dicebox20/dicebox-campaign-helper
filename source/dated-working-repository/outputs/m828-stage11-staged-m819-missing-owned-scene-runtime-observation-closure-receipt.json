@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M828",
+  "operation": "dicebox.owned-scene-permission.diagnostic",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "target": {"worldId": "dbx-test-world", "port": 30003, "foundry": "14.367", "system": "dnd5e@5.3.3"},
+  "staging": {"canonicalEntryQuery": "0.1.18", "sourceAndStagedHashesMatch": true},
+  "currentActiveGm": true,
+  "control": "Show DiceBox Owned-Scene Permission Diagnostic",
+  "receipt": {
+    "status": "BLOCKED",
+    "redacted": true,
+    "noWrite": true,
+    "noUpdateInvoked": true,
+    "noGenericAuthorityClaim": true,
+    "noExecutionAuthority": true,
+    "blocker": "Exactly one package-owned fixture Scene is required; no Scene permission predicate was read."
+  },
+  "dialogClosed": true,
+  "supervisor": {"start": "PASS", "stop": "PASS", "stopOwnership": "exact-process-and-exclusive-port", "forceFallbackUsedAfterNormalRefusal": true, "finalStatus": "STOPPED", "listeners": 0, "worldDocumentWrites": 0, "balladTouched": false},
+  "notPerformed": ["Program Scene preview/apply/inverse", "predicate invocation", "document creation/update/delete", "settings/user/password/license change", "provider or credential use", "authority promotion"],
+  "readyClaim": false,
+  "nextAction": "Perform a fresh read-only Stage 11 reconciliation before selecting any separately governed owned-Scene restoration slice."
+}

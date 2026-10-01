@@ -1,0 +1,140 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m338-stage11-proposal-family-acceptance-gap-audit-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M338",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "workspaceWrites": 0,
+  "browserStorageWrites": 0,
+  "foundryWrites": 0,
+  "playerRolePasswords": "blank/not entered",
+  "stage11Disposition": {
+    "generalizedBatchTray": "PARTIAL: M299-M302 provide the generic core, four producer adapters, exact desktop session, and Director tray; M308-M337 extend project recovery/rename review, but ordinary create/save/save-as, asset import, and add-Scene producers remain outside one generic tray.",
+    "lifecycleAndRecovery": "PARTIAL: deterministic preview/approve/reject/edit/cancel/stale/unknown/recovery and Scene apply/undo exist in M299-M303; M318 and M337 prove bounded packaged session transitions, but a project-store execution/reread/undo path is not yet proven.",
+    "sharedVocabularyWithoutSharedAuthority": "PARTIAL: M300 preserves distinct local-project, repository, and active-GM authority for four adapters; M308 and M337 preserve project identity, hashes, and human/no-provider review, but content-bearing project and asset payload boundaries remain producer-specific.",
+    "everyMutatingPathAcceptance": "PARTIAL: M303 directly proves one local Director/Scene apply/undo/stale flow and M337 proves one project-rename review/cancel flow; no evidence supports every one of the eleven project-store families or Stage 11 completion."
+  },
+  "clauseMapping": [
+    {
+      "clause": "generalized inspectable proposal batch/tray",
+      "status": "PARTIAL",
+      "directEvidence": ["M299 generic proposal-batch core", "M300 cross-producer adapters", "M302 desktop generic review", "M322 project-rename review surface", "M337 packaged project-rename review"]
+    },
+    {
+      "clause": "approve/reject/edit/stale/history/recovery lifecycle",
+      "status": "PARTIAL",
+      "directEvidence": ["M299 transition engine", "M301 exact project/Scene session", "M303 local browser apply/undo/reread", "M318 packaged session lifecycle", "M337 packaged rename preview/cancel history"]
+    },
+    {
+      "clause": "shared vocabulary with separate authority",
+      "status": "PARTIAL",
+      "directEvidence": ["M300 four producer conformance", "M308 five project-recovery adapters", "M320 typed project.rename batch", "M337 human/no-provider exact project metadata"]
+    },
+    {
+      "clause": "every mutating producer has preview/approval/execution receipt/reread/undo",
+      "status": "PARTIAL",
+      "directEvidence": ["M303 one local Director/Scene producer", "M319 eleven-family project-store audit", "M337 one project-rename review producer"],
+      "remainingGap": "Generic project-store execution and authoritative reread/undo are not established for ordinary persistence, asset import/binding, add Scene, or all recovery families."
+    }
+  ],
+  "producerFamilies": [
+    {
+      "family": "read-only inspection and compile",
+      "operations": ["list", "inspect recovery", "explain migration", "compile no-write Foundry preview"],
+      "coverage": "read-only operation-specific; no mutating proposal required",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "tests/project-workspace.test.ts"]
+    },
+    {
+      "family": "workspace open and recent-order metadata",
+      "operations": ["open", "reload", "load with workspace generation"],
+      "coverage": "operation-specific load/read boundary; no generic mutation",
+      "evidence": ["apps/campaign-helper-desktop/src/App.tsx", "apps/campaign-helper-desktop/src/project-store.ts", "tests/project-workspace.test.ts"]
+    },
+    {
+      "family": "ordinary project persistence",
+      "operations": ["create", "save", "save as", "rename"],
+      "coverage": "rename preview/session/review packaged in M337; create/save/save-as and persistent/native rename execution remain gaps",
+      "evidence": ["outputs/m319-stage11-project-store-generic-producer-gap-reconciliation-receipt.json", "outputs/m320-stage11-project-rename-proposal-preview-adapter-receipt.json", "outputs/m321-stage11-project-rename-proposal-session-integration-receipt.json", "outputs/m322-stage11-project-rename-review-surface-integration-receipt.json", "outputs/m337-stage11-self-test-gated-rename-review-keyboard-recovery-receipt.json"]
+    },
+    {
+      "family": "in-memory project editing and navigation",
+      "operations": ["add blank Scene", "switch active Scene", "close clean session"],
+      "coverage": "existing editor/project operation-specific paths; no generic add-Scene proposal/execution proof",
+      "evidence": ["apps/campaign-helper-desktop/src/App.tsx", "tests/desktop-shell-configuration.test.ts", "tests/project-workspace.test.ts"]
+    },
+    {
+      "family": "asset import and binding",
+      "operations": ["bind background", "register handout", "register audio", "register token"],
+      "coverage": "role-specific validation and persistence exist; generic ProposalBatch boundary is absent",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "tests/project-workspace.test.ts", "tests/desktop-shell-configuration.test.ts"]
+    },
+    {
+      "family": "legacy migration persistence",
+      "operations": ["preview migration persist", "approve migration persist"],
+      "coverage": "typed operation-specific preview/approval and M308 adapter; generic execution/reread acceptance remains partial",
+      "evidence": ["outputs/m242-supported-legacy-migration-persistence-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"]
+    },
+    {
+      "family": "backup-authoritative promotion",
+      "operations": ["preview backup promotion", "approve backup promotion"],
+      "coverage": "typed preview and packaged session-only review evidence; persistent promotion is deliberately excluded from Stage 11 review proof",
+      "evidence": ["outputs/m244-backup-authoritative-recovery-promotion-receipt.json", "outputs/m310-stage11-desktop-project-recovery-review-surface-receipt.json", "outputs/m318-stage11-packaged-project-proposal-input-boundary-recovery-receipt.json"]
+    },
+    {
+      "family": "missing asset restore",
+      "operations": ["preview exact-byte restore", "approve exact-byte restore"],
+      "coverage": "typed operation-specific recovery and M308 adapter; no generic packaged apply/reread proof",
+      "evidence": ["outputs/m213-missing-background-blob-recovery-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"]
+    },
+    {
+      "family": "missing asset detach",
+      "operations": ["preview exact-one detach", "approve detach"],
+      "coverage": "typed operation-specific recovery and M308 adapter; no generic packaged apply/reread proof",
+      "evidence": ["outputs/m226-missing-background-detach-recovery-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"]
+    },
+    {
+      "family": "broken Scene-reference detach",
+      "operations": ["preview selected broken-reference detach", "approve detach"],
+      "coverage": "typed operation-specific recovery and M308 adapter; no generic packaged apply/reread proof",
+      "evidence": ["outputs/m241-broken-reference-detach-receipt.json", "outputs/m308-stage11-project-recovery-proposal-adapter-receipt.json"]
+    },
+    {
+      "family": "test-owned fixture setup and stage receipts",
+      "operations": ["prepare fixtures", "finish self-test", "record stage receipt"],
+      "coverage": "test infrastructure and receipts; not a user mutating producer",
+      "evidence": ["apps/campaign-helper-desktop/src/project-store.ts", "tests/project-workspace.test.ts"]
+    }
+  ],
+  "sharedFindings": [
+    "M319's eleven-family map remains accurate after M320-M337; M337 closes only the packaged rename-review input boundary and does not alter producer ownership.",
+    "The generic core, adapters, project session, and review surface preserve separate review and target authority; approval does not itself confer native project-store authority.",
+    "Ordinary create/save/save-as remain content-bearing and must keep atomic persistence, backup, generation, asset-tree, directory-entry, and foreign-state semantics outside generic history payloads.",
+    "Asset import/binding and recovery restore/detach retain role-specific bytes and authority outside generic ProposalBatch history until a separately accepted boundary exists.",
+    "M303 is the direct local apply/undo/reread proof; M337 is a packaged review/cancel proof. Neither alone certifies the full Stage 11 every-producer acceptance observation."
+  ],
+  "selectedNextSlice": {
+    "milestone": "M339",
+    "name": "test-owned metadata-only project-rename execution, undo, and authoritative reread",
+    "scope": "Implement one exact project-store executor for the existing approved metadata-only project.rename batch on a fresh disposable test-owned project, with explicit approval, authoritative reread, inverse rename undo, append-only receipts, and exact project/workspace/foreign-state preservation. Keep create/save/save-as content payloads, asset bytes, provider, credentials, Foundry, and player passwords outside the slice.",
+    "reason": "M337 proves the review boundary but not execution. Completing one existing content-independent producer end to end is the smallest direct gap toward the Stage 11 live acceptance without inventing a generic raw-content envelope.",
+    "excluded": ["create", "save", "save-as", "asset import", "add blank Scene", "backup promotion", "migration execution", "provider", "credentials", "browser automation beyond the exact session boundary", "Foundry", "player passwords", "Stage 11 acceptance", "later stages"]
+  },
+  "evidenceReceiptHashes": {
+    "outputs/m319-stage11-project-store-generic-producer-gap-reconciliation-receipt.json": "D36E00A1DA0535F50A7D9BC09A74407931682849D87B5DF17720172B6AFB952C",
+    "outputs/m337-stage11-self-test-gated-rename-review-keyboard-recovery-receipt.json": "94DAEA0A09FCB4DCA4D2126DE87549436F0FFB837881CECB593A5E108A005AC7"
+  },
+  "doesNotProve": [
+    "generic producer coverage for all eleven project-store families",
+    "persistent/native project rename behavior",
+    "project-store execution receipts or authoritative reread/undo for rename",
+    "provider or credential behavior",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

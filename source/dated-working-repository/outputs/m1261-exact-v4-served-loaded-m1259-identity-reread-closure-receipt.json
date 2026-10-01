@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1261",
+  "operation": "foundry.exact-v4.served-loaded-m1259-identity-reread",
+  "status": "PASS_SERVED_LOADED_IDENTITY",
+  "evidenceClass": "fixture-runtime-read-only",
+  "target": {
+    "worldId": "dbx-test-world",
+    "dataPath": "work/foundry-fixture-data-v4",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "browserUrlAfterClose": "http://127.0.0.1:30003/game"
+  },
+  "restart": {
+    "invocations": 1,
+    "status": "PASS",
+    "startedPid": 10676,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "forcedStopRecovery": true,
+    "lockRecovery": "work/foundry-fixture-data-v4/Config/dicebox-lock-quarantine/options.json.lock-2026-09-07T17-11-29-274Z"
+  },
+  "loadedByteAttestation": {
+    "operation": "dicebox.loaded-byte-attestation",
+    "status": "OBSERVED",
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "artifactSpecId": "dbx:foundry-spec:current-product-0.1.15-m1259",
+    "artifactVerifierId": "dbx:foundry-verifier:current-product-0.1.15-m1259",
+    "specSha256": "4891515e0b4a37cc180c5245991d218e79cca595146a1977b03b4cfb06e7095c",
+    "modulePath": "src/module.js",
+    "expectedModuleSha256": "cee29eb17aac6b53da42e2f35aaca4b521dc4f2338e24f4252f79b62891eee1f",
+    "observedModuleSha256": "cee29eb17aac6b53da42e2f35aaca4b521dc4f2338e24f4252f79b62891eee1f",
+    "expectedModuleBytes": 114787,
+    "observedModuleBytes": 114787,
+    "match": true,
+    "currentGmMatchesActiveGm": true
+  },
+  "servedInstaller": {
+    "url": "http://127.0.0.1:30003/modules/dicebox-campaign-helper/src/ascendancy-installer.js",
+    "requestCount": 1,
+    "httpStatus": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "byteLength": 81788,
+    "sha256": "579f96e4948bbfc7b508f29cbde57e2dd331ddee89c6be1f0464f9eaffbfe731",
+    "matchesM1259SourceAndStaged": true
+  },
+  "recovery": {
+    "browserEvaluateFetch": "unavailable-fetch-function; no-request-issued",
+    "servedInstallerObservation": "recovered-through-reviewed-host-local-http-client-once"
+  },
+  "dialog": { "loadedByteReceiptClosed": true, "remainingDialogs": 0 },
+  "supervisor": { "status": "PASS", "pid": 10676, "worldDocumentWrites": 0, "balladTouched": false },
+  "contract": {
+    "authenticationAutomated": false,
+    "credentialsEnteredByAgent": false,
+    "noWrite": true,
+    "installer": false,
+    "preview": false,
+    "apply": false,
+    "foreignStatePreserved": true,
+    "playerPasswordStateUntouched": true,
+    "readyClaim": false
+  },
+  "disposition": "After the required manual Gamemaster rejoin, the exact-v4 loaded-byte diagnostic directly observed M1259 module/sidecar identity and matching module bytes. One served installer read returned HTTP 200 and matching M1259 source/staged bytes. The browser receipt was closed and reread as dialog-free. This proves read-only served/loaded artifact identity only; it does not prove installer preview, approval, apply, native mutation, persistent-world promotion, player behavior, Stage 12, or Ready-to-Play.",
+  "next": "M1262: invoke one fixed installer preview only, with no approval or apply, after exact target/profile/active-GM reread."
+}

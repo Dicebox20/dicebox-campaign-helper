@@ -1,0 +1,44 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1125",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "operation": "dicebox.ascendancy.signal-rune.native-document.parent-scene-observation",
+  "sourceSha256": "C643998803266154875A284DEB1E8E653535FAF2C92C68B793E013654CAEA917",
+  "testSha256": "0FDF8D799D44993CB430461EE95F35C4471E82104F5F76791F92CC884CEC3234",
+  "validation": {
+    "focusedAndRelatedFiles": 6,
+    "focusedAndRelatedTests": 12,
+    "packageTypecheck": "PASS",
+    "workflowCheck": "PASS"
+  },
+  "inputEvidence": {
+    "target": {
+      "worldId": "dbx-test-world",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "activeGm": true,
+      "user": "Gamemaster"
+    },
+    "supervisor": { "pid": 25108, "port": 30001, "worldDocumentWrites": 0, "balladTouched": false },
+    "sourceStagedParity": { "module": true, "partialPreviewAdapter": true }
+  },
+  "scenes": [
+    { "roomId": "dbx:room:signal-frequency-chamber", "sceneIdRuntime": "AneddhKAAfk5HlsA", "documentType": "Scene", "uuid": "unresolved", "generation": "unresolved", "childBindings": "unresolved", "assetSha256": "DB9307932865B0D3A23C5A8AA61082D520206443318658DE7E03C773A1A9972E", "assetByteLength": 2935616 },
+    { "roomId": "dbx:room:rune-mechanism-chamber", "sceneIdRuntime": "p9Mbi0CJWe9KvJhH", "documentType": "Scene", "uuid": "unresolved", "generation": "unresolved", "childBindings": "unresolved", "assetSha256": "F45922E219A12FBA6B79A26AD0D6B5EBBAF51ADD86C025E9B676DA24707D507B", "assetByteLength": 2748729 }
+  ],
+  "boundaries": {
+    "parentSceneIdsObserved": true,
+    "childUuidGenerationBindings": false,
+    "runtimeBinding": false,
+    "payload": "not-materialized",
+    "promotion": "disabled",
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "runtimeMutation": false,
+    "stage12Acceptance": "NOT_CLAIMED",
+    "readyClaim": false
+  }
+}

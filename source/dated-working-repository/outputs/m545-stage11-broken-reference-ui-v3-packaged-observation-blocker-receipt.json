@@ -1,0 +1,116 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.v3-packaged-observation",
+  "milestone": "M545",
+  "status": "BLOCKED_PRESERVED",
+  "capturedAt": "2026-08-29T22:36:40-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "captureTransport": {
+    "runnerReceipt": "outputs/m545-stage11-broken-reference-ui-v3-packaged-observation-runner-receipt.json",
+    "runnerReceiptSha256": "FF30561541837BF3934541EF333D90CAAB61313DEFA2961203C98778FF50FBC8",
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "0899395DA35999AF36E32500658BA87B4D65230A095910B90A3A5046FACF9281",
+    "status": "PASS",
+    "exitCode": 0,
+    "signal": null,
+    "timedOut": false,
+    "timeoutMs": 30000,
+    "childExitObserved": true,
+    "retry": false
+  },
+  "appObservation": {
+    "fixture": "PASS",
+    "targetIdentity": "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3",
+    "inspectionBefore": "BLOCKED",
+    "blockerCode": "BACKGROUND_ASSET_ROLE_MISMATCH",
+    "preview": "PREVIEW",
+    "sessionPreflight": "MISSING",
+    "approval": "APPROVED",
+    "apply": "PASS",
+    "inspectionAfter": "BLOCKED",
+    "lifecycleTrace": [
+      "fixture PASS",
+      "inspection BLOCKED",
+      "broken-reference detach PREVIEW",
+      "session-preflight:MISSING",
+      "previewed",
+      "approved",
+      "applied",
+      "broken-reference detach PASS generation=2 targetBindingAbsent=true descriptorPreserved=true unrelatedReferencesUnchanged=true authoritativeInspection=true",
+      "post-apply inspection BLOCKED pendingArtifacts=1",
+      "self-test BLOCKED because the exact terminal PASS predicate was not established; the approved session was committed before that predicate ran"
+    ],
+    "lifecycleProgressedBeyondPreviewed": true,
+    "approvalApplyRereadCommit": "approval/apply/reread-partial; approved session committed, but terminal PASS predicate not established",
+    "noFoundryWrite": true,
+    "noRetry": true,
+    "browserStorageInspected": false
+  },
+  "stateReread": {
+    "ordinaryV1Project": {
+      "path": "%LOCALAPPDATA%/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v1/project.json",
+      "sha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+      "schemaVersion": "0.3.0",
+      "generation": 1,
+      "scenes": 2,
+      "assets": 1,
+      "backup": "absent"
+    },
+    "v2TestProject": {
+      "path": "%LOCALAPPDATA%/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v2/project.json",
+      "sha256": "33EFC91239F5C9455DB87F5A46A511DD8B6F2114D7502CDF5232C2D5E105F3B4",
+      "schemaVersion": "0.3.0",
+      "generation": 1,
+      "scenes": 2,
+      "assets": 1,
+      "backup": "absent"
+    },
+    "v3TestProject": {
+      "path": "%LOCALAPPDATA%/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v3/project.json",
+      "sha256": "255927904F6EE364299ED98D298F386D38B64C21D526840423F0ABC5C00D1095",
+      "schemaVersion": "0.3.0",
+      "generation": 2,
+      "scenes": 2,
+      "assets": 1,
+      "targetBindingAbsent": true,
+      "descriptorRole": "handout",
+      "backup": {
+        "path": "%LOCALAPPDATA%/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v3/project.backup.json",
+        "sha256": "09BF1E39627AD1631F5605ACC275F713F150F104BE7F59836E1793DB0CC96885",
+        "generation": 1
+      }
+    },
+    "workspace": {
+      "primarySha256": "58FC41EAC3ED0B94A0103488A716268C847EFA330B5C1A987C8A78B3392D39AA",
+      "backupSha256": "BD962775571A79F94F73F1CDC690DBC7DDB9C8260828EDC950DCAB39DC154F09",
+      "pendingSha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+      "v2LastOpenedSequence": 72,
+      "v3LastOpenedSequence": 73
+    },
+    "registeredAssetSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "diagnostics": {
+    "runner": "The executable exited normally and the bounded runner receipt is PASS at the transport layer; the quick popup close is expected for VITE_DBX_PROJECT_SELF_TEST_EXIT=1.",
+    "application": "The app completed fixture preparation, preview, approval, apply, and a successful detach write. Its apply callback committed the approved session after the allowed authoritative reread, but the separate exact UI terminal predicate rejected the run because post-apply inspection remained BLOCKED with one preserved-backup diagnostic and one pending artifact.",
+    "environmentalStderr": "Chrome unregister Error=1412 was emitted; it is environmental diagnostic output and not lifecycle evidence.",
+    "preservation": "v1 and v2 project bytes remain at their reread baseline hashes; no browser storage was inspected and no cleanup or retry was performed."
+  },
+  "nextBoundary": {
+    "milestone": "M546",
+    "scope": "Read-only reconcile the M545 post-apply BLOCKED inspection, pending-artifact evidence, session commit predicate, and current source/tests before selecting one narrow correction or bounded recovery boundary.",
+    "prohibited": [
+      "second capture",
+      "separate launch",
+      "retry",
+      "browser-storage inspection",
+      "session clear/replacement/recovery",
+      "fixture reset/deletion/cleanup",
+      "unrelated project mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M545 is a preserved partial application observation, not Stage 11 completion, Foundry authority, or Ready-to-Play evidence."
+}

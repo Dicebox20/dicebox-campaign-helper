@@ -1,0 +1,79 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1237",
+  "operation": "ascendancy.regionwright.install",
+  "evidenceClass": "target-bound-preview",
+  "status": "PREVIEW",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "currentUser": "Gamemaster [GM]"
+  },
+  "preview": {
+    "controlTitle": "Install Ascendancy Regionwright handoff",
+    "invocationCount": 1,
+    "dryRun": true,
+    "noWrite": true,
+    "helperOwnedScenesAndRegionsPresent": true,
+    "displayedPlanSummary": {
+      "popup": 5,
+      "cooperative": 5,
+      "finalOrCore": 7,
+      "teleports": 5
+    },
+    "canonicalPackagePlanSummary": {
+      "popup": 5,
+      "cooperative": 6,
+      "finalOrCore": 6,
+      "teleports": 5,
+      "totalRegionwrightBehaviors": 22
+    },
+    "summaryDrift": true,
+    "foreignBehaviorRemovalClaim": false
+  },
+  "dialog": {
+    "dialogTitle": "Ascendancy Regionwright Handoff",
+    "dismissAction": "Cancel",
+    "dismissActionCount": 1,
+    "dialogAbsentAfterDismiss": true,
+    "approvalControlInvoked": false,
+    "applyControlInvoked": false
+  },
+  "preservation": {
+    "foreignStatePreserved": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "settingsOrPasswordMutation": false,
+    "moduleSettingsChanged": false,
+    "playerAction": false,
+    "rawStorageInspected": false,
+    "auditRetried": false,
+    "installApplied": false,
+    "previewInvoked": true,
+    "restartOrReload": false
+  },
+  "finalSupervisor": {
+    "operation": "foundry.fixture.status",
+    "status": "PASS",
+    "pid": 17200,
+    "listeners": [17200],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": []
+  },
+  "blockers": [
+    "The fixed preview was no-write and canceled safely, but its displayed 5/5/7/5 behavior summary drifts from the canonical package 5/6/6/5 breakdown.",
+    "M1235 zero Regionwright behaviors and zero teleport passes remain unresolved; preview does not install or certify RegionBehavior state.",
+    "The v4 client was not reloaded after M1236 source repair, so served/loaded repair identity remains unproven.",
+    "Player acceptance, persistent-world promotion, final-map breadth, Stage 12, and Ready-to-Play remain unproven."
+  ],
+  "nextRequiredBoundary": "Reconcile and repair the fixed preview summary locally in the external Regionwright source and v4 staged copy so counts derive from the canonical package; do not approve, apply, retry, or reload as part of M1237."
+}

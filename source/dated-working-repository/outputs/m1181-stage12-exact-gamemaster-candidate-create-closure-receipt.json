@@ -1,0 +1,108 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1181-stage12-exact-gamemaster-candidate-create-closure",
+  "operation": "stage12.exact-gamemaster.signal-rune-candidate-create.closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1181",
+  "status": "CLOSED_M1181_EXACT_GAMEMASTER_CANDIDATE_CREATE_REREAD_PASS",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-09-06",
+  "summary": "A user-provided Gamemaster session was entered manually with a blank password, the fixed Signal/Rune preview was approved once, the two candidate Scenes were created through the reviewed Foundry adapter and reread, and the fixture was stopped with authoritative supervisor evidence.",
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "system": "dnd5e@5.3.3",
+    "manualGamemasterJoin": true,
+    "passwordEntered": false,
+    "activeGmObserved": true,
+    "currentUser": "Gamemaster",
+    "currentUserRole": "GM"
+  },
+  "artifactGate": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1178",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1178",
+    "installerSha256": "482b955526aabe9724c218c939723932c87380b207ebc18713c2292da5e59ad8",
+    "installerBytes": 49907,
+    "servedStatus": 200,
+    "servedContentType": "text/javascript; charset=utf-8",
+    "servedSha256": "482b955526aabe9724c218c939723932c87380b207ebc18713c2292da5e59ad8",
+    "sourceStagedServedParity": true,
+    "source": "outputs/m1178-current-foundry-artifact-spec-receipt.json",
+    "parity": "outputs/m1180-stage12-nested-data-served-parity-recovery-closure-receipt.json"
+  },
+  "preview": {
+    "operation": "ascendancy.signal-rune-candidate.write-preview",
+    "status": "PREVIEWED",
+    "candidateId": "m1141-signal-rune",
+    "selectedRoomIds": [
+      "dbx:room:signal-frequency-chamber",
+      "dbx:room:rune-mechanism-chamber"
+    ],
+    "excludedRoomIds": [
+      "dbx:room:ascendancy-tram-depot",
+      "dbx:room:central-core-control-chamber"
+    ],
+    "noWrite": true,
+    "apply": false,
+    "approvalRequired": true,
+    "approvalGranted": false,
+    "authoritativeRereadRequired": true,
+    "foreignStatePreserved": true,
+    "retryAllowed": false,
+    "evidence": "Foundry DialogV2 preview rendered before approval."
+  },
+  "approval": {
+    "controlId": "dicebox-ascendancy-signal-rune-create",
+    "controlTitle": "Create DiceBox Signal/Rune Candidate",
+    "fixedApprovalLabel": "Approve fixed Signal/Rune write",
+    "approvalClicks": 1,
+    "genericControlsUsed": false,
+    "selectorInput": false
+  },
+  "creation": {
+    "status": "PASS",
+    "installerInvoked": true,
+    "operation": "ascendancy.install.signal-rune-candidate",
+    "candidateId": "m1141-signal-rune",
+    "sceneCount": 2,
+    "sceneNamesObserved": [
+      "Signal / Frequency Chamber",
+      "Rune Mechanism Chamber"
+    ],
+    "childReread": "PASS_ADAPTER_AUTHORITATIVE_POST_WRITE_REREAD",
+    "foreignScenesPreserved": true,
+    "tramCoreTouched": false,
+    "playerOrBalladTouched": false,
+    "runtimeWriteDisposition": "fixture-memory-document-create-and-reread; no persistent world flush observed"
+  },
+  "postReread": {
+    "status": "PASS",
+    "surface": "Foundry Scenes sidebar",
+    "sceneNames": [
+      "Rune Mechanism Chamber",
+      "Signal / Frequency Chamber",
+      "DiceBox Tram Routing Projection",
+      "Semantic Scene Fixture"
+    ],
+    "candidateScenesVisible": true,
+    "foreignScenesStillVisible": true,
+    "authoritativeRereadRequired": true,
+    "unknownStatePreserved": true
+  },
+  "runtime": {
+    "startStatus": "PASS",
+    "pid": 9084,
+    "stopStatus": "PASS",
+    "stopNormal": "required-force-fallback",
+    "finalStatus": "STOPPED",
+    "finalListeners": [],
+    "supervisorWorldDocumentWrites": 0,
+    "balladTouched": false,
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "The current RuntimeProfile surface still omits complete artifact-bound package/adapter fields; M1176 classified this as unavailable evidence and kept the profile-diff/promotion gate blocked.",
+    "This fixture receipt proves the bounded Signal/Rune candidate path only; it does not certify Tram/Core, furnishing behavior, player behavior, persistent-world promotion, Stage 12 acceptance, or Ready-to-Play."
+  ],
+  "nextBoundary": "M1182: reconcile or narrowly repair the current RuntimeProfile/profile-diff artifact-bound evidence gate without reopening the live fixture until the local boundary is specified."
+}

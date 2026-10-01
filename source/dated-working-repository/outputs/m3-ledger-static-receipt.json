@@ -1,0 +1,43 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m3-ledger-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": {
+      "files": 11,
+      "tests": 44,
+      "status": "PASS"
+    },
+    "ledger": {
+      "legalTransitions": "PASS",
+      "duplicateAppendIdempotency": "PASS",
+      "identityChangeRejection": "PASS",
+      "terminalStateProtection": "PASS",
+      "immutableHistory": "PASS",
+      "jsonRoundTrip": "PASS",
+      "malformedJsonRejection": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 30,
+      "facts": 45,
+      "decisions": 20,
+      "activeWork": 19,
+      "trials": 19,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Filesystem or module-settings persistence driver",
+    "Foundry transaction journal persistence",
+    "Real Foundry adapter behavior",
+    "Live JournalEntry creation/read-back",
+    "Two-client authority/reconnect behavior"
+  ],
+  "nextGate": "Select and test the scoped persistence driver, then run the exact Foundry runtime probe before live adapter implementation."
+}

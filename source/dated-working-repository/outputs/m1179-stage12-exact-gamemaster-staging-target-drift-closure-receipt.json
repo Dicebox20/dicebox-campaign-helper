@@ -1,0 +1,52 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1179-stage12-exact-gamemaster-staging-target-drift-closure",
+  "operation": "stage12.exact-gamemaster.candidate-create.staging-target-drift-closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1179",
+  "status": "CLOSED_M1179_STAGING_TARGET_DRIFT_NO_CREATE",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-09-06",
+  "candidate": "m1141-signal-rune",
+  "attempt": {
+    "sourceInstallerSha256": "482b955526aabe9724c218c939723932c87380b207ebc18713c2292da5e59ad8",
+    "sourceInstallerBytes": 49907,
+    "requestedStageRoot": "work/foundry-fixture-data-v2",
+    "actualFoundryDataRoot": "work/foundry-fixture-data-v2/Data",
+    "wrongTargetArtifact": "work/foundry-fixture-data-v2/modules/dicebox-campaign-helper/src/ascendancy-installer.js",
+    "wrongTargetInstallerSha256": "482b955526aabe9724c218c939723932c87380b207ebc18713c2292da5e59ad8",
+    "foundryDataInstallerSha256": "600f24da6339b2557c9969391085e0950a02e63008f290cecb2bf89f4f916e53",
+    "foundryDataInstallerBytes": 40732,
+    "servedGet": {
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bytes": 40732,
+      "sha256": "600f24da6339b2557c9969391085e0950a02e63008f290cecb2bf89f4f916e53",
+      "matchedM1178": false
+    }
+  },
+  "runtime": {
+    "startStatus": "PASS",
+    "foundryVersion": "14.367",
+    "system": "dnd5e@5.3.3",
+    "pid": 23340,
+    "manualGamemasterJoin": false,
+    "browserOpened": false,
+    "writeControlInvoked": false,
+    "installerInvoked": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "stopStatus": "PASS",
+    "stopNormal": "required-force-fallback",
+    "finalStatus": "STOPPED",
+    "finalListeners": [],
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "reconciliation": {
+    "classification": "configuration-target-drift",
+    "cause": "The update helper received the fixture root instead of its nested Foundry Data root; it correctly wrote the requested destination but Foundry loaded the unchanged Data/modules copy.",
+    "correction": "Use the explicit nested Data root for the next staging-only recovery; do not retry login, served GET, or candidate creation in this closed slice.",
+    "nextBoundary": "M1180 exact nested-Data staging and served-parity recovery"
+  }
+}

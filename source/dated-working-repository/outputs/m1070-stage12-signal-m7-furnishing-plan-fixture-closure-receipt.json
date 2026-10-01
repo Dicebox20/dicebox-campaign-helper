@@ -1,0 +1,52 @@
+{
+  "operation": "dicebox.stage12.m1070.signal-m7-furnishing-plan-fixture.closure",
+  "status": "PASS",
+  "milestone": "M1070",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "SRC-M1070-STAGE12-SIGNAL-M7-FURNISHING-PLAN-FIXTURE-AUTHORIZATION",
+    "D-M1070-STAGE12-SIGNAL-M7-FURNISHING-PLAN-FIXTURE-AUTHORIZATION",
+    "F-M1069-CLOSURE",
+    "F-M1064-CLOSURE",
+    "D-192",
+    "D-194"
+  ],
+  "changedPaths": [
+    "packages/dicebox-compiler/src/ascendancy-furnishing-plan-fixture.ts",
+    "tests/ascendancy-signal-furnishing-plan-fixture.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "outputs/m1070-stage12-signal-m7-furnishing-plan-fixture-closure-receipt.json"
+  ],
+  "implementation": {
+    "fixture": "The shared furnishing fixture builder now preserves the existing M1064 Central Core output and adds createAscendancySignalFurnishingPlanFixture for dbx:scene:signal-frequency-chamber and dbx:blueprint:signal-frequency-chamber.",
+    "coverage": "The Signal plan contains Tile, Token, AmbientLight, AmbientSound, Drawing, and Note in canonical order, six matching API steps, one near-anchor relation to dbx:anchor:signal-aleister-frequency, and approved fixture-only texture/token/audio identities with locators removed from resolved plan items.",
+    "authority": "A Signal-specific validator enforces exact Scene/Blueprint/plan/document identity, source Blueprint equality, canonical kinds, anchor relation, mutation disabled-until-exact-runtime-gate, and no raw Foundry/execute surface."
+  },
+  "validation": {
+    "focusedTests": "PASS: tests/ascendancy-furnishing-plan-fixture.test.ts, tests/ascendancy-signal-furnishing-plan-fixture.test.ts, and tests/ascendancy-authoring-breadth-matrix.test.ts passed 3 files / 9 tests, including cross-Scene and raw-document drift rejection.",
+    "packageBuild": "PASS: npm run build:packages; TypeScript compiler completed with no errors.",
+    "desktopBuild": "PASS: npm run desktop:build; desktop TypeScript checks and Vite production build completed. Existing chunk-size warning remains non-blocking.",
+    "runtimeBoundary": "PASS: no package, installer, runtime, Foundry, native document, asset transfer, Blueprint promotion, project, Ballad, player-surface, provider, credential, account, or player-password action occurred."
+  },
+  "observation": {
+    "disposition": "PASS LOCAL SIGNAL M7 FURNISHING-PLAN FIXTURE",
+    "meaning": "M1070 adds a second campaign-bound local M7 plan without native installation or runtime inference and preserves M1064 compatibility.",
+    "nextGap": "M1071: read-only reconcile the new Signal M7 plan against the four-Scene breadth matrix and update-selection boundary before changing the matrix.",
+    "certificationBoundary": "Stage 12 remains active and non-certifying; Stage 11 remains partial/blocked; Ready-to-Play remains false; Ballad and player surfaces remain untouched."
+  },
+  "doesNotProve": [
+    "native Wall/Region/Tile/Token/AmbientLight/AmbientSound/Drawing/Note creation",
+    "asset upload or media deployment",
+    "live Scene readback",
+    "package or installer integration",
+    "M7 furnishing plans for Tram or Rune",
+    "updated four-Scene matrix coverage",
+    "Spatial Blueprint promotion",
+    "Stage 12 acceptance",
+    "Ready-to-Play"
+  ],
+  "nextAction": "Perform only M1071: read-only reconcile the Signal M7 fixture against the four-Scene breadth matrix and Stage 12 authority before selecting matrix integration."
+}

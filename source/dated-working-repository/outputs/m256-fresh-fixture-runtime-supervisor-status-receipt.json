@@ -1,0 +1,57 @@
+{
+  "receiptVersion": 1,
+  "supervisorVersion": "1.1.0",
+  "operation": "foundry.fixture.status",
+  "target": "disposable-fixture",
+  "worldId": "dbx-test-world",
+  "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+  "port": 30002,
+  "timestamp": "2026-08-27T13:19:16.666Z",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "lifecycleOperation": null,
+  "status": "UNKNOWN",
+  "evidenceClass": "process-outcome-unknown",
+  "pid": 15008,
+  "listeners": [
+    15008
+  ],
+  "state": {
+    "schemaVersion": 1,
+    "supervisorVersion": "1.1.0",
+    "status": "starting",
+    "pid": 15008,
+    "startedAt": "2026-08-27T13:18:05.542Z",
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "port": 30002,
+    "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+    "entryPath": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+    "args": [
+      "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+      "--dataPath=C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+      "--world=dbx-test-world",
+      "--port=30002"
+    ],
+    "commandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB",
+    "processStartedAt": "2026-08-27T13:18:05.5505815Z",
+    "processPath": "C:\\Program Files\\nodejs\\node.exe"
+  },
+  "http": {
+    "ok": false,
+    "status": 302,
+    "location": "/license"
+  },
+  "checks": {
+    "pidAlive": true,
+    "commandMatches": true,
+    "fallbackIdentityMatches": false,
+    "stateTargetMatches": true,
+    "processPathMatches": true,
+    "processStartMatches": true,
+    "listenerMatches": true
+  },
+  "blockers": [
+    "Exact process owns the port but the HTTP readiness probe failed."
+  ]
+}

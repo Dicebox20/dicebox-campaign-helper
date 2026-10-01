@@ -1,0 +1,84 @@
+{
+  "milestone": "M889",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "inputs": [
+    "M888 corrected aggregate semantic attachment closure",
+    "M887 post-semantic read-only reconciliation",
+    "aggregate Stage 11 ledger and current-authority bridges",
+    "complete proposal/approval/history/recovery matrix",
+    "read-only KB summary, M888 fact, M889 authorization, and active blocker query",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md"
+  ],
+  "reconciliation": {
+    "clauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "m888Disposition": {
+    "classification": "corrected fail-closed non-certifying aggregate attachment",
+    "attachment": "M886 asset-bind redo post-state semantic and backup-promote committed one-way semantic evidence",
+    "explicitInputRequired": true,
+    "omittedInputRejected": true,
+    "alteredForeignAuthorityAndUndoRedoDriftRejected": true,
+    "countsChanged": false,
+    "runtimeLaneReopened": false,
+    "aggregateAuthorityPromoted": false,
+    "backupPromotionUndoRedo": "NOT_APPLICABLE_ONE_WAY",
+    "foreignStatePreserved": true
+  },
+  "remainingGaps": [
+    "The four Stage 11 clauses remain partial across all eleven producer families; M888 adds semantic evidence for only the exact M886 producers.",
+    "The aggregate ledger remains non-certifying and does not establish cross-producer committed/recovered behavior or aggregate execution authority.",
+    "Packaged/runtime, current-active-GM, Foundry, and human/player behavior evidence remain bounded producer-scoped observations rather than generic authority.",
+    "The parked runtime lane remains blocked pending a newly reviewed bounded acceptance path."
+  ],
+  "selectedNext": {
+    "milestone": "M890",
+    "title": "Operation-specific semantic composition for project.save and persistent project.add-scene redo",
+    "target": "apps/campaign-helper-desktop/src/project-save-terminal-history.ts; apps/campaign-helper-desktop/src/project-add-scene-terminal-history.ts",
+    "scope": "One focused TypeScript test-only composition using the existing strict redo bridges and deterministic in-memory evidence for exactly project.save and project.add-scene.persist.",
+    "reason": "Existing operation-specific redo validators already prove generation/hash and semantic preservation fields for these two producer families, while M888's aggregate semantic attachment covers only the exact M886 asset-bind and backup-promote evidence.",
+    "deterministicCheck": "Require exact operation identities, matched commit/undo/redo rereads, monotonic generation and hash semantics, producer-specific Scene/asset/semantic preservation, fail-closed drift, unchanged counts, no authority promotion, and explicit backup-promotion one-way preservation.",
+    "excluded": "Runtime/browser/Foundry/provider/credential/account/project/foreign-state/player-password mutation, generic executor, aggregate schema changes, aggregate authority, Stage 11 acceptance, Stage 12, and Ready-to-Play."
+  },
+  "artifacts": {
+    "aggregateSource": {"path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts", "sha256": "7EBADEC0A27CCA013FE6D475E5DC9D02B4EE2173AFEC8F3DBD41CAE52484C3A2"},
+    "semanticSource": {"path": "apps/campaign-helper-desktop/src/project-stage11-proposal-semantic-evidence.ts", "sha256": "1008A39840B70109F350A55BA26F18241ADFD848FB36314B1E1136E590CA8AB9"},
+    "m888Receipt": {"path": "outputs/m888-stage11-aggregate-semantic-attachment-closure-receipt.json", "sha256": "63D5096F492C7527FC3A9C273EF99F3FF2A66E91463BFCCBEE625E0771FA3DA3"}
+  },
+  "limits": {
+    "runtimeLaneReopened": false,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "packaged/runtime cross-producer behavior",
+    "aggregate Stage 11 acceptance",
+    "backup-promotion undo/redo support",
+    "generic execution or Foundry authority",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

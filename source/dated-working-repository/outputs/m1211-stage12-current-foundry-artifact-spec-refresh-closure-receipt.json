@@ -1,0 +1,77 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1211-stage12-current-foundry-artifact-spec-refresh-closure",
+  "operation": "compiler.current-foundry-artifact-spec.m1211.closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1211",
+  "status": "COMPLETE_SOURCE_ONLY_CURRENT_ARTIFACT_SPEC",
+  "evidenceLabel": "local",
+  "observedAt": "2026-09-07",
+  "generatorReceipt": "outputs/m1211-current-foundry-artifact-spec-receipt.json",
+  "target": {
+    "packageId": "dicebox-campaign-helper",
+    "packageVersion": "0.1.15",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "artifactHashes": {
+    "adapter": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+    "installer": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+    "package": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+    "runtime": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b",
+    "worker": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87"
+  },
+  "spec": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1211",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1211",
+    "specSha256": "d5d9abd958d582b8a36d1bad8e85768ea4991e64e4f255d7faa152e829055eff",
+    "verifierGeneratedFromCanonicalSpec": true,
+    "previousM1188PackageSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+    "driftReconciled": true
+  },
+  "validation": {
+    "focusedTests": "1/1",
+    "packageBuild": "PASS",
+    "database": {
+      "integrity": "ok",
+      "sources": 1931,
+      "facts": 1508,
+      "decisions": 1533,
+      "openItems": 135,
+      "trials": 1110,
+      "researchSubjects": 41,
+      "milestones": 45,
+      "activityHits": 36,
+      "activeWork": 105
+    },
+    "workflow": {
+      "status": "PASS",
+      "score": 69,
+      "passedGates": 11,
+      "totalGates": 16,
+      "violations": 0,
+      "readyClaim": false
+    },
+    "diffCheck": "PASS"
+  },
+  "boundary": {
+    "noFoundryLaunch": true,
+    "noFixtureWrite": true,
+    "noStaging": true,
+    "noServing": true,
+    "noInstall": true,
+    "noNativeMutation": true,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "staged or served parity after M1211",
+    "loaded DiceBox or optional-module behavior",
+    "current RuntimeProfile or active-GM authority",
+    "native bindings, execution, recovery, or campaign-document reread",
+    "the four-Scene fixture prerequisite",
+    "Stage 12 acceptance or Ready-to-Play"
+  ],
+  "nextBoundary": "M1212 exact nested-Data source/staged artifact parity attestation, separately authorized before any update."
+}

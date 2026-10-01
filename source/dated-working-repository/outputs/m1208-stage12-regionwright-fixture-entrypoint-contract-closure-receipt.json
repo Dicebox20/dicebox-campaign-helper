@@ -1,0 +1,53 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1208-stage12-regionwright-fixture-entrypoint-contract-closure",
+  "milestone": "M1208",
+  "stage": "scene-authoring-breadth",
+  "goalId": "O-116",
+  "status": "PASS_LOCAL_M1208_REGIONWRIGHT_FIXTURE_ENTRYPOINT_CONTRACT",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-07",
+  "readyClaim": false,
+  "target": {
+    "stagedRoot": "work/foundry-fixture-data-v4/Data/modules/regionwright",
+    "manifest": "work/foundry-fixture-data-v4/Data/modules/regionwright/module.json",
+    "externalProvenanceRoot": "C:/Users/rujie/Documents/Region Editor",
+    "foundry": "14.367",
+    "dnd5e": "5.3.3"
+  },
+  "deterministicEvidence": {
+    "test": "tests/regionwright-staged-fixture-entrypoint-contract.test.ts",
+    "testResult": "1 file passed; 3 tests passed",
+    "syntaxChecks": "node --check passed for external and staged premium-module.js and ascendancy-fixture-harness.js",
+    "packageTypecheck": "npm run build:packages passed",
+    "workflow": "npm run workflow:check passed; score 69; 11/16 gates; violations 0; readyClaim false",
+    "database": "python database/build_database.py followed by python database/verify_database.py passed; integrity ok; activity_hits 36; active_work 105; research_subjects 41; milestones 42"
+  },
+  "hashes": {
+    "externalPremiumModuleSha256": "8E5F5FDE33C37D8D561C32D94B8E78DF4FB18488A9C637DC3DB3C77C8E9CB9B7",
+    "stagedPremiumModuleSha256": "26515BB19AFA6DF3394820A61FF2121D231064F1AB59D0BC42BAA0FA98FF145F",
+    "externalFixtureHarnessSha256": "3360CBD1D37F5220CC5D9B35044DCC0DF417E415FA3DEC1566C6F498A34A3EDB",
+    "stagedFixtureHarnessSha256": "B86C248DA294FFDF44AF4B6C4F3217498679CB28323B0C6598163290ACD636C6",
+    "stagedManifestSha256": "44428EA08E15E85EE0FC5FEA9DF1D13E869EAE0A11B20E39CB37B2543BC2D8F7"
+  },
+  "classification": {
+    "manifestEntrypoint": "v4 module.json loads premium/scripts/premium-module.js",
+    "stagedEntrypoint": "imports ascendancyAPI and ascendancyFixtureHarness, exposes ascendancy.fixtureHarness, and registers fixture controls from the init hook",
+    "stagedHarness": "exports ascendancyFixtureHarness and installAscendancyFixtureControls",
+    "harnessParity": "byte parity after CRLF normalization and removal of the external cache-query suffix ?rw-0.1.5-20260822-minigames-3",
+    "intentionalPremiumDivergence": "staged v4 excludes external Ballad runtime, Puzzle HUD, runtime probe, and related sockets; package versions and hashes remain explicitly distinct"
+  },
+  "preservation": {
+    "externalAndStagedRegionwrightEdited": false,
+    "externalAndStagedRegionwrightCopied": false,
+    "fixtureStarted": false,
+    "runtimeOrBrowserTouched": false,
+    "worldDocumentWrites": 0,
+    "credentialsAccessed": false,
+    "player3Joined": false,
+    "mechanicsInvoked": false,
+    "tramCoreBalladTouched": false,
+    "foreignStateChanged": false
+  },
+  "nextBoundary": "Separately database-first authorize one exact-v4 read-only loaded-control observation if still required; preserve loaded runtime behavior, Regionwright-specific GM/player behavior, player acceptance, persistent-world authority, final-map breadth, Stage 12, and Ready-to-Play as blocked."
+}

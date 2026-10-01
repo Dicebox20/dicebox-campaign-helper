@@ -1,0 +1,26 @@
+{
+  "operation": "dicebox.stage11.asset-restore.explicit-env-artifact",
+  "status": "ARTIFACT_ATTESTED",
+  "milestone": "M491",
+  "buildEnvironment": {
+    "VITE_DBX_PROJECT_SELF_TEST": "asset-restore-ui-execute",
+    "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+  },
+  "artifact": {
+    "executableSha256": "C26D708D2DF748D294FD4C0B1CE39574341F554E1E6577437CE7CDED1BC09507",
+    "bundle": "apps/campaign-helper-desktop/dist/assets/index-_ndAuJwV.js",
+    "bundleSha256": "1E7EE88A5DAC39802DCF21C46D5DC7E66C9CD2B42A54E20561C2B2898401F10E"
+  },
+  "requiredMarkersPresent": [
+    "asset-restore-ui-execute",
+    "3505e78b9965cadb25ee3709e95a6f2ea361fccf8545637954254045ddd75aaf",
+    "379aa60c5861ea4f15b6b8fd97ce05053fd6a7de6a4bd4338859fd72ebdbdf4d",
+    "REGISTERED_ASSET_BLOB_MISSING",
+    "selected/restored and unselected/preserved reread",
+    "Asset restore did not satisfy the exact selected-restored/unselected-preserved authoritative reread"
+  ],
+  "desktopCargoOrRustcProcessRemaining": false,
+  "runtimeMutation": false,
+  "foundryWrite": false,
+  "nonCertification": "This artifact attestation does not execute the package, accept Stage 11, or certify Foundry behavior or Ready-to-Play."
+}

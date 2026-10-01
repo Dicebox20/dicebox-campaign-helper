@@ -1,0 +1,69 @@
+{
+  "milestone": "M953",
+  "stage": "proposal-approval-history",
+  "status": "PASS STRICT TYPED AGGREGATE ATTACHMENT; COUNT NEUTRAL; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Attach the exact M952 loaded authority-control runtime receipt to the Stage 11 aggregate ledger as one producer-scoped non-certifying field without reopening runtime work.",
+  "sourceReceipt": "outputs/m952-stage11-exact-v4-loaded-module-authority-control-observation-closure-receipt.json",
+  "aggregateAttachment": {
+    "field": "loadedAuthorityControlEvidence",
+    "schemaVersion": "0.1.0",
+    "sourceMilestone": "M952",
+    "operation": "dicebox.foundry.loaded-authority-controls",
+    "target": {
+      "worldId": "dbx-test-world",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "port": 30003
+    },
+    "controlsObserved": 2,
+    "moduleExecutionObserved": true,
+    "currentUserIsGm": true,
+    "currentUserMatchesActiveGm": true,
+    "ownedSceneCanUpdate": true,
+    "noWrite": true,
+    "noUpdateInvoked": true,
+    "noGenericAuthorityClaim": true,
+    "noExecutionAuthority": true,
+    "noAuthorityGrant": true,
+    "cleanShutdown": true,
+    "producerScopedOnly": true,
+    "nonCertifying": true,
+    "aggregateAuthority": "not-granted",
+    "countsChanged": false
+  },
+  "validation": {
+    "focusedTests": "PASS: 2 files; 19 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "driftRejection": "PASS: altered runtime facts, target identity, unknown fields, writes, player-password entry, authority promotion, count changes, readiness claims, and Stage 12 claims were rejected.",
+    "aggregateInvariant": "PASS: operationCount remains 14; current aggregate authority remains NOT_GRANTED; Stage 11 remains BLOCKED; Stage 12 remains LOCKED; readyClaim remains false."
+  },
+  "limits": {
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "documentWrites": 0,
+    "documentUpdateInvoked": false,
+    "genericExecutor": false,
+    "storageInspected": false,
+    "projectMutated": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "countsChanged": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "reconciliation": {
+    "attachment": "ONE_EXACT_M952_PRODUCER_SCOPED_NON_CERTIFYING_FIELD",
+    "aggregateAuthority": "NOT_GRANTED",
+    "operationCount": 14,
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "next": "Run a read-only M954 reconciliation of the M953 attachment against the complete Stage 11 matrix; do not promote authority or enter Stage 12.",
+  "receiptVersion": "0.1.0"
+}

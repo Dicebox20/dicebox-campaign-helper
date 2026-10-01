@@ -1,0 +1,24 @@
+{
+  "milestone": "M423",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "readyClaim": false,
+  "source": {
+    "resetStagesPresent": true,
+    "terminalExitPresent": true,
+    "directStorageMutationAbsent": true
+  },
+  "session": {
+    "projectId": "dbx:project:desktop-backup-authoritative-recovery-promotion-self-test",
+    "batchId": "dbx:proposal:desktop-project-recovery-dbx-project-desktop-backup-authoritative-recovery-promotion-self-test-1787962033368",
+    "status": "previewed",
+    "historyLength": 1
+  },
+  "fixture": {
+    "primaryExists": false,
+    "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+  },
+  "process": "absent",
+  "recoveryDisposition": "M424 may build and run the exact reset-mode package once, capture its terminal exit, then reread session/fixture/process state; no recovery apply.",
+  "doesNotProve": ["session reset", "backup promotion", "recovery apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

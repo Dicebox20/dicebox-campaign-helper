@@ -1,0 +1,36 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m500-stage11-broken-reference-ui-lifecycle-closure-2026-08-29",
+  "milestone": "M500",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "readyClaim": false,
+  "scope": "Distinct debug-gated broken Scene-reference detach UI lifecycle seam and static/native validation",
+  "implementation": {
+    "projectId": "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v1",
+    "mode": "broken-reference-detach-ui-execute",
+    "fixtureCommand": "prepare_broken_reference_ui_lifecycle_fixture",
+    "topology": "current-schema role-mismatch fixture; selected Scene references one registered handout asset; primary inspection is BLOCKED while raw broken-reference evidence identifies the exact target; backup is absent",
+    "lifecycle": ["loaded", "previewed", "approved", "applied", "pass"],
+    "visibleHandlers": ["previewSelectedBrokenReferenceDetach", "approveSelectedProjectProposal", "applySelectedBrokenReferenceDetachProposal"],
+    "preservation": ["handout descriptor/blob preserved", "unrelated references preserved", "workspace and foreign state preserved", "prior envelope backed up", "no retry on failed reread", "no Foundry write"],
+    "fixtureBoundary": "new fixture only; refuse overwrite; no consumed M241 fixture reset/deletion/cleanup"
+  },
+  "validation": {
+    "focusedVitest": "5 files / 36 tests PASS",
+    "nativeFixtureUnit": "1 test PASS",
+    "desktopTypeScript": "PASS",
+    "diffHygiene": "PASS",
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "runtimeMutation": false,
+    "foundryWrite": false
+  },
+  "nextBoundary": {
+    "milestone": "M501",
+    "scope": "One debug package build with the exact broken-reference UI self-test mode, followed by artifact marker and process reread only.",
+    "prohibited": ["launch", "capture", "second build", "fixture reset", "deletion", "cleanup", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["Stage 11 acceptance", "packaged UI execution", "Foundry authority", "alpha readiness", "Ready-to-Play"]
+}

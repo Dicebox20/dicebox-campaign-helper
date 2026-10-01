@@ -1,0 +1,75 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1268-stage12-fresh-fixture-runtime-readiness-closure",
+  "operation": "stage12.fresh-fixture.runtime-readiness",
+  "milestone": "M1268",
+  "observedAt": "2026-09-07T19:17:58.314Z",
+  "evidenceClass": "fixture",
+  "status": "PASS_SERVER_READY_BLOCKED_MANUAL_JOIN",
+  "readyClaim": false,
+  "noWrite": true,
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v5",
+    "worldId": "dbx-test-world",
+    "port": 30004,
+    "foundry": "14.367",
+    "dnd5e": "5.3.3",
+    "pid": 8132,
+    "listenerCount": 1
+  },
+  "startup": {
+    "status": "PASS",
+    "processReady": true,
+    "httpStatus": 302,
+    "httpLocation": "/join",
+    "commandMatches": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "startupLockRecovery": "PASS_EMPTY_LOCK_QUARANTINED"
+  },
+  "manifestPreflight": {
+    "status": "BLOCKED",
+    "worldCoreVersion": "14.367",
+    "worldSystem": "dnd5e",
+    "worldSystemVersion": "5.3.3",
+    "installedSystemVersion": "5.3.3",
+    "diceboxModuleVersion": "0.1.15",
+    "midiQolVersion": null,
+    "daeVersion": null,
+    "optionalModuleStatus": "UNKNOWN",
+    "liveRuntimeProbe": "NOT_TESTED",
+    "noWrite": true
+  },
+  "browserReread": {
+    "tabId": "10",
+    "url": "http://127.0.0.1:30004/join",
+    "surface": "Join Game Session",
+    "selectUserFieldObserved": true,
+    "userPasswordFieldObserved": true,
+    "joinButtonObserved": true,
+    "currentPlayers": "0 / 1",
+    "manualAuthRequired": true,
+    "credentialEntered": false,
+    "credentialSubmitted": false,
+    "userSelected": false
+  },
+  "v4PreservationReread": {
+    "status": "PASS",
+    "pid": 10676,
+    "port": 30003,
+    "listenerCount": 1,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "blockers": [
+    "The `/join` form is a manual user-action boundary; no user or password was entered or submitted."
+  ],
+  "doesNotProve": [
+    "manual Gamemaster join",
+    "loaded DiceBox/Regionwright readiness",
+    "installer preview/approval/apply",
+    "native document writes or post-restart persistence",
+    "player behavior, player acceptance, Stage 12, or Ready-to-Play"
+  ],
+  "nextBoundary": "Manual user action: select the local Gamemaster and join the v5 session. After that, perform a separately authorized read-only loaded-identity reread."
+}

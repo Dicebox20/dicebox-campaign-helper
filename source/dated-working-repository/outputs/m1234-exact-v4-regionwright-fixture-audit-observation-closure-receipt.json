@@ -1,0 +1,69 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1234",
+  "operation": "regionwright.fixture.status",
+  "evidenceClass": "fixture-runtime",
+  "status": "OBSERVED",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "currentUser": "Gamemaster [GM]"
+  },
+  "audit": {
+    "controlTitle": "Audit Ascendancy fixture state",
+    "operation": "ascendancy.fixture.status",
+    "invocationCount": 1,
+    "noWrite": true,
+    "authoritativeReread": true,
+    "resetDiagnostic": null,
+    "sceneCount": 4,
+    "sceneStatePresentCount": 0,
+    "scenes": [
+      { "roomId": "dbx:room:signal-frequency-chamber", "walls": 8, "regions": 6, "tiles": 7, "ownedSceneMarker": true },
+      { "roomId": "dbx:room:ascendancy-tram-depot", "walls": 14, "regions": 39, "tiles": 5, "ownedSceneMarker": true },
+      { "roomId": "dbx:room:rune-mechanism-chamber", "walls": 8, "regions": 6, "tiles": 7, "ownedSceneMarker": true },
+      { "roomId": "dbx:room:central-core-control-chamber", "walls": 10, "regions": 10, "tiles": 10, "ownedSceneMarker": true }
+    ],
+    "readbackBlockers": []
+  },
+  "dialog": {
+    "closeAction": "Close",
+    "closeActionCount": 1,
+    "dialogAbsentAfterClose": true
+  },
+  "preservation": {
+    "foreignStatePreserved": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "settingsOrPasswordMutation": false,
+    "moduleSettingsChanged": false,
+    "playerAction": false,
+    "rawStorageInspected": false,
+    "previewInvoked": false,
+    "applyInvoked": false,
+    "alternateRegionwrightControlInvoked": false,
+    "restartOrReload": false
+  },
+  "finalSupervisor": {
+    "operation": "foundry.fixture.status",
+    "status": "PASS",
+    "pid": 17200,
+    "listeners": [17200],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": []
+  },
+  "blockers": [
+    "This audit proves helper-owned fixture scene readback only; it does not prove Regionwright behavior or RegionBehavior persistence.",
+    "Player acceptance, persistent-world promotion, final-map breadth, Stage 12, and Ready-to-Play remain unproven."
+  ],
+  "nextRequiredBoundary": "Authorize one separate exact-GM read-only Audit Ascendancy Regionwright handoff observation; do not invoke handoff install, preview, apply, puzzle, or alternate controls."
+}

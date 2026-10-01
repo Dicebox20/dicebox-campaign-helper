@@ -1,0 +1,51 @@
+{
+  "milestone": "M882",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY CONFORMANCE; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "target": "dbx:project:m882-proposal-unknown-recovery-composition",
+  "operation": "dicebox.project.proposal-history.unknown-recovery-composition",
+  "producers": [
+    {"operation": "project.asset.bind", "batchId": "dbx:proposal:m882-asset-bind"},
+    {"operation": "project.recovery.backup-promote", "batchId": "dbx:proposal:m882-backup-promote"}
+  ],
+  "conformance": {
+    "sessions": 6,
+    "outcomesPerProducer": ["not-committed", "conflict", "unknown"],
+    "history": ["preview", "approve", "begin-apply", "mark-unknown", "recover-after-reread"],
+    "notCommittedAndConflictStatus": "recovered",
+    "unknownStatus": "unknown-outcome",
+    "recoveryRequiresAuthoritativeReread": true,
+    "directRecoveryBeforeUnknownRejected": true,
+    "retryBeforeReread": false,
+    "retryAfterUnknownRejected": true,
+    "distinctBatchIdentities": true,
+    "distinctBatchHashes": true,
+    "providerNull": true,
+    "targetAuthority": "local-project",
+    "requiredActiveGm": false,
+    "genericExecutor": false,
+    "projectMutation": false,
+    "foundryWrite": false
+  },
+  "validation": {
+    "focusedRelatedSuite": "PASS: 7 files; 21 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "diffCheck": "PASS",
+    "desktopRuntime": "NOT_RUN",
+    "browserOrFoundry": "NOT_RUN"
+  },
+  "limits": {
+    "producerScopedOnly": true,
+    "aggregateLedgerChanged": false,
+    "aggregateAuthority": "NOT_GRANTED",
+    "currentAuthority": "PARTIAL",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false
+  },
+  "next": "Perform one read-only reconciliation of M882 against the full Stage 11 matrix; retain the parked runtime lane, Stage 11 blocked, Stage 12 locked, and readyClaim false."
+}

@@ -1,0 +1,21 @@
+{"level":"info","message":"[::ffff:127.0.0.1] Created client session e28c60b5a59f385c7c86a326","timestamp":"2026-08-27 05:16:17"}
+{"level":"info","message":"[::ffff:127.0.0.1] Created client session 2bd83cf899857e733cc61f7e","timestamp":"2026-08-27 05:17:00"}
+{"level":"info","message":"[::ffff:127.0.0.1] Created client session 899c01702e8108b1ca9d64ed","timestamp":"2026-08-27 05:17:09"}
+{"level":"info","message":"[::ffff:127.0.0.1] Created client session 94328e872c49dcb19688eb38","timestamp":"2026-08-27 05:17:56"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"[::ffff:127.0.0.1] User authentication successful for user Gamemaster","session":"94328e872c49dcb19688eb38","timestamp":"2026-08-27 05:17:58"}
+{"level":"info","message":"No system update for Dungeons & Dragons Fifth Edition is currently available.","timestamp":"2026-08-27 05:17:59"}
+{"level":"info","message":"Vended World data to User [Ub4Rmw1hnk0WlV5x] in 720ms","timestamp":"2026-08-27 05:17:59"}
+{"level":"info","message":"[::ffff:127.0.0.1] Created client session eecc4c5a940d1eefc9fecb6c","timestamp":"2026-08-27 05:19:21"}
+{"ip":"::ffff:127.0.0.1","level":"info","message":"[::ffff:127.0.0.1] User authentication successful for user DiceBox Test Player","session":"eecc4c5a940d1eefc9fecb6c","timestamp":"2026-08-27 05:19:22"}
+{"level":"info","message":"No system update for Dungeons & Dragons Fifth Edition is currently available.","timestamp":"2026-08-27 05:19:23"}
+{"level":"info","message":"Vended World data to User [CBqFYZ0aEmbioIRw] in 384ms","timestamp":"2026-08-27 05:19:24"}
+{"level":"info","message":"[::1] Created client session acc5b29104c79e720373f76c","timestamp":"2026-08-27 05:39:03"}
+{"ip":"::1","level":"info","message":"[::1] User authentication successful for user Gamemaster","session":"acc5b29104c79e720373f76c","timestamp":"2026-08-27 05:39:15"}
+{"level":"info","message":"No system update for Dungeons & Dragons Fifth Edition is currently available.","timestamp":"2026-08-27 05:39:17"}
+{"level":"info","message":"Vended World data to User [Ub4Rmw1hnk0WlV5x] in 512ms","timestamp":"2026-08-27 05:39:17"}
+{"ip":"::1","level":"info","message":"[::1] User authentication successful for user DiceBox Test Player","session":"acc5b29104c79e720373f76c","timestamp":"2026-08-27 05:40:23"}
+{"level":"info","message":"No system update for Dungeons & Dragons Fifth Edition is currently available.","timestamp":"2026-08-27 05:40:24"}
+{"level":"info","message":"Vended World data to User [CBqFYZ0aEmbioIRw] in 408ms","timestamp":"2026-08-27 05:40:24"}
+{"level":"info","message":"[::ffff:127.0.0.1] Created client session 36188123d313103bb4e943f0","timestamp":"2026-08-27 08:11:28"}
+{"level":"info","message":"No system update for Dungeons & Dragons Fifth Edition is currently available.","timestamp":"2026-08-27 08:15:29"}
+{"level":"info","message":"Vended World data to User [CBqFYZ0aEmbioIRw] in 428ms","timestamp":"2026-08-27 08:15:29"}

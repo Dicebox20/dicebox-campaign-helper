@@ -1,0 +1,81 @@
+{
+  "operation": "stage11-typed-core-proposal-history-transition-projection-implementation",
+  "milestone": "M625",
+  "status": "PASS_LOCAL_CODE_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T08:27:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "implementation": {
+    "coreSource": "packages/dicebox-core/src/proposal-batch.ts",
+    "coreExport": "TYPED_PROPOSAL_BATCH_ALLOWED_TRANSITIONS",
+    "projectionSource": "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "projectionExport": "TYPED_LOCAL_PROJECT_PROPOSAL_HISTORY_TRANSITION_PROJECTION",
+    "historyStateCount": 11,
+    "transitionSemantics": "The projection is assigned directly from the existing core allowedTransitions map; no transition list was duplicated or reinterpreted.",
+    "metadataBoundary": {
+      "readOnly": true,
+      "nonCertifying": true,
+      "noExecutionAuthority": true,
+      "noRuntimeTransition": true,
+      "noPersistence": true,
+      "noRecovery": true,
+      "noGenericExecutor": true
+    }
+  },
+  "surface": {
+    "path": "apps/campaign-helper-desktop/src/App.tsx",
+    "testId": "typed-proposal-history-transition-projection",
+    "disclosure": "Proposal-review surface renders the core-source transition vocabulary as an open read-only, non-certifying disclosure and states that it does not invoke transitions, execute proposals, persist state, recover outcomes, or add authority."
+  },
+  "validation": {
+    "focusedVitest": {
+      "files": 4,
+      "tests": 12,
+      "status": "PASS"
+    },
+    "desktopTypeScriptNoEmit": "PASS",
+    "desktopNodeTypeScriptNoEmit": "PASS",
+    "diffCheck": "PASS",
+    "transitionEquality": "PASS_ALL_11_STATES",
+    "jsonAndKnowledgeBaseMarkers": "PASS"
+  },
+  "stageDecision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M625 makes the existing core transition semantics inspectable without changing runtime behavior. It supplies no new packaged lifecycle transitions, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, or aggregate authority across eleven producer families."
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "sourceHashes": {
+    "packages/dicebox-core/src/proposal-batch.ts": "41F07357A5D27DFBC94D2B910225B9DF4E1EBF26DE6F039EC4217E397E20939C",
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts": "F9AF648774F4CB486E8BD0BD299B1AE5266D40780DC96A21477824D64119899E",
+    "apps/campaign-helper-desktop/src/App.tsx": "B8BE982D0985FC573463BC17366B47D30E4F312BDD105E2BFF42F8DEA9B791B0",
+    "tests/project-review-operation-history-binding.test.ts": "157321954055E73FFCB65E80D4EF40498C32446FA4335484163A2C902B2531B8"
+  },
+  "changedPaths": [
+    "packages/dicebox-core/src/proposal-batch.ts",
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/project-review-operation-history-binding.test.ts",
+    "outputs/m625-stage11-typed-core-proposal-history-transition-projection-implementation-closure-receipt.json"
+  ]
+}

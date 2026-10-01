@@ -1,0 +1,67 @@
+{
+  "milestone": "M967",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY M966 RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reread the exact M966 project.save redo handler/classifier binding against the aggregate ledger, current-authority bridge, four Stage 11 clauses, eleven producer families, receipts, roadmap, active card, and rebuilt KB.",
+  "reconciled": {
+    "m966Receipt": "outputs/m966-stage11-project-save-redo-handler-classifier-evidence-bridge-closure-receipt.json",
+    "producer": "project.save",
+    "operation": "project.save.redo",
+    "redoHandler": "bridgeProjectSaveRedoToTerminalHistory",
+    "redoRereadClassifier": "projectSaveRedoTerminalHistoryReceiptSchema",
+    "bindingStatus": "bound-operation-specific",
+    "invocation": "not-invoked",
+    "aggregateAttachment": "not-yet-attached",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "runtime": "PARKED"
+  },
+  "acceptanceMatrix": {
+    "aggregateProvenanceAndCoverage": "PARTIAL",
+    "directCurrentAuthority": "PARTIAL",
+    "completeApplyReceiptCoverage": "PARTIAL",
+    "unifiedLifecycle": "PARTIAL",
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9
+  },
+  "selection": {
+    "nextMilestone": "M968",
+    "scope": "One strict typed non-certifying aggregate-ledger attachment for the exact M966 project.save redo handler/classifier evidence; preserve count neutrality, operation-specific authority, no invocation, no generic executor, and all stage locks.",
+    "reason": "M966 proves the operation-specific redo binding locally, but the exact binding is not yet represented as a producer-scoped field in the aggregate ledger. This is the smallest disjoint continuation.",
+    "readOnlyAuditComplete": true,
+    "implementationChanges": 0,
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "projectMutation": false,
+    "playerPasswords": false,
+    "stage11Acceptance": false,
+    "stage12": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history solely active; zero violations",
+    "sourceBindingReread": "PASS",
+    "aggregateAuthorityReread": "PASS; NOT_GRANTED preserved",
+    "knowledgeBase": "PASS before closure: 1495 sources; 1220 facts; 1134 decisions; 135 open items; 809 trials; 40 research subjects; 26 milestones"
+  },
+  "limits": {
+    "readOnly": true,
+    "implementationChanges": 0,
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "projectMutation": false,
+    "foundryMutation": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "conclusion": "M967 confirms M966 is exact local operation-specific evidence but remains absent from the aggregate ledger as a dedicated producer-scoped field. Stage 11 remains blocked and Stage 12 remains locked.",
+  "next": "Perform only M968: one strict typed aggregate-ledger attachment for the M966 project.save redo handler/classifier evidence."
+}

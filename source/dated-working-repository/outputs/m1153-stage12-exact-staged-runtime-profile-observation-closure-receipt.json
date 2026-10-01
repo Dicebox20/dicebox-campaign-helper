@@ -1,0 +1,55 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1153-exact-staged-runtime-profile-observation-closure",
+  "milestone": "M1153",
+  "status": "CLOSED_M1153_EXACT_STAGED_PROFILE_OBSERVED_PROMOTION_BLOCKED",
+  "evidenceClass": "fixture",
+  "operation": "dicebox.stage12.exact-staged-runtime-profile-observation",
+  "observationReceipt": "outputs/m1153-stage12-exact-staged-runtime-profile-observation-receipt.json",
+  "gate": {
+    "sourceParity": "pass",
+    "stagedParity": "pass-after-nested-Data-recovery",
+    "servedParity": "pass",
+    "runtimeProfile": "observed-schema-valid",
+    "runtimeIdentityDiff": "pass",
+    "completeArtifactBoundProfileDiff": "blocked-unavailable-fields",
+    "activeGm": "pass-current-user-matches-Gamemaster",
+    "authoritativeStoppedReread": "pass",
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "validation": {
+    "packageSourceSha256": "8B2B819C1D5E8358749834F18C9C1D59846EF283DA17103463ABF2A94C3C3CD8",
+    "packageBytes": 102481,
+    "fixedQueryCount": 1,
+    "runtimeFingerprint": "dbx:fingerprint:cbea3468",
+    "exactTarget": "Foundry 14.367 / dnd5e 5.3.3 / dbx-test-world",
+    "manualJoin": "Gamemaster typed; blank password; no dropdown selection",
+    "finalStatus": "STOPPED/no-listener",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "recovery": {
+    "initialWrongRootStage": true,
+    "initialMismatchPreserved": true,
+    "correctedTarget": "work/foundry-fixture-data-v2/Data",
+    "runtimeQueryWasAttemptedBeforeCorrection": false,
+    "blindRetry": false
+  },
+  "preservation": {
+    "foreignStatePreserved": true,
+    "unknownStatePreserved": true,
+    "documentsOrAssetsMutated": false,
+    "settingsOrUsersMutated": false,
+    "passwordCreatedOrPersisted": false,
+    "installerInvoked": false,
+    "authorityPromoted": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "Artifact-bound package/adapter profile-diff fields are not exposed by the fixed runtime diagnostic.",
+    "Candidate-specific installer transport, live write/execution authority, authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain pending."
+  ],
+  "nextBoundary": "M1154: no-write artifact-bound RuntimeProfile/profile-diff gate refresh using the M1153 observation and current canonical verifier; do not reopen runtime or mutate documents."
+}

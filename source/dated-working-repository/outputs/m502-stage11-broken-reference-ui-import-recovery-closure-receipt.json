@@ -1,0 +1,27 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m502-stage11-broken-reference-ui-import-recovery-closure-2026-08-29",
+  "milestone": "M502",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "readyClaim": false,
+  "scope": "Missing native fixture receipt-type import and focused regression coverage",
+  "change": "Imported BrokenReferenceUiLifecycleFixtureReceipt into the Tauri wrapper; no behavior or fixture topology changed.",
+  "validation": {
+    "focusedVitest": "5 files / 36 tests PASS",
+    "nativeFixtureUnit": "1 test PASS",
+    "desktopTypeScript": "PASS",
+    "diffHygiene": "PASS",
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "runtimeMutation": false,
+    "foundryWrite": false
+  },
+  "nextBoundary": {
+    "milestone": "M503",
+    "scope": "One explicit-mode debug package build and exact artifact/process reread after the import correction.",
+    "prohibited": ["second build", "launch", "capture", "fixture reset", "deletion", "cleanup", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged marker parity", "packaged UI execution", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

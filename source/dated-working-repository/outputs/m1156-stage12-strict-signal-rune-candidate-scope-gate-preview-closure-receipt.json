@@ -1,0 +1,38 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1156-strict-signal-rune-candidate-scope-gate-preview-closure",
+  "milestone": "M1156",
+  "status": "CLOSED_M1156_STRICT_CANDIDATE_SCOPE_GATE_BLOCKED_TRANSPORT",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.signal-rune.candidate-scope.gate.closure",
+  "observationReceipt": "outputs/m1156-stage12-strict-signal-rune-candidate-scope-gate-preview-receipt.json",
+  "closure": {
+    "candidateIdentity": "pass",
+    "foreignScenePreservation": "pass",
+    "strictGate": "pass",
+    "transportDisposition": "blocked-required",
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "readyClaim": false
+  },
+  "verification": {
+    "focusedTests": "PASS 4/4",
+    "packageTypecheck": "PASS",
+    "workflowCheckBeforeClosure": "PASS 11/16",
+    "knowledgeBaseRebuildBeforeImplementation": "PASS",
+    "runtimeReopened": false,
+    "installerInvoked": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "remainingBlockers": [
+    "Candidate-specific installer transport is absent.",
+    "The four-room loader/installer cannot narrow safely to Signal/Rune while Tram/Core remain incomplete.",
+    "Live authority, authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1157: reconcile an explicitly authorized candidate-specific transport design from the M1156 fail-closed gate; no runtime or installer invocation is implied."
+}

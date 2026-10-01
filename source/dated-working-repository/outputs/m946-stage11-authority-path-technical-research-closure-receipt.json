@@ -1,0 +1,61 @@
+{
+  "milestone": "M946",
+  "stage": "proposal-approval-history",
+  "status": "PASS TECHNICAL RESEARCH; LOCAL RUNTIME STILL UNPROVEN",
+  "evidenceClass": "research",
+  "scope": "Use authoritative Foundry documentation to define the narrow exact-runtime evidence needed for current-user, active-GM, target-world, and owned-Scene permission predicates without claiming local runtime behavior.",
+  "sources": [
+    {
+      "title": "Foundry Virtual Tabletop Users and Permissions",
+      "url": "https://foundryvtt.com/article/users/",
+      "authority": "Official Foundry documentation",
+      "finding": "Users and roles are scoped to the active World; role and document permissions are distinct surfaces."
+    },
+    {
+      "title": "Foundry Virtual Tabletop API v14 User",
+      "url": "https://foundryvtt.com/api/classes/foundry.documents.User.html",
+      "authority": "Official Foundry v14 API documentation",
+      "finding": "The User API exposes separate isGM and isActiveGM predicates."
+    },
+    {
+      "title": "Foundry Virtual Tabletop API v14 documents",
+      "url": "https://foundryvtt.com/api/v14/modules/foundry.documents.html",
+      "authority": "Official Foundry v14 API documentation",
+      "finding": "Document creation uses native factory methods and updates use document instances with exact target identity; local behavior still requires exact-runtime observation and authoritative reread."
+    }
+  ],
+  "reconciliation": {
+    "requiredRuntimeReceipt": [
+      "current user identity and role predicates",
+      "isGM and isActiveGM values read from the exact local User document",
+      "exact target World and runtime fingerprint",
+      "owned-Scene permission predicate without invoking update",
+      "read-only close/process/fixture reread"
+    ],
+    "authorityBoundary": "Documentation defines API semantics but does not certify this project's local Foundry version, module state, user session, permission result, or aggregate authority.",
+    "currentProjectState": "Stage 11 remains blocked; aggregate authority is NOT_GRANTED; current authority is PARTIAL; runtime is PARKED; Stage 12 is LOCKED; readyClaim is false."
+  },
+  "selectedNext": "M947 one exact read-only local-fixture authority predicate probe using only the fixed native/package-owned surface; no document mutation or generic executor.",
+  "limits": {
+    "webResearchOnly": true,
+    "localRuntimeAction": false,
+    "foundryAction": false,
+    "documentWrites": 0,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "local exact-runtime behavior",
+    "document-write permission or execution authority",
+    "aggregate current authority or Stage 11 acceptance",
+    "cross-producer committed/recovered continuity",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Run only the authorized M947 read-only exact-fixture authority predicate probe; stop and record a blocker on any unavailable surface, mismatch, mutation, or uncertainty."
+}

@@ -1,0 +1,39 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m3-persistence-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 13, "tests": 54, "status": "PASS" },
+    "persistence": {
+      "format": "append-only JSON-lines",
+      "restartReplay": "PASS",
+      "duplicateAppendIdempotency": "PASS",
+      "malformedHistoryRejection": "PASS",
+      "writeFailureOutcomeUnknown": "PASS",
+      "fileDriver": "PASS",
+      "executorPersistsBeforeAdapterCall": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 32,
+      "facts": 47,
+      "decisions": 22,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 21,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Foundry-world transaction journal persistence",
+    "Exact Foundry 14.367 JournalEntry/Page schema and permissions",
+    "Live JournalEntry creation, update, and read-back",
+    "Two-client active-GM authority and reconnect behavior"
+  ],
+  "nextGate": "Run the exact Foundry fixture and choose the approved module-side persistence binding without treating program-file durability as Foundry-world evidence."
+}

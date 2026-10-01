@@ -1,0 +1,29 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1155-candidate-specific-installer-scope-reconciliation-closure",
+  "milestone": "M1155",
+  "status": "CLOSED_M1155_CANDIDATE_SCOPE_BLOCKED_TRANSPORT_SELECTED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.candidate-specific-installer-scope.reconcile",
+  "observationReceipt": "outputs/m1155-stage12-candidate-specific-installer-scope-reconciliation-receipt.json",
+  "gate": {
+    "candidateIdentity": "pass-signal-rune-two-room",
+    "excludedForeignScenes": "preserved",
+    "currentPackageScope": "four-room",
+    "candidateSpecificTransport": "blocked-absent",
+    "loaderBlocker": "tram-core-incomplete-assets-rejected-before-selection",
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "validation": {
+    "candidatePreviewReread": "PASS M1141 receipt identity and room IDs",
+    "packageReread": "PASS M1058 package and current generated JSON",
+    "installerReread": "PASS source control flow; no selector and all-room loop confirmed",
+    "artifactProfileReread": "PASS M1154 five canonical artifacts and bootstrap scope preserved",
+    "runtimeReopened": false,
+    "installerInvoked": false,
+    "documentsOrAssetsMutated": false,
+    "foreignStatePreserved": true
+  },
+  "nextBoundary": "M1156: strict no-write Signal/Rune candidate-scope gate/preview implementation and focused validation."
+}

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1028",
+  "stage": "proposal-approval-history",
+  "status": "PASS FIXTURE READ-ONLY BASELINE; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "fixture",
+  "target": { "dataPath": "work/foundry-fixture-data-v4", "worldId": "dbx-test-world", "port": 30003, "foundry": "14.367", "system": "dnd5e@5.3.3", "user": "Gamemaster", "password": "blank" },
+  "observations": {
+    "currentActiveGm": { "operation": "dicebox.current-active-gm-authority.diagnostic", "status": "OBSERVED", "currentUserIsGm": true, "currentUserMatchesActiveGm": true, "redacted": true, "noWrite": true, "noPermissionClaim": true, "noExecutionAuthority": true, "readyClaim": false },
+    "ownedScenePermission": { "operation": "dicebox.owned-scene-permission.diagnostic", "status": "OBSERVED", "ownedSceneCanUpdate": true, "redacted": true, "noWrite": true, "noUpdateInvoked": true, "noGenericAuthorityClaim": true, "noExecutionAuthority": true, "readyClaim": false }
+  },
+  "supervisorReread": { "status": "PASS", "pid": 8036, "listeners": [8036], "worldDocumentWrites": 0, "balladTouched": false, "httpLocation": "/join", "commandMatches": true, "stateTargetMatches": true, "listenerMatches": true },
+  "authorityAndSafety": { "noFoundryWrite": true, "noProjectMutation": true, "noAuthorityGrant": true, "noExecutionAuthority": true, "noTransitionAuthority": true, "noRecoveryAuthority": true, "noControlInvocationBeyondFixedDiagnostics": true, "credentialsAccessed": false, "playerPasswordsGenerated": false, "currentAuthority": "partial", "aggregateAuthority": "not-granted", "stage11AcceptanceStatus": "blocked", "stage12Started": false, "readyClaim": false },
+  "limits": ["The observed predicate is limited to one owned Scene and does not prove update execution or generic authority.","This receipt does not capture direct committed/recovered continuity, accept Stage 11, unlock Stage 12, or claim readiness."],
+  "next": "M1029 may only prepare and reread a fresh fixed inverse preview in exact v4; any control that deletes the owned Scene remains subject to separate immediate confirmation."
+}

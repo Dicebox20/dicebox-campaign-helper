@@ -1,0 +1,60 @@
+{
+  "operation": "dicebox.stage12.m1060.exact-fixture-background-object-read-only-observation.closure",
+  "status": "PASS",
+  "milestone": "M1060",
+  "evidenceLabel": "fixture",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "SRC-M1060-STAGE12-EXACT-FIXTURE-BACKGROUND-OBJECT-READ-ONLY-OBSERVATION-AUTHORIZATION",
+    "D-M1060-STAGE12-EXACT-FIXTURE-BACKGROUND-OBJECT-READ-ONLY-OBSERVATION",
+    "F-M1059-CLOSURE",
+    "D-188",
+    "D-183",
+    "D-186",
+    "D-194"
+  ],
+  "changedPaths": [
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "outputs/m1060-stage12-exact-fixture-background-object-read-only-observation-closure-receipt.json"
+  ],
+  "target": {
+    "fixture": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "system": "dnd5e@5.3.3",
+    "dataPath": "work/foundry-fixture-data-v2",
+    "port": 30001
+  },
+  "validation": {
+    "fixtureRecovery": "PASS FIXTURE: stale exact v2 state was recovered through the reviewed supervisor restart path; the owned process/listener/HTTP identity reread passed with pid 29556 and GET /join 302 readiness.",
+    "manifestPreflight": "BLOCKED READ-ONLY: exact world, Foundry, dnd5e, and DiceBox module manifests passed; optional midi-qol/dae manifests remained UNKNOWN and the filesystem-only preflight marked live-runtime-probe NOT_TESTED. No files or world documents were changed.",
+    "runtimeIdentity": "PASS PARTIAL FIXTURE: passwordless existing Gamemaster joined at http://127.0.0.1:30001/game. The visible client showed Gamemaster [GM], the active Semantic Scene Fixture, GAME PAUSED, the DiceBox Tram Routing Projection surface, the package-loaded exact-runtime-gated GM notice, and TRAM COORDINATES: MATCH with 0 drifted checks and no Foundry writes.",
+    "controlBoundary": "PASS: Prepare DiceBox Ascendancy, Repair DiceBox Ascendancy maps and geometry, and Apply DiceBox Program Scene vertical slice were visible but not invoked. No preview, approval, installer mutation, document write, asset upload, or native promotion occurred.",
+    "sceneTileReadback": "PASS PARTIAL FIXTURE: read-only Scenes/Placeables inspection identified active Semantic Scene Fixture and 11 locked existing Tile entries: dbx:tile:tram-b, dbx:tile:tram-c, dbx:tile:tram-core-rail, dbx:tile:tram-gate-core-door, dbx:tile:tram-gate-ingress, dbx:tile:tram-gate-yard-exit, dbx:tile:tram-o, dbx:tile:tram-q, dbx:tile:tram-r, dbx:tile:tram-rail-grid, and dbx:tile:tram-x. The supported directory surface exposed stable runtime entry IDs but not authoritative bounds/assets for comparison; no inference was made.",
+    "packageProjection": "PASS LOCAL: generated package dbx:package:chauser-bill-prime-arachnid-aftermath SHA-256 2F257477F02AAC0A60B01D6C0AEFEF738484BE5C437A708BD293945CCF90645F carries 29 staticVisualTileProjection entries and 29 staticBackgroundObjectPreview objects with matching stable projection IDs. The preview is geometry-neutral, visual-workflow-projection authority, Spatial Blueprint geometry owner, not-modeled runtime state, and disabled-until-exact-runtime-gate mutation.",
+    "installerBoundary": "PASS LOCAL: installer source consumes staticVisualTileProjection and contains historical Tile creation/readback code, but does not consume staticBackgroundObjectPreview. This remains a separately gated historical path, not runtime proof.",
+    "authoritativeReread": "PASS FIXTURE: after the read-only session, the exact supervisor stop completed with exact process/port ownership and forced termination only after normal termination was refused; final status reread was STOPPED with no listeners, worldDocumentWrites 0, and balladTouched false. The browser tab was closed and the temporary viewport override was reset."
+  },
+  "observation": {
+    "disposition": "PASS PARTIAL FIXTURE",
+    "meaning": "M1060 proves current passwordless-GM package loading and a bounded existing Scene/Tile directory observation on the disposable target. The active fixture Scene is a separate Semantic Scene Fixture with an existing tram Tile set; its directory does not prove that the 29 package projections were installed or that their bounds/assets match.",
+    "nextGap": "M1061: reconcile the exact fixture Scene/Tile observation against the 29-entry package projection and historical installer boundary, then select at most one directly evidenced non-native next slice.",
+    "certificationBoundary": "Stage 12 remains active and non-certifying; Stage 11 remains blocked; Ready-to-Play remains false; Ballad and player surfaces remain untouched."
+  },
+  "blockers": [
+    "filesystem-only preflight could not prove optional midi-qol/dae readiness or live-runtime probe status",
+    "the supported Tile directory did not expose authoritative bounds/assets for the existing entries",
+    "the existing active fixture Scene is not evidence that the 29 package projections were installed"
+  ],
+  "doesNotProve": [
+    "installer execution",
+    "native static Background Object or Tile creation",
+    "authoritative bounds/assets readback for the 29 package projections",
+    "Blueprint or Walls/doors/Regions promotion",
+    "live Ballad behavior",
+    "Stage 12 acceptance",
+    "Ready-to-Play"
+  ],
+  "nextAction": "Perform only M1061: reconcile the exact fixture Scene/Tile observation against the 29-entry package projection and historical installer boundary; do not invoke installer mutation or infer native/runtime authority."
+}

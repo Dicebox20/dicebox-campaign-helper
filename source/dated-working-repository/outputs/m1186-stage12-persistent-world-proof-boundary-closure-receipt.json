@@ -1,0 +1,178 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1186-stage12-persistent-world-proof-boundary-closure",
+  "operation": "stage12.persistent-world-proof-boundary.m1186.closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1186",
+  "status": "CLOSED_M1186_PERSISTENT_WORLD_PROMOTION_BLOCKED_MISSING_TILES",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-09-06",
+  "summary": "The exact Gamemaster Signal/Rune boundary was exercised with one preview and one approval, followed by an owned-only post-restart reread. The final reread found the owned Scenes but no Tile children where three were expected in each room, and the native accounting window recorded zero native write calls because the candidate was already present. Persistent-world promotion is therefore rejected as not proven; this receipt does not certify a committed write, Stage 12, or Ready-to-Play.",
+  "databaseFirst": {
+    "status": "PENDING_CLOSURE_REBUILD",
+    "authorizationSources": [
+      "docs/ACTIVE-PROGRAM-SLICE.json acceptedStage12M1186PersistentWorldProofBoundary",
+      "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md M1186",
+      "database/seed.sql SRC-M1186-STAGE12-PERSISTENT-WORLD-PROOF-BOUNDARY-AUTHORIZATION"
+    ],
+    "reconciliation": "The authorized exact-fixture boundary was completed. This closure must be rebuilt and verified into the reproducible knowledge base before selecting the next checklist boundary."
+  },
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "system": "dnd5e@5.3.3",
+    "manualGamemasterJoin": true,
+    "username": "Gamemaster",
+    "passwordEntered": false,
+    "dropdownUsed": false,
+    "activeGmObserved": true,
+    "currentUserMatchesActiveGm": true
+  },
+  "artifactGate": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1186",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1186",
+    "specSha256": "47a07a3095334543100caf63850e7f68380291c55e945eb3098608f14e599e87",
+    "adapterSha256": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+    "installerSha256": "c5ed9745bcb19bd2a230f014df8854823f143c4ce393552ac3e41d4e72e291eb",
+    "packageSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+    "runtimeSha256": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b",
+    "workerSha256": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+    "helperSupportingSha256": "9e6bc718f13a98504aec3ab63e6f501198cf0b8c50c19b010f2c23bb270a2400",
+    "moduleSha256": "bd33c3cfd151afa1c59dbfa318557caa43d9bed6337eb00713b7e6c3cca6aae7",
+    "sourceStagedParity": true,
+    "servedStatus": "staged-source-parity-pass-served-loaded-byte-hash-unclaimed",
+    "loadedByteHashClaimed": false,
+    "source": "outputs/m1186-current-foundry-artifact-spec-receipt.json"
+  },
+  "recoveryFindings": [
+    {
+      "id": "initial-live-attempt",
+      "status": "BLOCKED",
+      "finding": "The first live attempt did not resolve the Foundry v14 Scene class because the global runtime.Scene gate was absent; the accounting window recorded zero native calls and no write was invoked.",
+      "correction": "Resolve the exact v14 class through foundry.documents.Scene with a narrow fallback only for the reviewed legacy shape."
+    },
+    {
+      "id": "cache-recovery",
+      "status": "RECOVERED_NO_WRITE",
+      "finding": "A restart initially served stale browser module imports after the source correction; no candidate write was attempted in that stale run.",
+      "correction": "Rotate package-owned module and adapter cache tokens to 0.1.20, restage, stop, restart, and reread the loaded controls."
+    },
+    {
+      "id": "collection-recovery",
+      "status": "RECOVERED_LOCALLY",
+      "finding": "The first post-restart reread exposed a collection-shape defect because a Foundry collection was treated as an Array; the same defect was reproduced locally.",
+      "correction": "Normalize arrays, values(), iterables, and plain-object collection surfaces in the owned reread path; focused local coverage passed 18/18."
+    }
+  ],
+  "preview": {
+    "operation": "ascendancy.signal-rune-candidate.write-preview",
+    "status": "PREVIEWED",
+    "candidateId": "m1141-signal-rune",
+    "selectedRoomIds": [
+      "dbx:room:signal-frequency-chamber",
+      "dbx:room:rune-mechanism-chamber"
+    ],
+    "excludedRoomIds": [
+      "dbx:room:ascendancy-tram-depot",
+      "dbx:room:central-core-control-chamber"
+    ],
+    "noWrite": true,
+    "apply": false,
+    "approvalRequired": true,
+    "approvalGranted": true,
+    "approvalClicks": 1,
+    "genericControlsUsed": false,
+    "selectorInput": false,
+    "foreignStatePreserved": true
+  },
+  "nativeWriteAccounting": {
+    "operation": "dicebox.persistent-world.native-write-accounting",
+    "status": "BLOCKED",
+    "observedMutation": false,
+    "nativeWriteCalls": 0,
+    "records": [],
+    "persistenceClaim": "not-claimed",
+    "noWrite": true,
+    "readyClaim": false,
+    "interpretation": "The owned Signal/Rune candidate Scenes already existed, so the approved candidate path was idempotent and did not enter a native write call. Zero calls is not persistent-world proof."
+  },
+  "postRestartReread": {
+    "operation": "ascendancy.signal-rune-candidate.persistent-world-reread",
+    "status": "BLOCKED",
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "selectedOwnedSceneCounts": {
+      "signal": 1,
+      "rune": 1
+    },
+    "rooms": [
+      {
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "sceneCount": 1,
+        "walls": 8,
+        "regions": 6,
+        "tiles": 0,
+        "expectedWalls": 8,
+        "expectedRegions": 6,
+        "expectedTiles": 3,
+        "complete": false
+      },
+      {
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "sceneCount": 1,
+        "walls": 8,
+        "regions": 6,
+        "tiles": 0,
+        "expectedWalls": 8,
+        "expectedRegions": 6,
+        "expectedTiles": 3,
+        "complete": false
+      }
+    ],
+    "ambiguousConflicts": [],
+    "missingOwnedScenes": [],
+    "foreignStatePreserved": true,
+    "persistenceClaim": "not-proven",
+    "rawStorageInspected": false,
+    "postRestartAuthoritativeReread": false,
+    "blockers": [
+      "Owned Signal Scene child reread is incomplete: expected three Tiles, observed zero.",
+      "Owned Rune Scene child reread is incomplete: expected three Tiles, observed zero."
+    ]
+  },
+  "scopeDisposition": {
+    "tramCoreTouched": false,
+    "playerTouched": false,
+    "balladTouched": false,
+    "foreignStateAdopted": false,
+    "rawStorageInspected": false,
+    "supervisorWorldDocumentWrites": 0,
+    "supervisorWorldDocumentWritesClassification": "non-instrumented-process-state-marker-only",
+    "finalFixtureStatus": "STOPPED",
+    "finalListeners": [],
+    "persistentWorldPromotion": "REJECTED_NOT_PROVEN",
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "decision": {
+    "status": "BLOCKED",
+    "reason": "The approved exact-fixture sequence did not produce a native write call, and the owned post-restart reread is incomplete because both Scenes lack their expected Tile children. The available evidence cannot prove a persistent committed world.",
+    "nextBoundary": "M1187: perform a read-only local reconciliation and deterministic reproduction of the missing Tile child projection and candidate idempotence/write-accounting boundary before authorizing any further live write."
+  },
+  "remainingBlockers": [
+    "Both owned Signal/Rune Scenes reread with zero of three expected Tile children.",
+    "No native write call was observed in the approved candidate window; persistent commit remains unproven.",
+    "RuntimeProfile write authority and post-restart authoritative persistence proof remain unavailable.",
+    "Tram/Core final maps, player/Regionwright behavior, and player acceptance remain unproven."
+  ],
+  "provenance": [
+    "outputs/m1185-stage12-persistent-world-promotion-feasibility-reconciliation-closure-receipt.json",
+    "outputs/m1186-current-foundry-artifact-spec-receipt.json",
+    "packages/dicebox-foundry/src/ascendancy-installer.js",
+    "packages/dicebox-foundry/src/persistent-world-write-accounting.js",
+    "tools/foundry-fixture-supervisor.mjs",
+    "tests/ascendancy-installer.test.ts",
+    "tests/persistent-world-write-accounting.test.ts"
+  ]
+}

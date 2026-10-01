@@ -1,0 +1,33 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1131",
+  "status": "PASS_WITH_TRANSPORT_BLOCKER",
+  "evidenceClass": "local",
+  "operation": "dicebox.ascendancy.signal-rune.native-document.identity-adapter-source-staged-reconciliation",
+  "source": {
+    "adapterPath": "packages/dicebox-bridge/src/foundry-identity-read.ts",
+    "adapterSha256": "990E80D81A89270D0A7DAE9575EBF616E6901A43A26E0252CA7583C9B3C44953",
+    "bridgeIndexPath": "packages/dicebox-bridge/src/index.ts",
+    "bridgeIndexSha256": "B836557ED708AE5C174C0D1323FF00B44DA9DA1D5DDCB5FF4AD61E60FF5E7AF8",
+    "exported": true
+  },
+  "stagedFoundryModule": {
+    "adapterFilePresent": false,
+    "moduleImportPresent": false,
+    "stageUpdateToolOwnsTypeScriptBridge": false,
+    "sourceStagedParity": "NOT_APPLICABLE_YET"
+  },
+  "validation": {
+    "relevantAdapterReadTests": "24/24",
+    "packageTypecheck": "PASS",
+    "workflowCheck": "PASS",
+    "kbIntegrity": "PASS",
+    "fullRepository": "1141 passed / 8 unrelated-or-stale failures"
+  },
+  "decision": {
+    "runtimeInvocation": false,
+    "promotion": false,
+    "nextMilestone": "M1132"
+  },
+  "boundaries": { "noWrite": true, "stage12Acceptance": "NOT_CLAIMED", "readyClaim": false }
+}

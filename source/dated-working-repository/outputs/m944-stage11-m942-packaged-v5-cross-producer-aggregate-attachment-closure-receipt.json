@@ -1,0 +1,89 @@
+{
+  "milestone": "M944",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY AGGREGATE ATTACHMENT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Attach the exact M942 packaged v5 cross-producer lifecycle receipt to the Stage 11 aggregate ledger as one strict typed producer-scoped non-certifying field without rerunning the runtime, changing counts, or promoting authority.",
+  "inputs": [
+    "outputs/m943-stage11-post-m942-packaged-cross-producer-observation-reconciliation-closure-receipt.json",
+    "outputs/m942-stage11-fresh-v5-packaged-desktop-observation-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-packaged-cross-producer-aggregate-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "tests/project-stage11-packaged-cross-producer-aggregate-evidence.test.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "evidence": {
+    "sourceMilestone": "M942",
+    "sourceReceipt": "outputs/m942-stage11-fresh-v5-packaged-desktop-observation-closure-receipt.json",
+    "operation": "dicebox.project.cross-producer.packaged-conformance",
+    "target": "dbx:project:desktop-cross-producer-commit-recovery-self-test-v5",
+    "assetBindingCommitGeneration": 2,
+    "backupPromotionRestoredGeneration": 2,
+    "packagedLifecycleObserved": true,
+    "proposalHistoriesCommitted": true,
+    "foreignStatePreserved": true,
+    "noFoundryWrite": true,
+    "processClosedAndAbsent": true,
+    "runtimeRetry": false,
+    "aggregateAttachment": "one-cross-producer-packaged-producer-scoped-non-certifying",
+    "driftRejected": "source receipt identity, v5 target, lifecycle result, artifact/mode, closure/process absence, limits, authority, count, or non-certification drift"
+  },
+  "boundary": {
+    "producerScopedOnly": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryAuthority": true,
+    "noFoundryWrite": true,
+    "noForeignProjectMutation": true,
+    "aggregateAuthority": "not-granted",
+    "countsChanged": false,
+    "foreignStatePreserved": true,
+    "runtimeRetry": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedAttachmentSuite": "PASS: 2 files; 18 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "negativeCoverage": "PASS: altered mode, visible lifecycle result, unknown field, authority promotion, and foreign-state mutation inputs fail closed",
+    "databaseRebuildAndVerifyBeforeClosure": "PENDING: M944 closure records not yet added",
+    "diffCheck": "PASS: git diff --check; only LF-to-CRLF normalization warnings",
+    "artifactAttachment": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-packaged-cross-producer-aggregate-evidence.ts",
+      "sha256": "82631171FBEC4AD930A1C92ECF752E123F3F88ECFEBE15FF3CD83632A60014B0"
+    },
+    "aggregateLedger": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "sha256": "92F810BCD4C99F58B05176BFC0BD4743F1C06FF33390701F4DC5E989FD2E0E2C"
+    },
+    "focusedAttachmentTest": {
+      "path": "tests/project-stage11-packaged-cross-producer-aggregate-evidence.test.ts",
+      "sha256": "03EE61AAD3D5BE4C81662DC432310AB2D50A2E3D3D3121E8C7CB7613058D7BA8"
+    },
+    "aggregateLedgerTest": {
+      "path": "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+      "sha256": "47A5E18FD47966D496D62E3FB3D64264B55EE673BCE8CC37C29E3BC10D0F1427"
+    }
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "aggregate current authority or Stage 11 acceptance",
+    "direct active-GM/Foundry behavior or an independent Foreman storage reread",
+    "generic execution, project mutation, or provider/credential integration",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform a fresh read-only reconciliation of M944 against the complete Stage 11 matrix and aggregate/current-authority surfaces before selecting any further bounded work."
+}

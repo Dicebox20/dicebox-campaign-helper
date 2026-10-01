@@ -1,0 +1,86 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1169-fixed-candidate-transport-runtime-diagnostic-observation-closure",
+  "milestone": "M1169",
+  "status": "BLOCKED_M1169_FIXED_DIAGNOSTIC_NOT_EXPOSED",
+  "evidenceClass": "runtime-observation",
+  "operation": "dicebox.stage12.fixed-candidate-transport-runtime-diagnostic.observation.closure",
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30001,
+    "fixture": "work/foundry-fixture-data-v2"
+  },
+  "join": {
+    "manual": true,
+    "user": "Gamemaster",
+    "password": "blank",
+    "dropdownUsed": false,
+    "result": "joined-game-as-active-gm"
+  },
+  "visibleRuntimeObservation": {
+    "url": "http://127.0.0.1:30001/game",
+    "title": "Foundry Virtual Tabletop",
+    "activeGmVisible": "Gamemaster [GM]",
+    "fixedCandidateSelector": "m1141-signal-rune",
+    "candidateDiagnosticControlPresent": false,
+    "candidateDiagnosticInvocation": false,
+    "visibleHelperControls": [
+      "dicebox-ascendancy-install",
+      "dicebox-ascendancy-repair",
+      "dicebox-program-scene-slice",
+      "dicebox-program-scene-inverse",
+      "dicebox-program-scene-update-witness",
+      "dicebox-program-scene-update-witness-reread",
+      "dicebox-runtime-evidence-diagnostic",
+      "dicebox-runtime-profile-diagnostic",
+      "dicebox-current-active-gm-authority-diagnostic",
+      "dicebox-owned-scene-permission-diagnostic",
+      "dicebox-signal-rune-furnishing-preview",
+      "dicebox-signal-rune-partial-install-preview",
+      "dicebox-signal-rune-identity-observation"
+    ],
+    "installRepairControlsObservedNotInvoked": true,
+    "blocker": "The M1164 candidateTransportDiagnostic API method is not exposed through a fixed visible GM scene control. Invoking an API-only method through an arbitrary console or eval path would violate the bounded transport contract."
+  },
+  "gate": {
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "readyClaim": false
+  },
+  "fixtureLifecycle": {
+    "startedOnce": true,
+    "launchGuard": "PASS",
+    "browserLogin": true,
+    "normalStop": "required-force-fallback",
+    "forcedStop": "PASS",
+    "listenerDrain": "PASS 0 remaining",
+    "finalStatus": "STOPPED",
+    "finalListeners": 0,
+    "finalWorldDocumentWrites": 0,
+    "finalBalladTouched": false
+  },
+  "runtime": {
+    "candidateDiagnosticInvoked": false,
+    "candidateInstallInvoked": false,
+    "candidateRepairInvoked": false,
+    "documentsMutated": false,
+    "assetsMutated": false,
+    "sceneWrites": 0,
+    "authorityPromoted": false,
+    "foreignStatePreserved": true,
+    "campaignReread": false,
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "The fixed package-owned candidate transport diagnostic control is not exposed in the current staged runtime, so the M1164 API-only diagnostic could not be safely observed.",
+    "Candidate diagnostic result, authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain unproved."
+  ],
+  "nextBoundary": "M1170: add and locally validate one fixed GM-gated read-only candidate-transport diagnostic scene control; do not invoke install/repair or mutate documents."
+}

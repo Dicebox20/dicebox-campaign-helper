@@ -1,0 +1,59 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m327-stage11-project-selector-focus-observability-repair-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M327",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "projectStoreWrites": 0,
+  "sessionOnlyWrites": 0,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "target": {
+    "surface": "desktop source/build validation",
+    "projectId": null,
+    "packagedInput": false
+  },
+  "implementation": {
+    "source": "apps/campaign-helper-desktop/src/App.tsx",
+    "test": "tests/desktop-project-proposal-review.test.ts",
+    "focusControl": "Existing project-catalog select retains exact ref, autoFocus, and Ctrl+Alt+Shift+F focus helper.",
+    "observability": "Typed projectCatalogFocusStatus is updated only by the existing selector onFocus/onBlur events and rendered as an aria-live no-write status.",
+    "initialValue": "blank Select a project placeholder remains unchanged",
+    "projectSelection": false,
+    "projectPersistence": false,
+    "proposalMutation": false,
+    "renameExecution": false,
+    "provider": false,
+    "credentials": false,
+    "browserStorage": false,
+    "foundry": false,
+    "playerPasswords": false
+  },
+  "validation": {
+    "focusedTests": "PASS: desktop project proposal review source test 4/4",
+    "desktopBuild": "PASS: TypeScript and Vite build",
+    "knowledgeBase": "PASS before implementation: schema-plus-seed rebuild and verifier at 478 sources, 513 facts, 462 decisions, 135 open items, 476 trials",
+    "workflow": "PASS before implementation: Stage 11 proposal-approval-history active, 10/16, recovery mode false",
+    "fullRepositoryGate": "Pending after M327 record synchronization"
+  },
+  "recoveryDisposition": "M327 locally validates focus observability only. Authorize one separate packaged observation to reread the explicit focus status before any selector input.",
+  "selectedNextSlice": {
+    "milestone": "M328",
+    "name": "packaged selector focus observability reread",
+    "scope": "Fresh exact packaged accessibility-first reread of the explicit focus status with the blank catalog; no selector input, project selection, proposal/session mutation, persistence, rename execution, provider, credentials, browser storage, Foundry, or player-password activity."
+  },
+  "doesNotProve": [
+    "packaged focus status behavior",
+    "project-catalog selection",
+    "selected-project rename metadata visibility",
+    "project.rename proposal creation or session lifecycle",
+    "native project-store rename behavior",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

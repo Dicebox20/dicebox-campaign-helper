@@ -1,0 +1,154 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1259-current-foundry-artifact-spec",
+  "operation": "compiler.current-foundry-artifact-spec.m1259",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1259",
+  "status": "PASS_LOCAL_CURRENT_IDENTITY",
+  "evidenceLabel": "local",
+  "observedAt": "2026-09-07",
+  "successorOf": {
+    "receipt": "outputs/m1217-current-foundry-artifact-spec-receipt.json",
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1217",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1217"
+  },
+  "change": "M1259 refreshes the package-owned current artifact specification/verifier from exact current source bytes after M1258 found source/staged/served parity with stale M1217 installer expectations.",
+  "canonicalSpecification": {
+    "schemaVersion": "0.1.0",
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1259",
+    "target": {
+      "packageId": "dicebox-campaign-helper",
+      "packageVersion": "0.1.15",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "adapterId": "program-scene-vertical-slice",
+      "adapterVersion": "0.1.15"
+    },
+    "artifacts": [
+      {
+        "artifactId": "dbx:foundry-artifact:adapter",
+        "kind": "adapter",
+        "version": "0.1.15",
+        "sha256": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+        "source": "packages/dicebox-foundry/src/program-scene-vertical-slice.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:installer",
+        "kind": "installer",
+        "version": "0.1.15",
+        "sha256": "579f96e4948bbfc7b508f29cbde57e2dd331ddee89c6be1f0464f9eaffbfe731",
+        "source": "packages/dicebox-foundry/src/ascendancy-installer.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:package",
+        "kind": "package",
+        "version": "0.1.15",
+        "sha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+        "source": "packages/dicebox-foundry/ascendancy-campaign-package.json"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:runtime",
+        "kind": "runtime",
+        "version": "14.367",
+        "sha256": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b",
+        "source": "C:/Program Files/Foundry Virtual Tabletop/Foundry Virtual Tabletop.exe"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:worker",
+        "kind": "worker",
+        "version": "0.1.15",
+        "sha256": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+        "source": "packages/dicebox-foundry/src/foundry-live-bridge.js"
+      }
+    ],
+    "specSha256": "4891515e0b4a37cc180c5245991d218e79cca595146a1977b03b4cfb06e7095c",
+    "mutation": "disabled-until-exact-runtime-gate",
+    "noWrite": true
+  },
+  "verifierExpectation": {
+    "schemaVersion": "0.1.0",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1259",
+    "sourceSpecId": "dbx:foundry-spec:current-product-0.1.15-m1259",
+    "sourceSpecSha256": "4891515e0b4a37cc180c5245991d218e79cca595146a1977b03b4cfb06e7095c",
+    "target": {
+      "packageId": "dicebox-campaign-helper",
+      "packageVersion": "0.1.15",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "adapterId": "program-scene-vertical-slice",
+      "adapterVersion": "0.1.15"
+    },
+    "expectedArtifacts": [
+      {
+        "artifactId": "dbx:foundry-artifact:adapter",
+        "kind": "adapter",
+        "version": "0.1.15",
+        "sha256": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+        "source": "packages/dicebox-foundry/src/program-scene-vertical-slice.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:installer",
+        "kind": "installer",
+        "version": "0.1.15",
+        "sha256": "579f96e4948bbfc7b508f29cbde57e2dd331ddee89c6be1f0464f9eaffbfe731",
+        "source": "packages/dicebox-foundry/src/ascendancy-installer.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:package",
+        "kind": "package",
+        "version": "0.1.15",
+        "sha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+        "source": "packages/dicebox-foundry/ascendancy-campaign-package.json"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:runtime",
+        "kind": "runtime",
+        "version": "14.367",
+        "sha256": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b",
+        "source": "C:/Program Files/Foundry Virtual Tabletop/Foundry Virtual Tabletop.exe"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:worker",
+        "kind": "worker",
+        "version": "0.1.15",
+        "sha256": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+        "source": "packages/dicebox-foundry/src/foundry-live-bridge.js"
+      }
+    ],
+    "generatedFromCanonicalSpec": true,
+    "mutation": "disabled-until-exact-runtime-gate",
+    "noWrite": true
+  },
+  "descriptorTransition": {
+    "previousM1217InstallerSha256": "a63b40022301916e7f756946aa8191136c871d9757c71aa744b31a1990d46d7c",
+    "currentInstallerSha256": "579f96e4948bbfc7b508f29cbde57e2dd331ddee89c6be1f0464f9eaffbfe731",
+    "descriptorDriftReconciled": true
+  },
+  "packageTransition": {
+    "previousM1217PackageSha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+    "currentPackageSha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+    "packageUnchanged": true
+  },
+  "runtimeEvidence": {
+    "staticRuntimeHashOnly": true,
+    "currentRuntimeProfile": "not-observed",
+    "servedPackageParity": "not-observed-after-source-refresh",
+    "activeGm": "not-claimed"
+  },
+  "noFoundryLaunch": true,
+  "noFixtureWrite": true,
+  "noInstall": true,
+  "noUpload": true,
+  "foreignStatePreserved": true,
+  "readyClaim": false,
+  "doesNotProve": [
+    "exact-v4 staged parity after M1259",
+    "served or loaded M1259 identity",
+    "installer preview, approval, or apply",
+    "native bindings or persistent-world promotion",
+    "Regionwright mechanics or player behavior",
+    "Stage 12 acceptance or Ready-to-Play"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1222",
+  "status": "PASS_LOCAL_TOOLCHAIN",
+  "evidenceClass": "local",
+  "dependencies": {
+    "@playwright/test": "1.63.0",
+    "@axe-core/playwright": "4.13.0"
+  },
+  "commands": {
+    "utilitySmoke": "npm run test:utility-e2e",
+    "accessibilitySmoke": "npm run test:utility-a11y",
+    "sbom": "npm sbom --package-lock-only --sbom-format=cyclonedx --sbom-type=application"
+  },
+  "results": {
+    "utilitySmoke": "2 passed",
+    "accessibilitySmoke": "1 passed",
+    "sbom": { "bomFormat": "CycloneDX", "specVersion": "1.5", "components": 192 },
+    "packageTypecheck": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS"
+  },
+  "boundaries": {
+    "defaultTarget": null,
+    "workers": 1,
+    "authentication": "not attempted",
+    "fixture": "not started",
+    "runtimeAuthority": "not claimed",
+    "readyClaim": false
+  }
+}

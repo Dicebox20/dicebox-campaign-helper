@@ -1,0 +1,55 @@
+{
+  "operation": "dicebox.stage12.m1064.campaign-bound-m7-furnishing-plan-fixture.closure",
+  "status": "PASS",
+  "milestone": "M1064",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "SRC-M1064-STAGE12-CAMPAIGN-BOUND-M7-FURNISHING-PLAN-FIXTURE-AUTHORIZATION",
+    "D-M1064-STAGE12-CAMPAIGN-BOUND-M7-FURNISHING-PLAN-FIXTURE-AUTHORIZATION",
+    "F-M1063-CLOSURE",
+    "F-063",
+    "F-064",
+    "D-192",
+    "D-194"
+  ],
+  "changedPaths": [
+    "packages/dicebox-compiler/src/ascendancy-furnishing-plan-fixture.ts",
+    "packages/dicebox-compiler/src/index.ts",
+    "tests/ascendancy-furnishing-plan-fixture.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "outputs/m1064-stage12-campaign-bound-m7-furnishing-plan-fixture-closure-receipt.json"
+  ],
+  "implementation": {
+    "fixture": "createAscendancyFurnishingPlanFixture binds the existing dbx:blueprint:central-core-control-chamber and dbx:scene:central-core-control-chamber to six deterministic furnishing items: Tile, Token, AmbientLight, AmbientSound, Drawing, and Note.",
+    "relationships": "The fixture preserves dbx:anchor:core-aleister-station through one near-anchor relation for the station Token.",
+    "assets": "Only three approved fixture asset identities are resolved for texture, token, and audio roles; the returned M7 plan exposes hashes/roles but no runtime locator paths.",
+    "boundary": "The plan emits exact canonical embedded-document API steps and readback declarations, preserves the source Spatial Blueprint, and remains disabled-until-exact-runtime-gate with no execute or raw Foundry document data."
+  },
+  "validation": {
+    "focusedTests": "PASS: tests/ascendancy-furnishing-plan-fixture.test.ts, tests/furnishing-projection-plan.test.ts, tests/campaign-package.test.ts, and tests/ascendancy-installer.test.ts passed 4 files / 12 tests.",
+    "packageBuild": "PASS: npm run build:packages; TypeScript compiler completed with no errors.",
+    "desktopBuild": "PASS: npm run desktop:build; TypeScript checks and Vite production build completed successfully. Existing chunk-size warning remains non-blocking.",
+    "workflowCheck": "PASS before closure: 11/16 gates, zero violations, scene-authoring-breadth active, readyClaim false.",
+    "runtimeBoundary": "PASS: no campaign-package change, installer behavior change, Foundry session, document mutation, asset transfer, Blueprint edit/promotion, project mutation, Ballad access, player surface, provider, credential, account, or player-password action occurred."
+  },
+  "observation": {
+    "disposition": "PASS LOCAL COMPILER FIXTURE EVIDENCE",
+    "meaning": "M1064 supplies campaign-bound M7 plan evidence over an existing authoritative Blueprint without turning plan declarations into native runtime documents or changing the package/installer.",
+    "nextGap": "M1065: perform a read-only reconciliation of M1064 against the Stage 12 checklist, M7 readback boundary, Spatial Blueprint ownership, and exact runtime gates before selecting further work.",
+    "certificationBoundary": "Stage 12 remains active and non-certifying; Stage 11 remains blocked; Ready-to-Play remains false; Ballad and player surfaces remain untouched."
+  },
+  "doesNotProve": [
+    "native placeable creation",
+    "asset upload or media deployment",
+    "live Scene readback",
+    "package or installer integration",
+    "Spatial Blueprint promotion",
+    "live Ballad behavior",
+    "Stage 12 acceptance",
+    "Ready-to-Play"
+  ],
+  "nextAction": "Perform only M1065: read-only reconcile the M1064 campaign-bound M7 fixture against the Stage 12 checklist and cross-plane authority before selecting any later boundary."
+}

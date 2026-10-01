@@ -1,0 +1,155 @@
+{
+  "milestone": "M962",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY FINAL ACCEPTANCE-GAP MAP; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Map four partial Stage 11 clauses to direct evidence and explicit gaps across all eleven producer families.",
+  "clauses": {
+    "aggregateProvenanceAndCoverage": "Complete aggregate provenance and every-producer coverage",
+    "directCurrentAuthority": "Direct current-authority evidence sufficient for generic/every-document use",
+    "completeApplyReceiptCoverage": "Complete apply, receipt, and authoritative reread coverage",
+    "unifiedLifecycle": "Unified stale/cancelled/rejected/unknown/recovered/undo/redo lifecycle across producers"
+  },
+  "producerFamilyMatrix": [
+    {
+      "family": "read-only-inspection-and-compile",
+      "boundedEvidence": "Read-only inspection and compile paths are separately covered.",
+      "aggregateProvenanceAndCoverage": {"status":"gap","evidence":"Non-mutating evidence is direct but excluded from mutating acceptance.","missing":"No mutating producer contribution."},
+      "directCurrentAuthority": {"status":"gap","evidence":"No mutation authority is exercised.","missing":"No current authority proof for mutation."},
+      "completeApplyReceiptCoverage": {"status":"gap","evidence":"No apply path.","missing":"Apply/receipt lifecycle is not applicable to this non-mutating family."},
+      "unifiedLifecycle": {"status":"gap","evidence":"Inspection evidence only.","missing":"No mutating lifecycle states."}
+    },
+    {
+      "family": "workspace-open-and-recent-order-metadata",
+      "boundedEvidence": "Typed load and catalog/read paths exist.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"Typed read paths are identified.","missing":"Generalized mutation provenance remains partial."},
+      "directCurrentAuthority": {"status":"gap","evidence":"Read/catalog evidence only.","missing":"No generic current mutation authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Read receipts exist.","missing":"No complete apply and reread envelope."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Metadata transitions are bounded.","missing":"Unified stale/unknown/recovery/undo/redo behavior remains absent."}
+    },
+    {
+      "family": "ordinary-project-persistence",
+      "boundedEvidence": "Bounded create, save, save-as, and rename slices are closed.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"Multiple operation-specific receipts are indexed.","missing":"No aggregate generic lifecycle envelope for every persistence path."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Operation-specific local authority is bounded.","missing":"No generic/every-document current authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Selected apply/reread receipts exist.","missing":"Complete coverage across all persistence producers is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Selected save/rename/create redo evidence exists.","missing":"One unified lifecycle across stale/cancelled/rejected/unknown/recovered/undo/redo is absent."}
+    },
+    {
+      "family": "in-memory-project-editing-and-navigation",
+      "boundedEvidence": "Bounded add-Scene and persistence slices are closed.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"In-memory and persistence receipts are indexed.","missing":"Aggregate editor/navigation provenance remains partial."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Operation-specific local evidence exists.","missing":"No generic editor authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Bounded in-memory receipts exist.","missing":"Complete apply/reread coverage across navigation/editing is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Selected add-Scene redo evidence exists.","missing":"Unified editor lifecycle and recovery remain partial."}
+    },
+    {
+      "family": "asset-import-and-binding",
+      "boundedEvidence": "Background, handout, audio, token, and selected recovery paths are role-specific.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"Role-specific asset receipts are attached.","missing":"Shared generic history and cross-role coverage remain partial."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Role-specific operation authority is bounded.","missing":"No generic asset/document authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Selected asset apply/reread receipts pass.","missing":"Every asset role and producer apply/receipt coverage is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Role-specific redo evidence exists.","missing":"Shared stale/unknown/recovery/undo/redo lifecycle remains partial."}
+    },
+    {
+      "family": "legacy-migration-persistence",
+      "boundedEvidence": "Typed migration session and reread evidence exists.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"Migration provenance is typed and bounded.","missing":"Generic execution acceptance remains partial."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Operation-specific migration authority is bounded.","missing":"No generic migration authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Migration persistence/reread receipt exists.","missing":"Complete apply/receipt coverage across all migration paths is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Typed migration states are recorded.","missing":"Unified lifecycle integration remains partial."}
+    },
+    {
+      "family": "backup-authoritative-promotion",
+      "boundedEvidence": "Bounded packaged lifecycle and reread evidence exists.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"One packaged recovery lifecycle is recorded.","missing":"Broader every-producer recovery coverage remains partial."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Promotion authority is operation-specific.","missing":"No generic recovery authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Packaged promotion/reread receipt exists.","missing":"Complete apply/receipt coverage across recovery producers is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"One recovery lifecycle is bounded.","missing":"Unified unknown/recovered/undo/redo lifecycle remains partial."}
+    },
+    {
+      "family": "missing-asset-restore",
+      "boundedEvidence": "Current packaged load, preview, approval, apply, restore, and reread evidence passes.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"Current packaged restore evidence is direct.","missing":"Aggregate every-producer acceptance remains partial."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Role-specific packaged authority is bounded.","missing":"No generic/every-document current authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Packaged restore apply/reread passes.","missing":"Cross-producer completeness is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Restore state is bounded.","missing":"Unified stale/unknown/recovery/undo/redo remains partial."}
+    },
+    {
+      "family": "missing-asset-detach",
+      "boundedEvidence": "Current packaged lifecycle and authoritative reread evidence passes.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"Current packaged detach evidence is direct.","missing":"Aggregate every-producer acceptance remains partial."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Role-specific packaged authority is bounded.","missing":"No generic/every-document current authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Packaged detach apply/reread passes.","missing":"Cross-producer completeness is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Detach state is bounded.","missing":"Unified stale/unknown/recovery/undo/redo remains partial."}
+    },
+    {
+      "family": "broken-scene-reference-detach",
+      "boundedEvidence": "Current packaged lifecycle and authoritative reread evidence passes.",
+      "aggregateProvenanceAndCoverage": {"status":"partial","evidence":"Current packaged broken-reference evidence is direct.","missing":"Aggregate every-producer acceptance remains partial."},
+      "directCurrentAuthority": {"status":"partial","evidence":"Role-specific packaged authority is bounded.","missing":"No generic/every-document current authority."},
+      "completeApplyReceiptCoverage": {"status":"partial","evidence":"Packaged detach apply/reread passes.","missing":"Cross-producer completeness is unproven."},
+      "unifiedLifecycle": {"status":"partial","evidence":"Broken-reference recovery state is bounded.","missing":"Unified stale/unknown/recovery/undo/redo remains partial."}
+    },
+    {
+      "family": "test-owned-fixture-setup-and-stage-receipts",
+      "boundedEvidence": "Fixture and receipt infrastructure provides bounded evidence.",
+      "aggregateProvenanceAndCoverage": {"status":"gap","evidence":"Infrastructure receipts identify sources and stages.","missing":"Test infrastructure is not a user mutating producer."},
+      "directCurrentAuthority": {"status":"gap","evidence":"Fixture authority observations are redacted/non-certifying.","missing":"No product authority is conferred by test infrastructure."},
+      "completeApplyReceiptCoverage": {"status":"gap","evidence":"Receipts support bounded tests.","missing":"Infrastructure cannot satisfy user-producer apply coverage."},
+      "unifiedLifecycle": {"status":"gap","evidence":"Fixture lifecycle supports evidence capture.","missing":"Infrastructure is not the unified user lifecycle."}
+    }
+  ],
+  "summary": {
+    "stage11PartialClauses": 4,
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "partial",
+    "aggregateAuthority": "not-granted",
+    "runtime": "parked",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "selection": {
+    "nextMilestone": "M963",
+    "scope": "One exact named producer/operation evidence slice addressing the smallest remaining aggregate current-authority or unified lifecycle gap.",
+    "readOnlyAuditComplete": true,
+    "codeChanges": 0,
+    "runtimeRerun": false,
+    "documentWrites": 0,
+    "genericExecutor": false,
+    "authorityPromotion": false,
+    "playerPasswords": false,
+    "stage11Acceptance": false,
+    "stage12": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "knowledgeBaseBeforeClosure": "PASS: 1485 sources; 1215 facts; 1124 decisions; 804 trials",
+    "workflowBeforeClosure": "PASS: 10 of 16 gates; active proposal-approval-history; Stage 11 BLOCKED; Stage 12 LOCKED; ready false",
+    "sourceAudit": "PASS: typed producer summary and aggregate/current-authority surfaces reread",
+    "gapCompleteness": "PASS: 4 clauses mapped across 11 producer families"
+  },
+  "limits": {
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "documentWrites": 0,
+    "documentUpdateInvoked": false,
+    "genericExecutor": false,
+    "storageInspected": false,
+    "projectMutated": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "next": "Perform only M963: one exact named producer/operation bounded aggregate current-authority or unified lifecycle evidence slice.",
+  "receiptVersion": "0.1.0"
+}

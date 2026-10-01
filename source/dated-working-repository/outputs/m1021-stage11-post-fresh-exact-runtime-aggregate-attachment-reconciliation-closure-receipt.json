@@ -1,0 +1,97 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1021",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; M1022 SELECTED",
+  "evidenceClass": "deterministic",
+  "scope": "Reconcile M1020’s fresh exact-runtime aggregate attachment against the complete Stage 11 authority matrix without promoting authority or reopening runtime work.",
+  "inputs": {
+    "attachmentSource": "apps/campaign-helper-desktop/src/project-stage11-fresh-exact-runtime-evidence-attachment.ts",
+    "aggregateSource": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "attachmentReceipt": "outputs/m1020-stage11-fresh-exact-runtime-aggregate-attachment-closure-receipt.json",
+    "runtimeReceipt": "outputs/m1018-stage11-host-window-recovery-and-final-exact-runtime-reread-receipt.json",
+    "workflowCard": "docs/ACTIVE-PROGRAM-SLICE.json",
+    "roadmap": "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "knowledgeBase": "database/dicebox_campaign_helper_knowledge.sqlite"
+  },
+  "reconciliation": {
+    "kbSummary": {
+      "sources": 1598,
+      "facts": 1270,
+      "decisions": 1235,
+      "openItems": 135,
+      "trials": 859,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "attachment": "freshExactRuntimeEvidenceAttachment present and strict typed",
+    "runtimeSourceIdentity": "M1018 exact receipt with SHA-256 C64E7137308D211BAE4B7C0DD72E239C317C06EE26CE17690205934FA88B4D7C",
+    "target": "dbx-test-world / Foundry 14.367 / dnd5e 5.3.3 / DiceBox 0.1.15 / port 30001",
+    "browser": "Chrome external browser / 1920x863 default viewport",
+    "visibleUser": "Gamemaster [GM]",
+    "visibleScene": "DiceBox Tram Routing Projection",
+    "supervisor": "PID 16128 / listener and HTTP ownership PASS",
+    "diceboxControls": 3,
+    "foundryControls": 8,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "adminPasswordConfigured": false,
+    "extensionNoiseClassified": true,
+    "counts": "11 producer families; 14 modeled operations; 16 direct projections; 8 matrix redo bindings; 9 aggregate/current-authority redo entries; 10 handler/classifier aggregate attachments; 9 semantic aggregate attachments",
+    "countChange": false,
+    "stage11Clauses": "4 PARTIAL",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "crossProducerContinuity": "unproven",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "selectedGap": {
+    "milestone": "M1022",
+    "description": "Reconcile the fresh exact-runtime attachment into the separate current-authority linkage/index surface as one strict non-certifying producer-scoped reference, without collapsing aggregate/current-authority count scopes.",
+    "requiredBoundaries": [
+      "preserve exact M1018 receipt identity and M1020 attachment identity",
+      "preserve 8 matrix redo bindings versus 9 aggregate/current-authority redo entries and all other counts",
+      "preserve current authority PARTIAL and aggregate authority NOT_GRANTED",
+      "preserve runtime PARKED, four PARTIAL Stage 11 clauses, Stage 12 LOCKED, and readyClaim false",
+      "do not invoke runtime, browser, Foundry, mutation, credentials, player passwords, or authority promotion"
+    ]
+  },
+  "validation": {
+    "knowledgeBase": "PASS: schema-plus-seed rebuild and verification passed; read-only summary is 1598 sources, 1270 facts, 1235 decisions, 135 open items, 859 trials, 40 research subjects, 26 milestones.",
+    "kbProvenance": "PASS: M1020 fact F-1303 and M1021 decision D-1312 are returned through the approved read-only query surface.",
+    "focusedTests": "PASS: 3 files / 105 tests, including 31 aggregate-ledger tests, 2 fresh-attachment tests, and 72 KB-query tests.",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflow": "PASS: 10/16 gates, proposal-approval-history active, zero violations, readyClaim false.",
+    "fullRepository": "BASELINE: 244 passing files / 1060 tests; 2 backup-promotion UI self-test source-contract mismatches remain and are present in HEAD outside this reconciliation.",
+    "diff": "PASS: git diff --check; only existing LF/CRLF normalization warnings."
+  },
+  "limits": {
+    "readOnly": true,
+    "runtimeRetry": false,
+    "browserControl": false,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noRecoveryAuthority": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete aggregate current authority",
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer committed/recovered continuity",
+    "project mutation or generic execution",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1021 closure and M1022 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then implement only the separate strict current-authority linkage/index attachment if the read-only reconciliation remains consistent."
+}

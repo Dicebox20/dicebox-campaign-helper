@@ -1,0 +1,67 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1178-stage12-candidate-specific-write-adapter-closure",
+  "operation": "stage12.candidate-specific-write-adapter.closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1178",
+  "status": "CLOSED_M1178_LOCAL_CANDIDATE_WRITE_ADAPTER_ARTIFACT_REFRESH",
+  "evidenceLabel": "local",
+  "observedAt": "2026-09-06",
+  "summary": "Implemented and locally validated one fixed package-owned Signal/Rune candidate-specific write boundary. The control accepts no selector, document ID, payload, or arbitrary execution input; it gates exact Foundry 14.367/dnd5e 5.3.3 and current active GM, presents a fixed preview through DialogV2.confirm, requires explicit approval, rereads before and after the reviewed installer path, preserves foreign state, and returns UNKNOWN with retryAllowed false after an uncertain write outcome.",
+  "candidate": {
+    "candidateId": "m1141-signal-rune",
+    "selectedRoomIds": ["dbx:room:signal-frequency-chamber", "dbx:room:rune-mechanism-chamber"],
+    "excludedRoomIds": ["dbx:room:ascendancy-tram-depot", "dbx:room:central-core-control-chamber"],
+    "controlId": "dicebox-ascendancy-signal-rune-create",
+    "operation": "ascendancy.signal-rune-candidate.create"
+  },
+  "implementation": {
+    "installer": "packages/dicebox-foundry/src/ascendancy-installer.js",
+    "installerSha256": "482b955526aabe9724c218c939723932c87380b207ebc18713c2292da5e59ad8",
+    "installerPreviousSha256": "600f24da6339b2557c9969391085e0950a02e63008f290cecb2bf89f4f916e53",
+    "artifactSpecGenerator": "tools/write-m1178-current-foundry-artifact-spec.ts",
+    "artifactSpecGeneratorSha256": "cdadfd44583806e24f44510a9d151d273a92008a542043a9e463c374f2446134",
+    "artifactSpecReceipt": "outputs/m1178-current-foundry-artifact-spec-receipt.json",
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1178",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1178",
+    "specSha256": "11ef80e7098f9cb16e2b7afe5c47816f2c105c0e6e729800650ddf077c477ae9",
+    "stagedServed": "not-attested-local-only"
+  },
+  "validation": {
+    "focusedTestFiles": 6,
+    "focusedTestsPassed": 21,
+    "focusedCommand": "npx vitest run tests/ascendancy-installer.test.ts tests/current-foundry-artifact-spec-m1178.test.ts tests/current-foundry-artifact-spec-m1172.test.ts tests/ascendancy-signal-rune-fresh-scene-approval-envelope.test.ts tests/ascendancy-signal-rune-fresh-scene-candidate-preview.test.ts tests/ascendancy-signal-rune-approval-envelope.test.ts --configLoader runner --no-file-parallelism --pool=forks --maxWorkers=1 --minWorkers=1",
+    "packageTypecheck": "PASS",
+    "artifactGenerator": "PASS_SOURCE_ONLY_SUCCESSOR",
+    "artifactVerifierReread": "PASS",
+    "diffCheck": "PASS",
+    "fullSuiteSnapshot": {
+      "testFilesPassed": 278,
+      "testFilesTotal": 281,
+      "testsPassed": 1185,
+      "testsTotal": 1189,
+      "knownPreexistingFailures": [
+        "tests/backup-promotion-ui-selftest.test.ts: two source-contract assertions fail on unrelated pre-existing desktop UI text",
+        "tests/backup-promotion-ui-selftest.test.ts: one bounded-blocker source-contract assertion fails on unrelated pre-existing desktop UI text"
+      ],
+      "m1178StaleExpectationsRepaired": [
+        "tests/current-foundry-artifact-spec.test.ts installer hash updated to current M1178 source identity",
+        "tests/knowledge-base-query.test.ts summary counts updated to rebuilt M1178 KB"
+      ]
+    }
+  },
+  "runtime": {
+    "staging": false,
+    "servedGet": false,
+    "fixtureOpened": false,
+    "manualGamemasterJoin": false,
+    "writeControlInvoked": false,
+    "installerInvoked": false,
+    "documentMutation": false,
+    "assetMutation": false,
+    "sceneMutation": false,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "nextBoundary": "M1179 exact-Gamemaster fixture staging and one separately authorized fixed Signal/Rune create-control observation; blank password, explicit approval, authoritative reread, and final STOPPED/no-listener/zero-write/foreign-state reread required."
+}

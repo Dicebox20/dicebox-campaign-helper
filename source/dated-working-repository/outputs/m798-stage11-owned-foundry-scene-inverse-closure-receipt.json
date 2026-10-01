@@ -1,0 +1,19 @@
+{
+  "milestone": "M798",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "One exact helper-owned Program Scene inverse preview/delete/reread adapter and fixture tests only.",
+  "artifacts": {
+    "adapter": {"path": "packages/dicebox-foundry/src/program-scene-vertical-slice.js", "sha256": "9480A4CC60D8EB4259240A1DA1B14FCBCEB0669968454E422A7DB74FA835B5D0"},
+    "test": {"path": "tests/program-scene-vertical-slice.test.ts", "sha256": "AEABF24C2BFD01A0984061D154C066A4229F33BA75923401C1DDBC49A4E67625", "result": "9 tests passed"}
+  },
+  "inverse": {
+    "target": "one complete helper-owned Program Scene in dbx-test-world",
+    "preconditions": ["exact target", "elected active GM", "asset attestation", "complete owned-scene reread", "approved opaque inverse token"],
+    "operation": "Scene instance delete only",
+    "postcondition": "owned Scene absent and foreign Scene count unchanged after reread"
+  },
+  "preservation": {"fixtureStaging": false, "liveFoundryAction": false, "projectMutation": false, "providerOrCredentialAction": false, "playerPasswordAction": false},
+  "limits": {"noGenericDeletion": true, "noUpdatePreimageRestore": true, "noExecutionAuthorityBeyondExactOwnedScene": true, "stage11Accepted": false, "stage12Started": false, "readyClaim": false},
+  "next": "Fresh read-only Stage 11 reconciliation before selecting one further bounded gap."
+}

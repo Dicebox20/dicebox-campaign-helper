@@ -1,0 +1,51 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m13-evidence-parity-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 47, "tests": 210, "status": "PASS" },
+    "kbBlockerQuery": {
+      "status": "PASS",
+      "sourceIdExposedByView": true,
+      "sourceProvenanceJoin": true,
+      "readOnlyUri": true
+    },
+    "readinessCertificateQueries": {
+      "programBridge": "PASS",
+      "foundryModule": "PASS",
+      "sixLanes": 6,
+      "blockedWithoutExactRuntime": true,
+      "noWrite": true,
+      "foundryApiDependencies": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 69,
+      "facts": 84,
+      "decisions": 59,
+      "openItems": 21,
+      "activeWork": 19,
+      "trials": 58,
+      "researchSubjects": 40,
+      "milestones": 14
+    }
+  },
+  "notProven": [
+    "Exact Foundry 14.367 client/world certification",
+    "Utility Harness and visible Chrome evidence",
+    "GM/player authority and permission behavior",
+    "Native document operation and authoritative reread behavior",
+    "Timeout/restart/recovery and backup/restore evidence"
+  ],
+  "nextGate": "Run the named module and bridge readiness-certificate queries in the frozen exact Foundry 14.367 / D&D5e 5.3.3 disposable world and retain all six lane receipts before considering Ready-to-Play.",
+  "officialReferences": [
+    "https://foundryvtt.com/api/v14/functions/hookEvents.ready.html",
+    "https://foundryvtt.com/api/v14/functions/hookEvents.updateDocument.html",
+    "https://foundryvtt.com/api/classes/foundry.documents.User.html",
+    "https://foundryvtt.com/api/v14/modules/foundry.documents.html"
+  ]
+}

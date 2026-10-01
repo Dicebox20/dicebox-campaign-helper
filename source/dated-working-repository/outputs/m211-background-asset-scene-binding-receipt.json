@@ -1,0 +1,131 @@
+{
+  "operation": "dicebox.project.background-asset-scene-binding-packaged-restart-receipt",
+  "status": "PASS",
+  "evidenceLabel": "local",
+  "capturedAt": "2026-08-24T14:16:07.5111996-07:00",
+  "scope": "D-244 project schema 0.3.0 background PNG/WebP registration, explicit selected-Scene binding, merge/deduplication, no-write migration, and selected-Scene preview",
+  "project": {
+    "schemaVersion": "0.3.0",
+    "projectId": "dbx:project:desktop-background-asset-self-test",
+    "generation": 2,
+    "sceneCount": 2,
+    "activeSceneId": "dbx:scene:desktop-background-asset-self-test-scene-2",
+    "contentSha256": "648a94fdedc5f00d6180373cd37c567600019119ccf053a09060c3ba4ba0d8e9",
+    "projectFileSha256": "0BCDF1A9A57051C68642370E28DF33F8B60D285AE3B88730DE6F4B543002D62F",
+    "scenes": [
+      {
+        "ordinal": 1,
+        "sceneId": "dbx:scene:desktop-background-asset-self-test-main",
+        "sceneSha256": "d30822ca52c8957f3b41b91def9d2b002f3b9bef80c900a3fa98837903376bb1",
+        "backgroundAssetId": null
+      },
+      {
+        "ordinal": 2,
+        "sceneId": "dbx:scene:desktop-background-asset-self-test-scene-2",
+        "sceneSha256": "6691372bfa2bda9c20f6ebaee52d072b76f6e2788f2185eb63238b6214203615",
+        "backgroundAssetId": "dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460"
+      }
+    ],
+    "assets": [
+      {
+        "assetId": "dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+        "role": "background",
+        "approval": "approved",
+        "sha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+        "mediaType": "image/png",
+        "relativePath": "assets/sha256/431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+        "boundSceneIds": [
+          "dbx:scene:desktop-background-asset-self-test-scene-2"
+        ]
+      }
+    ]
+  },
+  "packagedImportAndSave": {
+    "freshProcess": true,
+    "receiptObserved": true,
+    "generation": 2,
+    "sceneCount": 2,
+    "assetCount": 1,
+    "stableIdentityMatchesContentHash": true,
+    "selectedSceneOnlyBinding": true,
+    "contentAddressedBytesReused": true,
+    "stderrEmpty": true,
+    "exactProcessStoppedAfterPathValidation": true,
+    "log": "DBX_PROJECT_STAGE status=PASS phase=save project=dbx:project:desktop-background-asset-self-test generation=2 sceneRevision=0 selectedX=0 contentSha256=648a94fdedc5f00d6180373cd37c567600019119ccf053a09060c3ba4ba0d8e9 planSha256=none candidates=none scenes=2 assetId=dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460 assetSha256=431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460 bindingScene=dbx:scene:desktop-background-asset-self-test-scene-2 noWrite=true"
+  },
+  "packagedRestartReread": {
+    "freshProcess": true,
+    "receiptObserved": true,
+    "generation": 2,
+    "activeSceneCompiled": "dbx:scene:desktop-background-asset-self-test-scene-2",
+    "assetId": "dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "planSha256": "064512909da53fd1c1e999665dbe9b3053641e49ffc912e40f3c2ae8d52a0b0a",
+    "candidateCount": 2,
+    "blockers": [],
+    "projectFileSha256Before": "0BCDF1A9A57051C68642370E28DF33F8B60D285AE3B88730DE6F4B543002D62F",
+    "projectFileSha256After": "0BCDF1A9A57051C68642370E28DF33F8B60D285AE3B88730DE6F4B543002D62F",
+    "projectMtimeUnchanged": true,
+    "assetFileSha256Before": "431CED6916A2A21A156E38701AFE55BBD7F88969FBBFC56D7FE099D47F265460",
+    "assetFileSha256After": "431CED6916A2A21A156E38701AFE55BBD7F88969FBBFC56D7FE099D47F265460",
+    "assetMtimeUnchanged": true,
+    "projectWriteDuringReread": false,
+    "assetWriteDuringReread": false,
+    "stderrEmpty": true,
+    "exactProcessStoppedAfterPathValidation": true,
+    "log": "DBX_PROJECT_STAGE status=PASS phase=load-and-compile project=dbx:project:desktop-background-asset-self-test generation=2 sceneRevision=0 selectedX=0 contentSha256=648a94fdedc5f00d6180373cd37c567600019119ccf053a09060c3ba4ba0d8e9 planSha256=064512909da53fd1c1e999665dbe9b3053641e49ffc912e40f3c2ae8d52a0b0a candidates=2 scenes=2 assetId=dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460 assetSha256=431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460 bindingScene=dbx:scene:desktop-background-asset-self-test-scene-2 noWrite=true"
+  },
+  "ordinaryStartup": {
+    "restoredNonSelfTestBuild": true,
+    "freshProcess": true,
+    "catalogReadOnlyReceipt": true,
+    "projectHashAndMtimeUnchanged": true,
+    "workspaceIndexHashAndMtimeUnchanged": true,
+    "implicitProjectOpen": false,
+    "implicitWrite": false,
+    "stderrEmpty": true,
+    "exactProcessStoppedAfterPathValidation": true
+  },
+  "verification": {
+    "rustProjectStoreTests": 24,
+    "typescriptTestFiles": 89,
+    "typescriptTests": 405,
+    "desktopProductionBuild": "PASS",
+    "tauriCargoCheck": "PASS",
+    "packagedWindowsBuild": "PASS"
+  },
+  "acceptance": {
+    "explicitByteInput": true,
+    "pngAndWebpSignatureGate": true,
+    "stableAssetRegistration": true,
+    "backgroundRoleOnly": true,
+    "contentAddressedStorage": true,
+    "mergeAndDeduplication": true,
+    "exactSelectedSceneBinding": true,
+    "registrationAndBindingHashBound": true,
+    "legacy020NoWriteMigrationTested": true,
+    "legacy010NoWriteMigrationRetained": true,
+    "explicitSavePromotionTested": true,
+    "missingTamperedMismatchedAndDanglingBlockersTested": true,
+    "unboundSceneDoesNotInferAsset": true,
+    "compilerIndependentOfRegistryOrder": true,
+    "saveAsSourcePreservationRetained": true,
+    "backupAndForeignStatePreservationRetained": true,
+    "accessibleImportControl": true,
+    "foundryWrite": false,
+    "crossProcessLockingCertified": false,
+    "stageEightComplete": false
+  },
+  "sourceFingerprints": {
+    "projectStoreRust": "0F580DABF1AC0959E2ACE52688B55FA7031CC6F890B51656E04CBB516E0FAE58",
+    "tauriCoreRust": "3C28395200B5B444B690E9BB4A240F5BD0DD5390C5EDF61BE7C0590532BD42F4",
+    "frontendProjectStore": "9FD5C3BBB2ADD4B8DB5045EE67348463CD780575C91633370123A6E75A59A8F4",
+    "desktopApp": "3DD82DBE7D314F5FB60168C88E913072C6DAE507BD122029FBAE040364630D51",
+    "sceneModel": "9956B3FEF9D352E29427DECD3A9BF2C083E4B989B790DD2B0DF8B09564AB69C3",
+    "sceneCompiler": "6C6ECA65FBDAAFAFB9C246FF70AD33EBF20D99F03952E6893AA2C5AD2C816C52",
+    "projectWorkspaceTest": "F9FAC58C8A18146195C1B8F1480C859DD4A9744E921C4C4DBD78AC5CCA931808",
+    "sceneCompilerTest": "E48DF82F9DD6227FD7EF955EF32391B41C8A6E90E1FC844963817C4D0C8BC94B",
+    "desktopBoundaryTest": "98C49650CA3E7E32904984379DB5B3DD1FED61CBB71B9293DE59D71B0237EEE3",
+    "knowledgeBaseQueryTest": "0001AECACFC79D7B63CFCC903A413991C221DE4ED011AAAA7DF0ECD5A5C7BF7E"
+  },
+  "noFoundryWrite": true
+}

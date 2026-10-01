@@ -1,0 +1,44 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m8-activity-operation-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "officialReferences": [
+    "https://github.com/foundryvtt/dnd5e/blob/release-5.3.3/module/documents/activity/mixin.mjs",
+    "https://github.com/foundryvtt/dnd5e/wiki/Hooks",
+    "https://github.com/foundryvtt/dnd5e/wiki/Activities"
+  ],
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 34, "tests": 161, "status": "PASS" },
+    "activityOperationPlan": {
+      "strictSchema": "PASS",
+      "officialApiBindings": "PASS",
+      "positiveCanUseAndOwnershipGates": "PASS",
+      "stableIntentFingerprint": "PASS",
+      "rawUseConfigRejection": "PASS",
+      "activeGmHookAndReadBackGates": "PASS",
+      "executionDisabledUntilExactRuntime": "PASS",
+      "nativeOwnerAndOptionalModuleSeparation": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 55,
+      "facts": 70,
+      "decisions": 45,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 44,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Exact target-world Activity registry/configuration and canUse/isOwner semantics",
+    "Activity.use behavior, preUseActivity cancellation, postUseActivity ordering, permissions, active-GM routing, and authoritative state read-back",
+    "Midi/DAE interaction, cross-client sender semantics, and runtime transaction recovery"
+  ],
+  "nextGate": "Bind the disabled Activity operation plan to an exact Foundry 14.367/D&D5e 5.3.3 fixture only after registry, canUse/isOwner, hook cancellation/order, permission, authority, use behavior, and authoritative read-back are proven."
+}

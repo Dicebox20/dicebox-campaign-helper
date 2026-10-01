@@ -1,0 +1,64 @@
+{
+  "operation": "dicebox.stage8.directory-entry-durability.m237-closure",
+  "status": "PASS_LOCAL_CLOSED",
+  "date": "2026-08-26",
+  "scope": "Host-local parent-directory synchronization after final owned project-envelope, workspace-index, asset-registration, exact-byte restore, and detach directory-entry mutations.",
+  "projectId": "dbx:project:desktop-directory-entry-durability-self-test",
+  "directorySyncAttestation": {
+    "status": "PASS",
+    "successfulReceiptField": "directoryEntrySync=true",
+    "coveredPaths": [
+      "project-envelope",
+      "workspace-index",
+      "content-addressed-asset-registration",
+      "exact-byte-restore",
+      "detach"
+    ],
+    "failureBoundary": "A directory sync failure is outcome-unknown and requires authoritative reread before retry."
+  },
+  "packagedWorkspaceAcceptance": {
+    "status": "PASS_FILESYSTEM_EVIDENCE",
+    "projectGeneration": 2,
+    "backupGeneration": 1,
+    "sceneCount": 2,
+    "assetId": "dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "assetSha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "projectContentSha256": "f3700e1bf246923a1961892448b7bf3ec25b1355a43ffcddfab3f4f7afb52751",
+    "backupContentSha256": "e36610e57b7f61a5a9c13d7cea531f7dcfa859aed44db7d897f7a9331c0fe4c0",
+    "typedSyncAssertions": "PASS",
+    "noFoundryWrite": true,
+    "processExitCode": null,
+    "processLifecycle": "UNKNOWN_AFTER_EXPECTED_FILESYSTEM_STATE; exact test-owned executable stopped after evidence capture"
+  },
+  "freshPackagedReread": {
+    "status": "PASS",
+    "trackedFileCountBefore": 2,
+    "trackedFileCountDuring": 2,
+    "trackedFileCountAfter": 2,
+    "byteIdentity": true,
+    "noWrite": true,
+    "noFoundryWrite": true
+  },
+  "localValidation": {
+    "rustProjectStoreTests": "41/41",
+    "focusedDesktopTests": "24/24",
+    "fullNpmValidation": "89 test files / 427 tests",
+    "toolingVerification": "PASS",
+    "workflowCheck": "PASS",
+    "database": {
+      "integrity": "ok",
+      "sources": 293,
+      "facts": 329,
+      "decisions": 278,
+      "trials": 292
+    },
+    "windowsNativeDebugBuild": "PASS"
+  },
+  "excluded": [
+    "universal crash consistency or filesystem durability guarantees",
+    "cleanup, deletion, backup promotion, migration, broader asset or recovery roles",
+    "cross-process or distributed locking authority",
+    "Foundry mutation",
+    "Stage 8 completion, alpha readiness, or vision implementation"
+  ]
+}

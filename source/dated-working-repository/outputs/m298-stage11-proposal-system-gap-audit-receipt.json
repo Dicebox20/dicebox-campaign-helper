@@ -1,0 +1,198 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m298-stage11-proposal-system-gap-audit-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M298",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "preAuditPassedStages": 10,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "knowledgeBasePreflight": {
+    "integrity": "ok",
+    "sources": 417,
+    "facts": 452,
+    "decisions": 401,
+    "trials": 415,
+    "workflowPassedGates": 10,
+    "workflowTotalGates": 16,
+    "activeStage": "proposal-approval-history"
+  },
+  "checklist": [
+    {
+      "line": "inspectable command batches with dependencies, source/provider, hashes, authority, and risk",
+      "status": "PARTIAL",
+      "implemented": [
+        "Foundry IR plans provide canonical dependency order, stable identities, exact plan hashes, and target/profile identity",
+        "release plans and diffs expose component dependencies, API bindings, authority findings, and preservation decisions",
+        "Campaign Director proposals record provider, no-write status, approval requirement, source citations, and base revision",
+        "project-store previews bind exact project generation, content hash, target identity, and approved operation",
+        "Technical Builder receipts record isolated scope, changed paths, hashes, and no implicit integration"
+      ],
+      "missing": [
+        "one versioned generic batch envelope shared by all producers",
+        "normalized per-command dependency, source/provider, authority, and risk fields",
+        "one deterministic batch hash and validation vocabulary independent of producer-specific payloads"
+      ],
+      "evidence": [
+        "packages/dicebox-compiler/src/release-plan.ts",
+        "packages/dicebox-compiler/src/release-diff.ts",
+        "packages/dicebox-compiler/src/staged-executor.ts",
+        "packages/dicebox-director/src/index.ts",
+        "packages/dicebox-codex-adapter/src/index.ts",
+        "apps/campaign-helper-desktop/src/project-store.ts"
+      ]
+    },
+    {
+      "line": "approve/reject/edit, stale invalidation, undo/redo, cancellation, timeout-as-unknown, reread-before-retry, and recovery receipts",
+      "status": "PARTIAL",
+      "implemented": [
+        "transaction and staged-executor state machines require exact approval and model timeout or transport uncertainty as unknown outcome",
+        "transaction journal persistence blocks retry after uncertain durable append and requires reread",
+        "staged Foundry recovery performs explicit authoritative reread before resolution",
+        "Scene history supports deterministic monotonic undo and redo",
+        "Campaign Director conversations support cancellation and retry without granting execution",
+        "project-store approval paths reject stale generation, content hash, identity, and preview state"
+      ],
+      "missing": [
+        "generic reject and edit transitions with durable history",
+        "generic cancellation after approval but before dispatch",
+        "cross-producer stale invalidation and normalized recovery receipts",
+        "undo/redo semantics for producers other than the in-memory Scene history",
+        "one lifecycle that prevents producer-specific transition drift"
+      ],
+      "evidence": [
+        "packages/dicebox-scene/src/commands.ts",
+        "packages/dicebox-compiler/src/transaction.ts",
+        "packages/dicebox-compiler/src/transaction-ledger.ts",
+        "packages/dicebox-compiler/src/transaction-journal-store.ts",
+        "packages/dicebox-compiler/src/staged-executor.ts",
+        "packages/dicebox-bridge/src/journal-executor.ts",
+        "packages/dicebox-director/src/conversation.ts",
+        "apps/campaign-helper-desktop/src/project-store.ts"
+      ]
+    },
+    {
+      "line": "human controls, Campaign Director proposals, Technical Builder patches, and Foundry plans share one review vocabulary without sharing authority",
+      "status": "PARTIAL",
+      "implemented": [
+        "human and AI-fixture Scene edits converge on SceneCommand execution",
+        "Campaign Director proposals remain no-write and approval-required",
+        "Technical Builder jobs remain isolated and explicitly require reviewed integration",
+        "Foundry execution independently requires exact current active-GM authority"
+      ],
+      "missing": [
+        "one shared producer-neutral review vocabulary and status model",
+        "explicit authority-domain separation within that shared vocabulary",
+        "adapters that normalize each producer into the common batch without broadening its authority"
+      ],
+      "evidence": [
+        "packages/dicebox-scene/src/commands.ts",
+        "packages/dicebox-director/src/index.ts",
+        "packages/dicebox-codex-adapter/src/index.ts",
+        "packages/dicebox-compiler/src/staged-executor.ts",
+        "apps/campaign-helper-desktop/src/App.tsx"
+      ]
+    },
+    {
+      "line": "acceptance: every mutating path has preview, explicit approval, deterministic execution, authoritative reread, and recoverable history",
+      "status": "PARTIAL",
+      "implemented": [
+        "project-store and Foundry staged paths have exact preview, explicit approval, deterministic mutation gates, and authoritative reread",
+        "journal execution preserves unknown outcome and recovery boundaries",
+        "SceneCommand execution has deterministic receipts and undo/redo history"
+      ],
+      "missing": [
+        "complete inventory-backed proof that every mutating path participates",
+        "shared durable history covering preview through recovery for all producers",
+        "direct acceptance observation across human, Director, Technical Builder, project-store, and Foundry plan adapters"
+      ],
+      "evidence": [
+        "packages/dicebox-compiler/src/transaction.ts",
+        "packages/dicebox-compiler/src/staged-executor.ts",
+        "packages/dicebox-bridge/src/journal-executor.ts",
+        "apps/campaign-helper-desktop/src/project-store.ts",
+        "packages/dicebox-scene/src/commands.ts"
+      ]
+    }
+  ],
+  "producerInventory": [
+    {
+      "producer": "human Scene controls",
+      "payload": "SceneCommand",
+      "authority": "local project Scene only",
+      "strengths": ["stable origin", "base-revision stale check", "deterministic receipt", "undo/redo"],
+      "schemaGap": "no review batch, risk, provider/source metadata, reject/edit lifecycle, or durable recovery history"
+    },
+    {
+      "producer": "Campaign Director",
+      "payload": "Director proposal / SceneCommand",
+      "authority": "untrusted no-write intent",
+      "strengths": ["provider identity", "citations", "context budget", "approvalRequired", "noWrite", "stale validation"],
+      "schemaGap": "proposal receipt is not a generic batch and cannot represent dependencies or execution/recovery history"
+    },
+    {
+      "producer": "Technical Builder",
+      "payload": "isolated changed-path and patch receipt",
+      "authority": "isolated repository workspace only",
+      "strengths": ["allowlisted scope", "source/readback hashes", "no implicit integration", "reviewed handoff"],
+      "schemaGap": "patch items do not share proposal lifecycle, risk, dependency, approval, or recovery fields"
+    },
+    {
+      "producer": "desktop project store",
+      "payload": "operation-specific preview/approval receipts",
+      "authority": "exact fixed-root project mutation",
+      "strengths": ["exact target", "generation/content hashes", "stale invalidation", "explicit approval", "authoritative reread"],
+      "schemaGap": "many operation-specific schemas duplicate lifecycle concepts and lack one generic history"
+    },
+    {
+      "producer": "compiler release/diff/conflict plans",
+      "payload": "release-specific plans and reviews",
+      "authority": "planning only until separately executed",
+      "strengths": ["dependencies", "bindings", "risk findings", "foreign/unknown preservation"],
+      "schemaGap": "review structures are domain-specific and do not normalize reject/edit/cancel/history"
+    },
+    {
+      "producer": "Foundry staged executor",
+      "payload": "Foundry IR plan and staged transaction journal",
+      "authority": "exact runtime profile plus current active GM",
+      "strengths": ["canonical dependencies", "plan hash", "approval", "deterministic dispatch", "reread", "unknown recovery"],
+      "schemaGap": "strongest execution lifecycle remains Foundry-specific and has no generic reject/edit/undo adapter"
+    }
+  ],
+  "authorityVocabularyConflicts": [
+    "SceneCommand origin identifies human or AI-fixture provenance but is not an approval authority.",
+    "Campaign Director approvalRequired expresses review state but never grants project or Foundry authority.",
+    "Technical Builder integration review governs repository promotion and cannot authorize project or runtime mutation.",
+    "project-store approved booleans authorize one exact local persistence operation but do not represent GM authority.",
+    "compiler previews use authority none/gm while staged execution requires exact approvedByUserId equal to activeGmUserId.",
+    "These concepts must be normalized as distinct review, execution, and target-authority fields rather than collapsed into one approved flag."
+  ],
+  "smallestMissingVerticalSlice": {
+    "id": "generic-proposal-batch-core",
+    "scope": "Add a runtime-neutral, versioned generic proposal-batch schema and pure transition engine with producer/source/provider metadata, authority domain, risk, ordered command dependencies, deterministic content hash, preview state, approve/reject/edit/cancel/stale transitions, timeout-as-unknown, reread-before-retry recovery, and append-only normalized receipts. Keep producer payloads opaque and typed by adapters; do not integrate any mutation path yet.",
+    "reason": "Every Stage 11 clause is blocked by vocabulary and lifecycle drift. A pure shared core is the smallest dependency that can normalize review without merging authority or changing product/runtime state."
+  },
+  "sourceHashes": {
+    "packages/dicebox-scene/src/commands.ts": "79F3E9318684AB0AE5F492E4325298DFF05FFD182F36F880D55E6C47F9EC0DFF",
+    "packages/dicebox-compiler/src/transaction.ts": "E8DAE9F2C2A8BA0038616371341C2B72AF02B0DBC170C86D9E2BE662F0A096F4",
+    "packages/dicebox-compiler/src/transaction-ledger.ts": "FC6132879A3609730E41EF9F7ED393043F5DB03C8EF6D44D7D13CA96600D8A62",
+    "packages/dicebox-compiler/src/transaction-journal-store.ts": "A932D5A061A493DBBF8B9CEAF5EFBD513CCBBB596A6056239F2CF265422562A0",
+    "packages/dicebox-compiler/src/staged-executor.ts": "5AC056BA86CC2C2166549E859D3D2652A11AFA520EBAE5C6CF600E9043CF385C",
+    "packages/dicebox-bridge/src/journal-executor.ts": "B54B6546A21BAA50F9A3A5089762C758FF583254731C4CD2F72BD9BB3FE88B1E",
+    "packages/dicebox-director/src/index.ts": "DFF4903042BDBA2FCF2176797B1F4CA5DF0283982094E4B9881E72CBDD61601C",
+    "packages/dicebox-codex-adapter/src/index.ts": "59E8418FF25C01BFFBFB181E39CEE99B061D8F82F8664DE0C43F55EBD2834C41",
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "apps/campaign-helper-desktop/src/App.tsx": "D3F78B4AC8A787A7C72E92711E66FB6BA7E79E9FD631B1B676C13CC1B3C4F4E9"
+  },
+  "doesNotProve": [
+    "Stage 11 acceptance",
+    "generic proposal-batch implementation",
+    "cross-producer adapter integration",
+    "proposal approval or execution",
+    "project or Foundry mutation",
+    "Ready-to-Play"
+  ]
+}

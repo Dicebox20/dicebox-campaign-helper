@@ -1,0 +1,20 @@
+{
+  "operation": "dicebox.stage12.accessible-semantic-entity-rename-control",
+  "status": "PASS_LOCAL_NONCERTIFYING",
+  "milestone": "M1038",
+  "scope": "selected editable entity rename form bound to the existing human proposal session",
+  "evidence": {
+    "focusedVitest": { "files": 2, "tests": 17, "status": "PASS" },
+    "packageTypecheck": "PASS",
+    "desktopBuild": "PASS",
+    "workflowCheck": "PASS"
+  },
+  "verifiedBehavior": [
+    "exposes a labelled semantic-name control for the selected editable entity",
+    "constructs only M1037 rename-entity commands",
+    "saves only the existing human proposal preview session",
+    "keeps Scene content unchanged until existing approval and Apply",
+    "preserves stable identity, geometry, and the no-direct-write boundary"
+  ],
+  "readyClaim": false
+}

@@ -1,0 +1,100 @@
+{
+  "operation": "stage11-corrected-packaged-cross-producer-evidence-summary-observation",
+  "milestone": "M607",
+  "status": "PARTIAL_PACKAGED_ACCESSIBILITY_EVIDENCE",
+  "capturedAt": "2026-08-30T07:01:49-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "packaged",
+  "artifacts": {
+    "nativeExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "matchesM604": true,
+      "sha256": "6B31EB3465CAFAB908368DD8EB4671D784784D90A3B54BBD0A5EE285B79C4A72",
+      "bytes": 26883072
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-jxIhuPMh.js",
+      "matchesM604": true,
+      "sha256": "39F1883C3F820D45B16301276C61C2B43717F0F0C1D96EC073C615DEF76F6EF7",
+      "bytes": 2060897
+    }
+  },
+  "observation": {
+    "launch": "one bounded explicit launch of the exact M604 executable",
+    "returnedUiWindow": {
+      "title": "DiceBox Campaign Helper",
+      "windowId": 10094600,
+      "app": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+      "uniqueExactTitleMatch": true,
+      "correctedReturnedAppIdentityMatch": true
+    },
+    "accessibilityCapture": true,
+    "accessibilityReadCount": 1,
+    "visibleEvidence": {
+      "aggregateSummaryHeading": "Cross-producer lifecycle evidence: 11 families · aggregate Stage 11 acceptance remains partial",
+      "aggregateSummaryHeadingVisible": true,
+      "elevenFamilyCountVisibleInHeading": true,
+      "familyEntryListVisible": false,
+      "boundedDispositionsVisible": false,
+      "remainingGapsVisible": false,
+      "explicitNonCertifyingSummaryTextVisible": false,
+      "explicitNoExecutionBoundaryForSummaryVisible": false,
+      "typedOperationContractVisible": true,
+      "noGenericExecutorVisibleForTypedContract": true,
+      "noPersistedProject": true,
+      "noProjectSession": true,
+      "noWriteFoundryPreviewBoundary": true,
+      "interpretation": "The exact packaged window was selected and read successfully, but the cross-producer details were not exposed in this accessibility state. This is partial evidence only; the heading cannot certify eleven entries, dispositions, gaps, or authority boundaries."
+    }
+  },
+  "processReread": {
+    "launchedExecutableProcessId": 7812,
+    "desktopProcessCountAfterCleanup": 0,
+    "cargoProcessCountAfterCleanup": 0,
+    "rustcProcessCountAfterCleanup": 0,
+    "cleanup": "The exact executable path was resolved through Win32_Process and the launched PID was stopped; reread found no matching desktop, Cargo, or Rustc process."
+  },
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": false,
+    "artifactSetChanged": false,
+    "launch": true,
+    "accessibilityCapture": true,
+    "accessibilityReadCount": 1,
+    "screenshotCapture": false,
+    "uiHelperRetry": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M607 confirms exact packaged target selection and a direct accessibility read, but only the aggregate partial heading is exposed. The eleven-family entry list, bounded dispositions, remaining gaps, and explicit non-certifying/no-execution detail were not directly observable in this state; no UI expansion or retry is authorized in this boundary."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M608",
+    "title": "Stage 11 M607 partial packaged summary reconciliation",
+    "status": "authorized-next",
+    "scope": "Perform read-only KB and artifact/card/roadmap reconciliation of the M607 partial accessibility result, preserve the exact visible and missing elements, and select the smallest safe local implementation or observation boundary. Do not relaunch, recapture, retry, expand UI, mutate project/session/runtime state, or begin Stage 12."
+  },
+  "changedPaths": [
+    "outputs/m607-stage11-corrected-packaged-cross-producer-evidence-summary-observation-closure-receipt.json"
+  ]
+}

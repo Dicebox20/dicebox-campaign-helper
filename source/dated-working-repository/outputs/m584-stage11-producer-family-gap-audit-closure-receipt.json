@@ -1,0 +1,86 @@
+{
+  "operation": "dicebox.stage11.producer-family-gap-audit",
+  "milestone": "M584",
+  "status": "PASS_LOCAL_READ_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T05:28:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "auditBasis": {
+    "priorReconciliation": "outputs/m583-stage11-acceptance-reconciliation-closure-receipt.json",
+    "selectedDetachClosure": "outputs/m582-stage11-selected-missing-asset-detach-packaged-observation-closure-receipt.json",
+    "brokenReferenceClosure": "outputs/m553-stage11-broken-reference-ui-acceptance-reconciliation-closure-receipt.json",
+    "producerAudits": [
+      "outputs/m338-stage11-proposal-family-acceptance-gap-audit-receipt.json",
+      "outputs/m440-stage11-producer-family-reconciliation-receipt.json",
+      "outputs/m464-stage11-producer-family-reconciliation-receipt.json",
+      "outputs/m496-stage11-producer-clause-coverage-reconciliation-receipt.json"
+    ],
+    "knowledgeBaseQuery": "read-only facts, decisions, trials, and blockers for Stage 11 producer families and selected missing-asset detach"
+  },
+  "stage11Clauses": [
+    {
+      "clause": "inspectable command batches with dependencies, source/provider, hashes, authority, and risk",
+      "status": "PARTIAL",
+      "evidence": "Generic core, cross-producer adapters, typed local-project coverage, and operation-specific project-store batches exist.",
+      "remaining": "Not every current mutating producer is represented in one product-integrated generic review surface; domain-specific repository and Foundry authority remain separate."
+    },
+    {
+      "clause": "approve/reject/edit, stale invalidation, undo/redo, cancellation, timeout-as-unknown, reread-before-retry, and recovery receipts",
+      "status": "PARTIAL",
+      "evidence": "The generic core and bounded local/package slices prove these transitions in selected paths, including M582 typed approval/apply/reread and M466 bounded recovery.",
+      "remaining": "Evidence is distributed across operation-specific history and journals; aggregate every-producer lifecycle coverage remains unproved."
+    },
+    {
+      "clause": "human controls, Campaign Director proposals, Technical Builder patches, and Foundry plans share one review vocabulary without sharing authority",
+      "status": "PARTIAL",
+      "evidence": "Adapter boundaries preserve local-project, repository, and active-GM authority distinctions.",
+      "remaining": "Technical Builder/repository promotion and Foundry desktop execution are separately ordered authority layers, and ordinary human/project-store paths are not one shared product lifecycle."
+    },
+    {
+      "clause": "every mutating path has preview, explicit approval, deterministic execution, authoritative reread, and recoverable history",
+      "status": "PARTIAL",
+      "evidence": "M466 backup promotion, M552 broken-reference reconciliation, and M582 selected missing-asset detach provide bounded packaged evidence; local review and producer closures cover additional paths.",
+      "remaining": "Missing-asset restore still lacks a current packaged visible lifecycle, and no single receipt establishes every producer and recovery family under the current acceptance observation."
+    }
+  ],
+  "producerFamilies": [
+    {"family":"read-only inspection and compile","disposition":"closed read-only and outside mutating acceptance"},
+    {"family":"workspace open and recent-order metadata","disposition":"typed operation-specific load/read paths; generic mutation acceptance not applicable"},
+    {"family":"ordinary project persistence","disposition":"bounded create/save/save-as/rename slices closed; aggregate generic lifecycle remains partial"},
+    {"family":"in-memory project editing and navigation","disposition":"bounded add-Scene and persistence slices closed; aggregate editor lifecycle remains partial"},
+    {"family":"asset import and binding","disposition":"background/handout/audio/token and selected-detach paths are role-specific; shared generic history remains partial"},
+    {"family":"legacy migration persistence","disposition":"typed operation-specific session and reread evidence; generic execution acceptance remains partial"},
+    {"family":"backup-authoritative promotion","disposition":"M466 supplies bounded packaged lifecycle and reread; broader recovery acceptance remains partial"},
+    {"family":"missing asset restore","disposition":"typed approved session exists, but current packaged visible apply/reread lifecycle remains open"},
+    {"family":"missing asset detach","disposition":"M582 supplies current packaged load/preview/approval/apply/detach/reread evidence; full producer acceptance remains partial"},
+    {"family":"broken Scene-reference detach","disposition":"M552 supplies current packaged lifecycle evidence through M553 reconciliation; full producer acceptance remains partial"},
+    {"family":"test-owned fixture setup and stage receipts","disposition":"test infrastructure only; not a user mutating producer"}
+  ],
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M582 closes selected missing-asset detach and M553 records the broken-reference packaged closure, but missing-asset restore remains a comparable current packaged lifecycle gap and the four Stage 11 clauses still require aggregate every-producer evidence."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M585",
+    "name": "read-only missing-asset restore lifecycle reconciliation",
+    "scope": "Read only the typed missing-asset restore route, existing exact-byte restore receipts, proposal/session/review/apply callbacks, fixture and session namespace state, current source/tests, active card, roadmap, and KB; select at most one fresh artifact or packaged observation boundary.",
+    "reason": "M466 and M582 provide current bounded packaged evidence for backup promotion and missing-asset detach, while missing-asset restore remains the smallest comparable recovery producer without current packaged visible lifecycle evidence.",
+    "excluded": ["source edit","build","launch","capture","retry","browser-storage inspection","session operation","fixture cleanup","project/runtime mutation","provider","credential","Foundry","player passwords","Stage 11 acceptance","Stage 12","Ready-to-Play"]
+  },
+  "scope": {
+    "readOnly": true,
+    "sourceEdit": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  }
+}

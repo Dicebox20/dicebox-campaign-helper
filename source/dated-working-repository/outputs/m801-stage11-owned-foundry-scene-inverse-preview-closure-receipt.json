@@ -1,0 +1,23 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M801",
+  "operation": "program-scene.inverse.preview",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "target": {"worldId": "dbx-test-world", "port": 30003, "foundry": "14.367", "system": "dnd5e@5.3.3"},
+  "currentActiveGm": true,
+  "noWrite": true,
+  "authoritativeReread": true,
+  "assetAttestation": "PASS",
+  "ownedScene": {"stableId": "dbx:scene:desktop-shell-fixture", "complete": true},
+  "foreignWorldScenesBefore": 1,
+  "opaqueInverseTokenPresent": true,
+  "confirmationRequired": true,
+  "dialogClosedBy": "Cancel",
+  "deleteInvoked": false,
+  "supervisorAfter": {"status": "PASS", "worldDocumentWrites": 0, "balladTouched": false},
+  "stage11Accepted": false,
+  "stage12Started": false,
+  "readyClaim": false,
+  "nextAction": "Fresh Stage 11 reconciliation; any deletion requires a separately accepted slice and action-time confirmation."
+}

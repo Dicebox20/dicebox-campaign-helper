@@ -1,0 +1,67 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1158-fixed-signal-rune-candidate-installer-transport-implementation",
+  "milestone": "M1158",
+  "status": "PASS_M1158_LOCAL_CANDIDATE_TRANSPORT_IMPLEMENTED_RUNTIME_UNINVOKED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.signal-rune.candidate-installer-transport.implement",
+  "inputs": {
+    "transportDesign": "outputs/m1157-stage12-candidate-specific-transport-design-reconciliation-closure-receipt.json",
+    "candidateId": "m1141-signal-rune",
+    "allowedRooms": [
+      "dbx:room:signal-frequency-chamber",
+      "dbx:room:rune-mechanism-chamber"
+    ],
+    "excludedRooms": [
+      "dbx:room:ascendancy-tram-depot",
+      "dbx:room:central-core-control-chamber"
+    ],
+    "foreignRuntimeScenes": [
+      "AneddhKAAfk5HlsA",
+      "p9Mbi0CJWe9KvJhH"
+    ]
+  },
+  "implementation": {
+    "installerPath": "packages/dicebox-foundry/src/ascendancy-installer.js",
+    "installerSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "testPath": "tests/ascendancy-installer.test.ts",
+    "testSha256": "2BD3777A268C25D5F41E4A6A970EC519381C49373CB9FBA6259752FA79A22718",
+    "candidateGateSha256": "E747F3A95613211CD6340722AD9219F81DD9A3DE010BC5C99403241027D557E0",
+    "transportDesignSha256": "A61482966DBEE1DB7B892BC7C1D75BC091BB6B32A46FA308A641E6D21B1322AA",
+    "compilerIndexSha256": "6F441BC375E96194F4B8DFC0D4E358CE1BBE9DBF2A6246ED8BDBB91673235625",
+    "focusedTests": "PASS 12/12",
+    "packageTypecheck": "PASS"
+  },
+  "transport": {
+    "selector": "fixed-candidate-id:m1141-signal-rune",
+    "filterBeforeLoader": true,
+    "selectedAssetsOnly": true,
+    "selectedRoomSetOnly": true,
+    "unknownRoomPolicy": "reject-before-runtime",
+    "excludedRoomPolicy": "reject-before-runtime",
+    "foreignScenePolicy": "preserve-and-never-adopt",
+    "candidateInstallEntryPoint": "installAscendancySignalRuneCandidate",
+    "candidateRepairEntryPoint": "repairAscendancySignalRuneCandidate"
+  },
+  "gate": {
+    "status": "PASS_LOCAL_IMPLEMENTATION",
+    "runtimeInvoked": false,
+    "installerInvoked": false,
+    "staged": false,
+    "served": false,
+    "documentsMutated": false,
+    "assetsMutated": false,
+    "noWriteDesignBoundary": true,
+    "readyClaim": false
+  },
+  "artifactTransition": {
+    "previousM1154InstallerSha256": "FFFB439942619C5AFFC10E5AB74B43EF9AA3107C989F1551FF5CFCE2E7C5BC83",
+    "currentInstallerSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "canonicalVerifierRefreshRequired": true
+  },
+  "remainingBlockers": [
+    "The M1154 canonical verifier still expects the pre-M1158 installer hash and must be refreshed before artifact-bound promotion reasoning.",
+    "Live document-write/execution authority, authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1159: refresh and verify the current immutable artifact specification/verifier without reopening runtime."
+}

@@ -1,0 +1,74 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1146",
+  "status": "PASS_FAIL_CLOSED_GATE_BLOCKED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.source-staged-served-profile-gate-reconciliation",
+  "implementation": {
+    "sourcePath": "packages/dicebox-compiler/src/ascendancy-signal-rune-source-staged-served-profile-gate.ts",
+    "sourceSha256": "79A25A1EF759D4D1B7F01E0FD92DCBE2ABBC7BDF660044FEE8D5FE4418742BC7",
+    "testPath": "tests/ascendancy-signal-rune-source-staged-served-profile-gate.test.ts",
+    "testSha256": "9373268595B81BF81DB7F8FE08853222DA753CB4C89F9FA800097E47B6732D8C",
+    "toolPath": "tools/write-m1146-source-staged-served-profile-gate.ts",
+    "toolSha256": "72CF52BF807DCBE6EA80A20AB2107488518B184E1C1DB901BA14339C28462957",
+    "compilerIndexSha256": "6AB888D289664EAD0947A505148E733BB38844F52A5B81A9546DDF4BE70FAADB",
+    "packageJsonSha256": "B2868FF52019D0C95C46D29976B3FAA4850A5B388C550B95E97352FFA45BA9EE",
+    "generatedGatePath": "outputs/m1146-stage12-source-staged-served-profile-gate-receipt.json",
+    "generatedGateSha256": "3DAA4E98C8988609EEB1DAE8FD40118A9D4FE4844BCDB5930DDE8D1F79A426D7"
+  },
+  "inputs": {
+    "m1141Receipt": {"path": "outputs/m1141-stage12-foreign-scene-preserving-fresh-scene-candidate-preview-closure-receipt.json", "sha256": "C184EB4B89EA74371AE1A322E356FFB67105DE0F59A3DFA577EF384CA3770A80"},
+    "m1144Receipt": {"path": "outputs/m1144-current-foundry-artifact-spec-receipt.json", "sha256": "2A40DA9760390BABE31E35EDF12521FAE27DD33151EC8A5AC1671BFACCE7B336"},
+    "m1145Receipt": {"path": "outputs/m1145-stage12-exact-fixture-runtime-profile-active-gm-reread-closure-receipt.json", "sha256": "BE68E079EF1BB3B183F188B43721F00CEC4F1F9FA18122E8EEB1E6D2C96C10DC"},
+    "m1142CandidateTestHistoricalDrift": "M1141 historical test hash remains preserved; current candidate test hash is reconciled from M1142 and current bytes.",
+    "m1146CompilerIndexDisposition": "M1146 export changes the current index hash; the historical M1141 export hash remains unedited and is retained as provenance."
+  },
+  "gate": {
+    "status": "BLOCKED",
+    "source": "pass-current-local-candidate-bound",
+    "staged": "blocked-unobserved",
+    "served": "blocked-unobserved",
+    "runtimeProfile": "blocked-incomplete",
+    "profileDiff": "blocked-unavailable",
+    "installerScope": "blocked-candidate-specific-boundary-unresolved",
+    "authority": "blocked-live-write-execution-unproven",
+    "blockers": [
+      "staged-package-byte-parity-unobserved",
+      "served-byte-hash-unobserved",
+      "runtime-profile-incomplete",
+      "runtime-profile-diff-unavailable",
+      "candidate-specific-installer-boundary-unresolved",
+      "live-write-and-execution-authority-unproven"
+    ],
+    "foreignScenesPreserved": ["AneddhKAAfk5HlsA", "p9Mbi0CJWe9KvJhH"],
+    "tramCoreExcluded": true,
+    "noWrite": true,
+    "apply": false,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "dispatch": "disabled",
+    "preserveUnknown": true,
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedGateTests": "2/2 PASS",
+    "packageTypecheck": "PASS",
+    "gateGeneration": "PASS_BLOCKED_RECEIPT",
+    "workflowCheck": "PASS 11/16",
+    "databaseIntegrity": "PASS",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "stage12Accepted": false
+  },
+  "decision": {
+    "sourceGate": "Current M1141 candidate source/test bytes are bound; M1141 historical export/test receipt drift remains preserved and explicitly reconciled.",
+    "promotion": "blocked",
+    "runtimeAction": false,
+    "staging": false,
+    "installer": false,
+    "documentMutation": false,
+    "authorityPromotion": false,
+    "nextBoundary": "M1147: obtain the smallest exact served-byte/profile evidence available through the reviewed read-only path; do not stage or create runtime documents until the gate is closed and approval exists."
+  }
+}

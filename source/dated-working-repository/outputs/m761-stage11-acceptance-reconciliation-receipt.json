@@ -1,0 +1,53 @@
+{
+  "milestone": "M761",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile all four Stage 11 acceptance clauses and eleven producer-family obligations after M760, preserve the partial disposition, and select one fresh bounded next slice.",
+  "sourceState": "Unborn project worktree with no HEAD; M761 is read-only and changes no implementation, project, Foundry, runtime, provider, credential, browser/session, foreign, or player-role password state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Independent broad read-only reconciliation of the active card, roadmap, M743-M760 receipts, reproducible KB, Stage 11 acceptance clauses, and eleven producer-family evidence summaries.",
+    "workerOutcome": "The bounded Terra Extra High worker was shut down after two bounded waits without returning a receipt; the Foreman completed the exact read-only reconciliation locally from the authoritative repository, active card, receipts, and rebuilt KB. No worker artifact, implementation, transition, runtime state, or stage changed."
+  },
+  "clauses": {
+    "claimProvenance": "PARTIAL: M743's sixteen exact terminal-history projections and M745-M760 closure receipts are provenance-linked, but aggregate producer execution and commit provenance is not proven.",
+    "reviewAndAuthority": "PARTIAL: human-review, local-project target, operation-specific apply authority, and no-generic-executor vocabulary remain explicit; current execution authority is not established across producer families.",
+    "applyAndReceipts": "PARTIAL: fourteen typed bridges/index plus direct M750/M752 project.save, M754 project.rename, M756 project.add-scene.persist, M758 project.asset.bind, and M760 project.asset.register-audio handler/classifier and redo-bridge evidence are recorded; aggregate apply and commit continuity and packaged/runtime authority remain incomplete.",
+    "lifecycleAndRecovery": "PARTIAL: M745 provides 42 review-terminal rows, M746 42 applying/unknown rows, M747 56 recovery-result rows, M748 28 undo/redo rows, M750/M752 4 project.save rows, M754 2 project.rename rows, M756 2 project.add-scene.persist rows, M758 2 project.asset.bind rows, and M760 2 project.asset.register-audio rows, for 180 lifecycle/evidence rows. Bounded direct redo evidence has expanded, but aggregate lifecycle, recovery, and live active-GM/Foundry behavior remain unproven."
+  },
+  "producerFamilies": [
+    { "family": "read-only inspection/compile", "status": "closed, non-mutating" },
+    { "family": "workspace open/recent metadata", "status": "operation-specific partial" },
+    { "family": "ordinary project persistence", "status": "bounded slices closed; aggregate partial; project.save, project.rename, and project.add-scene.persist redo bridges closed" },
+    { "family": "in-memory editing/navigation", "status": "bounded slices closed; aggregate partial" },
+    { "family": "asset import/binding", "status": "project.asset.bind and project.asset.register-audio redo bridges closed; remaining roles and aggregate coverage partial" },
+    { "family": "legacy migration persistence", "status": "operation-specific partial" },
+    { "family": "backup-authoritative promotion", "status": "bounded packaged evidence; aggregate partial" },
+    { "family": "missing-asset restore", "status": "current packaged pass; aggregate partial" },
+    { "family": "missing-asset detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "broken Scene-reference detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "test-owned fixture/setup receipts", "status": "infrastructure only; non-certifying" }
+  ],
+  "evidence": {
+    "workflow": "PASS: Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations.",
+    "directProjectionCount": 16,
+    "lifecycleEvidenceRows": 180,
+    "redoBindings": "PASS: project.save, project.rename, project.add-scene.persist, project.asset.bind, and project.asset.register-audio each have bounded operation-specific redo bridge/classifier evidence with exact matched target/revision/hash rereads.",
+    "knowledgeBase": "PASS post-M760 synchronization rebuild and verification: 1185 sources, 1024 facts, 892 decisions, 135 open items, 788 trials, 40 research subjects, and 26 milestones. F-1009 and D-893 were reread through the bounded read-only query surface.",
+    "contradictionReview": "PASS: M743-M760 records, receipts, source/test/card/roadmap evidence, and the rebuilt KB are consistent; no contradiction or authority collapse was found."
+  },
+  "remainingGaps": [
+    "Aggregate current-authority evidence remains incomplete across all eleven producer families.",
+    "Complete cross-producer lifecycle and recovery continuity remains incomplete.",
+    "Operation-specific redo handler and classifier evidence remains incomplete for the remaining local operation kinds.",
+    "Packaged/runtime authority and direct live active-GM/Foundry evidence remain incomplete.",
+    "The Stage 11 live acceptance observation has not been accepted as an aggregate claim."
+  ],
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; all four clauses remain partial; not accepted.",
+    "stage12": "NOT STARTED",
+    "decision": "M761 confirms M760 is internally consistent and closes one bounded project.asset.register-audio redo bridge/classifier gap, but aggregate authority, complete cross-producer continuity, packaged/runtime authority, live evidence, and Stage 11 acceptance remain incomplete."
+  },
+  "selectedNext": "M762 fresh bounded code-only project.asset.register-handout redo terminal-history bridge and matched-reread classifier evidence; preserve all prior projections and keep Stage 11 acceptance, live runtime, and Stage 12 excluded."
+}

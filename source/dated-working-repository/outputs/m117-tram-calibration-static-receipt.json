@@ -1,0 +1,275 @@
+{
+  "operation": "tram-calibration.plan",
+  "status": "STATIC_REVIEW",
+  "evidenceClass": "deterministic",
+  "noWrite": true,
+  "plan": {
+    "schemaVersion": "0.1.0",
+    "planId": "dbx:plan:fixture-tram-coordinate-calibration",
+    "operation": "tram-calibration.preview",
+    "target": {
+      "worldId": "dbx-test-world",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3"
+    },
+    "scene": {
+      "sceneId": "dbx:scene:fixture-tram-coordinate-calibration",
+      "label": "DiceBox Tram Coordinate Calibration",
+      "canvas": {
+        "width": 1536,
+        "height": 1024
+      },
+      "rendererPath": "assets/maps/ascendancy-tram-calibration-graybox-v1.png",
+      "blueprintId": "dbx:blueprint:ascendancy-tram-depot",
+      "geometrySource": "ascendancy-tram-v4-spatial-blueprint"
+    },
+    "walls": {
+      "segments": [
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-north",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 24
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-south",
+          "a": {
+            "x": 24,
+            "y": 1000
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-west",
+          "a": {
+            "x": 24,
+            "y": 24
+          },
+          "b": {
+            "x": 24,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-east-north",
+          "a": {
+            "x": 1512,
+            "y": 24
+          },
+          "b": {
+            "x": 1512,
+            "y": 367.5
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:ascendancy-tram-depot-east-south",
+          "a": {
+            "x": 1512,
+            "y": 527.5
+          },
+          "b": {
+            "x": 1512,
+            "y": 1000
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-north",
+          "a": {
+            "x": 420,
+            "y": 210
+          },
+          "b": {
+            "x": 1080,
+            "y": 210
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-south",
+          "a": {
+            "x": 420,
+            "y": 780
+          },
+          "b": {
+            "x": 1080,
+            "y": 780
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-west-north",
+          "a": {
+            "x": 420,
+            "y": 210
+          },
+          "b": {
+            "x": 420,
+            "y": 400
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-west-south",
+          "a": {
+            "x": 420,
+            "y": 495
+          },
+          "b": {
+            "x": 420,
+            "y": 780
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-east-north",
+          "a": {
+            "x": 1080,
+            "y": 210
+          },
+          "b": {
+            "x": 1080,
+            "y": 400
+          },
+          "thickness": 8
+        },
+        {
+          "wallId": "dbx:wall:tram-yard-east-south",
+          "a": {
+            "x": 1080,
+            "y": 495
+          },
+          "b": {
+            "x": 1080,
+            "y": 780
+          },
+          "thickness": 8
+        }
+      ],
+      "doors": [
+        {
+          "anchorId": "dbx:anchor:tram-door-east",
+          "position": {
+            "x": 1512,
+            "y": 447.5
+          },
+          "clearance": 47.5
+        },
+        {
+          "anchorId": "dbx:anchor:tram-yard-ingress",
+          "position": {
+            "x": 420,
+            "y": 447.5
+          },
+          "clearance": 47.5
+        },
+        {
+          "anchorId": "dbx:anchor:tram-yard-exit",
+          "position": {
+            "x": 1080,
+            "y": 447.5
+          },
+          "clearance": 47.5
+        }
+      ],
+      "api": "scene.createEmbeddedDocuments(\"Wall\", ...)"
+    },
+    "tile": {
+      "tileId": "dbx:tile:fixture-tram-coordinate-calibration-marker",
+      "label": "Tram projection calibration marker",
+      "bounds": {
+        "x": 530,
+        "y": 400,
+        "width": 220,
+        "height": 95
+      },
+      "source": "canonical-tram-board-cell-projection",
+      "api": "scene.createEmbeddedDocuments(\"Tile\", ...)"
+    },
+    "region": {
+      "regionId": "dbx:region:fixture-tram-coordinate-calibration-marker",
+      "label": "Tram projection calibration Region",
+      "bounds": {
+        "x": 530,
+        "y": 400,
+        "width": 220,
+        "height": 95
+      },
+      "source": "same-rectangle-as-calibration-tile",
+      "shape": "rectangle",
+      "api": "scene.createEmbeddedDocuments(\"Region\", ...)"
+    },
+    "reread": {
+      "scene": "fromUuid | game.scenes.get",
+      "tile": "scene.getEmbeddedDocument(\"Tile\", id)",
+      "region": "scene.getEmbeddedDocument(\"Region\", id)",
+      "comparison": "exact-x-y-width-height"
+    },
+    "preservationScope": "fixture-owned-scene-and-children-only; preserve-foreign-state",
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "sourceVersion": "calibration-injection:v1",
+  "sourceHashes": {
+    "plan": "242b8d9e31822b61dccdb3cb6d8e94c3bdd1235b64426bea88c5d7afc05192ee",
+    "renderer": "7adeb330329550eb18753187e8dbf001815bf22e056f14bc2cdc76188b0cf852"
+  },
+  "coordinateAssumptions": {
+    "canvas": {
+      "width": 1536,
+      "height": 1024
+    },
+    "tileAndRegionBounds": {
+      "x": 530,
+      "y": 400,
+      "width": 220,
+      "height": 95
+    },
+    "tramBoard": {
+      "origin": {
+        "x": 420,
+        "y": 210
+      },
+      "cellWidth": 110,
+      "cellHeight": 95,
+      "columns": 6,
+      "rows": 6
+    },
+    "tramCoreAdjacency": {
+      "tramDoor": {
+        "x": 1512,
+        "y": 447.5
+      },
+      "coreDoor": {
+        "x": 24,
+        "y": 447.5
+      }
+    }
+  },
+  "foundryApis": [
+    "scene.createEmbeddedDocuments(\"Wall\", ...)",
+    "scene.createEmbeddedDocuments(\"Tile\", ...)",
+    "scene.createEmbeddedDocuments(\"Region\", ...)",
+    "fromUuid | game.scenes.get",
+    "scene.getEmbeddedDocument(\"Tile\", id)",
+    "scene.getEmbeddedDocument(\"Region\", id)"
+  ],
+  "preservationScope": "fixture-owned-scene-and-children-only; preserve-foreign-state",
+  "notes": [
+    "Static plan/asset receipt only; no Foundry Document API was invoked.",
+    "The calibration is restricted to dbx-test-world and cannot target Ballad.",
+    "Exact-runtime active-GM preview, apply, and authoritative reread remain required before injection."
+  ]
+}

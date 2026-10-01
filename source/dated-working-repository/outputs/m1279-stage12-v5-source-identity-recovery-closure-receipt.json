@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1279",
+  "operation": "foundry.v5.source-staged-served-loaded-identity-recovery",
+  "status": "PASS_LOADED_CLIENT_EXPOSURE_WITH_PREMIUM_HASH_BOUNDARY",
+  "evidenceClass": "fixture-runtime-read-only",
+  "target": {
+    "worldId": "dbx-test-world",
+    "dataPath": "work/foundry-fixture-data-v5",
+    "port": 30004,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "browserUrl": "http://127.0.0.1:30004/game",
+    "exactTargetMatch": true,
+    "currentUser": "Gamemaster [GM]",
+    "currentUserIsActiveGm": true,
+    "manualAuthentication": false,
+    "credentialsEnteredByAgent": false
+  },
+  "recovery": {
+    "supervisorRestartInvoked": 0,
+    "hardBrowserReloadInvoked": 1,
+    "browserPathAfterReload": "/game",
+    "manualRejoinRequired": false,
+    "controlInvocations": 0,
+    "dialogsOpened": 0,
+    "dialogsClosed": 0
+  },
+  "sourceStagedServed": {
+    "stagedPath": "work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
+    "stagedBytes": 23269,
+    "stagedSha256": "0690557B28554A19C46038A8C5BC3F4975AA968341CF5E976AB8B41BB0C2FA26",
+    "servedUrl": "http://127.0.0.1:30004/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
+    "servedHttpStatus": 200,
+    "servedBytes": 23269,
+    "servedSha256": "0690557B28554A19C46038A8C5BC3F4975AA968341CF5E976AB8B41BB0C2FA26",
+    "servedMatchesStaged": true,
+    "derivedExpectationPresent": true,
+    "hardcodedSixtyExpectationPresent": false
+  },
+  "loadedClientExposure": {
+    "status": "OBSERVED",
+    "regionControlsAlreadyExposed": true,
+    "fixedControlsPresentAfterReload": [
+      "Install Ascendancy Regionwright handoff",
+      "Audit Ascendancy Regionwright handoff"
+    ],
+    "activeUserText": "Gamemaster [GM]",
+    "loadedPremiumInstallerSha256": null,
+    "loadedPremiumInstallerHashDirectlyObservable": false,
+    "limitation": "The current fixed read-only surface exposes loaded module/profile identity and fixed control presence, but does not expose a direct loaded-byte hash for the Regionwright premium installer. No loaded-hash match is claimed."
+  },
+  "supervisors": {
+    "v5": {
+      "status": "PASS",
+      "pid": 8132,
+      "listeners": [8132],
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    },
+    "v4": {
+      "status": "PASS",
+      "pid": 10676,
+      "listeners": [10676],
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    }
+  },
+  "preservation": {
+    "v4Untouched": true,
+    "foreignStatePreserved": true,
+    "runtimeWorldMutation": false,
+    "playerPasswordStateUntouched": true,
+    "readyClaim": false
+  },
+  "disposition": "One authorized hard reload loaded the repaired v5 client without a join loss. Served installer bytes match the repaired staged identity, and the fixed Regionwright controls remain exposed to the manually joined active GM. The current surface does not directly attest the loaded premium-installer hash, so this receipt claims loaded-client exposure and served parity only; it does not claim premium loaded-byte parity, Regionwright behavior, persistent-world authority, player behavior, Stage 12, or Ready-to-Play.",
+  "contract": {
+    "authenticationAutomated": false,
+    "credentialsEnteredByAgent": false,
+    "supervisorRestart": false,
+    "hardReload": true,
+    "controlInvoked": false,
+    "auditRetried": false,
+    "installer": false,
+    "preview": false,
+    "approval": false,
+    "apply": false,
+    "noWrite": true,
+    "foreignStatePreserved": true,
+    "playerPasswordStateUntouched": true,
+    "readyClaim": false
+  },
+  "next": "M1280: reconcile the served/loaded identity limitation and select one direct, package-owned read-only Regionwright loaded-byte or equivalent evidence boundary before any audit retry."
+}

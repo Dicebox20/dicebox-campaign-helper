@@ -1,0 +1,107 @@
+{
+  "operation": "stage11-packaged-visible-operation-contract-observation",
+  "milestone": "M601",
+  "status": "PASS_PACKAGED_VISIBLE_CONTRACT_ACCESSIBILITY",
+  "capturedAt": "2026-08-30T06:37:10-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "packaged",
+  "artifacts": {
+    "nativeExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "matchesM600": true,
+      "sha256": "7BA9E57E0F9CFF008BF723871E92A5EB9D75379409489FF7181A0B944E8C5BE9",
+      "bytes": 26878976
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-ySynumpU.js",
+      "matchesM600": true,
+      "sha256": "A5F704BC918E91F263E07B70A3E2181B6197BC7529182D39F40159BDF39271DC",
+      "bytes": 2055600
+    }
+  },
+  "observation": {
+    "launch": "one bounded launch of exact M600 executable",
+    "returnedUiWindow": {
+      "title": "DiceBox Campaign Helper",
+      "windowId": 2754942,
+      "uniqueTitleMatch": true
+    },
+    "visibleContractSummary": true,
+    "visibleContractSummaryText": "Typed local-project operation contract: 14 operations",
+    "visibleOperationKinds": [
+      "project.add-scene",
+      "project.recovery.backup-promote",
+      "project.migration.persist",
+      "project.create",
+      "project.rename",
+      "project.save",
+      "project.save-as",
+      "project.asset.register-handout",
+      "project.asset.register-audio",
+      "project.asset.register-token",
+      "project.asset.bind",
+      "project.broken-reference.detach",
+      "project.asset.restore",
+      "project.asset.detach"
+    ],
+    "visibleOperationKindCount": 14,
+    "exactOperationKeyParity": true,
+    "humanReviewAuthorityVisible": true,
+    "localProjectAuthorityVisible": true,
+    "operationSpecificApplyAuthorityVisible": true,
+    "noGenericExecutorVisible": true,
+    "reviewRegionVisible": true,
+    "noPersistedProject": true,
+    "noProjectSession": true,
+    "noWriteProjectState": true,
+    "noFoundryWrite": "No Foundry mutation was performed; the surface exposed the no-write Foundry preview boundary."
+  },
+  "processReread": {
+    "desktopProcessCount": 0,
+    "cargoProcessCount": 0,
+    "rustcProcessCount": 0,
+    "cleanup": "The exact process launched for this observation was stopped by resolved PID after the accessibility observation; no other process target was selected."
+  },
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": false,
+    "artifactSetChanged": false,
+    "launch": true,
+    "accessibilityCapture": true,
+    "screenshotCapture": false,
+    "uiHelperRetry": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M601 confirms the fresh M600 packaged renderer visibly exposes exactly the typed 14-operation local-project contract with human-review/local-project/operation-specific/no-generic-executor metadata and no project/session state. This is one bounded producer-surface observation, not aggregate Stage 11 acceptance; broader producer lifecycle and authority clauses remain partial."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M602",
+    "title": "Stage 11 packaged visible-contract reconciliation",
+    "status": "authorized-next",
+    "scope": "Reconcile M601 with the four Stage 11 clauses and eleven producer families, preserving the completed visible-contract evidence and any prior UI-helper history; select the smallest next bounded action. Do not begin Stage 12."
+  },
+  "changedPaths": [
+    "outputs/m601-stage11-packaged-visible-operation-contract-observation-closure-receipt.json"
+  ]
+}

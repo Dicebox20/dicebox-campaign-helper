@@ -1,0 +1,43 @@
+{
+  "operation": "dicebox.stage12.m1045.semantic-alignment-relationship-current-inspector-summary.closure",
+  "status": "PASS",
+  "milestone": "M1045",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "F-M1045",
+    "D-M1045-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-CURRENT-INSPECTOR-SUMMARY",
+    "T-M1045-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-CURRENT-INSPECTOR-SUMMARY"
+  ],
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/desktop-scene-model.test.ts"
+  ],
+  "validation": {
+    "focusedVitest": {
+      "command": "npx vitest run tests/desktop-scene-model.test.ts tests/project-workspace.test.ts tests/scene-command-spine.test.ts tests/desktop-proposal-session.test.ts tests/desktop-proposal-application.test.ts tests/proposal-adapters.test.ts",
+      "status": "PASS",
+      "files": 6,
+      "tests": 56
+    },
+    "packageTypecheck": "PASS",
+    "desktopProductionBuild": "PASS",
+    "workflowCheck": "PASS",
+    "diffCheck": "PASS"
+  },
+  "observation": {
+    "currentState": "The existing Inspector now includes a labelled current-Scene relationship summary derived from document.relationships.",
+    "fields": "Each current relationship shows align kind, stable relationship ID, exact source and target entity IDs, and axis; absent relationships show a bounded no-current-relationships state.",
+    "readOnly": "The summary contains no edit or dispatch controls and does not change selection, geometry, lock state, proposal lifecycle, persistence, or foreign/unknown state.",
+    "preservation": "No executor, persistence schema, Blueprint, renderer, native Tile/Foundry, runtime, provider, credential, account, or player-password behavior was added."
+  },
+  "doesNotProve": [
+    "multi-relationship breadth",
+    "Stage 12 broad acceptance",
+    "Ready-to-Play",
+    "live Foundry behavior",
+    "native packaged filesystem persistence",
+    "Blueprint promotion or renderer geometry"
+  ],
+  "nextAction": "Select M1046 only: prove two distinct align relationships coexist in the existing Scene array, serialization, review, and reversible local command path without adding a new relation kind."
+}

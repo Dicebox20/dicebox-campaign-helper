@@ -1,0 +1,49 @@
+{
+  "milestone": "M947",
+  "stage": "proposal-approval-history",
+  "status": "BLOCKED LOCAL INPUT SURFACE; NO RETRY",
+  "evidenceClass": "local",
+  "scope": "Attempt one exact local-fixture read-only authority-predicate observation through the fixed native/package-owned surface, preserving the user-owned Foundry session when the native input surface is unavailable.",
+  "target": {
+    "application": "Foundry Virtual Tabletop",
+    "windowTitle": "Foundry Virtual Tabletop",
+    "userVisibleContext": "Gamemaster [GM]",
+    "windowReturned": true,
+    "exactTargetWorld": "not observed"
+  },
+  "observation": {
+    "accessibilityTree": "PASS: refreshed Foundry RootWebArea accessibility tree exposed the active game shell, Gamemaster [GM], scene navigation, sidebar, and standard controls.",
+    "diceboxAuthorityControlVisible": false,
+    "screenshotCapture": "BLOCKED: SetIsBorderRequired failed: No such interface supported (0x80004002).",
+    "inputAttempt": "BLOCKED: coordinate input geometry is unavailable while attempting the observed Settings tab element.",
+    "outcome": "Unknown whether the attempted tab click was delivered; no further input was issued."
+  },
+  "reread": {
+    "window": "PASS: the exact Foundry window remained returned after the failed input.",
+    "visibleContext": "Gamemaster [GM] remained present in the refreshed accessibility tree.",
+    "fixedAuthorityControl": "NOT_OBSERVED",
+    "userSession": "PRESERVED: the user-owned Foundry session was left open; no close or process termination was attempted after the input failure.",
+    "documentWrites": 0
+  },
+  "limits": {
+    "readOnlyIntent": true,
+    "documentWrites": 0,
+    "updateInvoked": false,
+    "createInvoked": false,
+    "deleteInvoked": false,
+    "genericExecutor": false,
+    "arbitraryEvaluation": false,
+    "storageInspected": false,
+    "projectMutatedOrCleaned": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "retryPerformed": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "blocker": "The fixed Foundry window currently exposes no DiceBox authority diagnostic in its accessibility tree, screenshot capture is unsupported, and native input geometry is unavailable. The exact local authority predicates and owned-Scene permission therefore remain unobserved.",
+  "next": "Perform a read-only source/staging/registration reconciliation for the fixed DiceBox authority controls and supported observation surface; do not retry the blocked native input until a bounded repair is validated."
+}

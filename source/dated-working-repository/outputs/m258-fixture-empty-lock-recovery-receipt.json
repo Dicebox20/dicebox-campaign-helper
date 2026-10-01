@@ -1,0 +1,25 @@
+{
+  "receiptVersion": 1,
+  "supervisorVersion": "1.1.0",
+  "operation": "foundry.fixture.recover-lock",
+  "target": "disposable-fixture",
+  "worldId": "dbx-test-world",
+  "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+  "port": 30002,
+  "timestamp": "2026-08-27T13:35:21.280Z",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "status": "PASS",
+  "evidenceClass": "recovery",
+  "recovered": true,
+  "reason": "explicit-recovery",
+  "quarantinePath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Config\\dicebox-lock-quarantine\\options.json.lock-2026-08-27T13-35-21-280Z",
+  "blockers": [],
+  "lifecycleLease": {
+    "action": "recover-lock",
+    "ownerPid": 4612,
+    "acquiredAt": "2026-08-27T13:35:21.276Z",
+    "recoveredLease": null,
+    "released": true
+  }
+}

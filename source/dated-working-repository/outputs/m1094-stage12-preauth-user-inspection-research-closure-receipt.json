@@ -1,0 +1,31 @@
+{
+  "receiptType": "stage12-preauth-user-inspection-research-closure",
+  "milestone": "M1094",
+  "status": "closed-no-supported-route",
+  "evidenceClass": "research",
+  "target": "Foundry VTT v14 supported pre-authentication user inspection",
+  "sources": [
+    "https://foundryvtt.com/api/classes/foundry.documents.collections.Users.html",
+    "https://foundryvtt.com/article/users/",
+    "https://foundryvtt.com/article/player-orientation/",
+    "https://foundryvtt.com/article/configuration/",
+    "https://www.reddit.com/r/FoundryVTT/comments/1vpgszl/how_to_get_the_login_dropdown_back/"
+  ],
+  "finding": "No official supported non-mutating pre-authentication API or native control for enumerating current fixture User identities/roles was found. game.users is an active-world collection; user management is an active-world function; administrator setup is separately password-gated. The exact fixture's free-text username form does not safely identify a user.",
+  "prohibitedAlternatives": [
+    "raw database or LevelDB inspection",
+    "username guessing",
+    "browser login or credential handling",
+    "arbitrary eval or sockets",
+    "generic execute-as-GM"
+  ],
+  "runtimeInteraction": false,
+  "browserInteraction": false,
+  "sessionCreated": false,
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "activeGMEstablished": false,
+  "stage12Accepted": false,
+  "readyToPlay": false,
+  "nextMilestone": "M1095 fixture shutdown only"
+}

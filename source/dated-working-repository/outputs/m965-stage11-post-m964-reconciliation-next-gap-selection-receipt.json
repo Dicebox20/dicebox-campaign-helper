@@ -1,0 +1,69 @@
+{
+  "milestone": "M965",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY NEXT-GAP SELECTION; STAGE 11 NOT ACCEPTED",
+  "scope": "Inspect M964, M963, the aggregate/current-authority bridges, complete Stage 11 matrix, eleven producer families, receipts, roadmap, active card, and rebuilt KB; select at most one smallest bounded evidence gap.",
+  "reconciled": {
+    "m964Receipt": "outputs/m964-stage11-post-m963-project-save-evidence-reconciliation-receipt.json",
+    "m963Receipt": "outputs/m963-stage11-project-save-current-authority-lifecycle-evidence-slice-receipt.json",
+    "m963ExactProducer": "project.save",
+    "m963ExactOperation": "project.save",
+    "m963Attachment": "aggregate-ledger projectSaveCurrentAuthorityLifecycleEvidence",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "runtime": "PARKED"
+  },
+  "acceptanceMatrix": {
+    "aggregateProvenanceAndCoverage": "PARTIAL",
+    "directCurrentAuthority": "PARTIAL",
+    "completeApplyReceiptCoverage": "PARTIAL",
+    "unifiedLifecycle": "PARTIAL",
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9
+  },
+  "selection": {
+    "nextMilestone": "M966",
+    "scope": "One strict typed project.save redo handler/classifier evidence bridge using the existing terminal-history contract; preserve exact producer identity, matched reread, stale/approval boundaries, no generic executor, no authority promotion, and all Stage 11/Stage 12 limits.",
+    "reason": "The existing project.save lifecycle attachment proves one producer-scoped lifecycle but the operation-specific redo handler/classifier evidence remains an explicit local gap and is the smallest disjoint continuation.",
+    "readOnlyAuditComplete": true,
+    "implementationChanges": 0,
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "projectMutation": false,
+    "playerPasswords": false,
+    "stage11Acceptance": false,
+    "stage12": false,
+    "readyClaim": false
+  },
+  "authority": {
+    "stage11AcceptanceStatus": "BLOCKED",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history solely active; zero violations",
+    "sourceAndReceiptReread": "PASS",
+    "aggregateAttachmentReread": "PASS; projectSaveCurrentAuthorityLifecycleEvidence present",
+    "knowledgeBase": "PASS before closure: 1489 sources; 1217 facts; 1128 decisions; 135 open items; 806 trials; 40 research subjects; 26 milestones"
+  },
+  "limits": {
+    "readOnly": true,
+    "implementationChanges": 0,
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "projectMutation": false,
+    "foundryMutation": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "conclusion": "M965 confirms M963 and M964 provenance and selects one exact project.save redo handler/classifier evidence bridge. No Stage 11 clause is closed and Stage 12 remains locked.",
+  "next": "Perform only M966: one strict typed project.save redo handler/classifier evidence bridge."
+}

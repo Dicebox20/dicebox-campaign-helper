@@ -1,0 +1,21 @@
+{
+  "milestone": "M422",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "readyClaim": false,
+  "change": "The exact backup-promotion-ui-session-reset driver now advances only through observed loading, cancelling, clearing, and cleared stages, emits bounded progress, and invokes the existing PASS/BLOCKED self-test exit helper only at a terminal outcome.",
+  "validation": {
+    "focusedTests": "2 files / 15 tests passed",
+    "desktopSourceBuild": "PASS: TypeScript and Vite build",
+    "database": "schema-plus-seed rebuild and verification passed before implementation"
+  },
+  "runtime": {
+    "packagedTauriBuild": false,
+    "launch": false,
+    "sessionTransition": false,
+    "recoveryApply": false,
+    "fixtureMutation": false,
+    "foundryActivity": false
+  },
+  "recoveryDisposition": "M423 is read-only reconciliation only before any future reset package observation.",
+  "doesNotProve": ["session reset", "backup promotion", "recovery apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

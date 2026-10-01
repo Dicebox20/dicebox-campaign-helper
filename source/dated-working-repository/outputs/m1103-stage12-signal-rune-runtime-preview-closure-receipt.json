@@ -1,0 +1,54 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1103",
+  "operation": "dicebox.ascendancy.signal-rune-furnishing.preview",
+  "evidenceClass": "fixture",
+  "status": "PASS",
+  "target": {
+    "fixture": "work/foundry-fixture-data-v2",
+    "worldId": "dbx-test-world",
+    "port": 30001,
+    "foundry": "14.367",
+    "system": "dnd5e 5.3.3",
+    "currentUser": "Gamemaster [GM]"
+  },
+  "noWrite": true,
+  "foreignStatePreserved": true,
+  "previews": [
+    {
+      "sceneId": "dbx:scene:signal-frequency-chamber",
+      "planId": "dbx:plan:m1070-signal-furnishing-fixture",
+      "blueprintId": "dbx:blueprint:signal-frequency-chamber",
+      "assetId": "dbx:asset:map-signal-frequency-chamber",
+      "itemCount": 6,
+      "stepCount": 6,
+      "sceneIdRuntime": "AneddhKAAfk5HlsA"
+    },
+    {
+      "sceneId": "dbx:scene:rune-mechanism-chamber",
+      "planId": "dbx:plan:m1074-rune-furnishing-fixture",
+      "blueprintId": "dbx:blueprint:rune-mechanism-chamber",
+      "assetId": "dbx:asset:map-rune-mechanism-chamber",
+      "itemCount": 6,
+      "stepCount": 6,
+      "sceneIdRuntime": "p9Mbi0CJWe9KvJhH"
+    }
+  ],
+  "reread": {
+    "operation": "foundry.fixture.status",
+    "status": "PASS",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "pid": 2616,
+    "httpStatus": 302,
+    "httpLocation": "/join"
+  },
+  "boundaries": {
+    "documentMutation": false,
+    "applyPath": false,
+    "closeOnlyDialog": true,
+    "freshServedAssetByteAttestation": "NOT_CLAIMED",
+    "stage12Acceptance": "NOT_CLAIMED",
+    "readyToPlay": "NOT_CLAIMED"
+  }
+}

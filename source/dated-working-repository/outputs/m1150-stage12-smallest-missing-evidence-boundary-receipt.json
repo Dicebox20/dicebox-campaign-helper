@@ -1,0 +1,72 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1150-smallest-missing-evidence-boundary",
+  "milestone": "M1150",
+  "status": "BLOCKED_RUNTIME_OBSERVATION_REQUIRED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.smallest-missing-evidence-boundary.reconcile",
+  "gate": {
+    "schemaVersion": "0.1.0",
+    "operation": "dicebox.ascendancy.signal-rune.smallest-missing-evidence-boundary.gate",
+    "milestone": "M1150",
+    "status": "BLOCKED",
+    "evidenceClass": "local",
+    "m1149Context": {
+      "receiptId": "dbx:receipt:m1149-runtime-profile-availability-gate",
+      "status": "BLOCKED_RUNTIME_PROFILE_UNOBSERVED",
+      "sourceSurface": "pass",
+      "runtimeProfile": "blocked-source-surface-present-runtime-observation-unavailable",
+      "noWrite": true,
+      "readyClaim": false
+    },
+    "sourceInventory": {
+      "runtimeProfileQuerySurface": "present",
+      "runtimeEvidenceDiagnosticSurface": "redacted-only",
+      "runtimeProfileDiffSurface": "not-present",
+      "authoritativeRereadObservation": "not-observed",
+      "sourceProfileIsRuntimeEvidence": false
+    },
+    "disposition": "runtime-observation-required",
+    "gates": {
+      "sourceInventory": "pass",
+      "completeRuntimeProfile": "blocked-runtime-observation-required",
+      "profileDiff": "blocked-runtime-profile-diff-surface-not-present",
+      "authoritativeReread": "blocked-runtime-reread-unobserved"
+    },
+    "blockers": [
+      "runtime-observation-required-for-complete-profile",
+      "runtime-profile-diff-surface-not-present",
+      "authoritative-reread-not-observed"
+    ],
+    "foreignState": "preserve",
+    "preserveUnknown": true,
+    "noWrite": true,
+    "apply": false,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "dispatch": "disabled",
+    "readyClaim": false
+  },
+  "sourceReceipts": {
+    "m1149": "outputs/m1149-stage12-runtime-profile-availability-gate-receipt.json",
+    "m1149Closure": "outputs/m1149-stage12-runtime-profile-availability-gate-closure-receipt.json"
+  },
+  "sourceInventory": {
+    "runtimeProfileQuerySurface": "packages/dicebox-foundry/src/module.js -> game.diceboxCampaignHelper.query({ kind: \"runtime-profile\" })",
+    "runtimeEvidenceDiagnosticSurface": "packages/dicebox-foundry/src/module.js -> readRuntimeEvidenceDiagnostic -> redacted diagnostic only",
+    "runtimeProfileSchema": "packages/dicebox-core/src/capability.ts -> RuntimeProfileSchema",
+    "offlineProfileDiffSurface": "packages/dicebox-compiler/src/release-diff.ts -> supplied-profile comparison only",
+    "runtimeProfileDiffSurface": "not-present in current Foundry module source",
+    "authoritativeRereadObservation": "not-observed in accepted M1145/M1149 evidence"
+  },
+  "validation": {
+    "sourceInventory": "PASS exact source strings and absence of runtime profileDiff surface",
+    "completeRuntimeProfile": "BLOCKED runtime observation required",
+    "profileDiff": "BLOCKED no runtime-side profile-diff surface or current profile input",
+    "authoritativeReread": "BLOCKED not observed",
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "nextBoundary": "M1151: authorize one exact read-only runtime-profile observation only if the active checklist separately permits a fixture reopen; require schema-valid RuntimeProfile, exact target, current active-GM identity, profile-diff input/result, and authoritative stopped-state reread. Do not create or mutate documents."
+}

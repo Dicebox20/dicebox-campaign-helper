@@ -1,0 +1,139 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1173-stage12-current-candidate-diagnostic-parity-and-observation-closure",
+  "milestone": "M1173",
+  "status": "CLOSED_M1173_CURRENT_PARITY_AND_DIAGNOSTIC_OBSERVED",
+  "evidenceClass": "fixture",
+  "operation": "dicebox.stage12.current-candidate-diagnostic-parity-and-observation.closure",
+  "stage": {
+    "update": "PASS one exact owner-controlled nested-Data update",
+    "destination": "work/foundry-fixture-data-v2/Data",
+    "ownerPackage": "dicebox-campaign-helper",
+    "filesAttested": 6,
+    "installerSourceBytes": 40732,
+    "installerStagedBytes": 40732,
+    "installerSourceSha256": "600F24DA6339B2557C9969391085E0950A02E63008F290CECB2BF89F4F916E53",
+    "installerStagedSha256": "600F24DA6339B2557C9969391085E0950A02E63008F290CECB2BF89F4F916E53",
+    "allSixFilesParity": true
+  },
+  "served": {
+    "url": "http://127.0.0.1:30001/modules/dicebox-campaign-helper/src/ascendancy-installer.js",
+    "requestCount": 1,
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "bytes": 40732,
+    "sha256": "600F24DA6339B2557C9969391085E0950A02E63008F290CECB2BF89F4F916E53",
+    "sourceStagedServedParity": true
+  },
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30001,
+    "fixture": "work/foundry-fixture-data-v2"
+  },
+  "join": {
+    "manual": true,
+    "user": "Gamemaster",
+    "password": "blank",
+    "dropdownUsed": false,
+    "result": "joined-game-as-active-gm"
+  },
+  "controlObservation": {
+    "controlId": "dicebox-ascendancy-candidate-transport-diagnostic",
+    "controlVisible": true,
+    "clickCount": 1,
+    "dialogTitle": "Show DiceBox Signal/Rune Candidate Transport Diagnostic",
+    "status": "OBSERVED",
+    "operation": "ascendancy.signal-rune-candidate-transport.diagnostic",
+    "readyClaim": false,
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "candidateTransportImplemented": true,
+    "runtimeExposure": "diagnostic-only-candidate-install-repair-disabled",
+    "candidateInstallExposed": false,
+    "candidateRepairExposed": false,
+    "targetExact": true,
+    "activeGm": {
+      "currentUserIsGm": true,
+      "currentUserMatchesActiveGm": true,
+      "noExecutionAuthority": true
+    },
+    "candidate": {
+      "candidateId": "m1141-signal-rune",
+      "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+      "selectedRoomIds": [
+        "dbx:room:signal-frequency-chamber",
+        "dbx:room:rune-mechanism-chamber"
+      ],
+      "excludedRoomIds": [
+        "dbx:room:ascendancy-tram-depot",
+        "dbx:room:central-core-control-chamber"
+      ],
+      "selectedAssetsComplete": true,
+      "excludedForeignScenes": {
+        "observedCount": 0,
+        "preserved": true
+      },
+      "sceneObservation": {
+        "selectedOwnedSceneCounts": {
+          "dbx:room:signal-frequency-chamber": 1,
+          "dbx:room:rune-mechanism-chamber": 1
+        },
+        "ambiguousOwnedRooms": [],
+        "missingOwnedRooms": [],
+        "foreignSemanticConflicts": [],
+        "unboundSameLabelSceneCount": 0,
+        "foreignStatePreserved": true
+      }
+    },
+    "artifactIdentityReturned": {
+      "specId": "dbx:foundry-spec:current-product-0.1.15-m1172",
+      "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1172",
+      "stagedEvidence": "m1166-source-staged-pre-m1172",
+      "servedEvidence": "m1167-served-pre-m1172"
+    },
+    "artifactIdentityReconciliation": {
+      "currentSourceStagedServedParity": "PASS_M1173",
+      "returnedEvidenceLabels": "historical-pre-m1172-by-design",
+      "status": "CURRENT_SPEC_VERIFIER_AND_BYTES_OBSERVED;LABELS_RETAIN_HISTORICAL_PROVENANCE"
+    },
+    "bindings": null,
+    "payload": null,
+    "proposal": null,
+    "blockers": []
+  },
+  "fixtureLifecycle": {
+    "startedOnce": true,
+    "launchGuard": "PASS",
+    "lockRecovery": "PASS verified-supervisor-restart",
+    "browserLogin": true,
+    "normalStop": "required-force-fallback",
+    "forcedStop": "PASS",
+    "listenerDrain": "PASS 0 remaining",
+    "finalStatus": "STOPPED",
+    "finalListeners": 0,
+    "finalWorldDocumentWrites": 0,
+    "finalBalladTouched": false
+  },
+  "runtime": {
+    "installerInvoked": false,
+    "candidateInstallInvoked": false,
+    "candidateRepairInvoked": false,
+    "documentsMutated": false,
+    "assetsMutated": false,
+    "sceneWrites": 0,
+    "authorityPromoted": false,
+    "foreignStatePreserved": true,
+    "campaignReread": false,
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "The M1173 diagnostic returns current M1172 spec/verifier IDs and current parity was separately attested, while its staged/served evidence labels remain explicitly historical pre-M1172 provenance.",
+    "The full current RuntimeProfile/profile-diff and the three disjoint M1142 audit packet merge are not yet closed.",
+    "Fixed preview approval, approved live Scene creation, authoritative post-creation reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain unproved."
+  ],
+  "nextBoundary": "M1174: execute the three disjoint read-only M1142 fast-track audit packets and merge their current receipts; no runtime reopen or document creation."
+}

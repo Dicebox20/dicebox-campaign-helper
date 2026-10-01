@@ -1,0 +1,46 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1174-fast-track-m1142-audit-merge-closure",
+  "milestone": "M1174",
+  "status": "CLOSED_M1174_AUDIT_MERGE_PROFILE_AND_PROMOTION_BLOCKED",
+  "evidenceClass": "local",
+  "operation": "dicebox.fast-track.m1142.audit-bundle.merge",
+  "packets": {
+    "packageInstallerIdentity": {
+      "receipt": "outputs/m1174-packet-a-package-installer-identity-audit-receipt.json",
+      "status": "PASS_CURRENT_SOURCE_IDENTITY_HISTORICAL_M269_DRIFT"
+    },
+    "workerAdapterRuntimeProfile": {
+      "receipt": "outputs/m1174-packet-b-worker-adapter-runtime-profile-audit-receipt.json",
+      "status": "BLOCKED_CURRENT_RUNTIME_PROFILE_DIFF_INCOMPLETE"
+    },
+    "candidatePromotionBoundary": {
+      "receipt": "outputs/m1174-packet-c-candidate-promotion-boundary-audit-receipt.json",
+      "status": "PASS_PREVIEW_PROMOTION_BOUNDARY_BLOCKED"
+    }
+  },
+  "foremanReconciliation": {
+    "currentM1172Verifier": "PASS local current five-artifact identity",
+    "currentM1173StageServed": "PASS exact six-file source/staged and served installer parity",
+    "historicalM269Drift": "reconciled as stale expectation; no package/adapter repair authorized",
+    "currentRuntimeProfile": "BLOCKED until one fresh fixed RuntimeProfile observation",
+    "candidatePreview": "PASS pure no-write replay; approval and authoritative reread still required",
+    "liveCreation": "not authorized",
+    "foreignScenes": "preserved and excluded",
+    "readyClaim": false
+  },
+  "repairBoundary": {
+    "packageBytesRepair": false,
+    "adapterBytesRepair": false,
+    "next": "M1175 exact-Gamemaster fixed RuntimeProfile observation"
+  },
+  "runtime": false,
+  "mutation": false,
+  "remainingBlockers": [
+    "Current artifact-bound RuntimeProfile/profile-diff is incomplete.",
+    "Fixed preview approval and current authoritative reread remain pending.",
+    "Approved Signal/Rune live creation and post-creation reread remain pending.",
+    "Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain unproved."
+  ],
+  "nextBoundary": "M1175: one exact-Gamemaster fixed RuntimeProfile observation; no install, preview apply, or document creation."
+}

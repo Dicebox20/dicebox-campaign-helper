@@ -1,0 +1,48 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m6-spatial-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 23, "tests": 114, "status": "PASS" },
+    "spatialBlueprint": {
+      "geometryAuthority": "PASS",
+      "levelsWallsRegionsAnchors": "PASS",
+      "boundsAndTopologyValidation": "PASS",
+      "polygonHolesAndClearance": "PASS",
+      "duplicateAndForeignReferenceRejection": "PASS",
+      "strictFieldBoundary": "PASS"
+    },
+    "sceneReadAdapter": {
+      "adapterId": "foundry.scene.read@14.367",
+      "foundryApi": "fromUuid | game.scenes.get",
+      "exactIdentity": "PASS",
+      "dimensionsAndGridMetadata": "PASS",
+      "embeddedCollectionCounts": "PASS",
+      "rawSceneRedaction": "PASS",
+      "malformedForeignUnknownAndUnavailable": "PASS",
+      "writeInputsAbsent": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 45,
+      "facts": 60,
+      "decisions": 35,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 34,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 Scene and Region document shape or permissions",
+    "Any Scene.create, scene.update, or createEmbeddedDocuments write",
+    "Region geometry, behavior configuration, topology, visibility, movement, or player behavior",
+    "Live Scene/Region read-back, reset, or cross-client evidence"
+  ],
+  "nextGate": "Probe the exact disposable Foundry 14.367 Scene and Region shapes and permissions through official APIs before implementing projection writes."
+}

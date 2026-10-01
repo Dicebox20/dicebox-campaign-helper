@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "0.1.0",
+  "source": "package-owned-pinned-module-sidecar",
+  "packageId": "dicebox-campaign-helper",
+  "packageVersion": "0.1.15",
+  "specId": "dbx:foundry-spec:current-product-0.1.15-m1188",
+  "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1188",
+  "modulePath": "src/module.js",
+  "moduleSha256": "9c9dec86cdcd798c016f94f336d5d34c9f76d42dd22c820f6778a488d15db84c",
+  "moduleBytes": 114787,
+  "loadedByteClaim": "executing-module-url-response-matches-pinned-byte-identity"
+}

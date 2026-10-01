@@ -1,0 +1,15 @@
+{
+  "milestone": "M457",
+  "stage": 11,
+  "classification": "BLOCKED_NO_RETRY",
+  "rawReceipt": "outputs/m457-stage11-session-status-inspector-observation-receipt.json",
+  "finding": "A valid exact non-MISSING proposal session exists but does not use the repaired expected command identity.",
+  "fixture": {
+    "primaryExists": false,
+    "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+  },
+  "desktopProcessRunning": false,
+  "runtimeStateTouched": false,
+  "recoveryDisposition": "M458 code-only bounded legacy metadata refinement required before any future session lifecycle decision."
+}

@@ -1,0 +1,22 @@
+{
+  "milestone": "M416",
+  "status": "BLOCKED_LOCAL_PACKAGED",
+  "readyClaim": false,
+  "runCount": 1,
+  "session": {
+    "projectId": "dbx:project:desktop-backup-authoritative-recovery-promotion-self-test",
+    "command": "project.recovery.backup-promotion",
+    "status": "previewed",
+    "historyLength": 1,
+    "batchId": "dbx:proposal:desktop-project-recovery-dbx-project-desktop-backup-authoritative-recovery-promotion-self-test-1787962033368"
+  },
+  "fixture": {
+    "primaryExists": false,
+    "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+  },
+  "process": "absent after self-exit",
+  "finding": "The fixed-ID packaged awaited lifecycle still stops after its no-write preview and before reviewer approval or recovery apply.",
+  "recoveryDisposition": "No retry. M417 is limited to read-only reconciliation of the awaited driver and exact persisted previewed session.",
+  "doesNotProve": ["backup promotion", "recovery apply", "Stage 11 acceptance", "Foundry authority", "Stage 16 implementation", "Ready-to-Play"]
+}

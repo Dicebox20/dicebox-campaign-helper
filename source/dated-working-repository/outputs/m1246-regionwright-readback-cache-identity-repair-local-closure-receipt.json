@@ -1,0 +1,58 @@
+{
+  "milestone": "M1246",
+  "operation": "regionwright.readback-cache-identity-repair",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "deterministic",
+  "readyClaim": false,
+  "noWrite": true,
+  "cacheKey": "rw-0.1.5-20260907-readback-1",
+  "changedPaths": [
+    "C:\\Users\\rujie\\Documents\\Region Editor\\module.json",
+    "C:\\Users\\rujie\\Documents\\Region Editor\\premium\\module.json",
+    "C:\\Users\\rujie\\Documents\\Region Editor\\premium\\scripts\\premium-module.js",
+    "C:\\Users\\rujie\\Documents\\Region Editor\\tests\\foundation.test.mjs",
+    "C:\\Users\\rujie\\Documents\\Region Editor\\tests\\premium-runtime-topology.test.mjs",
+    "work/foundry-fixture-data-v4/Data/modules/regionwright/module.json",
+    "work/foundry-fixture-data-v4/Data/modules/regionwright/premium/scripts/premium-module.js"
+  ],
+  "identityVerification": {
+    "externalBaseManifest": "scripts/module.js?rw-0.1.5-20260907-readback-1",
+    "externalPremiumManifest": "scripts/module.js?rw-0.1.5-20260907-readback-1",
+    "stagedManifest": "scripts/module.js?rw-0.1.5-20260907-readback-1,premium/scripts/premium-module.js?rw-0.1.5-20260907-readback-1",
+    "externalInstallerImport": "./ascendancy-live-installer.js?rw-0.1.5-20260907-readback-1",
+    "stagedInstallerImport": "./ascendancy-live-installer.js?rw-0.1.5-20260907-readback-1",
+    "manifestParity": true,
+    "installerImportParity": true
+  },
+  "hashes": {
+    "externalModuleJson": "0E2B6596E7A0CB82ED20FA02672770927A1D8039A31E444AE569015B7FEE919C",
+    "externalPremiumModuleJson": "DDC140ACA87A8C4B5E57AFE0CD462C259155DCB26CB52433D997DAB910AE882A",
+    "externalPremiumModule": "63E69A0735C70E763B7ECF340D5F0BF813D59255E0B66188268EBC75E3498CB3",
+    "stagedModuleJson": "0B5FA201A184D4F05C6CCA37EBD2F7698E61DC3AF8364F88444F7DC2185ADFA4",
+    "stagedPremiumModule": "66439C3A813ED2EBEE5A20E4E67671BC0ECEA5B381A24C5ACD03657D155BD220",
+    "externalInstaller": "8BB2860875A04DE6F20AB087921046DAFBC68E0F0C4E1E6CD0757C11A187FB92",
+    "stagedInstaller": "8BB2860875A04DE6F20AB087921046DAFBC68E0F0C4E1E6CD0757C11A187FB92"
+  },
+  "validation": {
+    "externalCheck": "PASS",
+    "externalTests": "195/195",
+    "sourceVerifier": "PASS",
+    "regionVerifier": "PASS_REVIEW_ONLY",
+    "spatialVerifier": "PASS_REVIEW_ONLY",
+    "installerBridgeVerifier": "BLOCKED_EXPECTED_MISSING_HELPER_AND_LIVE_READBACK",
+    "syntaxFiles": 6,
+    "syntaxStatus": "PASS"
+  },
+  "runtime": {
+    "supervisorRestarted": false,
+    "browserReloaded": false,
+    "controlInvoked": false,
+    "dialogsOpened": 0,
+    "writesPerformed": 0,
+    "balladTouched": false,
+    "playerOrPasswordTouched": false,
+    "historicalM1241": "outcome-unknown-not-relabeled"
+  },
+  "disposition": "Local/staged cache identity repair is closed. Require a separately authorized exact-v4 supervisor restart plus fresh source/control-exposure reread before invoking the readback control; if /join appears, require manual rejoin. Do not invoke the control during the exposure boundary.",
+  "nextBoundary": "M1247 exact-v4 supervisor restart and fresh source/control-exposure reread authorization"
+}

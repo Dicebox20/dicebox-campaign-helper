@@ -1,0 +1,69 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.v3-acceptance-predicate-correction",
+  "milestone": "M547",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-29T22:52:01-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "changes": {
+    "apps/campaign-helper-desktop/src/project-store.ts": {
+      "sha256": "C556AF223766F7317D525E83F5DF103E2C175A2A26F1861357B9E8E2314170EA",
+      "change": "Added isBrokenReferenceUiTerminalInspection."
+    },
+    "apps/campaign-helper-desktop/src/App.tsx": {
+      "sha256": "31AF283534A440DBCE3F8E1B4E8E55C615227C7D62539AEE64A326DFAF3CCD5A",
+      "change": "Routed only the broken-reference UI terminal guard through the typed helper."
+    },
+    "tests/broken-reference-ui-selftest.test.ts": {
+      "sha256": "11F5500169EB0C9E145E9A3BDFCDBE6E67B1FB02A4AA3D4A9136EF66BDE86EA4",
+      "change": "Added source assertions and executable helper cases for preserved/unsafe rereads."
+    }
+  },
+  "validation": {
+    "focusedVitest": "PASS: 4 files, 28 tests",
+    "desktopTypeScriptNoEmit": "PASS",
+    "nodeTypeScriptNoEmit": "PASS",
+    "diffCheck": "PASS",
+    "helperCases": [
+      "clean primary plus preserved role-mismatch backup: pass",
+      "valid unrelated workspace pending: pass",
+      "target project pending: reject",
+      "current primary reference: reject",
+      "blocked pending artifact: reject",
+      "clean PASS with no references: pass"
+    ]
+  },
+  "preservation": {
+    "nativeAggregateInspection": "unchanged",
+    "backup": "preserved",
+    "v1v2": "preserved",
+    "targetProjectPending": "rejected",
+    "approvalAndCommitGates": "unchanged and outside helper",
+    "browserStorageInspected": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "sessionOperation": false,
+    "fixtureMutation": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "nextBoundary": {
+    "milestone": "M548",
+    "scope": "One fresh exact v3 debug package build with marker and process reread only.",
+    "prohibited": [
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M547 is local code/test evidence only; it does not certify artifact embedding, packaged behavior, Stage 11, Foundry authority, or Ready-to-Play."
+}

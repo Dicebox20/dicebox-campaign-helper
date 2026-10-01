@@ -1,0 +1,86 @@
+{
+  "milestone": "M893",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "inputs": [
+    "M892 corrected aggregate semantic-redo attachment closure",
+    "M891 post-semantic-redo read-only reconciliation",
+    "M890 operation-specific semantic redo composition closure",
+    "M890 Terra Extra High audit receipt",
+    "aggregate semantic-redo and proposal-semantic evidence schemas",
+    "complete proposal/approval/history/recovery matrix",
+    "read-only KB M892 fact, M893 authorization, and active blocker query",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md"
+  ],
+  "reconciliation": {
+    "clauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "m892Disposition": {
+    "classification": "corrected typed non-certifying aggregate attachment",
+    "attachments": ["M886 proposal semantic evidence", "M890 project.save and project.add-scene.persist semantic redo evidence"],
+    "explicitInputRequired": true,
+    "driftRejected": true,
+    "countsChanged": false,
+    "runtimeLaneReopened": false,
+    "authorityPromoted": false,
+    "backupPromotionUndoRedo": "NOT_APPLICABLE_ONE_WAY",
+    "foreignStatePreserved": true
+  },
+  "remainingGaps": [
+    "The four Stage 11 clauses remain partial across all eleven producer families; aggregate semantic evidence does not establish complete authority.",
+    "The project.save redo bridge validates semantic-hash shape but does not fail closed when beforeRedo.semanticContentSha256 equals afterRedo.semanticContentSha256.",
+    "Packaged/runtime, current-active-GM, Foundry, and human/player behavior evidence remain bounded producer-scoped observations rather than generic authority.",
+    "The parked runtime lane remains blocked pending a newly reviewed bounded acceptance path."
+  ],
+  "selectedNext": {
+    "milestone": "M894",
+    "title": "Fail-closed project.save redo semantic-hash transition validation",
+    "target": "apps/campaign-helper-desktop/src/project-save-terminal-history.ts; tests/project-save-terminal-history.test.ts",
+    "scope": "One narrow code-only correction and focused deterministic coverage requiring a project.save redo semantic post-state to differ from beforeRedo while preserving exact matched reread, content-hash, generation, and envelope invariants.",
+    "reason": "The M890 worker audit and local composition directly identify the existing bridge's shape-only semantic validation as a concrete producer-specific gap.",
+    "deterministicCheck": "Reject equal before/after semantic hashes, preserve exact operation/history/target/revision/content-hash and byte-envelope checks, retain no-authority/no-write fields, and keep all aggregate counts and Stage 11/12 locks unchanged.",
+    "excluded": "Runtime/browser/Foundry/provider/credential/account/project/foreign-state/player-password mutation, generic executor, aggregate schema/count changes, authority promotion, Stage 11 acceptance, Stage 12, and Ready-to-Play."
+  },
+  "artifacts": {
+    "m892Receipt": {"path": "outputs/m892-stage11-aggregate-semantic-redo-attachment-closure-receipt.json", "sha256": "AD701344EC8F276E9467FDA1A4C548F759200E4AB4E3D9AD66E594FAEAA92446"},
+    "aggregateSource": {"path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts", "sha256": "657553BB0EEDDCA1F701204FA8FE087B5B0F6F786EBE236B461282E0AB1F1DBF"},
+    "semanticRedoSource": {"path": "apps/campaign-helper-desktop/src/project-stage11-semantic-redo-evidence.ts", "sha256": "06E1821E6C86F5F74211E312EA365B808942FB41401DBD1697F62D35AA27E635"}
+  },
+  "limits": {
+    "runtimeLaneReopened": false,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "fail-closed project.save semantic-hash transition validation",
+    "packaged/runtime cross-producer behavior",
+    "aggregate Stage 11 acceptance",
+    "backup-promotion undo/redo support",
+    "generic execution or Foundry authority",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

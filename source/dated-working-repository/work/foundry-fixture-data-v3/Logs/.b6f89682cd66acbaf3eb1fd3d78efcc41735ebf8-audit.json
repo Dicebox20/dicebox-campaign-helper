@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Logs\\.b6f89682cd66acbaf3eb1fd3d78efcc41735ebf8-audit.json",
+    "files": [
+        {
+            "date": 1787836714349,
+            "name": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Logs\\debug.2026-08-27.log",
+            "hash": "adad035ef1e0ba4d08f7b3a21e389406e329d0b545eae6ce571f2c82ea39bf1a"
+        }
+    ],
+    "hashType": "sha256"
+}

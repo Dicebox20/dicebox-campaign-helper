@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M970",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY LOWEST-COVERAGE AUDIT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Audit the eleven producer families and four partial Stage 11 clauses after M969, preserve all evidence labels and authority locks, and select at most one smallest bounded next gap.",
+  "sourceReceipts": [
+    "outputs/m969-stage11-post-m968-redo-aggregate-attachment-reconciliation-receipt.json",
+    "outputs/m968-stage11-project-save-redo-aggregate-ledger-attachment-closure-receipt.json",
+    "outputs/m963-stage11-project-save-current-authority-lifecycle-evidence-slice-receipt.json",
+    "outputs/m962-stage11-final-acceptance-gap-audit-closure-receipt.json"
+  ],
+  "audit": {
+    "clauses": {
+      "aggregateProvenanceAndCoverage": {
+        "status": "PARTIAL",
+        "evidence": "Operation-specific producer receipts and nine aggregate direct strands are indexed, including the M968 project.save redo attachment.",
+        "remainingGap": "No complete aggregate provenance and every-producer coverage exists; read-only and fixture families cannot satisfy mutating producer acceptance."
+      },
+      "directCurrentAuthority": {
+        "status": "PARTIAL",
+        "evidence": "M963 supplies one exact project.save local-project authority/lifecycle projection and M968 supplies one project.save redo aggregate attachment.",
+        "remainingGap": "Operation-specific evidence does not establish generic or every-document current authority, and aggregate authority remains not granted."
+      },
+      "completeApplyReceiptCoverage": {
+        "status": "PARTIAL",
+        "evidence": "Selected producers have strict apply, matched-reread, inverse, or redo evidence, with operation count fixed at 14.",
+        "remainingGap": "Complete apply/receipt/reread coverage across all mutating producers and runtime layers is unproven."
+      },
+      "unifiedLifecycle": {
+        "status": "PARTIAL",
+        "evidence": "The modeled 14-operation lifecycle and selected producer-specific redo bridges preserve exact terminal states and matched rereads.",
+        "remainingGap": "One unified stale/cancelled/rejected/applying/unknown/recovered/undo/redo lifecycle across all producers is not established."
+      }
+    },
+    "producerFamilies": [
+      {"family":"read-only-inspection-and-compile","coverage":"GAP","actionability":"excluded-non-mutating","evidence":"Read-only inspection and compile are separately covered.","remainingGap":"This family has no mutating producer or apply authority."},
+      {"family":"workspace-open-and-recent-order-metadata","coverage":"PARTIAL","actionability":"product-relevant","evidence":"Typed load/catalog/read paths exist.","remainingGap":"A complete mutation, apply, reread, and recovery envelope is absent."},
+      {"family":"ordinary-project-persistence","coverage":"PARTIAL","actionability":"product-relevant","evidence":"Create, save, save-as, rename, and the M963/M966/M968 project.save projections are bounded.","remainingGap":"Aggregate persistence history and unified lifecycle coverage remain partial."},
+      {"family":"in-memory-project-editing-and-navigation","coverage":"PARTIAL","actionability":"product-relevant","evidence":"In-memory and persistent add-Scene evidence, including the M931 aggregate attachment, is bounded.","remainingGap":"Generic editor authority and complete navigation/editing lifecycle coverage remain absent."},
+      {"family":"asset-import-and-binding","coverage":"PARTIAL","actionability":"product-relevant","evidence":"Background, handout, audio, token, and selected binding receipts are role-specific.","remainingGap":"Shared cross-role apply, recovery, and undo/redo coverage remains partial."},
+      {"family":"legacy-migration-persistence","coverage":"PARTIAL","actionability":"product-relevant","evidence":"Typed migration session and reread evidence exist.","remainingGap":"Generic migration execution and unified lifecycle acceptance remain partial."},
+      {"family":"backup-authoritative-promotion","coverage":"PARTIAL","actionability":"product-relevant","evidence":"One bounded packaged promotion/recovery lifecycle exists.","remainingGap":"Broader recovery, undo/redo, and cross-producer authority remain unproven."},
+      {"family":"missing-asset-restore","coverage":"PARTIAL","actionability":"product-relevant","evidence":"Current packaged restore apply/reread evidence exists.","remainingGap":"Every-producer restore history and aggregate recovery authority remain unproven."},
+      {"family":"missing-asset-detach","coverage":"PARTIAL","actionability":"product-relevant","evidence":"Current packaged detach apply/reread evidence exists.","remainingGap":"Every-producer detach history and aggregate recovery authority remain unproven."},
+      {"family":"broken-scene-reference-detach","coverage":"PARTIAL","actionability":"product-relevant","evidence":"Current packaged broken-reference detach lifecycle and reread evidence exist.","remainingGap":"Aggregate detach history and cross-producer recovery remain partial."},
+      {"family":"test-owned-fixture-setup-and-stage-receipts","coverage":"GAP","actionability":"excluded-infrastructure","evidence":"Fixture and stage receipts support bounded evidence capture.","remainingGap":"Test infrastructure is not a user mutating producer and cannot confer product authority."}
+    ],
+    "selectionBasis": {
+      "excludedLowerCoverageFamilies": ["read-only-inspection-and-compile", "test-owned-fixture-setup-and-stage-receipts"],
+      "productRelevantFamiliesRemainingPartial": 9,
+      "broadBlocker": "Generic aggregate current authority and complete cross-producer runtime lifecycle require evidence outside this read-only local audit and remain blocked by the parked runtime/Foundry lane.",
+      "lowestCoverageBoundedGap": "The narrowest directly evidenced local gap is the existing project.add-scene.persist redo handler/classifier binding: its strict bridge, matched reread, semantic evidence, and aggregate semantic attachment exist, but no dedicated typed handler/classifier evidence field is bound."
+    },
+    "counts": {
+      "stage11PartialClauses": 4,
+      "producerFamilies": 11,
+      "productRelevantProducerFamilies": 9,
+      "modeledOperations": 14,
+      "directProjections": 16,
+      "stage11MatrixRedoBindings": 8,
+      "aggregateDirectStrands": 9
+    },
+    "authority": {
+      "current": "PARTIAL",
+      "aggregate": "NOT_GRANTED",
+      "runtime": "PARKED",
+      "stage11AcceptanceStatus": "BLOCKED",
+      "stage12Started": false,
+      "readyClaim": false
+    }
+  },
+  "selection": {
+    "nextMilestone": "M971",
+    "scope": "One strict typed local code-only evidence binding for project.add-scene.persist redo using the existing bridge and matched-reread classifier.",
+    "reason": "This is disjoint from the completed project.save binding, uses existing exact source evidence, and is the smallest bounded producer-specific gap before any broader aggregate or runtime authority work.",
+    "readOnlyAuditComplete": true,
+    "codeChanges": 0,
+    "runtimeRerun": false,
+    "browserInput": false,
+    "controlInvocation": false,
+    "projectMutation": false,
+    "authorityPromotion": false,
+    "playerPasswords": false,
+    "stage11Acceptance": false,
+    "stage12": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "knowledgeBase": "PASS: rebuilt and verified at 1501 sources, 1223 facts, 1140 decisions, 135 open items, 812 trials, 40 research subjects, and 26 milestones.",
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history active; zero violations; readyClaim false.",
+    "sourceAudit": "PASS: M962 matrix and M963/M968/M969 current evidence were reread across all eleven families and four clauses.",
+    "countAudit": "PASS: all required count scopes and source-versus-fixture-versus-runtime labels are preserved."
+  },
+  "limits": {
+    "readOnly": true,
+    "nonCertifying": true,
+    "implementationChanges": 0,
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "controlInvocation": false,
+    "genericExecutor": false,
+    "projectMutation": false,
+    "foundryMutation": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "conclusion": "M970 confirms that all four Stage 11 clauses remain partial. The two gap families are excluded non-mutating/infrastructure families; all nine product-relevant families remain partial. The narrowest directly evidenced next gap is a project.add-scene.persist redo handler/classifier binding, while aggregate authority and runtime evidence remain blocked.",
+  "next": "Perform only the authorized M971 project.add-scene.persist redo handler/classifier evidence binding."
+}

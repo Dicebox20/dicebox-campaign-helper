@@ -1,0 +1,64 @@
+{
+  "milestone": "M444",
+  "operation": "dicebox.stage11.fresh-debug-artifact-build",
+  "status": "PASS_LOCAL_BUILD_AND_READ_ONLY_VERIFICATION",
+  "authorization": "D-606",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "workingDirectory": "C:/Users/rujie/Documents/Codex/2026-08-20/dicebox-campaign-helper",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "backup-promotion-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "exitCode": 0,
+    "buildCount": 1,
+    "beforeBuildCommand": "npm run build",
+    "tauriCommand": "tauri build --debug --no-bundle"
+  },
+  "artifactReread": {
+    "exactExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "A0547A959358FEDCAD585BCCC2D2C635700ECA544F0A6AF0CE02EFEFCBFC3DF0",
+      "length": 26636288,
+      "lastWriteUtc": "2026-08-29T03:25:06.1963164Z"
+    },
+    "frontendDist": {
+      "indexHtmlSha256": "223CD46365D03854AA21CBDD8AFDD67F885A1112F663EDEEDADECF3F406601B7",
+      "appBundle": "apps/campaign-helper-desktop/dist/assets/index-CpXQl5vA.js",
+      "appBundleSha256": "9EC3F904843F95DE2977D464FC5B16E7DF3DB35AD1B88701A9F60FFDB4A441DA",
+      "appBundleLastWriteUtc": "2026-08-29T03:24:31.0961464Z",
+      "indexLastWriteUtc": "2026-08-29T03:24:31.1246496Z",
+      "modeMarkerPresent": true,
+      "formatterMarkerPresent": true,
+      "legacyStateDriverCatchPresent": false
+    },
+    "sourceAtBuild": {
+      "appSha256": "876104EA4FC653321B967DFFDCFA34EE4DAA92A123FEC05E14E3BDEA349A549C",
+      "projectStoreSha256": "6BFD20CB1AEA42A30918734CB43844048D78D051E8DA4183E9FC509CE4ADEFB5"
+    }
+  },
+  "protectedStateReread": {
+    "projectRoot": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-backup-authoritative-recovery-promotion-self-test",
+    "projectJsonExists": false,
+    "projectBackupJsonSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2",
+    "lastApprovedApplicationSessionStatus": "MISSING",
+    "newRuntimeSessionTransition": false,
+    "recoveryInvoked": false,
+    "desktopProcessRunning": false
+  },
+  "scope": {
+    "launch": false,
+    "capture": false,
+    "sessionMutation": false,
+    "fixtureMutation": false,
+    "projectMutation": false,
+    "recoveryMutation": false,
+    "foundry": false,
+    "providers": false,
+    "credentials": false,
+    "playerPasswords": false,
+    "cleanup": false
+  },
+  "nextBoundary": "M445: one exact capture-runner observation against the freshly rebuilt target, followed by authoritative trace/session/fixture/recovery/process reread; no rebuild or retry."
+}

@@ -1,0 +1,30 @@
+{
+  "operation": "dicebox.stage11.asset-restore.reentry-observation-reconciliation",
+  "status": "BLOCKED_ASSERTION",
+  "milestone": "M486",
+  "captureReceipt": "outputs/m486-stage11-asset-restore-reentry-observation-receipt.json",
+  "captureExitCode": 0,
+  "selectedAsset": {
+    "sha256": "3505e78b9965cadb25ee3709e95a6f2ea361fccf8545637954254045ddd75aaf",
+    "mediaType": "image/webp",
+    "restoreReceiptStatus": "PASS",
+    "presentAfterReread": true,
+    "hashMatches": true
+  },
+  "preservedState": {
+    "projectEnvelopeSha256": "3D04D40D76EFDF97C88D413C339D42471117ADEA55BAD8A71BAC1E5C5EABD746",
+    "generation": 1,
+    "unselectedAssetSha256": "379aa60c5861ea4f15b6b8fd97ce05053fd6a7de6a4bd4338859fd72ebdbdf4d",
+    "unselectedAssetDisposition": "MISSING",
+    "unselectedAssetRestoreEligible": true,
+    "foundryWrite": false,
+    "retryAttempted": false,
+    "desktopOrCargoProcessRemaining": false
+  },
+  "blocker": {
+    "code": "TERMINAL_ASSERTION_REQUIRES_AGGREGATE_PASS",
+    "detail": "The test requires recoveryInspection.status === PASS, but the intentionally unselected PNG remains missing and eligible, making the aggregate inspection correctly BLOCKED after a successful selected-asset restore.",
+    "recovery": "Read-only M487 reconciliation; do not rerun, reset, delete, or alter the fixture."
+  },
+  "nonCertification": "This is bounded local desktop evidence only. It neither accepts Stage 11 nor certifies Foundry behavior or Ready-to-Play."
+}

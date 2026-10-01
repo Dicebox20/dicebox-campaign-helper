@@ -1,0 +1,156 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m304-stage11-post-acceptance-cross-producer-audit-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M304",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "knowledgeBasePreflight": {
+    "integrity": "ok",
+    "sources": 431,
+    "facts": 466,
+    "decisions": 415,
+    "trials": 429,
+    "workflowPassedGates": 10,
+    "workflowTotalGates": 16,
+    "activeStage": "proposal-approval-history"
+  },
+  "checklist": [
+    {
+      "line": "inspectable command batches with dependencies, source/provider, hashes, authority, and risk",
+      "status": "PARTIAL",
+      "directEvidence": [
+        "M299 implements the strict generic envelope, canonical dependency validation, deterministic hash, distinct review/target authority, and risk",
+        "M300 normalizes human SceneCommand, Campaign Director, Technical Builder, and Foundry IR inputs",
+        "M302/M303 render and persist every inspection field for one local Director product path"
+      ],
+      "remaining": [
+        "ordinary human Scene controls create SceneCommands but bypass the generic review session in App.tsx",
+        "desktop project-store operation previews remain operation-specific and have no generic batch adapter",
+        "compiler release/diff/conflict plans remain domain-specific, although they are planning inputs rather than direct executors"
+      ]
+    },
+    {
+      "line": "approve/reject/edit, stale invalidation, undo/redo, cancellation, timeout-as-unknown, reread-before-retry, and recovery receipts",
+      "status": "PARTIAL",
+      "directEvidence": [
+        "M299 deterministically implements every named transition and append-only normalized receipts",
+        "M301 persists exact local lifecycle and unknown-outcome recovery state",
+        "M302/M303 directly prove review, apply/reread, stale invalidation, undo, and redo in the desktop",
+        "existing staged executor and transaction journal separately prove timeout-unknown and reread-before-retry"
+      ],
+      "remaining": [
+        "only the Director Scene path currently persists the generic lifecycle in the product",
+        "human Scene controls and project-store previews retain producer-specific history",
+        "Technical Builder and Foundry adapters are no-write normalization only; their repository/runtime executors retain separate journals"
+      ]
+    },
+    {
+      "line": "human controls, Campaign Director proposals, Technical Builder patches, and Foundry plans share one review vocabulary without sharing authority",
+      "status": "IMPLEMENTED_AT_ADAPTER_BOUNDARY_PARTIAL_IN_PRODUCT",
+      "directEvidence": [
+        "M300 creates validated generic batches for all four named producer classes",
+        "review domains remain human-review, repository-integration, and foundry-runtime",
+        "target domains remain local-project, repository, and foundry-active-gm with exact active-GM requirement",
+        "M302/M303 integrate only Campaign Director and therefore do not leak repository or Foundry authority"
+      ],
+      "remaining": [
+        "the human adapter is not used by ordinary desktop nudge/position controls",
+        "Technical Builder and Foundry product promotion/execution remain correctly deferred and cannot be inferred from adapter conformance"
+      ]
+    },
+    {
+      "line": "acceptance: every mutating path has preview, explicit approval, deterministic execution, authoritative reread, and recoverable history",
+      "status": "PARTIAL",
+      "directEvidence": [
+        "M303 directly proves one exact local Director path from preview through stale/recovery history",
+        "human Scene execution is deterministic and undoable but currently has no generic preview/approval history",
+        "project-store guarded operations have exact previews/approvals/rereads but no shared generic history",
+        "Foundry staged execution has exact approval, active-GM gate, reread, unknown recovery, and its own journal"
+      ],
+      "remaining": [
+        "ordinary human Scene controls are a current mutating path that bypasses generic preview/approval",
+        "project-store proposal-like mutations remain outside generic history",
+        "Technical Builder repository promotion is not implemented and Foundry desktop control belongs to the later ordered desktop-foundry-control stage"
+      ]
+    }
+  ],
+  "producerConformance": [
+    {
+      "producer": "human Scene controls",
+      "genericAdapter": "PASS",
+      "productLifecycle": "MISSING",
+      "executionAuthority": "local-project",
+      "nextDisposition": "integrate existing adapter/session into current human position and nudge controls"
+    },
+    {
+      "producer": "Campaign Director",
+      "genericAdapter": "PASS",
+      "productLifecycle": "PASS M302/M303",
+      "executionAuthority": "local-project",
+      "nextDisposition": "retain"
+    },
+    {
+      "producer": "Technical Builder",
+      "genericAdapter": "PASS",
+      "productLifecycle": "NO-WRITE HANDOFF ONLY",
+      "executionAuthority": "repository integration remains separate",
+      "nextDisposition": "do not infer promotion; audit again after current local mutating paths are generic"
+    },
+    {
+      "producer": "desktop project store",
+      "genericAdapter": "MISSING",
+      "productLifecycle": "PRODUCER-SPECIFIC PREVIEW/APPROVAL/REREAD",
+      "executionAuthority": "exact fixed-root local project",
+      "nextDisposition": "add a bounded generic adapter/integration after human controls"
+    },
+    {
+      "producer": "compiler release/diff/conflict plans",
+      "genericAdapter": "DOMAIN-SPECIFIC",
+      "productLifecycle": "PLANNING ONLY",
+      "executionAuthority": "none until a separate executor",
+      "nextDisposition": "do not treat planning as mutation; preserve for later compiler/release stages"
+    },
+    {
+      "producer": "Foundry IR and staged executor",
+      "genericAdapter": "PASS",
+      "productLifecycle": "PRODUCER-SPECIFIC STAGED JOURNAL",
+      "executionAuthority": "foundry-active-gm",
+      "nextDisposition": "retain exact authority; desktop execution integration belongs to the ordered desktop-foundry-control stage"
+    }
+  ],
+  "smallestRemainingVerticalSlice": {
+    "id": "desktop-human-scene-generic-proposal-integration",
+    "milestone": "M305",
+    "scope": "Route current desktop human position and nudge intents through the already-verified human Scene proposal adapter and exact local proposal session. Show a no-write preview in the existing tray, require explicit approval, execute once through Scene history, commit after exact serialized Scene reread, and preserve undo/redo/stale behavior. Keep Director behavior and all repository/project-store/Foundry authority unchanged.",
+    "reason": "M303 directly proves that the ordinary human edit path still mutates outside generic lifecycle history. The adapter, session, execution, reread, and UI foundations already exist, making this the smallest current-product conformance gap."
+  },
+  "sourceHashes": {
+    "packages/dicebox-core/src/proposal-batch.ts": "BB78F1ED4B1AB32462D357808BF633702BBA7B5D710F78601CB6ABDD89ADC1E9",
+    "packages/dicebox-scene/src/proposal-adapter.ts": "1066A135CD0563CE6BD2260A68EE146A37230D0C8F8FAAAFCBB29FC6B4E96669",
+    "packages/dicebox-director/src/proposal-adapter.ts": "B907D2D4B4756E1FD45B68D357365D85AFA46BDD59866C54865FE0809153A83B",
+    "packages/dicebox-codex-adapter/src/proposal-adapter.ts": "C89C2DB0271D3F1DE866A57F6E9799C77708A0BD2548312F604FE83D7B6F8426",
+    "packages/dicebox-compiler/src/proposal-adapter.ts": "3BF2CB4D64CAFDBA206C6A51E1D15BD7D835ECF5F2250398D3ED70BAF534473F",
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "apps/campaign-helper-desktop/src/proposal-session.ts": "7D9ADA439F5C4179FA6669C8BD81A2CA631353C522DAA08F984B86B0868CB7D5",
+    "apps/campaign-helper-desktop/src/proposal-application.ts": "FA2817B56FA0453C7EAC5252D992F71868BEA4E70BAA3BAD83A7A1E21CDF435F",
+    "apps/campaign-helper-desktop/src/App.tsx": "4C9E529729D7289C9A9F684624120184E472AA7479D23ED1FA27B87E6EAE50B0",
+    "outputs/m299-stage11-generic-proposal-batch-core-receipt.json": "24E5D09E27F77E689B9F546B029F84DA4FE6FC198DE5FDC07CB6E68784956559",
+    "outputs/m300-stage11-cross-producer-proposal-adapters-receipt.json": "4F8AEED1547C904EE798AF1DCE98B8DC4F3A5E8C2AC55B40DB68ED4F61BC0E12",
+    "outputs/m301-stage11-desktop-proposal-session-receipt.json": "A4FAEA91C638950BF14E369037D2DF4892D90CE9BBE12C27D6768FF720B52316",
+    "outputs/m302-stage11-desktop-generic-review-application-receipt.json": "577E6D5F7A1A9B3F33548E8BFD33906C5CA5E1843B4D25236E7CB62053256607",
+    "outputs/m303-stage11-local-browser-proposal-acceptance-receipt.json": "C4FAC8C2239DAC5619EF016CE0550967C84CD9A5DDA4120B2120F10C501D5FED"
+  },
+  "doesNotProve": [
+    "M305 implementation",
+    "project-store generic integration",
+    "Technical Builder repository promotion",
+    "Foundry desktop execution",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

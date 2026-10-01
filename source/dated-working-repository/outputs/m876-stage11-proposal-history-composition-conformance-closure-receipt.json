@@ -1,0 +1,58 @@
+{
+  "milestone": "M876",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY CONFORMANCE; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "target": "dbx:project:m876-proposal-history-conformance",
+  "operation": "dicebox.project.proposal-history.cross-producer-composition",
+  "producers": [
+    {
+      "operation": "project.asset.bind",
+      "batchId": "dbx:proposal:m876-asset-bind",
+      "status": "COMMITTED",
+      "history": ["preview", "approve", "begin-apply", "commit-after-reread"],
+      "reread": {"status": "matched", "revision": 2, "contentSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}
+    },
+    {
+      "operation": "project.recovery.backup-promote",
+      "batchId": "dbx:proposal:m876-backup-promote",
+      "status": "COMMITTED",
+      "history": ["preview", "approve", "begin-apply", "commit-after-reread"],
+      "reread": {"status": "matched", "revision": 2, "contentSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}
+    }
+  ],
+  "composition": {
+    "distinctBatchIdentities": true,
+    "operationSpecificHandlers": true,
+    "reviewAuthority": "human-review/reviewer",
+    "targetAuthority": "local-project",
+    "requiredActiveGm": false,
+    "commandCountPerSession": 1,
+    "historyLengthPerSession": 4,
+    "authoritativeReread": true,
+    "noWriteSessionEvidence": true,
+    "genericExecutor": false,
+    "foundryWrite": false
+  },
+  "validation": {
+    "focusedRelatedSuite": "PASS: 4 files; 18 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "diffCheck": "PASS",
+    "desktopRuntime": "NOT_RUN",
+    "browserOrFoundry": "NOT_RUN"
+  },
+  "limits": {
+    "producerScopedOnly": true,
+    "aggregateLedgerChanged": false,
+    "aggregateAuthority": "NOT_GRANTED",
+    "currentAuthority": "PARTIAL",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "projectMutation": false,
+    "foreignStateTouched": false
+  },
+  "next": "Perform one read-only reconciliation of M876 against the full Stage 11 matrix; select at most one disjoint code-only gap while retaining the parked runtime lane, Stage 11 blocked, Stage 12 locked, and readyClaim false."
+}

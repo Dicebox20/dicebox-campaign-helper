@@ -1,0 +1,43 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1124",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "operation": "dicebox.ascendancy.signal-rune.native-document.exact-runtime-promotion-reconciliation",
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "activeGm": true,
+    "user": "Gamemaster"
+  },
+  "supervisor": {
+    "pid": 25108,
+    "port": 30001,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "scenes": {
+    "signal": {
+      "roomId": "dbx:room:signal-frequency-chamber",
+      "sceneIdRuntime": "AneddhKAAfk5HlsA",
+      "assetSha256": "DB9307932865B0D3A23C5A8AA61082D520206443318658DE7E03C773A1A9972E"
+    },
+    "rune": {
+      "roomId": "dbx:room:rune-mechanism-chamber",
+      "sceneIdRuntime": "p9Mbi0CJWe9KvJhH",
+      "assetSha256": "F45922E219A12FBA6B79A26AD0D6B5EBBAF51ADD86C025E9B676DA24707D507B"
+    }
+  },
+  "boundaries": {
+    "parentSceneIdsObserved": true,
+    "childUuidGenerationBindings": false,
+    "payload": false,
+    "promotion": false,
+    "noWrite": true,
+    "apply": false,
+    "runtimeMutation": false,
+    "stage12Acceptance": "NOT_CLAIMED"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m359-stage11-project-save-ui-execute-reread-inverse-restore-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M359",
+  "evidenceLabel": "fixture",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 2,
+  "projectPersistenceWrites": 2,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "browserStorageWrites": 1,
+  "providerCalls": 0,
+  "credentialCalls": 0,
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "target": {
+    "projectId": "dbx:project:desktop-multiscene-self-test",
+    "sourceGeneration": 4,
+    "afterApplyGeneration": 5,
+    "afterUndoGeneration": 6,
+    "sourceContentSha256": "cd05e06e91c3224f65f0e1373af48ae7565b9f0828de29a9f14b6ecdb69941fd",
+    "afterApplyContentSha256": "a37a8c606a5f1bdd382284c1700967551690e1b751ee6091528065c186868409",
+    "afterUndoContentSha256": "cd05e06e91c3224f65f0e1373af48ae7565b9f0828de29a9f14b6ecdb69941fd",
+    "sceneIds": [
+      "dbx:scene:desktop-multiscene-self-test-main",
+      "dbx:scene:desktop-multiscene-self-test-scene-2"
+    ],
+    "activeSceneId": "dbx:scene:desktop-multiscene-self-test-scene-2",
+    "sceneCount": 2,
+    "assetCount": 0,
+    "afterApplyEditedSceneSha256": "122a547258b4283c5ff852a3e9ac3e70bb76aefff2e9fbb8c34d640c5f279abe",
+    "afterUndoRestoredSceneSha256": "3c0b33907b0a2868dd91dfe8b6120882f5c93672789194b4b6fbf3ae5a2caac4"
+  },
+  "durableReread": {
+    "projectFileSha256": "646596938948A8CDB5C7BB26AE499D13DE69ED5ABFA9C472A8987E10BE46D76F",
+    "primaryByteSha256": "646596938948A8CDB5C7BB26AE499D13DE69ED5ABFA9C472A8987E10BE46D76F",
+    "backupFileSha256": "400EE3C900D316CB2B2F61558B481A4DF89CD0D25DED8CEAD562EC7818814418",
+    "backupStatus": "present",
+    "workspaceIndexSha256": "2B51628595DC042146AD836BE212720BA6B26BED11B33A955AC03B790D15BB9E",
+    "workspaceGeneration": 46,
+    "workspaceNextSequence": 40,
+    "targetLastOpenedSequence": 6,
+    "foreignStatePreserved": true,
+    "noFoundryWrite": true
+  },
+  "uiBoundary": {
+    "previewControl": "Preview save active project",
+    "reviewOutput": "REVIEW PROJECT SAVE",
+    "approvalControl": "Approve project recovery proposal",
+    "applyControl": "Apply approved project save",
+    "operation": "project.save",
+    "proposalProducer": "project-store",
+    "provider": null,
+    "reviewAuthority": "human-review/reviewer",
+    "targetAuthority": "local-project",
+    "historyTransitions": ["preview", "approve", "begin-apply", "commit-after-reread", "undo"],
+    "finalSessionStatus": "undone",
+    "rereadBoundary": "post-save committed reread followed by inverse restore and authoritative reread; editor baseline updated only after final reread",
+    "payloadBoundary": "generic proposal/session payload contains metadata and content descriptor only; Scene JSON and asset bytes remain outside generic history",
+    "assetSafetyBoundary": "UI preview rejects non-zero registered-asset projects until an asset-byte-preserving UI path is separately authorized"
+  },
+  "packagedSelfTest": {
+    "mode": "save-ui-execute",
+    "title": "DiceBox Project Save UI Execute PASS · dbx:project:desktop-multiscene-self-test · preview→approval→save→reread→inverse-restore · generation 6 · history 5 · no Foundry write",
+    "windowEvidence": "Fresh packaged DiceBox Campaign Helper window reached the exact PASS title and reread text showed project proposal undone with 5 history receipts, project-store/no-provider metadata, generation 4 base, project.save operation, exact target, generation 6 loaded, 2 Scenes, 0 assets, and no Foundry write.",
+    "executionOwnersAfterStop": 0,
+    "manualInput": "none; callback-driven package self-test",
+    "sourceBuild": "npm run desktop:tauri:build passed with the M359 source",
+    "bundlePath": "apps/campaign-helper-desktop/dist/assets/index-Ckak-lqo.js",
+    "bundleSha256": "AC98610AFE30E14BFABE6FB191EE6E77DC7581BD11C4D630D4CF7C1D754FD220",
+    "executablePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "03405B4FF292F937C66C93DC31E8370C2A4BAAC6497C87F7CC79A4783B52C687"
+  },
+  "validation": {
+    "focusedTests": "PASS: 2 files; 10 tests",
+    "fullTests": "PASS: 124 files; 657 tests",
+    "desktopBuild": "PASS: TypeScript, node TypeScript, and Vite build",
+    "packageBuild": "PASS: standalone Tauri debug build",
+    "packageTypecheck": "PASS: npm run build:packages",
+    "tooling": "PASS: npm run verify:tooling",
+    "database": "PASS: schema-plus-seed rebuild and integrity; 533 sources; 566 facts; 508 decisions; 522 trials; 40 research subjects; 26 milestones",
+    "workflow": "PASS: 10/16 gates; Stage 11 only active; no violations",
+    "diff": "PASS: git diff --check"
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "BF20F318EF5DAAAE137E40DBCBAD2222277BD207DEF73D4ED463E5A4DC530BBB",
+    "apps/campaign-helper-desktop/src/project-save-proposal-adapter.ts": "59CB89C97802E088DD6C8E2D31E0FCB2090F48B803F5A1579960EE4073EC6EFA",
+    "apps/campaign-helper-desktop/src/project-save-executor.ts": "1B1A9A87AD7C823FC949F82A4879089DF495AC20BB06D5149A0472905FD74378",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "16FD0CBD0B84AC44A34507EB5E4BCB18EF349288EBF0A83358F54E90B76FE2FE",
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "tests/desktop-project-proposal-review.test.ts": "36C44652865BC23A7B415C4079DDE8BC46E7B0EFEB3F005C450BEC2F93846590",
+    "tests/project-save-executor.test.ts": "7ABF68904DDA8C1AF1FFDAC9D90C6BA502C1C0B97C75003DB9C69F749AB4DEEF"
+  },
+  "prohibitedActivity": {
+    "provider": false,
+    "credentials": false,
+    "browser": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "unrelatedProject": false,
+    "foreignState": false,
+    "assetDeletionOrCleanup": false,
+    "retryAfterOutcomeUnknown": false
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "save UI integration for projects with registered asset bytes",
+    "save-as or rename UI integration",
+    "other asset or recovery UI integration",
+    "Foundry execution or active-GM authority",
+    "Ready-to-Play"
+  ]
+}

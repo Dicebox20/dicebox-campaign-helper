@@ -1,0 +1,164 @@
+{
+  "milestone": "M903",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile corrected M902 project-rename semantic-redo evidence against the complete Stage 11 matrix, producer-family evidence, aggregate/current-authority bridges, and the rebuilt knowledge base without changing counts or authority.",
+  "inputs": [
+    "outputs/m902-stage11-project-rename-semantic-redo-composition-closure-receipt.json",
+    "outputs/m901-stage11-post-token-semantic-redo-reconciliation-receipt.json",
+    "outputs/m900-stage11-token-asset-semantic-redo-composition-closure-receipt.json",
+    "outputs/m899-stage11-post-handout-semantic-redo-reconciliation-receipt.json",
+    "outputs/m898-stage11-handout-asset-semantic-redo-composition-closure-receipt.json",
+    "outputs/m897-stage11-post-audio-semantic-redo-reconciliation-receipt.json",
+    "outputs/m896-stage11-audio-asset-semantic-redo-composition-closure-receipt.json",
+    "outputs/m895-stage11-post-save-semantic-correction-reconciliation-receipt.json",
+    "outputs/m894-stage11-project-save-semantic-hash-transition-correction-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-rename-semantic-redo-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-rename-terminal-history.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-create-terminal-history.ts",
+    "tests/project-stage11-rename-semantic-redo-evidence.test.ts",
+    "tests/project-rename-terminal-history.test.ts",
+    "tests/project-create-terminal-history.test.ts",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false,
+    "countScope": {
+      "stage11MatrixRedoBindings": 8,
+      "aggregateDirectStrands": 9,
+      "currentAggregateAuthorityIndexedRedoBindings": 9,
+      "currentAggregateAuthorityIndexedRedoBindingEntries": [
+        "project.create",
+        "project.save",
+        "project.rename",
+        "project.add-scene.persist",
+        "project.asset.bind",
+        "project.asset.register-audio",
+        "project.asset.register-handout",
+        "project.asset.register-token",
+        "project.add-scene.commit-in-memory"
+      ],
+      "scopeNote": "The active Stage 11 matrix/receipt field remains 8 redo bindings and the aggregate direct-strand field remains 9. The current aggregate-authority source and its test separately index 9 redo entries, including the supplemental project.add-scene.commit-in-memory row. M903 changes neither count and does not silently collapse these fields into one measure.",
+      "reconciled": true
+    }
+  },
+  "m902Disposition": {
+    "classification": "strict producer-scoped project-rename semantic-redo composition",
+    "operation": "project.rename.redo",
+    "semanticEvidencePreserved": true,
+    "matchedRereadPreserved": true,
+    "generationAdvancePreserved": true,
+    "displayNameTransitionPreserved": true,
+    "contentPreserved": true,
+    "metadataEnvelopeIntegrityPreserved": true,
+    "byteHashRotation": "NOT_CLAIMED; rename bridge exposes metadata integrity flags but no byte hashes",
+    "aggregateSemanticAttachment": "not-attached; producer-scoped evidence retained",
+    "countsChanged": false,
+    "runtimeLaneReopened": false,
+    "authorityPromoted": false,
+    "backupPromotionUndoRedo": "NOT_APPLICABLE_ONE_WAY",
+    "foreignStatePreserved": true
+  },
+  "remainingGaps": [
+    "All four acceptance clauses remain partial across eleven producer families; M902 adds one project-rename producer composition only.",
+    "M886, M890, M896, M898, M900, and M902 remain typed non-certifying producer-scoped evidence and do not establish aggregate or cross-producer committed/recovered authority.",
+    "Packaged/runtime, exact Foundry, GM/player, and remaining producer behavior evidence remain bounded or incomplete.",
+    "The desktop runtime lane remains parked after the permitted M872 observation and M873 reconciliation.",
+    "The Stage 11 matrix's 8-binding receipt measure and the current aggregate-authority source's 9-entry index are explicitly scoped above and must not be treated as a single interchangeable count.",
+    "Project-rename byte-level envelope rotation remains unclaimed because the bridge does not expose byte hashes."
+  ],
+  "selectedNext": {
+    "milestone": "M904",
+    "title": "Operation-specific project-create semantic redo composition",
+    "target": [
+      "apps/campaign-helper-desktop/src/project-create-terminal-history.ts",
+      "tests/project-create-terminal-history.test.ts"
+    ],
+    "scope": "One focused TypeScript composition using the existing strict project.create redo bridge and deterministic fixture/test, with a new typed semantic layer and focused deterministic test; no production or aggregate authority expansion.",
+    "reason": "The existing strict project.create redo bridge and focused test directly evidence a disjoint target-creation redo lifecycle, while no dedicated typed project.create semantic-redo layer is present in the current source inventory.",
+    "deterministicCheck": "Require exact project.create target identity, target absence before redo, target presence after redo, later generation advance, first-generation content/scenes/asset-collection identity preservation, matched reread, fail-closed drift rejection, and unchanged counts/authority.",
+    "excluded": [
+      "runtime/browser/Foundry/provider/account activity",
+      "credentials or player-role passwords",
+      "project mutation or generic execution",
+      "aggregate semantic attachment, authority, or count changes",
+      "Stage 11 acceptance",
+      "Stage 12 entry",
+      "Ready-to-Play claim"
+    ]
+  },
+  "artifacts": {
+    "m902Receipt": {
+      "path": "outputs/m902-stage11-project-rename-semantic-redo-composition-closure-receipt.json",
+      "sha256": "EFA70A0C0AC37AFBD45C99956201FB4308E7582EB49CF3C10A9CDAA0E6EF16C5"
+    },
+    "m902SemanticLayer": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-rename-semantic-redo-evidence.ts",
+      "sha256": "40B65B735CE0060CF4C41944227945BEC6046619D76D21E43DD28A7DE3486420"
+    },
+    "aggregateAuthoritySource": {
+      "path": "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+      "sha256": "A498BEC6CF213F1FB55B2EB2DC90B33AE657BA1307F77F17FC98B1A000A3D446"
+    },
+    "createRedoBridge": {
+      "path": "apps/campaign-helper-desktop/src/project-create-terminal-history.ts",
+      "sha256": "A9F7F8A6308386BADB853C8F2931B24435C9EA02093808FF939E9C3D681CC297"
+    },
+    "createFocusedTest": {
+      "path": "tests/project-create-terminal-history.test.ts",
+      "sha256": "B5FE278ECF15A556AC8068BE99898940260AF6F7750E55204469940A5017C40B"
+    }
+  },
+  "validation": {
+    "focusedEvidenceSuite": "PASS: 7 files; 20 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: 10/16; violations 0",
+    "fullRepositorySuite": "PASS: 203 files; 928 tests",
+    "databaseRebuildAndVerify": "PASS: sources 1369, facts 1157, decisions 1009, open items 135, trials 788, research subjects 40, milestones 26",
+    "knowledgeBaseQueries": "PASS: M902 fact, M903 decision, summary, and coverage surfaces",
+    "directCreateGapCheck": "PASS: strict project.create redo bridge and focused test exist; no dedicated project.create semantic-redo layer is present",
+    "countScopeCheck": "PASS: Stage 11 matrix receipt measure 8, aggregate direct strands 9, current aggregate-authority index 9; no write or count change"
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "aggregateSemanticAttachment": false,
+    "runtimeLaneReopened": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "byte-level envelope rotation for project.rename",
+    "backup-promotion undo/redo support",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Implement only the authorized M904 operation-specific project-create semantic redo composition after recording this reconciliation in the roadmap, active card, and rebuilt/verified knowledge base."
+}

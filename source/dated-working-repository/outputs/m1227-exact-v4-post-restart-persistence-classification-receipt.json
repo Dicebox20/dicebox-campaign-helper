@@ -1,0 +1,64 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1227",
+  "operation": "ascendancy.base-four-scenes.post-restart-persistence-classification",
+  "evidenceClass": "fixture-post-restart-reread",
+  "status": "PASS_PERSISTENCE_CLASSIFIED",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "currentUserMatchesActiveGm": true,
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671"
+  },
+  "ownedSceneObservation": {
+    "selectedOwnedSceneCounts": {
+      "dbx:room:signal-frequency-chamber": 1,
+      "dbx:room:ascendancy-tram-depot": 1,
+      "dbx:room:rune-mechanism-chamber": 1,
+      "dbx:room:central-core-control-chamber": 1
+    },
+    "ambiguousOwnedRooms": [],
+    "missingOwnedRooms": [],
+    "foreignSemanticConflicts": [],
+    "foreignStatePreserved": true,
+    "parentScenePersistence": "observed-for-all-four-rooms"
+  },
+  "signalRuneChildReread": {
+    "status": "OBSERVED",
+    "postRestartAuthoritativeReread": true,
+    "rooms": [
+      { "roomId": "dbx:room:signal-frequency-chamber", "walls": 8, "regions": 6, "tiles": 7, "complete": true },
+      { "roomId": "dbx:room:rune-mechanism-chamber", "walls": 8, "regions": 6, "tiles": 7, "complete": true }
+    ],
+    "foreignStatePreserved": true
+  },
+  "tramCoreChildClassification": {
+    "roomIds": [
+      "dbx:room:ascendancy-tram-depot",
+      "dbx:room:central-core-control-chamber"
+    ],
+    "status": "UNKNOWN_NOT_SURFACED",
+    "reason": "The existing fixed persistent-world control intentionally rereads Signal/Rune only; no independent post-restart child receipt exists for Tram/Core.",
+    "nativeMutationAttempted": false
+  },
+  "supervisorReread": {
+    "status": "PASS",
+    "fixtureState": "running",
+    "pid": 24780,
+    "listeners": [24780],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "foreignStatePreserved": true,
+  "remainingBlockers": [
+    "Independent post-restart Tram/Core Wall/Region/Tile child evidence is not surfaced by the current fixed control.",
+    "Stage 12 and Ready-to-Play remain unproven."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1154-artifact-bound-runtime-profile-diff-reconciliation-closure",
+  "milestone": "M1154",
+  "status": "CLOSED_M1154_CANONICAL_ARTIFACT_DIFF_PASS_BOOTSTRAP_SCOPE_BLOCKER",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.artifact-bound-runtime-profile-diff.reconcile",
+  "observationReceipt": "outputs/m1154-stage12-artifact-bound-runtime-profile-diff-reconciliation-receipt.json",
+  "gate": {
+    "m1153RuntimeProfile": "pass",
+    "runtimeIdentity": "pass",
+    "canonicalArtifactDiff": "pass-5-of-5",
+    "bootstrapModuleScope": "blocked-unmodeled-by-m1144-verifier",
+    "candidateSpecificInstallerScope": "blocked",
+    "liveAuthority": "blocked",
+    "authoritativeCampaignReread": "blocked",
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "validation": {
+    "m1144CanonicalVerifierPreserved": true,
+    "currentCanonicalHashesRecomputed": true,
+    "m1153SourceStagedServedHashPreserved": true,
+    "runtimeReopened": false,
+    "documentsOrAssetsMutated": false,
+    "foreignStatePreserved": true,
+    "unknownStatePreserved": true
+  },
+  "remainingBlockers": [
+    "The M1144 verifier covers five canonical artifacts but does not model the package bootstrap module.js that carried the M1152 diagnostic transport; this scope gap remains explicit.",
+    "M1141 Signal/Rune candidate scope is not reconciled with the installed four-room installer/package scope.",
+    "Live write/execution authority, authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain pending."
+  ],
+  "nextBoundary": "M1155: no-write candidate-specific installer-scope reconciliation; do not reopen Foundry or invoke an installer."
+}

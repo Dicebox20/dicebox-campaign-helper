@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M980",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY M979 RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reread the exact M979 project.save-as redo handler/classifier evidence binding against the complete Stage 11 aggregate/current-authority surfaces without implementation, runtime activity, authority promotion, or aggregate attachment.",
+  "sourceReceipts": {
+    "handlerClassifier": "outputs/m979-stage11-project-save-as-redo-handler-classifier-evidence-closure-receipt.json",
+    "bridge": "outputs/m782-stage11-project-save-as-redo-terminal-history-closure-receipt.json",
+    "semantic": "outputs/m910-stage11-project-save-as-semantic-redo-composition-closure-receipt.json",
+    "priorAggregate": "outputs/m925-stage11-save-as-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "priorReconciliation": "outputs/m978-stage11-post-project-rename-redo-aggregate-attachment-reconciliation-receipt.json"
+  },
+  "reconciliation": {
+    "producer": "project.save-as",
+    "operation": "project.save-as.redo",
+    "handler": "bridgeProjectSaveAsRedoToTerminalHistory",
+    "classifier": "projectSaveAsRedoTerminalHistoryReceiptSchema",
+    "canonicalClassifierSurface": "projectSaveAsTerminalHistoryReceiptSchema",
+    "bindingStatus": "bound-operation-specific",
+    "sourceStatus": "undone",
+    "destinationStatus": "redone",
+    "sourceAndTargetIdentityPreserved": true,
+    "targetAbsentBeforeRedo": true,
+    "targetPresentAfterRedo": true,
+    "sourcePreserved": true,
+    "contentPreserved": true,
+    "sceneCollectionPreserved": true,
+    "assetCollectionPreserved": true,
+    "targetCreationIntegrityPreserved": true,
+    "matchedReread": true,
+    "sourceInvocation": false,
+    "rereadInvocation": false,
+    "aggregateAttachmentPresent": false,
+    "aggregateFieldPresentInLedger": false
+  },
+  "aggregateBoundary": {
+    "operationCount": 14,
+    "operationCountChanged": false,
+    "stage11PartialClauses": 4,
+    "producerFamilies": 11,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "runtime": "PARKED"
+  },
+  "safety": {
+    "operationAuthority": "not-granted",
+    "noTransitionAuthority": true,
+    "noExecutionAuthority": true,
+    "noGenericExecutor": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "noProjectMutation": true,
+    "noFoundryWrite": true,
+    "foreignStatePreserved": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "knowledgeBaseQuery": "PASS: M979/M980 provenance, facts, decisions, trials, and open item reread through the approved read-only surface",
+    "knowledgeBaseRebuild": "PASS: sources 1518; facts 1231; decisions 1157; open items 135; trials 820; research subjects 40; milestones 26",
+    "knowledgeBaseIntegrity": "PASS",
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history active; zero violations; readyClaim false",
+    "roadmapAndActiveCard": "PASS: M979 closed as local non-accepted evidence; M980 authorized and active",
+    "aggregateLedger": "PASS: exact M979 evidence remains outside the aggregate ledger; no M979/M980 field or count change",
+    "diffHygiene": "PASS: git diff --check; LF-to-CRLF normalization warnings only"
+  },
+  "remainingGap": {
+    "selectedMilestone": "M981",
+    "selection": "one strict typed non-certifying aggregate-ledger attachment for the exact M979 project.save-as redo handler/classifier evidence",
+    "reason": "M979 is exact and reconciled, while its producer-scoped handler/classifier binding remains absent from the aggregate ledger; the attachment is the smallest directly evidenced next gap and cannot grant aggregate authority."
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "generic current authority or aggregate cross-producer authority",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "generic execution or project mutation",
+    "aggregate-ledger attachment for this binding",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform only M981: attach the exact M979 project.save-as redo handler/classifier evidence to the Stage 11 aggregate ledger as one strict typed producer-scoped non-certifying field; preserve source/target and target-creation reread semantics, operation-count neutrality, authority locks, runtime parking, Stage 11 BLOCKED, Stage 12 LOCKED, and readyClaim false."
+}

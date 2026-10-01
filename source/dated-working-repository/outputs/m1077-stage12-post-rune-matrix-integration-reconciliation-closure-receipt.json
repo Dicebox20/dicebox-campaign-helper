@@ -1,0 +1,49 @@
+{
+  "receiptType": "stage12-post-rune-matrix-integration-reconciliation-closure",
+  "milestone": "M1077",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "reconciliation": {
+    "identityChains": 4,
+    "rows": [
+      {"scene":"signal-frequency-chamber","status":"COMPOSED","m7Items":6,"m7Steps":6,"spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7},
+      {"scene":"tram-station","status":"PARTIAL","m7Items":0,"m7Steps":0,"blocker":"m7-furnishing-plan-missing","spatialProjection":"1/11/0","regions":39,"teleports":1,"backgroundObjects":5},
+      {"scene":"rune-mechanism-chamber","status":"COMPOSED","m7Items":6,"m7Steps":6,"spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7},
+      {"scene":"central-core-control-chamber","status":"COMPOSED","m7Items":6,"m7Steps":6,"spatialProjection":"1/7/0","regions":10,"teleports":2,"backgroundObjects":10}
+    ],
+    "tramTopology": {
+      "blueprint": "dbx:blueprint:ascendancy-tram-depot",
+      "level": "dbx:level:ascendancy-ground",
+      "walls": 11,
+      "anchors": 41,
+      "regions": 39,
+      "teleports": 1,
+      "backgroundObjects": 5,
+      "selectedAnchor": "dbx:anchor:tram-dalton-repair"
+    }
+  },
+  "decision": "Tram is the sole remaining missing-M7 row; authorize one compiler-only six-kind Tram fixture using the existing source and the stable Dalton repair anchor.",
+  "boundaries": {
+    "matrixChanged": false,
+    "spatialBlueprintOwnsGeometry": true,
+    "regionsOwnRegionAndTeleportIntent": true,
+    "backgroundObjectsAreVisualWorkflowProjection": true,
+    "m7PlanOwnsNativePlaceableIntent": true,
+    "runtimeModeled": false,
+    "mutationPerformed": false,
+    "nativeDocumentsCreated": false,
+    "packageChanged": false,
+    "installerChanged": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false
+  },
+  "nextAction": "M1078 compiler-only Tram M7 furnishing-plan fixture"
+}

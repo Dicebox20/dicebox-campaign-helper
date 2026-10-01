@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M974",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY M973 RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reread the exact M973 project.add-scene.persist redo handler/classifier aggregate-ledger attachment against the complete Stage 11 acceptance and authority surfaces, preserving all evidence labels, counts, and locks.",
+  "reconciliation": {
+    "sourceReceipt": "outputs/m973-stage11-persistent-add-scene-redo-aggregate-ledger-attachment-closure-receipt.json",
+    "producerFamily": "project-authoring",
+    "commandKind": "project.add-scene.persist",
+    "operation": "project.add-scene.persist.redo",
+    "handler": "bridgeProjectPersistentAddSceneRedoToTerminalHistory",
+    "classifier": "projectPersistentAddSceneRedoTerminalHistoryReceiptSchema",
+    "aggregateField": "projectPersistentAddSceneRedoHandlerClassifierAggregateEvidence",
+    "aggregateAttachment": "one exact producer-scoped strict typed field",
+    "orderedSceneSetPreserved": true,
+    "matchedRereadPreserved": true,
+    "operationCountChanged": false,
+    "invocation": "not-invoked",
+    "genericExecutor": false,
+    "authorityPromotion": false,
+    "contribution": "Completes one exact project.add-scene.persist redo handler/classifier binding in the aggregate ledger while remaining non-certifying.",
+    "remainingGaps": [
+      "generic current authority",
+      "complete apply/receipt coverage across all producer families",
+      "one unified cross-producer lifecycle and recovery proof",
+      "packaged/runtime authority and live active-GM/Foundry behavior"
+    ]
+  },
+  "acceptanceMatrix": {
+    "proposal": "PARTIAL",
+    "approval": "PARTIAL",
+    "history": "PARTIAL",
+    "recovery": "PARTIAL",
+    "producerFamilies": 11,
+    "productRelevantProducerFamilies": 9,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "matrixRedoBindings": 8,
+    "aggregateDirectStrands": 9
+  },
+  "authority": {
+    "current": "PARTIAL",
+    "aggregate": "NOT_GRANTED",
+    "runtime": "PARKED",
+    "stage11Acceptance": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "validation": {
+    "databaseRebuildAndVerifyBeforeClosure": "PASS: sources 1507; facts 1226; decisions 1146; open items 135; trials 815; research subjects 40; milestones 26",
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history active; zero violations; readyClaim false",
+    "aggregateAttachmentReread": "PASS: exact M973 producer, operation, handler, classifier, ordered Scene boundary, matched reread, and count neutrality preserved",
+    "sourceReread": "PASS: M973, M971, M969, aggregate ledger, current-authority surface, roadmap, active card, and KB surfaces reconciled"
+  },
+  "limits": {
+    "readOnly": true,
+    "implementationChanges": 0,
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "projectMutation": false,
+    "foundryMutation": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "next": {
+    "milestone": "M975",
+    "action": "Bind the existing project.rename redo terminal-history handler and matched-reread classifier into one strict typed local non-certifying evidence surface, then validate it without invocation or authority promotion.",
+    "reason": "This is the smallest directly evidenced adjacent product-authoring gap: exact bridge/classifier contracts already exist, with M754 bridge and M902/M927 semantic evidence available for strict source reconciliation.",
+    "scope": "Code-only; no runtime, browser, Foundry, project, provider, credential, account, password, authority, Stage 11 acceptance, Stage 12, or Ready-to-Play action."
+  }
+}

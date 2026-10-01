@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M253",
+  "operation": "stage9.disposable-harness-session.foundation",
+  "status": "pass-local-foundation",
+  "evidenceClass": "deterministic",
+  "sessionId": "dbx:harness-session:m253-fixture",
+  "planId": "dbx:harness-plan:m253-fixture",
+  "planSha256": "f0fc639aa0d98e05b1102f3d9745f22283a9d6a8400cbd5c19ebd3c3fda862ed",
+  "target": {
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "worldId": "dbx:campaign:m253-fixture-world",
+    "profileFingerprintId": "dbx:fingerprint:21ab56bf"
+  },
+  "eventOrder": [
+    "reset-owned-fixture",
+    "profile-read",
+    "gm-observe",
+    "player3-observe",
+    "apply-simulated",
+    "binding-reread",
+    "induce-unknown",
+    "recovery-reread",
+    "artifact-capture",
+    "support-bundle"
+  ],
+  "contexts": ["GM", "Player3"],
+  "artifacts": [
+    { "artifactId": "dbx:artifact:m253-trace", "kind": "trace", "sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb", "label": "artifact-trace-1" },
+    { "artifactId": "dbx:artifact:m253-redacted", "kind": "redacted-json", "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "label": "artifact-redacted-json-2" }
+  ],
+  "supportBundleSha256": "1a6d86b6e799f56438bb71d183b0c227c69323082877d36b0c696a402629d556",
+  "sessionSha256": "fa8af07e4a0b1240e8bd1830cf382c135d4a2ab22f8809f9ab4f1e1d7763eef1",
+  "redacted": true,
+  "noWrite": true,
+  "foreignStatePreserved": true,
+  "readyClaim": false,
+  "liveFoundryOperation": "not-run",
+  "notes": [
+    "The receipt is a runtime-neutral injected-adapter fixture result.",
+    "The induced unknown outcome was followed by a no-retry recovery reread whose binding digest matched the pre-unknown reread.",
+    "This foundation does not prove loaded exact-runtime state, live permissions, native mutation, gameplay, player certification, or live-world authoritative reread."
+  ],
+  "validation": {
+    "focusedTests": "4/4",
+    "fullTests": "96 files / 495 tests",
+    "packageTypecheck": "PASS",
+    "workflow": "PASS 8/16; Stage 9 solely active",
+    "tooling": "PASS",
+    "liveWrites": 0
+  }
+}

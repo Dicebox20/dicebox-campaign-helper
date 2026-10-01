@@ -1,0 +1,1273 @@
+{
+  "schemaVersion": "0.1.0",
+  "planId": "dbx:plan:fixture-tram-routing-projection",
+  "operation": "tram-routing.fixture.preview",
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "scene": {
+    "sceneId": "dbx:scene:fixture-tram-routing-projection",
+    "label": "DiceBox Tram Routing Projection",
+    "canvas": {
+      "width": 1536,
+      "height": 1024
+    },
+    "rendererPath": "assets/maps/ascendancy-tram-depot-routing-yard-v6-neutral.png",
+    "blueprintId": "dbx:blueprint:ascendancy-tram-depot"
+  },
+  "walls": {
+    "segments": [
+      {
+        "wallId": "dbx:wall:ascendancy-tram-depot-north",
+        "a": {
+          "x": 24,
+          "y": 24
+        },
+        "b": {
+          "x": 1512,
+          "y": 24
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:ascendancy-tram-depot-south",
+        "a": {
+          "x": 24,
+          "y": 1000
+        },
+        "b": {
+          "x": 1512,
+          "y": 1000
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:ascendancy-tram-depot-west",
+        "a": {
+          "x": 24,
+          "y": 24
+        },
+        "b": {
+          "x": 24,
+          "y": 1000
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:ascendancy-tram-depot-east-north",
+        "a": {
+          "x": 1512,
+          "y": 24
+        },
+        "b": {
+          "x": 1512,
+          "y": 367.5
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:ascendancy-tram-depot-east-south",
+        "a": {
+          "x": 1512,
+          "y": 527.5
+        },
+        "b": {
+          "x": 1512,
+          "y": 1000
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:tram-yard-north",
+        "a": {
+          "x": 420,
+          "y": 210
+        },
+        "b": {
+          "x": 1080,
+          "y": 210
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:tram-yard-south",
+        "a": {
+          "x": 420,
+          "y": 780
+        },
+        "b": {
+          "x": 1080,
+          "y": 780
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:tram-yard-west-north",
+        "a": {
+          "x": 420,
+          "y": 210
+        },
+        "b": {
+          "x": 420,
+          "y": 400
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:tram-yard-west-south",
+        "a": {
+          "x": 420,
+          "y": 495
+        },
+        "b": {
+          "x": 420,
+          "y": 780
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:tram-yard-east-north",
+        "a": {
+          "x": 1080,
+          "y": 210
+        },
+        "b": {
+          "x": 1080,
+          "y": 400
+        },
+        "thickness": 8
+      },
+      {
+        "wallId": "dbx:wall:tram-yard-east-south",
+        "a": {
+          "x": 1080,
+          "y": 495
+        },
+        "b": {
+          "x": 1080,
+          "y": 780
+        },
+        "thickness": 8
+      }
+    ],
+    "doors": [
+      {
+        "anchorId": "dbx:anchor:tram-door-east",
+        "position": {
+          "x": 1512,
+          "y": 447.5
+        },
+        "clearance": 47.5
+      },
+      {
+        "anchorId": "dbx:anchor:tram-yard-ingress",
+        "position": {
+          "x": 420,
+          "y": 447.5
+        },
+        "clearance": 47.5
+      },
+      {
+        "anchorId": "dbx:anchor:tram-yard-exit",
+        "position": {
+          "x": 1080,
+          "y": 447.5
+        },
+        "clearance": 47.5
+      }
+    ],
+    "api": "scene.createEmbeddedDocuments(\"Wall\", ...)"
+  },
+  "staticVisualTiles": [
+    {
+      "tileId": "dbx:tile:tram-rail-grid",
+      "assetPath": "assets/tiles/ascendancy-tram-rail-grid-v3.svg",
+      "x": 420,
+      "y": 210,
+      "width": 660,
+      "height": 570
+    },
+    {
+      "tileId": "dbx:tile:tram-core-rail",
+      "assetPath": "assets/tiles/ascendancy-tram-core-rail-v2.svg",
+      "x": 1080,
+      "y": 400,
+      "width": 432,
+      "height": 95
+    },
+    {
+      "tileId": "dbx:tile:tram-gate-ingress",
+      "assetPath": "assets/tiles/ascendancy-tram-gate-v2.svg",
+      "x": 408,
+      "y": 400,
+      "width": 24,
+      "height": 95
+    },
+    {
+      "tileId": "dbx:tile:tram-gate-yard-exit",
+      "assetPath": "assets/tiles/ascendancy-tram-gate-v2.svg",
+      "x": 1068,
+      "y": 400,
+      "width": 24,
+      "height": 95
+    },
+    {
+      "tileId": "dbx:tile:tram-gate-core-door",
+      "assetPath": "assets/tiles/ascendancy-tram-gate-v2.svg",
+      "x": 1500,
+      "y": 400,
+      "width": 24,
+      "height": 95
+    }
+  ],
+  "staticRegions": [
+    {
+      "regionId": "dbx:region:tram-slot-r1-c1",
+      "x": 420,
+      "y": 210,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r1-c2",
+      "x": 530,
+      "y": 210,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r1-c3",
+      "x": 640,
+      "y": 210,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r1-c4",
+      "x": 750,
+      "y": 210,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r1-c5",
+      "x": 860,
+      "y": 210,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r1-c6",
+      "x": 970,
+      "y": 210,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r2-c1",
+      "x": 420,
+      "y": 305,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r2-c2",
+      "x": 530,
+      "y": 305,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r2-c3",
+      "x": 640,
+      "y": 305,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r2-c4",
+      "x": 750,
+      "y": 305,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r2-c5",
+      "x": 860,
+      "y": 305,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r2-c6",
+      "x": 970,
+      "y": 305,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r3-c1",
+      "x": 420,
+      "y": 400,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r3-c2",
+      "x": 530,
+      "y": 400,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r3-c3",
+      "x": 640,
+      "y": 400,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r3-c4",
+      "x": 750,
+      "y": 400,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r3-c5",
+      "x": 860,
+      "y": 400,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r3-c6",
+      "x": 970,
+      "y": 400,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r4-c1",
+      "x": 420,
+      "y": 495,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r4-c2",
+      "x": 530,
+      "y": 495,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r4-c3",
+      "x": 640,
+      "y": 495,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r4-c4",
+      "x": 750,
+      "y": 495,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r4-c5",
+      "x": 860,
+      "y": 495,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r4-c6",
+      "x": 970,
+      "y": 495,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r5-c1",
+      "x": 420,
+      "y": 590,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r5-c2",
+      "x": 530,
+      "y": 590,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r5-c3",
+      "x": 640,
+      "y": 590,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r5-c4",
+      "x": 750,
+      "y": 590,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r5-c5",
+      "x": 860,
+      "y": 590,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r5-c6",
+      "x": 970,
+      "y": 590,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r6-c1",
+      "x": 420,
+      "y": 685,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r6-c2",
+      "x": 530,
+      "y": 685,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r6-c3",
+      "x": 640,
+      "y": 685,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r6-c4",
+      "x": 750,
+      "y": 685,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r6-c5",
+      "x": 860,
+      "y": 685,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-slot-r6-c6",
+      "x": 970,
+      "y": 685,
+      "width": 110,
+      "height": 95
+    },
+    {
+      "regionId": "dbx:region:tram-dalton-repair",
+      "x": 1120,
+      "y": 120,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "regionId": "dbx:region:tram-cooperative",
+      "x": 1120,
+      "y": 640,
+      "width": 300,
+      "height": 220
+    },
+    {
+      "regionId": "dbx:region:tram-exit",
+      "x": 1080,
+      "y": 400,
+      "width": 390,
+      "height": 95
+    }
+  ],
+  "projection": {
+    "schemaVersion": "0.1.0",
+    "planId": "dbx:plan:tram-scene-projection",
+    "operation": "tram-scene.projection.preview",
+    "scene": {
+      "semantic": {
+        "id": "dbx:scene:fixture-tram-routing-projection",
+        "kind": "scene"
+      },
+      "expectedBindingGeneration": 0
+    },
+    "backgroundAsset": {
+      "semantic": {
+        "id": "dbx:asset:fixture-tram-routing-v6",
+        "kind": "asset"
+      },
+      "expectedWidth": 1536,
+      "expectedHeight": 1024
+    },
+    "canvas": {
+      "width": 1536,
+      "height": 1024
+    },
+    "logicalBoard": {
+      "origin": {
+        "x": 420,
+        "y": 210
+      },
+      "cellWidth": 110,
+      "cellHeight": 95,
+      "columns": 6,
+      "rows": 6
+    },
+    "rendererRequirements": {
+      "projection": "orthographic-top-down",
+      "noPerspective": true,
+      "backgroundRole": "renderer-only",
+      "visibleWalls": true,
+      "visibleDoors": true,
+      "trackLayout": {
+        "kind": "enclosed-six-by-six-orthogonal-routing-yard",
+        "rows": 6,
+        "columns": 6,
+        "boardOrigin": {
+          "x": 420,
+          "y": 210
+        },
+        "cellWidth": 110,
+        "cellHeight": 95,
+        "fixedTramCars": "tile-projection-only",
+        "noFootBypass": true,
+        "ingress": {
+          "anchorId": "dbx:anchor:tram-yard-ingress",
+          "position": {
+            "x": 420,
+            "y": 447.5
+          }
+        },
+        "exit": {
+          "anchorId": "dbx:anchor:tram-yard-exit",
+          "position": {
+            "x": 1080,
+            "y": 447.5
+          },
+          "destination": "core-controls-rail"
+        },
+        "coreRail": {
+          "from": {
+            "x": 1080,
+            "y": 447.5
+          },
+          "to": {
+            "x": 1512,
+            "y": 447.5
+          }
+        }
+      }
+    },
+    "tileProjection": {
+      "owner": "foundry-scene-tile-projection",
+      "source": "canonical-logical-board",
+      "fixedTramCars": "tile-projection-only",
+      "tileCreateApi": "scene.createEmbeddedDocuments(\"Tile\", ...)",
+      "regionCreateApi": "scene.createEmbeddedDocuments(\"Region\", ...)",
+      "tileMoveApi": "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+      "regionMoveApi": "scene.updateEmbeddedDocuments(\"Region\", ...)",
+      "footprintOwner": "dicebox-scene-engine",
+      "pieces": [
+        {
+          "tileId": "dbx:tile:tram-x",
+          "footprintRegionId": "dbx:region:tram-x-footprint",
+          "tramId": "dbx:tram:x",
+          "orientation": "horizontal",
+          "length": 2
+        },
+        {
+          "tileId": "dbx:tile:tram-o",
+          "footprintRegionId": "dbx:region:tram-o-footprint",
+          "tramId": "dbx:tram:o",
+          "orientation": "vertical",
+          "length": 3
+        },
+        {
+          "tileId": "dbx:tile:tram-q",
+          "footprintRegionId": "dbx:region:tram-q-footprint",
+          "tramId": "dbx:tram:q",
+          "orientation": "vertical",
+          "length": 3
+        },
+        {
+          "tileId": "dbx:tile:tram-b",
+          "footprintRegionId": "dbx:region:tram-b-footprint",
+          "tramId": "dbx:tram:b",
+          "orientation": "vertical",
+          "length": 2
+        },
+        {
+          "tileId": "dbx:tile:tram-c",
+          "footprintRegionId": "dbx:region:tram-c-footprint",
+          "tramId": "dbx:tram:c",
+          "orientation": "horizontal",
+          "length": 2
+        },
+        {
+          "tileId": "dbx:tile:tram-r",
+          "footprintRegionId": "dbx:region:tram-r-footprint",
+          "tramId": "dbx:tram:r",
+          "orientation": "horizontal",
+          "length": 3
+        }
+      ]
+    },
+    "anchors": [
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c1",
+        "regionId": "dbx:region:tram-slot-r1-c1",
+        "row": 0,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c2",
+        "regionId": "dbx:region:tram-slot-r1-c2",
+        "row": 0,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c3",
+        "regionId": "dbx:region:tram-slot-r1-c3",
+        "row": 0,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c4",
+        "regionId": "dbx:region:tram-slot-r1-c4",
+        "row": 0,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c5",
+        "regionId": "dbx:region:tram-slot-r1-c5",
+        "row": 0,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r1-c6",
+        "regionId": "dbx:region:tram-slot-r1-c6",
+        "row": 0,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 257.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c1",
+        "regionId": "dbx:region:tram-slot-r2-c1",
+        "row": 1,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c2",
+        "regionId": "dbx:region:tram-slot-r2-c2",
+        "row": 1,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c3",
+        "regionId": "dbx:region:tram-slot-r2-c3",
+        "row": 1,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c4",
+        "regionId": "dbx:region:tram-slot-r2-c4",
+        "row": 1,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c5",
+        "regionId": "dbx:region:tram-slot-r2-c5",
+        "row": 1,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r2-c6",
+        "regionId": "dbx:region:tram-slot-r2-c6",
+        "row": 1,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 352.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c1",
+        "regionId": "dbx:region:tram-slot-r3-c1",
+        "row": 2,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c2",
+        "regionId": "dbx:region:tram-slot-r3-c2",
+        "row": 2,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c3",
+        "regionId": "dbx:region:tram-slot-r3-c3",
+        "row": 2,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c4",
+        "regionId": "dbx:region:tram-slot-r3-c4",
+        "row": 2,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c5",
+        "regionId": "dbx:region:tram-slot-r3-c5",
+        "row": 2,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r3-c6",
+        "regionId": "dbx:region:tram-slot-r3-c6",
+        "row": 2,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 447.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c1",
+        "regionId": "dbx:region:tram-slot-r4-c1",
+        "row": 3,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c2",
+        "regionId": "dbx:region:tram-slot-r4-c2",
+        "row": 3,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c3",
+        "regionId": "dbx:region:tram-slot-r4-c3",
+        "row": 3,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c4",
+        "regionId": "dbx:region:tram-slot-r4-c4",
+        "row": 3,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c5",
+        "regionId": "dbx:region:tram-slot-r4-c5",
+        "row": 3,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r4-c6",
+        "regionId": "dbx:region:tram-slot-r4-c6",
+        "row": 3,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 542.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c1",
+        "regionId": "dbx:region:tram-slot-r5-c1",
+        "row": 4,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c2",
+        "regionId": "dbx:region:tram-slot-r5-c2",
+        "row": 4,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c3",
+        "regionId": "dbx:region:tram-slot-r5-c3",
+        "row": 4,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c4",
+        "regionId": "dbx:region:tram-slot-r5-c4",
+        "row": 4,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c5",
+        "regionId": "dbx:region:tram-slot-r5-c5",
+        "row": 4,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r5-c6",
+        "regionId": "dbx:region:tram-slot-r5-c6",
+        "row": 4,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 637.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c1",
+        "regionId": "dbx:region:tram-slot-r6-c1",
+        "row": 5,
+        "column": 0,
+        "center": {
+          "x": 475,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c2",
+        "regionId": "dbx:region:tram-slot-r6-c2",
+        "row": 5,
+        "column": 1,
+        "center": {
+          "x": 585,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c3",
+        "regionId": "dbx:region:tram-slot-r6-c3",
+        "row": 5,
+        "column": 2,
+        "center": {
+          "x": 695,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c4",
+        "regionId": "dbx:region:tram-slot-r6-c4",
+        "row": 5,
+        "column": 3,
+        "center": {
+          "x": 805,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c5",
+        "regionId": "dbx:region:tram-slot-r6-c5",
+        "row": 5,
+        "column": 4,
+        "center": {
+          "x": 915,
+          "y": 732.5
+        }
+      },
+      {
+        "anchorId": "dbx:anchor:tram-slot-r6-c6",
+        "regionId": "dbx:region:tram-slot-r6-c6",
+        "row": 5,
+        "column": 5,
+        "center": {
+          "x": 1025,
+          "y": 732.5
+        }
+      }
+    ],
+    "exitRegionId": "dbx:region:tram-exit",
+    "geometryOwner": "spatial-blueprint",
+    "tileOwner": "foundry-scene-tile-projection",
+    "foundryApis": [
+      "Hooks.once(\"ready\")",
+      "game.version + game.system.id + game.system.version",
+      "game.users.activeGM / User permissions",
+      "fromUuid | game.scenes.get",
+      "scene.getEmbeddedCollection(\"Tile\")",
+      "scene.getEmbeddedCollection(\"Region\")",
+      "scene.getEmbeddedDocument(\"Region\", id)",
+      "RegionDocument.shapes | RegionDocument.behaviors",
+      "scene.createEmbeddedDocuments(\"Tile\", ...)",
+      "scene.createEmbeddedDocuments(\"Region\", ...)",
+      "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+      "scene.updateEmbeddedDocuments(\"Region\", ...)",
+      "authoritative reread through fromUuid / embedded-document getters"
+    ],
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "initialBoard": {
+    "schemaVersion": "0.1.0",
+    "puzzleId": "dbx:puzzle:andrew-tram-routing",
+    "width": 6,
+    "height": 6,
+    "exitPieceId": "dbx:tram:x",
+    "pieces": [
+      {
+        "pieceId": "dbx:tram:x",
+        "orientation": "horizontal",
+        "length": 2,
+        "row": 2,
+        "column": 1,
+        "repaired": true,
+        "operational": true
+      },
+      {
+        "pieceId": "dbx:tram:o",
+        "orientation": "vertical",
+        "length": 3,
+        "row": 0,
+        "column": 5,
+        "repaired": true,
+        "operational": true
+      },
+      {
+        "pieceId": "dbx:tram:q",
+        "orientation": "vertical",
+        "length": 3,
+        "row": 1,
+        "column": 3,
+        "repaired": true,
+        "operational": true
+      },
+      {
+        "pieceId": "dbx:tram:b",
+        "orientation": "vertical",
+        "length": 2,
+        "row": 4,
+        "column": 0,
+        "repaired": true,
+        "operational": true
+      },
+      {
+        "pieceId": "dbx:tram:c",
+        "orientation": "horizontal",
+        "length": 2,
+        "row": 4,
+        "column": 4,
+        "repaired": true,
+        "operational": true
+      },
+      {
+        "pieceId": "dbx:tram:r",
+        "orientation": "horizontal",
+        "length": 3,
+        "row": 5,
+        "column": 2,
+        "repaired": true,
+        "operational": true
+      }
+    ],
+    "moveCount": 0,
+    "status": "active"
+  },
+  "approvedFixtureMove": {
+    "pieceId": "dbx:tram:b",
+    "delta": -1
+  },
+  "initialProjections": [
+    {
+      "pieceId": "dbx:tram:x",
+      "tileId": "dbx:tile:tram-x",
+      "footprintRegionId": "dbx:region:tram-x-footprint",
+      "x": 530,
+      "y": 400,
+      "width": 220,
+      "height": 95,
+      "footprintRegion": {
+        "shape": "rectangle",
+        "x": 530,
+        "y": 400,
+        "width": 220,
+        "height": 95,
+        "rotation": 0
+      },
+      "occupiedRegionIds": [
+        "dbx:region:tram-slot-r3-c2",
+        "dbx:region:tram-slot-r3-c3"
+      ],
+      "source": "logical-board",
+      "foundryApis": [
+        "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+        "scene.updateEmbeddedDocuments(\"Region\", ...)"
+      ]
+    },
+    {
+      "pieceId": "dbx:tram:o",
+      "tileId": "dbx:tile:tram-o",
+      "footprintRegionId": "dbx:region:tram-o-footprint",
+      "x": 970,
+      "y": 210,
+      "width": 110,
+      "height": 285,
+      "footprintRegion": {
+        "shape": "rectangle",
+        "x": 970,
+        "y": 210,
+        "width": 110,
+        "height": 285,
+        "rotation": 0
+      },
+      "occupiedRegionIds": [
+        "dbx:region:tram-slot-r1-c6",
+        "dbx:region:tram-slot-r2-c6",
+        "dbx:region:tram-slot-r3-c6"
+      ],
+      "source": "logical-board",
+      "foundryApis": [
+        "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+        "scene.updateEmbeddedDocuments(\"Region\", ...)"
+      ]
+    },
+    {
+      "pieceId": "dbx:tram:q",
+      "tileId": "dbx:tile:tram-q",
+      "footprintRegionId": "dbx:region:tram-q-footprint",
+      "x": 750,
+      "y": 305,
+      "width": 110,
+      "height": 285,
+      "footprintRegion": {
+        "shape": "rectangle",
+        "x": 750,
+        "y": 305,
+        "width": 110,
+        "height": 285,
+        "rotation": 0
+      },
+      "occupiedRegionIds": [
+        "dbx:region:tram-slot-r2-c4",
+        "dbx:region:tram-slot-r3-c4",
+        "dbx:region:tram-slot-r4-c4"
+      ],
+      "source": "logical-board",
+      "foundryApis": [
+        "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+        "scene.updateEmbeddedDocuments(\"Region\", ...)"
+      ]
+    },
+    {
+      "pieceId": "dbx:tram:b",
+      "tileId": "dbx:tile:tram-b",
+      "footprintRegionId": "dbx:region:tram-b-footprint",
+      "x": 420,
+      "y": 590,
+      "width": 110,
+      "height": 190,
+      "footprintRegion": {
+        "shape": "rectangle",
+        "x": 420,
+        "y": 590,
+        "width": 110,
+        "height": 190,
+        "rotation": 0
+      },
+      "occupiedRegionIds": [
+        "dbx:region:tram-slot-r5-c1",
+        "dbx:region:tram-slot-r6-c1"
+      ],
+      "source": "logical-board",
+      "foundryApis": [
+        "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+        "scene.updateEmbeddedDocuments(\"Region\", ...)"
+      ]
+    },
+    {
+      "pieceId": "dbx:tram:c",
+      "tileId": "dbx:tile:tram-c",
+      "footprintRegionId": "dbx:region:tram-c-footprint",
+      "x": 860,
+      "y": 590,
+      "width": 220,
+      "height": 95,
+      "footprintRegion": {
+        "shape": "rectangle",
+        "x": 860,
+        "y": 590,
+        "width": 220,
+        "height": 95,
+        "rotation": 0
+      },
+      "occupiedRegionIds": [
+        "dbx:region:tram-slot-r5-c5",
+        "dbx:region:tram-slot-r5-c6"
+      ],
+      "source": "logical-board",
+      "foundryApis": [
+        "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+        "scene.updateEmbeddedDocuments(\"Region\", ...)"
+      ]
+    },
+    {
+      "pieceId": "dbx:tram:r",
+      "tileId": "dbx:tile:tram-r",
+      "footprintRegionId": "dbx:region:tram-r-footprint",
+      "x": 640,
+      "y": 685,
+      "width": 330,
+      "height": 95,
+      "footprintRegion": {
+        "shape": "rectangle",
+        "x": 640,
+        "y": 685,
+        "width": 330,
+        "height": 95,
+        "rotation": 0
+      },
+      "occupiedRegionIds": [
+        "dbx:region:tram-slot-r6-c3",
+        "dbx:region:tram-slot-r6-c4",
+        "dbx:region:tram-slot-r6-c5"
+      ],
+      "source": "logical-board",
+      "foundryApis": [
+        "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+        "scene.updateEmbeddedDocuments(\"Region\", ...)"
+      ]
+    }
+  ],
+  "approvedMoveProjection": {
+    "pieceId": "dbx:tram:b",
+    "tileId": "dbx:tile:tram-b",
+    "footprintRegionId": "dbx:region:tram-b-footprint",
+    "x": 420,
+    "y": 495,
+    "width": 110,
+    "height": 190,
+    "footprintRegion": {
+      "shape": "rectangle",
+      "x": 420,
+      "y": 495,
+      "width": 110,
+      "height": 190,
+      "rotation": 0
+    },
+    "occupiedRegionIds": [
+      "dbx:region:tram-slot-r4-c1",
+      "dbx:region:tram-slot-r5-c1"
+    ],
+    "source": "logical-board",
+    "foundryApis": [
+      "scene.updateEmbeddedDocuments(\"Tile\", ...)",
+      "scene.updateEmbeddedDocuments(\"Region\", ...)"
+    ]
+  },
+  "preservationScope": "fixture-owned-scene-and-children-only; preserve-foreign-state; no-ballad; no-regionwright",
+  "mutation": "disabled-until-exact-runtime-gate"
+}

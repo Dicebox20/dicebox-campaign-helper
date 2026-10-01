@@ -1,0 +1,59 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m302-stage11-desktop-generic-review-application-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M302",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "implemented": [
+    "Campaign Director review receipts normalize into exact project/Scene generic proposal sessions",
+    "approval tray displays producer, provider, batch revision/hash, risk, review authority, target authority, dependencies, status, and append-only history",
+    "explicit approve, reject, edit, cancel, and apply controls persist lifecycle transitions",
+    "apply requires an exact approved current Scene revision and serialized SHA-256 base",
+    "one supported SceneCommand executes through the existing deterministic Scene history",
+    "generic commit occurs only after an exact target revision and serialized Scene SHA-256 reread",
+    "previewed or approved batches invalidate automatically when the exact Scene base drifts",
+    "proposal-linked undo and redo predict monotonic restoration revisions and record matched reread receipts",
+    "malformed, foreign, tampered, credential-bearing, repository, active-GM, stale, and unsupported state fails closed"
+  ],
+  "validation": {
+    "focused": "PASS: 3 files / 24 tests",
+    "full": "PASS: 109 files / 590 tests",
+    "build": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS: 10/16, proposal-approval-history active",
+    "knowledgeBase": "PASS pre-closure: 427 sources / 462 facts / 411 decisions / 425 trials"
+  },
+  "exploratoryBrowserObservation": {
+    "classification": "supporting local implementation observation; not the separately synchronized M303 acceptance run",
+    "initialScene": "revision 0; dbx:apparatus:core at 608/376",
+    "preview": "campaign-director/local-fixture, medium risk, previewed, one command, no dependencies, no Scene change",
+    "approval": "exact revision/hash approval enabled apply without changing Scene state",
+    "apply": "one apply moved 608/376 to 616/376 at revision 1 and committed after matched SHA-256 reread",
+    "recovery": "the first exploratory undo exposed incorrect restoration-revision prediction; the bounded repair now derives the authoritative target through undoSceneHistory/redoSceneHistory",
+    "postRepair": "apply committed; undo restored 608/376 at revision 2 with status undone; redo restored 616/376 at revision 3 with status redone; receipt sequence ended at 5.redo",
+    "providerCalls": 0,
+    "persistentProjectWrites": 0,
+    "foundryWrites": 0
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "4C9E529729D7289C9A9F684624120184E472AA7479D23ED1FA27B87E6EAE50B0",
+    "apps/campaign-helper-desktop/src/proposal-application.ts": "FA2817B56FA0453C7EAC5252D992F71868BEA4E70BAA3BAD83A7A1E21CDF435F",
+    "apps/campaign-helper-desktop/src/proposal-session.ts": "7D9ADA439F5C4179FA6669C8BD81A2CA631353C522DAA08F984B86B0868CB7D5",
+    "tests/desktop-proposal-application.test.ts": "258BD02B05D6822BC600ECCD6553106ECD1906CDED1629E53AC5CD030A35C431",
+    "tests/desktop-proposal-session.test.ts": "1F9D6FBFCA9ECDC59CF23464914D072B7109B07E21AC8FD0CD436FFE51EC776D",
+    "tests/desktop-shell-configuration.test.ts": "EB5D2A838EB4DC32E99EF0A8242A8FB5DB44E8F79A70C9A68C705D4CD4B1DDDD"
+  },
+  "doesNotProve": [
+    "Technical Builder repository integration or promotion",
+    "project-store mutation normalization",
+    "Foundry execution or active-GM authority",
+    "cross-producer product conformance for every mutating producer",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

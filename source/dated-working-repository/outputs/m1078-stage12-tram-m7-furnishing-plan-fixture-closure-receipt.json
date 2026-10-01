@@ -1,0 +1,55 @@
+{
+  "receiptType": "stage12-tram-m7-furnishing-plan-fixture-closure",
+  "milestone": "M1078",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "implementation": {
+    "scene": "dbx:scene:ascendancy-tram-depot",
+    "documentId": "m1078-ascendancy-tram-depot",
+    "blueprint": "dbx:blueprint:ascendancy-tram-depot",
+    "level": "dbx:level:ascendancy-ground",
+    "anchor": "dbx:anchor:tram-dalton-repair",
+    "plan": "dbx:plan:m1078-tram-furnishing-fixture",
+    "kinds": ["tile", "token", "ambientLight", "ambientSound", "drawing", "note"],
+    "items": 6,
+    "steps": 6,
+    "relations": 1,
+    "assetIdentities": [
+      "dbx:asset:m1078-tram-furnishing-texture",
+      "dbx:asset:m1078-tram-furnishing-token",
+      "dbx:asset:m1078-tram-furnishing-audio"
+    ],
+    "locatorsInPlan": false
+  },
+  "validation": {
+    "focusedTestFiles": 6,
+    "focusedTests": 18,
+    "packageTypeCheck": "passed",
+    "desktopProductionBuild": "passed",
+    "crossSceneDriftRejected": true,
+    "rawDocumentDriftRejected": true,
+    "sourceBlueprintPreserved": true,
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "boundaries": {
+    "packageChanged": false,
+    "installerChanged": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "assetsTransferred": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "nextAction": "M1079 post-Tram fixture read-only matrix reconciliation"
+}

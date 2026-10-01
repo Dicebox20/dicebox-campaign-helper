@@ -1,0 +1,88 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1282",
+  "operation": "regionwright.premium.loaded-identity.runtime-observation",
+  "status": "BLOCKED_LOADED_CONTROL_UNAVAILABLE",
+  "evidenceClass": "fixture-runtime",
+  "target": {
+    "url": "http://127.0.0.1:30004/game",
+    "worldId": "dbx-test-world",
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3",
+    "browserTab": "13",
+    "currentUser": "Gamemaster [GM]"
+  },
+  "scope": {
+    "runtimeAction": true,
+    "hardReloads": 1,
+    "regionControlsSelections": 1,
+    "identityControlInvocations": 0,
+    "identityDialogCloses": 0,
+    "installerInvocations": 0,
+    "auditInvocations": 0,
+    "preview": false,
+    "approval": false,
+    "apply": false,
+    "worldDocumentWrites": 0,
+    "readyClaim": false
+  },
+  "browserReread": {
+    "path": "/game",
+    "currentUser": "Gamemaster [GM]",
+    "regionControlsVisible": true,
+    "identityControlPresent": false,
+    "observedRegionControlToolCount": 22,
+    "dialogs": 0,
+    "missingControl": "Audit Regionwright premium loaded identity"
+  },
+  "servedIdentity": {
+    "installer": {
+      "path": "/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
+      "status": 200,
+      "bytes": 29417,
+      "sha256": "F41BB7395D338E8C4CBF8D73A98100011EFCDDC7EB6095BB172E068D5E57F4D4"
+    },
+    "module": {
+      "path": "/modules/regionwright/scripts/module.js",
+      "status": 200,
+      "bytes": 8869,
+      "sha256": "453B7A940A1CD0787DAC6DD08F0ECAD2B2238D9BAB7FE5C4290EF90CC3B31F8C"
+    },
+    "sidecar": {
+      "path": "/modules/regionwright/premium/scripts/ascendancy-live-installer-byte-attestation.json",
+      "status": 200,
+      "bytes": 530,
+      "sha256": "420A0805156B8472D18582D823AF2F501D44173CD4DE50009299CA7DF0F7608F"
+    }
+  },
+  "supervisors": {
+    "v5": {
+      "status": "PASS",
+      "pid": 8132,
+      "port": 30004,
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    },
+    "v4": {
+      "status": "PASS",
+      "pid": 10676,
+      "port": 30003,
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    }
+  },
+  "blockers": [
+    "The served v5 module and identity installer match the pinned local hashes, but the joined client exposed only the pre-existing 22 Region Controls tools after one hard reload; the new fixed identity control was absent.",
+    "The identity control was therefore not invoked, and loaded executing-byte evidence remains unobserved."
+  ],
+  "preservation": {
+    "v4ExternalRegionwright": true,
+    "fourSceneBaseApply": "M1271/M1272 already complete; not replayed",
+    "runtimeDocuments": true,
+    "foreign": true,
+    "playerPassword": true,
+    "balladTramCore": true
+  },
+  "disposition": "Typed loaded-client exposure blocker. No retry of the identity control or hard reload is authorized within M1282; reconcile the cache/registration path in a new bounded boundary.",
+  "next": "M1283: read-only reconcile why served v5 module parity did not produce the new Region Controls registration, then select the smallest v5 cache/registration repair before another runtime attempt."
+}

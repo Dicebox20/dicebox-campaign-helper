@@ -1,0 +1,91 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.fresh-identity-isolation",
+  "milestone": "M543",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-29T22:29:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "scope": {
+    "codeOnly": true,
+    "memoryAndStaticTests": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "v2SessionClearedReplacedOrRecovered": false,
+    "fixturePrepared": false,
+    "projectOrRuntimeMutation": false,
+    "foundryAction": false,
+    "providerOrCredentialAction": false,
+    "playerRolePasswordAction": false
+  },
+  "evidence": [
+    "outputs/m542-stage11-broken-reference-ui-session-blocker-reconciliation-receipt.json",
+    "outputs/m541-stage11-broken-reference-ui-packaged-observation-blocker-receipt.json",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "apps/campaign-helper-desktop/src/project-store.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "apps/campaign-helper-desktop/src-tauri/src/lib.rs",
+    "tests/project-proposal-session.test.ts",
+    "tests/broken-reference-ui-selftest.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql"
+  ],
+  "implementation": {
+    "fixedIdentity": "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3",
+    "closedScope": "broken-reference-ui-self-test-v3",
+    "storageKey": "dicebox.project-proposal-session.v1:broken-reference-ui-self-test-v3:${encodeURIComponent(projectId)}",
+    "ordinaryApiGuard": "The ordinary project-derived session key rejects both v2 and v3 self-test identities.",
+    "v2Preservation": "The existing v2 constant, namespace, wrappers, fixture command, and ordinary compatibility remain intact; v3 has separate load/save/terminal-clear wrappers and cannot access v2 storage.",
+    "fixtureBoundary": "Added a separate debug-only native fixture command backed by the same refuse-to-overwrite topology validator and fixed v3 project identity; it was not invoked in M543.",
+    "routeBoundary": "The broken-reference self-test accepts the original v2 mode and a distinct v3 mode, selecting the matching fixed identity, fixture command, session loader, namespace, and scoped persistence path."
+  },
+  "validation": {
+    "vitest": {
+      "command": "npx vitest run --configLoader runner --no-file-parallelism --pool=forks --maxWorkers=1 --minWorkers=1 tests/broken-reference-ui-selftest.test.ts tests/project-proposal-session.test.ts tests/project-recovery-proposal-adapter.test.ts tests/desktop-project-proposal-review.test.ts",
+      "status": "PASS",
+      "testFiles": 4,
+      "tests": 26
+    },
+    "desktopTypeScript": {
+      "command": "npx tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.json",
+      "status": "PASS"
+    },
+    "desktopNodeTypeScript": {
+      "command": "npx tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.node.json",
+      "status": "PASS"
+    },
+    "diffCheck": "PASS",
+    "activeCardJson": "PASS",
+    "rustfmtCheck": "BLOCKED_UNRELATED_FORMATTING_DRIFT: cargo fmt --check reports existing broader formatting differences in the Tauri shell; no formatter rewrite was applied in this narrow code-only boundary."
+  },
+  "hashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "332DE8A359E279FB075CB6B2B935D04DFA79620B566BED7EFFC82FEA44B34E23",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "11FA4A10BE1C80E6CC64851A104A24E0DAD298DCE4B894E4C65DAE93B733C789",
+    "apps/campaign-helper-desktop/src/project-store.ts": "3282D5C320D9677ACCFE69B6FBAD8742C660ED40117668B2279DE6B859835B0A",
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs": "45B8E757821F7731BB5A19F0B061B8729D47B72B445FAB41E23B93D769B61C96",
+    "apps/campaign-helper-desktop/src-tauri/src/lib.rs": "95788EF6553644FDEC6784AC4A858F0712E391688AD3CFE202CBEF5DEE4E7916",
+    "tests/broken-reference-ui-selftest.test.ts": "0986BAA608446258E7F638B720BE2821F17762CACA5436C6369E5B50B2EB4CC3",
+    "tests/project-proposal-session.test.ts": "9759B62BEE4EE36AC9BE7B2B0E0E574DC30D9D990A3E6C32C4670874ED4892FF"
+  },
+  "nextBoundary": {
+    "milestone": "M544",
+    "scope": "One fresh exact debug package build with VITE_DBX_PROJECT_SELF_TEST=broken-reference-detach-ui-v3-execute and VITE_DBX_PROJECT_SELF_TEST_EXIT=1, followed only by executable/frontend marker and process reread. No launch, capture, browser-storage inspection, session operation, or Stage 11 acceptance.",
+    "reason": "The v3 code boundary is locally validated; a fresh artifact must embed it before a separately bounded v3 fixture/observation sequence.",
+    "prohibited": [
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "v2 session clear/replacement/recovery",
+      "fixture preparation",
+      "project/runtime mutation",
+      "Foundry, provider, credential, or player-password action"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M543 is a local code/static-test closure only. It does not certify v3 fixture creation, the packaged lifecycle, approval, apply, reread, commit, Stage 11, Foundry authority, or Ready-to-Play."
+}

@@ -1,0 +1,68 @@
+{
+  "operation": "dicebox.stage11.selected-missing-asset-detach-session-namespace-v2-correction",
+  "milestone": "M580",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "capturedAt": "2026-08-30T04:37:24-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/asset-detach-ui-selftest.test.ts"
+  ],
+  "correction": {
+    "newScope": "asset-detach-ui-self-test-v2",
+    "projectId": "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+    "newTypedHelpers": [
+      "desktopAssetDetachUiV2SelfTestSessionStorageKey",
+      "loadDesktopAssetDetachUiV2SelfTestProposalSession",
+      "saveDesktopAssetDetachUiV2SelfTestProposalSession"
+    ],
+    "routing": "Only the selected-detach self-test load/save/persistence route uses v2; the existing v1 dedicated namespace and ordinary project namespace remain separate and untouched.",
+    "authority": "Typed proposal-session validation, approval/apply callbacks, authoritative reread, no-Foundry, and no-retry gates are unchanged. No direct clear, replace, reuse, or mutation path was added."
+  },
+  "validation": {
+    "focusedVitest": "PASS: 2 files, 13 tests",
+    "desktopTypeScript": "PASS",
+    "nodeTypeScript": "PASS",
+    "diffCheck": "PASS",
+    "processReread": "PASS: process count 0 for desktop/Cargo/Rustc"
+  },
+  "hashes": {
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "06DB5E6CFCF2FC7181070F5EA6840CF039A4627E5F0E851E5C992DBCA54D522E",
+    "apps/campaign-helper-desktop/src/App.tsx": "06961A4B2132B1A4FF096E89D869F11B555C9782A5E4230BC261C02E968D4D94",
+    "tests/asset-detach-ui-selftest.test.ts": "C13F924FEF71EA5C41720CE327E552094F4E6AAA3E54831455D7075D714047C5"
+  },
+  "preservation": {
+    "v1DedicatedNamespace": "preserved; not inspected, cleared, replaced, or reused",
+    "ordinaryNamespace": "preserved; not inspected, cleared, replaced, or reused",
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "nextBoundary": {
+    "milestone": "M581",
+    "scope": "One configured fresh debug package build containing M580, followed by exact artifact marker/hash/process attestation. No launch or capture until a separate gate.",
+    "prohibited": [
+      "second build",
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session operation or clearing",
+      "fixture cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance",
+      "Stage 12 work"
+    ]
+  },
+  "readyToPlay": false
+}

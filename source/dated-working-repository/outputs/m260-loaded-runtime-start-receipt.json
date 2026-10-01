@@ -1,0 +1,132 @@
+{
+  "receiptVersion": 1,
+  "supervisorVersion": "1.1.0",
+  "operation": "foundry.fixture.start",
+  "target": "disposable-fixture",
+  "worldId": "dbx-test-world",
+  "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+  "port": 30002,
+  "timestamp": "2026-08-27T13:52:17.379Z",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "status": "PASS",
+  "evidenceClass": "process-ready",
+  "idempotent": false,
+  "pid": 4760,
+  "guard": {
+    "receiptVersion": 1,
+    "operation": "foundry.server.launch-guard",
+    "status": "PASS",
+    "evidenceClass": "deterministic",
+    "noDefaultDataPath": true,
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "foundryDataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Data",
+    "worldId": "dbx-test-world",
+    "foundryEntry": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+    "port": 30002,
+    "checks": {
+      "dataPath": "PASS",
+      "worldManifest": "PASS",
+      "foundryEntry": "PASS",
+      "port": "PASS",
+      "configLock": "PASS"
+    },
+    "observedWorld": {
+      "id": "dbx-test-world",
+      "coreVersion": "14.367",
+      "system": "dnd5e",
+      "systemVersion": "5.3.3"
+    },
+    "blockers": [],
+    "nextGate": "If a live smoke run is authorized, launch only with the returned explicit arguments and capture the exact runtime fingerprint."
+  },
+  "recovery": {
+    "receiptVersion": 1,
+    "supervisorVersion": "1.1.0",
+    "operation": "foundry.fixture.recover-lock",
+    "target": "disposable-fixture",
+    "worldId": "dbx-test-world",
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "port": 30002,
+    "timestamp": "2026-08-27T13:52:19.889Z",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "status": "PASS",
+    "evidenceClass": "recovery",
+    "recovered": true,
+    "reason": "verified-supervisor-restart",
+    "quarantinePath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Config\\dicebox-lock-quarantine\\options.json.lock-2026-08-27T13-52-19-889Z",
+    "blockers": []
+  },
+  "observed": {
+    "receiptVersion": 1,
+    "supervisorVersion": "1.1.0",
+    "operation": "foundry.fixture.status",
+    "target": "disposable-fixture",
+    "worldId": "dbx-test-world",
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "port": 30002,
+    "timestamp": "2026-08-27T13:52:27.622Z",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "lifecycleOperation": {
+      "schemaVersion": 1,
+      "supervisorVersion": "1.1.0",
+      "token": "6721c261-ebb9-4330-9a7e-e603c02f5eda",
+      "ownerPid": 29572,
+      "action": "start",
+      "acquiredAt": "2026-08-27T13:52:17.319Z"
+    },
+    "status": "PASS",
+    "evidenceClass": "process-ready",
+    "pid": 4760,
+    "listeners": [
+      4760
+    ],
+    "state": {
+      "schemaVersion": 1,
+      "supervisorVersion": "1.1.0",
+      "status": "starting",
+      "pid": 4760,
+      "startedAt": "2026-08-27T13:52:17.379Z",
+      "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+      "worldId": "dbx-test-world",
+      "port": 30002,
+      "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+      "entryPath": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+      "args": [
+        "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+        "--dataPath=C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+        "--world=dbx-test-world",
+        "--port=30002"
+      ],
+      "commandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB",
+      "processStartedAt": "2026-08-27T13:52:19.9481951Z",
+      "processPath": "C:\\Program Files\\nodejs\\node.exe"
+    },
+    "http": {
+      "ok": true,
+      "status": 302,
+      "location": "/join"
+    },
+    "checks": {
+      "pidAlive": true,
+      "commandMatches": true,
+      "fallbackIdentityMatches": false,
+      "stateTargetMatches": true,
+      "processPathMatches": true,
+      "processStartMatches": true,
+      "listenerMatches": true,
+      "httpReady": true
+    },
+    "blockers": []
+  },
+  "blockers": [],
+  "lifecycleLease": {
+    "action": "start",
+    "ownerPid": 29572,
+    "acquiredAt": "2026-08-27T13:52:17.319Z",
+    "recoveredLease": null,
+    "released": true
+  }
+}

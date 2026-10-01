@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "receiptId": "m222-human-to-codex-handoff-closure",
+  "capturedAt": "2026-08-26T12:30:00-07:00",
+  "status": "PASS",
+  "evidenceLabel": "local",
+  "handoff": {
+    "id": "dicebox-m221-human-to-codex-continuation",
+    "from": "human",
+    "to": "codex",
+    "authority": "untrusted-communication-recheck-source-project",
+    "sha256": "368A909E74E3684A86D9448F79CF58D23304AF83E0FBF53F01C3796694FFF62E",
+    "commit": "52aca02cfa427f3e0be89560a84c4fb7eb5e9f89",
+    "ciRun": "https://github.com/Dicebox20/chatgpt-codex-project-bridge/actions/runs/32998592516",
+    "remoteReadback": "PASS"
+  },
+  "sharedIdeaDocument": {
+    "id": "14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o",
+    "tabId": "t.0",
+    "revision": "AIroW36hleN-hOLh2H2PolSd7rJK4Ry-tuZ_0YsJt91LTl0DLzNXGxJQJ0ObjdOsmQykH-QmPHZWnUfkGlW65LfCleDFXftMCQ04Px9RPFk",
+    "nativeDates": 21,
+    "protectedControls": 0
+  },
+  "knowledgeBase": {
+    "sourceId": "SRC-M222-HUMAN-TO-CODEX-HANDOFF-CLOSURE",
+    "factId": "F-296",
+    "decisionId": "D-256",
+    "trialId": "T-269",
+    "counts": { "sources": 275, "facts": 311, "decisions": 261, "openItems": 135, "trials": 274, "subjects": 40, "milestones": 26 },
+    "schemaSha256": "B9FB21EA8B3974A56F44ED52CB8434EB9EC8B9617DC1E3928575399EDF254333",
+    "seedSha256": "3518A3FF6DA6F09395A1E85C718A73D9A6E8304351FF4F99BCDD7E717A4E46C5",
+    "databaseSha256": "52E9429A7DE63020C9629C0CC727047C60A0181BCF32EA81D3953318539404B2"
+  },
+  "doesNotProve": [
+    "Stage 8 completion or alpha readiness",
+    "product repository identity",
+    "Iggwilv verifier parity or gameplay certification",
+    "product or Foundry mutation authority"
+  ],
+  "noProductOrFoundryMutation": true
+}

@@ -1,0 +1,18 @@
+{
+  "operation": "dicebox.stage11.asset-restore.post-restore-artifact",
+  "status": "ARTIFACT_ATTESTED",
+  "milestone": "M494",
+  "buildEnvironment": {
+    "VITE_DBX_PROJECT_SELF_TEST": "asset-restore-ui-reread",
+    "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+  },
+  "artifact": {
+    "executableSha256": "A5289A90A1945BDAC40D1CC5B38C5D4F6392E686C4132D1728CAF31F505F4807",
+    "bundle": "apps/campaign-helper-desktop/dist/assets/index-xibaYFgD.js",
+    "bundleSha256": "DB6D832E47EE0300E1BB8DCBA468251203C6B09F4FC3759A49104CDE6ACC8338"
+  },
+  "requiredMarkersPresent": ["asset-restore-ui-reread", "3505e78b9965cadb25ee3709e95a6f2ea361fccf8545637954254045ddd75aaf", "379aa60c5861ea4f15b6b8fd97ce05053fd6a7de6a4bd4338859fd72ebdbdf4d", "REGISTERED_ASSET_BLOB_MISSING", "authoritative-post-restore-reread"],
+  "desktopCargoOrRustcProcessRemaining": false,
+  "runtimeMutation": false,
+  "foundryWrite": false
+}

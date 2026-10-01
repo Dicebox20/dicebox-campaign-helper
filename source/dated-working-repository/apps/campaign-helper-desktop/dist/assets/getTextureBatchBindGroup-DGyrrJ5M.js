@@ -1,0 +1,1 @@
+import{H as a,u as p}from"./Geometry-JcOjYH16.js";var s={};function f(t,u,n){let e=2166136261;for(let r=0;r<u;r++)e^=t[r].uid,e=Math.imul(e,16777619),e>>>=0;return s[e]||l(t,u,e,n)}function l(t,u,n,e){const r={};let i=0;for(let o=0;o<e;o++){const d=o<u?t[o]:a.EMPTY.source;r[i++]=d.source,r[i++]=d.style}const c=new p(r);return s[n]=c,c}export{f as t};

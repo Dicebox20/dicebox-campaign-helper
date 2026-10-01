@@ -1,0 +1,92 @@
+{
+  "milestone": "M943",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile M942 packaged v5 cross-producer lifecycle evidence against the complete Stage 11 matrix, aggregate/current-authority bridges, producer-family evidence, active card, roadmap, receipts, and rebuilt KB without implementation, runtime reopening, or authority promotion.",
+  "inputs": [
+    "outputs/m942-stage11-fresh-v5-packaged-desktop-observation-closure-receipt.json",
+    "outputs/m941-stage11-fresh-v5-exit-mode-0-desktop-artifact-closure-receipt.json",
+    "outputs/m934-stage11-post-native-cross-producer-conformance-aggregate-attachment-reconciliation-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-cross-producer-lifecycle-continuity-evidence.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate/current-authority index retains 9 entries including the supplemental in-memory add-Scene row; these scopes remain distinct.",
+    "existingAttachments": [
+      "M914 project.asset.register-handout redo",
+      "M916 project.asset.register-audio redo",
+      "M918 project.asset.register-handout aggregate role evidence",
+      "M920 project.asset.register-token redo",
+      "M923 project.asset.bind redo",
+      "M925 project.save-as redo",
+      "M927 project.rename redo",
+      "M929 project.create redo",
+      "M931 project.add-scene.commit-in-memory redo",
+      "M933 native cross-producer conformance"
+    ],
+    "m942Evidence": "Directly observed packaged v5 cross-producer lifecycle: exact v5 identity, generation-2 asset.bind commit, backup promotion restored generation 2, foreign state preserved, proposal histories committed, and no Foundry write; process stopped and absence reread.",
+    "m942Scope": "One packaged test-owned producer-scoped receipt; non-certifying; not independent aggregate authority.",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "crossProducerContinuity": "IMPROVED_BY_PACKAGED_STRAND_BUT_INCOMPLETE",
+    "packagedRuntimeAuthority": "PARTIAL",
+    "directActiveGmFoundryEvidence": "INCOMPLETE",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "disposition": {
+    "m942Reread": "PASS: exact artifact match, v5 identity, packaged lifecycle summary, no-Foundry-write boundary, close, and process absence are recorded.",
+    "coverage": "PASS: M942 is distinct from the nine operation-specific aggregate attachments and M933 native cross-producer attachment; no count scope is collapsed.",
+    "remainingBlocker": "Complete aggregate current authority across all producer families and direct active-GM/Foundry evidence remain unproven.",
+    "selectedNextGap": "Attach the exact M942 packaged v5 cross-producer receipt through one strict typed producer-scoped non-certifying aggregate field, without rerun or authority promotion."
+  },
+  "validation": {
+    "readOnlyKbQueries": "PASS: read-only summary, project source coverage, blocker surface, and M942/M943 authority context were consulted.",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; failures 0; violations 0; readyClaim false",
+    "databaseRebuildAndVerify": "PASS: integrity ok; sources 1446, facts 1195, decisions 1085, active work 105, research subjects 40, milestones 26",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "limits": {
+    "readOnly": true,
+    "implementation": false,
+    "runtimeOrFoundryAction": false,
+    "browserOrSessionAction": false,
+    "storageInspected": false,
+    "projectMutatedOrCleaned": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "aggregate current authority or Stage 11 acceptance",
+    "direct active-GM/Foundry behavior",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Authorize one strict typed aggregate attachment of the exact M942 packaged v5 cross-producer receipt; preserve producer-scoped non-certification and all counts."
+}

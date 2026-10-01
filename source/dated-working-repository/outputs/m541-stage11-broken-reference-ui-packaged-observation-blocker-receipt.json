@@ -1,0 +1,92 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.packaged-observation",
+  "milestone": "M541",
+  "status": "BLOCKED_PRESERVED",
+  "capturedAt": "2026-08-29T22:14:02-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "captureTransport": {
+    "runnerReceipt": "outputs/m541-stage11-broken-reference-ui-packaged-observation-runner-receipt.json",
+    "runnerReceiptSha256": "93B99F1BC605C860C25AF1BDA8AD863FF58406DB20B2ED0BEB7223724850FDCC",
+    "status": "PASS",
+    "exitCode": 0,
+    "signal": null,
+    "timedOut": false,
+    "timeoutMs": 30000,
+    "graceMs": null,
+    "killRequested": false,
+    "childExitObserved": true,
+    "retry": false
+  },
+  "appObservation": {
+    "fixture": "PASS",
+    "targetIdentity": "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v2",
+    "inspection": "BLOCKED",
+    "blockerCode": "BACKGROUND_ASSET_ROLE_MISMATCH",
+    "preview": "PREVIEW",
+    "sessionPreflight": "PASS:previewed",
+    "ownershipGate": "OWNERSHIP_UNPROVEN",
+    "lifecycleTrace": [
+      "fixture PASS",
+      "inspection BLOCKED",
+      "broken-reference detach PREVIEW",
+      "session-preflight:PASS:previewed; ownership=OWNERSHIP_UNPROVEN",
+      "self-test BLOCKED before approval"
+    ],
+    "lifecycleProgressedBeyondPreviewed": false,
+    "approvalApplyRereadCommit": "not established",
+    "ordinaryV1SessionTouched": false,
+    "sessionClearOrReplacement": false,
+    "noFoundryWrite": true
+  },
+  "stateReread": {
+    "ordinaryV1ProjectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "v2TestProjectSha256": "33EFC91239F5C9455DB87F5A46A511DD8B6F2114D7502CDF5232C2D5E105F3B4",
+    "ordinaryV1Project": {
+      "schemaVersion": "0.3.0",
+      "generation": 1,
+      "scenes": 2,
+      "assets": 1,
+      "backup": "absent"
+    },
+    "v2TestProject": {
+      "schemaVersion": "0.3.0",
+      "generation": 1,
+      "scenes": 2,
+      "assets": 1,
+      "backup": "absent"
+    },
+    "workspaceIndexSha256": "BD962775571A79F94F73F1CDC690DBC7DDB9C8260828EDC950DCAB39DC154F09",
+    "workspaceBackupSha256": "F6A79A51B6A1790D4278F19286B859ABD22D83578634B5F8889C7F8AFBC4BC5B",
+    "workspacePendingSha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+    "registeredAssetSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "ordinaryV1ProjectPreserved": true,
+    "v2ProjectPreserved": true,
+    "v2Backup": "absent-as-reread",
+    "processes": "none: desktop/Cargo/Rustc",
+    "browserStorageInspected": false
+  },
+  "diagnostics": {
+    "runner": "The executable exited normally and the bounded runner receipt is PASS at the transport layer.",
+    "application": "The app deliberately blocked at the isolated self-test session preflight because the preserved v2 session is PASS:previewed and current-process ownership cannot be proven after the prior boundary.",
+    "environmentalStderr": "Chrome unregister Error=1412 was emitted; it is environmental diagnostic output and not lifecycle evidence.",
+    "noRecoveryInvocationByRunner": true
+  },
+  "nextBoundary": {
+    "milestone": "M542",
+    "scope": "Read-only reconciliation of the M541 preserved PASS:previewed v2 session blocker, M536 outcome-unknown timeout, M537 diagnosis, M539 handoff correction, and current closed namespace; select one typed recovery or fresh-identity boundary without inspecting browser storage or mutating sessions.",
+    "prohibited": [
+      "second capture",
+      "build",
+      "launch",
+      "retry",
+      "browser-storage inspection",
+      "session clear/replacement/recovery",
+      "fixture/project/runtime mutation",
+      "Foundry, provider, credential, or player-password action",
+      "Stage 11 acceptance"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "The quick popup close is expected for VITE_DBX_PROJECT_SELF_TEST_EXIT=1. M541 proves normal transport and a preserved application blocker, not approval, apply, reread, commit, Stage 11, Foundry authority, or Ready-to-Play. No session or project state was cleaned up or replaced."
+}

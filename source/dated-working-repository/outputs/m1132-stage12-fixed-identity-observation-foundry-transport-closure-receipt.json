@@ -1,0 +1,26 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1132",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "operation": "dicebox.ascendancy.signal-rune.native-document.identity-observation-foundry-transport",
+  "transportSha256": "D4EDC4C2A7447F2398ACB8E793467AF56796FCEE6586430529C7ACBF0FBF57F0",
+  "moduleSha256": "048806B0906AAEFC1D26F9095C09CED829117C399EED668B164A12EFF38F02DF",
+  "testSha256": "06DE42859D5B25A3CC02916F18BBD588ACDF48AB12D0475DE26818B3292CA73F",
+  "validation": { "nodeCheck": "PASS", "focusedTransportTests": "3/3", "relatedFoundryTests": "30/30", "packageTypecheck": "PASS" },
+  "transport": {
+    "cacheToken": "dbx=0.1.18",
+    "target": "dbx-test-world / Foundry 14.367 / dnd5e 5.3.3 / Gamemaster",
+    "parents": ["AneddhKAAfk5HlsA", "p9Mbi0CJWe9KvJhH"],
+    "embeddedTypes": ["Level", "Wall", "Region", "Tile", "Token", "AmbientLight", "AmbientSound", "Drawing", "Note"],
+    "control": "GM-only Close-only diagnostic",
+    "foreignState": "preserve",
+    "noWrite": true,
+    "apply": false,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "dispatch": "disabled",
+    "eval": false
+  },
+  "boundaries": { "staged": false, "runtimeInvoked": false, "sceneActivated": false, "stage12Acceptance": "NOT_CLAIMED", "readyClaim": false }
+}

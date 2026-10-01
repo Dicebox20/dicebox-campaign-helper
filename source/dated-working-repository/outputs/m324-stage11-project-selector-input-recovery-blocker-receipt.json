@@ -1,0 +1,94 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m324-stage11-project-selector-input-recovery-blocker-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M324",
+  "evidenceLabel": "local",
+  "status": "BLOCKED",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "projectStoreWrites": 0,
+  "sessionOnlyWrites": 0,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "target": {
+    "surface": "local packaged Tauri desktop",
+    "windowTitle": "DiceBox Campaign Helper",
+    "windowId": 2296044,
+    "windowSelectedUniquely": true,
+    "app": "process:C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+    "projectId": null,
+    "projectSelectionVerified": false
+  },
+  "repair": {
+    "source": "apps/campaign-helper-desktop/src/App.tsx",
+    "path": "package-owned Ctrl+Alt+Shift+F focus helper using an exact project-catalog ref",
+    "focusedSourceTest": "PASS: desktop project proposal review source test 4/4",
+    "desktopBuild": "PASS: TypeScript and Vite build",
+    "projectSelection": false,
+    "projectPersistence": false
+  },
+  "observation": {
+    "mode": "documented accessibility-only capture",
+    "includeScreenshot": false,
+    "includeText": true,
+    "accessibilityPresent": true,
+    "freshPackagedWindow": true,
+    "renameReviewEntryVisible": true,
+    "initialProjectSelection": "none; catalog showed 25 entries and required selection",
+    "initialRenameSession": "none",
+    "initialFocusedElement": "8 pane DiceBox Campaign Helper",
+    "protectedState": "unchanged; no selected project, proposal session, project/workspace write, or foreign-state change"
+  },
+  "lifecycle": {
+    "focusAttempt": {
+      "inputMethod": "exact accessibility element click on fresh project-catalog element 143",
+      "result": "BLOCKED_UIA_INPUT_FAILURE",
+      "error": "coordinate input geometry is unavailable",
+      "retryPolicy": "No click, coordinate, screenshot, guessed-focus, or arbitrary accessibility retry was attempted."
+    },
+    "keyboardRepairValidation": {
+      "inputMethod": "Control_L+Alt_L+Shift_L+f packaged keyboard chord",
+      "result": "NO_VERIFIED_FOCUS_TRANSITION",
+      "reread": "Fresh accessibility reread succeeded; focused element remained the app pane and the catalog remained blank with no selected project, no project ID, and no rename session.",
+      "retryPolicy": "Stopped after the second same-class input boundary failure under the active failure-control rule."
+    }
+  },
+  "fixtureReread": {
+    "primaryExists": false,
+    "backupExists": true,
+    "quarantineExists": true,
+    "backupSha256": "f5af1e42c838add5aeddee9abc3b5d2125932d539a750763aa9c764f004eac2b",
+    "quarantineSha256": "f5af1e42c838add5aeddee9abc3b5d2125932d539a750763aa9c764f004eac2b",
+    "backupUnchanged": true,
+    "foreignMarker": "preserve-m244-foreign-state",
+    "foreignMarkerSha256": "9a5350aad8c13c79b978db42d3b339e75c54a96c4df9815eb2a8bf5d8f1203f2",
+    "foreignMarkerUnchanged": true,
+    "unrelatedProjectsTouched": false
+  },
+  "validation": {
+    "kb": "Pending M324 closure/M325 authorization rebuild; current KB was consulted before the repair attempt.",
+    "workflowBeforeSlice": "PASS structural gates; Stage 11 proposal-approval-history active; M323 failures 1; recovery mode false",
+    "packagedAccessibility": "PASS: exact window and review route reread without screenshot",
+    "packagedFocusRecovery": "BLOCKED: exact selector click had no geometry and the repair chord produced no verified focus transition",
+    "protectedState": "PASS: no project, workspace, proposal-session, or foreign-byte change",
+    "processClosure": "PASS: exact Tauri process stopped and port 1420 is free"
+  },
+  "recoveryDisposition": "Enter recovery mode after the second same-class selector-input failure. Preserve the no-write state and authorize M325 for a declarative selector-focus repair; no further packaged input retry is allowed until that fix is locally validated.",
+  "selectedNextSlice": {
+    "milestone": "M325",
+    "name": "declarative project-selector focus recovery",
+    "scope": "Narrow package-owned declarative focus repair and local validation only; no packaged project selection, proposal creation/application, rename execution, provider, credentials, browser storage, Foundry, or player-password activity."
+  },
+  "doesNotProve": [
+    "project-catalog selection",
+    "selected-project rename metadata visibility",
+    "project.rename proposal creation or session lifecycle",
+    "native project-store rename behavior",
+    "provider or credential behavior",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

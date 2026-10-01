@@ -1,0 +1,115 @@
+{
+  "milestone": "M910",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY COMPOSITION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Compose the existing strict project.save-as redo terminal-history bridge into typed producer-scoped semantic evidence using a deterministic local fixture, without expanding production, aggregate, runtime, or Foundry authority.",
+  "inputs": [
+    "apps/campaign-helper-desktop/src/project-save-as-terminal-history.ts",
+    "tests/project-save-as-terminal-history.test.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-save-as-semantic-redo-evidence.ts",
+    "tests/project-stage11-save-as-semantic-redo-evidence.test.ts",
+    "outputs/m909-stage11-post-asset-bind-semantic-redo-reconciliation-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "evidence": {
+    "operation": "project.save-as.redo",
+    "strictProducerReceipt": "dicebox.project.save-as.redo",
+    "sourceAndTargetIdentityPreserved": true,
+    "targetAbsentBeforeRedo": true,
+    "targetPresentAfterRedo": true,
+    "sourcePreserved": true,
+    "generationAdvanced": true,
+    "contentPreserved": true,
+    "sceneCollectionPreserved": true,
+    "assetCollectionPreserved": true,
+    "matchedReread": true,
+    "targetCreationIntegrityPreserved": true,
+    "driftRejected": [
+      "source identity or preservation drift",
+      "target identity or absence/presence drift",
+      "content/Scene/asset-collection drift",
+      "matched-reread drift",
+      "authority drift"
+    ],
+    "backupPromotion": "NOT_APPLICABLE_ONE_WAY"
+  },
+  "boundary": {
+    "semanticEvidence": "typed producer-scoped local evidence",
+    "readOnly": true,
+    "nonCertifying": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "foreignStatePreserved": true,
+    "sourceProjectContentWrite": false,
+    "aggregateSemanticAttachment": false,
+    "aggregateCountsChanged": false,
+    "runtimeLaneReopened": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "countScopePreserved": true,
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source/test separately indexes 9 redo entries, including the supplemental project.add-scene.commit-in-memory row; these are not collapsed into one measure."
+  },
+  "validation": {
+    "focusedEvidenceSuite": "PASS: 2 files; 6 tests",
+    "relatedStage11EvidenceSuite": "PASS: 17 files; 50 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "fullRepositorySuite": "PASS: 207 files; 937 tests",
+    "databaseRebuildAndVerifyBeforeClosure": "PASS: sources 1383, facts 1164, decisions 1023, open items 135, trials 788, research subjects 40, milestones 26",
+    "negativeCoverage": "PASS: source, target, absence/presence, content, Scene, asset-collection, matched-reread, and authority drift fail closed",
+    "diffCheck": "PENDING FINAL DOCUMENTATION PASS"
+  },
+  "artifacts": {
+    "semanticLayer": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-save-as-semantic-redo-evidence.ts",
+      "sha256": "28AA2E38C54E0EB4CE5A6D94787F41F7231D89DA1EC54A383888575B8EA6EF0A"
+    },
+    "focusedTest": {
+      "path": "tests/project-stage11-save-as-semantic-redo-evidence.test.ts",
+      "sha256": "6805827ECA8EB877770923240CFC9AAD27D21EFDA7A1E5947AAD6214259C26A6"
+    },
+    "strictSaveAsRedoBridge": {
+      "path": "apps/campaign-helper-desktop/src/project-save-as-terminal-history.ts",
+      "sha256": "1FA3F7AEFB2A6538E4E0D5602D352BBA7A282A90A2C96F7EE2133768BC213640"
+    },
+    "strictSaveAsFocusedTest": {
+      "path": "tests/project-save-as-terminal-history.test.ts",
+      "sha256": "0040A1FF857AA62C21D153295448BC4A76388C04C0F722923F188326CA4565C5"
+    }
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "byte-level envelope rotation for project.rename or project.create",
+    "backup-promotion undo/redo support",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform only the authorized M911 post-save-as-semantic-redo read-only reconciliation against the complete Stage 11 matrix; retain all count scopes, authority locks, runtime parking, and Stage 11/Stage 12 non-certification."
+}

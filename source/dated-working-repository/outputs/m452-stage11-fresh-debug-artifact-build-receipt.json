@@ -1,0 +1,80 @@
+{
+  "milestone": "M452",
+  "operation": "dicebox.stage11.fresh-debug-artifact-build",
+  "status": "PASS_LOCAL_BUILD_AND_REREAD",
+  "authorization": "D-613",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "workingDirectory": ".",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "backup-promotion-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "invocations": 1,
+    "exitCode": 0,
+    "beforeBuildCommand": "npm run build",
+    "wrapperPath": "tools/run-tauri-desktop.mjs",
+    "wrapperSha256": "914DEC139ACB307BDBFA38AA0E1B1FBE02ED2A994A76D69AAB84FB31A33D3986",
+    "tauriConfigSha256": "1D1BC3849A2E84763D5588267EF8098D5D1D4B27C898FB4E55C40C37D863141B",
+    "buildScriptSha256": "487059EAF8A947B80F20A9AACAC038A5047B2AD69D2401B827376C67D6FE847F",
+    "packageJsonSha256": "259D0A669F7AD15B4B89043AAB7E67799BC5D0A3640E3490CB68056AFE47BE7D"
+  },
+  "artifacts": {
+    "exactTarget": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "exactTargetSha256": "897E46BE17D0919C99697B8A7F787785D923ECE6C7C70B10D886AFA9CB4460D7",
+    "exactTargetLength": 26668032,
+    "exactTargetLastWriteUtc": "2026-08-29T04:04:52.3229512Z",
+    "frontendBundle": "apps/campaign-helper-desktop/dist/assets/index-iNmq9RUz.js",
+    "frontendBundleSha256": "8AEF0A12FF965B8795F775F3B4E2CEF10AB89306CB02657E32E22A3518BE3147",
+    "frontendBundleLength": 2039001,
+    "frontendBundleLastWriteUtc": "2026-08-29T04:04:20.3189430Z",
+    "sourceAdapterPath": "apps/campaign-helper-desktop/src/project-recovery-proposal-adapter.ts",
+    "sourceAdapterSha256": "BF2E370C12E3CB0562613E45D5E49EB21200F2623477DF97B419BB2372C7079C",
+    "sourceRustPath": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "sourceRustSha256": "7279B0F3FC53F1FD7A3F44B8D02812B2CF20F518B3B72000E84D99A6AE2359F2",
+    "frontendMarkers": {
+      "backupPromotionMode": true,
+      "structuredErrorFormatter": true,
+      "exactBackupPromotionCommand": true
+    },
+    "executableMarkers": {
+      "projectFixtureExists": true,
+      "existingBackupAuthoritativeFixture": true,
+      "foreignNoteFile": true
+    }
+  },
+  "authoritativePostBuildReread": {
+    "projectRoot": "C:/Users/rujie/AppData/Local/com.dicebox.campaign-helper/projects/desktop-backup-authoritative-recovery-promotion-self-test",
+    "directoryExists": true,
+    "exactEntries": [
+      "project.backup.json",
+      "foreign-note.txt"
+    ],
+    "projectJsonExists": false,
+    "projectBackupJsonLength": 758,
+    "projectBackupJsonSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteLength": 27,
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2",
+    "lastApprovedApplicationSession": "MISSING",
+    "newSessionTransitionReceipt": false,
+    "recovery": "NOT_ATTEMPTED",
+    "desktopProcessRunning": false
+  },
+  "scopeBoundary": {
+    "fixtureProjectWorkspaceState": "Unchanged",
+    "fixturePreparation": false,
+    "projectMutation": false,
+    "recoveryApply": false,
+    "proposalOrApprovalSessionMutation": false,
+    "launch": false,
+    "captureRunner": false,
+    "providers": false,
+    "credentials": false,
+    "browserStorage": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "cleanup": false,
+    "retry": false
+  },
+  "nextBoundary": "M453: one exact current-driver capture observation against this target followed by authoritative trace, session, fixture, recovery, and process reread; no rebuild or retry."
+}

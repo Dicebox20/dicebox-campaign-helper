@@ -1,0 +1,16 @@
+{
+  "milestone": "M410",
+  "stage": "proposal-approval-history",
+  "status": "PASS_LOCAL_RECOVERABLE_MOVE",
+  "source": "C:\\Users\\rujie\\AppData\\Local\\com.dicebox.campaign-helper\\projects\\desktop-backup-authoritative-recovery-promotion-self-test",
+  "destination": "C:\\Users\\rujie\\AppData\\Local\\com.dicebox.campaign-helper\\m410-quarantine\\desktop-backup-authoritative-recovery-promotion-self-test",
+  "postMove": {
+    "sourceExists": false,
+    "destinationExists": true,
+    "primaryProjectJsonExists": false,
+    "projectBackupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+  },
+  "excluded": ["app launch", "fixture replacement", "proposal", "approval", "recovery apply", "Foundry", "credentials", "providers", "player passwords"],
+  "nextBoundary": "M411 may run one fresh existing fixed-ID backup-promotion packaged lifecycle after fresh build and exact preflight."
+}

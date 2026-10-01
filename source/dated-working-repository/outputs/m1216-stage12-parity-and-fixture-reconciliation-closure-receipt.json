@@ -1,0 +1,107 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1216-stage12-parity-and-fixture-reconciliation-closure",
+  "operation": "foundry.evidence.reconciliation.m1216",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1216",
+  "status": "COMPLETE_READ_ONLY_PARITY_FIXTURE_RECONCILIATION",
+  "evidenceLabel": "local",
+  "observedAt": "2026-09-07",
+  "authorization": "docs/ACTIVE-PROGRAM-SLICE.json:acceptedStage12M1216ParityAndFixtureReconciliation",
+  "inputs": [
+    "outputs/m1214-stage12-current-runtime-descriptor-alignment-closure-receipt.json",
+    "outputs/m1215-stage12-exact-nested-data-parity-refresh-closure-receipt.json",
+    "outputs/m1209-stage12-exact-v4-regionwright-loaded-control-observation-closure-receipt.json",
+    "packages/dicebox-foundry/ascendancy-campaign-package.json",
+    "packages/dicebox-foundry/src/ascendancy-installer.js",
+    "packages/dicebox-foundry/src/module.js",
+    "packages/dicebox-foundry/src/module-byte-attestation.json",
+    "work/foundry-fixture-data-v4/.dicebox-supervisor/state.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md"
+  ],
+  "reconciledEvidence": {
+    "m1214CurrentSourceIdentity": {
+      "status": "COMPLETE_SOURCE_ONLY_CURRENT_RUNTIME_DESCRIPTOR_ALIGNMENT",
+      "specId": "dbx:foundry-spec:current-product-0.1.15-m1214",
+      "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1214",
+      "specSha256": "35e6b5c1583f7bdc84c4f017654e68b770f60f353438cb1605bc7708ee239a5e",
+      "installerSha256": "6d3c6ee7955c18adea1f3b690de6808b4a187c53bec215d02928d10ba148adff",
+      "packageSha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5"
+    },
+    "m1215CurrentSourceStagedParity": {
+      "status": "COMPLETE_SOURCE_STAGED_PARITY_M1214_NO_RUNTIME",
+      "files": 35,
+      "matches": 35,
+      "mismatches": 0,
+      "moduleSha256": "700fc9aa6c9a34ca2d614a12a25f6db1574dd3bfb549d73421cb84831e9d4e14",
+      "moduleBytes": 114787,
+      "sidecarSha256": "bb276898ee8b08a3efd410ab4d3997ea5624e25fb7517902066600ce492c8995",
+      "supervisorStatus": "stopped",
+      "listenerOnPort30003": false,
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    },
+    "m1209LoadedControl": {
+      "status": "PARTIAL_FIXTURE_M1209_LOADED_CONTROL_BLOCKED_INCOMPLETE_SCENES",
+      "loadedControlPresence": true,
+      "loadedControlStatus": "BLOCKED",
+      "blocker": "Fixture harness requires exactly four helper-owned Ascendancy Scenes.",
+      "player3Joined": false,
+      "regionwrightMechanicsInvoked": false,
+      "documentAssetSceneRegionTileWallWrites": 0,
+      "stage12Accepted": false,
+      "readyClaim": false
+    },
+    "packagePlan": {
+      "campaignRooms": 4,
+      "regionPlans": 4,
+      "spatialBlueprints": 4,
+      "mutation": "disabled-until-exact-runtime-gate",
+      "geometryAuthority": "Spatial Blueprint; renderer pixels are not authority",
+      "blockers": [
+        "dbx:blocker:exact-foundry-runtime",
+        "dbx:blocker:regionwright-integration-receipt"
+      ]
+    },
+    "installerGates": {
+      "exactFoundryVersion": "14.367",
+      "system": "dnd5e 5.3.3",
+      "activeGmRequired": true,
+      "preWriteRereadRequired": true,
+      "nativeWriteAccountingRequired": true,
+      "postWriteAuthoritativeRereadRequired": true,
+      "unknownOutcomeRetry": "forbidden-until-reread"
+    }
+  },
+  "remainingGaps": {
+    "servedIdentity": "not-observed",
+    "loadedCurrentArtifactIdentity": "not-proven by a current hash payload",
+    "fourHelperOwnedAscendancyScenes": "blocked by M1209 fixture harness prerequisite",
+    "nativeSceneWallRegionTileAuthority": "not-proven",
+    "regionwrightMechanicsAndBehavior": "not-observed",
+    "playerBehaviorAndAcceptance": "not-observed",
+    "persistentWorldAuthority": "not-proven",
+    "TramCoreRuntime": "not-observed",
+    "Ballad": "untouched",
+    "stage12": "not-accepted",
+    "readyClaim": false
+  },
+  "selection": {
+    "nextBoundary": "M1217 exact v4 controlled native four-Scene base authoring with active-GM, approval, write-accounting, and authoritative reread gates",
+    "reason": "M1214 source identity and M1215 35/35 staged parity are coherent. M1209's remaining distinct blocker is the missing four helper-owned Ascendancy Scenes; repeating the loaded-control observation without resolving that prerequisite would retry the same blocked runtime class. The next smallest evidence-backed boundary is a separately authorized exact-runtime native four-Scene authoring operation, with all downstream Regionwright/player/persistent-world claims still withheld.",
+    "separateAuthorizationRequired": true
+  },
+  "boundary": {
+    "readOnly": true,
+    "noSourceImplementation": true,
+    "noStaging": true,
+    "noServing": true,
+    "noFoundryLaunch": true,
+    "noBrowser": true,
+    "noLogin": true,
+    "noNativeMutation": true,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  }
+}

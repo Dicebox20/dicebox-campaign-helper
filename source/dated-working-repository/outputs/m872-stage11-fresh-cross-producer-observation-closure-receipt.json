@@ -1,0 +1,43 @@
+{
+  "milestone": "M872",
+  "stage": "proposal-approval-history",
+  "status": "BLOCKED TARGET PARITY; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "target": {
+    "projectId": "dbx:project:desktop-cross-producer-commit-recovery-self-test-v3",
+    "path": "C:\\Users\\rujie\\AppData\\Local\\com.dicebox.campaign-helper\\projects\\desktop-cross-producer-commit-recovery-self-test-v3"
+  },
+  "observation": {
+    "fixtureCreation": "PASS: exact v3 test-owned project created at generation 1 with no asset",
+    "assetBindCommit": "PASS: one PNG background binding committed at generation 2; authoritative reread confirmed the bound asset and history",
+    "transition": "BLOCKED before mutation: the UI requested the exact v3 target while the packaged native transition still allowed only the v2 target",
+    "recovery": "NOT_OBSERVED: the primary remained present, so no recovery proposal, approval, promotion, or recovery mutation was attempted",
+    "reread": {
+      "primary": {"present": true, "generation": 2, "contentSha256": "8b40ff826463bda84604dc6ebe8cdc79e8cc88898fa226b5eaba8d9c8d9551b4", "assetCount": 1},
+      "backup": {"present": true, "generation": 1, "contentSha256": "8c176ce0f79042cd1c4b80cd4853070e9f5951304dde46591d7b88e913b44cb5", "assetCount": 0},
+      "foreignStatePreserved": true,
+      "foreignMarkerCreated": false,
+      "foundryWrites": 0,
+      "providersTouched": false,
+      "credentialsTouched": false,
+      "playerPasswordsTouched": false
+    }
+  },
+  "repairAfterObservation": {
+    "nativeTargetParity": "PASS: native exact-target constant now matches UI v3 target",
+    "contractTests": "PASS: 1 file / 2 tests",
+    "assetBindingTests": "PASS: 1 file / 7 tests",
+    "nativeTransitionUnit": "PASS: focused cross-producer transition test",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "runtimeRetry": false
+  },
+  "limits": {
+    "crossProducerRecoveryObserved": false,
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false,
+    "priorArtifactsPreserved": ["M870 v1", "M870 v2"]
+  },
+  "selectedNext": "M873 read-only post-target-parity reconciliation; park this runtime lane and do not issue another desktop retry without a newly reviewed bounded acceptance path.",
+  "doesNotProve": ["Stage 11 acceptance", "generic Foundry or aggregate execution authority", "cross-producer recovery behavior", "Stage 12 entry", "Ready-to-Play"]
+}

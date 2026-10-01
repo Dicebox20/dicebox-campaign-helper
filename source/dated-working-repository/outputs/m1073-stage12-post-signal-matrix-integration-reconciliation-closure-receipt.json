@@ -1,0 +1,38 @@
+{
+  "receiptType": "stage12-post-signal-matrix-integration-reconciliation-closure",
+  "milestone": "M1073",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "reconciliation": {
+    "identityChains": 4,
+    "rows": [
+      {"scene":"signal-frequency-chamber","spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7,"m7Status":"COMPOSED","m7Items":6,"m7Steps":6},
+      {"scene":"tram-station","spatialProjection":"1/11/0","regions":39,"teleports":1,"backgroundObjects":5,"m7Status":"PARTIAL","m7Items":0,"m7Steps":0,"blocker":"m7-furnishing-plan-missing"},
+      {"scene":"rune-mechanism-chamber","spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7,"m7Status":"PARTIAL","m7Items":0,"m7Steps":0,"blocker":"m7-furnishing-plan-missing"},
+      {"scene":"central-core-control-chamber","spatialProjection":"1/7/0","regions":10,"teleports":2,"backgroundObjects":10,"m7Status":"COMPOSED","m7Items":6,"m7Steps":6}
+    ]
+  },
+  "decision": "Rune is the smallest existing-source M7 gap and is authorized for M1074 compiler-only fixture work; Tram remains parked as the larger missing-M7 gap.",
+  "boundaries": {
+    "spatialBlueprintOwnsGeometry": true,
+    "regionsOwnRegionAndTeleportIntent": true,
+    "backgroundObjectsAreVisualWorkflowProjection": true,
+    "m7PlanOwnsNativePlaceableIntent": true,
+    "runtimeModeled": false,
+    "mutationPerformed": false,
+    "nativeDocumentsCreated": false,
+    "packageChanged": false,
+    "installerChanged": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false
+  },
+  "nextAction": "M1074 compiler-only Rune M7 furnishing-plan fixture"
+}

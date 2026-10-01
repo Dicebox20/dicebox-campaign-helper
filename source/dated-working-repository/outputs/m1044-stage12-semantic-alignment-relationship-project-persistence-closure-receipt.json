@@ -1,0 +1,42 @@
+{
+  "operation": "dicebox.stage12.m1044.semantic-alignment-relationship-project-persistence.closure",
+  "status": "PASS",
+  "milestone": "M1044",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "F-M1044",
+    "D-M1044-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-PROJECT-PERSISTENCE",
+    "T-M1044-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-PROJECT-PERSISTENCE"
+  ],
+  "changedPaths": [
+    "tests/project-workspace.test.ts"
+  ],
+  "validation": {
+    "focusedVitest": {
+      "command": "npx vitest run tests/project-workspace.test.ts tests/scene-command-spine.test.ts tests/desktop-scene-model.test.ts tests/desktop-proposal-session.test.ts tests/desktop-proposal-application.test.ts tests/proposal-adapters.test.ts",
+      "status": "PASS",
+      "files": 6,
+      "tests": 56
+    },
+    "packageTypecheck": "PASS",
+    "desktopProductionBuild": "PASS unchanged from M1042; M1044 changes test coverage only",
+    "workflowCheck": "PASS",
+    "diffCheck": "PASS"
+  },
+  "observation": {
+    "serialization": "Canonical Scene serialization includes the exact relationship array and stable align fields.",
+    "saveBoundary": "The existing local project-store save wrapper sends byte-identical relationship-bearing Scene JSON and preserves a separate foreign Scene and asset byte payload.",
+    "reloadBoundary": "The existing load wrapper rereads the same Scene bytes, relationship state, unrelated Scene, foreign asset, and matching content hashes in the local fixture.",
+    "preservation": "No new persistence schema, executor, migration, Blueprint, renderer, native Tile/Foundry, runtime, provider, credential, account, or player-password behavior was added."
+  },
+  "doesNotProve": [
+    "native packaged filesystem persistence beyond the mocked local project boundary",
+    "Stage 12 broad acceptance",
+    "Ready-to-Play",
+    "live Foundry behavior",
+    "Blueprint promotion or renderer geometry",
+    "native Tile, Wall, Region, or runtime behavior"
+  ],
+  "nextAction": "Select M1045 only: add a read-only current-Scene relationship summary to the existing Inspector so relationship state remains reviewable after Apply and reload."
+}

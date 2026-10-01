@@ -1,0 +1,72 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1266-stage12-fresh-fixture-exact-target-readiness-preflight-closure",
+  "operation": "stage12.fresh-fixture.exact-target-readiness-preflight",
+  "milestone": "M1266",
+  "observedAt": "2026-09-07T19:04:14.206Z",
+  "evidenceClass": "fixture",
+  "status": "BLOCKED_LICENSE_REQUIRED",
+  "readyClaim": false,
+  "noWrite": true,
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v5",
+    "worldId": "dbx-test-world",
+    "port": 30004,
+    "foundry": "14.367",
+    "dnd5e": "5.3.3",
+    "pid": 26040,
+    "listenerCount": 1
+  },
+  "supervisorReread": {
+    "status": "UNKNOWN",
+    "evidenceClass": "process-outcome-unknown",
+    "pidAlive": true,
+    "commandMatches": true,
+    "stateTargetMatches": true,
+    "processPathMatches": true,
+    "processStartMatches": true,
+    "listenerMatches": true,
+    "http": {
+      "ok": false,
+      "status": 302,
+      "location": "/license"
+    },
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": [
+      "Exact process owns the port but the HTTP readiness probe failed."
+    ]
+  },
+  "browserReread": {
+    "tabId": "9",
+    "url": "http://127.0.0.1:30004/license",
+    "surface": "Foundry Virtual Tabletop License Key Activation",
+    "keyFieldObserved": true,
+    "submitButtonObserved": true,
+    "joinSurfaceObserved": false,
+    "credentialEntered": false,
+    "credentialSubmitted": false
+  },
+  "v4PreservationReread": {
+    "pid": 10676,
+    "port": 30003,
+    "status": "PASS",
+    "listenerCount": 1,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "blockers": [
+    "Fresh v5 requires a local Foundry license before /join readiness.",
+    "Process outcome remains UNKNOWN/BLOCKED; no retry is authorized in M1266."
+  ],
+  "excludedActions": [
+    "license key entry or submission",
+    "authentication or user/password change",
+    "installer/helper/Regionwright control",
+    "settings/module/document/asset mutation",
+    "raw storage inspection",
+    "v4, Ballad, foreign, Tram, or Core mutation",
+    "Stage 12 or Ready-to-Play promotion"
+  ],
+  "nextBoundary": "M1267 stopped-only exact-owner v5 recovery and reviewed local license-file staging; do not restart v5 in M1267."
+}

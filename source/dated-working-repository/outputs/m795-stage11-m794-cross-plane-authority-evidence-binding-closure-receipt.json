@@ -1,0 +1,16 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M795",
+  "operation": "project.cross-plane.current-authority-evidence.bind-m794",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "sourceSha256": "28BD8AE7B67E9CE129139936EEAFE797A9F588ABEF8B97C7E4C1FE3498A2FB1E",
+  "testSha256": "E77128721A442E852CFF81B18FCCB5D7E862AF3FBC8D872A355A63E3CA34C659",
+  "validation": { "focusedTests": "PASS (3 tests)", "packageTypecheck": "PASS", "knowledgeBaseRebuild": "PASS", "workflowCheck": "PASS", "diffCheck": "PASS" },
+  "binding": {
+    "historicalPackageStageEvidence": "served-no-dialog-observation",
+    "directRuntimeEvidence": "current-active-gm-identity-observed",
+    "aggregateAuthority": "not-granted"
+  },
+  "limits": { "noWrite": true, "noPermissionClaim": true, "noExecutionAuthority": true, "stage11Accepted": false, "stage12Entered": false }
+}

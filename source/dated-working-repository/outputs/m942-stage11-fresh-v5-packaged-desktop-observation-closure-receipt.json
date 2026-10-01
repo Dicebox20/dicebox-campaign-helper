@@ -1,0 +1,63 @@
+{
+  "milestone": "M942",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL PACKAGED CROSS-PRODUCER SELF-TEST; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Observe the exact M941 v5 exit-mode-0 packaged artifact once, read the visible cross-producer self-test result, close the process, and reread process absence without retry or cleanup.",
+  "inputs": [
+    "outputs/m941-stage11-fresh-v5-exit-mode-0-desktop-artifact-closure-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "apps/campaign-helper-desktop/dist/assets/index-BeSwmLLO.js",
+    "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe"
+  ],
+  "artifactMatch": {
+    "executableSha256": "D1D8DFC014113E75C020544E35A66A915DD27BB18D00FD551DB4AEDC44BEC79B",
+    "rendererSha256": "96B75D8E4238D17504B13F7EC03A0D70084DECB51E222C91F87300BF7D90837E",
+    "mode": "cross-producer-commit-recovery-ui-v5-execute",
+    "exitMode": "0"
+  },
+  "observation": {
+    "launch": "The exact M941 artifact was launched once through the uniquely titled returned DiceBox Campaign Helper window.",
+    "visibleResult": "PASS: DiceBox Cross-Producer Commit Recovery · dbx:project:desktop-cross-producer-commit-recovery-self-test-v5 · asset.bind committed generation 2 · backup promotion restored generation 2 · foreign state preserved · proposal histories committed · no Foundry write.",
+    "selfTestEvidence": "The packaged surface reports a generation-2 asset.bind commit, backup-promotion restoration of generation 2, foreign-state preservation, committed proposal histories, and the no-Foundry-write boundary.",
+    "close": "The exact packaged window was closed once with Alt+F4 after the accessibility read.",
+    "processAbsence": "PASS: no dicebox-campaign-helper-desktop, cargo, or rustc process remained after close."
+  },
+  "disposition": {
+    "result": "M942 provides directly observed packaged v5 cross-producer lifecycle evidence for the exact test-owned v5 target, but remains producer-scoped and non-certifying.",
+    "next": "Perform a read-only reconciliation of M942 against the complete Stage 11 matrix and aggregate/current-authority surfaces before any attachment or promotion.",
+    "preservation": "No retry, cleanup, storage inspection, foreign-state action, provider/credential/account action, or player-password action occurred during M942."
+  },
+  "validation": {
+    "accessibilityRead": "PASS: visible packaged title and exact v5 project identity/lifecycle summary were read from the returned application window.",
+    "processReread": "PASS: app list and process query showed the exact packaged process absent after close.",
+    "diffCheck": "PASS: no code change was made during M942; prior artifact diff hygiene remains clean."
+  },
+  "limits": {
+    "launched": true,
+    "visibleWindowRead": true,
+    "packagedLifecycleObserved": true,
+    "projectIdentityObserved": true,
+    "authoritativeLocalStorageRereadByForeman": false,
+    "captured": false,
+    "storageInspected": false,
+    "projectMutatedOrCleaned": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "aggregate current authority across all producer families",
+    "Foreman independent storage reread or Stage 11 acceptance",
+    "Foundry, active-GM, player, provider, credential, or account behavior",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "nextGate": "M943 post-M942 packaged cross-producer observation read-only reconciliation authorization"
+}

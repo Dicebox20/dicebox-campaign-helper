@@ -1,0 +1,56 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1170-fixed-candidate-transport-diagnostic-control-closure",
+  "milestone": "M1170",
+  "status": "CLOSED_M1170_FIXED_CANDIDATE_DIAGNOSTIC_CONTROL_IMPLEMENTED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.fixed-candidate-transport-diagnostic-control.closure",
+  "implementation": {
+    "controlId": "dicebox-ascendancy-candidate-transport-diagnostic",
+    "title": "Show DiceBox Signal/Rune Candidate Transport Diagnostic",
+    "gmOnly": true,
+    "selector": "fixed m1141-signal-rune with no caller input",
+    "renderer": "native Foundry DialogV2 redacted JSON",
+    "diagnosticOperation": "ascendancy.signal-rune-candidate-transport.diagnostic",
+    "candidateInstallExposed": false,
+    "candidateRepairExposed": false
+  },
+  "gate": {
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedTests": "PASS 114/114 across 5 files",
+    "installerTests": "PASS 10/10",
+    "foundryPackageTests": "PASS 15/15",
+    "stageModuleTests": "PASS 3/3",
+    "knowledgeBaseTests": "PASS 72/72",
+    "activeSliceTests": "PASS 14/14",
+    "packageTypecheck": "PASS",
+    "workflow": "PASS 11/16; zero violations; readyClaim false",
+    "database": "PASS 1851 sources / 1428 facts / 1454 decisions / 1030 trials / 41 subjects / 26 milestones",
+    "databaseVerification": "PASS"
+  },
+  "runtime": {
+    "staged": false,
+    "served": false,
+    "runtimeReopened": false,
+    "diagnosticInvoked": false,
+    "installerInvoked": false,
+    "documentsMutated": false,
+    "assetsMutated": false,
+    "sceneWrites": 0,
+    "authorityPromoted": false,
+    "foreignStatePreserved": true
+  },
+  "remainingBlockers": [
+    "The updated control has not yet been staged/served or observed in the exact Foundry fixture.",
+    "The candidate diagnostic result, authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain unproved."
+  ],
+  "nextBoundary": "M1171: update the exact nested-Data stage, attest the fixed control identity, and observe the control once as Gamemaster with blank password if required; do not invoke install/repair."
+}

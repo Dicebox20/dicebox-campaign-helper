@@ -1,0 +1,56 @@
+{
+  "operation": "stage11-fresh-save-ui-session-isolation-artifact",
+  "milestone": "M641",
+  "status": "PASS_LOCAL_FRESH_ARTIFACT_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T10:25:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "count": 1,
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "save-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_ID": "dbx:project:desktop-multiscene-self-test",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "frontend": "PASS",
+    "native": "PASS"
+  },
+  "artifact": {
+    "rendererPath": "apps/campaign-helper-desktop/dist/assets/index-CnDeOyp3.js",
+    "rendererBytes": 2083288,
+    "rendererSha256": "A51052FECC8962D844BD35EDDECF105CDB597715E08672F8A63912C310C4FA49",
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeBytes": 26891264,
+    "nativeSha256": "39FD1E0C0B8502191F6A74439C63F308F0F13FABF9F7ACA5F9A670B757E4C7BF"
+  },
+  "staticMarkers": {
+    "saveUiExecute": true,
+    "exactProjectId": true,
+    "dedicatedScope": true,
+    "exactProjectSaveProducer": true,
+    "dedicatedTerminalClear": true,
+    "inverseRestore": true,
+    "noFoundryWrite": true
+  },
+  "processesAfterBuild": {
+    "desktop": 0,
+    "cargo": 0,
+    "rustc": 0
+  },
+  "preservation": {
+    "packageLaunch": false,
+    "browserStorageInspected": false,
+    "sessionTransitionedOrCleared": false,
+    "projectOrRuntimeMutation": false,
+    "providerCredentialRepositoryFoundryOrPlayerPasswordAction": false,
+    "retry": false
+  },
+  "nextBoundary": "M642: one separately authorized accessibility-first packaged observation against this exact artifact; preserve its first result and do not inspect or operate the ordinary browser session.",
+  "conclusion": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false
+  }
+}

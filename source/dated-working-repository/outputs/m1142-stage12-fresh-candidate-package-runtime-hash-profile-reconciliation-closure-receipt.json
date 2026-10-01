@@ -1,0 +1,85 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1142",
+  "status": "BLOCKED_HASH_PROFILE_EVIDENCE_INCOMPLETE",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.fresh-candidate-package-runtime-hash-profile-reconciliation",
+  "acceptedStage": "scene-authoring-breadth",
+  "releaseSlice": "Signal/Rune GM first-release vertical slice",
+  "sourceReceipts": {
+    "m1141": "outputs/m1141-stage12-foreign-scene-preserving-fresh-scene-candidate-preview-closure-receipt.json",
+    "m269": "outputs/m269-current-foundry-artifact-spec-receipt.json",
+    "m280": "outputs/m280-fresh-served-worker-attestation-closure-receipt.json",
+    "preparation": "outputs/fast-track-release-slice-preparation-receipt-2026-09-06.json"
+  },
+  "synchronization": {
+    "activeSliceSha256": "B4178B5B1F028C7A3651AEEA407E828AF71294408851A342E4F28D7435592A2C",
+    "roadmapSha256": "0662C7B2B55F5AE21DB1D620901A67E3F1CD2ABB96E354E44A7C1D39215C3E11",
+    "seedSha256": "96F942F379C8CA92F352F6B2DAE588C42D170F2C6D2A99110EAC76956840FA09",
+    "verifyScriptSha256": "503CAB825C5246E2A98010170255F0D32D0200E33259DC77F7D287AEF9902775",
+    "knowledgeBaseQueryTestSha256": "F36A47F36D097F07C1B3997B491DCA250EEAE261BACC2E4453CAB433A15277D8"
+  },
+  "packetMerge": {
+    "packageInstallerIdentity": "BLOCKED",
+    "workerAdapterRuntimeProfile": "BLOCKED_HASH_PROFILE_EVIDENCE_INCOMPLETE",
+    "candidatePromotionBoundary": "BLOCKED",
+    "workers": "Three disjoint read-only packets were reviewed by the Foreman; no worker edited files, staged packages, invoked Foundry/browser/runtime, touched LevelDB, mutated documents/assets, or promoted authority."
+  },
+  "candidateHashes": {
+    "packages/dicebox-compiler/src/ascendancy-signal-rune-fresh-scene-candidate-preview.ts": "1771CA3CF6ADA6009ABC8454772A505EDC8694D637DF7A27A9765E47B47AB5A9",
+    "packages/dicebox-compiler/src/index.ts": "02BB5777EB27C9BCE5B8B1106471B7D38C00ACA8362D3CFFD3536AEF4DFF99AC",
+    "tests/ascendancy-signal-rune-fresh-scene-candidate-preview.test.ts": "98DAAE4BD8CF9FFAE576A461B7DED47C3A3C2AD44573681FEF713EEA4DE17CA5"
+  },
+  "artifactHashes": {
+    "packages/dicebox-foundry/ascendancy-campaign-package.json": {"expectedM269": "A9047D7810DBB0C286EA874C53112D38680DD2DA1FE366DD4CD76F16B69F16FD", "observedLocal": "2F257477F02AAC0A60B01D6C0AEFEF738484BE5C437A708BD293945CCF90645F", "status": "DRIFT"},
+    "packages/dicebox-foundry/src/ascendancy-installer.js": {"expectedM269": "FFFB439942619C5AFFC10E5AB74B43EF9AA3107C989F1551FF5CFCE2E7C5BC83", "observedLocal": "FFFB439942619C5AFFC10E5AB74B43EF9AA3107C989F1551FF5CFCE2E7C5BC83", "status": "MATCH"},
+    "packages/dicebox-foundry/src/foundry-live-bridge.js": {"expectedM269": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87", "observedLocal": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87", "status": "MATCH"},
+    "packages/dicebox-foundry/src/program-scene-vertical-slice.js": {"expectedM269": "94E834CFC4007CC64ACC3B60F70029B001F7B3E69E494CC9575B5D19BDB17B48", "observedLocal": "3A063C2DEC5A4BF7AD7B6B13CE602FF4EDCF32071C419E3AD7C5D265274113AB", "status": "DRIFT"},
+    "C:/Program Files/Foundry Virtual Tabletop/Foundry Virtual Tabletop.exe": {"expectedM269": "31D9655E77EED5E0E94DAB33421E63537A14251DF994296C3C039CE019192A1B", "observedLocal": "31D9655E77EED5E0E94DAB33421E63537A14251DF994296C3C039CE019192A1B", "status": "STATIC_MATCH_NOT_LOADED_RUNTIME_PROOF"}
+  },
+  "provenanceReconciliation": {
+    "m1141ReceiptTestSha256": "98DAAE4BD8CF9FFAE576A461B7DED47C3A3C2AD44573681FE713EEA4DE17CA5",
+    "currentTestSha256": "98DAAE4BD8CF9FFAE576A461B7DED47C3A3C2AD44573681FEF713EEA4DE17CA5",
+    "status": "RECEIPT_DRIFT_CONFIRMED",
+    "resolution": "The historical M1141 receipt is preserved. The current checked-in test hash is authoritative for the reread and must be reconciled in a new bounded provenance step; the prior receipt was not edited."
+  },
+  "runtimeProfile": {
+    "status": "STALE_INCOMPLETE",
+    "target": "Foundry 14.367 / dnd5e 5.3.3 / dbx-test-world",
+    "activeGm": "Current canonical active-GM fingerprint unavailable; historical Gamemaster observation is not current proof.",
+    "runtimeFingerprint": "dbx:fingerprint:a510da05 (stale historical evidence)",
+    "missing": ["phase", "current observedAt", "complete artifact identities", "document type array", "capability IDs/states/reasons", "current active-GM source/fingerprint", "current loaded-runtime/served-profile evidence"],
+    "profileDiff": "NOT_EMITTABLE_WITHOUT_SCHEMA_VALID_CURRENT_RUNTIMEPROFILE"
+  },
+  "promotionBoundary": {
+    "status": "BLOCKED",
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "foreignScenesPreserved": ["AneddhKAAfk5HlsA", "p9Mbi0CJWe9KvJhH"],
+    "tramCore": "excluded",
+    "liveCreationAuthorized": false,
+    "readyClaim": false
+  },
+  "blockers": [
+    "M269 canonical package hash drifts from current local package bytes.",
+    "M269 canonical adapter hash drifts from current local adapter bytes.",
+    "M1141 closure receipt test hash is stale by one character relative to current checked-in bytes.",
+    "No current staged-package observation establishes source/staged parity for the M1141 candidate or current artifact set.",
+    "Current RuntimeProfile/profile-diff evidence is stale and incomplete.",
+    "The existing installer owns a four-room campaign path while M1141 is intentionally Signal/Rune-only; no candidate-specific transport/verifier boundary is evidenced."
+  ],
+  "validation": {
+    "workflowCheck": "PASS",
+    "workflowScore": "11/16",
+    "readyClaim": false,
+    "violations": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "runtimeAction": false,
+    "stage12Accepted": false
+  },
+  "nextBoundary": "M1143: one no-write canonical-artifact/provenance reconciliation to determine whether M269 expectations are stale or whether current package/adapter bytes require a separately authorized repair; do not edit historical receipts, stage, restart, invoke runtime, or create documents/assets."
+}

@@ -1,0 +1,27 @@
+{
+  "operation": "dicebox.desktop.self-test.capture",
+  "status": "PASS",
+  "executable": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\apps\\campaign-helper-desktop\\src-tauri\\target\\debug\\dicebox-campaign-helper-desktop.exe",
+  "executableName": "dicebox-campaign-helper-desktop.exe",
+  "exitCode": 0,
+  "signal": null,
+  "stdout": {
+    "text": "DBX_PROJECT_BROKEN_REFERENCE_UI_LIFECYCLE_FIXTURE status=PASS project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v1 targetAsset=dbx:asset:sha256-3ae001fc27b1a7a8e0ba5995a9d94d89ec20ec110c9dceaa017c86a128702011 scenes=2 noFoundryWrite=true\nDBX_PROJECT_RECOVERY operation=inspect status=BLOCKED project=dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v1 blocker=BACKGROUND_ASSET_ROLE_MISMATCH eligible=false assets=0 pendingArtifacts=1 noWrite=true noFoundryWrite=true\nDBX_PROJECT_UI_SELF_TEST stage=blocked detail=broken-reference-ui-lifecycle:Exact broken-reference UI lifecycle fixture, target-owned pending state, or clean session boundary was not available; session-preflight=PASS:previewed; no session was replaced.\n",
+    "truncated": false
+  },
+  "stderr": {
+    "text": "[0829/201017.067:ERROR:ui\\gfx\\win\\window_impl.cc:172] Failed to unregister class Chrome_WidgetWin_0. Error = 1412\r\n",
+    "truncated": false
+  },
+  "timeout": {
+    "timedOut": false,
+    "timeoutMs": 30000,
+    "graceMs": null,
+    "killRequested": false,
+    "childExitObserved": true,
+    "killError": null,
+    "childError": null
+  },
+  "noProjectOrSessionInspection": true,
+  "noRecoveryInvocationByRunner": true
+}

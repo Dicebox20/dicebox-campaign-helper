@@ -1,0 +1,104 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1017",
+  "stage": "proposal-approval-history",
+  "status": "PASS PARTIAL TEMPORARY-VIEWPORT RECOVERY; HOST WINDOW READINESS NOT PROVEN",
+  "evidenceClass": "runtime",
+  "scope": "Perform one bounded local viewport recovery and reread exact runtime/current-authority surfaces, then reset the temporary browser override.",
+  "target": {
+    "worldId": "dbx-test-world",
+    "dataPath": "work/foundry-fixture-data-v2",
+    "foundry": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "diceboxModuleVersion": "0.1.15",
+    "port": 30001,
+    "commandFingerprint": "47E4A213511831674B50D1BC6194B6876E9D78B60CB0037B7387C09D57A26F3F"
+  },
+  "recoveryObservation": {
+    "control": "in-app-browser viewport capability",
+    "temporaryOverride": {
+      "innerWidth": 1024,
+      "innerHeight": 768,
+      "minimumWidth": 1024,
+      "minimumHeight": 768,
+      "warningPresent": false
+    },
+    "authoritativeReread": {
+      "url": "http://127.0.0.1:30001/game",
+      "visibleUser": "Gamemaster [GM]",
+      "visibleScene": "DiceBox Tram Routing Projection",
+      "visibleRuntimeText": [
+        "TRAM COORDINATES: MATCH",
+        "0 drifted checks · no Foundry writes",
+        "GAME PAUSED"
+      ],
+      "diceboxControlsVisible": [
+        "Prepare DiceBox Ascendancy",
+        "Repair DiceBox Ascendancy maps and geometry",
+        "Apply DiceBox Program Scene vertical slice"
+      ],
+      "consoleObservation": "DiceBox loaded; the DiceBox Tram Routing Projection Scene was viewed and its canvas was drawn; no new error was observed during the recovered reread."
+    },
+    "resetObservation": {
+      "temporaryOverrideReset": true,
+      "defaultInnerWidth": 1280,
+      "defaultInnerHeight": 720,
+      "hostViewportReadiness": "not-proven",
+      "reason": "Resetting the temporary override restores a host default below Foundry's 768px minimum height. The bounded capability cannot enlarge the Codex host window itself."
+    }
+  },
+  "supervisorObservation": {
+    "status": "PASS",
+    "processAndListenerOwnership": true,
+    "httpReady": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "adminPasswordConfigured": false
+  },
+  "reconciliation": {
+    "temporaryViewport": "PASS",
+    "exactRuntimeVisibleSurfaces": "PASS PARTIAL",
+    "hostWindowReadiness": "NOT_PROVEN",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "crossProducerContinuity": "unproven",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "validation": {
+    "boundedViewportRecovery": "PASS: temporary 1024x768 viewport removed the dimension warning.",
+    "authoritativeReread": "PASS PARTIAL: exact fixture URL, Gamemaster [GM], active Scene, DiceBox/Foundry surfaces, paused state, coordinate match, no-drift text, and no-write text were reread.",
+    "reset": "PASS: temporary viewport override was reset before finishing.",
+    "noWrite": "PASS: no project or Foundry document mutation was invoked; supervisor worldDocumentWrites remained 0.",
+    "foreignState": "PASS: Ballad untouched.",
+    "passwordBoundary": "PASS: no player-role password was entered, generated, or persisted; fixture adminPasswordConfigured remained false."
+  },
+  "limits": {
+    "temporaryViewportOnly": true,
+    "hostWindowMutation": false,
+    "readOnlyEvidence": true,
+    "runtimeInspectionOnly": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "persistent host-window readiness after the temporary override is reset",
+    "complete aggregate current authority",
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "project mutation or generic execution",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1017 partial closure and M1018 authorization; the remaining human-visible recovery is to enlarge the Codex/in-app browser host window to at least 1024x768, then perform one final exact-runtime/current-authority reread."
+}

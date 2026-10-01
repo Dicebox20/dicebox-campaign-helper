@@ -1,0 +1,43 @@
+{
+  "operation": "dicebox.stage12.m1043.semantic-alignment-relationship-approval-apply.closure",
+  "status": "PASS",
+  "milestone": "M1043",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "F-M1043",
+    "D-M1043-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-APPROVAL-APPLY",
+    "T-M1043-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-APPROVAL-APPLY"
+  ],
+  "changedPaths": [
+    "tests/desktop-proposal-application.test.ts"
+  ],
+  "validation": {
+    "focusedVitest": {
+      "command": "npx vitest run tests/desktop-proposal-application.test.ts tests/scene-command-spine.test.ts tests/desktop-scene-model.test.ts tests/desktop-proposal-session.test.ts tests/proposal-adapters.test.ts tests/project-workspace.test.ts",
+      "status": "PASS",
+      "files": 6,
+      "tests": 55
+    },
+    "packageTypecheck": "PASS",
+    "desktopProductionBuild": "PASS unchanged from M1042; M1043 changes test coverage only",
+    "workflowCheck": "PASS",
+    "diffCheck": "PASS"
+  },
+  "observation": {
+    "preview": "One exact human-provenanced align relationship between existing apparatus and region entities enters the existing local proposal/session lifecycle without changing the fixture.",
+    "approval": "Approval binds the proposal to the exact Scene revision and serialized hash.",
+    "applyAndReread": "The existing prepare/Apply path produces the relationship-bearing Scene; a matched serialized hash reread permits commit.",
+    "reversibleHistory": "Existing undo and redo transitions remain monotonic and preserve the relationship-bearing applied state on redo.",
+    "preservation": "Entity identity, kind, geometry, display metadata, and lock state are unchanged; no new executor or persistence path was added."
+  },
+  "doesNotProve": [
+    "project persistence or reload",
+    "Stage 12 broad acceptance",
+    "Ready-to-Play",
+    "live Foundry behavior",
+    "Blueprint promotion or renderer geometry",
+    "native Tile, Wall, Region, or runtime behavior"
+  ],
+  "nextAction": "Select M1044 only: prove one relationship-bearing Scene survives the existing local project save/serialize and reload boundary with exact bytes and foreign-state preservation."
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@dicebox/director",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@dicebox/core": "0.1.0",
+    "@dicebox/scene": "0.1.0"
+  }
+}

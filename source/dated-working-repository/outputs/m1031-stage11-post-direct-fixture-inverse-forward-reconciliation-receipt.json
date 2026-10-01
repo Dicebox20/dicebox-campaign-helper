@@ -1,0 +1,36 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1031",
+  "operation": "stage11.direct-fixture-inverse-forward.reconciliation",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "readOnly": true,
+  "inputs": [
+    "outputs/m1029-stage11-confirmed-exact-v4-inverse-closure-receipt.json",
+    "outputs/m1030-stage11-confirmed-exact-v4-forward-recovery-closure-receipt.json",
+    "outputs/m802-stage11-owned-foundry-scene-inverse-execution-closure-receipt.json",
+    "outputs/m830-stage11-owned-scene-restoration-recovery-drill-closure-receipt.json",
+    "outputs/m848-stage11-exact-v4-gm-visible-update-witness-observation-receipt.json",
+    "outputs/m854-stage11-exact-v4-owned-scene-witness-reread-receipt.json"
+  ],
+  "observation": {
+    "m1029": "Fresh exact-v4 fixed inverse with authoritative absence and foreign-scene preservation.",
+    "m1030": "Fresh exact-v4 fixed forward recovery with intentional UNKNOWN handling, one authoritative reread, and foreign-state preservation.",
+    "coverage": "Both are fresh continuity witnesses for the existing foundry.program-scene.inverse and foundry.program-scene.forward producer family; neither adds a distinct producer family or grants aggregate authority."
+  },
+  "preserved": {
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "runtimeRetry": false,
+    "mutation": false
+  },
+  "selectedNext": "M1032: one read-only Stage 11 acceptance-requirement traceability audit across all mutating producer families and direct evidence, selecting only one material coverage gap.",
+  "limits": [
+    "No new producer-scoped aggregate attachment is justified by duplicate inverse/forward operation evidence.",
+    "No runtime control, browser input, document mutation, credential, player-password, or Ballad action occurred.",
+    "This does not accept Stage 11 or enter Stage 12."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m498-stage11-asset-detach-ui-lifecycle-closure-2026-08-29",
+  "milestone": "M498",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "readyClaim": false,
+  "scope": "Distinct debug-gated selected missing-asset detach UI lifecycle seam and static/native source validation",
+  "implementation": {
+    "projectId": "dbx:project:desktop-asset-detach-ui-lifecycle-self-test-v1",
+    "mode": "asset-detach-ui-execute",
+    "fixtureCommand": "prepare_asset_detach_ui_lifecycle_fixture",
+    "selectedAssetId": "dbx:asset:sha256-a72382d260ebdf7948e618a3908a8e569f5cf9bbd3f1d804ee456a9fa1222568",
+    "preservedAssetId": "dbx:asset:sha256-444a760556de694c49ab5acc75b88cdbd1d7ec9cc315103a24822a6ce4523d8c",
+    "lifecycle": ["loaded", "previewed", "approved", "applied", "pass"],
+    "visibleHandlers": ["previewSelectedProjectAssetDetach", "approveSelectedProjectProposal", "applySelectedProjectAssetDetachProposal"],
+    "fixtureBoundary": "new fixture only; refuse overwrite; no reset, deletion, cleanup, or direct self-test detach engine call"
+  },
+  "validation": {
+    "focusedVitest": "4 files / 33 tests PASS",
+    "nativeFixtureUnit": "1 test PASS",
+    "desktopTypeScript": "PASS",
+    "diffHygiene": "PASS",
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "runtimeMutation": false,
+    "foundryWrite": false
+  },
+  "nextBoundary": {
+    "milestone": "M499",
+    "scope": "Read-only reconcile the broken Scene-reference detach lifecycle gap identified by the independent worker; retain it separate from selected asset detach.",
+    "prohibited": ["implementation", "build", "launch", "capture", "fixture mutation", "reset", "deletion", "cleanup", "providers", "credentials", "player passwords", "Foundry"]
+  },
+  "doesNotProve": ["Stage 11 acceptance", "packaged UI execution", "Foundry authority", "alpha readiness", "Ready-to-Play"]
+}

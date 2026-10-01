@@ -1,0 +1,73 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1202-stage12-exact-runtime-loaded-byte-observation-closure-2026-09-06",
+  "milestone": "M1202",
+  "stage": "scene-authoring-breadth",
+  "evidenceLabel": "fixture",
+  "status": "PASS FIXTURE; NON-CERTIFYING",
+  "readyClaim": false,
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "dataPath": "work/foundry-fixture-data-v2/Data",
+    "port": 30001
+  },
+  "staging": {
+    "operation": "foundry.module.update",
+    "status": "PASS",
+    "noWorldMutation": true,
+    "selectedParity": [
+      { "relativePath": "src/module.js", "bytes": 114787, "sha256": "9c9dec86cdcd798c016f94f336d5d34c9f76d42dd22c820f6778a488d15db84c" },
+      { "relativePath": "src/entry-20260823-program-scene-v2.js", "bytes": 33, "sha256": "15920f4968714e50661b73f06cdcfe44e86f1315c556cd78d1135a08d376789c" },
+      { "relativePath": "src/module-byte-attestation.json", "bytes": 511, "sha256": "754aed20230c24604ffe687958c1557b8e4df08ddb985bb5f73eb196d3c541f8" }
+    ]
+  },
+  "runtime": {
+    "manualJoin": { "username": "Gamemaster", "password": "blank", "dropdownSelection": false, "status": "PASS" },
+    "activeGm": { "status": "observed", "currentUserMatchesActiveGm": true, "noPermissionClaim": true, "noExecutionAuthority": true },
+    "control": { "id": "dicebox-loaded-byte-attestation", "invocations": 1, "status": "OBSERVED" },
+    "receipt": {
+      "operation": "dicebox.loaded-byte-attestation",
+      "evidenceClass": "runtime-observation",
+      "targetExact": true,
+      "noWrite": true,
+      "apply": false,
+      "dispatch": "disabled",
+      "modulePath": "src/module.js",
+      "expectedSha256": "9c9dec86cdcd798c016f94f336d5d34c9f76d42dd22c820f6778a488d15db84c",
+      "observedSha256": "9c9dec86cdcd798c016f94f336d5d34c9f76d42dd22c820f6778a488d15db84c",
+      "expectedBytes": 114787,
+      "observedBytes": 114787,
+      "match": true,
+      "readyClaim": false
+    },
+    "dialogClose": { "contentClose": "PASS", "windowCloseInitialOutcome": "unknown-detached-node", "authoritativeReread": "dialog-absent" }
+  },
+  "finalSupervisorReread": {
+    "status": "STOPPED",
+    "listeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "normalStop": "required-force-fallback",
+    "forcedStop": "PASS",
+    "stoppedAt": "2026-09-06T22:43:33.594Z"
+  },
+  "database": { "status": "PASS", "integrity": "ok", "sources": 1913, "facts": 1490, "decisions": 1515, "openItems": 135, "trials": 1092, "subjects": 41, "milestones": 36 },
+  "preservation": {
+    "installerInvoked": false,
+    "candidateInvoked": false,
+    "approvalInvoked": false,
+    "documentAssetSceneMutation": false,
+    "persistentWorldPromoted": false,
+    "tramCorePlayerBalladTouched": false,
+    "foreignStateChanged": false,
+    "settingsUserPasswordMutation": false
+  },
+  "remainingBlockers": [
+    "The loaded-byte identity is now directly observed, but persistent-world/write authority remains unavailable or unproved.",
+    "Tram/Core final-map evidence, player/Regionwright behavior, player acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "next": "Perform database-first reconciliation of M1202 against the remaining persistent-world, final-map, player/Regionwright, and player-accepted gates; select at most one next bounded boundary."
+}

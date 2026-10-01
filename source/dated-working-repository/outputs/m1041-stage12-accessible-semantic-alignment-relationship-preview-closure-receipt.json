@@ -1,0 +1,44 @@
+{
+  "operation": "dicebox.stage12.m1041.accessible-semantic-alignment-relationship-preview.closure",
+  "status": "PASS",
+  "milestone": "M1041",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "F-M1041",
+    "D-M1041-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-PREVIEW",
+    "T-M1041-STAGE12-SEMANTIC-ALIGNMENT-RELATIONSHIP-PREVIEW"
+  ],
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/desktop-scene-model.test.ts"
+  ],
+  "validation": {
+    "focusedVitest": {
+      "command": "npx vitest run tests/desktop-scene-model.test.ts tests/scene-command-spine.test.ts tests/desktop-proposal-session.test.ts tests/desktop-proposal-application.test.ts tests/proposal-adapters.test.ts tests/project-workspace.test.ts",
+      "status": "PASS",
+      "files": 6,
+      "tests": 53
+    },
+    "packageTypecheck": "PASS",
+    "desktopProductionBuild": "PASS",
+    "workflowCheck": "PASS",
+    "diffCheck": "PASS"
+  },
+  "observation": {
+    "form": "One accessible Inspector form exposes exact existing source and target entity IDs plus x, y, or center axis.",
+    "command": "Submission constructs only a human-provenanced M1040 add-relationship command with the current Scene revision and a stable dbx:relation:desktop identity.",
+    "reviewLifecycle": "Submission saves only the existing human proposal/session preview; the existing approval and Apply controls remain the commit route.",
+    "guard": "Same source and target IDs and unsupported axes are rejected before preview creation.",
+    "preservation": "No direct Scene/project write, persistence expansion, renderer transform, Blueprint promotion, native Tile/Foundry mapping, runtime action, provider or credential action occurred."
+  },
+  "doesNotProve": [
+    "Stage 12 broad acceptance",
+    "Ready-to-Play",
+    "live Foundry behavior",
+    "project persistence",
+    "Blueprint promotion or renderer geometry",
+    "native Tile, Wall, Region, or runtime behavior"
+  ],
+  "nextAction": "Select M1042 only: expose the exact align relationship fields in the existing human proposal review surface without adding a new editor, executor, persistence, or runtime authority plane."
+}

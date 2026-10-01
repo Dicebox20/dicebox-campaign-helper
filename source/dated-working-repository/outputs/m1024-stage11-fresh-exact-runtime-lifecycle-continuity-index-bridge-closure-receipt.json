@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1024",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY LIFECYCLE-CONTINUITY INDEX BRIDGE; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Bind the strict M1022 fresh exact-runtime current-authority linkage/index attachment to the existing M1012 modeled lifecycle-continuity boundary without claiming committed/recovered cross-producer continuity.",
+  "sources": {
+    "freshRuntimeCurrentAuthorityLinkage": "apps/campaign-helper-desktop/src/project-stage11-fresh-exact-runtime-current-authority-linkage-attachment.ts",
+    "lifecycleBoundary": "apps/campaign-helper-desktop/src/project-stage11-cross-producer-lifecycle-continuity-boundary-evidence.ts",
+    "implementation": "apps/campaign-helper-desktop/src/project-stage11-fresh-exact-runtime-lifecycle-continuity-index-bridge.ts",
+    "test": "tests/project-stage11-fresh-exact-runtime-lifecycle-continuity-index-bridge.test.ts",
+    "runtimeReceipt": "outputs/m1018-stage11-host-window-recovery-and-final-exact-runtime-reread-receipt.json"
+  },
+  "implementation": {
+    "sourceSha256": "780457ABF824A4B8CBACD3EEE12E3CCE61FF12D665049AF9114AD7BA0C9C87F1",
+    "schemaVersion": "0.1.0",
+    "strictTyped": true,
+    "immutableOutput": true,
+    "immutableIndexEntry": true,
+    "failClosedDriftRejection": true,
+    "retryAllowed": false
+  },
+  "provenance": {
+    "runtimeMilestone": "M1018",
+    "aggregateMilestone": "M1020",
+    "currentAuthorityLinkageMilestone": "M1022",
+    "lifecycleBoundaryMilestone": "M1012",
+    "runtimeReceiptSha256": "C64E7137308D211BAE4B7C0DD72E239C317C06EE26CE17690205934FA88B4D7C",
+    "lifecycleDisposition": "modeled-cross-producer-partial"
+  },
+  "countScopes": {
+    "modeledOperations": 14,
+    "terminalHistoryIndex": 14,
+    "reviewTerminal": 42,
+    "applyingUnknown": 42,
+    "recoveryResult": 56,
+    "undoRedo": 28,
+    "currentAuthorityRedoBindings": 9,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "directProjections": 16,
+    "scopeStatus": "preserved-explicit-8-9-9",
+    "countsChanged": false
+  },
+  "authorityAndSafety": {
+    "currentAuthority": "partial",
+    "aggregateAuthority": "not-granted",
+    "modeledOnly": true,
+    "crossProducerContinuity": "unproven",
+    "committedRecoveredContinuity": "not-proven",
+    "readOnly": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noRecoveryAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "runtime": "parked",
+    "credentialsAccessed": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedSuite": { "files": 4, "tests": 78, "status": "PASS" },
+    "packageTypecheck": "PASS",
+    "workflow": "PASS: 10/16 gates; proposal-approval-history active; violations 0; readyClaim false.",
+    "databaseRebuildAndVerification": "PASS",
+    "databaseSummary": {
+      "sources": 1598,
+      "facts": 1270,
+      "decisions": 1235,
+      "openItems": 135,
+      "trials": 859,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "runtimeOrBrowser": "NOT RUN",
+    "foundryOrProjectMutation": "NOT RUN"
+  },
+  "limits": [
+    "This receipt proves only a local strict typed lifecycle-continuity index bridge and focused validation.",
+    "It does not prove complete current authority, aggregate authority, committed/recovered cross-producer continuity, Stage 11 acceptance, Stage 12 entry, or Ready-to-Play.",
+    "The M1018 browser viewport remains distinct from immutable 1536x1024 Scene/Blueprint geometry.",
+    "Player-role passwords remain blank and no credentials were handled."
+  ],
+  "next": "M1025 is the next bounded read-only reconciliation of M1024 against the complete Stage 11 matrix and rebuilt knowledge base."
+}

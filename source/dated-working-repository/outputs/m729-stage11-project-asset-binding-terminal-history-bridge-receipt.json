@@ -1,0 +1,68 @@
+{
+  "milestone": "M729",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bridge one existing operation-specific local-project project.asset.bind execution receipt into typed terminal history.",
+  "sourceState": "Unborn project worktree with no HEAD; M729 changes only the bounded bridge/test/receipt and governance records.",
+  "artifactHashes": {
+    "bridgeSha256": "9A8ED392E5A2E70CD23E8D1B08DE87960F17A4C4C068AFB6979CD52EBCD0D63D",
+    "testSha256": "01F6E4C6CFA0818B6B84B993FFC61CD0CD4FAD313EB483B20A0008090FF57294"
+  },
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Bounded project.asset.bind terminal-history bridge and focused test.",
+    "workerOutcome": "Worker did not return a compact receipt within two bounded waits and was closed; no worker output was used. The Foreman recovered the authorized scope locally.",
+    "foremanReview": "The Foreman reread D-857/F-974, the existing background-binding executor/proposal adapter, and prior local terminal-history bridges before implementation."
+  },
+  "implementation": {
+    "entryPoint": "apps/campaign-helper-desktop/src/project-asset-binding-terminal-history.ts:bridgeProjectAssetBindingExecutionToTerminalHistory",
+    "schema": "projectAssetBindingTerminalHistoryReceiptSchema.parse/safeParse",
+    "acceptedOperation": "dicebox.project.asset.bind.execute",
+    "terminalSequence": ["preview", "approve", "begin-apply", "commit-after-reread", "undo"],
+    "checks": [
+      "exact project, operation, content-addressed background descriptor, and target Scene identity",
+      "persisted asset-byte evidence and hash-addressed asset path",
+      "before/apply/undo authoritative reread identity and monotonic generations",
+      "exact Scene background binding transition and inverse restoration",
+      "additive asset-tree preservation through inverse restore",
+      "backup rotation and atomic native save receipts",
+      "matched commit and undo history rereads",
+      "fail-closed tamper, non-persistent, and Foundry-writing evidence"
+    ]
+  },
+  "validation": {
+    "focused": "PASS: 2 M729 tests and 2 M727 regression tests",
+    "fullRepository": "PASS: 162 test files / 809 tests",
+    "build": "PASS: package typecheck, desktop typecheck, Node typecheck, and Vite production build",
+    "tooling": "PASS: npm.cmd run verify:tooling",
+    "knowledgeBase": "PASS: seed synchronized, database rebuilt, integrity verified, and focused KB query tests passed",
+    "workflow": "PASS: active-slice checker reports Stage 11 proposal-approval-history at 10/16 with no violations",
+    "foundryOrRuntime": "NOT RUN; excluded by M729"
+  },
+  "safety": {
+    "bridgeOnly": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "noGenericExecutor": true,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed before closeout; aggregate producer acceptance remains partial",
+    "stage12": "NOT STARTED",
+    "decision": "M729 closes one background-binding producer seam but does not accept Stage 11 or authorize Stage 12."
+  },
+  "remainingGaps": [
+    "Aggregate producer coverage and direct current-authority evidence remain incomplete across all eleven producer families.",
+    "Unified stale, outcome-unknown, recovered, undone, and redone lifecycle evidence remains incomplete.",
+    "Packaged/runtime authority and live active-GM/Foundry evidence remain incomplete.",
+    "Stage 11 acceptance requires a fresh read-only reconciliation after this seam."
+  ],
+  "selectedNext": "M730 read-only Stage 11 acceptance reconciliation after M729; preserve live Foundry/runtime and Stage 12 exclusions."
+}

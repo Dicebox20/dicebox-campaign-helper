@@ -1,0 +1,62 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m511-stage11-broken-reference-ui-artifact-closure-2026-08-29",
+  "milestone": "M511",
+  "evidenceLabel": "local",
+  "status": "ARTIFACT_ATTESTED",
+  "readyClaim": false,
+  "scope": "One explicit-mode debug package build and exact executable/frontend artifact/process reread",
+  "knowledgeBase": {
+    "queryMode": "read-only",
+    "relevantFacts": ["F-720", "F-719", "F-717"],
+    "relevantTrials": ["T-663", "T-662"],
+    "relevantDecisions": ["D-661", "D-660"]
+  },
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "broken-reference-detach-ui-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "exitCode": 0,
+    "executable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "A250593FBAB617ECA566257C18D163884D6BEF448C4B868A928124784553B9B5"
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index--kAQAUpf.js",
+      "sha256": "E5FA3C384302A3AEE00AAD35A53B0B4BB0DF12C11480D88B37E41379527BAD6B"
+    }
+  },
+  "markerReread": {
+    "broken-reference-detach-ui-execute": true,
+    "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v1": true,
+    "BACKGROUND_ASSET_ROLE_MISMATCH": true,
+    "project-pending": true,
+    "authoritative-reread-commit": true
+  },
+  "processReread": {
+    "desktop": 0,
+    "cargo": 0,
+    "rustc": 0
+  },
+  "validation": {
+    "build": "PASS",
+    "artifactMarkers": "PASS",
+    "processState": "PASS: no residual desktop/Cargo/Rustc process",
+    "launch": false,
+    "capture": false,
+    "fixtureMutation": false,
+    "sessionMutation": false,
+    "recoveryOrApply": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false,
+    "independentWorkerReview": "Timed out twice without a failure receipt; worker was closed. Local artifact reread is the authoritative evidence for M511."
+  },
+  "nextBoundary": {
+    "milestone": "M512",
+    "scope": "One exact capture-runner invocation against this M511 executable, followed by trace, fixture/project/recovery/session, and process reread.",
+    "prohibited": ["rebuild", "second capture", "separate launch", "retry", "fixture reset", "deletion", "cleanup", "unrelated mutation", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

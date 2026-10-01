@@ -1,0 +1,21 @@
+{
+  "milestone": "M675",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY",
+  "scope": "Pure exact inverse manifest projection, reverse-dependency operation selection, operation-specific reread classification, retry state, and terminal receipt persistence contracts.",
+  "implementation": {
+    "manifest": "packages/dicebox-compiler/src/staged-inverse-execution-manifest.ts",
+    "dispatchState": "packages/dicebox-compiler/src/staged-inverse-dispatch-state.ts",
+    "tests": "tests/staged-inverse-dispatch-state.test.ts; tests/staged-inverse-executor-boundary.test.ts"
+  },
+  "evidence": {
+    "focusedTests": "Vitest: 10 files / 22 tests passed.",
+    "typecheck": "apps/campaign-helper-desktop TypeScript no-emit passed.",
+    "repositoryRepair": "Current KB summary expectations and pre-existing self-test type/error-string assertions were reconciled to the authoritative source/database state."
+  },
+  "boundary": "The new contracts require exact manifest operation/payload hashes and reverse order, select only after exact terminal predecessor receipts, distinguish delete-owned absence from restore-preimage rereads, preserve foreign/conflict and unknown outcomes, and require terminal receipt persistence semantics. No executor method, adapter call, current-GM reread, Foundry operation, or runtime mutation exists.",
+  "foundryWrite": false,
+  "execution": "not-implemented",
+  "readyClaim": false,
+  "next": "M676 read-only reconciliation of the M675 contracts with the future executor, current-GM reread, receipt-store persistence, and retry boundary."
+}

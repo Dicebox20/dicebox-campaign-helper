@@ -1,0 +1,68 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1151",
+  "status": "BLOCKED_FULL_RUNTIME_PROFILE_QUERY_TRANSPORT_UNAVAILABLE",
+  "evidenceClass": "fixture",
+  "operation": "dicebox.stage12.exact-runtime-profile-observation",
+  "authorization": {
+    "source": "acceptedStage12M1151ExactRuntimeProfileObservation",
+    "queryTarget": "game.diceboxCampaignHelper.query({ kind: \"runtime-profile\" })",
+    "manualJoin": "Gamemaster typed manually; password left blank; no autocomplete suggestion selected",
+    "queryCount": 0,
+    "queryDisposition": "not-invoked: no reviewed visible control or fixed macro exposes the full runtime-profile query; arbitrary page scripting/eval is prohibited"
+  },
+  "runtimeTarget": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30001,
+    "moduleLoad": "dicebox-campaign-helper@dbx=0.1.18",
+    "activeGmObserved": true,
+    "currentUserMatchesActiveGm": true,
+    "observedIdentity": "Gamemaster [GM]",
+    "exactTargetMatch": true
+  },
+  "availableControls": {
+    "redactedRuntimeEvidenceDiagnostic": "present",
+    "currentActiveGmDiagnostic": "present",
+    "ownedScenePermissionDiagnostic": "present",
+    "fullRuntimeProfileDiagnostic": "not-present",
+    "reviewedFixedRuntimeProfileMacro": "not-present"
+  },
+  "evidence": {
+    "fullRuntimeProfile": "not-observed",
+    "profileDiff": "not-observed",
+    "authoritativeReread": "not-observed",
+    "redactedDiagnosticNotification": "observed readiness blocked 10/11; this is not a full profile",
+    "noArbitraryScript": true
+  },
+  "lifecycle": {
+    "start": "PASS exact owner-controlled fixture reopen",
+    "stop": "PASS forced owner-controlled stop after normal termination refused; final reread PASS",
+    "supervisorReceipt": "outputs/foundry-fixture-supervisor-last-receipt.json",
+    "supervisorReceiptSha256": "13AC50D9471AEF9A9C1D7AFF196069B0D9848C84CF367E3F41048E4E616BBB9F",
+    "finalStatus": "STOPPED",
+    "finalListeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "preservation": {
+    "packageBytesEdited": false,
+    "adapterBytesEdited": false,
+    "packageStaged": false,
+    "installerInvoked": false,
+    "settingsOrUserMutated": false,
+    "passwordCreatedOrPersisted": false,
+    "documentsOrAssetsMutated": false,
+    "foreignStatePreserved": true,
+    "readyClaim": false,
+    "stage12Accepted": false
+  },
+  "remainingBlockers": [
+    "The full RuntimeProfile query has no reviewed fixed UI or macro transport in the loaded package.",
+    "Complete schema-valid RuntimeProfile, profile-diff, and authoritative reread remain unobserved.",
+    "Staged package parity, candidate-specific installer transport, live write/execution authority, and Stage 11 acceptance remain unresolved."
+  ],
+  "nextBoundary": "M1152: add and verify one fixed package-owned GM-only read-only RuntimeProfile diagnostic transport, then separately stage/serve it and obtain one exact query observation; no document creation or mutation."
+}

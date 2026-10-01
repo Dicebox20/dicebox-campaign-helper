@@ -1,0 +1,42 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m2-readiness-report-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "officialReferences": [
+    "https://foundryvtt.com/api/v14/classes/foundry.documents.collections.Users.html",
+    "https://foundryvtt.com/api/v14/modules/foundry.documents.html",
+    "https://foundryvtt.com/api/v14/classes/foundry.documents.RegionDocument.html"
+  ],
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 39, "tests": 180, "status": "PASS" },
+    "readinessReport": {
+      "schemaAndSafeModeFallback": "PASS",
+      "foundryApiNamedChecks": "PASS",
+      "exactTargetFixtureClassification": "PASS",
+      "liveBehaviorRemainsBlocked": "PASS",
+      "installedNamespaceRouting": "PASS",
+      "mutationDisabled": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 60,
+      "facts": 75,
+      "decisions": 50,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 49,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Exact Foundry/D&D5e runtime behavior and permission semantics",
+    "Active-GM sender semantics and two-client authority evidence",
+    "Native operation behavior, authoritative read-back, recovery, and optional-module ownership"
+  ],
+  "nextGate": "Run the report and all named diagnostics in the exact Foundry 14.367/D&D5e 5.3.3 disposable world, then close blockers only with behavior, authority, permission, recovery, and authoritative read-back evidence."
+}

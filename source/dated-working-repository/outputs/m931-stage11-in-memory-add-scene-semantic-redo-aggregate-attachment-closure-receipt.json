@@ -1,0 +1,140 @@
+{
+  "milestone": "M931",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY AGGREGATE ATTACHMENT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Attach the exact M906 project.add-scene.commit-in-memory semantic-redo closure receipt to the Stage 11 aggregate ledger as one strict typed, non-certifying producer-scoped field without changing modeled counts, authority, persistence, or byte-hash claims.",
+  "inputs": [
+    "outputs/m930-stage11-post-create-semantic-redo-aggregate-attachment-reconciliation-receipt.json",
+    "outputs/m906-stage11-in-memory-add-scene-semantic-redo-composition-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-in-memory-add-scene-semantic-redo-aggregate-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-in-memory-add-scene-semantic-redo-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-add-scene-in-memory-terminal-history.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "tests/project-stage11-in-memory-add-scene-semantic-redo-aggregate-evidence.test.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "evidence": {
+    "sourceMilestone": "M906",
+    "sourceReceipt": "outputs/m906-stage11-in-memory-add-scene-semantic-redo-composition-closure-receipt.json",
+    "operation": "project.add-scene.commit-in-memory.redo",
+    "semantic": "redo-post-state",
+    "exactProjectIdentity": true,
+    "matchedBeforeAndAfterRedoRereads": true,
+    "laterInMemoryRevision": true,
+    "orderedSceneSetPreserved": true,
+    "addedSceneAppended": true,
+    "activeSceneSelected": true,
+    "assetPreservation": true,
+    "nonPersistencePreserved": true,
+    "sceneSetIdentityChanged": true,
+    "byteHashRotation": "NOT_CLAIMED; in-memory add-Scene evidence is non-persistent and the bridge exposes no byte-hash rotation contract",
+    "aggregateAttachment": "one-producer-scoped-non-certifying",
+    "driftRejected": "persistence-write/Scene-set/active-Scene/matched-reread/authority drift"
+  },
+  "boundary": {
+    "producerScopedOnly": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "aggregateAuthority": "not-granted",
+    "countsChanged": false,
+    "foreignStatePreserved": true,
+    "runtimeLaneReopened": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAggregateAuthorityIndexedRedoBindingEntries": [
+      "project.create",
+      "project.save",
+      "project.rename",
+      "project.add-scene.persist",
+      "project.asset.bind",
+      "project.asset.register-audio",
+      "project.asset.register-handout",
+      "project.asset.register-token",
+      "project.add-scene.commit-in-memory"
+    ],
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source/test separately indexes 9 redo entries, including the supplemental project.add-scene.commit-in-memory row; these are not collapsed into one measure.",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "m914Attachment": "one-producer-scoped-non-certifying",
+    "m916Attachment": "one-producer-scoped-non-certifying",
+    "m918Attachment": "one-producer-scoped-non-certifying",
+    "m920Attachment": "one-producer-scoped-non-certifying",
+    "m923Attachment": "one-producer-scoped-non-certifying",
+    "m925Attachment": "one-producer-scoped-non-certifying",
+    "m927Attachment": "one-producer-scoped-non-certifying",
+    "m929Attachment": "one-producer-scoped-non-certifying",
+    "m931Attachment": "one-producer-scoped-non-certifying",
+    "backupPromotionUndoRedo": "NOT_APPLICABLE_ONE_WAY",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedEvidenceSuite": "PASS: 2 files; 16 tests",
+    "relatedStage11EvidenceSuite": "PASS: 32 files; 86 tests (all project-stage11-*.test.ts)",
+    "fullRepositorySuite": "PASS: 217 files; 976 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "databaseRebuildAndVerifyBeforeClosure": "PASS: sources 1424, facts 1184, decisions 1063, open items 135, trials 788, research subjects 40, milestones 26",
+    "negativeCoverage": "PASS: exact M906 source, project identity, semantic, Scene-set, active-selection, persistence, byte-hash, authority, count, and aggregate drift fail closed",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "artifacts": {
+    "aggregateAttachmentLayer": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-in-memory-add-scene-semantic-redo-aggregate-evidence.ts",
+      "sha256": "CB867A203E5C9ECA768EB0252290D494B122383883CBABBF56BCF56AFE2E149E"
+    },
+    "aggregateLedger": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "sha256": "416F60795E30701445A47F33DD7CC58D46A601B3E091211FC0AAC88D1E20F2E7"
+    },
+    "focusedAttachmentTest": {
+      "path": "tests/project-stage11-in-memory-add-scene-semantic-redo-aggregate-evidence.test.ts",
+      "sha256": "DA40D0279A416A8A1806B772A51E2A44DB9966B86701CD0C8DD74AC66C72EB7"
+    },
+    "aggregateLedgerTest": {
+      "path": "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+      "sha256": "CAD1F5AC3F2B62C192BB10F1464258A9A899772985C2FC829CA3948B41BED981"
+    }
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "byte-level envelope rotation for in-memory add-Scene",
+    "persistence of the in-memory Scene addition",
+    "backup-promotion undo/redo support",
+    "generic execution, project mutation, or provider/credential integration",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Perform only the authorized M932 post-in-memory-add-Scene-semantic-redo-aggregate-attachment read-only reconciliation against the complete Stage 11 matrix; retain all count scopes, authority locks, runtime parking, non-persistence and byte-hash non-claim boundaries, and Stage 11/Stage 12 non-certification."
+}

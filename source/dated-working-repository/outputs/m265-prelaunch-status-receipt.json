@@ -1,0 +1,41 @@
+{
+  "receiptVersion": 1,
+  "supervisorVersion": "1.1.0",
+  "operation": "foundry.fixture.status",
+  "target": "disposable-fixture",
+  "worldId": "dbx-test-world",
+  "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+  "port": 30002,
+  "timestamp": "2026-08-27T14:53:55.144Z",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "lifecycleOperation": null,
+  "status": "STOPPED",
+  "evidenceClass": "process-state",
+  "pid": 21652,
+  "listeners": [],
+  "state": {
+    "schemaVersion": 1,
+    "supervisorVersion": "1.1.0",
+    "status": "stopped",
+    "pid": 21652,
+    "startedAt": "2026-08-27T14:18:04.342Z",
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "port": 30002,
+    "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+    "entryPath": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+    "args": [
+      "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+      "--dataPath=C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+      "--world=dbx-test-world",
+      "--port=30002"
+    ],
+    "commandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB",
+    "processStartedAt": "2026-08-27T14:18:06.8586508Z",
+    "processPath": "C:\\Program Files\\nodejs\\node.exe",
+    "readyAt": "2026-08-27T14:18:15.581Z",
+    "stoppedAt": "2026-08-27T14:18:33.585Z"
+  },
+  "blockers": []
+}

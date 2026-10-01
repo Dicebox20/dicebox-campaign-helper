@@ -1,0 +1,54 @@
+{
+  "milestone": "M887",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "inputs": [
+    "M886 operation-specific semantic composition closure",
+    "M885 post-undo/redo reconciliation",
+    "existing asset-bind redo and backup-promote one-way bridges",
+    "aggregate current-authority evidence and Stage 11 ledger",
+    "complete proposal/approval/history/recovery matrix",
+    "database read-only M886 fact and active blocker query",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md"
+  ],
+  "reconciliation": {
+    "clauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "m886Disposition": {
+    "assetBind": "producer-scoped redo semantic validation with matched commit/undo/redo history",
+    "backupPromotion": "producer-scoped committed one-way semantic validation",
+    "backupPromotionUndoRedo": "NOT_APPLICABLE_ONE_WAY",
+    "semanticDrift": "rejected",
+    "countsChanged": false,
+    "runtimeLaneReopened": false,
+    "authorityPromoted": false,
+    "foreignStatePreserved": true
+  },
+  "selectedNext": "M888 code-only aggregate attachment of M886 semantic evidence; no new count, authority, runtime, or Stage 12 claim.",
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "packaged/runtime cross-producer behavior",
+    "aggregate Stage 11 acceptance",
+    "backup-promotion undo/redo support",
+    "generic execution or Foundry authority",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ]
+}

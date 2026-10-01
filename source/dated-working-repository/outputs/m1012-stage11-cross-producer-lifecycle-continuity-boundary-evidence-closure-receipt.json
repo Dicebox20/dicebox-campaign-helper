@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1012",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY CROSS-PRODUCER LIFECYCLE CONTINUITY BOUNDARY; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Bind the existing modeled cross-producer lifecycle continuity receipt and separately scoped direct observations into one strict typed non-certifying boundary surface without promoting authority, changing counts, reopening runtime work, or claiming continuity.",
+  "inputs": [
+    "apps/campaign-helper-desktop/src/project-stage11-cross-producer-lifecycle-continuity-boundary-evidence.ts",
+    "tests/project-stage11-cross-producer-lifecycle-continuity-boundary-evidence.test.ts",
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "outputs/m1011-stage11-post-current-authority-linkage-and-cross-producer-continuity-reconciliation-receipt.json",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "implementation": {
+    "source": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-cross-producer-lifecycle-continuity-boundary-evidence.ts",
+      "sha256": "8C6F7A4350BB7DA9E3B45DE4C4F44DBF2C6BB4BB53DE948F04E6D0D9DB795DA0"
+    },
+    "test": {
+      "path": "tests/project-stage11-cross-producer-lifecycle-continuity-boundary-evidence.test.ts",
+      "sha256": "505F38219CA3006AB8C0B202FA61BD547E9B4D4B8C4833849331CE2E6854D4AD"
+    },
+    "operationCountChanged": false,
+    "handlerClassifierAggregateAttachments": 10,
+    "semanticAggregateAttachments": 9,
+    "currentAuthorityRedoEntries": 9,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrandCount": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "modeledOnly": true,
+    "directObservationKinds": ["program-scene.inverse", "program-scene.forward"],
+    "crossProducerContinuity": "unproven",
+    "committedRecoveredContinuity": "not-proven",
+    "linkageStatus": "bound-strict-typed-non-certifying",
+    "countScopeStatus": "preserved-explicit-8-9-9"
+  },
+  "modeledLifecycleCoverage": {
+    "operationCount": 14,
+    "terminalHistoryIndexCount": 14,
+    "reviewTerminalEvidenceCount": 42,
+    "applyingUnknownEvidenceCount": 42,
+    "recoveryResultEvidenceCount": 56,
+    "undoRedoEvidenceCount": 28,
+    "reviewTerminalStates": ["rejected", "cancelled", "stale"],
+    "applyingUnknownCheckpoints": ["approved-to-applying", "applying-to-unknown-outcome", "unknown-outcome-reread-gate"],
+    "recoveryRereadStatuses": ["matched", "not-committed", "conflict", "unknown"],
+    "undoRedoSourceStatuses": ["committed", "undone"]
+  },
+  "directObservations": {
+    "inverse": {
+      "producer": "foundry.program-scene.inverse",
+      "milestone": "M802",
+      "lifecycle": "preview-confirm-apply-authoritative-reread",
+      "scope": "producer-scoped-only"
+    },
+    "forward": {
+      "producer": "foundry.program-scene.forward",
+      "milestone": "M830",
+      "lifecycle": "preview-approved-create-unknown-authoritative-recovery-reread",
+      "scope": "producer-scoped-only"
+    },
+    "committedRecoveredContinuity": "not-proven"
+  },
+  "validation": {
+    "focused": "PASS: 1 file / 2 tests",
+    "stage11Suite": "PASS: 58 files / 164 tests",
+    "packageTypecheck": "PASS: npm run build:packages",
+    "workflow": "PASS: 10/16 gates; proposal-approval-history active; violations 0; readyClaim false",
+    "negativeDrift": "PASS: lifecycle counts, operation ordering, direct-observation reread, context authority, and continuity overclaim fail closed",
+    "diffCheck": "PASS: git diff --check",
+    "databaseBeforeClosure": "PASS: rebuilt/read-only KB at 1582 sources, 1262 facts, 1219 decisions, 135 open items, 851 trials, 40 research subjects, 26 milestones"
+  },
+  "limits": {
+    "readOnlyBoundary": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noRecoveryAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "runtimeLane": "PARKED",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false
+  },
+  "doesNotProve": [
+    "cross-producer committed/recovered continuity",
+    "aggregate current authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1012 closure and M1013 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then perform only the authorized M1013 read-only reconciliation."
+}

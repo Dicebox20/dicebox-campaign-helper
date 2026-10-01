@@ -1,0 +1,10 @@
+{
+  "milestone": "M663",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY",
+  "scope": "Pure inverse-plan reverse-dependency contract and fail-closed tests only.",
+  "evidence": { "tests": "Vitest: 5 files / 9 tests passed.", "typecheck": "apps/campaign-helper-desktop TypeScript no-emit passed." },
+  "boundary": "Every inverse plan now requires an explicit reverseDependencyOrder that covers each exact operation once. No executor may infer dispatch order from lexical identifiers or the manifest's observation sequence.",
+  "foundryWrite": false,
+  "next": "M664 read-only reconciliation before authorizing a pure executor state-machine implementation."
+}

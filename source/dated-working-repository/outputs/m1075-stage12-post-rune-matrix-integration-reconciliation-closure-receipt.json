@@ -1,0 +1,45 @@
+{
+  "receiptType": "stage12-post-rune-matrix-integration-reconciliation-closure",
+  "milestone": "M1075",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "reconciliation": {
+    "matrixBeforeIntegration": {
+      "signal": {"status":"COMPOSED","items":6,"steps":6},
+      "tram": {"status":"PARTIAL","items":0,"steps":0,"blocker":"m7-furnishing-plan-missing"},
+      "rune": {"status":"PARTIAL","items":0,"steps":0,"blocker":"m7-furnishing-plan-missing"},
+      "centralCore": {"status":"COMPOSED","items":6,"steps":6}
+    },
+    "unchangedCounts": {
+      "signal": {"spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7},
+      "tram": {"spatialProjection":"1/11/0","regions":39,"teleports":1,"backgroundObjects":5},
+      "rune": {"spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7},
+      "centralCore": {"spatialProjection":"1/7/0","regions":10,"teleports":2,"backgroundObjects":10}
+    },
+    "runeFixture": "dbx:plan:m1074-rune-furnishing-fixture"
+  },
+  "decision": "M1074 Rune fixture evidence is internally valid; authorize only M1076 integration into the breadth matrix, preserving Tram as the remaining missing-M7 row.",
+  "boundaries": {
+    "matrixChanged": false,
+    "spatialBlueprintOwnsGeometry": true,
+    "regionsOwnRegionAndTeleportIntent": true,
+    "backgroundObjectsAreVisualWorkflowProjection": true,
+    "m7PlanOwnsNativePlaceableIntent": true,
+    "runtimeModeled": false,
+    "mutationPerformed": false,
+    "nativeDocumentsCreated": false,
+    "packageChanged": false,
+    "installerChanged": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false
+  },
+  "nextAction": "M1076 Rune M7 furnishing-plan breadth-matrix integration"
+}

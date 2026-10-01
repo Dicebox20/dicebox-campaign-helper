@@ -1,0 +1,17 @@
+{
+  "milestone": "M455",
+  "stage": 11,
+  "classification": "PASS_LOCAL_CODE_ONLY",
+  "mode": "backup-promotion-ui-session-status-inspect",
+  "scope": "exact-target application-level read-only metadata-only session status",
+  "validation": {
+    "focusedTestFiles": 3,
+    "focusedTests": 21,
+    "tooling": "PASS"
+  },
+  "preservesMissingOnlyInspector": true,
+  "logsRawSessionPayload": false,
+  "desktopExecutableLaunched": false,
+  "runtimeStateTouched": false,
+  "recoveryDisposition": "M456 one-build artifact boundary required before any separately authorized status inspection run."
+}

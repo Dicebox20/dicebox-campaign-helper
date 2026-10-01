@@ -1,0 +1,148 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1211-current-foundry-artifact-spec",
+  "operation": "compiler.current-foundry-artifact-spec.m1211",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1211",
+  "status": "PASS_SOURCE_ONLY_CURRENT",
+  "evidenceLabel": "local",
+  "observedAt": "2026-09-07",
+  "successorOf": {
+    "receipt": "outputs/m1188-current-foundry-artifact-spec-receipt.json",
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1188",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1188"
+  },
+  "change": "M1210 Tram/Core neutral renderer binding; current package hash refreshed without staging or runtime action.",
+  "canonicalSpecification": {
+    "schemaVersion": "0.1.0",
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1211",
+    "target": {
+      "packageId": "dicebox-campaign-helper",
+      "packageVersion": "0.1.15",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "adapterId": "program-scene-vertical-slice",
+      "adapterVersion": "0.1.15"
+    },
+    "artifacts": [
+      {
+        "artifactId": "dbx:foundry-artifact:adapter",
+        "kind": "adapter",
+        "version": "0.1.15",
+        "sha256": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+        "source": "packages/dicebox-foundry/src/program-scene-vertical-slice.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:installer",
+        "kind": "installer",
+        "version": "0.1.15",
+        "sha256": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+        "source": "packages/dicebox-foundry/src/ascendancy-installer.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:package",
+        "kind": "package",
+        "version": "0.1.15",
+        "sha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+        "source": "packages/dicebox-foundry/ascendancy-campaign-package.json"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:runtime",
+        "kind": "runtime",
+        "version": "14.367",
+        "sha256": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b",
+        "source": "C:/Program Files/Foundry Virtual Tabletop/Foundry Virtual Tabletop.exe"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:worker",
+        "kind": "worker",
+        "version": "0.1.15",
+        "sha256": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+        "source": "packages/dicebox-foundry/src/foundry-live-bridge.js"
+      }
+    ],
+    "specSha256": "d5d9abd958d582b8a36d1bad8e85768ea4991e64e4f255d7faa152e829055eff",
+    "mutation": "disabled-until-exact-runtime-gate",
+    "noWrite": true
+  },
+  "verifierExpectation": {
+    "schemaVersion": "0.1.0",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1211",
+    "sourceSpecId": "dbx:foundry-spec:current-product-0.1.15-m1211",
+    "sourceSpecSha256": "d5d9abd958d582b8a36d1bad8e85768ea4991e64e4f255d7faa152e829055eff",
+    "target": {
+      "packageId": "dicebox-campaign-helper",
+      "packageVersion": "0.1.15",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "adapterId": "program-scene-vertical-slice",
+      "adapterVersion": "0.1.15"
+    },
+    "expectedArtifacts": [
+      {
+        "artifactId": "dbx:foundry-artifact:adapter",
+        "kind": "adapter",
+        "version": "0.1.15",
+        "sha256": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+        "source": "packages/dicebox-foundry/src/program-scene-vertical-slice.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:installer",
+        "kind": "installer",
+        "version": "0.1.15",
+        "sha256": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+        "source": "packages/dicebox-foundry/src/ascendancy-installer.js"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:package",
+        "kind": "package",
+        "version": "0.1.15",
+        "sha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+        "source": "packages/dicebox-foundry/ascendancy-campaign-package.json"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:runtime",
+        "kind": "runtime",
+        "version": "14.367",
+        "sha256": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b",
+        "source": "C:/Program Files/Foundry Virtual Tabletop/Foundry Virtual Tabletop.exe"
+      },
+      {
+        "artifactId": "dbx:foundry-artifact:worker",
+        "kind": "worker",
+        "version": "0.1.15",
+        "sha256": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+        "source": "packages/dicebox-foundry/src/foundry-live-bridge.js"
+      }
+    ],
+    "generatedFromCanonicalSpec": true,
+    "mutation": "disabled-until-exact-runtime-gate",
+    "noWrite": true
+  },
+  "packageTransition": {
+    "previousM1188PackageSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+    "currentPackageSha256": "1dd01cd3391a9c0687e64e5d2f7311efe09d1e614ac9b5737355f3b42135dbe5",
+    "driftReconciled": true
+  },
+  "runtimeEvidence": {
+    "staticRuntimeHashOnly": true,
+    "currentRuntimeProfile": "not-observed",
+    "servedPackageParity": "not-observed",
+    "activeGm": "not-claimed"
+  },
+  "noFoundryLaunch": true,
+  "noFixtureWrite": true,
+  "noInstall": true,
+  "noUpload": true,
+  "foreignStatePreserved": true,
+  "readyClaim": false,
+  "doesNotProve": [
+    "staged or served parity after M1211",
+    "loaded DiceBox or optional-module behavior",
+    "current RuntimeProfile or active-GM authority",
+    "native bindings, execution, recovery, or campaign-document reread",
+    "Stage 12 acceptance or Ready-to-Play"
+  ]
+}

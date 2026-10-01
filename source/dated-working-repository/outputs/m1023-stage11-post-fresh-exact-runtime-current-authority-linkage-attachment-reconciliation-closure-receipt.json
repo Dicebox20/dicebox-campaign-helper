@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1023",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile the M1022 fresh exact-runtime current-authority linkage/index attachment against the complete Stage 11 evidence surfaces without implementation, runtime retry, authority promotion, or count collapse.",
+  "inputs": [
+    "outputs/m1022-stage11-fresh-exact-runtime-current-authority-linkage-attachment-closure-receipt.json",
+    "outputs/m1021-stage11-post-fresh-exact-runtime-aggregate-attachment-reconciliation-closure-receipt.json",
+    "outputs/m1018-stage11-host-window-recovery-and-final-exact-runtime-reread-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-fresh-exact-runtime-current-authority-linkage-attachment.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-current-authority-linkage-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-cross-producer-lifecycle-continuity-boundary-evidence.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "m1022Linkage": "PASS: strict typed, immutable, producer-scoped, non-certifying linkage/index attachment is present and schema-valid.",
+    "m1020AggregateBinding": "PASS: M1020 freshExactRuntimeEvidenceAttachment remains bound to the aggregate ledger and is referenced by M1022.",
+    "m1018RuntimeProvenance": "PASS: exact receipt hash C64E7137308D211BAE4B7C0DD72E239C317C06EE26CE17690205934FA88B4D7C, external Chrome viewport 1920x863, Gamemaster [GM], and DiceBox Tram Routing Projection remain exact.",
+    "producerFamilies": 11,
+    "modeledOperationCount": 14,
+    "directProjectionCount": 16,
+    "matrixRedoBindingCount": 8,
+    "aggregateCurrentAuthorityRedoEntryCount": 9,
+    "handlerClassifierAggregateAttachmentCount": 10,
+    "semanticAggregateAttachmentCount": 9,
+    "countScopeStatus": "preserved-explicit-8-9-9",
+    "countsChanged": false,
+    "partialClauseCount": 4,
+    "currentAuthority": "partial",
+    "aggregateAuthority": "not-granted",
+    "crossProducerContinuity": "unproven",
+    "runtime": "parked",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "foreignStatePreserved": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "playerPasswordsGenerated": false,
+    "credentialsAccessed": false
+  },
+  "reconciliationConclusion": "M1022 is correctly linked into the separate current-authority index, but it remains non-certifying and does not prove committed/recovered cross-producer continuity or complete current authority. The modeled lifecycle boundary and the separately scoped direct inverse/forward observations remain distinct.",
+  "nextGap": {
+    "milestone": "M1024",
+    "selection": "one strict typed non-certifying lifecycle-continuity index bridge for M1022 and the existing M1012 modeled boundary",
+    "reason": "The fresh-runtime/current-authority linkage is now indexed, while the lifecycle continuity surface remains modeled-only and direct committed/recovered continuity remains unproven.",
+    "limits": "No runtime, browser, Foundry, project, provider, credential, account, player-password, generic execution, authority promotion, Stage 11 acceptance, Stage 12 entry, or Ready-to-Play action."
+  },
+  "validation": {
+    "readOnlyKnowledgeBaseQueries": "PASS: summary 1602 sources, 1272 facts, 1239 decisions, 135 open items, 861 trials, 40 research subjects, 26 milestones; M1022 closure and M1023 authorization present.",
+    "workflow": "PASS: 10/16 gates; proposal-approval-history active; violations 0; readyClaim false.",
+    "sourceReread": "PASS: active card, roadmap, aggregate/current-authority/lifecycle sources, receipts, and count scopes agree.",
+    "implementation": "NOT RUN",
+    "runtimeOrBrowser": "NOT RUN",
+    "foundryOrProjectMutation": "NOT RUN"
+  },
+  "limits": [
+    "This receipt is read-only reconciliation evidence and is not a Stage 11 acceptance receipt.",
+    "It does not prove complete current authority, aggregate authority, cross-producer committed/recovered continuity, packaged/runtime behavior, GM/player behavior, Stage 12 entry, or Ready-to-Play.",
+    "The 1920x863 browser viewport remains distinct from immutable 1536x1024 Scene/Blueprint geometry.",
+    "Player-role passwords remain blank and no credentials were handled."
+  ],
+  "next": "Record M1023 closure and M1024 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then perform only the authorized M1024 lifecycle-continuity index bridge."
+}

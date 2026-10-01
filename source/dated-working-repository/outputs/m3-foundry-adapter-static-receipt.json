@@ -1,0 +1,44 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m3-foundry-adapter-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": {
+      "files": 12,
+      "tests": 49,
+      "status": "PASS"
+    },
+    "adapter": {
+      "createApi": "JournalEntry.create",
+      "readApis": ["fromUuid", "game.journal.get"],
+      "updateApi": "JournalEntry.update",
+      "ownershipMarker": "flags[\"dicebox-campaign-helper\"]",
+      "embeddedPageBinding": "PASS",
+      "collectionIdempotencyLookup": "PASS",
+      "foreignStateRejection": "PASS",
+      "unknownOutcomeHandling": "PASS",
+      "updateReadBack": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 31,
+      "facts": 46,
+      "decisions": 21,
+      "activeWork": 20,
+      "trials": 20,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Exact Foundry 14.367 JournalEntry/Page schema and permissions",
+    "Live JournalEntry creation, update, and read-back",
+    "Foundry transaction journal persistence",
+    "Two-client active-GM authority and reconnect behavior"
+  ],
+  "nextGate": "Rebuild the KB, then run the structural adapter in the exact disposable Foundry 14.367 / D&D5e 5.3.3 fixture before promoting mutation readiness."
+}

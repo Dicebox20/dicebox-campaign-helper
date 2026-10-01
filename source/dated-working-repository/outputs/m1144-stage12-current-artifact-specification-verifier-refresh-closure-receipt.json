@@ -1,0 +1,40 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1144",
+  "status": "PASS_SOURCE_ONLY_SUCCESSOR_SPEC",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.current-artifact-specification-verifier-refresh",
+  "implementation": {
+    "toolPath": "tools/write-m1144-current-foundry-artifact-spec.ts",
+    "toolSha256": "31BB3FB21C071376407AA6668C8E63B126C917F1022F597F1763CF4AED5752BC",
+    "testPath": "tests/current-foundry-artifact-spec.test.ts",
+    "testSha256": "5B4BBDDADD0C4F7B1B7479E0CE9AE978C84A404E2A0388F353570B4C76C3D8FB",
+    "packageScriptSha256": "DBB7554412FAD909763709E9D5E56A7B2FECE86203034E961C07D3B5B0D9BA79",
+    "generatedReceipt": "outputs/m1144-current-foundry-artifact-spec-receipt.json",
+    "generatedReceiptSha256": "2A40DA9760390BABE31E35EDF12521FAE27DD33151EC8A5AC1671BFACCE7B336",
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1144",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1144",
+    "specSha256": "AC81CF0D975BF590D8CA7A8B74DF0E6A262B4BAC7221F1E8D978E1408B503343"
+  },
+  "verification": {
+    "packageTypecheck": "PASS",
+    "artifactFocusedTests": "7/7 PASS",
+    "canonicalHashReread": "PASS",
+    "packageHash": "2F257477F02AAC0A60B01D6C0AEFEF738484BE5C437A708BD293945CCF90645F",
+    "adapterHash": "3A063C2DEC5A4BF7AD7B6B13CE602FF4EDCF32071C419E3AD7C5D265274113AB",
+    "installerHash": "FFFB439942619C5AFFC10E5AB74B43EF9AA3107C989F1551FF5CFCE2E7C5BC83",
+    "workerHash": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "runtimeStaticHash": "31D9655E77EED5E0E94DAB33421E63537A14251DF994296C3C039CE019192A1B"
+  },
+  "preservation": {
+    "m269ReceiptEdited": false,
+    "m1141ReceiptEdited": false,
+    "packageBytesEdited": false,
+    "adapterBytesEdited": false,
+    "stageInvoked": false,
+    "runtimeInvoked": false,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "nextBoundary": "M1145: one bounded exact-fixture read-only RuntimeProfile/active-GM/served-package reread using the manual Gamemaster entry with blank password; stop on stale, unavailable, or ambiguous evidence and do not mutate documents/assets."
+}

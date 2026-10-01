@@ -1,0 +1,44 @@
+{
+  "milestone": "M369",
+  "status": "PASS FIXTURE/PACKAGED",
+  "date": "2026-08-28",
+  "scope": "Selected-Scene PNG background asset UI proposal, approval, typed binding, reread, and inverse Scene restoration.",
+  "authority": "M368 reconciliation and M369 authorization in the active card, roadmap, and reproducible knowledge base.",
+  "implementation": {
+    "proposal": "metadata-only target-bound project.asset.bind session",
+    "approval": "reviewer approval required before the typed executor write",
+    "assetHandling": "Existing assets rebind exactly; a new PNG is content-addressed, registered additively, and retained after inverse Scene restoration.",
+    "preservation": "No audio/token UI, recovery breadth, Foundry placement, provider, credential, browser, player-password, deletion, cleanup, or foreign-state mutation."
+  },
+  "fixture": {
+    "projectId": "dbx:project:desktop-background-ui-m369-self-test-v2",
+    "assetId": "dbx:asset:sha256:431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "assetSha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "assetMediaType": "image/png",
+    "assetByteLength": 68,
+    "traceSequence": ["loaded", "previewed", "approved", "applied", "pass"],
+    "postApply": {
+      "generation": 2,
+      "contentSha256": "1de092f02916304fc38e000447cba5f06161917e516bfeaff3f0523bce26cf56",
+      "assetCount": 1,
+      "sceneBackgroundBound": true
+    },
+    "finalReread": {
+      "generation": 3,
+      "contentSha256": "0924cd25a9aca3d0130190aa133a7fe30b77788c626424f1d2d74889beee21ea",
+      "assetCount": 1,
+      "sceneBackgroundBound": false,
+      "backupGeneration": 2,
+      "backupContainsBoundBackground": true
+    }
+  },
+  "validation": {
+    "focused": "3 files / 31 tests passed",
+    "full": "124 files / 664 tests passed",
+    "cleanPackage": "passed with self-test markers absent from the final bundle",
+    "traceExecutableSha256": "06D403FF0528DAAE5DFF27905064BF8DB7F6B9471FF40C9070DE81FC809D5A8B",
+    "finalExecutableSha256": "1EA637EDBCA5651A7F6EC1E6BE30FB3CBD1E1E9F4E9BB73660599FFF8F4BAFD1",
+    "finalBundleSha256": "70D20522C101A212A66782574CB14409B6B03A5FE8024C4A549CDED192F81BBA"
+  },
+  "limits": "This is local fixture/package evidence only. It does not certify Foundry behavior, active-GM authority, general Stage 11 completion, gameplay behavior, or later roadmap stages."
+}

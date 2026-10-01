@@ -1,0 +1,8 @@
+{
+  "milestone": "M660",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL READ-ONLY",
+  "finding": "The authorized request and inverse adapter are separated correctly, but neither supplies canonical operation ordering, per-operation idempotency identity, adapter identity attestation, or exact inverse reread classification. An executor now would be unable to produce a deterministic receipt or fail closed on foreign conflicts.",
+  "selectedNext": "M661 code-only: define an ordered inverse-execution manifest and per-operation receipt contract before any dispatch implementation.",
+  "excluded": ["executor dispatch", "adapter call", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
+}

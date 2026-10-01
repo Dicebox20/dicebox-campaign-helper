@@ -1,0 +1,53 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1167-served-current-installer-hash-attestation-closure",
+  "milestone": "M1167",
+  "status": "CLOSED_M1167_SERVED_CURRENT_INSTALLER_PARITY_RUNTIME_UNCHANGED",
+  "evidenceClass": "runtime-observation",
+  "operation": "dicebox.stage12.served-current-installer-hash-attestation.closure",
+  "servedObservation": {
+    "url": "http://127.0.0.1:30001/modules/dicebox-campaign-helper/src/ascendancy-installer.js",
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "requestCount": 1,
+    "bytes": 38967,
+    "sha256": "6EC6EE9C59D586E8B0A9C12330A453D946AC183FDD24ADDDCAE08C9B7773259E",
+    "sourceStagedServedMatch": true
+  },
+  "fixtureLifecycle": {
+    "startedOnce": true,
+    "launchGuard": "PASS",
+    "browserLogin": false,
+    "installerInvoked": false,
+    "normalStop": "required-force-fallback",
+    "forcedStop": "PASS",
+    "listenerDrain": "PASS 0 remaining",
+    "finalStatus": "STOPPED",
+    "finalListeners": 0,
+    "finalWorldDocumentWrites": 0,
+    "finalBalladTouched": false
+  },
+  "verification": {
+    "verifier": "dbx:foundry-verifier:current-product-0.1.15-m1165",
+    "packageTypecheck": "PASS",
+    "workflowCheck": "PASS 11/16",
+    "databaseRebuild": "PASS 1845 sources / 1424 facts / 1450 decisions / 1026 trials",
+    "databaseVerification": "PASS"
+  },
+  "runtime": {
+    "runtimeProfileRefreshed": false,
+    "campaignReread": false,
+    "documentWrites": 0,
+    "assetWrites": 0,
+    "sceneWrites": 0,
+    "authorityPromoted": false,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "M1167 proves served installer identity only; the RuntimeProfile and active-GM evidence remains last observed at M1153.",
+    "Candidate diagnostic runtime observation and authoritative campaign reread remain unproved.",
+    "Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1168: no-write reconcile M1164/M1167 served identity against runtime exposure and select one separately authorized diagnostic observation; do not invoke installer."
+}

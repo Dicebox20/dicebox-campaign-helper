@@ -1,0 +1,134 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1229",
+  "operation": "foundry.module.served-full-reread-deployment",
+  "evidenceClass": "fixture-post-restart-reread",
+  "status": "PASS_SERVED_FULL_FOUR_SCENE_REREAD",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "currentUser": "Gamemaster [GM]"
+  },
+  "deployment": {
+    "operation": "foundry.module.update",
+    "status": "PASS",
+    "packageId": "dicebox-campaign-helper",
+    "destinationRoot": "work/foundry-fixture-data-v4/Data",
+    "noWorldMutation": true,
+    "source": {
+      "bytes": 81788,
+      "sha256": "7a292ddf616de0c7907c3f805d54b10070f892152c0ec71c4c034eac8d95fab9"
+    },
+    "staged": {
+      "bytes": 81788,
+      "sha256": "7a292ddf616de0c7907c3f805d54b10070f892152c0ec71c4c034eac8d95fab9"
+    },
+    "served": {
+      "httpStatus": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "bytes": 81788,
+      "sha256": "7a292ddf616de0c7907c3f805d54b10070f892152c0ec71c4c034eac8d95fab9"
+    },
+    "sourceStagedMatch": true,
+    "stagedServedMatch": true
+  },
+  "restart": {
+    "operation": "foundry.fixture.restart",
+    "status": "PASS",
+    "pid": 17200,
+    "launchGuard": "PASS",
+    "lockRecovery": "PASS",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "manualSession": {
+    "authenticationObserved": true,
+    "authenticationAutomation": false,
+    "loadedUrl": "http://127.0.0.1:30003/game",
+    "loadedTitle": "Foundry Virtual Tabletop",
+    "currentUser": "Gamemaster [GM]"
+  },
+  "runtimeReread": {
+    "operation": "ascendancy.base-four-scenes.persistent-world-reread",
+    "status": "OBSERVED",
+    "noWrite": true,
+    "apply": false,
+    "approvalRequired": false,
+    "approvalGranted": false,
+    "authoritativeReread": true,
+    "retryAllowed": false,
+    "foreignStatePreserved": true,
+    "rawStorageInspected": false,
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "sceneObservation": {
+      "selectedOwnedSceneCounts": {
+        "dbx:room:signal-frequency-chamber": 1,
+        "dbx:room:ascendancy-tram-depot": 1,
+        "dbx:room:rune-mechanism-chamber": 1,
+        "dbx:room:central-core-control-chamber": 1
+      },
+      "ambiguousOwnedRooms": [],
+      "missingOwnedRooms": [],
+      "foreignSemanticConflicts": [],
+      "unboundSameLabelSceneCount": 0
+    },
+    "fourRoomCoverage": [
+      {
+        "roomId": "dbx:room:signal-frequency-chamber",
+        "walls": 8,
+        "regions": 6,
+        "tiles": 7,
+        "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-signal-frequency-chamber-v2.png",
+        "complete": true
+      },
+      {
+        "roomId": "dbx:room:ascendancy-tram-depot",
+        "walls": 14,
+        "regions": 39,
+        "tiles": 5,
+        "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-tram-depot-routing-yard-v6-neutral.png",
+        "complete": true
+      },
+      {
+        "roomId": "dbx:room:rune-mechanism-chamber",
+        "walls": 8,
+        "regions": 6,
+        "tiles": 7,
+        "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-rune-mechanism-chamber-v2.png",
+        "complete": true
+      },
+      {
+        "roomId": "dbx:room:central-core-control-chamber",
+        "walls": 10,
+        "regions": 10,
+        "tiles": 10,
+        "renderer": "modules/dicebox-campaign-helper/assets/maps/manual-central-core-control-chamber-v5-neutral.png",
+        "complete": true
+      }
+    ],
+    "claim": "owned-documents-observed-after-fresh-world-load"
+  },
+  "finalSupervisor": {
+    "operation": "foundry.fixture.status",
+    "status": "PASS",
+    "pid": 17200,
+    "listeners": [17200],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": []
+  },
+  "remainingBlockers": [
+    "Stage 12 remains active and non-certifying.",
+    "Ready-to-Play remains unproven.",
+    "Regionwright-specific GM/player behavior and player acceptance remain unproven."
+  ]
+}

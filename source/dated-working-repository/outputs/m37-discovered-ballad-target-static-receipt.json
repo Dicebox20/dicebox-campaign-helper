@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "0.1.0",
+  "operation": "foundry.discovered-ballad-target.static.receipt",
+  "status": "BLOCKED",
+  "evidenceClass": "deterministic",
+  "noWrite": true,
+  "dataPath": "C:/Users/rujie/AppData/Local/FoundryVTT/Data",
+  "discoveredWorld": {
+    "id": "the-ballad-of-chauser-bill",
+    "title": "The Ballad of \"Chauser\" Bill",
+    "coreVersion": "14.365",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "campaignHelperFixtureTarget": {
+    "worldId": "dbx-test-world",
+    "coreVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "module": {
+    "path": "modules/dicebox-campaign-helper/module.json",
+    "status": "missing"
+  },
+  "optionalModulesObserved": {
+    "midi-qol": "14.0.11",
+    "dae": "14.0.13",
+    "regionwright": "0.1.4"
+  },
+  "reconciliationRequired": true,
+  "reason": "The discovered Ballad world is a separate 14.365 target from the exact 14.367 dbx-test-world fixture; no module or world mutation is authorized until the target track is explicitly selected.",
+  "mutation": "disabled-until-exact-runtime-gate"
+}

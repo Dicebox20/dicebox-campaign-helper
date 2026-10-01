@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1257",
+  "operation": "ascendancy.base-four-scenes.persistent-world-reread",
+  "status": "OBSERVED",
+  "evidenceClass": "fixture-post-restart-reread",
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "browserUrlAfterClose": "http://127.0.0.1:30003/game"
+  },
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "roomReadback": [
+    { "roomId": "dbx:room:signal-frequency-chamber", "sceneCount": 1, "walls": 8, "regions": 6, "tiles": 7, "complete": true, "rendererMatch": true },
+    { "roomId": "dbx:room:ascendancy-tram-depot", "sceneCount": 1, "walls": 14, "regions": 39, "tiles": 5, "complete": true, "rendererMatch": true },
+    { "roomId": "dbx:room:rune-mechanism-chamber", "sceneCount": 1, "walls": 8, "regions": 6, "tiles": 7, "complete": true, "rendererMatch": true },
+    { "roomId": "dbx:room:central-core-control-chamber", "sceneCount": 1, "walls": 10, "regions": 10, "tiles": 10, "complete": true, "rendererMatch": true }
+  ],
+  "sceneObservation": {
+    "ambiguousOwnedRooms": [],
+    "missingOwnedRooms": [],
+    "foreignSemanticConflicts": [],
+    "unboundSameLabelSceneCount": 0,
+    "foreignStatePreserved": true
+  },
+  "contract": {
+    "noWrite": true,
+    "apply": false,
+    "approvalRequired": false,
+    "approvalGranted": false,
+    "authoritativeReread": true,
+    "retryAllowed": false,
+    "rawStorageInspected": false,
+    "readyClaim": false
+  },
+  "dialog": { "closed": true, "remainingDialogs": 0 },
+  "supervisor": { "status": "PASS", "pid": 11204, "worldDocumentWrites": 0, "balladTouched": false },
+  "artifactIdentity": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1217",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1217",
+    "installerIdentityEvidence": "source-only in this receipt; staged/served installer hashes were not attested"
+  },
+  "disposition": "The helper-owned four-Scene persistent world is observed after fresh world load with complete children and renderer matches. This is readback evidence, not installer approval, mutation certification, player acceptance, Stage 12, or Ready-to-Play.",
+  "next": "M1258: reconcile current installer source/staged/served artifact identity and spec/verifier hashes without invoking or applying the installer."
+}

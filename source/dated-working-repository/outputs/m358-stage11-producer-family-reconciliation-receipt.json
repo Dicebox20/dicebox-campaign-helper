@@ -1,0 +1,171 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m358-stage11-producer-family-reconciliation-2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M358",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "workspaceWrites": 0,
+  "foundryWrites": 0,
+  "browserStorageWrites": 0,
+  "providerCalls": 0,
+  "credentialCalls": 0,
+  "stage11Disposition": {
+    "generalizedBatchTray": "partial",
+    "lifecycleAndRecovery": "partial",
+    "sharedVocabularyWithoutSharedAuthority": "partial",
+    "everyMutatingPathAcceptance": "partial"
+  },
+  "auditBasis": {
+    "priorClosure": "outputs/m357-stage11-project-create-ui-execute-reread-receipt.json",
+    "priorClosureSha256": "15B4C0D08DF06A275929F303BF3B91FAD22CF617EDDA038CCF3156E1446BABA8",
+    "currentWorkflowCheck": "PASS; Stage 11 only active; 10/16 gates; readyClaim=false; no violations",
+    "currentToolingCheck": "PASS",
+    "currentKnowledgeBase": {
+      "sources": 531,
+      "facts": 565,
+      "decisions": 507,
+      "trials": 521,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "sourceReconciliation": [
+      "M357 closes the exact Create blank project UI boundary over the already closed M355 project.create engine: no-write catalog and target-absence reread, metadata-only preview, target-bound session, reviewer approval, explicit apply, committed catalog/project/recovery/workspace reread, and canonical editor-state update.",
+      "The current desktop Save active project handler still calls native saveProjectBundle directly. The typed M340 project.save proposal/approval/execution/reread/inverse-restore engine and focused tests remain available, but the ordinary desktop save action is not yet routed through that boundary.",
+      "Save as new project, rename, add-Scene, asset import/registration/binding, recovery, migration, backup promotion, and detach handlers remain separately bounded or direct UI paths. M357 did not broaden their authority, and no generic Stage 11 claim is supported.",
+      "Blocked UIA input evidence, transport outcome-unknown evidence, first-generation backup semantics, foreign-state preservation, no-cleanup boundaries, and Foundry/player-password exclusions remain preserved. A fresh reconciliation does not retry or reinterpret those boundaries.",
+      "All four Stage 11 clauses remain partial. M359 is authorized as the smallest non-overlapping ordinary-persistence UI boundary: route only Save active project through the existing exact project.save preview/session/reviewer-approval/execution/reread/inverse-restore path."
+    ]
+  },
+  "producerFamilies": [
+    {
+      "family": "read-only inspection and compile",
+      "operations": ["list", "inspect recovery", "explain migration", "compile no-write Foundry preview"],
+      "disposition": "closed read-only adapters; outside mutating acceptance"
+    },
+    {
+      "family": "workspace open and recent-order metadata",
+      "operations": ["open", "reload", "load with workspace generation"],
+      "disposition": "explicit workspace command; UI integration remains separate"
+    },
+    {
+      "family": "ordinary project persistence",
+      "operations": ["create", "save", "save as", "rename"],
+      "coveredSlices": ["M339", "M340", "M351", "M353", "M355", "M357"],
+      "disposition": "Create UI closed by M357; save, save-as, rename, and generalized tray coverage remain open"
+    },
+    {
+      "family": "in-memory project editing and navigation",
+      "operations": ["add blank Scene", "switch active Scene", "close clean session"],
+      "coveredSlices": ["M343", "M351"],
+      "disposition": "bounded editor/persistence separation; broader UI acceptance remains open"
+    },
+    {
+      "family": "asset import and binding",
+      "operations": ["background", "handout", "audio", "token"],
+      "coveredSlices": ["M341", "M345", "M347", "M349"],
+      "disposition": "role-specific engines closed; generalized UI tray remains open"
+    },
+    {
+      "family": "legacy migration persistence",
+      "operations": ["preview migration persist", "approve migration persist"],
+      "disposition": "operation-specific adapter retained"
+    },
+    {
+      "family": "backup-authoritative promotion",
+      "operations": ["preview backup promotion", "approve backup promotion"],
+      "disposition": "recovery-specific authority retained"
+    },
+    {
+      "family": "missing asset restore",
+      "operations": ["preview exact-byte restore", "approve exact-byte restore"],
+      "disposition": "recovery-specific authority retained"
+    },
+    {
+      "family": "missing asset detach",
+      "operations": ["preview exact-one detach", "approve detach"],
+      "disposition": "recovery-specific authority retained; no generic cleanup"
+    },
+    {
+      "family": "broken Scene-reference detach",
+      "operations": ["preview selected detach", "approve detach"],
+      "disposition": "selected-reference authority retained"
+    },
+    {
+      "family": "test-owned fixture setup and stage receipts",
+      "operations": ["prepare fixtures", "finish self-test", "record stage receipt"],
+      "disposition": "harness-only; excluded from product tray"
+    }
+  ],
+  "selectedNextSlice": {
+    "milestone": "M359",
+    "name": "exact project-save UI proposal/review/application boundary",
+    "scope": "Route only the existing Save active project action through the M340 typed project.save preview, target-bound project proposal session, human reviewer approval, exact executor, authoritative rereads, inverse restore, and canonical editor-state update. Preserve current project identity, expected generation, semantic content descriptor, backup rotation, workspace/catalog/recovery rereads, and no-cleanup/no-Foundry boundaries.",
+    "reason": "M340 already closes the content-bearing project.save engine and M357 closes Create UI integration. The direct Save active project handler is the smallest remaining ordinary-persistence UI action that can reuse the exact approval/session/execution/reread boundary without changing save-as, rename, assets, recovery, or later stages.",
+    "requiredGates": [
+      "M358 reconciliation and M359 authorization synchronized in roadmap, active card, and verified KB",
+      "exact active project/catalog/recovery reread before preview and exact current generation/content hash binding",
+      "metadata-only save preview with content descriptor and inverse snapshot kept out of generic proposal payload",
+      "human reviewer approval before native save",
+      "authoritative post-save reread proving semantic content and rotated backup bytes",
+      "authoritative inverse restore and reread proving prior semantic state without hidden cleanup",
+      "active editor baseline updated only after the committed save/inverse-restore evidence",
+      "no save-as, rename, asset, recovery, Foundry, provider, credential, browser, player-password, deletion, cleanup, or foreign-state activity"
+    ],
+    "excluded": [
+      "project save-as or rename UI integration",
+      "asset import, binding, or recovery UI integration",
+      "migration or backup promotion",
+      "generic Stage 11 acceptance",
+      "Foundry",
+      "providers and credentials",
+      "player passwords",
+      "deletion, cleanup, or broader undo authority",
+      "later stages"
+    ]
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "AF0AA89700A9D1FA9CB6D307BC728AEA62728D4E26C4FC031E05786991EC64E6",
+    "apps/campaign-helper-desktop/src/project-save-proposal-adapter.ts": "59CB89C97802E088DD6C8E2D31E0FCB2090F48B803F5A1579960EE4073EC6EFA",
+    "apps/campaign-helper-desktop/src/project-save-executor.ts": "1B1A9A87AD7C823FC949F82A4879089DF495AC20BB06D5149A0472905FD74378",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts": "16FD0CBD0B84AC44A34507EB5E4BCB18EF349288EBF0A83358F54E90B76FE2FE",
+    "apps/campaign-helper-desktop/src/project-store.ts": "1EF144BD4ACC26836A1C918DC270314A724E0925BA1DF0EB37A0E25F672009D7",
+    "apps/campaign-helper-desktop/src/project-create-proposal-adapter.ts": "17EDC92A0EF3975DF0D1979F0890C79796F7F347F7E5EDBB543812EAB4E9CA6E",
+    "apps/campaign-helper-desktop/src/project-create-executor.ts": "A9DE045DDA16073037E0256F08196F40DA738A833C545AC9A49F82A26D2A74ED",
+    "tests/desktop-project-proposal-review.test.ts": "487C0A91BB256991248626A73D519A4441B4E5A306DE49AF31E7542FBBD560D3",
+    "tests/project-save-executor.test.ts": "7ABF68904DDA8C1AF1FFDAC9D90C6BA502C1C0B97C75003DB9C69F749AB4DEEF",
+    "tests/project-create-executor.test.ts": "1DDF902B88976CCFABE796C964B881B22D88E1CE8C3CFE63A16F261030603CE7",
+    "outputs/m357-stage11-project-create-ui-execute-reread-receipt.json": "15B4C0D08DF06A275929F303BF3B91FAD22CF617EDDA038CCF3156E1446BABA8"
+  },
+  "prohibitedActivity": {
+    "projectWrites": false,
+    "workspaceWrites": false,
+    "provider": false,
+    "credentials": false,
+    "browser": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "unrelatedProject": false,
+    "foreignState": false,
+    "assetDeletionOrCleanup": false
+  },
+  "validation": {
+    "databaseIntegrity": "PASS: 531 sources; 565 facts; 507 decisions; 521 trials; 40 research subjects; 26 milestones",
+    "workflow": "PASS: 10/16 gates; Stage 11 only active; no violations",
+    "focusedTests": "PASS: 4 files; 97 tests, including 72 KB queries, active-slice, project-create UI review, and project-save executor coverage",
+    "readOnlySourceAudit": "PASS: current App handlers, project-store, project proposal session, create/save adapters and executors, receipts, tests, roadmap, active card, and KB were reread",
+    "execution": "NONE: M358 executed no producer and made no project, workspace, browser, provider, credential, Foundry, player-password, deletion, cleanup, or foreign-state mutation"
+  },
+  "doesNotProve": [
+    "generic Stage 11 acceptance",
+    "ordinary project save UI integration",
+    "project save-as or rename UI integration",
+    "asset or recovery UI integration",
+    "Foundry execution or active-GM authority",
+    "Ready-to-Play"
+  ]
+}

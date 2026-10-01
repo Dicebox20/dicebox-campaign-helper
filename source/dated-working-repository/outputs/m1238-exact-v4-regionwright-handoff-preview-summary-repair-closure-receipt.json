@@ -1,0 +1,63 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1238",
+  "operation": "regionwright.handoff.preview-summary-contract.repair",
+  "evidenceClass": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "authority": "canonical campaign package regionPlans and regionwrightHandoff",
+  "canonicalPackage": {
+    "path": "packages/dicebox-foundry/ascendancy-campaign-package.json",
+    "bytes": 159683,
+    "sha256": "1DD01CD3391A9C0687E64E5D2F7311EFE09D1E614AC9B5737355F3B42135DBE5",
+    "regionwrightSummary": {
+      "popupBehaviorCount": 5,
+      "cooperativeRegionBindingCount": 6,
+      "finalCoreBindingCount": 7,
+      "teleportBehaviorCount": 5,
+      "totalRegionwrightBehaviors": 22
+    }
+  },
+  "changedSources": [
+    {
+      "path": "C:/Users/rujie/Documents/Region Editor/premium/scripts/ascendancy-live-installer.js",
+      "bytes": 23900,
+      "sha256": "10055CD95FC30B2B496E68BDFCD4215B71B615B63D1A55FB5B9DA03887535CC8",
+      "change": "Adds handoffSummaryFor(packageData), spreads package-derived summary fields into installer and audit receipts, and renders the preview dialog from returned summary fields."
+    },
+    {
+      "path": "work/foundry-fixture-data-v4/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
+      "bytes": 23900,
+      "sha256": "10055CD95FC30B2B496E68BDFCD4215B71B615B63D1A55FB5B9DA03887535CC8",
+      "change": "Exact v4 staged copy mirrors the external source byte-for-byte."
+    }
+  ],
+  "preservedContracts": {
+    "expectedRegionwrightBehaviorCount": 22,
+    "expectedTeleportPassCount": 5,
+    "noWriteSemanticsPreserved": true,
+    "exactRuntimeAndActiveGMGatesPreserved": true,
+    "previewApprovalApplyGatesPreserved": true,
+    "foreignStatePreserved": true,
+    "noRuntimeOrBrowserAction": true,
+    "noReload": true,
+    "balladTouched": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedTest": "npm test -- tests/regionwright-handoff-preview-contract.test.ts",
+    "focusedTestResult": "PASS 1 file / 1 test",
+    "packageTypecheck": "PASS npm run build:packages",
+    "stagedSyntax": "PASS node --check",
+    "sourceSyntax": "PASS node --check",
+    "sourceStagedParity": "PASS exact bytes and SHA-256",
+    "activeChecklistJson": "PASS parsed",
+    "workflowCheck": "PASS score 69, 11/16 gates, readyClaim false"
+  },
+  "blockers": [
+    "M1235 zero Regionwright behaviors and zero teleport passes remain valid live blocker evidence and were not normalized or retried.",
+    "M1237 served/loaded post-M1236 identity remains unproven; a separate hard-reload or equivalent source-identity boundary is required before relying on the repaired preview in the live client.",
+    "No local source repair certifies runtime behavior, persistent-world RegionBehavior state, player acceptance, Stage 12, or Ready-to-Play."
+  ],
+  "nextRequiredBoundary": "Rebuild and verify the KB for M1238 closure, then authorize one separate exact-v4 source-identity/hard-reload boundary before any new preview or approval/apply decision."
+}

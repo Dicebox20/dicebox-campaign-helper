@@ -1,0 +1,49 @@
+{
+  "operation": "dicebox.stage12.m1054.semantic-align-relationship-removal.closure",
+  "status": "PASS",
+  "milestone": "M1054",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "F-M1053-CLOSURE",
+    "F-M1047",
+    "F-063",
+    "F-014",
+    "D-M1053-STAGE12-POST-COLOR-BREADTH-RECONCILIATION-CLOSURE",
+    "D-M1054-STAGE12-SEMANTIC-ALIGN-RELATIONSHIP-REMOVAL"
+  ],
+  "changedPaths": [
+    "packages/dicebox-scene/src/commands.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/scene-command-spine.test.ts",
+    "tests/desktop-scene-model.test.ts",
+    "tests/desktop-proposal-application.test.ts"
+  ],
+  "validation": {
+    "typedCommand": "PASS: remove-relationship requires exact current revision, stable relationship ID, existing align relationship, and human provenance.",
+    "preservation": "PASS: removal changes only the selected relationship; every entity and every unrelated relationship remains unchanged.",
+    "failClosed": "PASS: stale, malformed, unknown, invalid-document, and unsupported relationship targets reject.",
+    "humanLifecycle": "PASS: Inspector preview persists only through the existing human proposal session; approval, Apply, authoritative hash reread, undo, and redo remain required.",
+    "focusedTests": "PASS: 6 files, 71 tests.",
+    "packageBuild": "PASS: root package type-check and desktop production build.",
+    "workflowCheck": "PASS: 11/16 gates, zero violations, scene-authoring-breadth active, readyClaim false.",
+    "diffCheck": "PASS: git diff --check.",
+    "authoritativeReread": "PASS: no renderer transform, Blueprint promotion, native mapping, project persistence schema change, runtime, Foundry, provider, credential, account, or player-password action occurred."
+  },
+  "observation": {
+    "localAuthority": "M1054 completes the bounded local align-relationship lifecycle with exact typed removal, human preview/Apply/reread, and reversible history while preserving entities and unrelated relationships.",
+    "crossPlaneBoundary": "Spatial Blueprint remains geometry authority; M7 native placeable plans/runtime readback and vision-assisted overlay promotion remain distinct; M1054 does not widen into native/live behavior.",
+    "nextGap": "M1055: read-only reconcile the completed M1039-M1054 local Scene spine against the remaining Stage 12 checklist and cross-plane authority before selecting further implementation.",
+    "certificationBoundary": "Stage 12 remains active and non-certifying; Ready-to-Play remains false; no live Foundry behavior or native packaged filesystem persistence is claimed."
+  },
+  "doesNotProve": [
+    "broad Stage 12 acceptance",
+    "Walls/doors/Regions/native Tiles/lights/notes authoring breadth",
+    "vision-assisted overlay correction or Blueprint promotion",
+    "native Foundry mapping",
+    "live Foundry behavior",
+    "Ready-to-Play",
+    "native packaged filesystem persistence"
+  ],
+  "nextAction": "Perform only M1055: read-only reconcile the completed M1039-M1054 local Scene spine against the remaining Stage 12 checklist and cross-plane authority before selecting further implementation."
+}

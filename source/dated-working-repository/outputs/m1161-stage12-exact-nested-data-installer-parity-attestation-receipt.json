@@ -1,0 +1,44 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1161-exact-nested-data-installer-parity-attestation",
+  "milestone": "M1161",
+  "status": "PASS_M1161_EXACT_NESTED_DATA_SOURCE_STAGED_PARITY",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.exact-nested-data-installer-parity.attest",
+  "stageUpdate": {
+    "operation": "foundry.module.update",
+    "status": "PASS",
+    "destinationRoot": "work/foundry-fixture-data-v2/Data",
+    "packageId": "dicebox-campaign-helper",
+    "noWorldMutation": true,
+    "updateCount": 1
+  },
+  "sourceStagedComparison": [
+    { "relativePath": "module.json", "sourceSha256": "CA1E2B51434890902B4E8D8C8406C6111A40733210A0DB1BC395DD9CE6C6CC13", "stagedSha256": "CA1E2B51434890902B4E8D8C8406C6111A40733210A0DB1BC395DD9CE6C6CC13", "sourceBytes": 684, "stagedBytes": 684, "parity": true },
+    { "relativePath": "src/module.js", "sourceSha256": "8B2B819C1D5E8358749834F18C9C1D59846EF283DA17103463ABF2A94C3C3CD8", "stagedSha256": "8B2B819C1D5E8358749834F18C9C1D59846EF283DA17103463ABF2A94C3C3CD8", "sourceBytes": 102481, "stagedBytes": 102481, "parity": true },
+    { "relativePath": "src/ascendancy-installer.js", "sourceSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5", "stagedSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5", "sourceBytes": 31352, "stagedBytes": 31352, "parity": true },
+    { "relativePath": "src/foundry-live-bridge.js", "sourceSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87", "stagedSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87", "sourceBytes": 12288, "stagedBytes": 12288, "parity": true },
+    { "relativePath": "src/program-scene-vertical-slice.js", "sourceSha256": "3A063C2DEC5A4BF7AD7B6B13CE602FF4EDCF32071C419E3AD7C5D265274113AB", "stagedSha256": "3A063C2DEC5A4BF7AD7B6B13CE602FF4EDCF32071C419E3AD7C5D265274113AB", "sourceBytes": 51394, "stagedBytes": 51394, "parity": true },
+    { "relativePath": "ascendancy-campaign-package.json", "sourceSha256": "2F257477F02AAC0A60B01D6C0AEFEF738484BE5C437A708BD293945CCF90645F", "stagedSha256": "2F257477F02AAC0A60B01D6C0AEFEF738484BE5C437A708BD293945CCF90645F", "sourceBytes": 159926, "stagedBytes": 159926, "parity": true }
+  ],
+  "gate": {
+    "currentVerifier": "m1159-5-of-5-pass",
+    "nestedDataRoot": "pass",
+    "sourceStagedParity": "PASS 6/6",
+    "currentInstallerParity": "pass",
+    "runtimeReopened": false,
+    "installerInvoked": false,
+    "documentsMutated": false,
+    "assetsMutated": false,
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "Current installer served-byte parity remains unobserved.",
+    "A current post-M1158 runtime/profile observation and authoritative campaign reread remain unproved.",
+    "Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1162: one allowlisted served-byte GET for current ascendancy-installer.js against the m1159 verifier; do not invoke installer or reopen browser/runtime."
+}

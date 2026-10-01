@@ -1,0 +1,129 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1190-stage12-current-m1188-served-byte-attestation-closure",
+  "operation": "stage12.current-m1188-served-byte-attestation.m1190.closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1190",
+  "status": "CLOSED_M1190_SERVED_PARITY_PASS",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-09-06",
+  "summary": "One exact owner-controlled disposable fixture server was started without a browser or login. One allowlisted GET was made for each of the current M1188 installer, module bootstrap, and campaign package paths; all returned HTTP 200 and served bytes matched both source and nested-Data stage bytes by length and SHA-256.",
+  "databaseFirst": {
+    "status": "PASS",
+    "queries": [
+      "Subject 41 current M1190 next step",
+      "M1190 served-byte authorization fact and decision",
+      "M1189 exact nested-Data parity closure",
+      "M1188 current artifact specification and verifier"
+    ],
+    "reconciliation": "The authorized M1190 boundary was limited to three exact allowlisted served paths. The browser, login, Foundry controls, installer, documents, assets, and world state were not used or mutated."
+  },
+  "servedAttestation": {
+    "baseUrl": "http://127.0.0.1:30001",
+    "packageId": "dicebox-campaign-helper",
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "dnd5eVersion": "5.3.3",
+    "redirectPolicy": "manual",
+    "requestPolicy": "one exact GET per allowlisted path; no retry",
+    "requests": [
+      {
+        "path": "/modules/dicebox-campaign-helper/src/ascendancy-installer.js",
+        "requestCount": 1,
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "sourceBytes": 61132,
+        "stagedBytes": 61132,
+        "servedBytes": 61132,
+        "sourceSha256": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+        "stagedSha256": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+        "servedSha256": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+        "pass": true
+      },
+      {
+        "path": "/modules/dicebox-campaign-helper/src/module.js",
+        "requestCount": 1,
+        "status": 200,
+        "contentType": "text/javascript; charset=utf-8",
+        "sourceBytes": 105330,
+        "stagedBytes": 105330,
+        "servedBytes": 105330,
+        "sourceSha256": "9c0ef3ebe7342c8612dd303297bbc7534234705970eb3d325133ec33316110a1",
+        "stagedSha256": "9c0ef3ebe7342c8612dd303297bbc7534234705970eb3d325133ec33316110a1",
+        "servedSha256": "9c0ef3ebe7342c8612dd303297bbc7534234705970eb3d325133ec33316110a1",
+        "pass": true
+      },
+      {
+        "path": "/modules/dicebox-campaign-helper/ascendancy-campaign-package.json",
+        "requestCount": 1,
+        "status": 200,
+        "contentType": "application/json; charset=utf-8",
+        "sourceBytes": 159926,
+        "stagedBytes": 159926,
+        "servedBytes": 159926,
+        "sourceSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+        "stagedSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+        "servedSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+        "pass": true
+      }
+    ],
+    "matchedCount": 3,
+    "mismatchCount": 0,
+    "status": "PASS"
+  },
+  "scopeDisposition": {
+    "runtimeStarted": true,
+    "browserUsed": false,
+    "manualGamemasterJoin": false,
+    "servedGet": true,
+    "installerInvoked": false,
+    "documentsOrAssetsMutated": false,
+    "rawStorageInspected": false,
+    "tramCoreTouched": false,
+    "playerTouched": false,
+    "balladTouched": false,
+    "foreignStatePreserved": true,
+    "persistentWorldPromotion": "NOT_ATTEMPTED",
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "fixtureLifecycle": {
+    "startStatus": "PASS",
+    "startPid": 6760,
+    "startPort": 30001,
+    "startWorldDocumentWrites": 0,
+    "startBalladTouched": false,
+    "normalStop": "required-force-fallback",
+    "forcedStop": "PASS",
+    "finalStatus": "STOPPED",
+    "finalListeners": [],
+    "finalWorldDocumentWrites": 0,
+    "finalBalladTouched": false,
+    "authoritativeReread": "STOPPED/no-listener/zero-write/no-Ballad"
+  },
+  "currentM1188Identity": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1188",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1188",
+    "specSha256": "56d1015c21fef7189fe0295913b39a0c4d395cb9cccdc68a720e43ba29a8a493",
+    "installerSha256": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+    "moduleSha256": "9c0ef3ebe7342c8612dd303297bbc7534234705970eb3d325133ec33316110a1",
+    "packageSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f"
+  },
+  "decision": {
+    "status": "SERVED_PARITY_PASS_RUNTIME_LOADED_IDENTITY_REMAINS_SEPARATE",
+    "reason": "Current M1188 source, nested-Data stage, and selected served bytes are identical. Served-byte identity does not prove that Foundry loaded the module, that the current session has active-GM authority, or that persistent-world promotion and post-restart completeness are proven.",
+    "nextBoundary": "M1191: one exact-Gamemaster read-only RuntimeProfile/artifact-descriptor observation with no installer or document action."
+  },
+  "remainingBlockers": [
+    "Loaded-byte identity and current-session active-GM diagnostic evidence must be reread after the M1188 served parity pass.",
+    "Persistent-world commit, post-restart authoritative completeness, and execution authority remain unproven.",
+    "Tram/Core final maps, player/Regionwright behavior, player acceptance, Stage 12 acceptance, and Ready-to-Play remain unproven."
+  ],
+  "provenance": [
+    "outputs/m1189-stage12-exact-nested-data-m1188-parity-closure-receipt.json",
+    "outputs/m1188-current-foundry-artifact-spec-receipt.json",
+    "tools/update-foundry-module.mjs",
+    "tools/foundry-fixture-supervisor.mjs",
+    "work/foundry-fixture-data-v2/Data"
+  ]
+}

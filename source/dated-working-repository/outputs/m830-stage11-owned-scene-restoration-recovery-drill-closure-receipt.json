@@ -1,0 +1,57 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M830",
+  "operation": "program-scene.apply-recovery-drill",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3",
+    "user": "Gamemaster",
+    "port": 30003
+  },
+  "preview": {
+    "status": "PASS",
+    "noWrite": true,
+    "planSha256": "10c4925a5eabdb7c0f6537440d2f083b1c999ca27fd6719f61f36eafed946c1e",
+    "assetSha256": "7adeb330329550eb18753187e8dbf001815bf22e056f14bc2cdc76188b0cf852",
+    "assetBytes": 20655,
+    "existingComplete": false
+  },
+  "apply": {
+    "status": "UNKNOWN",
+    "sceneCreated": true,
+    "responseDisposition": "intentionally-discarded-after-commit",
+    "retryAllowed": false
+  },
+  "recovery": {
+    "status": "PASS",
+    "authoritativeReread": true,
+    "recoveredFromUnknown": true,
+    "retryPerformed": false,
+    "foreignStatePreserved": true,
+    "sceneStableId": "dbx:scene:desktop-shell-fixture",
+    "sceneRuntimeId": "Scene.UpjxmDyJLxrcIDUD",
+    "initialLevel": 1,
+    "walls": 5,
+    "regions": 2,
+    "tiles": 1
+  },
+  "shutdown": {
+    "status": "STOPPED",
+    "listeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "stopMethod": "exact-owner-force-fallback-after-normal-termination-refusal"
+  },
+  "limits": {
+    "onlyFixedProgramSceneControlUsed": true,
+    "noM819PredicateObservation": true,
+    "noInverseControl": true,
+    "noOtherControl": true,
+    "stage11Accepted": false,
+    "stage12Entered": false,
+    "readyClaim": false
+  }
+}

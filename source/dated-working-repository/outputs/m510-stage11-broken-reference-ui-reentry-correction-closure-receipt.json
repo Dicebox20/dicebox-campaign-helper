@@ -1,0 +1,54 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m510-stage11-broken-reference-ui-reentry-correction-closure-2026-08-29",
+  "milestone": "M510",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "readyClaim": false,
+  "scope": "Strict native read-only reuse of the exact existing broken-reference UI lifecycle fixture topology, with drift and reparse refusal",
+  "knowledgeBase": {
+    "queryMode": "read-only",
+    "relevantFacts": ["F-719", "F-718", "F-717"],
+    "relevantTrials": ["T-662", "T-661"],
+    "relevantDecisions": ["D-660", "D-659"]
+  },
+  "implementation": {
+    "nativeSource": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs",
+    "staticSource": "tests/broken-reference-ui-selftest.test.ts",
+    "sourceSha256": "A18EF97F73AC22A4C6D08912FAB1475F3D53810936B0EAA6FD96C55AEF88E64B",
+    "staticSourceSha256": "B3449A6DA1A60C84279BC6EF7B04E3DB4103221B4062412C6239D68E71D2DD0F",
+    "changes": [
+      "Added a native reuse branch that rereads and accepts only the exact existing project.json, role-mismatch Scenes, handout registration, valid asset blob, workspace display entry, absent backup, and project-directory topology.",
+      "Added primary and asset reparse-point rejection; all mismatch, unreadable, drifted, foreign project-local, or unknown fixture state returns PROJECT_FIXTURE_EXISTS without writes.",
+      "Added byte/workspace preservation and primary-drift regression coverage plus a Windows junction primary regression test.",
+      "Kept the intentional BACKGROUND_ASSET_ROLE_MISMATCH inspection BLOCKED and the existing App session/approval/apply/reread/no-retry/no-Foundry gates unchanged."
+    ]
+  },
+  "validation": {
+    "nativeFocusedTests": "PASS: 2 tests",
+    "vitestFocusedTests": "PASS: 3 files / 18 tests",
+    "typescript": "PASS: npx tsc --noEmit --project apps/campaign-helper-desktop/tsconfig.json",
+    "diffCheck": "PASS: git diff --check",
+    "hiddenReview": {
+      "worker": "Nash",
+      "model": "gpt-5.6-luna",
+      "reasoning": "high",
+      "status": "PASS",
+      "finding": "No actionable blockers; exact reuse, drift blocking, reparse refusal, preservation, and intentional role-mismatch blocking verified."
+    },
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "fixtureMutation": false,
+    "sessionMutation": false,
+    "recoveryOrApply": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false
+  },
+  "nextBoundary": {
+    "milestone": "M511",
+    "scope": "One explicit-mode debug package build with artifact and process reread only, using VITE_DBX_PROJECT_SELF_TEST=broken-reference-detach-ui-execute and VITE_DBX_PROJECT_SELF_TEST_EXIT=1.",
+    "prohibited": ["launch", "capture", "second build", "retry", "fixture reset", "deletion", "cleanup", "session transition", "approval", "apply", "recovery", "provider", "credential", "player password", "Foundry"]
+  },
+  "doesNotProve": ["packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

@@ -1,0 +1,1855 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m264-optional-modules-20260827T183041295Z",
+  "operation": "foundry.fixture.optional-module-stage",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-08-27T18:30:41.295Z",
+  "target": {
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "worldId": "dbx-test-world"
+  },
+  "sourceDataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Data",
+  "destinationDataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Data",
+  "allowedPackages": [
+    {
+      "id": "dae",
+      "version": "14.0.13"
+    },
+    {
+      "id": "midi-qol",
+      "version": "14.0.11"
+    }
+  ],
+  "packages": [
+    {
+      "id": "dae",
+      "version": "14.0.13",
+      "sourceRoot": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Data\\modules\\dae",
+      "destinationRoot": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Data\\modules\\dae",
+      "sourceManifest": {
+        "path": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Data\\modules\\dae\\module.json",
+        "id": "dae",
+        "version": "14.0.13",
+        "sha256": "1C3DDFC329779EC9D842E05D53A0EBA8082E07419DF27E34F4823E0AA7F71DC2",
+        "byteLength": 2719
+      },
+      "destinationManifest": {
+        "path": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Data\\modules\\dae\\module.json",
+        "id": "dae",
+        "version": "14.0.13",
+        "sha256": "1C3DDFC329779EC9D842E05D53A0EBA8082E07419DF27E34F4823E0AA7F71DC2",
+        "byteLength": 2719
+      },
+      "sourceInventory": {
+        "files": [
+          {
+            "path": "css/dae.css",
+            "bytes": 14767,
+            "sha256": "E685C9A3A3ABF47977FA48BA3D4342BC6A094C5E61AA28CB8671610B27D93B7F"
+          },
+          {
+            "path": "css/field-browser.css",
+            "bytes": 2326,
+            "sha256": "83DEBDD6E41BF9A1098413E739B51F41146F78F1DACD834A147A197093ACDE24"
+          },
+          {
+            "path": "dae.js",
+            "bytes": 13889,
+            "sha256": "13DD8B5CAFA2B4C6A777391584254187B75D2BE362763962C7E646E6F569B7CC"
+          },
+          {
+            "path": "dae.js.map",
+            "bytes": 10285,
+            "sha256": "18CD44695805EE68C52B07BE774E3A0CC353706B5F7CCBC8585B39E82C7CE7A7"
+          },
+          {
+            "path": "data/DAEConditionalEffects.json",
+            "bytes": 4240,
+            "sha256": "E15E08D8BE0D80A9A01AD76E97D47536257295DA935700DDC6FE9604252F3AAB"
+          },
+          {
+            "path": "data/field-data.json",
+            "bytes": 22963,
+            "sha256": "2D544DB8122C4CCCDEB4440948E986834376412BC0A8F9C9853A7D7268C20CE6"
+          },
+          {
+            "path": "globals.js",
+            "bytes": 11,
+            "sha256": "8E609BB71C20B858C77F0E9F90BB1319DB8477B13F9F965F1A1E18524BF50881"
+          },
+          {
+            "path": "globals.js.map",
+            "bytes": 106,
+            "sha256": "F1B41CFB5937F3DE6C3BBF7A3A08EB27E442B163F93B62BFA51274624A9A4FA0"
+          },
+          {
+            "path": "icons/half-health.webp",
+            "bytes": 10952,
+            "sha256": "F467262A82A4E55889515BA2086B85C367C7C14593466BB0C706D6F3971D64D2"
+          },
+          {
+            "path": "lang/cn.json",
+            "bytes": 9548,
+            "sha256": "DD568AA7C35894FB000B6188EE67AF031CBAA289DEB8C96A6852B78CD6BA6AE7"
+          },
+          {
+            "path": "lang/cs.json",
+            "bytes": 103601,
+            "sha256": "724F7ADB06A6FCB588F551C2E763D577561844EAB462EB04077CB2C6ADA85690"
+          },
+          {
+            "path": "lang/de.json",
+            "bytes": 15190,
+            "sha256": "2624FC5F207EDCAB9A8B43F0D4502B9FA7D49E608CBC2D4CE9F618BC403D76BB"
+          },
+          {
+            "path": "lang/en.json",
+            "bytes": 97864,
+            "sha256": "0175AE889187BFF2411487B2E72750841FCF1715530AB31D03B80392A350F2BF"
+          },
+          {
+            "path": "lang/fr.json",
+            "bytes": 16945,
+            "sha256": "AFF74A4C22FECF109B1B6441517B141CF44A742C3A042120205B1E0919992D32"
+          },
+          {
+            "path": "lang/it.json",
+            "bytes": 19556,
+            "sha256": "44EFE0DC7F2824C330FEF1855E87BC2570E3AF9A51DF51CD8C56636D8D2430C5"
+          },
+          {
+            "path": "lang/ja.json",
+            "bytes": 21742,
+            "sha256": "EEFDD995E818499608AF3A243C689CED44373CA29B4EB81DD561C380D4CB3CB8"
+          },
+          {
+            "path": "lang/ko.json",
+            "bytes": 13703,
+            "sha256": "B12B23C22B17C9521ADAEA9B2A5C48C61B57AFE7B837E695667C6AD223C26D28"
+          },
+          {
+            "path": "lang/pl.json",
+            "bytes": 12241,
+            "sha256": "0F5930BC8E8AA331E1839996023192A443D81178F16436EA98DB824E683338B8"
+          },
+          {
+            "path": "lang/pt-BR.json",
+            "bytes": 95626,
+            "sha256": "81A1378A5C58BB1FD810A55E89C274720E28D2AF4739B1F416510A271C26973F"
+          },
+          {
+            "path": "libs/FormBuilder.js",
+            "bytes": 18880,
+            "sha256": "5DF2FFA18630E7342F6306109EFE2A0F4A3BA710A1CC03C304194AF070E155E7"
+          },
+          {
+            "path": "libs/FormBuilder.js.map",
+            "bytes": 18483,
+            "sha256": "5E017F78663F70DE1DA6E781B9B0E313FA809CA5393E3850FC4940499616B4DB"
+          },
+          {
+            "path": "libs/tokenizer.min copy.js",
+            "bytes": 4210,
+            "sha256": "7FFFECC86C4D863BF34D9D89308B3DFEFAB0CB4762E3AE399882D4B06B1E95C7"
+          },
+          {
+            "path": "libs/tokenizer.min copy.js.map",
+            "bytes": 6634,
+            "sha256": "A54AA212E528D5C441B62BA7CFE9F72FE9CFC38B96ABE305716F0F89DE6848E7"
+          },
+          {
+            "path": "libs/tokenizer.min.js",
+            "bytes": 4213,
+            "sha256": "73D8E708E6ABBCE6F2746A7CB021DC693B7E3EEE3D4C6F090B033195C142AF84"
+          },
+          {
+            "path": "libs/TokenizeThis.js",
+            "bytes": 11710,
+            "sha256": "560B98E6FFD3B8F6EE3C6EB9C3E4E10723379DF2CD9F82C2D7562153C6146091"
+          },
+          {
+            "path": "libs/TokenizeThis.js.map",
+            "bytes": 7217,
+            "sha256": "E39663E59BA17CA216D0BF7E660B5D13206768D59782C8A041FAE0BDCD248DFE"
+          },
+          {
+            "path": "module/API/api.js",
+            "bytes": 3982,
+            "sha256": "85B28378CF3EB4261790401B0AFE959C5ADFC9FC1D9D204BE48F873CF3F4D3C2"
+          },
+          {
+            "path": "module/apps/ActiveEffects.js",
+            "bytes": 10262,
+            "sha256": "9F48A70A811D632D9A676445725BE47F3E57F6B2D8928827160D0CAACAB085FC"
+          },
+          {
+            "path": "module/apps/BooleanFormulaField.js",
+            "bytes": 1144,
+            "sha256": "20AC93D35790F2DE4E8DA4696256F26BE943F112DC8C529BD895EAD81ACC8B78"
+          },
+          {
+            "path": "module/apps/DAEActiveEffectConfig.js",
+            "bytes": 35655,
+            "sha256": "B34179DB075135D91628F7B11CEBE11BE0F5BEE508F5329BCF01BBE9EEC4C6A8"
+          },
+          {
+            "path": "module/apps/DIMEditor.js",
+            "bytes": 5449,
+            "sha256": "08838AEC45E6D42329E78545958150567B99713FC24059D61DCF0B7CB6E5A897"
+          },
+          {
+            "path": "module/apps/FieldBrowser.js",
+            "bytes": 18837,
+            "sha256": "40F1568DD84D8EAFF4ACBBC84FA738EA227BA52533BAF2D97490C129538FCB50"
+          },
+          {
+            "path": "module/atlMigration.js",
+            "bytes": 11186,
+            "sha256": "116FD765648F5D87056428BFD89D7BC4805F27235F2CB22AA05E55A0E71E28EF"
+          },
+          {
+            "path": "module/dae.js",
+            "bytes": 134599,
+            "sha256": "42BEDB9DC0B2FB75676889EF53831C0A4C56B849C5BE12BB1874511E7EEE71FA"
+          },
+          {
+            "path": "module/daeMacros.js",
+            "bytes": 12775,
+            "sha256": "B160938121AEE4387216B8592C98681AD9C69DC750BDE5B6CD48D0A9A5FF7976"
+          },
+          {
+            "path": "module/GMAction.js",
+            "bytes": 23802,
+            "sha256": "7454B7B7550BB5339F7D3DB9FEB7979E8606F6663B12FA44E6B9BE979D1F0427"
+          },
+          {
+            "path": "module/lib/changeHandlerRegistry.js",
+            "bytes": 1719,
+            "sha256": "CE0461D49E15BF86C4DCE50D911F2ACD8742A13FCE9F798B29FFAF1CF55A2025"
+          },
+          {
+            "path": "module/lib/effectFiltering.js",
+            "bytes": 1114,
+            "sha256": "6A8F88083C641D6FFB88B4F622F01BC34325915EED6846D78CDC05B9A117BBDD"
+          },
+          {
+            "path": "module/lib/macroResolution.js",
+            "bytes": 6894,
+            "sha256": "5A7008E0274258B4F6BD66A59CAA020B22C93749E5ABDB9A618F6266F9AB1416"
+          },
+          {
+            "path": "module/lib/stackingPolicy.js",
+            "bytes": 4299,
+            "sha256": "8BBBFA6EA8C85A1A821E5830D72752FC69C7C0E1CC247034659BF30C1BBD7601"
+          },
+          {
+            "path": "module/migration.js",
+            "bytes": 17725,
+            "sha256": "B62A9F220DE34D980950DCE6E242BC58C14CF8C960110FB1C2FC5ECAE8D4E4DE"
+          },
+          {
+            "path": "module/patching.js",
+            "bytes": 3838,
+            "sha256": "ECEB408AF72E5CEA9810C5DC6C241181CFE90B7A7B26CCDA5661B58FEA2BF4EE"
+          },
+          {
+            "path": "module/preloadTemplates.js",
+            "bytes": 265,
+            "sha256": "7907953D554937E6B93293792E9643E975AD6AC8B0F15B445BF9D1805146676D"
+          },
+          {
+            "path": "module/settings.js",
+            "bytes": 8239,
+            "sha256": "7C59AE8BF22D1CF805B448733DB12292D4FA4BC223B25AEB2FCB1C68FF49CA04"
+          },
+          {
+            "path": "module/specialDurations.js",
+            "bytes": 18134,
+            "sha256": "731590F2DCCFE29798F8A5D0425175FD74832A77026333AEE3B81AE5BE25991F"
+          },
+          {
+            "path": "module/Systems/DAEdnd5e.js",
+            "bytes": 87496,
+            "sha256": "82047492E7D020831F5E85D70A52FB89649585223F4B4C157E5BFC7516505576"
+          },
+          {
+            "path": "module/Systems/DAESystem.js",
+            "bytes": 32130,
+            "sha256": "F20B7F9A44F1868304C8551C49387A6749F14E67B793A110E68E7066D3769A13"
+          },
+          {
+            "path": "module.json",
+            "bytes": 2719,
+            "sha256": "1C3DDFC329779EC9D842E05D53A0EBA8082E07419DF27E34F4823E0AA7F71DC2"
+          },
+          {
+            "path": "templates/.gitkeep",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "templates/ActiveEffects.hbs",
+            "bytes": 4767,
+            "sha256": "10266C1A12CB239C18E1D437148AFD7AF323A2508BEF183D8D486B7DEE6878A5"
+          },
+          {
+            "path": "templates/DAESheetConfig/DAE.hbs",
+            "bytes": 6420,
+            "sha256": "BFDBF64D14D28507AE5244EAA8EC9B691763EE3DA9A883F77E1C5ED37EA4308C"
+          },
+          {
+            "path": "templates/DIMEditor.hbs",
+            "bytes": 338,
+            "sha256": "C3BBD51837F45FED4E44E2B3DB0E47288CC0F336D1BA8E320815A0EE797359BC"
+          }
+        ],
+        "fileCount": 52,
+        "byteLength": 1010690
+      },
+      "destinationInventory": {
+        "files": [
+          {
+            "path": "css/dae.css",
+            "bytes": 14767,
+            "sha256": "E685C9A3A3ABF47977FA48BA3D4342BC6A094C5E61AA28CB8671610B27D93B7F"
+          },
+          {
+            "path": "css/field-browser.css",
+            "bytes": 2326,
+            "sha256": "83DEBDD6E41BF9A1098413E739B51F41146F78F1DACD834A147A197093ACDE24"
+          },
+          {
+            "path": "dae.js",
+            "bytes": 13889,
+            "sha256": "13DD8B5CAFA2B4C6A777391584254187B75D2BE362763962C7E646E6F569B7CC"
+          },
+          {
+            "path": "dae.js.map",
+            "bytes": 10285,
+            "sha256": "18CD44695805EE68C52B07BE774E3A0CC353706B5F7CCBC8585B39E82C7CE7A7"
+          },
+          {
+            "path": "data/DAEConditionalEffects.json",
+            "bytes": 4240,
+            "sha256": "E15E08D8BE0D80A9A01AD76E97D47536257295DA935700DDC6FE9604252F3AAB"
+          },
+          {
+            "path": "data/field-data.json",
+            "bytes": 22963,
+            "sha256": "2D544DB8122C4CCCDEB4440948E986834376412BC0A8F9C9853A7D7268C20CE6"
+          },
+          {
+            "path": "globals.js",
+            "bytes": 11,
+            "sha256": "8E609BB71C20B858C77F0E9F90BB1319DB8477B13F9F965F1A1E18524BF50881"
+          },
+          {
+            "path": "globals.js.map",
+            "bytes": 106,
+            "sha256": "F1B41CFB5937F3DE6C3BBF7A3A08EB27E442B163F93B62BFA51274624A9A4FA0"
+          },
+          {
+            "path": "icons/half-health.webp",
+            "bytes": 10952,
+            "sha256": "F467262A82A4E55889515BA2086B85C367C7C14593466BB0C706D6F3971D64D2"
+          },
+          {
+            "path": "lang/cn.json",
+            "bytes": 9548,
+            "sha256": "DD568AA7C35894FB000B6188EE67AF031CBAA289DEB8C96A6852B78CD6BA6AE7"
+          },
+          {
+            "path": "lang/cs.json",
+            "bytes": 103601,
+            "sha256": "724F7ADB06A6FCB588F551C2E763D577561844EAB462EB04077CB2C6ADA85690"
+          },
+          {
+            "path": "lang/de.json",
+            "bytes": 15190,
+            "sha256": "2624FC5F207EDCAB9A8B43F0D4502B9FA7D49E608CBC2D4CE9F618BC403D76BB"
+          },
+          {
+            "path": "lang/en.json",
+            "bytes": 97864,
+            "sha256": "0175AE889187BFF2411487B2E72750841FCF1715530AB31D03B80392A350F2BF"
+          },
+          {
+            "path": "lang/fr.json",
+            "bytes": 16945,
+            "sha256": "AFF74A4C22FECF109B1B6441517B141CF44A742C3A042120205B1E0919992D32"
+          },
+          {
+            "path": "lang/it.json",
+            "bytes": 19556,
+            "sha256": "44EFE0DC7F2824C330FEF1855E87BC2570E3AF9A51DF51CD8C56636D8D2430C5"
+          },
+          {
+            "path": "lang/ja.json",
+            "bytes": 21742,
+            "sha256": "EEFDD995E818499608AF3A243C689CED44373CA29B4EB81DD561C380D4CB3CB8"
+          },
+          {
+            "path": "lang/ko.json",
+            "bytes": 13703,
+            "sha256": "B12B23C22B17C9521ADAEA9B2A5C48C61B57AFE7B837E695667C6AD223C26D28"
+          },
+          {
+            "path": "lang/pl.json",
+            "bytes": 12241,
+            "sha256": "0F5930BC8E8AA331E1839996023192A443D81178F16436EA98DB824E683338B8"
+          },
+          {
+            "path": "lang/pt-BR.json",
+            "bytes": 95626,
+            "sha256": "81A1378A5C58BB1FD810A55E89C274720E28D2AF4739B1F416510A271C26973F"
+          },
+          {
+            "path": "libs/FormBuilder.js",
+            "bytes": 18880,
+            "sha256": "5DF2FFA18630E7342F6306109EFE2A0F4A3BA710A1CC03C304194AF070E155E7"
+          },
+          {
+            "path": "libs/FormBuilder.js.map",
+            "bytes": 18483,
+            "sha256": "5E017F78663F70DE1DA6E781B9B0E313FA809CA5393E3850FC4940499616B4DB"
+          },
+          {
+            "path": "libs/tokenizer.min copy.js",
+            "bytes": 4210,
+            "sha256": "7FFFECC86C4D863BF34D9D89308B3DFEFAB0CB4762E3AE399882D4B06B1E95C7"
+          },
+          {
+            "path": "libs/tokenizer.min copy.js.map",
+            "bytes": 6634,
+            "sha256": "A54AA212E528D5C441B62BA7CFE9F72FE9CFC38B96ABE305716F0F89DE6848E7"
+          },
+          {
+            "path": "libs/tokenizer.min.js",
+            "bytes": 4213,
+            "sha256": "73D8E708E6ABBCE6F2746A7CB021DC693B7E3EEE3D4C6F090B033195C142AF84"
+          },
+          {
+            "path": "libs/TokenizeThis.js",
+            "bytes": 11710,
+            "sha256": "560B98E6FFD3B8F6EE3C6EB9C3E4E10723379DF2CD9F82C2D7562153C6146091"
+          },
+          {
+            "path": "libs/TokenizeThis.js.map",
+            "bytes": 7217,
+            "sha256": "E39663E59BA17CA216D0BF7E660B5D13206768D59782C8A041FAE0BDCD248DFE"
+          },
+          {
+            "path": "module/API/api.js",
+            "bytes": 3982,
+            "sha256": "85B28378CF3EB4261790401B0AFE959C5ADFC9FC1D9D204BE48F873CF3F4D3C2"
+          },
+          {
+            "path": "module/apps/ActiveEffects.js",
+            "bytes": 10262,
+            "sha256": "9F48A70A811D632D9A676445725BE47F3E57F6B2D8928827160D0CAACAB085FC"
+          },
+          {
+            "path": "module/apps/BooleanFormulaField.js",
+            "bytes": 1144,
+            "sha256": "20AC93D35790F2DE4E8DA4696256F26BE943F112DC8C529BD895EAD81ACC8B78"
+          },
+          {
+            "path": "module/apps/DAEActiveEffectConfig.js",
+            "bytes": 35655,
+            "sha256": "B34179DB075135D91628F7B11CEBE11BE0F5BEE508F5329BCF01BBE9EEC4C6A8"
+          },
+          {
+            "path": "module/apps/DIMEditor.js",
+            "bytes": 5449,
+            "sha256": "08838AEC45E6D42329E78545958150567B99713FC24059D61DCF0B7CB6E5A897"
+          },
+          {
+            "path": "module/apps/FieldBrowser.js",
+            "bytes": 18837,
+            "sha256": "40F1568DD84D8EAFF4ACBBC84FA738EA227BA52533BAF2D97490C129538FCB50"
+          },
+          {
+            "path": "module/atlMigration.js",
+            "bytes": 11186,
+            "sha256": "116FD765648F5D87056428BFD89D7BC4805F27235F2CB22AA05E55A0E71E28EF"
+          },
+          {
+            "path": "module/dae.js",
+            "bytes": 134599,
+            "sha256": "42BEDB9DC0B2FB75676889EF53831C0A4C56B849C5BE12BB1874511E7EEE71FA"
+          },
+          {
+            "path": "module/daeMacros.js",
+            "bytes": 12775,
+            "sha256": "B160938121AEE4387216B8592C98681AD9C69DC750BDE5B6CD48D0A9A5FF7976"
+          },
+          {
+            "path": "module/GMAction.js",
+            "bytes": 23802,
+            "sha256": "7454B7B7550BB5339F7D3DB9FEB7979E8606F6663B12FA44E6B9BE979D1F0427"
+          },
+          {
+            "path": "module/lib/changeHandlerRegistry.js",
+            "bytes": 1719,
+            "sha256": "CE0461D49E15BF86C4DCE50D911F2ACD8742A13FCE9F798B29FFAF1CF55A2025"
+          },
+          {
+            "path": "module/lib/effectFiltering.js",
+            "bytes": 1114,
+            "sha256": "6A8F88083C641D6FFB88B4F622F01BC34325915EED6846D78CDC05B9A117BBDD"
+          },
+          {
+            "path": "module/lib/macroResolution.js",
+            "bytes": 6894,
+            "sha256": "5A7008E0274258B4F6BD66A59CAA020B22C93749E5ABDB9A618F6266F9AB1416"
+          },
+          {
+            "path": "module/lib/stackingPolicy.js",
+            "bytes": 4299,
+            "sha256": "8BBBFA6EA8C85A1A821E5830D72752FC69C7C0E1CC247034659BF30C1BBD7601"
+          },
+          {
+            "path": "module/migration.js",
+            "bytes": 17725,
+            "sha256": "B62A9F220DE34D980950DCE6E242BC58C14CF8C960110FB1C2FC5ECAE8D4E4DE"
+          },
+          {
+            "path": "module/patching.js",
+            "bytes": 3838,
+            "sha256": "ECEB408AF72E5CEA9810C5DC6C241181CFE90B7A7B26CCDA5661B58FEA2BF4EE"
+          },
+          {
+            "path": "module/preloadTemplates.js",
+            "bytes": 265,
+            "sha256": "7907953D554937E6B93293792E9643E975AD6AC8B0F15B445BF9D1805146676D"
+          },
+          {
+            "path": "module/settings.js",
+            "bytes": 8239,
+            "sha256": "7C59AE8BF22D1CF805B448733DB12292D4FA4BC223B25AEB2FCB1C68FF49CA04"
+          },
+          {
+            "path": "module/specialDurations.js",
+            "bytes": 18134,
+            "sha256": "731590F2DCCFE29798F8A5D0425175FD74832A77026333AEE3B81AE5BE25991F"
+          },
+          {
+            "path": "module/Systems/DAEdnd5e.js",
+            "bytes": 87496,
+            "sha256": "82047492E7D020831F5E85D70A52FB89649585223F4B4C157E5BFC7516505576"
+          },
+          {
+            "path": "module/Systems/DAESystem.js",
+            "bytes": 32130,
+            "sha256": "F20B7F9A44F1868304C8551C49387A6749F14E67B793A110E68E7066D3769A13"
+          },
+          {
+            "path": "module.json",
+            "bytes": 2719,
+            "sha256": "1C3DDFC329779EC9D842E05D53A0EBA8082E07419DF27E34F4823E0AA7F71DC2"
+          },
+          {
+            "path": "templates/.gitkeep",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "templates/ActiveEffects.hbs",
+            "bytes": 4767,
+            "sha256": "10266C1A12CB239C18E1D437148AFD7AF323A2508BEF183D8D486B7DEE6878A5"
+          },
+          {
+            "path": "templates/DAESheetConfig/DAE.hbs",
+            "bytes": 6420,
+            "sha256": "BFDBF64D14D28507AE5244EAA8EC9B691763EE3DA9A883F77E1C5ED37EA4308C"
+          },
+          {
+            "path": "templates/DIMEditor.hbs",
+            "bytes": 338,
+            "sha256": "C3BBD51837F45FED4E44E2B3DB0E47288CC0F336D1BA8E320815A0EE797359BC"
+          }
+        ],
+        "fileCount": 52,
+        "byteLength": 1010690
+      },
+      "inventoryParity": true
+    },
+    {
+      "id": "midi-qol",
+      "version": "14.0.11",
+      "sourceRoot": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Data\\modules\\midi-qol",
+      "destinationRoot": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Data\\modules\\midi-qol",
+      "sourceManifest": {
+        "path": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3\\Data\\modules\\midi-qol\\module.json",
+        "id": "midi-qol",
+        "version": "14.0.11",
+        "sha256": "6168AD185149891E8E98DDDA06A45F0AEC4A7627E299B0B74F6B1AB54364A2D6",
+        "byteLength": 3522
+      },
+      "destinationManifest": {
+        "path": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Data\\modules\\midi-qol\\module.json",
+        "id": "midi-qol",
+        "version": "14.0.11",
+        "sha256": "6168AD185149891E8E98DDDA06A45F0AEC4A7627E299B0B74F6B1AB54364A2D6",
+        "byteLength": 3522
+      },
+      "sourceInventory": {
+        "files": [
+          {
+            "path": "Changelog.md",
+            "bytes": 624078,
+            "sha256": "BD00A89CD322D80A2B0B42056985FBEDB84ED4C160879A54545F5704E73088F9"
+          },
+          {
+            "path": "css/styles.css",
+            "bytes": 36206,
+            "sha256": "3232E239A3CEE7E2A31ABCAEF4AF92B3E0678EC0D1D3D6C918826F3DF6CD9889"
+          },
+          {
+            "path": "icons/bonus-action.svg",
+            "bytes": 985,
+            "sha256": "1135E81DDD90C6C3D4059412E6C5FA2EA027793DCD6375EE573FA115E29D6891"
+          },
+          {
+            "path": "icons/concentrate-black.png",
+            "bytes": 16148,
+            "sha256": "88F8EC4DDE1850092FFEAB9E99ADB5F003F979F30089B5879D905DCEDC95AE29"
+          },
+          {
+            "path": "icons/concentrate-white.png",
+            "bytes": 13024,
+            "sha256": "9E5E25412080B20634D0CFA807E097CE8721BB089159CEA81B62AAACC64A6813"
+          },
+          {
+            "path": "icons/concentrate.png",
+            "bytes": 14988,
+            "sha256": "C72FC919D2E838D1F4B679CE72D2327711A5549BD73A948FB7DAC33BC7B4BEB3"
+          },
+          {
+            "path": "icons/encirclement.svg",
+            "bytes": 1711,
+            "sha256": "262291F7CFBFDC9FA9077C9A8172DDC057ED61F1F1BBFBE6957EFC496853DAF9"
+          },
+          {
+            "path": "icons/reaction.svg",
+            "bytes": 705,
+            "sha256": "28AABC72EB1B2D4A27A57C210CCF5718523B7AD8C14301CB91B3087BC7473201"
+          },
+          {
+            "path": "icons/vitality.svg",
+            "bytes": 602,
+            "sha256": "2CF0C0D10ED4485D95C968AA137E498DBA97CDA83857FDAAA20F57D92491D665"
+          },
+          {
+            "path": "lang/cs.json",
+            "bytes": 170178,
+            "sha256": "D4744E8FDEC3A2DCFF6FAD24251CB8E668EEE87C70D6D9FD4A2BD21D8278AC6D"
+          },
+          {
+            "path": "lang/de.json",
+            "bytes": 17976,
+            "sha256": "40C6C199CDC5191B255F4992A28C144E307D1FFE9CDA128ED30D627F22F0B60E"
+          },
+          {
+            "path": "lang/en.json",
+            "bytes": 140902,
+            "sha256": "6338801442624E9861AB51313636E1265D115627FDB8388157D9C9726EEF6F8C"
+          },
+          {
+            "path": "lang/es.json",
+            "bytes": 44474,
+            "sha256": "6912CE667F502150D91738CA2701C71B5872C4E051BCED42222D9E63E00215B1"
+          },
+          {
+            "path": "lang/fr.json",
+            "bytes": 58840,
+            "sha256": "AF0F064F2003766CC5C819B48F46708341A3F437CAED44B4E4122EDAB3FD07EC"
+          },
+          {
+            "path": "lang/it.json",
+            "bytes": 160686,
+            "sha256": "632D59C313702C99A76EDCBB8FCE8F648882D3CECE6AD7F03983F36C62690E45"
+          },
+          {
+            "path": "lang/ja.json",
+            "bytes": 177985,
+            "sha256": "616E83EBA8A765BFC0B0F6D87BFCA6989E06250EB943CBD434AD30BE257378B0"
+          },
+          {
+            "path": "lang/ko.json",
+            "bytes": 33612,
+            "sha256": "8F80CA75DADFA0383BB999FBA6CDB35909BDCB818A4D7205A6613CE756F74180"
+          },
+          {
+            "path": "lang/pt-BR.json",
+            "bytes": 152748,
+            "sha256": "4A394FFA411F420B96BAFC63F450EDC151F345824236E5ED01DFD1F09D2B197E"
+          },
+          {
+            "path": "lang/zh-tw.json",
+            "bytes": 125831,
+            "sha256": "AE296103C1A53D1EBCD8EAAFE2F66816164387D4C49219EF44B7DA944944E6B4"
+          },
+          {
+            "path": "LICENSE",
+            "bytes": 2802,
+            "sha256": "EC3BFA534423C6296E6B15D9DDAEBA92F631B2201555F7E1E5BD7FEDF2F854B0"
+          },
+          {
+            "path": "midi-qol.js",
+            "bytes": 1924272,
+            "sha256": "CA530B51FC4883067C5571F1D985931087C09BB21887F9A24C3AB95D48F3A966"
+          },
+          {
+            "path": "midi-qol.js.map",
+            "bytes": 3384094,
+            "sha256": "507D69051FD84895CCB9C0FC84D599DEFF3CD05014A4FF36739D98BB23019A60"
+          },
+          {
+            "path": "module.json",
+            "bytes": 3522,
+            "sha256": "6168AD185149891E8E98DDDA06A45F0AEC4A7627E299B0B74F6B1AB54364A2D6"
+          },
+          {
+            "path": "packs/activeeffects/000014.ldb",
+            "bytes": 5226,
+            "sha256": "ED261309A59BC56295E91BF7029DC371CABF6AA1883EF75D2D2283267557289C"
+          },
+          {
+            "path": "packs/activeeffects/000330.log",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/activeeffects/CURRENT",
+            "bytes": 16,
+            "sha256": "B055714B311FEFC2EEB966196E2C2CEBFAD405D6EDB3E66A0CE70123333C8568"
+          },
+          {
+            "path": "packs/activeeffects/LOCK",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/activeeffects/LOG",
+            "bytes": 148,
+            "sha256": "1C3B7441F441F6FF14EBD1E716247DD461562170B47656884D778ABA35F759DB"
+          },
+          {
+            "path": "packs/activeeffects/LOG.old",
+            "bytes": 148,
+            "sha256": "AC0F3EA68CB6ACCEDDC5D671204709E53249E09D84DD00740C17F606D8154816"
+          },
+          {
+            "path": "packs/activeeffects/MANIFEST-000329",
+            "bytes": 197,
+            "sha256": "2810A54786E54BC6B6774A698AC3073D2853E2AF3A609635049936836A6DDC99"
+          },
+          {
+            "path": "packs/sampleitems/000014.ldb",
+            "bytes": 386964,
+            "sha256": "8D36DA07CAA7DAFD4EDDB1DD24F7970B6F704D959CB9A0B66FCBB945AF43CABA"
+          },
+          {
+            "path": "packs/sampleitems/000330.log",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/sampleitems/CURRENT",
+            "bytes": 16,
+            "sha256": "B055714B311FEFC2EEB966196E2C2CEBFAD405D6EDB3E66A0CE70123333C8568"
+          },
+          {
+            "path": "packs/sampleitems/LOCK",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/sampleitems/LOG",
+            "bytes": 148,
+            "sha256": "B3A8B8CC59F90BC0EE7573A509DDE009385835679BF56253A8E372236872DBB9"
+          },
+          {
+            "path": "packs/sampleitems/LOG.old",
+            "bytes": 145,
+            "sha256": "26DD42A96241EA4E9F59B608A3F0E71256B077B20A88F3A3125062C1DC9B807A"
+          },
+          {
+            "path": "packs/sampleitems/MANIFEST-000329",
+            "bytes": 268,
+            "sha256": "46212DC82F0614EA6E2663477A95A4AFEC17239D3FA0DCFE9E250869182745EF"
+          },
+          {
+            "path": "README.md",
+            "bytes": 67533,
+            "sha256": "71F9DECF216E50682540F050B90C9C357A5ED34A2AAE5A83E1DBE5162B0E8709"
+          },
+          {
+            "path": "sample-config/midi-qol-full-auto.json",
+            "bytes": 6574,
+            "sha256": "E9FA00F056021180B1FA668CF42C743F21D7EBD30C690163B46BE7740C49651D"
+          },
+          {
+            "path": "sample-config/midi-qol-manual.json",
+            "bytes": 6058,
+            "sha256": "372A96FC537B35C269357453DC4DDA05CA19A23340AC7E0B4243233F302DA3A0"
+          },
+          {
+            "path": "sounds/bow-and-arrow.mp3",
+            "bytes": 17187,
+            "sha256": "8ABC620FEC44F57542EB0FB73FE2A3D5C5F2A8F23FD67A69887FCFC607999052"
+          },
+          {
+            "path": "sounds/dice.wav",
+            "bytes": 134120,
+            "sha256": "01ADB22779DC6984496FBE9177CD65F229F0A8F69A20625F43878EBED739148D"
+          },
+          {
+            "path": "sounds/drink.wav",
+            "bytes": 129180,
+            "sha256": "ECA6A538913CC25F5004D762316078EED5B5979AB1C737F218A71C2E8768C2CC"
+          },
+          {
+            "path": "sounds/fail1.wav",
+            "bytes": 89980,
+            "sha256": "C79F3571583810DAF0FBD1ACF679A2CC503A989091A9A14237A84C8253D790E4"
+          },
+          {
+            "path": "sounds/fail2.wav",
+            "bytes": 31252,
+            "sha256": "EB649F647BD6AB616460938D42693FB9C5C6B637C827555BCB1A00D78CB894DA"
+          },
+          {
+            "path": "sounds/fail3.ogg",
+            "bytes": 88038,
+            "sha256": "20D542FFBF8D45798C7C7228D03868AD54946890AA4664C02A44C22496EBB9E1"
+          },
+          {
+            "path": "sounds/good-results.ogg",
+            "bytes": 58627,
+            "sha256": "A7A40FF2D5D96D864625BFACD7187B2CAA3427B674299CD71861D5D1BC893463"
+          },
+          {
+            "path": "sounds/spell.wav",
+            "bytes": 286878,
+            "sha256": "836171FCCFFC8D6DD6D4EA3067C85732B84BF538EE3E577620B8D4BE59E7CC54"
+          },
+          {
+            "path": "sounds/success-drums.ogg",
+            "bytes": 81279,
+            "sha256": "F9B454FF9A8243F5BA7566FEA219A643C311B39D8E3BD42960D67C6914CFAF7C"
+          },
+          {
+            "path": "sounds/success.wav",
+            "bytes": 211762,
+            "sha256": "765FB45C9766F938C6036E3D50CC99FC3F5D93F2C8E39D1FD3F994E5C8F60E65"
+          },
+          {
+            "path": "sounds/swing.wav",
+            "bytes": 61462,
+            "sha256": "C7D50B9CB20CCDA5AEE6C023F4450915594061E36F3F9E78AF241CA9FDE0F817"
+          },
+          {
+            "path": "sounds/use.wav",
+            "bytes": 307060,
+            "sha256": "D88416F5F32959F737E7094A5B7CF0835B22BC1FC52E7BDF8F7EB19A5445A711"
+          },
+          {
+            "path": "templates/activity/activation.hbs",
+            "bytes": 664,
+            "sha256": "BEADACB32CF46BE090594C8334544591AEBCF980A5E66959903D2E3D997F2A0E"
+          },
+          {
+            "path": "templates/activity/attack-effect.hbs",
+            "bytes": 413,
+            "sha256": "AABF651AD69E9911BB5077F4C9A414FBFD2B789B888EA8788EB15178DBE05C5E"
+          },
+          {
+            "path": "templates/activity/check-effect.hbs",
+            "bytes": 411,
+            "sha256": "D6450BD33350245040C6EF956FC5608AFBD38C7018B888FEB7B5381FA8188B37"
+          },
+          {
+            "path": "templates/activity/damage-effect.hbs",
+            "bytes": 270,
+            "sha256": "F0FBD57352879E7DDB03159069C75F3400E1BD993A49C728CABCCA1A35DE99FD"
+          },
+          {
+            "path": "templates/activity/enchant-effect.hbs",
+            "bytes": 421,
+            "sha256": "0D9A2368B36916AF15D27089A00F889ED1DE9CA94D959583BF4541E70E9A0982"
+          },
+          {
+            "path": "templates/activity/heal-effect.hbs",
+            "bytes": 269,
+            "sha256": "3B5F88D172C3C99F5C00A11A0796F2503316E3BBF53BEAC0B4CB1F9FAA583427"
+          },
+          {
+            "path": "templates/activity/overetime-effect.hbs",
+            "bytes": 413,
+            "sha256": "AABF651AD69E9911BB5077F4C9A414FBFD2B789B888EA8788EB15178DBE05C5E"
+          },
+          {
+            "path": "templates/activity/overtime-effect.hbs",
+            "bytes": 411,
+            "sha256": "1B6D12D86E73C6DF1DB8A549E54DF6DBB29A3F223221AF5786BF15EDB40A48BA"
+          },
+          {
+            "path": "templates/activity/parts/attack-details.hbs",
+            "bytes": 523,
+            "sha256": "8435B7440740B3B05A9D8F2EF8FD9B1DB359DE4D7A3554DFD04098C25A2E463A"
+          },
+          {
+            "path": "templates/activity/parts/attack-extras.hbs",
+            "bytes": 486,
+            "sha256": "B31E697FD4702FD4217DFEB5437BADC8EE9392F588427A3249AAA807E2052AAD"
+          },
+          {
+            "path": "templates/activity/parts/midi-activity-tab.hbs",
+            "bytes": 7762,
+            "sha256": "356438CC99871B65217666D6639755870BF10EAC2EEA5DC01989500569CF5F43"
+          },
+          {
+            "path": "templates/activity/parts/overtime-extras.hbs",
+            "bytes": 535,
+            "sha256": "96A24AFF64B8C47F183A03461FAD6227B7A703F00707ACB4701FECB55B82EB1D"
+          },
+          {
+            "path": "templates/activity/parts/region-behavior-targeting.hbs",
+            "bytes": 1209,
+            "sha256": "EC18E415925973148F9FCECB5ADA57DA5BC13EA78C706FA0FD39D60D7CBDC28C"
+          },
+          {
+            "path": "templates/activity/parts/save-damage.hbs",
+            "bytes": 847,
+            "sha256": "4D8C4C043C0D1A022D4CD6747368F5FAE4BCBF4CF9FB0737C33CCC56E8894DEF"
+          },
+          {
+            "path": "templates/activity/parts/save-extras.hbs",
+            "bytes": 320,
+            "sha256": "9523531C461DD43CD1CC09BC5CD1CDD7AA0F2DA6B8914037F098354598491087"
+          },
+          {
+            "path": "templates/activity/parts/summon-extras.hbs",
+            "bytes": 146,
+            "sha256": "E6907B5053993AD2C8A9C5773341925370901C2A1CA6BD67A94FA0196B4A3DE8"
+          },
+          {
+            "path": "templates/activity/save-effect.hbs",
+            "bytes": 410,
+            "sha256": "BB36A9019FD5767E67F96A984C174CBA18DE9183371989668EA4D496E4BC5AE5"
+          },
+          {
+            "path": "templates/activity/summon-effect.hbs",
+            "bytes": 401,
+            "sha256": "BC67AB25BEF458926C7C3D32DCE7D922BAEB48015BFD5984FCB898D6C3DD0545"
+          },
+          {
+            "path": "templates/activity/utility-effect.hbs",
+            "bytes": 540,
+            "sha256": "8C5AA812E7E00EDB4017A66EF8F6FA229C7D404B13092650E41A67660E65DFD9"
+          },
+          {
+            "path": "templates/activity-card.hbs",
+            "bytes": 6867,
+            "sha256": "6B845A05C63E594BA6E97AC5DF9AA6D012F54809869F1825429E4D5EF61F0590"
+          },
+          {
+            "path": "templates/apps/ActorOnUseMacroConfig/actorOnUseMacrosConfig.hbs",
+            "bytes": 1230,
+            "sha256": "78E87970351ED6C608853F92F21EF9489A9BAD9DA13F0DABDE8F056CDA2A443A"
+          },
+          {
+            "path": "templates/apps/ConditionEditor/conditionEditor.hbs",
+            "bytes": 734,
+            "sha256": "E3041946B6E371BE733A5354A0E3DBA1B5B34728837C697C4564794B4B5D2D88"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/concentration.hbs",
+            "bytes": 2766,
+            "sha256": "7038005A183D887547C0F06FFCB01F0C4ABA3EAA16EC693AE66ABC10703D0E7D"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/footer.hbs",
+            "bytes": 344,
+            "sha256": "0BB9EAE14754F742529886C0A3E19239860CE364D60D840461A44EC5D3221D0E"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/gm.hbs",
+            "bytes": 4715,
+            "sha256": "36753C138EB7674AFE8701C610EEACA840AD83AC782AA00607E8C39B207F610E"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/mechanics.hbs",
+            "bytes": 9592,
+            "sha256": "BBBEA3F1119D742BFCEF104DE94EF3ED79072DC1FE09FFEBCB6BFDDFE7964D09"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/misc.hbs",
+            "bytes": 8833,
+            "sha256": "47F23FAA783C6B5900AF87F0F56648F2E447C8F7A23EC03A94033F00D7977BA2"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/player.hbs",
+            "bytes": 2094,
+            "sha256": "24A506D569C879B39E6EDB033B099E04DB0EB84235611A968066DF0387F9A339"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/quick.hbs",
+            "bytes": 590,
+            "sha256": "26D1544CD71219E872D5B06A029E113C315A38C6BA2EFCE5B7C45160FCDDF460"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/reactions.hbs",
+            "bytes": 3574,
+            "sha256": "A6162F40CF09F73B598BF7D2A8617C9F17A34CA37EF2CC05ECDC6E0DAD11B977"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/rules.hbs",
+            "bytes": 12720,
+            "sha256": "16C76DE10FF9AF694CAE55C9BC0659A1CD18F41A7549D7BE61C600B31A23F933"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/workflow.hbs",
+            "bytes": 15023,
+            "sha256": "91CC5046B0974863AB13326912B7ADA35E2F39FF17F2F25C2FF7033005B941EA"
+          },
+          {
+            "path": "templates/apps/DependentsExplorer/dependentsExplorer.hbs",
+            "bytes": 9735,
+            "sha256": "D1042D5E87D752FDF9DF8AEB93CE1AA83481596820524AF39C5AAA4555129C2C"
+          },
+          {
+            "path": "templates/apps/ItemOnUseMacrosConfig/itemOnUseMacrosConfig.hbs",
+            "bytes": 1123,
+            "sha256": "0984FD6D2049EBB576334C37A79BCF86D1AF9749888884B358E8FE0D2F449FE0"
+          },
+          {
+            "path": "templates/apps/MidiRegionBehaviorConfig/midiRegionBehaviorConfig.hbs",
+            "bytes": 2251,
+            "sha256": "82107DC9AF7D753FA083B6DD3F03962771A84B6D23785CEC10E9C97CE560DF12"
+          },
+          {
+            "path": "templates/apps/ModuleReviewDialog/moduleReview.hbs",
+            "bytes": 1740,
+            "sha256": "0F2160E4B10208F68A431AB535B09519708B35A8A48A2E0AFFA46FFA212BF063"
+          },
+          {
+            "path": "templates/apps/OverTimeEditor/overTimeEditor.hbs",
+            "bytes": 11169,
+            "sha256": "4E249ED9426E3AA80C329F6EC4F51E3A215C59F3E78220BA965A363F9043510C"
+          },
+          {
+            "path": "templates/apps/RegionBehaviorEditor/regionBehaviorEditor.hbs",
+            "bytes": 4785,
+            "sha256": "B4D1241500A827D3EABE893C5A74ECF7EE5F910547D82ECF24623A6F95E5A851"
+          },
+          {
+            "path": "templates/apps/RollStatsDisplay/config.hbs",
+            "bytes": 2949,
+            "sha256": "F23787E5D3047EAEA6313A0D5BBDC2A8E138F1CFEC36558A5183199F8E145AE3"
+          },
+          {
+            "path": "templates/apps/RollStatsDisplay/stats.hbs",
+            "bytes": 10690,
+            "sha256": "1784483FC740837F3536FEAE51A1410566D32876EB2E964CBB44475913F8DFF3"
+          },
+          {
+            "path": "templates/apps/SoundConfigPanel/quick.hbs",
+            "bytes": 573,
+            "sha256": "80D7E806C0B51010CD19C0112E96FBA4D36CF6380D58B3BE54A6D37360E8877B"
+          },
+          {
+            "path": "templates/apps/SoundConfigPanel/sounds.hbs",
+            "bytes": 2671,
+            "sha256": "A4242D6F712A2C8A4B932F3AF2FE58C6D0DAFC1AF177D62FC9A32F0D87D394BA"
+          },
+          {
+            "path": "templates/apps/TargetConfirmation/targetConfirmation.hbs",
+            "bytes": 855,
+            "sha256": "41A1841B710576405AC9DA94F87DAEFB8164B10D9CE7E57D5E8A32BDF41E2705"
+          },
+          {
+            "path": "templates/apps/TargetConfirmationConfig/targetConfirmationConfig.hbs",
+            "bytes": 4697,
+            "sha256": "238E796FD24EB5C65E808E485DB412AE23AE3B4D9CDAB59A9FC28753248D8CD1"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/common.hbs",
+            "bytes": 1226,
+            "sha256": "84E52B8AADAA2CAB6FAEA1B76F3AB6549251D2EE224B022BD8A2E60A05F47019"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/errors.hbs",
+            "bytes": 1124,
+            "sha256": "CCF78197E2EC55DFECB650E084DF5FCF10175D32D69EF606FB422335AB193BD9"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/modules.hbs",
+            "bytes": 1612,
+            "sha256": "4D1FCDE3CBC09719070E962DF5EE662790884E50C7E33EEEB6C22992777274FF"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/problems.hbs",
+            "bytes": 7967,
+            "sha256": "F1D07219D5AC295A25161BE6F999983E0D719F4E978AEE548593B83E63CC416E"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/summary.hbs",
+            "bytes": 3094,
+            "sha256": "503D0D31BB6D07AFD8FF5E6BC5401FD11A4032725A01ED34E3C4E9D0B650BB9E"
+          },
+          {
+            "path": "templates/apps/UndoWorkflow/undo-workflow.hbs",
+            "bytes": 1326,
+            "sha256": "680CDAEDD5909DEA7C4BCC64FAABD8756AA73C6954ACBFF7DD9A23937FA83681"
+          },
+          {
+            "path": "templates/attack-roll.html",
+            "bytes": 355,
+            "sha256": "4DEF09C4CBBE2064F3BCAD3B11BB065711ADC16EA0C3C0FA728DF4E37069B193"
+          },
+          {
+            "path": "templates/attribution-tooltip.html",
+            "bytes": 437,
+            "sha256": "920A57215B9222BF44D37E730D4D4DCF5419CF487620147D1CC3435BF8B42FB2"
+          },
+          {
+            "path": "templates/bonus-damage-roll.html",
+            "bytes": 554,
+            "sha256": "E7DAF5D0925DAEA255FCADA0C724B37AB16403E77083110B1267B6E94772254D"
+          },
+          {
+            "path": "templates/damage-results-classic.html",
+            "bytes": 5138,
+            "sha256": "DFDB73EF2910E5F8A3801BC3DB157558B28ACBDBFDEC08E319BC24D9D206C8E0"
+          },
+          {
+            "path": "templates/damage-results-player-classic.html",
+            "bytes": 5324,
+            "sha256": "7D68C328528CD6FF1E63130642B5410C1F1FD59941F8F41D43CD612DB4C85BC1"
+          },
+          {
+            "path": "templates/damage-results-player.html",
+            "bytes": 5082,
+            "sha256": "FFECDC7AACF095F7AC562D286C52E661A908DEBD77B035F8B580D314547F18E3"
+          },
+          {
+            "path": "templates/damage-results.html",
+            "bytes": 5478,
+            "sha256": "851E1AE8D1FDD9C280637C719412ECBC4215E61D15E44E5CD18CE6A05289E416"
+          },
+          {
+            "path": "templates/damage-roll-dialog.hbs",
+            "bytes": 1062,
+            "sha256": "851B480F218F0908714E979D78BC13620AF7E4AE637F5D23071D224D6866D0FF"
+          },
+          {
+            "path": "templates/damage-roll.html",
+            "bytes": 541,
+            "sha256": "6341EAE47D4DCAA0CDECD16F19C6B0EC5E5BF2D7B0A2A6067234C9CC8CC2BC36"
+          },
+          {
+            "path": "templates/dialog.hbs",
+            "bytes": 331,
+            "sha256": "1F61644E2DE8063A8E1772AF2BC60C7B336E087064F07324466608EC68D14755"
+          },
+          {
+            "path": "templates/hits.html",
+            "bytes": 2297,
+            "sha256": "4FC078BA60B4AC77299CAA757F1218D89F0465F83061FED0BC6493355F2BE70F"
+          },
+          {
+            "path": "templates/other-damage-roll.html",
+            "bytes": 558,
+            "sha256": "F94003E5537AB8510EBB212D1DD7DF6935FED003972ABF2EB66980C5C8EF5606"
+          },
+          {
+            "path": "templates/roll-base.html",
+            "bytes": 346,
+            "sha256": "4E3F82979BE7A7F68B9F71557A1A69397419705292A2A79660FDD3C5408C3E01"
+          },
+          {
+            "path": "templates/roll-dialog.hbs",
+            "bytes": 1062,
+            "sha256": "851B480F218F0908714E979D78BC13620AF7E4AE637F5D23071D224D6866D0FF"
+          },
+          {
+            "path": "templates/roll.html",
+            "bytes": 298,
+            "sha256": "09D09C370990F40389B475BA134A8D1F3F3D5A9DB5767D8306DD71FED0759861"
+          },
+          {
+            "path": "templates/rolloptions.html",
+            "bytes": 2168,
+            "sha256": "75A79E86854B6A0CC3FA874EBB3176B15CC768014611653ED23559100427041E"
+          },
+          {
+            "path": "templates/saves.html",
+            "bytes": 1994,
+            "sha256": "AB62842A68A0FB70A2AC2F87512D472A56056BF8D945263505EACF751C358533"
+          },
+          {
+            "path": "templates/tool-card.hbs",
+            "bytes": 797,
+            "sha256": "DD53919332801363D6E7B8D2BD195E627A7B89292E65D3B40B5D1FE4D9E46D50"
+          },
+          {
+            "path": "templates/tooltip-legacy.html",
+            "bytes": 1262,
+            "sha256": "EC947B94E6291AA13B890A14A9809518EFCB4BB8A7D5CFEFCC24CE9BFBFAC8FF"
+          },
+          {
+            "path": "templates/tooltip.html",
+            "bytes": 1258,
+            "sha256": "48EB762F029F298D565F74D30AAE3708A2F7671F781B57A5702747B5577BB941"
+          }
+        ],
+        "fileCount": 122,
+        "byteLength": 9268097
+      },
+      "destinationInventory": {
+        "files": [
+          {
+            "path": "Changelog.md",
+            "bytes": 624078,
+            "sha256": "BD00A89CD322D80A2B0B42056985FBEDB84ED4C160879A54545F5704E73088F9"
+          },
+          {
+            "path": "css/styles.css",
+            "bytes": 36206,
+            "sha256": "3232E239A3CEE7E2A31ABCAEF4AF92B3E0678EC0D1D3D6C918826F3DF6CD9889"
+          },
+          {
+            "path": "icons/bonus-action.svg",
+            "bytes": 985,
+            "sha256": "1135E81DDD90C6C3D4059412E6C5FA2EA027793DCD6375EE573FA115E29D6891"
+          },
+          {
+            "path": "icons/concentrate-black.png",
+            "bytes": 16148,
+            "sha256": "88F8EC4DDE1850092FFEAB9E99ADB5F003F979F30089B5879D905DCEDC95AE29"
+          },
+          {
+            "path": "icons/concentrate-white.png",
+            "bytes": 13024,
+            "sha256": "9E5E25412080B20634D0CFA807E097CE8721BB089159CEA81B62AAACC64A6813"
+          },
+          {
+            "path": "icons/concentrate.png",
+            "bytes": 14988,
+            "sha256": "C72FC919D2E838D1F4B679CE72D2327711A5549BD73A948FB7DAC33BC7B4BEB3"
+          },
+          {
+            "path": "icons/encirclement.svg",
+            "bytes": 1711,
+            "sha256": "262291F7CFBFDC9FA9077C9A8172DDC057ED61F1F1BBFBE6957EFC496853DAF9"
+          },
+          {
+            "path": "icons/reaction.svg",
+            "bytes": 705,
+            "sha256": "28AABC72EB1B2D4A27A57C210CCF5718523B7AD8C14301CB91B3087BC7473201"
+          },
+          {
+            "path": "icons/vitality.svg",
+            "bytes": 602,
+            "sha256": "2CF0C0D10ED4485D95C968AA137E498DBA97CDA83857FDAAA20F57D92491D665"
+          },
+          {
+            "path": "lang/cs.json",
+            "bytes": 170178,
+            "sha256": "D4744E8FDEC3A2DCFF6FAD24251CB8E668EEE87C70D6D9FD4A2BD21D8278AC6D"
+          },
+          {
+            "path": "lang/de.json",
+            "bytes": 17976,
+            "sha256": "40C6C199CDC5191B255F4992A28C144E307D1FFE9CDA128ED30D627F22F0B60E"
+          },
+          {
+            "path": "lang/en.json",
+            "bytes": 140902,
+            "sha256": "6338801442624E9861AB51313636E1265D115627FDB8388157D9C9726EEF6F8C"
+          },
+          {
+            "path": "lang/es.json",
+            "bytes": 44474,
+            "sha256": "6912CE667F502150D91738CA2701C71B5872C4E051BCED42222D9E63E00215B1"
+          },
+          {
+            "path": "lang/fr.json",
+            "bytes": 58840,
+            "sha256": "AF0F064F2003766CC5C819B48F46708341A3F437CAED44B4E4122EDAB3FD07EC"
+          },
+          {
+            "path": "lang/it.json",
+            "bytes": 160686,
+            "sha256": "632D59C313702C99A76EDCBB8FCE8F648882D3CECE6AD7F03983F36C62690E45"
+          },
+          {
+            "path": "lang/ja.json",
+            "bytes": 177985,
+            "sha256": "616E83EBA8A765BFC0B0F6D87BFCA6989E06250EB943CBD434AD30BE257378B0"
+          },
+          {
+            "path": "lang/ko.json",
+            "bytes": 33612,
+            "sha256": "8F80CA75DADFA0383BB999FBA6CDB35909BDCB818A4D7205A6613CE756F74180"
+          },
+          {
+            "path": "lang/pt-BR.json",
+            "bytes": 152748,
+            "sha256": "4A394FFA411F420B96BAFC63F450EDC151F345824236E5ED01DFD1F09D2B197E"
+          },
+          {
+            "path": "lang/zh-tw.json",
+            "bytes": 125831,
+            "sha256": "AE296103C1A53D1EBCD8EAAFE2F66816164387D4C49219EF44B7DA944944E6B4"
+          },
+          {
+            "path": "LICENSE",
+            "bytes": 2802,
+            "sha256": "EC3BFA534423C6296E6B15D9DDAEBA92F631B2201555F7E1E5BD7FEDF2F854B0"
+          },
+          {
+            "path": "midi-qol.js",
+            "bytes": 1924272,
+            "sha256": "CA530B51FC4883067C5571F1D985931087C09BB21887F9A24C3AB95D48F3A966"
+          },
+          {
+            "path": "midi-qol.js.map",
+            "bytes": 3384094,
+            "sha256": "507D69051FD84895CCB9C0FC84D599DEFF3CD05014A4FF36739D98BB23019A60"
+          },
+          {
+            "path": "module.json",
+            "bytes": 3522,
+            "sha256": "6168AD185149891E8E98DDDA06A45F0AEC4A7627E299B0B74F6B1AB54364A2D6"
+          },
+          {
+            "path": "packs/activeeffects/000014.ldb",
+            "bytes": 5226,
+            "sha256": "ED261309A59BC56295E91BF7029DC371CABF6AA1883EF75D2D2283267557289C"
+          },
+          {
+            "path": "packs/activeeffects/000330.log",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/activeeffects/CURRENT",
+            "bytes": 16,
+            "sha256": "B055714B311FEFC2EEB966196E2C2CEBFAD405D6EDB3E66A0CE70123333C8568"
+          },
+          {
+            "path": "packs/activeeffects/LOCK",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/activeeffects/LOG",
+            "bytes": 148,
+            "sha256": "1C3B7441F441F6FF14EBD1E716247DD461562170B47656884D778ABA35F759DB"
+          },
+          {
+            "path": "packs/activeeffects/LOG.old",
+            "bytes": 148,
+            "sha256": "AC0F3EA68CB6ACCEDDC5D671204709E53249E09D84DD00740C17F606D8154816"
+          },
+          {
+            "path": "packs/activeeffects/MANIFEST-000329",
+            "bytes": 197,
+            "sha256": "2810A54786E54BC6B6774A698AC3073D2853E2AF3A609635049936836A6DDC99"
+          },
+          {
+            "path": "packs/sampleitems/000014.ldb",
+            "bytes": 386964,
+            "sha256": "8D36DA07CAA7DAFD4EDDB1DD24F7970B6F704D959CB9A0B66FCBB945AF43CABA"
+          },
+          {
+            "path": "packs/sampleitems/000330.log",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/sampleitems/CURRENT",
+            "bytes": 16,
+            "sha256": "B055714B311FEFC2EEB966196E2C2CEBFAD405D6EDB3E66A0CE70123333C8568"
+          },
+          {
+            "path": "packs/sampleitems/LOCK",
+            "bytes": 0,
+            "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+          },
+          {
+            "path": "packs/sampleitems/LOG",
+            "bytes": 148,
+            "sha256": "B3A8B8CC59F90BC0EE7573A509DDE009385835679BF56253A8E372236872DBB9"
+          },
+          {
+            "path": "packs/sampleitems/LOG.old",
+            "bytes": 145,
+            "sha256": "26DD42A96241EA4E9F59B608A3F0E71256B077B20A88F3A3125062C1DC9B807A"
+          },
+          {
+            "path": "packs/sampleitems/MANIFEST-000329",
+            "bytes": 268,
+            "sha256": "46212DC82F0614EA6E2663477A95A4AFEC17239D3FA0DCFE9E250869182745EF"
+          },
+          {
+            "path": "README.md",
+            "bytes": 67533,
+            "sha256": "71F9DECF216E50682540F050B90C9C357A5ED34A2AAE5A83E1DBE5162B0E8709"
+          },
+          {
+            "path": "sample-config/midi-qol-full-auto.json",
+            "bytes": 6574,
+            "sha256": "E9FA00F056021180B1FA668CF42C743F21D7EBD30C690163B46BE7740C49651D"
+          },
+          {
+            "path": "sample-config/midi-qol-manual.json",
+            "bytes": 6058,
+            "sha256": "372A96FC537B35C269357453DC4DDA05CA19A23340AC7E0B4243233F302DA3A0"
+          },
+          {
+            "path": "sounds/bow-and-arrow.mp3",
+            "bytes": 17187,
+            "sha256": "8ABC620FEC44F57542EB0FB73FE2A3D5C5F2A8F23FD67A69887FCFC607999052"
+          },
+          {
+            "path": "sounds/dice.wav",
+            "bytes": 134120,
+            "sha256": "01ADB22779DC6984496FBE9177CD65F229F0A8F69A20625F43878EBED739148D"
+          },
+          {
+            "path": "sounds/drink.wav",
+            "bytes": 129180,
+            "sha256": "ECA6A538913CC25F5004D762316078EED5B5979AB1C737F218A71C2E8768C2CC"
+          },
+          {
+            "path": "sounds/fail1.wav",
+            "bytes": 89980,
+            "sha256": "C79F3571583810DAF0FBD1ACF679A2CC503A989091A9A14237A84C8253D790E4"
+          },
+          {
+            "path": "sounds/fail2.wav",
+            "bytes": 31252,
+            "sha256": "EB649F647BD6AB616460938D42693FB9C5C6B637C827555BCB1A00D78CB894DA"
+          },
+          {
+            "path": "sounds/fail3.ogg",
+            "bytes": 88038,
+            "sha256": "20D542FFBF8D45798C7C7228D03868AD54946890AA4664C02A44C22496EBB9E1"
+          },
+          {
+            "path": "sounds/good-results.ogg",
+            "bytes": 58627,
+            "sha256": "A7A40FF2D5D96D864625BFACD7187B2CAA3427B674299CD71861D5D1BC893463"
+          },
+          {
+            "path": "sounds/spell.wav",
+            "bytes": 286878,
+            "sha256": "836171FCCFFC8D6DD6D4EA3067C85732B84BF538EE3E577620B8D4BE59E7CC54"
+          },
+          {
+            "path": "sounds/success-drums.ogg",
+            "bytes": 81279,
+            "sha256": "F9B454FF9A8243F5BA7566FEA219A643C311B39D8E3BD42960D67C6914CFAF7C"
+          },
+          {
+            "path": "sounds/success.wav",
+            "bytes": 211762,
+            "sha256": "765FB45C9766F938C6036E3D50CC99FC3F5D93F2C8E39D1FD3F994E5C8F60E65"
+          },
+          {
+            "path": "sounds/swing.wav",
+            "bytes": 61462,
+            "sha256": "C7D50B9CB20CCDA5AEE6C023F4450915594061E36F3F9E78AF241CA9FDE0F817"
+          },
+          {
+            "path": "sounds/use.wav",
+            "bytes": 307060,
+            "sha256": "D88416F5F32959F737E7094A5B7CF0835B22BC1FC52E7BDF8F7EB19A5445A711"
+          },
+          {
+            "path": "templates/activity/activation.hbs",
+            "bytes": 664,
+            "sha256": "BEADACB32CF46BE090594C8334544591AEBCF980A5E66959903D2E3D997F2A0E"
+          },
+          {
+            "path": "templates/activity/attack-effect.hbs",
+            "bytes": 413,
+            "sha256": "AABF651AD69E9911BB5077F4C9A414FBFD2B789B888EA8788EB15178DBE05C5E"
+          },
+          {
+            "path": "templates/activity/check-effect.hbs",
+            "bytes": 411,
+            "sha256": "D6450BD33350245040C6EF956FC5608AFBD38C7018B888FEB7B5381FA8188B37"
+          },
+          {
+            "path": "templates/activity/damage-effect.hbs",
+            "bytes": 270,
+            "sha256": "F0FBD57352879E7DDB03159069C75F3400E1BD993A49C728CABCCA1A35DE99FD"
+          },
+          {
+            "path": "templates/activity/enchant-effect.hbs",
+            "bytes": 421,
+            "sha256": "0D9A2368B36916AF15D27089A00F889ED1DE9CA94D959583BF4541E70E9A0982"
+          },
+          {
+            "path": "templates/activity/heal-effect.hbs",
+            "bytes": 269,
+            "sha256": "3B5F88D172C3C99F5C00A11A0796F2503316E3BBF53BEAC0B4CB1F9FAA583427"
+          },
+          {
+            "path": "templates/activity/overetime-effect.hbs",
+            "bytes": 413,
+            "sha256": "AABF651AD69E9911BB5077F4C9A414FBFD2B789B888EA8788EB15178DBE05C5E"
+          },
+          {
+            "path": "templates/activity/overtime-effect.hbs",
+            "bytes": 411,
+            "sha256": "1B6D12D86E73C6DF1DB8A549E54DF6DBB29A3F223221AF5786BF15EDB40A48BA"
+          },
+          {
+            "path": "templates/activity/parts/attack-details.hbs",
+            "bytes": 523,
+            "sha256": "8435B7440740B3B05A9D8F2EF8FD9B1DB359DE4D7A3554DFD04098C25A2E463A"
+          },
+          {
+            "path": "templates/activity/parts/attack-extras.hbs",
+            "bytes": 486,
+            "sha256": "B31E697FD4702FD4217DFEB5437BADC8EE9392F588427A3249AAA807E2052AAD"
+          },
+          {
+            "path": "templates/activity/parts/midi-activity-tab.hbs",
+            "bytes": 7762,
+            "sha256": "356438CC99871B65217666D6639755870BF10EAC2EEA5DC01989500569CF5F43"
+          },
+          {
+            "path": "templates/activity/parts/overtime-extras.hbs",
+            "bytes": 535,
+            "sha256": "96A24AFF64B8C47F183A03461FAD6227B7A703F00707ACB4701FECB55B82EB1D"
+          },
+          {
+            "path": "templates/activity/parts/region-behavior-targeting.hbs",
+            "bytes": 1209,
+            "sha256": "EC18E415925973148F9FCECB5ADA57DA5BC13EA78C706FA0FD39D60D7CBDC28C"
+          },
+          {
+            "path": "templates/activity/parts/save-damage.hbs",
+            "bytes": 847,
+            "sha256": "4D8C4C043C0D1A022D4CD6747368F5FAE4BCBF4CF9FB0737C33CCC56E8894DEF"
+          },
+          {
+            "path": "templates/activity/parts/save-extras.hbs",
+            "bytes": 320,
+            "sha256": "9523531C461DD43CD1CC09BC5CD1CDD7AA0F2DA6B8914037F098354598491087"
+          },
+          {
+            "path": "templates/activity/parts/summon-extras.hbs",
+            "bytes": 146,
+            "sha256": "E6907B5053993AD2C8A9C5773341925370901C2A1CA6BD67A94FA0196B4A3DE8"
+          },
+          {
+            "path": "templates/activity/save-effect.hbs",
+            "bytes": 410,
+            "sha256": "BB36A9019FD5767E67F96A984C174CBA18DE9183371989668EA4D496E4BC5AE5"
+          },
+          {
+            "path": "templates/activity/summon-effect.hbs",
+            "bytes": 401,
+            "sha256": "BC67AB25BEF458926C7C3D32DCE7D922BAEB48015BFD5984FCB898D6C3DD0545"
+          },
+          {
+            "path": "templates/activity/utility-effect.hbs",
+            "bytes": 540,
+            "sha256": "8C5AA812E7E00EDB4017A66EF8F6FA229C7D404B13092650E41A67660E65DFD9"
+          },
+          {
+            "path": "templates/activity-card.hbs",
+            "bytes": 6867,
+            "sha256": "6B845A05C63E594BA6E97AC5DF9AA6D012F54809869F1825429E4D5EF61F0590"
+          },
+          {
+            "path": "templates/apps/ActorOnUseMacroConfig/actorOnUseMacrosConfig.hbs",
+            "bytes": 1230,
+            "sha256": "78E87970351ED6C608853F92F21EF9489A9BAD9DA13F0DABDE8F056CDA2A443A"
+          },
+          {
+            "path": "templates/apps/ConditionEditor/conditionEditor.hbs",
+            "bytes": 734,
+            "sha256": "E3041946B6E371BE733A5354A0E3DBA1B5B34728837C697C4564794B4B5D2D88"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/concentration.hbs",
+            "bytes": 2766,
+            "sha256": "7038005A183D887547C0F06FFCB01F0C4ABA3EAA16EC693AE66ABC10703D0E7D"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/footer.hbs",
+            "bytes": 344,
+            "sha256": "0BB9EAE14754F742529886C0A3E19239860CE364D60D840461A44EC5D3221D0E"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/gm.hbs",
+            "bytes": 4715,
+            "sha256": "36753C138EB7674AFE8701C610EEACA840AD83AC782AA00607E8C39B207F610E"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/mechanics.hbs",
+            "bytes": 9592,
+            "sha256": "BBBEA3F1119D742BFCEF104DE94EF3ED79072DC1FE09FFEBCB6BFDDFE7964D09"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/misc.hbs",
+            "bytes": 8833,
+            "sha256": "47F23FAA783C6B5900AF87F0F56648F2E447C8F7A23EC03A94033F00D7977BA2"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/player.hbs",
+            "bytes": 2094,
+            "sha256": "24A506D569C879B39E6EDB033B099E04DB0EB84235611A968066DF0387F9A339"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/quick.hbs",
+            "bytes": 590,
+            "sha256": "26D1544CD71219E872D5B06A029E113C315A38C6BA2EFCE5B7C45160FCDDF460"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/reactions.hbs",
+            "bytes": 3574,
+            "sha256": "A6162F40CF09F73B598BF7D2A8617C9F17A34CA37EF2CC05ECDC6E0DAD11B977"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/rules.hbs",
+            "bytes": 12720,
+            "sha256": "16C76DE10FF9AF694CAE55C9BC0659A1CD18F41A7549D7BE61C600B31A23F933"
+          },
+          {
+            "path": "templates/apps/ConfigPanel/workflow.hbs",
+            "bytes": 15023,
+            "sha256": "91CC5046B0974863AB13326912B7ADA35E2F39FF17F2F25C2FF7033005B941EA"
+          },
+          {
+            "path": "templates/apps/DependentsExplorer/dependentsExplorer.hbs",
+            "bytes": 9735,
+            "sha256": "D1042D5E87D752FDF9DF8AEB93CE1AA83481596820524AF39C5AAA4555129C2C"
+          },
+          {
+            "path": "templates/apps/ItemOnUseMacrosConfig/itemOnUseMacrosConfig.hbs",
+            "bytes": 1123,
+            "sha256": "0984FD6D2049EBB576334C37A79BCF86D1AF9749888884B358E8FE0D2F449FE0"
+          },
+          {
+            "path": "templates/apps/MidiRegionBehaviorConfig/midiRegionBehaviorConfig.hbs",
+            "bytes": 2251,
+            "sha256": "82107DC9AF7D753FA083B6DD3F03962771A84B6D23785CEC10E9C97CE560DF12"
+          },
+          {
+            "path": "templates/apps/ModuleReviewDialog/moduleReview.hbs",
+            "bytes": 1740,
+            "sha256": "0F2160E4B10208F68A431AB535B09519708B35A8A48A2E0AFFA46FFA212BF063"
+          },
+          {
+            "path": "templates/apps/OverTimeEditor/overTimeEditor.hbs",
+            "bytes": 11169,
+            "sha256": "4E249ED9426E3AA80C329F6EC4F51E3A215C59F3E78220BA965A363F9043510C"
+          },
+          {
+            "path": "templates/apps/RegionBehaviorEditor/regionBehaviorEditor.hbs",
+            "bytes": 4785,
+            "sha256": "B4D1241500A827D3EABE893C5A74ECF7EE5F910547D82ECF24623A6F95E5A851"
+          },
+          {
+            "path": "templates/apps/RollStatsDisplay/config.hbs",
+            "bytes": 2949,
+            "sha256": "F23787E5D3047EAEA6313A0D5BBDC2A8E138F1CFEC36558A5183199F8E145AE3"
+          },
+          {
+            "path": "templates/apps/RollStatsDisplay/stats.hbs",
+            "bytes": 10690,
+            "sha256": "1784483FC740837F3536FEAE51A1410566D32876EB2E964CBB44475913F8DFF3"
+          },
+          {
+            "path": "templates/apps/SoundConfigPanel/quick.hbs",
+            "bytes": 573,
+            "sha256": "80D7E806C0B51010CD19C0112E96FBA4D36CF6380D58B3BE54A6D37360E8877B"
+          },
+          {
+            "path": "templates/apps/SoundConfigPanel/sounds.hbs",
+            "bytes": 2671,
+            "sha256": "A4242D6F712A2C8A4B932F3AF2FE58C6D0DAFC1AF177D62FC9A32F0D87D394BA"
+          },
+          {
+            "path": "templates/apps/TargetConfirmation/targetConfirmation.hbs",
+            "bytes": 855,
+            "sha256": "41A1841B710576405AC9DA94F87DAEFB8164B10D9CE7E57D5E8A32BDF41E2705"
+          },
+          {
+            "path": "templates/apps/TargetConfirmationConfig/targetConfirmationConfig.hbs",
+            "bytes": 4697,
+            "sha256": "238E796FD24EB5C65E808E485DB412AE23AE3B4D9CDAB59A9FC28753248D8CD1"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/common.hbs",
+            "bytes": 1226,
+            "sha256": "84E52B8AADAA2CAB6FAEA1B76F3AB6549251D2EE224B022BD8A2E60A05F47019"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/errors.hbs",
+            "bytes": 1124,
+            "sha256": "CCF78197E2EC55DFECB650E084DF5FCF10175D32D69EF606FB422335AB193BD9"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/modules.hbs",
+            "bytes": 1612,
+            "sha256": "4D1FCDE3CBC09719070E962DF5EE662790884E50C7E33EEEB6C22992777274FF"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/problems.hbs",
+            "bytes": 7967,
+            "sha256": "F1D07219D5AC295A25161BE6F999983E0D719F4E978AEE548593B83E63CC416E"
+          },
+          {
+            "path": "templates/apps/TroubleShooter/summary.hbs",
+            "bytes": 3094,
+            "sha256": "503D0D31BB6D07AFD8FF5E6BC5401FD11A4032725A01ED34E3C4E9D0B650BB9E"
+          },
+          {
+            "path": "templates/apps/UndoWorkflow/undo-workflow.hbs",
+            "bytes": 1326,
+            "sha256": "680CDAEDD5909DEA7C4BCC64FAABD8756AA73C6954ACBFF7DD9A23937FA83681"
+          },
+          {
+            "path": "templates/attack-roll.html",
+            "bytes": 355,
+            "sha256": "4DEF09C4CBBE2064F3BCAD3B11BB065711ADC16EA0C3C0FA728DF4E37069B193"
+          },
+          {
+            "path": "templates/attribution-tooltip.html",
+            "bytes": 437,
+            "sha256": "920A57215B9222BF44D37E730D4D4DCF5419CF487620147D1CC3435BF8B42FB2"
+          },
+          {
+            "path": "templates/bonus-damage-roll.html",
+            "bytes": 554,
+            "sha256": "E7DAF5D0925DAEA255FCADA0C724B37AB16403E77083110B1267B6E94772254D"
+          },
+          {
+            "path": "templates/damage-results-classic.html",
+            "bytes": 5138,
+            "sha256": "DFDB73EF2910E5F8A3801BC3DB157558B28ACBDBFDEC08E319BC24D9D206C8E0"
+          },
+          {
+            "path": "templates/damage-results-player-classic.html",
+            "bytes": 5324,
+            "sha256": "7D68C328528CD6FF1E63130642B5410C1F1FD59941F8F41D43CD612DB4C85BC1"
+          },
+          {
+            "path": "templates/damage-results-player.html",
+            "bytes": 5082,
+            "sha256": "FFECDC7AACF095F7AC562D286C52E661A908DEBD77B035F8B580D314547F18E3"
+          },
+          {
+            "path": "templates/damage-results.html",
+            "bytes": 5478,
+            "sha256": "851E1AE8D1FDD9C280637C719412ECBC4215E61D15E44E5CD18CE6A05289E416"
+          },
+          {
+            "path": "templates/damage-roll-dialog.hbs",
+            "bytes": 1062,
+            "sha256": "851B480F218F0908714E979D78BC13620AF7E4AE637F5D23071D224D6866D0FF"
+          },
+          {
+            "path": "templates/damage-roll.html",
+            "bytes": 541,
+            "sha256": "6341EAE47D4DCAA0CDECD16F19C6B0EC5E5BF2D7B0A2A6067234C9CC8CC2BC36"
+          },
+          {
+            "path": "templates/dialog.hbs",
+            "bytes": 331,
+            "sha256": "1F61644E2DE8063A8E1772AF2BC60C7B336E087064F07324466608EC68D14755"
+          },
+          {
+            "path": "templates/hits.html",
+            "bytes": 2297,
+            "sha256": "4FC078BA60B4AC77299CAA757F1218D89F0465F83061FED0BC6493355F2BE70F"
+          },
+          {
+            "path": "templates/other-damage-roll.html",
+            "bytes": 558,
+            "sha256": "F94003E5537AB8510EBB212D1DD7DF6935FED003972ABF2EB66980C5C8EF5606"
+          },
+          {
+            "path": "templates/roll-base.html",
+            "bytes": 346,
+            "sha256": "4E3F82979BE7A7F68B9F71557A1A69397419705292A2A79660FDD3C5408C3E01"
+          },
+          {
+            "path": "templates/roll-dialog.hbs",
+            "bytes": 1062,
+            "sha256": "851B480F218F0908714E979D78BC13620AF7E4AE637F5D23071D224D6866D0FF"
+          },
+          {
+            "path": "templates/roll.html",
+            "bytes": 298,
+            "sha256": "09D09C370990F40389B475BA134A8D1F3F3D5A9DB5767D8306DD71FED0759861"
+          },
+          {
+            "path": "templates/rolloptions.html",
+            "bytes": 2168,
+            "sha256": "75A79E86854B6A0CC3FA874EBB3176B15CC768014611653ED23559100427041E"
+          },
+          {
+            "path": "templates/saves.html",
+            "bytes": 1994,
+            "sha256": "AB62842A68A0FB70A2AC2F87512D472A56056BF8D945263505EACF751C358533"
+          },
+          {
+            "path": "templates/tool-card.hbs",
+            "bytes": 797,
+            "sha256": "DD53919332801363D6E7B8D2BD195E627A7B89292E65D3B40B5D1FE4D9E46D50"
+          },
+          {
+            "path": "templates/tooltip-legacy.html",
+            "bytes": 1262,
+            "sha256": "EC947B94E6291AA13B890A14A9809518EFCB4BB8A7D5CFEFCC24CE9BFBFAC8FF"
+          },
+          {
+            "path": "templates/tooltip.html",
+            "bytes": 1258,
+            "sha256": "48EB762F029F298D565F74D30AAE3708A2F7671F781B57A5702747B5577BB941"
+          }
+        ],
+        "fileCount": 122,
+        "byteLength": 9268097
+      },
+      "inventoryParity": true
+    }
+  ],
+  "blockers": [],
+  "worldRead": false,
+  "worldCopied": false,
+  "normalDataLaunched": false,
+  "normalDataMutated": false,
+  "overwrite": false,
+  "noWriteOutsideIsolatedDestination": true,
+  "supervisorState": "not-started-by-this-routine",
+  "loadedBehavior": "not-observed",
+  "activeGm": "not-observed",
+  "readyClaim": false,
+  "doesNotProve": [
+    "loaded-optional-module-behavior",
+    "permissions",
+    "active-gm-authority",
+    "client-session",
+    "bindings",
+    "document-mutation",
+    "Stage 9 acceptance"
+  ]
+}

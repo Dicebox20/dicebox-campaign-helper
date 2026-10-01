@@ -1,0 +1,31 @@
+{
+  "operation": "dicebox.stage12.semantic-entity-creation-grid-alignment",
+  "status": "PASS_LOCAL_NONCERTIFYING",
+  "milestone": "M1035",
+  "scope": "one typed local create-entity Scene command",
+  "evidence": {
+    "focusedVitest": {
+      "files": 2,
+      "tests": 14,
+      "status": "PASS"
+    },
+    "packageTypecheck": "PASS",
+    "desktopBuild": "PASS",
+    "workflowCheck": "PASS"
+  },
+  "verifiedBehavior": [
+    "requires a non-duplicate stable dbx: entity ID",
+    "requires an existing semantic kind, semantic name, valid color, and editable ownership",
+    "requires explicit grid alignment and snaps x/y to the declared Scene grid",
+    "rejects stale bases and invalid or out-of-bounds geometry through the established command spine",
+    "preserves existing entities and supports existing undo/redo history"
+  ],
+  "excluded": [
+    "broad Stage 12 acceptance",
+    "desktop authoring UI",
+    "Walls, native doors, Regions, Background Objects, Tiles, lights, notes, relationships",
+    "image transforms, vision predictions, Spatial Blueprint promotion",
+    "project persistence, Foundry mutation, provider or credential action"
+  ],
+  "readyClaim": false
+}

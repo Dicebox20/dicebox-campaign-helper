@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "1.0.0",
+  "operation": "program-scene.fixture-vertical-slice",
+  "status": "PASS",
+  "evidenceLabel": "fixture",
+  "readyClaim": false,
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30001,
+    "serverPid": 26080,
+    "activeGm": true
+  },
+  "preview": {
+    "status": "PASS",
+    "operation": "program-scene.preview",
+    "planSha256": "61d63fea89959e22ad1dd43256d585afee209a502979674cf4e3146d7b310643",
+    "candidateCount": 10,
+    "existingCompleteBeforeApply": false,
+    "cleanupEnabled": false,
+    "preservation": {
+      "foreign": "preserve",
+      "unknown": "preserve",
+      "runtimeOwned": "preserve"
+    }
+  },
+  "approval": {
+    "transport": "Foundry adapter DialogV2",
+    "decision": "approved",
+    "authorization": "standing user authorization for autonomous disposable-fixture execution",
+    "applyCount": 1
+  },
+  "apply": {
+    "status": "PASS",
+    "operation": "program-scene.apply",
+    "evidenceClass": "created_document",
+    "noWrite": false,
+    "sceneCreated": true,
+    "authoritativeReread": true,
+    "foreignStatePreserved": true,
+    "scene": {
+      "stableId": "dbx:scene:desktop-shell-fixture",
+      "uuid": "Scene.6jjLHynBWDodflBA"
+    },
+    "initialLevel": {
+      "stableId": "dbx:scene:desktop-shell-fixture:initial-level",
+      "uuid": "Scene.6jjLHynBWDodflBA.Level.defaultLevel0000",
+      "background": "modules/dicebox-campaign-helper/assets/maps/ascendancy-tram-calibration-graybox-v1.png"
+    },
+    "walls": [
+      {"stableId": "dbx:wall:desktop-shell-fixture:main-east", "uuid": "Scene.6jjLHynBWDodflBA.Wall.fJ932s3yQRfN3HcE"},
+      {"stableId": "dbx:wall:desktop-shell-fixture:main-north", "uuid": "Scene.6jjLHynBWDodflBA.Wall.rsl03xoGH5R0pyej"},
+      {"stableId": "dbx:wall:desktop-shell-fixture:main-south", "uuid": "Scene.6jjLHynBWDodflBA.Wall.BvD2cNUJfSiQbifL"},
+      {"stableId": "dbx:wall:desktop-shell-fixture:main-west", "uuid": "Scene.6jjLHynBWDodflBA.Wall.0WQh0kmGMgarNfV9"},
+      {"stableId": "dbx:wall:desktop-shell-fixture:north", "uuid": "Scene.6jjLHynBWDodflBA.Wall.oBxT1rsMa7GOpwkZ"}
+    ],
+    "tile": {
+      "stableId": "dbx:tile:core",
+      "uuid": "Scene.6jjLHynBWDodflBA.Tile.5tV6CwGh5X5VAqa1"
+    },
+    "regions": [
+      {"stableId": "dbx:region:entry", "uuid": "Scene.6jjLHynBWDodflBA.Region.vJ1FhC8R1JbTVMu4"},
+      {"stableId": "dbx:region:puzzle", "uuid": "Scene.6jjLHynBWDodflBA.Region.FEnvlvG0gEh8iO1Y"}
+    ],
+    "counts": {"walls": 5, "tiles": 1, "regions": 2}
+  },
+  "recoveryAndReread": {
+    "secondPreviewStatus": "PASS",
+    "existingCompleteAfterApply": true,
+    "blindRetryPerformed": false,
+    "serverLogCorroboratedCreateIds": true
+  },
+  "visualObservations": {
+    "gm": {
+      "status": "PASS",
+      "sceneName": "Semantic Scene Fixture",
+      "rendererNonblank": true,
+      "consoleWarningsOrErrors": []
+    },
+    "playerCompatible": {
+      "status": "PASS",
+      "fixtureUserCreated": true,
+      "userName": "DiceBox Test Player",
+      "userId": "CBqFYZ0aEmbioIRw",
+      "role": "PLAYER",
+      "sceneName": "Semantic Scene Fixture",
+      "clientLoaded": true,
+      "canvasAppearance": "black because no Token in the Scene grants this player vision",
+      "consoleWarnings": [
+        "There is no Token in this Scene which gives you visibility of the area."
+      ],
+      "consoleErrors": [],
+      "interpretation": "This proves player-client compatibility and expected Foundry vision enforcement; it does not claim a player-visible renderer without a vision-granting Token."
+    }
+  },
+  "sourceStageParity": {
+    "module.json": "CA1E2B51434890902B4E8D8C8406C6111A40733210A0DB1BC395DD9CE6C6CC13",
+    "src/entry-20260825.js": "0B3DBBCAF1FE8BBA98E5C36814F8EC2BFB39CB495FC861A945183FC16754423B",
+    "src/module.js": "91D74A361DF0415D2B699C0A9B9840ACA110866FD327B94A9DB6D9FE278514AA",
+    "src/program-scene-vertical-slice.js": "94E834CFC4007CC64ACC3B60F70029B001F7B3E69E494CC9575B5D19BDB17B48",
+    "program-scene-vertical-slice-package.json": "825FE0E53BAF7246CEA603AE0CDC0E08ADD56D6321EA65B1289345A45548B6C9",
+    "assets/maps/ascendancy-tram-calibration-graybox-v1.png": "7ADEB330329550EB18753187E8DBF001815BF22E056F14BC2CDC76188B0CF852",
+    "assets/maps/ascendancy-tram-calibration-marker-v1.svg": "7D6552DDE00CFDDB6CBE92825F36E5C0D06A5B427AB04FCF1A5A57D6382665F9"
+  },
+  "fixtureObservationSetupWrites": {
+    "testUserCreated": 1,
+    "sceneActivated": true,
+    "productGeometryWritesBeyondApprovedPlan": 0
+  },
+  "scope": {
+    "balladTouched": false,
+    "progressionOrPuzzleStateTouched": false,
+    "fixtureOnly": true
+  },
+  "nextStage": "campaign-director-and-codex"
+}

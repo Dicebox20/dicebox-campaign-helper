@@ -1,0 +1,45 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m6-spatial-projection-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 24, "tests": 118, "status": "PASS" },
+    "capabilityRegistry": {
+      "sceneReadWriteIds": "PASS",
+      "regionReadWriteIds": "PASS",
+      "moduleConservativeReadObservation": "PASS",
+      "sceneAndRegionWritesRemainUnavailableByDefault": "PASS"
+    },
+    "spatialProjectionPlan": {
+      "strictSchema": "PASS",
+      "sceneWallRegionOrder": "PASS",
+      "officialFoundryApiBindings": "PASS",
+      "anchorIntentPreservation": "PASS",
+      "rawPayloadRejection": "PASS",
+      "sceneRegionCapabilityAndGmPreviewGate": "PASS",
+      "mutationDisabledUntilExactRuntimeGate": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 46,
+      "facts": 61,
+      "decisions": 36,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 35,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 Scene/Region capability states or permissions",
+    "Any Scene.create, scene.update, or createEmbeddedDocuments write",
+    "Exact Scene, Wall, Region, Level, or Region behavior payload shape",
+    "Projection read-back, topology, visibility, movement, reset, or cross-client behavior"
+  ],
+  "nextGate": "Run the exact disposable Foundry 14.367 Scene/Region shape and permission probe before enabling a projection adapter or applying this plan."
+}

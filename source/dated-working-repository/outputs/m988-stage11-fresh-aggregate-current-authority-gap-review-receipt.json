@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M988",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY FRESH STAGE11 AGGREGATE/CURRENT-AUTHORITY GAP REVIEW; STAGE 11 NOT ACCEPTED",
+  "scope": "Review the complete current Stage 11 aggregate/current-authority surfaces after M986 and M987, preserve all evidence and authority locks, and select one smallest directly evidenced next gap without implementation or runtime activity.",
+  "sourceReceipts": {
+    "m987": "outputs/m987-stage11-post-project-create-redo-handler-classifier-aggregate-ledger-attachment-reconciliation-receipt.json",
+    "m986": "outputs/m986-stage11-project-create-redo-handler-classifier-aggregate-ledger-attachment-closure-receipt.json",
+    "m985": "outputs/m985-stage11-post-project-create-redo-handler-classifier-reconciliation-receipt.json",
+    "m918": "outputs/m918-stage11-handout-asset-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "m898": "outputs/m898-stage11-handout-asset-semantic-redo-composition-closure-receipt.json",
+    "m725": "outputs/m725-stage11-project-handout-asset-terminal-history-bridge-receipt.json"
+  },
+  "aggregateReview": {
+    "stage11PartialClauses": 4,
+    "producerFamilies": 11,
+    "operationCount": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "handlerClassifierAggregateAttachments": 5,
+    "semanticAggregateAttachments": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "runtime": "PARKED",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false,
+    "countsChanged": false
+  },
+  "candidateReview": {
+    "handoutTerminalHistoryBridge": "bridgeProjectHandoutAssetRegistrationRedoToTerminalHistory",
+    "handoutTerminalHistoryReceipt": "outputs/m725-stage11-project-handout-asset-terminal-history-bridge-receipt.json",
+    "handoutSemanticReceipt": "outputs/m898-stage11-handout-asset-semantic-redo-composition-closure-receipt.json",
+    "handoutSemanticAggregateReceipt": "outputs/m918-stage11-handout-asset-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "dedicatedHandlerClassifierEvidencePresentBeforeReview": false,
+    "otherDirectCandidates": [
+      "project.asset.register-audio",
+      "project.asset.register-token",
+      "project.asset.bind"
+    ],
+    "selectionRationale": "Handout registration is the first directly evidenced missing handler/classifier layer in the existing producer sequence and already has strict bridge, semantic, and semantic-aggregate receipts; selecting it advances one producer without merging asset-role authority."
+  },
+  "limits": {
+    "implementation": false,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "knowledgeBaseReadOnlySummary": "PASS: sources 1534; facts 1238; decisions 1173; open items 135; trials 827; research subjects 40; milestones 26",
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history active; zero violations; readyClaim false",
+    "reconciliationConclusion": "PASS: five handler/classifier aggregate attachments and nine semantic aggregate attachments remain producer-scoped; all four Stage 11 clauses remain partial; handout asset registration is the smallest directly evidenced missing typed handler/classifier layer.",
+    "negativeCoverage": "PASS: no implementation, runtime, browser, Foundry, project, provider, credential, account, player-password, authority, transition, generic-executor, Stage 11 acceptance, Stage 12, or Ready-to-Play action occurred."
+  },
+  "next": "M989: bind the existing project.asset.register-handout redo terminal-history handler and matched-reread classifier into one strict typed local non-certifying evidence surface."
+}

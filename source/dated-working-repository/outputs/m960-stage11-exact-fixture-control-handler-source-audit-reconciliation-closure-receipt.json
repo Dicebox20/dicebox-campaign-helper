@@ -1,0 +1,69 @@
+{
+  "milestone": "M960",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY SOURCE/RUNTIME AUTHORITY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reread M959 local control-handler source evidence against the complete Stage 11 matrix, current-authority and aggregate surfaces, producer-family coverage, receipts, and boundary rules.",
+  "sourceReceipts": [
+    "outputs/m959-stage11-exact-fixture-control-handler-source-audit-closure-receipt.json",
+    "outputs/m958-stage11-exact-fixture-post-surface-reconciliation-closure-receipt.json",
+    "outputs/m956-stage11-post-loaded-authority-supplemental-cross-plane-binding-reconciliation-closure-receipt.json"
+  ],
+  "reconciliation": {
+    "localSourceEvidence": true,
+    "sourceVersusRuntimePreserved": true,
+    "liveAuthorityProven": false,
+    "aggregateAuthorityProven": false,
+    "countsChanged": false,
+    "stage11PartialClauses": 4,
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "partial",
+    "aggregateAuthority": "not-granted",
+    "runtime": "parked",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "selection": {
+    "nextMilestone": "M961",
+    "scope": "One read-only audit of the aggregate-authority index and current-authority bridge against the Stage 11 matrix.",
+    "codeChanges": 0,
+    "runtimeRerun": false,
+    "browserInput": false,
+    "controlInvocation": false,
+    "documentWrites": 0,
+    "authorityPromotion": false,
+    "playerPasswords": false,
+    "stage11Acceptance": false,
+    "stage12": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "knowledgeBaseBeforeClosure": "PASS: 1481 sources; 1213 facts; 1120 decisions; 802 trials",
+    "workflowBeforeClosure": "PASS: 10 of 16 gates; active proposal-approval-history; Stage 11 BLOCKED; Stage 12 LOCKED; ready false",
+    "sourceAuditRegression": "PASS: 1 file; 10 tests",
+    "authorityBoundary": "PASS: local source guards remain non-certifying"
+  },
+  "limits": {
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "documentWrites": 0,
+    "documentUpdateInvoked": false,
+    "genericExecutor": false,
+    "storageInspected": false,
+    "projectMutated": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "next": "Perform only M961: audit aggregate/current-authority index continuity without changing code, runtime, counts, or authority.",
+  "receiptVersion": "0.1.0"
+}

@@ -1,0 +1,31 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1161-exact-nested-data-installer-parity-attestation-closure",
+  "milestone": "M1161",
+  "status": "CLOSED_M1161_EXACT_NESTED_DATA_SOURCE_STAGED_PARITY",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.exact-nested-data-installer-parity.attest.closure",
+  "observationReceipt": "outputs/m1161-stage12-exact-nested-data-installer-parity-attestation-receipt.json",
+  "closure": {
+    "destinationRoot": "work/foundry-fixture-data-v2/Data",
+    "stageUpdates": 1,
+    "sourceStagedParity": "PASS 6/6",
+    "installerHash": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "runtimeReopened": false,
+    "installerInvoked": false,
+    "noWorldMutation": true,
+    "readyClaim": false
+  },
+  "verification": {
+    "workflowCheck": "PASS 11/16",
+    "knowledgeBaseRebuildBeforeBoundary": "PASS",
+    "jsonValidation": "PASS",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "remainingBlockers": [
+    "Current installer served-byte parity is not yet observed.",
+    "Current runtime/profile authority and authoritative reread remain blocked."
+  ],
+  "nextBoundary": "M1162: served current-installer hash attestation without installer invocation or runtime reopen."
+}

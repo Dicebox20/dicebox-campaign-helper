@@ -1,0 +1,9 @@
+{
+  "operation": "desktop.backup-promotion-ui-self-test.boundary-regression",
+  "milestone": "M1196",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "changedFile": "apps/campaign-helper-desktop/src/App.tsx",
+  "change": "Removed an unnecessary grouping parenthesis from the neighboring cross-producer mode guard so the M418 source-contract test locates its exact boundary.",
+  "validation": {"backupPromotionUiSelfTest": "9/9 PASS", "packageTypecheck": "PASS", "runtime": "not-invoked", "foundry": "not-invoked", "readyClaim": false}
+}

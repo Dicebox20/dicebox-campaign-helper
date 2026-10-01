@@ -1,0 +1,109 @@
+{
+  "milestone": "M932",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile M931’s producer-scoped in-memory add-Scene semantic-redo aggregate attachment against the complete Stage 11 matrix, producer-family evidence, aggregate/current-authority bridges, active card, roadmap, receipts, and rebuilt knowledge base without changing counts or authority.",
+  "inputs": [
+    "outputs/m931-stage11-in-memory-add-scene-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m930-stage11-post-create-semantic-redo-aggregate-attachment-reconciliation-receipt.json",
+    "outputs/m914-stage11-persistent-add-scene-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m916-stage11-audio-asset-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m918-stage11-handout-asset-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m920-stage11-token-asset-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m923-stage11-asset-bind-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m925-stage11-save-as-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m927-stage11-rename-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m929-stage11-create-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-cross-producer-lifecycle-continuity-evidence.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAggregateAuthorityIndexedRedoBindingEntries": [
+      "project.create",
+      "project.save",
+      "project.rename",
+      "project.add-scene.persist",
+      "project.asset.bind",
+      "project.asset.register-audio",
+      "project.asset.register-handout",
+      "project.asset.register-token",
+      "project.add-scene.commit-in-memory"
+    ],
+    "attachmentCoverage": {
+      "m914": "one-producer-scoped-non-certifying",
+      "m916": "one-producer-scoped-non-certifying",
+      "m918": "one-producer-scoped-non-certifying",
+      "m920": "one-producer-scoped-non-certifying",
+      "m923": "one-producer-scoped-non-certifying",
+      "m925": "one-producer-scoped-non-certifying",
+      "m927": "one-producer-scoped-non-certifying",
+      "m929": "one-producer-scoped-non-certifying",
+      "m931": "one-producer-scoped-non-certifying"
+    },
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source/test separately indexes 9 redo entries, including the supplemental project.add-scene.commit-in-memory row; these are not collapsed into one measure.",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "disposition": {
+    "m931Reread": "PASS: exact M906 in-memory add-Scene semantic-redo receipt remains correctly attached with identity, matched rereads, later in-memory revision, ordered Scene-set, appended Scene, active selection, asset preservation, non-persistence, and no-byte-hash-rotation boundaries.",
+    "attachmentCoverage": "PASS: all nine current aggregate-authority indexed redo entries have explicit producer-scoped aggregate attachment fields; no producer-scoped attachment gap remains in this index.",
+    "remainingDirectBlocker": "Aggregate current authority is not proven by bounded operation-specific evidence; cross-producer committed/recovered continuity remains incomplete.",
+    "otherBlockers": "Packaged/runtime authority and direct active-GM/Foundry evidence remain incomplete; the aggregate Stage 11 acceptance claim is unsupported."
+  },
+  "validation": {
+    "readOnlyCoverageCheck": "PASS: M931, M930, all nine aggregate attachment fields, current-authority index, cross-producer modeled continuity, active card, roadmap, and rebuilt KB were reread.",
+    "knowledgeBaseSummary": "PASS: sources 1426, facts 1185, decisions 1065, open items 135, trials 788, research subjects 40, milestones 26",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "aggregateLedgerSuite": "PASS: 13 tests",
+    "relatedStage11EvidenceSuite": "PASS: 32 files; 86 tests (all project-stage11-*.test.ts)",
+    "fullRepositorySuite": "PASS: 217 files; 976 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "databaseRebuildAndVerify": "PASS: integrity ok; sources 1426, facts 1185, decisions 1065, active work 105, research subjects 40, milestones 26",
+    "countScopeCheck": "PASS: Stage 11 matrix 8, aggregate direct strands 9, current aggregate-authority index 9; no count or authority change",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "runtimeLaneReopened": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer committed/recovered authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "byte-level envelope rotation for project.rename or project.create",
+    "backup-promotion undo/redo support",
+    "generic execution, project mutation, or provider/credential integration",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Hold at the Stage 11 acceptance boundary until an explicitly authorized and directly evidenced cross-producer committed/recovered authority source is available; do not infer aggregate authority, reopen the parked runtime lane, or enter Stage 12."
+}

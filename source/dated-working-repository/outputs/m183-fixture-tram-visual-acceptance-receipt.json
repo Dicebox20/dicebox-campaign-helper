@@ -1,0 +1,32 @@
+{
+  "operation": "tram-routing.fixture.visual-acceptance",
+  "status": "PASS",
+  "evidenceClass": "player-accepted",
+  "noWrite": true,
+  "readyClaim": false,
+  "acceptedAt": "2026-08-23",
+  "acceptanceInput": "accept",
+  "acceptedArtifact": {
+    "screenshot": "outputs/m182-fixture-tram-anchor-clean-screenshot.png",
+    "screenshotSha256": "B7C061950A40B5FED98BD500B500365F419E61AD5561FCC0DE3EF2CF2840A00E",
+    "recoveryReceipt": "outputs/m182-fixture-tram-anchor-recovery-receipt.json",
+    "recoveryReceiptSha256": "7D93DEAFC73380BF8C73BB690249FE78330CDF27C8A741956982C6B6E5494B92",
+    "calibrationReceipt": "outputs/m182-fixture-tram-anchor-calibration-live-receipt.json",
+    "calibrationReceiptSha256": "E2E8323B9E1C7FC3705139C1CB322CC6321D9186A6E48B6B6D8934B14C9A4FAA",
+    "calibration": "94/94 MATCH"
+  },
+  "acceptedVisualContract": {
+    "board": "one clear 6x6 Rush Hour board",
+    "cars": "six separate tram-car Tiles",
+    "rail": "eastbound TO CORE rail aligned to y=447.5",
+    "geometryOwner": "compiled Spatial Blueprint",
+    "tileAnchor": [0, 0]
+  },
+  "boundaries": {
+    "fixtureVisualStageComplete": true,
+    "nextStage": "andrew-routing-entry",
+    "fixturePlayabilityComplete": false,
+    "balladMutation": false,
+    "readyToPlay": false
+  }
+}

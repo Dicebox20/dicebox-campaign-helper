@@ -1,0 +1,39 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1162-served-current-installer-hash-attestation-closure",
+  "milestone": "M1162",
+  "status": "CLOSED_M1162_SERVED_CURRENT_INSTALLER_HASH_ATTESTED_RUNTIME_UNCHANGED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.served-current-installer-hash.attest.closure",
+  "observationReceipt": "outputs/m1162-stage12-served-current-installer-hash-attestation-receipt.json",
+  "closure": {
+    "sourceStagedServedParity": "PASS",
+    "httpStatus": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "requestCount": 1,
+    "bytes": 31352,
+    "installerSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "runtimeProfileRefreshed": false,
+    "installerInvoked": false,
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "verification": {
+    "workflowCheckBeforeClosure": "PASS 11/16",
+    "knowledgeBaseRebuildBeforeBoundary": "PASS",
+    "finalFixtureStatus": "STOPPED",
+    "finalListeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "recovery": {
+    "normalStop": "required-force-fallback",
+    "forcedStop": "PASS",
+    "authoritativeReread": "STOPPED/no-listener/zero-write/no-Ballad"
+  },
+  "remainingBlockers": [
+    "No post-M1158 RuntimeProfile/profile-diff, authority, or authoritative campaign reread was attempted.",
+    "Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1163: post-M1158 runtime/profile evidence-boundary reconciliation; no installer invocation is implied."
+}

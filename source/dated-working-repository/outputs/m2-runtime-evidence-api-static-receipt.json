@@ -1,0 +1,42 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m2-runtime-evidence-api-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 16, "tests": 75, "status": "PASS" },
+    "foundryReadOnlyApi": {
+      "query": "runtime-evidence",
+      "fingerprintExposure": "PASS",
+      "probeReceiptExposure": "PASS",
+      "noWriteBoundary": "PASS",
+      "namespaceCollisionPreservation": "PASS"
+    },
+    "programBridge": {
+      "runtimeEvidenceQuery": "PASS",
+      "m0MismatchClassification": "PASS",
+      "fixtureReceiptSource": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 37,
+      "facts": 52,
+      "decisions": 27,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 26,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 behavior or permissions",
+    "Live settings or JournalEntry persistence",
+    "Two-client active-GM routing and reconnect behavior",
+    "Live MCP/Utility Harness/Chrome integration"
+  ],
+  "nextGate": "Run the named runtime-evidence query in the exact disposable Foundry world and compare its fingerprint and no-write receipt before enabling any live adapter."
+}

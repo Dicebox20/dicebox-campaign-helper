@@ -1,0 +1,25 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m39-foundry-module-entry-repair",
+  "operation": "foundry.module.entry-repair",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "noWorldMutation": true,
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\AppData\\Local\\FoundryVTT\\Data",
+    "worldId": "the-ballad-of-chauser-bill",
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3"
+  },
+  "change": {
+    "source": "packages/dicebox-foundry/src/module.js",
+    "import": "./foundry-live-bridge.js",
+    "reason": "Guarantee the settings and ready-hook registration is loaded from the canonical Foundry module entry."
+  },
+  "installed": {
+    "relativePath": "modules/dicebox-campaign-helper/src/module.js",
+    "sha256": "e4fb1add499341280b67461dd5613dd953cee98b9cb162d7b0973ea0e5c7d2e5",
+    "moduleManifestSha256": "a0999eea973aab65066ed998f66a21ca461c7d78478ab0dda3908b86d3468c39"
+  },
+  "nextGate": "Reload the exact Ballad GM world and observe the three DiceBox world settings through Foundry UI or the page-main bridge."
+}

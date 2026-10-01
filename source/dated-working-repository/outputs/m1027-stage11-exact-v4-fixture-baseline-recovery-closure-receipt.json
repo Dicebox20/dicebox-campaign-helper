@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1027",
+  "stage": "proposal-approval-history",
+  "status": "PASS EXACT-V4 FIXTURE BASELINE; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "fixture",
+  "scope": "Exact-owned v4 disposable fixture supervisor start and read-only baseline status reread.",
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3"
+  },
+  "supervisor": {
+    "status": "PASS",
+    "pid": 8036,
+    "listeners": [8036],
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "http": { "status": 302, "location": "/join" },
+    "checks": {
+      "pidAlive": true,
+      "commandMatches": true,
+      "stateTargetMatches": true,
+      "processPathMatches": true,
+      "processStartMatches": true,
+      "listenerMatches": true,
+      "httpReady": true
+    }
+  },
+  "baseline": {
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "controlInvocationObserved": false,
+    "browserJoinOrControlObserved": false,
+    "activeGmObserved": false
+  },
+  "authorityAndSafety": {
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noRecoveryAuthority": true,
+    "credentialsAccessed": false,
+    "playerPasswordsGenerated": false,
+    "currentAuthority": "partial",
+    "aggregateAuthority": "not-granted",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "limits": [
+    "This receipt proves only exact fixture process ownership and its zero-write baseline.",
+    "It does not observe a joined active GM, invoke a fixed control, capture direct continuity, grant authority, accept Stage 11, unlock Stage 12, or claim readiness."
+  ],
+  "next": "M1028 may only perform a fixed read-only v4 current-active-GM and owned-Scene baseline observation before any separate continuity-capture authorization."
+}

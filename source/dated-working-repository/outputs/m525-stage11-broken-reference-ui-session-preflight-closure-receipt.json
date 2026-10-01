@@ -1,0 +1,64 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m525-stage11-broken-reference-ui-session-preflight-2026-08-29",
+  "milestone": "M525",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_CODE_ONLY",
+  "readyClaim": false,
+  "scope": "Typed redacted persisted project proposal-session preflight for the debug-gated broken-reference UI self-test",
+  "implementation": {
+    "sessionModule": "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "sessionModuleSha256": "0302A1CEE87FD275EBADF8B8DEAE30620CDEEF3B98017256D644C24CDCF2EC1C",
+    "summaryContract": "summarizeDesktopProjectProposalSessionLoad returns only MISSING, PASS:<history status>, or BLOCKED:<validation code>.",
+    "rawSessionExposed": false,
+    "keyExposed": false,
+    "reasonExposed": false,
+    "automaticClear": false,
+    "route": {
+      "file": "apps/campaign-helper-desktop/src/App.tsx",
+      "sha256": "694AFCBE82A607D694459859287E95A27B58DA6D14C367E8D71293C97E6FCBC2",
+      "mode": "broken-reference-detach-ui-execute",
+      "behavior": "The route summarizes the typed load before the clean-session guard, reports the redacted disposition in its blocker/detail, and continues only for MISSING; it does not clear or replace a non-MISSING session."
+    }
+  },
+  "coverage": {
+    "sessionTest": {
+      "file": "tests/project-proposal-session.test.ts",
+      "sha256": "6FD1E2DC8DD9CF9706770EC9A6EDD114417983E68766B1B81807A2C6CAF9096A",
+      "assertions": ["MISSING", "PASS:previewed", "BLOCKED:MALFORMED_SESSION", "project ID is not returned", "blocked reason is not returned"]
+    },
+    "routeTest": {
+      "file": "tests/broken-reference-ui-selftest.test.ts",
+      "sha256": "D93BBF4FC19F582B4F65E0086CBB0DA4F8D7DDC52C975A815D82A429E4F9729C",
+      "assertions": ["typed redacted summary is used", "non-MISSING disposition blocks", "raw stored session is not read by route", "terminal clear is not used"]
+    },
+    "command": "npx vitest run tests/project-proposal-session.test.ts tests/broken-reference-ui-selftest.test.ts tests/exact-desktop-self-test-capture.test.ts tests/pending-artifact-ownership.test.ts",
+    "result": "PASS: 4 files, 14 tests",
+    "desktopTypeScript": "PASS: tsc --noEmit for tsconfig.json and tsconfig.node.json",
+    "diffHygiene": "PASS: git diff --check",
+    "workflowCheck": "PASS: score 63, 10/16 gates, Stage 11 proposal-approval-history, violations 0"
+  },
+  "workerReview": {
+    "agent": "Goodall",
+    "modelRoute": "Luna High",
+    "status": "PASS",
+    "filesEdited": false,
+    "conclusionsMatchLocalValidation": true,
+    "nonBlockingNote": "Optional stronger negative assertions for additional validation-code variants were noted; the current exact malformed-session redaction and route assertions are sufficient for M525."
+  },
+  "validation": {
+    "codeOnly": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "browserStorageInspection": false,
+    "sessionMutation": false,
+    "projectMutation": false,
+    "recoveryOrApply": false,
+    "fixtureMutation": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false,
+    "nextBoundary": "M526 one fresh explicit-mode package build with exact artifact marker and process reread; no launch or capture in M526"
+  },
+  "doesNotProve": ["persisted session absence", "packaged artifact embedding", "packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

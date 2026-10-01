@@ -1,0 +1,48 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m4-exact-link-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 18, "tests": 89, "status": "PASS" },
+    "exactReferenceResolver": {
+      "adapterId": "foundry.reference.read@14.367",
+      "fromUuidRoute": "PASS",
+      "gameJournalGetRoute": "PASS",
+      "exactDocumentIdentity": "PASS",
+      "missingTargetPreserved": "PASS",
+      "wrongTypeRejected": "PASS",
+      "malformedIdentityUnknown": "PASS",
+      "unavailableSurface": "PASS",
+      "resolutionFailureUnknownOutcome": "PASS",
+      "rawDocumentRedaction": "PASS",
+      "writeApiInputsAbsent": "PASS"
+    },
+    "exactLinkPlan": {
+      "semanticTargetBinding": "PASS",
+      "strictSchema": "PASS",
+      "arbitraryFieldRejection": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 42,
+      "facts": 57,
+      "decisions": 32,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 31,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 UUID resolution or permissions",
+    "Live compendium/world link closure",
+    "Live document visibility or client rendering",
+    "Any create/update/delete or reset operation"
+  ],
+  "nextGate": "Resolve reviewed exact links in the disposable Foundry 14.367 / D&D5e 5.3.3 world and capture authoritative link-closure/read-back evidence before compiling link writes."
+}

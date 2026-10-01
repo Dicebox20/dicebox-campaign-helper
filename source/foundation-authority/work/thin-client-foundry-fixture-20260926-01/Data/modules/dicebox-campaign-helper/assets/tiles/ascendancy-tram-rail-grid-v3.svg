@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="570" viewBox="0 0 660 570">
+  <!-- Board-sized fixed scenery only. Movable tram cars remain separate Foundry Tiles. -->
+  <defs>
+    <linearGradient id="deck" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#18191c"/><stop offset=".5" stop-color="#090b0e"/><stop offset="1" stop-color="#151217"/>
+    </linearGradient>
+    <linearGradient id="copper" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f0c36c"/><stop offset=".26" stop-color="#7b4d1d"/><stop offset=".55" stop-color="#2a170b"/><stop offset=".82" stop-color="#a56b2d"/><stop offset="1" stop-color="#f0c36c"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#f5d48a"/><stop offset=".34" stop-color="#7b5a2f"/><stop offset=".66" stop-color="#211810"/><stop offset="1" stop-color="#c59146"/>
+    </linearGradient>
+    <pattern id="deck-grid" width="22" height="19" patternUnits="userSpaceOnUse">
+      <path d="M22 0H0V19" fill="none" stroke="#34283b" stroke-width="1" opacity=".48"/>
+      <circle cx="2" cy="2" r="1" fill="#8b6033" opacity=".55"/>
+    </pattern>
+    <pattern id="ties" width="22" height="95" patternUnits="userSpaceOnUse">
+      <path d="M2 31h18M2 64h18" stroke="#1a1110" stroke-width="10"/>
+      <path d="M2 31h18M2 64h18" stroke="#6d4527" stroke-width="2"/>
+    </pattern>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="656" height="566" rx="14" fill="url(#deck)" stroke="#050608" stroke-width="4"/>
+  <rect x="10" y="10" width="640" height="550" rx="9" fill="url(#deck-grid)" stroke="url(#copper)" stroke-width="10"/>
+  <rect x="20" y="20" width="620" height="530" rx="4" fill="none" stroke="#d59a43" stroke-width="2" opacity=".85"/>
+
+  <!-- Six 110x95 controller cells remain visually explicit but contain no interactive markers. -->
+  <g fill="none">
+    <path d="M110 20V550M220 20V550M330 20V550M440 20V550M550 20V550" stroke="#78542d" stroke-width="3"/>
+    <path d="M20 95H640M20 190H640M20 285H640M20 380H640M20 475H640" stroke="#55375e" stroke-width="3"/>
+    <path d="M110 20V550M220 20V550M330 20V550M440 20V550M550 20V550" stroke="#d09b4b" stroke-width="1" opacity=".7"/>
+    <path d="M20 95H640M20 190H640M20 285H640M20 380H640M20 475H640" stroke="#a96ac4" stroke-width="1" opacity=".65"/>
+  </g>
+
+  <!-- Six horizontal tram tracks, one per board row. -->
+  <g fill="url(#ties)" opacity=".88">
+    <rect x="20" y="0" width="620" height="95"/><rect x="20" y="95" width="620" height="95"/>
+    <rect x="20" y="190" width="620" height="95"/><rect x="20" y="285" width="620" height="95"/>
+    <rect x="20" y="380" width="620" height="95"/><rect x="20" y="475" width="620" height="95"/>
+  </g>
+  <g fill="none" stroke="url(#rail)" stroke-width="6">
+    <path d="M20 32H640M20 63H640"/><path d="M20 127H640M20 158H640"/>
+    <path d="M20 222H640M20 253H640"/><path d="M20 317H640M20 348H640"/>
+    <path d="M20 412H640M20 443H640"/><path d="M20 507H640M20 538H640"/>
+  </g>
+
+  <!-- The third row is the locked eastbound route to Core. -->
+  <rect x="22" y="195" width="616" height="85" rx="6" fill="none" stroke="#8f4fb1" stroke-width="4" opacity=".9"/>
+  <path d="M568 237.5h64m-18-14 18 14-18 14" fill="none" stroke="#f0c45d" stroke-width="6" filter="url(#glow)"/>
+  <text x="500" y="218" fill="#f0c45d" stroke="#110b08" stroke-width="4" paint-order="stroke" font-family="Arial,sans-serif" font-size="14" font-weight="700">TO CORE</text>
+
+  <!-- Heavy corner brackets make the playable board boundary unmistakable. -->
+  <g fill="none" stroke="url(#copper)" stroke-width="12">
+    <path d="M10 70V10H70M590 10h60v60M10 500v60h60M590 560h60v-60"/>
+  </g>
+</svg>

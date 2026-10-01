@@ -1,0 +1,65 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M259",
+  "operation": "foundry.fixture.fresh-runtime-readiness",
+  "status": "PASS_BOUNDED_SERVER_READINESS",
+  "evidenceClass": "fixture",
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "port": 30002,
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3",
+    "entryPath": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js"
+  },
+  "launch": {
+    "guard": "PASS",
+    "status": "PASS",
+    "pid": 20968,
+    "commandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB",
+    "processPath": "C:\\Program Files\\nodejs\\node.exe",
+    "processStartedAt": "2026-08-27T13:40:47.3060457Z",
+    "stateTargetMatches": true,
+    "exclusiveListener": true,
+    "http": {
+      "status": 302,
+      "location": "/join",
+      "acceptedAs": "server/process readiness only"
+    }
+  },
+  "preflight": {
+    "status": "BLOCKED",
+    "manifestChecks": "PASS",
+    "optionalModuleManifests": "UNKNOWN",
+    "liveRuntimeProbe": "NOT_TESTED",
+    "noWrite": true
+  },
+  "stop": {
+    "status": "PASS",
+    "finalSupervisorStatus": "STOPPED",
+    "pidAlive": false,
+    "listeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "filesystemReread": {
+    "worldEntries": ["data", "world.json"],
+    "worldManifestSha256": "06A0D73EB8F6578AEA29360B0D31F2D3AC371ABE5829FB4137009F5845F74B22",
+    "licenseBytes": 836,
+    "licenseSha256": "A61905EC3858FE8B90F7E5C473E1D207A3B5C7174DA904711FCA82AE637F13CE",
+    "optionsLock": "absent",
+    "quarantinedLock": "Config/dicebox-lock-quarantine/options.json.lock-2026-08-27T13-35-21-280Z",
+    "balladWorldPresent": false
+  },
+  "blockers": [
+    "Optional midi-qol and dae manifests were not observed.",
+    "The live loaded-runtime probe was not tested.",
+    "Loaded DiceBox readiness, client/GM authority, bridge eligibility, bindings, behavior, authoritative reread, recovery, and Stage 9 acceptance remain unproven."
+  ],
+  "noCertification": true,
+  "sourceReceipts": [
+    "outputs/m259-fresh-runtime-start-receipt.json",
+    "outputs/m259-fresh-runtime-status-receipt.json",
+    "outputs/m259-fresh-runtime-stop-receipt.json"
+  ]
+}

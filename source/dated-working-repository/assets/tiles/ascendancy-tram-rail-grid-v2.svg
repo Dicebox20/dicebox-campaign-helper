@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="570" viewBox="0 0 660 570">
+  <!-- Fixed visual projection of the 6×6 routing board.  No cars or cell
+       markers appear here; those remain runtime Tile/Region projections. -->
+  <defs>
+    <linearGradient id="plate" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#242321"/><stop offset=".48" stop-color="#131516"/><stop offset="1" stop-color="#25201b"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#d0b06d"/><stop offset=".35" stop-color="#7d6031"/><stop offset=".62" stop-color="#2b241b"/><stop offset="1" stop-color="#b58b45"/>
+    </linearGradient>
+    <pattern id="ties" width="22" height="95" patternUnits="userSpaceOnUse">
+      <path d="M2 7h18M2 88h18" stroke="#211b14" stroke-width="7"/>
+      <path d="M2 7h18M2 88h18" stroke="#5e4827" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="660" height="570" rx="8" fill="url(#plate)" opacity=".58"/>
+  <path d="M9 0v190M9 285v285M651 0v190M651 285v285M0 9h660M0 561h660" fill="none" stroke="#0b0d0e" stroke-width="18"/>
+  <path d="M9 0v190M9 285v285M651 0v190M651 285v285M0 9h660M0 561h660" fill="none" stroke="#9c773d" stroke-width="3"/>
+  <g stroke-linecap="square">
+    <g fill="url(#ties)" opacity=".88">
+      <rect x="18" y="0" width="624" height="95"/><rect x="18" y="95" width="624" height="95"/>
+      <rect x="18" y="190" width="624" height="95"/><rect x="18" y="285" width="624" height="95"/>
+      <rect x="18" y="380" width="624" height="95"/><rect x="18" y="475" width="624" height="95"/>
+    </g>
+    <g fill="none" stroke="url(#steel)">
+      <path d="M18 40h624M18 55h624" stroke-width="6"/>
+      <path d="M18 135h624M18 150h624" stroke-width="6"/>
+      <path d="M18 230h624M18 245h624" stroke-width="7"/>
+      <path d="M18 325h624M18 340h624" stroke-width="6"/>
+      <path d="M18 420h624M18 435h624" stroke-width="6"/>
+      <path d="M18 515h624M18 530h624" stroke-width="6"/>
+    </g>
+    <g stroke="#4b3720" stroke-width="3" opacity=".9">
+      <path d="M110 30v35M220 30v35M330 30v35M440 30v35M550 30v35"/>
+      <path d="M110 125v35M220 125v35M330 125v35M440 125v35M550 125v35"/>
+      <path d="M110 220v35M220 220v35M330 220v35M440 220v35M550 220v35"/>
+      <path d="M110 315v35M220 315v35M330 315v35M440 315v35M550 315v35"/>
+      <path d="M110 410v35M220 410v35M330 410v35M440 410v35M550 410v35"/>
+      <path d="M110 505v35M220 505v35M330 505v35M440 505v35M550 505v35"/>
+    </g>
+  </g>
+  <!-- The eastbound exit is visibly distinguished but keeps its exact y=237.5 centerline. -->
+  <path d="M620 222h40M620 252h40" stroke="#d6a646" stroke-width="4"/>
+  <path d="M624 237h36" stroke="#5c2d7d" stroke-width="3" opacity=".8"/>
+</svg>

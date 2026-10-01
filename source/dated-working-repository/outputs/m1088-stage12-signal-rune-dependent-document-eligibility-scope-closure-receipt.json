@@ -1,0 +1,68 @@
+{
+  "receiptType": "stage12-signal-rune-dependent-document-eligibility-scope-closure",
+  "milestone": "M1088",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "eligibilityGate": {
+    "manifestId": "dbx:manifest:m1086-signal-rune-renderers",
+    "requiredAssetIds": [
+      "dbx:asset:map-rune-mechanism-chamber",
+      "dbx:asset:map-signal-frequency-chamber"
+    ],
+    "status": "ready",
+    "dependentDocumentIds": [
+      "dbx:scene:rune-mechanism-chamber",
+      "dbx:scene:signal-frequency-chamber"
+    ],
+    "attestationStatus": "attested",
+    "attestationSource": "provided-bytes",
+    "noWrite": true,
+    "eligibilityReadback": true,
+    "documentCreated": false
+  },
+  "validation": {
+    "focusedTestFiles": 5,
+    "focusedTests": 27,
+    "packageTypeCheck": "passed",
+    "desktopProductionBuild": "passed",
+    "workflowTest": "14 passed",
+    "outOfScopeTramRejection": true,
+    "foreignIdRejection": true,
+    "duplicateAndRawFieldRejection": true,
+    "directReadback": "passed"
+  },
+  "boundaries": {
+    "externalFetch": false,
+    "assetUpload": false,
+    "servedByteClaim": false,
+    "dependentDocumentsCreated": false,
+    "campaignPackageBindingChanged": false,
+    "installerChanged": false,
+    "tramOrCoreTouched": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "remainingGates": {
+    "SignalRuneDocumentCreation": "not-attempted-and-requires-separate-preview-approval-runtime-gate",
+    "TramCoreRendererBinding": "final-map-required",
+    "ExactFoundryActiveGMReadback": "not-proven",
+    "RegionwrightIntegrationReceipt": "not-proven",
+    "PackageInstallerPromotion": "not-proven",
+    "Stage12Acceptance": "not-accepted",
+    "ReadyToPlay": "not-claimed"
+  },
+  "nextAction": "M1089 post-Signal/Rune eligibility read-only reconciliation"
+}

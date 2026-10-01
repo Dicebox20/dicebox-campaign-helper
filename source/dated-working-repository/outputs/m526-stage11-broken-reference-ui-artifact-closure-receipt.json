@@ -1,0 +1,52 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m526-stage11-broken-reference-ui-artifact-2026-08-29",
+  "milestone": "M526",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_ARTIFACT",
+  "readyClaim": false,
+  "scope": "One fresh exact debug package build and artifact/process reread for the broken-reference UI self-test",
+  "build": {
+    "command": "VITE_DBX_PROJECT_SELF_TEST=broken-reference-detach-ui-execute VITE_DBX_PROJECT_SELF_TEST_EXIT=1 npm run desktop:tauri:build",
+    "exitCode": 0,
+    "frontendBuild": "PASS: 835 modules transformed",
+    "nativeBuild": "PASS: Tauri debug executable produced",
+    "executable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "25437D0B41583D0D7F5442D80D546F1FC7D2D26321B4C76A01E800E71B33EE12"
+    },
+    "bundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-DdL9uPPk.js",
+      "sha256": "9E14F686E9ED06606277F3B329933EFB7F0A2CA78D5F66A47D86184A79A8AF20"
+    }
+  },
+  "markerReread": {
+    "mode": "broken-reference-detach-ui-execute",
+    "redactedSessionPreflight": "session-preflight",
+    "targetPendingGuard": "target-owned pending state",
+    "noClearBoundary": "no session was replaced",
+    "authoritativeReread": "authoritative-reread-commit",
+    "generationGuard": "inspection.generation !== void 0",
+    "allRequiredMarkersPresent": true
+  },
+  "processReread": {
+    "desktop": 0,
+    "cargo": 0,
+    "rustc": 0
+  },
+  "validation": {
+    "packageBuild": true,
+    "artifactEmbeddedM525": true,
+    "launch": false,
+    "capture": false,
+    "browserStorageInspection": false,
+    "sessionMutation": false,
+    "projectMutation": false,
+    "recoveryOrApply": false,
+    "fixtureMutation": false,
+    "foundryWrite": false,
+    "credentialsOrPlayerPasswords": false,
+    "nextBoundary": "M527 one timeout-aware exact capture against this M526 executable with authoritative trace/state/process reread; no rebuild or recapture"
+  },
+  "doesNotProve": ["persisted session absence", "packaged UI lifecycle completion", "proposal-session approval/apply", "Stage 11 acceptance", "Foundry authority", "Ready-to-Play"]
+}

@@ -1,0 +1,55 @@
+{
+  "receiptType": "stage12-rune-m7-furnishing-plan-fixture-closure",
+  "milestone": "M1074",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "implementation": {
+    "scene": "dbx:scene:rune-mechanism-chamber",
+    "documentId": "m1074-rune-mechanism-chamber",
+    "blueprint": "dbx:blueprint:rune-mechanism-chamber",
+    "level": "dbx:level:ascendancy-ground",
+    "anchor": "dbx:anchor:rune-lawson-memory",
+    "plan": "dbx:plan:m1074-rune-furnishing-fixture",
+    "kinds": ["tile", "token", "ambientLight", "ambientSound", "drawing", "note"],
+    "items": 6,
+    "steps": 6,
+    "relations": 1,
+    "assetIdentities": [
+      "dbx:asset:m1074-rune-furnishing-texture",
+      "dbx:asset:m1074-rune-furnishing-token",
+      "dbx:asset:m1074-rune-furnishing-audio"
+    ],
+    "locatorsInPlan": false
+  },
+  "validation": {
+    "focusedTestFiles": 5,
+    "focusedTests": 15,
+    "packageTypeCheck": "passed",
+    "desktopProductionBuild": "passed",
+    "crossSceneDriftRejected": true,
+    "rawDocumentDriftRejected": true,
+    "sourceBlueprintPreserved": true,
+    "mutation": "disabled-until-exact-runtime-gate"
+  },
+  "boundaries": {
+    "packageChanged": false,
+    "installerChanged": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "assetsTransferred": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "nextAction": "M1075 read-only Rune matrix integration reconciliation"
+}

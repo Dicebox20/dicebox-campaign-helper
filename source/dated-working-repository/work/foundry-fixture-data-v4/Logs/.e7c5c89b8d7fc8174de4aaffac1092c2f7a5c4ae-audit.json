@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Logs\\.e7c5c89b8d7fc8174de4aaffac1092c2f7a5c4ae-audit.json",
+    "files": [
+        {
+            "date": 1787855716183,
+            "name": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Logs\\error.2026-08-27.log",
+            "hash": "579b617d7263ecab215ecc6f61e03cb8b747cb2b5ae655fad03d7e23e136afbd"
+        },
+        {
+            "date": 1788190447227,
+            "name": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Logs\\error.2026-08-31.log",
+            "hash": "81a686d5cfb415fe93d1fc67ddb5dbb93d41094c6e91402644f40cc096d5e930"
+        },
+        {
+            "date": 1788285854577,
+            "name": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Logs\\error.2026-09-01.log",
+            "hash": "49a7a139406e6ca51541ea1faa5ee1b71d8bca5ac4dc1df94ec5b9ae89a5f521"
+        },
+        {
+            "date": 1788738175509,
+            "name": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Logs\\error.2026-09-06.log",
+            "hash": "a3301336d840514db4bf855957978c59d577c4e921b8c954bdd41e2d54dff519"
+        },
+        {
+            "date": 1788764518258,
+            "name": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4\\Logs\\error.2026-09-07.log",
+            "hash": "7d4a8d0a5f8cb2d92d2a4f1d3c4778f8d06b8fd295658f7500ebe8d724099e6e"
+        }
+    ],
+    "hashType": "sha256"
+}

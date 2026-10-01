@@ -1,0 +1,47 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m5-media-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 21, "tests": 104, "status": "PASS" },
+    "approvedMediaRegistry": {
+      "sha256Validation": "PASS",
+      "provenanceAndApproval": "PASS",
+      "variantIdentity": "PASS",
+      "duplicateIdentityRejection": "PASS",
+      "strictFieldBoundary": "PASS"
+    },
+    "fileBrowseAdapter": {
+      "adapterId": "foundry.file-browse.read@14.367",
+      "foundryApi": "FilePicker.browse",
+      "ownedRootBoundary": "PASS",
+      "responseMetadataRedaction": "PASS",
+      "unavailableSurface": "PASS",
+      "malformedResponseUnknown": "PASS",
+      "browseFailureUnknownOutcome": "PASS",
+      "uploadDeleteCleanupAbsent": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 44,
+      "facts": 59,
+      "decisions": 34,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 33,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 FilePicker permissions or browse response shape",
+    "Live asset hashes, dimensions, rights, or deployment paths",
+    "Any upload, replacement, deletion, cleanup, or persistence operation",
+    "Client rendering or media loading"
+  ],
+  "nextGate": "Browse the exact approved asset root in the disposable Foundry 14.367 / D&D5e 5.3.3 world, compare returned paths and deployment bindings to the manifest, and keep upload/import disabled until read-back evidence passes."
+}

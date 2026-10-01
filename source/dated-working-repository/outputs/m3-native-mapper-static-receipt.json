@@ -1,0 +1,42 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m3-native-mapper-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": {
+      "files": 9,
+      "tests": 32,
+      "status": "PASS"
+    },
+    "nativeShape": {
+      "parent": "JournalEntry.name",
+      "embedded": "pages[0].text.content",
+      "pageType": "runtime supplied",
+      "textFormat": "runtime supplied",
+      "arbitraryFields": "rejected",
+      "updateWithoutPageBinding": "rejected"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 28,
+      "facts": 43,
+      "decisions": 18,
+      "activeWork": 19,
+      "trials": 17,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Exact Foundry 14.367 JournalEntry schema acceptance",
+    "Exact JournalEntryPage type and text-format values",
+    "JournalEntry.create execution",
+    "Embedded page creation and read-back",
+    "Permissions and active-GM relay"
+  ],
+  "nextGate": "Probe the exact target runtime for CONFIG.JournalEntryPage and CONST.JOURNAL_ENTRY_PAGE_FORMATS before implementing the live create adapter."
+}

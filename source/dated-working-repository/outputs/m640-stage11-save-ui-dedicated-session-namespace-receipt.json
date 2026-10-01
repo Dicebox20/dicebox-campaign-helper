@@ -1,0 +1,69 @@
+{
+  "operation": "stage11-save-ui-dedicated-session-namespace",
+  "milestone": "M640",
+  "status": "PASS_LOCAL_CODE_ONLY_SESSION_ISOLATION_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T10:18:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "scope": {
+    "projectId": "dbx:project:desktop-multiscene-self-test",
+    "selfTestScope": "project-save-ui-self-test",
+    "ordinarySession": "preserved and uninspected",
+    "changedPaths": [
+      "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+      "apps/campaign-helper-desktop/src/App.tsx",
+      "tests/project-proposal-session.test.ts",
+      "tests/desktop-project-proposal-review.test.ts"
+    ]
+  },
+  "implementation": {
+    "closedKey": "dicebox.project-proposal-session.v1:project-save-ui-self-test:<encoded exact project id>",
+    "exactBatchGuard": "project-store/no-provider/desktop.project.save with exactly one project.save command",
+    "ordinaryKeyBehavior": "unchanged and separately readable by the ordinary helper",
+    "sessionMutationBoundary": "The new scoped helper retains append-only replacement checks and permits clear only after a terminal status; no helper writes project content.",
+    "selfTestRoute": "save-ui-execute requires the exact fixed test-owned project, persists only through the dedicated scope, and may clear only a terminal prior session in that dedicated scope."
+  },
+  "verification": {
+    "focusedVitest": {
+      "files": 3,
+      "tests": 28,
+      "result": "PASS",
+      "command": "npx vitest run --configLoader runner --no-file-parallelism --pool=forks --maxWorkers=1 --minWorkers=1 tests/project-proposal-session.test.ts tests/desktop-project-proposal-review.test.ts tests/project-save-executor.test.ts"
+    },
+    "desktopTypeScript": {
+      "result": "PASS",
+      "command": "npx tsc --noEmit -p apps/campaign-helper-desktop/tsconfig.json"
+    },
+    "sourceHashes": {
+      "projectProposalSession": "4DCDEC6ADCB633C7F6601803DF03735745651D129D0897C42D6246533D3CB1EB",
+      "app": "9854854B60B3163083B4B661ED229F939DE2BB4E26852152AB4E2A85FDB00DDF",
+      "sessionTest": "6ED92844879BB560D717BB3C9B76A0277D4DFEBFEFD2193948DDD4CBD7EE6628",
+      "reviewTest": "609ED0D24A0C3B7AA5DE913D516F9FEE25C91C6C423C598DCF34F91650D48628"
+    },
+    "processes": {
+      "desktop": 0,
+      "cargo": 0,
+      "rustc": 0
+    }
+  },
+  "preservation": {
+    "browserStorageInspected": false,
+    "ordinarySessionRead": false,
+    "ordinarySessionTransitioned": false,
+    "ordinarySessionCleared": false,
+    "dedicatedSessionExecuted": false,
+    "nativeProjectWrite": false,
+    "runtimeMutation": false,
+    "packageBuild": false,
+    "packageLaunch": false,
+    "foundryWrite": false,
+    "providerCredentialRepositoryOrPlayerPasswordAction": false
+  },
+  "nextBoundary": "M641: separately authorize one fresh artifact build for the exact scoped save-ui-execute code, then require a later bounded packaged observation; do not infer lifecycle success from local code/tests.",
+  "conclusion": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false
+  }
+}

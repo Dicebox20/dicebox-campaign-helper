@@ -1,0 +1,66 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1231",
+  "operation": "regionwright.module-exposure-recovery",
+  "evidenceClass": "fixture-runtime",
+  "status": "PASS_CLASSIFIED_ALREADY_ACTIVE_CONTROL_ABSENT",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "currentUser": "Gamemaster [GM]"
+  },
+  "moduleInventory": {
+    "activeModuleCount": 2,
+    "diceboxCampaignHelper": { "enabled": true },
+    "regionwrightStudio": { "enabled": true, "version": "0.1.5" },
+    "dae": { "enabled": false, "controlDisabled": true, "version": "14.0.13" },
+    "midiQol": { "enabled": false, "controlDisabled": true, "version": "14.0.11" }
+  },
+  "change": {
+    "regionwrightWasEnabled": true,
+    "regionwrightEnablementChanged": false,
+    "saveInvoked": false,
+    "reloadInvoked": false,
+    "unrelatedModuleOrSettingChanged": false
+  },
+  "loadedControlObservation": {
+    "expectedControl": "regionwright-ascendancy-fixture-audit",
+    "expectedTitle": "Audit Ascendancy fixture state",
+    "presentAfterInventory": false,
+    "invoked": false,
+    "noWrite": true,
+    "retryAllowed": false,
+    "classification": "Regionwright is active in native module inventory, but its fixed fixture control is still absent from the loaded GM toolbar"
+  },
+  "preservation": {
+    "foreignStatePreserved": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "settingsOrPasswordMutation": false,
+    "playerAction": false,
+    "rawStorageInspected": false
+  },
+  "finalSupervisor": {
+    "operation": "foundry.fixture.status",
+    "status": "PASS",
+    "pid": 17200,
+    "listeners": [17200],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": []
+  },
+  "blockers": [
+    "Native module inventory confirms Regionwright is active, but the expected loaded Regionwright fixture control is not exposed.",
+    "Loaded Regionwright entrypoint/premium-control registration remains unproven.",
+    "Regionwright-specific behavior, player acceptance, persistent-world promotion, Stage 12, and Ready-to-Play remain unproven."
+  ],
+  "nextRequiredBoundary": "Use one bounded hard browser reload to rehydrate the active module surface, then reread the exact GM toolbar without changing module settings or invoking Regionwright behavior."
+}

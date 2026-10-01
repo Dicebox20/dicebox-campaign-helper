@@ -1,0 +1,77 @@
+{
+  "operation": "dicebox.program.project-store-and-compiler",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "readyClaim": false,
+  "schemaVersion": "0.1.0",
+  "project": {
+    "projectId": "dbx:project:desktop-foundation",
+    "generation": 1,
+    "contentSha256": "bf894120529c9c9c4c238f38e9875f57bcfc914fcb4754a419895640b13663fd",
+    "sceneRevision": 1,
+    "selectedEntityId": "dbx:apparatus:core",
+    "selectedX": 624,
+    "assetCount": 1,
+    "atomicReplace": true,
+    "recoveredFrom": null,
+    "noFoundryWrite": true
+  },
+  "compiler": {
+    "operation": "dicebox.scene.compile-foundry-preview",
+    "target": {
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3"
+    },
+    "candidateCount": 10,
+    "planSha256": "cffaa6db8002537556eb1bf3deca60d9428b21227e0368ca52c0c46f1b4ff747",
+    "initialLevelApi": "scene.initialLevel.update(data)",
+    "cleanup": "disabled",
+    "foreign": "preserve",
+    "unknown": "preserve",
+    "runtimeOwned": "preserve",
+    "mutation": "disabled-until-exact-runtime-gate",
+    "noWrite": true
+  },
+  "coverage": {
+    "atomicProjectReplacement": true,
+    "monotonicGeneration": true,
+    "staleGenerationRejection": true,
+    "backupRecovery": true,
+    "contentAddressedAssets": true,
+    "assetRereadHash": true,
+    "migrationPreview": true,
+    "deterministicCompile": true,
+    "stableIdOwnership": true,
+    "foreignUnknownRuntimePreservation": true,
+    "packagedProcessRestart": true
+  },
+  "liveReceipts": [
+    "DBX_PROJECT_RECEIPT operation=save status=PASS project=dbx:project:desktop-foundation generation=1 contentSha256=bf894120529c9c9c4c238f38e9875f57bcfc914fcb4754a419895640b13663fd assets=1 atomic=true backup=false noFoundryWrite=true",
+    "DBX_PROJECT_STAGE status=PASS phase=save project=dbx:project:desktop-foundation generation=1 sceneRevision=1 selectedX=624 contentSha256=bf894120529c9c9c4c238f38e9875f57bcfc914fcb4754a419895640b13663fd planSha256=none candidates=none noWrite=true",
+    "DBX_PROJECT_RECEIPT operation=load status=PASS project=dbx:project:desktop-foundation generation=1 contentSha256=bf894120529c9c9c4c238f38e9875f57bcfc914fcb4754a419895640b13663fd assets=1 recoveredFrom=none noFoundryWrite=true",
+    "DBX_PROJECT_STAGE status=PASS phase=load-and-compile project=dbx:project:desktop-foundation generation=1 sceneRevision=1 selectedX=624 contentSha256=bf894120529c9c9c4c238f38e9875f57bcfc914fcb4754a419895640b13663fd planSha256=cffaa6db8002537556eb1bf3deca60d9428b21227e0368ca52c0c46f1b4ff747 candidates=10 noWrite=true"
+  ],
+  "verification": {
+    "rustProjectStore": "5/5 PASS",
+    "focusedTypeScript": "4 files / 21 tests PASS",
+    "fullSuite": "84 files / 352 tests PASS",
+    "desktopBuild": "PASS",
+    "tauriDebugBuild": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS at 4/8 before stage promotion",
+    "recovery": "The first Tauri CLI call lacked Cargo on PATH and was rerun once with the already-pinned user Cargo directory. One workflow test retained the previous active-stage literal; the failed assertion was reconciled to the current machine-enforced card and the full suite then passed."
+  },
+  "hashes": {
+    "projectStoreCargo": "0D5F4714EDC589903AC013D733B1273ED2B779C9E145EDCE73FD47D899B03BA6",
+    "projectStoreRust": "E2278C5ECE3906E203D7BBA0DFEB8ADAA3CC0006F3E1628403D89026F665B72E",
+    "tauriCommands": "7C1DFAB689DE0D60A5F6C7C1E2E4139DBB1C0B7018C6DF33624D2380E08A0DF9",
+    "projectStoreAdapter": "45A1E49D3FEF49E321B14077944A3BFCC7A6ED01748ED4FFD28FB9CF8A4F01CB",
+    "desktopApp": "9AC3543786E25293D53A1510E4A4F4D761833C5C3392F468A0B76DB6DFE451C6",
+    "sceneCompiler": "32CFBE0F09946E94291E9D57E9E7D4895BF0DED68646B6D8FA822AF6455D15AA",
+    "compilerTests": "62328EE6D5A2C7EF986843250BA39DF9DED7AA7392B2AB997A362E851FAEC84C",
+    "shellTests": "8B43EA1AD76741CD302DC9C3414E5A114AFEDA2089F930F93AD1FB804562423C",
+    "packagedDebugExecutable": "4DA00757400C9CCA42B9A7A0DCDFA812B57EB9A49676A32E3E4B1C698E122FD1"
+  },
+  "blockers": []
+}

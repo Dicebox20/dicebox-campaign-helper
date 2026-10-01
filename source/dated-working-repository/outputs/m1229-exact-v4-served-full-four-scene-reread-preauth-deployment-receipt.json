@@ -1,0 +1,55 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1229",
+  "operation": "foundry.module.served-full-reread-deployment",
+  "evidenceClass": "fixture-preauth",
+  "status": "PASS_DEPLOYMENT_MANUAL_AUTH_PENDING",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "exactTargetMatch": true
+  },
+  "deployment": {
+    "operation": "foundry.module.update",
+    "status": "PASS",
+    "packageId": "dicebox-campaign-helper",
+    "destinationRoot": "work/foundry-fixture-data-v4/Data",
+    "noWorldMutation": true,
+    "changedModulePath": "src/ascendancy-installer.js",
+    "source": { "bytes": 81788, "sha256": "7a292ddf616de0c7907c3f805d54b10070f892152c0ec71c4c034eac8d95fab9" },
+    "staged": { "bytes": 81788, "sha256": "7a292ddf616de0c7907c3f805d54b10070f892152c0ec71c4c034eac8d95fab9" },
+    "served": { "httpStatus": 200, "contentType": "text/javascript; charset=utf-8", "bytes": 81788, "sha256": "7a292ddf616de0c7907c3f805d54b10070f892152c0ec71c4c034eac8d95fab9" },
+    "sourceStagedMatch": true,
+    "stagedServedMatch": true
+  },
+  "restart": {
+    "operation": "foundry.fixture.restart",
+    "status": "PASS",
+    "pid": 17200,
+    "launchGuard": "PASS",
+    "lockRecovery": "PASS",
+    "httpStatus": 302,
+    "location": "/join",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "postRestartBrowser": {
+    "url": "http://127.0.0.1:30003/join",
+    "title": "DiceBox Disposable Ascendancy Fixture",
+    "currentPlayers": "0 / 2",
+    "manualGamemasterAuthenticationObserved": false,
+    "authenticationAutomation": false,
+    "nextRequiredAction": "User manually selects Gamemaster, leaves password blank, joins, and confirms the loaded GM page before the new control is invoked."
+  },
+  "remainingBlockers": [
+    "Manual Gamemaster rejoin is required before the served M1228 control can be observed.",
+    "Full four-room child receipt and final supervisor reread are pending.",
+    "Stage 12 and Ready-to-Play remain unproven."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "milestone": "M1252",
+  "operation": "exact-v4-regionwright-loaded-surface-exposure",
+  "status": "PASS_LOADED_IDENTITY_CONTROL_ABSENT",
+  "evidenceClass": "fixture",
+  "readyClaim": false,
+  "target": {
+    "url": "http://127.0.0.1:30003/game",
+    "worldId": "dbx-test-world",
+    "foundry": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "joinedRole": "Gamemaster [GM]"
+  },
+  "activeModules": ["dicebox-campaign-helper", "regionwright"],
+  "activeModuleCount": 2,
+  "loadedScripts": [
+    "modules/regionwright/scripts/module-readback-rw-0.1.5-20260907-readback-1.js",
+    "modules/regionwright/premium/scripts/premium-module-readback-rw-0.1.5-20260907-readback-1.js"
+  ],
+  "loadedImplementationEvidence": {
+    "baseImplementationUrl": "modules/regionwright/scripts/module.js?rw-0.1.5-20260907-readback-1",
+    "readyLogObserved": true,
+    "errorOrWarningLogs": 0
+  },
+  "controlSurface": {
+    "regionwrightControlObserved": false,
+    "controlInvoked": false,
+    "registrationBlocker": "expected Regionwright operation/readback control absent from current accessibility surface despite loaded ready evidence"
+  },
+  "runtime": {
+    "supervisorStatus": "PASS",
+    "pid": 28948,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "restartCountInBoundary": 0,
+    "reloadCountInBoundary": 0,
+    "settingsSaved": false
+  },
+  "preserved": {
+    "foreignState": true,
+    "playerPasswords": true,
+    "tramCore": true,
+    "historicalM1241": "outcome-unknown-not-relabeled"
+  },
+  "disposition": "Loaded identity passes but the expected control surface is absent. Reconcile and repair its local/staged registration owner before another live attempt."
+}

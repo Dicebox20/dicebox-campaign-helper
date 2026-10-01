@@ -1,0 +1,41 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m300-stage11-cross-producer-proposal-adapters-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M300",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "adapters": [
+    { "producer": "human", "reviewDomain": "human-review", "targetAuthority": "local-project", "activeGmRequired": false },
+    { "producer": "campaign-director", "reviewDomain": "human-review", "targetAuthority": "local-project", "activeGmRequired": false },
+    { "producer": "technical-builder", "reviewDomain": "repository-integration", "targetAuthority": "repository", "activeGmRequired": false },
+    { "producer": "foundry", "reviewDomain": "foundry-runtime", "targetAuthority": "foundry-active-gm", "activeGmRequired": true }
+  ],
+  "validation": {
+    "focused": "PASS: 2 files / 11 tests",
+    "full": "PASS: 107 files / 581 tests",
+    "build": "PASS",
+    "tooling": "PASS",
+    "workflow": "PASS: 10/16, proposal-approval-history active",
+    "knowledgeBase": "PASS: 421 sources / 456 facts / 405 decisions / 419 trials"
+  },
+  "sourceHashes": {
+    "packages/dicebox-scene/src/proposal-adapter.ts": "1066A135CD0563CE6BD2260A68EE146A37230D0C8F8FAAAFCBB29FC6B4E96669",
+    "packages/dicebox-director/src/proposal-adapter.ts": "B907D2D4B4756E1FD45B68D357365D85AFA46BDD59866C54865FE0809153A83B",
+    "packages/dicebox-codex-adapter/src/proposal-adapter.ts": "C89C2DB0271D3F1DE866A57F6E9799C77708A0BD2548312F604FE83D7B6F8426",
+    "packages/dicebox-compiler/src/proposal-adapter.ts": "3BF2CB4D64CAFDBA206C6A51E1D15BD7D835ECF5F2250398D3ED70BAF534473F",
+    "tests/proposal-adapters.test.ts": "F4649AC35A0BA5FD1AE9768808C9CC4D44F1D52594255878EE6666A9ED384BD8"
+  },
+  "doesNotProve": [
+    "desktop approval-tray behavior",
+    "persistent product proposal history",
+    "proposal execution",
+    "project or Foundry mutation",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

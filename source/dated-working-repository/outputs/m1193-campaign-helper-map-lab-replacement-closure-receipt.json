@@ -1,0 +1,53 @@
+{
+  "operation": "campaign-helper.map-lab.replacement",
+  "milestone": "M1193",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "acceptedChange": "Retire the Tram Rush Hour puzzle from the active Campaign Helper test path and use a Campaign Helper-owned generated Map Lab for map-generation evidence.",
+  "artifacts": {
+    "asset": {
+      "path": "assets/testing/campaign-helper-map-lab-v1.svg",
+      "mimeType": "image/svg+xml",
+      "width": 1536,
+      "height": 1024,
+      "byteLength": 2240,
+      "sha256": "36112ad4894d01fbe04a1a9bfaa7ea09f69f978c6730695cec8d2637cbfd1a82",
+      "rendererOnly": true,
+      "noBakedGrid": true
+    },
+    "package": "packages/dicebox-compiler/campaign-helper-map-lab-package.json",
+    "plan": "docs/CAMPAIGN-HELPER-MAP-LAB-PLAN-2026-09-06.md"
+  },
+  "campaignHelperFeaturesUsed": [
+    "typed Spatial Blueprint",
+    "stable DiceBox IDs",
+    "approved asset manifest",
+    "exact byte attestation gate",
+    "fail-closed mismatch classification",
+    "local package validation"
+  ],
+  "geometry": {
+    "walls": 6,
+    "regions": 5,
+    "anchors": 6,
+    "sequenceInputs": 4,
+    "sequenceState": "locked"
+  },
+  "validation": {
+    "focusedTests": "4/4 PASS",
+    "packageTypecheck": "PASS",
+    "assetAttestation": "ready",
+    "driftCase": "blocked",
+    "workflow": "PASS",
+    "readyClaim": false
+  },
+  "preservation": {
+    "tram": "preserved as historical provenance; not active",
+    "runtime": "not reopened",
+    "nativeDocuments": "not created",
+    "foreignState": "not touched",
+    "playerState": "not touched",
+    "ballad": "not touched"
+  },
+  "promotionBoundary": "Local generated-asset and contract evidence does not prove served/loaded identity, native Foundry creation, persistent-world commit, active-GM execution authority, player behavior, Stage 12 acceptance, or Ready-to-Play."
+}

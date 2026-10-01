@@ -1,0 +1,44 @@
+{
+  "receiptType": "stage12-rune-m7-furnishing-plan-matrix-integration-closure",
+  "milestone": "M1076",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "matrix": {
+    "identityChains": 4,
+    "rows": [
+      {"scene":"signal-frequency-chamber","spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7,"status":"COMPOSED","plan":"dbx:plan:m1070-signal-furnishing-fixture","items":6,"steps":6},
+      {"scene":"tram-station","spatialProjection":"1/11/0","regions":39,"teleports":1,"backgroundObjects":5,"status":"PARTIAL","plan":null,"items":0,"steps":0,"blocker":"m7-furnishing-plan-missing"},
+      {"scene":"rune-mechanism-chamber","spatialProjection":"1/6/0","regions":6,"teleports":1,"backgroundObjects":7,"status":"COMPOSED","plan":"dbx:plan:m1074-rune-furnishing-fixture","items":6,"steps":6},
+      {"scene":"central-core-control-chamber","spatialProjection":"1/7/0","regions":10,"teleports":2,"backgroundObjects":10,"status":"COMPOSED","plan":"dbx:plan:m1064-ascendancy-furnishing-fixture","items":6,"steps":6}
+    ]
+  },
+  "validation": {
+    "focusedTestFiles": 5,
+    "focusedTests": 15,
+    "packageTypeCheck": "passed",
+    "desktopProductionBuild": "passed",
+    "workflowTest": "14 passed",
+    "diffCheck": "passed with pre-existing line-ending warnings"
+  },
+  "boundaries": {
+    "packageChanged": false,
+    "installerChanged": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "assetsTransferred": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "nextAction": "M1077 post-Rune matrix integration read-only reconciliation"
+}

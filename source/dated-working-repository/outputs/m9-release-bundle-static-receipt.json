@@ -1,0 +1,52 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m9-release-bundle-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 44, "tests": 196, "status": "PASS" },
+    "releaseManifest": {
+      "schemaValidation": "PASS",
+      "deterministicComponentOrdering": "PASS",
+      "semanticComponentCatalog": "PASS",
+      "officialFoundryApiAllowlist": "PASS",
+      "bootstrapLifecycle": "Hooks.once(ready)",
+      "target": "Foundry 14.367 / D&D5e 5.3.3",
+      "semanticClosure": "PASS",
+      "runtimeBindingClosure": "DEFERRED",
+      "componentPayloadClosure": "DEFERRED",
+      "previewBlockerComposition": "PASS",
+      "tamperedApiRejection": "PASS",
+      "mutation": "disabled-until-exact-runtime-gate"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 65,
+      "facts": 80,
+      "decisions": 55,
+      "openItems": 21,
+      "activeWork": 19,
+      "trials": 54,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Clean Foundry 14.367 world bootstrap",
+    "Foundry document payload acceptance or native create/update/delete behavior",
+    "Runtime UUID/document binding resolution and authoritative reread",
+    "Restart/recovery receipts or selective repair",
+    "Permissions, active-GM sender semantics, hooks, or cross-client behavior",
+    "Live campaign compilation or mutation"
+  ],
+  "nextGate": "Bind the manifest to an exact disposable Foundry 14.367 / D&D5e 5.3.3 world, resolve each runtime binding through the named native APIs, and capture clean-world bootstrap/restart/read-back evidence before enabling any release apply path.",
+  "officialReferences": [
+    "https://foundryvtt.com/api/v14/modules/foundry.documents.html",
+    "https://foundryvtt.com/api/v14/functions/hookEvents.ready.html",
+    "https://foundryvtt.com/api/classes/foundry.documents.RegionDocument.html",
+    "https://foundryvtt.com/api/classes/foundry.documents.RegionBehavior.html"
+  ]
+}

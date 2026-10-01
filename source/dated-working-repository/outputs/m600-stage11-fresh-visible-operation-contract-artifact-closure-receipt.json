@@ -1,0 +1,95 @@
+{
+  "operation": "stage11-fresh-visible-operation-contract-artifact",
+  "milestone": "M600",
+  "status": "ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-30T06:34:06-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "status": "PASS",
+    "frontendTypeScript": "PASS",
+    "nodeTypeScript": "PASS",
+    "viteBuild": "PASS",
+    "rustBuild": "PASS",
+    "buildCount": 1,
+    "launch": false,
+    "capture": false,
+    "retry": false
+  },
+  "artifacts": {
+    "nativeExecutable": {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "7BA9E57E0F9CFF008BF723871E92A5EB9D75379409489FF7181A0B944E8C5BE9",
+      "bytes": 26878976,
+      "role": "compiled native Tauri shell"
+    },
+    "frontendBundle": {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-ySynumpU.js",
+      "sha256": "A5F704BC918E91F263E07B70A3E2181B6197BC7529182D39F40159BDF39271DC",
+      "bytes": 2055600,
+      "role": "compiled renderer containing the visible 14-operation contract projection"
+    }
+  },
+  "markerAttestation": {
+    "expectedOperationCount": 14,
+    "presentOperationCount": 14,
+    "allOperationKindsPresent": true,
+    "missingOperationKinds": [],
+    "visibleProjectionMarker": true,
+    "visibleTestId": true,
+    "typedContractMatrix": true,
+    "humanReviewAuthority": true,
+    "localProjectAuthority": true,
+    "operationSpecificApplyAuthority": true,
+    "noGenericExecutor": true,
+    "interpretation": "The current renderer bundle contains the exact M599 read-only visible metadata projection and all 14 operation-kind markers. The native executable remains the compiled Tauri shell artifact; renderer-only UI strings are expected to reside in the bundle."
+  },
+  "processReread": {
+    "desktopProcessCount": 0,
+    "cargoProcessCount": 0,
+    "rustcProcessCount": 0
+  },
+  "preservation": {
+    "projectRuntime": "untouched",
+    "sessions": "untouched",
+    "fixtures": "untouched",
+    "repositoryTechnicalBuilder": "untouched",
+    "foundryActiveGm": "untouched; no Foundry write",
+    "providersCredentials": "untouched",
+    "playerRolePasswords": "untouched"
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": true,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M600 attests a fresh owning artifact containing the M599 visible exact 14-operation read-only projection and its authority/no-generic-executor markers. Packaged observation remains separately gated; no Stage 11 acceptance or Stage 12 action occurred."
+  },
+  "selectedNextBoundary": {
+    "milestone": "M601",
+    "title": "Stage 11 packaged visible-operation-contract observation",
+    "status": "authorized-next",
+    "scope": "Run exactly one bounded packaged observation against the exact M600 artifact set, preserve the first PASS, timeout, or blocker, and reread process/project state. Do not retry or begin Stage 12."
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/dist/assets/index-ySynumpU.js",
+    "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "outputs/m600-stage11-fresh-visible-operation-contract-artifact-closure-receipt.json"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M780",
+  "status": "PASS LOCAL CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bind the exact M778 project.create redo receipt into aggregate current-authority evidence.",
+  "result": "The aggregate report now has nine ordered redo bindings, including outputs/m778-stage11-project-create-redo-terminal-history-bridge-closure-receipt.json. It retains aggregate-partial authority, no execution/transition/Foundry/project mutation, and Stage 12 lock.",
+  "validation": "PASS: npx vitest run tests/project-aggregate-current-authority-evidence.test.ts (1 file, 4 tests); npm run build:packages; git diff --check.",
+  "preservation": { "runtime": false, "projectOrFoundryWrite": false, "accountOrPasswordAction": false, "stage11Accepted": false, "stage12Started": false },
+  "nextAction": "Fresh read-only Stage 11 reconciliation before selecting one further bounded gap."
+}

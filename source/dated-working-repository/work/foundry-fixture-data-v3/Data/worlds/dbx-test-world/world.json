@@ -1,0 +1,22 @@
+{
+  "id": "dbx-test-world",
+  "title": "DiceBox Disposable Ascendancy Fixture",
+  "system": "dnd5e",
+  "systemVersion": "5.3.3",
+  "coreVersion": "14.367",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.367"
+  },
+  "safeMode": false,
+  "flags": {
+    "diceboxCampaignHelper": {
+      "fixture": true,
+      "sourceWorldCopied": false,
+      "resetScope": "owned-fixture-only"
+    }
+  },
+  "lastPlayed": "Thu Aug 27 2026 11:15:14 GMT-0700 (Pacific Daylight Time)",
+  "playtime": 170,
+  "description": ""
+}

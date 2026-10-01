@@ -1,0 +1,68 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1233",
+  "operation": "regionwright.region-controls-layer-exposure",
+  "evidenceClass": "fixture-runtime",
+  "status": "PASS_CONTROL_EXPOSED_IN_REGION_LAYER",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "currentUser": "Gamemaster [GM]"
+  },
+  "layerObservation": {
+    "browserProvider": "codex-in-app-browser",
+    "browserId": "1",
+    "tabId": "6",
+    "selectedLayer": "Region Controls",
+    "layerSelectionCount": 1,
+    "tokenLayerBeforeSelection": true,
+    "freshToolbarReread": true,
+    "controls": [
+      "Regionwright: Puzzles & Traps",
+      "Prime Arachnid Boss Engine",
+      "Install Ascendancy Regionwright handoff",
+      "Audit Ascendancy Regionwright handoff",
+      "Preview/apply Andrew Rush Hour entry",
+      "Audit Ascendancy fixture state",
+      "Preview full fixture reset",
+      "Apply approved fixture reset"
+    ],
+    "expectedFixtureControlsPresent": true,
+    "auditInvoked": false,
+    "previewInvoked": false,
+    "applyInvoked": false
+  },
+  "preservation": {
+    "foreignStatePreserved": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "settingsOrPasswordMutation": false,
+    "moduleSettingsChanged": false,
+    "playerAction": false,
+    "rawStorageInspected": false,
+    "logoutOrReturnToSetup": false
+  },
+  "finalSupervisor": {
+    "operation": "foundry.fixture.status",
+    "status": "PASS",
+    "pid": 17200,
+    "listeners": [17200],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": []
+  },
+  "blockers": [
+    "No Regionwright fixture-control exposure blocker remains after selecting the owning Region Controls layer.",
+    "Regionwright audit behavior, persistent-world RegionBehavior state, player acceptance, and final-map promotion remain unproven.",
+    "Stage 12 and Ready-to-Play remain unclaimed."
+  ],
+  "nextRequiredBoundary": "Authorize one exact joined Gamemaster read-only invocation of Audit Ascendancy fixture state; do not invoke preview/apply or any alternate Regionwright surface."
+}

@@ -1,0 +1,39 @@
+{
+  "milestone": "M1244",
+  "operation": "ascendancy.regionwright.state-readback",
+  "status": "BLOCKED_CONTROL_NOT_LOADED",
+  "evidenceClass": "fixture",
+  "readyClaim": false,
+  "noWrite": true,
+  "target": {
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundry": "14.367",
+    "system": "dnd5e 5.3.3",
+    "browserPath": "/game",
+    "account": "Gamemaster [GM]"
+  },
+  "supervisor": {
+    "status": "PASS",
+    "pid": 17200,
+    "listeners": [17200],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "servedSource": {
+    "path": "/modules/regionwright/scripts/module.js",
+    "httpStatus": 200,
+    "bytes": 6746,
+    "containsReadbackControl": true,
+    "containsReadbackTitle": true
+  },
+  "clientObservation": {
+    "toolbarReadbackControlPresent": false,
+    "oldControlsPresent": true,
+    "dialogOpened": false,
+    "operationInvoked": false
+  },
+  "disposition": "The current client had not loaded the served module update. Stop without clicking old/alternate controls or retrying M1244; M1245 authorizes one hard reload and exposure reread.",
+  "historicalM1241": "outcome-unknown-not-relabeled",
+  "nextBoundary": "M1245 one hard reload and fresh Region Controls exposure reread."
+}

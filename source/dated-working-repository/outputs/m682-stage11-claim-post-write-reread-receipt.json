@@ -1,0 +1,39 @@
+{
+  "milestone": "M682",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY",
+  "scope": "Resolve inverse permit claim persistence through one authoritative post-write reread, including uncertain writes, without dispatch or runtime mutation.",
+  "implemented": {
+    "resolutionSchema": "packages/dicebox-compiler/src/staged-inverse-permit-claim-store.ts adds explicit matched, missing, unknown, and conflicting post-write resolution states, write outcome, reread payload, authoritative reread, and retry advice.",
+    "pureResolver": "resolveStagedInversePermitClaimPersistenceObservation() is a no-write/no-retry resolver for validated observations.",
+    "claimFlow": "claim() validates and serializes the pre-read, performs at most one write, always performs exactly one post-write load even when write throws, and returns the typed resolution.",
+    "preservation": "Foreign/conflicting state is never overwritten; exact existing claimed state remains idempotent with writeOutcome not-attempted."
+  },
+  "validation": {
+    "focused": "5 files / 21 tests passed across claim-store, preflight, pre-dispatch, receipt-ledger, and executor-boundary contracts.",
+    "typecheck": "npx tsc --noEmit passed.",
+    "fullGate": "npm run check:full passed: workflow checker PASS (score 63; 10/16 gates), package and desktop builds passed, full Vitest passed 149 files / 763 tests, and tooling verification passed with no failures.",
+    "databaseBeforeImplementation": "M681 KB rebuild and read-only queries passed at 1102 sources / 942 facts / 809 decisions before implementation.",
+    "workflowAfterImplementation": "Active-slice checker remains PASS with Stage 11 proposal-approval-history as the only active stage and readyClaim false.",
+    "diff": "git diff --check passed."
+  },
+  "delegation": "A hidden Sol Medium read-only architecture audit independently specified the post-write load, Result resolution shape, missing/unknown/conflicting distinctions, idempotency, and no-retry boundary; the worker changed no files and was closed after receipt review.",
+  "safety": {
+    "adapterDispatch": "not-authorized-by-this-contract",
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "liveCertification": false,
+    "stage11Acceptance": false
+  },
+  "selectedNext": "M683 code-only operation-specific inverse adapter/readback contract; keep receipt append, Foundry action, runtime mutation, and Stage 11 acceptance excluded.",
+  "evidence": [
+    "outputs/m681-stage11-preflight-orchestration-receipt.json",
+    "packages/dicebox-compiler/src/staged-inverse-permit-claim-store.ts",
+    "tests/staged-inverse-permit-claim-store.test.ts",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "excluded": ["adapter dispatch", "operation-specific runtime readback", "receipt append", "Foundry action", "runtime mutation", "live certification", "Stage 11 acceptance"]
+}

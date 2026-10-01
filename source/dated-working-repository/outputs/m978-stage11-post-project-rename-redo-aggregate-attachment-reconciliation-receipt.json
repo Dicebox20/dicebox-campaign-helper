@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M978",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY M977 RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reread the exact M977 project.rename redo handler/classifier aggregate-ledger attachment against the complete Stage 11 acceptance and authority surfaces, preserving all evidence labels, counts, and locks.",
+  "reconciliation": {
+    "sourceReceipt": "outputs/m977-stage11-project-rename-redo-aggregate-ledger-attachment-closure-receipt.json",
+    "producerFamily": "project-authoring",
+    "commandKind": "project.rename",
+    "operation": "project.rename.redo",
+    "handler": "bridgeProjectRenameRedoToTerminalHistory",
+    "classifier": "projectRenameRedoTerminalHistoryReceiptSchema",
+    "aggregateField": "projectRenameRedoHandlerClassifierAggregateEvidence",
+    "aggregateAttachment": "one exact producer-scoped strict typed field",
+    "metadataOnlyRenamePreserved": true,
+    "projectContentPreserved": true,
+    "matchedRereadPreserved": true,
+    "operationCountChanged": false,
+    "invocation": "not-invoked",
+    "genericExecutor": false,
+    "authorityPromotion": false,
+    "contribution": "Confirms one exact project.rename redo handler/classifier aggregate attachment while retaining the aggregate ledger as partial and non-certifying.",
+    "remainingGaps": [
+      "generic current authority",
+      "complete apply/receipt coverage across all producer families",
+      "one unified cross-producer lifecycle and recovery proof",
+      "packaged/runtime authority and live active-GM/Foundry behavior"
+    ]
+  },
+  "acceptanceMatrix": {
+    "proposal": "PARTIAL",
+    "approval": "PARTIAL",
+    "history": "PARTIAL",
+    "recovery": "PARTIAL",
+    "producerFamilies": 11,
+    "productRelevantProducerFamilies": 9,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "matrixRedoBindings": 8,
+    "aggregateDirectStrands": 9
+  },
+  "authority": {
+    "current": "PARTIAL",
+    "aggregate": "NOT_GRANTED",
+    "runtime": "PARKED",
+    "stage11Acceptance": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "validation": {
+    "databaseRebuildAndVerifyBeforeClosure": "PASS: sources 1515; facts 1230; decisions 1154; open items 135; trials 819; research subjects 40; milestones 26",
+    "workflow": "PASS: 10 of 16 gates; proposal-approval-history active; zero violations; readyClaim false",
+    "aggregateAttachmentReread": "PASS: exact M977 producer, operation, handler, classifier, metadata-only/content-preservation boundary, matched reread, and count neutrality preserved",
+    "sourceReread": "PASS: M977, M976, M975, M974, aggregate ledger, current-authority surface, roadmap, active card, and rebuilt KB surfaces reconciled"
+  },
+  "limits": {
+    "readOnly": true,
+    "implementationChanges": 0,
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "projectMutation": false,
+    "foundryMutation": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11Accepted": false,
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "next": {
+    "milestone": "M979",
+    "action": "Bind the existing project.save-as redo terminal-history handler and matched-reread classifier into one strict typed local non-certifying evidence surface, then validate it without invocation or authority promotion.",
+    "reason": "This is the next directly evidenced adjacent project-authoring operation: exact save-as terminal-history and semantic/aggregate receipts already exist, while no dedicated handler/classifier binding surface is present.",
+    "scope": "Code-only; no runtime, browser, Foundry, project, provider, credential, account, password, authority, Stage 11 acceptance, Stage 12, or Ready-to-Play action."
+  }
+}

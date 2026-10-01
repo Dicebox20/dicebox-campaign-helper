@@ -1,0 +1,72 @@
+{
+  "milestone": "M958",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY CONTROL-AVAILABILITY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reread the M957 direct fixture observation against the complete Stage 11 matrix, authority surfaces, producer coverage, receipts, and boundary rules.",
+  "sourceReceipts": [
+    "outputs/m957-stage11-exact-fixture-read-only-proposal-approval-authority-surface-inspection-closure-receipt.json",
+    "outputs/m956-stage11-post-loaded-authority-supplemental-cross-plane-binding-reconciliation-closure-receipt.json"
+  ],
+  "reconciliation": {
+    "m957DirectFixtureObservation": true,
+    "controlAvailabilityIsAuthority": false,
+    "authorityInferred": false,
+    "stage11PartialClauses": 4,
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAuthority": "partial",
+    "aggregateAuthority": "not-granted",
+    "runtime": "parked",
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "selection": {
+    "nextMilestone": "M959",
+    "scope": "One local read-only audit of package source and tests for the two M957-observed controls.",
+    "sourceOnly": true,
+    "codeChanges": 0,
+    "controlInvocation": false,
+    "runtimeRerun": false,
+    "documentWrites": 0,
+    "authorityPromotion": false,
+    "playerPasswords": false,
+    "stage11Acceptance": false,
+    "stage12": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "knowledgeBaseRebuild": "PASS: schema.sql plus seed.sql",
+    "knowledgeBaseSummaryBeforeClosure": {
+      "sources": 1477,
+      "facts": 1211,
+      "decisions": 1116,
+      "trials": 800,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "workflowBeforeClosure": "PASS: 10 of 16 gates; active proposal-approval-history; Stage 11 BLOCKED; Stage 12 LOCKED; ready false"
+  },
+  "limits": {
+    "runtimeRerun": false,
+    "browserOrDesktopInput": false,
+    "documentWrites": 0,
+    "documentUpdateInvoked": false,
+    "genericExecutor": false,
+    "storageInspected": false,
+    "projectMutated": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "playerPasswordEntered": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "next": "Perform only M959: audit local source and tests for exact handler ownership and safety boundaries of the two observed controls; do not edit or invoke code.",
+  "receiptVersion": "0.1.0"
+}

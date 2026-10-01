@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1284",
+  "operation": "regionwright.loaded-identity-control.runtime-observation",
+  "status": "BLOCKED_MANUAL_GAMEMASTER_REJOIN_REQUIRED",
+  "evidenceClass": "fixture-runtime",
+  "target": {
+    "url": "http://127.0.0.1:30004/join",
+    "worldId": "dbx-test-world",
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3",
+    "browserTab": "14",
+    "currentUser": null
+  },
+  "restart": {
+    "authorized": true,
+    "count": 1,
+    "beforePid": 8132,
+    "afterPid": 25336,
+    "status": "PASS",
+    "normalStopExit": 255,
+    "forcedStop": true,
+    "lockRecovery": "PASS",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "browserReread": {
+    "path": "/join",
+    "title": "DiceBox Disposable Ascendancy Fixture",
+    "joinFormPresent": true,
+    "gamemasterSelectedOrJoined": false,
+    "credentialsEnteredByAgent": false,
+    "joinSubmittedByAgent": false,
+    "identityControlInvocations": 0,
+    "identityDialogCloses": 0
+  },
+  "supervisors": {
+    "v5": {
+      "status": "PASS",
+      "pid": 25336,
+      "port": 30004,
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    },
+    "v4": {
+      "status": "PASS",
+      "pid": 10676,
+      "port": 30003,
+      "worldDocumentWrites": 0,
+      "balladTouched": false
+    }
+  },
+  "preservation": {
+    "v4ExternalRegionwright": true,
+    "fourSceneBaseApply": "M1271/M1272 already complete; not replayed",
+    "runtimeDocuments": true,
+    "foreign": true,
+    "playerPassword": true,
+    "balladTramCore": true
+  },
+  "blockers": [
+    "The exact v5 restart succeeded and refreshed the owner to PID 25336, but the browser reached the manual Join Game Session gate.",
+    "No user name was selected, no password was entered, and no join was submitted by the agent; the loaded identity control cannot be observed until the user manually joins Gamemaster."
+  ],
+  "disposition": "Typed manual-authentication boundary. Leave v5 running and await the user's manual Gamemaster join in browser tab 14; do not automate the join or retry the restart/control.",
+  "next": "After the user manually joins Gamemaster, reread the exact v5 client and continue the already-authorized single loaded identity-control observation; no M1277 audit retry or Apply."
+}

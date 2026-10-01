@@ -1,0 +1,42 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m1-journal-api-probe-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 16, "tests": 75, "status": "PASS" },
+    "foundryJournalApiEvidence": {
+      "query": "journal-api-evidence",
+      "journalEntryCreate": "PASS",
+      "fromUuid": "PASS",
+      "journalCollectionGet": "PASS",
+      "journalEntryUpdateSurface": "PASS",
+      "embeddedPageCreateSurface": "PASS",
+      "defaultPageType": "PASS",
+      "pageFormatConstants": "PASS",
+      "noInvocation": "PASS",
+      "partialAndUnavailableFallbacks": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 40,
+      "facts": 55,
+      "decisions": 30,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 29,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Exact Foundry 14.367 API behavior or permission semantics",
+    "JournalEntry.create/update/embed invocation success",
+    "Observed JournalEntry page schema acceptance during a write",
+    "Live read-back, timeout recovery, or two-client authority"
+  ],
+  "nextGate": "Run journal-api-evidence in the exact disposable Foundry world, then validate the mapped JournalEntry shape through an explicitly approved read-back-only fixture before enabling any write."
+}

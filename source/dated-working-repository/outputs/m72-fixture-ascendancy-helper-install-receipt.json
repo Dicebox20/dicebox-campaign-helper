@@ -1,0 +1,52 @@
+{
+  "receiptVersion": 1,
+  "operation": "ascendancy.install",
+  "status": "PASS",
+  "evidenceClass": "created_document",
+  "readyClaim": false,
+  "fixtureOnly": true,
+  "worldId": "dbx-test-world",
+  "noBalladWorldMutation": true,
+  "noRegionwrightMutation": true,
+  "noPuzzleProgressionMutation": true,
+  "approval": {
+    "operation": "ascendancy.preview",
+    "noWrite": true,
+    "exactRuntimeGate": "PASS",
+    "approvalApplied": true
+  },
+  "target": {
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "activeGm": true
+  },
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "createdAndReread": {
+    "sceneCount": 4,
+    "wallCount": 30,
+    "regionCount": 60,
+    "playerFacingMacroCount": 0,
+    "scenes": [
+      { "roomId": "dbx:room:signal-frequency-chamber", "wallCount": 8, "regionCount": 6, "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-signal-frequency-chamber-v2.png" },
+      { "roomId": "dbx:room:ascendancy-tram-depot", "wallCount": 6, "regionCount": 39, "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-tram-depot-v3.png" },
+      { "roomId": "dbx:room:rune-mechanism-chamber", "wallCount": 8, "regionCount": 6, "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-rune-mechanism-chamber-v2.png" },
+      { "roomId": "dbx:room:central-core-control-chamber", "wallCount": 8, "regionCount": 9, "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-central-core-control-chamber-v2.png" }
+    ]
+  },
+  "authoritativeReread": {
+    "operation": "ascendancy.snapshot",
+    "status": "observed",
+    "allExpectedOwnedSemanticIdsObserved": true
+  },
+  "listener": {
+    "fixtureWorldOverride": "DICEBOX_MCP_WORLD_ID=dbx-test-world",
+    "restoredDefaultBalladListener": true,
+    "host": "127.0.0.1:8797"
+  },
+  "notes": [
+    "This is a disposable-fixture helper-owned Scene, Wall, and base-Region installation only.",
+    "It does not certify generic Activity or RegionBehavior behavior, Regionwright wiring, player interaction, puzzle progression, same-round activation, reset/recovery, or Ready-to-Play.",
+    "No Ballad Scene, Wall, Region, RegionBehavior, Macro, Actor, Journal, setting, or progression state was changed by this operation."
+  ]
+}

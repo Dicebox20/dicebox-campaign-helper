@@ -1,0 +1,56 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m320-stage11-project-rename-proposal-preview-adapter-2026-08-27",
+  "stageId": "proposal-approval-history",
+  "milestone": "M320",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "runtimeOrProviderCall": false,
+  "projectWrites": 0,
+  "foundryWrites": 0,
+  "implementation": {
+    "source": "apps/campaign-helper-desktop/src/project-rename-proposal-adapter.ts",
+    "tests": "tests/project-rename-proposal-adapter.test.ts",
+    "pure": true,
+    "ipcCalls": 0,
+    "desktopSessionIntegration": false,
+    "projectPersistence": false,
+    "workspaceMetadataMutation": false,
+    "provider": null,
+    "credentials": false,
+    "foundry": false,
+    "playerPasswords": false,
+    "behavior": [
+      "creates deterministic PREVIEW receipts for one exact stable project ID and workspace index generation",
+      "validates current/proposed display names and rejects no-op or unsafe names",
+      "binds current content hash, workspace generation, and preview hash into the generic ProposalBatch base/payload",
+      "emits human/no-provider local-project provenance, human-review authority, medium risk, and one dependency-free opaque project.rename command",
+      "rejects unknown, malformed, stale/tampered, raw-byte/path, credential, approval, execution, and non-no-write preview fields"
+    ]
+  },
+  "validation": {
+    "focusedTests": "4 files / 12 tests passed",
+    "desktopBuild": "TypeScript and Vite build passed",
+    "proposalBatchValidation": "created batches pass validateProposalBatch",
+    "sourceHash": "9A49870765E165F9B29F45F6C2A242FC692E7ADF61A8E385C86E24825D27E368",
+    "testHash": "3434781153B9E9D9A6C3C77151C3FC2776ED6E1657CEF658C37DC2F19024C881"
+  },
+  "selectedNextSlice": {
+    "milestone": "M321",
+    "name": "project-target rename proposal-session integration",
+    "scope": "Exercise the existing exact-key project-target proposal session with an M320 rename batch and deterministic session lifecycle/reload/terminal-clear tests; preserve session-only no-project-write behavior and keep native rename execution, desktop UI wiring, IPC, browser, provider, credentials, Foundry, and player passwords excluded.",
+    "reason": "M320 establishes the batch shape but intentionally does not prove that an ordinary rename producer can enter the existing project-target session boundary; session integration is the next smallest no-write seam.",
+    "excluded": ["native rename preview source", "rename execution", "workspace metadata persistence", "desktop review UI integration", "project create/save/save-as", "asset import", "add Scene", "browser", "provider", "credentials", "Foundry", "Stage 11 acceptance", "later stages"]
+  },
+  "doesNotProve": [
+    "native project-store rename preview generation",
+    "desktop project-target review UI rendering for rename",
+    "rename execution or workspace metadata mutation",
+    "generic proposal conformance for create/save/save-as, asset import, or add-Scene",
+    "Technical Builder repository promotion",
+    "Foundry execution or active-GM authority",
+    "Stage 11 acceptance",
+    "Ready-to-Play"
+  ]
+}

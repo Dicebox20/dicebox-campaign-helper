@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1254",
+  "operation": "exact-v4.regionwright.control-exposure-reread",
+  "status": "PASS_CONTROL_EXPOSURE",
+  "evidenceClass": "fixture",
+  "supervisor": {
+    "status": "PASS",
+    "pid": 11204,
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "targetVersion": "Foundry 14.367 / dnd5e 5.3.3",
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "browser": {
+    "tabId": "6",
+    "url": "http://127.0.0.1:30003/game",
+    "gmLabel": "Gamemaster [GM]",
+    "manualRejoinObserved": true,
+    "exactTarget": true,
+    "activeModuleIds": ["dicebox-campaign-helper", "regionwright"],
+    "loadedScripts": [
+      "modules/regionwright/scripts/module-readback-rw-0.1.5-20260907-readback-1.js",
+      "modules/regionwright/premium/scripts/premium-module-readback-rw-0.1.5-20260907-readback-1.js"
+    ],
+    "regionwrightReadyLog": true,
+    "errorOrWarningLogs": 0
+  },
+  "regionControls": {
+    "selectedForRead": true,
+    "observedToolLabels": [
+      "Regionwright: Puzzles & Traps",
+      "Prime Arachnid Boss Engine",
+      "Install Ascendancy Regionwright handoff",
+      "Audit Ascendancy Regionwright handoff",
+      "Read Ascendancy Regionwright handoff state"
+    ],
+    "readbackControlObserved": true,
+    "controlInvocations": 0
+  },
+  "diagnostics": {
+    "readiness": "blocked",
+    "readinessChecks": "10/11 pass, 1 blocked on exact-runtime behavior/permission proof",
+    "readyClaim": false,
+    "noWrite": true
+  },
+  "disposition": "M1253 registration repair is exposed in the fresh exact-v4 client. M1254 proves control availability only; no Regionwright operation was invoked and no runtime state was changed.",
+  "next": "M1255: invoke only the fixed Read Ascendancy Regionwright handoff state control once under a separate read-only boundary, capture and close its receipt, and reread supervisor state."
+}

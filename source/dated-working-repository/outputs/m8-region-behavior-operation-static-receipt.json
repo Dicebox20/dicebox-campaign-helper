@@ -1,0 +1,46 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m8-region-behavior-operation-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "officialReferences": [
+    "https://foundryvtt.com/api/classes/foundry.documents.RegionDocument.html",
+    "https://foundryvtt.com/api/classes/foundry.documents.RegionBehavior.html",
+    "https://foundryvtt.com/api/v14/variables/CONFIG.RegionBehavior.html",
+    "https://foundryvtt.com/api/v14/classes/foundry.data.regionBehaviors.RegionBehaviorType.html",
+    "https://foundryvtt.com/article/scene-regions/"
+  ],
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 35, "tests": 165, "status": "PASS" },
+    "regionBehaviorOperationPlan": {
+      "strictSchema": "PASS",
+      "officialApiBindings": "PASS",
+      "stableIntentAndEventTypes": "PASS",
+      "generationAndObservedIdentityGuards": "PASS",
+      "rawRegionBehaviorPayloadRejection": "PASS",
+      "activeGmAndReadBackGates": "PASS",
+      "executionDisabledUntilExactRuntime": "PASS",
+      "nativeOwnerAndOptionalModuleSeparation": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 56,
+      "facts": 71,
+      "decisions": 46,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 45,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Exact target-world CONFIG.RegionBehavior registry and subtype schemas",
+    "RegionBehavior event configuration, ordering, permissions, active-GM routing, and native create/update/delete behavior",
+    "Authoritative RegionBehavior read-back, cross-client sender semantics, Midi/DAE interaction, and runtime transaction recovery"
+  ],
+  "nextGate": "Bind the disabled RegionBehavior operation plan to an exact Foundry 14.367 fixture only after registry, subtype schema, event configuration/order, permission, authority, native writes, and authoritative read-back are proven."
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1015",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile M1014 against the complete Stage 11 aggregate/current-authority, lifecycle, and runtime-evidence surfaces; preserve all non-certification boundaries and select at most one smallest next gate.",
+  "inputs": [
+    "outputs/m1014-stage11-direct-committed-recovered-cross-producer-continuity-boundary-evidence-closure-receipt.json",
+    "outputs/m1013-stage11-post-cross-producer-lifecycle-continuity-boundary-evidence-reconciliation-receipt.json",
+    "outputs/m1012-stage11-cross-producer-lifecycle-continuity-boundary-evidence-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-direct-committed-recovered-cross-producer-continuity-boundary-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-cross-producer-lifecycle-continuity-evidence.ts",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "terminalHistoryIndexCount": 14,
+    "reviewTerminalEvidenceCount": 42,
+    "applyingUnknownEvidenceCount": 42,
+    "recoveryResultEvidenceCount": 56,
+    "undoRedoEvidenceCount": 28,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "handlerClassifierAggregateAttachments": 10,
+    "semanticAggregateAttachments": 9,
+    "currentAuthorityRedoEntries": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "m1014DirectContinuityStatus": "not-directly-observed",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false,
+    "reconciled": true
+  },
+  "disposition": {
+    "m1014Reread": "PASS: exact M1012 provenance remains bound through the strict typed M1014 non-certifying boundary; direct committed/recovered continuity remains not directly observed.",
+    "countScopeCheck": "PASS: lifecycle counts remain 14/14/42/42/56/28; the Stage 11 matrix retains 8 redo bindings, aggregate direct strands retain 9, and current-authority retains 9 redo entries.",
+    "aggregateSurfaceCheck": "PASS: ten handler/classifier aggregate attachments and nine semantic aggregate attachments remain distinct; aggregate authority remains NOT_GRANTED.",
+    "runtimeEvidenceCheck": "PASS: local evidence does not promote packaged/runtime, current-dialog, active-GM, Foundry, GM, or player behavior; runtime remains PARKED.",
+    "remainingDirectBlocker": "Stage 11 still lacks fresh exact-runtime/current-authority evidence that can support aggregate authority and direct proposal/approval/history/recovery behavior; local modeled and producer-scoped receipts cannot substitute for it.",
+    "selectedNext": {
+      "milestone": "M1016",
+      "title": "Fresh exact-runtime current-authority evidence gate",
+      "scope": "One tightly bounded read-only exact-runtime evidence gate for the current authorized GM/dialog and Foundry surfaces, using the existing runtime profile, package, fixture, active-GM, owned-Scene, and lifecycle receipts; preserve no-write, no-player-password, foreign-state, runtime parking until explicit runtime evidence is actually captured.",
+      "reason": "M1014 closes the local continuity non-proof boundary; M1015 confirms the remaining Stage 11 blocker is evidence at the runtime/current-authority plane, not another missing local modeled field.",
+      "deterministicCheck": "Require exact target/profile identity, current active-GM and dialog evidence, authoritative reread, preserved foreign state, no unsupported authority promotion, and explicit blocker receipts for any unavailable or outcome-unknown runtime observation.",
+      "excluded": [
+        "project mutation or generic execution",
+        "credentials or player-role passwords",
+        "unbounded browser or Foundry actions",
+        "cross-producer continuity certification without direct evidence",
+        "Stage 11 acceptance",
+        "Stage 12 entry",
+        "Ready-to-Play claim"
+      ]
+    }
+  },
+  "validation": {
+    "readOnlyKnowledgeBaseQueries": "PASS: M1014 closure, M1015 authorization, blocker O-116, and summary surfaces reread from the rebuilt read-only KB.",
+    "localEvidenceCheck": "PASS: M1014 remains strict typed, local, non-certifying, continuity-not-proven, and count-neutral.",
+    "runtimeBoundaryCheck": "PASS: no local receipt is treated as packaged/runtime or Foundry certification; runtime remains parked.",
+    "workflowCheck": "PASS: proposal-approval-history active; 10/16 gates; violations 0; readyClaim false.",
+    "databaseRebuildAndVerify": "PASS: integrity ok; sources 1586; facts 1264; decisions 1223; open items 135; trials 853; research subjects 40; milestones 26.",
+    "nextGapCheck": "PASS: fresh exact-runtime/current-authority evidence is the single remaining adjacent gate; no second implementation gap selected.",
+    "diffCheck": "PASS: reconciliation introduced no implementation diff."
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "runtimeLaneReopened": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "fresh exact-runtime current-authority behavior",
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "aggregate current authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "generic execution or project mutation",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1015 closure and M1016 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then perform only the authorized exact-runtime/current-authority evidence gate."
+}

@@ -1,0 +1,55 @@
+{
+  "operation": "tram-calibration.apply",
+  "status": "PASS",
+  "evidenceClass": "created_document",
+  "noWrite": false,
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "executor": "Gamemaster [GM]"
+  },
+  "approval": {
+    "transport": "package-owned fixture Macro dR5IcR9EbnyicHlT",
+    "macroName": "DiceBox Fixture Tram Calibration",
+    "previewToken": "mt4jfpit-tram-calibration",
+    "previewExpiresAt": "2026-08-22T15:38:28.181Z",
+    "confirmation": "DialogV2 confirmed Apply fixture calibration"
+  },
+  "plan": {
+    "planId": "dbx:plan:fixture-tram-coordinate-calibration",
+    "sceneId": "dbx:scene:fixture-tram-coordinate-calibration",
+    "sceneDocumentId": "MtyOE3NtJvnuNxz2",
+    "tileId": "dbx:tile:fixture-tram-coordinate-calibration-marker",
+    "tileDocumentId": "6xfTqs7sFodtPuhn",
+    "regionId": "dbx:region:fixture-tram-coordinate-calibration-marker",
+    "regionDocumentId": "ZLy43MOqUtzCEWkF",
+    "renderer": "modules/dicebox-campaign-helper/assets/maps/ascendancy-tram-calibration-graybox-v1.png",
+    "wallCount": 11,
+    "doorCount": 3,
+    "tileBounds": { "x": 530, "y": 400, "width": 220, "height": 95 },
+    "regionBounds": { "x": 530, "y": 400, "width": 220, "height": 95 },
+    "tileTexture": "modules/dicebox-campaign-helper/assets/maps/ascendancy-tram-calibration-marker-v1.svg"
+  },
+  "reread": {
+    "authoritativeReread": true,
+    "foreignStatePreserved": true,
+    "preservationScope": "fixture-owned-scene-and-children-only; preserve-foreign-state",
+    "visualReview": "PASS: the marker spans the projected two-cell rectangle on the empty six-by-six Tram board."
+  },
+  "source": {
+    "runtimeInstallerSha256": "558A8BAF8762DB85F2E007C4743060F0BDA057A664902C4B1BB542C8665BC552",
+    "currentInstallerSha256": "60E9BE09F4F9069F1519BA9040B7270BAB2D3831A4D1D6165E8444D0A60417A1",
+    "applyMacroSha256": "307868B88C2E2EF5BF7676325CB2D1D7FDFF52AA0DD6B955C2C917018855F755",
+    "statusMacroSha256": "E55FA0AAA65DB3D5AB0CC11AD34B81356351F12877860D38EE229AB098355951"
+  },
+  "outOfScope": [
+    "the-ballad-of-chauser-bill",
+    "Regionwright behavior creation",
+    "puzzle progression",
+    "teleports",
+    "reset",
+    "player-facing macro ownership"
+  ]
+}

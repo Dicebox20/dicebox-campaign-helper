@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "supervisorVersion": "1.1.0",
+  "status": "running",
+  "pid": 32996,
+  "startedAt": "2026-09-26T11:03:01.382Z",
+  "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v2",
+  "worldId": "dbx-test-world",
+  "setupOnly": false,
+  "port": 30001,
+  "nodePath": "C:\\Program Files\\nodejs\\node.exe",
+  "entryPath": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+  "args": [
+    "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js",
+    "--dataPath=C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v2",
+    "--world=dbx-test-world",
+    "--port=30001"
+  ],
+  "adminPasswordConfigured": false,
+  "commandFingerprint": "47E4A213511831674B50D1BC6194B6876E9D78B60CB0037B7387C09D57A26F3F",
+  "processStartedAt": "2026-09-26T11:03:03.9559473Z",
+  "processPath": "C:\\Program Files\\nodejs\\node.exe",
+  "readyAt": "2026-09-26T11:03:32.935Z"
+}

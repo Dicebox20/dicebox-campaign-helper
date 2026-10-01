@@ -1,0 +1,26 @@
+{
+  "bridgeVersion": "3.6",
+  "kind": "google-docs-trusted-read",
+  "status": "failed",
+  "outputDir": "/workspace/work/google-docs-trusted-read-m195b",
+  "target": {
+    "documentId": null,
+    "documentUrl": "https://docs.google.com/document/d/14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o/edit?usp=sharing",
+    "selectedTabId": null
+  },
+  "dropdownMetadata": null,
+  "controlAwareness": null,
+  "warnings": [],
+  "files": {
+    "receipt": {
+      "path": "/workspace/work/google-docs-trusted-read-m195b/receipt.json",
+      "bytes": 550,
+      "sha256": "9a64bce69010dc9d09441c9bc1a9417e493476070d7de089617bdfb4ce14595e"
+    }
+  },
+  "error": {
+    "name": "DocsTrustedReadBridgeError",
+    "message": "trusted read wrapper source hash does not match the Google Docs trust catalog",
+    "operation": "evaluate-module"
+  }
+}

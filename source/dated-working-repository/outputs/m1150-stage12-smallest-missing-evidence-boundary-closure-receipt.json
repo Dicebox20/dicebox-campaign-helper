@@ -1,0 +1,68 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1150",
+  "status": "BLOCKED_RUNTIME_OBSERVATION_REQUIRED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.smallest-missing-evidence-boundary.reconcile",
+  "implementation": {
+    "modulePath": "packages/dicebox-compiler/src/ascendancy-signal-rune-smallest-missing-evidence-boundary.ts",
+    "moduleSha256": "525C89CE0C837C6824B376672B2708F19EDBD40F700B86451E8A2322AB1F6EAB",
+    "testPath": "tests/ascendancy-signal-rune-smallest-missing-evidence-boundary.test.ts",
+    "testSha256": "7CE1B0E22E7593C9EC4D9ACD50B88D9A4A06C69E26D98E6B425A40BCBF2C4A95",
+    "toolPath": "tools/write-m1150-smallest-missing-evidence-boundary.ts",
+    "toolSha256": "D7F91DC1C2332FC9ED891322D50B4731C4476436F5E59CA1E6013C2E6776981A",
+    "compilerIndexSha256": "9A5E59A919D6E0ABFBD0602CE6CE42FC16763CC3E740790BC3EE7E4BEC58BC1D",
+    "packageJsonSha256": "0A2CEFCAF981FFBA630F4A52F3AD09D8A4B1DE17CEB1F64BA0C37085DBD6E00C"
+  },
+  "generatedReceipt": {
+    "path": "outputs/m1150-stage12-smallest-missing-evidence-boundary-receipt.json",
+    "sha256": "D9E37E2BBC3DDE35CE6D94863A2463C4228731BA0C1B5A39E1A45A15C9300932"
+  },
+  "sourceInventory": {
+    "runtimeProfileQuerySurface": "present: packages/dicebox-foundry/src/module.js -> game.diceboxCampaignHelper.query({ kind: \"runtime-profile\" })",
+    "runtimeEvidenceDiagnosticSurface": "redacted-only: readRuntimeEvidenceDiagnostic",
+    "runtimeProfileSchema": "present: packages/dicebox-core/src/capability.ts -> RuntimeProfileSchema",
+    "offlineProfileDiffSurface": "present only as supplied-profile comparison in packages/dicebox-compiler/src/release-diff.ts",
+    "runtimeProfileDiffSurface": "not-present in current Foundry module source",
+    "authoritativeRereadObservation": "not-observed in accepted M1145/M1149 evidence"
+  },
+  "gates": {
+    "sourceInventory": "pass",
+    "completeRuntimeProfile": "blocked-runtime-observation-required",
+    "profileDiff": "blocked-runtime-profile-diff-surface-not-present",
+    "authoritativeReread": "blocked-runtime-reread-unobserved",
+    "disposition": "runtime-observation-required",
+    "blockers": [
+      "runtime-observation-required-for-complete-profile",
+      "runtime-profile-diff-surface-not-present",
+      "authoritative-reread-not-observed"
+    ]
+  },
+  "inputs": {
+    "m1149ReceiptPath": "outputs/m1149-stage12-runtime-profile-availability-gate-receipt.json",
+    "m1149ClosurePath": "outputs/m1149-stage12-runtime-profile-availability-gate-closure-receipt.json",
+    "sourceProfileIsRuntimeEvidence": false
+  },
+  "validation": {
+    "focusedTest": "PASS 1 file / 2 tests",
+    "packageTypecheck": "PASS npm run build:packages",
+    "sourceInventory": "PASS exact source strings and absence of runtime profileDiff surface",
+    "knowledgeBase": "PASS integrity after schema-plus-seed rebuild: sources 1813, facts 1408, decisions 1434, trials 1010, subjects 41, milestones 26",
+    "workflow": "PASS 11/16 with zero violations; nextAction M1151"
+  },
+  "preservation": {
+    "foreignScenes": ["AneddhKAAfk5HlsA", "p9Mbi0CJWe9KvJhH"],
+    "tramCoreExcluded": true,
+    "noWrite": true,
+    "apply": false,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "dispatch": "disabled",
+    "preserveUnknown": true,
+    "readyClaim": false,
+    "stage12Accepted": false,
+    "runtimeReopened": false
+  },
+  "nextBoundary": "M1151: authorize one exact read-only runtime-profile observation only if the active checklist separately permits a fixture reopen; require schema-valid RuntimeProfile, exact target, current active-GM identity, profile-diff input/result, and authoritative stopped-state reread. Do not create or mutate documents."
+}

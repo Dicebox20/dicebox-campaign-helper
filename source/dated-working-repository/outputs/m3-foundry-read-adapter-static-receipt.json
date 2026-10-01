@@ -1,0 +1,41 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m3-foundry-read-adapter-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 16, "tests": 79, "status": "PASS" },
+    "readOnlyFoundryAdapter": {
+      "adapterId": "foundry.journal-entry.read@14.367",
+      "fromUuidRoute": "PASS",
+      "gameJournalGetRoute": "PASS",
+      "managedOwnershipVerification": "PASS",
+      "embeddedPageReadBack": "PASS",
+      "foreignStateRejection": "PASS",
+      "missingSurfaceUnavailable": "PASS",
+      "resolutionFailureUnknownOutcome": "PASS",
+      "writeApiInputsAbsent": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 41,
+      "facts": 56,
+      "decisions": 31,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 30,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live Foundry 14.367 read behavior or permissions",
+    "Live managed marker/page shape acceptance",
+    "Live bridge transport binding",
+    "Any create/update/delete or reset operation"
+  ],
+  "nextGate": "Use the read-only adapter against the exact disposable world for authoritative snapshot/read-back evidence before enabling the separate mutation adapter."
+}

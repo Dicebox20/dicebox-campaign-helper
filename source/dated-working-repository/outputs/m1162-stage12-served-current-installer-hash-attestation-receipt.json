@@ -1,0 +1,54 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1162-served-current-installer-hash-attestation",
+  "milestone": "M1162",
+  "status": "PASS_M1162_SERVED_CURRENT_INSTALLER_HASH_ATTESTED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.served-current-installer-hash.attest",
+  "inputs": {
+    "verifier": "outputs/m1159-current-foundry-artifact-spec-receipt.json",
+    "stagingParity": "outputs/m1161-stage12-exact-nested-data-installer-parity-attestation-closure-receipt.json",
+    "fixtureTarget": "dbx-test-world",
+    "dataRoot": "work/foundry-fixture-data-v2/Data",
+    "servedPath": "/modules/dicebox-campaign-helper/src/ascendancy-installer.js"
+  },
+  "servedObservation": {
+    "url": "http://127.0.0.1:30001/modules/dicebox-campaign-helper/src/ascendancy-installer.js",
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "requestCount": 1,
+    "bytes": 31352,
+    "sourceSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "stagedSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "servedSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "sourceStagedServedParity": true,
+    "verifierParity": true
+  },
+  "lifecycle": {
+    "started": true,
+    "browserLogin": false,
+    "installerInvoked": false,
+    "normalStop": "required-force-fallback",
+    "finalStatus": "STOPPED",
+    "finalListeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "gate": {
+    "servedInstaller": "pass",
+    "runtimeProfileRefreshed": false,
+    "authoritativeCampaignReread": false,
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "M1153 RuntimeProfile/profile-diff remains the latest runtime observation; no post-M1158 runtime authority or campaign reread was claimed.",
+    "Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1163: reconcile served current-installer parity with the M1159 verifier and select the smallest post-M1158 runtime/profile evidence boundary; do not invoke installer."
+}

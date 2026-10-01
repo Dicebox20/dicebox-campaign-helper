@@ -1,0 +1,38 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1157-candidate-specific-transport-design-reconciliation-closure",
+  "milestone": "M1157",
+  "status": "CLOSED_M1157_TRANSPORT_DESIGN_SPECIFIED_NOT_IMPLEMENTED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.signal-rune.candidate-transport.design.closure",
+  "observationReceipt": "outputs/m1157-stage12-candidate-specific-transport-design-reconciliation-receipt.json",
+  "closure": {
+    "designSpecified": true,
+    "transportImplemented": false,
+    "selector": "fixed-candidate-id:m1141-signal-rune",
+    "filterBeforeLoader": true,
+    "selectedRoomSetOnly": true,
+    "unknownRoomRejected": true,
+    "foreignScenePolicy": "preserve-and-never-adopt",
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "readyClaim": false
+  },
+  "verification": {
+    "focusedTests": "PASS 2/2",
+    "packageTypecheck": "PASS",
+    "knowledgeBaseRebuildBeforeBoundary": "PASS",
+    "workflowCheck": "PASS 11/16",
+    "runtimeReopened": false,
+    "installerInvoked": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "remainingBlockers": [
+    "Candidate-specific transport remains specified but not implemented in the Foundry installer.",
+    "The current four-room loader and loops remain unchanged and must be locally implemented/tested before any live use.",
+    "Live authority, authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1158: fixed Signal/Rune candidate-specific installer transport implementation and focused validation; no runtime invocation is implied."
+}

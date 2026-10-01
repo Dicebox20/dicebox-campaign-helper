@@ -1,0 +1,78 @@
+{
+  "milestone": "M240",
+  "operation": "stage8.project.close-reopen",
+  "status": "PASS LOCAL PACKAGED",
+  "evidenceLabel": "local",
+  "projectId": "dbx:project:desktop-close-reopen-self-test",
+  "closeBoundary": {
+    "cleanDecision": "PASS",
+    "dirtyDecision": "BLOCKED",
+    "cleanDecisionNoWrite": true,
+    "dirtyDecisionNoWrite": true,
+    "dirtyGuidance": "Unsaved Scene changes must be saved before closing; no changes are discarded."
+  },
+  "persistedState": {
+    "schemaVersion": "0.3.0",
+    "generation": 2,
+    "contentSha256": "85df888a39b83a1fd78cc59752e816a916b05a638c6a48a47fafd3774250dcfb",
+    "sceneIdsInOrder": [
+      "dbx:scene:desktop-close-reopen-self-test-main",
+      "dbx:scene:desktop-close-reopen-self-test-scene-2"
+    ],
+    "sceneSha256InOrder": [
+      "7a9c31ea4b4b2bc293616fb35d1a543b441e28631ee16e55d64131770ddf1f76",
+      "e102a99bb964ffb5e56bc568ee97b98ca3aa09d65cdbbef5ff8029e411fb8ed4"
+    ],
+    "activeSceneId": "dbx:scene:desktop-close-reopen-self-test-scene-2",
+    "assetId": "dbx:asset:sha256-431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "assetSha256": "431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+    "assetRole": "background",
+    "workspaceDisplayName": "Stage 8 Close Reopen Renamed",
+    "backupPresent": true
+  },
+  "packaged": {
+    "setupMode": "close-reopen",
+    "setupExitCode": 0,
+    "freshRereadMode": "close-reopen-reread",
+    "freshRereadExitCode": 0,
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "closeWasMemoryOnly": true,
+    "reopenedProjectId": "dbx:project:desktop-close-reopen-self-test",
+    "reopenedGeneration": 2,
+    "reopenedContentSha256": "85df888a39b83a1fd78cc59752e816a916b05a638c6a48a47fafd3774250dcfb"
+  },
+  "ordinaryStartup": {
+    "processObservedRunningDuringBoundedProbe": true,
+    "stopDisposition": "stopped by exact executable identity after 4-second no-self-test probe",
+    "trackedByteIdentity": true,
+    "trackedPaths": [
+      {
+        "path": "projects/desktop-close-reopen-self-test/project.json",
+        "sha256": "65D967A7F8CB7D50FAF6586DFA63248BDB493C268BA9B18EA9A36D23E6D1D555"
+      },
+      {
+        "path": "projects/desktop-close-reopen-self-test/project.backup.json",
+        "sha256": "F71BF427D8D440CD72E917BF92F6DE95BBA6AD134BEFF40C87B380FCBEEA8BDF"
+      },
+      {
+        "path": "workspace-index.json",
+        "sha256": "7FBD2FBC848D67CBC6BAF1F59FE9BB95B4A6E191F14970F886B8D1EF615B7EAE"
+      },
+      {
+        "path": "workspace-index.backup.json",
+        "sha256": "22618940C7455C6BC99E5E441C29481BBB9CEA930371E3C9ED8816B8D7E3B490"
+      },
+      {
+        "path": "workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending",
+        "sha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43"
+      },
+      {
+        "path": "assets/sha256/431ced6916a2a21a156e38701afe55bbd7f88969fbbfc56d7fe099d47f265460",
+        "sha256": "431CED6916A2A21A156E38701AFE55BBD7F88969FBBFC56D7FE099D47F265460"
+      }
+    ]
+  },
+  "noFoundryWrite": true,
+  "validation": "89 test files / 433 tests, tooling, workflow, KB integrity, and Windows native debug build passed.",
+  "scope": "M240 only; not Stage 8 completion, alpha readiness, universal durability, broader recovery, deletion, auto-save, placement, or Foundry certification."
+}

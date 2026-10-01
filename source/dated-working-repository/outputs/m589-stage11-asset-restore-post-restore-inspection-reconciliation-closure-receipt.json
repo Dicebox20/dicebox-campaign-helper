@@ -1,0 +1,84 @@
+{
+  "operation": "stage11-asset-restore-post-restore-inspection-reconciliation",
+  "milestone": "M589",
+  "status": "PASS_LOCAL_READ_ONLY_CORRECTION_SELECTED",
+  "capturedAt": "2026-08-30T06:42:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "auditBasis": {
+    "packagedClosure": "outputs/m588-stage11-asset-restore-packaged-observation-closure-receipt.json",
+    "runner": "outputs/m588-stage11-asset-restore-packaged-observation-runner-receipt.json",
+    "applyHandler": "apps/campaign-helper-desktop/src/App.tsx:1705-1728",
+    "aggregateInspection": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs:3070-3185,4715-4881",
+    "terminalPredicate": "apps/campaign-helper-desktop/src/App.tsx:4127-4147",
+    "focusedCoverage": "tests/backup-promotion-ui-selftest.test.ts",
+    "activeCard": "docs/ACTIVE-PROGRAM-SLICE.json",
+    "roadmap": "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "knowledgeBase": "database/schema.sql + database/seed.sql"
+  },
+  "sourceReread": {
+    "appSha256": "FFB5BDB42E4DD969FFC16A9598CF0079211059C3EFA89A2D45E50A17DEF6B85C",
+    "projectStoreSha256": "59636AFAC8B3DA61BA0D33E21D665B2E6E3A092527EECDAE0C38D7472C9E0AE1",
+    "focusedTestSha256": "54CE31B0E565480D7D5CBBDDDB29D6705C762CA57BC74B8DEAF90ACAA517DBC2",
+    "applyGuard": "requires receipt PASS and inspection.status === PASS before committing the typed proposal session",
+    "nativeInspectionSemantics": "aggregate status is BLOCKED if any registered asset, pending artifact, or broken reference has a blocker",
+    "existingTerminalPredicate": "already accepts aggregate BLOCKED when selected WebP is PRESENT_VALID/non-eligible, unselected PNG is MISSING/eligible, exactly one eligible remains, and noWrite/noFoundryWrite are true"
+  },
+  "stateReread": {
+    "projectId": "dbx:project:desktop-asset-restore-trace-self-test-v2",
+    "generation": 1,
+    "projectJsonSha256": "FCF2AA015A6CC91D9A50747A1A807E2A2F2072AA1ECF93F881B8B5405B265158",
+    "selectedWebp": "PRESENT_VALID_BYTE_EXACT",
+    "unselectedPng": "MISSING_PRESERVED",
+    "v1Fixture": "UNCHANGED",
+    "workspaceForeignPending": "PRESERVED",
+    "noFoundryWrite": true,
+    "processes": {
+      "desktop": 0,
+      "cargo": 0,
+      "rustc": 0
+    }
+  },
+  "reconciliation": {
+    "confirmedCause": "The native aggregate inspection correctly remains BLOCKED for the intentionally unselected missing PNG. The UI apply callback incorrectly treats that aggregate status as failure even though the existing packaged terminal predicate defines the exact valid preserved topology.",
+    "selectedCorrection": "Add one narrow typed helper for the exact selected-restored/unselected-preserved asset-restore inspection topology, use it in the UI apply authoritative reread guard and the packaged terminal assertion, and add focused static coverage. Preserve all receipt/hash/authority/no-write checks and native restore behavior.",
+    "freshObservationBoundary": "A later fresh additive fixture/session identity is required after this code-only correction; the consumed v2 fixture is not reset or retried.",
+    "webResearch": "not needed; local contract, KB, source, runner trace, and direct canonical reread fully resolve the blocker"
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "nextMilestone": "M590",
+    "nextTitle": "Stage 11 asset-restore exact authoritative reread predicate correction",
+    "nextStatus": "authorized-m590-code-only"
+  },
+  "scope": {
+    "readOnly": true,
+    "sourceEdit": false,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "selectedNextBoundary": {
+    "milestone": "M590",
+    "title": "Stage 11 asset-restore exact authoritative reread predicate correction",
+    "status": "authorized-m590-code-only",
+    "scope": "Edit only the typed UI inspection predicate/helper, its packaged self-test call site, and focused static coverage. Preserve native restore, exact receipt/hash/authority checks, no-Foundry state, and the consumed v2 fixture. Run focused tests, TypeScript checks, diff hygiene, and process reread only.",
+    "excluded": "No build, launch, capture, retry, browser-storage inspection, session operation, fixture reset/cleanup, project/runtime mutation, provider, credential, Foundry, player-password action, Stage 11 acceptance, Stage 12, or Ready-to-Play action in M590."
+  },
+  "changedPaths": [
+    "outputs/m589-stage11-asset-restore-post-restore-inspection-reconciliation-closure-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql"
+  ]
+}

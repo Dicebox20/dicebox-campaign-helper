@@ -1,0 +1,128 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1171-fixed-candidate-transport-control-stage-and-observation-closure",
+  "milestone": "M1171",
+  "status": "CLOSED_M1171_DIAGNOSTIC_OBSERVED_ARTIFACT_IDENTITY_DRIFT",
+  "evidenceClass": "runtime-observation",
+  "operation": "dicebox.stage12.fixed-candidate-transport-control-stage-and-observation.closure",
+  "stage": {
+    "update": "PASS one package-owned nested-Data update",
+    "destination": "work/foundry-fixture-data-v2/Data",
+    "ownerPackage": "dicebox-campaign-helper",
+    "installerSourceBytes": 40712,
+    "installerStagedBytes": 40712,
+    "installerSourceSha256": "68C84F18C7EC0450A55E836B74AB7CD7516DA7878DFE83DEF72BFA40BAC79C74",
+    "installerStagedSha256": "68C84F18C7EC0450A55E836B74AB7CD7516DA7878DFE83DEF72BFA40BAC79C74",
+    "installerByteMatch": true
+  },
+  "target": {
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30001,
+    "fixture": "work/foundry-fixture-data-v2"
+  },
+  "join": {
+    "manual": true,
+    "user": "Gamemaster",
+    "password": "blank",
+    "dropdownUsed": false,
+    "result": "joined-game-as-active-gm"
+  },
+  "controlObservation": {
+    "controlId": "dicebox-ascendancy-candidate-transport-diagnostic",
+    "controlVisible": true,
+    "clickCount": 1,
+    "dialogTitle": "Show DiceBox Signal/Rune Candidate Transport Diagnostic",
+    "status": "OBSERVED",
+    "evidenceClass": "runtime-observation",
+    "operation": "ascendancy.signal-rune-candidate-transport.diagnostic",
+    "readyClaim": false,
+    "noWrite": true,
+    "apply": false,
+    "dispatch": "disabled",
+    "candidateTransportImplemented": true,
+    "runtimeExposure": "diagnostic-only-candidate-install-repair-disabled",
+    "candidateInstallExposed": false,
+    "candidateRepairExposed": false,
+    "targetExact": true,
+    "activeGm": {
+      "currentUserIsGm": true,
+      "currentUserMatchesActiveGm": true,
+      "noExecutionAuthority": true
+    },
+    "candidate": {
+      "candidateId": "m1141-signal-rune",
+      "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+      "selectedRoomIds": [
+        "dbx:room:signal-frequency-chamber",
+        "dbx:room:rune-mechanism-chamber"
+      ],
+      "excludedRoomIds": [
+        "dbx:room:ascendancy-tram-depot",
+        "dbx:room:central-core-control-chamber"
+      ],
+      "selectedAssetsComplete": true,
+      "excludedForeignScenes": {
+        "observedCount": 0,
+        "preserved": true
+      },
+      "sceneObservation": {
+        "selectedOwnedSceneCounts": {
+          "dbx:room:signal-frequency-chamber": 1,
+          "dbx:room:rune-mechanism-chamber": 1
+        },
+        "ambiguousOwnedRooms": [],
+        "missingOwnedRooms": [],
+        "foreignSemanticConflicts": [],
+        "unboundSameLabelSceneCount": 0,
+        "foreignStatePreserved": true
+      }
+    },
+    "bindings": null,
+    "payload": null,
+    "proposal": null,
+    "artifactIdentityReturned": {
+      "specId": "dbx:foundry-spec:current-product-0.1.15-m1159",
+      "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1159",
+      "stagedEvidence": "m1161-source-staged",
+      "servedEvidence": "m1162-served"
+    },
+    "artifactIdentityReconciliation": {
+      "currentVerifier": "dbx:foundry-verifier:current-product-0.1.15-m1165",
+      "status": "BLOCKED_DRIFT",
+      "reason": "The live diagnostic receipt still reports M1159 artifact refs after the M1165 verifier refresh and M1166/M1167 parity closures.",
+      "mutationAttempted": false
+    }
+  },
+  "fixtureLifecycle": {
+    "startedOnce": true,
+    "launchGuard": "PASS",
+    "browserLogin": true,
+    "normalStop": "required-force-fallback",
+    "forcedStop": "PASS",
+    "listenerDrain": "PASS 0 remaining",
+    "finalStatus": "STOPPED",
+    "finalListeners": 0,
+    "finalWorldDocumentWrites": 0,
+    "finalBalladTouched": false
+  },
+  "runtime": {
+    "installerInvoked": false,
+    "candidateInstallInvoked": false,
+    "candidateRepairInvoked": false,
+    "documentsMutated": false,
+    "assetsMutated": false,
+    "sceneWrites": 0,
+    "authorityPromoted": false,
+    "foreignStatePreserved": true,
+    "campaignReread": false,
+    "readyClaim": false
+  },
+  "remainingBlockers": [
+    "The diagnostic control and candidate transport are now observed, but the receipt's artifact identity is stale (M1159) relative to the current M1165 verifier and M1166/M1167 parity.",
+    "Authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain unproved."
+  ],
+  "nextBoundary": "M1172: refresh the diagnostic artifact identity refs to the current M1165/M1166/M1167 chain and validate locally; do not reopen runtime or invoke install/repair."
+}

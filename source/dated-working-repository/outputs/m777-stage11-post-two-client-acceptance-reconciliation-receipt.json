@@ -1,0 +1,34 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m777-stage11-post-two-client-acceptance-reconciliation-2026-08-31",
+  "milestone": "M777",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "readyClaim": false,
+  "evidenceLayers": {
+    "m773": "fixture runtime: exact staged package, redacted GM-only no-write diagnostic, and zero-write supervisor reread",
+    "m775": "local deterministic: fail-closed cross-plane classifier with aggregate authority not-granted",
+    "m776": "fixture runtime: concurrent GM/Player fixed UI-control gate, blank Player password, zero world-document writes, and no Ballad touch"
+  },
+  "clauses": {
+    "claimAndProvenance": "PARTIAL: M775 binds the local aggregate to one redacted fixture-diagnostic shape, while M776 adds direct concurrent UI-gate provenance. This remains fixture/runtime evidence and cannot establish aggregate producer commit provenance.",
+    "reviewAndAuthority": "PARTIAL: M773/M776 observe one active-GM read-only gate only. They do not establish document-write permission, desktop proposal approval authority, or aggregate target authority.",
+    "applyAndReceipts": "PARTIAL: fourteen typed terminal-history bridges remain indexed, with eight operation-specific redo bindings. Project.create has a committed bridge but lacks bounded redo/reread evidence; aggregate producer receipt continuity remains incomplete.",
+    "lifecycleAndRecovery": "PARTIAL: operation-specific local lifecycle/recovery evidence exists, but project.create redo/reread and cross-producer lifecycle continuity remain incomplete. The unavailable Player page-main reader remains a fixture-observation limitation."
+  },
+  "producerFamilies": {
+    "count": 11,
+    "disposition": "All current producer-family dispositions remain operation-specific and aggregate-partial. No fixture evidence promotes a producer family or creates execution authority."
+  },
+  "preservation": {
+    "sourceMutation": false,
+    "browserOrRuntimeAction": false,
+    "foundryDocumentWrites": 0,
+    "projectWrites": 0,
+    "settingsWrites": 0,
+    "playerPasswordsGenerated": false,
+    "stage11Accepted": false,
+    "stage12Started": false
+  },
+  "selectedNext": "M778 code-only project.create redo terminal-history receipt bridge and matched authoritative reread classifier. Preserve first-generation semantics, local-project target authority, no generic executor, no transition invocation, and all fixture/runtime and Stage 12 exclusions."
+}

@@ -1,0 +1,86 @@
+{
+  "receiptType": "stage12-signal-rune-provided-byte-attestation-closure",
+  "milestone": "M1086",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "manifest": {
+    "manifestId": "dbx:manifest:m1086-signal-rune-renderers",
+    "assetCount": 2,
+    "dependentDocumentIds": [],
+    "noWrite": true,
+    "assets": [
+      {
+        "assetId": "dbx:asset:map-rune-mechanism-chamber",
+        "path": "assets/maps/ascendancy-rune-mechanism-chamber-v2.png",
+        "mimeType": "image/png",
+        "width": 1536,
+        "height": 1024,
+        "expectedByteLength": 2748729,
+        "observedByteLength": 2748729,
+        "expectedSha256": "f45922e219a12fba6b79a26ad0d6b5ebbaf51add86c025e9b676da24707d507b",
+        "observedSha256": "f45922e219a12fba6b79a26ad0d6b5ebbaf51add86c025e9b676da24707d507b",
+        "source": "provided-bytes",
+        "status": "attested"
+      },
+      {
+        "assetId": "dbx:asset:map-signal-frequency-chamber",
+        "path": "assets/maps/ascendancy-signal-frequency-chamber-v2.png",
+        "mimeType": "image/png",
+        "width": 1536,
+        "height": 1024,
+        "expectedByteLength": 2935616,
+        "observedByteLength": 2935616,
+        "expectedSha256": "db9307932865b0d3a23c5a8aa61082d520206443318658de7e03c773a1a9972e",
+        "observedSha256": "db9307932865b0d3a23c5a8aa61082d520206443318658de7e03c773a1a9972e",
+        "source": "provided-bytes",
+        "status": "attested"
+      }
+    ]
+  },
+  "validation": {
+    "focusedTestFiles": 5,
+    "focusedTests": 26,
+    "packageTypeCheck": "passed",
+    "desktopProductionBuild": "passed",
+    "workflowTest": "14 passed",
+    "manifestDriftRejection": true,
+    "mismatchedByteRejection": true,
+    "gateReadback": "ready",
+    "directReadback": "passed",
+    "diffCheck": "pending-record-finalization"
+  },
+  "boundaries": {
+    "externalFetch": false,
+    "assetUpload": false,
+    "servedByteClaim": false,
+    "dependentDocumentsCreated": false,
+    "campaignPackageBindingChanged": false,
+    "installerChanged": false,
+    "tramOrCoreTouched": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "remainingGates": {
+    "tramCoreRendererBinding": "final-map-required",
+    "dependentDocumentCreation": "not-attempted-and-separate-gate",
+    "exactFoundryActiveGMReadback": "not-proven",
+    "regionwrightIntegrationReceipt": "not-proven",
+    "packageInstallerPromotion": "not-proven",
+    "stage12Acceptance": "not-accepted",
+    "readyToPlay": "not-claimed"
+  },
+  "nextAction": "M1087 post-Signal/Rune-attestation read-only reconciliation; preserve the ready no-write gate and all remaining runtime/final-map boundaries"
+}

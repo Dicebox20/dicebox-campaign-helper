@@ -1,0 +1,16 @@
+{
+  "milestone": "M676",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL READ-ONLY",
+  "scope": "Reconcile M675 inverse dispatch-state contracts with future executor composition, current active-GM reread, receipt-store persistence, and retry boundaries.",
+  "finding": "M675 exact manifest projection and operation selection are not invoked by validateVerifiedStagedInverseExecutorBoundaryInput. The claim store still returns its candidate immediately after write without a mandatory authoritative load; the current-GM reader, adapter, and receipt dependencies remain interfaces with no orchestration method; and the inverse adapter still returns generic RuntimeBinding/forward-oriented StagedReadback rather than the M675 operation-specific reread evidence. The terminal receipt store has no implementation or append-reread-conflict transition.",
+  "selectedNext": "M677 code-only: add a pure fail-closed pre-dispatch context transition that composes exact manifest selection, persisted claim reread, execution-time active-GM reread, and terminal receipt persistence state without adapter dispatch.",
+  "evidence": {
+    "boundary": "packages/dicebox-compiler/src/staged-inverse-executor-boundary.ts",
+    "dispatchState": "packages/dicebox-compiler/src/staged-inverse-dispatch-state.ts",
+    "claimStore": "packages/dicebox-compiler/src/staged-inverse-permit-claim-store.ts",
+    "adapter": "packages/dicebox-compiler/src/staged-inverse-adapter.ts",
+    "kbFact": "F-921 / SRC-M675-STAGE11-INVERSE-DISPATCH-STATE-CLOSURE"
+  },
+  "excluded": ["executor dispatch", "adapter call", "current-GM live reread", "receipt write", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
+}

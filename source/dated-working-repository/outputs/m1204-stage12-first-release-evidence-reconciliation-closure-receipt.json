@@ -1,0 +1,108 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1204-stage12-first-release-evidence-reconciliation-2026-09-06",
+  "milestone": "M1204",
+  "stage": "scene-authoring-breadth",
+  "capturedAt": "2026-09-06",
+  "goalId": "O-116",
+  "evidenceClass": "local",
+  "status": "PASS_LOCAL_M1204_FIRST_RELEASE_EVIDENCE_RECONCILIATION",
+  "readyClaim": false,
+  "inputReceipts": [
+    "outputs/m1193-campaign-helper-map-lab-replacement-closure-receipt.json",
+    "outputs/m1197-campaign-helper-map-lab-desktop-preview-closure-receipt.json",
+    "outputs/m1198-campaign-helper-map-lab-overlay-review-promotion-closure-receipt.json",
+    "outputs/m1199-campaign-helper-desktop-overlay-review-ui-closure-receipt.json",
+    "outputs/m1200-stage12-current-m1188-candidate-child-repair-closure-receipt.json",
+    "outputs/m1202-stage12-exact-runtime-loaded-byte-observation-closure-receipt.json",
+    "outputs/m1203-stage12-fixture-supervisor-stopped-state-recovery-closure-receipt.json",
+    "docs/FAST-TRACK-RELEASE-SLICE-2026-09-06.md",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md"
+  ],
+  "evidenceMatrix": [
+    {
+      "requirement": "Exact dbx-test-world / Foundry 14.367 / dnd5e 5.3.3 target is current",
+      "disposition": "PASS_FIXTURE",
+      "evidenceLane": "fixture",
+      "receipts": ["M1200", "M1202"],
+      "statement": "M1200 and M1202 directly identify the disposable target and exact Foundry/system versions; this does not establish a non-disposable campaign world."
+    },
+    {
+      "requirement": "User-provided Gamemaster session is manually entered with blank password and reread as GM",
+      "disposition": "PASS_FIXTURE",
+      "evidenceLane": "fixture",
+      "receipts": ["M1200", "M1202"],
+      "statement": "Both exact fixture receipts record manually typed Gamemaster, blank password, no dropdown selection, and current active-GM matching."
+    },
+    {
+      "requirement": "Reviewed Signal/Rune candidate passes source, staged, installer, worker, adapter, runtime, and RuntimeProfile/profile-diff gates",
+      "disposition": "PARTIAL_NON_CERTIFYING",
+      "evidenceLane": "local+staged+fixture",
+      "receipts": ["M1189", "M1190", "M1191", "M1200", "M1202"],
+      "identity": {
+        "specId": "dbx:foundry-spec:current-product-0.1.15-m1188",
+        "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1188",
+        "installerSha256": "1bc06bbb7f6f779afdcb0b7dbd5f4b9c5aae335748d0ea9f698dc4a25f946add",
+        "moduleSha256ObservedByM1202": "9c9dec86cdcd798c016f94f336d5d34c9f76d42dd22c820f6778a488d15db84c",
+        "packageSha256": "2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f",
+        "workerSha256": "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+        "adapterSha256": "3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab",
+        "runtimeSha256": "31d9655e77eed5e0e94dab33421e63537a14251df994296c3c039ce019192a1b"
+      },
+      "statement": "The five canonical M1188 artifact identities have source/staged/served and descriptor evidence, and M1202 directly observes the package-owned loaded module bytes. The current RuntimeProfile still reports document/Scene/placeable/Region/media writes unavailable, so the gate is not execution authority or persistent-world certification."
+    },
+    {
+      "requirement": "One fixed approval envelope produces a preview for two fresh package-owned Scene candidates",
+      "disposition": "PASS_FIXTURE",
+      "evidenceLane": "fixture",
+      "receipts": ["M1200"],
+      "statement": "The fixed m1141-signal-rune candidate preview returned PREVIEWED once for Signal and Rune and was followed by exactly one approval."
+    },
+    {
+      "requirement": "Approved live creation uses the fixed allowlist, preserves foreign Scenes, and is followed by authoritative reread",
+      "disposition": "PASS_FIXTURE_NON_CERTIFYING",
+      "evidenceLane": "fixture",
+      "receipts": ["M1200"],
+      "statement": "M1200 observed two resolved native Tile creation calls, 7 Tiles per selected room, 8 Walls and 6 Regions per room, and preserved foreign state. The receipt remains fixture-scoped and does not promote persistent-world authority or campaign-wide map completion."
+    },
+    {
+      "requirement": "Receipt records exact hashes, target/profile identity, approval, writes, unknowns, recovery, and non-proven claims",
+      "disposition": "PASS_LOCAL_AND_FIXTURE",
+      "evidenceLane": "local+fixture",
+      "receipts": ["M1200", "M1202", "M1203"],
+      "statement": "The named receipts carry exact identities, manual-GM and approval counts, native-write accounting, authoritative rereads, stopped-state recovery, and explicit non-certifying boundaries."
+    }
+  ],
+  "campaignHelperMapLab": {
+    "disposition": "PASS_LOCAL_PRODUCT_EVIDENCE",
+    "receipts": ["M1193", "M1197", "M1198", "M1199"],
+    "rendererSha256": "36112ad4894d01fbe04a1a9bfaa7ea09f69f978c6730695cec8d2637cbfd1a82",
+    "canvas": "1536x1024",
+    "grid": "64px/5 units",
+    "features": ["generated renderer", "Spatial Blueprint geometry", "six stable anchors", "five Regions", "known-size overlay review", "explicit correction and in-memory promotion", "desktop no-write preview"],
+    "boundary": "Local Campaign Helper evidence only; no Foundry Scene persistence, asset upload, provider claim, Tram revival, or Ready-to-Play claim."
+  },
+  "remainingBlockers": [
+    "Persistent-world/write/execution authority and a current authoritative post-restart campaign reread remain unpromoted despite the bounded fixture observation.",
+    "Tram/Core final-map breadth remains blocked; Tram remains historical provenance and is not revived.",
+    "Exact current player/Regionwright behavior and the independent player acceptance boundary remain unproven.",
+    "Stage 12 acceptance and Ready-to-Play remain false."
+  ],
+  "selectedNextBoundary": {
+    "milestone": "M1205",
+    "id": "stage12-m1205-exact-two-client-player-regionwright-read-only-observation-2026-09-06",
+    "scope": "One exact disposable-fixture two-client observation with manually typed Gamemaster and Player3 blank-password joins, concurrent presence, current active-GM identity, GM-only control visibility, player-facing Scene/Regionwright behavior, no-write/no-progression/no-reset posture, foreign-state preservation, and final STOPPED/no-listener reread.",
+    "reason": "The first-release Signal/Rune slice is materially evidenced, while the next named Stage 12 gap is independent player/Regionwright behavior. This boundary is smaller and safer than attempting Tram/Core or persistent-world promotion in the same step.",
+    "notAuthorizedByThisReceipt": ["document mutation", "installer or candidate execution", "puzzle progression", "reset", "Tram/Core", "Ballad", "foreign-state change", "Stage 12 acceptance", "Ready-to-Play claim"]
+  },
+  "validation": {
+    "receiptInputsParsed": true,
+    "workflow": {"status": "PASS", "score": 69, "passedGates": 11, "totalGates": 16, "activeStage": "scene-authoring-breadth", "readyClaim": false},
+    "knowledgeBaseBeforeClosure": {"integrity": "ok", "sources": 1916, "facts": 1493, "decisions": 1518, "trials": 1095, "subjects": 41, "milestones": 38},
+    "runtimeOpenedByM1204": false,
+    "worldDocumentWritesByM1204": 0,
+    "foreignStateChangedByM1204": false
+  },
+  "next": "Authorize and database-first synchronize M1205 only; keep persistent-world, final-map, player acceptance, Stage 12, Tram/Core/player/Ballad, and readyClaim blocked until direct evidence exists."
+}

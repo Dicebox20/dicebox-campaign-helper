@@ -1,0 +1,24 @@
+(node:14220) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:14220) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:4592) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:4592) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:23976) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:23976) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:8036) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8036) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:24780) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:24780) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:17200) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:17200) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:11204) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:11204) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(node:10676) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 _device listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:10676) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 error listeners added to [Ssdp]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit

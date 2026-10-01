@@ -1,0 +1,84 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M260",
+  "operation": "foundry.fixture.loaded-runtime-readonly-probe",
+  "status": "BLOCKED_CLIENT_SESSION_REQUIRED",
+  "evidenceClass": "fixture",
+  "target": {
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "port": 30002,
+    "foundry": "14.367",
+    "system": "dnd5e@5.3.3",
+    "entryPath": "C:\\Program Files\\Foundry Virtual Tabletop\\resources\\app\\main.js"
+  },
+  "launch": {
+    "guard": "PASS",
+    "status": "PASS",
+    "pid": 4760,
+    "commandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB",
+    "processPath": "C:\\Program Files\\nodejs\\node.exe",
+    "stateTargetMatches": true,
+    "exclusiveListener": true,
+    "http": {
+      "status": 302,
+      "location": "/join"
+    }
+  },
+  "readOnlyClientProbe": {
+    "browserSurface": "Codex In-app Browser",
+    "url": "http://127.0.0.1:30002/join",
+    "foundryJoinPage": true,
+    "worldTitle": "DiceBox Disposable Ascendancy Fixture",
+    "foundryVersionText": "Version 14 Build 367",
+    "currentPlayers": "0/1",
+    "usernameOrSessionRequired": true,
+    "credentialsEntered": false,
+    "joinSubmitted": false,
+    "loadedDiceboxReadiness": "NOT_OBSERVED",
+    "activeGm": "NOT_OBSERVED",
+    "clientBehavior": "NOT_TESTED",
+    "optionalModules": "UNKNOWN",
+    "noWrite": true
+  },
+  "stop": {
+    "status": "PASS",
+    "ownershipEvidence": "exact-process-and-exclusive-port",
+    "normalTermination": "FAILED_CLOSED_REQUIRES_FORCE",
+    "forceFallback": "PASS",
+    "finalSupervisorStatus": "STOPPED",
+    "pidAlive": false,
+    "listeners": [],
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "filesystemReread": {
+    "worldEntries": ["data", "world.json"],
+    "worldManifestSha256": "1A6187CC3D1EBD71DAB813487E92E8C1CB2E43B12A1B020A7939BE6211FD2109",
+    "licenseBytes": 836,
+    "licenseSha256": "A61905EC3858FE8B90F7E5C473E1D207A3B5C7174DA904711FCA82AE637F13CE",
+    "activeOptionsLock": {
+      "present": true,
+      "bytes": 1,
+      "hashRead": "ACCESS_DENIED_AFTER_STOP"
+    },
+    "quarantinedLocks": [
+      "Config/dicebox-lock-quarantine/options.json.lock-2026-08-27T13-35-21-280Z",
+      "Config/dicebox-lock-quarantine/options.json.lock-2026-08-27T13-52-19-889Z"
+    ],
+    "balladWorldPresent": false
+  },
+  "blockers": [
+    "The read-only join surface requires a username/session; no client was connected.",
+    "Loaded DiceBox readiness and active-GM/client state were not observed.",
+    "Optional midi-qol and dae manifests remain unknown.",
+    "The stopped fixture regenerated a one-byte Config/options.json.lock that requires a separate exact stopped-state recovery gate."
+  ],
+  "noCertification": true,
+  "sourceReceipts": [
+    "outputs/m260-loaded-runtime-start-receipt.json",
+    "outputs/m260-loaded-runtime-status-receipt.json",
+    "outputs/m260-loaded-runtime-stop-receipt.json",
+    "outputs/m260-loaded-runtime-final-status-receipt.json"
+  ]
+}

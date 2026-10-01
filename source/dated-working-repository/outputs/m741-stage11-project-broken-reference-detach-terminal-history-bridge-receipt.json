@@ -1,0 +1,62 @@
+{
+  "milestone": "M741",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bridge the existing approved project.broken-reference.detach session, exact selected-reference receipt, and authoritative post-detach recovery reread into typed terminal history.",
+  "sourceState": "Unborn project worktree with no HEAD; M741 changes only the bounded bridge, focused test, receipt, and synchronized governance records.",
+  "artifactHashes": {
+    "bridgeSha256": "DCC24169C003C502FAC4167CB70EEBAB7E5E8319C91E5DB7787B9C1418FAC196",
+    "testSha256": "6684A1784F693962720ED0FA0BF107B0C05A28C8D82D7400E1C123277BCE2577"
+  },
+  "delegation": {
+    "requestedModel": "gpt-5.6-sol",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Bounded read-only final review of the M741 bridge authority, reread, and fail-closed semantics.",
+    "workerOutcome": "Worker did not return a review receipt after two bounded polls and was closed. No worker output was accepted as evidence.",
+    "foremanReview": "The Foreman reread D-869/F-986 through the bounded read-only KB, the exact broken-reference preview/receipt types, project recovery proposal adapter, DesktopProjectProposalSession, existing isBrokenReferenceUiTerminalInspection predicate, and neighboring terminal-history bridges before implementation."
+  },
+  "implementation": {
+    "bridge": "apps/campaign-helper-desktop/src/project-broken-reference-detach-terminal-history.ts",
+    "test": "tests/project-broken-reference-detach-terminal-history.test.ts",
+    "behavior": [
+      "Accepts only the exact project.broken-reference.detach preview, PASS receipt, committed four-transition proposal session, and post-detach authoritative recovery reread.",
+      "Preserves the selected descriptor when declared, removes only the selected primary Scene binding, retains allowed backup diagnostics, and preserves foreign state and directory synchronization.",
+      "Records source-operation project-content/persistence write semantics while the bridge itself has no execution authority, no generic executor, and no Foundry write.",
+      "Rejects unknown fields, identity drift, claimed asset-byte writes, retained primary references, invalid pending artifacts, and altered rereads."
+    ]
+  },
+  "validation": {
+    "focused": "PASS: 2 M741 bridge tests",
+    "fullRepository": "PASS: 168 test files / 821 tests",
+    "build": "PASS: package typecheck, desktop typecheck, Node typecheck, and Vite production build",
+    "tooling": "PASS: npm.cmd run verify:tooling",
+    "knowledgeBase": "PASS after synchronized M741 seed: database rebuilt and verified at 1162 sources, 1002 facts, 869 decisions, 135 active-work rows, 787 trials, 40 research subjects, and 26 milestones; F-985/F-986/F-987 and D-868/D-869/D-870 reread through the bounded read-only query surface",
+    "workflow": "PASS: active-slice checker reports Stage 11 proposal-approval-history at 10/16 with no violations",
+    "foundryOrRuntime": "NOT RUN; excluded by D-869"
+  },
+  "safety": {
+    "bridgeOnly": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "noGenericExecutor": true,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; aggregate producer acceptance remains partial",
+    "stage12": "NOT STARTED",
+    "decision": "M741 closes the final direct recovery terminal-history projection but does not accept Stage 11 or authorize Stage 12."
+  },
+  "remainingGaps": [
+    "Aggregate producer coverage and direct current-authority evidence remain incomplete across all eleven producer families.",
+    "Unified stale, outcome-unknown, recovered, undone, and redone lifecycle evidence remains incomplete.",
+    "Packaged/runtime authority and live active-GM/Foundry evidence remain incomplete.",
+    "Stage 11 acceptance requires a fresh read-only reconciliation after this final direct recovery seam."
+  ],
+  "selectedNext": "M742 read-only Stage 11 acceptance reconciliation after M741; preserve live Foundry/runtime and Stage 12 exclusions."
+}

@@ -1,0 +1,74 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.v3-post-apply-reconciliation",
+  "milestone": "M546",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "capturedAt": "2026-08-29T22:48:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidence": {
+    "m545Receipt": "outputs/m545-stage11-broken-reference-ui-v3-packaged-observation-blocker-receipt.json",
+    "kbDecision": "D-696",
+    "currentSource": [
+      "apps/campaign-helper-desktop/src/App.tsx:4380-4392",
+      "apps/campaign-helper-desktop/src/project-store.ts:187-196",
+      "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs:4547-4555",
+      "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs:4620-4627",
+      "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/src/lib.rs:6966-6986"
+    ]
+  },
+  "reconciliation": {
+    "primaryProject": {
+      "path": "%LOCALAPPDATA%/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v3/project.json",
+      "generation": 2,
+      "targetBindingAbsent": true,
+      "currentPrimaryBrokenReferenceCount": 0,
+      "assetDescriptorRole": "handout"
+    },
+    "preservedBackup": {
+      "path": "%LOCALAPPDATA%/com.dicebox.campaign-helper/projects/desktop-broken-reference-ui-lifecycle-self-test-v3/project.backup.json",
+      "generation": 1,
+      "preservesPriorEnvelope": true,
+      "preservedBrokenReferenceCount": 1,
+      "preservedReferenceReason": "The prior role-mismatch fixture is intentionally retained in the generation-1 backup."
+    },
+    "inspectionPredicate": {
+      "nativeBehavior": "Rust scans both project.json and project.backup.json and marks the aggregate inspection BLOCKED when any broken reference exists.",
+      "uiBehavior": "The App terminal guard runs only after the approved session has been committed, then requires recoveryInspection.status === PASS and brokenSceneReferences.length === 0, so it rejects a clean primary plus contractually preserved backup diagnostic.",
+    "conclusion": "This is an acceptance-predicate mismatch after a committed approved session, not evidence of an unsafe detach write or a reason to clear the backup."
+    },
+    "pendingArtifact": {
+      "path": "%LOCALAPPDATA%/com.dicebox.campaign-helper/workspace-index.b9bd9558189d774361adf243e6b91a33be6b953627697c218c9215395833491f.pending",
+      "sha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+      "kind": "workspace-index-pending",
+      "containsV3Entry": false,
+      "targetProjectPending": false,
+      "disposition": "Preserve; no clear, promote, rename, or quarantine authority exists in this boundary."
+    },
+    "preservation": {
+      "v1ProjectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+      "v2ProjectSha256": "33EFC91239F5C9455DB87F5A46A511DD8B6F2114D7502CDF5232C2D5E105F3B4",
+      "assetSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+      "browserStorageInspected": false,
+      "runtimeProcesses": "none: desktop/Cargo/Rustc"
+    }
+  },
+  "selectedBoundary": {
+    "milestone": "M547",
+    "type": "local-code-only",
+    "scope": "Add one typed self-test acceptance helper that distinguishes clean current project diagnostics from preserved backup diagnostics and unrelated valid workspace pending artifacts; extend focused static tests. Preserve native aggregate inspection semantics, v1/v2 state, backup, unknown state, and all authority gates.",
+    "prohibited": [
+      "build",
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session clear/replacement/recovery",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M546 is read-only reconciliation. It does not certify the M545 packaged lifecycle, Stage 11, Foundry authority, or Ready-to-Play."
+}

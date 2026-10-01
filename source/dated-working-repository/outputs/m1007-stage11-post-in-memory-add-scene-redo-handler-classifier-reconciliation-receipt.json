@@ -1,0 +1,142 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1007",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile the exact M1006 in-memory add-Scene redo handler/classifier evidence against the complete Stage 11 aggregate/current-authority surfaces and select at most one smallest directly evidenced next gap without implementation, count change, runtime reopening, or authority promotion.",
+  "inputs": [
+    "outputs/m1006-stage11-in-memory-add-scene-redo-handler-classifier-evidence-closure-receipt.json",
+    "outputs/m1005-stage11-aggregate-current-authority-gap-reconciliation-receipt.json",
+    "outputs/m766-stage11-project-add-scene-in-memory-redo-terminal-history-bridge-closure-receipt.json",
+    "outputs/m931-stage11-in-memory-add-scene-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-in-memory-add-scene-redo-handler-classifier-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "tests/project-aggregate-current-authority-evidence.test.ts",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAggregateAuthorityIndexedRedoBindingEntries": [
+      "project.create",
+      "project.save",
+      "project.rename",
+      "project.add-scene.persist",
+      "project.asset.bind",
+      "project.asset.register-audio",
+      "project.asset.register-handout",
+      "project.asset.register-token",
+      "project.add-scene.commit-in-memory"
+    ],
+    "handlerClassifierAggregateAttachments": 9,
+    "semanticAggregateAttachments": 9,
+    "inMemoryHandlerClassifierEvidence": "present-local-not-aggregate",
+    "inMemoryHandlerClassifierAggregateAttachment": "absent",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false,
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source and its test separately index 9 redo entries, including project.add-scene.commit-in-memory. M1006 now supplies the ninth producer-local handler/classifier evidence surface, but it is not yet an aggregate-ledger field; the handler/classifier aggregate attachment count remains 9. These fields are not collapsed into one measure.",
+    "reconciled": true
+  },
+  "disposition": {
+    "m1006Reread": "PASS: the exact project.add-scene.commit-in-memory redo handler/classifier evidence is local, strict typed, non-certifying, source-receipt-bound to M766/M931, count-neutral, and authority-locked.",
+    "aggregateSurfaceCheck": "PASS: the aggregate ledger still has nine producer-specific handler/classifier fields and no project.add-scene.commit-in-memory handler/classifier aggregate field; semantic aggregate coverage remains nine, including the in-memory add-Scene row.",
+    "currentAuthoritySurfaceCheck": "PASS: the current-authority source/test still indexes eleven producer families and nine redo entries, including project.add-scene.commit-in-memory, with no M1006 authority promotion.",
+    "remainingDirectBlocker": "Aggregate current authority is not proven by bounded operation-specific evidence; cross-producer committed/recovered continuity remains incomplete.",
+    "otherBlockers": "Packaged/runtime authority and direct active-GM/Foundry evidence remain incomplete; the aggregate Stage 11 acceptance claim is unsupported.",
+    "selectedNext": {
+      "milestone": "M1008",
+      "title": "Aggregate project.add-scene.commit-in-memory redo handler/classifier evidence",
+      "scope": "One focused code-only strict typed non-certifying aggregate-ledger attachment for the exact M1006 project.add-scene.commit-in-memory redo handler/classifier evidence; preserve fixed counts, separate semantic aggregate evidence, authority locks, parked runtime, Stage 11 BLOCKED, Stage 12 LOCKED, and readyClaim false.",
+      "reason": "M1006 supplies the missing producer-local handler/classifier evidence while the aggregate ledger remains the single directly adjacent missing field for the ninth current-authority indexed redo entry.",
+      "deterministicCheck": "Require exact M1006 receipt identity and provenance, operation-specific handler/classifier binding, matched reread and non-persistence semantics, fail-closed drift rejection, one-producer-scoped aggregate attachment, count neutrality, preservation of the separate M931 semantic aggregate attachment, and all authority/runtime/Stage 11/Stage 12 locks.",
+      "excluded": [
+        "runtime/browser/Foundry/provider/account activity",
+        "credentials or player-role passwords",
+        "project mutation or generic execution",
+        "aggregate authority promotion",
+        "Stage 11 acceptance",
+        "Stage 12 entry",
+        "Ready-to-Play claim"
+      ]
+    }
+  },
+  "artifacts": {
+    "m1006Receipt": {
+      "path": "outputs/m1006-stage11-in-memory-add-scene-redo-handler-classifier-evidence-closure-receipt.json",
+      "sha256": "08EBC779BCBACC3DB8820803FFC4B12A7AE20065D47D9C4F93F9096FD7322C4A"
+    },
+    "m1005Receipt": {
+      "path": "outputs/m1005-stage11-aggregate-current-authority-gap-reconciliation-receipt.json",
+      "sha256": "B2D127C8879507FA77FAC45943C1A895337B1C931042E395EDB19C451589FA78"
+    },
+    "m1006Source": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-in-memory-add-scene-redo-handler-classifier-evidence.ts",
+      "sha256": "E6455F9CE645B54D2575026E47FCCC9CEF8BF2CD1C0847EE1EA9908DBC0F3744"
+    },
+    "m1006Test": {
+      "path": "tests/project-stage11-in-memory-add-scene-redo-handler-classifier-evidence.test.ts",
+      "sha256": "94AD482AEBBFEA65C378D7656B2AA195218F649D737CD6761C7DEFCE6B38D6C1"
+    },
+    "aggregateLedgerSource": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "sha256": "87B7D8D65954852CF3F51738AA2F58B4E356BB4BF2FB9393C2CB2C7D10F740AD"
+    },
+    "aggregateLedgerTest": {
+      "path": "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+      "sha256": "C1D2C36FC4B5AB3742614A9A10CFA8D771748D8307F903E49E3A9685B7776740"
+    },
+    "currentAuthoritySource": {
+      "path": "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+      "sha256": "A498BEC6CF213F1FB55B2EB2DC90B33AE657BA1307F77F17FC98B1A000A3D446"
+    }
+  },
+  "validation": {
+    "readOnlyKnowledgeBaseQueries": "PASS: M1006 closure, M1007 authorization, blocker O-116, and summary surfaces reread from the rebuilt read-only KB.",
+    "aggregateSurfaceCheck": "PASS: nine strict producer-scoped handler/classifier aggregate attachments and nine semantic aggregate attachments remain distinct; M1006 is not yet attached to the aggregate ledger.",
+    "currentAuthoritySurfaceCheck": "PASS: eleven producer families and nine current-authority redo entries remain indexed, including project.add-scene.commit-in-memory.",
+    "countScopeCheck": "PASS: Stage 11 matrix 8, aggregate direct strands 9, current aggregate-authority index 9; no write or count change.",
+    "workflowCheck": "PASS: 10/16; proposal-approval-history active; violations 0; readyClaim false.",
+    "databaseRebuildAndVerify": "PASS: integrity ok; sources 1572; facts 1257; decisions 1209; open items 135; trials 846; research subjects 40; milestones 26.",
+    "nextGapCheck": "PASS: M1006 local handler/classifier evidence is present and the matching aggregate-ledger field is the single directly adjacent missing field.",
+    "diffCheck": "PASS: read-only reconciliation introduced no implementation diff."
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "runtimeLaneReopened": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "generic execution or project mutation",
+    "byte-level envelope authority beyond source-receipt-only claims",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1007 closure and M1008 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then implement only the authorized M1008 aggregate project.add-scene.commit-in-memory handler/classifier attachment."
+}

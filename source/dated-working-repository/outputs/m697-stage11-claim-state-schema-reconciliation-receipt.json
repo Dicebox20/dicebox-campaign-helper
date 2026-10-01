@@ -1,0 +1,42 @@
+{
+  "milestone": "M697",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION",
+  "scope": "Reconcile M696 claim-state schema hardening against claim transitions/events, permit-claim persistence/resolution, M694 legacy boundary validation, M688 proof, and M690/M686 composition without editing or invoking runtime behavior.",
+  "confirmed": {
+    "schemaCompatibility": "M696 requires canonical claimed state authoritativeReread true; transitions preserve it and the claim store rejects invalid claimed candidates.",
+    "persistenceCompatibility": "Claim-store resolution remains fail-closed: exact matched rereads are required and missing, unknown, and conflict outcomes preserve uncertainty and foreign state.",
+    "downstreamCompatibility": "M694 and M688 require claimed authoritative state with exact request/claim identity; M690/M686 remain pure, non-dispatching, and block non-persisted terminal outcomes.",
+    "provenanceGap": "The claim-committed event can directly transition available state to claimed from an asserted authoritativeReread true event without binding that state to a matched claim-store resolution. M688/M694 validate the resulting state but cannot prove the persistence witness.",
+    "nextBoundary": "The narrowest safe next code-only boundary is M698 transition/event hardening so a post-write outcome remains non-claimed until a distinct authoritative reread transition establishes claimed, while retaining exact identity checks."
+  },
+  "delegation": "A hidden Terra Extra High read-only architecture worker independently completed the reconciliation, changed no files, and was reviewed and closed by the Foreman.",
+  "validation": {
+    "knowledgeBase": "Read-only D-825 and F-942 queries returned the recorded M696 authorization and fact; the M696 receipt hash matched its KB record.",
+    "workflow": "Active-slice checker remained PASS with Stage 11 proposal-approval-history as the only active stage, score 63, 10/16 gates, and readyClaim false.",
+    "diff": "No M697 files were changed; the reconciliation produced no source diff."
+  },
+  "safety": {
+    "adapterDispatch": "not-authorized-by-this-contract",
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "foreignStatePreserved": true,
+    "claimStoreWrite": false,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "liveCertification": false,
+    "stage11Acceptance": false
+  },
+  "selectedNext": "M698 code-only claim transition/event hardening: keep post-write claim-committed outcomes non-claimed until a distinct authoritative reread establishes claimed; retain exact identity checks and add rejection tests without store invocation or execution.",
+  "evidence": [
+    "packages/dicebox-compiler/src/staged-inverse-permit-claim.ts",
+    "packages/dicebox-compiler/src/staged-inverse-permit-claim-store.ts",
+    "packages/dicebox-compiler/src/staged-inverse-executor-boundary.ts",
+    "packages/dicebox-compiler/src/staged-inverse-pre-persistence-proof.ts",
+    "packages/dicebox-compiler/src/staged-inverse-proof-composition-bridge.ts",
+    "packages/dicebox-compiler/src/staged-inverse-executor-composition.ts",
+    "outputs/m696-stage11-claim-state-schema-receipt.json",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "excluded": ["file edits", "build", "claim-store writes", "dependency invocation", "adapter dispatch", "executor continuation", "Foundry invocation", "runtime mutation", "automatic retry", "live certification", "Stage 11 acceptance"]
+}

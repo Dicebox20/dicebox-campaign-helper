@@ -1,0 +1,88 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1140",
+  "status": "PASS_BLOCKED_PREVIEW_RECONCILIATION",
+  "evidenceClass": "local",
+  "operation": "dicebox.ascendancy.signal-rune.shape-aware-identity.reconciliation",
+  "acceptedStage": "scene-authoring-breadth",
+  "implementation": {
+    "sourcePath": "packages/dicebox-compiler/src/ascendancy-signal-rune-shape-aware-identity-reconciliation.ts",
+    "sourceSha256": "A84F34D7C9A2420C0C99F412A567D69ED7A0D022087AA620B8954736E5F6D4F6",
+    "exportPath": "packages/dicebox-compiler/src/index.ts",
+    "exportSha256": "6C4276BA7486AECD0EA5FC18F80E3EC452B457CA9E9B523945E72E471ED7B092",
+    "testPath": "tests/ascendancy-signal-rune-shape-aware-identity-reconciliation.test.ts",
+    "testSha256": "E9AC5E099FE0C4D1A8B030F57B108C2CB5EE6354D8E94B5AAA834AC184223B38",
+    "contractVersion": "0.1.0",
+    "contractBoundary": "pure compiler normalization of redacted M1138 evidence; no Foundry API or native document operation"
+  },
+  "validation": {
+    "focusedTestFilesPassed": 3,
+    "focusedTestsPassed": 7,
+    "focusedTestsFailed": 0,
+    "packageTypecheck": "PASS",
+    "actualM1138ReceiptReplay": "PASS",
+    "actualM1138ReceiptSha256": "AE134F36375C6CAFE2A572513897B28B6329A5B3795FBDE2890589839DBE1929",
+    "staleSupervisorRejectionTest": "PASS",
+    "targetDriftRejectionTest": "PASS",
+    "executionShapedInputRejectionTest": "PASS"
+  },
+  "inputGate": {
+    "sourceMilestone": "M1138",
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "activeGmName": "Gamemaster",
+    "sourceSupervisorPid": 5664,
+    "currentSupervisorPid": 5664,
+    "currentSupervisorMatch": true,
+    "fixedParentSceneIds": ["AneddhKAAfk5HlsA", "p9Mbi0CJWe9KvJhH"]
+  },
+  "previewResult": {
+    "status": "BLOCKED",
+    "blockers": [
+      "runtime-parent-generation-unresolved",
+      "runtime-parent-ownership-foreign",
+      "runtime-child-identity-unresolved",
+      "embedded-level-generation-unresolved",
+      "embedded-level-ownership-unknown",
+      "embedded-wall-ownership-foreign",
+      "embedded-region-ownership-foreign"
+    ],
+    "noWrite": true,
+    "apply": false,
+    "foreignState": "preserve",
+    "retryAfterUnknown": false,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "foundryIr": "not-created",
+    "proposal": "not-created",
+    "dispatch": "disabled",
+    "readyClaim": false
+  },
+  "authoritativeReread": {
+    "supervisorStatus": "PASS",
+    "pid": 5664,
+    "port": 30001,
+    "worldId": "dbx-test-world",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": [],
+    "runtimeInvocation": false,
+    "staging": false,
+    "restart": false
+  },
+  "boundaries": {
+    "documentMutation": false,
+    "assetMutation": false,
+    "sceneActivation": false,
+    "installerInvoked": false,
+    "bindingPromotion": false,
+    "payloadMaterialized": false,
+    "rawLevelDbRead": false,
+    "rawLevelDbWrite": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "nextAction": "M1141: produce a pure package-owned fresh-Scene candidate preview that preserves the two foreign existing Scenes and does not adopt or mutate them; defer any live creation to a separate exact active-GM preview/approval gate."
+}

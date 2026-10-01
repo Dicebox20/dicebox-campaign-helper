@@ -1,0 +1,36 @@
+FoundryVTT | 2026-08-21 23:00:09 | [[32minfo[39m] Running on Node.js - Version 24.18.0
+FoundryVTT | 2026-08-21 23:00:09 | [[32minfo[39m] Foundry Virtual Tabletop - Version 14 Build 367
+FoundryVTT | 2026-08-21 23:00:09 | [[32minfo[39m] User Data Directory - "C:/Users/rujie/Documents/Codex/2026-08-20/dicebox-campaign-helper/work/foundry-fixture-data-v2"
+FoundryVTT | 2026-08-21 23:00:09 | [[32minfo[39m] Saved application configuration options to C:/Users/rujie/Documents/Codex/2026-08-20/dicebox-campaign-helper/work/foundry-fixture-data-v2/Config/options.json
+FoundryVTT | 2026-08-21 23:00:09 | [[32minfo[39m] Application Options:
+{
+  "compressStatic": true,
+  "fullscreen": false,
+  "hostname": null,
+  "language": "en.core",
+  "localHostname": null,
+  "port": 30001,
+  "protocol": null,
+  "proxyPort": null,
+  "proxySSL": false,
+  "routePrefix": null,
+  "updateChannel": "stable",
+  "upnp": true,
+  "upnpLeaseDuration": null,
+  "adminUsername": null,
+  "awsConfig": null,
+  "compressSocket": true,
+  "cssTheme": "dark",
+  "tempDir": null,
+  "deleteNEDB": false,
+  "hotReload": false,
+  "unixSocket": null,
+  "sslCert": null,
+  "sslKey": null,
+  "world": "dbx-test-world",
+  "serviceConfig": null,
+  "noBackups": false
+}
+FoundryVTT | 2026-08-21 23:00:09 | [[33mwarn[39m] Software license requires signature.
+FoundryVTT | 2026-08-21 23:00:09 | [[32minfo[39m] Requesting UPnP port forwarding to destination port 30001
+FoundryVTT | 2026-08-21 23:00:13 | [[32minfo[39m] Server started and listening on port 30001

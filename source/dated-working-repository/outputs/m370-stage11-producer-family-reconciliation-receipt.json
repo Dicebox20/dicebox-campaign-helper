@@ -1,0 +1,55 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m370-stage11-producer-family-reconciliation-2026-08-28",
+  "capturedAt": "2026-08-28",
+  "stageId": "proposal-approval-history",
+  "milestone": "M370",
+  "evidenceLabel": "local",
+  "status": "PASS",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "counts": { "projectWrites": 0, "workspaceWrites": 0, "foundryWrites": 0, "browserStorageWrites": 0, "providerCalls": 0, "credentialCalls": 0, "producerExecutions": 0 },
+  "stage11Disposition": { "generalizedBatchTray": "partial", "lifecycleAndRecovery": "partial", "sharedVocabularyWithoutSharedAuthority": "partial", "everyMutatingPathAcceptance": "partial" },
+  "auditBasis": {
+    "priorClosure": "outputs/m369-stage11-background-asset-ui-execute-reread-receipt.json",
+    "priorClosureSha256": "4BEBD5CF7683D8C71037B5A9FCFBE0BD8D77806FC92B46247DF3FF865D4B3D35",
+    "currentWorkflowCheck": "PASS; Stage 11 only active; 10/16 gates; score 63; readyClaim=false; no violations",
+    "currentKnowledgeBase": { "sources": 555, "facts": 582, "decisions": 523, "openItems": 135, "trials": 537, "researchSubjects": 40, "milestones": 26, "integrity": "PASS" }
+  },
+  "producerFamilies": [
+    { "family": "read-only inspection and compile", "disposition": "closed read-only adapters; outside mutating acceptance" },
+    { "family": "workspace open and recent-order metadata", "disposition": "explicit workspace command; generalized tray acceptance remains separate" },
+    { "family": "ordinary project persistence", "disposition": "Create, Save, Rename, zero-asset Save-as, and asset-bearing Save-as UI closed; generalized producer acceptance remains open" },
+    { "family": "in-memory project editing and navigation", "disposition": "bounded editor/persistence separation; broader UI acceptance remains open" },
+    { "family": "asset import and binding", "disposition": "handout and selected-Scene background UI closed; audio and token UI still bypass proposal/review/application" },
+    { "family": "legacy migration persistence", "disposition": "operation-specific adapter retained; not generalized into the product tray" },
+    { "family": "backup-authoritative promotion", "disposition": "recovery-specific authority retained; no generic promotion or cleanup" },
+    { "family": "missing asset restore", "disposition": "recovery-specific exact-byte authority retained" },
+    { "family": "missing asset detach", "disposition": "recovery-specific authority retained; no generic cleanup" },
+    { "family": "broken Scene-reference detach", "disposition": "selected-reference authority retained; broader cleanup remains excluded" },
+    { "family": "test-owned fixture setup and stage receipts", "disposition": "harness-only; excluded from product tray and generic Stage 11 acceptance" }
+  ],
+  "remainingGaps": [
+    "audio and token UI proposal/review/application coverage remains separate",
+    "broader recovery, missing-asset, broken-reference, deletion, cleanup, and garbage-collection UI acceptance remains open",
+    "generalized producer-family approval-tray acceptance is not inferred from operation-specific closures",
+    "every-mutating-path acceptance and all four Stage 11 clauses remain partial",
+    "Foundry execution, active-GM authority, player-role behavior, and Ready-to-Play remain unproven",
+    "Stage 16 settings persistence, supported account connection, and simplified right-side navigation remain future work; research-first is complete"
+  ],
+  "selectedNextSlice": {
+    "milestone": "M371",
+    "name": "non-scene WAV audio asset UI proposal/review/application boundary",
+    "scope": "Replace only the direct desktop WAV audio registration handler with the existing typed audio preview/session/executor path, retaining metadata-only preview, reviewer approval, additive preservation, authoritative rereads, and inverse Scene-content restoration.",
+    "reason": "Audio already has a separate typed adapter/executor and direct UI handler; moving it behind the same review boundary is smaller than token work and does not broaden to recovery or generic acceptance.",
+    "excluded": ["token UI", "background or handout changes", "recovery breadth or generic cleanup", "generic Stage 11 acceptance", "Foundry", "providers and credentials", "player passwords", "deletion", "Stage 16 implementation", "later stages"]
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/App.tsx": "943A443749D5AD15DB364A6A1E9E6C6003060132EE66F648E564487ECAF1C308",
+    "apps/campaign-helper-desktop/src/project-audio-asset-proposal-adapter.ts": "7F3A42B118EB7FE3814DE0541AD1FD4287639D46F2F343CCF83637F2277A3A1C",
+    "apps/campaign-helper-desktop/src/project-audio-asset-executor.ts": "4A0431DBF268D9992E2AAFDA08952D37436E1288134F2EC081BAC05F65A3FBD2",
+    "tests/desktop-project-proposal-review.test.ts": "B9483C3C36B8878A4D378100780AE04118C2D544D73E487BCCA9E6751D9427EA"
+  },
+  "prohibitedActivity": { "producerExecution": false, "projectWrites": false, "workspaceWrites": false, "provider": false, "credentials": false, "browser": false, "foundry": false, "playerPasswords": false, "unrelatedProject": false, "foreignState": false, "assetDeletionOrCleanup": false },
+  "doesNotProve": ["generic Stage 11 acceptance", "audio or token UI implementation", "recovery/deletion/cleanup", "Foundry execution or active-GM authority", "Stage 16 UI", "Ready-to-Play"]
+}

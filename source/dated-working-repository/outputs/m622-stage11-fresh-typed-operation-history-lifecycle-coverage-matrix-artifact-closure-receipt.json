@@ -1,0 +1,79 @@
+{
+  "operation": "stage11-fresh-typed-operation-history-lifecycle-coverage-matrix-artifact",
+  "milestone": "M622",
+  "status": "PASS_LOCAL_FRESH_ARTIFACT_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T08:08:30-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "invocationCount": 1,
+    "status": "PASS",
+    "rendererPath": "apps/campaign-helper-desktop/dist/assets/index-CoE5Uc3Z.js",
+    "rendererBytes": 2073428,
+    "rendererSha256": "B991967D4F3C0F068CE65557095AF568BE90CB4187D9B88F1E80AF1787227A41",
+    "nativePath": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "nativeBytes": 26887168,
+    "nativeSha256": "E47D8B0E88621A105F003B1D1B3CE10A98BFDE158665F5B361FD802ABB1EC3B8",
+    "nativeHashUnchangedFromM618": true
+  },
+  "rendererMarkerReread": {
+    "matrixMarker": true,
+    "matrixMarkerOccurrences": 3,
+    "matrixTestId": true,
+    "exactOperationCount": 14,
+    "exactHistoryStateCount": 11,
+    "observedPreviewApprovalMarker": true,
+    "unobservedLaterStateMarkers": {
+      "rejected": true,
+      "cancelled": true,
+      "stale": true,
+      "applying": true,
+      "unknown-outcome": true,
+      "committed": true,
+      "recovered": true,
+      "undone": true,
+      "redone": true
+    },
+    "readOnlyMarker": true,
+    "nonCertifyingMarker": true,
+    "noExecutionAuthorityMarker": true,
+    "noGenericExecutorMarker": true
+  },
+  "processReread": {
+    "desktopProcessesAfterSettling": 0,
+    "cargoProcessesAfterSettling": 0,
+    "rustcProcessesAfterSettling": 0
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M622 refreshes the owning packaged artifact and proves current matrix markers, but it does not add packaged lifecycle transitions, authoritative reread, undo/redo, stale/timeout recovery, commit evidence, or aggregate authority. No launch or capture occurred."
+  },
+  "scope": {
+    "sourceEdit": false,
+    "build": true,
+    "launch": false,
+    "capture": false,
+    "retry": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/dist/assets/index-CoE5Uc3Z.js",
+    "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "outputs/m622-stage11-fresh-typed-operation-history-lifecycle-coverage-matrix-artifact-closure-receipt.json"
+  ]
+}

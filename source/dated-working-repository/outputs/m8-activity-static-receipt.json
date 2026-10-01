@@ -1,0 +1,59 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m8-activity-static-2026-08-21",
+  "status": "PASS",
+  "evidenceClass": "deterministic",
+  "capturedAt": "2026-08-21",
+  "command": "npm run check:full",
+  "officialReferences": [
+    "https://foundryvtt.com/api/v14/modules/foundry.documents.html",
+    "https://github.com/foundryvtt/dnd5e/blob/release-5.3.3/module/documents/item.mjs",
+    "https://github.com/foundryvtt/dnd5e/blob/release-5.3.3/module/documents/activity/mixin.mjs",
+    "https://github.com/foundryvtt/dnd5e/wiki/Activities",
+    "https://github.com/foundryvtt/dnd5e/wiki/Hooks"
+  ],
+  "results": {
+    "typescript": "PASS",
+    "tests": { "files": 29, "tests": 140, "status": "PASS" },
+    "activityReadAdapter": {
+      "adapterId": "foundry.dnd5e-activity.read@14.367-5.3.3",
+      "officialItemResolution": "PASS",
+      "officialActivityRead": "PASS",
+      "officialActivityCollectionSummary": "PASS",
+      "exactItemActivityIdentity": "PASS",
+      "missingMalformedForeignAndUnknownOutcomes": "PASS",
+      "useAndMutationMethodsAbsent": "PASS"
+    },
+    "activitySelectionPlan": {
+      "strictSchema": "PASS",
+      "officialApiBindings": "PASS",
+      "activeGmAndHookGates": "PASS",
+      "executionDisabledUntilExactRuntime": "PASS",
+      "optionalModuleOwnershipExcluded": "PASS"
+    },
+    "installedActivityApiEvidence": {
+      "query": "activity-api-evidence",
+      "readOnlyModuleRouting": "PASS",
+      "redactedRegistryAndSurfaceSummary": "PASS",
+      "noActivityInvocation": "PASS"
+    },
+    "database": {
+      "integrity": "ok",
+      "sources": 51,
+      "facts": 66,
+      "decisions": 41,
+      "openItems": 21,
+      "activeWork": 20,
+      "trials": 40,
+      "researchSubjects": 40,
+      "milestones": 13
+    }
+  },
+  "notProven": [
+    "Live D&D5e 5.3.3 Activity class registry and exact configuration behavior",
+    "Activity.use behavior, preUseActivity/postUseActivity hook ordering, or cancellation semantics in the target world",
+    "Active-GM sender semantics, player permissions, Midi/DAE behavior, or any Activity execution",
+    "Runtime transaction read-back, duplicate suppression, reconnect, reset, or cross-client behavior"
+  ],
+  "nextGate": "Probe the exact target-world D&D5e Activity registry, Item Activity collection shape, Activity.use behavior, hook ordering, permissions, active-GM sender semantics, and authoritative read-back before enabling M8 execution."
+}

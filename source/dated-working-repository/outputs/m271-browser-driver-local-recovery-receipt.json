@@ -1,0 +1,54 @@
+{
+  "receiptVersion": 1,
+  "operation": "dicebox.browser-driver.world-launch-repro",
+  "status": "PASS_LOCAL_ONLY",
+  "evidenceClass": "local",
+  "timestamp": "2026-08-27T10:32:24.4022213-07:00",
+  "target": {
+    "kind": "ephemeral-loopback-static-fixture",
+    "url": "http://127.0.0.1:30123/",
+    "host": "127.0.0.1",
+    "port": 30123,
+    "foundryLaunch": false,
+    "persistentWrite": false
+  },
+  "source": {
+    "fixture": "tools/browser-driver-world-launch-repro.mjs",
+    "fixtureSha256": "BF36822097C9FC06B384EB3C4C9B60F7771FE2FDE20AB85A07AC44EEA828E226",
+    "test": "tests/browser-driver-world-launch-repro.test.ts",
+    "testSha256": "6417740BB20559CF0037C5B2A9C96E001C255ECE2F7D276D741E144F6BA97633"
+  },
+  "contract": {
+    "selector": "a[data-action=worldLaunch]",
+    "visibleText": "Launch World",
+    "enabled": true,
+    "delegated": true,
+    "primaryButtonOnly": true,
+    "navigationPrevented": true,
+    "initialReceipt": "NOT_DISPATCHED",
+    "observedReceipt": "DISPATCHED_PRIMARY_WORLD_LAUNCH",
+    "validatedInteraction": "visible-DOM semantic click after fresh visible-DOM inspection"
+  },
+  "validation": {
+    "nodeCheck": "PASS",
+    "focusedTests": "PASS 3/3",
+    "browserObservation": "PASS: visible link inspected, one semantic visible-DOM click dispatched, status reread without navigation",
+    "localFixtureStop": "PASS: no listener on 127.0.0.1:30123 after close",
+    "exactV3Reread": "PASS: no listener on port 30002"
+  },
+  "preservation": {
+    "foundryFixtureStarted": false,
+    "moduleSettingsChanged": false,
+    "usersChanged": false,
+    "campaignDocumentsChanged": false,
+    "balladTouched": false,
+    "credentialsOrSessionsRead": false,
+    "foreignV2Runtime": "observed already running on port 30001 by an accidental default-status command; not started, stopped, or otherwise changed"
+  },
+  "limitations": [
+    "This proves only a local browser-driver interaction path against a static reproduction.",
+    "It does not prove a Foundry launch, client session, current user, active GM, module load, RuntimeProfile, profile diff, bindings, behavior, or Stage 9 acceptance.",
+    "A separately accepted M270 recovery gate remains required before any native Foundry UI retry."
+  ],
+  "readyClaim": false
+}

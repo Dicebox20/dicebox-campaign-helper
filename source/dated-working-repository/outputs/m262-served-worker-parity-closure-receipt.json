@@ -1,0 +1,75 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "m262-served-worker-parity-closure-20260827T141840Z",
+  "operation": "foundry.fixture.served-worker-parity-closure",
+  "status": "BLOCKED",
+  "evidenceClass": "fixture",
+  "evidenceLabel": "fixture",
+  "milestone": "M262",
+  "authorizationSource": "SRC-M262-STAGE9-SERVED-WORKER-PARITY-AUTHORIZATION",
+  "target": {
+    "dataRoot": "work/foundry-fixture-data-v3",
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "port": 30002,
+    "supervisorCommandFingerprint": "1A12E90BD0B3361628FF516F45A686A0CF22DAC2733A3DEC678687CC025D8AAB"
+  },
+  "supervisor": {
+    "preStatus": "STOPPED",
+    "launchStatus": "PASS",
+    "pid": 21652,
+    "httpReadiness": { "status": 302, "location": "/join" },
+    "stopStatus": "PASS",
+    "stopOwnership": "exact-process-and-exclusive-port",
+    "normalStop": "failed-closed-force-required",
+    "forceStop": "PASS",
+    "finalStatus": "STOPPED",
+    "finalListeners": []
+  },
+  "servedWorker": {
+    "request": "GET http://127.0.0.1:30002/modules/dicebox-campaign-helper/src/foundry-live-bridge.js",
+    "requestCount": 1,
+    "httpStatus": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "byteLength": 12288,
+    "sourceSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "servedSha256": "2B4F79997CAB9C963C7F3826BFD2BAF2B3DEC256F630970A8D7CDD983743AA87",
+    "canonicalExpectedSha256": "460F79B11EA457EC9EFC3DCBE2C8D2C534516054D8247944F26096245DF5CF35",
+    "sourceServedParity": true,
+    "canonicalParity": false
+  },
+  "finalFilesystem": {
+    "worldEntries": ["data", "world.json"],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "worldManifestBeforeSha256": "1A6187CC3D1EBD71DAB813487E92E8C1CB2E43B12A1B020A7939BE6211FD2109",
+    "worldManifestAfterSha256": "027306C9EB117F40CC9591F72715DD32B1FF7999F8490798AF18AD951256046F",
+    "runtimeOwnedLastPlayedChanged": true,
+    "activeOptionsLock": { "present": true, "byteLength": 1 },
+    "licenseSha256": "A61905EC3858FE8B90F7E5C473E1D207A3B5C7174DA904711FCA82AE637F13CE"
+  },
+  "blockers": [
+    "The served worker matches the current source but differs from the canonical legacy verifier expectation.",
+    "No approved client/session was available; module execution and active-GM state were not observed.",
+    "Foundry regenerated a one-byte options lock requiring a separately authorized stopped-state recovery.",
+    "The runtime-owned world.json lastPlayed stamp changed during launch; no document write was observed, but the metadata transition is preserved as evidence."
+  ],
+  "noProjectWrite": true,
+  "noDocumentMutationAuthorized": true,
+  "noBrowser": true,
+  "credentialsEntered": false,
+  "foreignStatePreserved": true,
+  "readyClaim": false,
+  "doesNotProve": [
+    "loaded-module-execution",
+    "client-session",
+    "active-gm-authority",
+    "bindings",
+    "behavior",
+    "authoritative-reread",
+    "recovery",
+    "Stage 9 acceptance"
+  ]
+}

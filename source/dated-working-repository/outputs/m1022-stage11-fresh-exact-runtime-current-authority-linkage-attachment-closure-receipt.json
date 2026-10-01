@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1022",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY CURRENT-AUTHORITY LINKAGE ATTACHMENT; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Bind the strict M1020 fresh exact-runtime attachment to the separate current-authority linkage/index surface without collapsing count scopes or promoting authority.",
+  "sources": {
+    "currentAuthorityLinkage": "apps/campaign-helper-desktop/src/project-stage11-current-authority-linkage-evidence.ts",
+    "aggregateLedger": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "freshRuntimeAttachment": "apps/campaign-helper-desktop/src/project-stage11-fresh-exact-runtime-evidence-attachment.ts",
+    "runtimeReceipt": "outputs/m1018-stage11-host-window-recovery-and-final-exact-runtime-reread-receipt.json",
+    "aggregateClosure": "outputs/m1020-stage11-fresh-exact-runtime-aggregate-attachment-closure-receipt.json",
+    "implementation": "apps/campaign-helper-desktop/src/project-stage11-fresh-exact-runtime-current-authority-linkage-attachment.ts",
+    "test": "tests/project-stage11-fresh-exact-runtime-current-authority-linkage-attachment.test.ts"
+  },
+  "implementation": {
+    "sourceSha256": "43BA8C0A6E50573EC3C2399C5813A4B504D23B056E1D903BB1454BE159F2E7F8",
+    "schemaVersion": "0.1.0",
+    "strictTyped": true,
+    "immutableOutput": true,
+    "immutableIndexEntry": true,
+    "failClosedDriftRejection": true,
+    "retryAllowed": false
+  },
+  "provenance": {
+    "sourceMilestone": "M1018",
+    "aggregateMilestone": "M1020",
+    "currentAuthorityLinkageMilestone": "M1010",
+    "receiptSha256": "C64E7137308D211BAE4B7C0DD72E239C317C06EE26CE17690205934FA88B4D7C",
+    "operation": "dicebox.foundry.fresh-exact-runtime-current-authority",
+    "target": "dbx-test-world / Foundry 14.367 / dnd5e 5.3.3 / DiceBox 0.1.15 / port 30001",
+    "browser": "Chrome external browser",
+    "viewport": "1920x863",
+    "currentUser": "Gamemaster [GM]",
+    "activeScene": "DiceBox Tram Routing Projection"
+  },
+  "countScopes": {
+    "handlerClassifierAggregateAttachments": 10,
+    "semanticAggregateAttachments": 9,
+    "currentAuthorityRedoBindings": 9,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "scopeStatus": "preserved-explicit-8-9-9",
+    "countsChanged": false
+  },
+  "authorityAndSafety": {
+    "currentAuthority": "partial",
+    "aggregateAuthority": "not-granted",
+    "crossProducerContinuity": "unproven",
+    "readOnly": true,
+    "nonCertifying": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noRecoveryAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "foreignStatePreserved": true,
+    "runtime": "parked",
+    "credentialsAccessed": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "validation": {
+    "focusedSuite": {
+      "files": 5,
+      "tests": 109,
+      "status": "PASS"
+    },
+    "packageTypecheck": "PASS",
+    "workflowCheck": "PASS",
+    "databaseRebuildAndVerification": "PASS",
+    "databaseCounts": {
+      "sources": 1602,
+      "facts": 1272,
+      "decisions": 1239,
+      "openItems": 135,
+      "trials": 861,
+      "researchSubjects": 40,
+      "milestones": 26
+    },
+    "runtimeOrBrowser": "NOT RUN",
+    "foundryOrProjectMutation": "NOT RUN"
+  },
+  "limits": [
+    "This receipt proves only a local strict typed linkage/index attachment and focused validation.",
+    "It does not certify complete current authority, aggregate authority, cross-producer continuity, Stage 11 acceptance, Stage 12 entry, or Ready-to-Play.",
+    "The M1018 viewport remains distinct from immutable 1536x1024 Scene/Blueprint geometry.",
+    "Player-role passwords remain blank; no credentials or player passwords were handled."
+  ],
+  "next": "M1023 is the next bounded read-only reconciliation of M1022 against the complete Stage 11 matrix and rebuilt knowledge base."
+}

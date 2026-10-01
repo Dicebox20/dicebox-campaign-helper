@@ -1,0 +1,71 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.v4-fresh-artifact",
+  "milestone": "M551",
+  "status": "PASS_LOCAL_ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-29T23:24:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "attempts": 1,
+    "exitCode": 0,
+    "frontendCompilation": "PASS",
+    "rustCompilation": "PASS"
+  },
+  "artifacts": {
+    "executable": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+    "executableSha256": "969A17FF41C6BB70038EC6B35DAB3520E60E70939C7EC7974E69E383A4AD958D",
+    "frontendBundle": "apps/campaign-helper-desktop/dist/assets/index-SudiKDd4.js",
+    "frontendBundleSha256": "380D5A0B06F7E5C42A66B31B33515CC1A44A18620B068FB4703C1424732AAFCD"
+  },
+  "markers": {
+    "frontend": [
+      "broken-reference-detach-ui-v4-execute",
+      "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v4",
+      "broken-reference-ui-self-test-v4",
+      "prepare_broken_reference_ui_lifecycle_fixture_v4",
+      "BACKGROUND_ASSET_ROLE_MISMATCH",
+      "project-pending",
+      "project.backup.json",
+      "PRESENT_VALID",
+      "noFoundryWrite",
+      "authoritative-reread-commit"
+    ],
+    "executable": [
+      "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v4",
+      "prepare_broken_reference_ui_lifecycle_fixture_v4",
+      "BACKGROUND_ASSET_ROLE_MISMATCH",
+      "workspace-index-pending"
+    ],
+    "result": "PASS: all required markers present"
+  },
+  "processReread": "PASS: no desktop/Cargo/Rustc process remained",
+  "preservation": {
+    "v1v2v3": "preserved",
+    "browserStorageInspected": false,
+    "launch": false,
+    "capture": false,
+    "sessionOperation": false,
+    "fixtureMutation": false,
+    "projectRuntimeMutation": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched"
+  },
+  "nextBoundary": {
+    "milestone": "M552",
+    "scope": "One timeout-aware packaged v4 capture against this exact executable, with v4 refuse-to-overwrite fixture and authoritative reread; preserve any partial or timeout result.",
+    "prohibited": [
+      "second capture",
+      "separate launch",
+      "retry",
+      "browser-storage inspection",
+      "v2/v3 session clear/replacement/recovery",
+      "fixture reset/deletion/cleanup",
+      "unrelated mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 11 acceptance"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M551 attests only the fresh v4 artifact and process absence. A brief popup/close is expected only in the later exit-mode capture; M551 itself did not launch the executable and does not certify packaged behavior, Stage 11, Foundry authority, or Ready-to-Play."
+}

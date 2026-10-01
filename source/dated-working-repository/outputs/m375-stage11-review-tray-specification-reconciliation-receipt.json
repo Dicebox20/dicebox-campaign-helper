@@ -1,0 +1,15 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m375-stage11-review-tray-specification-reconciliation-2026-08-28",
+  "milestone": "M375",
+  "evidenceLabel": "local",
+  "status": "PARTIAL",
+  "readyClaim": false,
+  "readOnlyAudit": true,
+  "counts": {"projectWrites":0,"workspaceWrites":0,"foundryWrites":0,"browserStorageWrites":0,"providerCalls":0,"credentialCalls":0,"producerExecutions":0},
+  "observedControls": ["project.create","project.rename","project.save","project.save-as","project.asset.register-handout","project.asset.register-audio","project.asset.register-token","project.asset.bind"],
+  "preservedBoundaries": ["approval persists session history only","each apply control requires exact approved command kind","each executor remains operation-specific","recovery controls remain separate","no generic execution dispatch exists"],
+  "mismatch": "The review-tray explanatory text lists only backup, rename, create, save, save-as, and handout while the visible guarded controls also cover audio, token, and background binding.",
+  "conclusion": "Generalized acceptance is not established. A later narrow content-and-coverage correction may reconcile the review explanation with existing guarded controls, but it cannot create generic dispatch, recovery authority, or Stage 11 completion.",
+  "doesNotProve": ["generalized approval-tray acceptance","every-mutating-path acceptance","recovery/deletion/cleanup","Foundry execution or active-GM authority","Stage 16 UI","Ready-to-Play"]
+}

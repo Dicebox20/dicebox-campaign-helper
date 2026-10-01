@@ -1,0 +1,46 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1165-current-artifact-verifier-refresh-closure",
+  "milestone": "M1165",
+  "status": "CLOSED_M1165_SOURCE_ONLY_CURRENT_VERIFIER_REFRESHED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.current-foundry-artifact-verifier.refresh.closure",
+  "artifactTransition": {
+    "successorOf": "outputs/m1159-current-foundry-artifact-spec-receipt.json",
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1165",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1165",
+    "installerPreviousSha256": "8FB30437E0195FC07552AE0B8575A0F8A25E4D822CA205C29A25DA860113A0B5",
+    "installerCurrentSha256": "6EC6EE9C59D586E8B0A9C12330A453D946AC183FDD24ADDDCAE08C9B7773259E",
+    "specSha256": "D74C74DBCB5BB8A30CAC4C86C88BCEEC90892CAFCB5E452B454E5A285B7DAEDD",
+    "artifactCount": 5,
+    "verifierGeneratedFromCanonicalSpec": true
+  },
+  "verification": {
+    "focusedTests": "PASS 97/97",
+    "packageTypecheck": "PASS",
+    "workflowCheck": "PASS 11/16",
+    "databaseRebuild": "PASS 1841 sources / 1422 facts / 1448 decisions / 1024 trials",
+    "databaseVerification": "PASS",
+    "gitDiffCheck": "PASS_WITH_NORMAL_CRLF_WARNINGS"
+  },
+  "runtime": {
+    "runtimeReopened": false,
+    "browserLogin": false,
+    "stagingUpdated": false,
+    "installerInvoked": false,
+    "documentWrites": 0,
+    "assetWrites": 0,
+    "sceneWrites": 0,
+    "authorityPromoted": false,
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "fresh staged-package parity after M1164",
+    "served installer parity after M1164",
+    "current RuntimeProfile or active-GM authority beyond M1153",
+    "candidate installer execution or authoritative campaign reread",
+    "Stage 9 acceptance, Stage 12 acceptance, alpha readiness, or Ready-to-Play"
+  ],
+  "nextBoundary": "M1166: one exact nested-Data stage update and source/staged current-verifier parity attestation; no runtime or installer invocation is implied."
+}

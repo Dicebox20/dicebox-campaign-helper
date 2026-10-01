@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1002",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile the exact M1001 project.asset.bind redo handler/classifier evidence binding against the complete Stage 11 matrix, producer-family evidence, aggregate/current-authority bridges, receipts, active card, roadmap, and rebuilt knowledge base without implementation, count change, runtime reopening, or authority promotion.",
+  "inputs": [
+    "outputs/m1001-stage11-project-asset-bind-redo-handler-classifier-evidence-closure-receipt.json",
+    "outputs/m1000-stage11-post-project-token-asset-redo-handler-classifier-aggregate-ledger-attachment-reconciliation-receipt.json",
+    "outputs/m999-stage11-project-token-asset-redo-handler-classifier-aggregate-ledger-attachment-closure-receipt.json",
+    "outputs/m998-stage11-post-project-token-asset-redo-handler-classifier-reconciliation-receipt.json",
+    "outputs/m923-stage11-asset-bind-semantic-redo-aggregate-attachment-closure-receipt.json",
+    "outputs/m908-stage11-project-asset-bind-semantic-redo-composition-closure-receipt.json",
+    "outputs/m758-stage11-project-asset-bind-redo-terminal-history-bridge-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-project-asset-bind-redo-handler-classifier-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-asset-binding-terminal-history.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-asset-bind-semantic-redo-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-stage11-asset-bind-semantic-redo-aggregate-evidence.ts",
+    "tests/project-stage11-project-asset-bind-redo-handler-classifier-evidence.test.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "tests/project-aggregate-current-authority-evidence.test.ts",
+    "tests/project-asset-binding-terminal-history.test.ts",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "redoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "handlerClassifierAggregateAttachments": 8,
+    "semanticAggregateAttachments": 9,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false,
+    "countScope": {
+      "stage11MatrixRedoBindings": 8,
+      "aggregateDirectStrands": 9,
+      "currentAggregateAuthorityIndexedRedoBindings": 9,
+      "currentAggregateAuthorityIndexedRedoBindingEntries": [
+        "project.create",
+        "project.save",
+        "project.rename",
+        "project.add-scene.persist",
+        "project.asset.bind",
+        "project.asset.register-audio",
+        "project.asset.register-handout",
+        "project.asset.register-token",
+        "project.add-scene.commit-in-memory"
+      ],
+      "scopeNote": "The active Stage 11 matrix/receipt field remains 8 redo bindings and the aggregate direct-strand field remains 9. The current aggregate-authority source and its test separately index 9 redo entries, including the supplemental project.add-scene.commit-in-memory row. M1002 changes neither count and does not collapse these fields into one measure.",
+      "reconciled": true
+    }
+  },
+  "m1001Disposition": {
+    "classification": "strict producer-scoped asset-bind redo handler/classifier evidence binding",
+    "operation": "project.asset.bind.redo",
+    "sourceReceiptIdentityPreserved": true,
+    "redoHandler": "bridgeProjectAssetBindingRedoToTerminalHistory",
+    "matchedRereadClassifier": "projectAssetBindingRedoTerminalHistoryReceiptSchema",
+    "handlerBindingStatus": "bound-operation-specific",
+    "rereadStatus": "matched",
+    "assetDescriptorPreserved": true,
+    "contentAddressedAssetIdentityPreserved": true,
+    "bindingTransitionPreserved": true,
+    "assetTreePreserved": true,
+    "sceneCollectionPreserved": true,
+    "activeScenePreserved": true,
+    "generationAdvanced": true,
+    "assetCountPreserved": true,
+    "semanticContentChanged": true,
+    "envelopeRotated": true,
+    "byteHashAndEnvelopeEvidence": "source-receipt-only",
+    "transitionInvocation": "not-invoked",
+    "rereadInvocation": "not-invoked",
+    "aggregateHandlerClassifierAttachment": "not-yet-attached",
+    "separateSemanticAggregateAttachmentPreserved": true,
+    "countsChanged": false,
+    "authorityPromoted": false,
+    "runtimeLaneReopened": false,
+    "foreignStatePreserved": true
+  },
+  "selectedNext": {
+    "milestone": "M1003",
+    "title": "Project-asset-bind redo handler/classifier aggregate-ledger attachment",
+    "target": [
+      "apps/campaign-helper-desktop/src/project-stage11-project-asset-bind-redo-handler-classifier-aggregate-evidence.ts",
+      "tests/project-stage11-project-asset-bind-redo-handler-classifier-aggregate-evidence.test.ts",
+      "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "tests/project-stage11-aggregate-evidence-ledger.test.ts"
+    ],
+    "scope": "One pure strict typed non-certifying aggregate-ledger attachment for the exact M1001 project.asset.bind redo handler/classifier evidence, with focused deterministic tests and no runtime or packaged rerun.",
+    "reason": "M1001 establishes the missing asset-bind handler/classifier evidence layer, while the asset-bind semantic aggregate attachment already exists and the dedicated asset-bind handler/classifier aggregate-ledger field is absent. This is the smallest directly adjacent aggregate gap after the audio, handout, and token layers.",
+    "deterministicCheck": "Require exact M1001 receipt identity, asset-bind handler/classifier identity, background asset descriptor and binding-transition semantics, Scene/asset-tree/generation/readback and matched-reread semantics, source-receipt-only hash/envelope boundary, fail-closed drift rejection, separate semantic aggregate preservation, count neutrality, and all no-authority/no-write/Stage 11/Stage 12 locks.",
+    "excluded": [
+      "runtime/browser/Foundry/provider/account activity",
+      "credentials or player-role passwords",
+      "project mutation or generic execution",
+      "aggregate authority expansion",
+      "Stage 11 acceptance",
+      "Stage 12 entry",
+      "Ready-to-Play claim"
+    ]
+  },
+  "artifacts": {
+    "m1001Receipt": {
+      "path": "outputs/m1001-stage11-project-asset-bind-redo-handler-classifier-evidence-closure-receipt.json",
+      "sha256": "3E46A2EC2BFD56DFE07056696F17B1129D04219A1959A033AB27A51463385461"
+    },
+    "m1001Source": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-project-asset-bind-redo-handler-classifier-evidence.ts",
+      "sha256": "0DB8ADD5F578271F410E6F2AE0EB01A148534656119C8E5DC37D1ADA4907FB03"
+    },
+    "m1001Test": {
+      "path": "tests/project-stage11-project-asset-bind-redo-handler-classifier-evidence.test.ts",
+      "sha256": "BA9C673B39F6529FBDFD27ECB03CF463A80A428D53E39649B6439DB625AB3EB9"
+    },
+    "aggregateLedgerSource": {
+      "path": "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+      "sha256": "8D3A52296443200AF3399C5B4061C33E1582AB5FE5F5E9BCC6D4C66CA4703F80"
+    },
+    "currentAuthoritySource": {
+      "path": "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+      "sha256": "A498BEC6CF213F1FB55B2EB2DC90B33AE657BA1307F77F17FC98B1A000A3D446"
+    }
+  },
+  "validation": {
+    "readOnlyKnowledgeBaseQueries": "PASS: M1001 closure, M1002 blocker O-116, and summary surfaces reread from the read-only KB",
+    "provenanceCheck": "PASS: M758 -> M908 -> M923 -> M1001 exact asset-bind bridge, semantic, aggregate-semantic, and handler/classifier evidence provenance preserved",
+    "aggregateSurfaceCheck": "PASS: the dedicated asset-bind handler/classifier aggregate-ledger field remains absent; the existing separate asset-bind semantic aggregate attachment remains present",
+    "currentAuthoritySurfaceCheck": "PASS: 11 producer families and 9 current-authority redo entries remain indexed, including project.asset.bind",
+    "countScopeCheck": "PASS: Stage 11 matrix 8, aggregate direct strands 9, current aggregate-authority index 9; no write or count change",
+    "workflowCheck": "PASS: 10/16; proposal-approval-history active; violations 0; readyClaim false",
+    "databaseRebuildAndVerify": "PASS: integrity ok; sources 1562; facts 1252; decisions 1201; open items 135; trials 841; research subjects 40; milestones 26",
+    "nextGapCheck": "PASS: exact M1001 handler/classifier evidence exists and the dedicated asset-bind handler/classifier aggregate-ledger field is the next directly adjacent missing layer",
+    "diffCheck": "PASS: read-only reconciliation introduced no implementation diff"
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "runtimeLaneReopened": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "generic execution or project mutation",
+    "byte-level envelope authority beyond source-receipt-only claims",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1002 closure and M1003 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then implement only the authorized M1003 asset-bind redo handler/classifier aggregate-ledger attachment."
+}

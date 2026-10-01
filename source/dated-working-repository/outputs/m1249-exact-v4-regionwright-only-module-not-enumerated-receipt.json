@@ -1,0 +1,51 @@
+{
+  "milestone": "M1249",
+  "operation": "foundry.fixture.regionwright-only-module-activation",
+  "status": "BLOCKED_MODULE_NOT_ENUMERATED",
+  "evidenceClass": "fixture",
+  "readyClaim": false,
+  "noWrite": true,
+  "target": {
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundry": "14.367",
+    "system": "dnd5e 5.3.3",
+    "browserPath": "/game",
+    "account": "Gamemaster [GM]"
+  },
+  "supervisor": {
+    "status": "PASS",
+    "pid": 30912,
+    "worldDocumentWrites": 0,
+    "balladTouched": false
+  },
+  "moduleManagement": {
+    "opened": true,
+    "allModules": 3,
+    "activeModules": 1,
+    "inactiveModules": 2,
+    "listedModules": ["dicebox-campaign-helper", "dae", "midi-qol"],
+    "regionwrightListed": false,
+    "regionwrightCheckboxPresent": false,
+    "savePerformed": false,
+    "nativeReloadPerformed": false,
+    "closedWithoutSaving": true
+  },
+  "servedSource": {
+    "manifestHttpStatus": 200,
+    "moduleHttpStatus": 200,
+    "cacheKey": "rw-0.1.5-20260907-readback-1",
+    "readbackMarkerPresent": true
+  },
+  "preservation": {
+    "controlInvoked": false,
+    "dialogsOpened": 0,
+    "writesPerformed": 0,
+    "settingsTouched": false,
+    "playersOrPasswordsTouched": false,
+    "rawStorageInspected": false,
+    "historicalM1241": "outcome-unknown-not-relabeled"
+  },
+  "disposition": "Regionwright is served but absent from Foundry’s module catalog, so activation cannot be attempted. Repair manifest entrypoints locally with actual versioned wrapper files before another live exposure boundary.",
+  "nextBoundary": "M1250 local/staged query-free versioned wrapper entrypoint repair"
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M826",
+  "operation": "foundry.module.update",
+  "status": "PASS",
+  "evidenceClass": "fixture",
+  "target": {"fixtureRoot": "work/foundry-fixture-data-v4", "destinationRoot": "work/foundry-fixture-data-v4/Data", "worldId": "dbx-test-world", "port": 30003},
+  "preflight": {"manifestId": "dicebox-campaign-helper", "manifestVersion": "0.1.15", "existingModuleOwned": true},
+  "allowlistedPackageFilesUpdated": 30,
+  "hashAttestation": {
+    "canonicalEntry": {"source": "12444661DB4CCE5D53B6F7A7CBB50B66ACFEB1D08784FFC8ED2BD7985D2E1B06", "staged": "12444661DB4CCE5D53B6F7A7CBB50B66ACFEB1D08784FFC8ED2BD7985D2E1B06", "match": true, "moduleUrl": "./module.js?dbx=0.1.18"},
+    "module": {"source": "57854398F21FFE2B4875873237E70E1AD66644F44283AEEF094B94ABA36EBAD3", "staged": "57854398F21FFE2B4875873237E70E1AD66644F44283AEEF094B94ABA36EBAD3", "match": true}
+  },
+  "postUpdateFixtureState": {"status": "STOPPED", "listeners": 0, "worldDocumentWrites": 0, "balladTouched": false},
+  "notPerformed": ["Foundry start", "browser use", "document mutation", "settings/user/password/license change", "provider or credential use", "runtime authority observation"],
+  "readyClaim": false,
+  "nextAction": "Perform a fresh read-only Stage 11 reconciliation before selecting any separately governed runtime observation."
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1018",
+  "stage": "proposal-approval-history",
+  "status": "PASS EXACT-RUNTIME CURRENT-AUTHORITY OBSERVATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "runtime",
+  "scope": "Perform one bounded host-window/browser recovery and final exact-runtime/current-authority reread against the disposable fixture.",
+  "target": {
+    "worldId": "dbx-test-world",
+    "dataPath": "work/foundry-fixture-data-v2",
+    "foundry": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "diceboxModuleVersion": "0.1.15",
+    "port": 30001,
+    "commandFingerprint": "47E4A213511831674B50D1BC6194B6876E9D78B60CB0037B7387C09D57A26F3F"
+  },
+  "browserObservation": {
+    "browser": "Chrome external browser",
+    "url": "http://127.0.0.1:30001/game",
+    "title": "Foundry Virtual Tabletop",
+    "defaultViewport": {
+      "innerWidth": 1920,
+      "innerHeight": 863,
+      "minimumWidth": 1024,
+      "minimumHeight": 768,
+      "meetsMinimum": true
+    },
+    "visibleUser": "Gamemaster [GM]",
+    "visibleScene": "DiceBox Tram Routing Projection",
+    "visibleRuntimeText": [
+      "TRAM COORDINATES: MATCH",
+      "0 drifted checks · no Foundry writes",
+      "GAME PAUSED"
+    ],
+    "diceboxControlsVisible": [
+      "Prepare DiceBox Ascendancy",
+      "Repair DiceBox Ascendancy maps and geometry",
+      "Apply DiceBox Program Scene vertical slice"
+    ],
+    "foundryControlsVisible": [
+      "Token Controls",
+      "Tile Controls",
+      "Drawing Tools",
+      "Wall Controls",
+      "Lighting Controls",
+      "Ambient Sound Controls",
+      "Region Controls",
+      "Journal Notes"
+    ]
+  },
+  "supervisorObservation": {
+    "status": "PASS",
+    "pid": 16128,
+    "listenerMatches": true,
+    "httpReady": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "adminPasswordConfigured": false
+  },
+  "consoleObservation": {
+    "application": "DiceBox Campaign Helper loaded; DiceBox Tram Routing Projection Scene was viewed and its canvas was drawn.",
+    "errors": [
+      {
+        "message": "Error: Could not establish connection. Receiving end does not exist.",
+        "url": "http://127.0.0.1:30001/join",
+        "classification": "external Chrome extension message during initial join navigation; not a Foundry/DiceBox application error"
+      }
+    ],
+    "resolutionWarning": false
+  },
+  "reconciliation": {
+    "manifestIdentity": "PASS",
+    "processAndListenerOwnership": "PASS",
+    "hostViewportMinimum": "PASS",
+    "gmIdentityVisible": "PASS",
+    "activeSceneVisible": "PASS",
+    "diceboxControlsVisible": "PASS",
+    "foundryControlsVisible": "PASS",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "crossProducerContinuity": "unproven",
+    "committedRecoveredContinuity": "not-proven",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "validation": {
+    "hostWindowRecovery": "PASS: external browser default viewport is 1920x863 and meets the 1024x768 requirement.",
+    "authoritativeReread": "PASS: exact fixture URL, GM identity, active Scene, DiceBox/Foundry surfaces, paused state, coordinate match, zero drift, and no-write text were reread.",
+    "supervisorReread": "PASS: exact process/listener/HTTP ownership remains stable.",
+    "noWrite": "PASS: no project or Foundry document mutation was invoked; worldDocumentWrites remained 0.",
+    "foreignState": "PASS: Ballad untouched.",
+    "passwordBoundary": "PASS: no player-role password was entered, generated, or persisted; fixture adminPasswordConfigured remained false."
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeInspectionOnly": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete aggregate current authority",
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer committed/recovered continuity",
+    "project mutation or generic execution",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1018 closure and M1019 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then perform one read-only reconciliation of exact-runtime evidence against the complete Stage 11 authority matrix."
+}

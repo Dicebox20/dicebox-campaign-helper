@@ -1,0 +1,121 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1016",
+  "stage": "proposal-approval-history",
+  "status": "PASS PARTIAL EXACT-RUNTIME CURRENT-AUTHORITY OBSERVATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "fixture-and-runtime",
+  "scope": "Perform one bounded exact-runtime/current-authority evidence gate against the disposable fixture, record direct visible runtime state and blockers, and preserve all no-write and non-certification limits.",
+  "target": {
+    "worldId": "dbx-test-world",
+    "dataPath": "work/foundry-fixture-data-v2",
+    "foundry": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3",
+    "diceboxModuleVersion": "0.1.15",
+    "port": 30001,
+    "commandFingerprint": "47E4A213511831674B50D1BC6194B6876E9D78B60CB0037B7387C09D57A26F3F"
+  },
+  "supervisorObservation": {
+    "status": "PASS",
+    "evidenceClass": "process-ready",
+    "pid": 16128,
+    "listenerMatches": true,
+    "httpReady": true,
+    "httpStatus": 302,
+    "httpLocation": "/join",
+    "commandMatches": true,
+    "stateTargetMatches": true,
+    "processPathMatches": true,
+    "processStartMatches": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "adminPasswordConfigured": false
+  },
+  "browserObservation": {
+    "url": "http://127.0.0.1:30001/game",
+    "title": "Foundry Virtual Tabletop",
+    "join": "Gamemaster accepted with blank password",
+    "visibleUser": "Gamemaster [GM]",
+    "visibleScene": "DiceBox Tram Routing Projection",
+    "visibleDiceBoxControls": [
+      "Prepare DiceBox Ascendancy",
+      "Repair DiceBox Ascendancy maps and geometry",
+      "Apply DiceBox Program Scene vertical slice"
+    ],
+    "visibleFoundryControls": [
+      "Token Controls",
+      "Tile Controls",
+      "Drawing Tools",
+      "Wall Controls",
+      "Lighting Controls",
+      "Ambient Sound Controls",
+      "Region Controls",
+      "Journal Notes"
+    ],
+    "canvasState": "Game Paused",
+    "browserPageEvaluation": "The browser read-only isolated context did not expose Foundry's game global; no value was inferred from that unavailable probe."
+  },
+  "runtimeBlocker": {
+    "status": "BLOCKED",
+    "innerWidth": 1280,
+    "innerHeight": 720,
+    "minimumWidth": 1024,
+    "minimumHeight": 768,
+    "message": "Foundry Virtual Tabletop requires usable window dimensions of 1024px by 768px or greater.",
+    "effect": "Foundry reports that some features may not work properly until the usable window is enlarged.",
+    "recovery": "Requires a bounded window/viewport enlargement and authoritative reread; no automatic window mutation was attempted."
+  },
+  "reconciliation": {
+    "manifestIdentity": "PASS",
+    "processAndListenerOwnership": "PASS",
+    "gmIdentityVisible": "PASS",
+    "activeSceneVisible": "PASS",
+    "diceboxControlsVisible": "PASS",
+    "runtimeDimensions": "BLOCKED",
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "crossProducerContinuity": "unproven",
+    "committedRecoveredContinuity": "not-proven",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "validation": {
+    "fixturePreflight": "PASS for exact Foundry/system/world/module manifest; optional Midi-QOL and DAE manifests remain UNKNOWN; manifest preflight is not live API certification.",
+    "fixtureStart": "PASS: controlled supervisor recovery/start, process ownership, listener, and HTTP readiness.",
+    "joinAndVisibleReread": "PASS PARTIAL: Gamemaster joined with blank password and the /game UI visibly loaded GM identity, Scene, Foundry controls, and DiceBox controls.",
+    "consoleReread": "PASS PARTIAL: Foundry logs show the DiceBox Tram Routing Projection Scene was viewed and its canvas was drawn; two resolution-warning errors remain.",
+    "noWrite": "PASS: supervisor reports worldDocumentWrites 0; no project or Foundry document mutation was invoked.",
+    "foreignState": "PASS: Ballad untouched; foreign-state preservation retained.",
+    "workflow": "PASS: proposal-approval-history active; 10/16 gates; violations 0; readyClaim false."
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeInspectionOnly": true,
+    "noAuthorityGrant": true,
+    "noExecutionAuthority": true,
+    "noTransitionAuthority": true,
+    "noRecoveryAuthority": true,
+    "noGenericExecutor": true,
+    "noFoundryWrite": true,
+    "noProjectMutation": true,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "usable-window runtime readiness without the dimension warning",
+    "complete aggregate current authority",
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer committed/recovered continuity",
+    "project mutation or generic execution",
+    "Stage 11 acceptance",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Record M1016 closure and M1017 authorization in the roadmap, active card, and rebuilt/verified knowledge base; then perform only the bounded usable-window recovery and current-authority reread."
+}

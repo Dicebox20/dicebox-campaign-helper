@@ -1,0 +1,65 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1240",
+  "operation": "regionwright.handoff.preview.reread",
+  "evidenceClass": "runtime-observation",
+  "status": "PASS",
+  "readyClaim": false,
+  "target": {
+    "url": "http://127.0.0.1:30003/game",
+    "worldId": "dbx-test-world",
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "currentUser": "Gamemaster [GM]",
+    "activeGmObserved": true
+  },
+  "preview": {
+    "control": "Install Ascendancy Regionwright handoff",
+    "invocationCount": 1,
+    "dryRun": true,
+    "noWrite": true,
+    "displayedSummary": {
+      "popupBehaviorCount": 5,
+      "cooperativeRegionBindingCount": 6,
+      "finalCoreBindingCount": 7,
+      "teleportBehaviorCount": 5
+    },
+    "displayedText": "Regionwright will add only approved behaviors and flags: 5 popup, 6 cooperative, 7 final/core, and 5 teleports.",
+    "canonicalSummaryMatch": true,
+    "applyButtonObserved": true,
+    "approvalInvoked": false,
+    "applyInvoked": false,
+    "cancelCount": 1,
+    "dialogAbsentAfterCancel": true
+  },
+  "servedSource": {
+    "url": "http://127.0.0.1:30003/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
+    "httpStatus": 200,
+    "bytes": 23900,
+    "sha256": "10055CD95FC30B2B496E68BDFCD4215B71B615B63D1A55FB5B9DA03887535CC8",
+    "containsPackageDerivedSummary": true,
+    "containsStaleSummary": false
+  },
+  "preservedContracts": {
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "noAuditRetry": true,
+    "noInstallerMutation": true,
+    "noRegionBehaviorOrTeleportWrite": true,
+    "noApproval": true,
+    "noApply": true,
+    "noReload": true,
+    "noLogout": true,
+    "noPlayerOrRawStorage": true,
+    "noSettingsOrModuleChange": true,
+    "noTramCoreMutation": true,
+    "readyClaim": false
+  },
+  "blockers": [
+    "M1235 zero Regionwright behaviors and zero teleport passes remain valid live blocker evidence; M1240 did not retry the audit or mutate the handoff.",
+    "The preview proves repaired no-write planning metadata only. It does not authorize or certify persistent-world RegionBehavior/teleport state, player behavior, Stage 12, or Ready-to-Play.",
+    "Any handoff mutation requires a separate explicit approval boundary followed by authoritative reread."
+  ],
+  "nextRequiredBoundary": "Obtain explicit approval for the exact Regionwright handoff, then authorize and execute one gated apply with authoritative reread only if the active GM accepts the displayed 5/6/7/5 scope."
+}

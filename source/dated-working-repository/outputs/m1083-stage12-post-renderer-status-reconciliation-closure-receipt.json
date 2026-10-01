@@ -1,0 +1,63 @@
+{
+  "receiptType": "stage12-post-renderer-status-reconciliation-closure",
+  "milestone": "M1083",
+  "status": "closed",
+  "evidenceClass": "local",
+  "capturedAt": "2026-09-05",
+  "sourceState": {
+    "activeStage": "scene-authoring-breadth",
+    "workflowPassedGates": 11,
+    "workflowTotalGates": 16,
+    "readyClaim": false,
+    "violations": 0
+  },
+  "reconciliation": {
+    "identityChains": 4,
+    "matrixValidation": "passed",
+    "rendererRows": [
+      {"scene":"signal-frequency-chamber","status":"scene-bound","documentedSha256":"DB9307932865B0D3A23C5A8AA61082D520206443318658DE7E03C773A1A9972E","observedSha256":null,"attestationStatus":"not-observed"},
+      {"scene":"ascendancy-tram-depot","status":"final-map-required","documentedSha256":null,"observedSha256":null,"attestationStatus":"not-observed"},
+      {"scene":"rune-mechanism-chamber","status":"scene-bound","documentedSha256":"F45922E219A12FBA6B79A26AD0D6B5EBBAF51ADD86C025E9B676DA24707D507B","observedSha256":null,"attestationStatus":"not-observed"},
+      {"scene":"central-core-control-chamber","status":"final-map-required","documentedSha256":null,"observedSha256":null,"attestationStatus":"not-observed"}
+    ],
+    "authority": {
+      "renderer": "scene-background",
+      "geometry": "spatial-blueprint",
+      "assetAttestation": "not-observed",
+      "nativeMapping": "not-proven",
+      "runtime": "not-modeled",
+      "mutation": "disabled-until-exact-runtime-gate"
+    },
+    "attestationBoundary": {
+      "approvedManifestRequired": true,
+      "expectedByteLengthRequired": true,
+      "observedBytesRequiredForReady": true,
+      "dependentDocumentCreationEligible": false,
+      "externalFetchPerformed": false,
+      "assetTransferPerformed": false
+    }
+  },
+  "validation": {
+    "rendererMatrixReadback": "passed",
+    "assetAttestationSourceReadback": "passed",
+    "playableScenePlanReadback": "passed",
+    "kbRebuild": "passed",
+    "kbVerification": "passed",
+    "workflowTest": "14 passed"
+  },
+  "boundaries": {
+    "packageChanged": false,
+    "installerChanged": false,
+    "runtimeInvoked": false,
+    "nativeDocumentsCreated": false,
+    "assetsFetchedOrTransferred": false,
+    "byteAttestationPerformed": false,
+    "blueprintEditedOrPromoted": false,
+    "projectMutated": false,
+    "balladOrPlayerSurfaceAccessed": false,
+    "stage12Accepted": false,
+    "readyClaim": false
+  },
+  "decision": "Select one compiler-only renderer attestation-readiness envelope that distinguishes documented hashes, approved-manifest prerequisites, observed-byte attestation, and final-map-required blockers without fetching bytes or authorizing dependent documents.",
+  "nextAction": "M1084 compiler-only renderer attestation-readiness envelope"
+}

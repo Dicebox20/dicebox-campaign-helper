@@ -1,0 +1,63 @@
+{
+  "milestone": "M739",
+  "stage": "proposal-approval-history",
+  "status": "PASS CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "scope": "Bridge the existing approved project.asset.detach session, exact descriptor-removal receipt, and authoritative post-detach recovery reread into typed terminal history.",
+  "sourceState": "Unborn project worktree with no HEAD; M739 changes only the bounded bridge, focused test, receipt, and synchronized governance records.",
+  "artifactHashes": {
+    "bridgeSha256": "CFFEE06F08D142877AAC6AE0C4060635282E23ACD08C0B4018C708BD8EAA14B8",
+    "testSha256": "C015A025071E39588FED4831E055E29C02E30CAD26548F3DEC103F84A38A5F5B"
+  },
+  "delegation": {
+    "requestedModel": "gpt-5.6-luna",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Bounded project.asset.detach terminal-history bridge and focused test.",
+    "workerOutcome": "Worker did not produce files or a compact receipt after two bounded completion windows and was closed. No worker output was accepted as evidence; the Foreman completed the two-file scope locally.",
+    "foremanReview": "The Foreman reread D-867/F-984 through the bounded read-only KB, the exact detach preview/receipt types, project recovery proposal adapter, DesktopProjectProposalSession, authoritative recovery inspection, and neighboring terminal-history bridges before implementation."
+  },
+  "implementation": {
+    "bridge": "apps/campaign-helper-desktop/src/project-asset-detach-terminal-history.ts",
+    "test": "tests/project-asset-detach-terminal-history.test.ts",
+    "behavior": [
+      "Accepts only the exact project.asset.detach preview, PASS receipt, committed four-transition proposal session, and post-detach authoritative recovery reread.",
+      "Preserves selected asset absence, descriptor removal, affected/resulting Scene evidence, foreign state, backup envelope, directory synchronization, and no-Foundry boundaries.",
+      "Records source-operation project-content/persistence write semantics while the bridge itself has no execution authority and adds no inverse or generic executor.",
+      "Rejects unknown fields, identity drift, claimed asset-byte writes, retained target identity/path, broken references, blocked pending artifacts, and altered rereads."
+    ]
+  },
+  "validation": {
+    "focused": "PASS: 2 M739 bridge tests",
+    "fullRepository": "PASS: 167 test files / 819 tests",
+    "build": "PASS: package typecheck, desktop typecheck, Node typecheck, and Vite production build",
+    "tooling": "PASS: npm.cmd run verify:tooling",
+    "knowledgeBase": "PASS after synchronized M739 seed: database rebuilt and verified at 1160 sources, 1000 facts, 867 decisions, 135 active-work rows, 787 trials, 40 research subjects, and 26 milestones; F-984/F-985 and D-867/D-868 reread through the bounded read-only query surface",
+    "workflow": "PASS: active-slice checker reports Stage 11 proposal-approval-history at 10/16 with no violations",
+    "foundryOrRuntime": "NOT RUN; excluded by D-867"
+  },
+  "safety": {
+    "bridgeOnly": true,
+    "noExecutionAuthority": true,
+    "noProjectMutation": true,
+    "noGenericExecutor": true,
+    "foreignStatePreserved": true,
+    "foundryAction": false,
+    "runtimeMutation": false,
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "stage11Acceptance": false,
+    "stage12Started": false
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; aggregate producer acceptance remains partial",
+    "stage12": "NOT STARTED",
+    "decision": "M739 closes one missing-asset detach terminal-history projection but does not accept Stage 11 or authorize Stage 12."
+  },
+  "remainingGaps": [
+    "Aggregate producer coverage and direct current-authority evidence remain incomplete across all eleven producer families.",
+    "Unified stale, outcome-unknown, recovered, undone, and redone lifecycle evidence remains incomplete.",
+    "Packaged/runtime authority and live active-GM/Foundry evidence remain incomplete.",
+    "One typed recovery operation remains without a direct terminal-history bridge: project.broken-reference.detach.",
+    "Stage 11 acceptance requires a fresh read-only reconciliation after this seam."
+  ],
+  "selectedNext": "M740 read-only Stage 11 acceptance reconciliation after M739; preserve live Foundry/runtime and Stage 12 exclusions."
+}

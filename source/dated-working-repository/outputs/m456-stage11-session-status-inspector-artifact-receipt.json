@@ -1,0 +1,23 @@
+{
+  "milestone": "M456",
+  "stage": 11,
+  "classification": "ARTIFACT_ATTESTED",
+  "buildInvocationCount": 1,
+  "buildWrapperExit": "UNKNOWN_AFTER_CARGO_DETACH",
+  "executable": {
+    "sha256": "DF6948C11ACD087E2EC75D8990666BB4A92D525F60ADB7095DB1663E0EB9CC52"
+  },
+  "frontendBundle": {
+    "path": "apps/campaign-helper-desktop/dist/assets/index-DrhYaarL.js",
+    "sha256": "79EDE61200ED6CD985D3EA769800118A6E9BBE257394512483FBE254B54DD627",
+    "sessionStatusInspectorMarkers": true
+  },
+  "fixture": {
+    "primaryExists": false,
+    "backupSha256": "F5AF1E42C838ADD5AEDDEE9ABC3B5D2125932D539A750763AA9C764F004EAC2B",
+    "foreignNoteSha256": "9A5350AAD8C13C79B978DB42D3B339E75C54A96C4DF9815EB2A8BF5D8F1203F2"
+  },
+  "desktopProcessRunning": false,
+  "launchOrCapturePerformed": false,
+  "recoveryDisposition": "No build retry. M457 separately authorizes one exact read-only inspector observation."
+}

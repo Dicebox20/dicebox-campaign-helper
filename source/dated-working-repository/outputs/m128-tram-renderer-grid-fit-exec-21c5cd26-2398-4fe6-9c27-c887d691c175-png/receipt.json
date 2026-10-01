@@ -1,0 +1,22 @@
+{
+  "operation": "ascendancy.coordinate-overlay",
+  "status": "STATIC_REVIEW",
+  "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+  "candidateTramRenderer": null,
+  "candidateCoreRenderer": "C:\\Users\\rujie\\.codex\\generated_images\\01a0231c-57b9-76c3-ba81-12dbac16fddc\\exec-21c5cd26-2398-4fe6-9c27-c887d691c175.png",
+  "noWrite": true,
+  "rooms": [
+    {
+      "roomId": "dbx:room:central-core-control-chamber",
+      "renderer": "C:\\Users\\rujie\\.codex\\generated_images\\01a0231c-57b9-76c3-ba81-12dbac16fddc\\exec-21c5cd26-2398-4fe6-9c27-c887d691c175.png",
+      "rendererPath": "C:\\Users\\rujie\\.codex\\generated_images\\01a0231c-57b9-76c3-ba81-12dbac16fddc\\exec-21c5cd26-2398-4fe6-9c27-c887d691c175.png",
+      "rendererSha256": "708eeed5db86dcffdfa8b9a4636fdabe1d8996a8a15f9db522db4279059fcc4c",
+      "rendererStatus": "candidate-unbound",
+      "rendererReviewOnly": true,
+      "overlay": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\outputs\\m128-tram-renderer-grid-fit-exec-21c5cd26-2398-4fe6-9c27-c887d691c175-png\\central-core-control-chamber-overlay.svg",
+      "walls": 7,
+      "doors": 3,
+      "regions": 10
+    }
+  ]
+}

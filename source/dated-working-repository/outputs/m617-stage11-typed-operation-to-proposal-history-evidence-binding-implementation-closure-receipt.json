@@ -1,0 +1,78 @@
+{
+  "operation": "stage11-typed-operation-to-proposal-history-evidence-binding-implementation",
+  "milestone": "M617",
+  "status": "PASS_LOCAL_CODE_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-30T07:45:15-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceLabel": "local",
+  "implementation": {
+    "exactOperationCount": 14,
+    "existingProposalHistoryStateVocabularyCount": 11,
+    "boundedHistoryStates": ["previewed", "approved"],
+    "explicitLaterLifecycleGap": true,
+    "operationSpecificHandlersPreserved": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "noExecutionAuthority": true,
+    "noGenericExecutor": true,
+    "proposalReviewDisclosure": true,
+    "historyTransitionsInvoked": false,
+    "sessionPersistenceInvoked": false,
+    "approvalApplyPersistenceRecoveryBoundariesPreserved": true,
+    "foundryProviderProjectPlayerPasswordBoundariesPreserved": true,
+    "playerRolePasswords": "untouched"
+  },
+  "validation": {
+    "focusedVitest": "4 files / 8 tests passed",
+    "diffCheck": "pass",
+    "processesAfterValidation": "zero dicebox-campaign-helper-desktop/Cargo/Rustc",
+    "desktopBuild": false,
+    "packagedObservation": false
+  },
+  "decision": {
+    "stage11": "REMAINS_ACTIVE_AND_PARTIAL",
+    "stage12": "NOT_STARTED",
+    "readyToPlay": false,
+    "reason": "M617 adds only a typed metadata binding from each existing operation envelope entry to the existing proposal-history status vocabulary. It reports preview/approval coverage and explicit later-state gaps, but does not execute transitions or prove lifecycle, reread, recovery, commit, authority, or packaged behavior."
+  },
+  "nextBoundary": {
+    "milestone": "M618",
+    "title": "Stage 11 fresh artifact for operation-to-proposal-history evidence binding",
+    "status": "requires-separate-authorization",
+    "scope": "Run exactly one desktop debug package build containing M617 and attest all 14 operation/history-binding markers, existing 11-state vocabulary, preview/approval-only markers, explicit read-only/non-certifying/no-execution markers, exact native/renderer hashes, and process absence. No launch, capture, UI action, project/session/runtime mutation, provider, credential, repository promotion, Technical Builder, Foundry, player-password, Stage 11 acceptance, Stage 12, or Ready-to-Play work."
+  },
+  "sourceHashes": {
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts": "4A9EC5C69FA7CBB854ADE4EFEDDF9CFACFA44008CDCAB375259E297EDF6E4580",
+    "apps/campaign-helper-desktop/src/App.tsx": "086BBDAE48DD992E5C89D54FBB23F76238A3A50C01BE5BE1FB22BDDE7CB3C075",
+    "tests/project-review-operation-history-binding.test.ts": "FFA95E9B976E8FCC03BD2460C183EF0617C8EF5BF1D40FE99572102270FFC99E",
+    "docs/ACTIVE-PROGRAM-SLICE.json": "B8FA66FD415D25FB27A51F37778E6E5B8DCDB334EDA3AE7FD1F65DCC8D6289F3",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md": "FAA8842998E84D4765D2644E29AE63DF284540B7B31D2D013F88F2693DE6F512",
+    "database/seed.sql": "55BD6AD5E7CAC523F6DE477251900D1281799B3084B61E7816611F44CDF577BE",
+    "database/dicebox_campaign_helper_knowledge.sqlite": "752CFDE098B95599D27B0CE496D3DA43C3C1F5B23BA386A1A5FB56B8384E8F4F"
+  },
+  "scope": {
+    "sourceEdit": true,
+    "build": false,
+    "launch": false,
+    "capture": false,
+    "uiAction": false,
+    "browserStorageInspected": false,
+    "sessionOperation": false,
+    "fixtureCleanup": false,
+    "projectRuntimeMutation": false,
+    "providerOrCredential": false,
+    "repositoryPromotion": false,
+    "technicalBuilderExecution": false,
+    "foundryWrite": false,
+    "playerRolePasswords": "untouched",
+    "stage11Acceptance": false,
+    "stage12": false
+  },
+  "changedPaths": [
+    "apps/campaign-helper-desktop/src/project-review-apply-coverage.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/project-review-operation-history-binding.test.ts",
+    "outputs/m617-stage11-typed-operation-to-proposal-history-evidence-binding-implementation-closure-receipt.json"
+  ]
+}

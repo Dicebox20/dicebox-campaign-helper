@@ -1,0 +1,92 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1182-stage12-runtime-profile-artifact-reconciliation-closure",
+  "operation": "stage12.runtime-profile-artifact-reconciliation.closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1182",
+  "status": "CLOSED_M1182_RUNTIME_PROFILE_ARTIFACT_DESCRIPTOR_RECONCILED_LOCAL",
+  "evidenceLabel": "local",
+  "observedAt": "2026-09-06",
+  "summary": "Added a narrow package-owned static artifact descriptor to the read-only describe/profile diagnostic and a pure compiler reconciliation gate that binds the current five-artifact verifier to the exact RuntimeProfile target without changing the core profile schema or claiming loaded-byte authority.",
+  "databaseFirst": {
+    "status": "PASS",
+    "queries": [
+      "M1174 worker/adapter/runtime-profile audit and merge",
+      "M1176 typed profile-diff closure",
+      "M1181 exact-Gamemaster candidate-create closure",
+      "M1182 authorization and O-116 blocker"
+    ],
+    "reconciliation": "The core RuntimeProfile remains runtime-only; artifact identity is now an explicit separate package-owned descriptor rather than an inferred profile field."
+  },
+  "change": {
+    "moduleSource": "packages/dicebox-foundry/src/module.js",
+    "moduleSha256": "e8abef1163c79ba0625f6b8107c9ea0845f712b581b391f11e3bb9fda680281f",
+    "compilerSource": "packages/dicebox-compiler/src/ascendancy-signal-rune-runtime-profile-artifact-reconciliation.ts",
+    "compilerSha256": "d19d60a551633024810532fa694ee73a8be9175a8ad882463f894bdd7fbca4d",
+    "testSource": "tests/ascendancy-signal-rune-runtime-profile-artifact-reconciliation.test.ts",
+    "testSha256": "aa6770d903f03a97c5a4fe2153cd9f731f79e5afffae409f9b894fb63e3fc770",
+    "artifactDescriptor": {
+      "source": "package-owned-static-descriptor",
+      "specId": "dbx:foundry-spec:current-product-0.1.15-m1178",
+      "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1178",
+      "specSha256": "11ef80e7098f9cb16e2b7afe5c47816f2c105c0e6e729800650ddf077c477ae9",
+      "artifactCount": 5,
+      "loadedByteHash": "not-claimed-by-runtime-profile"
+    }
+  },
+  "gate": {
+    "operation": "dicebox.ascendancy.signal-rune.runtime-profile-artifact.reconciliation",
+    "status": "PASS",
+    "target": {
+      "packageId": "dicebox-campaign-helper",
+      "packageVersion": "0.1.15",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "adapterId": "program-scene-vertical-slice",
+      "adapterVersion": "0.1.15"
+    },
+    "runtimeProfile": {
+      "fingerprint": "dbx:fingerprint:cbea3468",
+      "targetMatch": true,
+      "activeGmObserved": true,
+      "currentUserMatchesActiveGm": true,
+      "artifactBoundFields": "descriptor-bound-separate-from-core-profile"
+    },
+    "profileDiff": {
+      "status": "PASS_EXACT_TARGET_AND_ARTIFACT_DESCRIPTOR",
+      "targetMatch": true,
+      "artifactIdentityMatch": true,
+      "identityInferred": false,
+      "unknownAndUnavailablePreserved": true,
+      "loadedByteHashClaimed": false
+    },
+    "noWrite": true,
+    "apply": false,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "dispatch": "disabled",
+    "readyClaim": false
+  },
+  "verification": {
+    "focusedTests": "2 files / 17 tests PASS",
+    "packageTypecheck": "PASS",
+    "descriptorDriftTest": "PASS_BLOCKED_WITHOUT_INFERENCE",
+    "targetDriftTest": "PASS_BLOCKED_WITHOUT_INFERENCE",
+    "missingGmTest": "PASS_BLOCKED_WITHOUT_INFERENCE",
+    "workflowCheck": "PASS",
+    "runtimeReopened": false,
+    "stagingPerformed": false,
+    "servedGetPerformed": false,
+    "installerInvoked": false,
+    "documentsOrAssetsMutated": false,
+    "foreignStatePreserved": true
+  },
+  "remainingBlockers": [
+    "The descriptor is local source evidence only until the updated staged module is observed in a fresh exact fixture; no loaded-byte hash claim is made.",
+    "The M1181 candidate create receipt remains fixture-memory document-create/readback evidence with zero persistent world flush; persistent-world promotion is not certified.",
+    "Tram/Core, player behavior, Stage 12 acceptance, and Ready-to-Play remain unclaimed."
+  ],
+  "nextBoundary": "M1183: stage the updated module at the exact nested Data root and perform one separately authorized exact-Gamemaster RuntimeProfile/artifact-descriptor diagnostic observation; no installer or document action."
+}

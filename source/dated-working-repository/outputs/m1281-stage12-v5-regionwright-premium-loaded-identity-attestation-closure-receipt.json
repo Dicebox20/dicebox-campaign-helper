@@ -1,0 +1,65 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1281",
+  "operation": "regionwright.premium.loaded-identity.local-implementation",
+  "status": "PASS_LOCAL_SIDECAR_BOUND_READONLY_IMPLEMENTED",
+  "evidenceClass": "local",
+  "scope": {
+    "runtimeAction": false,
+    "browserAction": false,
+    "controlInvocations": 0,
+    "auditRetry": false,
+    "installer": false,
+    "preview": false,
+    "approval": false,
+    "apply": false,
+    "readyClaim": false
+  },
+  "changes": [
+    "work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
+    "work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer-byte-attestation.json",
+    "work/foundry-fixture-data-v5/Data/modules/regionwright/scripts/module.js",
+    "tests/regionwright-loaded-identity-attestation.test.ts"
+  ],
+  "identity": {
+    "installer": {
+      "path": "work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
+      "bytes": 29417,
+      "sha256": "F41BB7395D338E8C4CBF8D73A98100011EFCDDC7EB6095BB172E068D5E57F4D4"
+    },
+    "module": {
+      "path": "work/foundry-fixture-data-v5/Data/modules/regionwright/scripts/module.js",
+      "bytes": 8869,
+      "sha256": "453B7A940A1CD0787DAC6DD08F0ECAD2B2238D9BAB7FE5C4290EF90CC3B31F8C"
+    },
+    "sidecar": {
+      "path": "work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer-byte-attestation.json",
+      "sha256": "420A0805156B8472D18582D823AF2F501D44173CD4DE50009299CA7DF0F7608F"
+    }
+  },
+  "contract": {
+    "exactTarget": true,
+    "activeGmGate": true,
+    "executingUrl": true,
+    "strictSidecar": true,
+    "sha256": true,
+    "failClosed": true,
+    "noWrite": true,
+    "closeOnlyDialog": true,
+    "noEval": true
+  },
+  "validation": {
+    "focusedTests": "8/8",
+    "packageTypecheck": "PASS",
+    "syntax": "PASS"
+  },
+  "preservation": {
+    "v4ExternalRegionwright": true,
+    "runtime": true,
+    "foreign": true,
+    "playerPassword": true,
+    "balladTramCore": true
+  },
+  "disposition": "Local v5 read-only identity attestation is closed. No live surface was invoked and no installer, audit, preview, or Apply operation occurred.",
+  "next": "M1282: stage, serve, load, and observe the v5 identity control exactly once; invoke only the fixed identity read and close its dialog once. No installer, audit retry, preview, or Apply is authorized."
+}

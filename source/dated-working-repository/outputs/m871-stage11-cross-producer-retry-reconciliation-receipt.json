@@ -1,0 +1,15 @@
+{
+  "milestone": "M871",
+  "stage": "proposal-approval-history",
+  "status": "PASS REPAIR RECONCILIATION; ONE FRESH RETRY AUTHORIZED",
+  "evidenceClass": "local",
+  "inputs": ["M869", "M870", "M870 first desktop attempt", "M870 second desktop attempt", "native cross-producer transition unit reproduction", "docs/ACTIVE-PROGRAM-SLICE.json", "database/dicebox_campaign_helper_knowledge.sqlite"],
+  "failureReconciliation": [
+    {"attempt":"first","target":"dbx:project:desktop-cross-producer-commit-recovery-self-test","observed":"asset.bind committed generation 2; transition saved generation 3 and stopped before primary removal because the pre-fix content-hash assertion rejected the generation-dependent primary hash","reread":"primary generation 3 and backup generation 2 both contain the bound asset; foreign marker preserved; no retry was issued"},
+    {"attempt":"second","target":"dbx:project:desktop-cross-producer-commit-recovery-self-test-v2","observed":"asset.bind committed generation 2; corrected content-hash assertion passed; transition stopped because the backup-generation assertion incorrectly expected generation 3 instead of the committed generation 2","reread":"primary generation 3 and backup generation 2 both contain the bound asset; foreign marker preserved; no third run was issued before local repair"}
+  ],
+  "repair": {"nativeReproduction":"PASS: transition unit proves generation 2 committed binding becomes generation 3 primary plus generation 2 backup before primary removal","focusedProjectAssetBindingTests":"PASS: 1 file / 7 tests","packageTypeCheck":"PASS: npm run build:packages","nativeCompile":"PASS: cargo check and focused cargo test","sameClassRetryPolicy":"second same-class live failure stopped; bounded reproduction and local fix validation completed"},
+  "selectedNext": {"milestone":"M872","title":"One fresh exact test-owned cross-producer commit/recovery observation","target":"dbx:project:desktop-cross-producer-commit-recovery-self-test-v3","scope":"Run the already reviewed M870 desktop self-test once against a fresh fixed v3 target, then capture the complete asset.bind commit, missing-primary transition, backup-promotion recovery, proposal histories, authoritative rereads, and foreign-state preservation. Preserve the v1/v2 failure artifacts; do not rerun them or clean them up.","reason":"The narrow native defect is locally reproduced and fixed. One fresh target is required because the prior attempts intentionally remain immutable failure evidence and must not be overwritten."},
+  "validation": {"workflow":"PASS 10/16, score 63, no violations before M871 record","stage11":"blocked","stage12Started":false,"readyClaim":false,"runtimeActionAfterRepair":false,"repositoryHead":"unborn/no valid HEAD; no worktree operation attempted"},
+  "doesNotProve": ["Stage 11 acceptance", "generic Foundry or aggregate execution authority", "every-producer runtime behavior", "Stage 12 entry", "Ready-to-Play"]
+}

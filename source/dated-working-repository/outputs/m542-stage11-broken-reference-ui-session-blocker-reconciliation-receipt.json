@@ -1,0 +1,72 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.session-blocker-reconciliation",
+  "milestone": "M542",
+  "status": "PASS_LOCAL_READ_ONLY",
+  "capturedAt": "2026-08-29T22:20:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "scope": {
+    "readOnly": true,
+    "mutations": "none",
+    "browserStorageInspected": false,
+    "sessionClearedReplacedOrRecovered": false,
+    "buildOrLaunch": false,
+    "captureOrRetry": false,
+    "foundryAction": false,
+    "providerOrCredentialAction": false,
+    "playerRolePasswordAction": false
+  },
+  "evidence": [
+    "outputs/m536-stage11-broken-reference-ui-observation-blocker-receipt.json",
+    "outputs/m537-stage11-broken-reference-ui-timeout-reconciliation-receipt.json",
+    "outputs/m539-stage11-broken-reference-ui-approval-handoff-closure-receipt.json",
+    "outputs/m540-stage11-broken-reference-ui-fresh-artifact-closure-receipt.json",
+    "outputs/m541-stage11-broken-reference-ui-packaged-observation-blocker-receipt.json",
+    "apps/campaign-helper-desktop/src/project-proposal-session.ts",
+    "apps/campaign-helper-desktop/src/App.tsx",
+    "tests/project-proposal-session.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "database/seed.sql"
+  ],
+  "reconciliation": {
+    "m536": "The M535 executable reached the isolated v2 previewed transition from a MISSING session and timed out before approval; post-preview state remained outcome-unknown.",
+    "m537": "The timeout was traced to ref-only effect waits; direct guarded async chains were selected and implemented in M539.",
+    "m539": "The source correction is locally validated, but it cannot be exercised while the preserved v2 preflight is nonterminal and current-process ownership is absent.",
+    "m541": "The fresh M540 executable exited normally at transport, reached fixture PASS, inspection BLOCKED, preview PREVIEW, then blocked at session-preflight PASS:previewed with OWNERSHIP_UNPROVEN before approval.",
+    "conflict": "No authority or evidence permits inspecting browser storage, reconstructing ownership, clearing/replacing the v2 session, or inferring that approval/apply/reread/commit occurred.",
+    "selectedBoundary": "Create a distinct fixed v3 test-owned identity and closed typed session namespace, leaving the preserved v2 session untouched. Exercise the M539 guarded chains only from a new v3 MISSING preflight in a later separately authorized artifact/capture sequence."
+  },
+  "preservationReread": {
+    "ordinaryV1ProjectSha256": "E2C05D405E85EFC33AE35EF8E5AC974B4E3B859B84430C46AF4A77B54D510552",
+    "v2TestProjectSha256": "33EFC91239F5C9455DB87F5A46A511DD8B6F2114D7502CDF5232C2D5E105F3B4",
+    "workspaceIndexSha256": "BD962775571A79F94F73F1CDC690DBC7DDB9C8260828EDC950DCAB39DC154F09",
+    "workspaceBackupSha256": "F6A79A51B6A1790D4278F19286B859ABD22D83578634B5F8889C7F8AFBC4BC5B",
+    "workspacePendingSha256": "D73C27D26AF48C555F8D05DF5F929028A20DF12771A80F81A41F282576A99C43",
+    "registeredAssetSha256": "3AE001FC27B1A7A8E0BA5995A9D94D89EC20EC110C9DCEAA017C86A128702011",
+    "ordinaryV1Preserved": true,
+    "v2Preserved": true,
+    "processes": "none: desktop/Cargo/Rustc"
+  },
+  "selectedFreshIdentity": {
+    "projectId": "dbx:project:desktop-broken-reference-ui-lifecycle-self-test-v3",
+    "scope": "broken-reference-ui-self-test-v3",
+    "requirement": "The v3 project identity and scope must be fixed in typed code, distinct from v1/v2, and rejected by ordinary session APIs. The v2 namespace and project remain preserved and inaccessible to v3 operations."
+  },
+  "nextBoundary": {
+    "milestone": "M543",
+    "scope": "Code and memory/static tests only: add the fixed v3 self-test identity and closed typed namespace, preserve v1/v2 APIs and state, and prove cross-namespace isolation before any build, fixture preparation, capture, session operation, or runtime mutation.",
+    "prohibited": [
+      "build",
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "v2 session clear/replacement/recovery",
+      "fixture/project/runtime mutation",
+      "Foundry, provider, credential, or player-password action",
+      "Stage 11 acceptance"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M542 is a read-only reconciliation. The selected v3 boundary is a safety and evidence-isolation decision, not a claim that the v2 lifecycle succeeded or that Stage 11 is complete."
+}

@@ -1,0 +1,18 @@
+{
+  "milestone": "M657",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY",
+  "scope": "Pure inverse execution-authorization envelope and fail-closed tests only.",
+  "evidence": {
+    "tests": "Vitest: 3 files / 5 tests passed (authorization, inverse execution contract, inverse adapter contract).",
+    "typecheck": "apps/campaign-helper-desktop TypeScript no-emit passed."
+  },
+  "boundary": {
+    "inversePlan": "Canonical SHA-256 binding to one exact validated non-executing inverse plan.",
+    "authority": "Authorization-time active GM must match the plan's approved GM; a future executor must independently recheck current active GM.",
+    "execution": "not-implemented",
+    "readyClaim": false,
+    "foundryWrite": false
+  },
+  "next": "M658 read-only reconciliation before any executor implementation authorization."
+}

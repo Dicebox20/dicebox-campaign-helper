@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1254",
+  "operation": "exact-v4.regionwright.control-exposure-reread",
+  "status": "BLOCKED_MANUAL_REJOIN_REQUIRED",
+  "evidenceClass": "fixture",
+  "scope": "One authorized exact-v4 restart/reopen and read-only browser exposure boundary",
+  "supervisor": {
+    "status": "PASS",
+    "pid": 11204,
+    "dataPath": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "targetVersion": "Foundry 14.367 / dnd5e 5.3.3",
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "restartCount": 1,
+    "recovery": "Normal stop required the supervisor force-stop fallback; lock recovery quarantined options.json.lock and the restarted process passed exact target checks."
+  },
+  "browser": {
+    "tabId": "6",
+    "url": "http://127.0.0.1:30003/join",
+    "joinedAsGamemaster": false,
+    "manualRejoinRequired": true,
+    "controlSurfaceRead": false,
+    "controlInvocation": false
+  },
+  "disposition": "The repaired Regionwright hook cannot be observed until the user manually rejoins as Gamemaster. No authentication automation, control click, settings change, reload retry, or runtime mutation was performed.",
+  "readyClaim": false,
+  "next": "After manual Gamemaster rejoin and visible /game, perform one read-only loaded Regionwright/Region Controls exposure reread without another restart; do not invoke a control."
+}

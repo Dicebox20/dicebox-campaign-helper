@@ -1,0 +1,12 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M775",
+  "status": "PASS LOCAL CODE-ONLY; STAGE 11 NOT ACCEPTED",
+  "source": "apps/campaign-helper-desktop/src/project-cross-plane-current-authority-evidence.ts",
+  "sourceSha256": "E4E779C2CEBD7AB316FFE6BC19934012798907D00DABD6F151F61D40C3A4DB2E",
+  "test": "tests/project-cross-plane-current-authority-evidence.test.ts",
+  "testSha256": "1C8BEF2A8EBB19EFEEA33D5E31B9D62E9FF905F566F3D61541B477AEC310E013",
+  "validation": "PASS 2 files / 7 tests; npm run build:packages; git diff --check",
+  "result": "The pure classifier binds only the M768 local aggregate report and supplied M773-shaped fixture receipt, labels authority as local operation-specific and fixture read-only active-GM observed, and keeps aggregate authority not-granted.",
+  "preservation": { "staging": false, "runtime": false, "foundryWrites": 0, "projectWrites": 0, "settingsWrites": 0, "playerPasswordsGenerated": false, "stage11Accepted": false, "stage12Started": false }
+}

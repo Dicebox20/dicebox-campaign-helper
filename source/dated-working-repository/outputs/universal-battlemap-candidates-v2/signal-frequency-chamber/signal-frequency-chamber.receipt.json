@@ -1,0 +1,27 @@
+{
+  "operation": "universal-battlemap.candidate-export",
+  "status": "CANDIDATE_WRITTEN",
+  "noFoundryWrite": true,
+  "readyClaim": false,
+  "roomId": "dbx:room:signal-frequency-chamber",
+  "blueprintId": "dbx:blueprint:signal-frequency-chamber",
+  "renderer": {
+    "path": "assets/maps/manual-signal-frequency-chamber-v5-neutral.png",
+    "sha256": "e6067326a139670b455a304dd664042ec90ee8c2984d603c6f72b8391023ea8e",
+    "width": 1536,
+    "height": 1024
+  },
+  "uvtt": {
+    "path": "outputs\\universal-battlemap-candidates-v2\\signal-frequency-chamber\\signal-frequency-chamber.uvtt",
+    "wallCount": 6,
+    "doorCount": 2
+  },
+  "sidecar": {
+    "path": "outputs\\universal-battlemap-candidates-v2\\signal-frequency-chamber\\signal-frequency-chamber.dicebox-regions.json",
+    "regionCount": 6
+  },
+  "placementGuide": "outputs\\universal-battlemap-candidates-v2\\signal-frequency-chamber\\signal-frequency-chamber.REGION-PLACEMENT.md",
+  "backgroundObjectGuide": "outputs\\universal-battlemap-candidates-v2\\signal-frequency-chamber\\signal-frequency-chamber.BACKGROUND-OBJECT-PLACEMENT.md",
+  "importBoundary": "Universal VTT does not carry DiceBox Regions, RegionBehaviors, puzzle state, or Foundry UUID bindings.",
+  "preservationScope": "No Foundry Scene, Wall, Region, Tile, Macro, RegionBehavior, or foreign document was read or changed."
+}

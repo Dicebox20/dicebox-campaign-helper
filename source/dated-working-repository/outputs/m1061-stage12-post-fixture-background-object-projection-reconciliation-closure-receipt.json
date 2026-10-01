@@ -1,0 +1,75 @@
+{
+  "operation": "dicebox.stage12.m1061.post-fixture-background-object-projection-reconciliation.closure",
+  "status": "PASS",
+  "milestone": "M1061",
+  "evidenceLabel": "local",
+  "recordedAt": "2026-09-05",
+  "sourceAuthority": [
+    "SRC-M1061-STAGE12-POST-FIXTURE-BACKGROUND-OBJECT-PROJECTION-RECONCILIATION-AUTHORIZATION",
+    "D-M1061-STAGE12-POST-FIXTURE-BACKGROUND-OBJECT-PROJECTION-RECONCILIATION",
+    "F-M1060-CLOSURE",
+    "F-M1059-CLOSURE",
+    "D-188",
+    "D-183",
+    "D-186"
+  ],
+  "changedPaths": [
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "outputs/m1061-stage12-post-fixture-background-object-projection-reconciliation-closure-receipt.json"
+  ],
+  "comparison": {
+    "packageId": "dbx:package:chauser-bill-prime-arachnid-aftermath",
+    "packageProjectionCount": 29,
+    "packageSceneIds": [
+      "dbx:scene:signal-frequency-chamber",
+      "dbx:scene:rune-mechanism-chamber",
+      "dbx:scene:ascendancy-tram-depot",
+      "dbx:scene:central-core-control-chamber"
+    ],
+    "fixtureActiveScene": "Semantic Scene Fixture",
+    "fixtureObservedTileCount": 11,
+    "stableIdOverlapCount": 5,
+    "stableIdOverlap": [
+      "dbx:tile:tram-core-rail",
+      "dbx:tile:tram-gate-core-door",
+      "dbx:tile:tram-gate-ingress",
+      "dbx:tile:tram-gate-yard-exit",
+      "dbx:tile:tram-rail-grid"
+    ],
+    "fixtureOnlyObservedIds": [
+      "dbx:tile:tram-b",
+      "dbx:tile:tram-c",
+      "dbx:tile:tram-o",
+      "dbx:tile:tram-q",
+      "dbx:tile:tram-r",
+      "dbx:tile:tram-x"
+    ],
+    "packageOnlyProjectionCount": 24,
+    "sceneIdentityMatch": false
+  },
+  "validation": {
+    "packageParity": "PASS LOCAL: staticVisualTileProjection and staticBackgroundObjectPreview retain the same 29 source projection IDs and the preview remains visual-workflow-projection authority with Spatial Blueprint geometry ownership, not-modeled runtime state, and disabled-until-exact-runtime-gate mutation.",
+    "fixtureReconciliation": "PASS LOCAL: the five overlapping tram IDs are an observation only. The active fixture Scene label is Semantic Scene Fixture, not the package Scene ID dbx:scene:ascendancy-tram-depot; six observed tram-car IDs are fixture-only and 24 package projections were not observed in the active fixture directory.",
+    "installerBoundary": "PASS LOCAL: packages/dicebox-foundry/src/ascendancy-installer.js does not consume staticBackgroundObjectPreview; the historical staticVisualTileProjection/native Tile creation-readback path remains separately gated and is not inferred from overlap.",
+    "workflowCheck": "PASS: 11/16 gates, zero violations, scene-authoring-breadth active, readyClaim false.",
+    "authoritativeReread": "PASS: M1060 final exact-fixture reread remains STOPPED with zero world-document writes and balladTouched=false; M1061 performed no runtime or document action."
+  },
+  "observation": {
+    "disposition": "PASS READ-ONLY RECONCILIATION",
+    "meaning": "Stable-ID overlap does not establish package installation, Scene identity, bounds/assets parity, native Tile creation, or runtime authority. The package projection and existing fixture Tile directory remain separate evidence planes.",
+    "nextGap": "M1062: add one compiler-only, strict read-only reconciliation envelope for a supplied fixture Scene/Tile observation versus the typed/generated package projection; no runtime call or native mutation.",
+    "certificationBoundary": "Stage 12 remains active and non-certifying; Stage 11 remains blocked; Ready-to-Play remains false; Ballad and player surfaces remain untouched."
+  },
+  "doesNotProve": [
+    "package installation",
+    "native static Background Object or Tile creation",
+    "Scene identity or bounds/assets parity",
+    "Blueprint or Walls/doors/Regions promotion",
+    "live Ballad behavior",
+    "Stage 12 acceptance",
+    "Ready-to-Play"
+  ],
+  "nextAction": "Perform only M1062: implement and test the compiler-only strict reconciliation envelope for supplied fixture Scene/Tile observations versus the typed/generated package projection; keep runtime/native mutation disabled."
+}

@@ -1,0 +1,54 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1164-fixed-candidate-transport-runtime-diagnostic-implementation-closure",
+  "milestone": "M1164",
+  "status": "CLOSED_M1164_SOURCE_TEST_ONLY_VERIFIER_DRIFT_EXPECTED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.signal-rune.candidate-transport-diagnostic.implementation.closure",
+  "implementation": {
+    "candidateId": "m1141-signal-rune",
+    "selectorCallerControlled": false,
+    "candidateTransportImplemented": true,
+    "runtimeExposure": "diagnostic-only-candidate-install-repair-disabled",
+    "candidateInstallExposed": false,
+    "candidateRepairExposed": false,
+    "diagnosticNoWrite": true,
+    "noBinding": true,
+    "noPayload": true,
+    "noProposal": true,
+    "dispatch": "disabled",
+    "foreignStatePreserved": true
+  },
+  "verification": {
+    "focusedInstallerTests": "PASS 8/8",
+    "foundryPackageTests": "PASS 15/15",
+    "stageModuleTests": "PASS 3/3",
+    "knowledgeBaseQueryTests": "PASS 72/72",
+    "packageTypecheck": "PASS",
+    "workflowCheck": "PASS 11/16",
+    "artifactSpecTest": "EXPECTED_FAIL_AFTER_INSTALLER_SOURCE_ROTATION",
+    "artifactSpecObservedInstallerSha256": "6EC6EE9C59D586E8B0A9C12330A453D946AC183FDD24ADDDCAE08C9B7773259E"
+  },
+  "runtime": {
+    "runtimeReopened": false,
+    "browserLogin": false,
+    "installerInvoked": false,
+    "documentWrites": 0,
+    "assetWrites": 0,
+    "sceneWrites": 0,
+    "authorityPromoted": false,
+    "readyClaim": false
+  },
+  "artifactIdentity": {
+    "specId": "dbx:foundry-spec:current-product-0.1.15-m1159",
+    "verifierId": "dbx:foundry-verifier:current-product-0.1.15-m1159",
+    "status": "stale_after_m1164_source_change",
+    "nextRequired": "M1165 refresh current Foundry artifact specification/verifier before any stage or runtime observation"
+  },
+  "remainingBlockers": [
+    "The M1159 verifier no longer matches the M1164 installer source; source/staged/served parity must be refreshed before runtime observation.",
+    "Current RuntimeProfile and active-GM authority remain last observed at M1153.",
+    "Authoritative campaign reread, Stage 11 acceptance, Stage 12 acceptance, and Ready-to-Play remain blocked."
+  ],
+  "nextBoundary": "M1165: refresh current Foundry artifact specification/verifier for the M1164 installer identity; no runtime or installer invocation is implied."
+}

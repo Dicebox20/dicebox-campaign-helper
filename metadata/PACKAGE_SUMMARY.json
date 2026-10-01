@@ -1,0 +1,25 @@
+{
+  "migration_date": "2026-10-01",
+  "canonical_successor": "Dicebox Injector",
+  "foundation_source": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+  "working_snapshot_source": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper",
+  "inventory_rows": 12587,
+  "transferred_files": 12587,
+  "transferred_bytes": 1125443290,
+  "excluded_files": 0,
+  "filter_policy": {
+    "excluded_rebuildable_directories": [
+      ".git",
+      "__pycache__",
+      "node_modules",
+      "playwright-report",
+      "target",
+      "test-results"
+    ],
+    "excluded_patterns": [
+      "^\\.m\\d+.*-target$",
+      "^\\.codex-trusted-read-"
+    ],
+    "credential_filename_scan": "potential credential filenames excluded; pre-scan returned no hits"
+  }
+}

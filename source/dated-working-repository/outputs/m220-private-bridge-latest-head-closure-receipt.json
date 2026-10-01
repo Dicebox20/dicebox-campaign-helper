@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "receiptId": "m220-private-bridge-latest-head-closure",
+  "capturedAt": "2026-08-26T11:30:00-07:00",
+  "status": "PASS",
+  "evidenceLabel": "local",
+  "observations": [
+    "The reusable bridge is PRIVATE on main at 67753122e82a582be9e0baf4d0737c6e71391cdd; GitHub Actions run 32997323754 passed after the current closed change card, handoff, and bounded receipt were pushed.",
+    "The exact shared idea document reread at AIroW36yCfUznADCn9C_Ca5EQdzVMU1ANX8xNN4gRdKStfEg6xclZN_KdrpvCv9GwrfxONARnaZZqSvn8d_K4nIE6OUcbK6QvCC-IiyhhkE with exact ID/title/Tab 1, nineteen native dates, intended placement, and no protected controls.",
+    "M220 rebuilt from schema.sql plus seed.sql with integrity ok and exact F-294, D-254, and T-267 read-only query provenance."
+  ],
+  "knowledgeBase": {
+    "sourceId": "SRC-M220-PRIVATE-BRIDGE-LATEST-HEAD-CLOSURE",
+    "factId": "F-294",
+    "decisionId": "D-254",
+    "trialId": "T-267",
+    "counts": { "sources": 273, "facts": 309, "decisions": 259, "openItems": 135, "trials": 272, "subjects": 40, "milestones": 26 },
+    "schemaSha256": "B9FB21EA8B3974A56F44ED52CB8434EB9EC8B9617DC1E3928575399EDF254333",
+    "seedSha256": "8F454C63801403FACC7BFDD60F378650FAD7C1164A36CB081AB97475CCE7A4B1",
+    "databaseSha256": "5F9C4BD8A0CE5F962B95101395A7F8041A23CDC4E441DADB0A63B0E8C5ECC6F7"
+  },
+  "doesNotProve": [
+    "Stage 8 completion",
+    "alpha readiness",
+    "Iggwilv worker hash parity or gameplay certification",
+    "product or Foundry mutation authority"
+  ],
+  "noProductOrFoundryMutation": true
+}

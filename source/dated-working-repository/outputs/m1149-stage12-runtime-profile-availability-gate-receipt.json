@@ -1,0 +1,72 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1149-runtime-profile-availability-gate",
+  "milestone": "M1149",
+  "status": "BLOCKED_RUNTIME_PROFILE_UNOBSERVED",
+  "evidenceClass": "local",
+  "operation": "dicebox.stage12.runtime-profile-availability.reconcile",
+  "gate": {
+    "schemaVersion": "0.1.0",
+    "operation": "dicebox.ascendancy.signal-rune.runtime-profile-availability.gate",
+    "milestone": "M1149",
+    "status": "BLOCKED",
+    "evidenceClass": "local",
+    "m1148Context": {
+      "receiptId": "dbx:receipt:m1148-served-parity-gate-refresh",
+      "status": "BLOCKED_SERVED_PARITY_REFRESH",
+      "servedGate": "pass",
+      "noWrite": true,
+      "readyClaim": false
+    },
+    "sourceSurface": {
+      "status": "present",
+      "sourcePath": "packages/dicebox-foundry/src/module.js",
+      "queryKind": "runtime-profile",
+      "apiPath": "game.diceboxCampaignHelper.query",
+      "schemaContract": "packages/dicebox-core/src/capability.ts:RuntimeProfileSchema",
+      "readOnly": true,
+      "sourceOnly": true
+    },
+    "observation": {
+      "status": "unobserved",
+      "sourceReceiptScope": "M1145-redacted-diagnostic-only",
+      "fullRuntimeProfileObserved": false,
+      "runtimeFingerprintObserved": false,
+      "profileDiffObserved": false,
+      "authoritativeRereadObserved": false
+    },
+    "gates": {
+      "sourceSurface": "pass",
+      "runtimeProfile": "blocked-source-surface-present-runtime-observation-unavailable",
+      "profileDiff": "blocked-no-runtime-profile",
+      "authoritativeReread": "blocked-unobserved"
+    },
+    "blockers": [
+      "runtime-profile-observation-unavailable",
+      "runtime-profile-diff-unavailable",
+      "authoritative-reread-unobserved"
+    ],
+    "foreignState": "preserve",
+    "preserveUnknown": true,
+    "noWrite": true,
+    "apply": false,
+    "runtimeBinding": "not-created",
+    "payload": "not-materialized",
+    "proposal": "not-created",
+    "dispatch": "disabled",
+    "readyClaim": false
+  },
+  "sourceReceipts": {
+    "m1148": "outputs/m1148-stage12-served-parity-gate-refresh-receipt.json",
+    "m1145": "outputs/m1145-stage12-exact-fixture-runtime-profile-active-gm-reread-closure-receipt.json"
+  },
+  "validation": {
+    "sourceSurface": "PASS_SOURCE_DECLARED_READ_ONLY_RUNTIME_PROFILE_QUERY",
+    "fullRuntimeProfile": "BLOCKED_UNOBSERVED_M1145_CAPTURED_REDACTED_DIAGNOSTIC_ONLY",
+    "profileDiff": "BLOCKED_NO_CURRENT_RUNTIME_PROFILE",
+    "authoritativeReread": "BLOCKED_UNOBSERVED",
+    "noWrite": true,
+    "readyClaim": false
+  },
+  "nextBoundary": "No staging or creation approval. M1150 must address the smallest remaining blocker only after this source/runtime evidence boundary is reread; do not infer a live RuntimeProfile or authoritative reread from source/API presence."
+}

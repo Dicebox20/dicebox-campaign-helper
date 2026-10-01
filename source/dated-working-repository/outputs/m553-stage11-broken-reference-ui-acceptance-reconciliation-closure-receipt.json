@@ -1,0 +1,53 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.acceptance-reconciliation",
+  "milestone": "M553",
+  "status": "PASS_LOCAL_READ_ONLY_PARTIAL_STAGE11",
+  "capturedAt": "2026-08-29T23:31:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "evidenceChain": {
+    "M545": "preserved partial v3 application blocker; approved session committed before terminal predicate rejection",
+    "M546": "read-only native aggregate versus App predicate reconciliation",
+    "M547": "local typed terminal predicate correction",
+    "M548": "v3 artifact embedding attested",
+    "M549": "v3 committed-session boundary reconciled; additive v4 selected",
+    "M550": "v4 fixed identity and closed namespace isolated locally",
+    "M551": "v4 artifact embedding and process absence attested",
+    "M552": "direct packaged v4 lifecycle PASS with authoritative reread and committed session"
+  },
+  "stage11AcceptanceObservation": "Every mutating producer uses inspectable command batches with approve/reject/edit, stale invalidation, execution receipts, reread, undo, and recovery.",
+  "reconciledChecks": {
+    "v4PackagedLifecycle": "PASS: fixture → MISSING preflight → preview → approval → apply → authoritative reread → commit",
+    "v4Preservation": "PASS: current target binding absent, prior binding preserved in backup, handout descriptor/blob preserved, workspace pending preserved",
+    "v1v2v3Preservation": "PASS: exact project hashes unchanged from the prior boundary",
+    "noFoundryWrite": true,
+    "browserStorageInspected": false,
+    "processesAbsent": true,
+    "transportOrPopupAloneUsed": false
+  },
+  "acceptanceDecision": {
+    "stage11": "REMAINS_ACTIVE_PARTIAL",
+    "reason": "M552 closes the current broken-reference UI packaged lifecycle gap only. Existing producer-family evidence still classifies the complete Stage 11 generic acceptance observation as partial; selected missing-asset detach has a code/session path but no current packaged lifecycle observation, and later authority boundaries remain separate.",
+    "readyToPlay": false,
+    "stage12Started": false
+  },
+  "nextBoundary": {
+    "milestone": "M554",
+    "type": "read-only-selected-missing-asset-detach-reconciliation",
+    "scope": "Read only the selected missing-asset detach UI route, exact fixture/preflight topology, typed proposal/session path, existing receipts, and current project/session/process state before selecting a fresh artifact or packaged observation.",
+    "prohibited": [
+      "source edit",
+      "build",
+      "launch",
+      "capture",
+      "retry",
+      "browser-storage inspection",
+      "session clear/replacement/recovery",
+      "fixture reset/deletion/cleanup",
+      "project/runtime mutation",
+      "provider, credential, Foundry, or player-password action",
+      "Stage 12 work"
+    ]
+  },
+  "notes": "M553 is a read-only acceptance reconciliation. It does not accept Stage 11 or certify Ready-to-Play; the quick popup close remains expected only for exit-mode self-tests."
+}

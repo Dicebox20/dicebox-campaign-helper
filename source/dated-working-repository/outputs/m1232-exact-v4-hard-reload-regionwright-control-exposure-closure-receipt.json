@@ -1,0 +1,68 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M1232",
+  "operation": "regionwright.hard-reload-control-exposure",
+  "evidenceClass": "fixture-runtime",
+  "status": "BLOCKED_CONTROL_STILL_NOT_EXPOSED",
+  "readyClaim": false,
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v4",
+    "worldId": "dbx-test-world",
+    "port": 30003,
+    "foundryVersion": "14.367",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3",
+    "commandFingerprint": "707D76B66F6A44214A254497C51DB691F2E9A52417AD9AF4FB3DE49E958AA671",
+    "exactTargetMatch": true,
+    "activeGm": true,
+    "currentUser": "Gamemaster [GM]"
+  },
+  "browser": {
+    "provider": "codex-in-app-browser",
+    "browserId": "1",
+    "tabId": "6",
+    "beforeUrl": "http://127.0.0.1:30003/game",
+    "afterUrl": "http://127.0.0.1:30003/game",
+    "hardReloadInvoked": true,
+    "manualRejoinRequired": false,
+    "manualRejoinPerformed": false,
+    "currentUserVisibleAfterReload": "Gamemaster [GM]"
+  },
+  "loadedControlObservation": {
+    "expectedControl": "regionwright-ascendancy-fixture-audit",
+    "expectedTitle": "Audit Ascendancy fixture state",
+    "presentBeforeReload": false,
+    "presentAfterReload": false,
+    "invoked": false,
+    "alternateControlInvoked": false,
+    "noWrite": true,
+    "authoritativeReread": false,
+    "retryAllowed": false,
+    "classification": "The fixed Regionwright fixture control remains absent from the loaded exact Gamemaster toolbar after one hard browser reload; Regionwright behavior and entrypoint registration remain unproven."
+  },
+  "preservation": {
+    "foreignStatePreserved": true,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "settingsOrPasswordMutation": false,
+    "moduleSettingsChanged": false,
+    "playerAction": false,
+    "rawStorageInspected": false,
+    "logoutOrReturnToSetup": false
+  },
+  "finalSupervisor": {
+    "operation": "foundry.fixture.status",
+    "status": "PASS",
+    "pid": 17200,
+    "listeners": [17200],
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "blockers": []
+  },
+  "blockers": [
+    "The expected fixed Regionwright fixture control remains absent after module activation classification and one hard browser reload.",
+    "Loaded Regionwright entrypoint or premium-control registration remains unproven; no alternate control was substituted.",
+    "Regionwright-specific behavior, player acceptance, persistent-world promotion, Stage 12, and Ready-to-Play remain unproven."
+  ],
+  "nextRequiredBoundary": "Perform a new KB-first local read-only reconciliation of the exact staged Regionwright package entrypoint and control-registration evidence; do not retry the browser control or invoke alternate Regionwright surfaces."
+}

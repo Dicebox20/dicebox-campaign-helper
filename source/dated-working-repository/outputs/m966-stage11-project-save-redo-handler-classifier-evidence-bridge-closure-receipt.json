@@ -1,0 +1,54 @@
+{
+  "milestone": "M966",
+  "stage": "proposal-approval-history",
+  "status": "PASS LOCAL CODE-ONLY PROJECT.SAVE REDO HANDLER/CLASSIFIER EVIDENCE; STAGE 11 NOT ACCEPTED",
+  "scope": "Bind the existing project.save redo terminal-history bridge and matched-reread classifier into the operation-specific typed evidence surface without invocation or authority promotion.",
+  "implementation": {
+    "source": "apps/campaign-helper-desktop/src/project-save-undo-redo-classifier-evidence.ts",
+    "terminalHistorySource": "apps/campaign-helper-desktop/src/project-save-terminal-history.ts",
+    "focusedTest": "tests/project-save-undo-redo-classifier-evidence.test.ts",
+    "relatedTest": "tests/project-save-terminal-history.test.ts",
+    "redoHandler": "bridgeProjectSaveRedoToTerminalHistory",
+    "redoRereadClassifier": "projectSaveRedoTerminalHistoryReceiptSchema",
+    "redoBindingStatus": "bound-operation-specific",
+    "contract": "project.save undone → redo → redone with exact identity and matched post-transition revision/hash reread",
+    "undoBindingPreserved": true,
+    "sourceOperationInvocation": false,
+    "rereadClassifierInvocation": false
+  },
+  "safety": {
+    "operationAuthority": "not-granted",
+    "noTransitionAuthority": true,
+    "noExecutionAuthority": true,
+    "noGenericExecutor": true,
+    "readOnly": true,
+    "nonCertifying": true,
+    "foreignStateMutation": "none",
+    "runtimeOrFoundryAction": false,
+    "projectMutation": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "aggregateBoundary": {
+    "operationCount": 14,
+    "operationCountChanged": false,
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "stage11PartialClauses": 4,
+    "producerFamilies": 11,
+    "runtime": "PARKED"
+  },
+  "validation": {
+    "focused": "PASS: 2 files / 10 tests",
+    "relatedRun": "PASS: 4 files / 30 tests",
+    "packageTypecheck": "PASS: npm run build:packages",
+    "workflowBeforeClosure": "PASS: 10 of 16 gates; proposal-approval-history solely active; zero violations",
+    "knowledgeBaseBeforeClosure": "PASS: 1493 sources; 1219 facts; 1132 decisions; 135 open items; 808 trials; 40 research subjects; 26 milestones",
+    "diffHygiene": "PASS: no whitespace errors observed"
+  },
+  "conclusion": "M966 closes the local project.save redo handler/classifier evidence gap only. It does not prove aggregate current authority, complete cross-producer lifecycle continuity, packaged/runtime authority, live active-GM/Foundry behavior, Stage 11 acceptance, Stage 12 entry, or Ready-to-Play.",
+  "next": "M967: read-only reconciliation of the M966 binding against the Stage 11 aggregate/current-authority surfaces."
+}

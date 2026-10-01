@@ -1,0 +1,50 @@
+{
+  "milestone": "M734",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "scope": "Reconcile M733 and prior evidence against all four Stage 11 acceptance clauses and eleven producer families.",
+  "sourceState": "Unborn project worktree with no HEAD; M734 is read-only and changes no implementation or runtime state.",
+  "delegation": {
+    "requestedModel": "gpt-5.6-terra",
+    "reasoningEffort": "xhigh",
+    "workerScope": "Independent read-only Stage 11 acceptance reconciliation.",
+    "workerOutcome": "Worker did not return a compact receipt within two bounded waits and was closed. Its output was not treated as evidence and it made no reported edits.",
+    "foremanReview": "The Foreman queried the bounded read-only KB surface for the M733 fact and M734 authorization, reread M732/M733 receipts, the active slice, roadmap, all eleven local terminal-history bridges, the recovery proposal adapter, and the project review/apply coverage matrix."
+  },
+  "clauses": {
+    "claimProvenance": "PASS bounded M700-M711 witness continuity; PARTIAL at aggregate Stage 11 scope because terminal projections cover one injected inverse fixture and eleven local-project operations.",
+    "reviewAndAuthority": "PARTIAL: operation-specific human review and local-project authority are explicit, but direct current-authority evidence remains incomplete across producer families.",
+    "applyAndReceipts": "PARTIAL: direct terminal projections exist for one injected inverse fixture and project.save, project.rename, project.add-scene.persist, project.save-as, project.create, project.asset.register-audio, project.asset.register-handout, project.asset.register-token, project.asset.bind, project.add-scene.commit-in-memory, and project.recovery.backup-promote; all producer paths are not covered.",
+    "lifecycleAndRecovery": "PARTIAL: successful terminal undone is covered for ten local operations, committed create/save-as is covered, and backup promotion now has a commit-only terminal projection. Stale, outcome-unknown, recovered, and redone evidence is not unified. Packaged/runtime and live active-GM/Foundry evidence remain incomplete."
+  },
+  "producerFamilies": [
+    { "family": "read-only inspection/compile", "status": "closed-read-only; non-mutating" },
+    { "family": "workspace open/recent metadata", "status": "operation-specific partial" },
+    { "family": "ordinary project persistence", "status": "ten bounded terminal-history slices closed; aggregate partial" },
+    { "family": "in-memory project editing/navigation", "status": "add-Scene commit/undo has a direct terminal projection; aggregate partial" },
+    { "family": "asset import/binding", "status": "audio, handout, token, and background binding roles have direct terminal projections; aggregate remains partial" },
+    { "family": "legacy migration persistence", "status": "operation-specific partial; no direct terminal-history bridge" },
+    { "family": "backup-authoritative promotion", "status": "commit-only terminal projection with approved session, promotion receipt, and authoritative recovery reread; aggregate partial" },
+    { "family": "missing-asset restore", "status": "current packaged pass; aggregate partial" },
+    { "family": "missing-asset detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "broken Scene-reference detach", "status": "current packaged pass; aggregate partial" },
+    { "family": "test-owned fixture setup and stage receipts", "status": "test infrastructure only; non-certifying" }
+  ],
+  "evidence": {
+    "workflow": "PASS: Stage 11 proposal-approval-history active, score 63, 10/16 gates, readyClaim false, no violations.",
+    "m733Delta": "M733 adds one pure commit-only project.recovery.backup-promote terminal-history bridge using the existing approved provider-free session, PASS promotion receipt, primary restoration and preservation invariants, authoritative recovery inspection reread, and no Foundry write.",
+    "knowledgeBase": "PASS: rebuilt and verified at 1154 sources, 994 facts, 861 decisions, 135 active-work rows, 787 trials, 40 research subjects, and 26 milestones; F-979 and D-862 were reread through the bounded read-only query surface.",
+    "directRemainingGaps": [
+      "Aggregate producer coverage and direct current-authority evidence remain incomplete across all eleven producer families.",
+      "Only one injected inverse fixture plus eleven local-project operations have direct terminal projection; cross-producer history remains partial.",
+      "Unified stale, outcome-unknown, recovered, and redone coverage is incomplete.",
+      "Packaged/runtime authority and live active-GM/Foundry certification remain incomplete."
+    ]
+  },
+  "acceptance": {
+    "stage11": "ACTIVE; 10/16 workflow gates passed; not accepted.",
+    "stage12": "NOT STARTED",
+    "decision": "Stage 11 cannot be accepted and Stage 12 cannot begin from current evidence."
+  },
+  "selectedNext": "M735 code-only project.migration.persist terminal-history bridge using the existing typed migration session, native persistence receipt, and authoritative project/recovery/workspace rereads; preserve live Foundry/runtime and Stage 12 exclusions."
+}

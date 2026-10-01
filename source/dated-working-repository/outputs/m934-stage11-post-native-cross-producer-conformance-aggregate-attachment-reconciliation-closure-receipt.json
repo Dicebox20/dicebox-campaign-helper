@@ -1,0 +1,107 @@
+{
+  "milestone": "M934",
+  "stage": "proposal-approval-history",
+  "status": "PASS READ-ONLY RECONCILIATION; STAGE 11 NOT ACCEPTED",
+  "evidenceClass": "local",
+  "scope": "Reconcile M933's distinct native cross-producer producer-scoped aggregate attachment against the complete Stage 11 matrix, current authority surfaces, receipts, active card, roadmap, and rebuilt knowledge base without implementation, count change, authority promotion, or runtime reopening.",
+  "inputs": [
+    "outputs/m933-stage11-native-cross-producer-conformance-aggregate-attachment-closure-receipt.json",
+    "outputs/m932-stage11-post-in-memory-add-scene-semantic-redo-aggregate-attachment-reconciliation-closure-receipt.json",
+    "apps/campaign-helper-desktop/src/project-stage11-aggregate-evidence-ledger.ts",
+    "apps/campaign-helper-desktop/src/project-aggregate-current-authority-evidence.ts",
+    "apps/campaign-helper-desktop/src/project-cross-producer-lifecycle-continuity-evidence.ts",
+    "tests/project-stage11-native-cross-producer-conformance-aggregate-evidence.test.ts",
+    "tests/project-stage11-aggregate-evidence-ledger.test.ts",
+    "tests/project-aggregate-current-authority-evidence.test.ts",
+    "tests/project-cross-producer-lifecycle-continuity-evidence.test.ts",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "reconciliation": {
+    "acceptanceClauses": {
+      "proposal": "PARTIAL",
+      "approval": "PARTIAL",
+      "history": "PARTIAL",
+      "recovery": "PARTIAL"
+    },
+    "producerFamilies": 11,
+    "modeledOperations": 14,
+    "directProjections": 16,
+    "stage11MatrixRedoBindings": 8,
+    "aggregateDirectStrands": 9,
+    "currentAggregateAuthorityIndexedRedoBindings": 9,
+    "currentAggregateAuthorityIndexedRedoBindingEntries": [
+      "project.create",
+      "project.save",
+      "project.rename",
+      "project.add-scene.persist",
+      "project.asset.bind",
+      "project.asset.register-audio",
+      "project.asset.register-handout",
+      "project.asset.register-token",
+      "project.add-scene.commit-in-memory"
+    ],
+    "countScopeNote": "The Stage 11 matrix retains 8 redo bindings and the aggregate direct-strand field retains 9. The current aggregate-authority source/test separately indexes 9 redo entries, including the supplemental project.add-scene.commit-in-memory row; these are not collapsed into one measure.",
+    "attachmentCoverage": {
+      "m914": "one-producer-scoped-non-certifying",
+      "m916": "one-producer-scoped-non-certifying",
+      "m918": "one-producer-scoped-non-certifying",
+      "m920": "one-producer-scoped-non-certifying",
+      "m923": "one-producer-scoped-non-certifying",
+      "m925": "one-producer-scoped-non-certifying",
+      "m927": "one-producer-scoped-non-certifying",
+      "m929": "one-producer-scoped-non-certifying",
+      "m931": "one-producer-scoped-non-certifying",
+      "m933": "one-cross-producer-producer-scoped-non-certifying"
+    },
+    "currentAuthority": "PARTIAL",
+    "aggregateAuthority": "NOT_GRANTED",
+    "crossProducerContinuity": "INCOMPLETE",
+    "packagedRuntimeAuthority": "INCOMPLETE",
+    "directActiveGmFoundryEvidence": "INCOMPLETE",
+    "runtimeLane": "PARKED",
+    "stage11": "BLOCKED",
+    "stage12": "LOCKED",
+    "readyClaim": false
+  },
+  "disposition": {
+    "m933Reread": "PASS: exact M874 native cross-producer conformance remains attached with generation, primary/backup, explicit approval, authoritative reread, preservation, no-Foundry-write, no-retry, and non-certification boundaries.",
+    "coverage": "PASS: M933 is distinct from and does not alter the nine operation-specific current-authority redo entries or the explicit 8-versus-9 count scope.",
+    "remainingDirectBlocker": "Aggregate current authority and cross-producer committed/recovered continuity remain unproven; the native M874 test is producer-scoped and non-certifying.",
+    "otherBlockers": "Packaged/runtime authority and direct active-GM/Foundry evidence remain incomplete; the aggregate Stage 11 acceptance claim remains unsupported. No directly evidenced code-only attachment gap remains selected."
+  },
+  "validation": {
+    "focusedEvidenceSuite": "PASS: 2 files; 17 tests",
+    "relatedStage11EvidenceSuite": "PASS: 33 files; 90 tests",
+    "fullRepositorySuite": "PASS: 218 files; 980 tests",
+    "knowledgeBaseQueryAndWorkflowSuite": "PASS: 2 files; 86 tests",
+    "packageTypeCheck": "PASS: npm run build:packages",
+    "workflowCheck": "PASS: score 63; 10/16 gates; activeStage proposal-approval-history; build lane only; failures 0; violations 0; readyClaim false",
+    "databaseRebuildAndVerify": "PASS: integrity ok; sources 1430, facts 1187, decisions 1069, active work 105, research subjects 40, milestones 26",
+    "negativeCoverage": "PASS: altered source, target, generations, primary/backup, approval, reread, preservation, authority, count, and non-certification inputs fail closed",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "limits": {
+    "readOnlyEvidence": true,
+    "runtimeOrFoundryAction": false,
+    "providerOrCredentialActivity": false,
+    "playerPasswordsGenerated": false,
+    "foreignStateTouched": false,
+    "aggregateCountsChanged": false,
+    "runtimeLaneReopened": false,
+    "authorityPromoted": false,
+    "stage11AcceptanceStatus": "blocked",
+    "stage12Started": false,
+    "readyClaim": false
+  },
+  "doesNotProve": [
+    "complete proposal, approval, history, or recovery authority across all producer families",
+    "cross-producer committed/recovered aggregate authority or Stage 11 acceptance",
+    "packaged/runtime, Foundry, GM, or player behavior",
+    "generic execution, project mutation, or provider/credential integration",
+    "Stage 12 entry",
+    "Ready-to-Play"
+  ],
+  "next": "Hold at the Stage 11 acceptance boundary until an explicitly authorized and directly evidenced cross-producer committed/recovered authority source is available; do not infer aggregate authority, reopen the parked runtime lane, or enter Stage 12."
+}

@@ -1,0 +1,84 @@
+{
+  "operation": "dicebox.stage11.broken-reference-ui.v3-artifact-build",
+  "milestone": "M544",
+  "status": "PASS_LOCAL_ARTIFACT_ATTESTED",
+  "capturedAt": "2026-08-29T22:38:00-07:00",
+  "goalId": "O-116",
+  "stage": "proposal-approval-history",
+  "build": {
+    "command": "npm run desktop:tauri:build",
+    "environment": {
+      "VITE_DBX_PROJECT_SELF_TEST": "broken-reference-detach-ui-v3-execute",
+      "VITE_DBX_PROJECT_SELF_TEST_EXIT": "1"
+    },
+    "exitCode": 0,
+    "attempts": 1,
+    "cargoProfileDuration": "1m 17s"
+  },
+  "artifacts": [
+    {
+      "path": "apps/campaign-helper-desktop/src-tauri/target/debug/dicebox-campaign-helper-desktop.exe",
+      "sha256": "0899395DA35999AF36E32500658BA87B4D65230A095910B90A3A5046FACF9281"
+    },
+    {
+      "path": "apps/campaign-helper-desktop/dist/assets/index-BqO7BZhy.js",
+      "sha256": "651B9FC6ABC4C7D0DABCECAF4B6BAA899CC2CFBAD94620407828ADCE26B39A41"
+    }
+  ],
+  "markerAttestation": {
+    "status": "PASS",
+    "bundleMarkers": [
+      "broken-reference-detach-ui-v3-execute",
+      "desktop-broken-reference-ui-lifecycle-self-test-v3",
+      "broken-reference-ui-self-test-v3",
+      "prepare_broken_reference_ui_lifecycle_fixture_v3",
+      "loadDesktopBrokenReferenceUiV3SelfTestProposalSession",
+      "saveDesktopBrokenReferenceUiV3SelfTestProposalSession",
+      "The broken-reference UI self-test target requires its closed typed session namespace.",
+      "TEST_OWNED_EXACT",
+      "BACKGROUND_ASSET_ROLE_MISMATCH",
+      "no session was replaced",
+      "recovery-proposal-session",
+      "reviewer-approval",
+      "typed-detach-apply"
+    ],
+    "sourceMarkers": [
+      "const useV3SelfTest = mode === \"broken-reference-detach-ui-v3-execute\";",
+      "const selfTestScope: DesktopProjectProposalSessionScope = useV3SelfTest ? DESKTOP_BROKEN_REFERENCE_UI_SELF_TEST_V3_SCOPE : \"broken-reference-ui-self-test\";",
+      "prepareBrokenReferenceUiLifecycleFixtureV3",
+      "loadDesktopBrokenReferenceUiV3SelfTestProposalSession"
+    ]
+  },
+  "processReread": "PASS: no desktop, Cargo, or Rustc process remained",
+  "validation": {
+    "artifactBuild": "PASS",
+    "embeddedSourcePackageTypeChecks": "PASS",
+    "workflow": "PASS: 10/16 gates, Ready-to-Play false",
+    "activeCardJson": "PASS"
+  },
+  "excludedActions": [
+    "launch",
+    "capture",
+    "fixture preparation",
+    "browser-storage inspection",
+    "session transition, clearing, replacement, or recovery",
+    "project/runtime mutation",
+    "Foundry action",
+    "provider or credential access",
+    "player-role password creation"
+  ],
+  "nextBoundary": {
+    "milestone": "M545",
+    "scope": "One separately bounded timeout-aware packaged v3 lifecycle observation against this exact M544 executable, allowing only the guarded v3 fixture preparation, proposal/session lifecycle, authoritative reread, and process reread; preserve any BLOCKED or timeout result and do not retry.",
+    "reason": "M544 proves the v3 artifact boundary. M545 is the first observation that may create or reuse only the exact refuse-to-overwrite v3 fixture and exercise M539 from a new MISSING session boundary.",
+    "prohibited": [
+      "second capture",
+      "browser-storage inspection",
+      "v2 session clear/replacement/recovery",
+      "unrelated fixture/project/runtime mutation",
+      "provider, credential, browser, Foundry, or player-password action"
+    ]
+  },
+  "readyToPlay": false,
+  "notes": "M544 attests a fresh v3 artifact only. It does not certify v3 fixture preparation, the packaged lifecycle, approval, apply, reread, commit, Stage 11, Foundry authority, or Ready-to-Play."
+}

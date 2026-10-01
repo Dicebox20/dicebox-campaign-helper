@@ -1,0 +1,22 @@
+{
+  "receiptType": "stage12-fixture-shutdown-closure",
+  "milestone": "M1095",
+  "status": "closed",
+  "evidenceClass": "fixture",
+  "target": {
+    "dataPath": "work/foundry-fixture-data-v2",
+    "worldId": "dbx-test-world",
+    "port": 30001,
+    "pid": 21228,
+    "fingerprint": "47E4A213511831674B50D1BC6194B6876E9D78B60CB0037B7387C09D57A26F3F"
+  },
+  "preStop": "PASS exact process and exclusive port ownership",
+  "normalStop": "access refused by Windows",
+  "guardedForcedStop": "PASS verified supervisor-owned process",
+  "postStop": "STOPPED; no listeners",
+  "worldDocumentWrites": 0,
+  "balladTouched": false,
+  "browserInteraction": false,
+  "sessionCreated": false,
+  "nextMilestone": "M1096 explicit user-provided Gamemaster identity login"
+}

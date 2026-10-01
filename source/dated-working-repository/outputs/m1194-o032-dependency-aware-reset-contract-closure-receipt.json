@@ -1,0 +1,12 @@
+{
+  "operation": "ascendancy.reset.contract",
+  "milestone": "M1194",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "artifacts": ["packages/dicebox-core/src/ascendancy-reset-contract.ts", "tests/ascendancy-reset-contract.test.ts"],
+  "coverage": {"focusedTests": "2/2 PASS", "packageTypecheck": "PASS", "workflow": "PASS"},
+  "contract": {"preview": "no-write/runtime-not-invoked", "apply": "in-memory-only", "cascade": ["selected-puzzle", "derived-pair", "cooperative", "final-activation", "owned-runtime"], "unknownPuzzle": "blocked", "idempotent": true, "foreignState": "preserved"},
+  "remainingBoundary": "O-032 still needs separately authorized exact-runtime target-bound preview/post-reset authoritative reread; no Regionwright patch or live reset was attempted.",
+  "stage12Accepted": false,
+  "readyClaim": false
+}

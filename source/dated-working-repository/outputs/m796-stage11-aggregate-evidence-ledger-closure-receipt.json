@@ -1,0 +1,12 @@
+{
+  "receiptVersion": 1,
+  "milestone": "M796",
+  "operation": "project.stage11.aggregate-evidence-ledger",
+  "status": "PASS",
+  "evidenceClass": "local",
+  "sourceSha256": "56B6DEEDC0F79A045571E06DA5A6A7C3C45F1241FD612740DA98B4CB014848CE",
+  "testSha256": "01A3261B93C5D3C5F2A28DE75BE29966B42E42353009D5816A8D8F89F0E55168",
+  "validation": { "focusedTests": "PASS (2 tests)", "packageTypecheck": "PASS", "knowledgeBaseRebuild": "PASS", "workflowCheck": "PASS", "diffCheck": "PASS" },
+  "evidence": { "directRuntime": "current-active-gm-identity-observed", "historicalPackage": "served-no-dialog-observation", "lifecycle": "modeled-cross-producer-partial", "operationCount": 14 },
+  "limits": { "noPermissionAuthority": true, "noExecutionAuthority": true, "noRecoveryAuthority": true, "stage11Accepted": false, "stage12Entered": false }
+}

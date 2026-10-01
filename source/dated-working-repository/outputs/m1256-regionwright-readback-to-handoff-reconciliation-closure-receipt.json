@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0",
+  "milestone": "M1256",
+  "operation": "regionwright.readback-to-handoff.reconciliation",
+  "status": "PASS_EVIDENCE_LAYER_RECONCILIATION",
+  "evidenceClass": "deterministic",
+  "inputs": [
+    "outputs/m1255-exact-v4-regionwright-handoff-readback-closure-receipt.json",
+    "packages/dicebox-compiler/src/campaign-package.ts",
+    "packages/dicebox-foundry/src/ascendancy-installer.js",
+    "outputs/m1241-exact-v4-regionwright-handoff-apply-outcome-unknown-receipt.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json"
+  ],
+  "classification": {
+    "targetBoundProven": [
+      "Exact dbx-test-world / Foundry 14.367 / dnd5e 5.3.3 / active-Gamemaster target",
+      "Current Regionwright readback of 61 helper Regions, 22 behaviors, five teleports, four room summaries, and zero readback errors",
+      "Fixed transport noWrite:true, apply:false, authoritativeReread:true, noWritesPerformed:true",
+      "One readback dialog closed with zero remaining dialogs; supervisor PID 11204 remained PASS with zero world-document writes and balladTouched:false"
+    ],
+    "persistentOrHistoricalNotProven": [
+      "Historical installer PASS receipt and post-apply committed-state reread",
+      "Persistent-world promotion authority and package-owned native document provenance",
+      "Foreign-state and geometry preservation after apply",
+      "Player behavior, player/password state, full exact-runtime behavior/permission proof, Stage 12, and Ready-to-Play"
+    ],
+    "unchangedBlockers": [
+      "M1241 remains outcome-unknown and is not relabeled",
+      "Canonical campaign-package exact-runtime and Regionwright integration blockers remain open",
+      "M1255 target-bound transport success does not authorize installer/apply or broader mutation"
+    ]
+  },
+  "decision": "M1255 closes the target-bound Regionwright readback evidence gap but not the persistent-world/installer authority gap. The smallest directly evidenced next step is the existing helper-owned four-Scene persistent-world reread, with no Regionwright or installer mutation.",
+  "runtime": {
+    "runtimeAction": false,
+    "browserAction": false,
+    "controlInvocation": false,
+    "writes": false,
+    "readyClaim": false
+  },
+  "next": "M1257: invoke only Reread DiceBox Four-Scene Persistent World once under current exact active-Gamemaster gates, capture and close its no-write receipt, and reread supervisor state."
+}

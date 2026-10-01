@@ -1,0 +1,55 @@
+{
+  "receiptVersion": 1,
+  "receiptId": "dbx:receipt:m1180-stage12-nested-data-served-parity-recovery-closure",
+  "operation": "stage12.nested-data.served-parity-recovery.closure",
+  "stageId": "foundry-execution-evidence-foundation",
+  "milestone": "M1180",
+  "status": "CLOSED_M1180_NESTED_DATA_SOURCE_STAGED_SERVED_PARITY_PASS",
+  "evidenceLabel": "fixture",
+  "observedAt": "2026-09-06",
+  "summary": "Corrected the M1179 staging target to the exact nested Foundry Data root and proved current source/staged/served installer parity without login or mutation.",
+  "target": {
+    "destinationRoot": "work/foundry-fixture-data-v2/Data",
+    "moduleRoot": "work/foundry-fixture-data-v2/Data/modules/dicebox-campaign-helper",
+    "wrongTargetPreserved": "work/foundry-fixture-data-v2/modules/dicebox-campaign-helper"
+  },
+  "sourceStaged": {
+    "status": "PASS",
+    "fileCount": 6,
+    "files": [
+      {"relativePath":"module.json","sha256":"ca1e2b51434890902b4e8d8c8406c6111a40733210a0db1bc395dd9ce6c6cc13","match":true},
+      {"relativePath":"src/module.js","sha256":"8b2b819c1d5e8358749834f18c9c1d59846ef283da17103463abf2a94c3c3cd8","match":true},
+      {"relativePath":"src/ascendancy-installer.js","sha256":"482b955526aabe9724c218c939723932c87380b207ebc18713c2292da5e59ad8","match":true},
+      {"relativePath":"src/foundry-live-bridge.js","sha256":"2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87","match":true},
+      {"relativePath":"src/program-scene-vertical-slice.js","sha256":"3a063c2dec5a4bf7ad7b6b13ce602ff4edcf32071c419e3ad7c5d265274113ab","match":true},
+      {"relativePath":"ascendancy-campaign-package.json","sha256":"2f257477f02aac0a60b01d6c0aefef738484be5c437a708bd293945ccf90645f","match":true}
+    ]
+  },
+  "served": {
+    "status": 200,
+    "contentType": "text/javascript; charset=utf-8",
+    "bytes": 49907,
+    "sha256": "482b955526aabe9724c218c939723932c87380b207ebc18713c2292da5e59ad8",
+    "matchesCurrentM1178": true,
+    "allowlistedRequestCount": 1
+  },
+  "runtime": {
+    "startStatus": "PASS",
+    "foundryVersion": "14.367",
+    "system": "dnd5e@5.3.3",
+    "pid": 30560,
+    "manualGamemasterJoin": false,
+    "browserOpened": false,
+    "writeControlInvoked": false,
+    "installerInvoked": false,
+    "worldDocumentWrites": 0,
+    "balladTouched": false,
+    "stopStatus": "PASS",
+    "stopNormal": "required-force-fallback",
+    "finalStatus": "STOPPED",
+    "finalListeners": [],
+    "foreignStatePreserved": true,
+    "readyClaim": false
+  },
+  "nextBoundary": "M1181 exact-Gamemaster Signal/Rune fixed create-control sequence with manual typed Gamemaster, blank password, one explicit approval, authoritative pre/post reread, and final stop evidence."
+}
