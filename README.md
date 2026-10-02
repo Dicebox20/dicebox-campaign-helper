@@ -1,6 +1,6 @@
 # DiceBox Campaign Helper
 
-Active desktop-program implementation and bundled foundation for the semantic DiceBox program and its Foundry VTT module.
+Canonical source repository for Dicebox Campaign Helper: the AI-native TTRPG campaign workspace, Foundry VTT control/deployment system, campaign knowledge layer, scene/asset tooling, and associated server/runtime components.
 
 The current product architecture and ordered implementation roadmap are [Campaign Helper Architecture Decision Report](docs/CAMPAIGN-HELPER-ARCHITECTURE-DECISION-REPORT-2026-08-23.md) and [DiceBox Campaign Helper Program Roadmap](docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md). The active machine-enforced gate is [ACTIVE-PROGRAM-SLICE.json](docs/ACTIVE-PROGRAM-SLICE.json). Campaign-specific Tram work is parked with its evidence preserved while the program-first authoring spine is built.
 
@@ -8,7 +8,7 @@ The project now contains a read-only snapshot of the authoritative foundation: `
 
 The project mission and the single-Foreman/bounded-Worker rules for all primary and isolated tasks are documented in [PROJECT-MISSION-AND-ORCHESTRATION.md](docs/PROJECT-MISSION-AND-ORCHESTRATION.md). The knowledge base record for this governance change is `SRC-M142-DICEBOX-MISSION-FOREMAN-WORKER`.
 
-The current runtime-probe slice does not compile campaign content or mutate a Foundry world. It records read-only runtime metadata at Foundry `ready` and exposes diagnostics while keeping document writes unavailable. The bundled database is source material for deterministic tooling and has no runtime write path.
+Historical milestone descriptions below are preserved where useful, but current work selection is governed by the roadmap, active program slice, and October 1 unification record. Do not infer current capability or authority from an older milestone paragraph alone.
 
 All future Foundry-facing development is constrained by the [Foundry API Binding Matrix](docs/FOUNDRY-API-BINDING-MATRIX-2026-08-21.md); semantic compiler contracts are not substitutes for official Foundry document, collection, lifecycle, user, Scene, Region, Activity, or ActiveEffect APIs.
 
