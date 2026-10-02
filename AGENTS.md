@@ -1,6 +1,6 @@
 # DiceBox Campaign Helper Implementation Contract
 
-The authoritative project contract is the foundation `AGENTS.md` at `C:\Users\rujie\Documents\Codex\DiceBox Campaign Helper\AGENTS.md`; the bundled files in this repository are a read-only project snapshot.
+The authoritative project contract is this repository's `AGENTS.md`, reconciled with the current roadmap, active program slice, accepted decisions, and reproducible knowledge base. Local and cloud workspaces are disposable execution environments and do not outrank the GitHub repository.
 
 Source precedence is: this contract and current ADRs; canonical foundation decisions and invariants; exact-stack runtime evidence; project dossiers and research; historical conversations and examples. Never silently merge a conflict; record the reconciliation and retain provenance.
 
