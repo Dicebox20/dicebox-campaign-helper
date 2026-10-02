@@ -4,7 +4,7 @@ Canonical source repository for Dicebox Campaign Helper: the AI-native TTRPG cam
 
 The current product architecture and ordered implementation roadmap are [Campaign Helper Architecture Decision Report](docs/CAMPAIGN-HELPER-ARCHITECTURE-DECISION-REPORT-2026-08-23.md) and [DiceBox Campaign Helper Program Roadmap](docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md). The active machine-enforced gate is [ACTIVE-PROGRAM-SLICE.json](docs/ACTIVE-PROGRAM-SLICE.json). Campaign-specific Tram work is parked with its evidence preserved while the program-first authoring spine is built.
 
-The project now contains a read-only snapshot of the authoritative foundation: `PROJECT_CHARTER.md`, `FOUNDATION_PLAN.md`, `GAP_RESEARCH.md`, `STATUS.md`, the reproducible SQLite knowledge base under `database/`, and the foundation ADR reference under `docs/ADR-0001-foundation-reference.md`. The original source remains at `C:\Users\rujie\Documents\Codex\DiceBox Campaign Helper`.
+This GitHub repository is the authoritative project source. `PROJECT_CHARTER.md`, `FOUNDATION_PLAN.md`, `GAP_RESEARCH.md`, `STATUS.md`, the reproducible SQLite knowledge base under `database/`, and the current roadmap/control documents are maintained here. Local checkouts and cloud workspaces are disposable working copies and do not outrank the repository. The October 1 unification decision is recorded in `docs/DICEBOX-CAMPAIGN-HELPER-UNIFICATION-2026-10-01.md`.
 
 The project mission and the single-Foreman/bounded-Worker rules for all primary and isolated tasks are documented in [PROJECT-MISSION-AND-ORCHESTRATION.md](docs/PROJECT-MISSION-AND-ORCHESTRATION.md). The knowledge base record for this governance change is `SRC-M142-DICEBOX-MISSION-FOREMAN-WORKER`.
 
