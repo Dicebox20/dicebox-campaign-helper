@@ -1,6 +1,58 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-10-01",
+  "acceptedForemanWorkflowContinuityRevision20261001": {
+    "id": "foreman-workflow-continuity-revision-2026-10-01",
+    "status": "implemented-local-pass",
+    "acceptanceObservation": "Adapt Star*Tup's repository-first foreman continuity pattern to Campaign Helper with durable bounded-work checkpoints, disk-first recovery, single-writer authority, bounded Worker leases, and independent Foreman verification.",
+    "authorityBoundary": "Campaign Helper remains governed by its foundation/local AGENTS chain, roadmap, active card, reproducible KB, exact runtime gates, and sovereign Foundry state. This revision does not import Star*Tup product gates or authority, close M1284, automate authentication, promote Stage 12, authorize live mutation, or change readyClaim:false.",
+    "implementationBundle": "Create docs/FOREMAN-WORKFLOW-CURRENT.md, scripts/Write-CampaignHelperCheckpoint.ps1, scripts/Show-CampaignHelperRecoveryState.ps1, and the minimum AGENTS.md pointer/rules needed to make the workflow durable.",
+    "deterministicCheck": "New workflow and helper scripts are readable, checkpoint writer creates timestamped plus latest receipts, recovery helper reports current control-plane/checkpoint/working-tree state, active JSON parses, KB rebuild/verification passes, and existing workflow checks remain non-promotional.",
+    "liveCheck": "None. Governance and continuity tooling are local-only and must not invoke Foundry, browser authentication, Regionwright controls, or M1284.",
+    "implementationVerification": "PASS LOCAL: the canonical Foreman workflow, checkpoint writer, recovery-state reader, and AGENTS continuity rules are implemented. Checkpoint and recovery smoke tests passed; workflow:check passed with Stage 12 active and zero violations; workflow:test passed 5 cases. Receipt: outputs/foreman-workflow-continuity-closure-receipt-2026-10-01.json. No Foundry/browser/runtime/authentication action occurred.",
+    "nextAction": "Rebuild and verify the KB authorization packet, then implement the bounded foreman workflow bundle without touching the active M1284 runtime lane."
+  },
+  "acceptedForemanWorkflowConsolidation20261001": {
+    "id": "foreman-workflow-consolidation-2026-10-01",
+    "status": "superseded-by-continuity-closure",
+    "acceptanceObservation": "Consolidate the existing DiceBox single-Foreman and bounded-Worker rules into one disk-recoverable current workflow patterned after the proven Star*Tup foreman model, while preserving Stage 12, M1284, the exact 16-stage order, database-first synchronization, and readyClaim:false.",
+    "allowedScope": "Create docs/FOREMAN-WORKFLOW-CURRENT.md in the working and foundation authority trees, synchronize both AGENTS contracts to require it, record the decision in the roadmap/card/KB, and run deterministic validation. No product-code, browser, supervisor, Foundry, campaign-document, player/password, asset, Blueprint, Regionwright, or live-runtime mutation is included.",
+    "sourceWorkflow": "C:/Users/rujie/Documents/ChatGPT/Star_Tup/AGENTS.md and C:/Users/rujie/Documents/ChatGPT/Star_Tup/docs/FOREMAN-WORKFLOW-CURRENT.md are process references only; Campaign Helper authority and safety rules remain controlling.",
+    "deterministicCheck": "The two Campaign Helper FOREMAN-WORKFLOW-CURRENT.md copies are byte-identical; both AGENTS contracts point to the workflow; the KB rebuild and verification pass; npm run workflow:check passes; active scene-authoring-breadth Stage 12 and M1284 next action remain unchanged; readyClaim remains false.",
+    "liveCheck": "None. This is governance/control-plane work only.",
+    "authorityBoundary": "The workflow consolidates execution and recovery procedure. It cannot accept a product stage, grant Foundry authority, override the reproducible KB or roadmap, turn a Worker into a second Foreman, or promote staged/static evidence to runtime evidence.",
+    "implementationVerification": "SUPERSEDED/RECONCILED: retained for provenance. The canonical implementation is acceptedForemanWorkflowContinuityRevision20261001 with docs/FOREMAN-WORKFLOW-CURRENT.md, scripts/Write-CampaignHelperCheckpoint.ps1, and scripts/Show-CampaignHelperRecoveryState.ps1. Foundation copies are synchronized to that final implementation; Stage 12, M1284, and readyClaim:false remain unchanged.",
+    "nextAction": "After roadmap/card/KB reconciliation, implement the workflow document and AGENTS references, validate them, write a bounded closure receipt/checkpoint, then return to the existing M1284 manual Gamemaster rejoin boundary.",
+    "stopCondition": "Any product-code mutation, live Foundry operation, stage advancement, authentication automation, foreign-state change, or Ready-to-Play claim stops this governance slice."
+  },
+  "acceptedGPTWorkspaceRoadmapRevision20261001": {
+    "id": "gpt-workspace-roadmap-revision-2026-10-01",
+    "status": "accepted-sequencing-revision",
+    "acceptanceObservation": "Adopt a calibration-first roadmap sequence that prepares an app-integrated ChatGPT workspace after the current Stage 12 runtime boundary, while preserving the active M1284 manual Gamemaster rejoin gate, the exact 16-stage workflow, the database-first rule, and readyClaim:false.",
+    "evidenceSources": [
+      "https://github.com/Phelan164/codex-howto",
+      "https://github.com/green-dalii/obsidian-llm-wiki-cli/blob/main/ROADMAP.md",
+      "https://github.com/DatenpflegeNordHL/Codex-Looper",
+      "https://github.com/undeemed/get-shit-done-codex/blob/main/CHANGELOG.md",
+      "https://github.com/Arystos/skill-codex/blob/master/ROADMAP.md",
+      "https://developers.openai.com/blog/run-long-horizon-tasks-with-codex",
+      "https://openai.com/index/harness-engineering/"
+    ],
+    "adoptedSequence": [
+      "control-plane-reconciliation",
+      "chatgpt-workspace-foundation",
+      "calibration-read-only-vertical-slice",
+      "guarded-project-tools",
+      "bounded-codex-escalation",
+      "campaign-and-live-runtime-breadth"
+    ],
+    "firstSlice": "Visible desktop ChatGPT workspace, typed request/response envelope, app-owned read-only status and calibration tools, receipt viewer, and deterministic local smoke test. Reuse the existing React/Tauri shell, Zod contracts, and Responses route where compatible; do not begin with generic shell access, arbitrary code execution, ChatKit, MCP, or a self-hosted environment.",
+    "calibrationAcceptance": "The workspace can inspect one calibration target, show measured versus expected coordinates/scale/viewport, explain the discrepancy, and produce a no-write correction proposal with a reproducible diagnostic receipt.",
+    "authorityBoundary": "This record changes scheduling only. It does not close M1284, promote Stage 12, authorize live mutation, certify the workspace, or create a second authority plane. A separate implementation change card and KB reconciliation are required before coding.",
+    "deterministicCheck": "Roadmap evidence links and adopted sequence are present; active Stage 12/M1284 next action remains unchanged; workflow checker still reports zero violations and readyClaim:false; database rebuild and verification succeed.",
+    "liveCheck": "None. This is a local roadmap/control-plane revision; no browser, supervisor, Foundry, or external publication action occurred.",
+    "nextAction": "Keep M1284 as the immediate runtime action. After that boundary closes, create the separate workspace-foundation implementation card and reconcile it in the KB before implementation."
+  },
   "acceptedM1197CampaignHelperMapLabDesktopPreview": {
     "id": "m1197-campaign-helper-map-lab-desktop-preview-2026-09-06",
     "status": "closed-m1197-local-desktop-preview-pass",

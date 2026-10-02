@@ -11,6 +11,6 @@ with sqlite3.connect(database_path) as connection:
         "milestones": connection.execute("SELECT COUNT(*) FROM kb_milestones").fetchone()[0],
         "tools": connection.execute("SELECT COUNT(*) FROM kb_tools").fetchone()[0],
     }
-    if checks["integrity"] != "ok" or checks["research_subjects"] != 41 or checks["tools"] < 1:
+    if checks["integrity"] != "ok" or checks["research_subjects"] != 46 or checks["tools"] < 1:
         raise SystemExit(checks)
     print(checks)

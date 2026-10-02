@@ -1,0 +1,20 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointId":  "foreman-workflow-consolidation-20261001",
+    "timestamp":  "2026-10-01T14:58:51.0929366-07:00",
+    "status":  "PASS_LOCAL",
+    "continuation":  "STOP",
+    "activeStage":  "scene-authoring-breadth",
+    "activeBoundary":  "M1284 manual Gamemaster rejoin",
+    "evidenceLabel":  "local",
+    "sourceHead":  "eb222b98342e17eaf6830182fac5d193be9e3784",
+    "workflowReceipt":  "outputs/foreman-workflow-consolidation-closure-receipt-2026-10-01.json",
+    "workflowSha256":  "973EC2527B6128EC02ABBF2F7F9F8F32BAB756780AE4CD5F6AA332D2A9426D15",
+    "validation":  [
+                       "KB integrity ok",
+                       "workflow check PASS with zero violations and readyClaim false",
+                       "focused governance tests 110/110"
+                   ],
+    "blocker":  "Manual Gamemaster rejoin required; authentication is not automated.",
+    "nextAction":  "After the user manually rejoins Gamemaster in browser tab 14, reread exact v5 runtime/active-GM/control exposure and continue only the already-authorized single M1284 loaded identity-control observation."
+}
