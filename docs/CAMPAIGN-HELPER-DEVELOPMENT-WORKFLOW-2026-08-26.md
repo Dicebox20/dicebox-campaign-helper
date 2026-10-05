@@ -111,6 +111,18 @@ Stage 9 is `foundry-execution-evidence-foundation`, before conversational and br
 
 Never depend on same-batch references to documents created earlier in that batch. Never use rendered pixels as geometry authority. A macro is a bounded transport or legacy compatibility fixture, not a generic runtime architecture.
 
+## Additive Scene Injector workflow hardening — 2026-10-05
+
+This additive hardening does not change the six authority planes, the 16-stage product order, or the meaning of runtime certification. It hardens one recurring deliverable boundary that previously depended too heavily on conversational memory.
+
+For DiceBox Foundry Scene Injector work, the named sequence `PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD` is a workflow API. `BUILD` is not generic packaging. The canonical BUILD artifact is exactly one Markdown file containing exactly one self-contained executable JavaScript injection macro. Embedded art may be compressed and split into internal string chunks, but it must be reassembled and decoded inside that same macro; multiple user-run macro parts are forbidden.
+
+Agents must load `.codex/skills/dicebox-injector-workflow/SKILL.md` for these operations. Before delivery, a BUILD artifact must pass `node tools/validate-dicebox-build.mjs <artifact.md>`. Failure blocks delivery. The validator rejects wrong primary formats such as ZIP, multiple code blocks/macros, missing contract markers, instructions for a second macro/part, and forbidden `eval`, `new Function`, or raw WebSocket execution primitives.
+
+If the canonical workflow, approved art/spec, or validator cannot be loaded or reconciled, the operation is BLOCKED. Do not improvise a ZIP, loose folder, alternate packaging format, or manual multi-macro recovery path. The exact regression and enforcement layers are recorded in `docs/DICEBOX-INJECTOR-WORKFLOW-HARDENING-2026-10-05.md`.
+
+Passing this packaging validator proves only workflow/transport conformance. It does not prove Foundry installation, exact-stack compatibility, committed runtime state, or gameplay; those still require the existing preview, execution authority, reread, validation, and receipt evidence.
+
 ## Iggwilv legacy fixture rule
 
 The Iggwilv Final Chamber comparison is retained as a Stage 9 evidence corpus:
