@@ -53,7 +53,7 @@
     "browser:world-launch-repro": "node tools/browser-driver-world-launch-repro.mjs",
     "foundry:fixture-plan": "tsx tools/print-foundry-fixture-plan.ts",
     "kb:query": "python database/query_knowledge.py",
-    "check:full": "npm run workflow:check && npm run check && npm run verify:tooling",
+    "check:full": "npm run workflow:check && npm run workflow:test && npm run check && npm run verify:tooling",
     "test:first-round": "npm run check:full",
     "test:utility-e2e": "playwright test --config=playwright.config.ts",
     "test:utility-a11y": "playwright test --config=playwright.config.ts --project=accessibility",
@@ -69,7 +69,7 @@
     "maps:universal-export": "tsx tools/write-universal-battlemap-export.ts",
     "compile:campaign-helper-map-lab": "tsx tools/write-campaign-helper-map-lab-package.ts",
     "workflow:check": "node tools/check-active-slice.mjs docs/ACTIVE-PROGRAM-SLICE.json",
-    "workflow:test": "node tools/check-active-slice-self-test.mjs",
+    "workflow:test": "node tools/check-active-slice-self-test.mjs && node tools/validate-dicebox-build-self-test.mjs",
     "desktop:dev": "npm run dev -w @dicebox/campaign-helper-desktop",
     "desktop:build": "npm run build -w @dicebox/campaign-helper-desktop",
     "desktop:tauri:dev": "node tools/run-tauri-desktop.mjs dev",
@@ -78,7 +78,9 @@
     "codex:app-server:job": "node tools/run-codex-app-server-slice.mjs job",
     "codex:app-server:director": "node tools/run-campaign-director-app-server-slice.mjs",
     "codex:app-server:account-metadata": "node tools/run-codex-account-metadata-probe.mjs",
-    "director:proposal": "tsx tools/run-campaign-director-slice.ts"
+    "director:proposal": "tsx tools/run-campaign-director-slice.ts",
+    "injector:validate": "node tools/validate-dicebox-build.mjs",
+    "injector:self-test": "node tools/validate-dicebox-build-self-test.mjs"
   },
   "dependencies": {
     "zod": "^3.25.76"
