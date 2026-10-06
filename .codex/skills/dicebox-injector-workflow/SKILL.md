@@ -165,6 +165,8 @@ If `DICEBOX_DISCOVERY_DENSITY: special` is used, the macro must also include:
 
 An ordinary scene with more than two discoveries is invalid. A special scene with more than two discoveries is invalid unless the approval marker and reason are present.
 
+User-confirmed micro-hints are authoritative when the detail is too small or blended for reliable automated visual inspection. Do not fail or rerender an otherwise valid map merely because the assistant cannot confidently resolve a tiny clue that the user has identified. Record the user's confirmation and place the Discovery Region in a sensible nearby area rather than demanding pixel-perfect localization.
+
 INSPECT must confirm each planned discovery has a plausible visible anchor. BUILD must preserve that relationship rather than adding unsupported or arbitrary discovery Regions.
 
 
