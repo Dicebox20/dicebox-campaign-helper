@@ -72,14 +72,14 @@
       "sceneId": "E2",
       "stableSceneId": "dbx:central-lodge:e2",
       "name": "Rear Service Yard & Outbuildings",
-      "phase": "RENDER",
+      "phase": "IMPLEMENT",
       "status": "ACTIVE",
       "attempts": {
         "render": 0,
         "implement": 0
       },
-      "latestResult": "PREPARE_PASS",
-      "buildRevision": null,
+      "latestResult": "BUILD_PASS",
+      "buildRevision": "v001",
       "implementation": null,
       "dayNightSupport": {
         "mode": "aligned-state-plates",
@@ -102,6 +102,15 @@
           "Wall containment is correct.",
           "Deliberate dark pockets remain."
         ]
+      },
+      "buildArtifact": "central-lodge-e2-build-v001.md",
+      "buildReceipt": "work/lodge-campaign/scenes/E2-rear-service-yard/receipts/BUILD-v001.json",
+      "buildValidation": {
+        "status": "PASS",
+        "macroBytes": 89032,
+        "markdownBytes": 89377,
+        "sha256": "2879ebf4a03d0dc191a3cfc57cc9c7806008e423da59840d94f9bd4eff0ddcc2",
+        "note": "Node syntax check PASS and contract-equivalent DiceBox v2 marker/scale/discovery/forbidden-primitive validation PASS."
       }
     },
     {
@@ -746,6 +755,13 @@
       "phase": "PREPARE",
       "result": "PASS",
       "note": "PREPARE-v001 locked E2 topology, puzzle ownership, lighting Regions, battlemap-120 scale, and render capsule."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "E2",
+      "phase": "BUILD",
+      "result": "PASS",
+      "note": "BUILD v001 created as one Markdown file containing one self-contained JavaScript Scene Injector. Embedded day art plus exact aligned night reshade; 8 Walls, 9 Regions, one night overlay Tile, and 2 staged torch AmbientLights."
     }
   ],
   "campaignTime": {
