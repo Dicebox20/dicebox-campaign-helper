@@ -58,6 +58,59 @@ When the approved trigger event fires:
 
 No strobing or rapid light cycling is permitted.
 
+
+### Lighting pacing and sconce standard
+
+Day/night-capable areas must be authored with the lighting transition in mind from PREPARE onward.
+
+- Permanent architecture may include **visible but unlit wall sconces, lantern brackets, porch lamps, or similar fixtures** wherever a real building would plausibly have them.
+- The fixture itself may be part of the approved background renderer when it never needs to move. Do not paint an active flame, glow halo, or baked illumination into the day renderer.
+- At runtime, each authored fixture receives a Foundry AmbientLight aligned to the fixture.
+- The preferred fire simulation is Foundry's native **torch-style animated lighting effect**, with restrained flicker and no rapid cycling.
+- Day state keeps transition-controlled sconces disabled.
+- Night activation enables only the authored lights for that Scene. Large portions of the Lodge should remain dark; night does not mean every fixture ignites.
+- Light placement follows believable architecture and horror pacing rather than uniform spacing.
+- Light sources must not reveal hidden rooms, puzzle answers, or areas beyond intended Wall sight boundaries.
+- Photosensitivity-safe behavior is mandatory: no strobe, no rapid on/off loop, no high-frequency intensity changes.
+
+#### Transition pacing
+
+The event-driven day-to-night transition uses a paced sequence instead of enabling every light simultaneously:
+
+1. **Dimming:** the night plate begins to crossfade and Scene darkness rises while all transition-controlled sconces remain off.
+2. **Threshold lights:** exterior entry, porch, gate, or other primary circulation fixtures ignite first.
+3. **Interior response:** a limited number of authored window/interior sconces ignite next where the current horror/story state justifies signs of activity.
+4. **Peripheral response:** selected secondary-route fixtures ignite last, leaving deliberate dark pockets.
+5. **Settle:** Scene darkness, night plate opacity, active light set, soundscape, and campaign state are authoritatively persisted as `night`.
+
+The transition should feel gradual and uncanny, not like a building-wide electrical switch.
+
+#### Lighting-density progression
+
+Use lighting density to reinforce the campaign's horror progression:
+
+- **E1-E2 — Abandoned:** very sparse. Entry/circulation fixtures only; most of the estate remains black.
+- **E3-E4 — Haunted:** sparse, with a few isolated fixtures creating separated pools of light and stronger darkness between them.
+- **M1-M3 — Haunted / Sacrificial approach:** sparse-to-moderate. Main circulation may have usable sconces, but side rooms and service areas retain darkness.
+- **U1-U2 — Haunted / victim history:** sparse and uneven. Avoid comfortable residential coverage; nursery/attic spaces remain especially restrained.
+- **B1-B2 — Sacrificial:** practical utility light becomes less architectural and more selective. Day/night reaction may be minimal where daylight never mattered.
+- **C1-C2 — Active cult:** ritual/cult-controlled flame may exist independently of the day/night cycle. Do not automatically tie every ritual flame to sunset.
+- **N1-N3 / T1-T3 — Railway:** use railway/utility lighting logic rather than domestic sconces. Day/night state may alter ambience, but underground illumination is owned by railway/cult state.
+- **F1-F2 — Infernal:** lighting is encounter/ritual-state owned, not ordinary day/night illumination.
+
+PREPARE for each Scene records the lighting class, fixture anchors, which lights are controlled by day/night, which are controlled by puzzle/story state, and which deliberately remain dark.
+
+#### VERIFY requirements for lighting
+
+For every day/night-capable Scene, VERIFY must confirm:
+- every enabled AmbientLight is aligned to a visible/plausible fixture;
+- disabled day-state sconces emit no light;
+- torch animation reads as fire without strobing;
+- staged ignition order matches the authored pacing group;
+- Walls correctly contain light and sight;
+- intentionally dark pockets remain dark;
+- reload/reconnect restores the correct active-light set without replaying the transition.
+
 ## Phase contract
 
 ### PREPARE
