@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dicebox20.github.io/dicebox-campaign-helper/schema/dicebox-scene-automation-state-v1.json",
+  "title": "DiceBox Scene Automation State",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract",
+    "sceneKey",
+    "sceneName",
+    "stage",
+    "renderAttempt",
+    "history"
+  ],
+  "properties": {
+    "contract": {
+      "const": "dicebox-scene-automation-state/v1"
+    },
+    "sceneKey": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sceneName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stableSceneId": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Za-z0-9]{16}$"
+    },
+    "stableArrivalRegionId": {
+      "type": ["string", "null"],
+      "pattern": "^[A-Za-z0-9]{16}$"
+    },
+    "stage": {
+      "enum": [
+        "PREPARED",
+        "RENDERED",
+        "INSPECTED_PASS",
+        "INSPECTED_REDO",
+        "APPROVED",
+        "BUILT",
+        "STAGED",
+        "INJECTED",
+        "VERIFIED",
+        "COMPLETE",
+        "BLOCKED",
+        "FAILED"
+      ]
+    },
+    "renderAttempt": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "render": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "generationId": {"type": ["string", "null"]},
+        "path": {"type": ["string", "null"]},
+        "sha256": {"type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$"},
+        "promptId": {"type": ["string", "null"]}
+      }
+    },
+    "inspection": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "verdict": {"enum": ["PASS", "REDO"]},
+        "renderAttempt": {"type": "integer", "minimum": 1},
+        "generationId": {"type": ["string", "null"]},
+        "sha256": {"type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$"},
+        "notes": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "approval": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "renderAttempt": {"type": "integer", "minimum": 1},
+        "generationId": {"type": ["string", "null"]},
+        "sha256": {"type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$"},
+        "exceptions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "build": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {"type": ["string", "null"]},
+        "sha256": {"type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$"},
+        "validatorStatus": {"enum": ["PASS", "FAIL", null]},
+        "validatorPath": {"type": ["string", "null"]}
+      }
+    },
+    "job": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "jobId": {"type": ["string", "null"]},
+        "requestId": {"type": ["string", "null"]},
+        "manifestPath": {"type": ["string", "null"]}
+      }
+    },
+    "receipt": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "path": {"type": ["string", "null"]},
+        "status": {
+          "enum": ["READY", "READY_WITH_WARNINGS", "BLOCKED", "FAILED", null]
+        },
+        "buildSha256": {"type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$"}
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {"type": "string"},
+      "default": []
+    },
+    "history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["stage", "event"],
+        "properties": {
+          "stage": {"type": "string"},
+          "event": {"type": "string"},
+          "at": {"type": ["string", "null"]},
+          "evidence": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}
