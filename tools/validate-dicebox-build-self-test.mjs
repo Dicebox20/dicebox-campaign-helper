@@ -8,7 +8,7 @@ const validMacro = `# L1-04 — Cedar Crown Clearing
 // DICEBOX_SINGLE_MACRO: true
 // DICEBOX_SCENE_ID: L1-04
 // DICEBOX_ART_MODE: embedded-webp
-// DICEBOX_WORKFLOW: PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD
+// DICEBOX_WORKFLOW: PREPARE -> RENDER -> INSPECT(PASS=APPROVED) -> BUILD
 // DICEBOX_SCALE_PROFILE: battlemap-120
 // DICEBOX_GRID_TYPE: gridless
 // DICEBOX_GRID_SIZE: 120
@@ -51,6 +51,8 @@ const approvedException = validMacro
            'gridSize: 100, distance: 10, units: "ft", logicalColumns: 40, logicalRows: 30, width: 4000, height: 3000');
 
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro }).status, "PASS");
+const legacyApprovalMarker = validMacro.replace("INSPECT(PASS=APPROVED) -> BUILD", "INSPECT -> APPROVE -> BUILD");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: legacyApprovalMarker }).status, "PASS", "Legacy explicit-approval BUILD marker must remain backward compatible.");
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.zip", source: validMacro }).status, "FAIL", "ZIP regression must fail closed.");
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: `${validMacro}\n\`\`\`js\nconsole.log('second macro');\n\`\`\`` }).status, "FAIL", "Multiple macros must fail.");
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro.replace("// DICEBOX_SINGLE_MACRO: true\n", "") }).status, "FAIL", "Missing contract marker must fail.");
@@ -75,4 +77,4 @@ assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: approvedDi
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro.replace("// DICEBOX_DISCOVERY_NOTICE_POLICY: flat-d20-no-modifiers", "// DICEBOX_DISCOVERY_NOTICE_POLICY: actor-perception-roll") }).status, "FAIL", "modified Perception discovery policy must fail.");
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro.replace("// DICEBOX_DISCOVERY_NOTICE_STATE: per-character-once-until-reset", "// DICEBOX_DISCOVERY_NOTICE_STATE: reroll-on-enter") }).status, "FAIL", "reroll-farming discovery state must fail.");
 
-process.stdout.write(`${JSON.stringify({ operation: "dicebox.injector-build-contract.self-test", status: "PASS", contract: "v2", cases: 17 })}\n`);
+process.stdout.write(`${JSON.stringify({ operation: "dicebox.injector-build-contract.self-test", status: "PASS", contract: "v2", cases: 18 })}\n`);
