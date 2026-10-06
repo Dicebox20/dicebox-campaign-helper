@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.2.0",
+  "schemaVersion": "1.3.0",
   "campaignId": "central-lodge",
   "workflow": [
     "PREPARE",
@@ -710,6 +710,13 @@
       "phase": "PLAN",
       "result": "ACCEPTED_CHANGE",
       "note": "Added paced day/night lighting plan. Day/night-capable areas use visible unlit fixtures with Foundry native torch-style AmbientLights, staged ignition, deliberate dark pockets, and photosensitivity-safe verification. Underground, railway, ritual, and infernal lighting remain owned by their local story/system state rather than sunset."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "CAMPAIGN",
+      "phase": "PLAN",
+      "result": "ACCEPTED_CHANGE",
+      "note": "Map consolidation hardened: day/night and haunted-state duplicates are not separate Scenes. Their puzzle, scare, lighting, clue, access, and ambience purposes are absorbed into the surviving geography Scene via stateful Regions and Foundry runtime state. Canonical geography roster remains 21."
     }
   ],
   "campaignTime": {
@@ -849,5 +856,23 @@
         "dayNightControlled": false
       }
     }
-  }
+  },
+  "mapConsolidation": {
+    "policy": "single-geography-scene-per-area",
+    "canonicalGeographySceneCount": 21,
+    "timeOfDayDuplicateSceneCount": 0,
+    "removedTimeStatePurposePolicy": "absorb-into-surviving-scene-state",
+    "newSceneThreshold": "only materially different navigable geometry",
+    "purposeOwners": [
+      "aligned-night-plate",
+      "lighting-regions",
+      "horror-regions",
+      "notice-story-regions",
+      "stateful-doors-or-background-objects",
+      "sound-weather-state",
+      "campaign-state-gates"
+    ],
+    "note": "Current 21-map roster contains unique geography. The day/night redesign removes the need for additional duplicate night versions rather than deleting any of the 21 geography maps."
+  },
+  "regionPlan": "work/lodge-campaign/PUZZLE-REGION-PLAN.md"
 }
