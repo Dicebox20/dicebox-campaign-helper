@@ -10,7 +10,7 @@ const REQUIRED_MARKERS = [
   ["single macro", /DICEBOX_SINGLE_MACRO:\s*true/i],
   ["scene id", /DICEBOX_SCENE_ID:\s*[^\s]+/i],
   ["art mode", /DICEBOX_ART_MODE:\s*(embedded-webp|embedded-png|verified-path)/i],
-  ["workflow", /DICEBOX_WORKFLOW:\s*PREPARE\s*->\s*RENDER\s*->\s*INSPECT\s*->\s*APPROVE\s*->\s*BUILD/i],
+  ["workflow", /DICEBOX_WORKFLOW:\s*PREPARE\s*->\s*RENDER\s*->\s*(?:INSPECT\s*\(\s*PASS\s*=\s*APPROVED\s*\)|INSPECT\s*->\s*APPROVE)\s*->\s*BUILD/i],
   ["scale profile", /DICEBOX_SCALE_PROFILE:\s*(battlemap-120|explicit-exception)/i],
   ["grid type", /DICEBOX_GRID_TYPE:\s*gridless/i],
   ["grid size", /DICEBOX_GRID_SIZE:\s*\d+/i],
