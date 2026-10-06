@@ -123,6 +123,36 @@ export function validateDiceboxBuild({ artifactPath, source }) {
   const logical = parsePair(markerValue(macro, "LOGICAL_SIZE"));
   const scenePixels = parsePair(markerValue(macro, "SCENE_PIXELS"));
   const scale = parseSceneScale(macro);
+  const discoveryCount = Number(markerValue(macro, "DISCOVERY_COUNT"));
+  const discoveryDensity = markerValue(macro, "DISCOVERY_DENSITY")?.toLowerCase();
+  const discoveryAnchors = markerValue(macro, "DISCOVERY_VISIBLE_ANCHORS")?.toLowerCase();
+  const discoveryNoticePolicy = markerValue(macro, "DISCOVERY_NOTICE_POLICY")?.toLowerCase();
+  const discoveryNoticeState = markerValue(macro, "DISCOVERY_NOTICE_STATE")?.toLowerCase();
+
+  if (!Number.isInteger(discoveryCount) || discoveryCount < 0) {
+    violations.push("Discovery count must be a non-negative whole number.");
+  }
+  if (discoveryDensity === "ordinary" && discoveryCount > 2) {
+    violations.push("Ordinary Scenes may contain at most 2 discoveries.");
+  }
+  if (discoveryDensity === "special" && discoveryCount > 2) {
+    if (!/DICEBOX_DISCOVERY_DENSITY_APPROVED:\s*true/i.test(macro)) {
+      violations.push("Discovery-dense special Scenes require DICEBOX_DISCOVERY_DENSITY_APPROVED: true.");
+    }
+    const discoveryReason = markerValue(macro, "DISCOVERY_DENSITY_REASON");
+    if (!discoveryReason || discoveryReason.length < 8) {
+      violations.push("Discovery-dense special Scenes require a meaningful DICEBOX_DISCOVERY_DENSITY_REASON.");
+    }
+  }
+  if (discoveryAnchors && discoveryAnchors !== "true") {
+    violations.push("Discovery visible-anchor compliance must be true.");
+  }
+  if (discoveryNoticePolicy && discoveryNoticePolicy !== "flat-d20-no-modifiers") {
+    violations.push("Discovery Notice policy must be flat-d20-no-modifiers.");
+  }
+  if (discoveryNoticeState && discoveryNoticeState !== "per-character-once-until-reset") {
+    violations.push("Discovery Notice state must be per-character-once-until-reset.");
+  }
 
   if (markerGridType && markerGridType !== "gridless") {
     violations.push("DiceBox battle-map BUILDs must be gridless unless an explicit scale exception is approved.");
@@ -186,6 +216,8 @@ export function validateDiceboxBuild({ artifactPath, source }) {
     contract: BUILD_CONTRACT,
     scaleProfile: scaleProfile ?? null,
     sceneScale: scale,
+    discoveryCount: Number.isInteger(discoveryCount) ? discoveryCount : null,
+    discoveryDensity: discoveryDensity ?? null,
     violations,
   };
 }
