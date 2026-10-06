@@ -33,7 +33,7 @@ Required:
 
 - `.md` extension;
 - exactly one fenced JavaScript block;
-- required DiceBox contract markers;
+- required DiceBox contract markers, including v2 scale/token policy markers;
 - one single macro;
 - embedded art decodes/reassembles inside the macro when used.
 
@@ -48,3 +48,24 @@ Rejected:
 ## Evidence boundary
 
 Passing packaging validation proves only that the handoff follows the canonical single-MD/single-macro transport. It does not prove installation, exact-stack compatibility, successful runtime mutation, or gameplay. Those remain governed by the existing DiceBox preview/execute/reread/receipt rules.
+
+
+## Scale-hardening extension
+
+A second workflow failure class was identified during the forest-maze build sequence: a Scene can be technically valid yet use an undersized 50px logical grid / low-density Scene canvas, causing inconsistent map/token scale and less useful player pan/zoom space.
+
+The accepted correction is documented in `docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md`.
+
+All new generated battle-map BUILDs use `dicebox-scene-injector-build/v2` and default to the `battlemap-120` scale profile:
+
+- Gridless;
+- 120px logical grid size;
+- 5 ft per logical space;
+- PREPARE-owned logical columns/rows;
+- Scene pixels derived as columns/rows × 120;
+- token footprint remains Actor/system-size-owned;
+- Token Scale Ratio is visual-only.
+
+The validator now requires the scale markers, one `DICEBOX_SCENE_SCALE` source-of-truth constant, consistent scale arithmetic, and direct use of that constant for Scene width/height/grid fields. Explicit nonstandard scales fail closed unless PREPARE records user approval and BUILD includes both the exception approval marker and a reason.
+
+L1-01 through L1-03 remain legacy v1 BUILDs. Their runtime success is retained as evidence, but their old scale is not a template for new scenes.
