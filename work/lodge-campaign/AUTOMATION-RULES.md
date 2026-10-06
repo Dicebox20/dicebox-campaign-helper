@@ -18,6 +18,33 @@ Carry the remaining Lodge campaign maps from concept through verified Foundry Sc
 - A blocked or outcome-unknown live write never auto-retries.
 - Every Desktop Commander work turn remains capped at 20 minutes. At the cap, persist exact state and stop cleanly.
 
+
+## Map consolidation rule
+
+Day/night is a **state change inside one geography Scene**, never a reason to create a second map.
+
+- No `-night`, `-haunted`, or other time-of-day duplicate Scene is created for an area that already has an approved geography Scene.
+- If an older draft assigned story, puzzle, scare, or traversal purpose to a separate time-state map, that purpose must be absorbed into the surviving Scene through stateful Regions, Tiles/Background Objects, AmbientLights, sounds, weather, doors, and flags.
+- Geometry changes require a separate Scene only when the physical layout genuinely becomes a different navigable space that cannot be represented safely as stateful Foundry documents.
+- A day/night change alone never qualifies as new geography.
+- The current canonical Lodge roster therefore remains the **21 unique geography Scenes**. The event-driven day/night system prevents additional duplicate night counterparts from being added.
+- Before removing or declining a duplicate map, record its intended gameplay purpose and the exact surviving Scene/state that now owns that purpose.
+
+### Purpose absorption for removed time-state maps
+
+The surviving Scene must absorb any former duplicate-map purpose in the following order:
+
+1. **Visual mood** → aligned night reshade + Scene darkness.
+2. **Fire/fixture illumination** → authored Lighting Regions + native torch-style AmbientLights.
+3. **Night-only scares** → state-gated one-shot Horror Regions.
+4. **Night-only clues or manifestations** → state-gated Notice/Story Regions.
+5. **Changed access or blockers** → stateful doors, Tiles/Background Objects, or Wall/Region logic.
+6. **Changed sound/weather** → state-owned soundscape/weather controls.
+7. **Evidence that the cult is active** → state-gated props, lights, sounds, and recent-use clues on the same geography.
+8. **Escalation pacing** → campaign-state gates, not duplicate Scenes.
+
+The result should feel like the same real place changing around the party, which is preferable for this campaign's horror continuity.
+
 ## Campaign day/night state
 
 The Lodge campaign uses an **event-driven** day/night transition, not a real-time clock and not a per-Scene timer.
