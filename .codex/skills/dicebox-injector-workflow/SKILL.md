@@ -7,7 +7,7 @@ description: Use for DiceBox Campaign Helper scene/map workflow commands PREPARE
 
 Treat the named workflow commands as API operations, not ordinary-language suggestions:
 
-`PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD`
+`PREPARE -> RENDER -> INSPECT(PASS = APPROVED | REDO) -> BUILD`
 
 Do not silently substitute another pipeline.
 
@@ -27,9 +27,11 @@ If those sources conflict, stop and reconcile. If the canonical workflow cannot 
 
 For resumable work, also apply `docs/DICEBOX-AUTOMATED-SCENE-WORKFLOW-2026-10-05.md`.
 
-The creative API remains:
+The creative API is:
 
-`PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD`
+`PREPARE -> RENDER -> INSPECT(PASS = APPROVED | REDO) -> BUILD`
+
+A successful INSPECT is the approval event. Do not wait for a second user command after PASS.
 
 After BUILD, automation may continue:
 
@@ -41,18 +43,19 @@ Hard automation rules:
 - PowerShell Relay commands use stable idempotency request IDs for retries.
 - Regionwright/Foundry is the only live Scene/Wall/Region/RegionBehavior mutation authority.
 - Persist and validate one `state.json` per Scene using `dicebox-scene-automation-state/v1`.
+- `INSPECT: PASS` atomically writes inspection evidence plus matching approval evidence and moves the current state directly to `APPROVED`; `INSPECTED_PASS` is not a durable wait-state.
 - On resume, reread durable state and the latest receipt before selecting the next gate.
 - REDO archives the failed prompt and increments the render attempt; it never patches the old prompt.
 - BUILD must bind to the exact approved render identity and pass `validate-dicebox-build.mjs` before STAGE.
 - Timeout or interrupted transport is outcome-unknown; poll/read the receipt before retrying.
 - COMPLETE requires a Foundry/Regionwright receipt whose build SHA-256 matches the staged BUILD.
-- If Desktop Commander or PowerShell Relay is unavailable, PREPARE/RENDER/INSPECT/APPROVE/BUILD may continue, but do not claim STAGE/INJECT/VERIFY completion.
+- If Desktop Commander or PowerShell Relay is unavailable, PREPARE/RENDER/INSPECT (with automatic approval on PASS)/BUILD may continue, but do not claim STAGE/INJECT/VERIFY completion.
 
 
 - **PREPARE**: produce/specify the scene package, topology, clue/encounter intent, injection fields, art prompt, and acceptance criteria. Do not generate final art unless requested.
 - **RENDER**: generate the candidate map art from the approved preparation package.
-- **INSPECT**: compare rendered art against the prepared acceptance criteria and call out deviations.
-- **APPROVE**: record the user's accepted art/spec state. Approval does not itself create Foundry content.
+- **INSPECT**: compare rendered art against the prepared acceptance criteria and call out deviations. `PASS` automatically records approval for that exact render and moves the state to `APPROVED`; `REDO` does not.
+- **APPROVE**: optional redundant explicit acknowledgment of an already-passed render. It is not a required gate between PASS and BUILD.
 - **BUILD**: compile the approved scene into the canonical Foundry Scene Injector handoff artifact described below.
 
 ## Tactical-map camera guardrail
