@@ -38,3 +38,16 @@ Do not solve macro-size limits by asking the user to execute sequential macro fr
 ## Fail-closed behavior
 
 If the approved art, stable scene ID, canonical workflow source, or required build validation is unavailable, BUILD is BLOCKED. Report the missing dependency and recover it. Do not substitute a ZIP, a generic manifest package, a loose `.js`, or several macros.
+
+
+## Scale / token contract
+
+All new generated battle maps default to `battlemap-120` as defined by `docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md`.
+
+The canonical scale is Gridless, 120px per logical 5ft space, with Scene dimensions derived from PREPARE's logical column/row count. For the current 3:2 forest-maze family, 36×24 logical spaces becomes 4320×2880 pixels.
+
+Do not treat Gridless as “scale-free.” Foundry still uses the configured grid size/distance to establish token footprint and distance scale. Do not use 50px just because the lines are hidden.
+
+Token width/height is a mechanical footprint. Token Scale Ratio only changes artwork rendering. Scene Injector code must not resize player/creature token footprints or visual Scale Ratio merely to compensate for a map-scale mismatch. D&D5e system size synchronization remains authoritative unless a separate Actor/token decision explicitly overrides it.
+
+New BUILDs use contract `dicebox-scene-injector-build/v2`, the required scale markers, and a single `DICEBOX_SCENE_SCALE` constant referenced by Scene width/height/grid fields. Explicit scale exceptions must be PREPARE-approved and fail closed without an approval marker and reason.
