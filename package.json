@@ -80,7 +80,8 @@
     "codex:app-server:account-metadata": "node tools/run-codex-account-metadata-probe.mjs",
     "director:proposal": "tsx tools/run-campaign-director-slice.ts",
     "injector:validate": "node tools/validate-dicebox-build.mjs",
-    "injector:self-test": "node tools/validate-dicebox-build-self-test.mjs"
+    "injector:self-test": "node tools/validate-dicebox-build-self-test.mjs",
+    "injector:state:validate": "node tools/validate-dicebox-scene-state.mjs"
   },
   "dependencies": {
     "zod": "^3.25.76"
