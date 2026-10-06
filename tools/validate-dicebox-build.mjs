@@ -20,6 +20,12 @@ const REQUIRED_MARKERS = [
   ["scene pixels", /DICEBOX_SCENE_PIXELS:\s*\d+x\d+/i],
   ["token footprint policy", /DICEBOX_TOKEN_FOOTPRINT_POLICY:\s*system-size/i],
   ["token art scale policy", /DICEBOX_TOKEN_ART_SCALE_POLICY:\s*visual-only/i],
+  ["discovery contract", /DICEBOX_DISCOVERY_CONTRACT:\s*dicebox-discovery\/v1/i],
+  ["discovery count", /DICEBOX_DISCOVERY_COUNT:\s*\d+/i],
+  ["discovery density", /DICEBOX_DISCOVERY_DENSITY:\s*(ordinary|special)/i],
+  ["discovery visible anchors", /DICEBOX_DISCOVERY_VISIBLE_ANCHORS:\s*true/i],
+  ["discovery notice policy", /DICEBOX_DISCOVERY_NOTICE_POLICY:\s*flat-d20-no-modifiers/i],
+  ["discovery notice state", /DICEBOX_DISCOVERY_NOTICE_STATE:\s*per-character-once-until-reset/i],
 ];
 
 const FORBIDDEN_PATTERNS = [
