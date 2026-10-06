@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.3.0",
+  "schemaVersion": "1.4.0",
   "campaignId": "central-lodge",
   "workflow": [
     "PREPARE",
@@ -14,7 +14,7 @@
   "singleActiveScene": true,
   "controller": "tools/lodge-campaign-controller.mjs",
   "rules": "work/lodge-campaign/AUTOMATION-RULES.md",
-  "currentSceneId": "E1",
+  "currentSceneId": "E2",
   "campaignStatus": "ACTIVE",
   "maps": [
     {
@@ -23,12 +23,12 @@
       "stableSceneId": "dbx:central-lodge:e1",
       "name": "Arrival Clearing & Front Grounds",
       "phase": "VERIFY",
-      "status": "ACTIVE",
+      "status": "DEFERRED",
       "attempts": {
         "render": 0,
         "implement": 0
       },
-      "latestResult": "IMPLEMENT_PASS",
+      "latestResult": "VERIFY_DEFERRED",
       "buildRevision": "v004",
       "implementation": {
         "status": "PASS",
@@ -64,7 +64,8 @@
           "Wall containment is correct.",
           "Deliberate dark pockets remain."
         ]
-      }
+      },
+      "deferReason": "Live VERIFY deferred until Desktop Commander/Foundry inspection is available. Do not rerun installer."
     },
     {
       "order": 2,
@@ -72,7 +73,7 @@
       "stableSceneId": "dbx:central-lodge:e2",
       "name": "Rear Service Yard & Outbuildings",
       "phase": "PREPARE",
-      "status": "QUEUED",
+      "status": "ACTIVE",
       "attempts": {
         "render": 0,
         "implement": 0
@@ -717,6 +718,27 @@
       "phase": "PLAN",
       "result": "ACCEPTED_CHANGE",
       "note": "Map consolidation hardened: day/night and haunted-state duplicates are not separate Scenes. Their puzzle, scare, lighting, clue, access, and ambience purposes are absorbed into the surviving geography Scene via stateful Regions and Foundry runtime state. Canonical geography roster remains 21."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "CAMPAIGN",
+      "phase": "PLAN",
+      "result": "CONFIRMED",
+      "note": "User confirmed no cuts to the canonical 21 geography maps. Day/night consolidation only prevents duplicate state-map additions."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "E1",
+      "phase": "VERIFY",
+      "result": "DEFERRED",
+      "note": "Live verification deferred while remote runtime tooling is unavailable; E1 remains installed and must not be rerun."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "E2",
+      "phase": "PREPARE",
+      "result": "ACTIVE",
+      "note": "Creative/build workflow advanced to E2 while E1 live VERIFY remains deferred."
     }
   ],
   "campaignTime": {
