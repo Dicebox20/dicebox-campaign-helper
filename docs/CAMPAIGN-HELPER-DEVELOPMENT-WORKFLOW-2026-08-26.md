@@ -123,6 +123,10 @@ If the canonical workflow, approved art/spec, or validator cannot be loaded or r
 
 Passing this packaging validator proves only workflow/transport conformance. It does not prove Foundry installation, exact-stack compatibility, committed runtime state, or gameplay; those still require the existing preview, execution authority, reread, validation, and receipt evidence.
 
+### Map / token scale hardening
+
+The additive Scene Injector hardening now also includes the user-accepted `battlemap-120` scale contract in `docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md`. New generated battle-map BUILDs are Gridless but not scale-free: PREPARE locks logical columns/rows, BUILD uses 120px per 5ft logical space, and Scene width/height are derived mathematically. D&D5e Actor/system size owns token footprint; Token Scale Ratio remains visual-only. The deterministic BUILD v2 validator blocks silent 50px regressions, inconsistent Scene dimensions, and unapproved scale exceptions. Passing this check proves scale-contract conformance only, not runtime behavior.
+
 ## Iggwilv legacy fixture rule
 
 The Iggwilv Final Chamber comparison is retained as a Stage 9 evidence corpus:
