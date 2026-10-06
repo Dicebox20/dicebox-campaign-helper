@@ -2,17 +2,19 @@
 
 **Status:** Accepted hardening overlay for DiceBox Scene Injector work  
 **Date:** 2026-10-05  
-**Extends:** `PREPARE → RENDER → INSPECT → APPROVE → BUILD`
+**Extends:** `PREPARE → RENDER → INSPECT → BUILD`
 
-This workflow keeps the existing user-facing creative gates intact and adds a durable automation tail:
+`INSPECT: PASS` is itself approval. There is no separate approval wait-state after a successful inspection. The durable pipeline is:
 
-`PREPARE → RENDER → INSPECT → APPROVE → BUILD → STAGE → INJECT → VERIFY → RECEIPT`
+`PREPARE → RENDER → INSPECT(PASS = APPROVED | REDO) → BUILD → STAGE → INJECT → VERIFY → RECEIPT`
+
+The legacy `APPROVE` command remains accepted as a redundant explicit acknowledgment of an already-passed render, but it is never required before BUILD.
 
 The purpose is resumability, idempotent retries, and consistent handoff between ChatGPT, Desktop Commander, the PowerShell Relay, Regionwright, and Foundry VTT.
 
 ## Authority boundaries
 
-- **ChatGPT / Foreman** owns interpretation of user intent, PREPARE, RENDER orchestration, INSPECT, APPROVE state, BUILD generation, and decision logic.
+- **ChatGPT / Foreman** owns interpretation of user intent, PREPARE, RENDER orchestration, INSPECT, automatic approval on PASS, BUILD generation, and decision logic.
 - **Desktop Commander** owns durable local workspace operations: folders, files, hashes, state reads/writes, validator invocation, and local artifact staging. It is not Foundry authority.
 - **PowerShell Relay** owns browser-free, idempotent command execution on the authorized machine and durable execution receipts. Its `requestId` is the retry/idempotency key.
 - **Regionwright / Foundry runtime** is the only authority for live Scene, Wall, Region, RegionBehavior, Macro, Actor, Item, and other Foundry document mutation.
@@ -69,7 +71,6 @@ Canonical automation states:
 ```text
 PREPARED
 RENDERED
-INSPECTED_PASS
 INSPECTED_REDO
 APPROVED
 BUILT
@@ -84,9 +85,9 @@ FAILED
 Allowed forward transitions:
 
 - `PREPARED → RENDERED`
-- `RENDERED → INSPECTED_PASS | INSPECTED_REDO`
+- `RENDERED → APPROVED | INSPECTED_REDO`
+- `INSPECT: PASS` performs the `RENDERED → APPROVED` transition atomically and records both inspection evidence and approval evidence for the exact render.
 - `INSPECTED_REDO → RENDERED` using a completely fresh prompt
-- `INSPECTED_PASS → APPROVED`
 - `APPROVED → BUILT`
 - `BUILT → STAGED`
 - `STAGED → INJECTED`
@@ -127,16 +128,17 @@ Hard rule:
 ### INSPECT
 Must bind the verdict to the exact render attempt/hash/generation ID.
 
-`PASS` means acceptance criteria are satisfied or explicitly waived by the user.  
+`PASS` means acceptance criteria are satisfied or explicitly waived by the user, and **automatically approves that exact render in the same operation**. The durable current state becomes `APPROVED`; do not stop at an `INSPECTED_PASS` wait-state.  
 `REDO` invalidates any approval/build derived from that render.
 
 ### APPROVE
-Must record:
+There is no separate required approval gate after `INSPECT: PASS`. PASS must automatically record:
 - exact approved render generation ID and/or SHA-256;
-- any explicit user exception;
+- any explicit user exception already accepted during inspection;
+- approval source `INSPECT_PASS`;
 - approval timestamp/state transition.
 
-No BUILD is valid without exact approved-art identity.
+The user may still say `APPROVE` as a redundant explicit acknowledgment, but it must not be required to continue to BUILD. No BUILD is valid without exact approved-art identity.
 
 ### BUILD
 Must preserve the existing DiceBox contract:
@@ -229,7 +231,7 @@ A short command such as `RENDER`, `INSPECT`, or `BUILD` acts on the single curre
 ## Offline behavior
 
 If Desktop Commander or PowerShell Relay is unavailable:
-- PREPARE, RENDER, INSPECT, APPROVE, and BUILD may continue if their required inputs are present;
+- PREPARE, RENDER, INSPECT (including automatic approval on PASS), and BUILD may continue if their required inputs are present;
 - STAGE/INJECT/VERIFY must remain pending;
 - do not claim live installation;
 - once tools reconnect, reread durable state and receipts before continuing.
@@ -242,6 +244,7 @@ The last proven creative state before this workflow was introduced:
 - PREPARE complete;
 - first render failed INSPECT;
 - REDO render generated with generation ID `c0f1c0d3-9084-4e59-bac4-bb29f7eaf95d`;
-- that REDO render has not yet been inspected.
+- that REDO render was subsequently INSPECTED and received PASS.
+- under the automatic-approval rule, that PASS is the approval event for generation ID `c0f1c0d3-9084-4e59-bac4-bb29f7eaf95d`.
 
-Therefore the next valid operation is **INSPECT** on that exact REDO render.
+Therefore the current creative state is **APPROVED** and the next valid operation is **BUILD**.
