@@ -108,7 +108,7 @@ Every BUILD macro must include these comments near the top:
 // DICEBOX_SINGLE_MACRO: true
 // DICEBOX_SCENE_ID: <stable scene id>
 // DICEBOX_ART_MODE: embedded-webp | embedded-png | verified-path
-// DICEBOX_WORKFLOW: PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD
+// DICEBOX_WORKFLOW: PREPARE -> RENDER -> INSPECT(PASS=APPROVED) -> BUILD
 // DICEBOX_SCALE_PROFILE: battlemap-120
 // DICEBOX_GRID_TYPE: gridless
 // DICEBOX_GRID_SIZE: 120
