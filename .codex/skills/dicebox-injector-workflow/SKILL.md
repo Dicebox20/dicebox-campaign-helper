@@ -121,6 +121,22 @@ A nonstandard scale is allowed only when PREPARE explicitly records a user-appro
 
 L1-01 through L1-03 are legacy v1 scale artifacts. Preserve their runtime evidence, but do not use their 50px grid size as a template for future maps.
 
+## Exploration discovery regions
+
+For Scenes containing exploration discoveries:
+
+- ordinary maps default to 0–1 discovery and cap at 2 unless the user explicitly approves a discovery-dense special scene;
+- discovery content must be tied to a visible or environmentally plausible feature in the approved art;
+- placement is intentionally forgiving: the hint feature and Region do not need pixel-perfect alignment, only a sensible nearby relationship that makes the clue believable;
+- do not create a broad invisible sweep Region merely to guarantee triggering;
+- Stage 1 is a flat d20 notice roll with no modifiers using rarity/value DCs: Common 6, Uncommon 8, Rare 12, Very Rare 14, Legendary 16;
+- Stage 1 failure is silent; success reveals a private environmental hint and suggested Stage 2 skill, but does not award the item;
+- Stage 2 uses the authored skill appropriate to the clue (for example Investigation, Nature, Survival, Arcana, History, Religion, or Medicine);
+- Stage 3 handles physical recovery separately and may use multiple checks;
+- repeated crossings should not spam or reroll a discovery already noticed by that character.
+
+INSPECT must confirm each planned Discovery Region has a plausible visual anchor. BUILD must preserve that relationship rather than adding unsupported discovery Regions.
+
 ## Pre-delivery validation
 
 Before presenting or publishing a BUILD artifact, run:
