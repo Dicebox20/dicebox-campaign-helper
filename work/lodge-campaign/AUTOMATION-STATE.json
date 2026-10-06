@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1.0",
+  "schemaVersion": "1.2.0",
   "campaignId": "central-lodge",
   "workflow": [
     "PREPARE",
@@ -49,7 +49,22 @@
         "Treat installed renderer as day/geometry authority.",
         "Create production night state only as an aligned reshade/edit of the same renderer.",
         "Verify state-layer alignment and campaign-time restore behavior after event trigger is selected and bound."
-      ]
+      ],
+      "lightingSupport": {
+        "profile": "exterior-abandoned",
+        "density": "very-sparse",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
+      }
     },
     {
       "order": 2,
@@ -71,6 +86,21 @@
         "initialState": "day",
         "transitionSource": "campaign-event",
         "nightVariantPolicy": "reshade-approved-renderer-only"
+      },
+      "lightingSupport": {
+        "profile": "exterior-abandoned",
+        "density": "very-sparse",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -93,6 +123,21 @@
         "initialState": "day",
         "transitionSource": "campaign-event",
         "nightVariantPolicy": "reshade-approved-renderer-only"
+      },
+      "lightingSupport": {
+        "profile": "exterior-haunted",
+        "density": "sparse",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -115,6 +160,21 @@
         "initialState": "day",
         "transitionSource": "campaign-event",
         "nightVariantPolicy": "reshade-approved-renderer-only"
+      },
+      "lightingSupport": {
+        "profile": "exterior-haunted",
+        "density": "sparse",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -135,6 +195,21 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "interior-main-circulation",
+        "density": "sparse-to-moderate",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -155,6 +230,21 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "interior-formal",
+        "density": "sparse-to-moderate",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -175,6 +265,21 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "interior-service",
+        "density": "sparse",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -195,6 +300,21 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "interior-residential-haunted",
+        "density": "sparse-uneven",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -215,6 +335,21 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "interior-victim-history",
+        "density": "very-sparse-uneven",
+        "dayNightControlled": true,
+        "fixturePolicy": "visible-unlit-fixtures",
+        "fireSimulation": "foundry-native-torch",
+        "verification": [
+          "Fixture anchor is visible/plausible.",
+          "Day state emits no transition-controlled sconce light.",
+          "Night activation follows staged ignition group.",
+          "Torch animation is photosensitivity-safe.",
+          "Wall containment is correct.",
+          "Deliberate dark pockets remain."
+        ]
       }
     },
     {
@@ -235,6 +370,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "subterranean-utility",
+        "density": "selective",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -255,6 +398,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "subterranean-sacrificial",
+        "density": "selective",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -275,6 +426,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "cult-ritual",
+        "density": "story-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -295,6 +454,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "cult-records-ritual",
+        "density": "story-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -315,6 +482,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "railway-utility",
+        "density": "system-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -335,6 +510,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "railway-grotto",
+        "density": "system-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -355,6 +538,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "railway-depot",
+        "density": "system-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -375,6 +566,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "railway-tunnel",
+        "density": "system-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -395,6 +594,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "railway-tunnel",
+        "density": "system-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -415,6 +622,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "cult-railway-extension",
+        "density": "system-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -435,6 +650,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "infernal-threshold",
+        "density": "encounter-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     },
     {
@@ -455,6 +678,14 @@
         "mode": "ambient-reaction-only",
         "initialState": "day",
         "transitionSource": "campaign-event"
+      },
+      "lightingSupport": {
+        "profile": "final-ritual",
+        "density": "encounter-owned",
+        "dayNightControlled": false,
+        "fixturePolicy": "scene-state-specific",
+        "fireSimulation": null,
+        "verification": []
       }
     }
   ],
@@ -472,6 +703,13 @@
       "phase": "PLAN",
       "result": "ACCEPTED_CHANGE",
       "note": "Day/night cycle changed to a persistent event-driven campaign state. Initial state is day; exact story trigger remains intentionally unresolved pending user selection. Night art must preserve approved geometry exactly."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "CAMPAIGN",
+      "phase": "PLAN",
+      "result": "ACCEPTED_CHANGE",
+      "note": "Added paced day/night lighting plan. Day/night-capable areas use visible unlit fixtures with Foundry native torch-style AmbientLights, staged ignition, deliberate dark pockets, and photosensitivity-safe verification. Underground, railway, ritual, and infernal lighting remain owned by their local story/system state rather than sunset."
     }
   ],
   "campaignTime": {
@@ -489,5 +727,127 @@
       "Exterior night plates must be exact aligned reshades/edits of approved day geometry, not independent compositions.",
       "E1 installed renderer remains the geometry authority; later night candidates are reference-only."
     ]
+  },
+  "campaignLighting": {
+    "standard": "event-driven-sconce-lighting/v1",
+    "fixturePolicy": "visible-unlit-fixtures-plus-foundry-ambient-light",
+    "fireSimulation": "native-torch-animation",
+    "transitionGroups": [
+      "dimming",
+      "threshold",
+      "interior-response",
+      "peripheral-response",
+      "settle"
+    ],
+    "photosensitivitySafe": true,
+    "defaultNightRule": "selected-fixtures-only",
+    "darkPocketsRequired": true,
+    "mapProfiles": {
+      "E1": {
+        "class": "exterior-abandoned",
+        "density": "very-sparse",
+        "dayNightControlled": true
+      },
+      "E2": {
+        "class": "exterior-abandoned",
+        "density": "very-sparse",
+        "dayNightControlled": true
+      },
+      "E3": {
+        "class": "exterior-haunted",
+        "density": "sparse",
+        "dayNightControlled": true
+      },
+      "E4": {
+        "class": "exterior-haunted",
+        "density": "sparse",
+        "dayNightControlled": true
+      },
+      "M1": {
+        "class": "interior-main-circulation",
+        "density": "sparse-to-moderate",
+        "dayNightControlled": true
+      },
+      "M2": {
+        "class": "interior-formal",
+        "density": "sparse-to-moderate",
+        "dayNightControlled": true
+      },
+      "M3": {
+        "class": "interior-service",
+        "density": "sparse",
+        "dayNightControlled": true
+      },
+      "U1": {
+        "class": "interior-residential-haunted",
+        "density": "sparse-uneven",
+        "dayNightControlled": true
+      },
+      "U2": {
+        "class": "interior-victim-history",
+        "density": "very-sparse-uneven",
+        "dayNightControlled": true
+      },
+      "B1": {
+        "class": "subterranean-utility",
+        "density": "selective",
+        "dayNightControlled": false
+      },
+      "B2": {
+        "class": "subterranean-sacrificial",
+        "density": "selective",
+        "dayNightControlled": false
+      },
+      "C1": {
+        "class": "cult-ritual",
+        "density": "story-owned",
+        "dayNightControlled": false
+      },
+      "C2": {
+        "class": "cult-records-ritual",
+        "density": "story-owned",
+        "dayNightControlled": false
+      },
+      "N1": {
+        "class": "railway-utility",
+        "density": "system-owned",
+        "dayNightControlled": false
+      },
+      "N2": {
+        "class": "railway-grotto",
+        "density": "system-owned",
+        "dayNightControlled": false
+      },
+      "N3": {
+        "class": "railway-depot",
+        "density": "system-owned",
+        "dayNightControlled": false
+      },
+      "T1": {
+        "class": "railway-tunnel",
+        "density": "system-owned",
+        "dayNightControlled": false
+      },
+      "T2": {
+        "class": "railway-tunnel",
+        "density": "system-owned",
+        "dayNightControlled": false
+      },
+      "T3": {
+        "class": "cult-railway-extension",
+        "density": "system-owned",
+        "dayNightControlled": false
+      },
+      "F1": {
+        "class": "infernal-threshold",
+        "density": "encounter-owned",
+        "dayNightControlled": false
+      },
+      "F2": {
+        "class": "final-ritual",
+        "density": "encounter-owned",
+        "dayNightControlled": false
+      }
+    }
   }
 }
