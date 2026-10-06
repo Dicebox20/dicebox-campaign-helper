@@ -5,7 +5,6 @@ export const STATE_CONTRACT = "dicebox-scene-automation-state/v1";
 const STAGES = new Set([
   "PREPARED",
   "RENDERED",
-  "INSPECTED_PASS",
   "INSPECTED_REDO",
   "APPROVED",
   "BUILT",
@@ -60,7 +59,7 @@ export function validateDiceboxSceneState(state) {
 
   const stage = state.stage;
 
-  if (["RENDERED","INSPECTED_PASS","INSPECTED_REDO","APPROVED","BUILT","STAGED","INJECTED","VERIFIED","COMPLETE"].includes(stage)) {
+  if (["RENDERED","INSPECTED_REDO","APPROVED","BUILT","STAGED","INJECTED","VERIFIED","COMPLETE"].includes(stage)) {
     if (!state.render || typeof state.render !== "object") {
       violations.push(`${stage} requires render evidence.`);
     } else {
@@ -73,14 +72,14 @@ export function validateDiceboxSceneState(state) {
     }
   }
 
-  if (["INSPECTED_PASS","INSPECTED_REDO","APPROVED","BUILT","STAGED","INJECTED","VERIFIED","COMPLETE"].includes(stage)) {
+  if (["INSPECTED_REDO","APPROVED","BUILT","STAGED","INJECTED","VERIFIED","COMPLETE"].includes(stage)) {
     if (!state.inspection || typeof state.inspection !== "object") {
       violations.push(`${stage} requires inspection evidence.`);
     } else {
       if (stage === "INSPECTED_REDO" && state.inspection.verdict !== "REDO") {
         violations.push("INSPECTED_REDO requires inspection.verdict REDO.");
       }
-      if (["INSPECTED_PASS","APPROVED","BUILT","STAGED","INJECTED","VERIFIED","COMPLETE"].includes(stage) && state.inspection.verdict !== "PASS") {
+      if (["APPROVED","BUILT","STAGED","INJECTED","VERIFIED","COMPLETE"].includes(stage) && state.inspection.verdict !== "PASS") {
         violations.push(`${stage} requires inspection.verdict PASS.`);
       }
       if (Number.isInteger(state.inspection.renderAttempt) && state.inspection.renderAttempt !== state.renderAttempt) {
@@ -120,6 +119,12 @@ export function validateDiceboxSceneState(state) {
         state.approval.sha256.toLowerCase() !== state.render.sha256.toLowerCase()
       ) {
         violations.push("approval sha256 must match the active render.");
+      }
+      if (state.approval.source !== "INSPECT_PASS" && state.approval.source !== "EXPLICIT_APPROVE") {
+        violations.push(`${stage} requires approval.source INSPECT_PASS or EXPLICIT_APPROVE.`);
+      }
+      if (state.approval.source === "INSPECT_PASS" && state.inspection?.verdict !== "PASS") {
+        violations.push("INSPECT_PASS approval requires inspection.verdict PASS.");
       }
     }
   }
