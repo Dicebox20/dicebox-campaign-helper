@@ -138,6 +138,40 @@ For every day/night-capable Scene, VERIFY must confirm:
 - intentionally dark pockets remain dark;
 - reload/reconnect restores the correct active-light set without replaying the transition.
 
+
+## Render-context firewall
+
+Image generation is a **visual rendering lane**, not a story-design lane. The image model must never receive the full campaign/puzzle specification.
+
+Before every RENDER call, generate or read a dedicated **clean render capsule** containing only current-map visible physical information.
+
+The clean render capsule may contain:
+- camera/view;
+- time of day and broad weather/illumination;
+- terrain and permanent architecture;
+- permanent visible props;
+- visible exits that end at the map edge;
+- broad material/condition cues such as wet, ruined, overgrown, cracked, or abandoned;
+- the minimum generic exclusions needed for a player-facing battlemap.
+
+The clean render capsule must not contain:
+- campaign plot, mystery ladder, cult identity, Fiend Machine, victim history, or future reveals;
+- puzzle purpose, item dependency, clue meaning, solution logic, or object destination;
+- Region IDs, Region classes, trigger logic, DCs, skills, cooldowns, state flags, or VERIFY instructions;
+- Foundry implementation details, macros, Walls, AmbientLight behavior, automation, or scene-state code;
+- adjacent-map names, destinations beyond exits, future rooms/areas, or route explanations;
+- explanatory annotations such as “this is the puzzle,” “recent-use clue,” “night trigger,” “story beat,” or “player should notice”;
+- negative references to specific forbidden neighboring content when a generic exclusion is sufficient.
+
+A physical object may be named only by what it visibly is, not by its gameplay role. For example:
+- use “an old iron hand crank on a workbench,” not “the Iron Hand Crank that operates the well”;
+- use “a weathered bell fixture,” not “the Servant Bell Pull puzzle”;
+- use “faintly disturbed mud,” not “recent-use evidence proving the cult is active.”
+
+The render capsule is the **only creative authority passed to image generation**. Story and puzzle documents remain outside the render call.
+
+If a generated image contains diagrams, labels, story exposition, puzzle annotations, UI, or other non-map information, INSPECT automatically returns REDO and the next render must use a freshly rewritten clean capsule rather than patching the contaminated prompt.
+
 ## Phase contract
 
 ### PREPARE
