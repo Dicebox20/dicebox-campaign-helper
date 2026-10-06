@@ -1,0 +1,351 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "workflow": [
+    "PREPARE",
+    "RENDER",
+    "INSPECT",
+    "BUILD",
+    "IMPLEMENT",
+    "VERIFY",
+    "COMPLETE"
+  ],
+  "autoApprovalOnInspectPass": true,
+  "singleActiveScene": true,
+  "controller": "tools/lodge-campaign-controller.mjs",
+  "rules": "work/lodge-campaign/AUTOMATION-RULES.md",
+  "currentSceneId": "E1",
+  "campaignStatus": "ACTIVE",
+  "maps": [
+    {
+      "order": 1,
+      "sceneId": "E1",
+      "stableSceneId": "dbx:central-lodge:e1",
+      "name": "Arrival Clearing & Front Grounds",
+      "phase": "VERIFY",
+      "status": "ACTIVE",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": "IMPLEMENT_PASS",
+      "buildRevision": "v004",
+      "implementation": {
+        "status": "PASS",
+        "evidenceClass": "created_document",
+        "assetsWritten": true,
+        "sceneCreated": true,
+        "note": "E1 single-macro v004 installed successfully; do not rerun installer."
+      }
+    },
+    {
+      "order": 2,
+      "sceneId": "E2",
+      "stableSceneId": "dbx:central-lodge:e2",
+      "name": "Rear Service Yard & Outbuildings",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 3,
+      "sceneId": "E3",
+      "stableSceneId": "dbx:central-lodge:e3",
+      "name": "Formal Garden & Greenhouse",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 4,
+      "sceneId": "E4",
+      "stableSceneId": "dbx:central-lodge:e4",
+      "name": "Family Graveyard & Crypt",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 5,
+      "sceneId": "M1",
+      "stableSceneId": "dbx:central-lodge:m1",
+      "name": "Entrance Hall & Great Room",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 6,
+      "sceneId": "M2",
+      "stableSceneId": "dbx:central-lodge:m2",
+      "name": "Study, Parlor & Formal Rooms",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 7,
+      "sceneId": "M3",
+      "stableSceneId": "dbx:central-lodge:m3",
+      "name": "Kitchen & Service Wing",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 8,
+      "sceneId": "U1",
+      "stableSceneId": "dbx:central-lodge:u1",
+      "name": "Family & Guest Rooms",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 9,
+      "sceneId": "U2",
+      "stableSceneId": "dbx:central-lodge:u2",
+      "name": "Servants’ Quarters, Nursery & Attic",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 10,
+      "sceneId": "B1",
+      "stableSceneId": "dbx:central-lodge:b1",
+      "name": "Cellar & Utility Basement",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 11,
+      "sceneId": "B2",
+      "stableSceneId": "dbx:central-lodge:b2",
+      "name": "Hidden Annex & Sacrificial Preparation Area",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 12,
+      "sceneId": "C1",
+      "stableSceneId": "dbx:central-lodge:c1",
+      "name": "Hidden Chapel / Shrine of Asmodeus",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 13,
+      "sceneId": "C2",
+      "stableSceneId": "dbx:central-lodge:c2",
+      "name": "Cult Records & Ritual Undercroft",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 14,
+      "sceneId": "N1",
+      "stableSceneId": "dbx:central-lodge:n1",
+      "name": "Underworks Hub / Lodge Railway Station",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 15,
+      "sceneId": "N2",
+      "stableSceneId": "dbx:central-lodge:n2",
+      "name": "Underground Grotto / Garden Station",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 16,
+      "sceneId": "N3",
+      "stableSceneId": "dbx:central-lodge:n3",
+      "name": "Collection Vaults / Underground Depot",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 17,
+      "sceneId": "T1",
+      "stableSceneId": "dbx:central-lodge:t1",
+      "name": "Lodge ↔ Grotto Walkable Railway Tunnel",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 18,
+      "sceneId": "T2",
+      "stableSceneId": "dbx:central-lodge:t2",
+      "name": "Grotto ↔ Depot Walkable Railway Tunnel",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 19,
+      "sceneId": "T3",
+      "stableSceneId": "dbx:central-lodge:t3",
+      "name": "Abandoned Spur / Cult Railway Extension",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 20,
+      "sceneId": "F1",
+      "stableSceneId": "dbx:central-lodge:f1",
+      "name": "Ancient Infernal Threshold",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    },
+    {
+      "order": 21,
+      "sceneId": "F2",
+      "stableSceneId": "dbx:central-lodge:f2",
+      "name": "Final Summoning Chamber",
+      "phase": "PREPARE",
+      "status": "QUEUED",
+      "attempts": {
+        "render": 0,
+        "implement": 0
+      },
+      "latestResult": null,
+      "buildRevision": null,
+      "implementation": null
+    }
+  ],
+  "audit": [
+    {
+      "at": "2026-10-06",
+      "sceneId": "E1",
+      "phase": "IMPLEMENT",
+      "result": "PASS",
+      "note": "Single-macro BUILD v004 embedded, uploaded, and hash-verified artwork, then created the managed E1 Scene."
+    }
+  ]
+}
