@@ -29,6 +29,19 @@ If those sources conflict, stop and reconcile. If the canonical workflow cannot 
 - **APPROVE**: record the user's accepted art/spec state. Approval does not itself create Foundry content.
 - **BUILD**: compile the approved scene into the canonical Foundry Scene Injector handoff artifact described below.
 
+## REDO prompt reset
+
+When INSPECT returns REDO for generated map art:
+
+- discard the previous generation prompt;
+- write a new prompt from the accepted PREPARE specification, locked requirements, and acceptance checklist;
+- do not patch the failed prompt with corrective clauses;
+- do not reference the failed composition as something to preserve;
+- carry forward only explicitly approved qualities, rewritten independently;
+- treat repeated prompt revision as a regression risk because it can reinforce unwanted geometry or visual drift.
+
+REDO is a fresh generation specification, not an edit instruction.
+
 ## Locked BUILD contract
 
 A successful Scene Injector BUILD has exactly one user-facing deliverable:
