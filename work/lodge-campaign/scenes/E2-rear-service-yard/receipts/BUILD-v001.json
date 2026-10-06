@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "E2",
+  "phase": "BUILD",
+  "revision": "v001",
+  "status": "PASS",
+  "artifact": "central-lodge-e2-build-v001.md",
+  "artifactBytes": 89377,
+  "macroBytes": 89032,
+  "artifactSha256": "2879ebf4a03d0dc191a3cfc57cc9c7806008e423da59840d94f9bd4eff0ddcc2",
+  "contract": "dicebox-scene-injector-build/v2",
+  "contents": {
+    "scene": 1,
+    "walls": 8,
+    "regions": 9,
+    "tiles": 1,
+    "ambientLights": 2,
+    "embeddedArt": [
+      "approved-day-renderer",
+      "exact-aligned-night-reshade"
+    ]
+  },
+  "validation": {
+    "nodeSyntax": "PASS",
+    "contractEquivalent": "PASS",
+    "violations": []
+  },
+  "implementationPending": [
+    "Run reviewed BUILD macro once in exact Foundry runtime.",
+    "Bind notice/puzzle/story Region behaviors.",
+    "Bind transition destinations.",
+    "Bind campaign sunset trigger after canonical event selection.",
+    "VERIFY spatial alignment and light placement."
+  ]
+}
