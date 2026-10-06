@@ -29,6 +29,23 @@ If those sources conflict, stop and reconcile. If the canonical workflow cannot 
 - **APPROVE**: record the user's accepted art/spec state. Approval does not itself create Foundry content.
 - **BUILD**: compile the approved scene into the canonical Foundry Scene Injector handoff artifact described below.
 
+## Tactical-map camera guardrail
+
+For player-facing tactical or battle-map artwork:
+
+- use a strict 90-degree overhead orthographic projection;
+- the camera is perpendicular to the ground plane;
+- do not use the words `isometric`, `top-down/isometric`, `bird's-eye`, `three-quarter`, `angled overhead`, or `cinematic aerial` in RENDER prompts;
+- do not let aesthetic language such as `cinematic` imply a tilted camera;
+- explicitly request no perspective tilt, no horizon, and no oblique/side-facing terrain presentation;
+- INSPECT must fail a render with visible isometric/perspective drift even if the route topology and mood are otherwise acceptable.
+
+Canonical prompt camera clause:
+
+`strict 90-degree overhead orthographic battlemap, camera perpendicular to the ground plane, no perspective tilt, no horizon`
+
+This rule implements the canonical BTR requirement that player maps are strict 90-degree top-down / orthographic.
+
 ## REDO prompt reset
 
 When INSPECT returns REDO for generated map art:
