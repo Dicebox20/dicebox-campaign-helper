@@ -72,13 +72,13 @@
       "sceneId": "E2",
       "stableSceneId": "dbx:central-lodge:e2",
       "name": "Rear Service Yard & Outbuildings",
-      "phase": "PREPARE",
+      "phase": "RENDER",
       "status": "ACTIVE",
       "attempts": {
         "render": 0,
         "implement": 0
       },
-      "latestResult": null,
+      "latestResult": "PREPARE_PASS",
       "buildRevision": null,
       "implementation": null,
       "dayNightSupport": {
@@ -739,6 +739,13 @@
       "phase": "PREPARE",
       "result": "ACTIVE",
       "note": "Creative/build workflow advanced to E2 while E1 live VERIFY remains deferred."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "E2",
+      "phase": "PREPARE",
+      "result": "PASS",
+      "note": "PREPARE-v001 locked E2 topology, puzzle ownership, lighting Regions, battlemap-120 scale, and render capsule."
     }
   ],
   "campaignTime": {
