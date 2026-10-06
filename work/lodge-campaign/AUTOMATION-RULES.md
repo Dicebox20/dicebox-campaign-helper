@@ -18,6 +18,46 @@ Carry the remaining Lodge campaign maps from concept through verified Foundry Sc
 - A blocked or outcome-unknown live write never auto-retries.
 - Every Desktop Commander work turn remains capped at 20 minutes. At the cap, persist exact state and stop cleanly.
 
+## Campaign day/night state
+
+The Lodge campaign uses an **event-driven** day/night transition, not a real-time clock and not a per-Scene timer.
+
+- Campaign state begins as `day`.
+- A single explicit campaign event changes the persistent campaign state from `day` to `night`.
+- The exact trigger event is a canon decision and remains intentionally unresolved until the user names or approves it.
+- Once the trigger fires, every exterior Scene that supports both states reads the same persistent campaign flag and restores the correct state on load/reload.
+- Interior and underground Scenes may react to the same campaign flag through lighting, sound, window treatment, or ambience, but they do not require duplicate geometry.
+- The transition is one-way unless a later user-approved story event explicitly introduces dawn or reversal.
+
+### Day/night visual authority
+
+Day/night must **not** regenerate map geometry.
+
+For any Scene with a day/night variant:
+
+1. the approved day renderer is the geometry and composition authority;
+2. the night plate is derived from that exact approved renderer by reshading/editing only;
+3. paths, buildings, walls, fountains, statues, vegetation, puzzle anchors, and framing remain pixel-aligned;
+4. the day renderer remains the Scene background;
+5. the night renderer is a same-size full-canvas state layer or equivalent renderer state;
+6. Foundry darkness, AmbientLights, sound, weather, and Region behavior provide dynamic runtime effects on top of the aligned plates.
+
+A new composition generated merely to depict night is invalid for production. It may be retained only as visual reference.
+
+### Event-driven transition behavior
+
+When the approved trigger event fires:
+
+- persist campaign flag `timeOfDay = "transitioning"`;
+- crossfade the aligned night state over the day state;
+- increase Foundry Scene darkness in a controlled, photosensitivity-safe transition;
+- enable authored exterior/window/porch lights at the appropriate point in the transition;
+- switch or layer the night soundscape and weather ambience;
+- persist `timeOfDay = "night"` only after the state change completes;
+- on reconnect or Scene reload, authoritative state restores the final day/night state rather than replaying the transition.
+
+No strobing or rapid light cycling is permitted.
+
 ## Phase contract
 
 ### PREPARE
@@ -28,11 +68,14 @@ Create the complete map specification and lock:
 - visible background-only content;
 - stateful puzzle objects;
 - Foundry runtime effects;
+- day/night support requirements, if applicable;
 - logical dimensions and the battlemap-120 scale;
 - walls, doors, Regions, transitions, and discovery count;
 - acceptance checklist.
 
 The render description may mention only what is physically visible on the current map. Never name or describe off-map neighboring structures, destinations, future rooms, or route explanations.
+
+If a Scene supports day/night, PREPARE identifies one renderer as the geometry authority. Later time-of-day variants are edits/reshades of that renderer, never independent compositions.
 
 ### RENDER
 
@@ -48,13 +91,15 @@ Do not bake in:
 - transient apparitions;
 - state-change text.
 
+For day/night Scenes, render the geometry-authority plate once. Night conversion is a later aligned state-art operation, not a fresh map generation.
+
 ### INSPECT
 
 Evaluate topology, permanent landmarks, scale, tactical usability, campaign isolation, readability, camera compliance, and absence of unwanted text/grid/UI.
 
 Small stateful details do not fail an otherwise correct background when BUILD can supply them more reliably.
 
-PASS automatically advances to BUILD. REDO returns to RENDER with a fresh prompt.
+PASS automatically advances to BUILD. REDO returns to RENDER with a fresh prompt, except that a day/night-only correction uses the approved geometry-authority renderer and edits/reshades it instead of generating a new composition.
 
 ### BUILD
 
@@ -79,6 +124,14 @@ The macro must:
 - authoritatively reread after mutation;
 - return blocker-based receipts;
 - treat timeout or ambiguous writes as UNKNOWN and forbid blind retry.
+
+For day/night-capable Scenes, the BUILD also records:
+- the day renderer path/hash;
+- the night renderer path/hash;
+- the persistent campaign-state key;
+- the exact state-layer alignment;
+- the authored transition duration and runtime effect bindings;
+- the trigger event identifier once canonically selected.
 
 Before delivery, run:
 
@@ -107,13 +160,14 @@ Verify:
 - transition anchors;
 - current puzzle state;
 - runtime behavior bindings;
+- day/night state restoration and plate alignment where applicable;
 - darkness, weather, sound, and scare behavior where authored;
 - GM and player-facing behavior where relevant;
 - no foreign-state damage.
 
 Prefer project tooling, Playwright, or read-only runtime inspection over another user-run macro.
 
-A visual/state alignment defect goes to a narrow patch or BUILD correction. It does not force a rerender unless the approved background itself is wrong.
+A visual/state alignment defect goes to a narrow patch or BUILD correction. It does not force a rerender unless the approved geometry-authority background itself is wrong.
 
 ## Live failure rules
 
@@ -128,10 +182,12 @@ The Foundry world is a runtime container, not creative identity. The current cam
 
 ## Stateful art
 
-Python/image-processing code may resize, convert, crop, composite, or hash approved artwork. It must not invent final player-facing artistic puzzle assets. Artistic state variants come from approved art or image generation/editing.
+Python/image-processing code may resize, convert, crop, composite, hash, or mechanically reshade approved artwork. It must not invent final player-facing artistic puzzle assets. Artistic state variants that materially alter depicted content come from approved art or image generation/editing.
+
+A day/night plate that changes only illumination, color balance, shadow, haze, or wet-surface response while preserving exact geometry is a state-art transformation, not a new map composition.
 
 ## Campaign progression
 
 The controller processes maps in the canonical roster order unless a dependency requires a different order. Stable Scene IDs are reserved in advance, so transitions may safely target later maps without creating those maps early.
 
-E1 is already installed from BUILD v004 and is currently at VERIFY. Do not rerun its installer.
+E1 is already installed from BUILD v004 and is currently at VERIFY. Do not rerun its installer. Its approved installed renderer remains the E1 geometry authority. Any production night version must be derived from that exact renderer, not from the later independent night-map candidates.
