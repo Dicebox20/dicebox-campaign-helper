@@ -36,7 +36,6 @@
       "enum": [
         "PREPARED",
         "RENDERED",
-        "INSPECTED_PASS",
         "INSPECTED_REDO",
         "APPROVED",
         "BUILT",
@@ -80,7 +79,8 @@
         "renderAttempt": {"type": "integer", "minimum": 1},
         "generationId": {"type": ["string", "null"]},
         "sha256": {"type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$"},
-        "exceptions": {"type": "array", "items": {"type": "string"}}
+        "exceptions": {"type": "array", "items": {"type": "string"}},
+        "source": {"enum": ["INSPECT_PASS", "EXPLICIT_APPROVE", null]}
       }
     },
     "build": {
