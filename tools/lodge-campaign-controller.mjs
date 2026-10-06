@@ -135,7 +135,7 @@ function advance(state, result, note="") {
 function resume(state, sceneId) {
   const scene = state.maps.find(m => m.sceneId === sceneId);
   if (!scene) throw new Error(`Unknown sceneId ${sceneId}`);
-  if (!["BLOCKED","UNKNOWN","QUEUED"].includes(scene.status)) throw new Error("Scene is not resumable from its current status.");
+  if (!["BLOCKED","UNKNOWN","QUEUED","DEFERRED"].includes(scene.status)) throw new Error("Scene is not resumable from its current status.");
   for (const m of state.maps) if (m.status === "ACTIVE") m.status = "QUEUED";
   scene.status = "ACTIVE";
   state.currentSceneId = scene.sceneId;
@@ -163,6 +163,17 @@ switch (command) {
     save(state);
     console.log(JSON.stringify(status(state), null, 2));
     break;
+  case "defer": {
+    const scene = current(state);
+    if (!scene) throw new Error("No active scene.");
+    record(state, scene, "DEFERRED", rest.join(" ") || "Deferred by Foreman.");
+    scene.status = "DEFERRED";
+    scene.latestResult = `${scene.phase}_DEFERRED`;
+    activateNext(state);
+    save(state);
+    console.log(JSON.stringify(status(state), null, 2));
+    break;
+  }
   case "validate":
     console.log(JSON.stringify({status:"PASS", maps:state.maps.length, currentSceneId:state.currentSceneId}, null, 2));
     break;
