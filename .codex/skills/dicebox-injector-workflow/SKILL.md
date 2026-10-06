@@ -23,6 +23,32 @@ If those sources conflict, stop and reconcile. If the canonical workflow cannot 
 
 ## Operation meanings
 
+## Durable automation overlay
+
+For resumable work, also apply `docs/DICEBOX-AUTOMATED-SCENE-WORKFLOW-2026-10-05.md`.
+
+The creative API remains:
+
+`PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD`
+
+After BUILD, automation may continue:
+
+`BUILD -> STAGE -> INJECT -> VERIFY -> RECEIPT`
+
+Hard automation rules:
+
+- Desktop Commander is the durable workspace/state/file orchestrator, not Foundry authority.
+- PowerShell Relay commands use stable idempotency request IDs for retries.
+- Regionwright/Foundry is the only live Scene/Wall/Region/RegionBehavior mutation authority.
+- Persist and validate one `state.json` per Scene using `dicebox-scene-automation-state/v1`.
+- On resume, reread durable state and the latest receipt before selecting the next gate.
+- REDO archives the failed prompt and increments the render attempt; it never patches the old prompt.
+- BUILD must bind to the exact approved render identity and pass `validate-dicebox-build.mjs` before STAGE.
+- Timeout or interrupted transport is outcome-unknown; poll/read the receipt before retrying.
+- COMPLETE requires a Foundry/Regionwright receipt whose build SHA-256 matches the staged BUILD.
+- If Desktop Commander or PowerShell Relay is unavailable, PREPARE/RENDER/INSPECT/APPROVE/BUILD may continue, but do not claim STAGE/INJECT/VERIFY completion.
+
+
 - **PREPARE**: produce/specify the scene package, topology, clue/encounter intent, injection fields, art prompt, and acceptance criteria. Do not generate final art unless requested.
 - **RENDER**: generate the candidate map art from the approved preparation package.
 - **INSPECT**: compare rendered art against the prepared acceptance criteria and call out deviations.
