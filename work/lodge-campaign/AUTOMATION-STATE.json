@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.0.0",
+  "schemaVersion": "1.1.0",
   "campaignId": "central-lodge",
   "workflow": [
     "PREPARE",
@@ -36,7 +36,20 @@
         "assetsWritten": true,
         "sceneCreated": true,
         "note": "E1 single-macro v004 installed successfully; do not rerun installer."
-      }
+      },
+      "dayNightSupport": {
+        "mode": "aligned-state-plates",
+        "geometryAuthority": "installed-approved-day-renderer",
+        "initialState": "day",
+        "transitionSource": "campaign-event",
+        "nightVariantPolicy": "reshade-approved-renderer-only"
+      },
+      "verifyRequirements": [
+        "Preserve installed E1 geometry; do not rerun installer.",
+        "Treat installed renderer as day/geometry authority.",
+        "Create production night state only as an aligned reshade/edit of the same renderer.",
+        "Verify state-layer alignment and campaign-time restore behavior after event trigger is selected and bound."
+      ]
     },
     {
       "order": 2,
@@ -51,7 +64,14 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "aligned-state-plates",
+        "geometryAuthority": "future-approved-day-renderer",
+        "initialState": "day",
+        "transitionSource": "campaign-event",
+        "nightVariantPolicy": "reshade-approved-renderer-only"
+      }
     },
     {
       "order": 3,
@@ -66,7 +86,14 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "aligned-state-plates",
+        "geometryAuthority": "future-approved-day-renderer",
+        "initialState": "day",
+        "transitionSource": "campaign-event",
+        "nightVariantPolicy": "reshade-approved-renderer-only"
+      }
     },
     {
       "order": 4,
@@ -81,7 +108,14 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "aligned-state-plates",
+        "geometryAuthority": "future-approved-day-renderer",
+        "initialState": "day",
+        "transitionSource": "campaign-event",
+        "nightVariantPolicy": "reshade-approved-renderer-only"
+      }
     },
     {
       "order": 5,
@@ -96,7 +130,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 6,
@@ -111,7 +150,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 7,
@@ -126,7 +170,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 8,
@@ -141,7 +190,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 9,
@@ -156,7 +210,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 10,
@@ -171,7 +230,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 11,
@@ -186,7 +250,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 12,
@@ -201,7 +270,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 13,
@@ -216,7 +290,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 14,
@@ -231,7 +310,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 15,
@@ -246,7 +330,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 16,
@@ -261,7 +350,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 17,
@@ -276,7 +370,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 18,
@@ -291,7 +390,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 19,
@@ -306,7 +410,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 20,
@@ -321,7 +430,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     },
     {
       "order": 21,
@@ -336,7 +450,12 @@
       },
       "latestResult": null,
       "buildRevision": null,
-      "implementation": null
+      "implementation": null,
+      "dayNightSupport": {
+        "mode": "ambient-reaction-only",
+        "initialState": "day",
+        "transitionSource": "campaign-event"
+      }
     }
   ],
   "audit": [
@@ -346,6 +465,29 @@
       "phase": "IMPLEMENT",
       "result": "PASS",
       "note": "Single-macro BUILD v004 embedded, uploaded, and hash-verified artwork, then created the managed E1 Scene."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "CAMPAIGN",
+      "phase": "PLAN",
+      "result": "ACCEPTED_CHANGE",
+      "note": "Day/night cycle changed to a persistent event-driven campaign state. Initial state is day; exact story trigger remains intentionally unresolved pending user selection. Night art must preserve approved geometry exactly."
     }
-  ]
+  ],
+  "campaignTime": {
+    "policy": "event-driven",
+    "state": "day",
+    "persistentKey": "central-lodge.timeOfDay",
+    "transitionDirection": "day-to-night",
+    "triggerEventId": null,
+    "triggerEventStatus": "UNRESOLVED_CANON_DECISION",
+    "oneWay": true,
+    "restoreOnSceneLoad": true,
+    "transitionReplayOnReload": false,
+    "notes": [
+      "Exact trigger event must be user-named or user-approved before runtime binding.",
+      "Exterior night plates must be exact aligned reshades/edits of approved day geometry, not independent compositions.",
+      "E1 installed renderer remains the geometry authority; later night candidates are reference-only."
+    ]
+  }
 }
