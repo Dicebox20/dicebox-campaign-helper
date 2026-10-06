@@ -123,19 +123,50 @@ L1-01 through L1-03 are legacy v1 scale artifacts. Preserve their runtime eviden
 
 ## Exploration discovery regions
 
-For Scenes containing exploration discoveries:
+Read and apply `docs/DICEBOX-EXPLORATION-DISCOVERY-STANDARD-2026-10-05.md`.
 
-- ordinary maps default to 0–1 discovery and cap at 2 unless the user explicitly approves a discovery-dense special scene;
-- discovery content must be tied to a visible or environmentally plausible feature in the approved art;
-- placement is intentionally forgiving: the hint feature and Region do not need pixel-perfect alignment, only a sensible nearby relationship that makes the clue believable;
-- do not create a broad invisible sweep Region merely to guarantee triggering;
-- Stage 1 is a flat d20 notice roll with no modifiers using rarity/value DCs: Common 6, Uncommon 8, Rare 12, Very Rare 14, Legendary 16;
-- Stage 1 failure is silent; success reveals a private environmental hint and suggested Stage 2 skill, but does not award the item;
-- Stage 2 uses the authored skill appropriate to the clue (for example Investigation, Nature, Survival, Arcana, History, Religion, or Medicine);
-- Stage 3 handles physical recovery separately and may use multiple checks;
-- repeated crossings should not spam or reroll a discovery already noticed by that character.
+Discovery is a three-stage system:
 
-INSPECT must confirm each planned Discovery Region has a plausible visual anchor. BUILD must preserve that relationship rather than adding unsupported discovery Regions.
+`NOTICE -> INTERPRET / SEARCH -> RECOVER`
+
+Hard rules:
+
+- ordinary maps default to 0–1 discovery and hard-cap at 2 unless the user explicitly approves a discovery-dense special-scene exception;
+- every discovery must be tied to a visible or environmentally plausible renderer feature;
+- placement is intentionally forgiving: the clue feature and Region only need a sensible nearby relationship, not pixel-perfect alignment;
+- Stage 1 is exactly `1d20` with no character-sheet modifiers and must not call the actor's normal Perception skill roll;
+- rarity base DCs are Common 6, Uncommon 8, Rare 12, Very Rare 14, Legendary 16, with the accepted within-rarity value adjustment of -1 / +0 / +1 / +2;
+- Stage 1 failure is silent;
+- each character receives one automatic Notice roll per discovery until explicit reset; re-entering the Region cannot farm rerolls;
+- Stage 1 success records per-character Notice state and privately reveals an environmental hint plus the authored Stage 2 skill where practical;
+- Stage 1 and Stage 2 never award the item;
+- Stage 2 uses the authored skill appropriate to the clue, normally Investigation, Nature, Survival, Arcana, History, Religion, or Medicine; Perception is not reused;
+- Stage 3 handles physical recovery separately and models the physical task, not item rarity;
+- the locked fossil example is Nature to identify, then Sleight of Hand + Strength to extract carefully;
+- do not invent a large Stage 3 recovery roster before those profiles are reviewed and accepted.
+
+Every new BUILD v2 macro must include:
+
+```text
+// DICEBOX_DISCOVERY_CONTRACT: dicebox-discovery/v1
+// DICEBOX_DISCOVERY_COUNT: <0|1|2|...>
+// DICEBOX_DISCOVERY_DENSITY: ordinary | special
+// DICEBOX_DISCOVERY_VISIBLE_ANCHORS: true
+// DICEBOX_DISCOVERY_NOTICE_POLICY: flat-d20-no-modifiers
+// DICEBOX_DISCOVERY_NOTICE_STATE: per-character-once-until-reset
+```
+
+If `DICEBOX_DISCOVERY_DENSITY: special` is used, the macro must also include:
+
+```text
+// DICEBOX_DISCOVERY_DENSITY_APPROVED: true
+// DICEBOX_DISCOVERY_DENSITY_REASON: <meaningful user-approved reason>
+```
+
+An ordinary scene with more than two discoveries is invalid. A special scene with more than two discoveries is invalid unless the approval marker and reason are present.
+
+INSPECT must confirm each planned discovery has a plausible visible anchor. BUILD must preserve that relationship rather than adding unsupported or arbitrary discovery Regions.
+
 
 ## Pre-delivery validation
 
