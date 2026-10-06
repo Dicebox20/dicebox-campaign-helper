@@ -4,7 +4,7 @@ import sqlite3
 root = Path(__file__).resolve().parent
 database_path = root / "dicebox_campaign_helper_knowledge.sqlite"
 schema = (root / "schema.sql").read_text(encoding="utf-8")
-seed = (root / "seed.sql").read_text(encoding="utf-8")
+seed = (root / "seed.sql").read_text(encoding="utf-8")\nseed_d = sorted((root / "seed.d").glob("*.sql")) if (root / "seed.d").exists() else []
 
 if database_path.exists():
     database_path.unlink()
