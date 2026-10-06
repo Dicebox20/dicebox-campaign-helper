@@ -45,14 +45,81 @@ A successful Scene Injector BUILD has exactly one user-facing deliverable:
 Every BUILD macro must include these comments near the top:
 
 ```text
-// DICEBOX_BUILD_CONTRACT: dicebox-scene-injector-build/v1
+// DICEBOX_BUILD_CONTRACT: dicebox-scene-injector-build/v2
 // DICEBOX_SINGLE_MACRO: true
 // DICEBOX_SCENE_ID: <stable scene id>
 // DICEBOX_ART_MODE: embedded-webp | embedded-png | verified-path
 // DICEBOX_WORKFLOW: PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD
+// DICEBOX_SCALE_PROFILE: battlemap-120
+// DICEBOX_GRID_TYPE: gridless
+// DICEBOX_GRID_SIZE: 120
+// DICEBOX_GRID_DISTANCE: 5
+// DICEBOX_GRID_UNITS: ft
+// DICEBOX_LOGICAL_SIZE: <columns>x<rows>
+// DICEBOX_SCENE_PIXELS: <width>x<height>
+// DICEBOX_TOKEN_FOOTPRINT_POLICY: system-size
+// DICEBOX_TOKEN_ART_SCALE_POLICY: visual-only
 ```
 
 Prefer `embedded-webp` for large map art when compression is needed. The BTR prototype history established that compact WebP embedding plus byte/hash/path verification is more reliable than very large raw macro sources.
+
+## Spatial scale and token sizing
+
+Read and apply `docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md`.
+
+Default generated battle-map profile:
+
+- Foundry Scene grid type: Gridless (`0`);
+- logical grid size: 120px;
+- logical distance: 5 ft;
+- Scene pixel width = logical columns × 120;
+- Scene pixel height = logical rows × 120;
+- padding: 0 unless PREPARE explicitly requires off-map staging space.
+
+PREPARE must state the logical map dimensions. BUILD must not infer a different gameplay scale from the rendered image dimensions.
+
+For the current 3:2 forest-maze family, the default logical footprint is 36×24 five-foot spaces, which yields a 4320×2880 Scene under `battlemap-120`.
+
+Token footprint and token artwork scale are separate:
+
+- mechanical footprint remains Actor/system-size-owned; for D&D5e prefer the system's Sync Token Size behavior;
+- Token Scale Ratio is visual-only and must never be used to repair map scale;
+- DiceBox overhead art targets are 256px Tiny, 512px Small/Medium, 1024px Large/Huge, and 2048px Gargantuan.
+
+Every new BUILD macro must include these additional markers:
+
+```text
+// DICEBOX_SCALE_PROFILE: battlemap-120
+// DICEBOX_GRID_TYPE: gridless
+// DICEBOX_GRID_SIZE: 120
+// DICEBOX_GRID_DISTANCE: 5
+// DICEBOX_GRID_UNITS: ft
+// DICEBOX_LOGICAL_SIZE: <columns>x<rows>
+// DICEBOX_SCENE_PIXELS: <width>x<height>
+// DICEBOX_TOKEN_FOOTPRINT_POLICY: system-size
+// DICEBOX_TOKEN_ART_SCALE_POLICY: visual-only
+```
+
+It must also define one scale source of truth:
+
+```javascript
+const DICEBOX_SCENE_SCALE = Object.freeze({
+  gridType: 0,
+  gridSize: 120,
+  distance: 5,
+  units: "ft",
+  logicalColumns: <columns>,
+  logicalRows: <rows>,
+  width: <columns * 120>,
+  height: <rows * 120>
+});
+```
+
+Scene width, height, and grid fields must reference that constant rather than repeat literal scale values.
+
+A nonstandard scale is allowed only when PREPARE explicitly records a user-approved exception. Use `DICEBOX_SCALE_PROFILE: explicit-exception`, `DICEBOX_SCALE_EXCEPTION_APPROVED: true`, and a meaningful `DICEBOX_SCALE_EXCEPTION` reason. Silent scale drift is a BUILD failure.
+
+L1-01 through L1-03 are legacy v1 scale artifacts. Preserve their runtime evidence, but do not use their 50px grid size as a template for future maps.
 
 ## Pre-delivery validation
 
