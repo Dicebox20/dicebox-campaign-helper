@@ -72,15 +72,21 @@
       "sceneId": "E2",
       "stableSceneId": "dbx:central-lodge:e2",
       "name": "Rear Service Yard & Outbuildings",
-      "phase": "IMPLEMENT",
+      "phase": "VERIFY",
       "status": "ACTIVE",
       "attempts": {
         "render": 0,
         "implement": 0
       },
-      "latestResult": "BUILD_PASS",
+      "latestResult": "IMPLEMENT_PASS",
       "buildRevision": "v001",
-      "implementation": null,
+      "implementation": {
+        "status": "PASS",
+        "evidenceClass": "created_document",
+        "assetsWritten": true,
+        "sceneCreated": true,
+        "note": "E2 single-macro BUILD v001 installed successfully. Day/night art, Regions, Walls, and staged torch lights were created. Do not rerun installer."
+      },
       "dayNightSupport": {
         "mode": "aligned-state-plates",
         "geometryAuthority": "future-approved-day-renderer",
@@ -762,6 +768,13 @@
       "phase": "BUILD",
       "result": "PASS",
       "note": "BUILD v001 created as one Markdown file containing one self-contained JavaScript Scene Injector. Embedded day art plus exact aligned night reshade; 8 Walls, 9 Regions, one night overlay Tile, and 2 staged torch AmbientLights."
+    },
+    {
+      "at": "2026-10-06",
+      "sceneId": "E2",
+      "phase": "IMPLEMENT",
+      "result": "PASS",
+      "note": "Foundry reported created_document PASS after embedded day/night assets were uploaded and the E2 Scene, Regions, Walls, night overlay, and staged torch lights were created."
     }
   ],
   "campaignTime": {
