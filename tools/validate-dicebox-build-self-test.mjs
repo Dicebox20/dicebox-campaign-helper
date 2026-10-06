@@ -18,6 +18,12 @@ const validMacro = `# L1-04 — Cedar Crown Clearing
 // DICEBOX_SCENE_PIXELS: 4320x2880
 // DICEBOX_TOKEN_FOOTPRINT_POLICY: system-size
 // DICEBOX_TOKEN_ART_SCALE_POLICY: visual-only
+// DICEBOX_DISCOVERY_CONTRACT: dicebox-discovery/v1
+// DICEBOX_DISCOVERY_COUNT: 1
+// DICEBOX_DISCOVERY_DENSITY: ordinary
+// DICEBOX_DISCOVERY_VISIBLE_ANCHORS: true
+// DICEBOX_DISCOVERY_NOTICE_POLICY: flat-d20-no-modifiers
+// DICEBOX_DISCOVERY_NOTICE_STATE: per-character-once-until-reset
 const DICEBOX_SCENE_SCALE = Object.freeze({ gridType: 0, gridSize: 120, distance: 5, units: "ft", logicalColumns: 36, logicalRows: 24, width: 4320, height: 2880 });
 const sceneData = {
   width: DICEBOX_SCENE_SCALE.width,
@@ -57,4 +63,16 @@ assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: approvedException }).status, "PASS", "Approved explicit scale exception should pass.");
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: approvedException.replace("// DICEBOX_SCALE_EXCEPTION_APPROVED: true\n", "") }).status, "FAIL", "Unapproved scale exception must fail.");
 
-process.stdout.write(`${JSON.stringify({ operation: "dicebox.injector-build-contract.self-test", status: "PASS", contract: "v2", cases: 12 })}\n`);
+
+const ordinaryOverDensity = validMacro.replace("// DICEBOX_DISCOVERY_COUNT: 1", "// DICEBOX_DISCOVERY_COUNT: 3");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: ordinaryOverDensity }).status, "FAIL", "ordinary discovery over-density must fail.");
+
+const approvedDiscoveryDense = validMacro
+  .replace("// DICEBOX_DISCOVERY_COUNT: 1", "// DICEBOX_DISCOVERY_COUNT: 4")
+  .replace("// DICEBOX_DISCOVERY_DENSITY: ordinary", "// DICEBOX_DISCOVERY_DENSITY: special\n// DICEBOX_DISCOVERY_DENSITY_APPROVED: true\n// DICEBOX_DISCOVERY_DENSITY_REASON: user-approved excavation scene");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: approvedDiscoveryDense }).status, "PASS", "approved discovery-dense special scene should pass.");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: approvedDiscoveryDense.replace("// DICEBOX_DISCOVERY_DENSITY_APPROVED: true\n", "") }).status, "FAIL", "unapproved discovery-dense special scene must fail.");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro.replace("// DICEBOX_DISCOVERY_NOTICE_POLICY: flat-d20-no-modifiers", "// DICEBOX_DISCOVERY_NOTICE_POLICY: actor-perception-roll") }).status, "FAIL", "modified Perception discovery policy must fail.");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro.replace("// DICEBOX_DISCOVERY_NOTICE_STATE: per-character-once-until-reset", "// DICEBOX_DISCOVERY_NOTICE_STATE: reroll-on-enter") }).status, "FAIL", "reroll-farming discovery state must fail.");
+
+process.stdout.write(`${JSON.stringify({ operation: "dicebox.injector-build-contract.self-test", status: "PASS", contract: "v2", cases: 17 })}\n`);
