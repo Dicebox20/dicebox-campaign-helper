@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "T1",
+  "phase": "BUILD",
+  "revision": "v001",
+  "status": "PASS",
+  "approvedRenderGeneration": "fb8111e2-7ab5-4865-89a7-59eac8ae5597",
+  "artifact": "central-lodge-t1-build-v001.md",
+  "artifactBytes": 105717,
+  "macroBytes": 105502,
+  "artifactSha256": "6fc2a537766ab3f06a8821913c163c2613f893ca227807aaeeac9bb7c3d0216d",
+  "macroSha256": "0520946f198d3507d6f79e1437137da2472b9bed1b7015cfa28bbb51e93c3bc1",
+  "contract": "dicebox-scene-injector-build/v2",
+  "contents": {
+    "scene": 1,
+    "walls": 22,
+    "regions": 6,
+    "tiles": 0,
+    "ambientLights": 6,
+    "embeddedArt": ["approved-t1-renderer"]
+  },
+  "validation": {
+    "nodeSyntax": "PASS",
+    "contractEquivalent": "PASS",
+    "violations": []
+  },
+  "implementationPending": [
+    "Run the reviewed T1 BUILD macro once in the exact Foundry runtime.",
+    "Bind authored notice, interaction, transition, and runtime-event Region behaviors as appropriate during live implementation/verification.",
+    "Keep T1 mouth A/B destination orientation unbound until N1/N2 left-right geography is authoritative; do not guess.",
+    "VERIFY spatial alignment, Level binding, Region anchors, and inactive railway lighting after creation."
+  ]
+}
