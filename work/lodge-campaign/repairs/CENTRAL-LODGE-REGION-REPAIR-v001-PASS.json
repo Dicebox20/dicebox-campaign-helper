@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "repairId": "dicebox-central-lodge-region-repair-v001",
+  "status": "PASS",
+  "evidenceClass": "updated_document",
+  "lodgeSceneCount": 21,
+  "repairedRegions": 18,
+  "scopeObservation": {
+    "repairedScenes": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "note": "The v001 matcher repaired only Regions carrying Central Lodge DiceBox flags. Older Lodge Scenes reported their Regions as foreignSkipped, so v001 did not cover every Lodge Region."
+  },
+  "notes": [
+    "User supplied PREVIEW PASS and APPLY PASS.",
+    "18/18 matched Regions were repaired to visibility LAYER and locked=false.",
+    "A broader Lodge-scene-scoped pass is required to cover older unflagged Regions."
+  ]
+}
