@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "T3",
+  "phase": "BUILD",
+  "revision": "v001",
+  "status": "PASS",
+  "approvedRenderGeneration": "4dc374fb-f4f1-4aef-9633-b0d8096dfd42",
+  "artifact": "central-lodge-t3-build-v001.md",
+  "artifactBytes": 137527,
+  "macroBytes": 137066,
+  "artifactSha256": "fcdaea37b1110006be8bcad22c712ec19bab3235e88f7785d4bdf86869573dea",
+  "macroSha256": "a9a2ce42b9ec9316bb1b550eb2d00590e6d630cb676d02debd682dcd5c183db0",
+  "contract": "dicebox-scene-injector-build/v2",
+  "contents": {
+    "scene": 1,
+    "walls": 32,
+    "regions": 6,
+    "regionBehaviors": 3,
+    "ambientLights": 6,
+    "discoveries": 1,
+    "criticalProgression": "Recent Route Fragment",
+    "embeddedArt": ["approved-t3-renderer"]
+  },
+  "validation": {
+    "nodeSyntax": "PASS",
+    "contract": "PASS",
+    "violations": []
+  },
+  "implementationPending": [
+    "Run the reviewed T3 BUILD macro once in the exact Foundry runtime.",
+    "Require PREVIEW PASS before APPLY.",
+    "Do not rerun after created_document APPLY PASS.",
+    "VERIFY Scene structure, three RegionBehaviors, Recent Route Fragment recovery, Invocation Scrap Notice/recovery, terminus revelation, inactive lighting, N3 entrance metadata, and unbound ancient-passage destination after creation."
+  ]
+}
