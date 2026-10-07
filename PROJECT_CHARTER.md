@@ -10,6 +10,10 @@ The adopted desktop architecture and program-first sequence are defined in [CAMP
 
 The project-wide mission and Foreman/Worker operating covenant are defined in [PROJECT-MISSION-AND-ORCHESTRATION.md](docs/PROJECT-MISSION-AND-ORCHESTRATION.md). That covenant applies to primary work and isolated contribution projects alike.
 
+## Data continuity mission
+
+DiceBox Campaign Helper must remain resumable from durable project records without depending on a particular chat, workstation, model memory, or developer recollection. The canonical data taxonomy, chronology rules, authority resolution, and promotion model are defined in [PROJECT-DATA-ARCHITECTURE-2026-10-07.md](docs/PROJECT-DATA-ARCHITECTURE-2026-10-07.md). New consequential data follows the hard intake and implementation sequence in [NEW-DATA-IMPLEMENTATION-RULE-2026-10-07.md](docs/NEW-DATA-IMPLEMENTATION-RULE-2026-10-07.md).
+
 ## Product surfaces
 
 1. **DiceBox core** — semantic IDs, schemas, knowledge/state queries, compiler planning, safety kernel, evidence, transactions, and release bundles.
