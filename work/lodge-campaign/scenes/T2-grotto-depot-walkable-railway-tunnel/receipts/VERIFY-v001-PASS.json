@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "T2",
+  "phase": "VERIFY",
+  "buildRevision": "v001",
+  "status": "PASS",
+  "evidenceClass": "user-supplied-foundry-diagnostic",
+  "foundryOperation": "central-lodge.t2.verify-diagnostic",
+  "sceneIdRuntime": "ez9MSQ8QIO4cW6zo",
+  "noWrite": true,
+  "verified": [
+    "Scene structure",
+    "expected Wall/Region/AmbientLight counts",
+    "three RegionBehavior documents",
+    "RegionBehavior target binding",
+    "TOKEN_ENTER wiring",
+    "Railway Switch Wheel recovery behavior",
+    "Black Triangle Notice behavior",
+    "Recent Use observation behavior",
+    "inactive railway lighting",
+    "mouth A/B destinations remain intentionally unbound"
+  ],
+  "notes": [
+    "User supplied Foundry console diagnostic showing status PASS.",
+    "T2 is fully verified and locked.",
+    "Do not rerun central-lodge-t2-build-v001."
+  ]
+}
