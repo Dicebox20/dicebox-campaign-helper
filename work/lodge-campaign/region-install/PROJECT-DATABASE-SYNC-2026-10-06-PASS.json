@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "operation": "project-database-sync",
+  "status": "PASS",
+  "authority": "local project knowledge database",
+  "localDatabase": {
+    "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\database\\dicebox_campaign_helper_knowledge.sqlite",
+    "rebuild": {
+      "integrity": "ok",
+      "sources": 279,
+      "facts": 1006,
+      "decisions": 441,
+      "open_items": 526,
+      "trials": 198,
+      "subjects": 40,
+      "milestones": 14
+    },
+    "verify": {
+      "integrity": "ok",
+      "activity_hits": 8,
+      "active_work": 485,
+      "research_subjects": 40,
+      "milestones": 14
+    }
+  },
+  "centralLodge": {
+    "handoffVersion": "2026-10-06.region-install-v1",
+    "currentPhase": "CL-10C",
+    "currentStatus": "RUNTIME_CANARY_PENDING",
+    "nextInstaller": "CL-11",
+    "nextScene": "U2",
+    "scenes": 21,
+    "regions": 201,
+    "regionBehaviors": 21,
+    "canonicalItems": 33,
+    "ledgerId": "xhlXv6CCH34HVga3",
+    "ledgerRevision": 0,
+    "kernelId": "FHQiFYx6OntZVo9d",
+    "kernelHash": "1e45da0c5fdaec7ec8e229593b7408e3060a21ef45381ccd0f973227851e8205",
+    "regionManifestHash": "368c22e61d6bd6b6af1ef3cb8982b23cbd4119d0d924af06b4b8ac6183f7e39a"
+  },
+  "sourceFiles": [
+    "work/lodge-campaign/REGION-PUZZLE-INSTALL-PLAN-v001.md",
+    "work/lodge-campaign/HANDOFF-2026-10-06-REGION-INSTALL-NEXT.md",
+    "database/seed.d/2026-10-06-central-lodge-region-install-handoff.sql"
+  ]
+}
