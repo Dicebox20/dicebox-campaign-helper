@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "phase": "CL-02_VERIFY",
+  "verifyId": "central-lodge-cl02-state-ledger-verify-v001",
+  "status": "PASS",
+  "noWrite": true,
+  "ledger": {
+    "id": "xhlXv6CCH34HVga3",
+    "uuid": "JournalEntry.xhlXv6CCH34HVga3",
+    "stableId": "dbx:central-lodge:state",
+    "schemaVersion": "1.0.0",
+    "revision": 0,
+    "itemEntries": 33
+  },
+  "structure": {
+    "scenes": 21,
+    "regions": 201,
+    "behaviors": 16
+  },
+  "unresolved": {
+    "globalDayNightTrigger": "UNRESOLVED",
+    "t1T2MouthOrientation": "UNRESOLVED_DO_NOT_GUESS"
+  },
+  "blockers": [],
+  "warnings": []
+}
