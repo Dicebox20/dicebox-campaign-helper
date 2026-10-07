@@ -230,3 +230,43 @@ Campaign closure:
 ## Historical handoff reconciliation
 
 This handoff supersedes `work/lodge-campaign/HANDOFF-2026-10-06-REMAINING-MAPS.md` for the **current execution point**. The older handoff remains valid historical evidence for the map-production sequence, but its N3/T1/T2/T3/F1/F2 pending state is obsolete. Those maps now exist and the active work is Region/puzzle behavior installation.
+
+
+## Project database catalogue sync
+
+The project knowledge database was rebuilt and verified after the CL-10 FINAL VERIFY.
+
+Database catalogue version:
+- `2026-10-06.comprehensive-v1`
+
+Deterministic rebuild now applies `database/seed.sql` followed by all lexical `database/seed.d/*.sql` deltas.
+
+Verified database totals after the catalogue sync:
+- integrity: `ok`
+- sources: 335
+- facts: 1110
+- decisions: 444
+- open items: 530
+- trials: 198
+- research subjects: 40
+- milestones: 19
+- tools: 7
+- supplemental seed deltas applied: 4
+
+Central Lodge catalogue coverage:
+- 53 repository source artifacts catalogued with path, Git blob SHA, and file size metadata;
+- 21 exact Scene identity/count facts;
+- 33 exact canonical Item identity/source/use facts;
+- 5 exact E2 RegionBehavior identity/action/source-hash facts;
+- 31 macro/install phase status facts from CL-00 through CL-92;
+- current runtime ledger, runtime kernel, Item registry, Region manifest, unresolved bindings, milestones, and current continuation gate.
+
+The canonical Region manifest is represented by the verified 201-Region manifest identity and SHA-256 `368c22e61d6bd6b6af1ef3cb8982b23cbd4119d0d924af06b4b8ac6183f7e39a`. Live Foundry Region documents remain authoritative for row-level geometry and runtime state.
+
+Rebuild/verify receipts:
+- catalog seed: `database/seed.d/2026-10-06-zz-central-lodge-project-catalog.sql`
+- database build: `database/build_database.py`
+- database verify: `database/verify_database.py`
+- project sync receipt: `work/lodge-campaign/region-install/PROJECT-DATABASE-SYNC-2026-10-06-PASS.json`
+
+The current continuation is unchanged: **CL-10C E2 runtime canary**, then **CL-11 U2** after canary PASS.
