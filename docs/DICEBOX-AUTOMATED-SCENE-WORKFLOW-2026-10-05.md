@@ -3,10 +3,17 @@
 **Status:** Accepted hardening overlay for DiceBox Scene Injector work  
 **Date:** 2026-10-05  
 **Extends:** `PREPARE → RENDER → INSPECT → BUILD`
+**Current creative rendition:** `docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md`
 
-`INSPECT: PASS` is itself approval. There is no separate approval wait-state after a successful inspection. The durable pipeline is:
+`INSPECT: PASS` is itself approval. There is no separate approval wait-state after a successful inspection. The durable outer pipeline is:
 
 `PREPARE → RENDER → INSPECT(PASS = APPROVED | REDO) → BUILD → STAGE → INJECT → VERIFY → RECEIPT`
+
+Within the creative RENDER/INSPECT phase, the mandatory current rendition is:
+
+`STRUCTURAL_RENDER → STRUCTURAL_INSPECT → FEATURE_MANIFEST/BLUEPRINT_RECONCILIATION → PAINT_RENDER → FINAL_INSPECT`
+
+Only FINAL_INSPECT PASS performs the outer approval transition.
 
 The legacy `APPROVE` command remains accepted as a redundant explicit acknowledgment of an already-passed render, but it is never required before BUILD.
 
@@ -37,6 +44,10 @@ Recommended layout:
       spec.json
       prompt.current.txt
       renders/
+        structural/
+        painted/
+      structural-inspection.json
+      feature-manifest.json
       inspection.json
       build.md
       validator.json
@@ -84,7 +95,7 @@ FAILED
 
 Allowed forward transitions:
 
-- `PREPARED → RENDERED`
+- `PREPARED → RENDERED | INSPECTED_REDO` (`INSPECTED_REDO` is allowed here only for a failed structural inspection before paint)
 - `RENDERED → APPROVED | INSPECTED_REDO`
 - `INSPECT: PASS` performs the `RENDERED → APPROVED` transition atomically and records both inspection evidence and approval evidence for the exact render.
 - `INSPECTED_REDO → RENDERED` using a completely fresh prompt
@@ -112,24 +123,34 @@ Must lock:
 ### RENDER
 Requires `PREPARED` or `INSPECTED_REDO`.
 
-Each attempt gets:
-- monotonically increasing render attempt number;
-- generation ID when available;
-- file hash when local art exists;
-- immutable prompt snapshot.
+RENDER is now a two-pass creative operation. Each attempt must preserve:
+- grayscale structural render identity/hash;
+- immutable structural prompt snapshot;
+- structural inspection result;
+- reconciled Feature Manifest/Spatial Blueprint identity;
+- painterly live render identity/hash;
+- immutable paint prompt snapshot.
+
+The outer durable state becomes `RENDERED` only when the painterly render exists with its required structural artifacts. Before that point, a structural PASS leaves the outer state at `PREPARED` while the paint pass completes; a structural failure may move directly from `PREPARED` to `INSPECTED_REDO` with the structural render bound as the failed render evidence. A paint-only failure moves from `RENDERED` to `INSPECTED_REDO`, and its next fresh prompt is based on the approved structural render plus manifest rather than the failed paint prompt.
 
 ### REDO
 Hard rule:
-- archive the failed prompt;
-- create a fresh prompt from the canonical PREPARE spec;
+- archive the failed stage prompt;
+- create a fresh prompt from the canonical inputs for that stage;
+- structural REDO starts from PREPARE/structural requirements;
+- paint-only REDO starts from the approved structural render plus reconciled Feature Manifest/Spatial Blueprint;
 - never edit, append, negate, or patch the failed prompt;
-- do not ask the image model to preserve the failed composition.
+- do not ask the image model to preserve the failed composition;
+- if final inspection exposes a structural defect, return to structural correction and invalidate downstream paint approval.
 
 ### INSPECT
-Must bind the verdict to the exact render attempt/hash/generation ID.
+Inspection occurs twice and each verdict binds to the exact render hash/generation identity.
 
-`PASS` means acceptance criteria are satisfied or explicitly waived by the user, and **automatically approves that exact render in the same operation**. The durable current state becomes `APPROVED`; do not stop at an `INSPECTED_PASS` wait-state.  
-`REDO` invalidates any approval/build derived from that render.
+**STRUCTURAL_INSPECT** occurs before coloring. It compares grayscale structure against PREPARE, records semantic features/uncertainty into the Feature Manifest, and reconciles those semantics with any existing Spatial Blueprint. A structural PASS authorizes the paint pass only; it does **not** approve final art.
+
+**FINAL_INSPECT** compares the painterly live render against PREPARE, the approved structural render, and the reconciled Feature Manifest/Spatial Blueprint. `PASS` means final acceptance criteria are satisfied or explicitly waived by the user and **automatically approves that exact painterly render in the same operation**. The durable current state becomes `APPROVED`; do not stop at an `INSPECTED_PASS` wait-state.
+
+`REDO` invalidates any approval/build derived from the failed downstream render. A paint-only REDO preserves the approved structural render/manifest; a structural REDO invalidates downstream paint artifacts.
 
 ### APPROVE
 There is no separate required approval gate after `INSPECT: PASS`. PASS must automatically record:
@@ -216,13 +237,13 @@ If a matching successful receipt already exists for the exact build SHA, do not 
 
 ## Chat resumability rule
 
-At the beginning of a resumed Scene task, the Foreman resolves state in this order:
+At the beginning of a resumed Scene task, resolve state from durable authority rather than conversation memory:
 
-1. current conversation context;
-2. durable `state.json` if Desktop Commander is online;
-3. latest Regionwright/Foundry receipt;
-4. campaign bible continuity;
-5. repository workflow contract.
+1. durable `state.json` if Desktop Commander is online;
+2. latest Regionwright/Foundry receipt;
+3. campaign bible/current campaign-state record;
+4. repository workflow contract and KB;
+5. current conversation context as non-authoritative intent/context only.
 
 If these disagree, stop and reconcile rather than guessing.
 

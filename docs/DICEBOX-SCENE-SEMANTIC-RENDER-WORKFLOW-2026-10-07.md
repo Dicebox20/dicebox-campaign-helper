@@ -43,7 +43,10 @@ Required qualities:
 - recognizable furniture and environmental objects;
 - readable object separation and silhouettes;
 - grayscale materials and lighting that clarify form rather than create mood;
-- no baked grid, labels, tokens, UI, or decorative paint that hides geometry.
+- no baked grid, labels, tokens, UI, or decorative paint that hides geometry;
+- wall, barrier, shoreline, and elevation boundaries that can be traced as intentional line segments or polylines for later Foundry projection;
+- curved architecture expressed with stable, deliberate vertices/segmented arcs rather than fuzzy circular brushwork as the sole collision boundary;
+- doors, gates, windows, and other openings with clear endpoints and widths rather than ambiguous gaps.
 
 The structural pass is not final art. Its purpose is semantic readability.
 
@@ -75,6 +78,24 @@ The inspection compares the render against PREPARE and produces a machine-readab
 - discovery anchors;
 - candidate Regions and triggers;
 - uncertain or ambiguous features requiring explicit review.
+
+### Provisional Feature Manifest entry contract
+
+Until the dedicated machine schema is implemented, every consequential manifest entry must still carry enough structure to make later Foundry projection deterministic:
+
+- stable provisional feature ID;
+- source structural-render identity/hash;
+- semantic class and authored purpose;
+- geometry primitive (point, line segment, polyline, polygon, or area) plus coordinates in the locked render/logical coordinate space;
+- separate movement, vision, sound, and light restriction intent where relevant;
+- opening/portal state such as ordinary opening, door, gate, secret door, window, grate, or conditional barrier;
+- environmental state such as water, difficult terrain, hazard, elevation edge, stairs, bridge, pit, or overhead obstruction;
+- presentation ownership: baked/static background, semantic-only Region anchor, or separately stateful/placeable object;
+- candidate Foundry projection type: Wall/door Wall, Region, RegionBehavior, AmbientLight, AmbientSound, Tile/placeable, transition/teleport, Note/interaction anchor, or none;
+- relationships to other features, such as a torch mounted on a wall, a door occupying a wall opening, or a bridge spanning water;
+- confidence, ambiguity, and explicit review notes.
+
+A Foundry projection hint is a proposal, not runtime authority. It becomes deterministic only after reconciliation with PREPARE and any existing Spatial Blueprint.
 
 Structural inspection may propose semantic classifications from visible evidence. Those classifications become authoritative only after they are recorded in the Feature Manifest and reconciled with PREPARE and any existing Spatial Blueprint.
 
@@ -117,6 +138,8 @@ The paint pass should:
 - paint walls as physical walls with material variation, surface detail, wear, trim, and depth rather than flat single-color bands;
 - paint floors, furniture, books, shelves, tables, fixtures, vegetation, water, stone, wood, metal, and other objects as recognizable materials;
 - keep important objects individually identifiable;
+- visibly distinguish lit versus unlit torches, braziers, lamps, crystals, fireplaces, windows, and other emitter candidates without letting bloom obscure the fixture or nearby openings;
+- keep water, hazards, difficult terrain, pits, ledges, and other Region-relevant boundaries readable after texture and color are added;
 - add mood, wear, grime, age, or elegance without obscuring semantic features;
 - preserve strict overhead orthographic composition.
 
@@ -138,6 +161,7 @@ It must verify that:
 - doors/windows/barriers remain identifiable;
 - stateful objects remain identifiable;
 - important light/sound/hazard/transition anchors remain legible;
+- every visibly lit fixture still corresponds to an intended lighting-candidate manifest entry, and decorative unlit fixtures have not gained misleading emissive treatment;
 - paint has not created false openings, blockers, or traversable areas;
 - no required object disappeared into texture or shadow;
 - no unapproved semantic object appeared;
@@ -192,7 +216,7 @@ Until a newer state-schema validator introduces explicit substate enums, the exi
 - `BUILT`
 - later automation states
 
-The structural render, structural inspection, Feature Manifest, painterly render, and final inspection are required artifacts inside the outer RENDER/INSPECT phase. No new unvalidated outer state name is required.
+The structural render, structural inspection, Feature Manifest, painterly render, and final inspection are required artifacts inside the outer RENDER/INSPECT phase. A structural PASS may keep the outer state at `PREPARED` while painting completes; a structural REDO may use existing `INSPECTED_REDO` with the structural render as its bound failed-render evidence; the state becomes `RENDERED` only when the painterly candidate exists. No new unvalidated outer state name is required.
 
 ## Current style lock
 

@@ -17,6 +17,7 @@ For Foundry Scene Injector work, read the current scene specification plus:
 
 - `beyond-the-realms-bridge/reference/BTR_Prototype5_Scene_Injector_Handoff_2026-09-21.md`, especially sections 2 and 4;
 - `references/scene-injector-contract.md` in this skill;
+- `docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md`;
 - any newer accepted Injector workflow source explicitly identified by the project contract.
 
 If those sources conflict, stop and reconcile. If the canonical workflow cannot be loaded, stop as BLOCKED rather than inventing a replacement format.
@@ -53,40 +54,40 @@ Hard automation rules:
 
 
 - **PREPARE**: produce/specify the scene package, topology, clue/encounter intent, injection fields, art prompt, and acceptance criteria. Do not generate final art unless requested.
-- **RENDER**: generate the candidate map art from the approved preparation package.
-- **INSPECT**: compare rendered art against the prepared acceptance criteria and call out deviations. `PASS` automatically records approval for that exact render and moves the state to `APPROVED`; `REDO` does not.
+- **RENDER**: perform the current two-pass creative render process: grayscale 3D structural render, mandatory structural inspection/Feature Manifest reconciliation, then painterly live render. Preserve both render identities and prompt snapshots.
+- **INSPECT**: inspection is mandatory both before coloring and after painting. Structural PASS only authorizes the paint pass. FINAL_INSPECT compares the painterly render against PREPARE + approved structural render + reconciled Feature Manifest/Spatial Blueprint; only FINAL_INSPECT `PASS` automatically records approval and moves state to `APPROVED`.
 - **APPROVE**: optional redundant explicit acknowledgment of an already-passed render. It is not a required gate between PASS and BUILD.
 - **BUILD**: compile the approved scene into the canonical Foundry Scene Injector handoff artifact described below.
 
 ## Tactical-map camera guardrail
 
 For player-facing tactical or battle-map artwork:
-
 - use a strict 90-degree overhead orthographic projection;
 - the camera is perpendicular to the ground plane;
 - do not use the words `isometric`, `top-down/isometric`, `bird's-eye`, `three-quarter`, `angled overhead`, or `cinematic aerial` in RENDER prompts;
 - do not let aesthetic language such as `cinematic` imply a tilted camera;
-- explicitly request no perspective tilt, no horizon, and no oblique/side-facing terrain presentation;
-- INSPECT must fail a render with visible isometric/perspective drift even if the route topology and mood are otherwise acceptable.
+- explicitly request no perspective tilt and no horizon;
+- the grayscale structural pass should look like a clean 3D/Blender graybox from directly above, using wall-top thickness, bevels, object height, material relief, ambient occlusion, and contact shadows for depth without camera tilt;
+- INSPECT must fail visible perspective/isometric drift even if topology and mood otherwise pass.
 
-Canonical prompt camera clause:
+Canonical camera clause:
 
 `strict 90-degree overhead orthographic battlemap, camera perpendicular to the ground plane, no perspective tilt, no horizon`
 
-This rule implements the canonical BTR requirement that player maps are strict 90-degree top-down / orthographic.
+This preserves the strict top-down/orthographic requirement while allowing the current 3D-modeled structural style.
 
 ## REDO prompt reset
 
 When INSPECT returns REDO for generated map art:
-
-- discard the previous generation prompt;
-- write a new prompt from the accepted PREPARE specification, locked requirements, and acceptance checklist;
-- do not patch the failed prompt with corrective clauses;
-- do not reference the failed composition as something to preserve;
-- carry forward only explicitly approved qualities, rewritten independently;
+- discard the failed stage prompt;
+- structural REDO: write a fresh prompt from PREPARE and locked structural requirements;
+- paint-only REDO: write a fresh prompt from the approved structural render plus reconciled Feature Manifest/Spatial Blueprint;
+- if final inspection exposes a real structural defect, return to structural correction and invalidate downstream painterly approval;
+- never patch the failed prompt with corrective clauses;
+- never reference the failed composition as something to preserve;
 - treat repeated prompt revision as a regression risk because it can reinforce unwanted geometry or visual drift.
 
-REDO is a fresh generation specification, not an edit instruction.
+REDO is a fresh stage specification, not an edit instruction.
 
 ## Locked BUILD contract
 

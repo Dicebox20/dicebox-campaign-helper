@@ -10,7 +10,7 @@ INSERT OR REPLACE INTO kb_sources(
   'Project-wide rule reconciliation plus current Scene Creation rendering workflow',
   'User-directed reconciliation against current AGENTS, workflow docs, reproducible KB, and latest accepted Scene Creation rendition',
   'active',
-  'docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md',
+  'docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md; outputs/rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07-receipt.json',
   '2026-10-07',
   'rules-v2-scene-semantic-render-2026-10-07.2',
   'Reconciles seed.d rebuild authority, non-blocking mirror cadence, automatic final INSPECT approval, Spatial Blueprint/pixel authority, and the two-pass grayscale-to-painterly Scene workflow.'
@@ -44,7 +44,7 @@ INSERT OR REPLACE INTO kb_facts(
   'dicebox.scene-creation',
   NULL,
   'Scene Creation two-pass semantic render pipeline v2',
-  'New Scene Creation uses PREPARE -> grayscale 3D STRUCTURAL_RENDER -> mandatory STRUCTURAL_INSPECT -> Feature Manifest/Spatial Blueprint reconciliation -> PAINT_RENDER -> mandatory FINAL_INSPECT -> BUILD. Only the final inspection PASS approves the painterly art. The grayscale pass is a semantic drafting surface, raw pixels are not Foundry authority, and the reconciled manifest/Blueprint owns later Foundry projection.',
+  'New Scene Creation uses PREPARE -> grayscale 3D STRUCTURAL_RENDER -> mandatory STRUCTURAL_INSPECT -> Feature Manifest/Spatial Blueprint reconciliation -> PAINT_RENDER -> mandatory FINAL_INSPECT -> BUILD. Only the final inspection PASS approves the painterly art. The grayscale pass is a semantic drafting surface, raw pixels are not Foundry authority, and the reconciled manifest/Blueprint owns later Foundry projection. The existing outer state vocabulary remains valid: structural PASS may remain PREPARED while painting completes, structural REDO may bind the failed structural render to INSPECTED_REDO, and RENDERED denotes the painterly candidate.',
   'project',
   'created_document',
   'locked',
@@ -95,7 +95,7 @@ INSERT OR REPLACE INTO kb_decisions(
 (
   'D-2026-10-07-SCENE-SEMANTIC-RENDER-V2',
   'Scene Creation rendering and semantic extraction',
-  'Use a two-pass rendering workflow inside the existing PREPARE -> RENDER -> INSPECT -> BUILD API: first create and inspect a strict-overhead grayscale 3D structural render, lock a reconciled Feature Manifest/Spatial Blueprint, then create a painterly live render and inspect it again. Only FINAL_INSPECT PASS approves art. Raw pixels never directly become Foundry geometry; inspected and reconciled semantic records do.',
+  'Use a two-pass rendering workflow inside the existing PREPARE -> RENDER -> INSPECT -> BUILD API: first create and inspect a strict-overhead grayscale 3D structural render, lock a reconciled Feature Manifest/Spatial Blueprint, then create a painterly live render and inspect it again. Only FINAL_INSPECT PASS approves art. Raw pixels never directly become Foundry geometry; inspected and reconciled semantic records do. Preserve the current outer automation states: structural PASS can remain PREPARED through painting, structural failure can use INSPECTED_REDO with structural render evidence, and RENDERED is reached when the painterly candidate exists.',
   'This preserves the user-approved Blender-like structural clarity and painterly material treatment while making wall types, blockers, lights, sounds, Regions, transitions, and interactables recoverable for Foundry configuration without allowing unreviewed pixel inference to become runtime authority.',
   'project',
   'locked',
@@ -139,4 +139,18 @@ INSERT OR REPLACE INTO kb_relationships(
   'open_item',
   'O-2026-10-07-SCENE-FEATURE-MANIFEST',
   'The rule is canonical now; machine schema/enforcement remains implementation work.'
+);
+
+
+INSERT OR REPLACE INTO kb_trials(
+  trial_id,area,symptom,attempted_approach,failure_cause,correction,evidence_status,source_id
+) VALUES (
+  'T-2026-10-07-RULE-CONFLICT-RECONCILIATION-V2',
+  'Project governance and Scene Creation workflow',
+  'Active rules disagreed on KB append/rebuild mechanics, communication-mirror blocking, post-INSPECT approval, pixel-versus-Blueprint semantics, camera depth wording, and resumability precedence.',
+  'Audit current contract/workflow/skill/data-governance sources against the reproducible KB and latest accepted Scene rendering rendition; patch only current normative surfaces while preserving historical records.',
+  'Rules accumulated across multiple accepted revisions without a single reconciliation pass after seed.d chronology and the two-pass grayscale semantic-render workflow were introduced.',
+  'Adopt the 2026-10-07.2 reconciliation: ordered seed.d deltas, repository-first non-blocking mirror governance, automatic FINAL_INSPECT approval, reviewed grayscale semantic extraction into Feature Manifest/Spatial Blueprint, painterly semantic preservation, strict orthographic 3D-depth wording, and durable-state-first resume order.',
+  'PASS local governance; KB build/verify, workflow check/self-tests, syntax check, KB reread, and diff hygiene recorded in outputs/rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07-receipt.json; no live Foundry mutation.',
+  'S-2026-10-07-RULE-CONFLICT-RECONCILIATION-V2'
 );

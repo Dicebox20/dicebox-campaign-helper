@@ -1,5 +1,7 @@
 # Ascendancy map rendering gate
 
+> **Scope note (2026-10-07):** This remains the campaign-specific authority for the frozen Ascendancy Blueprints described below. It is not the current general Scene Creation rendering pipeline. New Scene Creation uses `docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md`; existing explicit Ascendancy Blueprint geometry continues to outrank conflicting pixels.
+
 The Campaign Helper treats the Spatial Blueprint as the authoritative map source. A PNG is a renderer only and cannot define topology, scale, walls, doors, anchors, track state, Region behavior, or puzzle rules.
 
 ## Required preflight
