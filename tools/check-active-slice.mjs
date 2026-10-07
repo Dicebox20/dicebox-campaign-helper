@@ -14,10 +14,11 @@ const LANE_NAMES = ["build", "live", "research"];
 const EXPECTED_IDEA_DOCUMENT = "https://docs.google.com/document/d/14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o/edit";
 const EXPECTED_SYNCHRONIZATION_ORDER = [
   "accepted-change",
-  "roadmap-and-active-checklist",
+  "repository-roadmap-and-active-card",
   "knowledge-base-rebuild-and-verification",
   "implementation",
-  "scheduled-shared-document-mirror",
+  "authoritative-reread-and-receipt",
+  "scheduled-communication-mirror",
 ];
 const EXPECTED_ISOLATED_WORKSPACE_OPTION = {
   id: "bounded-isolated-workspace-conflict-avoidance-2026-08-26",
@@ -97,13 +98,13 @@ function validateChangeSynchronization(card, violations) {
   }
   if (!Array.isArray(sync.order) || sync.order.length !== EXPECTED_SYNCHRONIZATION_ORDER.length ||
       sync.order.some((value, index) => value !== EXPECTED_SYNCHRONIZATION_ORDER[index])) {
-    violations.push("changeSynchronization.order must be accepted-change, roadmap-and-active-checklist, knowledge-base-rebuild-and-verification, implementation, scheduled-shared-document-mirror.");
+    violations.push("changeSynchronization.order must be accepted-change, repository-roadmap-and-active-card, knowledge-base-rebuild-and-verification, implementation, authoritative-reread-and-receipt, scheduled-communication-mirror.");
   }
   if (!nonEmptyString(sync.implementationBlockedUntil) ||
-      !/roadmap|checklist/i.test(sync.implementationBlockedUntil) ||
+      !/repository roadmap|roadmap\/current active card|roadmap/i.test(sync.implementationBlockedUntil) ||
       !/scheduled communication mirror/i.test(sync.implementationBlockedUntil) ||
       !/knowledge base/i.test(sync.implementationBlockedUntil)) {
-    violations.push("changeSynchronization.implementationBlockedUntil must name the roadmap/checklist, knowledge base, and non-blocking scheduled communication mirror boundary.");
+    violations.push("changeSynchronization.implementationBlockedUntil must name the repository roadmap/current active card, knowledge base, and non-blocking scheduled communication mirror boundary.");
   }
   if (!nonEmptyString(sync.preGateAllowance) ||
       !/read-only inspection/i.test(sync.preGateAllowance) ||
@@ -125,17 +126,17 @@ function validateSharedFileSynchronizationSchedule(card, violations) {
       violations.push(`sharedFileSynchronizationSchedule.${field} must equal ${expected}.`);
     }
   }
-  if (!nonEmptyString(schedule.scope) || !/immediate canonical control plane/i.test(schedule.scope) || !/implementation bundle/i.test(schedule.scope) || !/cannot pause/i.test(schedule.scope)) {
-    violations.push("sharedFileSynchronizationSchedule.scope must preserve immediate non-blocking local control and explicit implementation bundles.");
+  if (!nonEmptyString(schedule.scope) || !/immediate canonical control plane/i.test(schedule.scope) || !/implementation[- ]bundle/i.test(schedule.scope) || !/cannot pause/i.test(schedule.scope) || !/repository roadmap\/current active card/i.test(schedule.scope)) {
+    violations.push("sharedFileSynchronizationSchedule.scope must preserve repository-first immediate control, non-blocking mirrors, and explicit implementation bundles.");
   }
   if (!nonEmptyString(schedule.cadence) || !/one routine acceptance update and one routine closure or handoff update per local work session/i.test(schedule.cadence) || !/one routine update in any 24-hour period/i.test(schedule.cadence) || !/never blocks local progress/i.test(schedule.cadence) || !/Monday at 09:00 America\/Los_Angeles/i.test(schedule.cadence)) {
     violations.push("sharedFileSynchronizationSchedule.cadence must preserve the non-blocking Google session/24-hour and GitHub Monday cadence.");
   }
-  if (!nonEmptyString(schedule.safetyBoundary) || !/never replaces source-project reread/i.test(schedule.safetyBoundary) || !/hidden reasoning/i.test(schedule.safetyBoundary) || !/local roadmap\/card and KB gate/i.test(schedule.safetyBoundary)) {
-    violations.push("sharedFileSynchronizationSchedule.safetyBoundary must preserve source reread, disclosure, and local bundle boundaries.");
+  if (!nonEmptyString(schedule.safetyBoundary) || !/never replaces source-project reread/i.test(schedule.safetyBoundary) || !/hidden reasoning/i.test(schedule.safetyBoundary) || !/repository roadmap\/current active card/i.test(schedule.safetyBoundary) || !/seed\.d/i.test(schedule.safetyBoundary)) {
+    violations.push("sharedFileSynchronizationSchedule.safetyBoundary must preserve source reread, disclosure, repository authority, and reproducible seed.d boundaries.");
   }
-  if (!nonEmptyString(schedule.implementationBlockedUntil) || !/exact shared idea document/i.test(schedule.implementationBlockedUntil) || !/database\/seed\.sql/i.test(schedule.implementationBlockedUntil) || !/cannot block a governed local product slice/i.test(schedule.implementationBlockedUntil)) {
-    violations.push("sharedFileSynchronizationSchedule.implementationBlockedUntil must retain the non-blocking shared-document record and KB gate.");
+  if (!nonEmptyString(schedule.implementationBlockedUntil) || !/exact shared idea document/i.test(schedule.implementationBlockedUntil) || !/seed\.sql/i.test(schedule.implementationBlockedUntil) || !/seed\.d/i.test(schedule.implementationBlockedUntil) || !/cannot block a governed local product slice/i.test(schedule.implementationBlockedUntil)) {
+    violations.push("sharedFileSynchronizationSchedule.implementationBlockedUntil must retain the non-blocking shared-document mirror and reproducible baseline-seed-plus-seed.d KB gate.");
   }
   return schedule;
 }

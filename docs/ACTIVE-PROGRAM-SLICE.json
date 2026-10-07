@@ -1,6 +1,16 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-10-07",
+  "acceptedRuleConflictReconciliation20261007": {
+    "id": "rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07",
+    "status": "closed-local-governance-pass",
+    "acceptanceObservation": "Reconcile active DiceBox rules so the latest project-data chronology, non-blocking communication mirrors, automatic final INSPECT approval, and two-pass grayscale-to-painterly Scene semantic rendering workflow agree without weakening Spatial Blueprint or Foundry authority.",
+    "allowedScope": "Governance/rule documents, Scene Injector workflow skill/template, current active-card synchronization metadata, roadmap chronology, reproducible KB seed.d records, checker/tests, and one compact receipt only. No live Foundry mutation, campaign-content rewrite, historical receipt rewriting, or unrelated product-stage advancement.",
+    "deterministicCheck": "No active rule requires a mandatory post-PASS APPROVE gate; narrow KB additions may use ordered seed.d and rebuild/verify through the canonical scripts; scheduled communication mirrors are non-blocking; new Scene Creation requires structural grayscale inspection plus final painterly inspection; raw pixels never directly become Foundry geometry authority; workflow/KB checks and diff hygiene pass.",
+    "liveCheck": "None. This is governance and workflow-contract work only.",
+    "stopCondition": "Any requirement to rewrite historical evidence, infer Foundry geometry directly from raw pixels, relax current active-GM/runtime authority, or broaden into unrelated Stage 12/live work stops this reconciliation.",
+    "implementationVerification": "PASS LOCAL 2026-10-07: active rule conflicts were reconciled; KB rebuild/verify returned integrity ok with 2152 sources, 1785 facts, 1698 decisions, 148 open items, 1270 trials, 45 subjects, 124 milestones, 248 tools, and 7 seed.d deltas; workflow check passed 11/16 with readyClaim false; workflow self-tests passed 5 active-slice and 18 Injector contract cases; focused active-slice Vitest passed 14/14; representative structural INSPECTED_REDO state validation passed; checker syntax and diff hygiene passed. Receipt: outputs/rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07-receipt.json. No live Foundry mutation occurred; O-2026-10-07-SCENE-FEATURE-MANIFEST remains the next implementation item."
+  },
   "acceptedM1197CampaignHelperMapLabDesktopPreview": {
     "id": "m1197-campaign-helper-map-lab-desktop-preview-2026-09-06",
     "status": "closed-m1197-local-desktop-preview-pass",
@@ -373,12 +383,13 @@
     "ideaDocument": "https://docs.google.com/document/d/14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o/edit",
     "order": [
       "accepted-change",
-      "roadmap-and-active-checklist",
+      "repository-roadmap-and-active-card",
       "knowledge-base-rebuild-and-verification",
       "implementation",
-      "scheduled-shared-document-mirror"
+      "authoritative-reread-and-receipt",
+      "scheduled-communication-mirror"
     ],
-    "implementationBlockedUntil": "The local roadmap/checklist and reproducible knowledge base represent the accepted change without an unresolved conflict. The shared idea document is a scheduled communication mirror and never a local implementation gate.",
+    "implementationBlockedUntil": "The canonical repository roadmap/current active card and reproducible knowledge base represent the accepted change without an unresolved conflict. The shared idea document is a scheduled communication mirror and never a local implementation gate.",
     "preGateAllowance": "Read-only inspection, research, and emergency containment only."
   },
   "standingForemanAuthorization": {
@@ -621,10 +632,10 @@
   "sharedFileSynchronizationSchedule": {
     "id": "batched-shared-file-synchronization-2026-08-26",
     "status": "implemented-m230-verified",
-    "scope": "Keep the roadmap, active card, and reproducible KB as the immediate canonical control plane, and batch only communication-mirror publication. Local planning, explicit implementation bundle selection, KB reconciliation, implementation, validation, and closure continue from the local authority planes; an overdue Google Doc or GitHub mirror update cannot pause them. The exact shared idea document and private GitHub bridge receive compact approved bundle snapshots at their scheduled or explicit coordination boundaries, never a raw local change stream.",
+    "scope": "Keep the repository roadmap/current active card and reproducible KB as the immediate canonical control plane, and batch only communication-mirror publication. Repository planning, explicit implementation-bundle selection, KB reconciliation, implementation, validation, and closure continue from those authority planes; an overdue Google Doc or GitHub mirror update cannot pause them. The exact shared idea document and private GitHub bridge receive compact approved bundle snapshots at their scheduled or explicit coordination boundaries, never a raw local change stream.",
     "cadence": "Google shared idea document: at most one routine acceptance update and one routine closure or handoff update per local work session, with no more than one routine update in any 24-hour period unless the user explicitly requests a sync, a material blocker requires ChatGPT-side coordination, or a release/handoff boundary requires it. The cadence schedules only external mirror writes and never blocks local progress. Private GitHub bridge: weekly on Monday at 09:00 America/Los_Angeles, plus an explicit user-requested handoff, release, or materially changed external coordination boundary; it mirrors only compact approved artifacts.",
-    "safetyBoundary": "A batch never replaces source-project reread, the local roadmap/card, schema-plus-seed KB, direct approval, or Foundry authority. Read-only investigation and emergency containment remain allowed; a change outside an already authorized bundle still waits for the local roadmap/card and KB gate before implementation, not for a routine mirror write. Never publish hidden reasoning, credentials, raw tool output, mutable KB authority, or complete chat exports by routine sync.",
-    "implementationBlockedUntil": "This M230 governance correction is recorded in the local roadmap/card, the exact shared idea document under the user's explicit-request exception, and database/seed.sql, then rebuilt from database/schema.sql plus database/seed.sql and verified before contracts, workflow rules, checker, and tests are changed. After that, shared-mirror timing cannot block a governed local product slice.",
+    "safetyBoundary": "A batch never replaces source-project reread, the repository roadmap/current active card, the reproducible schema + baseline seed + lexical seed.d knowledge base, direct approval, or Foundry authority. Read-only investigation and emergency containment remain allowed; a change outside an already authorized bundle still waits for the repository roadmap/current-card and KB gate before implementation, not for a routine mirror write. Never publish hidden reasoning, credentials, raw tool output, mutable KB authority, or complete chat exports by routine sync.",
+    "implementationBlockedUntil": "The repository roadmap/current active card and reproducible knowledge base must represent the accepted change without unresolved conflict and the KB must rebuild/verify from schema.sql + seed.sql + lexical seed.d. The exact shared idea document remains a scheduled communication mirror and cannot block a governed local product slice.",
     "implementationVerification": "PASS LOCAL M230: the foundation and repository AGENTS contracts, consolidated workflow rules, development workflow 2026-08-26.3, active-slice checker, and focused KB/workflow tests enforce non-blocking scheduled mirrors. The exact shared idea document was revision-guarded and connector-reread at AIroW37veRtxT343_ge3oFeHUYSxILlGFYM_zQkHQdZmp5MgH58d8A3JPSSC80I82ZFuIIMUvvmDiL3Nsg3PTOsmwRoOs8Dv9J78BJMfUno. Full local verification passed build, workflow check, tests, tooling, KB integrity, and diff hygiene. Receipt: outputs/m230-nonblocking-shared-mirror-correction-receipt.json. This is governance evidence only; it does not complete Stage 8, alpha, or Foundry certification."
   },
   "acceptedWorkspaceAcceptanceBundle": {

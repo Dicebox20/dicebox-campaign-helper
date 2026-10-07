@@ -53,7 +53,7 @@ Scene creation records:
 
 `intent/spec → grayscale 3D structural render → grayscale semantic inspection → feature manifest → correction → painterly live render → painted semantic inspection → approved art identity → Foundry build plan → apply/inject → authoritative verify receipt`
 
-The feature manifest classifies walls, terrain/vision walls, doors/gates, windows/grates/railings, movement blockers, vision blockers, water/terrain, elevation/stairs/pits/bridges, lights, sounds, hazards, interactables, transitions, overhead structures, regions/triggers, and uncertain features.
+The feature manifest classifies walls, terrain/vision walls, doors/gates, windows/grates/railings, movement blockers, vision blockers, water/terrain, elevation/stairs/pits/bridges, lights, sounds, hazards, interactables, transitions, overhead structures, regions/triggers, and uncertain features. Until the dedicated schema exists, each consequential entry also records a stable provisional feature ID, source structural-render identity, semantic class, geometry primitive/coordinates, separate movement/vision/sound/light intent when relevant, baked-versus-stateful ownership, candidate Foundry projection type, relationships, and confidence/uncertainty.
 
 Coloring may enrich materials but may not erase semantics established by the approved structural pass.
 

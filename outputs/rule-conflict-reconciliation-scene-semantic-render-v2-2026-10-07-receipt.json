@@ -1,0 +1,118 @@
+{
+  "schemaVersion": "dicebox-governance-reconciliation-receipt/v1",
+  "receiptId": "rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07",
+  "date": "2026-10-07",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_GOVERNANCE",
+  "repository": "Dicebox20/dicebox-campaign-helper",
+  "branch": "reconcile-rules-latest-rendition-2026-10-07",
+  "baseCommit": "bc959942ff714c536bdbf0fa1225b7f459af862b",
+  "preReconciliationCommit": "4584b0f5c52110c50975cdc05f78fbf7c905690b",
+  "outcome": "Active governance and Scene-creation rules are reconciled to the latest accepted rendition without changing live Foundry state or historical evidence.",
+  "reconciledConflicts": [
+    {
+      "class": "knowledge-base-rebuild-authority",
+      "before": "Several active rules named database/seed.sql as the only accepted append surface.",
+      "after": "Narrow chronological additions default to dated database/seed.d/*.sql deltas; database/build_database.py applies schema.sql, seed.sql, then lexical seed.d and database/verify_database.py verifies integrity."
+    },
+    {
+      "class": "scene-injector-approval-gate",
+      "before": "An older hardening document and template still described PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD.",
+      "after": "The outer API is PREPARE -> RENDER -> INSPECT(PASS = APPROVED | REDO) -> BUILD; APPROVE is optional and redundant after final PASS."
+    },
+    {
+      "class": "communication-mirror-authority",
+      "before": "One Definition-of-Ready clause could be read as requiring Google document synchronization before local implementation despite the accepted non-blocking mirror rule.",
+      "after": "Repository roadmap/current active card plus reproducible KB are immediate authority; scheduled communication mirrors are non-blocking except at explicit publication/coordination boundaries."
+    },
+    {
+      "class": "map-rendering-semantics",
+      "before": "Older general rules treated map pixels only as renderers and prescribed a blueprint -> empty renderer ordering that conflicted with the newly accepted grayscale semantic-inspection workflow.",
+      "after": "New Scene Creation uses PREPARE -> grayscale STRUCTURAL_RENDER -> STRUCTURAL_INSPECT -> Feature Manifest/Spatial Blueprint reconciliation -> PAINT_RENDER -> FINAL_INSPECT -> BUILD/projection. Raw pixels never directly become Foundry authority; inspected observations become deterministic only after reconciliation."
+    },
+    {
+      "class": "camera-depth-language",
+      "before": "The camera rule forbade visible vertical faces in language that could conflict with the approved Blender-like structural model.",
+      "after": "The camera remains strict 90-degree orthographic; depth comes from wall-top thickness, bevels, relief, ambient occlusion, contact shadows, and object-height cues without perspective tilt."
+    },
+    {
+      "class": "resume-authority",
+      "before": "The automated Scene workflow listed current conversation context ahead of durable state.",
+      "after": "Durable state/receipts and repository/campaign records outrank conversation context, which is non-authoritative intent only."
+    },
+    {
+      "class": "two-pass-outer-state-compatibility",
+      "before": "The first two-pass draft allowed a structural REDO before paint while the older outer transition list only named PREPARED -> RENDERED.",
+      "after": "A structural PASS may remain PREPARED while painting completes; a structural failure may use INSPECTED_REDO with the structural render as bound failed-render evidence; RENDERED denotes the painterly candidate."
+    }
+  ],
+  "canonicalSceneWorkflow": "docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md",
+  "knowledgeBaseDelta": "database/seed.d/2026-10-07-zzz-rule-conflict-reconciliation-v2.sql",
+  "validation": {
+    "databaseBuild": {
+      "status": "PASS",
+      "integrity": "ok",
+      "sources": 2152,
+      "facts": 1785,
+      "decisions": 1698,
+      "openItems": 148,
+      "trials": 1270,
+      "subjects": 45,
+      "milestones": 124,
+      "tools": 248,
+      "seedD": 7
+    },
+    "databaseVerify": {
+      "status": "PASS",
+      "integrity": "ok"
+    },
+    "workflowCheck": {
+      "status": "PASS",
+      "activeStage": "scene-authoring-breadth",
+      "passedGates": 11,
+      "totalGates": 16,
+      "readyClaim": false
+    },
+    "workflowSelfTests": {
+      "status": "PASS",
+      "activeSliceCases": 5,
+      "injectorContractCases": 18
+    },
+    "checkerSyntax": {
+      "status": "PASS"
+    },
+    "knowledgeReread": {
+      "status": "PASS",
+      "decisionId": "D-2026-10-07-SCENE-SEMANTIC-RENDER-V2",
+      "factId": "F-2026-10-07-SCENE-SEMANTIC-PIPELINE-V2"
+    },
+    "diffCheck": {
+      "status": "PASS"
+    },
+    "focusedActiveSliceTests": {
+      "status": "PASS",
+      "files": 1,
+      "tests": 14
+    },
+    "finalWorkflowReread": {
+      "status": "PASS",
+      "passedGates": 11,
+      "totalGates": 16,
+      "activeStage": "scene-authoring-breadth",
+      "readyClaim": false
+    },
+    "structuralRedoStateValidation": {
+      "status": "PASS",
+      "contract": "dicebox-scene-automation-state/v1",
+      "stage": "INSPECTED_REDO",
+      "violations": []
+    }
+  },
+  "liveFoundryMutation": false,
+  "historicalEvidenceRewritten": false,
+  "remainingOpenItem": {
+    "id": "O-2026-10-07-SCENE-FEATURE-MANIFEST",
+    "nextAction": "Define the machine-readable Feature Manifest schema, bind structural/final inspection receipts to exact render hashes, map manifest categories into deterministic Scene/Foundry projection plans, and add representative fixtures/tests."
+  },
+  "manifestContract": "Provisional manifest-entry fields are now documented for stable feature identity, source render identity, geometry primitive/coordinates, movement/vision/sound/light intent, ownership/statefulness, Foundry projection hint, relationships, and uncertainty; machine-readable schema/enforcement remains O-2026-10-07-SCENE-FEATURE-MANIFEST."
+}

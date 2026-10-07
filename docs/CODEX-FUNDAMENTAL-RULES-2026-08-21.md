@@ -22,7 +22,7 @@ Codex applies that loop to repository work. DiceBox applies it to campaign inten
 
 2. **Use the knowledge base as the control plane.**
 
-   Before a specialized task—content, maps, spatial blueprints, Foundry documents, adapters, harnesses, installation, or recurring workflows—query the approved read-only KB surface for relevant sources, facts, decisions, trials, open items, schemas, and existing routines. Reuse a routine when possible. If a new routine is justified, record its purpose, authority boundary, owner, provenance, evidence, recovery behavior, and risks in `database/seed.sql`, then rebuild and verify the database.
+   Before a specialized task—content, maps, spatial blueprints, Foundry documents, adapters, harnesses, installation, or recurring workflows—query the approved read-only KB surface for relevant sources, facts, decisions, trials, open items, schemas, and existing routines. Reuse a routine when possible. If a new routine is justified, record its purpose, authority boundary, owner, provenance, evidence, recovery behavior, and risks in the reproducible KB before implementation. Narrow chronological additions default to a dated `database/seed.d/*.sql` delta; rebuild through `database/build_database.py` and verify through `database/verify_database.py`.
 
 3. **Respect source precedence and reconcile conflicts explicitly.**
 
@@ -44,9 +44,9 @@ Codex applies that loop to repository work. DiceBox applies it to campaign inten
 
    Use the narrowest reviewed native Foundry, D&D5e, or module primitive. Each mechanic has one owner; presentation, media, and helper UI do not become mechanical authority. Keep Utility and Use as separate semantic categories.
 
-8. **Keep geometry and rendering separate.**
+8. **Keep raw pixels separate from deterministic geometry while allowing reviewed semantic extraction.**
 
-   The Spatial Blueprint owns origin, scale, topology, walls, doors, anchors, regions, and clearances. Images are renderers and evidence of visual intent only. Do not infer playable geometry, behavior, or puzzle state from pixels.
+   The Spatial Blueprint and reconciled Feature Manifest own origin, scale, topology, walls, doors, anchors, regions, clearances, and other deterministic Scene semantics. An existing explicit Blueprint outranks conflicting pixels. For new Scene Creation, the grayscale structural render may propose visible features, but those observations become usable only after mandatory structural inspection records and reconciles them into the Feature Manifest/Blueprint. Painterly pixels never silently add runtime semantics. Do not compile Foundry geometry, behavior, or puzzle state directly from unreviewed pixels.
 
 9. **Treat runtime state as sovereign during play.**
 
@@ -90,7 +90,7 @@ Codex applies that loop to repository work. DiceBox applies it to campaign inten
 
 19. **Record the work back into the knowledge system.**
 
-   After research or implementation, update source provenance, facts, decisions, trials, open items, and relationships as applicable. Keep `database/schema.sql` plus `database/seed.sql` reproducible and verify the rebuilt artifact. Do not let the conversation become the only memory of a decision.
+   After research or implementation, update source provenance, facts, decisions, trials, open items, and relationships as applicable. Keep `database/schema.sql`, `database/seed.sql`, and lexical `database/seed.d/*.sql` reproducible; rebuild with `database/build_database.py` and verify the artifact. Do not let the conversation become the only memory of a decision.
 
 ## Codex operating behavior
 

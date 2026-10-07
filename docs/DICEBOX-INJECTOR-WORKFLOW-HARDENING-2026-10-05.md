@@ -10,9 +10,11 @@ A DiceBox Scene Injector BUILD cannot be considered successful unless it produce
 
 ## Locked named-operation contract
 
-`PREPARE -> RENDER -> INSPECT -> APPROVE -> BUILD`
+`PREPARE -> RENDER -> INSPECT(PASS = APPROVED | REDO) -> BUILD`
 
-These words are workflow API operations. Agents must load the canonical workflow instead of interpreting BUILD as generic packaging.
+`APPROVE` remains an optional redundant acknowledgment after a final INSPECT PASS; it is not a required gate. These words are workflow API operations. Agents must load the canonical workflow instead of interpreting BUILD as generic packaging.
+
+The current RENDER/INSPECT rendition is defined in `docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md`: grayscale structural render → structural inspection/Feature Manifest → painterly render → final inspection. Only the final INSPECT PASS approves art.
 
 ## Fail-closed rule
 
