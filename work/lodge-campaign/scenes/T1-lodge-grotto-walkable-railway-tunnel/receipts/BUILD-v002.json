@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "T1",
+  "phase": "BUILD",
+  "revision": "v002",
+  "status": "PASS",
+  "approvedRenderGeneration": "fb8111e2-7ab5-4865-89a7-59eac8ae5597",
+  "artifact": "central-lodge-t1-build-v002.md",
+  "artifactBytes": 106293,
+  "macroBytes": 105912,
+  "artifactSha256": "fdf7b91225127f950377d2dd1d2c9dfbf61166e57d90191acac8a8826260f355",
+  "macroSha256": "f3057544ba51ad1a66b295023c759beac602d1311b817ae64c1d6f520e3892bd",
+  "contract": "dicebox-scene-injector-build/v2",
+  "supersedesBuild": "central-lodge-t1-build-v001",
+  "recoveryEvidence": {
+    "v001ApplyStatus": "FAILED",
+    "v001Failure": "Flag scope \"dicebox\" is not valid or not currently active",
+    "readOnlyInspection": "no matching T1 Scene found",
+    "recoveryMode": "corrected create-only build"
+  },
+  "fixes": [
+    "Moved DiceBox metadata to valid Foundry world flag scope as flags.world.dicebox.",
+    "Changed flag rereads to getFlag(\"world\", \"dicebox\").",
+    "Changed final install metadata write to setFlag(\"world\", \"dicebox\", ...).",
+    "Added name-based create-only collision detection in addition to stable metadata detection."
+  ],
+  "validation": {
+    "nodeSyntax": "PASS",
+    "contract": "PASS",
+    "violations": []
+  },
+  "implementationPending": [
+    "Run corrected v002 once in Foundry.",
+    "Require PREVIEW PASS before APPLY.",
+    "If APPLY returns created_document PASS, do not rerun."
+  ]
+}
