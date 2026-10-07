@@ -1,0 +1,27 @@
+{
+  "campaignId": "central-lodge",
+  "phase": "CL-10_VERIFY",
+  "verifyId": "central-lodge-cl10-e2-final-verify-v001",
+  "status": "PASS",
+  "noWrite": true,
+  "sceneId": "sI4YVZZChgey1qNi",
+  "regions": 9,
+  "behaviors": 5,
+  "gameplay": {
+    "notice": 1,
+    "pickup": 3,
+    "observation": 1,
+    "transition": 0,
+    "light": 0
+  },
+  "foundation": {
+    "scenes": 21,
+    "regions": 201,
+    "behaviors": 21,
+    "ledgerRevision": 0,
+    "canonicalItems": 33,
+    "kernelHash": "1e45da0c5fdaec7ec8e229593b7408e3060a21ef45381ccd0f973227851e8205"
+  },
+  "blockers": [],
+  "warnings": []
+}
