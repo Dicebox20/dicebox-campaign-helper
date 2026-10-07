@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "phase": "VERIFY_PATCH",
+  "verifyId": "central-lodge-f1-f2-transition-verify-v001",
+  "status": "PASS",
+  "evidenceClass": "read_only_runtime_verification",
+  "sourceUuid": "Scene.La9krMOMBhAhDLi6.Region.iuoEHBXWtXgzYmMh",
+  "targetUuid": "Scene.HWitOe1wSid7MZ1y.Region.pplHOCmUZOqFymOy",
+  "behaviorId": "FElgIMZFVX5GleSy",
+  "patchId": "central-lodge-f1-f2-transition-binding-v001",
+  "preservedStructure": {
+    "f1": {
+      "walls": 27,
+      "regions": 6,
+      "behaviors": 4,
+      "lights": 6
+    },
+    "f2": {
+      "walls": 43,
+      "regions": 8,
+      "behaviors": 4,
+      "lights": 8
+    }
+  },
+  "checks": {
+    "wardGate": true,
+    "targetUuid": true,
+    "teleportToken": true,
+    "playerFollow": true,
+    "regionPolicyFailures": 0,
+    "blockers": 0,
+    "warnings": 0
+  },
+  "notes": [
+    "User supplied Foundry console output showing final transition VERIFY PASS.",
+    "F1 and F2 binding metadata agree in both directions.",
+    "No structure drift was detected on either Scene.",
+    "F1/F2 construction chain is closed."
+  ]
+}
