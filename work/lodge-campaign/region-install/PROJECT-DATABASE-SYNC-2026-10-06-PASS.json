@@ -4,32 +4,27 @@
   "operation": "project-database-sync",
   "status": "PASS",
   "authority": "local project knowledge database",
-  "localDatabase": {
-    "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\database\\dicebox_campaign_helper_knowledge.sqlite",
-    "rebuild": {
-      "integrity": "ok",
-      "sources": 279,
-      "facts": 1006,
-      "decisions": 441,
-      "open_items": 526,
-      "trials": 198,
-      "subjects": 40,
-      "milestones": 14
-    },
-    "verify": {
-      "integrity": "ok",
-      "activity_hits": 8,
-      "active_work": 485,
-      "research_subjects": 40,
-      "milestones": 14
-    }
+  "catalogVersion": "2026-10-06.comprehensive-v1",
+  "database": {
+    "integrity": "ok",
+    "sources": 335,
+    "facts": 1110,
+    "decisions": 444,
+    "open_items": 530,
+    "trials": 198,
+    "subjects": 40,
+    "milestones": 19,
+    "tools": 7,
+    "seedDeltasApplied": 4
   },
-  "centralLodge": {
-    "handoffVersion": "2026-10-06.region-install-v1",
-    "currentPhase": "CL-10C",
-    "currentStatus": "RUNTIME_CANARY_PENDING",
-    "nextInstaller": "CL-11",
-    "nextScene": "U2",
+  "catalog": {
+    "repositorySourceArtifacts": 53,
+    "sceneFacts": 21,
+    "itemFacts": 33,
+    "e2BehaviorFacts": 5,
+    "phaseFacts": 31,
+    "currentGate": "CL-10C E2 runtime canary",
+    "nextInstaller": "CL-11 U2",
     "scenes": 21,
     "regions": 201,
     "regionBehaviors": 21,
@@ -43,6 +38,7 @@
   "sourceFiles": [
     "work/lodge-campaign/REGION-PUZZLE-INSTALL-PLAN-v001.md",
     "work/lodge-campaign/HANDOFF-2026-10-06-REGION-INSTALL-NEXT.md",
-    "database/seed.d/2026-10-06-central-lodge-region-install-handoff.sql"
+    "database/seed.d/2026-10-06-central-lodge-region-install-handoff.sql",
+    "database/seed.d/2026-10-06-zz-central-lodge-project-catalog.sql"
   ]
 }
