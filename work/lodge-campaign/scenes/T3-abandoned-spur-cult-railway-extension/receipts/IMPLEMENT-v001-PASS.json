@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "T3",
+  "phase": "IMPLEMENT",
+  "buildRevision": "v001",
+  "status": "PASS",
+  "evidenceClass": "created_document",
+  "foundryOperation": "central-lodge.t3.apply",
+  "buildId": "central-lodge-t3-build-v001",
+  "sceneIdRuntime": "aIKQmFiuXWipEdyb",
+  "previewStatus": "PASS",
+  "applyStatus": "PASS",
+  "installerRerunAllowed": false,
+  "notes": [
+    "User supplied Foundry console receipt.",
+    "Renderer saved to worlds/the-lost-mine-of-phandalin/assets/central-lodge/t3.",
+    "Foundry explicitly reported: Central Lodge T3 APPLY PASS. Do not rerun this installer."
+  ]
+}
