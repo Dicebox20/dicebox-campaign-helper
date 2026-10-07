@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "F1",
+  "phase": "VERIFY",
+  "revision": "v001",
+  "status": "PASS",
+  "verifyId": "central-lodge-f1-post-repair-verify-v001",
+  "evidenceClass": "read_only_runtime_verification",
+  "sceneUuid": "Scene.La9krMOMBhAhDLi6",
+  "counts": {
+    "walls": 27,
+    "managedWalls": 27,
+    "regions": 6,
+    "regionBehaviors": 3,
+    "ambientLights": 6
+  },
+  "puzzleState": {
+    "cicadaInstalled": false,
+    "innerWardResolved": false,
+    "innerGateId": "M2QCtVq3TEySovAz",
+    "innerGateState": 2,
+    "f2Binding": "UNBOUND_PENDING_F2_BUILD"
+  },
+  "regionPolicy": {
+    "visibility": "LAYER",
+    "locked": false,
+    "failures": 0
+  },
+  "blockers": [],
+  "warnings": [],
+  "notes": [
+    "User supplied Foundry console output showing FINAL VERIFY PASS.",
+    "F1 structure, identity, Region policy, behavior population, lighting population, and initial puzzle state all matched expectations.",
+    "F1 is complete and safe to advance to F2 PREPARE."
+  ]
+}
