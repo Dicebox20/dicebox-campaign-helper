@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "T2",
+  "phase": "BUILD",
+  "revision": "v001",
+  "status": "PASS",
+  "approvedRenderGeneration": "ccec5a39-88af-49e9-9456-499d1d243b99",
+  "artifact": "central-lodge-t2-build-v001.md",
+  "artifactBytes": 125516,
+  "macroBytes": 125113,
+  "artifactSha256": "a843d06d27d4fb5c6d6079b468dbce49b68bff60b992f11599cdf77dce4f8a4d",
+  "macroSha256": "fe697d8f6202a29b2eae9e3ca6baabebfc54b3f6c63f0ef3f2b636fa24800b7c",
+  "contract": "dicebox-scene-injector-build/v2",
+  "contents": {
+    "scene": 1,
+    "walls": 24,
+    "regions": 6,
+    "regionBehaviors": 3,
+    "ambientLights": 6,
+    "discoveries": 1,
+    "criticalProgression": "Railway Switch Wheel",
+    "embeddedArt": ["approved-t2-renderer"]
+  },
+  "validation": {
+    "nodeSyntax": "PASS",
+    "contract": "PASS",
+    "violations": []
+  },
+  "implementationPending": [
+    "Run the reviewed T2 BUILD macro once in the exact Foundry runtime.",
+    "Require PREVIEW PASS before APPLY.",
+    "Keep T2 mouth A/B orientation toward N2/N3 unbound until authoritative geography resolves it.",
+    "VERIFY Scene structure, RegionBehavior wiring, switch-wheel recovery state, black-triangle Notice behavior, recent-use observation, and inactive lighting after creation."
+  ]
+}
