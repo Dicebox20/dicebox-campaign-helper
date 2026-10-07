@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "repairId": "dicebox-route-player-follow-v001",
+  "phase": "WORLD_ROUTE_REPAIR",
+  "status": "PASS",
+  "evidenceClass": "updated_document",
+  "scope": "all enabled DiceBox route RegionBehaviors found in world",
+  "candidateCount": 60,
+  "patched": 60,
+  "notes": [
+    "User supplied Foundry console receipt.",
+    "Preview PASS with 60 candidate routes.",
+    "Apply PASS with 60 routes patched.",
+    "Repair preserves GM-authoritative token teleportation and adds targeted player scene-follow behavior.",
+    "DAE compatibility warnings concerning Baba Yaga's Unfinished Lesson are unrelated to this repair."
+  ],
+  "verificationPending": [
+    "Have an active player trigger one patched route.",
+    "Confirm their token transfers and their client changes to the destination Scene.",
+    "If successful, treat player-follow repair as verified across the patched route set."
+  ]
+}
