@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "phase": "VERIFY",
+  "verifyId": "central-lodge-required-items-verify-v001",
+  "status": "PASS",
+  "noWrite": true,
+  "required": 33,
+  "verified": 33,
+  "folder": {
+    "id": "x8NZ4m1bBBWsAK82",
+    "name": "Central Lodge — Required Items"
+  },
+  "foreignGlassEyePreserved": true,
+  "blockers": [],
+  "notes": [
+    "User supplied Foundry console output showing FINAL VERIFY PASS.",
+    "All 33 canonical Central Lodge Items were uniquely resolved by stableId.",
+    "All managed Items were in the expected folder and sourced from dnd5e.items or dnd5e.tradegoods.",
+    "The unrelated pre-existing foreign Glass Eye remained separate and unmanaged."
+  ]
+}
