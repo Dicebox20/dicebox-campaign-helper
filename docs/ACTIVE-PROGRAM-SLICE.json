@@ -1,6 +1,16 @@
 {
   "schemaVersion": "1.0.0",
   "updatedAt": "2026-10-07",
+  "acceptedFoundryHistoricalEvidenceIngest20261007": {
+    "id": "foundry-historical-evidence-ingest-2026-10-07",
+    "status": "closed-local-evidence-pass",
+    "acceptanceObservation": "Accumulate high-value Foundry VTT evidence from older Codex project workspaces into the reproducible DiceBox Campaign Helper knowledge base while preserving chronology, provenance, exact evidence labels, and current authority boundaries.",
+    "allowedScope": "Read-only historical project inspection; SHA-256 source manifest; historical sources/facts/trials/tools/relationships; human catalog; validation receipt; roadmap/card chronology. No live Foundry mutation, raw legacy database promotion, campaign-state rewrite, current runtime certification, or unrelated product-stage advancement.",
+    "deterministicCheck": "Historical sources retain original capture dates; current-import capture remains 2026-10-07; raw LevelDB mutation scripts are explicitly historical anti-pattern evidence; KB rebuild/verify passes; representative imported facts reread successfully; manifest fingerprints selected source files and backup bundles without copying raw legacy worlds.",
+    "liveCheck": "None. Historical/local evidence ingestion only.",
+    "stopCondition": "Any need to mutate live Foundry, reinterpret historical evidence as current certification, copy raw world databases into canonical authority, or silently override newer project rules stops the ingest.",
+    "implementationVerification": "PASS LOCAL: 166 selected files / 45,047,439 bytes fingerprinted across five historical Codex project roots; 12 Castle backup bundles fingerprinted; eight Ballad world snapshots indexed; 56 Scenes, 61 Macros, six Playlists, and eight automation signal groups parsed from the final historical snapshot; 163 historical facts, six trials, six tools, and six sources imported. Initial KB rebuild/verify passed integrity ok at 2158 sources, 1948 facts, 1698 decisions, 148 open items, 1276 trials, 45 subjects, 124 milestones, 254 tools, eight seed.d deltas. Representative historical MATT/Midi-QOL, Castle RegionBehavior, DMF activity-ID, and Simon Maze facts reread successfully. Receipt: outputs/foundry-historical-evidence-ingest-2026-10-07-receipt.json. No live Foundry mutation occurred."
+  },
   "acceptedRuleConflictReconciliation20261007": {
     "id": "rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07",
     "status": "closed-local-governance-pass",

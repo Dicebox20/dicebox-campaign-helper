@@ -1,0 +1,106 @@
+{
+  "schemaVersion": "dicebox-foundry-historical-evidence-ingest-receipt/v1",
+  "receiptId": "foundry-historical-evidence-ingest-2026-10-07",
+  "date": "2026-10-07",
+  "evidenceLabel": "local",
+  "status": "PASS_LOCAL_EVIDENCE_INGEST",
+  "repository": "Dicebox20/dicebox-campaign-helper",
+  "branch": "foundry-historical-evidence-ingest-2026-10-07",
+  "baseCommit": "69c0563179e4efcb6fa4e141fd365d5c4fe9af4f",
+  "sourceRoots": [
+    "C:\\Users\\rujie\\Documents\\Codex\\2026-07-17\\foundry-campaign-projects",
+    "C:\\Users\\rujie\\Documents\\Codex\\2026-07-18\\foundry-campaign-projects",
+    "C:\\Users\\rujie\\Documents\\Codex\\2026-07-14\\castle-of-dreams",
+    "C:\\Users\\rujie\\Documents\\Codex\\2026-06-25\\what-can-i-do-with-codex",
+    "C:\\Users\\rujie\\Documents\\Codex\\2026-06-25\\can"
+  ],
+  "corpus": {
+    "selectedFiles": 166,
+    "selectedBytes": 45047439,
+    "manifestSha256": "64a51c7d6da147eff72080bbd3a5130a90cca854ef3a5663f1ef827e91c0b8bc",
+    "castleBackupBundlesFingerprinted": 12,
+    "liveWorldSnapshotsIndexed": 8,
+    "latestSnapshotScenes": 56,
+    "latestSnapshotMacros": 61,
+    "latestSnapshotPlaylists": 6,
+    "automationSignalGroups": 8,
+    "importedFacts": 163,
+    "importedTrials": 6,
+    "importedTools": 6,
+    "importedSources": 6
+  },
+  "notableEvidence": [
+    "2026-07-19 historical live Foundry verification: 8/8 Monk's Active Tiles enter/hurtheal damage triggers.",
+    "2026-07-19 historical live Foundry verification: 8/8 MATT enter -> runmacro(GM) tiles using MidiQOL.applyTokenDamage for typed 3d6 lightning.",
+    "Castle of Dreams historical RegionBehavior teleportToken create/update/deduplicate pattern.",
+    "Castle historical Scene-padding coordinate-frame correction and line-segment wall/door evidence.",
+    "Historical item UUID corpus: 255 databases / 107335 UUID rows with explicit completeness caveat.",
+    "Dungeon Master's Forge historical Foundry v14.364 / DND5e 5.3.3 evidence for native enchant, summon, multi-profile summon, equipment attack, 16-character activity IDs, Item.create folder placement, TokenDocument lighting fallback, 6/6 diagnostics, and read-only DND5e content resolver."
+  ],
+  "authorityBoundary": {
+    "currentRuntimeCertified": false,
+    "liveFoundryMutation": false,
+    "rawLegacyDatabasesCopiedToRepository": false,
+    "legacyDirectLevelDbMutationPromoted": false,
+    "note": "All imported legacy behavior remains historical evidence. Current Foundry v14.367 behavior still requires current exact-stack reread/verification before promotion."
+  },
+  "validation": {
+    "databaseBuild": {
+      "status": "PASS",
+      "integrity": "ok",
+      "sources": 2158,
+      "facts": 1948,
+      "decisions": 1698,
+      "openItems": 148,
+      "trials": 1276,
+      "subjects": 45,
+      "milestones": 124,
+      "tools": 254,
+      "seedD": 8
+    },
+    "databaseVerify": {
+      "status": "PASS",
+      "integrity": "ok",
+      "centralLodgeScenes": 21,
+      "centralLodgeRegions": 201,
+      "centralLodgeBehaviors": 21,
+      "centralLodgeItems": 33,
+      "centralLodgeGate": "CL-10C E2 runtime canary"
+    },
+    "knowledgeReread": {
+      "status": "PASS",
+      "factIds": [
+        "F-HIST-20260719-MATT-MIDIQOL-LIGHTNING-8OF8",
+        "F-HIST-20260718-CASTLE-REGIONBEHAVIOR-TELEPORT",
+        "F-HIST-20260701-DMF-ACTIVITY-ID-16",
+        "F-HIST-20260717-SCENE-E9J6zmBGH3rSciYg"
+      ]
+    },
+    "finalDatabaseBuild": {
+      "status": "PASS",
+      "integrity": "ok",
+      "sources": 2159,
+      "facts": 1949,
+      "decisions": 1698,
+      "openItems": 148,
+      "trials": 1276,
+      "subjects": 45,
+      "milestones": 124,
+      "tools": 254,
+      "seedD": 9
+    },
+    "workflowCheck": {
+      "status": "PASS",
+      "passedGates": 11,
+      "totalGates": 16,
+      "activeStage": "scene-authoring-breadth",
+      "readyClaim": false
+    }
+  },
+  "artifacts": [
+    "outputs/foundry-historical-evidence-manifest-2026-10-07.json",
+    "docs/FOUNDRY-HISTORICAL-EVIDENCE-CATALOG-2026-10-07.md",
+    "database/seed.d/2026-10-07-zzzz-foundry-historical-evidence.sql",
+    "tools/build-historical-foundry-evidence-ingest.py"
+  ]
+}
