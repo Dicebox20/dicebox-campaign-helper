@@ -4,7 +4,8 @@ import sqlite3
 root = Path(__file__).resolve().parent
 database_path = root / "dicebox_campaign_helper_knowledge.sqlite"
 schema = (root / "schema.sql").read_text(encoding="utf-8")
-seed = (root / "seed.sql").read_text(encoding="utf-8")\nseed_d = sorted((root / "seed.d").glob("*.sql")) if (root / "seed.d").exists() else []
+seed = (root / "seed.sql").read_text(encoding="utf-8")
+seed_d = sorted((root / "seed.d").glob("*.sql")) if (root / "seed.d").exists() else []
 
 if database_path.exists():
     database_path.unlink()
@@ -12,6 +13,8 @@ if database_path.exists():
 with sqlite3.connect(database_path) as connection:
     connection.executescript(schema)
     connection.executescript(seed)
+    for delta in seed_d:
+        connection.executescript(delta.read_text(encoding="utf-8"))
     integrity = connection.execute("PRAGMA integrity_check").fetchone()[0]
     if integrity != "ok":
         raise SystemExit(f"SQLite integrity check failed: {integrity}")
@@ -24,5 +27,6 @@ with sqlite3.connect(database_path) as connection:
         "subjects": connection.execute("SELECT COUNT(*) FROM kb_research_subjects").fetchone()[0],
         "milestones": connection.execute("SELECT COUNT(*) FROM kb_milestones").fetchone()[0],
         "tools": connection.execute("SELECT COUNT(*) FROM kb_tools").fetchone()[0],
+        "seed_d": len(seed_d),
     }
     print({"integrity": integrity, **counts})
