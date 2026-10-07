@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "phase": "CL-04_VERIFY",
+  "verifyId": "central-lodge-cl04-region-metadata-verify-v001",
+  "status": "PASS",
+  "noWrite": true,
+  "totals": {
+    "scenes": 21,
+    "regions": 201,
+    "stableRegions": 201,
+    "normalizedRegions": 169,
+    "protectedRegions": 32,
+    "behaviors": 16,
+    "protectedBehaviorStableIds": 16,
+    "canonicalItems": 33
+  },
+  "manifest": {
+    "expectedHash": "368c22e61d6bd6b6af1ef3cb8982b23cbd4119d0d924af06b4b8ac6183f7e39a",
+    "liveHash": "368c22e61d6bd6b6af1ef3cb8982b23cbd4119d0d924af06b4b8ac6183f7e39a"
+  },
+  "ledger": {
+    "id": "xhlXv6CCH34HVga3",
+    "revision": 0,
+    "itemEntries": 33
+  },
+  "kernel": {
+    "id": "FHQiFYx6OntZVo9d",
+    "sourceHash": "1e45da0c5fdaec7ec8e229593b7408e3060a21ef45381ccd0f973227851e8205"
+  },
+  "blockers": [],
+  "warnings": []
+}
