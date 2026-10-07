@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "T1",
+  "phase": "IMPLEMENT",
+  "buildRevision": "v001",
+  "status": "FAILED",
+  "evidenceClass": "user-supplied-foundry-console",
+  "noBlindRetry": true,
+  "error": "Flag scope \"dicebox\" is not valid or not currently active",
+  "foundryOperation": "central-lodge.t1.apply",
+  "diagnosis": "BUILD v001 uses the custom flag scope dicebox. Foundry v14 requires world-owned flags to use the world scope unless the scope is an active system/module package.",
+  "recovery": [
+    "Do not rerun BUILD v001.",
+    "Authoritatively inspect whether the T1 Scene, renderer, Walls, Regions, and AmbientLights were already created before the final flag-stamping failure.",
+    "If the exact T1 documents exist, repair/migrate metadata under flags.world.dicebox without recreating them.",
+    "If creation did not occur, issue a corrected create-only BUILD revision using the world flag scope."
+  ]
+}
