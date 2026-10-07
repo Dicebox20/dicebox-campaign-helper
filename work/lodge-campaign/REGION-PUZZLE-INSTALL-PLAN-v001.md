@@ -4,6 +4,21 @@
 **Runtime:** Foundry VTT 14.367 / D&D5e 5.3.3  
 **Purpose:** install the missing RegionBehavior logic and puzzle progression cleanly, in bounded sequence, without recreating Region geometry or overwriting already-verified late-game behavior.
 
+## Execution status — 2026-10-06
+
+The installation sequence is now active and has passed the following gates:
+
+- **CL-01 Required Item Registry — COMPLETE.** 33/33 canonical progression Items installed and independently verified. The unrelated foreign `Glass Eye` remains untouched.
+- **CL-00 Preflight Snapshot — COMPLETE.** Baseline locked at 21 Scenes, 201 Regions, 16 pre-existing RegionBehaviors, and 33 canonical Items.
+- **CL-02 State Ledger — COMPLETE.** `JournalEntry.xhlXv6CCH34HVga3`, stable ID `dbx:central-lodge:state`, schema 1.0.0, revision 0 at the current handoff.
+- **CL-03 Runtime Kernel — COMPLETE.** `Macro.FHQiFYx6OntZVo9d`, stable ID `dbx:central-lodge:macro:runtime`, kernel 1.0.0, source hash `1e45da0c5fdaec7ec8e229593b7408e3060a21ef45381ccd0f973227851e8205`.
+- **CL-04 Region Metadata Normalizer — COMPLETE.** 169 older Regions normalized; 201/201 Lodge Regions now have unique stable IDs. Manifest hash `368c22e61d6bd6b6af1ef3cb8982b23cbd4119d0d924af06b4b8ac6183f7e39a`.
+- **CL-10 E2 Rear Service Yard — IMPLEMENT + FINAL VERIFY PASS.** Five behaviors are installed: one Notice, three pickups, and one observation. E2 has 9 Regions and 5 RegionBehaviors. Lodge-wide behavior count is now 21. Transitions and lights remain deliberately unbound.
+- **CL-10 runtime canary — PENDING.** No E2 Region has been deliberately live-triggered through the new shared kernel yet. This is the next gate before cloning the pattern into U2.
+- **Next installer after canary PASS: CL-11 U2 Servants / Nursery / Attic.**
+
+Current protected foundation at handoff: **21 Scenes / 201 Regions / 21 RegionBehaviors / 33 canonical Items / ledger revision 0**.
+
 ## Current live baseline
 
 The current Lodge has:
@@ -242,15 +257,32 @@ This phase produces a canonical Region manifest used by every later installer.
 ## Phase 1 — Early acquisition and local mechanisms
 
 ### CL-10 — E2 Rear Service Yard
-Install:
-- Well Carving Notice;
-- Well Carving Pattern interaction;
+
+**Status: IMPLEMENT PASS + FINAL VERIFY PASS. Runtime canary pending.**
+
+Installed:
+- Well Carving Notice, DC 6, Stage 2 suggestion Investigation, silent failure, no automatic Item award;
+- Well Carving Pattern recovery;
 - Iron Hand Crank recovery;
 - Servant Bell Pull recovery;
 - Recent Use observation;
-- transition metadata for the two existing service-path Regions.
+- deferred transition metadata for the two existing service-path Regions.
 
-Do not recreate the two light Regions.
+The two light Regions remain passive. Transition destinations remain unbound.
+
+### CL-10C — E2 Runtime Canary
+
+**Status: PENDING. This is the current handoff gate.**
+
+Use one designated disposable/test Actor and token to exercise the shared kernel through live E2 Region events before cloning the pattern elsewhere. The canary must prove:
+- a Notice event reaches the runtime kernel and records exactly one flat 1d20 attempt for that Actor;
+- Notice failure is silent and Notice success does not auto-award an Item;
+- one pickup behavior clones the correct canonical Item to the Actor and increments ledger revision;
+- duplicate recovery is blocked;
+- one observation behavior records its state once and does not spam repeatedly;
+- no Region geometry, route metadata, light behavior, or unrelated state changes.
+
+Because this is a state-changing test, author a paired reset/cleanup path before executing it. Record the pre-test ledger revision and return the campaign to an explicitly documented post-canary state before CL-11 begins.
 
 ### CL-11 — U2 Servants / Nursery / Attic
 Install:
