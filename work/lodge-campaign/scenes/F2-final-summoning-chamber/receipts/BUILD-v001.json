@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "campaignId": "central-lodge",
+  "sceneId": "F2",
+  "phase": "BUILD",
+  "revision": "v001",
+  "status": "PASS",
+  "approvedRenderGeneration": "b1acf8f2-d528-4cd6-8ed1-2bb581fb2cc5",
+  "artifact": "central-lodge-f2-build-v001.md",
+  "artifactBytes": 114361,
+  "macroBytes": 113942,
+  "artifactSha256": "a0b20c7c03fbbf4bb5c649be24b7f0d338b9835e96e84cdf9ede69aeb40eedce",
+  "macroSha256": "eb24086375a5984eedf3a8d10356dd9aa0b6c5c8aa136df17ee6877525922e77",
+  "contract": "dicebox-scene-injector-build/v2",
+  "embeddedArt": {
+    "format": "webp",
+    "nativeDimensions": "1800x1200",
+    "bytes": 60810,
+    "sha256": "b9f7d9d2af99f49800542903fa79fc5e895cfa7f0761f1692bf33493dd3f73b1",
+    "approvedSourceSha256": "67a1a99df47804d0f8c1e4759c709a562cb5298512e672e236300c0fc895bf36"
+  },
+  "contents": {
+    "scene": 1,
+    "walls": 43,
+    "regions": 8,
+    "regionBehaviors": 4,
+    "ambientLights": 8,
+    "discoveries": 0,
+    "initialEncounterState": "ACTIVE_RITUAL_BASELINE",
+    "finalMap": true,
+    "f1Binding": "PENDING_POST_F2_VERIFY",
+    "regionPolicy": {
+      "visibility": "LAYER",
+      "locked": false
+    }
+  },
+  "validation": {
+    "nodeSyntax": "PASS",
+    "contractEquivalent": "PASS",
+    "violations": []
+  },
+  "safety": {
+    "createOnly": true,
+    "partialInstallGuard": "installState INSTALLING -> COMPLETE",
+    "blindRetryForbiddenOnPartialScene": true,
+    "f1SceneMutatedByBuild": false
+  },
+  "implementationPending": [
+    "Run the reviewed F2 BUILD macro once in Foundry VTT 14.367 / D&D5e 5.3.3.",
+    "Require PREVIEW PASS before APPLY.",
+    "If APPLY returns PASS with evidenceClass created_document, do not rerun.",
+    "Immediately run a purpose-built read-only VERIFY diagnostic after successful IMPLEMENT.",
+    "Bind the existing F1 transition only after F2 VERIFY PASS."
+  ]
+}
