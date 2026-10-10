@@ -1,0 +1,2399 @@
+{
+  "schemaVersion": "0.1.0",
+  "blueprintId": "dbx:blueprint:m02-tallcap",
+  "name": "M02 — Tallcap Forest | Spatial Blueprint CANDIDATE v001",
+  "origin": {
+    "x": 0,
+    "y": 0
+  },
+  "bounds": {
+    "width": 4320,
+    "height": 2880
+  },
+  "grid": {
+    "size": 120,
+    "unitsPerCell": 5
+  },
+  "scale": {
+    "pixelsPerUnit": 24,
+    "unit": "ft"
+  },
+  "levels": [
+    {
+      "levelId": "dbx:level:m02-ground",
+      "label": "Default Cavern Floor",
+      "elevation": 0
+    }
+  ],
+  "walls": [
+    {
+      "wallId": "dbx:wall:m02-edge-north-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 0,
+        "y": 1122.1875
+      },
+      "b": {
+        "x": 50.625,
+        "y": 908.4375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 50.625,
+        "y": 908.4375
+      },
+      "b": {
+        "x": 61.875,
+        "y": 576.5625
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 61.875,
+        "y": 576.5625
+      },
+      "b": {
+        "x": 191.25,
+        "y": 253.125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 191.25,
+        "y": 253.125
+      },
+      "b": {
+        "x": 464.0625,
+        "y": 39.375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 464.0625,
+        "y": 39.375
+      },
+      "b": {
+        "x": 984.375,
+        "y": 22.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 984.375,
+        "y": 22.5
+      },
+      "b": {
+        "x": 2039.0625,
+        "y": 16.875
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2039.0625,
+        "y": 16.875
+      },
+      "b": {
+        "x": 3037.5,
+        "y": 11.25
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3037.5,
+        "y": 11.25
+      },
+      "b": {
+        "x": 3825,
+        "y": 25.3125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3825,
+        "y": 25.3125
+      },
+      "b": {
+        "x": 4190.625,
+        "y": 435.9375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 4190.625,
+        "y": 435.9375
+      },
+      "b": {
+        "x": 4269.375,
+        "y": 857.8125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-north-11",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 4269.375,
+        "y": 857.8125
+      },
+      "b": {
+        "x": 4320,
+        "y": 1113.75
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 0,
+        "y": 1530
+      },
+      "b": {
+        "x": 22.5,
+        "y": 1800
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 22.5,
+        "y": 1800
+      },
+      "b": {
+        "x": 78.75,
+        "y": 2317.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 78.75,
+        "y": 2317.5
+      },
+      "b": {
+        "x": 225,
+        "y": 2666.25
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 225,
+        "y": 2666.25
+      },
+      "b": {
+        "x": 731.25,
+        "y": 2863.125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 731.25,
+        "y": 2863.125
+      },
+      "b": {
+        "x": 1743.75,
+        "y": 2865.9375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1743.75,
+        "y": 2865.9375
+      },
+      "b": {
+        "x": 2784.375,
+        "y": 2863.125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2784.375,
+        "y": 2863.125
+      },
+      "b": {
+        "x": 3600,
+        "y": 2868.75
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3600,
+        "y": 2868.75
+      },
+      "b": {
+        "x": 4092.1875,
+        "y": 2657.8125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 4092.1875,
+        "y": 2657.8125
+      },
+      "b": {
+        "x": 4289.0625,
+        "y": 2320.3125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-edge-south-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 4289.0625,
+        "y": 2320.3125
+      },
+      "b": {
+        "x": 4320,
+        "y": 1530
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 582.1875,
+        "y": 838.125
+      },
+      "b": {
+        "x": 567.6834,
+        "y": 900.945
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 567.6834,
+        "y": 900.945
+      },
+      "b": {
+        "x": 529.7147,
+        "y": 939.7687
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 529.7147,
+        "y": 939.7687
+      },
+      "b": {
+        "x": 482.7853,
+        "y": 939.7687
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 482.7853,
+        "y": 939.7687
+      },
+      "b": {
+        "x": 444.8166,
+        "y": 900.945
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 444.8166,
+        "y": 900.945
+      },
+      "b": {
+        "x": 430.3125,
+        "y": 838.125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 430.3125,
+        "y": 838.125
+      },
+      "b": {
+        "x": 444.8166,
+        "y": 775.305
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 444.8166,
+        "y": 775.305
+      },
+      "b": {
+        "x": 482.7853,
+        "y": 736.4813
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 482.7853,
+        "y": 736.4813
+      },
+      "b": {
+        "x": 529.7147,
+        "y": 736.4813
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 529.7147,
+        "y": 736.4813
+      },
+      "b": {
+        "x": 567.6834,
+        "y": 775.305
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-nw-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 567.6834,
+        "y": 775.305
+      },
+      "b": {
+        "x": 582.1875,
+        "y": 838.125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1485,
+        "y": 466.875
+      },
+      "b": {
+        "x": 1466.7384,
+        "y": 524.7337
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1466.7384,
+        "y": 524.7337
+      },
+      "b": {
+        "x": 1418.9259,
+        "y": 560.4947
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1418.9259,
+        "y": 560.4947
+      },
+      "b": {
+        "x": 1359.8241,
+        "y": 560.4947
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1359.8241,
+        "y": 560.4947
+      },
+      "b": {
+        "x": 1312.0116,
+        "y": 524.7337
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1312.0116,
+        "y": 524.7337
+      },
+      "b": {
+        "x": 1293.75,
+        "y": 466.875
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1293.75,
+        "y": 466.875
+      },
+      "b": {
+        "x": 1312.0116,
+        "y": 409.0163
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1312.0116,
+        "y": 409.0163
+      },
+      "b": {
+        "x": 1359.8241,
+        "y": 373.2553
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1359.8241,
+        "y": 373.2553
+      },
+      "b": {
+        "x": 1418.9259,
+        "y": 373.2553
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1418.9259,
+        "y": 373.2553
+      },
+      "b": {
+        "x": 1466.7384,
+        "y": 409.0163
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n01-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1466.7384,
+        "y": 409.0163
+      },
+      "b": {
+        "x": 1485,
+        "y": 466.875
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1859.0625,
+        "y": 323.4375
+      },
+      "b": {
+        "x": 1847.2444,
+        "y": 376.3378
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1847.2444,
+        "y": 376.3378
+      },
+      "b": {
+        "x": 1816.3069,
+        "y": 409.0331
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1816.3069,
+        "y": 409.0331
+      },
+      "b": {
+        "x": 1778.0681,
+        "y": 409.0331
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1778.0681,
+        "y": 409.0331
+      },
+      "b": {
+        "x": 1747.1306,
+        "y": 376.3378
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1747.1306,
+        "y": 376.3378
+      },
+      "b": {
+        "x": 1735.3125,
+        "y": 323.4375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1735.3125,
+        "y": 323.4375
+      },
+      "b": {
+        "x": 1747.1306,
+        "y": 270.5372
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1747.1306,
+        "y": 270.5372
+      },
+      "b": {
+        "x": 1778.0681,
+        "y": 237.8419
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1778.0681,
+        "y": 237.8419
+      },
+      "b": {
+        "x": 1816.3069,
+        "y": 237.8419
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1816.3069,
+        "y": 237.8419
+      },
+      "b": {
+        "x": 1847.2444,
+        "y": 270.5372
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-n02-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1847.2444,
+        "y": 270.5372
+      },
+      "b": {
+        "x": 1859.0625,
+        "y": 323.4375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3026.25,
+        "y": 461.25
+      },
+      "b": {
+        "x": 3011.2088,
+        "y": 522.4162
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3011.2088,
+        "y": 522.4162
+      },
+      "b": {
+        "x": 2971.8338,
+        "y": 560.2191
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2971.8338,
+        "y": 560.2191
+      },
+      "b": {
+        "x": 2923.1662,
+        "y": 560.2191
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2923.1662,
+        "y": 560.2191
+      },
+      "b": {
+        "x": 2883.7912,
+        "y": 522.4162
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2883.7912,
+        "y": 522.4162
+      },
+      "b": {
+        "x": 2868.75,
+        "y": 461.25
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2868.75,
+        "y": 461.25
+      },
+      "b": {
+        "x": 2883.7912,
+        "y": 400.0838
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2883.7912,
+        "y": 400.0838
+      },
+      "b": {
+        "x": 2923.1662,
+        "y": 362.2809
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2923.1662,
+        "y": 362.2809
+      },
+      "b": {
+        "x": 2971.8338,
+        "y": 362.2809
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2971.8338,
+        "y": 362.2809
+      },
+      "b": {
+        "x": 3011.2088,
+        "y": 400.0838
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne01-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3011.2088,
+        "y": 400.0838
+      },
+      "b": {
+        "x": 3026.25,
+        "y": 461.25
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3962.8125,
+        "y": 832.5
+      },
+      "b": {
+        "x": 3947.7713,
+        "y": 887.0541
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3947.7713,
+        "y": 887.0541
+      },
+      "b": {
+        "x": 3908.3963,
+        "y": 920.7703
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3908.3963,
+        "y": 920.7703
+      },
+      "b": {
+        "x": 3859.7287,
+        "y": 920.7703
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3859.7287,
+        "y": 920.7703
+      },
+      "b": {
+        "x": 3820.3537,
+        "y": 887.0541
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3820.3537,
+        "y": 887.0541
+      },
+      "b": {
+        "x": 3805.3125,
+        "y": 832.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3805.3125,
+        "y": 832.5
+      },
+      "b": {
+        "x": 3820.3537,
+        "y": 777.9459
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3820.3537,
+        "y": 777.9459
+      },
+      "b": {
+        "x": 3859.7287,
+        "y": 744.2297
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3859.7287,
+        "y": 744.2297
+      },
+      "b": {
+        "x": 3908.3963,
+        "y": 744.2297
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3908.3963,
+        "y": 744.2297
+      },
+      "b": {
+        "x": 3947.7713,
+        "y": 777.9459
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-ne02-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3947.7713,
+        "y": 777.9459
+      },
+      "b": {
+        "x": 3962.8125,
+        "y": 832.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1479.375,
+        "y": 939.375
+      },
+      "b": {
+        "x": 1467.0197,
+        "y": 1005.4997
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1467.0197,
+        "y": 1005.4997
+      },
+      "b": {
+        "x": 1434.6759,
+        "y": 1046.3681
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1434.6759,
+        "y": 1046.3681
+      },
+      "b": {
+        "x": 1394.6991,
+        "y": 1046.3681
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1394.6991,
+        "y": 1046.3681
+      },
+      "b": {
+        "x": 1362.3553,
+        "y": 1005.4997
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1362.3553,
+        "y": 1005.4997
+      },
+      "b": {
+        "x": 1350,
+        "y": 939.375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1350,
+        "y": 939.375
+      },
+      "b": {
+        "x": 1362.3553,
+        "y": 873.2503
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1362.3553,
+        "y": 873.2503
+      },
+      "b": {
+        "x": 1394.6991,
+        "y": 832.3819
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1394.6991,
+        "y": 832.3819
+      },
+      "b": {
+        "x": 1434.6759,
+        "y": 832.3819
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1434.6759,
+        "y": 832.3819
+      },
+      "b": {
+        "x": 1467.0197,
+        "y": 873.2503
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc01-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1467.0197,
+        "y": 873.2503
+      },
+      "b": {
+        "x": 1479.375,
+        "y": 939.375
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3088.125,
+        "y": 961.875
+      },
+      "b": {
+        "x": 3076.3069,
+        "y": 1016.4291
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3076.3069,
+        "y": 1016.4291
+      },
+      "b": {
+        "x": 3045.3694,
+        "y": 1050.1453
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3045.3694,
+        "y": 1050.1453
+      },
+      "b": {
+        "x": 3007.1306,
+        "y": 1050.1453
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3007.1306,
+        "y": 1050.1453
+      },
+      "b": {
+        "x": 2976.1931,
+        "y": 1016.4291
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2976.1931,
+        "y": 1016.4291
+      },
+      "b": {
+        "x": 2964.375,
+        "y": 961.875
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2964.375,
+        "y": 961.875
+      },
+      "b": {
+        "x": 2976.1931,
+        "y": 907.3209
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2976.1931,
+        "y": 907.3209
+      },
+      "b": {
+        "x": 3007.1306,
+        "y": 873.6047
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3007.1306,
+        "y": 873.6047
+      },
+      "b": {
+        "x": 3045.3694,
+        "y": 873.6047
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3045.3694,
+        "y": 873.6047
+      },
+      "b": {
+        "x": 3076.3069,
+        "y": 907.3209
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-nc02-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3076.3069,
+        "y": 907.3209
+      },
+      "b": {
+        "x": 3088.125,
+        "y": 961.875
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 573.75,
+        "y": 1954.6875
+      },
+      "b": {
+        "x": 554.4141,
+        "y": 2019.1612
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 554.4141,
+        "y": 2019.1612
+      },
+      "b": {
+        "x": 503.7891,
+        "y": 2059.0059
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 503.7891,
+        "y": 2059.0059
+      },
+      "b": {
+        "x": 441.2109,
+        "y": 2059.0059
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 441.2109,
+        "y": 2059.0059
+      },
+      "b": {
+        "x": 390.5859,
+        "y": 2019.1612
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 390.5859,
+        "y": 2019.1612
+      },
+      "b": {
+        "x": 371.25,
+        "y": 1954.6875
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 371.25,
+        "y": 1954.6875
+      },
+      "b": {
+        "x": 390.5859,
+        "y": 1890.2138
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 390.5859,
+        "y": 1890.2138
+      },
+      "b": {
+        "x": 441.2109,
+        "y": 1850.3691
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 441.2109,
+        "y": 1850.3691
+      },
+      "b": {
+        "x": 503.7891,
+        "y": 1850.3691
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 503.7891,
+        "y": 1850.3691
+      },
+      "b": {
+        "x": 554.4141,
+        "y": 1890.2138
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sw01-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 554.4141,
+        "y": 1890.2138
+      },
+      "b": {
+        "x": 573.75,
+        "y": 1954.6875
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1780.3125,
+        "y": 1881.5625
+      },
+      "b": {
+        "x": 1762.0509,
+        "y": 1957.6069
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1762.0509,
+        "y": 1957.6069
+      },
+      "b": {
+        "x": 1714.2384,
+        "y": 2004.6066
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1714.2384,
+        "y": 2004.6066
+      },
+      "b": {
+        "x": 1655.1366,
+        "y": 2004.6066
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1655.1366,
+        "y": 2004.6066
+      },
+      "b": {
+        "x": 1607.3241,
+        "y": 1957.6069
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1607.3241,
+        "y": 1957.6069
+      },
+      "b": {
+        "x": 1589.0625,
+        "y": 1881.5625
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1589.0625,
+        "y": 1881.5625
+      },
+      "b": {
+        "x": 1607.3241,
+        "y": 1805.5181
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1607.3241,
+        "y": 1805.5181
+      },
+      "b": {
+        "x": 1655.1366,
+        "y": 1758.5184
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1655.1366,
+        "y": 1758.5184
+      },
+      "b": {
+        "x": 1714.2384,
+        "y": 1758.5184
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1714.2384,
+        "y": 1758.5184
+      },
+      "b": {
+        "x": 1762.0509,
+        "y": 1805.5181
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc01-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1762.0509,
+        "y": 1805.5181
+      },
+      "b": {
+        "x": 1780.3125,
+        "y": 1881.5625
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2064.375,
+        "y": 2092.5
+      },
+      "b": {
+        "x": 2050.9453,
+        "y": 2145.4003
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2050.9453,
+        "y": 2145.4003
+      },
+      "b": {
+        "x": 2015.7891,
+        "y": 2178.0956
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2015.7891,
+        "y": 2178.0956
+      },
+      "b": {
+        "x": 1972.3359,
+        "y": 2178.0956
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1972.3359,
+        "y": 2178.0956
+      },
+      "b": {
+        "x": 1937.1797,
+        "y": 2145.4003
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1937.1797,
+        "y": 2145.4003
+      },
+      "b": {
+        "x": 1923.75,
+        "y": 2092.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1923.75,
+        "y": 2092.5
+      },
+      "b": {
+        "x": 1937.1797,
+        "y": 2039.5997
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1937.1797,
+        "y": 2039.5997
+      },
+      "b": {
+        "x": 1972.3359,
+        "y": 2006.9044
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 1972.3359,
+        "y": 2006.9044
+      },
+      "b": {
+        "x": 2015.7891,
+        "y": 2006.9044
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2015.7891,
+        "y": 2006.9044
+      },
+      "b": {
+        "x": 2050.9453,
+        "y": 2039.5997
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-sc02-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2050.9453,
+        "y": 2039.5997
+      },
+      "b": {
+        "x": 2064.375,
+        "y": 2092.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3282.1875,
+        "y": 2143.125
+      },
+      "b": {
+        "x": 3259.0912,
+        "y": 2230.7428
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3259.0912,
+        "y": 2230.7428
+      },
+      "b": {
+        "x": 3198.6225,
+        "y": 2284.8919
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3198.6225,
+        "y": 2284.8919
+      },
+      "b": {
+        "x": 3123.8775,
+        "y": 2284.8919
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3123.8775,
+        "y": 2284.8919
+      },
+      "b": {
+        "x": 3063.4088,
+        "y": 2230.7428
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3063.4088,
+        "y": 2230.7428
+      },
+      "b": {
+        "x": 3040.3125,
+        "y": 2143.125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3040.3125,
+        "y": 2143.125
+      },
+      "b": {
+        "x": 3063.4088,
+        "y": 2055.5072
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3063.4088,
+        "y": 2055.5072
+      },
+      "b": {
+        "x": 3123.8775,
+        "y": 2001.3581
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3123.8775,
+        "y": 2001.3581
+      },
+      "b": {
+        "x": 3198.6225,
+        "y": 2001.3581
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3198.6225,
+        "y": 2001.3581
+      },
+      "b": {
+        "x": 3259.0912,
+        "y": 2055.5072
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se01-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3259.0912,
+        "y": 2055.5072
+      },
+      "b": {
+        "x": 3282.1875,
+        "y": 2143.125
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 4027.5,
+        "y": 1912.5
+      },
+      "b": {
+        "x": 4011.9216,
+        "y": 1978.6247
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 4011.9216,
+        "y": 1978.6247
+      },
+      "b": {
+        "x": 3971.1403,
+        "y": 2019.4931
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3971.1403,
+        "y": 2019.4931
+      },
+      "b": {
+        "x": 3920.7347,
+        "y": 2019.4931
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3920.7347,
+        "y": 2019.4931
+      },
+      "b": {
+        "x": 3879.9534,
+        "y": 1978.6247
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3879.9534,
+        "y": 1978.6247
+      },
+      "b": {
+        "x": 3864.375,
+        "y": 1912.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3864.375,
+        "y": 1912.5
+      },
+      "b": {
+        "x": 3879.9534,
+        "y": 1846.3753
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3879.9534,
+        "y": 1846.3753
+      },
+      "b": {
+        "x": 3920.7347,
+        "y": 1805.5069
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3920.7347,
+        "y": 1805.5069
+      },
+      "b": {
+        "x": 3971.1403,
+        "y": 1805.5069
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3971.1403,
+        "y": 1805.5069
+      },
+      "b": {
+        "x": 4011.9216,
+        "y": 1846.3753
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-trunk-se02-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 4011.9216,
+        "y": 1846.3753
+      },
+      "b": {
+        "x": 4027.5,
+        "y": 1912.5
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 3006.5625,
+        "y": 1940.625
+      },
+      "b": {
+        "x": 2972.1853,
+        "y": 2048.0794
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2972.1853,
+        "y": 2048.0794
+      },
+      "b": {
+        "x": 2882.1853,
+        "y": 2114.4909
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2882.1853,
+        "y": 2114.4909
+      },
+      "b": {
+        "x": 2770.9397,
+        "y": 2114.4909
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2770.9397,
+        "y": 2114.4909
+      },
+      "b": {
+        "x": 2680.9397,
+        "y": 2048.0794
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2680.9397,
+        "y": 2048.0794
+      },
+      "b": {
+        "x": 2646.5625,
+        "y": 1940.625
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2646.5625,
+        "y": 1940.625
+      },
+      "b": {
+        "x": 2680.9397,
+        "y": 1833.1706
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2680.9397,
+        "y": 1833.1706
+      },
+      "b": {
+        "x": 2770.9397,
+        "y": 1766.7591
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2770.9397,
+        "y": 1766.7591
+      },
+      "b": {
+        "x": 2882.1853,
+        "y": 1766.7591
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2882.1853,
+        "y": 1766.7591
+      },
+      "b": {
+        "x": 2972.1853,
+        "y": 1833.1706
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s01-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2972.1853,
+        "y": 1833.1706
+      },
+      "b": {
+        "x": 3006.5625,
+        "y": 1940.625
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-01",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2587.5,
+        "y": 2345.625
+      },
+      "b": {
+        "x": 2579.4422,
+        "y": 2391.9131
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-02",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2579.4422,
+        "y": 2391.9131
+      },
+      "b": {
+        "x": 2558.3484,
+        "y": 2420.5219
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-03",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2558.3484,
+        "y": 2420.5219
+      },
+      "b": {
+        "x": 2532.2766,
+        "y": 2420.5219
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-04",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2532.2766,
+        "y": 2420.5219
+      },
+      "b": {
+        "x": 2511.1828,
+        "y": 2391.9131
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-05",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2511.1828,
+        "y": 2391.9131
+      },
+      "b": {
+        "x": 2503.125,
+        "y": 2345.625
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-06",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2503.125,
+        "y": 2345.625
+      },
+      "b": {
+        "x": 2511.1828,
+        "y": 2299.3369
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-07",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2511.1828,
+        "y": 2299.3369
+      },
+      "b": {
+        "x": 2532.2766,
+        "y": 2270.7281
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-08",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2532.2766,
+        "y": 2270.7281
+      },
+      "b": {
+        "x": 2558.3484,
+        "y": 2270.7281
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-09",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2558.3484,
+        "y": 2270.7281
+      },
+      "b": {
+        "x": 2579.4422,
+        "y": 2299.3369
+      },
+      "thickness": 3
+    },
+    {
+      "wallId": "dbx:wall:m02-rock-s02-10",
+      "levelId": "dbx:level:m02-ground",
+      "a": {
+        "x": 2579.4422,
+        "y": 2299.3369
+      },
+      "b": {
+        "x": 2587.5,
+        "y": 2345.625
+      },
+      "thickness": 3
+    }
+  ],
+  "regions": [
+    {
+      "regionId": "dbx:region:m02-arrival-west",
+      "label": "M02 — Western Arrival",
+      "shapes": [
+        {
+          "shapeId": "dbx:shape:m02-arrive-w",
+          "hole": false,
+          "levelId": "dbx:level:m02-ground",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": 39.375,
+              "y": 1226.25
+            },
+            {
+              "x": 320.625,
+              "y": 1226.25
+            },
+            {
+              "x": 320.625,
+              "y": 1423.125
+            },
+            {
+              "x": 39.375,
+              "y": 1423.125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "dbx:region:m02-exit-east",
+      "label": "M02 — Eastern Exit",
+      "shapes": [
+        {
+          "shapeId": "dbx:shape:m02-exit-e",
+          "hole": false,
+          "levelId": "dbx:level:m02-ground",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": 4005,
+              "y": 1215
+            },
+            {
+              "x": 4280.625,
+              "y": 1215
+            },
+            {
+              "x": 4280.625,
+              "y": 1425.9375
+            },
+            {
+              "x": 4005,
+              "y": 1425.9375
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "dbx:region:m02-forage-north",
+      "label": "M02 — Tallcap Foraging Hollow",
+      "shapes": [
+        {
+          "shapeId": "dbx:shape:m02-forage-n",
+          "hole": false,
+          "levelId": "dbx:level:m02-ground",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": 1996.875,
+              "y": 351.5625
+            },
+            {
+              "x": 2399.0625,
+              "y": 315
+            },
+            {
+              "x": 2607.1875,
+              "y": 551.25
+            },
+            {
+              "x": 2444.0625,
+              "y": 770.625
+            },
+            {
+              "x": 2081.25,
+              "y": 720
+            },
+            {
+              "x": 1935,
+              "y": 545.625
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "dbx:region:m02-habitat-south",
+      "label": "M02 — Southern Tallcap Habitat",
+      "shapes": [
+        {
+          "shapeId": "dbx:shape:m02-hunt-s",
+          "hole": false,
+          "levelId": "dbx:level:m02-ground",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": 1276.875,
+              "y": 1918.125
+            },
+            {
+              "x": 1563.75,
+              "y": 2025
+            },
+            {
+              "x": 1943.4375,
+              "y": 2196.5625
+            },
+            {
+              "x": 2207.8125,
+              "y": 2390.625
+            },
+            {
+              "x": 2348.4375,
+              "y": 2494.6875
+            },
+            {
+              "x": 1698.75,
+              "y": 2525.625
+            },
+            {
+              "x": 1299.375,
+              "y": 2278.125
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "regionId": "dbx:region:m02-milestone",
+      "label": "M02 — Stone Milestone",
+      "shapes": [
+        {
+          "shapeId": "dbx:shape:m02-milestone",
+          "hole": false,
+          "levelId": "dbx:level:m02-ground",
+          "kind": "ellipse",
+          "x": 2140.3125,
+          "y": 1043.4375,
+          "width": 185.625,
+          "height": 163.125
+        }
+      ]
+    },
+    {
+      "regionId": "dbx:region:m02-glow-north",
+      "label": "M02 — Northern Bioluminescent Beds",
+      "shapes": [
+        {
+          "shapeId": "dbx:shape:m02-glow",
+          "hole": false,
+          "levelId": "dbx:level:m02-ground",
+          "kind": "ellipse",
+          "x": 2176.875,
+          "y": 466.875,
+          "width": 365.625,
+          "height": 292.5
+        }
+      ]
+    },
+    {
+      "regionId": "dbx:region:m02-rubble-south",
+      "label": "M02 — Loose Rubble",
+      "shapes": [
+        {
+          "shapeId": "dbx:shape:m02-rubble",
+          "hole": false,
+          "levelId": "dbx:level:m02-ground",
+          "kind": "polygon",
+          "points": [
+            {
+              "x": 2455.3125,
+              "y": 1757.8125
+            },
+            {
+              "x": 2860.3125,
+              "y": 1726.875
+            },
+            {
+              "x": 3037.5,
+              "y": 2008.125
+            },
+            {
+              "x": 2871.5625,
+              "y": 2213.4375
+            },
+            {
+              "x": 2607.1875,
+              "y": 2143.125
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "anchorId": "dbx:anchor:m02-arrival-west",
+      "kind": "spawn",
+      "levelId": "dbx:level:m02-ground",
+      "position": {
+        "x": 185.625,
+        "y": 1335.9375
+      },
+      "clearance": 118.125,
+      "targetRegionId": "dbx:region:m02-arrival-west"
+    },
+    {
+      "anchorId": "dbx:anchor:m02-exit-east",
+      "kind": "entrance",
+      "levelId": "dbx:level:m02-ground",
+      "position": {
+        "x": 4176.5625,
+        "y": 1335.9375
+      },
+      "clearance": 118.125,
+      "targetRegionId": "dbx:region:m02-exit-east"
+    },
+    {
+      "anchorId": "dbx:anchor:m02-milestone",
+      "kind": "interaction",
+      "levelId": "dbx:level:m02-ground",
+      "position": {
+        "x": 2233.125,
+        "y": 1125
+      },
+      "clearance": 67.5,
+      "targetRegionId": "dbx:region:m02-milestone"
+    },
+    {
+      "anchorId": "dbx:anchor:m02-forage",
+      "kind": "interaction",
+      "levelId": "dbx:level:m02-ground",
+      "position": {
+        "x": 2179.6875,
+        "y": 534.375
+      },
+      "clearance": 78.75,
+      "targetRegionId": "dbx:region:m02-forage-north"
+    },
+    {
+      "anchorId": "dbx:anchor:m02-hunt",
+      "kind": "interaction",
+      "levelId": "dbx:level:m02-ground",
+      "position": {
+        "x": 1738.125,
+        "y": 2280.9375
+      },
+      "clearance": 78.75,
+      "targetRegionId": "dbx:region:m02-habitat-south"
+    },
+    {
+      "anchorId": "dbx:anchor:m02-glow",
+      "kind": "interaction",
+      "levelId": "dbx:level:m02-ground",
+      "position": {
+        "x": 2373.75,
+        "y": 618.75
+      },
+      "clearance": 56.25,
+      "targetRegionId": "dbx:region:m02-glow-north"
+    }
+  ]
+}
