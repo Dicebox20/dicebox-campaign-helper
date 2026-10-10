@@ -44,7 +44,7 @@ INSERT INTO kb_open_items (
  item_id,item_class,title,problem,next_action,evidence_needed,priority,status,owner,source_id
 ) VALUES (
  'O-2026-10-09-M02-TOLERANCE-REINSPECTION',
- 'validation',
+ 'reconciliation',
  'Reconcile M02 attempt five route semantics under accepted tolerance',
  'Original M02 attempt #5 REDO used universal 15ft/10ft visual minimums. New policy removes that automatic failure but does not prove both forest circuits physically navigable or certify a Blueprint.',
  'Produce separately versioned M02 attempt #5 tolerance reinspection tied to exact render hash; establish actual ground routes, 5ft Medium passage and Region access; reconcile geometry before a painterly lock.',
