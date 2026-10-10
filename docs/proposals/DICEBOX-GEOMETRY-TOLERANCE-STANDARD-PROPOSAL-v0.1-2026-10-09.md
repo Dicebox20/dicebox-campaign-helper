@@ -120,7 +120,7 @@ Additional geometric metadata proposals: `boundaryUncertaintyFt`, `wallAlignment
 ## 7. Exact official workflow changes proposed (not applied)
 
 - **PREPARE:** Define per-route `targetWidthFt`, preferred tolerance, intended mover sizes, bottlenecks/route restrictions and walkable terrain class. Keep existing map physical area and `battlemap-120` invariant.
-- **STRUCTURAL_RENDER:** Treat width bands as *composition goals*, not prompt hard-coded exact pixels. Strict orthographic and other structure requirements remain.
+- **STRUCTURAL_RENDER:** Treat width bands as *composition goals*, not prompt hard-coded exact pixels. Strict orthographic and other structure requirements remain. **All REDOs still obey the permanent DiceBox image-prompt clean-restart rule:** discard the rejected prompt entirely and author a new independent prompt from accepted PREPARE. Tolerance changes never license prompt variations or editing failed images.
 - **STRUCTURAL_INSPECT:** Produce visual width estimates with uncertainty; apply functional vs preferred bands; grade `PASS`, documented variation, or `NEEDS_RECONCILIATION`. Fail a render only on actual unmet required accessibility/topology/semantics, not a narrower-but-playable road.
 - **FEATURE_MANIFEST / SPATIAL_BLUEPRINT:** Trace ground blockers vs canopy shadows; record route walkable-surface class, passage clearance, short bottlenecks, wall alignment error/uncertainty, spawn footprint and sweep test. Resolve `NEEDS_RECONCILIATION` before painting.
 - **PAINT_RENDER / FINAL_INSPECT:** Preserve functional clearances, readable intended bottlenecks and region/lighting anchors; painterly details cannot conceal a blocked route. Do not enforce bright paint stripe as the entire walkable band.
