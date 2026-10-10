@@ -1,0 +1,2012 @@
+{
+  "schema": "dicebox-m02-attempt5-feature-manifest/v003",
+  "stage": "V003_PROVISIONAL_ROUTE_SWEEPS_PASS_WALL_ACCURACY_REVIEW",
+  "source": {
+    "filename": "grayscale_mushroom_cavern_map.png",
+    "sha256": "878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf",
+    "raster": {
+      "width": 1536,
+      "height": 1024
+    },
+    "generationId": "03d4569f-9f95-4a87-907f-651726cbed75",
+    "sourceRole": "unique-attempt-005; no prior attempt geometry loaded"
+  },
+  "geometryContract": {
+    "logicalColumns": 36,
+    "logicalRows": 24,
+    "feetPerCell": 5,
+    "physicalFeet": [
+      180,
+      120
+    ],
+    "gridless": true,
+    "pxPer5ft": 120,
+    "scenePx": [
+      4320,
+      2880
+    ],
+    "projectionMultiplier": 2.8125,
+    "mediumTokenDiameterSourcePx": 42.666666666666664
+  },
+  "features": [
+    {
+      "semanticKey": "m02-005-main-road",
+      "class": "traversable-path",
+      "description": "West/east ground-level road; texture band not automatically full walkable width",
+      "projection": "no wall",
+      "state": "VISUAL_CONNECTED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-loop",
+      "class": "traversable-path",
+      "description": "Northern branch and return around cavern rock groves",
+      "projection": "no wall",
+      "state": "LUMINANCE_SENSITIVITY_HOLD",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-south-loop",
+      "class": "traversable-path",
+      "description": "Southern branch and return around stalagmites and tallcap clusters",
+      "projection": "no wall",
+      "state": "RASTER_PROXY_ONLY",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-cavern-edge",
+      "class": "full-height-cliff",
+      "description": "Unbroken high north perimeter behind upper circuit",
+      "projection": "full wall",
+      "state": "PRECISE_GROUND_EDGE_PENDING",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-south-cavern-edge",
+      "class": "full-height-cliff",
+      "description": "Unbroken high south perimeter below southern loop",
+      "projection": "full wall",
+      "state": "PRECISE_GROUND_EDGE_PENDING",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-nw-tallcap-stalk",
+      "class": "solid-trunk",
+      "description": "Draft grounded solid-trunk footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-nw-stalagmites",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-central-plinth",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-tallcap-stalk",
+      "class": "solid-trunk",
+      "description": "Draft grounded solid-trunk footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-center-fin",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-mushroom-stalk",
+      "class": "solid-trunk",
+      "description": "Draft grounded solid-trunk footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-east-plinth",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-east-stones",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-east-lower-rock",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-far-northeast-rock",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southwest-rock-cap",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southwest-stalk",
+      "class": "solid-trunk",
+      "description": "Draft grounded solid-trunk footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-south-central-plinth",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southern-stalagmites",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southern-low-rock",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southern-stalk",
+      "class": "solid-trunk",
+      "description": "Draft grounded solid-trunk footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southeast-giant-stalk",
+      "class": "solid-trunk",
+      "description": "Draft grounded solid-trunk footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southeast-plinth",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southeast-ridge",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-southeast-cavern-rock",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-far-southeast-stalk",
+      "class": "solid-trunk",
+      "description": "Draft grounded solid-trunk footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-northwest-tall-stones",
+      "class": "solid-rock",
+      "description": "Draft grounded solid-rock footprint near source outline; direct attempt #5 observation",
+      "projection": "full wall",
+      "state": "TRACE_REVIEW_REQUIRED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-overhead-caps",
+      "class": "overhead-only",
+      "description": "Large fungal cap edges and radial canopy texture above floor",
+      "projection": "NO wall",
+      "state": "SEMANTICS_LOCKED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-small-fungi",
+      "class": "decoration",
+      "description": "Small mushroom frills, fungal blooms, moss",
+      "projection": "NO wall",
+      "state": "SEMANTICS_LOCKED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-road-shoulder",
+      "class": "decorative-stone",
+      "description": "Low fieldstone edging and rubble",
+      "projection": "NO default full wall",
+      "state": "SEMANTICS_LOCKED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-milestone",
+      "class": "interactable-landmark",
+      "description": "Single stone north of main road approximately source x640 y382",
+      "projection": "Region only; discovery not active",
+      "state": "LORE_UNAPPROVED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-forage",
+      "class": "forage-candidate",
+      "description": "Northern fungal study/harvest area; Regionwright API unresolved",
+      "projection": "Region candidate",
+      "state": "MODULE_PENDING",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-south-habitat",
+      "class": "manual-hunt-candidate",
+      "description": "Southern grove manual Gamemaster hunting area",
+      "projection": "Region candidate",
+      "state": "MANUAL_ONLY",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-north-glow",
+      "class": "bioluminescence-candidate",
+      "description": "Ambient fungal light option; emission not proved by grayscale",
+      "projection": "AmbientLight candidate only",
+      "state": "NOT_STAGED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-west-arrival",
+      "class": "arrival",
+      "description": "M01 continuation arrival candidate; actual routing unresolved",
+      "projection": "spawn anchor",
+      "state": "DESTINATION_BINDING_PENDING",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-east-exit",
+      "class": "travel-exit",
+      "description": "Future M03 target not yet established",
+      "projection": "exit Region without teleport",
+      "state": "DESTINATION_PENDING",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-rubble",
+      "class": "difficult-terrain-candidate",
+      "description": "Small loose stones in southern grove; separate from spire solids",
+      "projection": "No RegionBehavior until approved",
+      "state": "CLASSIFICATION_PENDING",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-torchlight",
+      "class": "dynamic-light-candidate",
+      "description": "Maintained torch fixtures not unambiguously countable",
+      "projection": "No light write",
+      "state": "ANCHORS_UNRESOLVED",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-bones-south",
+      "class": "set-decoration",
+      "description": "Southern fossil/debris motif visible; no approved lore or reward",
+      "projection": "No mechanics",
+      "state": "DECORATIVE_ONLY",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    },
+    {
+      "semanticKey": "m02-005-northeast-crest-groundrock",
+      "class": "solid-rock",
+      "description": "Previously omitted grounded stone cluster in source upper loop (source x897..979 y99..157); separate from overhead fungal caps",
+      "projection": "full wall; ten provisional polygon segments",
+      "state": "VISUAL_GROUNDED_BUT_6PX_TRACE_UNCERTAINTY",
+      "groundTraceEvidence": "source_render_sha256:878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf"
+    }
+  ],
+  "groundedObstacles": [
+    {
+      "key": "m02-005-nw-tallcap-stalk",
+      "class": "solid-trunk",
+      "footprintSourcePx": [
+        [
+          337,
+          199
+        ],
+        [
+          333.785,
+          210.5
+        ],
+        [
+          325,
+          218.919
+        ],
+        [
+          313,
+          222
+        ],
+        [
+          301,
+          218.919
+        ],
+        [
+          292.215,
+          210.5
+        ],
+        [
+          289,
+          199
+        ],
+        [
+          292.215,
+          187.5
+        ],
+        [
+          301,
+          179.081
+        ],
+        [
+          313,
+          176
+        ],
+        [
+          325,
+          179.081
+        ],
+        [
+          333.785,
+          187.5
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-nw-stalagmites",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          272,
+          331
+        ],
+        [
+          272,
+          299
+        ],
+        [
+          288,
+          273
+        ],
+        [
+          310,
+          266
+        ],
+        [
+          330,
+          325
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-north-central-plinth",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          474,
+          314
+        ],
+        [
+          486,
+          270
+        ],
+        [
+          522,
+          258
+        ],
+        [
+          560,
+          277
+        ],
+        [
+          562,
+          340
+        ],
+        [
+          511,
+          350
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-north-tallcap-stalk",
+      "class": "solid-trunk",
+      "footprintSourcePx": [
+        [
+          763,
+          192
+        ],
+        [
+          759.785,
+          207
+        ],
+        [
+          751,
+          217.981
+        ],
+        [
+          739,
+          222
+        ],
+        [
+          727,
+          217.981
+        ],
+        [
+          718.215,
+          207
+        ],
+        [
+          715,
+          192
+        ],
+        [
+          718.215,
+          177
+        ],
+        [
+          727,
+          166.019
+        ],
+        [
+          739,
+          162
+        ],
+        [
+          751,
+          166.019
+        ],
+        [
+          759.785,
+          177
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-north-center-fin",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          858,
+          340
+        ],
+        [
+          853,
+          297
+        ],
+        [
+          875,
+          207
+        ],
+        [
+          911,
+          226
+        ],
+        [
+          908,
+          348
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-north-mushroom-stalk",
+      "class": "solid-trunk",
+      "footprintSourcePx": [
+        [
+          952,
+          328
+        ],
+        [
+          948.785,
+          340.5
+        ],
+        [
+          940,
+          349.651
+        ],
+        [
+          928,
+          353
+        ],
+        [
+          916,
+          349.651
+        ],
+        [
+          907.215,
+          340.5
+        ],
+        [
+          904,
+          328
+        ],
+        [
+          907.215,
+          315.5
+        ],
+        [
+          916,
+          306.349
+        ],
+        [
+          928,
+          303
+        ],
+        [
+          940,
+          306.349
+        ],
+        [
+          948.785,
+          315.5
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-north-east-plinth",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          942,
+          361
+        ],
+        [
+          951,
+          322
+        ],
+        [
+          984,
+          327
+        ],
+        [
+          1006,
+          371
+        ],
+        [
+          992,
+          386
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-north-east-stones",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          958,
+          270
+        ],
+        [
+          959,
+          214
+        ],
+        [
+          981,
+          197
+        ],
+        [
+          1014,
+          228
+        ],
+        [
+          1036,
+          292
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-north-east-lower-rock",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          1059,
+          384
+        ],
+        [
+          1046,
+          346
+        ],
+        [
+          1080,
+          336
+        ],
+        [
+          1120,
+          360
+        ],
+        [
+          1113,
+          403
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-far-northeast-rock",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          1250,
+          401
+        ],
+        [
+          1241,
+          341
+        ],
+        [
+          1281,
+          326
+        ],
+        [
+          1336,
+          344
+        ],
+        [
+          1341,
+          418
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southwest-rock-cap",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          399,
+          604
+        ],
+        [
+          412,
+          537
+        ],
+        [
+          460,
+          533
+        ],
+        [
+          486,
+          573
+        ],
+        [
+          469,
+          618
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southwest-stalk",
+      "class": "solid-trunk",
+      "footprintSourcePx": [
+        [
+          504,
+          713
+        ],
+        [
+          500.517,
+          728
+        ],
+        [
+          491,
+          738.981
+        ],
+        [
+          478,
+          743
+        ],
+        [
+          465,
+          738.981
+        ],
+        [
+          455.483,
+          728
+        ],
+        [
+          452,
+          713
+        ],
+        [
+          455.483,
+          698
+        ],
+        [
+          465,
+          687.019
+        ],
+        [
+          478,
+          683
+        ],
+        [
+          491,
+          687.019
+        ],
+        [
+          500.517,
+          698
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-south-central-plinth",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          551,
+          618
+        ],
+        [
+          555,
+          565
+        ],
+        [
+          602,
+          557
+        ],
+        [
+          632,
+          595
+        ],
+        [
+          610,
+          638
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southern-stalagmites",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          619,
+          730
+        ],
+        [
+          625,
+          621
+        ],
+        [
+          682,
+          594
+        ],
+        [
+          750,
+          661
+        ],
+        [
+          777,
+          785
+        ],
+        [
+          697,
+          788
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southern-low-rock",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          778,
+          852
+        ],
+        [
+          787,
+          794
+        ],
+        [
+          822,
+          788
+        ],
+        [
+          855,
+          818
+        ],
+        [
+          845,
+          862
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southern-stalk",
+      "class": "solid-trunk",
+      "footprintSourcePx": [
+        [
+          756,
+          818
+        ],
+        [
+          753.053,
+          830
+        ],
+        [
+          745,
+          838.785
+        ],
+        [
+          734,
+          842
+        ],
+        [
+          723,
+          838.785
+        ],
+        [
+          714.947,
+          830
+        ],
+        [
+          712,
+          818
+        ],
+        [
+          714.947,
+          806
+        ],
+        [
+          723,
+          797.215
+        ],
+        [
+          734,
+          794
+        ],
+        [
+          745,
+          797.215
+        ],
+        [
+          753.053,
+          806
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southeast-giant-stalk",
+      "class": "solid-trunk",
+      "footprintSourcePx": [
+        [
+          1028,
+          754
+        ],
+        [
+          1022.909,
+          769.5
+        ],
+        [
+          1009,
+          780.847
+        ],
+        [
+          990,
+          785
+        ],
+        [
+          971,
+          780.847
+        ],
+        [
+          957.091,
+          769.5
+        ],
+        [
+          952,
+          754
+        ],
+        [
+          957.091,
+          738.5
+        ],
+        [
+          971,
+          727.153
+        ],
+        [
+          990,
+          723
+        ],
+        [
+          1009,
+          727.153
+        ],
+        [
+          1022.909,
+          738.5
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southeast-plinth",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          1049,
+          729
+        ],
+        [
+          1054,
+          629
+        ],
+        [
+          1110,
+          605
+        ],
+        [
+          1158,
+          635
+        ],
+        [
+          1157,
+          759
+        ],
+        [
+          1100,
+          783
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southeast-ridge",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          1196,
+          752
+        ],
+        [
+          1187,
+          686
+        ],
+        [
+          1210,
+          650
+        ],
+        [
+          1237,
+          669
+        ],
+        [
+          1239,
+          741
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-southeast-cavern-rock",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          1289,
+          847
+        ],
+        [
+          1273,
+          803
+        ],
+        [
+          1318,
+          776
+        ],
+        [
+          1364,
+          799
+        ],
+        [
+          1370,
+          873
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-far-southeast-stalk",
+      "class": "solid-trunk",
+      "footprintSourcePx": [
+        [
+          1388,
+          906
+        ],
+        [
+          1382.909,
+          920
+        ],
+        [
+          1369,
+          930.249
+        ],
+        [
+          1350,
+          934
+        ],
+        [
+          1331,
+          930.249
+        ],
+        [
+          1317.091,
+          920
+        ],
+        [
+          1312,
+          906
+        ],
+        [
+          1317.091,
+          892
+        ],
+        [
+          1331,
+          881.751
+        ],
+        [
+          1350,
+          878
+        ],
+        [
+          1369,
+          881.751
+        ],
+        [
+          1382.909,
+          892
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-northwest-tall-stones",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          511,
+          263
+        ],
+        [
+          505,
+          199
+        ],
+        [
+          544,
+          188
+        ],
+        [
+          565,
+          231
+        ]
+      ],
+      "traceConfidence": "VISUAL_CANDIDATE_NOT_LOCKED"
+    },
+    {
+      "key": "m02-005-northeast-crest-groundrock",
+      "class": "solid-rock",
+      "footprintSourcePx": [
+        [
+          897,
+          122
+        ],
+        [
+          913,
+          106
+        ],
+        [
+          929,
+          99
+        ],
+        [
+          950,
+          101
+        ],
+        [
+          971,
+          113
+        ],
+        [
+          979,
+          130
+        ],
+        [
+          968,
+          153
+        ],
+        [
+          940,
+          157
+        ],
+        [
+          918,
+          152
+        ],
+        [
+          903,
+          140
+        ]
+      ],
+      "traceConfidence": "DRAFT_VISUAL_OBSERVATION_6PX_SOURCE_EDGE_UNCERTAINTY"
+    }
+  ],
+  "cavernWallLines": {
+    "northSourcePx": [
+      [
+        1535,
+        56
+      ],
+      [
+        1471,
+        38
+      ],
+      [
+        1401,
+        30
+      ],
+      [
+        1334,
+        34
+      ],
+      [
+        1232,
+        38
+      ],
+      [
+        1119,
+        31
+      ],
+      [
+        1001,
+        31
+      ],
+      [
+        890,
+        21
+      ],
+      [
+        764,
+        13
+      ],
+      [
+        638,
+        18
+      ],
+      [
+        539,
+        22
+      ],
+      [
+        403,
+        18
+      ],
+      [
+        299,
+        19
+      ],
+      [
+        190,
+        40
+      ],
+      [
+        87,
+        43
+      ],
+      [
+        0,
+        42
+      ]
+    ],
+    "southSourcePx": [
+      [
+        1535,
+        965
+      ],
+      [
+        1464,
+        959
+      ],
+      [
+        1385,
+        950
+      ],
+      [
+        1289,
+        938
+      ],
+      [
+        1203,
+        947
+      ],
+      [
+        1101,
+        944
+      ],
+      [
+        1025,
+        962
+      ],
+      [
+        900,
+        961
+      ],
+      [
+        820,
+        953
+      ],
+      [
+        740,
+        970
+      ],
+      [
+        636,
+        970
+      ],
+      [
+        551,
+        969
+      ],
+      [
+        457,
+        980
+      ],
+      [
+        353,
+        954
+      ],
+      [
+        244,
+        941
+      ],
+      [
+        139,
+        917
+      ],
+      [
+        63,
+        884
+      ],
+      [
+        0,
+        855
+      ]
+    ]
+  },
+  "routes": [
+    {
+      "semanticKey": "m02-005-main-road",
+      "waypointsSourcePx": [
+        [
+          40,
+          482
+        ],
+        [
+          280,
+          486
+        ],
+        [
+          560,
+          483
+        ],
+        [
+          780,
+          480
+        ],
+        [
+          1000,
+          475
+        ],
+        [
+          1270,
+          478
+        ],
+        [
+          1485,
+          481
+        ]
+      ],
+      "targetWidthFt": 15,
+      "requiredFootprintFt": 5,
+      "widthPolicy": "dicebox-geometry-tolerance/v0.1",
+      "sourceTrailStatus": "VISUAL_CONNECTED",
+      "rasterMaskEvidence": {
+        "blurSigmaPx": 9,
+        "brightnessThresholdTested": [
+          80,
+          85,
+          90,
+          95
+        ],
+        "closingKernelPx": 9,
+        "requiredClearRadiusPx": 22.34
+      },
+      "uncertaintyStatus": "DRAFT_MODEL_PASS_CRITICAL_WALL_ALIGNMENT_AND_WALKABLE_FLOOR_REVIEW",
+      "sweptFoundryTokenCanary": "NOT_PERFORMED",
+      "candidateV003ModeledSweep": {
+        "nearestSolidSourcePx": 48.926,
+        "nearestCliffSourcePx": 375.139,
+        "clearanceResidual6pxSourcePx": 21.592,
+        "result": "PASS_PROVISIONAL_SOLIDS_ONLY",
+        "selfIntersection": false,
+        "requiredTokenFootprintFt": 5,
+        "sourceBoundaryUncertaintyAssumedPx": 6,
+        "wallAlignmentAndRealFloorCertified": false
+      }
+    },
+    {
+      "semanticKey": "m02-005-north-loop",
+      "waypointsSourcePx": [
+        [
+          352,
+          451
+        ],
+        [
+          423,
+          282
+        ],
+        [
+          413,
+          251
+        ],
+        [
+          418,
+          226
+        ],
+        [
+          433,
+          206
+        ],
+        [
+          458,
+          182
+        ],
+        [
+          486,
+          163
+        ],
+        [
+          510,
+          162
+        ],
+        [
+          543,
+          139
+        ],
+        [
+          572,
+          148
+        ],
+        [
+          605,
+          191
+        ],
+        [
+          676,
+          228
+        ],
+        [
+          703,
+          256
+        ],
+        [
+          744,
+          271
+        ],
+        [
+          778,
+          264
+        ],
+        [
+          811,
+          223
+        ],
+        [
+          845,
+          184
+        ],
+        [
+          849,
+          150
+        ],
+        [
+          851,
+          120
+        ],
+        [
+          878,
+          87
+        ],
+        [
+          910,
+          65
+        ],
+        [
+          946,
+          61
+        ],
+        [
+          986,
+          71
+        ],
+        [
+          1020,
+          96
+        ],
+        [
+          1045,
+          129
+        ],
+        [
+          1093,
+          191
+        ],
+        [
+          1174,
+          240
+        ],
+        [
+          1194,
+          356
+        ],
+        [
+          1151,
+          451
+        ]
+      ],
+      "targetWidthFt": 10,
+      "requiredFootprintFt": 5,
+      "widthPolicy": "dicebox-geometry-tolerance/v0.1",
+      "sourceTrailStatus": "VISUAL_CONNECTED",
+      "rasterMaskEvidence": {
+        "blurSigmaPx": 9,
+        "brightnessThresholdTested": [
+          80,
+          85,
+          90,
+          95
+        ],
+        "closingKernelPx": 9,
+        "requiredClearRadiusPx": 22.34
+      },
+      "uncertaintyStatus": "DRAFT_MODEL_PASS_CRITICAL_WALL_ALIGNMENT_AND_WALKABLE_FLOOR_REVIEW",
+      "sweptFoundryTokenCanary": "NOT_PERFORMED",
+      "previousWaypointsSourcePx": [
+        [
+          352,
+          451
+        ],
+        [
+          423,
+          282
+        ],
+        [
+          510,
+          162
+        ],
+        [
+          605,
+          191
+        ],
+        [
+          694,
+          238
+        ],
+        [
+          792,
+          233
+        ],
+        [
+          894,
+          173
+        ],
+        [
+          988,
+          115
+        ],
+        [
+          1093,
+          191
+        ],
+        [
+          1174,
+          240
+        ],
+        [
+          1194,
+          356
+        ],
+        [
+          1151,
+          451
+        ]
+      ],
+      "geometryPreview": {
+        "test": "shapely_polyline_vs_provisional_ground_obstacles_and_cliff_polyline",
+        "sourcePxRadiusAt5ft": 21.3333333333,
+        "boundaryUncertaintySourcePxAssumed": 6,
+        "closestSolidCenterlineDistancePx": 31.39,
+        "closestSolidName": "northeast-crest-groundrock",
+        "closestCavernBoundaryDistancePx": 34.81,
+        "conservativeResidualPx": 4.0567,
+        "statement": "PASS FOR MODELED OBSTACLE GEOMETRY ONLY; new rock group preserves true obstacle; path requires independent source-ground boundary and swept terrain review"
+      },
+      "candidateV003ModeledSweep": {
+        "nearestSolidSourcePx": 34.253,
+        "nearestCliffSourcePx": 34.814,
+        "clearanceResidual6pxSourcePx": 6.92,
+        "result": "PASS_PROVISIONAL_SOLIDS_ONLY",
+        "selfIntersection": false,
+        "requiredTokenFootprintFt": 5,
+        "sourceBoundaryUncertaintyAssumedPx": 6,
+        "wallAlignmentAndRealFloorCertified": false
+      },
+      "v002SelfCrossFix": {
+        "status": "RESOLVED_IN_V003",
+        "omittedV002Waypoints": [
+          [
+            865,
+            156
+          ],
+          [
+            894,
+            173
+          ]
+        ],
+        "originalIntersectionNear": [
+          863.86,
+          157.6
+        ],
+        "preexistingGroundRocksPreserved": true
+      }
+    },
+    {
+      "semanticKey": "m02-005-south-loop",
+      "waypointsSourcePx": [
+        [
+          336,
+          518
+        ],
+        [
+          291,
+          627
+        ],
+        [
+          331,
+          719
+        ],
+        [
+          413,
+          778
+        ],
+        [
+          534,
+          826
+        ],
+        [
+          682,
+          870
+        ],
+        [
+          826,
+          895
+        ],
+        [
+          1005,
+          880
+        ],
+        [
+          1022,
+          880
+        ],
+        [
+          1036,
+          870
+        ],
+        [
+          1054,
+          865
+        ],
+        [
+          1071,
+          862
+        ],
+        [
+          1113,
+          862
+        ],
+        [
+          1127,
+          858
+        ],
+        [
+          1155,
+          836
+        ],
+        [
+          1170,
+          831
+        ],
+        [
+          1182,
+          824
+        ],
+        [
+          1234,
+          774
+        ],
+        [
+          1245,
+          772
+        ],
+        [
+          1258,
+          766
+        ],
+        [
+          1267,
+          755
+        ],
+        [
+          1270,
+          742
+        ],
+        [
+          1270,
+          675
+        ],
+        [
+          1265,
+          655
+        ],
+        [
+          1260,
+          649
+        ],
+        [
+          1219,
+          586
+        ],
+        [
+          1120,
+          520
+        ]
+      ],
+      "targetWidthFt": 10,
+      "requiredFootprintFt": 5,
+      "widthPolicy": "dicebox-geometry-tolerance/v0.1",
+      "sourceTrailStatus": "VISUAL_CONNECTED",
+      "rasterMaskEvidence": {
+        "blurSigmaPx": 9,
+        "brightnessThresholdTested": [
+          80,
+          85,
+          90,
+          95
+        ],
+        "closingKernelPx": 9,
+        "requiredClearRadiusPx": 22.34
+      },
+      "uncertaintyStatus": "DRAFT_MODEL_PASS_CRITICAL_WALL_ALIGNMENT_AND_WALKABLE_FLOOR_REVIEW",
+      "sweptFoundryTokenCanary": "NOT_PERFORMED",
+      "candidateV003ModeledSweep": {
+        "nearestSolidSourcePx": 30.431,
+        "nearestCliffSourcePx": 58.309,
+        "clearanceResidual6pxSourcePx": 3.098,
+        "result": "PASS_PROVISIONAL_SOLIDS_ONLY",
+        "selfIntersection": false,
+        "requiredTokenFootprintFt": 5,
+        "sourceBoundaryUncertaintyAssumedPx": 6,
+        "wallAlignmentAndRealFloorCertified": false
+      },
+      "v002RockCrossFix": {
+        "status": "RESOLVED_IN_V003",
+        "priorSegment": [
+          [
+            1132,
+            827
+          ],
+          [
+            1248,
+            728
+          ]
+        ],
+        "rockKey": "m02-005-southeast-ridge",
+        "rockPreserved": true,
+        "routeDetour": "east shoulder around southeast ridge on visible path",
+        "sourceRasterProxy": "5ft candidate buffer 30px, blurred luminance 70–110, simplified centerline under 1.5px tolerance"
+      }
+    }
+  ],
+  "regionIntents": [
+    {
+      "key": "m02-005-arrival-west",
+      "label": "M02 — West Entrance Arrival",
+      "mechanicsStatus": "NOT_CONFIGURED"
+    },
+    {
+      "key": "m02-005-exit-east",
+      "label": "M02 — East Exit",
+      "mechanicsStatus": "NOT_CONFIGURED"
+    },
+    {
+      "key": "m02-005-forage-north",
+      "label": "M02 — North Fungal Study Area",
+      "mechanicsStatus": "NOT_CONFIGURED"
+    },
+    {
+      "key": "m02-005-habitat-south",
+      "label": "M02 — Southern Hunting Habitat",
+      "mechanicsStatus": "MANUAL_GM_ONLY"
+    },
+    {
+      "key": "m02-005-milestone",
+      "label": "M02 — Roadside Milestone",
+      "mechanicsStatus": "NOT_CONFIGURED"
+    },
+    {
+      "key": "m02-005-glow-candidate",
+      "label": "M02 — Luminescent Fungus Candidate",
+      "mechanicsStatus": "NOT_CONFIGURED"
+    }
+  ],
+  "gate": {
+    "status": "NEEDS_RECONCILIATION",
+    "paintReady": false,
+    "reason": "All three corrected routes non-self-crossing and model-clear, but 6px source-boundary uncertainty ~0.703ft exceeds 0.5ft wall alignment target; walked ground, wall endpoints, and Foundry canaries not certified.",
+    "foundryWrites": 0
+  },
+  "previousManifest": "M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v002.json",
+  "northReview": {
+    "originalProblemWest": "Old diagonal centerline minimum 17.67px to N-L-03 stone (<21.33px token radius)",
+    "originalProblemEast": "Old line crosses previously unmodeled north crest rock interior (0px)",
+    "correctedNorthPolylineSourcePx": [
+      [
+        352,
+        451
+      ],
+      [
+        423,
+        282
+      ],
+      [
+        413,
+        251
+      ],
+      [
+        418,
+        226
+      ],
+      [
+        433,
+        206
+      ],
+      [
+        458,
+        182
+      ],
+      [
+        486,
+        163
+      ],
+      [
+        510,
+        162
+      ],
+      [
+        543,
+        139
+      ],
+      [
+        572,
+        148
+      ],
+      [
+        605,
+        191
+      ],
+      [
+        676,
+        228
+      ],
+      [
+        703,
+        256
+      ],
+      [
+        744,
+        271
+      ],
+      [
+        778,
+        264
+      ],
+      [
+        811,
+        223
+      ],
+      [
+        845,
+        184
+      ],
+      [
+        865,
+        156
+      ],
+      [
+        894,
+        173
+      ],
+      [
+        849,
+        150
+      ],
+      [
+        851,
+        120
+      ],
+      [
+        878,
+        87
+      ],
+      [
+        910,
+        65
+      ],
+      [
+        946,
+        61
+      ],
+      [
+        986,
+        71
+      ],
+      [
+        1020,
+        96
+      ],
+      [
+        1045,
+        129
+      ],
+      [
+        1093,
+        191
+      ],
+      [
+        1174,
+        240
+      ],
+      [
+        1194,
+        356
+      ],
+      [
+        1151,
+        451
+      ]
+    ],
+    "correctedV002ModeledSolidGroups": 23,
+    "allExistingWallsPreserved": true,
+    "newRockPolygonSourcePx": [
+      [
+        897,
+        122
+      ],
+      [
+        913,
+        106
+      ],
+      [
+        929,
+        99
+      ],
+      [
+        950,
+        101
+      ],
+      [
+        971,
+        113
+      ],
+      [
+        979,
+        130
+      ],
+      [
+        968,
+        153
+      ],
+      [
+        940,
+        157
+      ],
+      [
+        918,
+        152
+      ],
+      [
+        903,
+        140
+      ]
+    ],
+    "caution": "Do not interpret 6px source edge uncertainty as approved 0.5ft wall alignment; 6px = 0.703ft, hence REVIEW; 5ft corridor certification still open."
+  },
+  "v003Review": {
+    "sourceSha256": "878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf",
+    "originalWallsAndRegionsUnchanged": true,
+    "groundedObstaclesCount": 23,
+    "wallSegments": 203,
+    "regionCount": 6,
+    "anchorCount": 6,
+    "mainNorthSouthDraftPass": true,
+    "wallAlignment": "REVIEW_6px_0.703ft",
+    "historicV001V002Unchanged": true
+  }
+}
