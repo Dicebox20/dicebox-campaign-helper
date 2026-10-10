@@ -52,6 +52,10 @@ The structural pass is not final art. Its purpose is semantic readability.
 
 A 3D modeled look is encouraged, but the camera must not tilt. Depth should come from top planes, bevels, ambient occlusion, contact shadows, material relief, and object height cues rather than perspective.
 
+### Route width and geometry tolerances (accepted 2026-10-09)
+
+Apply [DiceBox Geometry Tolerance Standard](DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md) at PREPARE/STRUCTURAL_INSPECT/Blueprint reconciliation. Preferred main road is 15ft (10–20ft preferred), forest trail 10ft (5–15ft preferred); no upper width rejection. Short, authored 5ft bottlenecks are not automatic REDOs when intended Medium tokens can traverse them. Route-specific Large/Huge access retains its **required** 10ft/15ft functional clearance. Measure and record uncertainty, categorize walkable *ground* separately from decorative road paint, overhead caps and solid trunks/rock. An uncertain dimension triggers internal NEEDS_RECONCILIATION, not an automatic image rerender. Structural PASS may document acceptable width variance; it never alone certifies swept token movement. Preserve clean-restart rule on genuine REDO and existing FINAL_INSPECT approval semantics.
+
 ## 3. STRUCTURAL_INSPECT
 
 The grayscale structural render must be inspected before any coloring or painterly treatment.
