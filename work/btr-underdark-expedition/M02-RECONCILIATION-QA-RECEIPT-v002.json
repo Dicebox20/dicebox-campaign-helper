@@ -1,0 +1,102 @@
+{
+  "operation": "dicebox.m02.spatial-blueprint.reconciliation-v002",
+  "projectDate": "2026-10-09",
+  "stage": "FEATURE_MANIFEST_BLUEPRINT_RECONCILIATION",
+  "status": "BLOCKED_VISUAL_WALKABILITY",
+  "art": {
+    "sourceFile": "monochrome_mushroom_cavern_map.png",
+    "sourceSHA256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956",
+    "dimensions": [
+      1536,
+      1024
+    ]
+  },
+  "target": {
+    "sceneDimensions": [
+      4320,
+      2880
+    ],
+    "grid": "Gridless",
+    "pxPerFiveFeet": 120,
+    "sourceScaleFactor": 2.8125
+  },
+  "schemaValidator": {
+    "name": "spatialBlueprintSchema",
+    "version": "0.1.0",
+    "status": "PASS",
+    "walls": 161,
+    "regions": 7,
+    "anchors": 6,
+    "levels": 1
+  },
+  "proxyValidator": {
+    "status": "PASS_GEOMETRY_ONLY",
+    "solidGroups": 14,
+    "routes": [
+      {
+        "id": "west-east-road",
+        "requiredHalfClearanceSourcePx": 64,
+        "minSolidDistanceSourcePx": 100.13,
+        "perimeterMinDistanceSourcePx": 72,
+        "proxyPass": true
+      },
+      {
+        "id": "north-loop",
+        "requiredHalfClearanceSourcePx": 42.6667,
+        "minSolidDistanceSourcePx": 45.72,
+        "perimeterMinDistanceSourcePx": 233.84,
+        "proxyPass": true,
+        "visualResult": "TIGHT_CORRIDOR_NOT_CERTIFIED"
+      },
+      {
+        "id": "south-loop",
+        "requiredHalfClearanceSourcePx": 42.6667,
+        "minSolidDistanceSourcePx": 49.12,
+        "perimeterMinDistanceSourcePx": 96.38,
+        "proxyPass": true,
+        "visualResult": "CENTERLINE_DEPARTS_VISIBLE_TRAIL_TO_RUBBLE_CLIFF_EDGE"
+      }
+    ],
+    "accessibility": {
+      "anchorCount": 6,
+      "safeFootprints": 6,
+      "nonoverlappingRegions": [
+        "arrival-west",
+        "exit-east",
+        "forage-north",
+        "habitat-south",
+        "milestone",
+        "glow-north"
+      ],
+      "remainingRubbleOverlap": [
+        "dbx:wall:m02-rock-s01"
+      ],
+      "mechanicsCertified": false
+    }
+  },
+  "changes": {
+    "wallSegmentsRemoved": 0,
+    "wallSegmentsChanged": 0,
+    "regionShapesAdjusted": [
+      "dbx:region:m02-arrival-west",
+      "dbx:region:m02-exit-east",
+      "dbx:region:m02-habitat-south"
+    ],
+    "anchorMoved": "dbx:anchor:m02-hunt",
+    "routeProxiesUpdated": [
+      "north-loop",
+      "south-loop"
+    ]
+  },
+  "blockers": [
+    "North loop passes proxy width with only ~3px geometrical margin; actual floor width must be verified",
+    "South loop's only measured-safe detour is not the apparent painted path and may traverse rocky/cliff-edge terrain",
+    "Southern rubble candidate Region overlaps full solid rock; do not enable as playable difficult-terrain Region",
+    "Destination routing/Regionwright configs/road torch anchors are still unverified"
+  ],
+  "canPaint": false,
+  "canBuild": false,
+  "foundryWrites": 0,
+  "otherMutations": "GitHub M02 draft branch only",
+  "recommendedNext": "STRUCTURAL_CORRECTION_FROM_PREPARE_CLEAN_PROMPT_REDO"
+}
