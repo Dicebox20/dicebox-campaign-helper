@@ -1,0 +1,150 @@
+{
+  "contract": "dicebox-m02-attempt5-blueprint-reconciliation/v001",
+  "date": "2026-10-09",
+  "map": "M02 — Tallcap Forest",
+  "source": {
+    "filename": "grayscale_mushroom_cavern_map.png",
+    "imageSha256": "878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sourceByteLength": 3984274,
+    "generation": "03d4569f-9f95-4a87-907f-651726cbed75",
+    "noPriorAttemptGeometryReused": true
+  },
+  "status": "NEEDS_RECONCILIATION",
+  "paintReady": false,
+  "workflowStage": "FEATURE_MANIFEST_AND_SPATIAL_BLUEPRINT_CANDIDATE_NOT_LOCKED",
+  "snapshot": {
+    "blueprint": "M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v001.json",
+    "manifest": "M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v001.json",
+    "walls": 193,
+    "groundSolidGroups": 22,
+    "regions": 6,
+    "anchors": 6,
+    "levels": 1,
+    "scaleFactor": 2.8125,
+    "scenePixels": [
+      4320,
+      2880
+    ],
+    "gridless": true,
+    "pixelsPerFiveFeet": 120
+  },
+  "canonicalSpatialSchema": {
+    "name": "spatialBlueprintSchema",
+    "version": "0.1.0",
+    "result": "PASS",
+    "testedOn": "independent Windows qa worktree tsx",
+    "unknownNumericErrors": 0
+  },
+  "regionAnchorQA": {
+    "result": "PASS_FOR_PROVISIONAL_SHAPES_ONLY",
+    "anchorsWithinRegions": 6,
+    "anchorsWithFootprintMargin": 6,
+    "anchorsCenterOverlappingDraftSolids": 0,
+    "moduleMechanicsVerified": false
+  },
+  "rasterProxy": {
+    "status": "THRESHOLD_SENSITIVE",
+    "method": "GaussianBlur sigma9; brightness binary threshold 80/85/90/95; morph close 9px; 22.34px conservative center-to-obstacle distance (5ft half-width plus 1px); 8-neighbor A*; manual ground blocker masks; north/south route zones prevent shortcut across central road. Does not equal segmentation of all physically walkable ground.",
+    "codeSHA256": "e00b0eda113d0ad3796391e697c6442a1abaa13f51ffabffb66df32bcfe04521",
+    "overlaySHA256": "a1d770e4502a405185efd1e890f01ccf62a37199bb00cf9564e43d45d",
+    "clearancePxAtFiveFt": 42.6666666667,
+    "proxyRadiusPx": 22.34,
+    "thresholds": [
+      {
+        "lum": 80,
+        "main": "PASS_PROXY",
+        "north": "PASS_PROXY",
+        "south": "PASS_PROXY"
+      },
+      {
+        "lum": 85,
+        "main": "PASS_PROXY",
+        "north": "PASS_PROXY",
+        "south": "PASS_PROXY",
+        "minRadiusPx": {
+          "main": 22.36,
+          "north": 22.36,
+          "south": 22.47
+        },
+        "approxWidthFt": {
+          "main": 5.24,
+          "north": 5.24,
+          "south": 5.27
+        }
+      },
+      {
+        "lum": 90,
+        "main": "PASS_PROXY",
+        "north": "BLOCKED_PIXEL_CLASSIFICATION",
+        "south": "PASS_PROXY",
+        "firstFailingNorthSegment": "(894,173) → (988,115)"
+      },
+      {
+        "lum": 95,
+        "main": "PASS_PROXY",
+        "north": "BLOCKED_PIXEL_CLASSIFICATION",
+        "south": "PASS_PROXY",
+        "firstFailingNorthSegment": "(423,282) → (510,162)"
+      }
+    ]
+  },
+  "geometryTolerance": {
+    "contract": "dicebox-geometry-tolerance/v0.1",
+    "routeChecks": [
+      {
+        "id": "main-road",
+        "status": "NEEDS_RECONCILIATION",
+        "codes": [
+          "MEASUREMENT_UNVERIFIED",
+          "WALKABLE_ROUTE_UNVERIFIED",
+          "OBSTACLE_CLASSIFICATION_UNVERIFIED",
+          "SWEPT_TOKEN_NOT_TESTED"
+        ]
+      },
+      {
+        "id": "north-loop",
+        "status": "NEEDS_RECONCILIATION",
+        "codes": [
+          "MEASUREMENT_UNVERIFIED",
+          "WALKABLE_ROUTE_UNVERIFIED",
+          "OBSTACLE_CLASSIFICATION_UNVERIFIED",
+          "SWEPT_TOKEN_NOT_TESTED"
+        ]
+      },
+      {
+        "id": "south-loop",
+        "status": "NEEDS_RECONCILIATION",
+        "codes": [
+          "MEASUREMENT_UNVERIFIED",
+          "WALKABLE_ROUTE_UNVERIFIED",
+          "OBSTACLE_CLASSIFICATION_UNVERIFIED",
+          "SWEPT_TOKEN_NOT_TESTED"
+        ]
+      }
+    ],
+    "wallAlignment": "UNMEASURED_SOURCE_BOUNDARY",
+    "wallAlignmentGate": "REVIEW_REQUIRED_NOT_AUTO_PASS"
+  },
+  "bottlenecks": {
+    "north": "Not officially authored",
+    "south": "Not officially authored",
+    "westEntrance": "POTENTIAL_NARROW_5_TO_10FT; NEEDS_USER_APPROVED_MECHANIC_IF_INTENTIONAL",
+    "eastEntrance": "POTENTIAL_NARROW_5_TO_10FT; NEEDS_USER_APPROVED_MECHANIC_IF_INTENTIONAL"
+  },
+  "routeGroundEvidence": "VISUAL_CONFIDENT_APPROXIMATIONS_NOT_CERTIFIED_FULL_SWEEP",
+  "blockedGates": [
+    "BLUEPRINT_LOCK",
+    "PAINTERLY_RENDER",
+    "FOUNDRY_BUILD",
+    "REGIONWRIGHT_ACTIVE_MECHANICS"
+  ],
+  "nextStep": "NORTH_LOOP_CLASSIFICATION_SENSITIVITY_RECONCILIATION_AND_WALL_ALIGNMENT_REVIEW",
+  "historicalEvidencePreserved": true,
+  "sourceImageEdited": false,
+  "newImagesGenerated": false,
+  "foundryMutations": 0
+}
