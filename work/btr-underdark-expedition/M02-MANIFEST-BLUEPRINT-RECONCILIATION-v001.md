@@ -20,8 +20,8 @@
 | Northern circuit | Trail winding through upper grove, rejoining central road at east | Traversable, no automatic terrain cost | **Clearance unresolved** at rock spires and cap/trunk bases |
 | Southern circuit | Trail looping around southern stalks and rock rubble | Traversable, no automatic terrain cost | **Clearance unresolved**; preliminary centerline intersects 2 provisional obstacle polygons |
 | Cavern north/south perimeter | High rock cliffs around playable clearing with west/east corridor apertures | Full Wall, movement/vision/light/sound block | 21 perimeter candidate segments; ends deliberately open |
-| Tallcap mushroom stalks | Grounded woody trunk cores, not overhead cap silhouettes | Full Wall around stalk footprints **only** | 11 provisional trunk footprints, 110 small line segments |
-| Hard interior rock/stalagmite forms | Recognizable steep/sheer stone masses | Full Wall only for grounded solid mass | 3 provisional rock groups, 30 line segments |
+| Tallcap mushroom stalks | Grounded woody trunk cores, not overhead cap silhouettes | Full Wall around stalk footprints **only** | 10 provisional trunk footprints, 100 small line segments |
+| Hard interior rock/stalagmite forms | Recognizable steep/sheer stone masses | Full Wall only for grounded solid mass | 4 provisional rock groups, 40 line segments |
 | Giant mushroom canopy | Radial cap tops above ground, cast shadow | **No full movement/vision Wall on cap rim** | Locked classification |
 | Roadside loose stones and fungi | Low fieldstone borders, small mushroom frills | Background-only, no full Wall | Locked classification |
 | Roadside milestone | Standing stone on north shoulder (~source x794, y400) | Interaction Region, optional Note | Mechanical lore/DC/reward **not approved** |
