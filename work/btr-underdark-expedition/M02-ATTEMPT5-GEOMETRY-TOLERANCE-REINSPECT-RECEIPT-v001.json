@@ -1,0 +1,75 @@
+{
+  "schema": "dicebox-m02-structural-tolerance-reinspection/v001",
+  "operation": "M02.structural-attempt-005.reinspect.geometry-tolerance-v0.1",
+  "date": "2026-10-09",
+  "status": "NEEDS_RECONCILIATION",
+  "outerCreativeGate": "STRUCTURAL_INSPECT_REVIEW_HOLD",
+  "newImageGenerated": false,
+  "foundryWrites": 0,
+  "historicalReceiptUnmodified": true,
+  "render": {
+    "filename": "grayscale_mushroom_cavern_map.png",
+    "sha256": "878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf",
+    "bytes": 3984274,
+    "raster": [
+      1536,
+      1024
+    ],
+    "generationId": "03d4569f-9f95-4a87-907f-651726cbed75"
+  },
+  "policy": {
+    "id": "dicebox-geometry-tolerance/v0.1",
+    "source": "docs/DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md",
+    "defaultGridlessPxPer5ft": 120,
+    "logicalCells": [
+      36,
+      24
+    ],
+    "sourcePixelsPer5ft": 42.666666666666664,
+    "mediumFootprintSourcePx": 42.666666666666664
+  },
+  "reviews": [
+    {
+      "id": "main-road",
+      "topology": "VISUAL_PASS",
+      "width": "PREFERENCE_VARIANCE",
+      "estimatedPaintBandSourcePx": [
+        80,
+        110
+      ],
+      "estimatedPaintBandFeet": [
+        9.375,
+        12.890625
+      ],
+      "minimumCreatureFootprintFt": 5,
+      "fullContinuityCertified": false,
+      "bottleneckAuthored": false
+    },
+    {
+      "id": "north-loop",
+      "topology": "VISUAL_PASS",
+      "minimumCreatureFootprintFt": 5,
+      "width": "NOT_MEASURED_END_TO_END",
+      "fullContinuityCertified": false
+    },
+    {
+      "id": "south-loop",
+      "topology": "VISUAL_PASS",
+      "minimumCreatureFootprintFt": 5,
+      "width": "NOT_MEASURED_END_TO_END",
+      "fullContinuityCertified": false
+    }
+  ],
+  "sourceAssessment": "The old absolute 15ft main/10ft trail width rejection is not valid under accepted v0.1; genuine 5ft continuous ground and any authored bottlenecks remain unverified.",
+  "blockedGates": [
+    "BLUEPRINT_LOCK",
+    "PAINTERLY_RENDER",
+    "FOUNDRY_BUILD"
+  ],
+  "next": "TRACE_ATTEMPT5_WALKABLE_GROUND_AND_BLOCKER_FOOTPRINTS_AND_5FT_SWEPT_PATHS",
+  "historicalSources": [
+    "M02-STRUCTURAL-INSPECT-REDO-ATTEMPT-005-2026-10-09.md",
+    "M02-PREPARE-GEOMETRY-TOLERANCE-ADDENDUM-2026-10-09.md"
+  ],
+  "artworkSafety": "Attempt4 geometry may not be reused on attempt5 raster; user clean restart image prompt rule preserved."
+}
