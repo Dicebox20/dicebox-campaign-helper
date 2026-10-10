@@ -26,8 +26,8 @@ describe("DiceBox geometry tolerance standard v0.1",()=>{
   it("permits an ordinary 5ft secondary single-file path with documented width variance",()=>{
     expect(result({...trail,observedMinWidthFt:5.3,measurementUncertaintyFt:0.1}).status).toBe("PASS");
   });
-  it("flags forest trail width under the preference but above 5ft",()=>{
-    expect(result({...trail,observedMinWidthFt:5.1,measurementUncertaintyFt:0.2}).status).toBe("PASS_WITH_DOCUMENTED_VARIANCE");
+  it("reviews a 5ft forest trail when measurement uncertainty crosses the functional minimum",()=>{
+    expect(result({...trail,observedMinWidthFt:5.1,measurementUncertaintyFt:0.2}).status).toBe("NEEDS_RECONCILIATION");
   });
   it("flags narrow main road without authored bottleneck as reconciliation",()=>{
     expect(result({...main,observedMinWidthFt:9.4,measurementUncertaintyFt:0.3}).status).toBe("NEEDS_RECONCILIATION");
