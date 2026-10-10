@@ -60,10 +60,12 @@ describe("DiceBox geometry tolerance standard v0.1",()=>{
     expect(result({...trail,kind:"designated-huge",requiredFootprintFt:15,observedMinWidthFt:14,measurementUncertaintyFt:0.2}).status).toBe("REDO_REQUIRED");
   });
   it("rejects missing width evidence",()=>{
-    expect(result({...main,observedMinWidthFt:undefined}).status).toBe("NEEDS_RECONCILIATION");
+    const x={...main}; delete x.observedMinWidthFt;
+    expect(result(x).status).toBe("NEEDS_RECONCILIATION");
   });
   it("rejects missing measurement uncertainty",()=>{
-    expect(result({...main,measurementUncertaintyFt:undefined}).status).toBe("NEEDS_RECONCILIATION");
+    const x={...main}; delete x.measurementUncertaintyFt;
+    expect(result(x).status).toBe("NEEDS_RECONCILIATION");
   });
   it("does not treat a proxy centerline across rock as walkable",()=>{
     expect(result({...main,continuousWalkableSurface:"no"}).status).toBe("REDO_REQUIRED");
