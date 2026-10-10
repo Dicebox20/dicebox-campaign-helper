@@ -1,0 +1,156 @@
+{
+  "contract": "dicebox-m02-attempt5-north-ground-review/v002",
+  "date": "2026-10-09",
+  "stage": "FEATURE_MANIFEST_SPATIAL_BLUEPRINT_RECONCILIATION",
+  "status": "NEEDS_RECONCILIATION",
+  "paintReady": false,
+  "source": {
+    "sha256": "878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf",
+    "filename": "grayscale_mushroom_cavern_map.png",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "sourceImageUnmodified": true,
+    "stagedInRepo": false
+  },
+  "artifacts": {
+    "blueprint": "M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v002.json",
+    "manifest": "M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v002.json",
+    "validator": "M02-ATTEMPT5-GEOMETRY-AUDIT-v002.ts",
+    "qaOverlay": "M02_North_Loop_v002_candidate_fullmap.png (chat artifact; not a repo image asset)",
+    "historicalBlueprintV001Unmodified": true
+  },
+  "spatialSchema": {
+    "version": "0.1.0",
+    "result": "PASS",
+    "walls": 203,
+    "regions": 6,
+    "anchors": 6,
+    "levels": 1,
+    "sourceScale": 2.8125,
+    "exactBuildTarget": [
+      4320,
+      2880
+    ],
+    "grid": "Gridless 120 px/5ft"
+  },
+  "nonDestructiveDelta": {
+    "original193WallsUnchanged": true,
+    "original22SolidGroupsUnchanged": true,
+    "all6RegionsUnchanged": true,
+    "all6AnchorsUnchanged": true,
+    "addedFullBlockingGroundRockGroups": 1,
+    "newWallSegments": 10,
+    "changedRouteNames": [
+      "m02-005-north-loop"
+    ]
+  },
+  "northGroundObservation": {
+    "west": {
+      "originalSegment": [
+        [
+          423,
+          282
+        ],
+        [
+          510,
+          162
+        ]
+      ],
+      "oldNearestRockDistancePx": 17.67,
+      "correctedRoute": "multiwaypoint curved visible trail; no solids deleted",
+      "correctedSubrouteApproxMinSolidDistancePx": 34.25
+    },
+    "northeast": {
+      "originalSegment": [
+        [
+          894,
+          173
+        ],
+        [
+          988,
+          115
+        ]
+      ],
+      "issue": "previous solid model omitted grounded upper-crest rock; original line intersects newly modeled solid",
+      "newRockBoundingBoxSourcePx": [
+        897,
+        99,
+        979,
+        157
+      ],
+      "newRockClass": "full-height solid rock; no canopy wall",
+      "correctedRoute": "northward arc around rock island along illustrated upper trail, with 5ft swept-disc preview",
+      "previewConfidence": "visual candidate only; rock/cliff floor boundary not verified within 0.5ft"
+    }
+  },
+  "sweptGeometry": {
+    "method": "Deterministic line-segment vs polygon/ellipse and cliff-polyline distances, tested on complete candidate waypoints; independent raster brightness not used as collision truth.",
+    "sourcePxPerFoot": 8.533333333333333,
+    "mediumTokenRadiusPx": 21.3333333333333,
+    "assumedBoundaryUncertaintyPx": 6,
+    "assumedBoundaryUncertaintyFt": 0.703125,
+    "requiredCenterDistanceIncludingUncertaintyPx": 27.3333333333333,
+    "routes": [
+      {
+        "id": "m02-005-main-road",
+        "nearestModeledSolidDistancePx": 48.926,
+        "nearestCliffDistancePx": 375.139,
+        "residualAfterRadiusAndUncertaintyPx": 21.592,
+        "modelResult": "PASS_DRAFT_GEOMETRY_ONLY",
+        "toleranceResult": "NEEDS_RECONCILIATION"
+      },
+      {
+        "id": "m02-005-north-loop",
+        "nearestModeledSolidDistancePx": 31.391,
+        "nearestModeledSolid": "m02-005-northeast-crest-groundrock",
+        "nearestCliffDistancePx": 34.814,
+        "residualAfterRadiusAndUncertaintyPx": 4.058,
+        "modelResult": "PASS_DRAFT_GEOMETRY_ONLY",
+        "toleranceResult": "NEEDS_RECONCILIATION"
+      },
+      {
+        "id": "m02-005-south-loop",
+        "nearestModeledSolidDistancePx": 0,
+        "nearestModeledSolid": "m02-005-southeast-ridge",
+        "nearestCliffDistancePx": 58.309,
+        "residualAfterRadiusAndUncertaintyPx": -27.333,
+        "modelResult": "FAIL_DRAFT_GEOMETRY",
+        "toleranceResult": "REDO_REQUIRED_FOR_DRAFT_CENTERLINE_NOT_PROOF_IMAGE_REDRAW_REQUIRED",
+        "affectedOriginalSegment": [
+          [
+            1132,
+            827
+          ],
+          [
+            1248,
+            728
+          ]
+        ]
+      }
+    ]
+  },
+  "wallAlignment": {
+    "status": "REVIEW",
+    "checkedAgainst": "accepted source image visual ground rock",
+    "observedPlacementErrorFt": null,
+    "boundaryUncertaintyFt": 0.703125,
+    "projectPreferredTargetFt": 0.5,
+    "reason": "source rock/cliff contours have not been surveyed to <=0.5ft; zero alignment error cannot be asserted",
+    "compilerCodes": [
+      "ALIGNMENT_UNVERIFIED"
+    ]
+  },
+  "creatureSize": "Medium, intended 5ft footprint; Large access not claimed",
+  "blockedStages": [
+    "BLUEPRINT_LOCK",
+    "PAINTERLY_RENDER",
+    "BUILD",
+    "FOUNDRY_RUNTIME_INJECTION"
+  ],
+  "next": "SOUTH_LOOP_CENTERLINE_RECONCILIATION_PLUS_GROUNDED_WALL_ALIGNMENT_AND_WALKABLE_FLOOR_PROOF",
+  "historicalReceiptsPreserved": true,
+  "foundryWrites": 0,
+  "newGeneratedArtImages": 0
+}
