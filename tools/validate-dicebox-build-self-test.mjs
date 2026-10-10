@@ -51,6 +51,10 @@ const approvedException = validMacro
            'gridSize: 100, distance: 10, units: "ft", logicalColumns: 40, logicalRows: 30, width: 4000, height: 3000');
 
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: validMacro }).status, "PASS");
+const withToleranceMarker = validMacro.replace("// DICEBOX_SCALE_PROFILE: battlemap-120", "// DICEBOX_SCALE_PROFILE: battlemap-120\n// DICEBOX_GEOMETRY_TOLERANCE_PROFILE: dicebox-geometry-tolerance/v0.1");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: withToleranceMarker }).status, "PASS", "Accepted tolerance metadata must preserve BUILD v2 compatibility.");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: withToleranceMarker }).geometryToleranceProfile, "dicebox-geometry-tolerance/v0.1");
+assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: withToleranceMarker.replace("dicebox-geometry-tolerance/v0.1", "unknown-policy") }).status, "FAIL", "Unknown tolerance policy marker must fail closed.");
 const legacyApprovalMarker = validMacro.replace("INSPECT(PASS=APPROVED) -> BUILD", "INSPECT -> APPROVE -> BUILD");
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.md", source: legacyApprovalMarker }).status, "PASS", "Legacy explicit-approval BUILD marker must remain backward compatible.");
 assert.equal(validateDiceboxBuild({ artifactPath: "L1-04.zip", source: validMacro }).status, "FAIL", "ZIP regression must fail closed.");
