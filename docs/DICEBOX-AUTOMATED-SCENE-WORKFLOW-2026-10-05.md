@@ -62,6 +62,8 @@ Recommended layout:
   receipts/
 ```
 
+**Image prompt restart policy (2026-10-09):** Every candidate after a rejected render is a completely independently composed prompt derived from canonical, accepted specification inputs. The prior prompt/image is archived as immutable evidence but never passed as provider generation input. A variation, paraphrase, patch, correction appendix, reused seed or image edit of the failed attempt is forbidden. Apply the clean-restart gate and record a distinct composition approach ID plus independent-authoring review before new image generation. This is a global DiceBox rule covering all image workflows, documented in `docs/DICEBOX-IMAGE-PROMPT-CLEAN-RESTART-RULE-2026-10-09.md`.
+
 ### Scene files
 
 - `state.json`: authoritative automation state for one Scene.
