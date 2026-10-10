@@ -1,4 +1,5 @@
 export * from "./plan.js";
+export * from "./image-prompt-clean-restart.js";
 export * from "./document-plan.js";
 export * from "./transaction.js";
 export * from "./transaction-ledger.js";

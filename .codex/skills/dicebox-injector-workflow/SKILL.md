@@ -76,6 +76,10 @@ Canonical camera clause:
 
 This preserves the strict top-down/orthographic requirement while allowing the current 3D-modeled structural style.
 
+## Global DiceBox image prompt clean restart (user-locked 2026-10-09)
+
+Before writing **any** DiceBox image prompt, read `docs/DICEBOX-IMAGE-PROMPT-CLEAN-RESTART-RULE-2026-10-09.md`. No second image prompt may be a variation, paraphrase, patch, negation, or extension of a previous one. Archive failed prompts as evidence only; never pass them, their seeds, or their rejected outputs as a provider input. Recompose independently from the approved canonical requirements with a new conceptual composition approach. Do not say 'same map, but…' or edit a rejected render. Keep the explicitly accepted spatial/character specification. This applies equally to maps, tokens and all project assets. The compiler guard `validateImagePromptCleanRestart` is a required preflight for future provider adapters, not a guarantee of semantic uniqueness; a reviewer must certify independent creation.
+
 ## REDO prompt reset
 
 When INSPECT returns REDO for generated map art:

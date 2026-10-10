@@ -1,6 +1,7 @@
 import mapLabSvg from "../../../assets/testing/campaign-helper-map-lab-v1.svg?raw";
 import { useMemo } from "react";
 import { createCampaignHelperMapLabDesktopPreview } from "./campaign-helper-map-lab-preview";
+import { DICEBOX_DESKTOP_IMAGE_PROMPT_POLICY } from "./image-prompt-restart-preflight";
 
 type CampaignHelperMapLabPreviewProps = Readonly<{
   selectedAnchorId: string | null;
@@ -48,6 +49,7 @@ export function CampaignHelperMapLabPreview({ selectedAnchorId, onSelectAnchor }
         <strong>{preview.blueprintId}</strong> · {preview.walls.length} Walls · {preview.regions.length} Regions · {preview.anchors.length} anchors · {preview.assetByteLength} bytes
       </p>
       <p className="map-lab-preview__authority">Geometry: Blueprint · Renderer: background only · Runtime: not modeled · Mutation: disabled</p>
+      <p className="map-lab-preview__authority">Image generation rule: Clean restart from the accepted specification; never a variation of a previous prompt. Policy: {DICEBOX_DESKTOP_IMAGE_PROMPT_POLICY} · Provider runtime not connected.</p>
     </section>
   );
 }
