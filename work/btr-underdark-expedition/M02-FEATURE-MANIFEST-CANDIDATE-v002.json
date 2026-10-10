@@ -1,0 +1,3041 @@
+{
+  "schema": "dicebox-m02-feature-manifest-proposal/v002",
+  "stage": "FEATURE_MANIFEST_BLUEPRINT_RECONCILIATION_NOT_LOCKED",
+  "sceneSemanticId": "dbx:scene:m02-tallcap",
+  "source": {
+    "filename": "monochrome_mushroom_cavern_map.png",
+    "generationId": "5be5a710-5a14-412f-bfd3-b7006efc7b8c",
+    "sha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956",
+    "raster": [
+      1536,
+      1024
+    ],
+    "structuralInspection": "PASS_VISUAL"
+  },
+  "coordinateSystem": {
+    "source": "source-image-px",
+    "origin": "NW",
+    "xEast": true,
+    "ySouth": true,
+    "logicalCells": [
+      36,
+      24
+    ],
+    "worldFeet": [
+      180,
+      120
+    ],
+    "targetPixels": [
+      4320,
+      2880
+    ],
+    "scaleFactor": 2.8125,
+    "defaultLevelSemanticId": "dbx:level:m02-ground"
+  },
+  "features": [
+    {
+      "id": "m02-main-road",
+      "semanticClass": "traversable-path",
+      "description": "West-east maintained roadway",
+      "foundryProjection": "no wall",
+      "status": "required-clearance-15ft",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-north-loop",
+      "semanticClass": "traversable-path",
+      "description": "Northern branching/return trail",
+      "foundryProjection": "no wall",
+      "status": "clearance-recheck",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-south-loop",
+      "semanticClass": "traversable-path",
+      "description": "Southern branching/return trail",
+      "foundryProjection": "no wall",
+      "status": "clearance-recheck",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-outer-north",
+      "semanticClass": "high-cavern-boundary",
+      "description": "Northern cave perimeter",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-outer-south",
+      "semanticClass": "high-cavern-boundary",
+      "description": "Southern cave perimeter",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-nw",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 180,298, ellipse 27x38 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-n01",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 494,166, ellipse 34x35 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-n02",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 639,115, ellipse 22x32 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-ne01",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 1048,164, ellipse 28x37 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-ne02",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 1381,296, ellipse 28x33 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-rock-nc01",
+      "semanticClass": "rock-spire",
+      "description": "Grounded footprint center 503,334, ellipse 23x40 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-rock-nc02",
+      "semanticClass": "rock-spire",
+      "description": "Grounded footprint center 1076,342, ellipse 22x33 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-sw01",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 168,695, ellipse 36x39 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-sc01",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 599,669, ellipse 34x46 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-sc02",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 709,744, ellipse 25x32 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-se01",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 1124,762, ellipse 43x53 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-trunk-se02",
+      "semanticClass": "tallcap-trunk",
+      "description": "Grounded footprint center 1403,680, ellipse 29x40 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-rock-s01",
+      "semanticClass": "solid-boulder-mass",
+      "description": "Grounded footprint center 1005,690, ellipse 64x65 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-rock-s02",
+      "semanticClass": "rock-spire",
+      "description": "Grounded footprint center 905,834, ellipse 15x28 source px",
+      "foundryProjection": "Wall full-block",
+      "status": "geometry-provisional",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-canopies",
+      "semanticClass": "overhead-canopy",
+      "description": "High mushroom caps and shadows",
+      "foundryProjection": "no wall",
+      "status": "locked-classification",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-road-edging",
+      "semanticClass": "low-stone-border",
+      "description": "Stone edging/fieldstones",
+      "foundryProjection": "no wall",
+      "status": "locked-classification",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-minor-fungi",
+      "semanticClass": "decorative-vegetation",
+      "description": "Small mushrooms, frills, moss",
+      "foundryProjection": "no wall",
+      "status": "locked-classification",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-milestone",
+      "semanticClass": "interactable-landmark",
+      "description": "Stone on north road shoulder",
+      "foundryProjection": "Region+optional Note",
+      "status": "discovery-mechanics-unapproved",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-forage-north",
+      "semanticClass": "fungal-foraging-area",
+      "description": "Accessible northern mushroom hollow",
+      "foundryProjection": "Region+Regionwright API",
+      "status": "module-contract-pending",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-habitat-south",
+      "semanticClass": "manual-hunting-habitat",
+      "description": "Southern forest hunting area",
+      "foundryProjection": "Region+GM manual action",
+      "status": "no-auto-hunt",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-glow-north",
+      "semanticClass": "bioluminescent-bed",
+      "description": "Subtle northern fungal luminescence",
+      "foundryProjection": "AmbientLight candidate",
+      "status": "exact-light-config-pending",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-rubble-south",
+      "semanticClass": "loose-rubble",
+      "description": "Scattered smaller rubble around southern rock pile",
+      "foundryProjection": "Region candidate",
+      "status": "terrain-semantics-pending",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-arrival-west",
+      "semanticClass": "scene-arrival",
+      "description": "Connect from M01 east exit",
+      "foundryProjection": "Region+future route",
+      "status": "destination-binding-pending",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-exit-east",
+      "semanticClass": "scene-transition",
+      "description": "Eastward future M03 route",
+      "foundryProjection": "Region+future route",
+      "status": "destination-not-established",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    },
+    {
+      "id": "m02-road-torches",
+      "semanticClass": "torch-light-candidates",
+      "description": "Approximately three suggested by PREPARE, not individually certified in grayscale",
+      "foundryProjection": "AmbientLight candidates",
+      "status": "not-ready-unconfirmed",
+      "sourceSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956"
+    }
+  ],
+  "routeProposals": [
+    {
+      "id": "west-east-road",
+      "requiredClearanceFt": 15,
+      "centerline": [
+        [
+          0,
+          471
+        ],
+        [
+          260,
+          477
+        ],
+        [
+          520,
+          472
+        ],
+        [
+          790,
+          480
+        ],
+        [
+          1050,
+          474
+        ],
+        [
+          1300,
+          479
+        ],
+        [
+          1536,
+          469
+        ]
+      ]
+    },
+    {
+      "id": "north-loop",
+      "requiredClearanceFt": 10,
+      "centerline": [
+        [
+          345,
+          440
+        ],
+        [
+          370,
+          335
+        ],
+        [
+          414,
+          248
+        ],
+        [
+          485,
+          247
+        ],
+        [
+          545,
+          254
+        ],
+        [
+          630,
+          274
+        ],
+        [
+          730,
+          315
+        ],
+        [
+          840,
+          316
+        ],
+        [
+          940,
+          309
+        ],
+        [
+          985,
+          292
+        ],
+        [
+          1040,
+          252
+        ],
+        [
+          1087,
+          238
+        ],
+        [
+          1154,
+          252
+        ],
+        [
+          1204,
+          304
+        ],
+        [
+          1264,
+          436
+        ]
+      ],
+      "originalCenterline": [
+        [
+          345,
+          440
+        ],
+        [
+          379,
+          326
+        ],
+        [
+          414,
+          260
+        ],
+        [
+          520,
+          255
+        ],
+        [
+          655,
+          292
+        ],
+        [
+          780,
+          338
+        ],
+        [
+          950,
+          337
+        ],
+        [
+          1080,
+          299
+        ],
+        [
+          1169,
+          258
+        ],
+        [
+          1225,
+          315
+        ],
+        [
+          1264,
+          436
+        ]
+      ],
+      "status": "PROVISIONAL_OBSTACLE_CLEARANCE_PASS_UNCERTIFIED"
+    },
+    {
+      "id": "south-loop",
+      "requiredClearanceFt": 10,
+      "centerline": [
+        [
+          335,
+          506
+        ],
+        [
+          362,
+          600
+        ],
+        [
+          433,
+          715
+        ],
+        [
+          540,
+          807
+        ],
+        [
+          633,
+          857
+        ],
+        [
+          755,
+          891
+        ],
+        [
+          855,
+          903
+        ],
+        [
+          947,
+          918
+        ],
+        [
+          1046,
+          922
+        ],
+        [
+          1143,
+          904
+        ],
+        [
+          1214,
+          821
+        ],
+        [
+          1250,
+          705
+        ],
+        [
+          1274,
+          590
+        ],
+        [
+          1281,
+          513
+        ]
+      ],
+      "originalCenterline": [
+        [
+          335,
+          506
+        ],
+        [
+          362,
+          597
+        ],
+        [
+          449,
+          722
+        ],
+        [
+          573,
+          805
+        ],
+        [
+          734,
+          846
+        ],
+        [
+          922,
+          855
+        ],
+        [
+          1109,
+          818
+        ],
+        [
+          1200,
+          729
+        ],
+        [
+          1260,
+          591
+        ],
+        [
+          1281,
+          513
+        ]
+      ],
+      "status": "MECHANICAL_PROXY_CLEARANCE_PASS_VISUAL_SURFACE_BLOCKED"
+    }
+  ],
+  "wallProposals": [
+    {
+      "semanticId": "dbx:wall:m02-edge-north-01",
+      "class": "full-block",
+      "points": [
+        [
+          0,
+          399
+        ],
+        [
+          18,
+          323
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-02",
+      "class": "full-block",
+      "points": [
+        [
+          18,
+          323
+        ],
+        [
+          22,
+          205
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-03",
+      "class": "full-block",
+      "points": [
+        [
+          22,
+          205
+        ],
+        [
+          68,
+          90
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-04",
+      "class": "full-block",
+      "points": [
+        [
+          68,
+          90
+        ],
+        [
+          165,
+          14
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-05",
+      "class": "full-block",
+      "points": [
+        [
+          165,
+          14
+        ],
+        [
+          350,
+          8
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-06",
+      "class": "full-block",
+      "points": [
+        [
+          350,
+          8
+        ],
+        [
+          725,
+          6
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-07",
+      "class": "full-block",
+      "points": [
+        [
+          725,
+          6
+        ],
+        [
+          1080,
+          4
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-08",
+      "class": "full-block",
+      "points": [
+        [
+          1080,
+          4
+        ],
+        [
+          1360,
+          9
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-09",
+      "class": "full-block",
+      "points": [
+        [
+          1360,
+          9
+        ],
+        [
+          1490,
+          155
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-10",
+      "class": "full-block",
+      "points": [
+        [
+          1490,
+          155
+        ],
+        [
+          1518,
+          305
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-north-11",
+      "class": "full-block",
+      "points": [
+        [
+          1518,
+          305
+        ],
+        [
+          1536,
+          396
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-01",
+      "class": "full-block",
+      "points": [
+        [
+          0,
+          544
+        ],
+        [
+          8,
+          640
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-02",
+      "class": "full-block",
+      "points": [
+        [
+          8,
+          640
+        ],
+        [
+          28,
+          824
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-03",
+      "class": "full-block",
+      "points": [
+        [
+          28,
+          824
+        ],
+        [
+          80,
+          948
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-04",
+      "class": "full-block",
+      "points": [
+        [
+          80,
+          948
+        ],
+        [
+          260,
+          1018
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-05",
+      "class": "full-block",
+      "points": [
+        [
+          260,
+          1018
+        ],
+        [
+          620,
+          1019
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-06",
+      "class": "full-block",
+      "points": [
+        [
+          620,
+          1019
+        ],
+        [
+          990,
+          1018
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-07",
+      "class": "full-block",
+      "points": [
+        [
+          990,
+          1018
+        ],
+        [
+          1280,
+          1020
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-08",
+      "class": "full-block",
+      "points": [
+        [
+          1280,
+          1020
+        ],
+        [
+          1455,
+          945
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-09",
+      "class": "full-block",
+      "points": [
+        [
+          1455,
+          945
+        ],
+        [
+          1525,
+          825
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-edge-south-10",
+      "class": "full-block",
+      "points": [
+        [
+          1525,
+          825
+        ],
+        [
+          1536,
+          544
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          207,
+          298
+        ],
+        [
+          201.843,
+          320.336
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          201.843,
+          320.336
+        ],
+        [
+          188.343,
+          334.14
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          188.343,
+          334.14
+        ],
+        [
+          171.657,
+          334.14
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          171.657,
+          334.14
+        ],
+        [
+          158.157,
+          320.336
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          158.157,
+          320.336
+        ],
+        [
+          153,
+          298
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          153,
+          298
+        ],
+        [
+          158.157,
+          275.664
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          158.157,
+          275.664
+        ],
+        [
+          171.657,
+          261.86
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          171.657,
+          261.86
+        ],
+        [
+          188.343,
+          261.86
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          188.343,
+          261.86
+        ],
+        [
+          201.843,
+          275.664
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-nw-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          201.843,
+          275.664
+        ],
+        [
+          207,
+          298
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          528,
+          166
+        ],
+        [
+          521.507,
+          186.572
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          521.507,
+          186.572
+        ],
+        [
+          504.507,
+          199.287
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          504.507,
+          199.287
+        ],
+        [
+          483.493,
+          199.287
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          483.493,
+          199.287
+        ],
+        [
+          466.493,
+          186.572
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          466.493,
+          186.572
+        ],
+        [
+          460,
+          166
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          460,
+          166
+        ],
+        [
+          466.493,
+          145.428
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          466.493,
+          145.428
+        ],
+        [
+          483.493,
+          132.713
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          483.493,
+          132.713
+        ],
+        [
+          504.507,
+          132.713
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          504.507,
+          132.713
+        ],
+        [
+          521.507,
+          145.428
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n01-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          521.507,
+          145.428
+        ],
+        [
+          528,
+          166
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          661,
+          115
+        ],
+        [
+          656.798,
+          133.809
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          656.798,
+          133.809
+        ],
+        [
+          645.798,
+          145.434
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          645.798,
+          145.434
+        ],
+        [
+          632.202,
+          145.434
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          632.202,
+          145.434
+        ],
+        [
+          621.202,
+          133.809
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          621.202,
+          133.809
+        ],
+        [
+          617,
+          115
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          617,
+          115
+        ],
+        [
+          621.202,
+          96.191
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          621.202,
+          96.191
+        ],
+        [
+          632.202,
+          84.566
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          632.202,
+          84.566
+        ],
+        [
+          645.798,
+          84.566
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          645.798,
+          84.566
+        ],
+        [
+          656.798,
+          96.191
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-n02-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          656.798,
+          96.191
+        ],
+        [
+          661,
+          115
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1076,
+          164
+        ],
+        [
+          1070.652,
+          185.748
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1070.652,
+          185.748
+        ],
+        [
+          1056.652,
+          199.189
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1056.652,
+          199.189
+        ],
+        [
+          1039.348,
+          199.189
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1039.348,
+          199.189
+        ],
+        [
+          1025.348,
+          185.748
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1025.348,
+          185.748
+        ],
+        [
+          1020,
+          164
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1020,
+          164
+        ],
+        [
+          1025.348,
+          142.252
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1025.348,
+          142.252
+        ],
+        [
+          1039.348,
+          128.811
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1039.348,
+          128.811
+        ],
+        [
+          1056.652,
+          128.811
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1056.652,
+          128.811
+        ],
+        [
+          1070.652,
+          142.252
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne01-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1070.652,
+          142.252
+        ],
+        [
+          1076,
+          164
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1409,
+          296
+        ],
+        [
+          1403.652,
+          315.397
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1403.652,
+          315.397
+        ],
+        [
+          1389.652,
+          327.385
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1389.652,
+          327.385
+        ],
+        [
+          1372.348,
+          327.385
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1372.348,
+          327.385
+        ],
+        [
+          1358.348,
+          315.397
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1358.348,
+          315.397
+        ],
+        [
+          1353,
+          296
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1353,
+          296
+        ],
+        [
+          1358.348,
+          276.603
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1358.348,
+          276.603
+        ],
+        [
+          1372.348,
+          264.615
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1372.348,
+          264.615
+        ],
+        [
+          1389.652,
+          264.615
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1389.652,
+          264.615
+        ],
+        [
+          1403.652,
+          276.603
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-ne02-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1403.652,
+          276.603
+        ],
+        [
+          1409,
+          296
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-01",
+      "class": "rock-spire",
+      "points": [
+        [
+          526,
+          334
+        ],
+        [
+          521.607,
+          357.511
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-02",
+      "class": "rock-spire",
+      "points": [
+        [
+          521.607,
+          357.511
+        ],
+        [
+          510.107,
+          372.042
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-03",
+      "class": "rock-spire",
+      "points": [
+        [
+          510.107,
+          372.042
+        ],
+        [
+          495.893,
+          372.042
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-04",
+      "class": "rock-spire",
+      "points": [
+        [
+          495.893,
+          372.042
+        ],
+        [
+          484.393,
+          357.511
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-05",
+      "class": "rock-spire",
+      "points": [
+        [
+          484.393,
+          357.511
+        ],
+        [
+          480,
+          334
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-06",
+      "class": "rock-spire",
+      "points": [
+        [
+          480,
+          334
+        ],
+        [
+          484.393,
+          310.489
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-07",
+      "class": "rock-spire",
+      "points": [
+        [
+          484.393,
+          310.489
+        ],
+        [
+          495.893,
+          295.958
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-08",
+      "class": "rock-spire",
+      "points": [
+        [
+          495.893,
+          295.958
+        ],
+        [
+          510.107,
+          295.958
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-09",
+      "class": "rock-spire",
+      "points": [
+        [
+          510.107,
+          295.958
+        ],
+        [
+          521.607,
+          310.489
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc01-10",
+      "class": "rock-spire",
+      "points": [
+        [
+          521.607,
+          310.489
+        ],
+        [
+          526,
+          334
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-01",
+      "class": "rock-spire",
+      "points": [
+        [
+          1098,
+          342
+        ],
+        [
+          1093.798,
+          361.397
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-02",
+      "class": "rock-spire",
+      "points": [
+        [
+          1093.798,
+          361.397
+        ],
+        [
+          1082.798,
+          373.385
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-03",
+      "class": "rock-spire",
+      "points": [
+        [
+          1082.798,
+          373.385
+        ],
+        [
+          1069.202,
+          373.385
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-04",
+      "class": "rock-spire",
+      "points": [
+        [
+          1069.202,
+          373.385
+        ],
+        [
+          1058.202,
+          361.397
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-05",
+      "class": "rock-spire",
+      "points": [
+        [
+          1058.202,
+          361.397
+        ],
+        [
+          1054,
+          342
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-06",
+      "class": "rock-spire",
+      "points": [
+        [
+          1054,
+          342
+        ],
+        [
+          1058.202,
+          322.603
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-07",
+      "class": "rock-spire",
+      "points": [
+        [
+          1058.202,
+          322.603
+        ],
+        [
+          1069.202,
+          310.615
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-08",
+      "class": "rock-spire",
+      "points": [
+        [
+          1069.202,
+          310.615
+        ],
+        [
+          1082.798,
+          310.615
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-09",
+      "class": "rock-spire",
+      "points": [
+        [
+          1082.798,
+          310.615
+        ],
+        [
+          1093.798,
+          322.603
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-nc02-10",
+      "class": "rock-spire",
+      "points": [
+        [
+          1093.798,
+          322.603
+        ],
+        [
+          1098,
+          342
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          204,
+          695
+        ],
+        [
+          197.125,
+          717.924
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          197.125,
+          717.924
+        ],
+        [
+          179.125,
+          732.091
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          179.125,
+          732.091
+        ],
+        [
+          156.875,
+          732.091
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          156.875,
+          732.091
+        ],
+        [
+          138.875,
+          717.924
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          138.875,
+          717.924
+        ],
+        [
+          132,
+          695
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          132,
+          695
+        ],
+        [
+          138.875,
+          672.076
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          138.875,
+          672.076
+        ],
+        [
+          156.875,
+          657.909
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          156.875,
+          657.909
+        ],
+        [
+          179.125,
+          657.909
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          179.125,
+          657.909
+        ],
+        [
+          197.125,
+          672.076
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sw01-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          197.125,
+          672.076
+        ],
+        [
+          204,
+          695
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          633,
+          669
+        ],
+        [
+          626.507,
+          696.038
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          626.507,
+          696.038
+        ],
+        [
+          609.507,
+          712.749
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          609.507,
+          712.749
+        ],
+        [
+          588.493,
+          712.749
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          588.493,
+          712.749
+        ],
+        [
+          571.493,
+          696.038
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          571.493,
+          696.038
+        ],
+        [
+          565,
+          669
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          565,
+          669
+        ],
+        [
+          571.493,
+          641.962
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          571.493,
+          641.962
+        ],
+        [
+          588.493,
+          625.251
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          588.493,
+          625.251
+        ],
+        [
+          609.507,
+          625.251
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          609.507,
+          625.251
+        ],
+        [
+          626.507,
+          641.962
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc01-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          626.507,
+          641.962
+        ],
+        [
+          633,
+          669
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          734,
+          744
+        ],
+        [
+          729.225,
+          762.809
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          729.225,
+          762.809
+        ],
+        [
+          716.725,
+          774.434
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          716.725,
+          774.434
+        ],
+        [
+          701.275,
+          774.434
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          701.275,
+          774.434
+        ],
+        [
+          688.775,
+          762.809
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          688.775,
+          762.809
+        ],
+        [
+          684,
+          744
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          684,
+          744
+        ],
+        [
+          688.775,
+          725.191
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          688.775,
+          725.191
+        ],
+        [
+          701.275,
+          713.566
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          701.275,
+          713.566
+        ],
+        [
+          716.725,
+          713.566
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          716.725,
+          713.566
+        ],
+        [
+          729.225,
+          725.191
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-sc02-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          729.225,
+          725.191
+        ],
+        [
+          734,
+          744
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1167,
+          762
+        ],
+        [
+          1158.788,
+          793.153
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1158.788,
+          793.153
+        ],
+        [
+          1137.288,
+          812.406
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1137.288,
+          812.406
+        ],
+        [
+          1110.712,
+          812.406
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1110.712,
+          812.406
+        ],
+        [
+          1089.212,
+          793.153
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1089.212,
+          793.153
+        ],
+        [
+          1081,
+          762
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1081,
+          762
+        ],
+        [
+          1089.212,
+          730.847
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1089.212,
+          730.847
+        ],
+        [
+          1110.712,
+          711.594
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1110.712,
+          711.594
+        ],
+        [
+          1137.288,
+          711.594
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1137.288,
+          711.594
+        ],
+        [
+          1158.788,
+          730.847
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se01-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1158.788,
+          730.847
+        ],
+        [
+          1167,
+          762
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-01",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1432,
+          680
+        ],
+        [
+          1426.461,
+          703.511
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-02",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1426.461,
+          703.511
+        ],
+        [
+          1411.961,
+          718.042
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-03",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1411.961,
+          718.042
+        ],
+        [
+          1394.039,
+          718.042
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-04",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1394.039,
+          718.042
+        ],
+        [
+          1379.539,
+          703.511
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-05",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1379.539,
+          703.511
+        ],
+        [
+          1374,
+          680
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-06",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1374,
+          680
+        ],
+        [
+          1379.539,
+          656.489
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-07",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1379.539,
+          656.489
+        ],
+        [
+          1394.039,
+          641.958
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-08",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1394.039,
+          641.958
+        ],
+        [
+          1411.961,
+          641.958
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-09",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1411.961,
+          641.958
+        ],
+        [
+          1426.461,
+          656.489
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-trunk-se02-10",
+      "class": "tallcap-trunk",
+      "points": [
+        [
+          1426.461,
+          656.489
+        ],
+        [
+          1432,
+          680
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-01",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          1069,
+          690
+        ],
+        [
+          1056.777,
+          728.206
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-02",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          1056.777,
+          728.206
+        ],
+        [
+          1024.777,
+          751.819
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-03",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          1024.777,
+          751.819
+        ],
+        [
+          985.223,
+          751.819
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-04",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          985.223,
+          751.819
+        ],
+        [
+          953.223,
+          728.206
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-05",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          953.223,
+          728.206
+        ],
+        [
+          941,
+          690
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-06",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          941,
+          690
+        ],
+        [
+          953.223,
+          651.794
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-07",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          953.223,
+          651.794
+        ],
+        [
+          985.223,
+          628.181
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-08",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          985.223,
+          628.181
+        ],
+        [
+          1024.777,
+          628.181
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-09",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          1024.777,
+          628.181
+        ],
+        [
+          1056.777,
+          651.794
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s01-10",
+      "class": "solid-boulder-mass",
+      "points": [
+        [
+          1056.777,
+          651.794
+        ],
+        [
+          1069,
+          690
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-01",
+      "class": "rock-spire",
+      "points": [
+        [
+          920,
+          834
+        ],
+        [
+          917.135,
+          850.458
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-02",
+      "class": "rock-spire",
+      "points": [
+        [
+          917.135,
+          850.458
+        ],
+        [
+          909.635,
+          860.63
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-03",
+      "class": "rock-spire",
+      "points": [
+        [
+          909.635,
+          860.63
+        ],
+        [
+          900.365,
+          860.63
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-04",
+      "class": "rock-spire",
+      "points": [
+        [
+          900.365,
+          860.63
+        ],
+        [
+          892.865,
+          850.458
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-05",
+      "class": "rock-spire",
+      "points": [
+        [
+          892.865,
+          850.458
+        ],
+        [
+          890,
+          834
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-06",
+      "class": "rock-spire",
+      "points": [
+        [
+          890,
+          834
+        ],
+        [
+          892.865,
+          817.542
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-07",
+      "class": "rock-spire",
+      "points": [
+        [
+          892.865,
+          817.542
+        ],
+        [
+          900.365,
+          807.37
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-08",
+      "class": "rock-spire",
+      "points": [
+        [
+          900.365,
+          807.37
+        ],
+        [
+          909.635,
+          807.37
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-09",
+      "class": "rock-spire",
+      "points": [
+        [
+          909.635,
+          807.37
+        ],
+        [
+          917.135,
+          817.542
+        ]
+      ],
+      "classification": "provisional"
+    },
+    {
+      "semanticId": "dbx:wall:m02-rock-s02-10",
+      "class": "rock-spire",
+      "points": [
+        [
+          917.135,
+          817.542
+        ],
+        [
+          920,
+          834
+        ]
+      ],
+      "classification": "provisional"
+    }
+  ],
+  "regions": [
+    {
+      "semanticId": "dbx:region:m02-arrival-west",
+      "name": "M02 — Western Arrival",
+      "shape": "polygon",
+      "status": "CANDIDATE"
+    },
+    {
+      "semanticId": "dbx:region:m02-exit-east",
+      "name": "M02 — Eastern Exit",
+      "shape": "polygon",
+      "status": "DESTINATION_PENDING"
+    },
+    {
+      "semanticId": "dbx:region:m02-forage-north",
+      "name": "M02 — Tallcap Foraging Hollow",
+      "shape": "polygon",
+      "status": "CANDIDATE"
+    },
+    {
+      "semanticId": "dbx:region:m02-habitat-south",
+      "name": "M02 — Southern Tallcap Habitat",
+      "shape": "polygon",
+      "status": "GM_MANUAL_ANCHOR_ACCESSIBLE_PROXY_ONLY"
+    },
+    {
+      "semanticId": "dbx:region:m02-milestone",
+      "name": "M02 — Stone Milestone",
+      "shape": "ellipse",
+      "status": "CANDIDATE"
+    },
+    {
+      "semanticId": "dbx:region:m02-glow-north",
+      "name": "M02 — Northern Bioluminescent Beds",
+      "shape": "ellipse",
+      "status": "CANDIDATE"
+    },
+    {
+      "semanticId": "dbx:region:m02-rubble-south",
+      "name": "M02 — Loose Rubble",
+      "shape": "polygon",
+      "status": "CANDIDATE"
+    }
+  ],
+  "lightCandidates": [
+    {
+      "semanticId": "dbx:light:m02-north-glow",
+      "sourceXY": [
+        844,
+        220
+      ],
+      "intensity": "subtle",
+      "status": "provisional"
+    }
+  ],
+  "qualityGates": [
+    {
+      "route": "west-east-road",
+      "status": "PROXY_CLEARANCE_PASS_NOT_WALKABLE_WIDTH_CERTIFICATE",
+      "minDistanceToFullWallProxySourcePx": 100.1,
+      "requiredHalfClearanceSourcePx": 64,
+      "requiredWidthFt": 15
+    },
+    {
+      "route": "north-loop",
+      "status": "PROXY_CLEARANCE_PASS_WITH_TIGHT_MARGIN_VISUAL_REVIEW_PENDING",
+      "minDistanceToFullWallProxySourcePx": 45.7,
+      "requiredHalfClearanceSourcePx": 42.6667,
+      "requiredWidthFt": 10
+    },
+    {
+      "route": "south-loop",
+      "status": "PROXY_CLEARANCE_PASS_BUT_OFF_PAINTED_TRAIL_NOT_APPROVED",
+      "minDistanceToFullWallProxySourcePx": 49.1,
+      "requiredHalfClearanceSourcePx": 42.6667,
+      "requiredWidthFt": 10
+    }
+  ],
+  "openItems": [
+    "Southern route alternate avoids draft collision polygons but deviates from established bright trail into rubble/cliff-adjacent terrain; visual walkable corridor cannot be certified.",
+    "Northern route has only ~3 source pixels clearance margin over required half width; verify trunk/rock true footprint and textured trail corridor before accepting.",
+    "Physical milestone clearance vs 15ft main roadway and cliff lines need explicit geometry QA.",
+    "Foraging, hunting and rubble Region mechanics and access are not certified by Foundry runtime.",
+    "Precise placed torch fixtures not certified from grayscale.",
+    "M03 destination unresolved."
+  ],
+  "runtimeWrites": 0,
+  "version": "v002",
+  "provenance": {
+    "derivedFrom": "M02-FEATURE-MANIFEST-CANDIDATE-v001.json",
+    "sourceRenderUnchanged": true,
+    "collisionWallsUnchanged": true
+  }
+}
