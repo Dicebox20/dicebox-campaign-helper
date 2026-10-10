@@ -101,6 +101,10 @@ Structural inspection may propose semantic classifications from visible evidence
 
 Raw pixels alone are never Foundry geometry authority.
 
+### Permanent clean-restart requirement (all image stages)
+
+The locked, project-global authority is [DICEBOX-IMAGE-PROMPT-CLEAN-RESTART-RULE-2026-10-09.md](DICEBOX-IMAGE-PROMPT-CLEAN-RESTART-RULE-2026-10-09.md). No retry may reuse a variation of any preceding image prompt. Archive prior generations and prompts only as evidence; on REDO, independently design the new prompt from accepted canonical inputs without looking at, rephrasing, or submitting the previous prompt/failed image. Original structural requirements remain binding even as the new creative composition and wording are entirely rebuilt. For painterly REDO, the approved structural render (not the failed painted image) remains a valid canonical input. Apply across all other DiceBox image types as well, not solely maps.
+
 ## 4. STRUCTURAL_CORRECTION
 
 If structural inspection finds missing, ambiguous, merged, or contradictory features, correct the structural pass before coloring.
