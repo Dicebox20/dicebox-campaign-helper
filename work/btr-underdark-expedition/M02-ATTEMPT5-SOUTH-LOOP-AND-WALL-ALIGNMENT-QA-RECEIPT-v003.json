@@ -1,0 +1,141 @@
+{
+  "schema": "dicebox.m02.attempt005.geometry-reconciliation.v003",
+  "date": "2026-10-09",
+  "scene": "M02 — Tallcap Forest",
+  "sourceImage": {
+    "filename": "grayscale_mushroom_cavern_map.png",
+    "sha256": "878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf",
+    "bytes": 3984274,
+    "sourcePixels": [
+      1536,
+      1024
+    ],
+    "artModified": false
+  },
+  "policy": "dicebox-geometry-tolerance/v0.1",
+  "renderToFoundryScale": 2.8125,
+  "logicalFootprint": [
+    36,
+    24
+  ],
+  "scenePixels": [
+    4320,
+    2880
+  ],
+  "grid": "Gridless battlemap-120",
+  "status": "NEEDS_RECONCILIATION",
+  "blueprintLocked": false,
+  "painterlyRenderAuthorized": false,
+  "versionedFiles": {
+    "manifest": "M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v003.json",
+    "blueprint": "M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v003.json",
+    "test": "M02-ATTEMPT5-GEOMETRY-AUDIT-v003.ts",
+    "priorV001V002Preserved": true
+  },
+  "canonicalSpatialBlueprint": {
+    "version": "0.1.0",
+    "status": "PASS",
+    "wallSegments": 203,
+    "solidGroups": 23,
+    "regions": 6,
+    "anchors": 6,
+    "levels": 1
+  },
+  "nonDestructiveProof": {
+    "v002WallsIdentical": true,
+    "v002RegionsIdentical": true,
+    "v002AnchorsIdentical": true,
+    "v002GroundedObstacleFootprintsIdentical": true,
+    "mainWaypointsIdentical": true,
+    "northRoutesUpdated": true,
+    "southRoutesUpdated": true
+  },
+  "routeGeometry": {
+    "sourcePixelsPerFoot": 8.533333333333333,
+    "requiredCreatureFootprintFt": 5,
+    "requiredCircleRadiusSourcePx": 21.33333333333333,
+    "provisionalBoundaryUncertaintySourcePx": 6,
+    "provisionalBoundaryUncertaintyFt": 0.703125,
+    "requiredModeledCenterGapSourcePx": 27.3333333333333,
+    "routes": [
+      {
+        "id": "main-road",
+        "waypointCount": 7,
+        "nonSelfIntersecting": true,
+        "nearestSolidSourcePx": 48.926,
+        "nearestCliffSourcePx": 375.139,
+        "remainingGapAfterRadiusAndUncertaintySourcePx": 21.592,
+        "modelVerdict": "PASS_DRAFT_GEOMETRY_ONLY",
+        "policyVerdict": "NEEDS_RECONCILIATION"
+      },
+      {
+        "id": "north-loop",
+        "waypointCount": 29,
+        "nonSelfIntersecting": true,
+        "nearestSolidSourcePx": 34.253,
+        "nearestCliffSourcePx": 34.814,
+        "remainingGapAfterRadiusAndUncertaintySourcePx": 6.92,
+        "modelVerdict": "PASS_DRAFT_GEOMETRY_ONLY",
+        "policyVerdict": "NEEDS_RECONCILIATION",
+        "priorV002LineSelfIntersectionRemoved": true
+      },
+      {
+        "id": "south-loop",
+        "waypointCount": 27,
+        "nonSelfIntersecting": true,
+        "nearestSolidSourcePx": 30.431,
+        "nearestCliffSourcePx": 58.309,
+        "remainingGapAfterRadiusAndUncertaintySourcePx": 3.098,
+        "modelVerdict": "PASS_DRAFT_GEOMETRY_ONLY",
+        "policyVerdict": "NEEDS_RECONCILIATION",
+        "priorV002SolidIntersectionRemoved": true
+      }
+    ]
+  },
+  "rasterWalkability": {
+    "method": "Hand-reviewed source ground and obstacle contours; Gaussian-smoothed luminance 70–110 on southern bend used only as corroborative path proxy, not proof of walkable floor.",
+    "southernBend": "ROUTE_VISIBLE_EAST_SHOULDER_ASTAR_BUFFER_30PX",
+    "southernThresholdRobustness": "PASS_PROXY_70_TO_110",
+    "northernLoop": "BRIGHTNESS_SENSITIVE_SHADOWED_FLOOR_NOT_CONFIRMED_AT_REQUIRED_PRECISION",
+    "realGroundPolygonPrecision": "UNCERTIFIED"
+  },
+  "regions": {
+    "result": "PASS_PROVISIONAL_REGION_ENCLOSURE",
+    "allAnchorCirclesClear": 6,
+    "anchorCentersWithinProvisionalSolidFootprints": 0,
+    "branchRoadConnectorsCleared": 4,
+    "regionMechanicsVerified": false
+  },
+  "wallAlignment": {
+    "targetDeviationFt": 0.5,
+    "reviewBandFt": [
+      0.5,
+      1
+    ],
+    "observedEdgeUncertaintySourcePx": 6,
+    "observedEdgeUncertaintyFt": 0.703125,
+    "status": "REVIEW_UNVERIFIED",
+    "wallPositionErrorActuallyMeasuredFt": null,
+    "nearbySuspiciousSemantics": "southeast cavern rock source x1273–1370, y776–873 overlaps visible large mushroom cap silhouette; retain as candidate full wall for now but inspect whether outline encloses grounded rock or canopy"
+  },
+  "routeChanges": [
+    {
+      "route": "north",
+      "problem": "V002 geometry line crossed itself near [863.86,157.60]",
+      "correction": "Remove nonessential [(865,156),(894,173)] waypoints, preserve all northern obstacles",
+      "oldVersionPreserved": true
+    },
+    {
+      "route": "south",
+      "problem": "V002 line crossed southeast ridge solid [1196..1239,650..752]",
+      "correction": "Follow existing lower bright trail, curve outside east side of grounded ridge; preserve ridge walls",
+      "oldVersionPreserved": true
+    }
+  ],
+  "historicalEvidenceOverwritten": false,
+  "newArtGenerated": false,
+  "foundryWrites": 0,
+  "livePlayerCanaries": "NOT_PERFORMED",
+  "decision": "HOLD_BLUEPRINT_LOCK_AND_PAINT_RENDER_UNTIL_CRITICAL_GROUND_WALL_ALIGNMENT_AND_NORTHERN_WALKABLE_FLOOR_CERTIFICATION",
+  "nextAction": "PRECISE_GROUND_CONTOUR_CONFIRMATION_AND_APPROVED_DOCUMENTED_ALIGNMENT_EXCEPTION_OR_RETRACE_AND_SWEPT_FLOOR_REVIEW"
+}
