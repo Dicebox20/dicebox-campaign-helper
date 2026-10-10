@@ -76,7 +76,7 @@ Sample transformed anchors:
 4. Distinguish the southern **solid rock pile** from **loose difficult scree**; enable only approved Region mechanics.
 5. Reconfirm any exact torches as visible fixtures or new approved infrastructure; don't infer dynamic flame from grayscale glow.
 6. Review Regionwright gathering/hunting adapter contracts and user-approved discovery content. Region shapes without mechanics are not `READY`.
-7. Run the **canonical `spatialBlueprintSchema` validator** and an appropriate clearance/visibility test after these adjustments; current JSON has passed programmatic structural field checks but has **not** been production-certified or installed in Foundry.
+7. **Schema validator completed:** the current candidate passed the canonical `validateSpatialBlueprint` (`spatialBlueprintSchema` v0.1.0): 161 Walls, seven Regions, six anchors, one semantic Level. This validates structure/identities/bounds, **not** walkable clearance, adapter correctness or playability. Rerun this schema validator and an appropriate clearance/visibility test after geometry corrections; no Foundry installation has occurred.
 
 ## Stage decision
 
