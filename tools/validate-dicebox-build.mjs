@@ -122,6 +122,10 @@ export function validateDiceboxBuild({ artifactPath, source }) {
   }
 
   const scaleProfile = markerValue(macro, "SCALE_PROFILE")?.toLowerCase();
+  const geometryToleranceProfile = markerValue(macro, "GEOMETRY_TOLERANCE_PROFILE")?.toLowerCase();
+  if (geometryToleranceProfile && geometryToleranceProfile !== "dicebox-geometry-tolerance/v0.1") {
+    violations.push("Unknown DiceBox geometry tolerance profile; use dicebox-geometry-tolerance/v0.1 or omit for a legacy BUILD.");
+  }
   const markerGridType = markerValue(macro, "GRID_TYPE")?.toLowerCase();
   const markerGridSize = Number(markerValue(macro, "GRID_SIZE"));
   const markerDistance = Number(markerValue(macro, "GRID_DISTANCE"));
@@ -221,6 +225,7 @@ export function validateDiceboxBuild({ artifactPath, source }) {
     status: violations.length === 0 ? "PASS" : "FAIL",
     contract: BUILD_CONTRACT,
     scaleProfile: scaleProfile ?? null,
+    geometryToleranceProfile: geometryToleranceProfile ?? null,
     sceneScale: scale,
     discoveryCount: Number.isInteger(discoveryCount) ? discoveryCount : null,
     discoveryDensity: discoveryDensity ?? null,

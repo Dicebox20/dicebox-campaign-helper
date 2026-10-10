@@ -127,6 +127,10 @@ Every BUILD macro must include these comments near the top:
 
 Prefer `embedded-webp` for large map art when compression is needed. The BTR prototype history established that compact WebP embedding plus byte/hash/path verification is more reliable than very large raw macro sources.
 
+## Geometry tolerance and creature-clearance inspection (accepted 2026-10-09)
+
+Read [docs/DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md](../../../docs/DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md) before PREPARE, structural INSPECT, Blueprint lock or BUILD. Prefer 15ft main/10ft forest trail, with allowed 10–20ft/5–15ft preferred bands and genuine documented narrow Medium-passable bottlenecks. Distinguish *aesthetic width preference* from the required creature swept-footprint; never fail a playable map solely because its bright road band is narrower than 15ft. Validate ground-surface continuity, wall solidity vs canopy, Region arrival clearance and trace uncertainty. Geometry uncertainty is NEEDS_RECONCILIATION internally; only a proved critical structural blocker requires REDO. A merely mathematical centerline with no traversable ground does not pass. Use the pure `assessRouteClearance` and `assessWallAlignment` compiler checks, and keep exact Foundry player movement canaries distinct from preview results.
+
 ## Spatial scale and token sizing
 
 Read and apply `docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md`.

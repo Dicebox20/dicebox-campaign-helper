@@ -135,6 +135,10 @@ RENDER is now a two-pass creative operation. Each attempt must preserve:
 
 The outer durable state becomes `RENDERED` only when the painterly render exists with its required structural artifacts. Before that point, a structural PASS leaves the outer state at `PREPARED` while the paint pass completes; a structural failure may move directly from `PREPARED` to `INSPECTED_REDO` with the structural render bound as the failed render evidence. A paint-only failure moves from `RENDERED` to `INSPECTED_REDO`, and its next fresh prompt is based on the approved structural render plus manifest rather than the failed paint prompt.
 
+### Geometry tolerance and reconciliation overlay (accepted 2026-10-09)
+
+Read `docs/DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md`. Width preferences are not structural requirements in isolation: main road target 15ft / preferred 10–20ft; forest trail target 10ft / preferred 5–15ft; actual minimum clearance derives from the route's required mechanical token footprint and documented intentional bottlenecks. Structural visual uncertainty or unmeasured walkable floor holds for Blueprint reconciliation within the existing stage; it does not force automatic image REDO. A PASS_WITH_DOCUMENTED_VARIANCE may count as structural PASS only where traversability and actual ground classification are supported. Record separate static/proxy/swept/runtime evidence in receipts. Never classify a corridor as viable merely because a math line avoids provisional walls while crossing rock. This does not alter the permanent prompt clean-restart rule.
+
 ### REDO
 Hard rule:
 - archive the failed stage prompt;

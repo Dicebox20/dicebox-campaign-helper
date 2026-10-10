@@ -84,6 +84,10 @@ Do **not** fix a too-small or too-large map by changing token Scale Ratio.
 - Do not use Scene padding as a substitute for correct logical map dimensions. Padding may be added only when the scene specifically needs off-map staging/hidden workspace.
 - PREPARE may choose a different logical footprint, but BUILD still derives the pixel dimensions mathematically from the selected scale profile.
 
+## Ground-route geometric tolerance (separate from exact map scale)
+
+Accepted 2026-10-09: see [DiceBox Geometry Tolerance Standard](DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md). Scale conversion and scene-pixel dimensions remain **exact**. Road/trail width targets carry aesthetic tolerance (main 15ft, preferred 10–20ft; trail 10ft, preferred 5–15ft), while physical creature footprint and traversable ground determine hard movement accessibility. The standard allows authored natural Medium-passable bottlenecks; larger designated routes must still fit required larger token footprints. Ordinary grounded-wall alignment targets ≤0.5ft, >0.5–1ft requires review, >1ft or any actual collision/sight/landing failure blocks the geometry lock. Neither width nor wall tolerance authorizes changing token Scale Ratio, overriding D&D5e footprint, or moving a wall into non-walkable terrain.
+
 ## Token footprint rules
 
 Token **footprint** is mechanical. Token **artwork scale** is visual.

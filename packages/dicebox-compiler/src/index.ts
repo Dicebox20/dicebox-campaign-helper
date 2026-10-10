@@ -7,6 +7,7 @@ export * from "./transaction-journal-store.js";
 export * from "./link-plan.js";
 export * from "./media-registry.js";
 export * from "./spatial-blueprint.js";
+export * from "./geometry-tolerance.js";
 export * from "./spatial-projection-plan.js";
 export * from "./furnishing-projection-plan.js";
 export * from "./ascendancy-furnishing-plan-fixture.js";
