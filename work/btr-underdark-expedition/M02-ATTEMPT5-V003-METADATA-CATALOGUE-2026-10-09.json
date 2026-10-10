@@ -1,0 +1,219 @@
+{
+  "schema": "dicebox.m02.metadata-catalogue/v001",
+  "checkpointId": "dbx-handoff:btr-m02-attempt005-geometry-v003-20261009",
+  "date": "2026-10-09",
+  "repository": "Dicebox20/dicebox-campaign-helper",
+  "artifactsBranch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+  "knowledgeBaseBranch": "main",
+  "sourceImage": {
+    "name": "grayscale_mushroom_cavern_map.png",
+    "sha256": "878b465fde2c7e823e20bdd4f020e95abe0cd49740cb60e133f34c443a096bdf",
+    "widthPx": 1536,
+    "heightPx": 1024,
+    "fileBytes": 3984274,
+    "storedInRepository": false,
+    "access": "reacquire and verify SHA before exact image work"
+  },
+  "identifiers": {
+    "sceneSemanticKey": "btr-expedition-m02-tallcap-forest",
+    "blueprintId": "dbx:blueprint:m02-005-tallcap",
+    "policy": "dicebox-geometry-tolerance/v0.1",
+    "structuralSchema": "spatialBlueprintSchema/0.1.0"
+  },
+  "state": {
+    "manifest": "v003 candidate",
+    "blueprint": "v003 candidate",
+    "walls": 203,
+    "groundedObstacleGroups": 23,
+    "regions": 6,
+    "anchors": 6,
+    "levels": 1,
+    "routePassesProvisionalModel": 3,
+    "routeCount": 3,
+    "wallAlignmentReview": true,
+    "sourceEdgeUncertaintyFt": 0.703125,
+    "targetAlignmentFt": 0.5,
+    "painterlyAuthorized": false,
+    "foundryWrites": 0
+  },
+  "pathScale": {
+    "logicalCells": [
+      36,
+      24
+    ],
+    "footprintFt": [
+      180,
+      120
+    ],
+    "scenePixels": [
+      4320,
+      2880
+    ],
+    "grid": "Gridless",
+    "targetPixelsPer5Ft": 120,
+    "sourceToTargetMultiplier": 2.8125
+  },
+  "files": [
+    {
+      "file": "M02-TALLCAP-FOREST-PREPARE-draft-2026-10-09.md",
+      "repositoryPath": "work/btr-underdark-expedition/M02-TALLCAP-FOREST-PREPARE-draft-2026-10-09.md",
+      "gitBlobSha": "5cc6041db33466a6e538476f8f2575fcf8537464",
+      "utf8CharacterLength": 10666,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "source specification",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-PREPARE-GEOMETRY-TOLERANCE-ADDENDUM-2026-10-09.md",
+      "repositoryPath": "work/btr-underdark-expedition/M02-PREPARE-GEOMETRY-TOLERANCE-ADDENDUM-2026-10-09.md",
+      "gitBlobSha": "9a8a101a763b874e5e99c54095f603613b5f9452",
+      "utf8CharacterLength": 3474,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "source specification",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-STRUCTURAL-INSPECT-REDO-ATTEMPT-005-2026-10-09.md",
+      "repositoryPath": "work/btr-underdark-expedition/M02-STRUCTURAL-INSPECT-REDO-ATTEMPT-005-2026-10-09.md",
+      "gitBlobSha": "7ee1c786e81588c69f10f9e9d6e4d9a6246e5dd3",
+      "utf8CharacterLength": 5747,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "historical evidence",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-GEOMETRY-TOLERANCE-REINSPECT-2026-10-09.md",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-GEOMETRY-TOLERANCE-REINSPECT-2026-10-09.md",
+      "gitBlobSha": "e976667900bc7d58a82bde7e4e31483f986c443f",
+      "utf8CharacterLength": 6386,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "historical evidence",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v001.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v001.json",
+      "gitBlobSha": "81577eaf82bbd1fac7bade3261266d4db2867848",
+      "utf8CharacterLength": 34109,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "semantic features",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v001.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v001.json",
+      "gitBlobSha": "9393d9b8a0faa891c27bb830a613c04a4d0b7f11",
+      "utf8CharacterLength": 57563,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "spatial geometry",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-BLUEPRINT-RECONCILIATION-QA-RECEIPT-v001.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-BLUEPRINT-RECONCILIATION-QA-RECEIPT-v001.json",
+      "gitBlobSha": "e6f9fcd9df75844694566b9a84d83cfb4ce6a22c",
+      "utf8CharacterLength": 4750,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "QA receipt",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v002.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v002.json",
+      "gitBlobSha": "be418ea4116217c1ca63428ae43e292fd1826695",
+      "utf8CharacterLength": 40013,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "semantic features",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v002.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v002.json",
+      "gitBlobSha": "a0da04687084298150773994dbdfc1a4eadb7459",
+      "utf8CharacterLength": 60359,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "spatial geometry",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-NORTH-GROUND-REVIEW-QA-RECEIPT-v002.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-NORTH-GROUND-REVIEW-QA-RECEIPT-v002.json",
+      "gitBlobSha": "41457b13b5e711b9c7002bcd40c4abb7b1d4078f",
+      "utf8CharacterLength": 4957,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "QA receipt",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v003.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-FEATURE-MANIFEST-CANDIDATE-v003.json",
+      "gitBlobSha": "0917cd661358b3525bde9df25cb1b0608281d3b7",
+      "utf8CharacterLength": 43087,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "semantic features",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v003.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-SPATIAL-BLUEPRINT-CANDIDATE-v003.json",
+      "gitBlobSha": "7e12b2f47a7b62e9762433f3476674403440d91a",
+      "utf8CharacterLength": 60376,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "spatial geometry",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-GEOMETRY-AUDIT-v003.ts",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-GEOMETRY-AUDIT-v003.ts",
+      "gitBlobSha": "4caec414d27b08ae676d8387f3aa1cd9dd939640",
+      "utf8CharacterLength": 7113,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "reproducible validator",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-SOUTH-LOOP-AND-WALL-ALIGNMENT-QA-RECEIPT-v003.json",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-SOUTH-LOOP-AND-WALL-ALIGNMENT-QA-RECEIPT-v003.json",
+      "gitBlobSha": "a6703de0ef9388faa27afa2336fb5d5709b35d6b",
+      "utf8CharacterLength": 5107,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "QA receipt",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-SOUTH-LOOP-AND-WALL-ALIGNMENT-REVIEW-v003.md",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-SOUTH-LOOP-AND-WALL-ALIGNMENT-REVIEW-v003.md",
+      "gitBlobSha": "07277adff6169a121ae10239a19ebdd5008a3e95",
+      "utf8CharacterLength": 9720,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "historical evidence",
+      "immutablePriorEvidence": true
+    },
+    {
+      "file": "M02-ATTEMPT5-V003-FOREMAN-HANDOFF-2026-10-09.md",
+      "repositoryPath": "work/btr-underdark-expedition/M02-ATTEMPT5-V003-FOREMAN-HANDOFF-2026-10-09.md",
+      "gitBlobSha": "088d97f1e90895a06fa2014758c9341d3c1509ca",
+      "utf8CharacterLength": 15542,
+      "branch": "maps/btr-m02-tallcap-forest-prepare-20261009",
+      "role": "handoff",
+      "immutablePriorEvidence": false
+    }
+  ],
+  "mergedEvidencePrs": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "activeOpenItem": "O-2026-10-09-M02-ATTEMPT5-BLUEPRINT-TRACE",
+  "nextStep": "independent north-crest / cavern rim / southeast-ground contour and canopy classification check; revalidate complete actual 5ft floor clearance; no painterly yet",
+  "safety": {
+    "sourceImageUnmodified": true,
+    "historicalReceiptsPreserved": true,
+    "noFoundryWrite": true,
+    "workTurnCapMinutes": 20
+  }
+}
