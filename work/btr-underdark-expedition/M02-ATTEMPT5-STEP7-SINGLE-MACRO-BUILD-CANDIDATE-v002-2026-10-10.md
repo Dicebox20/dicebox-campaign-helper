@@ -1,5 +1,3 @@
-[Reading 98 lines from start (total: 98 lines, 0 remaining)]
-
 # M02 Tallcap Forest — Step 7 Foundry single-macro BUILD candidate v002
 
 **Build state:** ONE-MACRO STATIC VALIDATION CANDIDATE. Runtime unverified; never treat validator PASS as Foundry installation certification. User explicitly forbids execution in this turn.
@@ -98,5 +96,3 @@ try{
 })();
 
 ```
-
-[executed on device: DESKTOP-OI30P4Q (fefa032a-6c81-42c8-86d8-287028c8850e)]
