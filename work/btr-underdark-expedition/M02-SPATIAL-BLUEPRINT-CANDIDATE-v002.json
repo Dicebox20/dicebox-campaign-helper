@@ -2399,12 +2399,5 @@
       "clearance": 56.25,
       "targetRegionId": "dbx:region:m02-glow-north"
     }
-  ],
-  "provenance": {
-    "derivedFrom": "M02-SPATIAL-BLUEPRINT-CANDIDATE-v001.json",
-    "sourceImageSha256": "d8b171a6e697f279ef0d9d4cb51be7b0060fc3170554ae70d8de8af0e9838956",
-    "geometryStatus": "PROVISIONAL",
-    "wallsUnchanged": true,
-    "regionShapesReconciled": true
-  }
+  ]
 }
