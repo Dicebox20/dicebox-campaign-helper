@@ -1,0 +1,42 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T12:09:49.1737624Z",
+    "workUnitId":  "central-lodge-cl50-transfer-lease-collision-offline-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Recovered project contract, workflow, campaign roadmap, active checklist, existing CL50 movement checkpoint and approved locked four railway route topology. User affirmed physical landing Regions are correctly placed and explicitly reserved personal hands-on campaign/gameplay testing until everything is developed; no player canary requested or run. Created pure Node source-only protocol fixture cl50-transfer-lease-collision-research-offline-v001.cjs modeling hypothetical exclusive server lease, fencing epoch, atomic destination slot reservation, exact pinning, full-footprint checks, Actor delta, owner/consent, idempotent transfer identity, rollback/reload and uncertain-outcome fail-close. New 33/33 synthetic tests PASS; prior token movement acceptance fixture 24/24 PASS; syntax check PASS. Independent CL90 live no-write smoke PASS_WITH_KNOWN_BLOCKERS, world totals and kernel hash unchanged. No new Region/Token/gameplay writes or installer activity. Positive mock is hypothetical and proves NO actual Foundry lease/CAS; retained manual-GM fallback and immutable R1 source quarantine.",
+    "blocker":  "The official/exact-stack evidence does not establish server-enforced exclusive cross-GM lease, fenced executor epoch, shared occupancy compare-and-swap, or fixed landing commit, and no live player delivery accepted. Previous runtime handler source read, R1 installer generator, independent DB verifier and design-document write were tool-safety blocked and were not retried. CL90 known issues persist: M1 clock literal, N3-to-T3 branch unlock, M2 and U2 state paths. User\u0027s end-only player testing preference needs future roadmap/test-gate reconciliation; no intermediate player canary permitted.",
+    "nextAction":  "Continue safe offline source work: refine replay-safe create/delete recovery state-machine fixture for simultaneous transfers, disconnect/reload and unknown outcome without assuming Foundry CAS. Maintain accepted landing Region geometry and owner/user end-only testing; reserve live Foundry changes and manual player acceptance for final user-run campaign test. Before any route implementation, independently reconcile approved KB/protocol prerequisites, identify real supported atomic server authority or preserve GM manual travel. CL93 lighting/VFX remains last planned phase unless user explicitly approves roadmap change. No prior tool-safety refusal retry.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl50-transfer-lease-collision-research-offline-v001.cjs"
+                     ],
+    "validation":  [
+                       "Read-only KB route topology decision locked; R1 semantic installation open item blocked; placement offset not pinned fact active",
+                       "New Node --check cl50-transfer-lease-collision-research-offline-v001.cjs passed",
+                       "New Node --test cl50-transfer-lease-collision-research-offline-v001.cjs: 33 passed, 0 failed (mocked and hypothetical; not actual server lease or CAS)",
+                       "Existing Node --test cl50-railway-token-movein-acceptance-offline-v001.cjs: 24 passed, 0 failed",
+                       "Exact Foundry no-write CL90 regression PASS_WITH_KNOWN_BLOCKERS: 21 Scenes / 202 Regions / 116 behaviors / 33 Items / ledger rev1, kernel SHA 6264c467211d4f5c94cfaaa9437eae88582599061b9d8a4951391830a3e8f814",
+                       "Physical landing Regions user-confirmed; no non-GM user canary, no route installer, Region/Token or world writes"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 / D\u0026D5e 5.3.3 / the-lost-mine-of-phandalin; Bridge session ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl50-transfer-lease-collision-research-offline-v001.cjs",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

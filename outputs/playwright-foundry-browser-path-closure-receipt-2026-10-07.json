@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "receiptType": "dicebox-playwright-foundry-browser-path-closure",
+  "workUnitId": "playwright-foundry-browser-path-implementation-20261007",
+  "recordedAt": "2026-10-07",
+  "status": "PASS_LOCAL",
+  "evidenceLayer": "local",
+  "acceptance": {
+    "upstreamPlaywrightMcpTemplate": true,
+    "loopbackAndExactOriginPolicy": true,
+    "browserHarnessLaneRecorded": true,
+    "typedRelayAuthorityPreserved": true,
+    "noBrowserOrExternalAction": true
+  },
+  "implementation": {
+    "protocol": "dicebox-playwright-browser-path/1",
+    "browserMode": "existing-browser-extension",
+    "serverBinding": "127.0.0.1:8931",
+    "allowedOrigin": "https://replace-with-exact-sqyre-origin.example",
+    "capabilities": ["core"],
+    "unrestrictedFileAccess": false,
+    "sharedBrowserContext": false,
+    "noAutomaticAuthentication": true,
+    "noModuleMutationAuthority": true,
+    "futureRemoteAccess": "authenticated named HTTPS tunnel or reverse proxy required"
+  },
+  "validation": [
+    "Playwright path policy check: PASS_LOCAL.",
+    "Focused Playwright/gateway/relay/KB tests: 4 files, 111/111 passed.",
+    "Package TypeScript build: PASS.",
+    "Tooling verification: PASS; failures: [].",
+    "Workflow check: PASS; Stage 12 active; readyClaim false; zero violations.",
+    "KB rebuild and verifier: PASS; integrity ok; 2103 sources, 1678 facts, 1697 decisions, 1280 trials, 46 research subjects, 117 milestones.",
+    "JSON and syntax checks: PASS."
+  ],
+  "changedSurface": [
+    "tools/dicebox-playwright-path.mjs",
+    "tools/dicebox-playwright-path.d.mts",
+    "deploy/sqyre-relay/playwright-mcp.config.example.json",
+    "tests/dicebox-playwright-path.test.ts",
+    "docs/CHATGPT-FOUNDRY-PLUGIN.md",
+    "deploy/sqyre-relay/README.md",
+    "tools/harness-manifest.json",
+    "package.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "preservedBoundaries": [
+    "No @playwright/mcp installation.",
+    "No browser extension installation or browser attachment.",
+    "No automatic authentication, password entry, cookie export, or storage-state export.",
+    "No public endpoint, tunnel, OAuth provisioning, ChatGPT account installation, Sqyre login/upload, or live Foundry connection.",
+    "No arbitrary Playwright evaluation, macro/script execution, document mutation, active-GM authority, Stage 12 promotion, or Ready-to-Play claim."
+  ],
+  "nextAction": "STOP at the local boundary. If the user later chooses to connect it, install/configure upstream Playwright MCP on the Desktop Commander computer, manually authenticate/select the browser tab, replace the exact origin placeholder, expose it only through an authenticated named HTTPS tunnel, and add it as a separate ChatGPT custom MCP plugin."
+}

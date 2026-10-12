@@ -1,0 +1,44 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T12:52:43.7472931Z",
+    "workUnitId":  "clscale-synthetic-transfer-intent-receipt-ledger-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Continued owner-authorized DiceBox Foreman work through Remote Desktop Commander with Fixture dbx-test-world TCP30005 kept STOPPED. Implemented tools/clscale-synthetic-transfer-journal.mjs, an OFFLINE-ONLY simulation of durable transfer intent/receipt handling. Strict root path allowlist for work/clscale-central-lodge-migration-v001/synthetic-ledger-*, separate from Foundry dataPath and production. Journal persists synthetic intent, interruption, observation and further-review events as fsynced append-only JSONL with SHA256 previous-entry chain, exclusive wx writer lock, monotonically checked sequence, duplicate-intent prevention, state transition validation, strict event schema and disallowance of approval/authorization/token object fields. Incomplete, tampered, or truncated logs block further writes; orphan writer lock never auto-retried. Lock is retained on unexpected post-write failure, and input rejected before a write does not leave stale locks. Read-only receiptMarkerProposal provides illustrative Foundry Token updateData flags dicebox-campaign-helper.transferIntent with exact synthetic intent/source/target references and does NOT execute the API. Cross-Scene Token flags marker persistence is not runtime-verified. Synthetic source classifier returns no automatic retry or authorization even when destination Token marker appears matched. Added 17 journal failure-injection tests and combined them with previous 24 transfer safety policy tests: 41 tests passed 0 failed, process exit 0. Also ran scheduled fixture preflight directly: 13/13 offline gates PASS exit0, 39 module manifests, 21 scenes/927 records, 202 Regions, 119 behaviors, 6 referenced Actors, 40 images, no listener port30005. Windows task DiceBox-Offline-Preflight-15m Ready and prior LastTaskResult0. Wrote docs/CL50-SYNTHETIC-TRANSFER-JOURNAL-2026-10-09.md including scope, hash is not signed/authoritative, replay limitations, unverified updateData persistence and all next safety gates. Did not edit active Region scripts or teleport any Token; no production, firewall, bridge queue or Foundry process changed.",
+    "blocker":  "This is only a synthetic journal prototype. It is not plugged into Foundry and must not be used as authorization. Need independently verified private/authenticated fixture runtime, Token flag updateData persistence, collision/elevation verification, per-operation durable human consent consumption, and actual crash consistency. SHA256 hash chain is an integrity checksum and not a digital signature. Bridge native return/wake still not confirmed. Live teleport commits remain prohibited.",
+    "nextAction":  "Continue bounded work via Desktop Commander. First inspect scheduled preflight history and last receipt. Next author an independent non-committing Token marker serialization/rehydration validator and reject spoofed or mismatched Source Token/Actor/world identities. Extend tests for malformed records and simulated crash evidence. Do not install dispatcher or touch active F1 T3 F2 CL50 Region scripts or live production world. Before live fixture work, prove local network bind and secure GM login, no firewall changes. Keep hard no-commit gate until independent safety PASS and separate explicit consumed/recorded single-use authorization.",
+    "changedPaths":  [
+                         "tools/clscale-synthetic-transfer-journal.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-synthetic-transfer-journal.test.mjs",
+                         "docs/CL50-SYNTHETIC-TRANSFER-JOURNAL-2026-10-09.md",
+                         "work/clscale-central-lodge-migration-v001/fixture-readonly-preflight-latest.json"
+                     ],
+    "validation":  [
+                       "41/41 Node --test pure offline transfer/journal tests PASS, exit0",
+                       "Offline fixture preflight 13/13 checks PASS exit0, port30005 stopped",
+                       "Journal rejects concurrent duplicate intents, corrupt/truncated/symlinked/nonregular records, inconsistent sequence, unsanctioned scope, unknown event type, orphan lock",
+                       "Simulated marker proposal contains no actual Foundry API calls and cannot authorize a commit",
+                       "No production Foundry, firewall, Bridge, Region behavior, puzzle ledger or Tokens mutated"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367 dnd5e5.3.3 TCP30005 STOPPED; offline-only journal and read-only preflight, no game action authorized",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\fixture-readonly-preflight-latest.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

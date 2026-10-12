@@ -1,25 +1,140 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-07",
-  "acceptedFoundryHistoricalEvidenceIngest20261007": {
-    "id": "foundry-historical-evidence-ingest-2026-10-07",
-    "status": "closed-local-evidence-pass",
-    "acceptanceObservation": "Accumulate high-value Foundry VTT evidence from older Codex project workspaces into the reproducible DiceBox Campaign Helper knowledge base while preserving chronology, provenance, exact evidence labels, and current authority boundaries.",
-    "allowedScope": "Read-only historical project inspection; SHA-256 source manifest; historical sources/facts/trials/tools/relationships; human catalog; validation receipt; roadmap/card chronology. No live Foundry mutation, raw legacy database promotion, campaign-state rewrite, current runtime certification, or unrelated product-stage advancement.",
-    "deterministicCheck": "Historical sources retain original capture dates; current-import capture remains 2026-10-07; raw LevelDB mutation scripts are explicitly historical anti-pattern evidence; KB rebuild/verify passes; representative imported facts reread successfully; manifest fingerprints selected source files and backup bundles without copying raw legacy worlds.",
-    "liveCheck": "None. Historical/local evidence ingestion only.",
-    "stopCondition": "Any need to mutate live Foundry, reinterpret historical evidence as current certification, copy raw world databases into canonical authority, or silently override newer project rules stops the ingest.",
-    "implementationVerification": "PASS LOCAL: 166 selected files / 45,047,439 bytes fingerprinted across five historical Codex project roots; 12 Castle backup bundles fingerprinted; eight Ballad world snapshots indexed; 56 Scenes, 61 Macros, six Playlists, and eight automation signal groups parsed from the final historical snapshot; 163 historical facts, six trials, six tools, and six sources imported. Initial KB rebuild/verify passed integrity ok at 2158 sources, 1948 facts, 1698 decisions, 148 open items, 1276 trials, 45 subjects, 124 milestones, 254 tools, eight seed.d deltas. Representative historical MATT/Midi-QOL, Castle RegionBehavior, DMF activity-ID, and Simon Maze facts reread successfully. Receipt: outputs/foundry-historical-evidence-ingest-2026-10-07-receipt.json. No live Foundry mutation occurred."
+  "updatedAt": "2026-10-11",
+  "acceptedMysteriousLodgeCampaignCompletion20261009": {
+    "id": "the-mysterious-lodge-campaign-completion-2026-10-09",
+    "status": "accepted-campaign-work-in-progress",
+    "acceptanceObservation": "Complete The Mysterious Lodge campaign across all 21 fixture Scenes, including Regions, puzzles, physical railway and N3 fast travel, F1/F2 endgame, and later supervised player acceptance. House of the Damned is a separate campaign and is not part of this authorization.",
+    "allowedScope": "Project owner grants this ChatGPT Foreman exclusive campaign writer ownership and autonomous implementation authority across campaign regions, puzzles, puzzle gates, railway links, scenes and test fixtures. Codex remains a non-overlapping technical partner. Use Desktop Commander directly while Bridge is parked.",
+    "deterministicCheck": "Reconcile full-campaign source/manifests and dependency gates. Test exact identity, permissions, owner consent, active authorized GM, durable transfer intents, no automatic retry, Level and collision handling, preservation of foreign state, and regression and offline preflight.",
+    "liveCheck": "Disposable dbx-test-world only, with verified exact authorized GM, backup, source/target checks, consent and independent reread. Final player test is separate. Production changes require independent verification.",
+    "implementationBlockedUntil": "Campaign scope and exclusive writer ownership accepted by project owner October 9, 2026. Synchronize this card, roadmap and reproducible KB before campaign source implementation.",
+    "authorityBoundary": "No change to product goal O-116, Stage 12, M1284, Ready-to-Play or production authority. Preserve original puzzle behaviors, disabled N3 menu, user passwords and foreign state.",
+    "nextAction": "Next live player check: Randal (Player 1) refreshes Foundry, moves out of and back into the E1 Hound Notice Region, and reports whether the Runtime Kernel permission warnings disappear and the clue appears. All five world Macros in dbx-test-world on port 30005 now have LIMITED execution access for players; code and explicit ownership were preserved, and this permission change is not gameplay certification. Port 30000 remains untouched; N3/T3 physical travel remains a separate pending unit.",
+    "acceptedN3TwoStageOverlay20261010": "OWNER_APPROVED: preliminary overlay (Old Estate Survey + Cult Passage Diagram) unlocks N3-T3 only when departure board and switch wheel also ready; final overlay remains dependent on all three route layers including the Recent Route Fragment recovered inside T3. No new item route or different ending.",
+    "validationStrategy": "Live-playtest-first for gameplay. Retain essential exact world, authorized GM, controlling player consent, backed-up and collision-safe one-shot transfer, durable uncertain-outcome recovery, and independent readback. Defer exhaustive synthetic validation, polish and unrelated features.",
+    "campaignContinuityEntry": "docs/campaigns/mysterious-lodge/START-HERE.md",
+    "campaignCreativeCanon": "docs/campaigns/mysterious-lodge/CREATIVE-CANON.md; owner-approved 2026-10-10 story; final ritual aftermath undecided",
+    "campaignStatePointer": "docs/campaigns/mysterious-lodge/CURRENT-STATE.json; independent of global latest Foreman checkpoint",
+    "campaignEvidenceBoundary": "2026-10-10 source-only 21-Scene asset audit; verified extracted reports but historical raw LevelDB copy changed on read; gameplay untested",
+    "stopCondition": "Stop on competing writer, target drift, unverified GM/owner consent, guessed region mouths, Level or footprint collision, outcome-unknown transfer, or missing recovery evidence."
   },
-  "acceptedRuleConflictReconciliation20261007": {
-    "id": "rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07",
-    "status": "closed-local-governance-pass",
-    "acceptanceObservation": "Reconcile active DiceBox rules so the latest project-data chronology, non-blocking communication mirrors, automatic final INSPECT approval, and two-pass grayscale-to-painterly Scene semantic rendering workflow agree without weakening Spatial Blueprint or Foundry authority.",
-    "allowedScope": "Governance/rule documents, Scene Injector workflow skill/template, current active-card synchronization metadata, roadmap chronology, reproducible KB seed.d records, checker/tests, and one compact receipt only. No live Foundry mutation, campaign-content rewrite, historical receipt rewriting, or unrelated product-stage advancement.",
-    "deterministicCheck": "No active rule requires a mandatory post-PASS APPROVE gate; narrow KB additions may use ordered seed.d and rebuild/verify through the canonical scripts; scheduled communication mirrors are non-blocking; new Scene Creation requires structural grayscale inspection plus final painterly inspection; raw pixels never directly become Foundry geometry authority; workflow/KB checks and diff hygiene pass.",
-    "liveCheck": "None. This is governance and workflow-contract work only.",
-    "stopCondition": "Any requirement to rewrite historical evidence, infer Foundry geometry directly from raw pixels, relax current active-GM/runtime authority, or broaden into unrelated Stage 12/live work stops this reconciliation.",
-    "implementationVerification": "PASS LOCAL 2026-10-07: active rule conflicts were reconciled; KB rebuild/verify returned integrity ok with 2152 sources, 1785 facts, 1698 decisions, 148 open items, 1270 trials, 45 subjects, 124 milestones, 248 tools, and 7 seed.d deltas; workflow check passed 11/16 with readyClaim false; workflow self-tests passed 5 active-slice and 18 Injector contract cases; focused active-slice Vitest passed 14/14; representative structural INSPECTED_REDO state validation passed; checker syntax and diff hygiene passed. Receipt: outputs/rule-conflict-reconciliation-scene-semantic-render-v2-2026-10-07-receipt.json. No live Foundry mutation occurred; O-2026-10-07-SCENE-FEATURE-MANIFEST remains the next implementation item."
+  "acceptedRemoteFoundryCommanderPrototype20261007": {
+    "id": "remote-foundry-commander-prototype-2026-10-07",
+    "status": "closed-prototype-local-pass",
+    "acceptanceObservation": "Prototype the existing DiceBox Foundry bridge as a remote typed diagnostic transport usable from Desktop Commander or Codex without altering the local loopback path.",
+    "allowedScope": "Add a transport-configurable Foundry bridge client, a token-gated remote MCP/Foundry gateway, fixed-tool integration tests, and a deterministic local smoke path. Reuse the current eight-operation allowlist and read-only readiness/diagnostics. No live Foundry, document mutation, arbitrary macros/scripts, external publication, or Stage 12/Ready-to-Play claim.",
+    "deterministicCheck": "Current local bridge tests remain passing; remote handshake requires exact protocol/module/world/GM and token; MCP calls require bearer token and fixed schemas; a remote diagnostic/readiness call returns a bounded response through a fake Foundry connection; malformed, unauthorized, and unknown operations fail closed.",
+    "liveCheck": "None. Prototype verification is local/static only; live WSS, browser, Desktop Commander account, public deployment, and Foundry mutation remain separate gates.",
+    "implementationBlockedUntil": "Satisfied: the accepted roadmap/card change was reconciled and the KB was rebuilt and verified before implementation.",
+    "authorityBoundary": "Transport compatibility only. It does not grant Foundry authority, execute-as-GM access, macro-body execution, live certification, Stage 12 promotion, or Ready-to-Play.",
+    "implementationVerification": "PASS LOCAL: preserved the loopback bridge; added opt-in remote URL/token settings and a token-gated HTTP/MCP gateway reusing the fixed eight-operation registry; added exact hello-boundary validation, fake-Foundry readiness forwarding, authenticated HTTP smoke coverage, package typecheck, tooling verification, workflow check, and KB rebuild/verification. Receipt: outputs/remote-foundry-commander-prototype-closure-receipt-2026-10-07.json. No live Foundry, browser, public deployment, document mutation, arbitrary macro/script surface, Stage 12 promotion, or Ready-to-Play claim.",
+    "nextAction": "Keep live WSS deployment, Desktop Commander account binding, browser authentication, and any Foundry mutation as separate exact-target/current-active-GM gates; do not treat this local transport pass as live certification.",
+    "stopCondition": "Any live Foundry restart/login/control, arbitrary macro/script/document surface, external publication, secret disclosure, or authority/ready claim stops the prototype."
+  },
+  "acceptedRemoteFoundryConnectorHardening20261007": {
+    "id": "remote-foundry-connector-hardening-2026-10-07",
+    "status": "closed-local-pass",
+    "acceptanceObservation": "An authenticated remote MCP caller can discover and call only reviewed connector tools; the connector exposes an exact Foundry target/build profile and attestation; diagnostic and injection recipes are schema-validated and risk-labelled; and a deterministic local build/stage/profile/probe receipt proves the boundary without touching a live Foundry world.",
+    "allowedScope": "Implement only the connector hardening slice: official MCP SDK Streamable HTTP transport, OAuth-shaped protected-resource metadata and bearer validation hooks, explicit TLS/proxy deployment guards, exact Foundry target/profile and bundle attestation, structured tool annotations/output schemas, a versioned reviewed recipe registry, and isolated local fixture tests/receipts. Preserve the existing eight fixed operations and require preview/approval/reread for writes.",
+    "deterministicCheck": "The remote server uses the official MCP SDK transport boundary; unauthenticated remote requests fail closed with protected-resource metadata; HTTP is rejected for non-loopback production-shaped configuration; tools expose structured schemas and risk annotations; profile/attestation reports exact manifest/build/target identity; recipe registration rejects unreviewed or arbitrary execution; and the local build/stage/profile/probe receipt is reproducible.",
+    "liveCheck": "None. No live Foundry, browser, supervisor, Desktop Commander account, public deployment, or authentication action is authorized in this local bundle.",
+    "implementationBlockedUntil": "Accepted by the user on 2026-10-07. The roadmap, active card, and schema-plus-seed KB packet must be reconciled and rebuilt/verified before product code changes.",
+    "authorityBoundary": "Local connector-development evidence only. It does not grant Foundry authority, execute-as-GM access, public-network trust, macro-body execution, live certification, Stage 12 promotion, or Ready-to-Play.",
+    "implementationVerification": "PASS LOCAL: implemented the official MCP SDK Streamable HTTP session boundary, protected-resource metadata and bearer challenge, non-loopback TLS/OAuth/verifier guard, versioned reviewed recipe registry with schemas/annotations, exact Foundry connector.profile and source/runtime attestation, and isolated build/stage/profile/probe smoke. Focused connector/control-plane coverage passed 113/113; package build, tooling verification, syntax checks, workflow check, and KB rebuild/verification passed. Receipt: outputs/remote-foundry-connector-hardening-closure-receipt-2026-10-07.json. No live Foundry, browser, public deployment, account binding, mutation, Stage 12 promotion, or Ready-to-Play claim.",
+    "nextAction": "Keep live WSS/proxy/OAuth deployment, Desktop Commander account binding, browser authentication, and any Foundry mutation as separate exact-target/current-active-GM gates; do not reopen M1284 or treat this local transport pass as live certification.",
+    "stopCondition": "Stop on any live Foundry/browser/authentication action, public publication, secret disclosure, arbitrary execution surface, generic document RPC, unreviewed recipe, target/profile ambiguity, outcome-unknown local test, Stage 12 promotion, or Ready-to-Play indication."
+  },
+  "acceptedSqyreRemoteRelay20261007": {
+    "id": "sqyre-remote-relay-2026-10-07",
+    "status": "closed-local-pass",
+    "acceptanceObservation": "The Sqyre-hosted GM browser can be paired to a separately hosted relay over outbound wss://, while Desktop Commander uses the relay's HTTPS MCP endpoint. Desktop Commander bearer auth uses standard OIDC issuer/audience verification; the Foundry browser uses a separate pairing token; browser origins are exact-allowlisted; and a local proxy-shaped smoke proves the two-channel boundary without a live Sqyre or Foundry session.",
+    "allowedScope": "Implement only the Sqyre-compatible external relay profile: standard OIDC JWT/JWKS verification configured by issuer and audience, separate Foundry client pairing token, exact Sqyre/browser origin allowlist, secure remote wss:// URL validation in the module, relay health/configuration diagnostics, portable Docker/reverse-proxy/tunnel setup documentation, and local tests/receipts.",
+    "deterministicCheck": "The OIDC verifier rejects wrong issuer/audience/expired tokens; non-loopback relay mode requires HTTPS, OIDC verifier configuration, and a separate Foundry client token; Foundry hello rejects wrong origin/token/world/GM; the module rejects insecure non-loopback URLs; and a local proxy-shaped smoke passes with no secrets in receipts.",
+    "liveCheck": "None. Do not log into Sqyre, upload the module, provision a relay, open a public endpoint, connect to a live Foundry world, or automate browser authentication in this local slice.",
+    "implementationBlockedUntil": "Closed locally after the accepted scope was reconciled in database/seed.sql and rebuilt/verified. Public deployment and live use remain separately gated.",
+    "authorityBoundary": "Deployment compatibility evidence only. It does not grant Sqyre account access, public relay trust, Foundry authority, active-GM execution, arbitrary macro/script power, Stage 12 promotion, or Ready-to-Play.",
+    "implementationVerification": "PASS LOCAL: implemented the Sqyre-compatible external relay profile with OIDC issuer/audience/JWKS verification, a separate Foundry pairing token, exact origin allowlisting, secure non-loopback wss:// validation, Docker/reverse-proxy/tunnel deployment files, and a proxy-shaped local smoke. Focused coverage passed 116/116; relay smoke, package build, tooling verification, workflow check, and KB rebuild/verification passed. Receipt: outputs/sqyre-remote-relay-closure-receipt-2026-10-07.json. No Sqyre login/upload, public endpoint, live Foundry connection, browser authentication, mutation, Stage 12 promotion, or Ready-to-Play claim occurred.",
+    "nextAction": "STOP at the local boundary. A successor needs the exact public relay hostname, OIDC issuer/audience/JWKS configuration, exact Sqyre game origin, local secrets, and manual module upload/settings before any public or live action. Keep M1284 and readyClaim:false unchanged.",
+    "stopCondition": "Stop on Sqyre login/upload, provisioning/spending, public publication, live Foundry/browser/authentication action, secret disclosure, missing exact origin/target/token configuration, arbitrary execution, outcome-unknown test, Stage 12 promotion, or Ready-to-Play indication."
+  },
+  "acceptedChatgptFoundryPlugin20261007": {
+    "id": "chatgpt-foundry-plugin-2026-10-07",
+    "status": "closed-local-pass",
+    "acceptanceObservation": "The existing remote MCP relay is ChatGPT-plugin ready: its streaming HTTP /mcp endpoint publishes concise server instructions, the fixed typed tool registry remains available with read/write annotations, and a local initialization test plus setup guide explain how to add it through ChatGPT's custom MCP plugin flow.",
+    "allowedScope": "Add ChatGPT-facing MCP server instructions, plugin setup documentation, initialization/tool metadata coverage, and local receipt evidence. Preserve the existing OIDC resource-server boundary, Foundry pairing token, exact origin allowlist, fixed recipes, preview/approval gates, Stage 12, M1284, and readyClaim:false.",
+    "deterministicCheck": "The MCP initialize response includes self-contained safety and sequencing instructions; the ChatGPT setup guide names the public HTTPS /mcp URL, OAuth requirement, read-only first probe, and confirmation boundary; the fixed tools retain readOnlyHint/destructiveHint annotations; and focused tests/build/workflow/KB checks pass.",
+    "liveCheck": "None. Do not add the plugin to ChatGPT, publish a server URL, configure external OAuth, upload the module, connect to Sqyre, or execute a live Foundry operation in this local slice.",
+    "implementationBlockedUntil": "Closed locally after the accepted scope was reconciled in database/seed.sql and rebuilt/verified. ChatGPT account installation and live use remain separately gated.",
+    "authorityBoundary": "ChatGPT client-compatibility evidence only. It does not grant ChatGPT plugin installation, public relay trust, Foundry authority, active-GM execution, arbitrary macro/script power, Stage 12 promotion, or Ready-to-Play.",
+    "implementationVerification": "PASS LOCAL: the relay now publishes the self-contained ChatGPT plugin instruction block during MCP initialize, the repository includes ChatGPT custom-plugin setup documentation, and the fixed tool registry retains read-only/preview/write annotations. Focused gateway and relay coverage passed 10/10; package build, tooling verification, workflow check, and KB rebuild/verification passed. Receipt: outputs/chatgpt-foundry-plugin-closure-receipt-2026-10-07.json. No ChatGPT account installation, public publication, external OAuth provisioning, Sqyre upload, live Foundry connection, or mutation occurred.",
+    "nextAction": "STOP at the local boundary. The user may later add the public HTTPS `/mcp` URL in ChatGPT's custom MCP plugin flow after relay/OIDC deployment; keep the future DiceBox Campaign Helper App as a separate client of the same endpoint and keep M1284/readyClaim:false unchanged.",
+    "stopCondition": "Stop on ChatGPT account/plugin installation, public publication, external OAuth provisioning, secret disclosure, live Sqyre/Foundry connection, browser authentication, arbitrary execution, outcome-unknown test, Stage 12 promotion, or Ready-to-Play indication."
+  },
+  "acceptedPlaywrightFoundryBrowserPath20261007": {
+    "id": "playwright-foundry-browser-path-2026-10-07",
+    "status": "closed-local-pass",
+    "acceptanceObservation": "Add a separate Playwright MCP browser path for ChatGPT: the Playwright server runs on the Desktop Commander computer, binds locally, and attaches to an explicitly selected existing browser session for Sqyre/Foundry UI observation. The typed DiceBox /mcp relay remains the module diagnostic and approved-operation path.",
+    "allowedScope": "Add the Playwright MCP path contract, a safe local configuration template, exact-origin/loopback validation, harness-manifest coverage, documentation, and deterministic tests/receipt evidence. Keep the browser server local until an authenticated named HTTPS tunnel is deliberately deployed.",
+    "deterministicCheck": "The checked-in Playwright MCP template uses extension mode, loopback server binding, exact allowed browser origins, no unrestricted file access, and no extra capabilities; the validator rejects wildcard origins, non-loopback cleartext hosting, file URLs, and non-loopback server binding; focused tests and workflow/tooling/KB checks pass.",
+    "liveCheck": "None. Do not install the Playwright MCP server or browser extension, attach to a logged-in browser, publish a tunnel, add a second ChatGPT plugin, authenticate Sqyre, or operate a live Foundry world in this local slice.",
+    "implementationBlockedUntil": "Satisfied: the accepted roadmap/card change was reconciled and the KB was rebuilt and verified before implementation.",
+    "authorityBoundary": "Browser observation and UI evidence only. Playwright is not a security boundary and does not grant Foundry authority, active-GM execution, module mutation, arbitrary macro/script execution, or Ready-to-Play evidence. Keep approved module operations on the typed DiceBox relay.",
+    "implementationVerification": "PASS LOCAL: added the upstream Playwright MCP extension-mode template, loopback/exact-origin validator, harness-manifest lane, and ChatGPT/Sqyre setup documentation. Focused Playwright/gateway/relay/KB coverage passed 111/111; package build, tooling verification, workflow check, JSON/syntax checks, and KB integrity/verifier passed. Receipt: outputs/playwright-foundry-browser-path-closure-receipt-2026-10-07.json. No Playwright install, browser attachment, automatic authentication, public tunnel, ChatGPT account installation, Sqyre connection, live Foundry operation, or mutation occurred.",
+    "nextAction": "STOP at the local boundary. The user may later install/configure the upstream Playwright MCP server on the Desktop Commander computer, attach it to an already-authenticated browser session, and expose it only through a separately authenticated named HTTPS tunnel before adding it as a separate ChatGPT custom MCP plugin. Keep the typed DiceBox /mcp relay as the module-operation path and keep M1284/readyClaim:false unchanged.",
+    "stopCondition": "Stop on automatic browser authentication, password/cookie export, public unauthenticated Playwright exposure, arbitrary browser evaluation/code execution, live Sqyre/Foundry interaction, module mutation, secret disclosure, or any authority/Ready-to-Play claim."
+  },
+  "acceptedForemanWorkflowContinuityRevision20261001": {
+    "id": "foreman-workflow-continuity-revision-2026-10-01",
+    "status": "implemented-local-pass",
+    "acceptanceObservation": "Adapt Star*Tup's repository-first foreman continuity pattern to Campaign Helper with durable bounded-work checkpoints, disk-first recovery, single-writer authority, bounded Worker leases, and independent Foreman verification.",
+    "authorityBoundary": "Campaign Helper remains governed by its foundation/local AGENTS chain, roadmap, active card, reproducible KB, exact runtime gates, and sovereign Foundry state. This revision does not import Star*Tup product gates or authority, close M1284, automate authentication, promote Stage 12, authorize live mutation, or change readyClaim:false.",
+    "implementationBundle": "Create docs/FOREMAN-WORKFLOW-CURRENT.md, scripts/Write-CampaignHelperCheckpoint.ps1, scripts/Show-CampaignHelperRecoveryState.ps1, and the minimum AGENTS.md pointer/rules needed to make the workflow durable.",
+    "deterministicCheck": "New workflow and helper scripts are readable, checkpoint writer creates timestamped plus latest receipts, recovery helper reports current control-plane/checkpoint/working-tree state, active JSON parses, KB rebuild/verification passes, and existing workflow checks remain non-promotional.",
+    "liveCheck": "None. Governance and continuity tooling are local-only and must not invoke Foundry, browser authentication, Regionwright controls, or M1284.",
+    "implementationVerification": "PASS LOCAL: the canonical Foreman workflow, checkpoint writer, recovery-state reader, and AGENTS continuity rules are implemented. Checkpoint and recovery smoke tests passed; workflow:check passed with Stage 12 active and zero violations; workflow:test passed 5 cases. Receipt: outputs/foreman-workflow-continuity-closure-receipt-2026-10-01.json. No Foundry/browser/runtime/authentication action occurred.",
+    "nextAction": "Rebuild and verify the KB authorization packet, then implement the bounded foreman workflow bundle without touching the active M1284 runtime lane."
+  },
+  "acceptedForemanWorkflowConsolidation20261001": {
+    "id": "foreman-workflow-consolidation-2026-10-01",
+    "status": "superseded-by-continuity-closure",
+    "acceptanceObservation": "Consolidate the existing DiceBox single-Foreman and bounded-Worker rules into one disk-recoverable current workflow patterned after the proven Star*Tup foreman model, while preserving Stage 12, M1284, the exact 16-stage order, database-first synchronization, and readyClaim:false.",
+    "allowedScope": "Create docs/FOREMAN-WORKFLOW-CURRENT.md in the working and foundation authority trees, synchronize both AGENTS contracts to require it, record the decision in the roadmap/card/KB, and run deterministic validation. No product-code, browser, supervisor, Foundry, campaign-document, player/password, asset, Blueprint, Regionwright, or live-runtime mutation is included.",
+    "sourceWorkflow": "C:/Users/rujie/Documents/ChatGPT/Star_Tup/AGENTS.md and C:/Users/rujie/Documents/ChatGPT/Star_Tup/docs/FOREMAN-WORKFLOW-CURRENT.md are process references only; Campaign Helper authority and safety rules remain controlling.",
+    "deterministicCheck": "The two Campaign Helper FOREMAN-WORKFLOW-CURRENT.md copies are byte-identical; both AGENTS contracts point to the workflow; the KB rebuild and verification pass; npm run workflow:check passes; active scene-authoring-breadth Stage 12 and M1284 next action remain unchanged; readyClaim remains false.",
+    "liveCheck": "None. This is governance/control-plane work only.",
+    "authorityBoundary": "The workflow consolidates execution and recovery procedure. It cannot accept a product stage, grant Foundry authority, override the reproducible KB or roadmap, turn a Worker into a second Foreman, or promote staged/static evidence to runtime evidence.",
+    "implementationVerification": "SUPERSEDED/RECONCILED: retained for provenance. The canonical implementation is acceptedForemanWorkflowContinuityRevision20261001 with docs/FOREMAN-WORKFLOW-CURRENT.md, scripts/Write-CampaignHelperCheckpoint.ps1, and scripts/Show-CampaignHelperRecoveryState.ps1. Foundation copies are synchronized to that final implementation; Stage 12, M1284, and readyClaim:false remain unchanged.",
+    "nextAction": "After roadmap/card/KB reconciliation, implement the workflow document and AGENTS references, validate them, write a bounded closure receipt/checkpoint, then return to the existing M1284 manual Gamemaster rejoin boundary.",
+    "stopCondition": "Any product-code mutation, live Foundry operation, stage advancement, authentication automation, foreign-state change, or Ready-to-Play claim stops this governance slice."
+  },
+  "acceptedGPTWorkspaceRoadmapRevision20261001": {
+    "id": "gpt-workspace-roadmap-revision-2026-10-01",
+    "status": "accepted-sequencing-revision",
+    "acceptanceObservation": "Adopt a calibration-first roadmap sequence that prepares an app-integrated ChatGPT workspace after the current Stage 12 runtime boundary, while preserving the active M1284 manual Gamemaster rejoin gate, the exact 16-stage workflow, the database-first rule, and readyClaim:false.",
+    "evidenceSources": [
+      "https://github.com/Phelan164/codex-howto",
+      "https://github.com/green-dalii/obsidian-llm-wiki-cli/blob/main/ROADMAP.md",
+      "https://github.com/DatenpflegeNordHL/Codex-Looper",
+      "https://github.com/undeemed/get-shit-done-codex/blob/main/CHANGELOG.md",
+      "https://github.com/Arystos/skill-codex/blob/master/ROADMAP.md",
+      "https://developers.openai.com/blog/run-long-horizon-tasks-with-codex",
+      "https://openai.com/index/harness-engineering/"
+    ],
+    "adoptedSequence": [
+      "control-plane-reconciliation",
+      "chatgpt-workspace-foundation",
+      "calibration-read-only-vertical-slice",
+      "guarded-project-tools",
+      "bounded-codex-escalation",
+      "campaign-and-live-runtime-breadth"
+    ],
+    "firstSlice": "Visible desktop ChatGPT workspace, typed request/response envelope, app-owned read-only status and calibration tools, receipt viewer, and deterministic local smoke test. Reuse the existing React/Tauri shell, Zod contracts, and Responses route where compatible; do not begin with generic shell access, arbitrary code execution, ChatKit, MCP, or a self-hosted environment.",
+    "calibrationAcceptance": "The workspace can inspect one calibration target, show measured versus expected coordinates/scale/viewport, explain the discrepancy, and produce a no-write correction proposal with a reproducible diagnostic receipt.",
+    "authorityBoundary": "This record changes scheduling only. It does not close M1284, promote Stage 12, authorize live mutation, certify the workspace, or create a second authority plane. A separate implementation change card and KB reconciliation are required before coding.",
+    "deterministicCheck": "Roadmap evidence links and adopted sequence are present; active Stage 12/M1284 next action remains unchanged; workflow checker still reports zero violations and readyClaim:false; database rebuild and verification succeed.",
+    "liveCheck": "None. This is a local roadmap/control-plane revision; no browser, supervisor, Foundry, or external publication action occurred.",
+    "nextAction": "Keep M1284 as the immediate runtime action. After that boundary closes, create the separate workspace-foundation implementation card and reconcile it in the KB before implementation."
   },
   "acceptedM1197CampaignHelperMapLabDesktopPreview": {
     "id": "m1197-campaign-helper-map-lab-desktop-preview-2026-09-06",
@@ -393,13 +508,12 @@
     "ideaDocument": "https://docs.google.com/document/d/14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o/edit",
     "order": [
       "accepted-change",
-      "repository-roadmap-and-active-card",
+      "roadmap-and-active-checklist",
       "knowledge-base-rebuild-and-verification",
       "implementation",
-      "authoritative-reread-and-receipt",
-      "scheduled-communication-mirror"
+      "scheduled-shared-document-mirror"
     ],
-    "implementationBlockedUntil": "The canonical repository roadmap/current active card and reproducible knowledge base represent the accepted change without an unresolved conflict. The shared idea document is a scheduled communication mirror and never a local implementation gate.",
+    "implementationBlockedUntil": "The local roadmap/checklist and reproducible knowledge base represent the accepted change without an unresolved conflict. The shared idea document is a scheduled communication mirror and never a local implementation gate.",
     "preGateAllowance": "Read-only inspection, research, and emergency containment only."
   },
   "standingForemanAuthorization": {
@@ -642,10 +756,10 @@
   "sharedFileSynchronizationSchedule": {
     "id": "batched-shared-file-synchronization-2026-08-26",
     "status": "implemented-m230-verified",
-    "scope": "Keep the repository roadmap/current active card and reproducible KB as the immediate canonical control plane, and batch only communication-mirror publication. Repository planning, explicit implementation-bundle selection, KB reconciliation, implementation, validation, and closure continue from those authority planes; an overdue Google Doc or GitHub mirror update cannot pause them. The exact shared idea document and private GitHub bridge receive compact approved bundle snapshots at their scheduled or explicit coordination boundaries, never a raw local change stream.",
+    "scope": "Keep the roadmap, active card, and reproducible KB as the immediate canonical control plane, and batch only communication-mirror publication. Local planning, explicit implementation bundle selection, KB reconciliation, implementation, validation, and closure continue from the local authority planes; an overdue Google Doc or GitHub mirror update cannot pause them. The exact shared idea document and private GitHub bridge receive compact approved bundle snapshots at their scheduled or explicit coordination boundaries, never a raw local change stream.",
     "cadence": "Google shared idea document: at most one routine acceptance update and one routine closure or handoff update per local work session, with no more than one routine update in any 24-hour period unless the user explicitly requests a sync, a material blocker requires ChatGPT-side coordination, or a release/handoff boundary requires it. The cadence schedules only external mirror writes and never blocks local progress. Private GitHub bridge: weekly on Monday at 09:00 America/Los_Angeles, plus an explicit user-requested handoff, release, or materially changed external coordination boundary; it mirrors only compact approved artifacts.",
-    "safetyBoundary": "A batch never replaces source-project reread, the repository roadmap/current active card, the reproducible schema + baseline seed + lexical seed.d knowledge base, direct approval, or Foundry authority. Read-only investigation and emergency containment remain allowed; a change outside an already authorized bundle still waits for the repository roadmap/current-card and KB gate before implementation, not for a routine mirror write. Never publish hidden reasoning, credentials, raw tool output, mutable KB authority, or complete chat exports by routine sync.",
-    "implementationBlockedUntil": "The repository roadmap/current active card and reproducible knowledge base must represent the accepted change without unresolved conflict and the KB must rebuild/verify from schema.sql + seed.sql + lexical seed.d. The exact shared idea document remains a scheduled communication mirror and cannot block a governed local product slice.",
+    "safetyBoundary": "A batch never replaces source-project reread, the local roadmap/card, schema-plus-seed KB, direct approval, or Foundry authority. Read-only investigation and emergency containment remain allowed; a change outside an already authorized bundle still waits for the local roadmap/card and KB gate before implementation, not for a routine mirror write. Never publish hidden reasoning, credentials, raw tool output, mutable KB authority, or complete chat exports by routine sync.",
+    "implementationBlockedUntil": "This M230 governance correction is recorded in the local roadmap/card, the exact shared idea document under the user's explicit-request exception, and database/seed.sql, then rebuilt from database/schema.sql plus database/seed.sql and verified before contracts, workflow rules, checker, and tests are changed. After that, shared-mirror timing cannot block a governed local product slice.",
     "implementationVerification": "PASS LOCAL M230: the foundation and repository AGENTS contracts, consolidated workflow rules, development workflow 2026-08-26.3, active-slice checker, and focused KB/workflow tests enforce non-blocking scheduled mirrors. The exact shared idea document was revision-guarded and connector-reread at AIroW37veRtxT343_ge3oFeHUYSxILlGFYM_zQkHQdZmp5MgH58d8A3JPSSC80I82ZFuIIMUvvmDiL3Nsg3PTOsmwRoOs8Dv9J78BJMfUno. Full local verification passed build, workflow check, tests, tooling, KB integrity, and diff hygiene. Receipt: outputs/m230-nonblocking-shared-mirror-correction-receipt.json. This is governance evidence only; it does not complete Stage 8, alpha, or Foundry certification."
   },
   "acceptedWorkspaceAcceptanceBundle": {

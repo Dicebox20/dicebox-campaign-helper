@@ -1,0 +1,2 @@
+const s=game.scenes.get("La9krMOMBhAhDLi6"),source=s.toObject(),r=source.regions[3];
+return{readOnly:true,sceneId:s.id,grid:s.grid.size,region:{id:r._id,name:r.name,shapes:r.shapes,behaviors:r.behaviors.map(b=>({id:b._id,type:b.type,disabled:b.disabled})),flags:r.flags?.world?.dicebox??{}},user:game.user.name,activeNonGMs:game.users.filter(u=>u.active&&!u.isGM).length};

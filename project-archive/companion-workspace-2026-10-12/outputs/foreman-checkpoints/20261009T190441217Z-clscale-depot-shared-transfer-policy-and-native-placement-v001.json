@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T19:04:41.2173140Z",
+    "workUnitId":  "clscale-depot-shared-transfer-policy-and-native-placement-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Continued DiceBox Foreman N3 single-hub travel design with original source/fixture still isolated and user-approved simplification intact. Began from checkpoint clscale-depot-menu-live-validation-and-native-region-fix-v001 and verified scheduled 16/16 offline preflight PASS, stopped disposable Foundry v14.367 dnd5e5.3.3 dbx-test-world and enabled 15min offline task. Implemented tools/clscale-depot-transfer-plan.mjs: one pure shared N3 transfer guard for N1 Lodge Station, N2 Grotto Station, and T3 Abandoned Spur. Reuses ledger-powered menu, refuses locked/unknown routes, wrong world/user, wrong Scene/Region/Token, missing true player-owner consent, create/delete permissions, changed ledger revision, missing destination attestation, stale/any prior transfer receipt, missing durable pre-intent and exact single-use approval. All results intentionally neverDispatch true/canDispatch false. Added proposeNativeDepotTeleport for one future RegionDocument.teleportToken native call with placement center snap false avoidOccupied true pan true, no execution. Tests clscale-depot-transfer-plan.test.mjs 19 PASS including pass-path nonexecutable and fail-closed adversarial cases. Wrote offline read-only geometry audit for exact three target Regions against preserved fixture walls/tokens with 1x1 Token assumption, paused scanner with guaranteed finally reenabling. All three Region center candidates statically clear: N1 2375,1470 grid150; N2 2160,1480 grid160; T3 165,1300 grid120. Then launched exact disposable Foundry using preexisting verified loopback preload on 127.0.0.1:30005 with independent process/listener audit. Local GM browser called documented RegionDocument.spawnTokens on EPHEMERAL CLONED original Token using create:false placement:center snap:false avoidOccupied:true, for every N1/N2/T3 target. ALL THREE PASSED with native top-left positions N1 2300,1395; N2 2080,1400; T3 105,1240; elevation 0 for 1x1 Token and correct target scene. Region T3 reports one Level association; further runtime elevation and non-1x1 footpring still require testing. Original source Token byte-serialized unchanged, all Scene Token document identities/counts unchanged, no teleports or persistent Token creation. Browser receipt clscale-depot-ephemeral-arrival-runtime-receipt-v001.json PASS. Stopped exact supervisor-owned fixture, no listener remains, reenabled offline scanner. Fixture offline preflight after shutdown PASS 16/16, seven suites passing 121/121 tests exit0, Windows task Ready LastTaskResult0. Updated docs/CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md. 119 existing Region scripts, one disabled native N3 menu, 33 Items, ledger and quarantined runtime Macro remain unchanged; production the-lost-mine-of-phandalin untouched. T1/T2 physical tunnel mouth pairing remains out of N3 hub fast travel scope. Deferred Regionwright templates remain deferred.",
+    "blocker":  "Shared transfer contract and native API recipe are source-only, NO runtime dispatch is armed, and the actual N3 Region menu remains disabled. Ephemeral 1x1 token placement is passed, but not a committed cross-Scene teleport nor proof for different Token sizes, elevation, wall collision at transfer-time, or concurrent occupancy. Durable per-intent receipt and owner consent integration for the real executing GM/Token are not wired. Passwordless disposable GM still requires loopback-only safeguards; blocked scripted password update must not be bypassed. No production deployment and no player playtest.",
+    "nextAction":  "Next turn should read latest 16-gate preflight and checkpoint, inspect one shared native v14 call proposal in tools/clscale-depot-transfer-plan.mjs, and wire ONE N3 depot menu route action to guarded RegionDocument.teleportToken using placement center snap false avoidOccupied true. Before any actual test transfer, implement persistent prepared-intent receipt and correlation marker updateData, primary GM and owner confirmation, real moving Token footprint/Level check, one exact disposable-only approval, no retries on interruption. Use guarded loopback-only fixture and back it up, test one disposable source Token to N1, stop and review source/target existence before considering N2/T3. Do not generate per-route point-to-point scripts. Maintain native disabled menu id Xa6xz88CyQ38gCU9 until it passes; do not delete/recreate it blindly. Keep production campaign untouched.",
+    "changedPaths":  [
+                         "tools/clscale-depot-transfer-plan.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-transfer-plan.test.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-arrival-offline-survey-v001.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-guarded-arrival-survey-v001.ps1",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-arrival-offline-survey-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-ephemeral-arrival-runtime-v001.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-ephemeral-arrival-runtime-receipt-v001.json",
+                         "docs/CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md"
+                     ],
+    "validation":  [
+                       "Shared N3 destination and transaction-precommit policy passes 19/19 tests with exact N1/N2/T3 state gates and neverDispatch=true",
+                       "Offline one-grid region center wall/token survey: N1,N2,T3 each 0 overlapping static walls and 0 static Token overlaps",
+                       "Foundry v14 RegionDocument.spawnTokens ephemeral create:false spawned one fixture Token per destination, correct Scene, source unchanged, no new persistent Token IDs",
+                       "All 7 unit and synthetic safety suites pass 121/121 tests",
+                       "Post-test offline fixture preflight PASS 16/16, fixture server STOPPED, scheduled 15-minute task Ready with LastTaskResult0"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367 DnD5e5.3.3 port30005 STOPPED, one native disabled N3 depot menu Region behavior, 15-minute offline scanner enabled",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-depot-ephemeral-arrival-runtime-receipt-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

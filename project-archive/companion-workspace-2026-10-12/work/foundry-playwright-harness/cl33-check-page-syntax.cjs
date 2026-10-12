@@ -1,0 +1,1 @@
+const fs=require('node:fs'); const AF=Object.getPrototypeOf(async function(){}).constructor; for(const p of ['cl33-migration-apply-v001.page.js','cl33-migration-final-verify-v001.page.js']) { new AF('event',fs.readFileSync(p,'utf8')); console.log(p+' ASYNC_SCRIPT_SYNTAX_PASS'); }

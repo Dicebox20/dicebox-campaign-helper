@@ -1,0 +1,2 @@
+const fs=require("fs"),p=JSON.parse(fs.readFileSync("receipts/region-cleanup-2026-10-07/all-21-scenes-all-202-regions-full-backup-v001.json","utf8")),match=p.sceneData.filter(s=>/E1 Arrival|M1 Entrance|E2 Rear|M3 Kitchen/.test(s.name));
+for(const s of match){console.log("SCENE",s.name,s.sceneId);for(const r of s.regions){const f=r.flags?.world?.dicebox??{};if((f.regionClass==="transition")||r.name.includes("Transition")||r.name.includes("Entrance")){console.log("  ",JSON.stringify({id:r._id,name:r.name,stableId:f.stableId,metadata:f,dims:r.shapes?.[0]??null}));}}}

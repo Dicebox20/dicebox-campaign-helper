@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T14:14:51.0595628Z",
+    "workUnitId":  "central-lodge-cl13-seventh-winter-clock-installed-v002",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Installed the single new M1 Clock Setting RegionBehavior OUMWc1YjJ5DTSFzM in Region 3tIrR12uv8ppFkOb, stable ID dbx:central-lodge:m1:behavior:clock-setting-seventh-winter-v001. The guarded installer reported CLOCK_FINAL_REREAD_MISMATCH due Foundry normalizing one terminal LF byte; no retry. An independent read-only verifier proved exact stored source equals staged v002 JS minus exactly one final LF (stored 5651 characters, SHA 5ee8f97403d5144cbacf64e57ea58862bf4daf4ec4643088531e7f27e12ac997), enabled tokenMoveIn, all three M1/U1/E4 clue hashes intact, both compartment pickup behaviors still gated, kernel unchanged. Foundry exact v14.367/dnd5e 5.3.3 world, 21 canonical scenes, 202 Regions, 117 RegionBehaviors, 33 items, ledger revision1, clock and emblem false. User hands-on gameplay acceptance reserved for final campaign testing.",
+    "blocker":  "Player-facing Token movement/dialog and canonical ledger commit not yet gameplay-certified. Existing CL50 railway installer and N3 branch/M2/U2 semantics still blocked. Original CL90 v003 baseline assumes 116 behaviors and must be updated for 117 in next versioned regression; do not present old 116 baseline as current.",
+    "nextAction":  "Record installed-source CL13 outcome in campaign roadmap/checklist and reconcile KB source vs untested gameplay claim. Build versioned 117-behavior CL90 regression with no write; review M2/U2 and N3 blockers next while preserving installed clock. Never replay this CL13 installer or the unresolved Bridge continuation; user does final gameplay test.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl13-clock-apply-v002.page.js",
+                         "work\\foundry-playwright-harness\\cl13-clock-final-readonly-v002.page.js"
+                     ],
+    "validation":  [
+                       "One guarded clock create executed, no replay after apparent post-create error",
+                       "Independent read-only source exact equality after single terminal newline normalization verified",
+                       "Installed one enabled RegionBehavior with tokenMoveIn; count 117",
+                       "All three clues and both compartment handlers unchanged",
+                       "Ledger revision1 and clock/emblem false; 33 Items",
+                       "Source-only offline v002 25/25 pass; no gameplay canary"
+                   ],
+    "runtimeTarget":  "Foundry 14.367 DND5e 5.3.3 world the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl13-clock-final-readonly-v002.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

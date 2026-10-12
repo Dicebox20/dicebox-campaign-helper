@@ -1,0 +1,63 @@
+{
+  "kind": "F1_T3_240_GUARD_PREVIEW_STAGED_NOT_INSTALLED_V002",
+  "installed": false,
+  "authoritativeF1SceneSha": "85ec24e6da7e5b849099fbe5b7a568693ccc71fc55842f7fefb4e584a045c235",
+  "t3SceneSha": "76141690439a19d6092a2119744def0dce57c9368cd4ceaf66ccd23c1fa8eabb",
+  "f2SceneSha": "5ad191d492195bf227bb099d9b356992aca44fe6d884ac940e085db8c2342639",
+  "ledgerRevision": 13,
+  "ledgerSha": "ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4",
+  "t3OriginalSourceSHA": "c179ae83855e6eb136a1225bfbb882ab9c6b7bcd3f0773df3654f82b2b23d6cb",
+  "t3ProposedSourceSHA": "15720ef28e2193e1c9e9b4189bc233a5d34ee9baf72877d6bee12939dfe65a1c",
+  "candidate": {
+    "f1Grid": 240,
+    "arrivalRect": [
+      2390,
+      1860,
+      280,
+      280
+    ],
+    "center1x1At": [
+      2410,
+      1880
+    ],
+    "maxAutomaticTokenSize": [
+      1,
+      1
+    ],
+    "largeToken": "FAIL_CLOSED_MANUAL_GM",
+    "placement": "center",
+    "snap": false
+  },
+  "scope": {
+    "t3BehaviorId": "tSqhDN5CtAHzccmf",
+    "f1ArrivalRegionId": "zKNU1R3JGIMMt017",
+    "sceneId": "La9krMOMBhAhDLi6",
+    "preserveExistingF1F2": "FElgIMZFVX5GleSy",
+    "railwayInstallers": "QUARANTINED"
+  },
+  "limitations": [
+    "No persistent Scene, Region, or Behavior change",
+    "No player test or committed teleport",
+    "Migration must suspend T3->F1 handler before changing destination Region and grid",
+    "Any actual install needs exact fresh source/ledger backup and independently verified activation",
+    "Proposed 1x1 centered footprint requires live target occupancy+Wall recheck",
+    "Live teleportToken still NOT executed and commit hook could reject/reposition",
+    "Ephemeral preflight is not a transaction/reservation across separate clients",
+    "If unrelated client creates a token after the final guard, collision remains possible and needs later runtime canary"
+  ],
+  "postModalFreshChecks": [
+    "active-primary-GM-election",
+    "token-1x1-recheck",
+    "same-actor-recheck",
+    "source-destination stable keys"
+  ],
+  "parentProposalSha": "7ece308589200ede62acc7a8034b25db5d8e1201914f4463b9152ecf3fd10358",
+  "foundryCore14Proof": "Actual teleportTokens calls #getTokenDestinations; so does spawnTokens(create:false). Center placement may fall back to random; exact-token preflight checks final x/y.",
+  "preflightChecks": [
+    "ephemeral exact TokenDocument from current source at x2410 y1880",
+    "1x1 only and same Actor/GM after await",
+    "no occupied token/wall after await",
+    "destination Region shape exact",
+    "single in-flight landing actor independent lock"
+  ]
+}

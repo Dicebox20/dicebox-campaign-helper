@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T16:07:43.0386133Z",
+    "workUnitId":  "central-lodge-cl91-m2-founder-portrait-one-writer-installed-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Completed CL91 M2 Founder Portrait single-writer integration, preserving separate physical opening and observation. Foundry v14.367 live read-only confirmed nested overlapping M2 Portrait Notice (440,400 760x600) and Signet (420,390 800x650) tokenEnter Region triggers; prior independent whole-ledger writers risk overlapping. Accepted exact two-Region narrow migration in roadmap/checklist and source-backed KB before implementation, prior KB rebuilt integrity ok. Captured exact original Notice source SHA 49c934bb7ef15bfeddfb6d0f76564fa7b69764a3b3b24ec043feafe1aa5a9a46 and original Signet pickup SHA bbf7de80e832e453ff9c284b36194a42a7190d18847e29be1d5b49b654a09ec2 via UTF8 read-only retrieval; embedded both original action bodies verbatim in composed handler. New outer Signet RegionBehavior IdriZEGhxUY9whcV stays enabled as single tokenEnter Notice -\u003e independent founderPortraitObserved observe -\u003e original Founder Signet-gated persistent Old Estate Survey pickup founderPortraitOpened, with per-primary-GM client queue. Inner redundant Notice Behavior NxUruGwqnow13Krv disabled, original source/flags preserved, same Region geometry and stable IDs. Offline tests 15/15 PASS including no Signet, Signet pickup, failed Notice roll, retry, kernel refusal, ownership and overlapping token entries. Exact guarded no-write PREVIEW PASS, bounded dual-Region APPLY PASS, separate authoritative read-only FINAL VERIFY PASS: composed SHA 4b341ee93374af01b64b07061b4f509ea701d5cd2b1d02f8ee98562a17f98cf6, both original action body hashes independently extracted and matched, 21 Scenes 202 Regions 118 total RegionBehaviors, one intentionally disabled duplicate Notice, 33 Items. Ledger revision2 SHA 7feef0b3823ed64e52eaecd2fbe886d020a0a8b92dda2c54a334bbc8017d38f7, M2 observed/opened false, Old Estate Survey unrecovered, M1 clock and U2 history/kernel unchanged. Updated CL90 v007 PASS_WITH_KNOWN_BLOCKERS zero unexpected failures. KB final evidence published via seed.d count64 and rebuilt integrity ok; original M2/U2 source task closed and end-only real-player validation item open.",
+    "blocker":  "Real-player tokenEnter action order, Notice roll messaging and physical Signet-pickup idempotency are not gameplay-certified; user reserves end-only actual campaign playtest. Composite queue guarantees serialization of this handler only on one primary-GM client, not server-wide CAS between unrelated RegionBehaviors or GMs. N3-to-T3 railway branch prerequisite policy unresolved and CL50 installation remains quarantined. Existing Bridge prior host-accepted continuation not delivery-verified; no duplicate native wake.",
+    "nextAction":  "Proceed to N3-to-T3 progression policy evidence review and author exact prerequisites for Departure Board, Switch Wheel and Cartography Overlay. Treat approved N1-T1-N2-T2-N3 topology as only topology, not installed travel. No CL50 installer replay, no premature player canary. Preserve M1 clock, U2 interpretation and M2 composed source, exact ledger revision2 and baseline CL90 v007. Continue with guarded accepted-change/KB/testing process.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CL91-M2-FOUNDER-PORTRAIT-SERIALIZED-SINGLE-EVENT-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzzzz-2026-10-08-cl91-m2-single-portrait-writer-contract.sql",
+                         "database\\seed.d\\zzzzzzzzzz-2026-10-08-cl91-m2-single-writer-installed.sql",
+                         "work\\foundry-playwright-harness\\cl91-m2-founder-portrait-serialized-source-v001.js",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v007.page.js"
+                     ],
+    "validation":  [
+                       "Exact original Notice and Signet body hashes preserved verbatim in live composite",
+                       "New 4b341ee93374af01 source hash and one disabled Notice independently reread",
+                       "Offline source fixture 15/15 PASS including failed roll and concurrent entry tests",
+                       "Guarded Foundry no-write PREVIEW PASS and two-Region APPLY PASS, no replay",
+                       "Independent Foundry final read-only verifier PASS 21/202/118/33 ledger revision2, Items and U2/M1/kernel unchanged",
+                       "CL90 v007 PASS_WITH_KNOWN_BLOCKERS zero unexpected failures",
+                       "Canonical KB seed rebuild 64 sources integrity ok, M2 installed fact active, source task closed, player canary open",
+                       "No actual-player test or native Bridge dispatch attempted"
+                   ],
+    "runtimeTarget":  "Foundry v14.367 DND5e v5.3.3 world the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl91-m2-single-writer-final-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

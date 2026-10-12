@@ -1,0 +1,3 @@
+const s=game.macros.get("FHQiFYx6OntZVo9d")?.command??"",look=["async function runPickup","async function runGate","async function runObserve","function runPickup","function runGate","function runObserve","canonicalStableId","managedCopy","const handlePickup","createEmbeddedDocuments"],out=[];
+for(const term of look){let x=s.indexOf(term);out.push({term,index:x,source:x<0?null:s.slice(Math.max(0,x-230),x+5300)});}
+return{operation:"cl91.kernel-pickup-gate-observe-contract-review",noWrite:true,sections:out};

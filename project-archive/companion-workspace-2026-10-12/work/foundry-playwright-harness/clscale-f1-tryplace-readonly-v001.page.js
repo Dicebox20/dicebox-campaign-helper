@@ -1,0 +1,1 @@
+let obj=game.scenes.get("La9krMOMBhAhDLi6")?.regions.get("zKNU1R3JGIMMt017"),src;for(let i=0;obj&&i<9;i++,obj=Object.getPrototypeOf(obj)){if(obj.constructor?.name==="RegionDocument"){src=String(obj.constructor);break;}}const at=src.indexOf("#tryPlaceTokenAt(context, token, point) {");return{readOnly:true,source:src.slice(at,at+5000)};

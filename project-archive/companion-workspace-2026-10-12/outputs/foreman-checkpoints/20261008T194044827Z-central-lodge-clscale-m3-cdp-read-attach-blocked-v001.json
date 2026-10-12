@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T19:40:44.8279410Z",
+    "workUnitId":  "central-lodge-clscale-m3-cdp-read-attach-blocked-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Continuing author-delegated per-Scene grid calibration after successful, separately checkpointed M2 320px Scene change. Selected token-free M3 Kitchen for proposed 120→240px calibration. Staged only read-only baseline source clscale-m3-baseline-readonly-v001.page.js, no live M3 writes, backups or apply files. Python-driven Playwright baseline source inspection and a separate terminal read both failed in the same transport class. BrowserType.connectOverCDP timeout 30000ms after websocket opened at http://127.0.0.1:9223, connection couldn\u0027t establish usable browser context. Read-only local Get-NetTCPConnection found 9223 LISTEN owning pid30548. Per repeated same-class failure rule, stopped further live scene changes rather than changing ports, restarting browser, using alternate transport or blindly replaying. M2 one-Scene success retained: Foundry grid.size320 on M2, exact wall/Region/light geometry conserved, previous final CL90 v009 PASS_WITH_KNOWN_BLOCKERS 21/202/119/33 at ledger revision3 SHA e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9. Current Foundry state after connection loss unverified, never assert unchanged beyond last successful readback. Roadmap approved Foreman per-interior grid choices; checklist/dossier updated with transport blocker. CL50 live railway installers remain quarantined, no player gameplay canary.",
+    "blocker":  "Two read-only Playwright CDP attachment attempts failed after websocket connected on port9223; no trustworthy current M3 snapshot. Must reconcile browser CDP ownership and session health without blind restarting or dual execution, then get reliable fresh M3 source and ledger. All subsequent grid writes paused. M1 Token Ret, F2 art uncertainty and N3 narrow 160px doors remain separate constraints. Previous Bridge native host-accepted continuation remains outcome unknown; do not resend.",
+    "nextAction":  "First perform bounded read-only CDP/browser/harness health reconciliation and establish reliable connection without restarting unverified active user play session. Verify M2 grid320 remains installed and runtime ledger current. Only then stage fresh M3 source backup and 120→240 guarded preview, one authorized Assistant GM Scene.update grid.size only autoReposition false, independent full-source/geometry/ledger readback, checkpoint. Keep CL50 routes offline and no final player canary; no per-room user approval needed.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CENTRAL-LODGE-INTERIOR-SCALE-CALIBRATION-PREVIEW-2026-10-08.md",
+                         "work\\foundry-playwright-harness\\clscale-m3-baseline-readonly-v001.page.js"
+                     ],
+    "validation":  [
+                       "No M3 live update or scene backup occurred; only a read-only script staged",
+                       "Playwright CDP read from Python subprocess FAILED before obtaining M3 source; separate direct read FAILED same class",
+                       "CDP port 9223 remains LISTEN but websocket-connected Playwright browser attach times out after 30sec",
+                       "Last successful M2 320px independent source/geometry verifier PASS and durable M2 checkpoint exists",
+                       "Last successful CL90 v009 PASS_WITH_KNOWN_BLOCKERS revision3 21/202/119/33; post-CDP world state now unknown",
+                       "Following second same-class failure, STOP no write, no alternate transport, no blind replay",
+                       "Prior Bridge host-accepted uncertain continuation not resent; CL50 quarantined and player testing deferred"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 / dnd5e v5.3.3 / the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CENTRAL-LODGE-INTERIOR-SCALE-CALIBRATION-PREVIEW-2026-10-08.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

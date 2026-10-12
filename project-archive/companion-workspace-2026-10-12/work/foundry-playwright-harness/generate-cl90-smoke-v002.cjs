@@ -1,0 +1,13 @@
+const fs=require("node:fs"),A=Object.getPrototypeOf(async function(){}).constructor;
+let src=fs.readFileSync("cl90-progress-safety-smoke-v001.page.js","utf8");
+if(!src.includes('behaviors!==115')||!src.includes('stableIds.size!==115')||!src.includes('cl90.progress-safety-smoke-v001'))throw Error("Old regression source drift");
+src=src.replace('behaviors!==115','behaviors!==116').replace('stableIds.size!==115','stableIds.size!==116').replace('cl90.progress-safety-smoke-v001','cl90.progress-safety-smoke-v002');
+const i=src.lastIndexOf('return{operation:');if(i<0)throw Error("Old smoke return missing");
+const x=`const m=game.macros.get("P7mgEkmAUiJXYdUD"),b=game.scenes.get("Zq8iXByDVhHRbA7w").regions.get("QS7OpvIilyyDpmLc").behaviors.get("HBtxj5OwVSOJdqnC");
+if(!m||game.macros.size!==133||m.getFlag("world","dicebox")?.stableId!=="dbx:central-lodge:cl52:macro:m1-distant-footsteps-one-shot"||b?.getFlag("world","dicebox")?.stableId!=="dbx:central-lodge:e1:behavior:main-entrance-to-m1")failures.push("CL50 E1M1 or CL52 M1 macro missing");
+if(game.scenes.get("U8S5ZrTjaPIkTUIL")?.getFlag("world","dicebox")?.cl52!==undefined)failures.push("M1 one-shot flag changed");
+const expectedMacro="4ff5a82aa5d57f8831f47063fab893eaea4d315942d59b9fbda99a0a1a9a42b6",expectedBehavior="f144c80ca7789ea0ca246a43529bea56b53776d965b1c6471670a89abf236b0f";
+if(await sha(m?.command??"")!==expectedMacro||await sha(b?.system?.source??"")!==expectedBehavior)failures.push("CL50 or CL52 source hash drift");
+`;
+src=src.slice(0,i)+x+src.slice(i);new A("event",src);
+fs.writeFileSync("cl90-progress-safety-smoke-v002.page.js",src);console.log("CL90 SMOKE V002 GENERATED SYNTAX_PASS");

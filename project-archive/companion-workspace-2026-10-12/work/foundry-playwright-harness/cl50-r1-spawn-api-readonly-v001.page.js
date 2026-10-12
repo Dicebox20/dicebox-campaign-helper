@@ -1,0 +1,1 @@
+const s=game.scenes.get("ImeIdHbYb6kZKAdt");const r=s.regions.get("ewIAYppRLvgIV1b7");return{noWrite:true,spawnFn:String(r.spawnTokens).slice(0,19000),type:typeof foundry.documents.RegionDocument,schema:foundry.documents.RegionDocument?.name};

@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T19:21:43.5731446Z",
+    "workUnitId":  "central-lodge-cl-scale-interior-grid-calibration-audit-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "User noticed tiny 1x1 Actor tokens vs large Central Lodge interior art, requested grid or resolution correction. Foreman paused CL50 route installation. Exact Foundry 14.367 read-only inventoried 21 Scene grids (all gridless type0, 4320x2880, 120 pixels per 5ft, no padding); no Scene updates. Earlier DiceBox_Central_Lodge_Workstream_Handoff.md canon: battlemap-120 requires grid-first logical size, art pixels=columns×120 rows×120; lodge interiors may use different logical footprint; Token Scale Ratio is visual-only and cannot repair map scale. Measured all 21 Scenes 14 interior door/Region spans and Token presence. Conservative candidate table: 13 scene grid sizes with minimum door and Region clearance \u003e=15 percent, F2 unknown, N3 120 unchanged, outdoor E1-E4 and tunnels T1-T3 unchanged; pilot recommendation M2 320px/5ft gridless without placed tokens, doors min530px/Region min430px. Grid-only exceptions preserve all pixel geometry but deviate from battlemap-120; preserving 120 requires resizing art and transforming all geometry, lights, tokens, route anchors, with greater risk. Explicit author method and pilot scale choice required before world write. Recorded roadmap, checklist, source-referenced report, KB source/fact/open item in seed.d, rebuilt 68 seed fragments, integrity ok. CL50 prior landing safety receipts must be revalidated after any grid changes. A later unrelated live Foundry read-only CL90 v008 failed exact old baseline after ledger revision rose 2→3 with added M1 notice key; current ledger SHA e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9, existing E1 notice keys remain, M1/M2/N3 solved flags false and all sampled Scene grids120. Preserved live ledger and recorded drift; did NOT patch the previous regression or revert play state. No live token, Scene, Region, Item, Actor, wall or transfer changes.",
+    "blocker":  "Await author choice for M2 visual calibration method: grid-only pilot from120 to320 (intentional battlemap-120 exception) or preserve120 and resize M2 art+geometry to1620x1080 with factor0.375. F2 still requires visual scale evidence; remaining interior proposed sizes are unapproved. Live ledger revision3 and third M1 Notice mean CL90 v008 original fixed-revision2 exact-check fails; reconcile fresh runtime baseline read-only before guarded Scene changes. CL50 route installers and landing previews quarantined until revalidation. Bridge previous host-accepted unknown continuation still not safe to replay.",
+    "nextAction":  "Ask author to choose approach A per-Scene grid-only 320px/5ft for M2 pilot, or B canonical 120px/5ft with reprojected/resized M2 art+geometry; use choice only for one M2 visual pilot, not all interiors. After approval record locked decision and accepted change, update roadmap/KB, reconcile current ledger revision3, build offline footprint/Region/wall/token geometry tests and exact no-write Foundry preview, then one bounded guarded Scene change if safe; independent fresh readback and checkpoint. Defer gameplay acceptance and all CL50 travel installation.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CENTRAL-LODGE-INTERIOR-SCALE-CALIBRATION-PREVIEW-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzzzzzzzzz-2026-10-08-interior-map-scale-audit.sql",
+                         "work\\foundry-playwright-harness\\cl92-interior-scene-grid-baseline-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl92-interior-doors-relative-grid-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl92-grid-scene-constraints-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl-scale-world-revision-drift-readonly-v001.page.js"
+                     ],
+    "validation":  [
+                       "Read-only Foundry: all 21 Scenes gridless type0, 4320x2880, grid120 distance5ft, no padding",
+                       "Door/Region minimum spans measured in 14 interior Scenes; 13 candidate grids pass \u003e=15 percent basic clearance formula; F2 left unknown",
+                       "Source contract battlemap-120 recovered from prior canonical handoff; no actor visual texture-scale workaround",
+                       "Canonical KB seeded 68 files, integrity ok; new calibration audit fact active and blocked method-approval item present",
+                       "CL90 v008 read-only FAIL recorded accurately: ledger revision3 and added m1 Notice key vs former revision2/2-key hard baseline; roster 21/202/119/33 unchanged",
+                       "Latest read-only M1 clock, M2 portrait, N3 branch solved false; no Scene grid or world geometry writes",
+                       "CL50 route installation/reuse of stale landing receipts blocked; no unknown Bridge continuation resent"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 dnd5e 5.3.3 the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CENTRAL-LODGE-INTERIOR-SCALE-CALIBRATION-PREVIEW-2026-10-08.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

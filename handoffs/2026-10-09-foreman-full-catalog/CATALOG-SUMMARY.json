@@ -1,0 +1,447 @@
+{
+  "status": "CATALOG_COMPLETE",
+  "generatedUtc": "2026-10-09T20:34:18.376Z",
+  "handoffFolder": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\handoffs\\2026-10-09-foreman-full-catalog",
+  "roots": [
+    {
+      "label": "source-repository",
+      "path": "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper"
+    },
+    {
+      "label": "companion-foreman-workspace",
+      "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper"
+    }
+  ],
+  "totalFiles": 62788,
+  "hashedFiles": 62788,
+  "totalBytes": 39064553348,
+  "byScope": {
+    "source-repository": {
+      "files": 58426,
+      "bytes": 38520909186
+    },
+    "companion-foreman-workspace": {
+      "files": 4362,
+      "bytes": 543644162
+    }
+  },
+  "byTop": {
+    "source-repository:.codex-trusted-read-m202": {
+      "files": 6,
+      "bytes": 1706623
+    },
+    "source-repository:.codex-trusted-read-m213-closure-3": {
+      "files": 1,
+      "bytes": 988182
+    },
+    "source-repository:.codex-trusted-read-m213-closure-4": {
+      "files": 6,
+      "bytes": 1862072
+    },
+    "source-repository:.codex-trusted-read-m214-accepted-1": {
+      "files": 1,
+      "bytes": 0
+    },
+    "source-repository:.codex-trusted-read-m214-accepted-2": {
+      "files": 1,
+      "bytes": 0
+    },
+    "source-repository:.codex-trusted-read-m214-accepted-3": {
+      "files": 1,
+      "bytes": 0
+    },
+    "source-repository:.codex-trusted-read-m214-accepted-4": {
+      "files": 1,
+      "bytes": 0
+    },
+    "source-repository:.codex-trusted-read-m214-accepted-5": {
+      "files": 1,
+      "bytes": 0
+    },
+    "source-repository:.codex-trusted-read-m214-accepted-6": {
+      "files": 2,
+      "bytes": 1276
+    },
+    "source-repository:.codex-trusted-read-m214-accepted-7": {
+      "files": 6,
+      "bytes": 1879118
+    },
+    "source-repository:.codex-trusted-read-m215-closure-1": {
+      "files": 6,
+      "bytes": 1890253
+    },
+    "source-repository:.dbx-lodge-browserdiag.mjs": {
+      "files": 1,
+      "bytes": 790
+    },
+    "source-repository:.dbx-lodge-headful.mjs": {
+      "files": 1,
+      "bytes": 1552
+    },
+    "source-repository:.gitignore": {
+      "files": 1,
+      "bytes": 216
+    },
+    "source-repository:.m367-final-target": {
+      "files": 4153,
+      "bytes": 4470504903
+    },
+    "source-repository:.m367-trace-target": {
+      "files": 4432,
+      "bytes": 4875920493
+    },
+    "source-repository:.m373-trace-target": {
+      "files": 4423,
+      "bytes": 4879025759
+    },
+    "source-repository:=": {
+      "files": 1,
+      "bytes": 0
+    },
+    "source-repository:AGENTS.md": {
+      "files": 1,
+      "bytes": 21424
+    },
+    "source-repository:apps": {
+      "files": 17388,
+      "bytes": 18707550918
+    },
+    "source-repository:assets": {
+      "files": 53,
+      "bytes": 83407059
+    },
+    "source-repository:beyond-the-realms-bridge": {
+      "files": 17,
+      "bytes": 2657153
+    },
+    "source-repository:database": {
+      "files": 17,
+      "bytes": 53520115
+    },
+    "source-repository:deploy": {
+      "files": 7,
+      "bytes": 6756
+    },
+    "source-repository:docs": {
+      "files": 54,
+      "bytes": 4714914
+    },
+    "source-repository:FOUNDATION_PLAN.md": {
+      "files": 1,
+      "bytes": 10675
+    },
+    "source-repository:GAP_RESEARCH.md": {
+      "files": 1,
+      "bytes": 4605
+    },
+    "source-repository:outputs": {
+      "files": 1504,
+      "bytes": 131731176
+    },
+    "source-repository:package-lock.json": {
+      "files": 1,
+      "bytes": 141398
+    },
+    "source-repository:package.json": {
+      "files": 1,
+      "bytes": 6510
+    },
+    "source-repository:packages": {
+      "files": 185,
+      "bytes": 1831205
+    },
+    "source-repository:playwright-report": {
+      "files": 1,
+      "bytes": 518531
+    },
+    "source-repository:playwright.config.ts": {
+      "files": 1,
+      "bytes": 709
+    },
+    "source-repository:PROJECT_CHARTER.md": {
+      "files": 1,
+      "bytes": 4507
+    },
+    "source-repository:README.md": {
+      "files": 1,
+      "bytes": 7419
+    },
+    "source-repository:report-source.md": {
+      "files": 1,
+      "bytes": 4243
+    },
+    "source-repository:scripts": {
+      "files": 2,
+      "bytes": 8535
+    },
+    "source-repository:STATUS.md": {
+      "files": 1,
+      "bytes": 24359
+    },
+    "source-repository:test-results": {
+      "files": 1,
+      "bytes": 45
+    },
+    "source-repository:tests": {
+      "files": 308,
+      "bytes": 2090496
+    },
+    "source-repository:tools": {
+      "files": 92,
+      "bytes": 497217
+    },
+    "source-repository:tsconfig.json": {
+      "files": 1,
+      "bytes": 910
+    },
+    "source-repository:vitest.config.ts": {
+      "files": 1,
+      "bytes": 341
+    },
+    "source-repository:work": {
+      "files": 25741,
+      "bytes": 5298366729
+    },
+    "companion-foreman-workspace:AGENTS.md": {
+      "files": 1,
+      "bytes": 29879
+    },
+    "companion-foreman-workspace:assets": {
+      "files": 4,
+      "bytes": 2209642
+    },
+    "companion-foreman-workspace:BUYER_VALIDATION.md": {
+      "files": 1,
+      "bytes": 160549
+    },
+    "companion-foreman-workspace:database": {
+      "files": 121,
+      "bytes": 109859816
+    },
+    "companion-foreman-workspace:docs": {
+      "files": 38,
+      "bytes": 322460
+    },
+    "companion-foreman-workspace:FOUNDATION_PLAN.md": {
+      "files": 1,
+      "bytes": 4428
+    },
+    "companion-foreman-workspace:GAP_RESEARCH.md": {
+      "files": 1,
+      "bytes": 4158
+    },
+    "companion-foreman-workspace:handoffs": {
+      "files": 30,
+      "bytes": 6272384
+    },
+    "companion-foreman-workspace:integrated_projects": {
+      "files": 1,
+      "bytes": 11506
+    },
+    "companion-foreman-workspace:outputs": {
+      "files": 120,
+      "bytes": 2896070
+    },
+    "companion-foreman-workspace:PRODUCT_RESEARCH.md": {
+      "files": 1,
+      "bytes": 462610
+    },
+    "companion-foreman-workspace:PROJECT_CHARTER.md": {
+      "files": 1,
+      "bytes": 2504
+    },
+    "companion-foreman-workspace:README.md": {
+      "files": 1,
+      "bytes": 1933
+    },
+    "companion-foreman-workspace:scripts": {
+      "files": 5,
+      "bytes": 19841
+    },
+    "companion-foreman-workspace:STATUS.md": {
+      "files": 1,
+      "bytes": 44633
+    },
+    "companion-foreman-workspace:work": {
+      "files": 4035,
+      "bytes": 421341749
+    }
+  },
+  "git": {
+    "branch": "main",
+    "head": "eb222b98342e17eaf6830182fac5d193be9e3784",
+    "statusAvailable": true,
+    "modifiedOrDeleted": 58,
+    "untracked": 802,
+    "note": "Working tree is NOT assumed clean. Do not discard unrelated changes."
+  },
+  "excludedDirectoryRules": [
+    "node_modules",
+    ".git",
+    ".turbo",
+    ".next",
+    "target",
+    "dist",
+    ".cache"
+  ],
+  "excludedEntries": [
+    {
+      "scope": "source-repository",
+      "path": ".git",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "apps/campaign-helper-desktop/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "apps/campaign-helper-desktop/node_modules",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-geometry/target",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "apps/campaign-helper-desktop/src-tauri/crates/dicebox-project-store/target",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "apps/campaign-helper-desktop/src-tauri/target",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "handoffs/2026-10-09-foreman-full-catalog",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "node_modules",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/autoanimations/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/dd-import/.git",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/ddb-importer/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/item-piles/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/itempilesdnd5e/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/JB2A_DnD5e/dev/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/sequencer/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/splash/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/tagger/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/clscale-central-lodge-migration-v001/module-stage-v001/vtta-tokenizer/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/autoanimations/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/dd-import/.git",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/ddb-importer/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/item-piles/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/itempilesdnd5e/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/JB2A_DnD5e/dev/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/sequencer/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/splash/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/tagger/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/foundry-fixture-data-permanent/Data/modules/vtta-tokenizer/dist",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/m184-editor-renderer-benchmark/node_modules",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    },
+    {
+      "scope": "source-repository",
+      "path": "work/m216-shared-chat-kb-ledger/node_modules",
+      "reason": "SYMLINK_NOT_FOLLOWED"
+    },
+    {
+      "scope": "companion-foreman-workspace",
+      "path": "work/foundry-playwright-harness/node_modules",
+      "reason": "BUILD_CACHE_VCS_OR_HANDOFF_EXCLUDED"
+    }
+  ],
+  "errors": [],
+  "consistency": "NON_ATOMIC_LIVE_FILE_SCAN: timestamps/hashes may vary if another process writes during scan",
+  "confidentiality": "SHA256 metadata and relative project paths only; no Bridge token, message body, or secret content copied"
+}

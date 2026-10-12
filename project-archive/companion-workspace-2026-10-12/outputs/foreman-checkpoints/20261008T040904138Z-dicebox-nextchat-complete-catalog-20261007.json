@@ -1,0 +1,46 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:09:04.1382013Z",
+    "workUnitId":  "dicebox-nextchat-complete-catalog-20261007",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Max-chat-length handoff completed. Full canonical KB data and metadata export 395 sources/1170 facts/468 decisions/540 open items/201 trials. Two-root SHA256 manifest 2266 files. Live Foundry read-only smoke 21 Scenes/202 Regions/116 Behaviors/33 Items/134 Macros, ledger rev1. Codex Wide Bridge old ChatGPT Foreman scope BLOCKED; no send.",
+    "blocker":  "",
+    "nextAction":  "In new DiceBox Campaign Helper chat, read handoffs/FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-07.md and catalog-integrity.json, recover current Foreman workflow, verify DB and Foundry, inspect blocked legacy Bridge Foreman receipt without inventing acceptance; resume CL50/CL52 bounded work.",
+    "changedPaths":  [
+                         "handoffs\\FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-07.md",
+                         "scripts\\Build-DiceBoxNextChatCatalog-20261007.py",
+                         "handoffs\\catalog-2026-10-07\\all-kb-data-and-metadata.json",
+                         "handoffs\\catalog-2026-10-07\\project-file-metadata-sha256.json",
+                         "handoffs\\catalog-2026-10-07\\catalog-integrity.json",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-nextchat-complete-catalog.sql"
+                     ],
+    "validation":  [
+                       "Rebuilt and verified SQLite integrity OK; 395 sources/1170 facts/468 decisions/540 open items/201 trials",
+                       "Complete 10-table KB JSON snapshot and schema metadata export PASS",
+                       "SHA256 file manifest PASS for 2266 files across Foreman root and original Lodge source; 181262772 hashed bytes; excluded secrets and caches",
+                       "Live read-only CL90 smoke v003 PASS_WITH_KNOWN_BLOCKERS 21/202/116/33, 134 macros, ledger rev1 E1 recentUseObserved true",
+                       "Codex Wide Bridge read-only status confirmed old ChatGPT Foreman scope blocked, Codex Foreman off, no outgoing relay"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "handoffs\\FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

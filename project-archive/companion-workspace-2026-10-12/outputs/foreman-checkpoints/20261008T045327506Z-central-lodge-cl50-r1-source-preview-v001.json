@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:53:27.5066760Z",
+    "workUnitId":  "central-lodge-cl50-r1-source-preview-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "staged",
+    "summary":  "R1 N1 East to T1 Mouth A exact bidirectional behavior source staged; 38 static checks PASS and no-write Foundry guarded PREVIEW PASS with 21/202/116/33/134 and ledger rev1. Ephemeral one-square arrivals clear reverse mouth; N1 rail-power gate not entered. No live RegionBehavior installed.",
+    "blocker":  "",
+    "nextAction":  "Create independent R1 exact installer/verifier with rollback; revalidate two frozen source SHA values and baseline; perform at most one governed live paired install, then independent no-write FINAL VERIFY. Do not replay unknown mutation.",
+    "changedPaths":  [
+                         "docs\\CL50-R1-BIDIRECTIONAL-GUARDED-PREVIEW-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl50-r1-build-staged-sources-v001.cjs",
+                         "work\\foundry-playwright-harness\\cl50-r1-staged-sources-v001.manifest.json",
+                         "work\\foundry-playwright-harness\\cl50-r1-n1-to-t1-source-v001.txt",
+                         "work\\foundry-playwright-harness\\cl50-r1-t1-to-n1-source-v001.txt",
+                         "work\\foundry-playwright-harness\\cl50-r1-guarded-preview-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-r1-preview-source.sql"
+                     ],
+    "validation":  [
+                       "Both staged source digests match frozen SHA; 38 static tests PASS",
+                       "First PREVIEW incorrectly included 183 noncampaign Scenes; corrected canonical-roster PREVIEW PASS zero errors",
+                       "Live R1 guarded preview noWrite PASS, no token move or Region writes",
+                       "SQLite rebuild 399 sources/1175 facts/203 trials integrity ok; verify PASS"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CL50-R1-BIDIRECTIONAL-GUARDED-PREVIEW-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

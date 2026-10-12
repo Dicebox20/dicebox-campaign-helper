@@ -1,0 +1,55 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T04:35:35.4051793Z",
+    "workUnitId":  "clscale-f1-clean-official-system-firewall-owner-gate-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Continued local DiceBox Foreman, no Bridge. F1 production unchanged except independently observed pre-existing Infernal Light Region drift: baseline F1 complete SHA85ec24e6da7e5b849099fbe5b7a568693ccc71fc55842f7fefb4e584a045c235 vs current SHAeff632c06bb6e3281c2116e3959af3171ac95dc16ddab3a2ddd7fc23e316cd03. New read-only exact full F1 scene evidence outputs/foreman-checkpoints/clscale-f1-infernal-light-drift-evidence-v001.json, only two differences System Infernal Light Region uJsKPrR5yEXhhLZ3 x141-\u003e-3 y-7-\u003e-4, no RegionBehaviors, normalize exact original full SHA; origin remains UNKNOWN and earlier migration contract not promoted. T3/F2 original SHA preserved, sovereign ledger revision13 SHA ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4 preserved, Ret and Meow unchanged, CL90 v014 read-only PASS_WITH_KNOWN_BLOCKERS zero unexpected failures. Independently located official GitHub foundryvtt/dnd5e release-5.3.3 manifest and ZIP (107097110 bytes), GitHub release API SHA256 d998061b7cc67d12a07dc93c7fb627c195974b59fd2e9b15fae19899c3f2f1be; downloaded into scratch only, verified SHA and ZIP names/no traversal/no symlinks, 1410 packaged files 128.81MiB, 22 zero-byte LOCK entries proven to be original release files. Staged extraction exact-archive paths and sizes checked, promoted to scratch userdata/Data/systems/dnd5e, final system.json SHA b49e9ca38efacfb1e98761fb59d47b6f4b8709d92653a31dd6434e16677c7e0e, version5.3.3; the earlier incomplete 269-file live copy remains quarantined outside scratch active package. Scratch sole manifest world dicebox-f1-teleport-acceptance-v001, port30010, separate dataPath, no enabled modules; server STOPPED, zero real token writes, no admin key or copied license. Hardened local isolation guard to require all Windows Firewall profiles enabled and explicit all-remote inbound TCP30010 block; current local DesktopCommander NOT elevated, Windows Firewall Domain/Private/Public ALL DISABLED, no rule. Scratch Node --preflight BLOCKED_FAIL_CLOSED, commit claim file absent; Node isolation/replay fixture suite 28/28 PASS including durable single-use claim preventing blind replay. Detailed doc docs/CL-SCALE-F1-SCRATCH-ISOLATION-VERIFIED-BLOCKED-2026-10-09.md and central active checklist updated. Bounded local XP startup sound search found no exact source; no sound played. No live F1/T3/Ret/Meow/ledger/CL50/Bridge mutation.",
+    "blocker":  "SCRATCH DOES NOT HAVE VERIFIED EXTERNAL NETWORK PROTECTION OR PRIVATE LOGIN: Windows Firewall globally disabled on Domain,Private,Public (all Enabled 0) and desktop relay non-elevated; no port30010 inbound block; exact scratch admin key and user setup absent; no private server listener. Do not start Foundry scratch or authorize committed synthetic teleport before owner decides whether enabling firewall globally, which could affect other hosted services, is acceptable. No user permission to enable global firewall. F1 source shape drift is documented only, not authoritatively explained, so old hash-gated proposal remains unapproved. A separate scratch-only authorization is required even after guards pass.",
+    "nextAction":  "Ask owner whether to enable Windows Firewall profiles and install a scoped inbound TCP30010 block using elevated Windows administrator rights (global firewall may change other game server connectivity), or choose another independently provable private isolation method. Do not automatically enable profiles or firewall rules. After explicit approval and verified firewall, launch separate Foundry Node/Electron with --dataPath scratch --port=30010 --world dicebox-f1-teleport-acceptance-v001 --noupnp --noipdiscovery, set independent scratch admin and private GM via local UI without sharing secrets, independently verify exact port/process/dataPath/world/admin/zero modules/empty scenes and signed system archive. Run Node --preflight; only separate explicit scratch commit authorization can permit a single-use synthetic committed teleport. Reconcile F1 drift when eventual live migration planned; preserve T3 original handler, F1 grid120, Meow, Ret, CL50 and ledger. No Bridge while owner updates receipt.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\clscale-official-package-manifest-fetch-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-official-package-digest-readonly-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-clean-system-download-verify-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-clean-system-zip-audit-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-promote-verified-scratch-system-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-infernal-light-rebase-readonly-v001.mjs",
+                         "work\\foundry-playwright-harness\\clscale-disposable-teleport-acceptance-v001.mjs",
+                         "work\\foundry-playwright-harness\\clscale-disposable-isolation-fixtures-v001.test.mjs",
+                         "work\\foundry-playwright-harness\\clscale-isolated-foundry-server-gate-v001.ps1",
+                         "docs\\CL-SCALE-F1-SCRATCH-ISOLATION-VERIFIED-BLOCKED-2026-10-09.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "outputs\\foreman-checkpoints\\clscale-f1-infernal-light-drift-evidence-v001.json"
+                     ],
+    "validation":  [
+                       "Official release-5.3.3 ZIP and GitHub release asset SHA256 d998061b... verified",
+                       "Entire scratch 1410-file/128.81MiB DnD5e package installed, no live leveldb copy",
+                       "F1 source comparison exact 2-field Region coordinate drift, normalized to original full hash",
+                       "Node sandbox negative fixtures 28/28 PASS",
+                       "Scratch --preflight BLOCKED_FAIL_CLOSED no committed attempt",
+                       "Windows Firewall all profiles disabled; no admin, no listener/rule",
+                       "CL90 v014 PASS_WITH_KNOWN_BLOCKERS zero unexpected failures, ledger revision13 unchanged",
+                       "No live F1/T3/actor/ledger/CL50 mutation, no Bridge calls"
+                   ],
+    "runtimeTarget":  "Production Foundry v14.367 dnd5e v5.3.3 world the-lost-mine-of-phandalin unchanged; disposable proposed 30010 STOPPED",
+    "receiptRef":  "docs\\CL-SCALE-F1-SCRATCH-ISOLATION-VERIFIED-BLOCKED-2026-10-09.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,25 @@
+# F1 committed-teleport scratch environment, official package and isolation
+
+**Status:** package installed and verified; committed test **BLOCKED, NOT ATTEMPTED**. Owner has not approved changes to Windows Firewall or scratch admin setup. Existing Foreman/Bridge receipts are not touched.
+
+## Scratch environment
+- Production Foundry remains on port **30000**, data directory `C:\Users\rujie\AppData\Local\FoundryVTT`, world `the-lost-mine-of-phandalin`. All old test worlds use that same data directory and are unsuitable.
+- Scratch root `work\foundry-teleport-sandbox-v001\userdata`, unique private world `dicebox-f1-teleport-acceptance-v001`, proposed port **30010**, world manifest only, zero add-on modules; UPnP disabled. **No test server running**, no scratch admin credentials and no license copied.
+- Clean, official `foundryvtt/dnd5e` GitHub `release-5.3.3` archive, SHA-256 `d998061b7cc67d12a07dc93c7fb627c195974b59fd2e9b15fae19899c3f2f1be`, 107,097,110 bytes. Release asset digest verified independently with GitHub release metadata. Archive audited for paths and symlinks, 1,410 physical files, 128.81 MiB, including 22 **zero-byte LOCK files in the signed-upstream release**. Extracted entries and byte sizes match the archive; the local `Data\systems\dnd5e` system manifest is version 5.3.3. No production system file was read for this installation.
+- The earlier failed 269-file copy from live system is quarantined under `work\foundry-teleport-sandbox-v001\quarantine\incomplete-live-system-copy-20261009-v001`, outside scratch system. Do not force or copy live LevelDB locks.
+
+## Fail-closed harness
+- `work\foundry-playwright-harness\clscale-isolated-foundry-server-gate-v001.ps1`: checks exact private data path, no reparse points, exactly one world, private full dnd5e 5.3.3, zero modules, admin setup, unique listener PID and process flags, **explicit TCP 30010 inbound block** and enabled Firewall profiles. Returns `safeToCommit:false`.
+- `work\foundry-playwright-harness\clscale-disposable-teleport-acceptance-v001.mjs`: read-only `--preflight` and separately authorized `--commit --disposable-test-world-only`; refuses anything other than `http://127.0.0.1:30010/game` and exact unique world/GM/empty-state identity. A durable `first-committed-attempt-claim-v001.json` must be created before any scratch database writes; future replay refuses if it exists. Only synthetic Token and Scenes permitted. **28/28** identity/isolation/URL/single-use claim fixtures pass.
+- Scratch `--preflight` currently returns `BLOCKED_FAIL_CLOSED` with no committed test attempted, because (1) `Config/admin.txt` absent, (2) no 30010 listener, (3) no explicit inbound block rule, (4) all Windows Firewall profiles Domain/Private/Public disabled. Desktop relay is NOT elevated. An inbound block rule on a disabled firewall would be ineffective. Do not boot another Foundry listener until these network gates are resolved.
+
+## Firewall owner decision required
+Enabling Windows Firewall can affect other hosted games or services; Foreman must obtain owner approval first. No firewall settings or rules were changed. The `hostname` Foundry option only affects invitation links, **not** the actual network bind, so setting it to `127.0.0.1` alone is insufficient protection (Foundry official configuration documentation).
+Possible next authorized path: owner explicitly approves enabling the firewall profiles, a port-30010 inbound blocking rule and any necessary narrow exceptions for existing services; an elevated process must apply them. Recheck the effective security policy before launching. Prefer a private scratch-only admin key entered directly on the computer, never in ChatGPT.
+
+## F1 Infernal Light source reconciliation
+- Baseline F1 full source SHA `85ec24e6da7e5b849099fbe5b7a568693ccc71fc55842f7fefb4e584a045c235`; latest full source SHA `eff632c06bb6e3281c2116e3959af3171ac95dc16ddab3a2ddd7fc23e316cd03`. Only two field differences were found and independently normalized to the old full SHA: behavior-free F1 Region `uJsKPrR5yEXhhLZ3` (**System — Infernal Light**) shape x `141→-3`, y `-7→-4`. The origin is **unknown**, and altered lighting coverage may matter. Neither coordinate was reverted.
+- Current complete source evidence saved as `outputs\foreman-checkpoints\clscale-f1-infernal-light-drift-evidence-v001.json`. Existing v002 T3→F1 proposed handler and contract still assume the old F1 source and **must not be installed** without explicit renewed source review. F1 grid120, T3 script and F2 unchanged, Mr. MeowMeow/Ret preserved, CL50 installers quarantined.
+- Read-only CL90 v014 regression after provisioning `PASS_WITH_KNOWN_BLOCKERS`, zero unexpected failures; sovereign ledger revision13 SHA `ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4`.
+
+**Next boundary:** owner decision on host firewall effect, setup of isolated admin credentials and listener, independent full preflight and exact current F1 source review, then **separate explicit scratch commit authorization** before one-time synthetic committed teleport. Do not use the Bridge while receipt is under owner repair.

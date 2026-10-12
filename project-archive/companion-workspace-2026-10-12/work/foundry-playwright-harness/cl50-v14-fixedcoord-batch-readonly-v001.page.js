@@ -1,0 +1,10 @@
+// CL50 exact-stack FIXED-COORD BATCH CONTRACT evidence. READ ONLY: do not invoke modifyBatch.
+const world="the-lost-mine-of-phandalin",version="14.367",sys="5.3.3";
+const errs=[];if(game.world?.id!==world||(game.version??game.release?.version)!==version||game.system?.version!==sys)errs.push("STACK_DRIFT");
+const source=game.scenes.get("MAbLfBqG7qIVVuLN"),target=game.scenes.get("ImeIdHbYb6kZKAdt");
+const n1=source?.regions.get("xsitdXO94BHJkYKX"),t1=target?.regions.get("ewIAYppRLvgIV1b7");
+if(!n1||!t1)errs.push("ROUTE_DRIFT");
+const gms=game.users.filter(u=>u.active&&u.isGM).map(u=>({id:u.id,name:u.name,isCurrent:u.id===game.user.id}));
+const sample=[...game.scenes].flatMap(s=>[...s.tokens].slice(0,1)).slice(0,1)[0]??null;
+const prototype=sample?.toObject()??null;
+return {operation:"cl50.v14.fixedcoord-batch-readonly-v001",noWrite:true,errors:errs,stack:{world:game.world?.id,foundry:game.version,dnd5e:game.system?.version},route:{sourceScene:source?.id,targetScene:target?.id,sourceRegion:n1?.id,targetRegion:t1?.id,sourceStable:n1?.getFlag("world","dicebox")?.stableId,targetStable:t1?.getFlag("world","dicebox")?.stableId,sourceBehaviors:n1?.behaviors.size,targetBehaviors:t1?.behaviors.size},documentApi:{modifyBatch:typeof foundry.documents.modifyBatch,modifyBatchSource:String(foundry.documents.modifyBatch).slice(0,7500),tokenDocumentClass:typeof foundry.documents.TokenDocument,tokenSampleExists:!!sample,tokenFields:prototype?Object.keys(prototype):[],actorLinkSample:prototype?.actorLink,hasDeltaField:prototype?Object.hasOwn(prototype,"delta"):null},authority:{activeGMs:gms,authedDeveloper:game.user?.id==="pnTxw7VYpYR4IKWE",tokenCreate:game.user?.can("TOKEN_CREATE"),tokenDelete:game.user?.can("TOKEN_DELETE")},limits:["No batch operation was invoked","No runtime objects were persisted or mutated","Global hook, permission, owner and lease collision scenarios not tested"]};

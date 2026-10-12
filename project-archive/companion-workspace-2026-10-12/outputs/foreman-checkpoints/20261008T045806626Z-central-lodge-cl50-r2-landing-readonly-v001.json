@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:58:06.6268878Z",
+    "workUnitId":  "central-lodge-cl50-r2-landing-readonly-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "research",
+    "summary":  "Foreman Mode reenabled and resumed safe CL50 development without bypassing prior safety-blocked R1 installer. User-approved R2 T1 Mouth B \u003c-\u003e N2 Tunnel A read-only ephemeral placement test PASS. Both 1x1 landings clear return-mouth footprint, sampled Walls and occupied tokens; N2 landing overlaps only an existing notice. N2 2x2 landing overlaps mouth and interpretation observer, blocked. No live edits.",
+    "blocker":  "",
+    "nextAction":  "Continue next bounded autonomous CL50 research unit with R3 N2 Tunnel B \u003c-\u003e T2 Mouth A 1x1/2x2 footprint diagnostic using exact Scene/Region IDs and read-only Foundry. Keep R1 safety-blocked installer untouched; never use bridge or another transport to bypass a tool safety denial. Verify/record/close checkpoint.",
+    "changedPaths":  [
+                         "docs\\CL50-R2-N2-T1-ARRIVAL-PREFLIGHT-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl50-r2-readonly-arrival-diagnostics-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-r2-ephemeral-footprint.sql"
+                     ],
+    "validation":  [
+                       "Exact R2 two endpoints and stable IDs verified in authorized Foundry 14.367 dnd5e5.3.3",
+                       "R2 ephemeral 1x1 footprint read-only PASS in both directions; N2 2x2 collision with mouth/observer found",
+                       "DB rebuild PASS 400 sources 1176 facts 470 decisions 542 open items 204 trials integrity ok",
+                       "Independent DB verify PASS CL50 21/202/116/33",
+                       "Independent CL90 live smoke PASS_WITH_KNOWN_BLOCKERS, kernel SHA unchanged, ledger rev1",
+                       "No new live Region/Behavior/Token/Item/Macro/Light mutations"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CL50-R2-N2-T1-ARRIVAL-PREFLIGHT-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

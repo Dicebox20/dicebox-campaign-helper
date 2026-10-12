@@ -1,0 +1,5 @@
+const k = game.macros.find(m => m.getFlag?.("world","dicebox")?.stableId === "dbx:central-lodge:macro:runtime");
+if (!k) { console.error("[Central Lodge M2] Runtime Kernel missing."); return; }
+const t = event?.data?.token ?? event?.token ?? null;
+const a = t?.actor ?? null;
+return await k.execute({actor:a,token:t,event,speaker:{dicebox:{"contract":"dicebox-discovery/v1","action":"notice","trigger":"TOKEN_ENTER","noticeKey":"m2.portrait-eye","dc":6,"stage2Skill":"Investigation","successMessage":"<p>The founder’s portrait is subtly wrong. One eye does not match the other, and close inspection reveals a fitted recess where a small artificial eye was meant to sit.</p>","followUp":"Suggested follow-up: Investigation.","failure":"silent","oncePerCharacter":true,"autoAwardItem":false,"criticalClueFallback":"The portrait remains physically examinable, and the eye mechanism can still be used if the missing Glass Eye is recovered."}}});

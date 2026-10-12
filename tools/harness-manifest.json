@@ -33,6 +33,21 @@
       "requires": ["reviewed fixture", "known harness URL"]
     },
     {
+      "id": "chatgpt-playwright-browser",
+      "kind": "operator-visible",
+      "adapter": "Microsoft Playwright MCP with the Playwright browser extension",
+      "transport": "MCP HTTP through an authenticated named tunnel or local MCP client",
+      "targetOriginEnv": "DICEBOX_PLAYWRIGHT_ALLOWED_ORIGIN",
+      "serverBinding": "127.0.0.1 only until an authenticated tunnel is configured",
+      "browserMode": "existing browser session via extension",
+      "artifacts": ["accessibility snapshot", "console/network observation", "screenshot", "redacted JSON receipt"],
+      "proves": ["operator-visible browser UI", "DOM/accessibility observation", "browser-side module diagnostics"],
+      "doesNotProve": ["Foundry authority", "active-GM execution", "module mutation", "typed relay commit", "Ready-to-Play"],
+      "requiredArtifactKinds": ["redacted-json"],
+      "requires": ["exact configured origin", "manual existing browser session", "loopback binding", "authenticated named tunnel for remote ChatGPT access"],
+      "forbidden": ["automatic login", "password or cookie export", "public unauthenticated exposure", "browser_run_code_unsafe", "arbitrary module or document mutation"]
+    },
+    {
       "id": "visible-chrome",
       "kind": "operator-visible",
       "adapter": "Supported Chrome connector: user.openTabs -> exact Gamemaster snapshot -> user.claimTab",

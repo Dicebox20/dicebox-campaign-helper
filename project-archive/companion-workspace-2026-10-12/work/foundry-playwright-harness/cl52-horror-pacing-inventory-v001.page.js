@@ -1,0 +1,14 @@
+const ids=["0CSBwzcszPKyaB8u","5K1uASAARnX8aZhP","EDdktL7VUihbpKe9","UNySMm7YkyYfh41x","Zq8iXByDVhHRbA7w","sI4YVZZChgey1qNi","iqfCcDpEer4pwrJj","DLcheEi6e5OHOYmU","U8S5ZrTjaPIkTUIL","JZkxX6lUQe8Nc8xJ","LXTA8mx1rJ2L6e2J","MAbLfBqG7qIVVuLN","4pc5akMBieHU7GvV","pHQvDUDlyWZFuNrX","if9iWDRjSwI87EeX","PVf6Gbrv9HbB88uZ","La9krMOMBhAhDLi6","ImeIdHbYb6kZKAdt","ez9MSQ8QIO4cW6zo","aIKQmFiuXWipEdyb","HWitOe1wSid7MZ1y"],res=[],sha=async s=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(s??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+let total=0,behaviors=0,horrorBehaviors=0,ambientAnchors=0;
+for(const id of ids){const s=game.scenes.get(id);if(!s)throw Error("Missing scene "+id);
+ const flags=s.getFlag("world","dicebox")??{},hits=[],regions=[];
+ total+=s.regions.size;
+ for(const r of s.regions){const rf=r.getFlag("world","dicebox")??{},tags=[r.name,rf.regionClass,rf.class,rf.regionRole,rf.horrorFunction,rf.storyHorror?.kind].filter(Boolean).map(String),sceneB=[];
+   for(const b of r.behaviors){behaviors++;const src=String(b.system?.source??"");const isCue=/horror|footstep|apparition|passing.car|scare|bell|ghost|chime|drainage|sound|ritual/i.test(b.name+" "+src.slice(0,260));if(isCue){horrorBehaviors++;sceneB.push({id:b.id,name:b.name,type:b.type,events:Array.from(b.system?.events??[]),sha256:await sha(src),length:src.length,stableId:b.getFlag("world","dicebox")?.stableId})}}
+   const likely=/horror|scare|sound|ambience|stinger|ghost|footstep|apparition|passing.car|child|ritual/i.test(tags.join(" "));
+   if(likely||sceneB.length){regions.push({id:r.id,name:r.name,behaviorCount:r.behaviors.size,role:rf.regionRole??rf.regionClass??rf.class??null,stableId:rf.stableId??null,horrorFunction:rf.horrorFunction??null,storyHorror:rf.storyHorror??null,behaviorCues:sceneB});if(r.behaviors.size===0)ambientAnchors++}
+ }
+ const name=s.name,resFlags=Object.keys(flags).filter(x=>/time|horror|night|pacing|scare|stage/i.test(x));
+ res.push({sceneId:id,name,regionCount:s.regions.size,behaviorCount:Array.from(s.regions).reduce((n,r)=>n+r.behaviors.size,0),stateKeys:resFlags,cueRegions:regions});}
+const ledger=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{};
+return{operation:"cl52.scare-pacing-live-readonly-v001",status:"PASS_INVENTORY",noWrite:true,baseline:{scenes:ids.length,total,behaviors,revision:ledger.revision},cueRegionCount:res.reduce((n,s)=>n+s.cueRegions.length,0),zeroBehaviorCueAnchors:ambientAnchors,potentialCueBehaviors:horrorBehaviors,scenes:res,notes:"Source classifier is inclusive heuristic; not all listed behaviors are jump-scare triggers. No gameplay state writes; only sources/metadata audited."};

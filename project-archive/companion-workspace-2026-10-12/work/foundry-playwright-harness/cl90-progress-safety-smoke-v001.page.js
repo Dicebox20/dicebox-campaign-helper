@@ -1,0 +1,15 @@
+// Repeatable CL90 no-write progress-safety snapshot; explicit known blockers are not passes.
+const failures=[],ids=["0CSBwzcszPKyaB8u","5K1uASAARnX8aZhP","EDdktL7VUihbpKe9","UNySMm7YkyYfh41x","Zq8iXByDVhHRbA7w","sI4YVZZChgey1qNi","iqfCcDpEer4pwrJj","DLcheEi6e5OHOYmU","U8S5ZrTjaPIkTUIL","JZkxX6lUQe8Nc8xJ","LXTA8mx1rJ2L6e2J","MAbLfBqG7qIVVuLN","4pc5akMBieHU7GvV","pHQvDUDlyWZFuNrX","if9iWDRjSwI87EeX","PVf6Gbrv9HbB88uZ","La9krMOMBhAhDLi6","ImeIdHbYb6kZKAdt","ez9MSQ8QIO4cW6zo","aIKQmFiuXWipEdyb","HWitOe1wSid7MZ1y"];
+let regions=0,behaviors=0,disabled=0,missingIds=0;const stableIds=new Set();
+for(const id of ids){const s=game.scenes.get(id);if(!s){failures.push("Missing scene "+id);continue;}regions+=s.regions.size;for(const r of s.regions)for(const b of r.behaviors){behaviors++;if(b.disabled)disabled++;const sid=b.getFlag("world","dicebox")?.stableId;if(!sid||stableIds.has(sid))missingIds++;stableIds.add(sid);}}
+if(regions!==202||behaviors!==115||disabled||missingIds||stableIds.size!==115)failures.push("Roster/stableId drift");
+const ledger=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{};
+const sha=async s=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(s??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+const kernelHash=await sha(game.macros.get("FHQiFYx6OntZVo9d")?.command??"");
+if(kernelHash!=="6264c467211d4f5c94cfaaa9437eae88582599061b9d8a4951391830a3e8f814"||ledger.revision!==0||Object.keys(ledger.notices??{}).length)failures.push("Kernel/ledger drift");
+const itemCount=game.items.filter(i=>i.getFlag("world","dicebox")?.stableId?.startsWith("dbx:central-lodge:item:")).length;
+if(itemCount!==33)failures.push("Item count drift");
+const m1=game.scenes.get("U8S5ZrTjaPIkTUIL")?.regions.get("3tIrR12uv8ppFkOb");
+const n3=game.scenes.get("pHQvDUDlyWZFuNrX")?.regions.get("RP1jYOH738xl9hks");
+if(m1?.behaviors.size!==0||n3?.behaviors.size!==0||ledger.puzzles?.m1?.clockSettingResolved!==false||ledger.puzzles?.n3?.t3BranchUnlocked!==false)failures.push("Unapproved blocked puzzle change");
+return{operation:"cl90.progress-safety-smoke-v001",status:failures.length?"FAIL":"PASS_WITH_KNOWN_BLOCKERS",noWrite:true,failures,baseline:{scenes:ids.length,regions,behaviors,stableIds:stableIds.size,disabled,itemCount,revision:ledger.revision,kernelHash},knownBlockers:["M1 clock setting undefined numeric solution, no writer","N3 to T3 branch unlock action not authored","M2 Founder Portrait statePath needs semantic reconciliation","U2 Servant History statePath needs semantic reconciliation"],noGameplayCanary:true};

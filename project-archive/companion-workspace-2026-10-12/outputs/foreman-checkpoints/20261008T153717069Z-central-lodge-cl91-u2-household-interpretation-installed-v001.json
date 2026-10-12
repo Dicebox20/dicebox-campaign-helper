@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T15:37:17.0696789Z",
+    "workUnitId":  "central-lodge-cl91-u2-household-interpretation-installed-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "U2 three-evidence history interpretation authored from live U2 physical trace + servant-absence and nursery notice sources, accepted in roadmap/checklist/CL91 follow-on dossier and locked KB prior to implementation. One source-only new RegionBehavior handler stages tokenMoveIn, waits movement.finished, checks active primary GM and Actor ownership, existing servantHistoryObserved true plus party-wide attempted (not necessarily successful) servant-room-absence and nursery Notice entries, then calls canonical observe for servantHistoryInterpreted. Prevents one-time failed Notice softlock; authored deduction does not assign unknown culprit. Source offline fixture 19/19 PASS. Guarded PREVIEW PASS at 21/202/117/33 ledger revision2, followed by one authorized Assistant Gamemaster RegionBehavior create PASS id WOiGF1WlGZM3fO8I in U2 Servant History qa4n4o834OZTKPoV; stored script SHA 11bbc0837bf1a4ccc20c62b523f8b9acc1061078a585a1f7e36de5cc303c4b32 (one final LF normalized). Independent final readback PASS at 21 Scenes 202 Regions 118 enabled behaviors 33 Items, ledger revision2 SHA 7feef0b3823ed64e52eaecd2fbe886d020a0a8b92dda2c54a334bbc8017d38f7. M2 Founder Portrait Signet pickup, original U2 observation, M1 4:35 clock, shared kernel and Items unchanged. CL90 v006 PASS_WITH_KNOWN_BLOCKERS. Two reproducible KB seed.d deltas published and rebuilt integrity ok metadata118. No player canary.",
+    "blocker":  "New U2 behavior source-installed but actual player event delivery and in-game interpretation untested, held for final campaign. M2 portrait observation requires a verified nonracing inspection trigger independent of Signet/Old Estate Survey pickup on same Region. N3-to-T3 unapproved prerequisites and quarantined CL50 installers remain; Bridge previous host-accepted continuation unresolved, do not duplicate.",
+    "nextAction":  "M2 Founder Portrait independent observation: inspect event sequencing and underlying portrait Notice and Signet pickup; stage collision-safe, player-understandable observation (avoid two simultaneous ledger writers), offline negative race tests, KB approval, no-write PREVIEW before any live install. Retain U2 118 behavior baseline, ledger revision2; no automatic user gameplay test. Do not resend unknown Bridge wake.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CL91-M2-U2-FOLLOWON-STAGES-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzz-2026-10-08-cl91-u2-interpretation-contract.sql",
+                         "database\\seed.d\\zzzzzzzz-2026-10-08-cl91-u2-interpretation-installed.sql",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v006.page.js"
+                     ],
+    "validation":  [
+                       "U2 staged RegionBehavior source 19/19 offline test PASS",
+                       "Single guarded U2 PREVIEW PASS, APPLY PASS",
+                       "Independent exact source SHA final verifier PASS",
+                       "CL90 v006 PASS_WITH_KNOWN_BLOCKERS 21/202/118/33 revision2",
+                       "Canonical KB rebuilt 62 seed.d fragments, integrity ok, metadata 118 and active source fact",
+                       "M1 clock/M2 portrait/Original U2 behavior/kernal untouched, no Item grants or state progress",
+                       "Bridge host-accepted native continuation not duplicated; no end-game player canary"
+                   ],
+    "runtimeTarget":  "Foundry v14.367 dnd5e v5.3.3 the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl91-u2-history-final-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,6 @@
+const s=game.scenes.get('LXTA8mx1rJ2L6e2J'),ledger=game.journal.get('xhlXv6CCH34HVga3')?.getFlag('world','dicebox')?.state;
+const H=async v=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(String(v)))),b=>b.toString(16).padStart(2,'0')).join('');
+const raw=s.toObject(),check=JSON.parse(JSON.stringify(raw));check.grid.size=120;check._stats.modifiedTime=1791351692189;check._stats.lastModifiedBy="JESWV6CcU7m07VW6";
+const values={grid:s.grid.size,type:s.grid.type,dist:s.grid.distance,units:s.grid.units,width:s.width,height:s.height,tokens:s.tokens.size,walls:s.walls.size,regions:s.regions.size,lights:s.lights.size,normalizedSHA:await H(JSON.stringify(check)),sourceSHA:await H(JSON.stringify(raw)),ledgerSHA:await H(JSON.stringify(ledger)),revision:ledger.revision};
+const ok=values.grid===240&&values.type===0&&values.dist===5&&values.units==='ft'&&values.width===4320&&values.height===2880&&values.tokens===0&&values.normalizedSHA==='ffdbd64f0df881239e407c1d45fef68a655698546837a50f30b7fd6255efec8f'&&values.ledgerSHA==='e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9'&&values.revision===3;
+return{operation:'clscale-m3-final-readonly-v001',noWrite:true,status:ok?'PASS_SOURCE_AND_GEOMETRY_IDENTICAL':'BLOCKED_UNEXPECTED_DRIFT',values};

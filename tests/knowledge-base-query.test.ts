@@ -19,7 +19,7 @@ describe("read-only knowledge-base query service", () => {
   it("returns a deterministic summary from the compiled database", () => {
     const result = query("--kind", "summary");
     expect(result).toMatchObject({ schemaVersion: "0.1.0", mode: "read-only", kind: "summary" });
-      expect(result.rows[0]).toMatchObject({ sources: 2083, facts: 1658, decisions: 1678, trials: 1260, research_subjects: 41, milestones: 117 });
+      expect(result.rows[0]).toMatchObject({ sources: 2103, facts: 1678, decisions: 1697, trials: 1280, research_subjects: 46, milestones: 117 });
   });
 
   it("returns the M227 fixed-root cross-process mutation-exclusion authorization", () => {

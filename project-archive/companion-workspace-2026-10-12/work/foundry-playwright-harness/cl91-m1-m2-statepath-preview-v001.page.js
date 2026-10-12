@@ -1,0 +1,13 @@
+const ID="cl91.m1-m2-canonical-path-preview-v001",fixes=[["M1","U8S5ZrTjaPIkTUIL","5vB7Rsqi5XxfjKjQ","puzzles.m1.clockEmblemInserted","puzzles.m1.silverFamilyEmblemInstalled"],["M1","U8S5ZrTjaPIkTUIL","OcRjOu5UK9Jq1XfI","puzzles.m1.clockSettingSolved","puzzles.m1.clockSettingResolved"],["M1","U8S5ZrTjaPIkTUIL","8vtIgrjGwYaxjL07","puzzles.m1.clockSettingSolved","puzzles.m1.clockSettingResolved"],["M2","JZkxX6lUQe8Nc8xJ","re48ahV2D14sF4Ln","puzzles.m2.portraitEyeRestored","puzzles.m2.glassEyeInstalled"],["M2","JZkxX6lUQe8Nc8xJ","aGn2ZJSSH0WNzxzz","puzzles.m2.playerPianoSolved","puzzles.m2.pianoRollInstalled"],["M2","JZkxX6lUQe8Nc8xJ","dgr5x5y5Df8GuX1d","puzzles.m2.familyReliquaryOpened","puzzles.m2.reliquaryUnlocked"]],fail=[],rows=[],ledger=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{};
+const sha=async s=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(s??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+for(const [sceneKey,sceneId,bid,oldPath,newPath] of fixes){
+ const s=game.scenes.get(sceneId),b=Array.from(s?.regions??[]).flatMap(r=>Array.from(r.behaviors)).find(x=>x.id===bid),src=b?.system?.source??"",hits=src.split(oldPath).length-1;
+ const candidate=src.replaceAll(oldPath,newPath);
+ if(hits!==1||candidate===src||foundry.utils.getProperty(ledger,newPath)===undefined||foundry.utils.getProperty(ledger,oldPath)!==undefined)fail.push(sceneKey+" alias mismatch: "+bid);
+ try{new(Object.getPrototypeOf(async function(){}).constructor)("event",candidate)}catch(e){fail.push("syntax:"+bid+":"+e)}
+ rows.push({sceneKey,sceneId,bid,oldPath,newPath,originalHash:await sha(src),newHash:await sha(candidate),sourceLength:src.length});
+}
+const all=Array.from(game.scenes).flatMap(s=>Array.from(s.regions).flatMap(r=>Array.from(r.behaviors).map(b=>({id:b.id,src:b.system?.source??""}))));
+for(const x of fixes){const matches=all.filter(d=>d.src.includes(x[3]));if(matches.length!==fixes.filter(f=>f[3]===x[3]).length)fail.push("Legacy alias unexpected foreign reference "+x[3]);}
+if(ledger.revision!==0||game.scenes.get("U8S5ZrTjaPIkTUIL")?.tokens.size||game.scenes.get("JZkxX6lUQe8Nc8xJ")?.tokens.size)fail.push("Active scene/ledger unsafe");
+return{operation:ID,status:fail.length?"BLOCKED":"PASS",noWrite:true,failures:fail,rows,baseline:202,behaviors:115,remainingUnresolved:["puzzles.m2.founderPortraitOpened","puzzles.u2.servantHistoryObserved","puzzles.m1.clockSettingResolved has no writer found; separate mechanism authority required"],note:"Pure alias remediation PREVIEW, no changes; downstream clock setting remains blocked until its clock puzzle action exists."};

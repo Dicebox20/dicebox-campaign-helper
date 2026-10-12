@@ -1,0 +1,18 @@
+﻿{
+    "schemaVersion":  1,
+    "sources":  [
+                    {
+                        "id":  "game-icons-net-svg",
+                        "label":  "game-icons.net SVG library",
+                        "root":  "C:\\Users\\rujie\\Pictures\\game-icons.net.svg\\icons",
+                        "index":  "C:\\Users\\rujie\\Pictures\\game-icons.net.svg\\catalogue\\game-icons-map.csv",
+                        "enabled":  true,
+                        "extensions":  [
+                                           ".svg"
+                                       ],
+                        "recursive":  true,
+                        "immutableLocation":  true,
+                        "notes":  "Permanent local source supplied for Dicebox item/icon image selection."
+                    }
+                ]
+}

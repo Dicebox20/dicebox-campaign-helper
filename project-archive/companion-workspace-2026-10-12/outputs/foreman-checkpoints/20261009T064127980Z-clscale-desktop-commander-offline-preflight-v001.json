@@ -1,0 +1,42 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T06:41:27.9803366Z",
+    "workUnitId":  "clscale-desktop-commander-offline-preflight-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "User selected Remote Desktop Commander fallback while Dicebox Bridge MCP reports Session terminated. Online official Desktop Commander docs confirm remote MCP exposes file/terminal/process tools while local remote agent is online; there is no automatic ChatGPT next-turn wake built into the MCP connection. Implemented a new repeatable OFFLINE fixture preflight at tools/clscale-fixture-readonly-preflight.mjs with optional --save, and docs/DESKTOP-COMMANDER-FOREMAN-AUTOMATION.md. Executed preflight remotely: all 12 checks PASS, explicit exit code 0 in 0.62 seconds; 39 module manifests,21 scenes/927 scene records,202 Regions/119 behaviors (118 active),444 walls,22 tokens,6 actor links,28 scene art and12 actor/token images verified by hash, no Region execution. Port30005 has no listener; fixture stopped and no production modifications. Report persisted at work/clscale-central-lodge-migration-v001/fixture-readonly-preflight-latest.json. Documented optional Windows Task Scheduler approach without registering any task; no background work started.",
+    "blocker":  "Live fixture runtime cannot be certified while the GM login has a blank password and Foundry normally binds port 30005 to wildcard interfaces. Dicebox Bridge MCP still needs healthy plugin connection for verified Codex next-turn native handoff. Autonomous 15-minute ChatGPT wake is not provided by Remote Desktop Commander itself.",
+    "nextAction":  "Continue safe on-demand Desktop Commander offline fixture checks, prioritize validating actor/scene paths and module dependency closure. To run unattended health checks, seek user approval for a least-privileged Windows Task Scheduler task (deterministic read-only script only). To resume Foreman inter-chat handoffs, first repair and verify Dicebox Bridge MCP, then reconcile original message before any resend. Do not start Foundry fixture or committed teleport without distinct isolation and safety gates.",
+    "changedPaths":  [
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\tools\\clscale-fixture-readonly-preflight.mjs",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\docs\\DESKTOP-COMMANDER-FOREMAN-AUTOMATION.md",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\fixture-readonly-preflight-latest.json"
+                     ],
+    "validation":  [
+                       "Desktop Commander remains connected, can run PowerShell and Node on authorized Windows device",
+                       "12 of 12 checks passed, script exit 0, 0.62sec",
+                       "39 modules,21 scenes,202 Regions,119 static script parses,6 Actors,40 artwork files confirmed",
+                       "Fixture remained stopped, no production/Firewall mutation, no scheduled task registration"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world port30005 OFFLINE, production Foundry untouched; Desktop Commander connected; Dicebox Bridge native delivery unverified",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\fixture-readonly-preflight-latest.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

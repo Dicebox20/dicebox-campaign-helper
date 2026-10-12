@@ -1,0 +1,1 @@
+const s=game.scenes.get('HWitOe1wSid7MZ1y'),t=s.tokens.get('0bla5bPSctNDRT6s'),r=s.regions.get('pplHOCmUZOqFymOy');return{stored:t.toObject()._regions,live:t._regions,storedType:typeof t._regions,fromRegion:r.id,regionBehaviorCount:r.behaviors.size,grid:s.grid.size};

@@ -1,0 +1,32 @@
+const SCENE_ID="0CSBwzcszPKyaB8u";
+const REGION_ID="xIFjdjHmF2qn5Nij";
+const BEHAVIOR_ID="jL7OU30qz2hVwLI2";
+const EXPECTED_BEHAVIOR_STABLE="dbx:central-lodge:b1:behavior:water-control-wheel-recovery";
+const EXPECTED_REGION_STABLE="dbx:central-lodge:b1:region:b1-water-control-wheel";
+const EXPECTED_SOURCE_HASH="4d34b6759347ff6a181df563faa6eaba44b714dca502a3c421f7647d21f95287";
+const KERNEL_ID="FHQiFYx6OntZVo9d";
+const EXPECTED_KERNEL_HASH="6264c467211d4f5c94cfaaa9437eae88582599061b9d8a4951391830a3e8f814";
+const sha256=async v=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(v??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+const clone=v=>foundry.utils.deepClone(v);
+const dbx=d=>clone(d?.getFlag?.("world","dicebox")??{});
+const scene=game.scenes.get(SCENE_ID), region=scene?.regions.get(REGION_ID), behavior=region?.behaviors.get(BEHAVIOR_ID);
+const blockers=[];
+if(!game.user?.isGM) blockers.push("Current user is not GM.");
+if(!["Gamemaster","Assistant Gamemaster"].includes(game.user?.name)) blockers.push("Unauthorized project executor.");
+if(!scene||!region||!behavior) blockers.push("Target missing.");
+if(dbx(region)?.stableId!==EXPECTED_REGION_STABLE) blockers.push("Region stableId drift.");
+if(dbx(behavior)?.stableId!==EXPECTED_BEHAVIOR_STABLE) blockers.push("Behavior stableId drift.");
+const sourceHash=behavior?await sha256(behavior.system?.source??""):null;
+if(sourceHash!==EXPECTED_SOURCE_HASH) blockers.push("Behavior source drift.");
+const kernelHash=await sha256(game.macros.get(KERNEL_ID)?.command??"");
+if(kernelHash!==EXPECTED_KERNEL_HASH) blockers.push("Kernel drift.");
+const before=dbx(behavior);
+if(blockers.length) return {operation:"central-lodge.b1.waterwheel-metadata-cleanup",status:"BLOCKED",noWrite:true,blockers,before,sourceHash,kernelHash};
+await behavior.update({"flags.world.dicebox.regionStableId":EXPECTED_REGION_STABLE});
+const reread=game.scenes.get(SCENE_ID)?.regions.get(REGION_ID)?.behaviors.get(BEHAVIOR_ID);
+const after=dbx(reread);
+const afterHash=await sha256(reread?.system?.source??"");
+if(after.regionStableId!==EXPECTED_REGION_STABLE||afterHash!==EXPECTED_SOURCE_HASH) {
+  return {operation:"central-lodge.b1.waterwheel-metadata-cleanup",status:"FAIL",before,after,afterHash};
+}
+return {operation:"central-lodge.b1.waterwheel-metadata-cleanup",status:"PASS",changedOnly:"flags.world.dicebox.regionStableId",beforeRegionStableId:before.regionStableId??null,afterRegionStableId:after.regionStableId,sourceHash:afterHash,kernelHash};

@@ -1,0 +1,248 @@
+{
+  "schemaVersion": "0.1.0",
+  "operation": "dicebox.connector.build-stage-profile-probe",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "noWrite": true,
+  "noLiveRuntime": true,
+  "noPublicDeployment": true,
+  "source": {
+    "packageId": "dicebox-campaign-helper",
+    "version": "0.1.15",
+    "manifest": {
+      "path": "module.json",
+      "bytes": 684,
+      "sha256": "CA1E2B51434890902B4E8D8C8406C6111A40733210A0DB1BC395DD9CE6C6CC13"
+    },
+    "entry": {
+      "path": "src/entry-20260823-program-scene-v2.js",
+      "bytes": 33,
+      "sha256": "15920F4968714E50661B73F06CDCFE44E86F1315C556CD78D1135A08D376789C"
+    },
+    "loadedByteHashClaimed": false
+  },
+  "stage": {
+    "status": "PASS",
+    "manifest": {
+      "bytes": 684,
+      "sha256": "CA1E2B51434890902B4E8D8C8406C6111A40733210A0DB1BC395DD9CE6C6CC13"
+    },
+    "entry": {
+      "bytes": 33,
+      "sha256": "15920F4968714E50661B73F06CDCFE44E86F1315C556CD78D1135A08D376789C"
+    },
+    "sourceStageParity": true
+  },
+  "profile": {
+    "schemaVersion": "0.1.0",
+    "connectorProtocol": "dicebox-foundry-connector/1",
+    "recipeRegistryVersion": "1.0.0",
+    "target": {
+      "worldId": "dbx-test-world",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3"
+    },
+    "module": {
+      "packageId": "dicebox-campaign-helper",
+      "version": "0.1.15",
+      "manifest": {
+        "path": "module.json",
+        "bytes": 684,
+        "sha256": "CA1E2B51434890902B4E8D8C8406C6111A40733210A0DB1BC395DD9CE6C6CC13"
+      },
+      "entry": {
+        "path": "src/entry-20260823-program-scene-v2.js",
+        "bytes": 33,
+        "sha256": "15920F4968714E50661B73F06CDCFE44E86F1315C556CD78D1135A08D376789C"
+      },
+      "loadedByteHashClaimed": false
+    },
+    "transport": {
+      "mcp": "streamable-http",
+      "foundry": "websocket",
+      "authMode": "static-token",
+      "remoteHost": "127.0.0.1",
+      "publicBaseUrl": null,
+      "tlsTerminated": false,
+      "tlsRequiredForNonLoopback": true
+    },
+    "authority": {
+      "runtimeAuthority": "elected-active-gm",
+      "mutationDefault": "disabled",
+      "arbitraryExecution": false,
+      "publicExecuteAsGm": false
+    },
+    "recipes": [
+      {
+        "name": "dbx_foundry_bridge_status",
+        "operation": "bridge.status",
+        "recipeId": "dbx:connector-recipe:bridge.status",
+        "version": "1.0.0",
+        "readWrite": "read",
+        "requiresPreviewApproval": false
+      },
+      {
+        "name": "dbx_foundry_harness_status",
+        "operation": "harness.status",
+        "recipeId": "dbx:connector-recipe:harness.status",
+        "version": "1.0.0",
+        "readWrite": "read",
+        "requiresPreviewApproval": false
+      },
+      {
+        "name": "dbx_foundry_helper_readiness",
+        "operation": "helper.readiness",
+        "recipeId": "dbx:connector-recipe:helper.readiness",
+        "version": "1.0.0",
+        "readWrite": "read",
+        "requiresPreviewApproval": false
+      },
+      {
+        "name": "dbx_foundry_connector_profile",
+        "operation": "connector.profile",
+        "recipeId": "dbx:connector-recipe:connector.profile",
+        "version": "1.0.0",
+        "readWrite": "read",
+        "requiresPreviewApproval": false
+      },
+      {
+        "name": "dbx_foundry_connector_attestation",
+        "operation": "connector.attestation",
+        "recipeId": "dbx:connector-recipe:connector.attestation",
+        "version": "1.0.0",
+        "readWrite": "read",
+        "requiresPreviewApproval": false
+      },
+      {
+        "name": "dbx_foundry_ascendancy_preview",
+        "operation": "ascendancy.preview",
+        "recipeId": "dbx:connector-recipe:ascendancy.preview",
+        "version": "1.0.0",
+        "readWrite": "preview",
+        "requiresPreviewApproval": false
+      },
+      {
+        "name": "dbx_foundry_ascendancy_install",
+        "operation": "ascendancy.install",
+        "recipeId": "dbx:connector-recipe:ascendancy.install",
+        "version": "1.0.0",
+        "readWrite": "write",
+        "requiresPreviewApproval": true
+      },
+      {
+        "name": "dbx_foundry_ascendancy_repair_preview",
+        "operation": "ascendancy.repair.preview",
+        "recipeId": "dbx:connector-recipe:ascendancy.repair.preview",
+        "version": "1.0.0",
+        "readWrite": "preview",
+        "requiresPreviewApproval": false
+      },
+      {
+        "name": "dbx_foundry_ascendancy_repair",
+        "operation": "ascendancy.repair",
+        "recipeId": "dbx:connector-recipe:ascendancy.repair",
+        "version": "1.0.0",
+        "readWrite": "write",
+        "requiresPreviewApproval": true
+      },
+      {
+        "name": "dbx_foundry_ascendancy_snapshot",
+        "operation": "ascendancy.snapshot",
+        "recipeId": "dbx:connector-recipe:ascendancy.snapshot",
+        "version": "1.0.0",
+        "readWrite": "read",
+        "requiresPreviewApproval": false
+      }
+    ],
+    "runtime": {
+      "schemaVersion": "0.1.0",
+      "operation": "connector.profile",
+      "status": "OBSERVED",
+      "noWrite": true,
+      "target": {
+        "worldId": "dbx-test-world",
+        "foundryVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "exactTargetMatch": true
+      },
+      "activeGm": {
+        "status": "observed",
+        "currentUserMatchesActiveGm": true,
+        "noPermissionClaim": true,
+        "noExecutionAuthority": true
+      },
+      "profile": {
+        "phase": "runtime-probe",
+        "foundryVersion": "14.367",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "observedAt": "2026-10-07T00:00:00.000Z",
+        "activeModuleIds": [
+          "dicebox-campaign-helper"
+        ],
+        "documentTypes": [],
+        "capabilities": []
+      }
+    },
+    "identityHash": "1E21C6B0868FA17DE5673AA288AF6AFA29C47B3A8F2D6FCBCB42C68594AA855C"
+  },
+  "attestation": {
+    "schemaVersion": "0.1.0",
+    "operation": "connector.attestation",
+    "status": "PASS_SOURCE_AND_RUNTIME_PROFILE",
+    "noWrite": true,
+    "readyClaim": false,
+    "targetMatch": true,
+    "sourceIdentity": {
+      "packageId": "dicebox-campaign-helper",
+      "moduleVersion": "0.1.15",
+      "manifestSha256": "CA1E2B51434890902B4E8D8C8406C6111A40733210A0DB1BC395DD9CE6C6CC13",
+      "entrySha256": "15920F4968714E50661B73F06CDCFE44E86F1315C556CD78D1135A08D376789C",
+      "loadedByteHashClaimed": false,
+      "identityHash": "1E21C6B0868FA17DE5673AA288AF6AFA29C47B3A8F2D6FCBCB42C68594AA855C"
+    },
+    "expectedTarget": {
+      "worldId": "dbx-test-world",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3"
+    },
+    "observedTarget": {
+      "worldId": "dbx-test-world",
+      "foundryVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "exactTargetMatch": true
+    },
+    "runtimeStatus": "OBSERVED",
+    "blockers": []
+  },
+  "recipeRegistry": {
+    "version": "1.0.0",
+    "count": 10,
+    "operations": [
+      "ascendancy.install",
+      "ascendancy.preview",
+      "ascendancy.repair",
+      "ascendancy.repair.preview",
+      "ascendancy.snapshot",
+      "bridge.status",
+      "connector.attestation",
+      "connector.profile",
+      "harness.status",
+      "helper.readiness"
+    ],
+    "broadExecutionRejected": true,
+    "writeRecipesRequirePreviewApproval": true
+  },
+  "doesNotProve": [
+    "live Foundry connectivity",
+    "browser authentication",
+    "Desktop Commander account binding",
+    "public TLS/OAuth deployment",
+    "native document mutation",
+    "Ready-to-Play"
+  ]
+}

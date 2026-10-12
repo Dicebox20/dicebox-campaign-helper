@@ -1,0 +1,1900 @@
+{
+ "scene": {
+  "name": "Central Lodge — M3 Kitchen & Service Wing",
+  "width": 4320,
+  "height": 2880,
+  "padding": 0,
+  "grid": {
+   "type": 0,
+   "size": 120,
+   "distance": 5,
+   "units": "ft",
+   "style": "solidLines",
+   "thickness": 1,
+   "color": "#000000",
+   "alpha": 0.2
+  },
+  "flags": {
+   "dicebox-campaign-helper": {
+    "stableId": "dbx:central-lodge:m3",
+    "managed": {
+     "owner": "dicebox-campaign-helper",
+     "packageId": "dbx:central-lodge:m3:v1",
+     "kind": "scene",
+     "stableId": "dbx:central-lodge:m3"
+    },
+    "campaignId": "central-lodge",
+    "mapId": "M3",
+    "buildContract": "dicebox-scene-injector-build/v2",
+    "scaleProfile": "battlemap-120",
+    "timeOfDay": "day",
+    "campaignTimeKey": "central-lodge.timeOfDay",
+    "rendererLightingProfile": "time-neutral-interior",
+    "buildInstalled": true,
+    "ready": false,
+    "puzzleState": {
+     "bellPullInstalled": false,
+     "bellBoardActive": false,
+     "bellCrestRecovered": false,
+     "serviceRouteOpen": false,
+     "recentUseUnderstood": false
+    },
+    "dayNight": {
+     "policy": "ambient-reaction-only",
+     "campaignTimeKey": "central-lodge.timeOfDay",
+     "triggerEventId": null,
+     "triggerStatus": "UNRESOLVED_CANON_DECISION",
+     "lightingOrder": [
+      "dbx:central-lodge:m3:light:kitchen-north",
+      "dbx:central-lodge:m3:light:kitchen-south",
+      "dbx:central-lodge:m3:light:corridor-upper",
+      "dbx:central-lodge:m3:light:corridor-lower"
+     ]
+    },
+    "assetReceipt": {
+     "base": {
+      "path": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/m3/m3-kitchen-service-wing.webp",
+      "sha256": "798408f004ded6e5b6d7719c9cb073f40836c55d32c0051bd1e70d3a1ae1d5b2",
+      "bytes": 282222,
+      "lightingProfile": "time-neutral-interior"
+     }
+    },
+    "implementationPending": [
+     "bind hidden Notice behavior for bell-board/recent-use",
+     "bind Bell Pull, bell-board, Bell Crest, and service-route interactions",
+     "bind transition destinations",
+     "bind campaign sunset controller to installed light stable IDs",
+     "VERIFY exact wall, Region, and light alignment"
+    ]
+   }
+  },
+  "_id": "LXTA8mx1rJ2L6e2J",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "thumb": null,
+  "shiftX": 0,
+  "shiftY": 0,
+  "initial": {
+   "x": null,
+   "y": null,
+   "scale": null
+  },
+  "initialLevel": "defaultLevel0000",
+  "tokenVision": true,
+  "fog": {
+   "mode": 1,
+   "colors": {
+    "explored": null,
+    "unexplored": null
+   }
+  },
+  "environment": {
+   "darknessLevel": 0,
+   "darknessLock": false,
+   "globalLight": {
+    "enabled": false,
+    "alpha": 0.5,
+    "bright": false,
+    "color": null,
+    "coloration": 1,
+    "luminosity": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "shadows": 0,
+    "darkness": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "cycle": true,
+   "base": {
+    "hue": 0,
+    "intensity": 0,
+    "luminosity": 0,
+    "saturation": 0,
+    "shadows": 0
+   },
+   "dark": {
+    "hue": 0.7138888888888889,
+    "intensity": 0,
+    "luminosity": -0.25,
+    "saturation": 0,
+    "shadows": 0
+   }
+  },
+  "transition": {
+   "type": null,
+   "duration": 1500,
+   "activeOnly": false
+  },
+  "drawings": [],
+  "tokens": [],
+  "levels": [
+   {
+    "_id": "defaultLevel0000",
+    "name": "Level",
+    "elevation": {
+     "bottom": 0,
+     "top": 20
+    },
+    "background": {
+     "color": "#999999",
+     "src": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/m3/m3-kitchen-service-wing.webp",
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "foreground": {
+     "src": null,
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "fog": {
+     "src": null
+    },
+    "textures": {
+     "anchorX": 0.5,
+     "anchorY": 0.5,
+     "offsetX": 0,
+     "offsetY": 0,
+     "fit": "fill",
+     "scaleX": 1,
+     "scaleY": 1,
+     "rotation": 0
+    },
+    "visibility": {
+     "levels": []
+    },
+    "sort": 0,
+    "flags": {}
+   }
+  ],
+  "lights": [
+   {
+    "name": "M3 Service Corridor Light Lower",
+    "x": 3850,
+    "y": 2020,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 13,
+     "bright": 3,
+     "angle": 360,
+     "color": "#ffad55",
+     "alpha": 0.2,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:light:corridor-lower",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m3:light:corridor-lower"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "peripheral-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "KH0aOnHS3uCD94Jo",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M3 Kitchen Practical Light South",
+    "x": 2700,
+    "y": 1680,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 16,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.22,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:light:kitchen-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m3:light:kitchen-south"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "wOPhd8hOEzx3laeC",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M3 Kitchen Practical Light North",
+    "x": 2120,
+    "y": 650,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 16,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.22,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:light:kitchen-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m3:light:kitchen-north"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "pFassfHvX8ubEaIF",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M3 Service Corridor Light Upper",
+    "x": 3860,
+    "y": 760,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 13,
+     "bright": 3,
+     "angle": 360,
+     "color": "#ffad55",
+     "alpha": 0.2,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:light:corridor-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m3:light:corridor-upper"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "peripheral-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "phmCgJt3TYyUa2ip",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   }
+  ],
+  "notes": [],
+  "sounds": [],
+  "regions": [
+   {
+    "name": "M3 Bell Board Mechanism",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3650,
+      "y": 930,
+      "width": 520,
+      "height": 650,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:puzzle:bell-board",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:puzzle:bell-board"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "servant-bell-board",
+       "interaction": "activate-mechanism",
+       "requiresState": "m3.bellPullInstalled",
+       "persistentStateKey": "m3.bellBoardActive"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-bell-board-mechanism",
+       "sceneKey": "M3",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "T1KuiXb5o8mjTS2w",
+       "sourceRegionName": "M3 Bell Board Mechanism"
+      }
+     }
+    },
+    "_id": "T1KuiXb5o8mjTS2w",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Bell Pull Fitting",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3650,
+      "y": 980,
+      "width": 500,
+      "height": 560,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:puzzle:bell-pull",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:puzzle:bell-pull"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "servant-bell-board",
+       "interaction": "insert-item",
+       "requiredItemId": "servant-bell-pull",
+       "persistentStateKey": "m3.bellPullInstalled",
+       "dependencySource": "E2"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-bell-pull-fitting",
+       "sceneKey": "M3",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "E7xtQDQRNA4AtY1i",
+       "sourceRegionName": "M3 Bell Pull Fitting"
+      }
+     }
+    },
+    "_id": "E7xtQDQRNA4AtY1i",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M3 — Servant Bell Pull Installation",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M3] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"socket\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"servant-bell-pull\",\"statePath\":\"puzzles.m3.servantBellPullInstalled\",\"consume\":false,\"missingMessage\":\"<p>The empty fitting beside the servant bell board is missing its pull.</p>\",\"successMessage\":\"<p>The <strong>Servant Bell Pull</strong> fits the weathered bracket. The restored line takes tension, and the bell board mechanism can now respond.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl16-m3-safe-apply-v001",
+         "stableId": "dbx:central-lodge:m3:behavior:servant-bell-pull-install",
+         "sceneKey": "M3",
+         "regionStableId": "dbx:central-lodge:m3:region:m3-bell-pull-fitting",
+         "sourceHash": "c380953514c5b018c8dc7b14ff6f347c273c6d800b5c47e5e29bc57c0df1bdf4",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "socket",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "servant-bell-pull",
+          "statePath": "puzzles.m3.servantBellPullInstalled",
+          "consume": false,
+          "missingMessage": "<p>The empty fitting beside the servant bell board is missing its pull.</p>",
+          "successMessage": "<p>The <strong>Servant Bell Pull</strong> fits the weathered bracket. The restored line takes tension, and the bell board mechanism can now respond.</p>",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "zhrDou7CR8b4v7jq",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403102102,
+       "modifiedTime": 1791403102102,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Bell Crest",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3710,
+      "y": 1050,
+      "width": 430,
+      "height": 480,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:puzzle:bell-crest",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:puzzle:bell-crest"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "bell-board-cache",
+       "interaction": "recover-item",
+       "requiresState": "m3.bellBoardActive",
+       "itemId": "bell-crest",
+       "persistentStateKey": "m3.bellCrestRecovered",
+       "dependencyTarget": "E4"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-bell-crest",
+       "sceneKey": "M3",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "IkmwmsbHadINctLc",
+       "sourceRegionName": "M3 Bell Crest"
+      }
+     }
+    },
+    "_id": "IkmwmsbHadINctLc",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M3 — Bell Crest Recovery",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const l = game.journal.get(\"xhlXv6CCH34HVga3\");\nconst s = l?.getFlag?.(\"world\",\"dicebox\")?.state ?? {};\nif (foundry.utils.getProperty(s,\"puzzles.m3.bellBoardResolved\") !== true) return;\nconst k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M3] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"bell-crest\",\"statePath\":\"items.bell-crest.recovered\",\"value\":true,\"message\":\"<p>The resolved bell-board mechanism has exposed a hidden recess containing the <strong>Bell Crest</strong>.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl16-m3-safe-apply-v001",
+         "stableId": "dbx:central-lodge:m3:behavior:bell-crest-recovery",
+         "sceneKey": "M3",
+         "regionStableId": "dbx:central-lodge:m3:region:m3-bell-crest",
+         "sourceHash": "8e037130223044b6f418b3134283545b37bfdf69c526313b25a846758bf1dd45",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "pickup",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "bell-crest",
+          "statePath": "items.bell-crest.recovered",
+          "value": true,
+          "message": "<p>The resolved bell-board mechanism has exposed a hidden recess containing the <strong>Bell Crest</strong>.</p>",
+          "persistentPickup": true,
+          "sourceType": "state-gate",
+          "requiredStatePath": "puzzles.m3.bellBoardResolved",
+          "rewardItemKey": "bell-crest"
+         }
+        }
+       }
+      },
+      "_id": "MwkyV1WZolF2GnzE",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403102179,
+       "modifiedTime": 1791403102179,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Bell Board Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3650,
+      "y": 930,
+      "width": 500,
+      "height": 650,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:notice:bell-board",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:notice:bell-board"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "servant-bell-board",
+       "discoveryId": "m3-bell-board",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The service wall feels incomplete in a way that is difficult to place.",
+       "successHint": "The servant bell board has an obvious missing pull or fitting beside its mechanism.",
+       "interpretation": {
+        "investigation": "The missing fitting is meant to engage the bell mechanism rather than serve as decoration."
+       }
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-bell-board-notice",
+       "sceneKey": "M3",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "we3V3jbMDvVDaO4U",
+       "sourceRegionName": "M3 Bell Board Notice"
+      }
+     }
+    },
+    "_id": "we3V3jbMDvVDaO4U",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M3 — Bell Board Notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M3] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"m3.bell-board\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The servant bell board is incomplete. One line ends at an empty fitting where a pull should attach, and the surrounding mechanism appears designed to respond when that line is restored.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate inspection of the bell board reveals the missing pull-and-fixture relationship.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl16-m3-safe-apply-v001",
+         "stableId": "dbx:central-lodge:m3:behavior:bell-board-notice",
+         "sceneKey": "M3",
+         "regionStableId": "dbx:central-lodge:m3:region:m3-bell-board-notice",
+         "sourceHash": "3391a7e83728bc0c71dbca6ab6b2aeffa721895f978f5d11123dd077bf29e909",
+         "behaviorSpec": {
+          "contract": "dicebox-discovery/v1",
+          "action": "notice",
+          "trigger": "TOKEN_ENTER",
+          "noticeKey": "m3.bell-board",
+          "dc": 6,
+          "stage2Skill": "Investigation",
+          "successMessage": "<p>The servant bell board is incomplete. One line ends at an empty fitting where a pull should attach, and the surrounding mechanism appears designed to respond when that line is restored.</p>",
+          "followUp": "Suggested follow-up: Investigation.",
+          "failure": "silent",
+          "oncePerCharacter": true,
+          "autoAwardItem": false,
+          "criticalClueFallback": "Deliberate inspection of the bell board reveals the missing pull-and-fixture relationship.",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "5VfWgedqEWFVvczI",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403101992,
+       "modifiedTime": 1791403101992,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Recent Use",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1650,
+      "y": 1040,
+      "width": 1100,
+      "height": 820,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#6d5f8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:story:recent-use",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:story:recent-use"
+      },
+      "regionClass": "story",
+      "specification": {
+       "class": "story",
+       "anchor": "kitchen-work-area",
+       "discoveryId": "m3-recent-use",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The kitchen's neglect feels uneven.",
+       "successHint": "A few service objects have been moved much more recently than the surrounding dust suggests.",
+       "persistentStateKey": "m3.recentUseUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-recent-use",
+       "sceneKey": "M3",
+       "regionClass": "story",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "bgvESHTFewT9ZV8x",
+       "sourceRegionName": "M3 Recent Use"
+      }
+     }
+    },
+    "_id": "bgvESHTFewT9ZV8x",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M3 — Recent Use Notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M3] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"m3.recent-use\",\"dc\":6,\"stage2Skill\":\"Perception\",\"successMessage\":\"<p>The kitchen's neglect is uneven. Dust has been disturbed around a service surface, and a few practical objects were moved recently enough to stand out from the surrounding decay. Someone has used this wing more recently than the rest of the Lodge suggests.</p>\",\"followUp\":\"Suggested follow-up: Perception or Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate inspection of the recently disturbed service area remains possible.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl16-m3-safe-apply-v001",
+         "stableId": "dbx:central-lodge:m3:behavior:recent-use-notice",
+         "sceneKey": "M3",
+         "regionStableId": "dbx:central-lodge:m3:region:m3-recent-use",
+         "sourceHash": "fab86fa328f38f63327609ffb5b47fe1d844870dbb3c4ca62d984f26b6bee435",
+         "behaviorSpec": {
+          "contract": "dicebox-discovery/v1",
+          "action": "notice",
+          "trigger": "TOKEN_ENTER",
+          "noticeKey": "m3.recent-use",
+          "dc": 6,
+          "stage2Skill": "Perception",
+          "successMessage": "<p>The kitchen's neglect is uneven. Dust has been disturbed around a service surface, and a few practical objects were moved recently enough to stand out from the surrounding decay. Someone has used this wing more recently than the rest of the Lodge suggests.</p>",
+          "followUp": "Suggested follow-up: Perception or Investigation.",
+          "failure": "silent",
+          "oncePerCharacter": true,
+          "autoAwardItem": false,
+          "criticalClueFallback": "Deliberate inspection of the recently disturbed service area remains possible.",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "wkqZPDzpjMBfeqHC",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403102141,
+       "modifiedTime": 1791403102141,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Transition — Service Door",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3740,
+      "y": 180,
+      "width": 460,
+      "height": 500,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:transition:service-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:transition:service-door"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "northeast-service-door",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-transition-service-door",
+       "sceneKey": "M3",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "THTJHTfaBGTGqaiZ",
+       "sourceRegionName": "M3 Transition — Service Door"
+      }
+     }
+    },
+    "_id": "THTJHTfaBGTGqaiZ",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Service Route State",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3500,
+      "y": 1650,
+      "width": 680,
+      "height": 700,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#7a6a8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:state:service-route",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:state:service-route"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "service-route-blocker",
+       "interaction": "open-route",
+       "requiresState": "m3.bellBoardActive",
+       "persistentStateKey": "m3.serviceRouteOpen",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-service-route-state",
+       "sceneKey": "M3",
+       "regionClass": "system",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "wd7S4Exyz2WQYLUY",
+       "sourceRegionName": "M3 Service Route State"
+      }
+     }
+    },
+    "_id": "wd7S4Exyz2WQYLUY",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Light — Service Corridor",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3450,
+      "y": 180,
+      "width": 720,
+      "height": 2320,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:light:service-corridor",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:light:service-corridor"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "service-corridor-fixtures",
+       "dayNightControlled": true,
+       "pacingGroup": "peripheral-response",
+       "lightStableIds": [
+        "dbx:central-lodge:m3:light:corridor-upper",
+        "dbx:central-lodge:m3:light:corridor-lower"
+       ]
+      },
+      "runtimeBinding": null
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-light-service-corridor",
+       "sceneKey": "M3",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "BsM7Jxecq3ayjYKn",
+       "sourceRegionName": "M3 Light — Service Corridor"
+      }
+     }
+    },
+    "_id": "BsM7Jxecq3ayjYKn",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Light — Kitchen Main",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1320,
+      "y": 180,
+      "width": 2240,
+      "height": 1680,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:light:kitchen-main",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:light:kitchen-main"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "kitchen-practical-fixtures",
+       "dayNightControlled": true,
+       "pacingGroup": "interior-response",
+       "lightStableIds": [
+        "dbx:central-lodge:m3:light:kitchen-north",
+        "dbx:central-lodge:m3:light:kitchen-south"
+       ]
+      },
+      "runtimeBinding": null
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-light-kitchen-main",
+       "sceneKey": "M3",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "OQupzv9slrPmj1GM",
+       "sourceRegionName": "M3 Light — Kitchen Main"
+      }
+     }
+    },
+    "_id": "OQupzv9slrPmj1GM",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M3 Transition — Main Service Door",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1230,
+      "y": 2360,
+      "width": 650,
+      "height": 450,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:region:transition:main-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m3:region:transition:main-door"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "south-service-door",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m3:region:m3-transition-main-service-door",
+       "sceneKey": "M3",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "1uOskLbiMaYJkFmZ",
+       "sourceRegionName": "M3 Transition — Main Service Door"
+      }
+     }
+    },
+    "_id": "1uOskLbiMaYJkFmZ",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   }
+  ],
+  "tiles": [],
+  "walls": [
+   {
+    "c": [
+     4100,
+     180,
+     4100,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:outer-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:outer-east"
+      }
+     }
+    },
+    "_id": "uILqfRNVkahio525",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     360,
+     180,
+     3400,
+     180
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:outer-north-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:outer-north-west"
+      }
+     }
+    },
+    "_id": "adOzSHch67M0qdC6",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1600,
+     2640,
+     1250,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:outer-south-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:m3:wall:outer-south-door"
+      }
+     }
+    },
+    "_id": "Lo5o3K0cM1N1eQ4M",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     4100,
+     2640,
+     1600,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:outer-south-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:outer-south-east"
+      }
+     }
+    },
+    "_id": "OZu73WG0XkkyAnAb",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     360,
+     2640,
+     360,
+     180
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:outer-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:outer-west"
+      }
+     }
+    },
+    "_id": "WDTpFUsUMD40bqBR",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3560,
+     1060,
+     3560,
+     1420
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:service-east-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:m3:wall:service-east-door"
+      }
+     }
+    },
+    "_id": "wgOpmVB5Ww0f2MgA",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1250,
+     2640,
+     360,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:outer-south-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:outer-south-west"
+      }
+     }
+    },
+    "_id": "EkJBvJdv9tVDhGdr",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1320,
+     180,
+     1320,
+     1220
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:west-service-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:west-service-upper"
+      }
+     }
+    },
+    "_id": "MQfkT4qqWHSVbbV9",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1320,
+     1220,
+     1320,
+     1540
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:west-service-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:m3:wall:west-service-door"
+      }
+     }
+    },
+    "_id": "TRNEQWKpM11LqP6t",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3560,
+     1420,
+     3560,
+     2260
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:service-east-lower",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:service-east-lower"
+      }
+     }
+    },
+    "_id": "pfiROvf3uv9Jbat7",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1320,
+     1540,
+     1320,
+     2440
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:west-service-lower",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:west-service-lower"
+      }
+     }
+    },
+    "_id": "O3eBYiJJGcF6f7Ff",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3560,
+     180,
+     3560,
+     1060
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:service-east-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:service-east-upper"
+      }
+     }
+    },
+    "_id": "Zz9mYbyQjSuOiBur",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3400,
+     180,
+     4100,
+     180
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:outer-north-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m3:wall:outer-north-east"
+      }
+     }
+    },
+    "_id": "njkBcREpC75eQjvU",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3560,
+     1860,
+     4100,
+     1860
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m3:wall:service-route-blocker",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m3:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:m3:wall:service-route-blocker"
+      }
+     }
+    },
+    "_id": "ATLYswCMwZ4tdiDT",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "weather": "",
+  "folder": "4iXeDJuCRBVhdM1M",
+  "sort": 900000,
+  "ownership": {
+   "default": 0,
+   "JESWV6CcU7m07VW6": 3
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "dnd5e",
+   "systemVersion": "5.3.3",
+   "createdTime": 1791309632960,
+   "modifiedTime": 1791351692189,
+   "lastModifiedBy": "JESWV6CcU7m07VW6",
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null
+  }
+ },
+ "sourceSHA": "ffdbd64f0df881239e407c1d45fef68a655698546837a50f30b7fd6255efec8f",
+ "ledgerSHA": "e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9"
+}

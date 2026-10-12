@@ -8,7 +8,7 @@ describe("DiceBox Foundry live bridge host", () => {
     expect(bridge.allowedOrigin("http://127.0.0.1:30000")).toBe(true);
     expect(bridge.allowedOrigin("https://evil.example")).toBe(false);
     expect(bridge.TOOL_DEFINITIONS.map((tool: { operation: string }) => tool.operation)).toEqual([
-      "bridge.status", "harness.status", "helper.readiness", "ascendancy.preview", "ascendancy.install", "ascendancy.repair.preview", "ascendancy.repair", "ascendancy.snapshot",
+      "bridge.status", "harness.status", "helper.readiness", "connector.profile", "connector.attestation", "ascendancy.preview", "ascendancy.install", "ascendancy.repair.preview", "ascendancy.repair", "ascendancy.snapshot",
     ]);
     const install = bridge.TOOL_DEFINITIONS.find((tool: { name: string }) => tool.name === "dbx_foundry_ascendancy_install");
     expect(() => bridge.validateToolArguments(install, { approved: true, planToken: "token", script: "new Function()" })).toThrow(/Unsupported tool argument/);

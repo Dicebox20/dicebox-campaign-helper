@@ -1,0 +1,78 @@
+{
+ "schema_version": "1.0.0",
+ "generated_utc": "2026-10-08T21:09:17.043141+00:00",
+ "status": "PASS",
+ "self_consistency_checks": {
+  "all_10_canonical_tables_exported": true,
+  "all_kb_rows_exported": true,
+  "all_foreman_scene_grid_values_match_expected": true,
+  "live_C1_already_applied": true,
+  "CL90_v013_zero_unexpected_failures": true,
+  "kb_rebuilt_integrity_ok": true,
+  "kb_no_foreign_key_violations": true,
+  "five_original_Scene_backups_present": true,
+  "no_C2_staged_APPLY_or_backup": true,
+  "source_file_read_errors_zero": true,
+  "external_81_original_references_present": true
+ },
+ "files": {
+  "files_hashed": 2596,
+  "hashed_bytes": 253524281,
+  "foreman_project_files": 2515,
+  "original_lodge_source_files": 81,
+  "missing_external_referenced_files": 0,
+  "skipped_files": 123
+ },
+ "file_read_errors": [],
+ "missing_external_references": [],
+ "kb_table_counts": {
+  "kb_decisions": 477,
+  "kb_facts": 1199,
+  "kb_metadata": 180,
+  "kb_milestones": 20,
+  "kb_open_items": 548,
+  "kb_relationships": 23,
+  "kb_research_subjects": 40,
+  "kb_sources": 425,
+  "kb_tools": 12,
+  "kb_trials": 208
+ },
+ "kb_sqlite_integrity": "ok",
+ "kb_foreign_key_errors": 0,
+ "resources": {
+  "handoff": {
+   "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\handoffs\\FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-08.md",
+   "bytes": 18168,
+   "sha256": "7422b951803849ab8fa9d3b33d218aa24d08cd38968398705a449edfd54af950"
+  },
+  "kb_snapshot": {
+   "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\handoffs\\catalog-2026-10-08\\all-kb-data-and-metadata.json",
+   "bytes": 2032497,
+   "sha256": "556aef8f07f2e493a79127465b9e02d5b14bb5d36aa5ff20369140a4ea202dda"
+  },
+  "file_manifest": {
+   "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\handoffs\\catalog-2026-10-08\\project-file-metadata-sha256.json",
+   "bytes": 830558,
+   "sha256": "d9c66b3ec2c61af6292eaeb489cde86f68698e17e2a6d988baf1de2c4788f273"
+  },
+  "live_scene_inventory": {
+   "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\handoffs\\catalog-2026-10-08\\live-central-lodge-scene-inventory.json",
+   "bytes": 14467,
+   "sha256": "7c121616e69c870b515f96be8cbff832f0c47235adbd37a9b27eee368873b230"
+  },
+  "sqlite_database": {
+   "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\database\\dicebox_campaign_helper_knowledge.sqlite",
+   "bytes": 3805184,
+   "sha256": "5dd063c9bfe3446319345a9be1153f2230f6aacb26cb871ac87badc33f65f8a1"
+  }
+ },
+ "five_grid_backups": {
+  "clscale-m2-before-grid320-v001.json": true,
+  "clscale-m3-before-grid240-v001.json": true,
+  "clscale-b2-before-grid240-v001.json": true,
+  "clscale-b1-before-grid150-v001.json": true,
+  "clscale-c1-before-grid240-v001.json": true
+ },
+ "next_exact_scene": "C2 Cult Records & Ritual Undercroft UNySMm7YkyYfh41x 120px grid, candidate 160, no C2 writes",
+ "outcome_unknown": "No known Foundry write in this cataloging work unit. Current Bridge old delivery outcome remains unverified; no send/retry."
+}

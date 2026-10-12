@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  "1.0.0",
+    "phase":  "BUILD",
+    "mapId":  "cascade-hollows",
+    "sceneName":  "Cascade Hollows",
+    "status":  "PASS",
+    "evidenceClass":  "static-build-validation",
+    "liveVerified":  false,
+    "target":  {
+                   "foundry":  "14.367",
+                   "system":  "dnd5e",
+                   "systemVersion":  "5.3.3"
+               },
+    "regionCount":  19,
+    "checks":  {
+                   "nodeSyntax":  "PASS",
+                   "manifestParse":  "PASS",
+                   "regionIdsUnique":  "PASS",
+                   "fishingApiReference":  "PASS",
+                   "miningApiReference":  "PASS",
+                   "nativeTeleportShape":  "PASS",
+                   "runtimeGate":  "PASS",
+                   "rendererGuard":  "PASS",
+                   "foreignStatePreservation":  "PASS"
+               },
+    "renderer":  {
+                     "approved":  true,
+                     "localFoundryAssetPresent":  false,
+                     "sha256":  "6b8107a2e40d193db50bcd2fe1d595ccdecbfdeb7c189b99318c832816b09369",
+                     "targetPath":  "worlds/\u003cworld-id\u003e/dicebox/maps/underdark/cascade-hollows.webp",
+                     "boundary":  "Approved renderer exists in the ChatGPT conversation but was not silently claimed to exist in the local Foundry data root."
+                 },
+    "artifacts":  {
+                      "injector":  "inject-cascade-hollows.js",
+                      "manifest":  "manifest.json",
+                      "prepare":  "PREPARE.md",
+                      "readme":  "README_BUILD.md"
+                  },
+    "hashes":  {
+                   "injector":  "3500cf35b42e80fc377ab4a4076f4a4b92ff950676def458fb3f05932a6154a6",
+                   "manifest":  "61ccd0c3d9b884dbaecf423e1c252f4dc2bd07e9d9b93a121256aba48cfb09d0",
+                   "prepare":  "b479ce3d182ba675c7462c559dfdf457c6881ce5005576a582d1cde2d13c8024",
+                   "readme":  "098b95a5df823a7acab11b599a75fd722ebdc1ac94e062590faab05d15b21e46"
+               },
+    "notes":  [
+                  "No runtime write performed during BUILD.",
+                  "Shimmerdeep and Fossil teleports bind only if both endpoints resolve unambiguously.",
+                  "Unsupported non-system gathering interactions remain managed placeholders."
+              ]
+}

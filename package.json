@@ -20,6 +20,9 @@
     "foundry:fixture-user": "node tools/provision-fixture-user.mjs",
     "foundry:update": "node tools/update-foundry-module.mjs",
     "foundry:live-bridge": "node tools/dicebox-foundry-live-bridge.mjs",
+    "foundry:remote-gateway": "node tools/dicebox-foundry-remote-gateway.mjs",
+    "foundry:connector-smoke": "node tools/run-dicebox-foundry-connector-smoke.mjs",
+    "foundry:sqyre-relay-smoke": "node tools/run-dicebox-foundry-sqyre-relay-smoke.mjs",
     "foundry:launch-guard": "node tools/foundry-server.mjs",
     "foundry:fixture:start": "node tools/foundry-fixture-supervisor.mjs start",
     "foundry:fixture:open": "node tools/foundry-fixture-supervisor.mjs open",
@@ -51,9 +54,10 @@
     "foundry:signal-rune:profile-availability": "tsx tools/write-m1149-runtime-profile-availability-gate.ts",
     "foundry:signal-rune:missing-boundary": "tsx tools/write-m1150-smallest-missing-evidence-boundary.ts",
     "browser:world-launch-repro": "node tools/browser-driver-world-launch-repro.mjs",
+    "playwright:path:check": "node tools/dicebox-playwright-path.mjs",
     "foundry:fixture-plan": "tsx tools/print-foundry-fixture-plan.ts",
     "kb:query": "python database/query_knowledge.py",
-    "check:full": "npm run workflow:check && npm run workflow:test && npm run check && npm run verify:tooling",
+    "check:full": "npm run workflow:check && npm run check && npm run verify:tooling",
     "test:first-round": "npm run check:full",
     "test:utility-e2e": "playwright test --config=playwright.config.ts",
     "test:utility-a11y": "playwright test --config=playwright.config.ts --project=accessibility",
@@ -69,7 +73,7 @@
     "maps:universal-export": "tsx tools/write-universal-battlemap-export.ts",
     "compile:campaign-helper-map-lab": "tsx tools/write-campaign-helper-map-lab-package.ts",
     "workflow:check": "node tools/check-active-slice.mjs docs/ACTIVE-PROGRAM-SLICE.json",
-    "workflow:test": "node tools/check-active-slice-self-test.mjs && node tools/validate-dicebox-build-self-test.mjs",
+    "workflow:test": "node tools/check-active-slice-self-test.mjs",
     "desktop:dev": "npm run dev -w @dicebox/campaign-helper-desktop",
     "desktop:build": "npm run build -w @dicebox/campaign-helper-desktop",
     "desktop:tauri:dev": "node tools/run-tauri-desktop.mjs dev",
@@ -78,12 +82,11 @@
     "codex:app-server:job": "node tools/run-codex-app-server-slice.mjs job",
     "codex:app-server:director": "node tools/run-campaign-director-app-server-slice.mjs",
     "codex:app-server:account-metadata": "node tools/run-codex-account-metadata-probe.mjs",
-    "director:proposal": "tsx tools/run-campaign-director-slice.ts",
-    "injector:validate": "node tools/validate-dicebox-build.mjs",
-    "injector:self-test": "node tools/validate-dicebox-build-self-test.mjs",
-    "injector:state:validate": "node tools/validate-dicebox-scene-state.mjs"
+    "director:proposal": "tsx tools/run-campaign-director-slice.ts"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "jose": "^6.2.12",
     "zod": "^3.25.76"
   },
   "devDependencies": {

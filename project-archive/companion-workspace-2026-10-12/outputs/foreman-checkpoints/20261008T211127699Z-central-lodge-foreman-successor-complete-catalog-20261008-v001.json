@@ -1,0 +1,54 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T21:11:27.6995990Z",
+    "workUnitId":  "central-lodge-foreman-successor-complete-catalog-20261008-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "User requested comprehensive data+metadata catalog, database reconciliation, and durable successor Foreman handoff because current conversation reached context limit. Confirmed latest real checkpoint central-lodge-clscale-c1-grid240-verified-v001 (newer than preceding chat-visible C1 PREVIEW); independent live C1 read-only source verification PASS grid240, source SHA 80ce2a899ad5304103c6e14b8b84ad4b3fc6d9e8962534990890489df82d3c7a, original normalization source 664816c5ff2c42521682f9bcdc5ec5ac7b1e52cc5760a75174f84d5c538d3fc1, 21 walls, 10 Regions, 3 Lights preserved. Read-only CL90 v013 PASS_WITH_KNOWN_BLOCKERS zero failures at Foundry v14.367 dnd5e5.3.3 world the-lost-mine-of-phandalin, 21 canonical Scenes/202 Regions/119 RegionBehaviors (1 disabled M2 Notice)/33 Items, ledger revision3 SHA e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9. C2 remains grid120 with 0 tokens, no C2 source backup/apply; next candidate grid160. Five separately backed-up verified grids B1=150 B2=240 C1=240 M2=320 M3=240. Authored full successor handoff handoffs/FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-08.md; roadmap and active checklist handoff acceptance noted. Source-backed KB handoff fact published via database/seed.d/zzzzzzzzzzzzzzzzzzzzz-2026-10-08-foreman-handoff-c1-reconciled.sql, rebuilt and verify_database.py PASS integrity ok, 425 sources/1199 facts/477 decisions/548 open item records/208 trials/75 source seed fragments. Full machine export of 10 canonical KB tables with schema/rows, project file metadata SHA-256 2596 files 253524281 bytes (81 original source files), 21 live Scene records, and catalog-integrity.json with 11/11 checks PASS, zero hash read errors and zero missing external referenced sources, in handoffs/catalog-2026-10-08. Secrets/volatile/self-referential outputs excluded transparently (123 entries). Google Doc Ideas \u0026 Architecture Tab 1 handoff mirror successfully appended, current revision verified through API. No game changes, no new installs, no audio, no player canaries, no bridge sends in this handoff work unit. Entire workspace is not a Git checkout and docs/ACTIVE-PROGRAM-SLICE.json missing: recorded as metadata caveats, not cause to guess stage. This is a STOP/HANDOFF checkpoint, no continuation attempt in this old conversation.",
+    "blocker":  "Context capacity reached, handoff to successor required. Next Foreman must reauthenticate/verify its own live Foundry state, current sovereign ledger and KB/Scene hashes; do not assume C1 again. M1 Ret Token position, N3 160px narrow doors (keep grid120), F2 missing visual calibration, and CL50 arrival consent/cooldown/geometry remain guarded. Prior Bridge old host-accepted/staged continuation outcomes unresolved; no blindly replayed return/wake. No final gameplay testing.",
+    "nextAction":  "In a NEW Foreman conversation, read AGENTS.md, docs/FOREMAN-WORKFLOW-CURRENT.md, handoffs/FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-08.md, handoffs/catalog-2026-10-08/catalog-integrity.json, outputs/LATEST-FOREMAN-CHECKPOINT.json, roadmap/checklist and KB; run scripts/Show-CampaignHelperRecoveryState.ps1 and python database/verify_database.py; source-only Foundry CL90 v013 and live Scene C2 status. C1 ALREADY APPLIED grid240, never replay. Begin separate guarded C2 Cult Undercroft Scene UNySMm7YkyYfh41x gridless 120→candidate160 via full source backup, exact no-write preview, only one autoReposition:false Scene update if safety gates pass, independent normalized Scene and sovereign ledger reread, CL90/KB/checkpoint. Keep CL50 quarantined, no real-player gameplay canary, avoid repeated per-room permission requests.",
+    "changedPaths":  [
+                         "handoffs\\FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-08.md",
+                         "handoffs\\catalog-2026-10-08\\all-kb-data-and-metadata.json",
+                         "handoffs\\catalog-2026-10-08\\project-file-metadata-sha256.json",
+                         "handoffs\\catalog-2026-10-08\\live-central-lodge-scene-inventory.json",
+                         "handoffs\\catalog-2026-10-08\\catalog-integrity.json",
+                         "database\\seed.d\\zzzzzzzzzzzzzzzzzzzzz-2026-10-08-foreman-handoff-c1-reconciled.sql",
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md"
+                     ],
+    "validation":  [
+                       "Independent live C1 source and 21-Wall/10-Region/3-Light geometry verifier PASS grid240, prior C1 APPLY already committed; no duplicate",
+                       "CL90 v013 read-only PASS_WITH_KNOWN_BLOCKERS zero unexpected failures 21/202/119/33 ledger revision3",
+                       "Full SQLite 10 canonical tables, schemas, rows and views exported; all row counts checked",
+                       "Canonical SQLite rebuild + verify_database.py PASS, integrity ok, 425 sources 1199 facts 477 decisions 548 work records 75 seed fragments",
+                       "Metadata manifest SHA-256 2596 files (81 original authored source refs), 253524281 bytes, 123 explicitly skipped security/volatile/self-reference entries",
+                       "Complete live canonical 21 Scene grids inventory, five independently verified original Scene backups present",
+                       "catalog-integrity.json reports PASS all 11 consistency checks, no file errors or missing original references",
+                       "Project Google Doc Tab1 appended with compact up-to-date successor handoff using revision-guarded Docs API",
+                       "No Foundry mutation, token movements, player canaries, CL50 installs, macro playback, or uncertain Bridge dispatch in this cataloging turn",
+                       "Local Foreman root has no .git and docs/ACTIVE-PROGRAM-SLICE.json absent; recorded warnings",
+                       "Successor next is C2 only after fresh exact runtime preflight; latest checkpoint requested STOP/HANDOFF"
+                   ],
+    "runtimeTarget":  "Foundry v14.367 / dnd5e v5.3.3 / the-lost-mine-of-phandalin; Assistant Gamemaster",
+    "receiptRef":  "handoffs\\catalog-2026-10-08\\catalog-integrity.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

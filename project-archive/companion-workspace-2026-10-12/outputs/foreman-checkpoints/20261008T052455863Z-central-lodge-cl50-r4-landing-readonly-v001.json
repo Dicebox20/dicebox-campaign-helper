@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:24:55.8633503Z",
+    "workUnitId":  "central-lodge-cl50-r4-landing-readonly-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "User-directed continuation completed approved R4 T2 Mouth B to N3 West read-only landing geometry and verified candidate 1x1/2x2 token footprints at both ends. N3 notice and passive lighting overlaps preserved. R1-R4 source-only spatial audits complete; NO live teleport handlers installed, no client canary. SQLite KB rebuilt and verified. Prior Foreman receipt still native-delivered but unconsumed because receiver host context unidentified.",
+    "blocker":  "Prior Foreman correlation foreman-15b14be4-5a64-4be6-bb57-419084449d0d receipt msg-3e9f935d-f4ec-473c-b509-2721b17407e2 is verified native-delivered but consumed=false; bridge_foreman_reconcile consume:true previously rejected missing receiver host context. Do not open new boundary or resend. R1 installer tool safety refusal still blocks route APPLY; not bypassed.",
+    "nextAction":  "Repair the verified native Foreman receipt receiver-context issue without duplicate dispatch; after positive consumption, consider one bounded next continuation. Project-side next safe task: consolidated R1-R4 route constraints and approved source/read-only planning, preserve token-size and N3 notice behavior. No live route installation until implementation safety gate resolved, and no gameplay-certified claim before GM/player canary.",
+    "changedPaths":  [
+                         "docs\\CL50-R4-T2-N3-ARRIVAL-PREFLIGHT-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl50-r4-endpoint-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-r4-arrival-footprint-readonly-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-r4-ephemeral-footprint.sql"
+                     ],
+    "validation":  [
+                       "R4 two exact approved stable Scene/Region IDs read-only verified",
+                       "Ephemeral 1x1 and 2x2 placement on both ends: all four geometryPass true, no return-mouth collision, zero occupied tokens and sampled Wall intersections",
+                       "N3 overlap limited to existing railway notice and passive lighting, no other active story Regions",
+                       "SQLite KB rebuild PASS integrity ok 402 sources 1178 facts 470 decisions 542 open items 205 trials",
+                       "Independent DB verifier PASS 21 Scenes 202 Regions 116 behaviors 33 items",
+                       "Independent CL90 Foundry smoke PASS_WITH_KNOWN_BLOCKERS, ledger rev1 kernel unchanged",
+                       "No live Scene/Region/RegionBehavior/Macro/Token or lighting mutations and no Foreman duplicate dispatch"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "docs\\CL50-R4-T2-N3-ARRIVAL-PREFLIGHT-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

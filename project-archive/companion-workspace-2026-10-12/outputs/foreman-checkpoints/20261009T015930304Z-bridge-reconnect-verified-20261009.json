@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkpointType": "campaign-helper-foreman",
+  "timestampUtc": "2026-10-09T01:59:30.3043005Z",
+  "workUnitId": "bridge-reconnect-verified-20261009",
+  "status": "PASS",
+  "continuation": "STOP",
+  "evidenceLayer": "local",
+  "summary": "Restored the existing managed Bridge runtime and created a fresh exact live session to the user-designated Foreman chat. A corrected connectivity check completed a correlated Bridge round trip; no campaign work was started.",
+  "blocker": "",
+  "nextAction": "Keep the exact live session active until its bounded expiry and await a Foreman assignment. Before any campaign task, recover current workflow, checkpoint, roadmap/checklist, and KB evidence; this connection check does not authorize a campaign mutation.",
+  "changedPaths": [],
+  "validation": [
+    "Reconnected the existing codex-wide-bridge tunnel alias to its existing tunnel using the local credential reference; native runtime reported running, healthy, and ready. Bridge status returned build 0.4.8, protocol 2.0.0, and journal integrity ok. Detailed admin-UI polling snapshot remained unknown.",
+    "Created active live session ses-38ac5622-6fb6-4306-a932-9a88b9a87cab for exact Codex task 01a11e4b-5d11-7302-aa23-2bc681da307f and user-selected ChatGPT conversation 6ac80c3c-2cac-83e8-8d8a-7ed65a84e135; exact routing project ID 01a02313-4304-77f2-9a7c-1cee833d9832; expires 2026-11-08T01:51:33Z. Session status confirmed active and protocol/schema/build compatible.",
+    "First connection check reached the exact ChatGPT chat, whose response identified a stale required-app name; no correlated return was produced for that check.",
+    "Corrected check msg-c896edb0-6e38-49ed-b1a9-41efca9f5229 was host-accepted. Bridge readback returned DICEBOX_BRIDGE_READY as msg-cb243f31-8e07-43d1-997d-7e5a0d68bf5d with matching session, correlation, source/target endpoints, originMessageId, and replyToMessageId. Audit recorded response_captured; the direct wait timed out before capture, and no retry followed.",
+    "No DiceBox product files, database, roadmap, Foundry state, or campaign content were changed. Foreman Mode remains off."
+  ],
+  "runtimeTarget": "Existing codex-wide-bridge runtime tunnel_6ab205a09f308191a7855f1f3ae89b58; live session ses-38ac5622-6fb6-4306-a932-9a88b9a87cab; target ChatGPT conversation 6ac80c3c-2cac-83e8-8d8a-7ed65a84e135",
+  "receiptRef": "Bridge outbound msg-c896edb0-6e38-49ed-b1a9-41efca9f5229; correlated return msg-cb243f31-8e07-43d1-997d-7e5a0d68bf5d; audit sequence 1891",
+  "repository": {
+    "root": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+    "head": null,
+    "dirtyCount": 0,
+    "dirtyFingerprintSha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "dirtySample": [],
+    "dirtySampleTruncated": false
+  },
+  "controlPlane": {
+    "activeCard": null,
+    "activeCardSha256": null,
+    "roadmapSha256": null,
+    "seedSha256": "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+  },
+  "authorityBoundary": "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

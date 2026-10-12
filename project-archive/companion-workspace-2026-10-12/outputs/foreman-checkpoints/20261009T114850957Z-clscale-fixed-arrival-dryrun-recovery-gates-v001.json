@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T11:48:50.9579774Z",
+    "workUnitId":  "clscale-fixed-arrival-dryrun-recovery-gates-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Resumed user-authorized bounded Foreman work through Remote Desktop Commander. Scheduled task DiceBox-Offline-Preflight-15m is Ready, 15-minute recurrence, limited interactive user, last result 0; 17 consecutive 13-check OFFLINE_PREFLIGHT_PASS entries observed at start. Fixture dbx-test-world TCP30005 kept STOPPED, with no production or firewall mutation. Verified Foundry v14 RegionDocument.teleportToken API accepts center, relative, random placement, offset and updateData; cross-Scene delete/recreates Token. Wrote pure tools/clscale-transfer-safety-policy.mjs with four exact CL50/F1 routes, strict exact identities, GM, Token ownership, CREATE/DELETE rights, confirmation, target/independent gate and unused single-use permission preflight; returns neverDispatch true and committedTeleportAuthorized false even on synthetic green inputs. Implemented explicit read-only reconciliation for missing, duplicate, uncorrelated, uncertain, prepared or completed transfers; never automatically retry or repair. 24 node --test synthetic tests PASSED. Offline introspection of four destination Regions yields center-point proposals, all gridless Scenes with pixel sizes 240/320/120/120. Read-only nearest-wall and token spatial scan showed T3-\u003eF1 naive Region center (2531,2617) is only 23 pixels from a wall. Conservative offline alternatives reported; T3-\u003eF1 (2520,2520) has static 120-pixel nearest-wall distance, but NEVER CERTIFIED. Produced artifacts clscale-arrival-candidates-v001.json, clscale-arrival-clearance-readonly-v001.json, clscale-arrival-clearance-candidates-v001.json. Saved detailed acceptance and next gates in docs/CL50-TRANSFER-SAFETY-DRYRUN-2026-10-09.md. No Foundry scripts activated, no Scene/Token database edits, no bridge retries, no committed teleport.",
+    "blocker":  "Live safety gates still BLOCKED. Authenticated private fixture access unproven due blank Gamemaster password and previously wildcard TCP30005 listener. Offline proximity cannot certify wall collision, token footprints, occupied arrival, level/elevation or ownership. Existing four scripts still random-place and lack persistent interrupted-transfer recovery. F1-\u003eF2 original script has puzzle gate but no confirmation. User has not given distinct single-use consumed-and-recorded teleport authorization. Bridge connection not confirmed functional.",
+    "nextAction":  "On next bounded turn use Desktop Commander to inspect current scheduler result and repo checkpoint first. Keep TCP30005 off until private access gate. Develop a separate fixture-only design for persistent intent/receipt correlation using Foundry RegionDocument.teleportToken updateData flags, verify API behavior and token permissions read-only before any live operation. Test candidate geometry and token-size variants offline. Never promote prototype into active Region scripts, never write production F1/T3/F2/CL50, and do not commit teleports absent independent gate plus single-use user authorization.",
+    "changedPaths":  [
+                         "tools/clscale-transfer-safety-policy.mjs",
+                         "docs/CL50-TRANSFER-SAFETY-DRYRUN-2026-10-09.md",
+                         "work/clscale-central-lodge-migration-v001/clscale-transfer-safety-policy.test.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-arrival-geometry-audit-v001.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-arrival-candidates-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-arrival-clearance-readonly-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-arrival-clearance-candidates-v001.json"
+                     ],
+    "validation":  [
+                       "Windows Scheduler status Ready, LastTaskResult=0; prior 17 consecutive full offline passes",
+                       "24 of 24 pure Node synthetic safety policy/recovery tests PASS; neverDispatch true",
+                       "Four existing Region destinations matched, all proposed coordinates marked not certified",
+                       "Static T3-\u003eF1 center wall distance23px vs alternative120px; geometry alone not safety authorization",
+                       "No Foundry process run, no Region trigger or token transfer, production and Firewall unchanged"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world v14.367 dnd5e5.3.3 TCP30005 offline; pure CL50 transfer-safety dry-run only",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-arrival-clearance-candidates-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

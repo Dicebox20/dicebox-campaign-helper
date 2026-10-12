@@ -1,0 +1,4 @@
+const ts=require("C:/Users/rujie/Documents/Codex/2026-08-20/dicebox-campaign-helper/node_modules/typescript");
+const path="C:/Users/rujie/Documents/Codex/DiceBox Campaign Helper/work/image-clean-restart-validation/image-prompt-clean-restart.ts";
+const options={strict:true,skipLibCheck:true,target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ESNext,moduleResolution:ts.ModuleResolutionKind.Bundler,noEmit:true,types:[]};
+const program=ts.createProgram([path],options);const diagnostics=ts.getPreEmitDiagnostics(program);console.log(JSON.stringify({operation:"image-clean-restart.typescript-strict",status:diagnostics.length?"FAIL":"PASS",issues:diagnostics.map(d=>ts.flattenDiagnosticMessageText(d.messageText," ")).slice(0,12)}));if(diagnostics.length)process.exitCode=1;

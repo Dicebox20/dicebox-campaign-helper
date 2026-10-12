@@ -1,0 +1,1513 @@
+{
+    "kind":  "DICEBOX_WINDOWS_FIREWALL_PRECHANGE_ONLY",
+    "captured":  "2026-10-09T04:43:45.1596396Z",
+    "admin":  false,
+    "hostname":  null,
+    "profiles":  [
+                     {
+                         "Name":  "Domain",
+                         "Enabled":  0,
+                         "DefaultInboundAction":  0,
+                         "DefaultOutboundAction":  0,
+                         "AllowInboundRules":  2,
+                         "AllowLocalFirewallRules":  2,
+                         "AllowLocalIPsecRules":  2,
+                         "DisabledInterfaceAliases":  [
+                                                          "NotConfigured"
+                                                      ]
+                     },
+                     {
+                         "Name":  "Private",
+                         "Enabled":  0,
+                         "DefaultInboundAction":  0,
+                         "DefaultOutboundAction":  0,
+                         "AllowInboundRules":  2,
+                         "AllowLocalFirewallRules":  2,
+                         "AllowLocalIPsecRules":  2,
+                         "DisabledInterfaceAliases":  [
+                                                          "NotConfigured"
+                                                      ]
+                     },
+                     {
+                         "Name":  "Public",
+                         "Enabled":  0,
+                         "DefaultInboundAction":  0,
+                         "DefaultOutboundAction":  0,
+                         "AllowInboundRules":  2,
+                         "AllowLocalFirewallRules":  2,
+                         "AllowLocalIPsecRules":  2,
+                         "DisabledInterfaceAliases":  [
+                                                          "NotConfigured"
+                                                      ]
+                     }
+                 ],
+    "tcpListeners":  [
+                         {
+                             "address":  "::",
+                             "port":  49726,
+                             "pid":  876,
+                             "process":  "services",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  49717,
+                             "pid":  5516,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  49705,
+                             "pid":  5224,
+                             "process":  "spoolsv",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  49668,
+                             "pid":  3408,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  49667,
+                             "pid":  2092,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  49666,
+                             "pid":  1516,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  49665,
+                             "pid":  804,
+                             "process":  "wininit",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  49664,
+                             "pid":  884,
+                             "process":  "lsass",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::1",
+                             "port":  42050,
+                             "pid":  15784,
+                             "process":  "OneDrive.Sync.Service",
+                             "exe":  "C:\\Program Files\\Microsoft OneDrive\\26.173.0906.0008\\OneDrive.Sync.Service.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  30000,
+                             "pid":  22284,
+                             "process":  "Foundry Virtual Tabletop",
+                             "exe":  "C:\\Program Files\\Foundry Virtual Tabletop\\Foundry Virtual Tabletop.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  8733,
+                             "pid":  4,
+                             "process":  "System",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  7680,
+                             "pid":  16300,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  5357,
+                             "pid":  4,
+                             "process":  "System",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  3389,
+                             "pid":  1232,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  445,
+                             "pid":  4,
+                             "process":  "System",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  135,
+                             "pid":  1036,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  54950,
+                             "pid":  5832,
+                             "process":  "WorkflowAppControl",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  51732,
+                             "pid":  35128,
+                             "process":  "tunnel-client",
+                             "exe":  "C:\\Users\\rujie\\AppData\\Local\\Programs\\codex-wide-bridge-tunnel-client\\v0.0.15\\tunnel-client.exe"
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  49833,
+                             "pid":  15792,
+                             "process":  "steam",
+                             "exe":  "C:\\Program Files (x86)\\Steam\\steam.exe"
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  49830,
+                             "pid":  15792,
+                             "process":  "steam",
+                             "exe":  "C:\\Program Files (x86)\\Steam\\steam.exe"
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49726,
+                             "pid":  876,
+                             "process":  "services",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49717,
+                             "pid":  5516,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49705,
+                             "pid":  5224,
+                             "process":  "spoolsv",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49668,
+                             "pid":  3408,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49667,
+                             "pid":  2092,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49666,
+                             "pid":  1516,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49665,
+                             "pid":  804,
+                             "process":  "wininit",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  49664,
+                             "pid":  884,
+                             "process":  "lsass",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  39471,
+                             "pid":  33856,
+                             "process":  "node",
+                             "exe":  "C:\\Program Files\\nodejs\\node.exe"
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  27036,
+                             "pid":  15792,
+                             "process":  "steam",
+                             "exe":  "C:\\Program Files (x86)\\Steam\\steam.exe"
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  9223,
+                             "pid":  30548,
+                             "process":  "chrome",
+                             "exe":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  6463,
+                             "pid":  13060,
+                             "process":  "Discord",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  5040,
+                             "pid":  9808,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  3389,
+                             "pid":  1232,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  139,
+                             "pid":  4,
+                             "process":  "System",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  135,
+                             "pid":  1036,
+                             "process":  "svchost",
+                             "exe":  null
+                         }
+                     ],
+    "udpListeners":  [
+                         {
+                             "address":  "::",
+                             "port":  65329,
+                             "pid":  14652,
+                             "process":  "ChatGPT",
+                             "exe":  "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:d987:d36e:91ce:cc4a",
+                             "port":  65295,
+                             "pid":  14652,
+                             "process":  "ChatGPT",
+                             "exe":  "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00::8b47",
+                             "port":  65294,
+                             "pid":  14652,
+                             "process":  "ChatGPT",
+                             "exe":  "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:1109:a32:16cb:b6b4",
+                             "port":  65293,
+                             "pid":  14652,
+                             "process":  "ChatGPT",
+                             "exe":  "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  63293,
+                             "pid":  6124,
+                             "process":  "chrome",
+                             "exe":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  62984,
+                             "pid":  9832,
+                             "process":  "NVIDIA Overlay",
+                             "exe":  "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  62538,
+                             "pid":  14652,
+                             "process":  "ChatGPT",
+                             "exe":  "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  60762,
+                             "pid":  6124,
+                             "process":  "chrome",
+                             "exe":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  57678,
+                             "pid":  2328,
+                             "process":  "dasHost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  57561,
+                             "pid":  6124,
+                             "process":  "chrome",
+                             "exe":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                         },
+                         {
+                             "address":  "::1",
+                             "port":  56668,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "fe80::ac36:2c3d:7bd2:8062%13",
+                             "port":  56667,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  56666,
+                             "pid":  3336,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  53835,
+                             "pid":  6124,
+                             "process":  "chrome",
+                             "exe":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  52978,
+                             "pid":  6124,
+                             "process":  "chrome",
+                             "exe":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  27036,
+                             "pid":  15792,
+                             "process":  "steam",
+                             "exe":  "C:\\Program Files (x86)\\Steam\\steam.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  5355,
+                             "pid":  2472,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  5353,
+                             "pid":  6124,
+                             "process":  "chrome",
+                             "exe":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+                         },
+                         {
+                             "address":  "::",
+                             "port":  4500,
+                             "pid":  5508,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  3702,
+                             "pid":  2328,
+                             "process":  "dasHost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  3389,
+                             "pid":  1232,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "fe80::ac36:2c3d:7bd2:8062%13",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:d987:d36e:91ce:cc4a",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:b522:4a8b:ff71:faf9",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:9c33:befa:7212:41ff",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:5507:bc1e:eb4e:fa11",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:4452:bb44:9d83:5c41",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:35cf:7c34:4f75:3b5",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:1109:a32:16cb:b6b4",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00:9ea:d766:1f92:a42c",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "2601:1c0:5085:6a00::8b47",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "fe80::ac36:2c3d:7bd2:8062%13",
+                             "port":  1900,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::1",
+                             "port":  1900,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "::",
+                             "port":  500,
+                             "pid":  5508,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  65292,
+                             "pid":  14652,
+                             "process":  "ChatGPT",
+                             "exe":  "C:\\Program Files\\WindowsApps\\OpenAI.Codex_26.1002.7124.0_x64__2p2nqsd0c76g0\\app\\ChatGPT.exe"
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  57677,
+                             "pid":  2328,
+                             "process":  "dasHost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  56670,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  56669,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  56665,
+                             "pid":  3336,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  54955,
+                             "pid":  5832,
+                             "process":  "WorkflowAppControl",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  54925,
+                             "pid":  1680,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  53642,
+                             "pid":  8252,
+                             "process":  "nvcontainer",
+                             "exe":  "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe"
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  51434,
+                             "pid":  38864,
+                             "process":  "Discord",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  50132,
+                             "pid":  5764,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  27036,
+                             "pid":  15792,
+                             "process":  "steam",
+                             "exe":  "C:\\Program Files (x86)\\Steam\\steam.exe"
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  10011,
+                             "pid":  8208,
+                             "process":  "nvcontainer",
+                             "exe":  "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe"
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  10010,
+                             "pid":  10748,
+                             "process":  "NVIDIA Overlay",
+                             "exe":  "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\CEF\\NVIDIA Overlay.exe"
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  5355,
+                             "pid":  2472,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  5353,
+                             "pid":  17220,
+                             "process":  "steamwebhelper",
+                             "exe":  "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win64\\steamwebhelper.exe"
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  5050,
+                             "pid":  9808,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  4500,
+                             "pid":  5508,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  3702,
+                             "pid":  2328,
+                             "process":  "dasHost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  3389,
+                             "pid":  1232,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  2177,
+                             "pid":  21404,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "127.0.0.1",
+                             "port":  1900,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  1900,
+                             "pid":  3700,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "0.0.0.0",
+                             "port":  500,
+                             "pid":  5508,
+                             "process":  "svchost",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  138,
+                             "pid":  4,
+                             "process":  "System",
+                             "exe":  null
+                         },
+                         {
+                             "address":  "10.0.0.26",
+                             "port":  137,
+                             "pid":  4,
+                             "process":  "System",
+                             "exe":  null
+                         }
+                     ],
+    "enabledRules":  [
+
+                     ],
+    "policy":  {
+                   "Name":  "Global IPsec SettingData",
+                   "Exemptions":  9,
+                   "EnableStatefulFtp":  1,
+                   "EnableStatefulPptp":  1,
+                   "ActiveProfile":  2,
+                   "RequireFullAuthSupport":  0,
+                   "CertValidationLevel":  0,
+                   "AllowIPsecThroughNAT":  0,
+                   "MaxSAIdleTimeSeconds":  300,
+                   "KeyEncoding":  1,
+                   "EnablePacketQueuing":  0,
+                   "Caption":  null,
+                   "Description":  null,
+                   "ElementName":  "Global IPsec SettingData",
+                   "InstanceID":  "MSFT|GlobalIPSecSettingData",
+                   "Profile":  2,
+                   "RemoteMachineTransportAuthorizationList":  "",
+                   "RemoteMachineTunnelAuthorizationList":  "",
+                   "RemoteUserTransportAuthorizationList":  "",
+                   "RemoteUserTunnelAuthorizationList":  "",
+                   "PSComputerName":  null,
+                   "CimClass":  {
+                                    "CimSuperClassName":  "MSFT_NetSettingData",
+                                    "CimSuperClass":  {
+                                                          "CimSuperClassName":  "CIM_SettingData",
+                                                          "CimSuperClass":  {
+                                                                                "CimSuperClassName":  "CIM_ManagedElement",
+                                                                                "CimSuperClass":  {
+                                                                                                      "CimSuperClassName":  null,
+                                                                                                      "CimSuperClass":  null,
+                                                                                                      "CimClassProperties":  [
+                                                                                                                                 {
+                                                                                                                                     "Name":  "Caption",
+                                                                                                                                     "Value":  null,
+                                                                                                                                     "CimType":  14,
+                                                                                                                                     "Flags":  "Property, NullValue",
+                                                                                                                                     "Qualifiers":  [
+                                                                                                                                                        {
+                                                                                                                                                            "Name":  "MaxLen",
+                                                                                                                                                            "Value":  64,
+                                                                                                                                                            "CimType":  7,
+                                                                                                                                                            "Flags":  "EnableOverride, ToSubclass"
+                                                                                                                                                        }
+                                                                                                                                                    ],
+                                                                                                                                     "ReferenceClassName":  null
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "Name":  "Description",
+                                                                                                                                     "Value":  null,
+                                                                                                                                     "CimType":  14,
+                                                                                                                                     "Flags":  "Property, NullValue",
+                                                                                                                                     "Qualifiers":  [
+
+                                                                                                                                                    ],
+                                                                                                                                     "ReferenceClassName":  null
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "Name":  "ElementName",
+                                                                                                                                     "Value":  null,
+                                                                                                                                     "CimType":  14,
+                                                                                                                                     "Flags":  "Property, NullValue",
+                                                                                                                                     "Qualifiers":  [
+
+                                                                                                                                                    ],
+                                                                                                                                     "ReferenceClassName":  null
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "Name":  "InstanceID",
+                                                                                                                                     "Value":  null,
+                                                                                                                                     "CimType":  14,
+                                                                                                                                     "Flags":  "Property, NullValue",
+                                                                                                                                     "Qualifiers":  [
+
+                                                                                                                                                    ],
+                                                                                                                                     "ReferenceClassName":  null
+                                                                                                                                 }
+                                                                                                                             ],
+                                                                                                      "CimClassQualifiers":  [
+                                                                                                                                 {
+                                                                                                                                     "Name":  "Abstract",
+                                                                                                                                     "Value":  true,
+                                                                                                                                     "CimType":  1,
+                                                                                                                                     "Flags":  "EnableOverride, Restricted"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "Name":  "locale",
+                                                                                                                                     "Value":  1033,
+                                                                                                                                     "CimType":  7,
+                                                                                                                                     "Flags":  "EnableOverride, Restricted"
+                                                                                                                                 },
+                                                                                                                                 {
+                                                                                                                                     "Name":  "UMLPackagePath",
+                                                                                                                                     "Value":  "CIM::Core::CoreElements",
+                                                                                                                                     "CimType":  14,
+                                                                                                                                     "Flags":  "EnableOverride, ToSubclass"
+                                                                                                                                 }
+                                                                                                                             ],
+                                                                                                      "CimClassMethods":  [
+
+                                                                                                                          ],
+                                                                                                      "CimSystemProperties":  {
+                                                                                                                                  "Namespace":  "ROOT/standardcimv2",
+                                                                                                                                  "ServerName":  "DESKTOP-OI30P4Q",
+                                                                                                                                  "ClassName":  "CIM_ManagedElement",
+                                                                                                                                  "Path":  null
+                                                                                                                              }
+                                                                                                  },
+                                                                                "CimClassProperties":  [
+                                                                                                           {
+                                                                                                               "Name":  "Caption",
+                                                                                                               "Value":  null,
+                                                                                                               "CimType":  14,
+                                                                                                               "Flags":  "Property, NullValue",
+                                                                                                               "Qualifiers":  [
+                                                                                                                                  {
+                                                                                                                                      "Name":  "MaxLen",
+                                                                                                                                      "Value":  64,
+                                                                                                                                      "CimType":  7,
+                                                                                                                                      "Flags":  "EnableOverride, ToSubclass"
+                                                                                                                                  }
+                                                                                                                              ],
+                                                                                                               "ReferenceClassName":  null
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "Name":  "Description",
+                                                                                                               "Value":  null,
+                                                                                                               "CimType":  14,
+                                                                                                               "Flags":  "Property, NullValue",
+                                                                                                               "Qualifiers":  [
+
+                                                                                                                              ],
+                                                                                                               "ReferenceClassName":  null
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "Name":  "ElementName",
+                                                                                                               "Value":  null,
+                                                                                                               "CimType":  14,
+                                                                                                               "Flags":  "Property, Required, NullValue",
+                                                                                                               "Qualifiers":  [
+                                                                                                                                  {
+                                                                                                                                      "Name":  "Override",
+                                                                                                                                      "Value":  "ElementName",
+                                                                                                                                      "CimType":  14,
+                                                                                                                                      "Flags":  "EnableOverride, Restricted"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                      "Name":  "Required",
+                                                                                                                                      "Value":  true,
+                                                                                                                                      "CimType":  1,
+                                                                                                                                      "Flags":  "DisableOverride, ToSubclass"
+                                                                                                                                  }
+                                                                                                                              ],
+                                                                                                               "ReferenceClassName":  null
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "Name":  "InstanceID",
+                                                                                                               "Value":  null,
+                                                                                                               "CimType":  14,
+                                                                                                               "Flags":  "Property, Key, NullValue",
+                                                                                                               "Qualifiers":  [
+                                                                                                                                  {
+                                                                                                                                      "Name":  "key",
+                                                                                                                                      "Value":  true,
+                                                                                                                                      "CimType":  1,
+                                                                                                                                      "Flags":  "DisableOverride, ToSubclass"
+                                                                                                                                  },
+                                                                                                                                  {
+                                                                                                                                      "Name":  "Override",
+                                                                                                                                      "Value":  "InstanceID",
+                                                                                                                                      "CimType":  14,
+                                                                                                                                      "Flags":  "EnableOverride, Restricted"
+                                                                                                                                  }
+                                                                                                                              ],
+                                                                                                               "ReferenceClassName":  null
+                                                                                                           }
+                                                                                                       ],
+                                                                                "CimClassQualifiers":  [
+                                                                                                           {
+                                                                                                               "Name":  "UMLPackagePath",
+                                                                                                               "Value":  "CIM::Core::Settings",
+                                                                                                               "CimType":  14,
+                                                                                                               "Flags":  "EnableOverride, ToSubclass"
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "Name":  "Abstract",
+                                                                                                               "Value":  true,
+                                                                                                               "CimType":  1,
+                                                                                                               "Flags":  "EnableOverride, Restricted"
+                                                                                                           },
+                                                                                                           {
+                                                                                                               "Name":  "locale",
+                                                                                                               "Value":  1033,
+                                                                                                               "CimType":  7,
+                                                                                                               "Flags":  "EnableOverride, Restricted"
+                                                                                                           }
+                                                                                                       ],
+                                                                                "CimClassMethods":  [
+
+                                                                                                    ],
+                                                                                "CimSystemProperties":  {
+                                                                                                            "Namespace":  "ROOT/standardcimv2",
+                                                                                                            "ServerName":  "DESKTOP-OI30P4Q",
+                                                                                                            "ClassName":  "CIM_SettingData",
+                                                                                                            "Path":  null
+                                                                                                        }
+                                                                            },
+                                                          "CimClassProperties":  [
+                                                                                     {
+                                                                                         "Name":  "Caption",
+                                                                                         "Value":  null,
+                                                                                         "CimType":  14,
+                                                                                         "Flags":  "Property, NullValue",
+                                                                                         "Qualifiers":  [
+                                                                                                            {
+                                                                                                                "Name":  "MaxLen",
+                                                                                                                "Value":  64,
+                                                                                                                "CimType":  7,
+                                                                                                                "Flags":  "EnableOverride, ToSubclass"
+                                                                                                            }
+                                                                                                        ],
+                                                                                         "ReferenceClassName":  null
+                                                                                     },
+                                                                                     {
+                                                                                         "Name":  "Description",
+                                                                                         "Value":  null,
+                                                                                         "CimType":  14,
+                                                                                         "Flags":  "Property, NullValue",
+                                                                                         "Qualifiers":  [
+
+                                                                                                        ],
+                                                                                         "ReferenceClassName":  null
+                                                                                     },
+                                                                                     {
+                                                                                         "Name":  "ElementName",
+                                                                                         "Value":  null,
+                                                                                         "CimType":  14,
+                                                                                         "Flags":  "Property, Required, NullValue",
+                                                                                         "Qualifiers":  [
+                                                                                                            {
+                                                                                                                "Name":  "Required",
+                                                                                                                "Value":  true,
+                                                                                                                "CimType":  1,
+                                                                                                                "Flags":  "DisableOverride, ToSubclass"
+                                                                                                            }
+                                                                                                        ],
+                                                                                         "ReferenceClassName":  null
+                                                                                     },
+                                                                                     {
+                                                                                         "Name":  "InstanceID",
+                                                                                         "Value":  null,
+                                                                                         "CimType":  14,
+                                                                                         "Flags":  "Property, Key, NullValue",
+                                                                                         "Qualifiers":  [
+                                                                                                            {
+                                                                                                                "Name":  "key",
+                                                                                                                "Value":  true,
+                                                                                                                "CimType":  1,
+                                                                                                                "Flags":  "DisableOverride, ToSubclass"
+                                                                                                            }
+                                                                                                        ],
+                                                                                         "ReferenceClassName":  null
+                                                                                     }
+                                                                                 ],
+                                                          "CimClassQualifiers":  [
+                                                                                     {
+                                                                                         "Name":  "UMLPackagePath",
+                                                                                         "Value":  "CIM::Core::Settings",
+                                                                                         "CimType":  14,
+                                                                                         "Flags":  "EnableOverride, ToSubclass"
+                                                                                     },
+                                                                                     {
+                                                                                         "Name":  "locale",
+                                                                                         "Value":  1033,
+                                                                                         "CimType":  7,
+                                                                                         "Flags":  "EnableOverride, Restricted"
+                                                                                     }
+                                                                                 ],
+                                                          "CimClassMethods":  [
+
+                                                                              ],
+                                                          "CimSystemProperties":  {
+                                                                                      "Namespace":  "ROOT/standardcimv2",
+                                                                                      "ServerName":  "DESKTOP-OI30P4Q",
+                                                                                      "ClassName":  "MSFT_NetSettingData",
+                                                                                      "Path":  null
+                                                                                  }
+                                                      },
+                                    "CimClassProperties":  [
+                                                               {
+                                                                   "Name":  "Caption",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, ReadOnly, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "MaxLen",
+                                                                                          "Value":  64,
+                                                                                          "CimType":  7,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      },
+                                                                                      {
+                                                                                          "Name":  "Override",
+                                                                                          "Value":  "Caption",
+                                                                                          "CimType":  14,
+                                                                                          "Flags":  "EnableOverride, Restricted"
+                                                                                      },
+                                                                                      {
+                                                                                          "Name":  "read",
+                                                                                          "Value":  true,
+                                                                                          "CimType":  1,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "Description",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, ReadOnly, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "Override",
+                                                                                          "Value":  "Description",
+                                                                                          "CimType":  14,
+                                                                                          "Flags":  "EnableOverride, Restricted"
+                                                                                      },
+                                                                                      {
+                                                                                          "Name":  "read",
+                                                                                          "Value":  true,
+                                                                                          "CimType":  1,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "ElementName",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, ReadOnly, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "Required",
+                                                                                          "Value":  true,
+                                                                                          "CimType":  1,
+                                                                                          "Flags":  "DisableOverride, ToSubclass"
+                                                                                      },
+                                                                                      {
+                                                                                          "Name":  "Override",
+                                                                                          "Value":  "ElementName",
+                                                                                          "CimType":  14,
+                                                                                          "Flags":  "EnableOverride, Restricted"
+                                                                                      },
+                                                                                      {
+                                                                                          "Name":  "read",
+                                                                                          "Value":  true,
+                                                                                          "CimType":  1,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "InstanceID",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, Key, ReadOnly, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "key",
+                                                                                          "Value":  true,
+                                                                                          "CimType":  1,
+                                                                                          "Flags":  "DisableOverride, ToSubclass"
+                                                                                      },
+                                                                                      {
+                                                                                          "Name":  "Override",
+                                                                                          "Value":  "InstanceID",
+                                                                                          "CimType":  14,
+                                                                                          "Flags":  "EnableOverride, Restricted"
+                                                                                      },
+                                                                                      {
+                                                                                          "Name":  "read",
+                                                                                          "Value":  true,
+                                                                                          "CimType":  1,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "AllowIPsecThroughNAT",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "2",
+                                                                                                        "65535"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "CertValidationLevel",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "2",
+                                                                                                        "65535"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "EnablePacketQueuing",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "2"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "EnableStatefulFtp",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "2"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "EnableStatefulPptp",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "2"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "Exemptions",
+                                                                   "Value":  null,
+                                                                   "CimType":  6,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "2",
+                                                                                                        "4",
+                                                                                                        "8",
+                                                                                                        "4294967295"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "KeyEncoding",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "65535"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "MaxSAIdleTimeSeconds",
+                                                                   "Value":  null,
+                                                                   "CimType":  6,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "Profile",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "0x4",
+                                                                                                        "0x2",
+                                                                                                        "0x1",
+                                                                                                        "0xffff"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "RemoteMachineTransportAuthorizationList",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "RemoteMachineTunnelAuthorizationList",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "RemoteUserTransportAuthorizationList",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "RemoteUserTunnelAuthorizationList",
+                                                                   "Value":  null,
+                                                                   "CimType":  14,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               },
+                                                               {
+                                                                   "Name":  "RequireFullAuthSupport",
+                                                                   "Value":  null,
+                                                                   "CimType":  4,
+                                                                   "Flags":  "Property, NullValue",
+                                                                   "Qualifiers":  [
+                                                                                      {
+                                                                                          "Name":  "ValueMap",
+                                                                                          "Value":  [
+                                                                                                        "0",
+                                                                                                        "1",
+                                                                                                        "2"
+                                                                                                    ],
+                                                                                          "CimType":  30,
+                                                                                          "Flags":  "EnableOverride, ToSubclass"
+                                                                                      }
+                                                                                  ],
+                                                                   "ReferenceClassName":  null
+                                                               }
+                                                           ],
+                                    "CimClassQualifiers":  [
+                                                               {
+                                                                   "Name":  "UMLPackagePath",
+                                                                   "Value":  "CIM::Core::Settings",
+                                                                   "CimType":  14,
+                                                                   "Flags":  "EnableOverride, ToSubclass"
+                                                               },
+                                                               {
+                                                                   "Name":  "ClassVersion",
+                                                                   "Value":  "1.0.0",
+                                                                   "CimType":  14,
+                                                                   "Flags":  "EnableOverride, ToSubclass"
+                                                               },
+                                                               {
+                                                                   "Name":  "dynamic",
+                                                                   "Value":  true,
+                                                                   "CimType":  1,
+                                                                   "Flags":  "EnableOverride, ToSubclass"
+                                                               },
+                                                               {
+                                                                   "Name":  "locale",
+                                                                   "Value":  1033,
+                                                                   "CimType":  7,
+                                                                   "Flags":  "EnableOverride, Restricted"
+                                                               },
+                                                               {
+                                                                   "Name":  "provider",
+                                                                   "Value":  "wfascim",
+                                                                   "CimType":  14,
+                                                                   "Flags":  "EnableOverride, ToSubclass"
+                                                               }
+                                                           ],
+                                    "CimClassMethods":  [
+
+                                                        ],
+                                    "CimSystemProperties":  {
+                                                                "Namespace":  "root/standardcimv2",
+                                                                "ServerName":  "DESKTOP-OI30P4Q",
+                                                                "ClassName":  "MSFT_NetSecuritySettingData",
+                                                                "Path":  null
+                                                            }
+                                },
+                   "CimInstanceProperties":  [
+                                                 {
+                                                     "Name":  "Caption",
+                                                     "Value":  null,
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, ReadOnly, NotModified, NullValue",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "Description",
+                                                     "Value":  null,
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, ReadOnly, NotModified, NullValue",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "ElementName",
+                                                     "Value":  "Global IPsec SettingData",
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, ReadOnly, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "InstanceID",
+                                                     "Value":  "MSFT|GlobalIPSecSettingData",
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, Key, ReadOnly, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "AllowIPsecThroughNAT",
+                                                     "Value":  0,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "CertValidationLevel",
+                                                     "Value":  0,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "EnablePacketQueuing",
+                                                     "Value":  0,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "EnableStatefulFtp",
+                                                     "Value":  1,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "EnableStatefulPptp",
+                                                     "Value":  1,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "Exemptions",
+                                                     "Value":  9,
+                                                     "CimType":  6,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "KeyEncoding",
+                                                     "Value":  1,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "MaxSAIdleTimeSeconds",
+                                                     "Value":  300,
+                                                     "CimType":  6,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "Profile",
+                                                     "Value":  2,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "RemoteMachineTransportAuthorizationList",
+                                                     "Value":  "",
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "RemoteMachineTunnelAuthorizationList",
+                                                     "Value":  "",
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "RemoteUserTransportAuthorizationList",
+                                                     "Value":  "",
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "RemoteUserTunnelAuthorizationList",
+                                                     "Value":  "",
+                                                     "CimType":  14,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 },
+                                                 {
+                                                     "Name":  "RequireFullAuthSupport",
+                                                     "Value":  0,
+                                                     "CimType":  4,
+                                                     "Flags":  "Property, NotModified",
+                                                     "IsValueModified":  false
+                                                 }
+                                             ],
+                   "CimSystemProperties":  {
+                                               "Namespace":  "root/standardcimv2",
+                                               "ServerName":  "DESKTOP-OI30P4Q",
+                                               "ClassName":  "MSFT_NetSecuritySettingData",
+                                               "Path":  null
+                                           }
+               }
+}

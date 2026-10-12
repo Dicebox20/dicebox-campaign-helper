@@ -1,0 +1,49 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T14:54:09.8663378Z",
+    "workUnitId":  "clscale-railway-manifest-and-runtime-closure-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Continued user-authorized DiceBox development via Remote Desktop Commander. Kept disposable dbx-test-world Foundry14.367 TCP30005 stopped and original production the-lost-mine-of-phandalin untouched. Inventoried all imported 21 Central Lodge Scenes,202 Regions,119 behaviors. Four existing directed teleport behaviors located: E1-\u003eM1,T3-\u003eN3,T3-\u003eF1,F1-\u003eF2. Produced source-backed railway graph and validated master route manifest v002 for N1-T1-N2-T2-N3-T3-F1-F2; all three station controls and original progress gates identified. T1 and T2 explicitly UNBOUND_DO_NOT_GUESS in source; four mouth pairing choices produce eight not-yet-bound directional transitions. Exact missing N3-\u003eT3 source+target Regions found, gated behind puzzles.n3.t3BranchUnlocked which requires departureBoardResolved,switchWheelInstalled,routeOverlay.resolved. Existing 4 scripts preserve original random placement and unsafe retry concerns. Batch preview verified 38 source endpoints, preserved existing4, no installer or game action executed; seven new readiness unit tests passed. Discovered central runtime closure missing despite 119 Region scripts: fixture lacked Central Lodge Runtime Kernel Macro, shared Journal State Ledger, and all 33 campaign world Items; source cold snapshot retained them. Audited source Kernel 40059-byte script parse PASS, no production URL/path, but existing transition action could teleport. With fixture cold and scheduler paused, backed up fixture macros/journal/items DB, staged all 35 required docs, normalized ownership for fixture GM, reset ledger revision to zero, cleared notices and puzzle progress, reset item recovery; retained IDs/stable IDs, preserved source snapshot. Fixture copied Kernel transition case explicitly quarantined/throws, all other nontransfer handlers retained. One-shot installer verified no ID collisions, batch wrote and reread 33 Items+1 Ledger+1 Macro with exact receipt, and reenabled scheduler in finally. Expanded recurring offline preflight to verify runtime closure; 15/15 PASS after install. Four suites of offline batch, transfer-policy, marker and journal tests passed 75/75 exit0. Scheduler remains Ready with LastTaskResult0. Wrote docs/CL50-RAILWAY-MASTER-MANIFEST-AND-RUNTIME-CLOSURE-2026-10-09.md. No production, firewall, active Region scripts, scene geometry, Tokens, or Bridge queue touched. Regionwright templates deferred until campaign completed.",
+    "blocker":  "Railway batch installation blocked by original T1/T2 UNBOUND_DO_NOT_GUESS endpoint orientations, undefined station fast-travel destination selector, unverified fixed arrival/collision, unknown interrupted-transfer recovery, and passwordless GM fixture access. The fixture Kernel transfer case is quarantined and four existing teleport scripts remain unmodified/unsafe for committed use. Current preflight verifies document closure but not in-game execution or runtime behavior. Do not claim completion or automatically trigger teleport.",
+    "nextAction":  "Begin next Foreman turn by checking latest scheduled 15-gate preflight and reading master manifest v002 and batch-preview-v001. Resolve T1/T2 exact mouth-to-station orientation with independent map art/Region evidence; do not override original UNBOUND_DO_NOT_GUESS by inference alone. Build source-only bulk behavior generator from route manifest, retaining original Scene/Region IDs, puzzle conditions, and unrelated 119 behaviors. Follow with fixture-only controlled, previewed, backed-up batch apply after all endpoints validated; secure fixture GM login through Foundry built-in user management before extended live testing. Keep existing runtime Kernel transfer case blocked until safety gates pass.",
+    "changedPaths":  [
+                         "tools/clscale-railway-batch-readiness.mjs",
+                         "tools/clscale-fixture-readonly-preflight.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-railway-region-inventory-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-railway-master-route-manifest-v002.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-railway-batch-preview-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-railway-runtime-document-closure-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-runtime-closure-install-receipt-v001.json",
+                         "work/clscale-central-lodge-migration-v001/pre-runtime-closure-db-v001",
+                         "docs/CL50-RAILWAY-MASTER-MANIFEST-AND-RUNTIME-CLOSURE-2026-10-09.md"
+                     ],
+    "validation":  [
+                       "Master railway route inventory: 21 Scene,202 Region,119 behavior,4 installed teleport scripts",
+                       "Manifest v002 validated, 38 exact endpoint references, 7 route links, 3 station controls and 7 unresolved notes",
+                       "One-time fixture runtime closure imported 33 Items+1 Journal+1 Macro, backups verified, ledger initial progression reset, Macro transfer action quarantined",
+                       "Full post-import offline preflight PASS 15 of 15 checks; fixture stopped, scheduler Ready and LastTaskResult0",
+                       "Four offline test suites PASS 75/75 exit0; no scene token transfer attempted"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367 DnD5e5.3.3 port30005 STOPPED, scheduled read-only preflight every15m; production unchanged",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-runtime-closure-install-receipt-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

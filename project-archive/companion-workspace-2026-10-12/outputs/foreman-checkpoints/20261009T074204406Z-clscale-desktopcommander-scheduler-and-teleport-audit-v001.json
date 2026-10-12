@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T07:42:04.4061166Z",
+    "workUnitId":  "clscale-desktopcommander-scheduler-and-teleport-audit-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "User authorized following documented Desktop Commander automation guidance and continuing DiceBox project. Remote Desktop Commander DESKTOP-OI30P4Q remains online. Verified existing DiceBox fixture offline. Created Windows Scheduled Task DiceBox-Offline-Preflight-15m under interactive ordinary user rujie, limited runlevel, no stored credentials, 15-minute recurrence, IgnoreNew one-instance setting, 2-minute execution cutoff; starts only while account logged on; no ChatGPT next-turn wake. Initial readback miscompared Windows-normalized username, script automatically disabled task. Corrected comparison, verified exact action and settings, re-enabled, manually started diagnostic; Task Scheduler Get-ScheduledTaskInfo LastTaskResult=0 and saved report OFFLINE_PREFLIGHT_PASS. Strengthened tools/clscale-fixture-readonly-preflight.mjs to fail closed before opening LevelDB if port30005 is listening or netstat unknown, added declared required dependency check and append-only JSONL run history. New expanded preflight 13 checks PASS: 39 enabled modules,19 required module dependencies,21 scenes 927 records,202 Regions,119 behaviors (118 active),4 teleport scripts,6 Actors,28 scene images +12 token images hash-verified; fixture OFFLINE. Additional tools/clscale-module-dependency-audit.mjs found zero required dependency blockers and seven v14 unverified (warning only) module manifests. Offline static teleport audit tools/clscale-teleport-destination-static-gate.mjs PASS for all four referenced target Regions: F1-\u003eF2, E1-\u003eM1, T3-\u003eF1, T3-\u003eN3 source/target Regions present, three CL50 flag checks match, F1 innerWardResolved=false. Runtime transfer safety remains BLOCKED: all four use random arrival, no persistent interrupted-transfer recovery, F1-\u003eF2 has no confirmation/pending guard while other three have GM dialogs/in-memory reentry guards. No transfer executed or script modified. Documentation in docs/DESKTOP-COMMANDER-FOREMAN-AUTOMATION.md updated with scheduler setup and disable commands. Dicebox Bridge MCP unavailable. No production Foundry, firewall, actor, puzzle ledger, or teleport commits.",
+    "blocker":  "Native Codex/ChatGPT next-turn wake unavailable because Dicebox Bridge MCP remains disconnected. Local Task Scheduler runs deterministic offline diagnostics only, not autonomous coding. Unsafe to launch blank-password fixture while port30005 normally binds all interfaces. Four teleport routes do not pass CL50 fixed arrival or interrupted-transfer recovery gates. Seven module manifests are not verified for Foundry v14, though declared dependency closure passed.",
+    "nextAction":  "At the next user-initiated turn, inspect append-only preflight history and Windows Scheduler last run result, then resume bounded offline static planning for fixed arrival/transfer recovery in disposable fixture only. Before any live tests prove private fixture login/binding isolation without Windows Firewall edits. Do not modify production F1 T3 F2 Ret Meow ledger or commit teleports without independent approval. If Bridge MCP restores, reconcile existing undelivered message before sending anything. Avoid claiming unattended assistant continuation.",
+    "changedPaths":  [
+                         "tools/clscale-fixture-readonly-preflight.mjs",
+                         "tools/clscale-module-dependency-audit.mjs",
+                         "tools/clscale-teleport-destination-static-gate.mjs",
+                         "docs/DESKTOP-COMMANDER-FOREMAN-AUTOMATION.md",
+                         "work/clscale-central-lodge-migration-v001/fixture-readonly-preflight-latest.json",
+                         "work/clscale-central-lodge-migration-v001/fixture-readonly-preflight-history.jsonl",
+                         "work/clscale-central-lodge-migration-v001/module-dependency-audit-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-teleport-static-gate-v001.json"
+                     ],
+    "validation":  [
+                       "Windows Scheduler task enabled, interactive only, limited run level, every15min, 2min cap, one instance, verified LastTaskResult=0",
+                       "Expanded preflight 13/13 checks PASS in fixture (not gameplay runtime)",
+                       "19 required package relationships all resolved, 7 Foundry14 warnings",
+                       "Four teleport script target Regions present and CL50 stable flags match, runtime safety still BLOCKED",
+                       "No Foundry process on TCP30005 during offline audit, no Region scripts or committed teleports executed"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367 dnd5e5.3.3 port30005 OFFLINE; Windows scheduled diagnostic every 15 min while logged in; original production Tuesday Campaign unchanged",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\fixture-readonly-preflight-latest.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,1 @@
+const s=game.scenes.get('La9krMOMBhAhDLi6'),r=s.regions.get('zKNU1R3JGIMMt017');const meth=['teleportToken','spawnTokens'].map(k=>({method:k,source:String(r[k]).slice(0,2800)}));return{noWrite:true,methods:meth,regionShapeConstraints:r.shapes.map(x=>({type:x.type,x:x.x,y:x.y,width:x.width,height:x.height})),gridSize:s.grid.size};

@@ -1,0 +1,24 @@
+const SCENE_ID="UNySMm7YkyYfh41x",LEDGER_ID="xhlXv6CCH34HVga3",KERNEL_ID="FHQiFYx6OntZVo9d";
+const EXPECTED_KERNEL_HASH="6264c467211d4f5c94cfaaa9437eae88582599061b9d8a4951391830a3e8f814",EXPECTED_GEOMETRY_HASH="34bb530f622671eaa6eaf3bf9987f394a6c018d2c2240773e3f5c6c2839f66de";
+const LODGE_SCENES=["0CSBwzcszPKyaB8u","5K1uASAARnX8aZhP","EDdktL7VUihbpKe9","UNySMm7YkyYfh41x","Zq8iXByDVhHRbA7w","sI4YVZZChgey1qNi","iqfCcDpEer4pwrJj","DLcheEi6e5OHOYmU","U8S5ZrTjaPIkTUIL","JZkxX6lUQe8Nc8xJ","LXTA8mx1rJ2L6e2J","MAbLfBqG7qIVVuLN","4pc5akMBieHU7GvV","pHQvDUDlyWZFuNrX","if9iWDRjSwI87EeX","PVf6Gbrv9HbB88uZ","La9krMOMBhAhDLi6","ImeIdHbYb6kZKAdt","ez9MSQ8QIO4cW6zo","aIKQmFiuXWipEdyb","HWitOe1wSid7MZ1y"];
+const expected=[
+["W8KnvtDsEa5BQBqO","dJVzBs6JV210tNVX","dbx:central-lodge:c2:behavior:record-recency-notice","883ef5a8b68233d96a5670e98ab9a3dbadc115d25cf5cd25c23ca3a1b58995c6","notice"],
+["4Jy0q87GDNSbRdyM","Z8qPtpqZh6YrlP1O","dbx:central-lodge:c2:behavior:concealed-record-category-notice","e97cced38afa4b0152d077322ba18220a88addb9e573b9a589856b85cc570b18","notice"],
+["AjnujsDKONYzof4r","pFDGC9s7nqTF0gV7","dbx:central-lodge:c2:behavior:cult-passage-diagram-recovery","8a28916bb53c46b7dbc21c434e7fa5c833cfb0111b74d8df170020150c6f0db1","pickup"],
+["4bI2PCFXfrXbzCqT","ZZDWUmvvKeKlGYL8","dbx:central-lodge:c2:behavior:infernal-cicada-body-recovery","10ff11ab831bce936fa95198303bf21005933240c626daf27c842b27fc745f67","pickup"],
+["nCfpIGfCzVNsnPtN","vjKg8AIbS4jXS0T9","dbx:central-lodge:c2:behavior:firstborn-pedestal","e88cd5eaa73d35bbc5431a2f5b3a8a92c4a90b0638c724e8c47a5b5606237d4f","socket"],
+["Vs6MO58f7wQD6BLP","ogKZIG4IOnBZvVJv","dbx:central-lodge:c2:behavior:cult-records-interpretation","78a2d348099eecc1c372aadafe7b0d98decef2fc800648d1dc804d444a6373c8","observe"],
+["6EP0YAGcfA27d9TX","iCoG6HBUKE3BcxN1","dbx:central-lodge:c2:behavior:measure-rhythm-interpretation","cf3bbb60bb9193e105cc725d9c3242c0846178a7b8bb03add981419b0d3d8934","observe"]
+];
+const clone=v=>foundry.utils.deepClone(v),dbx=d=>{try{return clone(d?.getFlag?.("world","dicebox")??{});}catch{return{};}},sid=d=>dbx(d)?.stableId??null;
+const norm=v=>Array.isArray(v)?v.map(norm):v&&typeof v==="object"?Object.fromEntries(Object.keys(v).sort().map(k=>[k,norm(v[k])])):v,canon=v=>JSON.stringify(norm(v));
+const sha=async v=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(v??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+const geom=s=>Array.from(s.regions??[]).map(r=>{const o=r.toObject();return{id:r.id,shapes:o.shapes??null,elevation:o.elevation??null,visibility:o.visibility??null,locked:o.locked??null};}).sort((a,b)=>a.id.localeCompare(b.id));
+const failures=[],scene=game.scenes.get(SCENE_ID),ledger=game.journal.get(LEDGER_ID),kernel=game.macros.get(KERNEL_ID);let regions=0,behaviors=0;
+for(const id of LODGE_SCENES){const s=game.scenes.get(id),rs=Array.from(s?.regions??[]);if(!s){failures.push("Missing "+id);continue;}regions+=rs.length;behaviors+=rs.reduce((n,r)=>n+r.behaviors.size,0);}
+const cc=scene?Array.from(scene.regions??[]).reduce((n,r)=>n+r.behaviors.size,0):null;if(regions!==202||behaviors!==90||scene?.regions?.size!==11||cc!==7)failures.push("Count mismatch");
+const kh=await sha(kernel?.command??""),gh=scene?await sha(canon(geom(scene))):null;if(kh!==EXPECTED_KERNEL_HASH||gh!==EXPECTED_GEOMETRY_HASH)failures.push("Hash drift");
+const rows=[];for(const [rid,bid,stableId,hash,action] of expected){const r=scene?.regions.get(rid),b=r?.behaviors.get(bid);if(!r||!b){failures.push(stableId+": missing");continue;}const f=dbx(b),h=await sha(b.system?.source??"");if(sid(b)!==stableId||h!==hash||f.regionStableId!==sid(r)||f.behaviorSpec?.action!==action)failures.push(stableId+": mismatch");rows.push({id:bid,stableId,action,sourceHash:h,status:"PASS"});}
+for(const id of ["TDKQjmzbSDLopMZQ","ufPKtVahOgHbWooI","SwfLzGBXeGM1m03P","gCKvxCNIrs1fROrf"]){const r=scene?.regions.get(id);if(!r||r.behaviors.size)failures.push("Deferred drift "+id);}
+const state=clone(ledger?.getFlag("world","dicebox")?.state??{}),c2=clone(foundry.utils.getProperty(state,"puzzles.c2")??{});if(Number(state?.revision)!==0||Object.keys(state?.notices??{}).length)failures.push("Ledger drift");for(const k of ["recordRecencyNoticeResolved","concealedRecordCategoryNoticeResolved","cultRecordsInterpreted","firstbornPedestalResolved","measureRhythmInterpreted"])if(c2[k]!==false)failures.push("State drift "+k);
+return{operation:"central-lodge.cl24.c2.final-verify",status:failures.length?"FAIL":"PASS",noWrite:true,failures,baseline:{scenes:21,regions,behaviors,c2Regions:scene?.regions?.size??null,c2Behaviors:cc},kernelHash:kh,geometryHash:gh,behaviors:rows,ledger:{revision:state?.revision??null,notices:state?.notices??null,c2},phaseDisposition:failures.length?"CL-24 VERIFY FAILED":"CL-24 C2 GAMEPLAY INSTALLED / LIGHTING & TRANSITIONS DEFERRED",nextPhase:failures.length?"STOP":"CL-30 — N1 Railway Authorization"};

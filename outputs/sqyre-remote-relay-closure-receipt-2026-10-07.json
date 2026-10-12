@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "workUnitId": "sqyre-remote-relay-implementation-20261007",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "target": "local repository and proxy-shaped fixture only",
+  "topology": "Sqyre Foundry browser -> outbound wss:// relay -> HTTPS MCP /mcp -> Desktop Commander",
+  "acceptedSlice": "sqyre-remote-relay-2026-10-07",
+  "acceptance": {
+    "oidcIssuerAudienceJwksVerification": true,
+    "separateFoundryPairingToken": true,
+    "exactSqyreOriginAllowlist": true,
+    "secureRemoteWebSocketUrlValidation": true,
+    "portableDockerReverseProxyAndTunnelProfile": true,
+    "proxyShapedLocalSmoke": true
+  },
+  "validation": {
+    "focusedTests": "116/116 passed across 6 files",
+    "relaySmoke": "PASS_LOCAL; OIDC/JWKS, pairing, origin, wss, and public deployment guards",
+    "packageBuild": "PASS",
+    "syntaxChecks": "PASS",
+    "toolingVerification": "PASS",
+    "workflowCheck": "PASS; Stage 12 active; readyClaim false",
+    "knowledgeBase": "PASS; integrity ok; rebuilt from schema.sql and seed.sql; 2101 sources, 1676 facts, 1695 decisions, 1278 trials"
+  },
+  "changedSurface": [
+    "tools/dicebox-foundry-remote-auth.mjs",
+    "tools/dicebox-foundry-remote-gateway.mjs",
+    "packages/dicebox-foundry/src/foundry-live-bridge.js",
+    "tests/dicebox-foundry-sqyre-relay.test.ts",
+    "tests/dicebox-foundry-remote-gateway.test.ts",
+    "tests/knowledge-base-query.test.ts",
+    "tools/run-dicebox-foundry-sqyre-relay-smoke.mjs",
+    "deploy/sqyre-relay/package.json",
+    "deploy/sqyre-relay/Dockerfile",
+    "deploy/sqyre-relay/docker-compose.yml",
+    "deploy/sqyre-relay/Caddyfile",
+    "deploy/sqyre-relay/.env.example",
+    "deploy/sqyre-relay/README.md",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "package.json",
+    "package-lock.json"
+  ],
+  "preservedBoundaries": [
+    "No Sqyre login or module upload",
+    "No relay/VPS/tunnel provisioning or public publication",
+    "No live Foundry or browser authentication action",
+    "No arbitrary macro/script/shell/document execution",
+    "No generic execute-as-GM API",
+    "No Stage 12 promotion or Ready-to-Play claim",
+    "M1284 remains closed at the manual Gamemaster rejoin boundary"
+  ],
+  "externalPrerequisites": [
+    "User-selected public relay hostname or named HTTPS tunnel",
+    "OIDC provider issuer, audience, and JWKS URL configured locally",
+    "Exact Sqyre game/browser origin from the address bar",
+    "Locally held relay and Foundry pairing secrets",
+    "Manual module upload and Foundry settings entry",
+    "Desktop Commander MCP binding to the relay HTTPS endpoint"
+  ],
+  "knownBaselineMismatch": "The earlier full-suite audit exposed unrelated pre-existing dirty-tree snapshot mismatches in M1259 artifact spec, served-worker receipt, and Regionwright staged fixture. Those files were preserved; this slice does not claim a full-suite green result.",
+  "doesNotProve": [
+    "live public WSS connectivity",
+    "Sqyre account or upload compatibility beyond the documented module path",
+    "OIDC provider account configuration",
+    "Desktop Commander account binding",
+    "Foundry loaded module bytes",
+    "live active-GM authority or native Foundry mutation"
+  ]
+}

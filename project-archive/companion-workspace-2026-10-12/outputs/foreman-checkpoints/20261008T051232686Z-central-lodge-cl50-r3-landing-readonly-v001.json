@@ -1,0 +1,46 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:12:32.6861352Z",
+    "workUnitId":  "central-lodge-cl50-r3-landing-readonly-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Foreman continuation recovered exact approved R3 N2 Tunnel B to T2 Mouth A topology. Read-only live Foundry ephemeral one-square arrival full footprint geometry PASS in both directions; T2 arrival two-square sample PASS, N2 two-square overlaps return mouth and story observation despite center-only false. Preserved R1 blocked installer, R2 source findings and all runtime. KB rebuilt, verified. Old Bridge receipt remains unconsumed pending positive transcript verification.",
+    "blocker":  "Previous Foreman correlation foreman-15b14be4-5a64-4be6-bb57-419084449d0d reports host-accepted but deliveryVerified false in Bridge reconciliation; do not create another boundary, consume or resend blindly. R1 live-installer generation remains tool-safety-blocked. Real GM/player canary outstanding.",
+    "nextAction":  "Reconcile exact prior Foreman receipt msg-3e9f935d-f4ec-473c-b509-2721b17407e2 when native delivery verification is positive; do not reserve another boundary until prior obligation is discharged. Next governed local CL50 read-only unit is R4 T2 Mouth B to N3 West 1x1/2x2 ephemeral footprint and story-region overlap. Leave R1 safety-blocked installer untouched.",
+    "changedPaths":  [
+                         "docs\\CL50-R3-N2-T2-ARRIVAL-PREFLIGHT-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl50-r3-endpoint-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-r3-arrival-footprint-readonly-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-r3-ephemeral-footprint.sql"
+                     ],
+    "validation":  [
+                       "R3 exact stable Scene/Region ID read-only discovery PASS",
+                       "R3 ephemeral landing 1x1 positions N2(3740,1480), T2(560,1210), neither in return mouth or story observation; no Wall/token collision sampled",
+                       "R3 N2 2x2 position overlaps mouth and story interpretation; identified body-vs-center detection issue",
+                       "DB build PASS 401 sources/1177 facts/470 decisions/542 open items/205 trials; independent integrity check PASS",
+                       "Independent CL90 Foundry smoke PASS_WITH_KNOWN_BLOCKERS; canonical 21/202/116/33, kernel unchanged, ledger revision1",
+                       "Bridge receipt verification false, no consume/no duplicate boundary or dispatch"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CL50-R3-N2-T2-ARRIVAL-PREFLIGHT-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

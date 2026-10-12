@@ -1,0 +1,2706 @@
+{
+ "Scene": {
+  "name": "Central Lodge â€” N2 Underground Grotto / Garden Station",
+  "width": 4320,
+  "height": 2880,
+  "padding": 0,
+  "grid": {
+   "type": 0,
+   "size": 120,
+   "distance": 5,
+   "units": "ft",
+   "style": "solidLines",
+   "thickness": 1,
+   "color": "#000000",
+   "alpha": 0.2
+  },
+  "flags": {
+   "dicebox-campaign-helper": {
+    "stableId": "dbx:central-lodge:n2",
+    "managed": {
+     "owner": "dicebox-campaign-helper",
+     "packageId": "dbx:central-lodge:n2:v1",
+     "kind": "scene",
+     "stableId": "dbx:central-lodge:n2"
+    },
+    "campaignId": "central-lodge",
+    "mapId": "N2",
+    "buildContract": "dicebox-scene-injector-build/v2",
+    "scaleProfile": "battlemap-120",
+    "rendererLightingProfile": "underground-grotto-neutral",
+    "localLighting": "off",
+    "stationPower": "unbound",
+    "floodState": "flooded",
+    "floodSourceStateKey": "central-lodge.b1.floodState",
+    "buildInstalled": true,
+    "ready": false,
+    "puzzleState": {
+     "walkableRailMarginUnderstood": false,
+     "floodEvidenceUnderstood": false,
+     "grottoStationUnderstood": false,
+     "railCarAvailable": false,
+     "floodState": "flooded"
+    },
+    "floodController": {
+     "sourceStateKey": "central-lodge.b1.floodState",
+     "localStateKey": "central-lodge.n2.floodState",
+     "initialState": "flooded",
+     "drainedState": "drained",
+     "floodedAccess": "restricted-lower-grotto",
+     "drainedAccess": "clear-lower-grotto"
+    },
+    "localLightingController": {
+     "stateKey": "central-lodge.n2.stationPower",
+     "sourceStateKey": "n1.railwayPowered",
+     "activeState": "powered",
+     "lightStableIds": [
+      "dbx:central-lodge:n2:light:upper-west",
+      "dbx:central-lodge:n2:light:upper-east",
+      "dbx:central-lodge:n2:light:lower-west",
+      "dbx:central-lodge:n2:light:lower-east"
+     ]
+    },
+    "railCarController": {
+     "sourceStateKey": "n1.railwayPowered",
+     "requiredSourceState": true,
+     "persistentStateKey": "n2.railCarAvailable",
+     "fastTravelDestinations": [
+      "N1",
+      "N3"
+     ]
+    },
+    "assetReceipt": {
+     "base": {
+      "path": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/n2/n2-underground-grotto-garden-station.webp",
+      "sha256": "cb678f0f3bd2df42547185f5dc097bb1b66510ec53f3829debccd511b1a9a235",
+      "bytes": 429128,
+      "lightingProfile": "underground-grotto-neutral"
+     }
+    },
+    "implementationPending": [
+     "bind hidden Notice behavior for walkable-rail-margin and flood-evidence discoveries",
+     "mirror B1 flood state into N2 flooded/drained environmental state",
+     "bind lower-grotto access/readability consequences to flood state",
+     "bind N1 railway-power state to N2 station lights and rail-car availability",
+     "bind T1/T2 walking transitions and N1/N3 station fast travel",
+     "bind flood/drain ambience and railway sound response",
+     "VERIFY exact wall, Region, and light alignment"
+    ]
+   }
+  },
+  "_id": "4pc5akMBieHU7GvV",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "thumb": null,
+  "shiftX": 0,
+  "shiftY": 0,
+  "initial": {
+   "x": null,
+   "y": null,
+   "scale": null
+  },
+  "initialLevel": "defaultLevel0000",
+  "tokenVision": true,
+  "fog": {
+   "mode": 1,
+   "colors": {
+    "explored": null,
+    "unexplored": null
+   }
+  },
+  "environment": {
+   "darknessLevel": 0,
+   "darknessLock": false,
+   "globalLight": {
+    "enabled": false,
+    "alpha": 0.5,
+    "bright": false,
+    "color": null,
+    "coloration": 1,
+    "luminosity": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "shadows": 0,
+    "darkness": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "cycle": true,
+   "base": {
+    "hue": 0,
+    "intensity": 0,
+    "luminosity": 0,
+    "saturation": 0,
+    "shadows": 0
+   },
+   "dark": {
+    "hue": 0.7138888888888889,
+    "intensity": 0,
+    "luminosity": -0.25,
+    "saturation": 0,
+    "shadows": 0
+   }
+  },
+  "transition": {
+   "type": null,
+   "duration": 1500,
+   "activeOnly": false
+  },
+  "drawings": [],
+  "tokens": [
+   {
+    "name": "ST8",
+    "displayName": 30,
+    "actorLink": true,
+    "width": 1,
+    "height": 1,
+    "texture": {
+     "src": "tokenizer/pc-images/sir_toppleton_meowmeow.Token.webp?1757989692857",
+     "anchorX": 0.5,
+     "anchorY": 0.5,
+     "fit": "contain",
+     "scaleX": 1,
+     "scaleY": 1,
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 72.03911891248069,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 50,
+    "bar1": {
+     "attribute": "attributes.hp"
+    },
+    "bar2": {
+     "attribute": null
+    },
+    "light": {
+     "negative": false,
+     "priority": 0,
+     "alpha": 0.5,
+     "angle": 360,
+     "bright": 0,
+     "color": null,
+     "coloration": 1,
+     "dim": 0,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "animation": {
+      "type": null,
+      "speed": 5,
+      "intensity": 5,
+      "reverse": false
+     },
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "sight": {
+     "enabled": true,
+     "range": 60,
+     "angle": 360,
+     "visionMode": "darkvision",
+     "color": null,
+     "attenuation": 0,
+     "brightness": 0,
+     "saturation": -1,
+     "contrast": 0
+    },
+    "detectionModes": {},
+    "occludable": {
+     "radius": 0
+    },
+    "ring": {
+     "enabled": false,
+     "colors": {
+      "ring": null,
+      "background": null
+     },
+     "effects": 0,
+     "subject": {
+      "scale": 1,
+      "texture": null
+     }
+    },
+    "turnMarker": {
+     "mode": 1,
+     "animation": null,
+     "src": null,
+     "disposition": false
+    },
+    "movementAction": null,
+    "flags": {
+     "monks-tokenbar": {
+      "include": "default"
+     },
+     "tagger": {
+      "tags": ""
+     }
+    },
+    "depth": 1,
+    "actorId": "2g6CmPQqhSkRQQZm",
+    "hidden": false,
+    "sort": 0,
+    "shape": 4,
+    "level": "defaultLevel0000",
+    "delta": null,
+    "x": 2836,
+    "y": 1662,
+    "elevation": 0,
+    "locked": false,
+    "_movementHistory": [],
+    "_regions": [
+     "50WwEQ4qI3VFM4jr",
+     "8s78TfboLnycmqRY",
+     "IMvvpg6jzHKNMJHv",
+     "LcoaB4jrjTbkyQta",
+     "q8sQMxxeIMSkjCTX",
+     "yjBrtTpesvH5gJKv"
+    ],
+    "_id": "yrEySwR08mLg8Xll"
+   }
+  ],
+  "levels": [
+   {
+    "_id": "defaultLevel0000",
+    "name": "Level",
+    "elevation": {
+     "bottom": 0,
+     "top": 20
+    },
+    "background": {
+     "color": "#999999",
+     "src": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/n2/n2-underground-grotto-garden-station.webp",
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "foreground": {
+     "src": null,
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "fog": {
+     "src": null
+    },
+    "textures": {
+     "anchorX": 0.5,
+     "anchorY": 0.5,
+     "offsetX": 0,
+     "offsetY": 0,
+     "fit": "fill",
+     "scaleX": 1,
+     "scaleY": 1,
+     "rotation": 0
+    },
+    "visibility": {
+     "levels": []
+    },
+    "sort": 0,
+    "flags": {}
+   }
+  ],
+  "lights": [
+   {
+    "name": "N2 Platform Upper-West Light",
+    "x": 1380,
+    "y": 1170,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 17,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d6a15f",
+     "alpha": 0.09,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:light:upper-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:n2:light:upper-west"
+      },
+      "stateKey": "central-lodge.n2.stationPower",
+      "activeState": "powered",
+      "pacingGroup": "grotto-station",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "90JPCt0SI7ITv3FE",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "N2 Platform Upper-East Light",
+    "x": 2980,
+    "y": 1170,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 17,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d6a15f",
+     "alpha": 0.09,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:light:upper-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:n2:light:upper-east"
+      },
+      "stateKey": "central-lodge.n2.stationPower",
+      "activeState": "powered",
+      "pacingGroup": "grotto-station",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "E05pAOx4w7gisoCy",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "N2 Platform Lower-West Light",
+    "x": 1240,
+    "y": 1880,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 16,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d6a15f",
+     "alpha": 0.08,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:light:lower-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:n2:light:lower-west"
+      },
+      "stateKey": "central-lodge.n2.stationPower",
+      "activeState": "powered",
+      "pacingGroup": "grotto-station",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "R8U9w3qYBpMMuXz2",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "N2 Platform Lower-East Light",
+    "x": 3090,
+    "y": 1880,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 16,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d6a15f",
+     "alpha": 0.08,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:light:lower-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:n2:light:lower-east"
+      },
+      "stateKey": "central-lodge.n2.stationPower",
+      "activeState": "powered",
+      "pacingGroup": "grotto-station",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "KErapPGYmlUU0LB7",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   }
+  ],
+  "notes": [],
+  "sounds": [],
+  "regions": [
+   {
+    "name": "N2 Walkable Railway Margin Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 250,
+      "y": 1180,
+      "width": 3820,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:notice:walkable-rail-margin",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:notice:walkable-rail-margin"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "maintenance-clearance-beside-track",
+       "discoveryId": "n2-walkable-rail-margin",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The track bed seems wider and flatter at the edges than a simple rail cut would require.",
+       "successHint": "Worn foot traffic and deliberate maintenance clearance show that people routinely walked beside the rails.",
+       "deliberateInspection": "The tunnel-side railway margin is physically traversable on foot.",
+       "persistentStateKey": "n2.walkableRailMarginUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-walkable-railway-margin-notice",
+       "sceneKey": "N2",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "yjBrtTpesvH5gJKv",
+       "sourceRegionName": "N2 Walkable Railway Margin Notice"
+      }
+     }
+    },
+    "_id": "yjBrtTpesvH5gJKv",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox N2 â€” walkable-margin-notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"n2.walkable-margin\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The rail bed leaves a deliberate pedestrian margin through the grotto. The route was built for people to walk alongside the line, not only for the estate car.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate inspection still reveals the walkable railway margin.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl31-n2-apply-v001",
+         "stableId": "dbx:central-lodge:n2:behavior:walkable-margin-notice",
+         "sceneKey": "N2",
+         "regionStableId": "dbx:central-lodge:n2:region:n2-walkable-railway-margin-notice",
+         "sourceHash": "7b9b30d9284d56aff531875edaba989066869297ddeb6f644f5175c8947f724e",
+         "behaviorSpec": {
+          "action": "notice",
+          "sourceType": "kernel",
+          "noticeDcSource": "NEW"
+         }
+        }
+       }
+      },
+      "_id": "vOB9uxkvWqmWwtLc",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791408434694,
+       "modifiedTime": 1791408434694,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Flood and Drainage Evidence Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 720,
+      "y": 1760,
+      "width": 3020,
+      "height": 860,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:notice:flood-evidence",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:notice:flood-evidence"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "basin-drains-staining-and-pump-hardware",
+       "discoveryId": "n2-flood-evidence",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The grotto walls and drains show that the water level has not always stayed where it is now.",
+       "successHint": "Repeated tide-like staining, drainage hardware, and maintenance marks record cycles of flooding and draining.",
+       "persistentStateKey": "n2.floodEvidenceUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-flood-and-drainage-evidence-notice",
+       "sceneKey": "N2",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "ys8zAN7UKu6rYZTM",
+       "sourceRegionName": "N2 Flood and Drainage Evidence Notice"
+      }
+     }
+    },
+    "_id": "ys8zAN7UKu6rYZTM",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox N2 â€” flood-drainage-notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"n2.flood-drainage\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>Water damage and drainage marks show that the lower grotto's flooding is tied to the Lodge's utility system rather than a permanent natural waterline.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate inspection still reveals the flood-and-drainage relationship.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl31-n2-apply-v001",
+         "stableId": "dbx:central-lodge:n2:behavior:flood-drainage-notice",
+         "sceneKey": "N2",
+         "regionStableId": "dbx:central-lodge:n2:region:n2-flood-and-drainage-evidence-notice",
+         "sourceHash": "8d32d5779f091192ee95f4354c2e2f4203160f5db53d3ff362b374b8f1ecc9b8",
+         "behaviorSpec": {
+          "action": "notice",
+          "sourceType": "kernel",
+          "noticeDcSource": "NEW"
+         }
+        }
+       }
+      },
+      "_id": "Q6HQifMiwmliZ6CN",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791408434704,
+       "modifiedTime": 1791408434704,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Platform Lighting",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 640,
+      "y": 970,
+      "width": 3090,
+      "height": 1040,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#d2a34c",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:light:platform",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:light:platform"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "platform-fixtures",
+       "sourceStateKey": "n1.railwayPowered",
+       "stateKey": "central-lodge.n2.stationPower",
+       "activeState": "powered",
+       "lightStableIds": [
+        "dbx:central-lodge:n2:light:upper-west",
+        "dbx:central-lodge:n2:light:upper-east",
+        "dbx:central-lodge:n2:light:lower-west",
+        "dbx:central-lodge:n2:light:lower-east"
+       ],
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-platform-lighting",
+       "sceneKey": "N2",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "q8sQMxxeIMSkjCTX",
+       "sourceRegionName": "N2 Platform Lighting"
+      }
+     }
+    },
+    "_id": "q8sQMxxeIMSkjCTX",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Railway Tunnel A",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 0,
+      "y": 1160,
+      "width": 430,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:transition:tunnel-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:transition:tunnel-a"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "west-rail-tunnel-mouth",
+       "destinationMapId": "T1",
+       "transportClass": "walkable-railway",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-railway-tunnel-a",
+       "sceneKey": "N2",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "lYps0Z5806d0W8wX",
+       "sourceRegionName": "N2 Railway Tunnel A"
+      }
+     }
+    },
+    "_id": "lYps0Z5806d0W8wX",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Grotto Station Interpretation",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 610,
+      "y": 420,
+      "width": 3120,
+      "height": 2230,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#7d5367",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:story:grotto-station",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:story:grotto-station"
+      },
+      "regionClass": "story",
+      "specification": {
+       "class": "story",
+       "anchor": "ornamental-garden-masonry-integrated-with-private-railway",
+       "interpretation": "estate-grotto-station",
+       "persistentStateKey": "n2.grottoStationUnderstood",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-grotto-station-interpretation",
+       "sceneKey": "N2",
+       "regionClass": "story",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "8s78TfboLnycmqRY",
+       "sourceRegionName": "N2 Grotto Station Interpretation"
+      }
+     }
+    },
+    "_id": "8s78TfboLnycmqRY",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox N2 â€” grotto-station-interpretation",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"observe\",\"trigger\":\"TOKEN_ENTER\",\"observationKey\":\"n2.grotto-station\",\"oncePerActor\":true,\"statePath\":\"puzzles.n2.grottoStationInterpreted\",\"value\":true,\"message\":\"<p>The grotto platform is a deliberate estate station built into a natural cavern, linking the concealed railway to the garden-side underground route.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl31-n2-apply-v001",
+         "stableId": "dbx:central-lodge:n2:behavior:grotto-station-interpretation",
+         "sceneKey": "N2",
+         "regionStableId": "dbx:central-lodge:n2:region:n2-grotto-station-interpretation",
+         "sourceHash": "184cf1e95bdaaf3d0f155a56f8eadff8c379b90af99583bd701c8814ff159e17",
+         "behaviorSpec": {
+          "action": "observe",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "3U2E9roXN4fxNHba",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791408434754,
+       "modifiedTime": 1791408434754,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Railway Tunnel B",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3890,
+      "y": 1160,
+      "width": 430,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:transition:tunnel-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:transition:tunnel-b"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "east-rail-tunnel-mouth",
+       "destinationMapId": "T2",
+       "transportClass": "walkable-railway",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-railway-tunnel-b",
+       "sceneKey": "N2",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "shIAThge7cNy0JjT",
+       "sourceRegionName": "N2 Railway Tunnel B"
+      }
+     }
+    },
+    "_id": "shIAThge7cNy0JjT",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Grotto Flood State",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 560,
+      "y": 1720,
+      "width": 3200,
+      "height": 1060,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#4f7487",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:system:flood",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:system:flood"
+      },
+      "regionClass": "system",
+      "specification": {
+       "class": "system",
+       "anchor": "lower-grotto-basin-drainage-and-approaches",
+       "sourceStateKey": "central-lodge.b1.floodState",
+       "localStateKey": "central-lodge.n2.floodState",
+       "initialState": "flooded",
+       "alternateState": "drained",
+       "floodedAccess": "restricted-lower-grotto",
+       "drainedAccess": "clear-lower-grotto",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-grotto-flood-state",
+       "sceneKey": "N2",
+       "regionClass": "system",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "50WwEQ4qI3VFM4jr",
+       "sourceRegionName": "N2 Grotto Flood State"
+      }
+     }
+    },
+    "_id": "50WwEQ4qI3VFM4jr",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Estate Rail Car State",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1450,
+      "y": 1260,
+      "width": 1770,
+      "height": 520,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:system:rail-car",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:system:rail-car"
+      },
+      "regionClass": "system",
+      "specification": {
+       "class": "system",
+       "anchor": "ornate-passenger-carriage",
+       "sourceStateKey": "n1.railwayPowered",
+       "requiredSourceState": true,
+       "persistentStateKey": "n2.railCarAvailable",
+       "transportClass": "estate-railway",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-estate-rail-car-state",
+       "sceneKey": "N2",
+       "regionClass": "system",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "LcoaB4jrjTbkyQta",
+       "sourceRegionName": "N2 Estate Rail Car State"
+      }
+     }
+    },
+    "_id": "LcoaB4jrjTbkyQta",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox N2 â€” rail-car-fast-travel-enable",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"gate\",\"trigger\":\"TOKEN_ENTER\",\"statePath\":\"puzzles.n2.fastTravelEnabled\",\"requirements\":[{\"type\":\"state\",\"path\":\"puzzles.n1.railwayPowered\",\"equals\":true}],\"incompleteMessage\":\"<p>The estate rail car remains dormant while the railway system is unpowered.</p>\",\"successMessage\":\"<p>With railway power available from the Lodge station, the estate rail car is ready for station-to-station travel.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl31-n2-apply-v001",
+         "stableId": "dbx:central-lodge:n2:behavior:rail-car-fast-travel-enable",
+         "sceneKey": "N2",
+         "regionStableId": "dbx:central-lodge:n2:region:n2-estate-rail-car-state",
+         "sourceHash": "7158a308118922482d83a2dfefd3059d3237ea8ca7533808146a6a3eff0a8931",
+         "behaviorSpec": {
+          "action": "gate",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "RMsac2jW6Q64AmeU",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791408434779,
+       "modifiedTime": 1791408434779,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "N2 Station Platform Fast Travel",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 690,
+      "y": 1030,
+      "width": 2940,
+      "height": 900,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:region:transition:station-platform",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:n2:region:transition:station-platform"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "station-platform-and-carriage",
+       "sourceStateKey": "n1.railwayPowered",
+       "requiredSourceState": true,
+       "transportClass": "estate-railway-fast-travel",
+       "destinations": [
+        "N1",
+        "N3"
+       ],
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:n2:region:n2-station-platform-fast-travel",
+       "sceneKey": "N2",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "IMvvpg6jzHKNMJHv",
+       "sourceRegionName": "N2 Station Platform Fast Travel"
+      }
+     }
+    },
+    "_id": "IMvvpg6jzHKNMJHv",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   }
+  ],
+  "tiles": [],
+  "walls": [
+   {
+    "c": [
+     700,
+     360,
+     1510,
+     360
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-left-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-left-north"
+      }
+     }
+    },
+    "_id": "TjlzVyaFDFZQO2Q8",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     700,
+     360,
+     700,
+     1010
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-left-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-left-west"
+      }
+     }
+    },
+    "_id": "vhgfnrImSPpL0O37",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1510,
+     360,
+     1510,
+     700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-left-east-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-left-east-a"
+      }
+     }
+    },
+    "_id": "etoxzMrS7sYR0km2",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1510,
+     860,
+     1510,
+     1010
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-left-east-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-left-east-b"
+      }
+     }
+    },
+    "_id": "y9h0Sv2WPJXw29Nd",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     700,
+     1010,
+     930,
+     1010
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-left-south-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-left-south-a"
+      }
+     }
+    },
+    "_id": "Q9AAhhwfBoOXBFHG",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     930,
+     1010,
+     1200,
+     1010
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-left-stair-gap",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:n2:wall:upper-left-stair-gap"
+      }
+     }
+    },
+    "_id": "34RoEi3G9w3wnseW",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2080,
+     430,
+     2860,
+     430
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-garden-north-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-garden-north-b"
+      }
+     }
+    },
+    "_id": "sjiXw7kOQJZCOpdC",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1660,
+     430,
+     2080,
+     430
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-garden-north-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-garden-north-a"
+      }
+     }
+    },
+    "_id": "DbIgQ5aX8UNzb7st",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1660,
+     930,
+     2070,
+     930
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-garden-south-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-garden-south-a"
+      }
+     }
+    },
+    "_id": "NTI9akp8k8tsUgbt",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2070,
+     930,
+     2350,
+     930
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-garden-stair-gap",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:n2:wall:upper-garden-stair-gap"
+      }
+     }
+    },
+    "_id": "gbNBDqBEKmy0hViy",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2860,
+     430,
+     2860,
+     930
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-garden-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-garden-east"
+      }
+     }
+    },
+    "_id": "hlMc4SOgXQ1yWKTk",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1660,
+     430,
+     1660,
+     930
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-garden-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-garden-west"
+      }
+     }
+    },
+    "_id": "khOaJxYGlx6aDfo9",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1200,
+     1010,
+     1510,
+     1010
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-left-south-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-left-south-b"
+      }
+     }
+    },
+    "_id": "plWbvCBBxScWwu7Y",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3630,
+     640,
+     3630,
+     1070
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-right-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-right-east"
+      }
+     }
+    },
+    "_id": "EIOqcJiywB1CkT0K",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3040,
+     640,
+     3630,
+     640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-right-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-right-north"
+      }
+     }
+    },
+    "_id": "QooGXEtuwc2HlHjC",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3040,
+     1070,
+     3310,
+     1070
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-right-south-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-right-south-a"
+      }
+     }
+    },
+    "_id": "J3CG2b93JFHFVKp8",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3510,
+     1070,
+     3630,
+     1070
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-right-south-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-right-south-b"
+      }
+     }
+    },
+    "_id": "eW2ra0YZ0rhiw8KO",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3040,
+     640,
+     3040,
+     1070
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-right-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-right-west"
+      }
+     }
+    },
+    "_id": "RDtWPyIHQiUAnvdj",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     670,
+     2460,
+     1120,
+     2460
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-left-south-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-left-south-a"
+      }
+     }
+    },
+    "_id": "oQ06hyj4InYPqAaP",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3310,
+     1070,
+     3510,
+     1070
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-right-stair-gap",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:n2:wall:upper-right-stair-gap"
+      }
+     }
+    },
+    "_id": "YffIh2jh4SKXQH1B",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     670,
+     1840,
+     670,
+     2460
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-left-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-left-west"
+      }
+     }
+    },
+    "_id": "dQUqFC8qV06ETqAs",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1480,
+     2030,
+     1480,
+     2260
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-left-stair-gap",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:n2:wall:lower-left-stair-gap"
+      }
+     }
+    },
+    "_id": "iIAuQ7oWqsKnYBBG",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1480,
+     2260,
+     1480,
+     2460
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-left-east-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-left-east-b"
+      }
+     }
+    },
+    "_id": "I6GpdmmbOucwZWGI",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1480,
+     1840,
+     1480,
+     2030
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-left-east-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-left-east-a"
+      }
+     }
+    },
+    "_id": "AHRqfOQFqfylKCiC",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1900,
+     2200,
+     2520,
+     2200
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-center-cliff-mid",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-center-cliff-mid"
+      }
+     }
+    },
+    "_id": "A2U1RqVDTb2605JX",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1600,
+     2010,
+     1900,
+     2200
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-center-cliff-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-center-cliff-west"
+      }
+     }
+    },
+    "_id": "Wr1Y3wCZAe8hcyHX",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2350,
+     930,
+     2860,
+     930
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:upper-garden-south-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:upper-garden-south-b"
+      }
+     }
+    },
+    "_id": "dZPVbkegqvHqdwDD",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1120,
+     2460,
+     1480,
+     2460
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-left-south-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-left-south-b"
+      }
+     }
+    },
+    "_id": "VXu8A0HQPk4cb6iq",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1940,
+     2490,
+     2310,
+     2490
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-bridge-gap",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:n2:wall:lower-bridge-gap"
+      }
+     }
+    },
+    "_id": "qEXgzNEUiYS6f34V",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2520,
+     2200,
+     2860,
+     1990
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-center-cliff-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-center-cliff-east"
+      }
+     }
+    },
+    "_id": "a6tbfpwrqtxvB8Qn",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3040,
+     1880,
+     3700,
+     1880
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-right-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-right-north"
+      }
+     }
+    },
+    "_id": "h2XaJiYgz1krJe4Q",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2310,
+     2490,
+     2890,
+     2490
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-bridge-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-bridge-east"
+      }
+     }
+    },
+    "_id": "ZZBWYcWPCppfK4WK",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3040,
+     2440,
+     3700,
+     2440
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-right-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-right-south"
+      }
+     }
+    },
+    "_id": "ymj5Sl5Div4IiynJ",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1370,
+     2490,
+     1940,
+     2490
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-bridge-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-bridge-west"
+      }
+     }
+    },
+    "_id": "7HtR361MgUp6eqrd",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3700,
+     1880,
+     3700,
+     2440
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-right-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-right-east"
+      }
+     }
+    },
+    "_id": "HhKo0QhiIDkCRLz9",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3040,
+     1880,
+     3040,
+     2440
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:n2:wall:lower-right-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:n2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:n2:wall:lower-right-west"
+      }
+     }
+    },
+    "_id": "cQaflQFAPH3rUaHN",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "weather": "",
+  "folder": "4iXeDJuCRBVhdM1M",
+  "sort": 106250,
+  "ownership": {
+   "default": 0,
+   "JESWV6CcU7m07VW6": 3
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "dnd5e",
+   "systemVersion": "5.3.3",
+   "createdTime": 1791326676630,
+   "modifiedTime": 1791351694516,
+   "lastModifiedBy": "JESWV6CcU7m07VW6",
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null
+  }
+ },
+ "sourceSHA": "80b12d293127eafac9f0385b0bfc8e884dacd9055ee95767e993e266a8a1607a",
+ "ledgerSHA": "ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4",
+ "revision": 13
+}

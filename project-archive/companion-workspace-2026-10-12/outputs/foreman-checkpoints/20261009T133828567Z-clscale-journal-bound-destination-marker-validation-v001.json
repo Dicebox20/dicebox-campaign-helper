@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T13:38:28.5672233Z",
+    "workUnitId":  "clscale-journal-bound-destination-marker-validation-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "User-authorized bounded DiceBox Foreman continuation via Remote Desktop Commander on DESKTOP-OI30P4Q. Verified fixture background preflight history through 2026-10-09 13:34:55Z; all logged 13-check runs remain OFFLINE_PREFLIGHT_PASS. Last Windows Task Scheduler result 0 for DiceBox-Offline-Preflight-15m. Added pure offline tools/clscale-synthetic-marker-validator.mjs with canonical serialized Token-envelope parser, strict synthetic world/route/source Token/source Scene/target Scene/Actor and receipt intent identity checks, duplicate Token and duplicate arrival quarantine, malformed or spoofed data rejection, and fail-closed two-sided source/target observation requirements. Added journal-bound review requiring exactly one matching synthetic intent and an interrupted journal state with valid hash chain. Updated non-executable receiptMarkerProposal in tools/clscale-synthetic-transfer-journal.mjs to include synthetic, worldId and actorId alongside previous route/Token/Scene fields. Added pure tools/clscale-synthetic-foundry-flag-mock.mjs illustrating preservation of unrelated Token flags and existing DiceBox options on a simulated destination Token while refusing preexisting transfer markers. All result types remain explicitly UNAUTHENTICATED and neverDispatch=true, mayRetry=false, committedTeleportAuthorized=false even with exact matches. Added comprehensive adversarial and serialization tests in work/clscale-central-lodge-migration-v001/clscale-synthetic-marker-validator.test.mjs. Three combined Node offline test suites PASS 68/68 exit code0. Saved exact assumptions, test instructions and runtime blockers in docs/CL50-SYNTHETIC-DESTINATION-MARKER-2026-10-09.md. Fixture dbx-test-world TCP30005 stayed STOPPED. No production Foundry, Windows Firewall, active Region behavior scripts, Token game documents, F1/T3/CL50 puzzle ledger, or Bridge queue modified.",
+    "blocker":  "The new Token data and updateData flag merge are MOCKS, not validated against a running Foundry v14 instance. Neither a matching mutable Token marker nor an unkeyed SHA256 journal chain establishes authenticity or user consent. Exact Source/Target Scene reads, runtime Token-flag persistence, fixed arrivals, ownership and collision verification, and crash consistency remain unverified. Fixture has blank GM login and previously wildcard TCP30005 listener. Independent safety gate and consumed single-use human authorization not passed; committed teleports prohibited. Bridge native wake still not proven.",
+    "nextAction":  "Continue in bounded Foreman mode without activating Foundry. Investigate a private fixture-only network bind and GM authentication plan, no Windows Firewall edits. Extend offline mock with crash/restart receipts and marker persistence roundtrip for different Token data shapes. Only after privately isolated fixture login, inspect TokenDoc toObject/updateData runtime semantics read-only. Do not install a real dispatcher, change production or active CL50/F1 Region scripts, or execute committed teleport without independent gates and separate single-use human approval. Keep scheduler reports and checkpoint current.",
+    "changedPaths":  [
+                         "tools/clscale-synthetic-marker-validator.mjs",
+                         "tools/clscale-synthetic-foundry-flag-mock.mjs",
+                         "tools/clscale-synthetic-transfer-journal.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-synthetic-marker-validator.test.mjs",
+                         "docs/CL50-SYNTHETIC-DESTINATION-MARKER-2026-10-09.md"
+                     ],
+    "validation":  [
+                       "68/68 pure Node offline marker, journal and transfer-policy tests PASS; exit code0",
+                       "Scheduled fixture preflight history 13/13 PASS through latest observed timestamp; last Scheduler result0",
+                       "Wrong world, route, Actor, source Token/Scene, target Scene, duplicate, untrusted marker, malformed data and corrupt journal all fail closed",
+                       "Mock preserves unrelated module flags but does not prove Foundry runtime merge or Token transfer",
+                       "No fixture listener activated, no production/firewall/Region script/Token/Bridge mutation"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world port30005 STOPPED; no live or fixture teleports; local offline synthetic marker simulator only",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\docs\\CL50-SYNTHETIC-DESTINATION-MARKER-2026-10-09.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

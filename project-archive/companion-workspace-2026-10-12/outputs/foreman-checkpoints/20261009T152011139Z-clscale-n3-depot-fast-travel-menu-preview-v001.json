@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T15:20:11.1393541Z",
+    "workUnitId":  "clscale-n3-depot-fast-travel-menu-preview-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "User requested continued implementation of simplified N3 Depot as a single destination menu with locked entries hidden, replacing overcomplicated point-to-point fast travel. Continued autonomously through Remote Desktop Commander while native Dicebox Bridge remained inaccessible. Read prior checkpoint and source design. Built tools/clscale-depot-fast-travel-catalog.mjs using exact N3 Estate Rail Car State hub Region and verified target Regions for N1 Lodge Station, N2 Grotto Station, and T3 Abandoned Spur. Catalog unlock: N1 puzzles.n1.railwayPowered true; N2 additionally puzzles.n2.fastTravelEnabled true; T3 additionally N3 departureBoardResolved, switchWheelInstalled, routeOverlay.resolved and t3BranchUnlocked true. Every visible candidate must satisfy all boolean flags, no locked or story-finisher F1/F2 routes appear. Menu opening and selection both verify authoritative Ledger revision/flags. Generated native Foundry v14 DialogV2.wait Region executeScript preview, primary GM only with Token/Region exact identity and reentry guard. Script is no-commit, never teleports, creates, updates or deletes game documents. Unit and synthetic Foundry dialog mocks pass 27/27. Backed up disposable Scenes LevelDB pre-depot-preview-scenes-db-v001 with file count and byte check, paused 15-minute preflight scheduler, installed EXACTLY ONE DISABLED N3 Region behavior id 934c9f79dece3715, verified 119 original behaviors unchanged, and stored independent receipt. Expanded recurring read-only preflight now expects 21 Scenes,202 Regions,120 behaviors,118 active, one disabled inert N3 menu and four original teleport scripts; full 16/16 preflight PASS. Reenabled Task Scheduler to Ready. All six safety and menu suites PASS 102/102 exit0. Documentation appended to docs/CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md. Fixture dbx-test-world Foundry14.367 dnd5e5.3.3 remains STOPPED on TCP30005; production the-lost-mine-of-phandalin, actors, existing puzzle scripts, Windows Firewall and Bridge queue unchanged. Prior master railway physical topology remains archived, not used for depot travel.",
+    "blocker":  "Menu Region Behavior is intentionally disabled and not live-UI verified. The preview intentionally refuses all actual Token transfers, so railway fast travel remains not playable. Fixed collision-free arrival positions, ownership and cross-Scene permission behavior, persistent interrupted-transfer recovery, and secure fixture GM login still need acceptance. Original four teleport behaviors remain unchanged and random-place. Stage known runtime issue: GM account protection not independently established. No production deployment authority assumed.",
+    "nextAction":  "At next user-initiated turn verify scheduled preflight 16/16 PASS and correct checkpoint. Use guarded loopback-only disposable Foundry fixture to inspect behavior schema and GUI in actual GM session; evaluate whether password protection is in place, without unsafe credential workarounds. Enable staged preview only during controlled local test, verify empty/partial/full menu and dynamic puzzle flags without moving Tokens, then disable it again or preserve only after safe GM UI evidence. Develop one shared transfer handler with exact destination positions, owner confirmation and durable recovery, applying to N1/N2/T3 only once verified. Do not resurrect eight T1/T2 mouth teleports for depot travel or build deferred Regionwright templates yet.",
+    "changedPaths":  [
+                         "tools/clscale-depot-fast-travel-catalog.mjs",
+                         "tools/clscale-fixture-readonly-preflight.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-fast-travel.test.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-menu-runtime-mock.test.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-generate-depot-menu-preview-v001.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-menu-preview-v002.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-install-depot-preview-v001.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-preview-install-receipt-v001.json",
+                         "work/clscale-central-lodge-migration-v001/pre-depot-preview-scenes-db-v001",
+                         "docs/CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md"
+                     ],
+    "validation":  [
+                       "27/27 menu logic and Foundry DialogV2 mock tests PASS",
+                       "Six offline safety/puzzle/depot test suites PASS 102/102",
+                       "One disabled N3 menu behavior imported and reread, 119 original behaviors preserved, fixed Region references",
+                       "Fixture full post-install preflight PASS 16/16, 21 Scenes, 202 Regions, 120 Region behaviors with 118 enabled, four original teleport sources",
+                       "Windows scheduled scanner Ready and network fixture TCP30005 STOPPED; no production/game Token writes"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367, DnD5e5.3.3, TCP30005 STOPPED; N3 depot menu Region behavior installed DISABLED with no teleport action; 15min offline integrity checker enabled",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-depot-preview-install-receipt-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

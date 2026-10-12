@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T03:23:44.2888666Z",
+    "workUnitId":  "central-lodge-cl50-e1m1-cl52-m1-audio-20261007",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "CL50 E1-\u003eM1 tokenEnter GM route guarded APPLY and independent FINAL VERIFY PASS (202 Regions/116 behaviors); CL52 original M1 footstep WAV and primary-GM one-shot Macro installed, audio source/permissions independent FINAL VERIFY PASS; no player canary or playback. KB 392/1168/467/540/200 verified.",
+    "blocker":  "",
+    "nextAction":  "Continue source-authority CL50 route topology or next CL52 cue asset. Perform player/GM M1 footstep canary only during controlled player session; preserve global night gate and authoring blockers.",
+    "changedPaths":  [
+                         "docs\\CL50-E1M1-CL52-M1-AUDIO-INSTALL-RECEIPT-2026-10-07.md",
+                         "handoffs\\FOREMAN-CL50-E1M1-CL52-M1-ORIGINAL-AUDIO-VERIFIED-2026-10-07.md",
+                         "assets\\cl52\\audio\\m1-distant-footsteps-v001.wav",
+                         "assets\\cl52\\audio\\m1-distant-footsteps-v001.manifest.json",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-e1m1-cl52-accepted.sql",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl52-m1-installed.sql",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl90-final-smoke.sql"
+                     ],
+    "validation":  [
+                       "Foundry guarded PREVIEW/APPLY and independent FINAL VERIFY PASS for E1M1; 8/8 offline contracts PASS",
+                       "M1 original WAV Windows SHA and Foundry FilePicker/HEAD PASS; 9/9 offline macro controls PASS",
+                       "M1 GM Macro APPLY and independent FINAL VERIFY PASS, no playback and consumed flag false",
+                       "CL90 cross-feature no-write smoke v002 PASS_WITH_KNOWN_BLOCKERS at 21/202/116/33, 133 macros",
+                       "SQLite build_database and verify_database integrity PASS at 392 sources/1168 facts/467 decisions/540 open items/200 trials"
+                   ],
+    "runtimeTarget":  "FoundryVTT 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "handoffs\\FOREMAN-CL50-E1M1-CL52-M1-ORIGINAL-AUDIO-VERIFIED-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

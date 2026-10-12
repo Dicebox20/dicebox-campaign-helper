@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T06:14:00.6691862Z",
+    "workUnitId":  "central-lodge-cl50-fixedcoord-batch-contract-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "New CL50 fixed-coordinate source-only batch design research and offline state-machine contract tests: node syntax PASS, 26 of 26 synthetic safety tests PASS; exact live v14.367 read-only Foundry API/Token schema check PASS. Batch API delegates to DatabaseBackend and public docs supply all-or-none cancellation but not automatic occupancy predicate, shared GM lease, consent or hook-safety. Test fixture files saved. Attempted new design-document write was blocked by OpenAI tool safety, not retried; KB and roadmap not updated from this unit. Independent no-write CL90 smoke PASS_WITH_KNOWN_BLOCKERS; no Foundry gameplay mutation, no installer.",
+    "blocker":  "New CL50 design-document write blocked by tool safety; no alternate or disguised retry. Prior R1 installer generator safety refusal and separate database verifier safety block still unresolved. The outgoing Codex message msg-dfa06276-bb2d-4fd1-9eda-0cefa011bcdb was host accepted without positively verified acknowledgment at last observation; do not duplicate unknown delivery.",
+    "nextAction":  "Recover this checkpoint and the two source-only QA files. Have designated Codex partner inspect its existing native inbox/acknowledge before requesting any new trigger; do not resend pending message. Continue only bounded approved read-only CL50 review of exact Token preCreate hooks and shared GM lease feasibility. Publish design/KB evidence only when tool safety allows through supported authorized workflow. No live teleport, no replay of blocked installer.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl50-v14-fixedcoord-batch-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-fixedcoord-state-contract-offline-v001.cjs"
+                     ],
+    "validation":  [
+                       "Exact Foundry v14.367/dnd5e5.3.3 no-write API audit PASS, document Token fields actorLink actorId delta flags observed and R1 endpoints unchanged",
+                       "node --check cl50-fixedcoord-state-contract-offline-v001.cjs PASS",
+                       "node --test cl50-fixedcoord-state-contract-offline-v001.cjs PASS 26 tests zero failures; synthetic fixtures only",
+                       "Foundry CL90 independent read-only smoke PASS_WITH_KNOWN_BLOCKERS, 21 scenes 202 Regions 116 behaviors 33 items ledger revision1 kernel hash unchanged",
+                       "New markdown research document write was blocked by tool safety, not retried and KB not updated; not claiming closure",
+                       "No token create/delete, live teleport, region or macro mutation; no new Bridge continuation send while previous host-accepted delivery unresolved"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e5.3.3/the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl50-fixedcoord-state-contract-offline-v001.cjs",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,6 @@
+const ledger=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{},found=[],unknown=[],collision=new Map();
+for(const s of game.scenes)if(s.name.startsWith("Central Lodge")||/^(T[123]|F[12])\b/.test(s.name))for(const r of s.regions)for(const b of r.behaviors){
+ const src=String(b.system?.source??""),rx=/(?:["']statePath["']\s*:\s*["']([^"']+)["']|statePath\s*=\s*["']([^"']+)["'])/g;
+ for(const m of src.matchAll(rx)){const path=m[1]??m[2],value=foundry.utils.getProperty(ledger,path),kind=typeof value,entry={scene:s.name,behavior:b.name,path,valueType:kind,exists:value!==undefined};found.push(entry);if(value===undefined)unknown.push(entry);collision.set(path,(collision.get(path)??0)+1);}
+}
+return{operation:"cl91.ledger-statepath-schema-compat-v001",noWrite:true,pathsExamined:found.length,distinctPaths:collision.size,unknownSchemaPaths:unknown,duplicates:[...collision].filter(([k,v])=>v>1),schemaPathValidCount:found.length-unknown.length,limitation:"Existing ledger schema is revision 0. Predeclared path validation does not prove runtime stage can reach that state."};

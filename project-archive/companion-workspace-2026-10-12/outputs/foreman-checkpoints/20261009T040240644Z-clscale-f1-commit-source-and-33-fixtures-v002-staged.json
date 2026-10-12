@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T04:02:40.6445765Z",
+    "workUnitId":  "clscale-f1-commit-source-and-33-fixtures-v002-staged",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Continued entirely local, no Bridge. Read Foundry v14.367 RegionDocument.teleportTokens and private destination/center-placement source read-only. Confirmed teleportTokens and spawnTokens(create:false) both call same #getTokenDestinations, but center may fall back to random snapped placement if token center rejected; actual teleport rebuilds destinations then sends a create+delete document batch through modifyBatch, so ephemeral result not a committed reservation. Hypothetical detached F1 Scene grid240 with target Region x2390 y1860 width280 height280, exact Meow-derived token preflight spawnTokens(create:false) returns 1x1 x2410 y1880 in 6/6 runs each ordinary/elevated/rotated. Non1x1 emit 2x2 x2290 y1760 and 1x2 x2410 y1760; these are refused by design. New staged-only T3 guard clscale-f1-t3-guard-proposed-v002.js source SHA15720ef28e2193e1c9e9b4189bc233a5d34ee9baf72877d6bee12939dfe65a1c, contract v002 installed:false, uses exact-token ephemeral preflight after GM confirmation, deterministic target x/y check, revalidation of GM/actor/token/region/walls/occupancy after await and single GM-runtime landing lock, 2x2 manual GM fail-closed. v002 offline fixtures 33/33 PASS incl occupancy/preview drift and lock release. Source-export and later detailed doc-write actions were blocked by safety checks, not retried. Live read-only exact F1/T3/F2 source hashes remain unchanged; sovereign ledger revision13 SHA ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4 unchanged; Meow F1/F2 and Ret M1 untouched. CL90 v014 PASS_WITH_KNOWN_BLOCKERS zero unexpected failures 21 Scenes 202 Regions 119 Behaviors 33 Items. No Foundry writes, no gameplay, no live committed teleport, no Bridge, no CL50 installers. All results are stage-only and NOT a production accept gate.",
+    "blocker":  "Actual database-committed destination, server event hooks, and token-create/delete acceptance remain unverified without a separately authorized safe test. The first and second private placement calls are not an atomic reservation. F1 live still grid120 with original T3 random handler, CL50 R1-R4 quarantined. Before any F1 live change first disable old T3 transfer, back up exact source and ledger, validate F1/F2 routes and region migration, install guarded handler disabled and only enable after independent committed acceptance. Bridge receipt unresolved while owner updates plugin; no sends.",
+    "nextAction":  "Keep F1 live unchanged until safe committed test path is separately available and authorized. Recheck checkpoint, v002 staged source SHA and 33 tests, and source/ledger baseline. Review exact v14 modifyBatch server results and commit event in a disposable test world if permitted, never against player scene as a canary. Continue other nonrisky planning while plugin update runs. Do not retry blocked source export or detailed note write.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\clscale-f1-t3-guard-proposed-v002.js",
+                         "work\\foundry-playwright-harness\\clscale-f1-arrival-contract-v002.json",
+                         "work\\foundry-playwright-harness\\clscale-f1-t3-guard-fixtures-v002.test.mjs"
+                     ],
+    "validation":  [
+                       "Node offline fixtures v002 33/33 PASS",
+                       "Foundry v14 exact-token ephemeral nonpersistent repeated center proof 1x1 at x2410 y1880",
+                       "Read-only frozen T3/F1/F2 SHA and Ret/Meow census PASS_NO_WORLD_DRIFT",
+                       "CL90 v014 PASS_WITH_KNOWN_BLOCKERS zero failures, ledger13 unchanged",
+                       "No Bridge dispatch, Foundry write, CL50 installer or player test"
+                   ],
+    "runtimeTarget":  "",
+    "receiptRef":  "work\\foundry-playwright-harness\\clscale-f1-arrival-contract-v002.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

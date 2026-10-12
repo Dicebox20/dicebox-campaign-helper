@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:43:52.2205263Z",
+    "workUnitId":  "central-lodge-accepted-routes-cl93-final-phase-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "User approved four exact bidirectional railway topology pairs R1-R4. New Central Lodge current roadmap and checklist record all 8 exact Region endpoints, approved route scope, and final CL-93 Scene lighting and visual effects phase after CL92; KB records 2 locked decisions, 2 locked facts, 1 new milestone and 1 new CL93 open item; database rebuilt and verified; no Foundry writes.",
+    "blocker":  "",
+    "nextAction":  "Begin next bounded CL50 installation-design work: exact live endpoint Region stableId / Walls / actual token footprint and incidental N1/N2 RegionBehavior review; design reversible bounce-suppressed consented bidirectional transition pairs; run no-write PREVIEW first. Do not replay old installers or enable scene lights. Only guarded APPLY after source and current state accepted.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-accepted-four-railway-pairs-and-final-vfx.sql"
+                     ],
+    "validation":  [
+                       "KB rebuild PASS integrity ok, 398 sources 1174 facts 470 decisions 542 open items 202 trials 20 milestones",
+                       "KB independent verify PASS 21/202/116/33; both acceptance decisions exact, CL93 milestone planned",
+                       "Foundry CL90 read-only smoke PASS_WITH_KNOWN_BLOCKERS, 21 Scenes 202 Regions 116 behaviors 33 Items ledger revision1, kernel SHA unchanged",
+                       "No route behaviors installed; live T1/T2 orientation flags are still old UNBOUND until guarded implementation",
+                       "No Scene lighting / visual effects activated"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CENTRAL-LODGE-ROADMAP.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

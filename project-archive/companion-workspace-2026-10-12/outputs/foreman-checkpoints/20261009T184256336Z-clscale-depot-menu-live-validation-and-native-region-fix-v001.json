@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T18:42:56.3365262Z",
+    "workUnitId":  "clscale-depot-menu-live-validation-and-native-region-fix-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Continued DiceBox Foreman work via Remote Desktop Commander without requiring native Bridge. Latest fixture 16-check offline preflight PASS before work, 21 scenes 202 regions 120 behavior records 33 Items one journal ledger one quarantined shared Kernel; scheduler Ready and fixture stopped. Launched EXACT disposable Foundry 14.367 dnd5e5.3.3 dbx-test-world port30005 via guarded loopback-only launcher; OS independently confirmed 127.0.0.1 listener and exact supervisor PID 9524, scheduling paused. Authenticated local GM only, no credential changes, production untouched. In real Foundry v14 browser tested one N3 Depot menu code with temporary in-memory ledger states and synthetic event Token; real document ledger untouched and preview disabled. Live DialogV2 showed zero entries when locked, N1 only when rail powered, N1 N2 T3 with all puzzle gates true, cancellation worked and T3 selection resolved exact destination and returned PREVIEW_SELECTED_NOT_TRANSFERRED canDispatch false tokenMoved false. Passing receipt clscale-depot-live-browser-receipt-v003.json and two screenshot PNGs. Found raw-only inserted disabled Region behavior id 934c9f79dece3715 absent from real game Region collection, despite prior offline 16 checks. Read-only inspected actual Region schema: native createEmbeddedDocuments supported. Called native Region.createEmbeddedDocuments ONCE for a disabled menu behavior, strict immediate post-write check reported mismatch. Did not blindly retry; fresh authenticated GM reread proved exactly one correctly bound disabled native behavior id Xa6xz88CyQ38gCU9, with unchanged code except single stripped trailing newline. After Foundry supervisor stop verified no listeners, backed up Scenes DB, deleted obsolete raw-only menu key id 934c9f79dece3715. First post-delete function falsely signaled failure due LevelDB missing get returning undefined; independent new read-only analysis verified key absent, one native disabled menu survives, 120 behavior records. Saved reconciliation receipt clscale-depot-native-reconciliation-v001.json with backup pre-depot-orphan-cleanup-v001. Updated offline preflight to check native Region behavior id and exact source after trim; 16/16 PASS. Re-enabled 15m read-only preflight task Ready last result0, fixture STOPPED. All six regression suites pass 102 of 102. Docs updated in CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md. No real Token movement, puzzle ledger mutation, production world write, firewall change or queued Bridge handoff.",
+    "blocker":  "One depot Region behavior is installed and disabled. Its real Foundry UI was validated only via synthetic in-memory ledger and Token event, not actual region-trigger gameplay. No shared transfer handler is deployed; Token destination collision/elevation, ownership, consent and durable interrupted-transfer handling require gates. Original 4 imported teleports remain untouched with random placement; the fixture passwordless GM is still a constraint, use only verified loopback isolation and native user controls if changing account. Production deployment unauthorized; do not claim Ready to Play.",
+    "nextAction":  "At next Foreman turn read checkpoint and current 16-gate offline preflight; disposable dbx-test-world must remain stopped until guarded loopback only. Continue simple N3 Depot single-hub design, not 8 T1/T2 mouth-pair teleports. Build shared transfer handler in source-only/test mode gated by authoritative ledger per N1, N2, T3 route, GM/player authorization and safe fixed arrival verification; protect interrupted-transfer receipts before enabling any Token dispatch. Review live screenshots and possibly improve UX. Keep native disabled Region behavior id Xa6xz88CyQ38gCU9, do not recreate old orphan. Do not revisit blocked credential automation; secure GM only through native UI if possible. Preserve all 119 original Region behaviors and 33 world Items. Save work and checkpoint again.",
+    "changedPaths":  [
+                         "docs/CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md",
+                         "tools/clscale-fixture-readonly-preflight.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-live-browser-preview-v003.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-live-browser-receipt-v003.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-menu-live-partial-v003.png",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-menu-live-all-v003.png",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-native-api-inspection-v004.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-orphan-readonly-v002.json",
+                         "work/clscale-central-lodge-migration-v001/pre-depot-orphan-cleanup-v001",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-native-reconciliation-v001.json"
+                     ],
+    "validation":  [
+                       "Actual Foundry v14 localhost GM UI showed empty menu, N1-only partial, N1+N2+T3 fully unlocked and successful T3 preview selection with no Token move or ledger mutation",
+                       "Native N3 Region API now exposes exactly 1 DISABLED behavior id Xa6xz88CyQ38gCU9, expected stable ID and source except trimmed trailing newline",
+                       "Obsolete raw-only behavior id 934c9f79dece3715 deleted and separately reread absent; 120 total Region behaviors, 119 original behaviors preserved",
+                       "Expanded fixture offline read-only preflight PASS 16/16 after shutdown and reconciliation",
+                       "All 6 suites of synthetic and source safety tests PASS 102/102, Foundry port30005 stopped, scheduler Ready LastTaskResult0"
+                   ],
+    "runtimeTarget":  "Foundry v14.367 dnd5e5.3.3 disposable dbx-test-world port30005 STOPPED, one disabled N3 Depot RegionBehavior registered via native API; 15-minute offline preflight Ready",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-depot-native-reconciliation-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

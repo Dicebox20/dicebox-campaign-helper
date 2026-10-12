@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T13:19:41.8931747Z",
+    "workUnitId":  "central-lodge-cl13-seventh-winter-approved-source-gate-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "User explicitly approved M1 The Seventh Winter at 4:35, with U1 family records fourth/youngest heir IV hour and E4 patriarch 1431 DR/matriarch 1438 DR seven-year chronology VII minute hand. Recovered canonical M1 source and live Foundry 14.367 read-only scene inventory: M1 Clock Setting Region 3tIrR12uv8ppFkOb exists with zero behaviors; emblem recess region and two clock-compartment pickup behaviors exist, and the ledger clockSettingResolved remains false; U1 Family Records and E4 graveyard regions present. Accepted change recorded in docs/CENTRAL-LODGE-ROADMAP.md and docs/CENTRAL-LODGE-ACTIVE-CHECKLIST.md. Source-only SQL KB patch staged, complete schema+seed+patch in-memory integrity dry-run PASS. Created before-attempt seed and SQLite backups. Canonical seed.sql atomic replacement failed with Windows WinError 5 ACCESS DENIED; original seed/database unchanged, temp seed patch preserved, no bypass or alternate write attempted. Exact no-write Foundry CL90 regression PASS_WITH_KNOWN_BLOCKERS with 21 Scenes,202 Regions,116 behaviors,33 Items, ledger revision1 and kernel SHA preserved. NO clock handler installed, no live mutations or player canary.",
+    "blocker":  "Canonical knowledge-base accepted-change synchronization blocked at seed.sql write: Python pathlib.Path.replace(temp, seed.sql) produced PermissionError WinError 5 Access denied. File not marked read-only; ACL includes rujie FullControl, no obvious seed-related active process in bounded query; cause unknown. Do not bypass refusal via alternate tool/transport or attempt live clock installation before KB reconciliation/rebuild and accepted PREVIEW. The existing M1 runtime kernel only executes writes through primary active GM; current Assistant Gamemaster separately authorized, so safe single-executor event routing requires review. Four old CL90 blocks remain until authored/installed. Previous unrelated CL50 safety-refused installer and outstanding Bridge host-accepted delivery remain unresolved; no duplicate Bridge dispatch.",
+    "nextAction":  "Investigate filesystem permission/rename failure through supported non-write diagnostics or authorized remediation without bypassing a denial, then reconcile staged CL13 SQL into canonical database/seed.sql and rebuild/verify. Review U1/E4 chronology conflicts and safely add approved clue material; design exact-source-hash no-write preview for M1 single new RegionBehavior and canonical clockSettingResolved writer with 4:35, emblem gate, wrong-entry nonlocking and separate unchanged rewards. Only after KB gate and guarded preview, perform one tightly scoped authorized GM Foundry APPLY and independent final reread. Preserve all unrelated game state and reserve user hands-on testing to campaign finish. No unsafe continuation replay while prior Bridge dispatch unresolved.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl13-clock-readonly-inventory-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl13-m1-clock-behavior-shapes-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl13-seventh-winter-approved-kb-v001.sql",
+                         "work\\foundry-playwright-harness\\cl13-clock-accepted-change-sync-v001.py",
+                         "work\\foundry-playwright-harness\\cl13-clock-kb-rebuild-v001.py"
+                     ],
+    "validation":  [
+                       "Accepted roadmap+active-checklist update confirmed",
+                       "New CL13 SQLite patch dry-run on in-memory schema+seed PASS PRAGMA integrity_check=ok and decision locked",
+                       "Canonical database/seed.sql atomic update FAILED WinError 5 Access Denied; original content and existing DB unmodified, backups preserved",
+                       "Exact Foundry M1/U1/E4 no-write inventory confirms clock Region empty, existing emblem and reward behaviors intact, 4:35 not installed",
+                       "Independent Foundry v14.367 CL90 read-only smoke PASS_WITH_KNOWN_BLOCKERS, 21 Scenes / 202 Regions / 116 behaviors / 33 Items / ledger revision 1 / kernel hash 6264c467211d4f5c94cfaaa9437eae88582599061b9d8a4951391830a3e8f814",
+                       "No live or actor/item/ledger changes, no gameplay canary, no duplicate Bridge dispatch"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 / dnd5e 5.3.3 / the-lost-mine-of-phandalin; user-approved CL13 design, source gate not passed",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl13-seventh-winter-approved-kb-v001.sql",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

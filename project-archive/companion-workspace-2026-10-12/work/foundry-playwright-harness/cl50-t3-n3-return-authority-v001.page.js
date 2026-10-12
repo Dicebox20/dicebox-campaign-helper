@@ -1,0 +1,3 @@
+const t3=game.scenes.get("aIKQmFiuXWipEdyb"),n3=game.scenes.get("pHQvDUDlyWZFuNrX"),r=t3?.regions.get("YElrtisbXN3DJ2Sw"),d=n3?.regions.get("RP1jYOH738xl9hks");
+const l=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{};
+return{operation:"cl50.t3-n3.return-authority.readonly",noWrite:true,sourceId:r?.id,sourceFlag:r?.getFlag("world","dicebox"),destinationId:d?.id,destinationStableId:d?.getFlag("world","dicebox")?.stableId,sourceBehaviors:r?.behaviors.size,destinationBehaviors:d?.behaviors.size,branchUnlocked:l?.puzzles?.n3?.t3BranchUnlocked,ledgerRevision:l.revision,n3SceneKey:n3?.getFlag("world","dicebox")?.sceneKey??null};

@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T14:12:20.1897210Z",
+    "workUnitId":  "clscale-private-fixture-runtime-and-calendar-compat-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "User authorized assistant to decide and enforce DiceBox safety gates autonomously. Using Remote Desktop Commander, verified Foundry14 hostname/localHostname do not bind listening interfaces, built tools/clscale-fixture-loopback-preload.cjs guarded exact world dbx-test-world dataPath and TCP30005; toy HTTP listener deliberately requested 0.0.0.0 but OS confirmed 127.0.0.1 exclusive and HTTP200. Real Foundry supervisor launched exact disposable fixture twice under guarded NODE_OPTIONS; PID26344 and PID3612 matched supervisor state, command line and only LocalAddress 127.0.0.1:30005. Direct LAN IP10.0.0.26 TCP30005 connection refused while world live; no Windows Firewall changes. Before live tests created verified world and Config backup work/clscale-central-lodge-migration-v001/fixture-pre-loopback-runtime-v001. In-world Puppeteer GM joined localhost; all 21 imported Scenes,202 Regions,119 Region behaviors, six Actors and 39 active modules present. Caught reproducible browser errors e.find and journal directory from foundryvtt-simple-calendar2.4.18, verified hook source code uses old controls array. With fixture cold, backed module enable configuration and disabled only this package in disposable world; zero required dependents, package still installed and reversible. Restarted under identical loopback guard: in-world zero collected client initialization errors, 21 Scenes 202 Regions 119 behaviors 6 Actors and 38 active modules preserved. Offline preflight updated with explicit calendar exception, 14/14 passed after final shutdown. On ephemeral TokenDocument clone in F1, updateSource of synthetic transfer marker preserved Monks TokenBar, Tagger, Bloodsplats and Patrol flags, survived toObject serialization; original Token serialized unchanged, no teleport called or persistent Token write. GM password protection automation was blocked by tool safety control, not attempted again, and remains an open gate; fixture stopped and 15-minute read-only scheduler restored Ready, last Task Scheduler result0, direct preflight status PASS. Hardened both guarded launch PowerShell scripts to stop exact verified fixture on failed listener validation; syntax checks passed. Detailed docs/CL50-ISOLATED-FOUNDRY-RUNTIME-2026-10-09.md. No production Foundry, source account, puzzle ledger, Region behavior, Windows Firewall or Bridge action changed.",
+    "blocker":  "GM fixture account still has blank world login; automated password workflow was blocked. Fixture currently STOPPED, so LAN is not exposed. Guarded NODE_OPTIONS preload must always be supplied for any future fixture launch; it does not protect other launch methods. Region teleportToken actual cross-Scene updateData marker persistence, fixed destination collision safety, interrupted-transfer recovery, and single-use approval consumption remain unverified. The 38 active module arrangement excludes only Simple Calendar2.4.18 for documented v14 errors. No committed teleport authorization exercised.",
+    "nextAction":  "Continue future bounded Foreman work only in dbx-test-world under proven guarded launcher. Before longer runtime session set a strong GM login password through Foundry User Management without unsafe credential automation. Reverify loopback OS listener each time. Use read-only TokenDocument API and wall-collision checks for F1/F2/T3 destination candidates, preserve current installed Region scripts and all production world contents. Do not commit teleport until exact in-world destination geometry, ownership, durable recovery receipts and one-use delegated approval validated. Keep scheduled preflight running while fixture stopped and pause before startup.",
+    "changedPaths":  [
+                         "tools/clscale-fixture-loopback-preload.cjs",
+                         "tools/clscale-fixture-readonly-preflight.mjs",
+                         "work/clscale-central-lodge-migration-v001/simple-calendar-fixture-compat-receipt-v001.json",
+                         "work/clscale-central-lodge-migration-v001/fixture-token-ephemeral-clone-smoke-v001.json",
+                         "work/clscale-central-lodge-migration-v001/fixture-pre-loopback-runtime-v001",
+                         "work/clscale-start-loopback-fixture-v001.ps1",
+                         "work/clscale-restart-loopback-fixture-v002.ps1",
+                         "docs/CL50-ISOLATED-FOUNDRY-RUNTIME-2026-10-09.md"
+                     ],
+    "validation":  [
+                       "Toy forced wildcard listener constrained to loopback; Foundry real process twice constrained to loopback and LAN TCP test failed",
+                       "GM client runtime after calendar quarantine: 21 Scenes,202 Regions,119 behaviors,6 Actors,38 modules active, no captured init exceptions",
+                       "Ephemeral clone updateSource/toObject preserves unrelated Token flags and marker; actual Token unchanged",
+                       "Fixture owner-controlled STOP success, TCP30005 no listener, scheduled offline preflight 14/14 PASS",
+                       "Launch-script PowerShell syntax PASS; production/Firewall/Region triggers and committed teleports untouched"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367 dnd5e5.3.3 TCP30005 STOPPED after successful loopback-only test. 15min offline scheduler enabled. Production world unchanged.",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\docs\\CL50-ISOLATED-FOUNDRY-RUNTIME-2026-10-09.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

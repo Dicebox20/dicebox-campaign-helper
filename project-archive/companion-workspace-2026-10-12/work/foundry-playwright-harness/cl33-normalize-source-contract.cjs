@@ -1,0 +1,6 @@
+const fs=require("node:fs");
+const p="cl33-migration-sources-v001.json";const specs=JSON.parse(fs.readFileSync(p,"utf8"));for(const x of specs){if(!x.source.endsWith("\n"))throw Error(x.scene+" unexpected existing formatting");x.source=x.source.trimEnd();}fs.writeFileSync(p,JSON.stringify(specs,null,2));
+const previewPath="cl33-migration-preview-v001.page.js";let preview=fs.readFileSync(previewPath,"utf8");const matches=[...preview.matchAll(/const SPECS=.*;/g)];if(matches.length!==1)throw Error("preview SPECS not singular");
+preview=preview.replace(/const SPECS=.*;/, "const SPECS="+JSON.stringify(specs)+";");fs.writeFileSync(previewPath,preview);
+const gp="generate-cl33-migration-v001.cjs";let gen=fs.readFileSync(gp,"utf8");
+const hashMap=[["def841013a5a463c8bf16947a81e5bf7cfcf151f0a807227fcf89fd789ad639e","3a94336de7085861509386213400fc77fddb1159848b12c46d1449076421470a"],["4d38223d5c1f9776a64bb3556039fbe2662ebacb8266b0545a464a78113adaaf","ed1b14b30ad8e91eb63c0ef3d249b6628e7f5d7dd9233e22e827e73847ef37d4"],["edc37561f0b9bf366b49d02e2a963036a012b6d163a5d45f7e055acd93cca470","59a275202cbc89f6ec974c12b5b0dd28a3b3e7f75428ba297dd46897c0ae9b38"]];for(const [oldH,newH] of hashMap){if(!gen.includes(oldH))throw Error("Expected lock hash absent "+oldH);gen=gen.replace(oldH,newH);}fs.writeFileSync(gp,gen);console.log("NORMALIZED_JSON_PREVIEW_VERIFIER_LOCKS_PASS");

@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T03:55:30.4227938Z",
+    "workUnitId":  "clscale-f1-t3-guard-19-offline-fixtures-verified-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Remote Desktop Commander restarted and verified. Corrected F1 offline safety fixture harness (Foundry walls are size-bearing collection, not raw array) and staged script line endings; 16/16 then 19/19 tests PASS after adding post-GM-dialogue size, actor and GM-election change guards. Staged proposed 1x1-only T3-to-F1 travel handler SHA7ece308589200ede62acc7a8034b25db5d8e1201914f4463b9152ecf3fd10358, old installed handler SHA c179ae83855e6eb136a1225bfbb882ab9c6b7bcd3f0773df3654f82b2b23d6cb, unchanged live T3 Scene SHA76141690439a19d6092a2119744def0dce57c9368cd4ceaf66ccd23c1fa8eabb, unchanged F1 Scene SHA85ec24e6da7e5b849099fbe5b7a568693ccc71fc55842f7fefb4e584a045c235 grid120, F2 SHA5ad191d492195bf227bb099d9b356992aca44fe6d884ac940e085db8c2342639 grid240. Stage-only target proposed F1 arrival Region x2390 y1860 w280 h280 and hypothetical F1 grid240, Foundry v14 ephemeral center placement yields 1x1 token top-left x2410,y1880, clears source Wall segments, overlaps no F1 story scripted Regions or Meow x2524,y2151 (31px gap). 2x2 480 fails closed to manual GM, no attempted live transfer. Post-fixture read-only live all 3 scene frozen SHAs match, Meow and Ret x2256 y1655 preserved, sovereign ledger rev13 SHA ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4 unchanged; CL90 v014 PASS_WITH_KNOWN_BLOCKERS zero failures, 21 Scenes/202 Regions/119 RegionBehaviors/33 items. Canonical doc CL-SCALE-F1-240-GUARDED-ARRIVAL-DESIGN-2026-10-09.md and checklist updated; source-backed KB fact explicitly STAGED NOT INSTALLED, built and verified SQLite integrity ok 433 sources 1207 facts 81 fragments. No live Foundry/actor/token/region/behavior/ledger write, no railway installers, player test, duplicate Bridge dispatch or receipt reconciliation.",
+    "blocker":  "F1 live grid remains120 and original T3-\u003eF1 random/unsnapped handler still installed, despite demonstrated unsafe arrival if grid changed without migration. Offline ephemeral center placement does not prove committed \teleportToken arrival; owner deferred final gameplay canary. Before live 240 grid change need enforce handler-disable-first migration with no nonGM players, independent before/after exact source and ledger backups for T3/F1, F1 incoming Region placement, F1-\u003eF2 route, and 1x1/2x2 safe pathing. CL50 R1-R4 quarantined, N3 remains120, M1 Ret protected. Existing Bridge foreman receipt staged/unreconciled under user-driven plugin update; no sends or retries.",
+    "nextAction":  "When resuming local Foreman work, read newest checkpoint and F1 design doc, validate current source hashes/ledger, then independently prove committed \teleportToken exact centered landing without player/world mutation. Only if proof reliable, plan multi-gate T3 handler suspend first, then isolated F1 grid/Region update, source/hash verification, handler install disabled and independent enable gate. If proof unknown, keep F1 unchanged and record GM manual fallback. Continue beyond this work unit only by a new explicit user turn, no automatic Bridge wake until plugin update.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\clscale-f1-t3-guard-proposed-v001.js",
+                         "work\\foundry-playwright-harness\\clscale-f1-arrival-contract-v001.json",
+                         "work\\foundry-playwright-harness\\clscale-f1-t3-guard-fixtures-v001.test.mjs",
+                         "work\\foundry-playwright-harness\\clscale-f1-postfixtures-readonly-v001.page.js",
+                         "docs\\CL-SCALE-F1-240-GUARDED-ARRIVAL-DESIGN-2026-10-09.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "database\\seed.d\\zzzzzzzzzzzzzzzzzzzzzzzzzz-2026-10-09-clscale-f1-guard-proposal-verified.sql"
+                     ],
+    "validation":  [
+                       "node --test ...clscale-f1-t3-guard-fixtures-v001.test.mjs: PASS 19/19",
+                       "F1_POST_FIXTURE_CURRENT_LIVE_FROZEN_HASH_READONLY PASS_NO_WORLD_DRIFT",
+                       "cl90-progress-safety-smoke-v014 PASS_WITH_KNOWN_BLOCKERS zero unexpected failures",
+                       "SQLite build_database.py integrity ok 433 sources 1207 facts 81 fragments",
+                       "SQLite verify_database.py integrity ok",
+                       "No live F1/T3/Actor/ledger modifications or Bridge dispatch"
+                   ],
+    "runtimeTarget":  "Foundry v14.367, dnd5e 5.3.3, the-lost-mine-of-phandalin, Assistant Gamemaster",
+    "receiptRef":  "docs\\CL-SCALE-F1-240-GUARDED-ARRIVAL-DESIGN-2026-10-09.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

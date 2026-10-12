@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-12T07:38:26.8290367Z",
+    "workUnitId":  "region-macro-execution-contract-20261012",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Permanent Region-triggered Macro execution permission rule added to foundation AGENTS.md, canonical Foreman workflow, campaign roadmap/checklist, and reproducible KB. DB rebuild integrity PASS; source/fact/decision/trial and FTS rows independently verified. No Foundry world was changed. Shared ChatGPT-side Google Doc mirror remains blocked because the Google Drive connector is disabled by admin.",
+    "blocker":  "Google Drive/Docs connector is disabled by admin; no authorized editing path for the shared ChatGPT-side document in this session.",
+    "nextAction":  "When an authorized Google Docs editing path becomes available, mirror the accepted rule to the shared ChatGPT-side coordination document. For every future Region-triggered Macro, apply the new mandatory preflight, post-install, and fresh-reload execution permission checks. No Foundry write is authorized by this checkpoint.",
+    "changedPaths":  [
+                         "AGENTS.md",
+                         "docs/FOREMAN-WORKFLOW-CURRENT.md",
+                         "docs/CENTRAL-LODGE-ROADMAP.md",
+                         "docs/CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "database/seed.sql",
+                         "database/dicebox_campaign_helper_knowledge.sqlite",
+                         "database/dicebox_campaign_helper_knowledge.pre-region-macro-rule-20261012.sqlite"
+                     ],
+    "validation":  [
+                       "python database/build_database.py: integrity ok; 435 sources, 1209 facts, 479 decisions, 209 trials, 548 open items",
+                       "Read-only verification: new canonical source/fact/decision/T-209 and all three FTS entries present",
+                       "Existing exact-world trial T-190 confirms everyone=true does not override Macro permission",
+                       "Foundation AGENTS.md and Foreman workflow reread confirm permanent rule in place",
+                       "No Foundry runtime or world mutation performed",
+                       "Google Drive connector search reports disabled by admin and installation unavailable"
+                   ],
+    "runtimeTarget":  "Documentation and local SQLite KB only; no Foundry runtime mutation",
+    "receiptRef":  "database/dicebox_campaign_helper_knowledge.sqlite.pre-region-macro-rule-20261012.sqlite",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "B1113886631E7B3EED15560C346D0DFD39AE8814E7FF01B4E20E36335B2FC33E"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

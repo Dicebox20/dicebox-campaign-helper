@@ -1,0 +1,11 @@
+"use strict";
+const fs=require("node:fs"),crypto=require("node:crypto"),base=fs.readFileSync("cl52-m1-footsteps-macro-v001.txt","utf8");
+const changes=[["U8S5ZrTjaPIkTUIL","JZkxX6lUQe8Nc8xJ"],["m1DistantFootstepsPlayed","m2HauntedPianoPlayed"],["__diceboxCl52M1FootstepsLock","__diceboxCl52M2PianoLock"],["m1-distant-footsteps-v001.wav","m2-haunted-piano-v001.wav"],["Distant Footsteps","Haunted Piano"],["distant-footsteps","haunted-piano"],["footstep and floorboard-creak cue","haunted, slightly discordant piano cue"],["Play Footsteps Once","Play Piano Once"],["Footsteps","Piano"],["footsteps","piano"],["M1","M2"],["m1","m2"]];
+let code=base;for(const [a,b] of changes)if(code.includes(a))code=code.replaceAll(a,b);
+if(code===base||!code.includes("m2HauntedPianoPlayed")||code.includes("m1DistantFootstepsPlayed"))throw Error("Safe adaptation check failed");
+const filename="cl52-m2-piano-macro-v001.txt";fs.writeFileSync(filename,code,{flag:"wx"});const hash=crypto.createHash("sha256").update(code).digest("hex");
+const A=Object.getPrototypeOf(async function(){}).constructor;new A("event",code);
+let test=fs.readFileSync("cl52-m1-footsteps-macro-offline-v001.cjs","utf8");for(const [a,b] of changes)if(test.includes(a))test=test.replaceAll(a,b);
+if(!test.includes(filename))throw Error("Offline test file ref");
+fs.writeFileSync("cl52-m2-piano-macro-offline-v001.cjs",test,{flag:"wx"});
+console.log("CL52_M2_MACRO_GENERATED",JSON.stringify({sha256:hash,bytes:Buffer.byteLength(code)}));

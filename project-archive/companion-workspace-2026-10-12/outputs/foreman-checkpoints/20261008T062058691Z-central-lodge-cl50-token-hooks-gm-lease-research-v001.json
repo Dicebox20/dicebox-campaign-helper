@@ -1,0 +1,44 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T06:20:58.6912143Z",
+    "workUnitId":  "central-lodge-cl50-token-hooks-gm-lease-research-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Recovered exact current Foreman Bridge session and prior PARTIAL/STOP checkpoint, consulted canonical read-only KB accepted four route decision and blocked R1 source. Inspected exact Foundry 14.367 TokenDocument lifecycle methods via no-write developer harness: _preCreate of unlinked Token may updateSource synthetic actor delta.name; _onCreate initializes per-scene Region membership from _source._regions and synthetic actor effect registry, _onDelete cleans dependent tokens. Public core v14 Region TOKEN_ENTER occurs when Token is CREATED within Region; pre-Create client hooks cannot prove cross-GM atomic lease. Selected design policy one known Assistant Gamemaster user with independently provable unique durable lease, else fail closed. Created offline synthetic Token lifecycle and lease fixture, node check PASS, 16/16 tests PASS; independent CL90 live no-write baseline unchanged. No live Token, Region, transfer, installer, gameplay mutation. Previous research design-doc tool safety refusal not bypassed; KB not updated in this bounded unit.",
+    "blocker":  "No verified shared GM single-executor atomic lease or durable CAS; creating Tokens within Regions may trigger protected puzzle/return behavior. Earlier CL50 research design-document write was blocked by tool safety and must not be replayed through alternative path; canonical KB not updated for this new source-only evidence. Frozen R1 installer and independent DB verifier remain safety-blocked. Real-player canary unavailable.",
+    "nextAction":  "Recover latest checkpoint with this fixture and no-write lifecycle source. Research durable cross-GM exclusive lease and preCreate/onCreate/Region TOKEN_ENTER order under exact Foundry v14.367 with a vetted supported authorization path. Keep non-GM travel manual until collision, consent, idempotence, protected Region effects and full live canary verified. If documentation/KB recording still tool safety-blocked, do not circumvent; preserve evidence in checkpoint. Reconcile Codex previous inbox outcome before one new native next-turn request; no blind duplicate.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl50-v14-token-lifecycle-hooks-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-token-lifecycle-lease-fixtures-v001.cjs"
+                     ],
+    "validation":  [
+                       "Read-only canonical SQLite decision D-2026-10-07-CL50-FOUR-BIDIRECTIONAL-RAILWAY-PAIRS locked and R1 source open item remains blocked",
+                       "Exact Foundry 14.367 TokenDocument _preCreate _onCreate _preDelete _onDelete source readback PASS, no persisted test document, two active GM sessions",
+                       "Official v14 REGION_EVENTS TOKEN_ENTER includes Token created within region; public API preCreate is requesting-client only",
+                       "Node --check CL50 token lifecycle and lease fixtures PASS",
+                       "Node --test CL50 token lifecycle and lease fixtures: 16 tests PASS, 0 FAIL, offline-only",
+                       "Independent CL90 read-only smoke PASS_WITH_KNOWN_BLOCKERS baseline 21 Scenes/202 Regions/116 behaviors/33 Items ledger rev1 and kernel hash unchanged",
+                       "No live Foundry mutation; no installer; independent DB verifier still blocked/not retried; no new KB write attempted"
+                   ],
+    "runtimeTarget":  "Foundry 14.367 / dnd5e 5.3.3 / the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl50-token-lifecycle-lease-fixtures-v001.cjs",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

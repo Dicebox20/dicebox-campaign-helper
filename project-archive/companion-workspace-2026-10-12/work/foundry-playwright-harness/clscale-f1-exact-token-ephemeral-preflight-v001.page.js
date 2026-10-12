@@ -1,0 +1,10 @@
+const id="La9krMOMBhAhDLi6",live=game.scenes.get(id),ref=live.tokens.get("xjFxFSL0NoLkdQfT"),j=game.journal.get("xhlXv6CCH34HVga3"),actor=game.actors.get("2g6CmPQqhSkRQQZm");
+const H=async v=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(JSON.stringify(v)))),b=>b.toString(16).padStart(2,"0")).join("");
+const before=[await H(live.toObject()),await H(j.getFlag("world","dicebox")?.state),await H(actor.toObject())];
+if(before[0]!=="85ec24e6da7e5b849099fbe5b7a568693ccc71fc55842f7fefb4e584a045c235"||before[1]!=="ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4")throw Error("LIVE_DRIFT");
+const data=live.toObject();data.grid.size=240;data.regions.find(x=>x._id==="zKNU1R3JGIMMt017").shapes=[{type:"rectangle",x:2390,y:1860,width:280,height:280,rotation:0}];const hypo=live.constructor.fromSource(data);
+if(game.scenes.get(id)===hypo)throw Error("EPHEMERAL_SCENE_REGISTERED");
+const region=hypo.regions.get("zKNU1R3JGIMMt017");
+const cases=[];for(const [label,mutate] of [["1x1 normal",d=>{}],["1x1 elevated",d=>{d.elevation=10;}],["1x1 rotation",d=>{d.rotation=45;}],["2x2",d=>{d.width=2;d.height=2;}],["1x2",d=>{d.width=1;d.height=2;}]]){const tokData=ref.toObject();mutate(tokData);const points=[];for(let i=0;i<6;i++){try{const emitted=await region.spawnTokens([tokData],{placement:"center",snap:false,create:false});points.push({x:emitted[0]?.x,y:emitted[0]?.y,w:emitted[0]?.width,h:emitted[0]?.height,level:emitted[0]?.level});}catch(e){points.push({error:String(e.message??e)});break;}}cases.push({label,points});}
+const after=[await H(live.toObject()),await H(j.getFlag("world","dicebox")?.state),await H(actor.toObject())];
+return{operation:"F1_EPHEMERAL_EXACT_TOKEN_PLACEMENT",liveUnchanged:before.every((x,i)=>x===after[i]),liveHashes:before,cases};

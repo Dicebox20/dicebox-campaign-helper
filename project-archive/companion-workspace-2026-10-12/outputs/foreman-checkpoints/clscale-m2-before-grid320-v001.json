@@ -1,0 +1,2505 @@
+{
+ "source": "exact Foundry read-only toObject",
+ "operation": "clscale-m2-full-scene-backup-readonly-v001",
+ "sceneSha": "c96c3026a7b5ae152871ceb5191770f3474fd9410958a1701bcff4c3c34d72d5",
+ "ledgerSha": "e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9",
+ "scene": {
+  "name": "Central Lodge — M2 Study, Parlor & Formal Rooms",
+  "width": 4320,
+  "height": 2880,
+  "padding": 0,
+  "grid": {
+   "type": 0,
+   "size": 120,
+   "distance": 5,
+   "units": "ft",
+   "style": "solidLines",
+   "thickness": 1,
+   "color": "#000000",
+   "alpha": 0.2
+  },
+  "flags": {
+   "dicebox-campaign-helper": {
+    "stableId": "dbx:central-lodge:m2",
+    "managed": {
+     "owner": "dicebox-campaign-helper",
+     "packageId": "dbx:central-lodge:m2:v1",
+     "kind": "scene",
+     "stableId": "dbx:central-lodge:m2"
+    },
+    "campaignId": "central-lodge",
+    "mapId": "M2",
+    "buildContract": "dicebox-scene-injector-build/v2",
+    "scaleProfile": "battlemap-120",
+    "timeOfDay": "day",
+    "campaignTimeKey": "central-lodge.timeOfDay",
+    "rendererLightingProfile": "time-neutral-interior",
+    "buildInstalled": true,
+    "ready": false,
+    "puzzleState": {
+     "glassEyeInserted": false,
+     "pianoRollInserted": false,
+     "silverFamilyEmblemRecovered": false,
+     "founderSignetPresented": false,
+     "estateSurveyRecovered": false,
+     "stagCrestRecovered": false,
+     "reliquaryUnlocked": false,
+     "ceremonialCenserRecovered": false
+    },
+    "dayNight": {
+     "policy": "ambient-reaction-only",
+     "campaignTimeKey": "central-lodge.timeOfDay",
+     "triggerEventId": null,
+     "triggerStatus": "UNRESOLVED_CANON_DECISION",
+     "lightingOrder": [
+      "dbx:central-lodge:m2:light:study-north",
+      "dbx:central-lodge:m2:light:study-south",
+      "dbx:central-lodge:m2:light:parlor-north",
+      "dbx:central-lodge:m2:light:parlor-south",
+      "dbx:central-lodge:m2:light:formal-west",
+      "dbx:central-lodge:m2:light:formal-east"
+     ]
+    },
+    "assetReceipt": {
+     "base": {
+      "path": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/m2/m2-study-parlor-formal-rooms.webp",
+      "sha256": "40c7d789e76a982d51d1ae338e5a3af8482c337eeab04b29e0a5a8677b071969",
+      "bytes": 125754,
+      "lightingProfile": "time-neutral-interior"
+     }
+    },
+    "implementationPending": [
+     "bind hidden Notice behaviors for portrait and piano",
+     "bind portrait-eye, piano-roll, founder-portrait, reliquary, and pickup interactions",
+     "supply any required state-art overlays without altering approved base geometry",
+     "bind transition destinations",
+     "bind campaign sunset controller to installed light stable IDs",
+     "VERIFY exact wall, Region, and light alignment"
+    ]
+   }
+  },
+  "_id": "JZkxX6lUQe8Nc8xJ",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "thumb": null,
+  "shiftX": 0,
+  "shiftY": 0,
+  "initial": {
+   "x": null,
+   "y": null,
+   "scale": null
+  },
+  "initialLevel": "defaultLevel0000",
+  "tokenVision": true,
+  "fog": {
+   "mode": 1,
+   "colors": {
+    "explored": null,
+    "unexplored": null
+   }
+  },
+  "environment": {
+   "darknessLevel": 0,
+   "darknessLock": false,
+   "globalLight": {
+    "enabled": false,
+    "alpha": 0.5,
+    "bright": false,
+    "color": null,
+    "coloration": 1,
+    "luminosity": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "shadows": 0,
+    "darkness": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "cycle": true,
+   "base": {
+    "hue": 0,
+    "intensity": 0,
+    "luminosity": 0,
+    "saturation": 0,
+    "shadows": 0
+   },
+   "dark": {
+    "hue": 0.7138888888888889,
+    "intensity": 0,
+    "luminosity": -0.25,
+    "saturation": 0,
+    "shadows": 0
+   }
+  },
+  "transition": {
+   "type": null,
+   "duration": 1500,
+   "activeOnly": false
+  },
+  "drawings": [],
+  "tokens": [],
+  "levels": [
+   {
+    "_id": "defaultLevel0000",
+    "name": "Level",
+    "elevation": {
+     "bottom": 0,
+     "top": 20
+    },
+    "background": {
+     "color": "#999999",
+     "src": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/m2/m2-study-parlor-formal-rooms.webp",
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "foreground": {
+     "src": null,
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "fog": {
+     "src": null
+    },
+    "textures": {
+     "anchorX": 0.5,
+     "anchorY": 0.5,
+     "offsetX": 0,
+     "offsetY": 0,
+     "fit": "fill",
+     "scaleX": 1,
+     "scaleY": 1,
+     "rotation": 0
+    },
+    "visibility": {
+     "levels": []
+    },
+    "sort": 0,
+    "flags": {}
+   }
+  ],
+  "lights": [
+   {
+    "name": "M2 Music Parlor Sconce North",
+    "x": 3560,
+    "y": 560,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 15,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.24,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:light:parlor-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m2:light:parlor-north"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "xtUb4Nvuw0xZOuzA",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M2 Study Sconce South",
+    "x": 1050,
+    "y": 2040,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 15,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.24,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:light:study-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m2:light:study-south"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "Phy5lY470NWvb54f",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M2 Music Parlor Sconce South",
+    "x": 4020,
+    "y": 2050,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 15,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.24,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:light:parlor-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m2:light:parlor-south"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "VNfKyRiX4XaQUYWS",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M2 Formal Salon Sconce East",
+    "x": 2760,
+    "y": 650,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 16,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffad55",
+     "alpha": 0.22,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:light:formal-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m2:light:formal-east"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "peripheral-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "UFGu11020pDOZ6Jd",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M2 Study Sconce North",
+    "x": 520,
+    "y": 560,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 15,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.24,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:light:study-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m2:light:study-north"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "KGu7vf6flmLlY6lt",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "M2 Formal Salon Sconce West",
+    "x": 1560,
+    "y": 650,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 16,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffad55",
+     "alpha": 0.22,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:light:formal-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:m2:light:formal-west"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "peripheral-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "67gguegoGhqQMBpz",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   }
+  ],
+  "notes": [],
+  "sounds": [],
+  "regions": [
+   {
+    "name": "M2 Portrait Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 440,
+      "y": 400,
+      "width": 760,
+      "height": 600,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:notice:portrait",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:notice:portrait"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "altered-family-portrait",
+       "discoveryId": "m2-portrait",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "One framed family piece draws the eye for reasons that are difficult to place.",
+       "successHint": "One family portrait has a deliberately altered facial detail and unusually careful framing.",
+       "interpretation": {
+        "investigation": "The altered detail is meant to accept a fitted piece rather than being ordinary damage.",
+        "history": "The frame and heraldic motifs belong to the same family program seen elsewhere in the Lodge."
+       }
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-portrait-notice",
+       "sceneKey": "M2",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "fMT43gKz5Am84FEi",
+       "sourceRegionName": "M2 Portrait Notice"
+      }
+     }
+    },
+    "_id": "fMT43gKz5Am84FEi",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M2 — Portrait Notice",
+      "type": "executeScript",
+      "disabled": true,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"m2.portrait-eye\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The founder’s portrait is subtly wrong. One eye does not match the other, and close inspection reveals a fitted recess where a small artificial eye was meant to sit.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"The portrait remains physically examinable, and the eye mechanism can still be used if the missing Glass Eye is recovered.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl12-m2-behaviors-v001",
+         "stableId": "dbx:central-lodge:m2:behavior:portrait-notice",
+         "sceneKey": "M2",
+         "regionStableId": "dbx:central-lodge:m2:region:m2-portrait-notice",
+         "sourceHash": "49c934bb7ef15bfeddfb6d0f76564fa7b69764a3b3b24ec043feafe1aa5a9a46",
+         "behaviorSpec": {
+          "contract": "dicebox-discovery/v1",
+          "action": "notice",
+          "trigger": "TOKEN_ENTER",
+          "noticeKey": "m2.portrait-eye",
+          "dc": 6,
+          "stage2Skill": "Investigation",
+          "successMessage": "<p>The founder’s portrait is subtly wrong. One eye does not match the other, and close inspection reveals a fitted recess where a small artificial eye was meant to sit.</p>",
+          "followUp": "Suggested follow-up: Investigation.",
+          "failure": "silent",
+          "oncePerCharacter": true,
+          "autoAwardItem": false,
+          "criticalClueFallback": "The portrait remains physically examinable, and the eye mechanism can still be used if the missing Glass Eye is recovered.",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "NxUruGwqnow13Krv",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791380693216,
+       "modifiedTime": 1791475332911,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Portrait Eye",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 500,
+      "y": 420,
+      "width": 640,
+      "height": 560,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:portrait-eye",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:portrait-eye"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "altered-family-portrait",
+       "interaction": "insert-item",
+       "requiredItemId": "glass-eye",
+       "persistentStateKey": "m2.glassEyeInserted",
+       "dependencySource": "U2"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-portrait-eye",
+       "sceneKey": "M2",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "1qjHaeGgXHWSUUYO",
+       "sourceRegionName": "M2 Portrait Eye"
+      }
+     }
+    },
+    "_id": "1qjHaeGgXHWSUUYO",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M2 — Portrait Eye Mechanism",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nif (!a) return;\nconst hasRequired = Array.from(a.items ?? []).some(i => i.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:item:glass-eye\");\nif (!hasRequired) return;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"observe\",\"trigger\":\"TOKEN_ENTER\",\"observationKey\":\"m2.portrait-eye-restored\",\"oncePerActor\":true,\"statePath\":\"puzzles.m2.glassEyeInstalled\",\"value\":true,\"message\":\"<p>The Glass Eye settles into the altered portrait with a precise mechanical click. The portrait is restored, and something concealed within its construction shifts into a new state.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl12-m2-behaviors-v001",
+         "stableId": "dbx:central-lodge:m2:behavior:portrait-eye-mechanism",
+         "sceneKey": "M2",
+         "regionStableId": "dbx:central-lodge:m2:region:m2-portrait-eye",
+         "sourceHash": "cfc37e19a544ab8ee6a46ceec7218da95caacfcce31caeb110b8e1620ceae781",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "observe",
+          "trigger": "TOKEN_ENTER",
+          "observationKey": "m2.portrait-eye-restored",
+          "oncePerActor": true,
+          "statePath": "puzzles.m2.portraitEyeRestored",
+          "value": true,
+          "message": "<p>The Glass Eye settles into the altered portrait with a precise mechanical click. The portrait is restored, and something concealed within its construction shifts into a new state.</p>",
+          "sourceType": "gate",
+          "requiredItemKey": "glass-eye",
+          "requiredItemStableId": "dbx:central-lodge:item:glass-eye",
+          "consumeRequiredItem": false
+         },
+         "correctionInstaller": "central-lodge-cl12-m2-correction-v001",
+         "correctedFromSourceHash": "7f7d16999db2055e3abdad8439be8b33836bedfa657068bf31fb13decbcbd43e"
+        }
+       }
+      },
+      "_id": "re48ahV2D14sF4Ln",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791380693254,
+       "modifiedTime": 1791424326277,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Player Piano Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3280,
+      "y": 1020,
+      "width": 880,
+      "height": 920,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:notice:piano",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:notice:piano"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "player-piano",
+       "discoveryId": "m2-piano",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The piano's cabinet work looks more complicated than an ordinary instrument.",
+       "successHint": "A mechanical feed and concealed access panel mark this as a player piano built to accept a roll.",
+       "interpretation": {
+        "investigation": "The mechanism is complete except for the removable music roll.",
+        "performance": "The instrument is designed to perform automatically when its roll mechanism is supplied."
+       }
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-player-piano-notice",
+       "sceneKey": "M2",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "cUibNkV1yuN6sRJB",
+       "sourceRegionName": "M2 Player Piano Notice"
+      }
+     }
+    },
+    "_id": "cUibNkV1yuN6sRJB",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M2 — Player Piano Notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"m2.player-piano\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The player piano is intact, but its mechanism is incomplete. The reader assembly is empty and clearly shaped to accept a perforated music roll.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"The piano mechanism remains usable if the missing Piano Roll is recovered.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl12-m2-behaviors-v001",
+         "stableId": "dbx:central-lodge:m2:behavior:player-piano-notice",
+         "sceneKey": "M2",
+         "regionStableId": "dbx:central-lodge:m2:region:m2-player-piano-notice",
+         "sourceHash": "b4db449eaa198ad166829188b6e3505aa639a76ba5ea68713647ea8eb62a2e43",
+         "behaviorSpec": {
+          "contract": "dicebox-discovery/v1",
+          "action": "notice",
+          "trigger": "TOKEN_ENTER",
+          "noticeKey": "m2.player-piano",
+          "dc": 6,
+          "stage2Skill": "Investigation",
+          "successMessage": "<p>The player piano is intact, but its mechanism is incomplete. The reader assembly is empty and clearly shaped to accept a perforated music roll.</p>",
+          "followUp": "Suggested follow-up: Investigation.",
+          "failure": "silent",
+          "oncePerCharacter": true,
+          "autoAwardItem": false,
+          "criticalClueFallback": "The piano mechanism remains usable if the missing Piano Roll is recovered.",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "BryilDmyCjLp6Ujr",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791380693296,
+       "modifiedTime": 1791380693296,
+       "lastModifiedBy": "JESWV6CcU7m07VW6",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Silver Family Emblem",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3360,
+      "y": 1120,
+      "width": 700,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:silver-emblem",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:silver-emblem"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "piano-compartment",
+       "interaction": "recover-item",
+       "requiresState": "m2.pianoRollInserted",
+       "itemId": "silver-family-emblem",
+       "persistentStateKey": "m2.silverFamilyEmblemRecovered",
+       "dependencyTarget": "M1"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-silver-family-emblem",
+       "sceneKey": "M2",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "B5qkpywGxFUuAM7V",
+       "sourceRegionName": "M2 Silver Family Emblem"
+      }
+     }
+    },
+    "_id": "B5qkpywGxFUuAM7V",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Founder Portrait",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 420,
+      "y": 390,
+      "width": 800,
+      "height": 650,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#6d5f8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:founder-portrait",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:founder-portrait"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "founder-portrait",
+       "interaction": "present-item",
+       "requiredItemId": "founders-signet",
+       "persistentStateKey": "m2.founderSignetPresented",
+       "dependencySource": "E4"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-founder-portrait",
+       "sceneKey": "M2",
+       "regionClass": "story",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "FRY091GwobgD2M5i",
+       "sourceRegionName": "M2 Founder Portrait"
+      }
+     }
+    },
+    "_id": "FRY091GwobgD2M5i",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M2 — Founder Portrait Signet",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "// CL91 M2 Founder Portrait: single serialized Notice -> observation -> Signet pickup.\n// Existing Notice and Signet source bodies below are embedded verbatim from actual Foundry.\n// Replaces only original outer Signet RegionBehavior source; inner Notice is disabled separately.\n// Gameplay behavior not certified until the user runs final campaign acceptance.\nif(event?.name&&event.name!==\"tokenEnter\")return;\nif(event?.region?.id&&event.region.id!==\"FRY091GwobgD2M5i\")return;\nconst gm=game.users.filter(u=>u.active&&u.isGM).sort((a,b)=>a.id.localeCompare(b.id))[0];\nif(!game.user?.isGM||gm?.id!==game.user.id)return;\nconst scene=game.scenes.get(\"JZkxX6lUQe8Nc8xJ\");\nconst token=event?.data?.token??event?.token??null,actor=token?.actor??null;\nif(!token||!actor||token.parent?.id!==\"JZkxX6lUQe8Nc8xJ\")return;\nconst requestingUser=event?.user??null;\nif(requestingUser&&!requestingUser.isGM&&!actor.testUserPermission(requestingUser,CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER))return;\nconst ledger=game.journal.get(\"xhlXv6CCH34HVga3\");\nconst getState=()=>ledger?.getFlag(\"world\",\"dicebox\")?.state??null;\nif(!ledger||!getState()||typeof game.macros.find!==\"function\")return;\nconst controller=globalThis.__diceboxM2FounderPortraitQueue??={tail:Promise.resolve()};\nconst previous=controller.tail;\nlet release;\ncontroller.tail=new Promise(resolve=>release=resolve);\nawait previous.catch(()=>{});\ntry {\n const state=getState();\n if(state?.puzzles?.m2?.founderPortraitObserved!==true&&state?.puzzles?.m2?.founderPortraitObserved!==false)return;\n const originalNotice=async()=>{\n// BEGIN ORIGINAL M2 PORTRAIT NOTICE SOURCE (unchanged)\nconst k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"m2.portrait-eye\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The founder’s portrait is subtly wrong. One eye does not match the other, and close inspection reveals a fitted recess where a small artificial eye was meant to sit.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"The portrait remains physically examinable, and the eye mechanism can still be used if the missing Glass Eye is recovered.\"}}});\n// END ORIGINAL M2 PORTRAIT NOTICE SOURCE\n };\n const noticeResult=await originalNotice();\n if(![\"PASS\",\"ALREADY_ATTEMPTED\"].includes(noticeResult?.status))return;\n if(getState()?.puzzles?.m2?.founderPortraitObserved===false){\n  const k=game.macros.find(m=>m.getFlag?.(\"world\",\"dicebox\")?.stableId===\"dbx:central-lodge:macro:runtime\");\n  if(!k)return;\n  const observed=await k.execute({actor,token,event,speaker:{dicebox:{\n   contract:\"dicebox-region-behavior/v1\",action:\"observe\",trigger:\"TOKEN_ENTER\",\n   observationKey:\"m2.founder-portrait-examined\",oncePerActor:false,\n   statePath:\"puzzles.m2.founderPortraitObserved\",value:true,\n   message:\"<p>You study the founder’s stern expression and the workmanship of the frame. Some details seem intentionally altered, although their purpose is not yet clear.</p>\"\n  }}});\n  if(observed?.status!==\"PASS\"||getState()?.puzzles?.m2?.founderPortraitObserved!==true)return;\n }\n const originalSignet=async()=>{\n// BEGIN ORIGINAL M2 SIGNET PICKUP SOURCE (unchanged)\nconst k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nif (!a) return;\nconst hasRequired = Array.from(a.items ?? []).some(i => i.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:item:founders-signet\");\nif (!hasRequired) return;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"old-estate-survey\",\"statePath\":\"puzzles.m2.founderPortraitOpened\",\"value\":true,\"message\":\"<p>The Founder’s Signet engages a concealed fitting in the Founder Portrait. A hidden compartment releases, revealing the <strong>Old Estate Survey</strong>.</p>\",\"persistentPickup\":true}}});\n// END ORIGINAL M2 SIGNET PICKUP SOURCE\n };\n return await originalSignet();\n}finally{release();}"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl12-m2-correction-v001",
+         "stableId": "dbx:central-lodge:m2:behavior:founder-portrait-signet",
+         "sceneKey": "M2",
+         "regionStableId": "dbx:central-lodge:m2:region:m2-founder-portrait",
+         "sourceHash": "4b341ee93374af01b64b07061b4f509ea701d5cd2b1d02f8ee98562a17f98cf6",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "pickup",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "old-estate-survey",
+          "statePath": "puzzles.m2.founderPortraitOpened",
+          "value": true,
+          "message": "<p>The Founder’s Signet engages a concealed fitting in the Founder Portrait. A hidden compartment releases, revealing the <strong>Old Estate Survey</strong>.</p>",
+          "persistentPickup": true,
+          "sourceType": "gate",
+          "requiredItemKey": "founders-signet",
+          "requiredItemStableId": "dbx:central-lodge:item:founders-signet",
+          "consumeRequiredItem": false,
+          "rewardItemKey": "old-estate-survey"
+         },
+         "orchestration": "serial-notice-observe-signet-v001"
+        }
+       }
+      },
+      "_id": "IdriZEGhxUY9whcV",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791391804385,
+       "modifiedTime": 1791475332944,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Old Estate Survey",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 500,
+      "y": 420,
+      "width": 700,
+      "height": 620,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:estate-survey",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:estate-survey"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "founder-portrait-compartment",
+       "interaction": "recover-item",
+       "requiresState": "m2.founderSignetPresented",
+       "itemId": "old-estate-survey",
+       "persistentStateKey": "m2.estateSurveyRecovered",
+       "dependencyTarget": "N3"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-old-estate-survey",
+       "sceneKey": "M2",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "u2UdYBJkjBn11xsO",
+       "sourceRegionName": "M2 Old Estate Survey"
+      }
+     }
+    },
+    "_id": "u2UdYBJkjBn11xsO",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Stag Crest",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1900,
+      "y": 2160,
+      "width": 640,
+      "height": 500,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:stag-crest",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:stag-crest"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "formal-display-console",
+       "interaction": "recover-item",
+       "itemId": "stag-crest",
+       "persistentStateKey": "m2.stagCrestRecovered",
+       "dependencyTarget": "E4"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-stag-crest",
+       "sceneKey": "M2",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "ZHIYCY7FZbA7DBLx",
+       "sourceRegionName": "M2 Stag Crest"
+      }
+     }
+    },
+    "_id": "ZHIYCY7FZbA7DBLx",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M2 — Stag Crest Recovery",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"stag-crest\",\"message\":\"<p>You recover the <strong>Stag Crest</strong>, an old funerary emblem preserved among the Lodge’s formal possessions.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl12-m2-behaviors-v001",
+         "stableId": "dbx:central-lodge:m2:behavior:stag-crest-recovery",
+         "sceneKey": "M2",
+         "regionStableId": "dbx:central-lodge:m2:region:m2-stag-crest",
+         "sourceHash": "09654953934a3367c4d1d5b2ce7ea18ad336995ca672ed2c05ac531c7da65c54",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "pickup",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "stag-crest",
+          "message": "<p>You recover the <strong>Stag Crest</strong>, an old funerary emblem preserved among the Lodge’s formal possessions.</p>",
+          "persistentPickup": true,
+          "sourceType": "kernel",
+          "rewardItemKey": "stag-crest"
+         }
+        }
+       }
+      },
+      "_id": "ecNXpExSqPQ3YYhE",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791380693343,
+       "modifiedTime": 1791380693343,
+       "lastModifiedBy": "JESWV6CcU7m07VW6",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Piano Roll Mechanism",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3280,
+      "y": 1040,
+      "width": 860,
+      "height": 900,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:piano-roll",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:piano-roll"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "player-piano",
+       "interaction": "insert-item",
+       "requiredItemId": "piano-roll",
+       "persistentStateKey": "m2.pianoRollInserted",
+       "dependencySource": "U2"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-piano-roll-mechanism",
+       "sceneKey": "M2",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "zI7SbGf4QlMYyuf2",
+       "sourceRegionName": "M2 Piano Roll Mechanism"
+      }
+     }
+    },
+    "_id": "zI7SbGf4QlMYyuf2",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M2 — Piano Roll Mechanism",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nif (!a) return;\nconst hasRequired = Array.from(a.items ?? []).some(i => i.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:item:piano-roll\");\nif (!hasRequired) return;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"silver-family-emblem\",\"statePath\":\"puzzles.m2.pianoRollInstalled\",\"value\":true,\"message\":\"<p>The Piano Roll engages the old mechanism. As the final notes complete, a hidden compartment clicks open and yields a <strong>Silver Family Emblem</strong>.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl12-m2-behaviors-v001",
+         "stableId": "dbx:central-lodge:m2:behavior:piano-roll-mechanism",
+         "sceneKey": "M2",
+         "regionStableId": "dbx:central-lodge:m2:region:m2-piano-roll-mechanism",
+         "sourceHash": "5e3557cb43fb44a43fe4709584cf66863e95919802f167459d591a6616076164",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "pickup",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "silver-family-emblem",
+          "statePath": "puzzles.m2.playerPianoSolved",
+          "value": true,
+          "message": "<p>The Piano Roll engages the old mechanism. As the final notes complete, a hidden compartment clicks open and yields a <strong>Silver Family Emblem</strong>.</p>",
+          "persistentPickup": true,
+          "sourceType": "gate",
+          "requiredItemKey": "piano-roll",
+          "requiredItemStableId": "dbx:central-lodge:item:piano-roll",
+          "consumeRequiredItem": false,
+          "rewardItemKey": "silver-family-emblem"
+         }
+        }
+       }
+      },
+      "_id": "aGn2ZJSSH0WNzxzz",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791380693320,
+       "modifiedTime": 1791424326294,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Light — Music Parlor",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3070,
+      "y": 360,
+      "width": 1130,
+      "height": 2280,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:light:parlor",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:light:parlor"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "music-parlor-sconces",
+       "dayNightControlled": true,
+       "pacingGroup": "interior-response",
+       "lightStableIds": [
+        "dbx:central-lodge:m2:light:parlor-north",
+        "dbx:central-lodge:m2:light:parlor-south"
+       ]
+      },
+      "runtimeBinding": null
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-light-music-parlor",
+       "sceneKey": "M2",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "w6GG3gRnuHTuURHU",
+       "sourceRegionName": "M2 Light — Music Parlor"
+      }
+     }
+    },
+    "_id": "w6GG3gRnuHTuURHU",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Light — Formal Salon",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1240,
+      "y": 360,
+      "width": 1830,
+      "height": 2280,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:light:formal-periphery",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:light:formal-periphery"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "formal-salon-sconces",
+       "dayNightControlled": true,
+       "pacingGroup": "peripheral-response",
+       "lightStableIds": [
+        "dbx:central-lodge:m2:light:formal-west",
+        "dbx:central-lodge:m2:light:formal-east"
+       ]
+      },
+      "runtimeBinding": null
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-light-formal-salon",
+       "sceneKey": "M2",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "cAzoHdIRRyYhqn8s",
+       "sourceRegionName": "M2 Light — Formal Salon"
+      }
+     }
+    },
+    "_id": "cAzoHdIRRyYhqn8s",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Ceremonial Censer",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3780,
+      "y": 440,
+      "width": 430,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:censer",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:censer"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "wall-display-cabinet",
+       "interaction": "recover-item",
+       "requiresState": "m2.reliquaryUnlocked",
+       "itemId": "ceremonial-censer",
+       "persistentStateKey": "m2.ceremonialCenserRecovered",
+       "dependencyTarget": "C1"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-ceremonial-censer",
+       "sceneKey": "M2",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "yMSbON6VIqWxZ6M9",
+       "sourceRegionName": "M2 Ceremonial Censer"
+      }
+     }
+    },
+    "_id": "yMSbON6VIqWxZ6M9",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Light — Study",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 120,
+      "y": 360,
+      "width": 1120,
+      "height": 2280,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:light:study",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:light:study"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "study-sconces",
+       "dayNightControlled": true,
+       "pacingGroup": "interior-response",
+       "lightStableIds": [
+        "dbx:central-lodge:m2:light:study-north",
+        "dbx:central-lodge:m2:light:study-south"
+       ]
+      },
+      "runtimeBinding": null
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-light-study",
+       "sceneKey": "M2",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "PZP5dlO2u24aYw2w",
+       "sourceRegionName": "M2 Light — Study"
+      }
+     }
+    },
+    "_id": "PZP5dlO2u24aYw2w",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Family Reliquary",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3780,
+      "y": 440,
+      "width": 430,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#6d5f8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:puzzle:reliquary",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:puzzle:reliquary"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "wall-display-cabinet",
+       "interaction": "unlock-container",
+       "requiredItemId": "family-reliquary-key",
+       "persistentStateKey": "m2.reliquaryUnlocked",
+       "dependencySource": "M1"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-family-reliquary",
+       "sceneKey": "M2",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "h8lOCxmRN1avOizc",
+       "sourceRegionName": "M2 Family Reliquary"
+      }
+     }
+    },
+    "_id": "h8lOCxmRN1avOizc",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox M2 — Family Reliquary",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge M2] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nif (!a) return;\nconst hasRequired = Array.from(a.items ?? []).some(i => i.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:item:family-reliquary-key\");\nif (!hasRequired) return;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"ceremonial-censer\",\"statePath\":\"puzzles.m2.reliquaryUnlocked\",\"value\":true,\"message\":\"<p>The Family Reliquary Key turns in the old lock. Inside rests a carefully wrapped <strong>Ceremonial Censer</strong>.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl12-m2-behaviors-v001",
+         "stableId": "dbx:central-lodge:m2:behavior:family-reliquary",
+         "sceneKey": "M2",
+         "regionStableId": "dbx:central-lodge:m2:region:m2-family-reliquary",
+         "sourceHash": "0cc27bc8c304a435b13a7f1ce645388e17539c6f6407339577e1ea9d39ea3d9a",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "pickup",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "ceremonial-censer",
+          "statePath": "puzzles.m2.familyReliquaryOpened",
+          "value": true,
+          "message": "<p>The Family Reliquary Key turns in the old lock. Inside rests a carefully wrapped <strong>Ceremonial Censer</strong>.</p>",
+          "persistentPickup": true,
+          "sourceType": "gate",
+          "requiredItemKey": "family-reliquary-key",
+          "requiredItemStableId": "dbx:central-lodge:item:family-reliquary-key",
+          "consumeRequiredItem": false,
+          "rewardItemKey": "ceremonial-censer"
+         }
+        }
+       }
+      },
+      "_id": "dgr5x5y5Df8GuX1d",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791380693387,
+       "modifiedTime": 1791424326315,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Transition — South Threshold",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1700,
+      "y": 2380,
+      "width": 900,
+      "height": 500,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:transition:door-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:transition:door-b"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "south-formal-threshold",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-transition-south-threshold",
+       "sceneKey": "M2",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "KfJr68fRO8rzIK0Z",
+       "sourceRegionName": "M2 Transition — South Threshold"
+      }
+     }
+    },
+    "_id": "KfJr68fRO8rzIK0Z",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "M2 Transition — North Door",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1680,
+      "y": 250,
+      "width": 940,
+      "height": 500,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:region:transition:door-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:m2:region:transition:door-a"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "north-double-doors",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:m2:region:m2-transition-north-door",
+       "sceneKey": "M2",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "UL7Z8UGpyfLE0kkQ",
+       "sourceRegionName": "M2 Transition — North Door"
+      }
+     }
+    },
+    "_id": "UL7Z8UGpyfLE0kkQ",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   }
+  ],
+  "tiles": [],
+  "walls": [
+   {
+    "c": [
+     120,
+     360,
+     1700,
+     360
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:outer-north-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:outer-north-west"
+      }
+     }
+    },
+    "_id": "jfyK5qc05EPgrvBL",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1700,
+     360,
+     2600,
+     360
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:outer-north-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:m2:wall:outer-north-door"
+      }
+     }
+    },
+    "_id": "dudsWcKyILfR29Jg",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     120,
+     360,
+     120,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:outer-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:outer-west"
+      }
+     }
+    },
+    "_id": "KxpmCPwWOCkJkOLl",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2600,
+     360,
+     4200,
+     360
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:outer-north-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:outer-north-east"
+      }
+     }
+    },
+    "_id": "CRb4l7lEksafG5oy",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     120,
+     2640,
+     4200,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:outer-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:outer-south"
+      }
+     }
+    },
+    "_id": "pw0vrU46yUDijG12",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1240,
+     1640,
+     1240,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:study-partition-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:study-partition-south"
+      }
+     }
+    },
+    "_id": "lHj0aK7R4FNLuN7b",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1240,
+     360,
+     1240,
+     1110
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:study-partition-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:study-partition-north"
+      }
+     }
+    },
+    "_id": "amhUziDARXjkpuup",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3070,
+     360,
+     3070,
+     1100
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:music-partition-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:music-partition-north"
+      }
+     }
+    },
+    "_id": "eCiEXUydx7J5Mcs7",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1240,
+     1110,
+     1240,
+     1640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:study-partition-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:m2:wall:study-partition-door"
+      }
+     }
+    },
+    "_id": "537Qrhwa4x1lvFQi",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3070,
+     1100,
+     3070,
+     1630
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:music-partition-door",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:m2:wall:music-partition-door"
+      }
+     }
+    },
+    "_id": "njXTj7NqehhGRyEb",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     4200,
+     360,
+     4200,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:outer-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:outer-east"
+      }
+     }
+    },
+    "_id": "6bzoI4MfVuACPoEe",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3070,
+     1630,
+     3070,
+     2640
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:m2:wall:music-partition-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:m2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:m2:wall:music-partition-south"
+      }
+     }
+    },
+    "_id": "T459YzCOD0A07u9U",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "weather": "",
+  "folder": "4iXeDJuCRBVhdM1M",
+  "sort": 800000,
+  "ownership": {
+   "default": 0,
+   "JESWV6CcU7m07VW6": 3
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "dnd5e",
+   "systemVersion": "5.3.3",
+   "createdTime": 1791308041865,
+   "modifiedTime": 1791351691236,
+   "lastModifiedBy": "JESWV6CcU7m07VW6",
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null
+  }
+ }
+}

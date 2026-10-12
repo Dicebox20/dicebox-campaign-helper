@@ -1,0 +1,6 @@
+const fs=require("node:fs"),crypto=require("node:crypto"),path=require("node:path");
+const dir="receipts/region-cleanup-2026-10-07",manifest=JSON.parse(fs.readFileSync(path.join(dir,"manifest-v001.json"),"utf8")),raw=fs.readFileSync(path.join(dir,"all-21-scenes-all-202-regions-full-backup-v001.json")),hash=crypto.createHash("sha256").update(raw).digest("hex");
+const data=JSON.parse(raw.toString("utf8")),regions=data.sceneData.flatMap(s=>s.regions),idSet=new Set(regions.map(r=>r._id)),behaviors=regions.reduce((n,r)=>n+(r.behaviors?.length??0),0),empty=regions.filter(r=>(r.behaviors?.length??0)===0);
+const pass=hash===manifest.sha256&&regions.length===202&&idSet.size===202&&behaviors===115&&empty.length===95&&data.sceneData.length===21;
+console.log(JSON.stringify({status:pass?"BACKUP_VERIFIED":"BACKUP_FAIL",hashMatches:hash===manifest.sha256,sha256:hash,scenes:data.sceneData.length,regions:regions.length,behaviors,zeroBehavior:empty.length,bytes:raw.length,manifestBytes:manifest.bytes}));
+if(!pass)process.exitCode=2;

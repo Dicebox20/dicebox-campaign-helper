@@ -1,0 +1,2 @@
+const s=game.scenes.get("Zq8iXByDVhHRbA7w");
+return{operation:"central-lodge.cl21.e1.tile-inspect",status:"PASS",noWrite:true,tiles:Array.from(s?.tiles??[]).map(t=>({id:t.id,x:t.x,y:t.y,width:t.width,height:t.height,hidden:t.hidden,texture:t.texture?.src??null,alpha:t.alpha,flags:foundry.utils.deepClone(t.flags??{})}))};

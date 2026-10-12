@@ -1,0 +1,2 @@
+const r=game.scenes.get("Zq8iXByDVhHRbA7w").regions.get("QS7OpvIilyyDpmLc"),b=r.behaviors.get("HBtxj5OwVSOJdqnC");
+return{noWrite:true,behavior:b.toObject(),executorPermissions:{isGM:game.user.isGM,tokenCreate:game.user.can("TOKEN_CREATE"),tokenDelete:game.user.can("TOKEN_DELETE")},sceneNames:[game.scenes.get("MAbLfBqG7qIVVuLN").name,game.scenes.get("ImeIdHbYb6kZKAdt").name]};

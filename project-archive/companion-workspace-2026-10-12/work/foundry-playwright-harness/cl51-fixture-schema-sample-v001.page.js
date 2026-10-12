@@ -1,0 +1,3 @@
+const ids=[["E2","sI4YVZZChgey1qNi"],["N1","MAbLfBqG7qIVVuLN"],["F1","La9krMOMBhAhDLi6"],["F2","HWitOe1wSid7MZ1y"]];
+const out=ids.map(([k,id])=>{const s=game.scenes.get(id);return{key:k,lights:Array.from(s.lights).slice(0,3).map(l=>({id:l.id,x:l.x,y:l.y,hidden:l.hidden,config:l.config,flags:l.flags,name:l.name,rotation:l.rotation,elevation:l.elevation}))}});
+return{operation:"cl51.fixture-schema-sample.readonly",noWrite:true,samples:out};

@@ -1,0 +1,2188 @@
+{
+  "status": "READONLY_TWO_FIELD_DRIFT_PROVEN_NOT_A_LIVE_FIX",
+  "capturedUtc": "2026-10-09T04:27:11.668Z",
+  "sceneId": "La9krMOMBhAhDLi6",
+  "sceneName": "F1 — Ancient Infernal Threshold",
+  "oldSHA": "85ec24e6da7e5b849099fbe5b7a568693ccc71fc55842f7fefb4e584a045c235",
+  "currentSHA": "eff632c06bb6e3281c2116e3959af3171ac95dc16ddab3a2ddd7fc23e316cd03",
+  "normalizedOriginalSHA": "85ec24e6da7e5b849099fbe5b7a568693ccc71fc55842f7fefb4e584a045c235",
+  "regionId": "uJsKPrR5yEXhhLZ3",
+  "regionName": "F1 — System — Infernal Light",
+  "regionBehaviorCount": 0,
+  "changedFields": [
+    {
+      "path": "regions.uJsKPrR5yEXhhLZ3.shapes[0].x",
+      "before": 141,
+      "after": -3
+    },
+    {
+      "path": "regions.uJsKPrR5yEXhhLZ3.shapes[0].y",
+      "before": -7,
+      "after": -4
+    }
+  ],
+  "unrelatedLiveChecks": {
+    "t3Sha": "76141690439a19d6092a2119744def0dce57c9368cd4ceaf66ccd23c1fa8eabb",
+    "f2Sha": "5ad191d492195bf227bb099d9b356992aca44fe6d884ac940e085db8c2342639",
+    "puzzleLedgerSha": "ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4",
+    "ledgerRevision": 13,
+    "meow": [
+      {
+        "id": "xjFxFSL0NoLkdQfT",
+        "actorId": "2g6CmPQqhSkRQQZm",
+        "x": 2524,
+        "y": 2151,
+        "width": 1,
+        "height": 1
+      }
+    ],
+    "ret": [
+      {
+        "id": "NEVNO6w4R7Zkg8gq",
+        "actorId": "1bo0sxT1rrF6g114",
+        "x": 2256,
+        "y": 1655,
+        "width": 1,
+        "height": 1
+      }
+    ]
+  },
+  "sourceCurrent": {
+    "name": "F1 — Ancient Infernal Threshold",
+    "width": 4320,
+    "height": 2880,
+    "padding": 0,
+    "navigation": true,
+    "tokenVision": true,
+    "grid": {
+      "type": 0,
+      "size": 120,
+      "distance": 5,
+      "units": "ft",
+      "style": "solidLines",
+      "thickness": 1,
+      "color": "#000000",
+      "alpha": 0.2
+    },
+    "flags": {
+      "world": {
+        "dicebox": {
+          "managed": true,
+          "campaignId": "central-lodge",
+          "sceneKey": "F1",
+          "stableSceneId": "dbx:central-lodge:f1",
+          "buildId": "central-lodge-f1-build-v001",
+          "buildRevision": "v001",
+          "buildContract": "dicebox-scene-injector-build/v2",
+          "renderGenerationId": "1e7d15cf-79a0-4e33-b824-4a70cceb4d66",
+          "approvedSourceSha256": "ffd0b6b4ef100f6873e5b774e3a949f0688fb4df1e86152344d06ef0270b77a3",
+          "embeddedAssetSha256": "072e6175d43bb81d0d8bfe520415a489f3177f338b7ef046f4a44800dc620b28",
+          "artNativeDimensions": "1800x1200",
+          "scaleProfile": "battlemap-120",
+          "f1": {
+            "cicadaInstalled": false,
+            "innerWardResolved": false,
+            "measureResolution": "GM_ADJUDICATED_FROM_EXISTING_CLUES",
+            "f2Destination": "Scene.HWitOe1wSid7MZ1y.Region.pplHOCmUZOqFymOy"
+          },
+          "transitions": {
+            "t3Arrival": "ENTRY_ANCHOR_CREATED_T3_BINDING_NOT_MUTATED_BY_THIS_BUILD",
+            "f2": "Scene.HWitOe1wSid7MZ1y.Region.pplHOCmUZOqFymOy",
+            "f2BoundAt": 1791348280506,
+            "f2PatchId": "central-lodge-f1-f2-transition-binding-v001"
+          },
+          "runtimeOwnership": {
+            "lighting": "Foundry",
+            "cicadaAssembly": "RegionBehavior + Scene flag",
+            "innerWard": "RegionBehavior + Scene flag + gate Wall",
+            "f2Binding": "future F2 BUILD/transition patch"
+          },
+          "regionPolicy": {
+            "visibility": "LAYER",
+            "locked": false
+          },
+          "repairHistory": [
+            {
+              "repairId": "central-lodge-f1-shell-completion-v001",
+              "at": 1791346040544,
+              "userId": "JESWV6CcU7m07VW6",
+              "result": "PASS"
+            }
+          ]
+        }
+      }
+    },
+    "_id": "La9krMOMBhAhDLi6",
+    "active": false,
+    "navOrder": 0,
+    "thumb": null,
+    "shiftX": 0,
+    "shiftY": 0,
+    "initial": {
+      "x": null,
+      "y": null,
+      "scale": null
+    },
+    "initialLevel": "defaultLevel0000",
+    "fog": {
+      "mode": 1,
+      "colors": {
+        "explored": null,
+        "unexplored": null
+      }
+    },
+    "environment": {
+      "darknessLevel": 0,
+      "darknessLock": false,
+      "globalLight": {
+        "enabled": false,
+        "alpha": 0.5,
+        "bright": false,
+        "color": null,
+        "coloration": 1,
+        "luminosity": 0,
+        "saturation": 0,
+        "contrast": 0,
+        "shadows": 0,
+        "darkness": {
+          "min": 0,
+          "max": 1
+        }
+      },
+      "cycle": true,
+      "base": {
+        "hue": 0,
+        "intensity": 0,
+        "luminosity": 0,
+        "saturation": 0,
+        "shadows": 0
+      },
+      "dark": {
+        "hue": 0.7138888888888889,
+        "intensity": 0,
+        "luminosity": -0.25,
+        "saturation": 0,
+        "shadows": 0
+      }
+    },
+    "transition": {
+      "type": null,
+      "duration": 1500,
+      "activeOnly": false
+    },
+    "drawings": [],
+    "tokens": [
+      {
+        "name": "Mr. Meowmeow",
+        "displayName": 50,
+        "actorLink": true,
+        "width": 1,
+        "height": 1,
+        "texture": {
+          "src": "tokenizer/pc-images/sir_toppleton_meowmeow.Token.webp?1757989692857",
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "fit": "contain",
+          "scaleX": 1,
+          "scaleY": 1,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 1,
+        "displayBars": 50,
+        "bar1": {
+          "attribute": "attributes.hp"
+        },
+        "bar2": {
+          "attribute": null
+        },
+        "light": {
+          "negative": false,
+          "priority": 0,
+          "alpha": 0.5,
+          "angle": 360,
+          "bright": 0,
+          "color": null,
+          "coloration": 1,
+          "dim": 0,
+          "attenuation": 0.5,
+          "luminosity": 0.5,
+          "saturation": 0,
+          "contrast": 0,
+          "shadows": 0,
+          "animation": {
+            "type": null,
+            "speed": 5,
+            "intensity": 5,
+            "reverse": false
+          },
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "sight": {
+          "enabled": true,
+          "range": 60,
+          "angle": 360,
+          "visionMode": "darkvision",
+          "color": null,
+          "attenuation": 0,
+          "brightness": 0,
+          "saturation": -1,
+          "contrast": 0
+        },
+        "detectionModes": {},
+        "occludable": {
+          "radius": 0
+        },
+        "ring": {
+          "enabled": false,
+          "colors": {
+            "ring": null,
+            "background": null
+          },
+          "effects": 0,
+          "subject": {
+            "scale": 1,
+            "texture": null
+          }
+        },
+        "turnMarker": {
+          "mode": 1,
+          "animation": null,
+          "src": null,
+          "disposition": false
+        },
+        "movementAction": null,
+        "flags": {
+          "monks-tokenbar": {
+            "include": "default"
+          },
+          "tagger": {
+            "tags": ""
+          },
+          "monks-bloodsplats": {
+            "bloodsplat-type": "",
+            "bloodsplat-colour": ""
+          },
+          "patrol": {
+            "enablePatrol": false,
+            "enableSpotting": false,
+            "doorBehavior": [
+              "useRegionSettings"
+            ],
+            "leaveDoorOpen": 0
+          }
+        },
+        "depth": 1,
+        "actorId": "2g6CmPQqhSkRQQZm",
+        "hidden": false,
+        "sort": 0,
+        "shape": 4,
+        "level": "defaultLevel0000",
+        "delta": null,
+        "x": 2524,
+        "y": 2151,
+        "elevation": 0,
+        "locked": false,
+        "_movementHistory": [],
+        "_regions": [
+          "uJsKPrR5yEXhhLZ3"
+        ],
+        "_id": "xjFxFSL0NoLkdQfT"
+      }
+    ],
+    "levels": [
+      {
+        "_id": "defaultLevel0000",
+        "name": "F1 Base Level",
+        "elevation": {
+          "bottom": 0,
+          "top": 20
+        },
+        "background": {
+          "color": "#999999",
+          "src": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/f1/f1-ancient-infernal-threshold.webp",
+          "tint": "#ffffff",
+          "alphaThreshold": 0
+        },
+        "foreground": {
+          "src": null,
+          "tint": "#ffffff",
+          "alphaThreshold": 0.75
+        },
+        "fog": {
+          "src": null
+        },
+        "textures": {
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "offsetX": 0,
+          "offsetY": 0,
+          "fit": "fill",
+          "scaleX": 1,
+          "scaleY": 1,
+          "rotation": 0
+        },
+        "visibility": {
+          "levels": []
+        },
+        "sort": 0,
+        "flags": {}
+      }
+    ],
+    "lights": [
+      {
+        "name": "F1 — Cicada Recess — West",
+        "x": 1840,
+        "y": 760,
+        "hidden": true,
+        "locked": false,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "walls": true,
+        "vision": false,
+        "config": {
+          "dim": 540,
+          "bright": 150,
+          "angle": 360,
+          "color": "#8d2b20",
+          "alpha": 0.24,
+          "attenuation": 0.45,
+          "luminosity": 0.35,
+          "saturation": 0.35,
+          "contrast": 0.1,
+          "shadows": 0.35,
+          "coloration": 1,
+          "negative": false,
+          "animation": {
+            "type": "pulse",
+            "speed": 1,
+            "intensity": 1,
+            "reverse": false
+          },
+          "priority": 0,
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:light:01",
+              "group": "cicada",
+              "state": "inactive"
+            }
+          }
+        },
+        "_id": "sf4XpwaQWjsEvKns",
+        "elevation": 0,
+        "rotation": 0
+      },
+      {
+        "name": "F1 — Inner Ward — West",
+        "x": 1510,
+        "y": 510,
+        "hidden": true,
+        "locked": false,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "walls": true,
+        "vision": false,
+        "config": {
+          "dim": 540,
+          "bright": 150,
+          "angle": 360,
+          "color": "#8d2b20",
+          "alpha": 0.24,
+          "attenuation": 0.45,
+          "luminosity": 0.35,
+          "saturation": 0.35,
+          "contrast": 0.1,
+          "shadows": 0.35,
+          "coloration": 1,
+          "negative": false,
+          "animation": {
+            "type": "pulse",
+            "speed": 1,
+            "intensity": 1,
+            "reverse": false
+          },
+          "priority": 0,
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:light:03",
+              "group": "ward",
+              "state": "inactive"
+            }
+          }
+        },
+        "_id": "wAbIzlne6kNX3GpE",
+        "elevation": 0,
+        "rotation": 0
+      },
+      {
+        "name": "F1 — Cicada Recess — East",
+        "x": 2480,
+        "y": 760,
+        "hidden": true,
+        "locked": false,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "walls": true,
+        "vision": false,
+        "config": {
+          "dim": 540,
+          "bright": 150,
+          "angle": 360,
+          "color": "#8d2b20",
+          "alpha": 0.24,
+          "attenuation": 0.45,
+          "luminosity": 0.35,
+          "saturation": 0.35,
+          "contrast": 0.1,
+          "shadows": 0.35,
+          "coloration": 1,
+          "negative": false,
+          "animation": {
+            "type": "pulse",
+            "speed": 1,
+            "intensity": 1,
+            "reverse": false
+          },
+          "priority": 0,
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:light:02",
+              "group": "cicada",
+              "state": "inactive"
+            }
+          }
+        },
+        "_id": "JtKH3nNARJxjVkNC",
+        "elevation": 0,
+        "rotation": 0
+      },
+      {
+        "name": "F1 — Inner Ward — East",
+        "x": 2810,
+        "y": 510,
+        "hidden": true,
+        "locked": false,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "walls": true,
+        "vision": false,
+        "config": {
+          "dim": 540,
+          "bright": 150,
+          "angle": 360,
+          "color": "#8d2b20",
+          "alpha": 0.24,
+          "attenuation": 0.45,
+          "luminosity": 0.35,
+          "saturation": 0.35,
+          "contrast": 0.1,
+          "shadows": 0.35,
+          "coloration": 1,
+          "negative": false,
+          "animation": {
+            "type": "pulse",
+            "speed": 1,
+            "intensity": 1,
+            "reverse": false
+          },
+          "priority": 0,
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:light:04",
+              "group": "ward",
+              "state": "inactive"
+            }
+          }
+        },
+        "_id": "I9qxBkjyv9gvL2v2",
+        "elevation": 0,
+        "rotation": 0
+      },
+      {
+        "name": "F1 — Threshold — East",
+        "x": 2300,
+        "y": 320,
+        "hidden": true,
+        "locked": false,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "walls": true,
+        "vision": false,
+        "config": {
+          "dim": 660,
+          "bright": 240,
+          "angle": 360,
+          "color": "#8d2b20",
+          "alpha": 0.24,
+          "attenuation": 0.45,
+          "luminosity": 0.35,
+          "saturation": 0.35,
+          "contrast": 0.1,
+          "shadows": 0.35,
+          "coloration": 1,
+          "negative": false,
+          "animation": {
+            "type": "pulse",
+            "speed": 1,
+            "intensity": 1,
+            "reverse": false
+          },
+          "priority": 0,
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:light:06",
+              "group": "threshold",
+              "state": "inactive"
+            }
+          }
+        },
+        "_id": "OaLZJceXlVct0n5h",
+        "elevation": 0,
+        "rotation": 0
+      },
+      {
+        "name": "F1 — Threshold — West",
+        "x": 2020,
+        "y": 320,
+        "hidden": true,
+        "locked": false,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "walls": true,
+        "vision": false,
+        "config": {
+          "dim": 660,
+          "bright": 240,
+          "angle": 360,
+          "color": "#8d2b20",
+          "alpha": 0.24,
+          "attenuation": 0.45,
+          "luminosity": 0.35,
+          "saturation": 0.35,
+          "contrast": 0.1,
+          "shadows": 0.35,
+          "coloration": 1,
+          "negative": false,
+          "animation": {
+            "type": "pulse",
+            "speed": 1,
+            "intensity": 1,
+            "reverse": false
+          },
+          "priority": 0,
+          "darkness": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:light:05",
+              "group": "threshold",
+              "state": "inactive"
+            }
+          }
+        },
+        "_id": "CksZBdI7oVI7UdQL",
+        "elevation": 0,
+        "rotation": 0
+      }
+    ],
+    "notes": [],
+    "sounds": [],
+    "regions": [
+      {
+        "name": "F1 — Arrival — Ancient Passage",
+        "shapes": [
+          {
+            "type": "rectangle",
+            "x": 2111,
+            "y": 2357,
+            "width": 840,
+            "height": 520,
+            "hole": false,
+            "rotation": 0,
+            "gridBased": false,
+            "anchorX": 0,
+            "anchorY": 0
+          }
+        ],
+        "locked": false,
+        "hidden": false,
+        "visibility": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:region:transition:t3-arrival",
+              "class": "transition",
+              "objectKey": "region.transition-t3-arrival",
+              "discoveryContract": "dicebox-discovery/v1"
+            }
+          }
+        },
+        "behaviors": [],
+        "_id": "zKNU1R3JGIMMt017",
+        "color": "#288fcc",
+        "elevation": {
+          "bottom": null,
+          "top": null,
+          "topInclusive": false
+        },
+        "restriction": {
+          "enabled": false,
+          "type": "move",
+          "priority": 0
+        },
+        "attachment": {
+          "token": null
+        },
+        "highlightMode": "shapes",
+        "displayMeasurements": false,
+        "ownership": {
+          "default": 0,
+          "JESWV6CcU7m07VW6": 3
+        },
+        "_shapeConstraints": null
+      },
+      {
+        "name": "F1 — Puzzle — Inner Ward",
+        "shapes": [
+          {
+            "type": "rectangle",
+            "x": 1973,
+            "y": 181,
+            "width": 1240,
+            "height": 760,
+            "hole": false,
+            "rotation": 0,
+            "gridBased": false,
+            "anchorX": 0,
+            "anchorY": 0
+          }
+        ],
+        "locked": false,
+        "hidden": false,
+        "visibility": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:region:puzzle:inner-ward",
+              "class": "puzzle",
+              "objectKey": "region.puzzle-inner-ward",
+              "discoveryContract": "dicebox-discovery/v1"
+            }
+          }
+        },
+        "behaviors": [
+          {
+            "name": "DiceBox F1 — Measure / Ritual Rhythm",
+            "type": "executeScript",
+            "disabled": false,
+            "system": {
+              "events": [
+                "tokenEnter"
+              ],
+              "source": "const activeGMs = game.users.filter(u => u.active && u.isGM).sort((a,b) => a.id.localeCompare(b.id));\nif (!activeGMs.length || game.user.id !== activeGMs[0].id) return;\nconst token = event?.data?.token;\nconst scene = event?.region?.parent ?? canvas?.scene;\nif (!scene || !token?.actor) return;\n\nconst dbx = foundry.utils.deepClone(scene.getFlag(\"world\", \"dicebox\") ?? {});\ndbx.f1 ??= {};\nconst recipients = [...new Set([event?.user?.id, ...activeGMs.map(u => u.id)].filter(Boolean))];\n\nif (dbx.f1.innerWardResolved === true) return;\n\nif (dbx.f1.cicadaInstalled !== true) {\n  await ChatMessage.create({\n    content: `<p>The repeated stone divisions are inert. Nothing answers the cadence of footsteps here.</p>`,\n    whisper: recipients\n  });\n  return;\n}\n\nconst now = Date.now();\nif (now - Number(dbx.f1.lastWardPromptAt ?? 0) < 5000) return;\ndbx.f1.lastWardPromptAt = now;\nawait scene.setFlag(\"world\", \"dicebox\", dbx);\n\nconst confirmed = await foundry.applications.api.DialogV2.confirm({\n  window: {title: \"F1 — Inner Ward\"},\n  content: `<p>The completed Cicada is seated. The inner ward is now listening.</p><p>Have the players correctly performed the Measure / Ritual Rhythm established by the prior clues?</p><p>This BUILD intentionally does not invent a sequence that is not present in the campaign source. Confirm only when you adjudicate the performed rhythm as correct.</p>`,\n  yes: {label: \"Correct Measure\"},\n  no: {label: \"Not Yet\"},\n  modal: true\n});\nif (!confirmed) {\n  await ChatMessage.create({\n    content: `<p>The stone carries the attempted cadence forward, then returns it altered. The inner threshold remains sealed.</p>`,\n    whisper: recipients\n  });\n  return;\n}\n\nconst reread = foundry.utils.deepClone(scene.getFlag(\"world\", \"dicebox\") ?? {});\nreread.f1 ??= {};\nreread.f1.innerWardResolved = true;\nreread.f1.innerWardResolvedAt = Date.now();\nreread.f1.innerWardResolvedBy = game.user.id;\nawait scene.setFlag(\"world\", \"dicebox\", reread);\n\nconst gate = Array.from(scene.walls ?? []).find(w => w.getFlag(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:f1:wall:inner-gate\");\nif (gate) await scene.updateEmbeddedDocuments(\"Wall\", [{_id: gate.id, ds: CONST.WALL_DOOR_STATES.OPEN}]);\n\nconst lights = Array.from(scene.lights ?? []).filter(l => [\"ward\",\"threshold\"].includes(l.getFlag(\"world\",\"dicebox\")?.group));\nif (lights.length) await scene.updateEmbeddedDocuments(\"AmbientLight\", lights.map(l => ({_id: l.id, hidden: false})));\n\nawait ChatMessage.create({\n  content: `<p>The final interval lands cleanly. The ward answers in the same measure, then falls silent as the sealed stone gives way.</p>`,\n  whisper: recipients\n});"
+            },
+            "flags": {
+              "world": {
+                "dicebox": {
+                  "managed": true,
+                  "campaignId": "central-lodge",
+                  "sceneKey": "F1",
+                  "buildId": "central-lodge-f1-build-v001",
+                  "stableId": "dbx:central-lodge:f1:behavior:inner-ward"
+                }
+              }
+            },
+            "_id": "jmTli5qX0dmPexKp",
+            "_stats": {
+              "coreVersion": "14.367",
+              "systemId": "dnd5e",
+              "systemVersion": "5.3.3",
+              "createdTime": 1791346040465,
+              "modifiedTime": 1791346040465,
+              "lastModifiedBy": "JESWV6CcU7m07VW6",
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          }
+        ],
+        "_id": "bpjGc2NlZB8zCxmX",
+        "color": "#282acc",
+        "elevation": {
+          "bottom": null,
+          "top": null,
+          "topInclusive": false
+        },
+        "restriction": {
+          "enabled": false,
+          "type": "move",
+          "priority": 0
+        },
+        "attachment": {
+          "token": null
+        },
+        "highlightMode": "shapes",
+        "displayMeasurements": false,
+        "ownership": {
+          "default": 0,
+          "JESWV6CcU7m07VW6": 3
+        },
+        "_shapeConstraints": null
+      },
+      {
+        "name": "F1 — Puzzle — Infernal Cicada Recess",
+        "shapes": [
+          {
+            "type": "circle",
+            "x": 2531,
+            "y": 759,
+            "radius": 430,
+            "hole": false,
+            "gridBased": false
+          }
+        ],
+        "locked": false,
+        "hidden": false,
+        "visibility": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:region:puzzle:cicada-recess",
+              "class": "puzzle",
+              "objectKey": "region.puzzle-cicada-recess",
+              "discoveryContract": "dicebox-discovery/v1"
+            }
+          }
+        },
+        "behaviors": [
+          {
+            "name": "DiceBox F1 — Cicada Assembly",
+            "type": "executeScript",
+            "disabled": false,
+            "system": {
+              "events": [
+                "tokenEnter"
+              ],
+              "source": "const activeGMs = game.users.filter(u => u.active && u.isGM).sort((a,b) => a.id.localeCompare(b.id));\nif (!activeGMs.length || game.user.id !== activeGMs[0].id) return;\nconst token = event?.data?.token;\nconst scene = event?.region?.parent ?? canvas?.scene;\nif (!scene || !token?.actor) return;\n\nconst dbx = foundry.utils.deepClone(scene.getFlag(\"world\", \"dicebox\") ?? {});\ndbx.f1 ??= {};\nif (dbx.f1.cicadaInstalled === true) return;\n\nconst actors = [];\nfor (const u of game.users) {\n  if (!u.isGM && u.character && !actors.some(a => a.id === u.character.id)) actors.push(u.character);\n}\nif (!actors.some(a => a.id === token.actor.id)) actors.push(token.actor);\n\nconst inventory = [];\nfor (const a of actors) {\n  for (const item of a.items ?? []) {\n    const flags = item.getFlag?.(\"world\", \"dicebox\") ?? {};\n    const stableId = flags.canonicalStableId ?? flags.stableId ?? null;\n    inventory.push({actor:a, item, stableId});\n  }\n}\nconst findPart = key => inventory.find(x => x.stableId === \"dbx:central-lodge:item:\" + key);\nconst parts = {\n  body: findPart(\"infernal-cicada-body\"),\n  wingI: findPart(\"cicada-wing-i\"),\n  wingII: findPart(\"cicada-wing-ii\"),\n  wingIII: findPart(\"cicada-wing-iii\"),\n  wingIV: findPart(\"cicada-wing-iv\")\n};\nconst missing = Object.entries(parts).filter(([,v]) => !v).map(([k]) => k);\n\nconst recipients = [...new Set([event?.user?.id, ...activeGMs.map(u => u.id)].filter(Boolean))];\nif (missing.length) {\n  await ChatMessage.create({\n    content: `<p>The shallow receiving recess does not answer. Its divisions suggest that several separate fitted pieces belong here, but the assembly is incomplete.</p>`,\n    whisper: recipients\n  });\n  return;\n}\n\nconst holders = Object.values(parts).map(p => `${p.item.name} — ${p.actor.name}`);\nconst confirmed = await foundry.applications.api.DialogV2.confirm({\n  window: {title: \"F1 — Infernal Cicada Recess\"},\n  content: `<p>The party collectively carries every component of the Infernal Cicada:</p><ul>${holders.map(x => `<li>${x}</li>`).join(\"\")}</ul><p>Install the completed assembly into the ancient receiving recess? This records the threshold state but does not delete the Items.</p>`,\n  yes: {label: \"Install Cicada\"},\n  no: {label: \"Not Yet\"},\n  modal: true\n});\nif (!confirmed) return;\n\ndbx.f1.cicadaInstalled = true;\ndbx.f1.cicadaInstalledAt = Date.now();\ndbx.f1.cicadaInstalledBy = game.user.id;\nawait scene.setFlag(\"world\", \"dicebox\", dbx);\n\nconst lights = Array.from(scene.lights ?? []).filter(l => l.getFlag(\"world\",\"dicebox\")?.group === \"cicada\");\nif (lights.length) await scene.updateEmbeddedDocuments(\"AmbientLight\", lights.map(l => ({_id: l.id, hidden: false})));\n\nawait ChatMessage.create({\n  content: `<p>The fitted assembly settles into the recess without a click. A low pressure passes through the stone, and dim infernal light gathers along the receiving channels.</p>`,\n  whisper: recipients\n});"
+            },
+            "flags": {
+              "world": {
+                "dicebox": {
+                  "managed": true,
+                  "campaignId": "central-lodge",
+                  "sceneKey": "F1",
+                  "buildId": "central-lodge-f1-build-v001",
+                  "stableId": "dbx:central-lodge:f1:behavior:cicada-assembly"
+                }
+              }
+            },
+            "_id": "VPsFO5t8IhCzf5wn",
+            "_stats": {
+              "coreVersion": "14.367",
+              "systemId": "dnd5e",
+              "systemVersion": "5.3.3",
+              "createdTime": 1791346040466,
+              "modifiedTime": 1791420608545,
+              "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          }
+        ],
+        "_id": "cAPhThdExniaYnbx",
+        "color": "#28cca4",
+        "elevation": {
+          "bottom": null,
+          "top": null,
+          "topInclusive": false
+        },
+        "restriction": {
+          "enabled": false,
+          "type": "move",
+          "priority": 0
+        },
+        "attachment": {
+          "token": null
+        },
+        "highlightMode": "shapes",
+        "displayMeasurements": false,
+        "ownership": {
+          "default": 0,
+          "JESWV6CcU7m07VW6": 3
+        },
+        "_shapeConstraints": null
+      },
+      {
+        "name": "F1 — System — Infernal Light",
+        "shapes": [
+          {
+            "type": "rectangle",
+            "x": -3,
+            "y": -4,
+            "width": 4020,
+            "height": 2640,
+            "hole": false,
+            "rotation": 0,
+            "gridBased": false,
+            "anchorX": 0,
+            "anchorY": 0
+          }
+        ],
+        "locked": false,
+        "hidden": false,
+        "visibility": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:region:system:infernal-light",
+              "class": "system",
+              "objectKey": "region.system-infernal-light",
+              "discoveryContract": "dicebox-discovery/v1"
+            }
+          }
+        },
+        "behaviors": [],
+        "_id": "uJsKPrR5yEXhhLZ3",
+        "color": "#4acc28",
+        "elevation": {
+          "bottom": null,
+          "top": null,
+          "topInclusive": false
+        },
+        "restriction": {
+          "enabled": false,
+          "type": "move",
+          "priority": 0
+        },
+        "attachment": {
+          "token": null
+        },
+        "highlightMode": "shapes",
+        "displayMeasurements": false,
+        "ownership": {
+          "default": 0,
+          "JESWV6CcU7m07VW6": 3
+        },
+        "_shapeConstraints": null
+      },
+      {
+        "name": "F1 — Story — Resonant Architecture",
+        "shapes": [
+          {
+            "type": "rectangle",
+            "x": 1176,
+            "y": 1193,
+            "width": 2520,
+            "height": 650,
+            "hole": false,
+            "rotation": 0,
+            "gridBased": false,
+            "anchorX": 0,
+            "anchorY": 0
+          }
+        ],
+        "locked": false,
+        "hidden": false,
+        "visibility": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:region:story:resonant-architecture",
+              "class": "story",
+              "objectKey": "region.story-resonant-architecture",
+              "discoveryContract": "dicebox-discovery/v1"
+            }
+          }
+        },
+        "behaviors": [
+          {
+            "name": "DiceBox F1 — Resonant Architecture Observation",
+            "type": "executeScript",
+            "disabled": false,
+            "system": {
+              "events": [
+                "tokenEnter"
+              ],
+              "source": "const activeGMs = game.users.filter(u => u.active && u.isGM).sort((a,b) => a.id.localeCompare(b.id));\nif (!activeGMs.length || game.user.id !== activeGMs[0].id) return;\nconst token = event?.data?.token;\nif (!token?.actor) return;\nconst actor = token.actor;\nconst state = foundry.utils.deepClone(actor.getFlag(\"world\",\"dicebox\") ?? {});\nstate.centralLodge ??= {};\nstate.centralLodge.f1 ??= {};\nif (state.centralLodge.f1.resonanceObserved === true) return;\nstate.centralLodge.f1.resonanceObserved = true;\nstate.centralLodge.f1.resonanceObservedAt = Date.now();\nawait actor.setFlag(\"world\",\"dicebox\",state);\n\nconst recipients = [...new Set([event?.user?.id, ...activeGMs.map(u => u.id)].filter(Boolean))];\nawait ChatMessage.create({\n  content: `<p>The recesses, pillars, and cut channels repeat at deliberate intervals. Walking between them produces a faint sequence of returning vibrations, closer to measured cadence than decoration.</p>`,\n  whisper: recipients\n});"
+            },
+            "flags": {
+              "world": {
+                "dicebox": {
+                  "managed": true,
+                  "campaignId": "central-lodge",
+                  "sceneKey": "F1",
+                  "buildId": "central-lodge-f1-build-v001",
+                  "stableId": "dbx:central-lodge:f1:behavior:resonance-observation"
+                }
+              }
+            },
+            "_id": "J532Dz50Qua3tLky",
+            "_stats": {
+              "coreVersion": "14.367",
+              "systemId": "dnd5e",
+              "systemVersion": "5.3.3",
+              "createdTime": 1791346040467,
+              "modifiedTime": 1791346040467,
+              "lastModifiedBy": "JESWV6CcU7m07VW6",
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          }
+        ],
+        "_id": "rJk5e9pqhY0KbsYV",
+        "color": "#8628cc",
+        "elevation": {
+          "bottom": null,
+          "top": null,
+          "topInclusive": false
+        },
+        "restriction": {
+          "enabled": false,
+          "type": "move",
+          "priority": 0
+        },
+        "attachment": {
+          "token": null
+        },
+        "highlightMode": "shapes",
+        "displayMeasurements": false,
+        "ownership": {
+          "default": 0,
+          "JESWV6CcU7m07VW6": 3
+        },
+        "_shapeConstraints": null
+      },
+      {
+        "name": "F1 — Transition — Inner Threshold to F2",
+        "shapes": [
+          {
+            "type": "rectangle",
+            "x": 2169,
+            "y": 163,
+            "width": 700,
+            "height": 430,
+            "hole": false,
+            "rotation": 0,
+            "gridBased": false,
+            "anchorX": 0,
+            "anchorY": 0
+          }
+        ],
+        "locked": false,
+        "hidden": false,
+        "visibility": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:region:transition:f2",
+              "class": "transition",
+              "objectKey": "region.transition-f2",
+              "discoveryContract": "dicebox-discovery/v1"
+            }
+          }
+        },
+        "behaviors": [
+          {
+            "name": "DiceBox F1 — Transition to Final Summoning Chamber",
+            "type": "executeScript",
+            "disabled": false,
+            "system": {
+              "events": [
+                "tokenEnter"
+              ],
+              "source": "const activeGMs = game.users\n  .filter(u => u.active && u.isGM)\n  .sort((a,b) => a.id.localeCompare(b.id));\n\nif (\n  !activeGMs.length ||\n  game.user.id !== activeGMs[0].id\n) return;\n\nconst token = event?.data?.token;\nconst sourceScene =\n  event?.region?.parent ?? canvas?.scene;\n\nif (!token?.actor || !sourceScene) return;\n\nconst dbx =\n  foundry.utils.deepClone(\n    sourceScene.getFlag(\"world\", \"dicebox\") ?? {}\n  );\n\nif (dbx.f1?.innerWardResolved !== true) {\n  return;\n}\n\nconst destination =\n  await fromUuid(\"Scene.HWitOe1wSid7MZ1y.Region.pplHOCmUZOqFymOy\");\n\nif (\n  !destination ||\n  destination.documentName !== \"Region\"\n) {\n  console.error(\n    \"[DiceBox F1→F2] Destination Region unavailable.\",\n    \"Scene.HWitOe1wSid7MZ1y.Region.pplHOCmUZOqFymOy\"\n  );\n  return;\n}\n\nconst destinationScene =\n  destination.parent;\n\nlet user =\n  game.users.get(event?.user?.id) ?? null;\n\nif (!user || user.isGM) {\n  user =\n    game.users.find(\n      u =>\n        u.active &&\n        !u.isGM &&\n        u.character?.id === token.actor.id\n    ) ?? null;\n}\n\nif (!user) {\n  const owners =\n    game.users.filter(\n      u =>\n        u.active &&\n        !u.isGM &&\n        token.actor.testUserPermission(\n          u,\n          CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER\n        )\n    );\n\n  if (owners.length === 1) {\n    user = owners[0];\n  }\n}\n\nawait destination.teleportToken(\n  token,\n  {\n    placement: \"random\",\n    snap: false,\n    pan: true\n  }\n);\n\nif (user && destinationScene) {\n  await destinationScene.pullUsers(\n    [user.id]\n  );\n}\n\nconsole.log(\n  \"[DiceBox F1→F2 TRANSITION]\",\n  {\n    status: \"PASS\",\n    userId: user?.id ?? null,\n    userName: user?.name ?? null,\n    actorId: token.actor.id,\n    actorName: token.actor.name,\n    destinationSceneId:\n      destinationScene?.id ?? null,\n    destinationRegionId:\n      destination.id\n  }\n);"
+            },
+            "flags": {
+              "world": {
+                "dicebox": {
+                  "managed": true,
+                  "campaignId": "central-lodge",
+                  "sceneKey": "F1",
+                  "patchId": "central-lodge-f1-f2-transition-binding-v001",
+                  "stableId": "dbx:central-lodge:f1:behavior:transition-f2",
+                  "sourceUuid": "Scene.La9krMOMBhAhDLi6.Region.iuoEHBXWtXgzYmMh",
+                  "targetUuid": "Scene.HWitOe1wSid7MZ1y.Region.pplHOCmUZOqFymOy"
+                }
+              }
+            },
+            "_id": "FElgIMZFVX5GleSy",
+            "_stats": {
+              "coreVersion": "14.367",
+              "systemId": "dnd5e",
+              "systemVersion": "5.3.3",
+              "createdTime": 1791348280467,
+              "modifiedTime": 1791348280467,
+              "lastModifiedBy": "JESWV6CcU7m07VW6",
+              "compendiumSource": null,
+              "duplicateSource": null,
+              "exportSource": null
+            }
+          }
+        ],
+        "_id": "iuoEHBXWtXgzYmMh",
+        "color": "#cc28bc",
+        "elevation": {
+          "bottom": null,
+          "top": null,
+          "topInclusive": false
+        },
+        "restriction": {
+          "enabled": false,
+          "type": "move",
+          "priority": 0
+        },
+        "attachment": {
+          "token": null
+        },
+        "highlightMode": "shapes",
+        "displayMeasurements": false,
+        "ownership": {
+          "default": 0,
+          "JESWV6CcU7m07VW6": 3
+        },
+        "_shapeConstraints": null
+      }
+    ],
+    "tiles": [],
+    "walls": [
+      {
+        "c": [
+          720,
+          260,
+          1920,
+          260
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:north-left"
+            }
+          }
+        },
+        "_id": "8U8dDnOaaNZeW2rc",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1920,
+          260,
+          2400,
+          260
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 1,
+        "ds": 2,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:inner-gate"
+            }
+          }
+        },
+        "_id": "M2QCtVq3TEySovAz",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          2400,
+          260,
+          3600,
+          260
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:north-right"
+            }
+          }
+        },
+        "_id": "UywZwVoCUImIOS98",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          3600,
+          260,
+          4000,
+          620
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:northeast-chamfer"
+            }
+          }
+        },
+        "_id": "FWmPstopyACT6Eby",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          4000,
+          620,
+          4000,
+          2260
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:east"
+            }
+          }
+        },
+        "_id": "I65MfCoyTt2sLgvC",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          4000,
+          2260,
+          3600,
+          2640
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:southeast-chamfer"
+            }
+          }
+        },
+        "_id": "5SHaJIz1INBiCKA2",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          3600,
+          2640,
+          2380,
+          2640
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:south-right"
+            }
+          }
+        },
+        "_id": "EtqDDDHkPKXxrZcF",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1940,
+          2640,
+          720,
+          2640
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:south-left"
+            }
+          }
+        },
+        "_id": "TzQfCqBHgDUBQUuA",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          720,
+          2640,
+          320,
+          2260
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:southwest-chamfer"
+            }
+          }
+        },
+        "_id": "nvBEXciGijvB8i0Q",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          320,
+          2260,
+          320,
+          620
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:west"
+            }
+          }
+        },
+        "_id": "oexYvOLAwFKw8hTt",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          320,
+          620,
+          720,
+          260
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:northwest-chamfer"
+            }
+          }
+        },
+        "_id": "PkmqMbH6Lwl37opB",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1180,
+          820,
+          1380,
+          820
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-nw-n"
+            }
+          }
+        },
+        "_id": "31bUieYWZmlr7V0x",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1380,
+          820,
+          1380,
+          1120
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-nw-e"
+            }
+          }
+        },
+        "_id": "7UA5wB4KnYqCTkNz",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1380,
+          1120,
+          1180,
+          1120
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-nw-s"
+            }
+          }
+        },
+        "_id": "EvNIcsAAWaj8bSzt",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1180,
+          1120,
+          1180,
+          820
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-nw-w"
+            }
+          }
+        },
+        "_id": "yMMNgd5wNOSMIQSs",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          2940,
+          820,
+          3140,
+          820
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-ne-n"
+            }
+          }
+        },
+        "_id": "LFreA81JD62pWoKq",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          3140,
+          820,
+          3140,
+          1120
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-ne-e"
+            }
+          }
+        },
+        "_id": "vP9lUG5cngVGDG41",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          3140,
+          1120,
+          2940,
+          1120
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-ne-s"
+            }
+          }
+        },
+        "_id": "4P8kfmvtQ0ethHU6",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          2940,
+          1120,
+          2940,
+          820
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-ne-w"
+            }
+          }
+        },
+        "_id": "hUE8fb8eZbTM9Lp7",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1180,
+          1660,
+          1380,
+          1660
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-sw-n"
+            }
+          }
+        },
+        "_id": "tuT5oWf7Q6FA1Pfe",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1380,
+          1660,
+          1380,
+          1960
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-sw-e"
+            }
+          }
+        },
+        "_id": "QOLxMWGV0E4CFWia",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1380,
+          1960,
+          1180,
+          1960
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-sw-s"
+            }
+          }
+        },
+        "_id": "DT9VFGuSs7HVvfNT",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          1180,
+          1960,
+          1180,
+          1660
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-sw-w"
+            }
+          }
+        },
+        "_id": "jfWZ7qZqSDj5sph6",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          2940,
+          1660,
+          3140,
+          1660
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-se-n"
+            }
+          }
+        },
+        "_id": "Yy3Jr5MObzWM242j",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          3140,
+          1660,
+          3140,
+          1960
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-se-e"
+            }
+          }
+        },
+        "_id": "boarBSVBpDfCXEIH",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          3140,
+          1960,
+          2940,
+          1960
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-se-s"
+            }
+          }
+        },
+        "_id": "MSUUpv4pSiLRBaGF",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      },
+      {
+        "c": [
+          2940,
+          1960,
+          2940,
+          1660
+        ],
+        "move": 20,
+        "sight": 20,
+        "light": 20,
+        "sound": 20,
+        "door": 0,
+        "ds": 0,
+        "dir": 0,
+        "levels": [
+          "defaultLevel0000"
+        ],
+        "flags": {
+          "world": {
+            "dicebox": {
+              "managed": true,
+              "campaignId": "central-lodge",
+              "sceneKey": "F1",
+              "buildId": "central-lodge-f1-build-v001",
+              "stableId": "dbx:central-lodge:f1:wall:pillar-se-w"
+            }
+          }
+        },
+        "_id": "CAfPWwUQYAPenVp6",
+        "threshold": {
+          "light": null,
+          "sight": null,
+          "sound": null,
+          "attenuation": false
+        },
+        "animation": null
+      }
+    ],
+    "playlist": null,
+    "playlistSound": null,
+    "journal": null,
+    "journalEntryPage": null,
+    "weather": "",
+    "folder": "4iXeDJuCRBVhdM1M",
+    "sort": 101563,
+    "ownership": {
+      "default": 0,
+      "JESWV6CcU7m07VW6": 3
+    },
+    "_stats": {
+      "coreVersion": "14.367",
+      "systemId": "dnd5e",
+      "systemVersion": "5.3.3",
+      "createdTime": 1791341851352,
+      "modifiedTime": 1791351730819,
+      "lastModifiedBy": "JESWV6CcU7m07VW6",
+      "compendiumSource": null,
+      "duplicateSource": null,
+      "exportSource": null
+    }
+  },
+  "originOfChange": "UNKNOWN",
+  "safeToPromoteOldContract": false,
+  "warning": "Region coordinates could alter lighting and must not be silently reverted"
+}

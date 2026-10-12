@@ -1,0 +1,5 @@
+const F1=game.scenes.get("La9krMOMBhAhDLi6"),r=F1.regions.get("iuoEHBXWtXgzYmMh"),b=r.behaviors.get("FElgIMZFVX5GleSy");
+const transition=String(b.system.source??"");
+const kernel=String(game.macros.get("FHQiFYx6OntZVo9d")?.command??"");
+const matches=[];for(const q of ["teleportToken","pullUsers","event.user","__primary","region.teleportToken","destination.teleportToken"]){let i=transition.indexOf(q);if(i>=0)matches.push({term:q,index:i,excerpt:transition.slice(Math.max(0,i-180),i+330)});}
+return{operation:"cl90.teleport-contract-intake",noWrite:true,oldF1Source:transition,knownAPI:typeof r.teleportToken,knownDestinationAPI:typeof game.scenes.get("La9krMOMBhAhDLi6").regions.get("zKNU1R3JGIMMt017").teleportToken,regionsContext:{sourceEvents:Array.from(b.system.events),sourceRegionId:r.id},matches,coreKernelTeleportMentions:kernel.split("teleportToken").length-1};

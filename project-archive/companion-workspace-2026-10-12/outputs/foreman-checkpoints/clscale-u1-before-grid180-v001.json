@@ -1,0 +1,2283 @@
+{
+ "scene": {
+  "name": "Central Lodge — U1 Family & Guest Rooms",
+  "width": 4320,
+  "height": 2880,
+  "padding": 0,
+  "grid": {
+   "type": 0,
+   "size": 120,
+   "distance": 5,
+   "units": "ft",
+   "style": "solidLines",
+   "thickness": 1,
+   "color": "#000000",
+   "alpha": 0.2
+  },
+  "flags": {
+   "dicebox-campaign-helper": {
+    "stableId": "dbx:central-lodge:u1",
+    "managed": {
+     "owner": "dicebox-campaign-helper",
+     "packageId": "dbx:central-lodge:u1:v1",
+     "kind": "scene",
+     "stableId": "dbx:central-lodge:u1"
+    },
+    "campaignId": "central-lodge",
+    "mapId": "U1",
+    "buildContract": "dicebox-scene-injector-build/v2",
+    "scaleProfile": "battlemap-120",
+    "timeOfDay": "day",
+    "campaignTimeKey": "central-lodge.timeOfDay",
+    "rendererLightingProfile": "time-neutral-interior",
+    "buildInstalled": true,
+    "ready": false,
+    "puzzleState": {
+     "houseProofRecovered": false,
+     "crownCrestRecovered": false,
+     "familyRecordsUnderstood": false,
+     "guestAbsenceUnderstood": false
+    },
+    "dayNight": {
+     "policy": "ambient-reaction-only",
+     "campaignTimeKey": "central-lodge.timeOfDay",
+     "triggerEventId": null,
+     "triggerStatus": "UNRESOLVED_CANON_DECISION",
+     "lightingOrder": [
+      "dbx:central-lodge:u1:light:corridor-west",
+      "dbx:central-lodge:u1:light:corridor-center",
+      "dbx:central-lodge:u1:light:corridor-east",
+      "dbx:central-lodge:u1:light:family-left",
+      "dbx:central-lodge:u1:light:family-right"
+     ]
+    },
+    "assetReceipt": {
+     "base": {
+      "path": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/u1/u1-family-guest-rooms.webp",
+      "sha256": "5de0b850c0b8e5fdf1d92832b5cf185f97014c28d42afa3eb5b59d2a4f2a48aa",
+      "bytes": 229596,
+      "lightingProfile": "time-neutral-interior"
+     }
+    },
+    "implementationPending": [
+     "bind hidden Notice behavior for family records and guest-room absence",
+     "bind House Proof and Crown Crest recovery interactions",
+     "bind family-record interpretation state",
+     "bind transition destinations",
+     "bind campaign sunset controller to installed light stable IDs",
+     "VERIFY exact wall, Region, and light alignment"
+    ]
+   }
+  },
+  "_id": "if9iWDRjSwI87EeX",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "thumb": null,
+  "shiftX": 0,
+  "shiftY": 0,
+  "initial": {
+   "x": null,
+   "y": null,
+   "scale": null
+  },
+  "initialLevel": "defaultLevel0000",
+  "tokenVision": true,
+  "fog": {
+   "mode": 1,
+   "colors": {
+    "explored": null,
+    "unexplored": null
+   }
+  },
+  "environment": {
+   "darknessLevel": 0,
+   "darknessLock": false,
+   "globalLight": {
+    "enabled": false,
+    "alpha": 0.5,
+    "bright": false,
+    "color": null,
+    "coloration": 1,
+    "luminosity": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "shadows": 0,
+    "darkness": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "cycle": true,
+   "base": {
+    "hue": 0,
+    "intensity": 0,
+    "luminosity": 0,
+    "saturation": 0,
+    "shadows": 0
+   },
+   "dark": {
+    "hue": 0.7138888888888889,
+    "intensity": 0,
+    "luminosity": -0.25,
+    "saturation": 0,
+    "shadows": 0
+   }
+  },
+  "transition": {
+   "type": null,
+   "duration": 1500,
+   "activeOnly": false
+  },
+  "drawings": [],
+  "tokens": [],
+  "levels": [
+   {
+    "_id": "defaultLevel0000",
+    "name": "Level",
+    "elevation": {
+     "bottom": 0,
+     "top": 20
+    },
+    "background": {
+     "color": "#999999",
+     "src": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/u1/u1-family-guest-rooms.webp",
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "foreground": {
+     "src": null,
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "fog": {
+     "src": null
+    },
+    "textures": {
+     "anchorX": 0.5,
+     "anchorY": 0.5,
+     "offsetX": 0,
+     "offsetY": 0,
+     "fit": "fill",
+     "scaleX": 1,
+     "scaleY": 1,
+     "rotation": 0
+    },
+    "visibility": {
+     "levels": []
+    },
+    "sort": 0,
+    "flags": {}
+   }
+  ],
+  "lights": [
+   {
+    "name": "U1 Upper Corridor Light Center",
+    "x": 2160,
+    "y": 1380,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 15,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.2,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:light:corridor-center",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:u1:light:corridor-center"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "xk8jYDIz8WwZexdA",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "U1 Upper Corridor Light West",
+    "x": 920,
+    "y": 1380,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 15,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.2,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:light:corridor-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:u1:light:corridor-west"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "e6aZX3UfhO0VUW9K",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "U1 Family Wing Light Left",
+    "x": 700,
+    "y": 700,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 12,
+     "bright": 3,
+     "angle": 360,
+     "color": "#ffad55",
+     "alpha": 0.18,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:light:family-left",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:u1:light:family-left"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "peripheral-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "7yb47moFU2PAPcl8",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "U1 Upper Corridor Light East",
+    "x": 3400,
+    "y": 1380,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 15,
+     "bright": 4,
+     "angle": 360,
+     "color": "#ffb45e",
+     "alpha": 0.2,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:light:corridor-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:u1:light:corridor-east"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "interior-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "BVaj6zJdz2J2yOpJ",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "U1 Family Wing Light Right",
+    "x": 3620,
+    "y": 700,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 12,
+     "bright": 3,
+     "angle": 360,
+     "color": "#ffad55",
+     "alpha": 0.18,
+     "animation": {
+      "type": "torch",
+      "speed": 2,
+      "intensity": 2,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:light:family-right",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:u1:light:family-right"
+      },
+      "campaignTimeKey": "central-lodge.timeOfDay",
+      "activeState": "night",
+      "pacingGroup": "peripheral-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "2m2Ts9EFNFtCEfAV",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   }
+  ],
+  "notes": [],
+  "sounds": [],
+  "regions": [
+   {
+    "name": "U1 House Proof",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1650,
+      "y": 300,
+      "width": 900,
+      "height": 650,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:puzzle:house-proof",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:puzzle:house-proof"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "records-room",
+       "interaction": "recover-item",
+       "itemId": "house-proof",
+       "persistentStateKey": "u1.houseProofRecovered",
+       "dependencyTarget": "N1"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-house-proof",
+       "sceneKey": "U1",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "VxHb5vakdakd4s8t",
+       "sourceRegionName": "U1 House Proof"
+      }
+     }
+    },
+    "_id": "VxHb5vakdakd4s8t",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox U1 — House Proof Recovery",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge U1] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"house-proof\",\"statePath\":\"items.house-proof.recovered\",\"value\":true,\"message\":\"<p>You recover the <strong>House Proof</strong> from the family wing.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl17-u1-apply-v001",
+         "stableId": "dbx:central-lodge:u1:behavior:house-proof-recovery",
+         "sceneKey": "U1",
+         "regionStableId": "dbx:central-lodge:u1:region:u1-house-proof",
+         "sourceHash": "23862e0410c80b69cf1b802dbbe5eef6b73ab62b912977c93e19ecbdabb935f0",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "pickup",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "house-proof",
+          "statePath": "items.house-proof.recovered",
+          "value": true,
+          "message": "<p>You recover the <strong>House Proof</strong> from the family wing.</p>",
+          "persistentPickup": true,
+          "sourceType": "kernel",
+          "rewardItemKey": "house-proof"
+         }
+        }
+       }
+      },
+      "_id": "8jArBYyNFWjNexMv",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403486853,
+       "modifiedTime": 1791403486853,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Crown Crest",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 280,
+      "y": 250,
+      "width": 1050,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:puzzle:crown-crest",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:puzzle:crown-crest"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "family-bedroom",
+       "interaction": "recover-item",
+       "itemId": "crown-crest",
+       "persistentStateKey": "u1.crownCrestRecovered",
+       "dependencyTarget": "E4"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-crown-crest",
+       "sceneKey": "U1",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "W5HLOhbQGxd0QykN",
+       "sourceRegionName": "U1 Crown Crest"
+      }
+     }
+    },
+    "_id": "W5HLOhbQGxd0QykN",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox U1 — Crown Crest Recovery",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge U1] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"crown-crest\",\"statePath\":\"items.crown-crest.recovered\",\"value\":true,\"message\":\"<p>You recover the <strong>Crown Crest</strong> from the family room.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl17-u1-apply-v001",
+         "stableId": "dbx:central-lodge:u1:behavior:crown-crest-recovery",
+         "sceneKey": "U1",
+         "regionStableId": "dbx:central-lodge:u1:region:u1-crown-crest",
+         "sourceHash": "426ef4663c90c03686f8b5b2b84398ba2e9e143974dbcd03b35aeb15e56cc3c0",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "pickup",
+          "trigger": "TOKEN_ENTER",
+          "itemKey": "crown-crest",
+          "statePath": "items.crown-crest.recovered",
+          "value": true,
+          "message": "<p>You recover the <strong>Crown Crest</strong> from the family room.</p>",
+          "persistentPickup": true,
+          "sourceType": "kernel",
+          "rewardItemKey": "crown-crest"
+         }
+        }
+       }
+      },
+      "_id": "iyIMKoCyaf9NMUih",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403486883,
+       "modifiedTime": 1791403486883,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Family Records Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1550,
+      "y": 220,
+      "width": 1100,
+      "height": 780,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:notice:family-records",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:notice:family-records"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "records-room",
+       "discoveryId": "u1-family-records",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The family papers seem arranged with an odd kind of care.",
+       "successHint": "A gap and mismatch in the family records suggests that part of the household history has been deliberately separated.",
+       "interpretation": {
+        "investigation": "The arrangement preserves chronology while obscuring one branch of the family record."
+       }
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-family-records-notice",
+       "sceneKey": "U1",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "fgo4icYioZu3ekbr",
+       "sourceRegionName": "U1 Family Records Notice"
+      }
+     }
+    },
+    "_id": "fgo4icYioZu3ekbr",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox U1 — Family Records Notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge U1] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"u1.family-records\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The family records are not simply disordered by age. A gap in the sequence and an unusual grouping of names stand out from the surrounding entries, suggesting that part of the household history was organized or omitted deliberately.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate examination of the family records remains possible.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl17-u1-apply-v001",
+         "stableId": "dbx:central-lodge:u1:behavior:family-records-notice",
+         "sceneKey": "U1",
+         "regionStableId": "dbx:central-lodge:u1:region:u1-family-records-notice",
+         "sourceHash": "8d2bde8d3871c9689a19c80f948b8ea11b428609c7e984dc2664fa61c78f2553",
+         "behaviorSpec": {
+          "contract": "dicebox-discovery/v1",
+          "action": "notice",
+          "trigger": "TOKEN_ENTER",
+          "noticeKey": "u1.family-records",
+          "dc": 6,
+          "stage2Skill": "Investigation",
+          "successMessage": "<p>The family records are not simply disordered by age. A gap in the sequence and an unusual grouping of names stand out from the surrounding entries, suggesting that part of the household history was organized or omitted deliberately.</p>",
+          "followUp": "Suggested follow-up: Investigation.",
+          "failure": "silent",
+          "oncePerCharacter": true,
+          "autoAwardItem": false,
+          "criticalClueFallback": "Deliberate examination of the family records remains possible.",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "ZdgUuixSscsdZ8Ql",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403486803,
+       "modifiedTime": 1791403486803,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Light — Upper Corridor",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 180,
+      "y": 1130,
+      "width": 3960,
+      "height": 500,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:light:upper-corridor",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:light:upper-corridor"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "upper-corridor-fixtures",
+       "dayNightControlled": true,
+       "pacingGroup": "interior-response",
+       "lightStableIds": [
+        "dbx:central-lodge:u1:light:corridor-west",
+        "dbx:central-lodge:u1:light:corridor-center",
+        "dbx:central-lodge:u1:light:corridor-east"
+       ]
+      },
+      "runtimeBinding": null
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-light-upper-corridor",
+       "sceneKey": "U1",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "6yT5660qN4dVJ4Fa",
+       "sourceRegionName": "U1 Light — Upper Corridor"
+      }
+     }
+    },
+    "_id": "6yT5660qN4dVJ4Fa",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Guest Room Absence Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3000,
+      "y": 220,
+      "width": 1050,
+      "height": 780,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:notice:guest-absence",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:notice:guest-absence"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "guest-room",
+       "discoveryId": "u1-guest-absence",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "One guest room feels strangely incomplete despite being fully furnished.",
+       "successHint": "The room was prepared for occupation, but the personal traces expected from a long stay are conspicuously absent.",
+       "persistentStateKey": "u1.guestAbsenceUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-guest-room-absence-notice",
+       "sceneKey": "U1",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "KEFEScgW7Yrureyv",
+       "sourceRegionName": "U1 Guest Room Absence Notice"
+      }
+     }
+    },
+    "_id": "KEFEScgW7Yrureyv",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox U1 — Guest Room Absence Notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge U1] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"u1.guest-room-absence\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>One guest room contradicts itself. It is furnished for regular occupation, but the wear, dust, and personal traces expected from a long-term occupant are missing. The absence feels deliberate rather than merely abandoned.</p>\",\"followUp\":\"Suggested follow-up: Investigation or Perception.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate examination of the room's physical contradictions remains possible.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl17-u1-apply-v001",
+         "stableId": "dbx:central-lodge:u1:behavior:guest-room-absence-notice",
+         "sceneKey": "U1",
+         "regionStableId": "dbx:central-lodge:u1:region:u1-guest-room-absence-notice",
+         "sourceHash": "6d435d45853afcaadd815da66732baaa62ffd6c96a3267b4776208e147697153",
+         "behaviorSpec": {
+          "contract": "dicebox-discovery/v1",
+          "action": "notice",
+          "trigger": "TOKEN_ENTER",
+          "noticeKey": "u1.guest-room-absence",
+          "dc": 6,
+          "stage2Skill": "Investigation",
+          "successMessage": "<p>One guest room contradicts itself. It is furnished for regular occupation, but the wear, dust, and personal traces expected from a long-term occupant are missing. The absence feels deliberate rather than merely abandoned.</p>",
+          "followUp": "Suggested follow-up: Investigation or Perception.",
+          "failure": "silent",
+          "oncePerCharacter": true,
+          "autoAwardItem": false,
+          "criticalClueFallback": "Deliberate examination of the room's physical contradictions remains possible.",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "OZvjOBwdkp5CAMjM",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403486831,
+       "modifiedTime": 1791403486831,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Transition — Stair Landing",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1580,
+      "y": 1630,
+      "width": 1160,
+      "height": 1080,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:transition:stair",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:transition:stair"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "stair-landing",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-transition-stair-landing",
+       "sceneKey": "U1",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "CN7RgLIuaVpgHFUI",
+       "sourceRegionName": "U1 Transition — Stair Landing"
+      }
+     }
+    },
+    "_id": "CN7RgLIuaVpgHFUI",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Transition — Corridor West",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 100,
+      "y": 1220,
+      "width": 360,
+      "height": 340,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:transition:door-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:transition:door-a"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "west-corridor-edge",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-transition-corridor-west",
+       "sceneKey": "U1",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "LvQ6X54sZgtIvpQW",
+       "sourceRegionName": "U1 Transition — Corridor West"
+      }
+     }
+    },
+    "_id": "LvQ6X54sZgtIvpQW",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Transition — Corridor East",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3850,
+      "y": 1220,
+      "width": 360,
+      "height": 340,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:transition:door-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:transition:door-b"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "east-corridor-edge",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-transition-corridor-east",
+       "sceneKey": "U1",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "PsFcL2Leau8GV8zb",
+       "sourceRegionName": "U1 Transition — Corridor East"
+      }
+     }
+    },
+    "_id": "PsFcL2Leau8GV8zb",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Family Records",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1500,
+      "y": 180,
+      "width": 1200,
+      "height": 900,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#6d5f8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:story:family-records",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:story:family-records"
+      },
+      "regionClass": "story",
+      "specification": {
+       "class": "story",
+       "anchor": "records-room",
+       "interaction": "interpret-records",
+       "persistentStateKey": "u1.familyRecordsUnderstood",
+       "supports": [
+        "m1-clock-chronology",
+        "e4-family-graves"
+       ]
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-family-records",
+       "sceneKey": "U1",
+       "regionClass": "story",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "V1JRfiR56dgVGRa3",
+       "sourceRegionName": "U1 Family Records"
+      }
+     }
+    },
+    "_id": "V1JRfiR56dgVGRa3",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox U1 — Family Records Interpretation",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) { console.error(\"[Central Lodge U1] Runtime Kernel missing.\"); return; }\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"observe\",\"trigger\":\"TOKEN_ENTER\",\"observationKey\":\"u1.family-records-interpretation\",\"oncePerActor\":true,\"statePath\":\"puzzles.u1.familyRecordsInterpreted\",\"value\":true,\"message\":\"<p>Cross-referencing the surviving records establishes a family chronology that connects household generations, the Lodge's genealogy, and the graves outside. An interleaved family entry names the fourth-born child, the youngest, as the final heir to the estate. The family chronology helps interpret the clock's shorter hand, but the other hand still requires evidence from the memorial stones.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl17-u1-apply-v001",
+         "stableId": "dbx:central-lodge:u1:behavior:family-records-interpretation",
+         "sceneKey": "U1",
+         "regionStableId": "dbx:central-lodge:u1:region:u1-family-records",
+         "sourceHash": "6ed84ac9a24b5fe4db0c513b819e3409fbaf0dff637c4502d878cdd7da51fae3",
+         "behaviorSpec": {
+          "contract": "dicebox-region-behavior/v1",
+          "action": "observe",
+          "trigger": "TOKEN_ENTER",
+          "observationKey": "u1.family-records-interpretation",
+          "oncePerActor": true,
+          "statePath": "puzzles.u1.familyRecordsInterpreted",
+          "value": true,
+          "message": "<p>Cross-referencing the surviving records establishes a family chronology that connects household generations, the Lodge's genealogy, and the graves outside. It gives context for interpreting the grandfather clock and family memorials, but it does not by itself reveal the clock's exact setting.</p>",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "875pl2PyFUnEYO75",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791403486908,
+       "modifiedTime": 1791466502288,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "U1 Light — Family Wing",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 180,
+      "y": 180,
+      "width": 3960,
+      "height": 2450,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:region:light:family-wing",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:u1:region:light:family-wing"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "family-room-fixtures",
+       "dayNightControlled": true,
+       "pacingGroup": "peripheral-response",
+       "lightStableIds": [
+        "dbx:central-lodge:u1:light:family-left",
+        "dbx:central-lodge:u1:light:family-right"
+       ]
+      },
+      "runtimeBinding": null
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:u1:region:u1-light-family-wing",
+       "sceneKey": "U1",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "8Og9F4LZoOXXewI5",
+       "sourceRegionName": "U1 Light — Family Wing"
+      }
+     }
+    },
+    "_id": "8Og9F4LZoOXXewI5",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   }
+  ],
+  "tiles": [],
+  "walls": [
+   {
+    "c": [
+     100,
+     130,
+     4210,
+     130
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:outer-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:outer-north"
+      }
+     }
+    },
+    "_id": "F0m1OtM3SDTKenrh",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     100,
+     130,
+     100,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:outer-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:outer-west"
+      }
+     }
+    },
+    "_id": "2QM1LulTjLUt172Z",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2550,
+     2700,
+     4210,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:outer-south-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:outer-south-east"
+      }
+     }
+    },
+    "_id": "gmMucumzgDbOWSBv",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     4210,
+     130,
+     4210,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:outer-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:outer-east"
+      }
+     }
+    },
+    "_id": "vGxuRzRxt2zH5xqx",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1450,
+     130,
+     1450,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-divider-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:upper-divider-west"
+      }
+     }
+    },
+    "_id": "s3Y4d26EqQA4J6CQ",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     100,
+     2700,
+     1750,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:outer-south-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:outer-south-west"
+      }
+     }
+    },
+    "_id": "1Z9GHJtUsuuD4cqi",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2850,
+     130,
+     2850,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-divider-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:upper-divider-east"
+      }
+     }
+    },
+    "_id": "7b9XZ2GVqjCqEG7D",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     100,
+     1120,
+     780,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-corridor-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:upper-corridor-a"
+      }
+     }
+    },
+    "_id": "ZpeLrgBDheTiiSBh",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2260,
+     1120,
+     3250,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-corridor-c",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:upper-corridor-c"
+      }
+     }
+    },
+    "_id": "vXJcqvwcKNBAi3J6",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     780,
+     1120,
+     1020,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-door-left",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:u1:wall:upper-door-left"
+      }
+     }
+    },
+    "_id": "tJ0eOQPk6dWWrd9S",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3510,
+     1120,
+     4210,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-corridor-d",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:upper-corridor-d"
+      }
+     }
+    },
+    "_id": "Ctz0UYrLD57Gm7DO",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1020,
+     1120,
+     2000,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-corridor-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:upper-corridor-b"
+      }
+     }
+    },
+    "_id": "fJD4nvJZuTwjNLi4",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3250,
+     1120,
+     3510,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-door-right",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:u1:wall:upper-door-right"
+      }
+     }
+    },
+    "_id": "tfC4Keu7sz183Hkj",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2000,
+     1120,
+     2260,
+     1120
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:upper-door-center",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:u1:wall:upper-door-center"
+      }
+     }
+    },
+    "_id": "WW66XbTKY55uur2S",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     760,
+     1620,
+     1000,
+     1620
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-door-left",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:u1:wall:lower-door-left"
+      }
+     }
+    },
+    "_id": "UwswCgbbd4HV9wua",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1450,
+     1620,
+     1450,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-divider-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:lower-divider-west"
+      }
+     }
+    },
+    "_id": "Fyn9OiCE5GDBTmwX",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2850,
+     1620,
+     2850,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-divider-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:lower-divider-east"
+      }
+     }
+    },
+    "_id": "kZzNevpsMnRosXpi",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     100,
+     1620,
+     760,
+     1620
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-corridor-a",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:lower-corridor-a"
+      }
+     }
+    },
+    "_id": "l50JEfgPYeJpWDSQ",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2850,
+     1620,
+     3250,
+     1620
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-corridor-c",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:lower-corridor-c"
+      }
+     }
+    },
+    "_id": "kXU710990GNimoQq",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3500,
+     1620,
+     4210,
+     1620
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-corridor-d",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:lower-corridor-d"
+      }
+     }
+    },
+    "_id": "nyFTsorMwpXxZIck",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1000,
+     1620,
+     1450,
+     1620
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-corridor-b",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:u1:wall:lower-corridor-b"
+      }
+     }
+    },
+    "_id": "p3z8mncgo5GqUIyS",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3250,
+     1620,
+     3500,
+     1620
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:u1:wall:lower-door-right",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:u1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:u1:wall:lower-door-right"
+      }
+     }
+    },
+    "_id": "mOLgGAwTaIct9SVm",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "weather": "",
+  "folder": "4iXeDJuCRBVhdM1M",
+  "sort": 1000000,
+  "ownership": {
+   "default": 0,
+   "JESWV6CcU7m07VW6": 3
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "dnd5e",
+   "systemVersion": "5.3.3",
+   "createdTime": 1791311820278,
+   "modifiedTime": 1791351698022,
+   "lastModifiedBy": "JESWV6CcU7m07VW6",
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null
+  }
+ },
+ "sourceSHA": "1b2413041b0c09f58c82613850e66ce078a356802a7f508d5527182b905c7201",
+ "ledgerSHA": "e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9"
+}

@@ -1,0 +1,1 @@
+const reg=game.scenes.get("ImeIdHbYb6kZKAdt").regions.get("ewIAYppRLvgIV1b7");return{noWrite:true,method:"teleportToken",functionSource:String(reg.teleportToken).slice(0,6000)};

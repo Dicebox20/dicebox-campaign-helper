@@ -1,0 +1,41 @@
+{
+  "receiptType": "dicebox.remote-foundry-commander-prototype.closure",
+  "receiptVersion": "1.0.0",
+  "recordedAt": "2026-10-07",
+  "workUnitId": "remote-foundry-commander-prototype-20261007",
+  "evidenceLayer": "local",
+  "sourceState": {
+    "gitHead": "eb222b98342e17eaf6830182fac5d193be9e3784",
+    "workingTree": "pre-existing dirty tree preserved; no reset, checkout, cleanup, or destructive operation"
+  },
+  "acceptedChange": "Prototype a remote typed DiceBox Foundry diagnostic path usable by Desktop Commander or Codex while preserving the existing loopback bridge and fixed operation authority boundary.",
+  "changedPaths": [
+    "packages/dicebox-foundry/src/foundry-live-bridge.js",
+    "tools/dicebox-foundry-live-bridge.mjs",
+    "tools/dicebox-foundry-remote-gateway.mjs",
+    "tests/dicebox-foundry-remote-gateway.test.ts",
+    "docs/REMOTE-FOUNDRY-DESKTOP-COMMANDER-PROTOTYPE.md",
+    "package.json",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "database/dicebox_campaign_helper_knowledge.sqlite"
+  ],
+  "verification": [
+    "npm test -- --run tests/dicebox-foundry-remote-gateway.test.ts tests/foundry-live-bridge.test.ts: PASS, 10/10",
+    "npm run build:packages: PASS",
+    "npm run verify:tooling: PASS",
+    "npm run workflow:check: PASS; Stage 12 scene-authoring-breadth remains active; M1284 next action unchanged; readyClaim:false",
+    "python database/build_database.py: PASS; integrity ok",
+    "python database/verify_database.py: PASS; integrity ok"
+  ],
+  "prototypeEvidence": [
+    "Default loopback URL and fixed eight-operation registry remain compatible.",
+    "Remote Foundry hello requires exact protocol, module, world, GM, and configured token.",
+    "Remote MCP HTTP requires bearer authentication and forwards only the existing fixed tool registry.",
+    "Authenticated readiness forwarding returns a bounded fake-Foundry response without invoking live Foundry.",
+    "Macro bodies, scripts, arbitrary documents, raw world identifiers, and execute-as-GM requests are not exposed."
+  ],
+  "liveCheck": "NONE",
+  "stopCondition": "Any live deployment, browser authentication, Foundry restart/login/control, public publication, arbitrary execution surface, secret disclosure, authority promotion, Stage 12 acceptance, or Ready-to-Play claim is outside this receipt and requires a new gate."
+}

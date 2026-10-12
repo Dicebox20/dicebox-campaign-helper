@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:13:42.5554801Z",
+    "workUnitId":  "foreman-r3-receipt-consumption-host-context-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "CL50 R3 N2 Tunnel B/T2 Mouth A read-only geometry preflight PASSED, full one-square footprint geometry checked in both directions, no live state change. KB 401 sources 1177 facts 205 trials integrity ok; CL90 regression PASS with known blockers. Previous Foreman correlation is now positively verified native-delivered with exact turn ID and receipt ID, but receipt consumption rejected for missing positive receiver host context; Foreman marked blocked pending repair.",
+    "blocker":  "Bridge receipt msg-3e9f935d-f4ec-473c-b509-2721b17407e2 under correlation foreman-15b14be4-5a64-4be6-bb57-419084449d0d is verified delivered in native turn 2b579270-ac1d-4225-bd82-c3f10029fb45, consumed:false. bridge_foreman_reconcile consume:true rejected: Receipt consumption needs positively identified receiver host context, including when currentTurnId and exact consumer endpoint were supplied. No new boundary or dispatch allowed until resolved. R1 installer remains safety blocked.",
+    "nextAction":  "Codex Bridge partner: repair receiver-host context for exact verified native turn; inspect existing correlation, do not resend or duplicate. Then reconcile/consume exact receipt and reenable Foreman on verified same session. Next local project read-only lane CL50 R4 T2 Mouth B/N3 West landing footprints. Do not bypass R1 installer safety refusal or change live Foundry state without independent authorization.",
+    "changedPaths":  [
+                         "docs\\CL50-R3-N2-T2-ARRIVAL-PREFLIGHT-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl50-r3-endpoint-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-r3-arrival-footprint-readonly-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-r3-ephemeral-footprint.sql"
+                     ],
+    "validation":  [
+                       "R3 read-only Foundry footprint PASS for 1x1 both ends, 2x2 N2 collides with return mouth/story observer",
+                       "KB official rebuild and independent verifier integrity PASS: 401 sources 1177 facts 205 trials",
+                       "CL90 independent live read-only PASS_WITH_KNOWN_BLOCKERS, 21/202/116/33, ledger revision1",
+                       "Bridge lastVerifiedReceipt exactly matches requested messageId and nativeTurnId; native-delivered confirmed",
+                       "Bridge receipt consume rejected missing receiver host context; consumed false; Foreman block acknowledged, no duplicate dispatch"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin; Bridge session ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "docs\\CL50-R3-N2-T2-ARRIVAL-PREFLIGHT-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:30:01.5857449Z",
+    "workUnitId":  "central-lodge-cl50-four-route-integration-review-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Consolidated user-approved R1-R4 railway terminal mapping and all eight 1x1 ephemeral landing preflights. Foundry read-only executor and teleport API review found frozen R1 source GM election chooses Gamemaster instead of authorized Assistant Gamemaster in current session; preflight spawnTokens placement is recomputed when teleportToken commits, so checked landing not proven identical to committed landing. R1 old source frozen and not live-promotable; earlier installer safety refusal preserved. Updated campaign roadmap/checklist and canonical KB. KB builder integrity ok; separate database verify command was tool-safety-blocked, so full independent KB verification remains unproven. No live world write.",
+    "blocker":  "Frozen R1 staged source has runtime executor and sample-versus-commit contract hazards. Earlier live installer-generation request was blocked by tool safety; do not bypass. Independent database verify_database.py command was separately blocked by tool safety in this work unit; do not retry via alternate transport. No gameplay canary exists; ledger rev1.",
+    "nextAction":  "Use an approved non-bypassing workflow to review/correct R1 source semantics and close the isolated DB verifier safety blocker. Recover latest KB, reconcile current owner/host state and consolidate reviewed route contract acceptance tests before any guarded install. Maintain 1x1-only provisional network, preserve R2/R3 N2 story observation and R4 N3 notices, then conduct independent normal validation and real player canaries. No blanket Foundry changes.",
+    "changedPaths":  [
+                         "docs\\CL50-RAILWAY-FOUR-ROUTE-INTEGRATION-REVIEW-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "work\\foundry-playwright-harness\\cl50-r1-staged-compatibility-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-r1-teleport-one-source-readonly-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-four-route-semantic-audit.sql"
+                     ],
+    "validation":  [
+                       "Bridge Foreman live status enabled true, old exact native receipt consumed=true reconciliationRequired=false",
+                       "Read-only live Foundry compatibility PASS; GM selection mismatches authorized Assistant Gamemaster; teleportToken API reads confirmed and noWrite",
+                       "Consolidated 8 one-square arrivals and size restrictions from 4 exact source receipts; frozen R1 SHA unchanged",
+                       "KB build_database.py returned integrity ok: 403 sources, 1179 facts, 470 decisions, 543 open items, 206 trials, 11 tools",
+                       "Independent verify_database.py call blocked by tool safety and intentionally not retried; independent KB verification NOT claimed",
+                       "Independent CL90 live read-only smoke PASS_WITH_KNOWN_BLOCKERS, 21 scenes/202 Regions/116 enabled behaviors/33 Items, kernel unchanged, ledger rev1",
+                       "No live Foundry write, no installer or teleport, no duplicate Bridge dispatch"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e5.3.3/the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "docs\\CL50-RAILWAY-FOUR-ROUTE-INTEGRATION-REVIEW-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

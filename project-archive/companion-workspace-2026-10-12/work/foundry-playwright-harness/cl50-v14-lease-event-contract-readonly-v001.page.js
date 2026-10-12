@@ -1,0 +1,9 @@
+// CL50 Foundry 14.367 exact-runtime source-only evidence. No mutations or hook calls.
+if (game.world?.id!=="the-lost-mine-of-phandalin" || game.version!=="14.367" || game.system?.version!=="5.3.3") return {status:"STOP",reason:"stack-drift",noWrite:true};
+const src=game.scenes.get("MAbLfBqG7qIVVuLN"),dst=game.scenes.get("ImeIdHbYb6kZKAdt");
+if(!src?.regions.has("xsitdXO94BHJkYKX")||!dst?.regions.has("ewIAYppRLvgIV1b7"))return{status:"STOP",reason:"endpoint-drift",noWrite:true};
+const f=x=>typeof x==="function"?String(x).slice(0,5000):typeof x;
+const cm=CONFIG.RegionBehavior?.dataModels??{};
+const models=Object.keys(cm).filter(x=>/teleport|script|execute/i.test(x));
+const shapes=models.map(k=>({key:k,events:cm[k]?.events,handlerSource:f(cm[k]?.prototype?._handleRegionEvent)}));
+return {status:"PASS",noWrite:true,identity:{foundry:game.version,system:game.system.version,world:game.world.id,executor:game.user?.id,activeGMIds:game.users.filter(u=>u.active&&u.isGM).map(u=>u.id),chosenActiveGM:game.users.activeGM?.id},api:{tokenEnterEvent:CONST.REGION_EVENTS.TOKEN_ENTER,gameSettingsSetSource:f(game.settings.set),modifyBatchSource:f(foundry.documents.modifyBatch),backendBatchType:typeof CONFIG.DatabaseBackend?.modifyDocumentBatch,backendBatchSource:f(CONFIG.DatabaseBackend?.modifyDocumentBatch),regionBehaviorTypes:shapes},baseline:{sourceTokens:src.tokens.size,destinationTokens:dst.tokens.size,sourceBehaviors:src.regions.get("xsitdXO94BHJkYKX").behaviors.size,destBehaviors:dst.regions.get("ewIAYppRLvgIV1b7").behaviors.size},limitations:["Source inspection cannot prove serialized compare-and-swap","Region enter event data movement:null is not uniquely an arrival reason","No token creation, setting update, or batch operation executed"]};

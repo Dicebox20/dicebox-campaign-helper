@@ -1,0 +1,58 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T01:25:59.5226518Z",
+    "workUnitId":  "central-lodge-clscale-u1-grid180-verified-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Continued from verified C2 successor checkpoint without repeating C1/C2. Read-only canonical SQLite decision D-2026-10-08-CL-SCALE-INTERIOR-GRID-PROGRAM locked; world Foundry v14.367 dnd5e v5.3.3 the-lost-mine-of-phandalin via authorized Assistant Gamemaster, zero non-GM players, CL90 v013 baseline and final PASS_WITH_KNOWN_BLOCKERS zero unexpected failures. Exact U1 Family and Guest Rooms Scene if9iWDRjSwI87EeX inactive/no Tokens, gridless 120px per5ft and 4320x2880. Five real door spans 240/260/260/240/250px and minimum Region span340px passed conservative \u003e=15 percent 180px candidate clearance. Full original Scene.toObject snapshot outputs/foreman-checkpoints/clscale-u1-before-grid180-v001.json original SHA256 1b2413041b0c09f58c82613850e66ce078a356802a7f508d5527182b905c7201. No-write exact source/roster/ledger PREVIEW PASS grid180; exactly one Scene.update grid.size180 autoReposition:false via authorized Assistant Gamemaster; independent entire Scene final normalized source PASS SHA original, post-update SHA d4f032b127a26b8ea0beb9263a815179b0eebc5816defd74277a09669328ee0b. All 22 Walls/10 Regions/5 Lights, scripts, art, zero tokens preserved. Canonical roster 21 Scenes/202 Regions/119 behaviors (one disabled M2 Notice)/33 Items preserved. Sovereign ledger revision3 SHA e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9 unchanged. U1 roadmap/checklist updated. SQLite KB rebuilt and verified PASS integrity ok, 427 sources/1201 facts/77 seed fragments. No audio, CL50 installers, teleport, final gameplay or visual-fit testing. Earlier C2 and C1 unchanged.",
+    "blocker":  "Dicebox Bridge bridge_status returned Session terminated. Current successor ChatGPT/Codex identities and pending receipts not positively verified; no message sent, no stale native trigger replayed. Per user final gameplay testing deferred; CL50 railway route installers quarantined, route landing footprints stale after grid changes. Existing project workspace is not Git checkout and active product card absent. A staging helper printed candidatePx160 through inherited display-only constant, but generated guarded preview, apply and final verify unequivocally target/passed U1 grid180.",
+    "nextAction":  "Distinct bounded CL-SCALE U2 Servants and Attic Scene PVf6Gbrv9HbB88uZ candidate grid 120 to160px/5ft. Reread this checkpoint, canonical KB and currently sovereign world; verify exact Foundry/world and Assistant Gamemaster, no non-GM players, no tokens, door and Region clearances, full source SHA and U2 Servant History script/Interpretation flags. Save exact backup; no-write preview; if passes, one guarded Scene.update autoReposition:false, independent complete Scene source and ledger normalized reread, CL90, KB, durable checkpoint. N3 grid120 protected, M1 Ret token safeguard, F2 uncalibrated, CL50 quarantine. Do not blindly retry Bridge messages or install railways; final gameplay acceptance postponed.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\clscale-u1-clearance-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\clscale-derive-u1-stage-v001.py",
+                         "work\\foundry-playwright-harness\\clscale-stage-u1-v001.py",
+                         "work\\foundry-playwright-harness\\clscale-u1-baseline-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\clscale-u1-preview-v001.page.js",
+                         "work\\foundry-playwright-harness\\clscale-u1-apply-v001.page.js",
+                         "work\\foundry-playwright-harness\\clscale-u1-final-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\clscale-u1-kb-v001.sql",
+                         "work\\foundry-playwright-harness\\clscale-u1-publish-kb-v001.py",
+                         "outputs\\foreman-checkpoints\\clscale-u1-before-grid180-v001.json",
+                         "database\\seed.d\\zzzzzzzzzzzzzzzzzzzzzz-2026-10-08-clscale-u1-grid180-verified.sql",
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md"
+                     ],
+    "validation":  [
+                       "Desktop Commander online authorized device, Dicebox Bridge connection terminated",
+                       "CL90 v013 before and after U1 grid only PASS_WITH_KNOWN_BLOCKERS zero unexpected failures",
+                       "U1 exact no-token source and five-door measured clearance for 180 candidate",
+                       "U1 whole source original backup saved and exact guarded no-write preview PASS",
+                       "One and only U1 Scene grid.size180 autoReposition:false update PASS",
+                       "Independent final normalized entire Scene source original SHA match",
+                       "22 Wall/10 Region/5 Light coordinates and original image preserved",
+                       "Canonical 21/202/119/33 and puzzle ledger revision3 unchanged",
+                       "SQLite build_database.py PASS and verify_database.py integrity ok; 427 sources 1201 facts",
+                       "No railway installs, no final gameplay or macro playback"
+                   ],
+    "runtimeTarget":  "Foundry v14.367/dnd5e5.3.3/the-lost-mine-of-phandalin/Assistant Gamemaster",
+    "receiptRef":  "outputs\\foreman-checkpoints\\clscale-u1-before-grid180-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

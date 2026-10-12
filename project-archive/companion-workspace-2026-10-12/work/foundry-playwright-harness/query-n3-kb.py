@@ -1,0 +1,10 @@
+import sqlite3,json
+db=r"C:\Users\rujie\Documents\Codex\DiceBox Campaign Helper\database\dicebox_campaign_helper_knowledge.sqlite"
+c=sqlite3.connect(db);c.row_factory=sqlite3.Row
+terms=["N3","Depot","baggage","route plate","switch","Wing IV","cartography","Old Estate Survey","Cult Passage Diagram","Recent Route Fragment"]
+out=[];seen=set()
+for term in terms:
+ for r in c.execute("SELECT fact_id,title,statement,evidence_class,status,source_id,tags FROM kb_facts WHERE lower(title||' '||statement||' '||coalesce(tags,'')) LIKE ? ORDER BY fact_id",('%'+term.lower()+'%',)):
+  d=dict(r)
+  if d["fact_id"] not in seen: seen.add(d["fact_id"]); out.append(d)
+print(json.dumps(out,ensure_ascii=False,indent=2))

@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:39:47.8728111Z",
+    "workUnitId":  "central-lodge-cl50-landing-risk-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "research",
+    "summary":  "Eight CL50 railway mouth candidate arrival centers inspected in exact live Foundry (READ ONLY). Four center points overlap other Regions; sources show N1 rail-power gate, N2 story observer, and notices. No current source teleport loops, but no canon terminal orientation or live canary.",
+    "blocker":  "",
+    "nextAction":  "Complete CL92 source-hash and player-canary readiness receipt, then stop for external GM/approved route geometry and real player attendance.",
+    "changedPaths":  [
+                         "docs\\CL50-RAILWAY-LANDING-OVERLAP-READONLY-2026-10-07.md",
+                         "work\\foundry-playwright-harness\\cl50-railway-landing-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-railway-overlap-readonly-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-landing-readonly.sql"
+                     ],
+    "validation":  [
+                       "CL50 live landing no-write PASS_WITH_REVIEW: 8 centers; 4 overlaps; no nearby tokens or straight Wall crossings",
+                       "CL50 live overlap source no-write PASS: N1 gate and N2 observe identified",
+                       "KB build + integrity verification PASS",
+                       "No Foundry Scene/Region/Actor/Macro changes"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CL50-RAILWAY-LANDING-OVERLAP-READONLY-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}
