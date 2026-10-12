@@ -6,10 +6,12 @@
 ## Read first
 
 1. [Canonical workflow register](CANONICAL-WORKFLOWS.md) — accepted workflows in date order, draft overlays, missing verification and scope.
-2. [Mandatory grayscale-to-color Scene Injector detail](SCENE-GRAYSCALE-PIPELINE.md) — stage artifacts, structural inspection, Feature Manifest, final inspection and Foundry projection.
-3. [Implementation chronology](IMPLEMENTATION-CHRONOLOGY.md) — verified workflow acceptance dates, separately from path-inferred material dates.
-4. [Inventory index](inventory/README.md) — full Git-tracked path/byte-size/blob-SHA inventory and date-hint classification for PR #16 head.
-5. [Prior reconciliation](../CANONICAL-SOURCE-RECONCILIATION-2026-10-12.md) — branch conflicts and source precedence.
+2. [Multi-pass database reconciliation](DATABASE-RECONCILIATION-PASS-2026-10-12.md) — 17 accepted main migrations vs 82 companion archive migrations, with locally accepted decisions and promotion gates.
+3. [Workflow implementation evidence matrix](IMPLEMENTATION-EVIDENCE-PASS-2026-10-12.md) — Actor, puzzle, desktop, Scene Injector, Foundry, Bridge, Foreman and test scope.
+4. [Mandatory grayscale-to-color Scene Injector detail](SCENE-GRAYSCALE-PIPELINE.md) — stage artifacts, structural inspection, Feature Manifest, final inspection and Foundry projection.
+5. [Implementation chronology](IMPLEMENTATION-CHRONOLOGY.md) — verified workflow acceptance dates, separately from path-inferred material dates.
+6. [Inventory index](inventory/README.md) — full Git-tracked path/byte-size/blob-SHA inventory and date-hint classification for PR #16 head.
+7. [Prior reconciliation](../CANONICAL-SOURCE-RECONCILIATION-2026-10-12.md) — branch conflicts and source precedence.
 
 ## Audit rules
 
