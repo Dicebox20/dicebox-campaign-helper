@@ -5,6 +5,8 @@
 
 **Latest continuation:** [Evidence Pass 3 (2026-10-12)](EVIDENCE-PASS-3-2026-10-12.md) — independently reread archived PREPARE and Region→Macro sources, checked all 17 accepted-main dated SQL deltas, verified workflow-check wiring, reproduced large-file/active-card blocker, and stopped before promotion. Documentation-only; read after Pass 2.  
 
+**Current source-recovery update — Evidence Pass 4:** [Full baseline, active Stage 12 and trial-ID collision audit](EVIDENCE-PASS-4-2026-10-12.md). A direct GitHub **blob** read recovered all three large files in full, resolving the earlier *reader* blocker. Accepted main's structured card proves Stage 12 `scene-authoring-breadth` active, with M1284 stopped at manual GM rejoin; **do not replay M1271/M1272**. Critically, accepted main's `T-190` and `T-209` are **different trials** from those same IDs in the archived local Region→Macro KB. Preserve namespace-qualified historical evidence and never overwrite accepted trial rows. Full SQLite replay, native workflow checker, any promotion, and live authorization remain blocked. This is the **latest checkpoint**; earlier summaries below retain their historical point-in-time status.  
+
 **Current work unit:** Multi-pass workflow reconciliation and durable next-chat transfer  
 **Status:** `PARTIAL — DOCUMENTED / STOP` (reconciled source findings, no full DB/active-slice test, no promotion or Foundry work)  
 **Repository:** https://github.com/Dicebox20/dicebox-campaign-helper  
