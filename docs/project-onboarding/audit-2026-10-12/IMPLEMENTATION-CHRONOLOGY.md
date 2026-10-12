@@ -4,6 +4,9 @@ Do not confuse (1) documented acceptance/effective date, (2) authored/event date
 
 | Date verified from source text | Change/decision | Status | Evidence |
 |---|---|---|---|
+| 2026-10-12 | Region-triggered Macro player execution permission rule adopted in companion local foundation/KB | Locally accepted, NOT merged into main; checkpoint PARTIAL/STOP; no live mutation | Archived 20261012T073826829Z Region Macro Foreman checkpoint + archived Foreman workflow |
+| 2026-10-11 | Mysterious Lodge five world Macro LIMITED player execution permission test | Fixture PASS after reload, player puzzle canary pending | Migration outputs 20261012T044238958Z fixture checkpoint |
+| 2026-10-09 | PREPARE ASCII/text spatial diagram, legend and topology review | Locally user-approved/KB-catalogued, NOT merged into main; v3.1 experimental workflow explicitly not promoted | Archived DICEBOX-PREPARE-TEXT-LAYOUT-RULE and 2026-10-09-prepare-text-layout.sql |
 | 2026-10-12 | Mysterious Lodge GM puzzle directions revised | Draft content only, not live installed | Migration-only `docs/CENTRAL-LODGE-PUZZLE-DIRECTIONS-2026-10-12.md` |
 | 2026-10-12 | Companion workspace snapshot | Archive evidence; not new implemented product capability | PR #16 and archive README + SHA-256 manifest |
 | 2026-10-09 | 20-minute bounded work turns | User-accepted | Current `main` 20-minute cap |
