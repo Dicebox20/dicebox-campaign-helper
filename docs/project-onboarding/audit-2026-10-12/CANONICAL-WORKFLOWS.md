@@ -21,6 +21,8 @@
 
 **Precedence:** More recent accepted *scope-specific* overlays modify only their assigned stages. A newer archived file, unmerged PR, or "canonical" title from a former project does not supersede the root `main` contract. For example October 9 geometry and clean-restart rules extend October 7 semantic scene rendering and October 5 Injector automation; they do not abolish the core pipeline.
 
+**Required grayscale stage:** The Scene Injector's RENDER/INSPECT is an obligatory two-pass pipeline: grayscale structural render → structural inspection → Feature Manifest/Spatial Blueprint reconciliation → painterly color render → final inspection. A structural PASS is **not** approval of the finished art. See [Scene grayscale pipeline audit](SCENE-GRAYSCALE-PIPELINE.md).
+
 ## Implementation surfaces and evidence levels
 
 | Subsystem | Latest identified material | Evidence-based classification | Next verification |
