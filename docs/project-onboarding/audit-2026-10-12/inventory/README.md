@@ -2,7 +2,7 @@
 
 **Repository:** Dicebox20/dicebox-campaign-helper  
 **Canonical baseline:** `main` tree `1137241a7df431a5cc4bc775ab56dcd283e1db29`  
-**Draft migration snapshot:** commit `912ae844d9d0f26a663f34fb6342c5f5ebb6b057`, tree `912ae844d9d0f26a663f34fb6342c5f5ebb6b057` used by the Git-tree endpoint (Git may resolve the supplied commit/ref to its tree).  
+**Draft migration snapshot:** commit/ref `912ae844d9d0f26a663f34fb6342c5f5ebb6b057` used to request the recursive Git-tree inventory; this is a frozen commit reference, not a claim about individual implementation dates.  
 **Snapshot file count:** 12,302 tracked blobs.  
 **Baseline count:** 10,981 tracked blobs.
 
