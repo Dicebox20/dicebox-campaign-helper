@@ -23,6 +23,16 @@
 
 **Required grayscale stage:** The Scene Injector's RENDER/INSPECT is an obligatory two-pass pipeline: grayscale structural render → structural inspection → Feature Manifest/Spatial Blueprint reconciliation → painterly color render → final inspection. A structural PASS is **not** approval of the finished art. See [Scene grayscale pipeline audit](SCENE-GRAYSCALE-PIPELINE.md).
 
+## New findings from multi-pass KB/PR/implementation audit
+
+- **2026-10-09, locally accepted but not promoted to main:** Required PREPARE monospaced text map/ASCII diagram, legend and location table, supported by archived `D-2026-10-09-PREPARE-TEXT-LAYOUT`. **The experimental v3.1 rendering workflow was explicitly NOT adopted.**
+- **2026-10-12, locally accepted but not promoted to main:** Mandatory RegionBehavior→Macro permission preflight, postinstall and fresh-reload `canUserExecute` checks. Archived Foreman workflow/checkpoint records local DB rebuild and `PARTIAL`/STOP; it does not prove live safety, or repository-wide promotion.
+- **2026-10-09 M02 grayscale QA:** modeled clearance PASS, but wall-ground precision remains unresolved; painting/BUILD/INJECT expressly not authorized by latest merged M02 KB metadata.
+- **2026-09-19 NPC Injector:** Engine 1.0 three fresh-Actor create passes are **carried handoff evidence**, Engine 2.0 pending exact runtime; do not conflate with complete integrated Actor Injector.
+- **Puzzle Matrix:** campaign puzzle actions and pure primitive engines exist, but global matrix design/test/desktop integration is still incomplete.
+
+See [DB chronology pass](DATABASE-RECONCILIATION-PASS-2026-10-12.md) and [code/test evidence pass](IMPLEMENTATION-EVIDENCE-PASS-2026-10-12.md).
+
 ## Implementation surfaces and evidence levels
 
 | Subsystem | Latest identified material | Evidence-based classification | Next verification |
