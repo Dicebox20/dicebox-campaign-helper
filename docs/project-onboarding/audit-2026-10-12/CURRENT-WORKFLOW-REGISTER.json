@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogueDate": "2026-10-12",
+  "purpose": "Human-reviewable source selection only; not operational approval or runtime authority",
+  "acceptedMainBaseline": "1137241a7df431a5cc4bc775ab56dcd283e1db29",
+  "source": "Dicebox20/dicebox-campaign-helper",
+  "branch": "sync/project-data-2026-10-12",
+  "limitations": [
+    "Reproducible KB full seed and active slice are too large for source reader in this audit",
+    "No database rebuild or runtime validations performed",
+    "Archive and draft sources are not accepted main by filename/date alone"
+  ],
+  "workflows": [
+    {
+      "id": "mission",
+      "scope": "project",
+      "documentedDate": "2026-10-01",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-CAMPAIGN-HELPER-UNIFICATION-2026-10-01.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "foreman_work_turn_cap",
+      "scope": "project",
+      "documentedDate": "2026-10-09",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-20-MINUTE-TURN-CAP-2026-10-09.md",
+      "ref": "main",
+      "kbDecision": "D-2026-10-09-DICEBOX-20MIN-TURN-CAP",
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "kb_data_chronology",
+      "scope": "project",
+      "documentedDate": "2026-10-07",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/NEW-DATA-IMPLEMENTATION-RULE-2026-10-07.md",
+      "ref": "main",
+      "kbDecision": "D-2026-10-07-NEW-DATA-IMPLEMENTATION-RULE",
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "semantic_grayscale_render",
+      "scope": "scene",
+      "documentedDate": "2026-10-07",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-SCENE-SEMANTIC-RENDER-WORKFLOW-2026-10-07.md",
+      "ref": "main",
+      "kbDecision": "D-2026-10-07-SCENE-SEMANTIC-RENDER-V2",
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "prepare_text_layout",
+      "scope": "scene",
+      "documentedDate": "2026-10-09",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "local_accepted_promotion_pending",
+      "path": "project-archive/companion-workspace-2026-10-12/docs/DICEBOX-PREPARE-TEXT-LAYOUT-RULE-2026-10-09.md",
+      "ref": "sync/project-data-2026-10-12",
+      "kbDecision": "D-2026-10-09-PREPARE-TEXT-LAYOUT",
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "geometry_tolerance",
+      "scope": "scene",
+      "documentedDate": "2026-10-09",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md",
+      "ref": "main",
+      "kbDecision": "D-2026-10-09-GEOMETRY-TOLERANCE-V01",
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "image_prompt_clean_restart",
+      "scope": "assets",
+      "documentedDate": "2026-10-09",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-IMAGE-PROMPT-CLEAN-RESTART-RULE-2026-10-09.md",
+      "ref": "main",
+      "kbDecision": "D-2026-10-09-IMAGE-PROMPT-CLEAN-RESTART",
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "scene_build_v2",
+      "scope": "scene",
+      "documentedDate": "2026-10-05",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-INJECTOR-WORKFLOW-HARDENING-2026-10-05.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "scene_automation",
+      "scope": "scene",
+      "documentedDate": "2026-10-05",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-AUTOMATED-SCENE-WORKFLOW-2026-10-05.md",
+      "ref": "main",
+      "kbDecision": "D-2026-10-06-INSPECT-PASS-APPROVES",
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "map_token_scale",
+      "scope": "scene",
+      "documentedDate": "2026-10-05",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "discovery_regions",
+      "scope": "scene",
+      "documentedDate": "2026-10-05",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted",
+      "path": "docs/DICEBOX-EXPLORATION-DISCOVERY-STANDARD-2026-10-05.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "region_macro_player_execute_permission",
+      "scope": "foundry",
+      "documentedDate": "2026-10-12",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "local_accepted_promotion_pending",
+      "path": "project-archive/companion-workspace-2026-10-12/docs/FOREMAN-WORKFLOW-CURRENT.md",
+      "ref": "sync/project-data-2026-10-12",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "actor_injector_v1",
+      "scope": "actor",
+      "documentedDate": "2026-09-19",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "historical_carried_runtime_claim",
+      "path": "beyond-the-realms-bridge/reference/Beyond_the_Realms_NPC_Injector_Reconciliation_Handoff_2026-09-19.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "actor_injector_v2",
+      "scope": "actor",
+      "documentedDate": "2026-09-19",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "experimental_runtime_pending",
+      "path": "beyond-the-realms-bridge/knowledge/CURRENT_STATE.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "puzzle_matrix",
+      "scope": "puzzle",
+      "documentedDate": null,
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "design_testing_incomplete",
+      "path": "packages/dicebox-core/src/in-scene-puzzles.ts",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "desktop_app",
+      "scope": "desktop",
+      "documentedDate": "2026-08-23",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "accepted_architecture_partial_implementation",
+      "path": "docs/ADR-0004-desktop-editor-foundation.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "codex_provider",
+      "scope": "desktop",
+      "documentedDate": "2026-08-24",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "main_accepted_architecture",
+      "path": "docs/ADR-0007-ai-and-codex-account-integration.md",
+      "ref": "main",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "injector_2_prototype",
+      "scope": "scene",
+      "documentedDate": "2026-10-09",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "draft_prototype_only",
+      "path": "docs/DICEBOX-INJECTOR-2.0-PROTOTYPE-2026-10-09.md",
+      "ref": "workflow/scene-injector-reconciliation-20261009",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    },
+    {
+      "id": "mysterious_lodge_campaign",
+      "scope": "campaign",
+      "documentedDate": "2026-10-11",
+      "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
+      "status": "migration_only_fixture_evidence",
+      "path": "docs/campaigns/mysterious-lodge/START-HERE.md",
+      "ref": "sync/project-data-2026-10-12",
+      "kbDecision": null,
+      "runtimeStatus": "not_independently_checked_in_this_audit"
+    }
+  ]
+}
