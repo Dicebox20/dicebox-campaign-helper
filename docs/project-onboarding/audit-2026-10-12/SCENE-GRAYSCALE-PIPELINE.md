@@ -23,6 +23,14 @@ The **creative** `RENDER/INSPECT` phase is an obligatory two-pass structure/colo
 
 A structural PASS **does not approve final artwork**. Only FINAL_INSPECT PASS records approval, with optional redundant `APPROVE` acknowledgment. State `RENDERED` is not achieved until paint exists along with required structural evidence.
 
+## Newly recovered accepted-local overlays (pending GitHub promotion)
+
+**Text schematic in PREPARE, user-approved 2026-10-09.** The companion KB decision `D-2026-10-09-PREPARE-TEXT-LAYOUT` requires a monospaced top-down textual diagram before any map rendering, with cardinal directions, entrances/exits, routes, branches, landmarks, obstacles, legend and location table. Inspect the diagram against approved topology; the Spatial Blueprint still owns exact geometry. This rule was recorded in the companion workspace docs and `database/seed.d/2026-10-09-prepare-text-layout.sql` but is **not yet promoted into main**. The source explicitly does **not** approve the experimental v3.1 workflow. Treat diagram requirement as accepted local governance pending formal reconciliation, not as authority to replace the accepted October 7 structural workflow.
+
+**Region→Macro permissions, user-accepted local foundation record 2026-10-12.** The archived Foreman workflow and PARTIAL/STOP local DB checkpoint require exact RegionBehavior/Macro binding and permissions checks before changing a player-triggered Region, post-install and after fresh reload. `everyone=true` is not a substitute for Macro permission, `LIMITED` is a possible player-execute level, and privileged Macro behavior still requires GM-only/approved adapter control. This rule is **not on main** and does not retroactively certify the Lodge player canary.
+
+The proposed combined authoring order becomes **text diagram (locally accepted overlay) → PREPARE/Blueprint lock → grayscale structure → structural inspect → manifest/blueprint reconciliation → painterly color → final inspect → single-macro BUILD → authorized STAGE/INJECT → readback + player-execution permission verification where applicable → RECEIPT**. Only the October 7/9/5 parts already merged into main are presently canonical at the GitHub-wide level.
+
 ## Stages, checked artifacts, and stop conditions
 
 | Stage | Mandatory result | Conditions |
