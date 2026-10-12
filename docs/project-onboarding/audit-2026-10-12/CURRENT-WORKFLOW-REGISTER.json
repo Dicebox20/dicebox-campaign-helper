@@ -179,7 +179,7 @@
     {
       "id": "desktop_app",
       "scope": "desktop",
-      "documentedDate": "2026-08-23",
+      "documentedDate": null,
       "dateSemantics": "documented_source_event_or_acceptance_date_not_deployment",
       "status": "accepted_architecture_partial_implementation",
       "path": "docs/ADR-0004-desktop-editor-foundation.md",
