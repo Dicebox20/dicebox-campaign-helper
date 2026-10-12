@@ -1,0 +1,49 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T19:59:36.6601528Z",
+    "workUnitId":  "central-lodge-clscale-m3-grid240-verified-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Chrome CDP session restored; Foundry world became ready. Prior M3 connection blocker reconciled read-only. Initial M3 source collector overcounted all 183 Foundry Scenes instead of canonical 21, scope corrected before any write. Canonical original M3 Scene source SHA ffdbd64f0df881239e407c1d45fef68a655698546837a50f30b7fd6255efec8f; full original JSON backup outputs/foreman-checkpoints/clscale-m3-before-grid240-v001.json. Exact no-write M3 grid120→240 PREVIEW PASS at ledger revision3 SHA e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9. One authorized Assistant Gamemaster Scene.update({\u0027grid.size\u0027:240},{autoReposition:false}) PASS. Independent full M3 source normalized SHA matches original exactly after restoring grid and audit stats, after source SHA 6604bdf528f9e6609f3fa2b53c94c1c49e5ba679f0dd90c0f2e9c32cf86eacc6. All 14 Walls, 10 Regions, 4 Lights, puzzle behaviors and no Tokens preserved; 4320x2880 gridless 5ft unchanged. M2 remains grid320. CL90 v010 read-only PASS_WITH_KNOWN_BLOCKERS zero unexpected failures at canonical 21 Scenes 202 Regions 119 behaviors 33 Items ledger rev3. Roadmap/checklist/dossier updated and canonical KB source/fact published rebuilt integrity ok with 71 seed files. No CL50 route installs or final player canaries.",
+    "blocker":  "Other interiors remain on prior 120px grid; next should be source-audited individually. M1 has Ret token needing pixel center preservation, N3 narrow door remains 120, F2 lack of door art evidence. CL50 route landing checks stale after Scene scale updates, installers quarantined. No player visual/gameplay acceptance yet.",
+    "nextAction":  "Proceed to next token-free interior such as B2 Hidden Annex candidate grid120→240, after fresh exact source, active ledger, canonical roster and safe body preflight; back up full scene, guarded one-Scene update autoReposition:false, independently verify normalized full source/geometry/ledger, then checkpoint. Never blindly replay previous Bridge continuation.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CENTRAL-LODGE-INTERIOR-SCALE-CALIBRATION-PREVIEW-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzzzzzzzzzzzz-2026-10-08-clscale-m3-grid240-verified.sql",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v010.page.js",
+                         "outputs\\foreman-checkpoints\\clscale-m3-before-grid240-v001.json"
+                     ],
+    "validation":  [
+                       "Chrome CDP and Foundry ready recovered without restart or altered auth",
+                       "Exact M3 source and current revision3 ledger baseline checked",
+                       "Full prewrite M3 Scene.toObject backup saved",
+                       "Exact no-write Scene preview PASS, one authorized autoReposition=false Scene update PASS",
+                       "Independent full Scene source normalized hash and wall/Region/light geometry PASS",
+                       "CL90 v010 PASS_WITH_KNOWN_BLOCKERS zero failures at canonical21/202/119/33 ledger revision3",
+                       "Canonical SQLite KB rebuild 71 seed patches integrity ok; installed M3 fact active",
+                       "CL50 quarantined, no player canary and no other Scene grid updates"
+                   ],
+    "runtimeTarget":  "Foundry v14.367 DND5e v5.3.3 the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\clscale-m3-final-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

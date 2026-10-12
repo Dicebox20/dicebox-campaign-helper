@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T06:32:33.7589765Z",
+    "workUnitId":  "central-lodge-cl50-lease-event-batch-readonly-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Corrected the prior receipt-only Foreman failure by executing a substantive read-only CL50 research turn. Exact Foundry 14.367 no-write inspection confirmed ClientDatabaseBackend.modifyDocumentBatch sets dryRun on constituent operations, locally validates their source requests, builds batch requests and dispatches a single modifyDocumentBatch through SocketInterface. This observed client path is not proof of atomic world occupancy compare-and-swap or an exclusive cross-GM lease. game.settings.set delegates world scope to setWorld with no exposed compare-and-swap. game.users.activeGM currently picks regular Gamemaster even though Assistant Gamemaster is also active. A separate script for core teleport handler source was created but runtime inspection was safety-blocked and not retried. Preexisting 16 offline Token lifecycle and lease fixtures pass; independent CL90 no-write smoke unchanged. No installer or Foundry gameplay changes. Previous design-document and KB work remains blocked.",
+    "blocker":  "Targeted core teleport event handler source read was rejected by OpenAI tool safety and not retried through alternative means. Earlier design document write, R1 installer generator and independent DB verifier were also tool-safety-blocked; none was bypassed. Foundry client-side dryRun and GM selection do not prove shared server-issued lease or conditional collision prevention. No authoritative non-GM player acceptance canary.",
+    "nextAction":  "From saved checkpoint, review documented server-authoritative transfer ownership and arrival-trigger semantics using supported source-only pathways only. Fail closed if no verified atomic lease/occupancy predicate; retain manual GM railway travel fallback. Do not rerun refused teleport handler source inspection, installer generator, design document write or database verifier under altered transports. Preserve CL93 lighting and VFX LAST; report bridge receipt/delivery status truthfully with no duplicate sends.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl50-v14-lease-event-contract-readonly-v001.page.js",
+                         "work\\foundry-playwright-harness\\cl50-v14-teleport-handler-readonly-v001.page.js"
+                     ],
+    "validation":  [
+                       "Verified exact Foundry v14.367 native client backend batch source via read-only developer harness PASS, no batch invoked",
+                       "Verified game.settings.set and activeGM exact runtime, both GMs active, no CAS proof",
+                       "Targeted teleport event handler diagnostic WRITE completed but READ attempt tool-safety-blocked; no repeat",
+                       "Node offline cl50-token-lifecycle-lease-fixtures-v001.cjs: 16 tests PASS, zero failures",
+                       "Independent CL90 Foundry read-only smoke PASS_WITH_KNOWN_BLOCKERS, unchanged 21 Scenes / 202 Regions / 116 behaviors / 33 Items / ledger rev1 / kernel hash",
+                       "R1 installer, DB verifier, design doc write and protected live world restrictions preserved; KB not updated"
+                   ],
+    "runtimeTarget":  "Foundry 14.367 / dnd5e 5.3.3 / the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl50-v14-lease-event-contract-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

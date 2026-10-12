@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T14:08:27.5661838Z",
+    "workUnitId":  "central-lodge-cl13-m1-inscription-live-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Applied exactly one user-approved inscription to M1 Grandfather Clock Notice behavior 1SyWN6w9CrUxgVhb, changing source SHA from fa47aeb7a166b0e3dd84ffb6c6f30445f0c4fb4677eb71f1b58d9fcdee3c578a to e20e2c11dc53d3901c188414dc4ae277764eb3c7d5c1c9a96fc772a7342bf42e. Independent read-only reread confirmed M1 SHA and U1/E4 accepted hashes. Ledger revision1 unchanged, new M1 Clock Setting Region still empty; CL90 regression PASS_WITH_KNOWN_BLOCKERS with 21 Scenes/202 Regions/116 behaviors/33 Items.",
+    "blocker":  "New clock setting behavior not yet installed; v002 guarded source offline 25 tests pass and exact no-write PREVIEW PASS_STAGED_NOT_INSTALLED. No player acceptance until final campaign.",
+    "nextAction":  "Inspect exact prepared v002 clock source and guarded APPLY against unchanged M1 Clock Setting Region. Require independent reread and checkpoint; fail closed if any mismatch. No duplicate Bridge dispatch.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl13-m1-hint-apply-v001.page.js"
+                     ],
+    "validation":  [
+                       "Exact M1 inscription guarded apply PASS",
+                       "Independent source hash readback PASS",
+                       "CL90 live noWrite PASS_WITH_KNOWN_BLOCKERS 21/202/116/33 ledger rev1",
+                       "No item or puzzle ledger mutation"
+                   ],
+    "runtimeTarget":  "Foundry v14.367 DND5e 5.3.3 world the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl13-m1-hint-apply-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

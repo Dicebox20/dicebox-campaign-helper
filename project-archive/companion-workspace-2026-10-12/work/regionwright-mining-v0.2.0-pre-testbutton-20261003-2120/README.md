@@ -1,0 +1,50 @@
+# Mining Deposits & Extraction
+
+Standalone Foundry VTT 14.367 / D&D5e 5.3.3 Region-driven mining module.
+
+## Player loop
+
+1. Select/use a player-owned token and stay on Token Controls.
+2. Click a configured ore deposit.
+3. The actor must have a Miner's Pick / Mining Pick / Pickaxe.
+4. Complete three pulsing-circle timing strikes.
+5. Strike when the moving ring is as small as possible. Nested accuracy bands score each strike from 5 down to 1; a severe miss scores 0.
+6. The three stages run at approximately 1.50s, 1.35s, and 1.20s per full shrink/grow cycle.
+7. The rounded average of the three strike scores produces 0-5 ore units.
+8. The completed three-strike sequence consumes exactly one of the vein's five shared extraction attempts.
+9. The active GM validates and applies ore/depletion state. Mining result chat is whispered only to the triggering player.
+
+Cancelling before all three strikes consumes no attempt. Missing-pick, invalid ownership, missing-GM, and depleted-vein failures are fail-closed.
+
+## Timing score bands
+
+The animation tracks a normalized radius where 0 is the smallest possible ring and 1 is the largest:
+
+| Radius ratio | Strike score |
+| ---: | ---: |
+| 0.00-0.18 | 5 (Perfect) |
+| >0.18-0.30 | 4 (Excellent) |
+| >0.30-0.45 | 3 (Great) |
+| >0.45-0.62 | 2 (Good) |
+| >0.62-0.80 | 1 (Glancing) |
+| >0.80 | 0 (Miss) |
+
+Click the timing circle or press Space to strike. The ring continues pulsing until the player commits a strike.
+
+## Multiplayer authority
+
+The timing animation and input run on the player's client. The client sends exactly three bounded strike scores. The active GM revalidates actor ownership, pickaxe presence, Region configuration, and remaining attempts; recomputes the final yield; serializes the Region mutation; and awards ore.
+
+The public `yieldForAthletics()` helper remains available for compatibility with older Dicebox macros, but Athletics is no longer the default mining resolver.
+
+## Deposit state
+
+Configured deposits use `flags["regionwright-mining"].miningDeposit` and retain the existing five-attempt depletion/reset model. Region geometry is never moved by the mining module.
+
+## API
+
+`game.modules.get("regionwright-mining")?.api` retains the v0.1.4 configuration/reset/click helpers and adds a `timing` helper group for stage cycles, score resolution, labels, and final yield.
+
+## Exact-runtime certification
+
+Pure timing/state tests and syntax checks are included. After module-code changes, fully restart Foundry and run the controlled GM + non-GM fixture before calling the build runtime-certified.

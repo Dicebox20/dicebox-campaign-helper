@@ -1,0 +1,3 @@
+const KEY="t3BranchUnlocked",matches=[];for(const m of game.macros??[]){const src=String(m.command??"");if(src.includes(KEY))matches.push({id:m.id,name:m.name,matches:src.split(KEY).length-1,snippets:src.split(KEY).slice(1,3).map(x=>x.slice(0,140))});}
+const itemMatches=[];for(const i of game.items??[]){const txt=JSON.stringify(i.toObject());if(txt.includes(KEY))itemMatches.push({id:i.id,name:i.name})}
+return{operation:"cl91.branch-token-extra-global-scan",noWrite:true,totalMacros:game.macros?.size,macroMatches:matches,totalItems:game.items?.size,itemMatches};

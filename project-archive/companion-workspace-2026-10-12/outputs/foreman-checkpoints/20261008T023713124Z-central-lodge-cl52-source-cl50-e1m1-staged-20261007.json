@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T02:37:13.1246996Z",
+    "workUnitId":  "central-lodge-cl52-source-cl50-e1m1-staged-20261007",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "staged",
+    "summary":  "Cleanup canceled. CL52 source PREVIEW PASS; 12 cues, 101 offline tests, 7 live anchor checks. CL50 E1 to M1 route candidate source PREVIEW PASS with 8 offline tests; no live travel installed. KB verified.",
+    "blocker":  "",
+    "nextAction":  "At next bounded CL50 unit, generate guarded E1-to-M1 front door transition installer PREVIEW, apply only if exact target/source ownership gates pass; independent final verify and checkpoint. CL52 no live cues without GM authored triggers.",
+    "changedPaths":  [
+                         "docs\\CL52-HORROR-PACING-SOURCE-PREFLIGHT-2026-10-07.md",
+                         "docs\\CL50-E1-M1-FRONT-DOOR-PREFLIGHT-2026-10-07.md",
+                         "handoffs\\FOREMAN-CL52-SOURCE-CL50-E1M1-STAGED-CLEANUP-CANCELED-2026-10-07.md",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl52-cancel-region-cleanup.sql",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-e1m1-staged.sql"
+                     ],
+    "validation":  [
+                       "DB integrity PASS: 386 sources 1164 facts 465 decisions 540 items 199 trials",
+                       "CL52 101 offline tests PASS and read-only Foundry preview PASS at 21/202/115/33",
+                       "CL50 E1-to-M1 source pair read-only PASS and 8 offline tests PASS"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "handoffs\\FOREMAN-CL52-SOURCE-CL50-E1M1-STAGED-CLEANUP-CANCELED-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

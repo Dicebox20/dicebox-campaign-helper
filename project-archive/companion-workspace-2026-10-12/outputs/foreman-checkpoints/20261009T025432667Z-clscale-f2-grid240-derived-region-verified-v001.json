@@ -1,0 +1,37 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T02:54:32.6678405Z",
+    "workUnitId":  "clscale-f2-grid240-derived-region-verified-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "User visually accepted 240px F2 token scale and delegated creative decisions. F2 Scene HWitOe1wSid7MZ1y gridless120-\u003e240 5ft, original source sha f2b20ebe6b1ccd788fd77f16f8a6887459a978a968259d838c2902aa4fd04680, original baseline backup outputs/foreman-checkpoints/clscale-ref-f2-grid240-v001-before.json. Guarded exact ledger revision13 and actor/token/8 Region/route preflight; F2 arrival Region pplHOCmUZOqFymOy 960x500 and 1x1 240 + 2x2 480 625/625 sampled Wall-free; current token x2101/y2267 sameXY and center-preserving 240 square both collision-free. PREVIEW PASS, one Scene.update grid.size240 autoReposition:false. Immediate source verified but independent later reread initially BLOCKED_DRIFT; stopped and investigated, no blind replay. Foundry asynchronously recomputed placed Meow token derived _regions from [] to [\u0027pplHOCmUZOqFymOy\u0027] as larger token center entered F2 arrival Region, which has ZERO behaviors. Historical backup source had Windows cp1252 mojibake of em-dash names from generator stdout; independently recovered correct full original Unicode Scene by normalizing current grid, audit _stats and exactly derived token _regions; original browser SHA matched EXACT f2b20ebe6..., saved corrected full source outputs/foreman-checkpoints/clscale-ref-f2-grid240-v001-original-source-recovered.json. Stable final F2 SHA 5ad191d492195bf227bb099d9b356992aca44fe6d884ac940e085db8c2342639. 43 Walls,8 Regions,8 Lights, token x2101/y2267 and puzzle ledger revision13 sha ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4 preserved. CL90 v014 PASS_WITH_KNOWN_BLOCKERS zero failures after F2. No Region script fired, teleport, CL50 installer, actual gameplay or other object mutation.",
+    "blocker":  "F1 grid320 remains REJECTED by inbound solid Wall y2640 for 1x1; visual candidate240 cannot provide 2x2 clearance inside current T3-\u003eF1 arrival without fail-closed gate. CL50 installers quarantined. F2 region-membership derived source effect is verified, never silently treat normalized source as identical without this exception. Bridge prior Foreman continuation receipt unresolved Invalid operationId; do not blindly dispatch.",
+    "nextAction":  "Publish F2 source receipt and current work-item next action in canonical KB, update roadmap/checklist, rebuild and verify SQLite. Then next read-only F1 geometry redesign: consider new interior scale with fixed safe arrival and 2x2 manual GM fail-closed while preserving T3-\u003eF1 routing/puzzle and CL50 quarantine. Do not modify F1 or CL50 routes without full independent gate. Find/verify Windows XP startup theme on desktop before any optional user ping; no need to play now.",
+    "changedPaths":  [
+
+                     ],
+    "validation":  [
+
+                   ],
+    "runtimeTarget":  "",
+    "receiptRef":  "outputs\\foreman-checkpoints\\clscale-ref-f2-grid240-v001-original-source-recovered.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

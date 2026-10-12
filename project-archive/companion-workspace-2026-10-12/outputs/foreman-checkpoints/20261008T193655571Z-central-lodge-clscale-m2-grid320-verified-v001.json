@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T19:36:55.5711479Z",
+    "workUnitId":  "central-lodge-clscale-m2-grid320-verified-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "User granted general permission for per-interior Scene grid sizes. Accepted recorded in roadmap/checklist; KB locked decision D-2026-10-08-CL-SCALE-INTERIOR-GRID-PROGRAM built integrity ok. Foundry v14.367 Scene _preUpdate repositions canvas objects only under options.autoReposition; original M2 full Scene.toObject saved to outputs/foreman-checkpoints/clscale-m2-before-grid320-v001.json, scene SHA c96c3026a7b5ae152871ceb5191770f3474fd9410958a1701bcff4c3c34d72d5, geometry SHA e6790e102c446d20f277723855465145d588190efb16f8f5bd56bb3ca9f302e0. Authorized Assistant Gamemaster no-write M2 PREVIEW PASS at exact current ledger revision3 SHA e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9, 21 Scenes 202 Regions 119 behaviors 33 Items, zero non-GM users. One guarded scene.update({\u0027grid.size\u0027:320},{autoReposition:false}) PASS. Independent no-write Scene source/geometry proof PASS: gridless remains type0, 5ft, original 4320x2880, no placed tokens; all 12 Walls, 15 Regions, 6 lights and all other Scene fields pixel-identical except approved grid.size and update stats. New M2 source SHA e9663751ca317c5922b4ce9ae97d2c4cda1b84f79fa23599b7a56d6140f3d305; normalized source matches prior SHA c96c3026a7b5ae152871ceb5191770f3474fd9410958a1701bcff4c3c34d72d5. Other 20 scene grids still120, ledger revision3 and exact SHA unchanged, Item/Region/Actor data preserved. Updated CL90 v009 read-only regression PASS_WITH_KNOWN_BLOCKERS zero unexpected failures (correctly recognizes third M1 notice and rev3, M2 grid320). Knowledge base source fact active, rebuild 70 seed.d integrity ok. CL50 no live transfers, real-player playtest not run.",
+    "blocker":  "Other interior Scene grid values are user-delegated but remain not individually source-verified; M1 has Ret Token and needs protected center/footprint; F2 has no measured door; N3 narrow doors require keeping120; CL50 safe travel installer quarantined pending regridded footprint assessment. No game-screen visual calibration confirmed; player test reserved for campaign end. Legacy Bridge host-accepted continuation unresolved; do not blind replay.",
+    "nextAction":  "Proceed to a separately checkpointed next interior without placed tokens, e.g. B2 Hidden Annex grid.size120→240 or M3 Kitchen 120→240 after exact no-write source/ledger preview, full Scene source backup, authorized Assistant Gamemaster one Scene.update autoReposition false, independent exact geometry conservation readback and checkpoint. Keep updated CL90 v009 baseline and all CL50 route transfers quarantined. Eventually perform visual fit and player acceptance as requested.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CENTRAL-LODGE-INTERIOR-SCALE-CALIBRATION-PREVIEW-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzzzzzzzzzz-2026-10-08-clscale-grid-authorization.sql",
+                         "database\\seed.d\\zzzzzzzzzzzzzzzz-2026-10-08-clscale-m2-320-verified.sql",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v009.page.js",
+                         "outputs\\foreman-checkpoints\\clscale-m2-before-grid320-v001.json"
+                     ],
+    "validation":  [
+                       "Author approval locked and KB rebuilt integrity ok, 70 seed.d",
+                       "Exact M2 source backup 77198 bytes, source SHA c96c3026a...",
+                       "Read-only M2 320px PREVIEW PASS, no active players",
+                       "One authorized Scene.update grid.size only autoReposition=false PASS",
+                       "Independent no-write M2 full source and geometry verifier PASS; all pixel coords identical",
+                       "CL90 v009 PASS_WITH_KNOWN_BLOCKERS 21/202/119/33 rev3 zero unexpected failures",
+                       "Current ledger SHA e8485e53... and all other scene grid sizes unchanged",
+                       "CL50 quarantined, no token movement and no user gameplay canary"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 dnd5e 5.3.3 the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\clscale-m2-grid320-final-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

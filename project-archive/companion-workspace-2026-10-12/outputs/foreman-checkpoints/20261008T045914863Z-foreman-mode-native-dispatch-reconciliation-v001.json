@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:59:14.8631975Z",
+    "workUnitId":  "foreman-mode-native-dispatch-reconciliation-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "User explicitly requested Foreman Mode, enabled for verified ChatGPT/Codex Bridge scope. One safe CL50 R2 read-only development unit completed and checkpointed PASS. Foreman boundary and receipt staged for R3 next unit; single native dispatch attempt rejected with foreman_native_context before native I/O. Read-only session and scope status disagreed with provider bind. Foreman marked blocked; no automatic new ChatGPT turn confirmed. Local Foundry state unchanged.",
+    "blocker":  "Bridge foreman_dispatch rejected supplied live session as not bound to this Foreman; reserved receipt foreman-15b14be4-5a64-4be6-bb57-419084449d0d remains staged and reconciliation required. Do not retry or invent delivery. Prior R1 guarded installer-generation safety refusal remains in force.",
+    "nextAction":  "At next verified user/new native turn, first reconcile Bridge native app provider/session context and pre-existing Foreman correlation; do not dispatch or reserve duplicate blindly. Then continue bounded CL50 R3 N2 Tunnel B \u003c-\u003e T2 Mouth A read-only landing/footprint audit from prior R2 PASS evidence, preserving runtime and KB. Do not change live world until approved supported route implementation.",
+    "changedPaths":  [
+                         "outputs\\LATEST-FOREMAN-CHECKPOINT.json"
+                     ],
+    "validation":  [
+                       "Bridge Foreman enable success for exact current ChatGPT conversation prior to boundary",
+                       "Bounded CL50 R2 READONLY_DIAGNOSTIC_PASS; DB rebuild/verify PASS; CL90 live smoke PASS",
+                       "One native Foreman dispatch request failed pre-I/O foreman_native_context; no ChatGPT continuation delivery verified",
+                       "Foreman block action acknowledged; no retry, prior receipt remains staged"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "docs\\CL50-R2-N2-T1-ARRIVAL-PREFLIGHT-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

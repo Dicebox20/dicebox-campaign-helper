@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:54:42.9371631Z",
+    "workUnitId":  "central-lodge-cl50-r1-installer-generation-stop-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "staged",
+    "summary":  "R1 N1 East to T1 Mouth A paired handlers remain source-staged and verified with 38 static assertions, live Foundry no-write preview PASS, 21 Scenes/202 Regions/116 behaviors/33 Items/134 Macros and ledger revision1. Attempt to generate rollback-capable installer/final verifier was blocked by tool safety checks before writing the files. No new RegionBehavior, token, or lighting change was performed.",
+    "blocker":  "Guarded live-installer generator request was blocked by tool safety checks. Do not route the same blocked generation through alternate transports or claim source staging is a live install.",
+    "nextAction":  "Preserve current frozen R1 handler SHA and read-only preview. Use an appropriately authorized/reviewed implementation workflow for the safety-blocked guarded installer, independent final verify and later player canary. R2-R4 remain untouched.",
+    "changedPaths":  [
+                         "docs\\CL50-R1-BIDIRECTIONAL-GUARDED-PREVIEW-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-r1-preview-source.sql",
+                         "work\\foundry-playwright-harness\\cl50-r1-guarded-preview-v001.page.js"
+                     ],
+    "validation":  [
+                       "38 static checks PASS for both frozen source SHA",
+                       "Corrected 21-scene live Foundry PREVIEW PASS_STAGED_FOR_GUARDED_APPLY",
+                       "SQLite build PASS 399 sources/1175 facts/470 decisions/542 open items/203 trials; integrity PASS",
+                       "Guarded installer generator blocked prior to file write or execution; no live APPLY attempted"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CL50-R1-BIDIRECTIONAL-GUARDED-PREVIEW-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

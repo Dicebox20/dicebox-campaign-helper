@@ -1,0 +1,50 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T20:55:41.9129057Z",
+    "workUnitId":  "central-lodge-clscale-c1-grid240-verified-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Continued authorized per-interior grid-size calibration after B1 verified checkpoint. C1 Hidden Chapel / Shrine of Asmodeus Scene EDdktL7VUihbpKe9 measured min door 300px and Region span360px, selected gridless grid.size120 to240 pixels/5ft. Recovered canonical repo/Foreman contract, SQLite locked grid decision and current in-progress open item, exact Foundry Assistant Gamemaster identity 14.367 dnd5e5.3.3, canonical 21 Scenes/202 Regions/119 RegionBehaviors/33 Items, live sovereign ledger revision3 SHA e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9 and no non-GM players. Full original Scene.toObject backed up outputs/foreman-checkpoints/clscale-c1-before-grid240-v001.json source SHA 664816c5ff2c42521682f9bcdc5ec5ac7b1e52cc5760a75174f84d5c538d3fc1. Staged scripts compiled and guarded no-write PREVIEW PASS. One authorized Scene.update({\u0027grid.size\u0027:240},{autoReposition:false}) PASS. Independent full Scene source normalization reproduces exact original SHA, new source SHA 80ce2a899ad5304103c6e14b8b84ad4b3fc6d9e8962534990890489df82d3c7a: all 21 Wall coordinates, 10 Region shapes, 3 lights, zero placed Tokens, original 4320x2880 artwork, 5ft distance and all other Scene fields unchanged. Ledger SHA/rev3 unchanged, no Item/Actor/puzzle/travel changes. CL90 v013 read-only PASS_WITH_KNOWN_BLOCKERS zero failures at 21/202/119/33. Roadmap/checklist/dossier updated, KB source/fact published 74 seed fragments rebuilt integrity ok, C1 fact active. CL50 railway installers quarantined and final player gameplay/visual acceptance deferred.",
+    "blocker":  "Other interior grid calibrations remain. M1 Ret token requires exact footprint and center preservation; N3 narrow160px door stays grid120, F2 art/door measurement unavailable. CL50 railway landing receipts must be revalidated after affected scale changes. Source preservation is verified, not in-game gameplay/pathing certification.",
+    "nextAction":  "Proceed to separate C2 Cult Undercroft candidate grid120→160 if fresh exact no-player/no-token/Scene and ledger preflight passes. Full source backup, one guarded Scene.update autoReposition:false, independent entire normalized Scene source/geometry/ledger and CL90 v014 reread, KB checkpoint before another Scene. Keep CL50 installers quarantined, no actual player tests or blind Bridge replay.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CENTRAL-LODGE-INTERIOR-SCALE-CALIBRATION-PREVIEW-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzzzzzzzzzzzzzzz-2026-10-08-clscale-c1-grid240-verified.sql",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v013.page.js",
+                         "outputs\\foreman-checkpoints\\clscale-c1-before-grid240-v001.json"
+                     ],
+    "validation":  [
+                       "Read-only SQLite decision locked, calibration open item in_progress, KB integrity ok",
+                       "Full C1 prewrite Scene.toObject JSON backup verified source SHA 664816c5...",
+                       "No-write C1 grid 120 to240 exact hash/ledger/canonical roster PREVIEW PASS and JS scripts compiled",
+                       "One authorized Assistant GM Scene.update grid.size240 autoReposition false PASS",
+                       "Independent normalized entire C1 Scene source SHA and geometry PASS: 21 Walls, 10 Regions, 3 Lights, zero tokens",
+                       "Unchanged 4320x2880 art, gridless 5ft and live sovereign ledger rev3 SHA e8485e53...",
+                       "CL90 v013 PASS_WITH_KNOWN_BLOCKERS zero failures 21/202/119/33",
+                       "KB rebuilt from 74 seed.d integrity ok; installed C1 fact active",
+                       "CL50 travel quarantined, no final player or gameplay canary"
+                   ],
+    "runtimeTarget":  "Foundry VTT v14.367 / dnd5e v5.3.3 / the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\clscale-c1-final-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,6 @@
+const l=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{},targets=["b1.underworksUnlocked","m3.serviceRouteUnlocked","c1.c2Unlocked","n1.railwayPowered","n2.fastTravelEnabled","n3.switchWheelInstalled","n3.routeOverlay.resolved","n3.t3BranchUnlocked"],sources=[];
+sources.push({name:"kernel",source:String(game.macros.get("FHQiFYx6OntZVo9d")?.command??"")});
+for(const s of game.scenes)if(s.name.startsWith("Central Lodge")||/^(T[123]|F[12])\b/.test(s.name))for(const r of s.regions)for(const b of r.behaviors)sources.push({name:s.name+" / "+b.name,source:String(b.system?.source??"")});
+const audit=[];
+for(const path of targets){const components=path.split("."),field=components.at(-1),scene=components[0],mentions=sources.filter(x=>x.source.includes(field));audit.push({path,value:components.reduce((v,k)=>v?.[k],l.puzzles),literalMentions:mentions.length,examples:mentions.slice(0,6).map(x=>x.name)});}
+return{operation:"cl91.critical-milestone-source-mentions.v001",noWrite:true,targets:audit,limitations:"Literal source mention != writer or reachable progression. Dynamic kernel writes are possible. Empty reference list is strong evidence the exact field is absent from inspected code."};

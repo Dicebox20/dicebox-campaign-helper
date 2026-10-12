@@ -1,0 +1,46 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:57:18.5176149Z",
+    "workUnitId":  "central-lodge-cl50-v14-placement-offset-readonly-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Recovered previous Foreman STOP checkpoint and exact active Foreman Bridge session. Conducted one bounded no-write Foundry v14.367 RegionDocument ephemeral placement diagnostic at T2 Mouth B: center placement repeated identical (3650,1350) and ignored tested +/-120px relative offsets; relative without offset errors; relative with identical offset produced differing positions; random differs. SpawnTokens create:false did not persist any Region/Token, and built-in teleportToken path independently computes destination again. Official v14 docs confirm offset is relative and modifyBatch batch semantics. Recorded in CL50 doc/checklist/KB. No installer, player canary or live gameplay change. DB build reports integrity ok 406 sources/1182 facts/208 trials and CL90 no-write smoke passed.",
+    "blocker":  "Earlier outbound bridge_communicate next-turn trigger was rejected by tool safety; do not retry or use alternative transport. R1 frozen source and installer generation safety refusal unresolved. Separate database verifier safety-blocked previously and was not rerun. Fixed coordinate arrival under dynamic occupancy and consent remains unproven.",
+    "nextAction":  "After a new direct verified human/Codex turn, recover latest checkpoint/KB/AGENTS. Select one bounded source-only CL50 research unit on a reviewed fixed-coordinate cross-Scene Token create/delete using exact v14 modifyBatch semantics, occupancy/Wall/story Region validation, approved GM lease, client ownership and outcome-unknown compensation. Do not implement or run any live teleport until separate authorized pathway and full proof; do not retry Bridge safety-blocked send. Keep CL93 lighting and VFX final.",
+    "changedPaths":  [
+                         "docs\\CL50-V14-PLACEMENT-OFFSET-SEMANTICS-READONLY-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl50-placement-options-readonly-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-v14-placement-offset-readonly.sql"
+                     ],
+    "validation":  [
+                       "Exact runtime Foundry14.367 dnd5e5.3.3 authorized read-only ephemeral placement: two repeats per six scenarios, no scene tokens/Region persisted",
+                       "Center with offset same position, relative no-offset errors, relative plus same offset varied position; stable sample alone not pinned commit",
+                       "Official Foundry v14 RegionDocument and modifyBatch docs independently support API limitations; no live behavior certified",
+                       "SQLite KB official builder integrity ok sources406 facts1182 decisions471 openitems543 trials208; separate official DB verifier previously tool-safety-blocked and not rerun",
+                       "CL90 independent live read-only smoke PASS_WITH_KNOWN_BLOCKERS, 21 scenes/202 Regions/116 behaviors/33 items ledger revision1 kernel SHA unchanged",
+                       "Native partner next-turn request remains blocked by prior tool safety refusal, no alternate or repeat; Foreman prior receipt already consumed",
+                       "No route handlers, Scene flags, Tokens, Macros, lighting or gameplay state changed"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "docs\\CL50-V14-PLACEMENT-OFFSET-SEMANTICS-READONLY-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

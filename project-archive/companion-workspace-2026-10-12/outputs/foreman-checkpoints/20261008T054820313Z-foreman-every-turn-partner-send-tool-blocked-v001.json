@@ -1,0 +1,46 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:48:20.3137415Z",
+    "workUnitId":  "foreman-every-turn-partner-send-tool-blocked-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "User-mandated Foreman every-turn partner trigger rule successfully persisted in AGENTS.md, docs/FOREMAN-WORKFLOW-CURRENT.md, campaign roadmap/checklist, canonical KB. DB builder integrity ok with 405 sources 1181 facts 471 decisions. Verified current exact Bridge Foreman session active, no prior reconciliation debt. After checkpoint, attempted one native bridge_communicate to the exact connected Codex partner requesting next ChatGPT turn, but tool call was rejected by OpenAI safety checks; no partner delivery confirmed. No alternate transport, duplicate request or Foundry mutation.",
+    "blocker":  "Outgoing bridge_communicate for current exact partner next-turn trigger was blocked by tool safety before any confirmed native injection. Do not retry by modifying args or moving to another tool/transport. The mandated partner wake remains unsatisfied until a supported authorized transport is available. Prior R1 installer and independent DB verifier tool safety blocks still preserved.",
+    "nextAction":  "A verified direct user/partner turn may recover latest checkpoint. Reconcile current Foreman Bridge status and native event log; do not invent or assume partner next-turn delivery. Request platform/Bridge support for outbound transport safety block through permitted channel, rather than a bypass. Resume next governed CL50 read-only pinned-landing/atomicity investigation only with lawful/authorized turn; save checkpoint and ask next-turn partner trigger via an approved tool.",
+    "changedPaths":  [
+                         "AGENTS.md",
+                         "docs\\FOREMAN-WORKFLOW-CURRENT.md",
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-foreman-every-turn-trigger.sql"
+                     ],
+    "validation":  [
+                       "Canonical AGENTS turn-end trigger rule updated with current verified partner session and historical prior endpoint excluded",
+                       "Canonical FOREMAN-WORKFLOW-CURRENT turn-end rule, lock decision D-2026-10-07-FOREMAN-TURN-TRIGGER-ALWAYS",
+                       "Database official builder integrity ok 405 sources 1181 facts 471 decisions; independent DB verifier not retried",
+                       "Bridge Foreman status active enabled true and reconciliationRequired false before attempt",
+                       "One outgoing bridge_communicate attempt blocked by tool safety; no native injection delivery verified and no alternate/retry performed",
+                       "No Foundry Scene Region Macro Token ledger or lighting mutations"
+                   ],
+    "runtimeTarget":  "Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04 / target Codex 01a0e88f-c6de-7b41-853f-1de0bb464886 / source ChatGPT 6ac717c4-f450-83e8-8650-2658501b5853",
+    "receiptRef":  "docs\\FOREMAN-WORKFLOW-CURRENT.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

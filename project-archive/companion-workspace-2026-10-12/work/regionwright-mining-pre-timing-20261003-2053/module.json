@@ -1,0 +1,36 @@
+{
+    "id":  "regionwright-mining",
+    "title":  "Mining Deposits \u0026 Extraction",
+    "description":  "Region-driven ore extraction for hunter/gatherer maps. Players click visible ore deposits, roll Athletics with a pickaxe, and deplete veins over five swings.",
+    "authors":  [
+                    {
+                        "name":  "Regionwright / Dicebox"
+                    }
+                ],
+    "version":  "0.1.0",
+    "compatibility":  {
+                          "minimum":  "14",
+                          "verified":  "14"
+                      },
+    "relationships":  {
+                          "systems":  [
+                                          {
+                                              "id":  "dnd5e",
+                                              "type":  "system",
+                                              "compatibility":  {
+                                                                    "minimum":  "5.3.3",
+                                                                    "verified":  "5.3.3"
+                                                                }
+                                          }
+                                      ]
+                      },
+    "esmodules":  [
+                      "module.js"
+                  ],
+    "styles":  [
+                   "styles/mining.css"
+               ],
+    "license":  "LICENSE",
+    "readme":  "README.md",
+    "socket":  true
+}

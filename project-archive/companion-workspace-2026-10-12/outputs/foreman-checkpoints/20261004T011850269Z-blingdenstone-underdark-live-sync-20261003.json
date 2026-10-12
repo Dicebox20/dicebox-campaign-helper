@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-04T01:18:50.2690449Z",
+    "workUnitId":  "blingdenstone-underdark-live-sync-20261003",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Reconciled successful Blingdenstone/Underdark work into durable project state and rebuilt verified SQLite KB. Live snapshot: 15 exploration Scenes, 278 Regions, 252 RegionBehaviors, 24 fishing, 24 mining; all 15 use darkness 0.84, tokenVision off, fog disabled, cycle off, globalLight off. Fishing invisible-clickable state live; mining clickability remains open because live flag is miningDeposit.",
+    "blocker":  "",
+    "nextAction":  "Repair the 24 mining Regions using flags.regionwright-mining.miningDeposit to the invisible-clickable contract, then verify from a player client. After that, implement general exploration interactions keyed by stable exploration IDs.",
+    "changedPaths":  [
+                         "integrated_projects\\BLINGDENSTONE_UNDERDARK_LIVE_STATE_2026-10-03.md",
+                         "database\\seed.sql",
+                         "database\\dicebox_campaign_helper_knowledge.sqlite"
+                     ],
+    "validation":  [
+                       "build_database.py: integrity ok; sources 194; facts 834; decisions 390; open_items 456; trials 189; subjects 40; milestones 12",
+                       "verify_database.py: PASS; integrity ok; research_subjects 40; milestones 12",
+                       "New source SRC-BLINGDENSTONE-LIVE-174 present",
+                       "Facts F-828..F-839, decisions D-388..D-391, open items O-452..O-456, trials T-187..T-189 present",
+                       "FTS search finds Blingdenstone and mining entries"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 / D\u0026D5e 5.3.3 / world the-forgotten-realms",
+    "receiptRef":  "integrated_projects\\BLINGDENSTONE_UNDERDARK_LIVE_STATE_2026-10-03.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "6D08D3C5D20CAED21EA795279FA5391997E6B72DA7D60D9363D9C934C8122834"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

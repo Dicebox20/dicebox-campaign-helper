@@ -1,0 +1,51 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T19:54:02.3611200Z",
+    "workUnitId":  "clscale-depot-native-transfer-recovery-and-intent-durability-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Continued user-authorized DiceBox Foreman Mode in exact existing ChatGPT conversation via Remote Desktop Commander because current_chat_identity_unavailable prevents native Dicebox Bridge Foreman binding. Avoided Codex Bridge files/overlapping work. Investigated prior one-shot N3-\u003eN1 native teleport with durable prepared, outcome and final receipts. Compared stopped disposable dbx-test-world via ClassicLevel read-only against exact cold backup pre-depot-native-teleport-test-v001 while pausing 15m scheduler; no production touched. Teleport had SUCCEEDED mechanically: one hidden test Token EpC8S8wxsBfolsPe arrived N1 (2300,1395) with intent 10ea6dfd271bbba3, source test Token absent, original character unchanged. Test incorrectly deemed uncertain because ordinary N3/N1 Region behaviors added two walkable-railway notices, N1 estate-railway observation and puzzles.n1.estateRailwayInterpreted=true, raising ledger revision0-\u003e2. Explicit six-path ledger diff recorded, proving expected puzzle behavior not Codex corruption. Before cleanup made full separate post-test snapshot 185 files 2384103 bytes. With server stopped, scheduler paused, restored only ledger from pre-test snapshot and deleted unique test Token; subsequent 16-gate preflight caught Scene parent token reference and extra orphan token delta. Compared entire Scene LevelDB to pre-test baseline; only changed Scene parent tokens array and added orphan delta for test ID. Restored pre-test N1 Scene record and deleted orphan via one conditional batch with verified receipts, zero unrelated changes. Full fixture offline 16/16 PASS restored: 21 Scenes 928 Scene records, 202 Regions, 120 behaviors (118 enabled), 22 original Scene Tokens, 1 original delta, 33 campaign Items and one Ledger, unchanged quarantined Macro and disabled N3 menu. Developed tools/clscale-depot-persistent-intents.mjs: separate world.diceboxDepotTransferIntents Journal flag, one prepared intent per source Token, revisioned stages, never-retry on uncertainty, independent from puzzle ledger, non-dispatching. New tests for durable adapter readback, all route options, duplicate/unsafe transitions and failures. Guarded loopback Foundry v14.367 fixture runtime passed native GM JournalEntry.setFlag prepared intent -\u003e browser reload -\u003e reread exact durable receipt -\u003e unsetFlag cleanup, with original Token/puzzle revision untouched. Saved smoke receipt clscale-live-intent-flag-smoke-receipt-v001.json; backup pre-depot-intent-flag-test-v001. Stopped fixture, reenabled periodic scanner Ready, re-ran offline 16/16 PASS. Nine test suites 141/141 passing. Docs appended to docs/CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md. No production world changes, no remaining test Token, no active Foundry port 30005.",
+    "blocker":  "The single N3 depot menu remains intentionally disabled; real player-facing destination selection and controlling-player consent are not yet connected to one shared committed transfer handler. The persistent intent helper is source/test groundwork, not live GM authorization or an active Token teleport. No actual multiplayer player playtest and no production deployment. Bridge current ChatGPT identity unavailable, exact Foreman pairing not yet bound; continue via verified Remote Desktop Commander without touching Codex Bridge work. Passwordless local fixture GM means loopback isolation is mandatory.",
+    "nextAction":  "Next Foreman turn: verify latest 16-gate preflight, stopped dbx-test-world and nine 141/141 regression suites. Continue implementing ONE shared destination-menu transfer handler for N1/N2/T3, not separate mouth-to-mouth scripts, with player owner consent and single primary-GM authority. Read fresh authoritative puzzle ledger and separate world.diceboxDepotTransferIntents Journal flag; save prepared intent and reread before any one native RegionDocument.teleportToken with updateData marker; revalidate Token footprint, permissions, destination and unlock. Never retry uncertain outcomes, allow documented normal Region notice progression. Use verified cold backup and guarded 127.0.0.1:30005 disposable test only. Keep existing disabled N3 menu id Xa6xz88CyQ38gCU9 and original 119 behaviors intact, source production the-lost-mine-of-phandalin unchanged. Reserve supervised multiplayer player acceptance for later. Update docs/checkpoint after bounded work.",
+    "changedPaths":  [
+                         "tools/clscale-depot-persistent-intents.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-persistent-intents.test.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-depot-native-transfer-observations.test.mjs",
+                         "work/clscale-central-lodge-migration-v001/clscale-pause-reconciliation-readonly-v001.json",
+                         "work/clscale-central-lodge-migration-v001/post-depot-native-teleport-test-before-cleanup-v001",
+                         "work/clscale-central-lodge-migration-v001/clscale-fixture-transfer-cleanup-receipt-v001.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-orphan-delta-inspection-v003.json",
+                         "work/clscale-central-lodge-migration-v001/clscale-orphan-scene-refs-cleanup-v001.json",
+                         "work/clscale-central-lodge-migration-v001/pre-depot-intent-flag-test-v001",
+                         "work/clscale-central-lodge-migration-v001/clscale-live-intent-flag-smoke-receipt-v001.json",
+                         "docs/CL50-DEPOT-HUB-FAST-TRAVEL-DESIGN-2026-10-09.md"
+                     ],
+    "validation":  [
+                       "Read-only pre/post transfer ledger/Scene diff exactly six expected Region behavior state changes, only one uniquely marked arrived test Token and orphan N1 Scene delta",
+                       "One-shot native Foundry N3-\u003eN1 teleport mechanically succeeded, original character unchanged, no automatic retries",
+                       "Reconciled the disposable test Token, ledger, orphan token delta and parent Scene reference with two independent cold snapshots, postrepair 16/16 offline preflight PASS",
+                       "Real Foundry v14 local GM Journal flag durable intent setFlag, page reload, getFlag verification, unsetFlag with puzzle ledger revision0 and original Token unchanged",
+                       "Nine regression suites PASS 141/141 and live fixture stopped, scheduler Ready"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367 DnD5e5.3.3 127.0.0.1 port30005 STOPPED; one DISABLED native N3 Region menu, 15-minute scheduled offline reader Ready; production untouched",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-live-intent-flag-smoke-receipt-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

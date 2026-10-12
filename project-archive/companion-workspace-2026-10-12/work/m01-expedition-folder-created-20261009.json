@@ -1,0 +1,18 @@
+{
+  "operation": "m01.expedition-folder.create",
+  "status": "CREATED_VERIFIED",
+  "worldId": "the-forgotten-realms",
+  "foundryVersion": "14.367",
+  "system": "dnd5e",
+  "executor": "Assistant Gamemaster",
+  "folderType": "Scene",
+  "folderName": "Beyond the Realms — Underdark Expedition",
+  "folderId": "Rg5vUAEEv53v2KY1",
+  "parentFolderName": "The Underdark",
+  "parentFolderId": "dvpCgIh7uRGeGmsx",
+  "sceneCountBefore": 236,
+  "sceneCountAfter": 236,
+  "stage": "IMPLEMENT staging; folder only",
+  "scope": "New 13-map Beyond the Realms expedition, isolated from Blingdenstone gathering scene set",
+  "nextStep": "Import M01 approved painterly background as a separate new Scene into this folder; no other components until scene image and scale verified"
+}

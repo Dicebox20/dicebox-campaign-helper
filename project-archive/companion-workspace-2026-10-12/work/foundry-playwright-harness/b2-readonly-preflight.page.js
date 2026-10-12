@@ -1,0 +1,10 @@
+const SCENE_ID="5K1uASAARnX8aZhP",LEDGER_ID="xhlXv6CCH34HVga3",KERNEL_ID="FHQiFYx6OntZVo9d";
+const clone=v=>foundry.utils.deepClone(v),dbx=d=>{try{return clone(d?.getFlag?.("world","dicebox")??{});}catch{return{};}};
+const norm=v=>Array.isArray(v)?v.map(norm):v&&typeof v==="object"?Object.fromEntries(Object.keys(v).sort().map(k=>[k,norm(v[k])])):v,canon=v=>JSON.stringify(norm(v));
+const sha=async v=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(v??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+const s=game.scenes.get(SCENE_ID),l=game.journal.get(LEDGER_ID),k=game.macros.get(KERNEL_ID);if(!s)return{status:"BLOCKED",reason:"B2 missing"};
+const rows=Array.from(s.regions??[]).map(r=>{const o=r.toObject();return{id:r.id,name:r.name,stableId:dbx(r)?.stableId??null,class:dbx(r)?.regionClass??null,behaviors:r.behaviors.size,shapes:o.shapes??null,elevation:o.elevation??null,visibility:o.visibility??null,locked:o.locked??null};});
+const geom=rows.map(r=>({id:r.id,shapes:r.shapes,elevation:r.elevation,visibility:r.visibility,locked:r.locked})).sort((a,b)=>a.id.localeCompare(b.id));
+const state=clone(l?.getFlag("world","dicebox")?.state??{});
+const items=game.items.filter(i=>/cicada wing i|cicada-wing-i/i.test(i.name+" "+(dbx(i)?.stableId??""))).map(i=>({id:i.id,name:i.name,stableId:dbx(i)?.stableId??null,sourceScene:dbx(i)?.sourceScene??null,usedAt:dbx(i)?.usedAt??null}));
+return{operation:"central-lodge.cl22.b2.readonly-preflight",status:"PASS",noWrite:true,scene:{id:s.id,name:s.name,regions:s.regions.size,behaviors:rows.reduce((n,r)=>n+r.behaviors,0),flags:clone(s.flags??{})},regionRows:rows,geometryHash:await sha(canon(geom)),kernelHash:await sha(k?.command??""),items,ledger:{revision:state?.revision??null,notices:state?.notices??null,b2:clone(foundry.utils.getProperty(state,"puzzles.b2")??null)}};

@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T16:24:12.2306822Z",
+    "workUnitId":  "central-lodge-cl91-n3-branch-three-proof-author-choice-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "N3-to-T3 source-first Foreman research complete. Exact Foundry 14.367 read-only: N3 scene pHQvDUDlyWZFuNrX has 12 Regions and 11 existing N3 behaviors; Branch Railway RP1jYOH738xl9hks remains empty rectangle x2310 y2380 w620 h500. Three installed N3 mechanisms already write departureBoardResolved through Station Route Plate, switchWheelInstalled through Railway Switch Wheel and routeOverlay.resolved through three cartography source layers. Current ledger revision2 keeps these and t3BranchUnlocked false, zero non-GM clients, exact 21/202/118/33 baseline with one disabled duplicate M2 Notice. T3→N3 return exists but N3→T3 outgoing is not installed or approved. No original N3/T3 PREPARE content found at indexed local paths or prior Library search, so no invented canon. Authored a three-proof AND candidate only (board+wheel+overlay), strictly separate unlock state from CL50 teleport. Created docs/CL91-N3-T3-BRANCH-UNLOCK-CANDIDATE-2026-10-08.md and proposed-only roadmap/checklist entries. Pure logic candidate tests 17/17 PASS; live read-only CL90 v007 PASS_WITH_KNOWN_BLOCKERS zero failures. Source-backed KB research-only seed.d v65 rebuilt integrity ok, fact active, explicit unlock-authoring open item STILL blocked and no locked policy decision added. No live N3 writes, route installs, automatic wake or player gameplay canaries.",
+    "blocker":  "Explicit campaign author must approve or revise exact N3-to-T3 unlock prerequisites before implementing a gate. Existing source open item O-2026-10-07-CL91-N3-T3-UNLOCK-ORPHAN remains BLOCKED. CL50 N3→T3 travel and R1–R4 installation remain separately quarantined; no accepted safe teleport positions, consent or bounce suppression yet. No author-approved original N3/T3 PREPARE recovered.",
+    "nextAction":  "Ask campaign author: Approve N3 Branch Railway unlock only when Departure Board resolved AND Railway Switch Wheel installed AND Cartography Overlay resolved? Once approved, record acceptance and locked decision in roadmap/checklist+KB/rebuild; source test canonical gate, no-write exact PREVIEW, one guarded N3 RegionBehavior creation, independent readback and checkpoint. Do not implement N3→T3 teleport until separate CL50 safety approval and final player test.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CL91-N3-T3-BRANCH-UNLOCK-CANDIDATE-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzzzzzz-2026-10-08-cl91-n3-three-proof-proposal-only.sql",
+                         "work\\foundry-playwright-harness\\cl91-n3-branch-logic-proposed-offline-v001.cjs",
+                         "work\\foundry-playwright-harness\\cl91-n3-branch-gate-readonly-v001.page.js"
+                     ],
+    "validation":  [
+                       "Foundry N3 exact target and mechanism inventory read-only, zero N3 Branch Region behaviors",
+                       "Live CL90 v007 PASS_WITH_KNOWN_BLOCKERS 21/202/118/33 revision2",
+                       "Pure candidate 17/17 Node tests PASS, no Foundry writes",
+                       "Rebuilt canonical SQLite KB integrity ok, proposed evidence fact active, N3 author policy still blocked",
+                       "No source material invents original PREPARE or user acceptance",
+                       "No teleport, no item recovery, no puzzle flags or actor changes, no Bridge unknown-message replay"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 dnd5e 5.3.3 the-lost-mine-of-phandalin",
+    "receiptRef":  "docs\\CL91-N3-T3-BRANCH-UNLOCK-CANDIDATE-2026-10-08.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

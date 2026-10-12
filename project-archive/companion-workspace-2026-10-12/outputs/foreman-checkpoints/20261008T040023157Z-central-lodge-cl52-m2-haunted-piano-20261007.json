@@ -1,0 +1,48 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T04:00:23.1570463Z",
+    "workUnitId":  "central-lodge-cl52-m2-haunted-piano-20261007",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "M2 original haunted piano WAV deployed SHA checked; primary-GM one-shot Macro VHVC7yVlrNS7mWGJ guarded APPLY and independent FINAL VERIFY PASS. 9 offline tests PASS; CL90 smoke v003 PASS 21/202/116/33/134 macros, ledger rev1 E1 recent-use preserved. No audio broadcast/canary. DB verified 394/1169/468/540/201.",
+    "blocker":  "",
+    "nextAction":  "Resume CL50 route authority and/or next CL52 GM-only cue. M1 and M2 audio canaries require real M1/M2 player audience; do not change night or puzzle state.",
+    "changedPaths":  [
+                         "docs\\CL52-M2-PIANO-ACCEPTED-BUNDLE-2026-10-07.md",
+                         "docs\\CL52-M2-PIANO-ACTIVE-CHECKLIST.md",
+                         "docs\\CL52-M2-HAUNTED-PIANO-INSTALL-RECEIPT-2026-10-07.md",
+                         "handoffs\\FOREMAN-CL52-M2-HAUNTED-PIANO-INSTALLED-2026-10-07.md",
+                         "assets\\cl52\\audio\\m2-haunted-piano-v001.wav",
+                         "assets\\cl52\\audio\\m2-haunted-piano-v001.manifest.json",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl52-m2-accept.sql",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl52-m2-final.sql"
+                     ],
+    "validation":  [
+                       "Foundry file SHA, FilePicker and HTTP HEAD audio/wav PASS",
+                       "Nine M2 Macro offline cases PASS; syntax/roster check PASS; no-write model PREVIEW PASS",
+                       "One guarded M2 Macro APPLY PASS and independent read-only FINAL VERIFY PASS",
+                       "CL90 progress smoke v003 PASS_WITH_KNOWN_BLOCKERS 21/202/116/33, 134 macros, ledger revision1 E1 observation preserved",
+                       "SQLite build_database and verify_database integrity PASS 394 sources 1169 facts 468 decisions 540 open items 201 trials"
+                   ],
+    "runtimeTarget":  "FoundryVTT 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin",
+    "receiptRef":  "handoffs\\FOREMAN-CL52-M2-HAUNTED-PIANO-INSTALLED-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

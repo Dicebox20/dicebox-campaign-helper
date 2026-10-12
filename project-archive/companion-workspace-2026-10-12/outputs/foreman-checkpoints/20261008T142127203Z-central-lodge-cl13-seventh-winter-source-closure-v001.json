@@ -1,0 +1,45 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T14:21:27.2035592Z",
+    "workUnitId":  "central-lodge-cl13-seventh-winter-source-closure-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Completed CL13 source installation and audited reconciliation. M1 clock stable RegionBehavior OUMWc1YjJ5DTSFzM enabled, event tokenMoveIn, exact staged v002 source equals stored content except one trimmed terminal LF; independent stored SHA 5ee8f97403d5144cbacf64e57ea58862bf4daf4ec4643088531e7f27e12ac997. M1 inscription, U1 genealogy and E4 1431/1438 DR memorial clues remain verified. Clock still unsolved and not gameplay certified. CL90 no-write v004 PASS_WITH_KNOWN_BLOCKERS with 21 Scenes, 202 Regions, 117 unique enabled behaviors, 33 Items, ledger revision 1, kernel hash unchanged. Roadmap/checklist updated. Reproducible KB source evidence reconciled using one new versioned seed.d delta, rebuilt after releasing a transient local SQLite handle, independent integrity ok, metadata=117, source verification fact active, player acceptance open item in_progress.",
+    "blocker":  "Actual player clock dialog, emblem insertion and two separate pickups require user-run final campaign acceptance. N3-\u003eT3 branch rule and M2/U2 state semantics remain open; CL50 automatic route installer safety blockers remain. Legacy database/verify_database.py hard-codes the former 116 count and should not be used to certify the new 117 baseline until separately updated under allowed tooling. Existing Bridge host-accepted native dispatch unverified, so do not duplicate wake or message.",
+    "nextAction":  "Review M2 Founder Portrait and U2 Servant History distinct observation/physical-opening/interpretation states from canonical ledger. Independently plan safe semantics and source-only acceptance checks; do not blindly rename flags or alter live Foundry. Preserve CL13 installed hashes, CL90 v004 baseline, user final gameplay preference, and R1/Bridge quarantine.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "database\\seed.d\\zzzz-2026-10-08-cl13-clock-installed-source-verified.sql",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v004.page.js"
+                     ],
+    "validation":  [
+                       "CL13 normalized source exact-match independent final read-only PASS",
+                       "CL90 v004 21/202/117/33 ledger1 PASS_WITH_KNOWN_BLOCKERS",
+                       "KB seeded rebuild 58 deltas integrity ok, 117 metadata and active source fact",
+                       "U1 E4 M1 inscription and original reward gate behaviors unchanged",
+                       "No player canary or puzzle flag writes; clock unsolved",
+                       "No duplicate CL13 installer or unresolved Bridge dispatch"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 / dnd5e 5.3.3 / the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v004.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

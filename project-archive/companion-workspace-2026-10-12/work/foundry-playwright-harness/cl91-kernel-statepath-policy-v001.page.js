@@ -1,0 +1,2 @@
+const src=String(game.macros.get("FHQiFYx6OntZVo9d")?.command??""),hits=[],p="statePath";let n=0;for(let i=src.indexOf(p);i!==-1;i=src.indexOf(p,i+p.length)){if(++n>18)break;hits.push({index:i,near:src.slice(Math.max(0,i-320),Math.min(src.length,i+850))});}
+return{operation:"cl91.kernel-statepath-policy-review",noWrite:true,totalMentions:src.split(p).length-1,hits};

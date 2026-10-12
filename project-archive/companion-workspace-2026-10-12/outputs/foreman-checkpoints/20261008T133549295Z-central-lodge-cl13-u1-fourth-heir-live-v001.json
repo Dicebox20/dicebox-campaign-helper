@@ -1,0 +1,39 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T13:35:49.2955583Z",
+    "workUnitId":  "central-lodge-cl13-u1-fourth-heir-live-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "One guarded live Foundry v14.367 Assistant Gamemaster in-place edit of exact U1 Family Records Interpretation RegionBehavior 875pl2PyFUnEYO75 added user-approved fourth-born youngest heir genealogy clue. Source SHA changed only from 6ed84ac9a24b5fe4db0c513b819e3409fbaf0dff637c4502d878cdd7da51fae3 to d37b49522da7e80c2ecbfb4ed9b031a827193620a7d315e1c1a69e3357ca45c4. Independent no-write reread confirmed new source hash, 1 behavior in U1 Region, no M1/E4 edits. CL90 baseline PASS_WITH_KNOWN_BLOCKERS, 21 Scenes,202 Regions,116 behaviors,33 Items,ledger rev1. KB build succeeded integrity ok with newly locked 4:35 design.",
+    "blocker":  "M1 clock behavior and E4/M1 supporting clues still pending; exact E4 and M1 preflight PASS but no live writes in this unit. Prior Bridge delivery unresolved and R1 installer safety block unchanged. User end-only gameplay canary.",
+    "nextAction":  "One bounded guarded E4 False Burial Interpretation clue update, exact preflight source hash c410b2cfac3e8d272de32f4d52b01aebce17886c575ba226050afadff31dc905 then independent no-write final verify and checkpoint. Do not retry U1 write, no other live Foundry action until this checkpoint.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl13-u1-hint-apply-v001.page.js"
+                     ],
+    "validation":  [
+                       "U1 targeted guarded APPLY PASS and authoritative source reread SHA matched",
+                       "Independent no-write CL90 PASS_WITH_KNOWN_BLOCKERS, canonical 21/202/116/33 revision1 preserved",
+                       "No item/ledger/playstate mutation, no gameplay canary"
+                   ],
+    "runtimeTarget":  "Foundry v14.367 / D\u0026D5e v5.3.3 / the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl13-u1-hint-apply-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

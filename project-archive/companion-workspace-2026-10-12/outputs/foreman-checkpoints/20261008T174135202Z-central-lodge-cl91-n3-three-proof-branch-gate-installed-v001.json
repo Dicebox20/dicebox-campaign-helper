@@ -1,0 +1,52 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T17:41:35.2021597Z",
+    "workUnitId":  "central-lodge-cl91-n3-three-proof-branch-gate-installed-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "User explicitly approved N3-to-T3 hidden branch strict three-proof AND gate (Departure Board route plate resolved, Railway Switch Wheel installed, and completed Cartography Overlay). Updated roadmap, active checklist and N3 authoring dossier before implementation; published locked KB decision D-2026-10-08-CL91-N3-T3-THREE-PROOF-APPROVED and rebuild integrity ok. Authored dedicated N3 Branch Railway tokenEnter RegionBehavior using shared canonical kernel gate, writing only puzzles.n3.t3BranchUnlocked after the three exact boolean state requirements, no additional Item or Notice prerequisites, no scene travel. Pure candidate test 17/17 PASS; actual staged RegionBehavior offline mock suite 19/19 PASS. Exact source-hash locked Foundry PREVIEW PASS at 21 Scenes/202 Regions/118 RegionBehaviors/33 Items, N3 Branch Region empty, ledger revision2 SHA 7feef0b3823ed64e52eaecd2fbe886d020a0a8b92dda2c54a334bbc8017d38f7, no non-GM users. One authorized Assistant Gamemaster guarded live APPLY PASS created enabled RegionBehavior yikneH7tFfD5zsr6 in N3 Branch Railway RP1jYOH738xl9hks. Exact stored source and flag SHA 3ae5572a2e6df1e2a2611630163b90e73450ba400acd0a9d38ab4d4a2e6d4cbd. Independent read-only FINAL VERIFY PASS: 21 Scenes/202 Regions/119 RegionBehaviors (one intentional disabled M2 Notice)/33 Items, ledger revision2 and all N3 proof/unlocked flags still false; M1 clock, M2 portrait, U2 interpretation, board/wheel/overlay, kernel and existing T3-to-N3 return unchanged. No teleport code or gameplay canary. Source verification CL90 v008 PASS_WITH_KNOWN_BLOCKERS zero failures. KB final evidence source delta published and rebuilt integrity ok, 119 metadata and fact active, old N3 unlock orphan closed, final-player-acceptance open item recorded.",
+    "blocker":  "Actual user player test of N3 three-proof gate and runtime kernel triggering deferred to final campaign acceptance. N3-to-T3 outgoing teleport and other CL50 automatic route installers remain quarantined due unsafe transfer commit, player consent and cooldown issues; no accepted outgoing transfer placement. Cross-GM and actor live play semantics not certified. No legacy Bridge unknown-host-accepted wake should be resent blindly.",
+    "nextAction":  "Begin separate source-only CL50 N3-to-T3 transfer safety review and remediation plan: inspect current authorized return T3-to-N3 source, source/landing footprint/reverse loop checks, primary GM execution constraints, player consent, transaction outcome-unknown and fixed point. Do not install travel or run any end-player canary until independently verified and approved. Preserve N3 gate, 21/202/119/33 ledger revision2, exact behavior SHA and CL90 v008.",
+    "changedPaths":  [
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "docs\\CL91-N3-T3-BRANCH-UNLOCK-CANDIDATE-2026-10-08.md",
+                         "database\\seed.d\\zzzzzzzzzzzz-2026-10-08-cl91-n3-three-proof-approved.sql",
+                         "database\\seed.d\\zzzzzzzzzzzzz-2026-10-08-cl91-n3-three-proof-installed.sql",
+                         "work\\foundry-playwright-harness\\cl91-n3-three-proof-gate-source-v001.js",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v008.page.js"
+                     ],
+    "validation":  [
+                       "User-authored three-proof AND rule locked in KB before live code",
+                       "Pure gate candidate tests 17/17 PASS",
+                       "Actual gate source offline mock 19/19 PASS",
+                       "Foundry exact no-write PREVIEW PASS at 21/202/118/33 ledger2",
+                       "One guarded authorized Assistant GM RegionBehavior APPLY PASS; no replay",
+                       "Independent final no-write source/flag/geometry/ledger verifier PASS 21/202/119/33 revision2",
+                       "CL90 v008 PASS_WITH_KNOWN_BLOCKERS zero unexpected failures",
+                       "SQLite KB seeded rebuild 67 patches integrity ok, behavior metadata119, installed fact active",
+                       "New logical gate contains no teleport, no Item recovery, no token transfer, no player acceptance",
+                       "CL50 quarantined route installer not invoked"
+                   ],
+    "runtimeTarget":  "Foundry VTT 14.367 / dnd5e v5.3.3 / the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl91-n3-three-proof-final-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

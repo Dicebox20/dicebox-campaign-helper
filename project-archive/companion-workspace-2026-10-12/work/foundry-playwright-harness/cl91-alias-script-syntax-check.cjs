@@ -1,0 +1,1 @@
+const fs=require('node:fs'),A=Object.getPrototypeOf(async function(){}).constructor;for(const p of ['cl91-m1-m2-alias-apply-v001.page.js','cl91-m1-m2-alias-final-verify-v001.page.js']){new A('event',fs.readFileSync(p,'utf8'));console.log(p+' SYNTAX_PASS')}

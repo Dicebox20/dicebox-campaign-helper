@@ -1,0 +1,14 @@
+const s=game.scenes.get('4pc5akMBieHU7GvV'),ledger=game.journal.get('xhlXv6CCH34HVga3')?.getFlag('world','dicebox')?.state,canonical=["0CSBwzcszPKyaB8u", "5K1uASAARnX8aZhP", "EDdktL7VUihbpKe9", "UNySMm7YkyYfh41x", "Zq8iXByDVhHRbA7w", "sI4YVZZChgey1qNi", "iqfCcDpEer4pwrJj", "DLcheEi6e5OHOYmU", "U8S5ZrTjaPIkTUIL", "JZkxX6lUQe8Nc8xJ", "LXTA8mx1rJ2L6e2J", "MAbLfBqG7qIVVuLN", "4pc5akMBieHU7GvV", "pHQvDUDlyWZFuNrX", "if9iWDRjSwI87EeX", "PVf6Gbrv9HbB88uZ", "La9krMOMBhAhDLi6", "ImeIdHbYb6kZKAdt", "ez9MSQ8QIO4cW6zo", "aIKQmFiuXWipEdyb", "HWitOe1wSid7MZ1y"].map(id=>game.scenes.get(id));
+const H=async v=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(v)))),b=>b.toString(16).padStart(2,'0')).join('');
+if(!game.ready||game.version!=='14.367'||game.world.id!=='the-lost-mine-of-phandalin'||game.system.version!=='5.3.3'||game.user.name!=='Assistant Gamemaster'||!game.user.isGM||game.users.some(u=>u.active&&!u.isGM))throw Error('AUTHORITY_DRIFT');
+if(!s||s.active||s.grid.size!==120||s.grid.type!==0||s.grid.distance!==5||s.grid.units!=='ft'||s.width!==4320||s.height!==2880||s.padding!==0||s.tokens.size!==1||s.regions.size!==9)throw Error('SCENE_DRIFT');
+const t=s.tokens.get('yrEySwR08mLg8Xll');
+if(!t||t.actorId!=='2g6CmPQqhSkRQQZm'||t.x!==2836||t.y!==1662||t.width!==1||t.height!==1||t.texture.scaleX!==1||t.texture.scaleY!==1)throw Error('REFERENCE_TOKEN_DRIFT');
+if(canonical.some(x=>!x)||canonical.reduce((n,s)=>n+s.regions.size,0)!==202||canonical.reduce((n,s)=>n+[...s.regions].reduce((m,r)=>m+r.behaviors.size,0),0)!==119)throw Error('ROSTER_DRIFT');
+if(ledger?.revision!==13||await H(ledger)!=='ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4')throw Error('SOVEREIGN_LEDGER_DRIFT');
+const trans=['lYps0Z5806d0W8wX','shIAThge7cNy0JjT'].map(id=>s.regions.get(id));if(trans.some(r=>!r||!r.getFlag('world','dicebox')?.stableId||![...r.shapes].some(q=>q.type==='rectangle'&&q.width>=320&&q.height>=320)))throw Error('CL50_TRANSITION_SIZE_DRIFT');
+const walls=[...s.walls],doors=walls.filter(w=>w.door>0);
+if(doors.some(w=>Math.hypot(w.c[2]-w.c[0],w.c[3]-w.c[1])<1.15*160))throw Error('DOOR_TOO_NARROW');
+const orig=s.toObject();
+if(await H(orig)!=='80b12d293127eafac9f0385b0bfc8e884dacd9055ee95767e993e266a8a1607a')throw Error('EXACT_ORIGINAL_SOURCE_DRIFT');
+return{operation:'clscale-ref-n2-grid160-v001-preview',status:'PASS_STAGED',noWrite:true,oldGrid:120,newGrid:160,tokenId:'yrEySwR08mLg8Xll',tokenPixelPosition:[t.x,t.y],oldSceneSHA:'80b12d293127eafac9f0385b0bfc8e884dacd9055ee95767e993e266a8a1607a'};

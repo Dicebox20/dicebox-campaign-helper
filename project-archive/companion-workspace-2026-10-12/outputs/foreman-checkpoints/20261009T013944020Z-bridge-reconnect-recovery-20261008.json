@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkpointType": "campaign-helper-foreman",
+  "timestampUtc": "2026-10-09T01:39:44.0200358Z",
+  "workUnitId": "bridge-reconnect-recovery-20261008",
+  "status": "BLOCKED",
+  "continuation": "STOP",
+  "evidenceLayer": "local",
+  "summary": "Reconnected the Dicebox Bridge ChatGPT app for the verified Foreman handoff. The app now shows Connected, but tool registration refresh failed and the Codex Bridge tools are unavailable, so no live session was created and no continuation message was sent.",
+  "blocker": "After app reconnect, ChatGPT plugin settings showed Connected; Refresh tools returned Could not update the app. Try again, and Codex bridge_status returned Unknown tool. The exact Foreman conversation is visibly Resume campaign foreman mode at 6ac80c3c-2cac-83e8-8d8a-7ed65a84e135, but current thread metadata reports projectId null, so its Bridge project binding is unresolved. Prior session ses-4c61594d-6a8a-4d98-b557-c1a1498335c7 is terminated.",
+  "nextAction": "In a fresh Codex app context, recover Dicebox Bridge tool registration and read bridge_status; resolve the exact project binding for conversation 6ac80c3c-2cac-83e8-8d8a-7ed65a84e135 before creating one live session. Do not send or stage messages until status and endpoint identity are positively verified.",
+  "changedPaths": [],
+  "validation": [
+    "Browser inventory and visible conversation confirmed exact Foreman URL/title and handoff contents.",
+    "Dicebox Bridge app disconnected then reconnected; ChatGPT showed App disconnected then Dicebox Bridge plugin installed and Connected.",
+    "Plugin Refresh tools failed with Could not update the app. Try again.",
+    "Codex bridge_status returned Unknown tool after reconnect; earlier status/session/audit calls returned Session terminated.",
+    "No live session was started; no message was sent or staged.",
+    "Canonical root recovery helper confirmed latest prior PASS checkpoint central-lodge-clscale-u2-grid160-verified-v001 and next authorized work F1 read-only preflight; no Foundry action occurred."
+  ],
+  "runtimeTarget": "ChatGPT Dicebox Bridge app; target conversation 6ac80c3c-2cac-83e8-8d8a-7ed65a84e135; prior relay session ses-4c61594d-6a8a-4d98-b557-c1a1498335c7 terminated",
+  "receiptRef": "outputs\\LATEST-FOREMAN-CHECKPOINT.json",
+  "repository": {
+    "root": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+    "head": null,
+    "dirtyCount": 0,
+    "dirtyFingerprintSha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "dirtySample": [],
+    "dirtySampleTruncated": false
+  },
+  "controlPlane": {
+    "activeCard": null,
+    "activeCardSha256": null,
+    "roadmapSha256": null,
+    "seedSha256": "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+  },
+  "authorityBoundary": "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,37 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T02:46:31.3889756Z",
+    "workUnitId":  "clscale-n1-grid150-with-reference-token-verified-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "After owner-delegated visual calibration and exact measurement actor cleanup checkpoint, user visually accepted N1 candidate150. Fresh authorized GM and live ledger revision13 SHA ec3f1a02, no nonGM players. Original N1 grid120 Scene MAbLfBqG7qIVVuLN full backup outputs/foreman-checkpoints/clscale-ref-n1-grid150-v001-before.json original source SHA 1ccb5122328a6032a9a3164943c3c599d7bca0d674a9bfd206f9a99f8ef59413. N1 2 railway transition Regions each460x720 have sampled 1x1 150 and 2x2 300 footprints free of Wall intersections; 14 Walls,11 Regions,5 Lights, one Meow reference token id DOCKvaCKDr8MUP8S x3207 y1079. Guarded no-write exact source/ledger preview PASS, one Scene.update grid.size150 autoReposition:false PASS, independent full Scene source normalized original SHA PASS; final new Scene hash 8fee014d032ce5b2a70405b7212db2bf05534c7c51994d073c617243d78a379e. Original token source/x/y unchanged, other Scene source untouched, ledger rev13 hash ec3f1a02 unchanged. CL90 v014 PASS_WITH_KNOWN_BLOCKERS zero unexpected failures. No CL50 installer, teleport or gameplay testing.",
+    "blocker":  "CL50 railway installers quarantined, final gameplay test deferred. Bridge old receipt reconcile Invalid operationId, do not resend. Railway 2x2 collision sampling not a live travel certification.",
+    "nextAction":  "Next independent bounded N2 Scene 4pc5akMBieHU7GvV grid120 to160 reference-token preserved, exact current ledger13 and source guarded backup, no-write preview, one grid-only update, independent reread, CL90 v014, durable checkpoint. Then publish KB chronology and roadmap and verify DB.",
+    "changedPaths":  [
+
+                     ],
+    "validation":  [
+
+                   ],
+    "runtimeTarget":  "",
+    "receiptRef":  "outputs\\foreman-checkpoints\\clscale-ref-n1-grid150-v001-before.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

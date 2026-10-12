@@ -1,0 +1,44 @@
+{
+    "id":  "regionwright-mining",
+    "title":  "Mining Deposits \u0026 Extraction",
+    "description":  "Clickable Region-driven mining deposits with pickaxe checks, native Athletics rolls, shared five-swing depletion, and ore rewards.",
+    "authors":  [
+                    {
+                        "name":  "DiceBox / Regionwright"
+                    }
+                ],
+    "version":  "0.1.4",
+    "compatibility":  {
+                          "minimum":  "14",
+                          "verified":  "14.367"
+                      },
+    "relationships":  {
+                          "systems":  [
+                                          {
+                                              "id":  "dnd5e",
+                                              "type":  "system",
+                                              "compatibility":  {
+                                                                    "minimum":  "5.3.3",
+                                                                    "verified":  "5.3.3"
+                                                                }
+                                          }
+                                      ]
+                      },
+    "esmodules":  [
+                      "module.js"
+                  ],
+    "styles":  [
+                   "styles/mining.css"
+               ],
+    "packs":  [
+                  {
+                      "name":  "mining-resources",
+                      "label":  "Mining Resources",
+                      "path":  "packs/mining-items.db",
+                      "type":  "Item"
+                  }
+              ],
+    "license":  "LICENSE",
+    "readme":  "README.md",
+    "socket":  true
+}

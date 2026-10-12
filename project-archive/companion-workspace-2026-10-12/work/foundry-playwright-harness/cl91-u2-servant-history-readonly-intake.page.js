@@ -1,0 +1,1 @@
+const s=game.scenes.get("PVf6Gbrv9HbB88uZ"),b=Array.from(s.regions).flatMap(r=>Array.from(r.behaviors)).find(b=>b.id==="J11ZvQh4lqzEsvRi"),src=b?.system?.source??"",l=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{};return{operation:"cl91.u2-servant-history-source-intake",noWrite:true,behaviorId:b?.id,source:src,ledgerU2:l.puzzles?.u2??null};

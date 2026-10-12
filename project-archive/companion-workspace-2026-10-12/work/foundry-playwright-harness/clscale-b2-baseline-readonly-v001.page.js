@@ -1,0 +1,6 @@
+// B2 exact source baseline, no writes.
+const s=game.scenes.get('5K1uASAARnX8aZhP');
+const canonical=["0CSBwzcszPKyaB8u", "5K1uASAARnX8aZhP", "EDdktL7VUihbpKe9", "UNySMm7YkyYfh41x", "Zq8iXByDVhHRbA7w", "sI4YVZZChgey1qNi", "iqfCcDpEer4pwrJj", "DLcheEi6e5OHOYmU", "U8S5ZrTjaPIkTUIL", "JZkxX6lUQe8Nc8xJ", "LXTA8mx1rJ2L6e2J", "MAbLfBqG7qIVVuLN", "4pc5akMBieHU7GvV", "pHQvDUDlyWZFuNrX", "if9iWDRjSwI87EeX", "PVf6Gbrv9HbB88uZ", "La9krMOMBhAhDLi6", "ImeIdHbYb6kZKAdt", "ez9MSQ8QIO4cW6zo", "aIKQmFiuXWipEdyb", "HWitOe1wSid7MZ1y"] .map(id=>game.scenes.get(id));
+const ledger=game.journal.get('xhlXv6CCH34HVga3')?.getFlag('world','dicebox')?.state;
+const H=async v=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(String(v)))),b=>b.toString(16).padStart(2,'0')).join('');
+return {operation:'clscale-b2-full-baseline-v001',noWrite:true,scene:s?.toObject(),sha:await H(JSON.stringify(s?.toObject())),ledgerSha:await H(JSON.stringify(ledger)),revision:ledger?.revision,executor:game.user?.name,nonGM:game.users.filter(u=>u.active&&!u.isGM).map(u=>u.id),roster:{scenes:canonical.length,regions:canonical.reduce((n,s)=>n+s.regions.size,0),behaviors:canonical.reduce((n,s)=>n+[...s.regions].reduce((m,r)=>m+r.behaviors.size,0),0)}};

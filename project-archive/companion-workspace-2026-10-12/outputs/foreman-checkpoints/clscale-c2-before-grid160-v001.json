@@ -1,0 +1,2587 @@
+{
+ "scene": {
+  "name": "Central Lodge — C2 Cult Records & Ritual Undercroft",
+  "width": 4320,
+  "height": 2880,
+  "padding": 0,
+  "grid": {
+   "type": 0,
+   "size": 120,
+   "distance": 5,
+   "units": "ft",
+   "style": "solidLines",
+   "thickness": 1,
+   "color": "#000000",
+   "alpha": 0.2
+  },
+  "flags": {
+   "dicebox-campaign-helper": {
+    "stableId": "dbx:central-lodge:c2",
+    "managed": {
+     "owner": "dicebox-campaign-helper",
+     "packageId": "dbx:central-lodge:c2:v1",
+     "kind": "scene",
+     "stableId": "dbx:central-lodge:c2"
+    },
+    "campaignId": "central-lodge",
+    "mapId": "C2",
+    "buildContract": "dicebox-scene-injector-build/v2",
+    "scaleProfile": "battlemap-120",
+    "rendererLightingProfile": "underground-archive-neutral",
+    "localLighting": "off",
+    "buildInstalled": true,
+    "ready": false,
+    "puzzleState": {
+     "recordRecencyUnderstood": false,
+     "concealedCategoryUnderstood": false,
+     "childTokenPlaced": false,
+     "firstbornPedestalResolved": false,
+     "cultPassageDiagramRecovered": false,
+     "infernalCicadaBodyRecovered": false,
+     "measureRhythmUnderstood": false,
+     "cultRecordsUnderstood": false
+    },
+    "localLightingController": {
+     "stateKey": "central-lodge.c2.archiveLighting",
+     "activeState": "activated",
+     "lightStableIds": [
+      "dbx:central-lodge:c2:light:records-west",
+      "dbx:central-lodge:c2:light:records-east",
+      "dbx:central-lodge:c2:light:side-archive"
+     ]
+    },
+    "assetReceipt": {
+     "base": {
+      "path": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/c2/c2-cult-records-undercroft.webp",
+      "sha256": "58653a704ec8d11a6f248418c7b4e6a6614635e4d3c623d79ef92573a2bc7f7d",
+      "bytes": 244064,
+      "lightingProfile": "underground-archive-neutral"
+     }
+    },
+    "implementationPending": [
+     "bind hidden Notice behavior for record recency and concealed-category anomalies",
+     "bind Child Bracelet/Token interaction to the Firstborn pedestal",
+     "bind Cult Passage Diagram recovery and route-overlay state",
+     "bind Infernal Cicada Body recovery and four-socket state",
+     "bind Measure/Ritual Rhythm and cult-record interpretation",
+     "bind archive lighting, sound, and C1/N1 transition destinations",
+     "VERIFY exact wall, Region, and light alignment"
+    ]
+   }
+  },
+  "_id": "UNySMm7YkyYfh41x",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "thumb": null,
+  "shiftX": 0,
+  "shiftY": 0,
+  "initial": {
+   "x": null,
+   "y": null,
+   "scale": null
+  },
+  "initialLevel": "defaultLevel0000",
+  "tokenVision": true,
+  "fog": {
+   "mode": 1,
+   "colors": {
+    "explored": null,
+    "unexplored": null
+   }
+  },
+  "environment": {
+   "darknessLevel": 0,
+   "darknessLock": false,
+   "globalLight": {
+    "enabled": false,
+    "alpha": 0.5,
+    "bright": false,
+    "color": null,
+    "coloration": 1,
+    "luminosity": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "shadows": 0,
+    "darkness": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "cycle": true,
+   "base": {
+    "hue": 0,
+    "intensity": 0,
+    "luminosity": 0,
+    "saturation": 0,
+    "shadows": 0
+   },
+   "dark": {
+    "hue": 0.7138888888888889,
+    "intensity": 0,
+    "luminosity": -0.25,
+    "saturation": 0,
+    "shadows": 0
+   }
+  },
+  "transition": {
+   "type": null,
+   "duration": 1500,
+   "activeOnly": false
+  },
+  "drawings": [],
+  "tokens": [],
+  "levels": [
+   {
+    "_id": "defaultLevel0000",
+    "name": "Level",
+    "elevation": {
+     "bottom": 0,
+     "top": 20
+    },
+    "background": {
+     "color": "#999999",
+     "src": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/c2/c2-cult-records-undercroft.webp",
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "foreground": {
+     "src": null,
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "fog": {
+     "src": null
+    },
+    "textures": {
+     "anchorX": 0.5,
+     "anchorY": 0.5,
+     "offsetX": 0,
+     "offsetY": 0,
+     "fit": "fill",
+     "scaleX": 1,
+     "scaleY": 1,
+     "rotation": 0
+    },
+    "visibility": {
+     "levels": []
+    },
+    "sort": 0,
+    "flags": {}
+   }
+  ],
+  "lights": [
+   {
+    "name": "C2 Records Hall East Response",
+    "x": 2630,
+    "y": 1460,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 14,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d6a15f",
+     "alpha": 0.1,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:light:records-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:c2:light:records-east"
+      },
+      "stateKey": "central-lodge.c2.archiveLighting",
+      "activeState": "activated",
+      "pacingGroup": "archive-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "QbdTgveb1jB2c1O2",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "C2 Records Hall West Response",
+    "x": 1390,
+    "y": 1460,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 14,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d6a15f",
+     "alpha": 0.1,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:light:records-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:c2:light:records-west"
+      },
+      "stateKey": "central-lodge.c2.archiveLighting",
+      "activeState": "activated",
+      "pacingGroup": "archive-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "LgmEncOmgF50vf27",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "C2 Side Archive Response",
+    "x": 3500,
+    "y": 1950,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 12,
+     "bright": 2,
+     "angle": 360,
+     "color": "#d6a15f",
+     "alpha": 0.09,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:light:side-archive",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:c2:light:side-archive"
+      },
+      "stateKey": "central-lodge.c2.archiveLighting",
+      "activeState": "activated",
+      "pacingGroup": "archive-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "wi96AHuIYJKsix4w",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   }
+  ],
+  "notes": [],
+  "sounds": [],
+  "regions": [
+   {
+    "name": "C2 Cult Passage Diagram",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1160,
+      "y": 340,
+      "width": 760,
+      "height": 520,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:puzzle:cult-passage-diagram",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:puzzle:cult-passage-diagram"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "records-worktable",
+       "interaction": "recover-document",
+       "itemId": "cult-passage-diagram",
+       "routeOverlayDestination": "N3",
+       "persistentStateKey": "c2.cultPassageDiagramRecovered",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-cult-passage-diagram",
+       "sceneKey": "C2",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "AjnujsDKONYzof4r",
+       "sourceRegionName": "C2 Cult Passage Diagram"
+      }
+     }
+    },
+    "_id": "AjnujsDKONYzof4r",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C2 — cult-passage-diagram-recovery",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"cult-passage-diagram\",\"statePath\":\"items.cult-passage-diagram.recovered\",\"value\":true,\"message\":\"<p>You recover the <strong>Cult Passage Diagram</strong> from the records.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl24-c2-apply-v001",
+         "stableId": "dbx:central-lodge:c2:behavior:cult-passage-diagram-recovery",
+         "sceneKey": "C2",
+         "regionStableId": "dbx:central-lodge:c2:region:c2-cult-passage-diagram",
+         "sourceHash": "8a28916bb53c46b7dbc21c434e7fa5c833cfb0111b74d8df170020150c6f0db1",
+         "behaviorSpec": {
+          "action": "pickup",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "pFDGC9s7nqTF0gV7",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407393983,
+       "modifiedTime": 1791407393983,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Record Recency Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1200,
+      "y": 250,
+      "width": 1600,
+      "height": 1500,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:notice:record-recency",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:notice:record-recency"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "records-hall-and-writing-desks",
+       "discoveryId": "c2-record-recency",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "Some of the records feel less uniformly old than the room around them.",
+       "successHint": "Several handled ledgers and writing surfaces show maintenance or use far more recent than the surrounding archive.",
+       "persistentStateKey": "c2.recordRecencyUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-record-recency-notice",
+       "sceneKey": "C2",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "W8KnvtDsEa5BQBqO",
+       "sourceRegionName": "C2 Record Recency Notice"
+      }
+     }
+    },
+    "_id": "W8KnvtDsEa5BQBqO",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C2 — record-recency-notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"c2.record-recency\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The archive does not belong to a single period. Several records were handled, amended, or added far more recently than the surrounding material.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate comparison of inks, wear, and filing order can still establish the record-recency contradiction.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl24-c2-apply-v001",
+         "stableId": "dbx:central-lodge:c2:behavior:record-recency-notice",
+         "sceneKey": "C2",
+         "regionStableId": "dbx:central-lodge:c2:region:c2-record-recency-notice",
+         "sourceHash": "883ef5a8b68233d96a5670e98ab9a3dbadc115d25cf5cd25c23ca3a1b58995c6",
+         "behaviorSpec": {
+          "action": "notice",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "dJVzBs6JV210tNVX",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407393943,
+       "modifiedTime": 1791407393943,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Concealed Record Category Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 2800,
+      "y": 250,
+      "width": 1250,
+      "height": 2200,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:notice:concealed-category",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:notice:concealed-category"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "side-archives-and-cabinets",
+       "discoveryId": "c2-concealed-category",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The archive organization feels deliberately uneven.",
+       "successHint": "One group of cabinets follows a separate storage logic, as though a category of records was intentionally segregated from the main collection.",
+       "persistentStateKey": "c2.concealedCategoryUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-concealed-record-category-notice",
+       "sceneKey": "C2",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "4Jy0q87GDNSbRdyM",
+       "sourceRegionName": "C2 Concealed Record Category Notice"
+      }
+     }
+    },
+    "_id": "4Jy0q87GDNSbRdyM",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C2 — concealed-record-category-notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"c2.concealed-record-category\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>A category of records is concealed inside the archive's ordinary organization. The omissions repeat too consistently to be accidental.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate cataloguing can still expose the concealed record category.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl24-c2-apply-v001",
+         "stableId": "dbx:central-lodge:c2:behavior:concealed-record-category-notice",
+         "sceneKey": "C2",
+         "regionStableId": "dbx:central-lodge:c2:region:c2-concealed-record-category-notice",
+         "sourceHash": "e97cced38afa4b0152d077322ba18220a88addb9e573b9a589856b85cc570b18",
+         "behaviorSpec": {
+          "action": "notice",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "Z8qPtpqZh6YrlP1O",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407393960,
+       "modifiedTime": 1791407393960,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Cult Records Interpretation",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 220,
+      "y": 650,
+      "width": 3600,
+      "height": 1550,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#7d5367",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:story:cult-records",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:story:cult-records"
+      },
+      "regionClass": "story",
+      "specification": {
+       "class": "story",
+       "anchor": "archive-bays",
+       "interpretation": "cult-records-and-household-tithe",
+       "persistentStateKey": "c2.cultRecordsUnderstood",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-cult-records-interpretation",
+       "sceneKey": "C2",
+       "regionClass": "story",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "Vs6MO58f7wQD6BLP",
+       "sourceRegionName": "C2 Cult Records Interpretation"
+      }
+     }
+    },
+    "_id": "Vs6MO58f7wQD6BLP",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C2 — cult-records-interpretation",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"observe\",\"trigger\":\"TOKEN_ENTER\",\"observationKey\":\"c2.cult-records\",\"oncePerActor\":true,\"statePath\":\"puzzles.c2.cultRecordsInterpreted\",\"value\":true,\"message\":\"<p>Cross-referencing the recovered records establishes a long-running cult operation hidden beneath the Lodge's ordinary family history.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl24-c2-apply-v001",
+         "stableId": "dbx:central-lodge:c2:behavior:cult-records-interpretation",
+         "sceneKey": "C2",
+         "regionStableId": "dbx:central-lodge:c2:region:c2-cult-records-interpretation",
+         "sourceHash": "78a2d348099eecc1c372aadafe7b0d98decef2fc800648d1dc804d444a6373c8",
+         "behaviorSpec": {
+          "action": "observe",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "ogKZIG4IOnBZvVJv",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407394043,
+       "modifiedTime": 1791407394043,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Firstborn Pedestal",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1690,
+      "y": 830,
+      "width": 610,
+      "height": 450,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:puzzle:firstborn-pedestal",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:puzzle:firstborn-pedestal"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "raised-stone-platform",
+       "interaction": "place-item",
+       "itemId": "child-bracelet-token",
+       "dependencySource": "E4",
+       "persistentStateKey": "c2.childTokenPlaced",
+       "completionStateKey": "c2.firstbornPedestalResolved",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-firstborn-pedestal",
+       "sceneKey": "C2",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "nCfpIGfCzVNsnPtN",
+       "sourceRegionName": "C2 Firstborn Pedestal"
+      }
+     }
+    },
+    "_id": "nCfpIGfCzVNsnPtN",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C2 — firstborn-pedestal",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"socket\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"child-bracelet\",\"statePath\":\"puzzles.c2.firstbornPedestalResolved\",\"consume\":false,\"missingMessage\":\"<p>The Firstborn pedestal has a small prepared fitting, but the matching token is absent.</p>\",\"successMessage\":\"<p>The <strong>Child Bracelet</strong> fits the Firstborn pedestal. The memorial mechanism settles into its intended arrangement.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl24-c2-apply-v001",
+         "stableId": "dbx:central-lodge:c2:behavior:firstborn-pedestal",
+         "sceneKey": "C2",
+         "regionStableId": "dbx:central-lodge:c2:region:c2-firstborn-pedestal",
+         "sourceHash": "e88cd5eaa73d35bbc5431a2f5b3a8a92c4a90b0638c724e8c47a5b5606237d4f",
+         "behaviorSpec": {
+          "action": "socket",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "vjKg8AIbS4jXS0T9",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407394020,
+       "modifiedTime": 1791407394020,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Records Hall Lighting",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 900,
+      "y": 250,
+      "width": 2050,
+      "height": 2050,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:light:records-hall",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:light:records-hall"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "records-hall-fixtures",
+       "stateKey": "central-lodge.c2.archiveLighting",
+       "activeState": "activated",
+       "lightStableIds": [
+        "dbx:central-lodge:c2:light:records-west",
+        "dbx:central-lodge:c2:light:records-east"
+       ]
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-records-hall-lighting",
+       "sceneKey": "C2",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "TDKQjmzbSDLopMZQ",
+       "sourceRegionName": "C2 Records Hall Lighting"
+      }
+     }
+    },
+    "_id": "TDKQjmzbSDLopMZQ",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Side Archive Lighting",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3000,
+      "y": 250,
+      "width": 1200,
+      "height": 2350,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:light:side-archive",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:light:side-archive"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "side-archive-fixtures",
+       "stateKey": "central-lodge.c2.archiveLighting",
+       "activeState": "activated",
+       "lightStableIds": [
+        "dbx:central-lodge:c2:light:side-archive"
+       ]
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-side-archive-lighting",
+       "sceneKey": "C2",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "ufPKtVahOgHbWooI",
+       "sourceRegionName": "C2 Side Archive Lighting"
+      }
+     }
+    },
+    "_id": "ufPKtVahOgHbWooI",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Transition — Underworks Route",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 2920,
+      "y": 1280,
+      "width": 500,
+      "height": 1000,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:transition:underworks",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:transition:underworks"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "cross-passage-threshold",
+       "destinationMapId": "N1",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-transition-underworks-route",
+       "sceneKey": "C2",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "SwfLzGBXeGM1m03P",
+       "sourceRegionName": "C2 Transition — Underworks Route"
+      }
+     }
+    },
+    "_id": "SwfLzGBXeGM1m03P",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Transition — Chapel Entry",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1600,
+      "y": 2160,
+      "width": 760,
+      "height": 650,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:transition:entry",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:transition:entry"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "main-entry-stair",
+       "destinationMapId": "C1",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-transition-chapel-entry",
+       "sceneKey": "C2",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "gCKvxCNIrs1fROrf",
+       "sourceRegionName": "C2 Transition — Chapel Entry"
+      }
+     }
+    },
+    "_id": "gCKvxCNIrs1fROrf",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Infernal Cicada Body",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3300,
+      "y": 1850,
+      "width": 620,
+      "height": 520,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:puzzle:infernal-cicada-body",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:puzzle:infernal-cicada-body"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "lower-side-archive-table",
+       "interaction": "recover-object",
+       "itemId": "infernal-cicada-body",
+       "socketCount": 4,
+       "wingSet": [
+        "I",
+        "II",
+        "III",
+        "IV"
+       ],
+       "assemblyDestination": "F1",
+       "persistentStateKey": "c2.infernalCicadaBodyRecovered",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-infernal-cicada-body",
+       "sceneKey": "C2",
+       "regionClass": "item",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "4bI2PCFXfrXbzCqT",
+       "sourceRegionName": "C2 Infernal Cicada Body"
+      }
+     }
+    },
+    "_id": "4bI2PCFXfrXbzCqT",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C2 — infernal-cicada-body-recovery",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"pickup\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"infernal-cicada-body\",\"statePath\":\"items.infernal-cicada-body.recovered\",\"value\":true,\"message\":\"<p>You recover the preserved <strong>Infernal Cicada Body</strong>.</p>\",\"persistentPickup\":true}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl24-c2-apply-v001",
+         "stableId": "dbx:central-lodge:c2:behavior:infernal-cicada-body-recovery",
+         "sceneKey": "C2",
+         "regionStableId": "dbx:central-lodge:c2:region:c2-infernal-cicada-body",
+         "sourceHash": "10ff11ab831bce936fa95198303bf21005933240c626daf27c842b27fc745f67",
+         "behaviorSpec": {
+          "action": "pickup",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "ZZDWUmvvKeKlGYL8",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407394000,
+       "modifiedTime": 1791407394000,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C2 Measure / Ritual Rhythm",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1750,
+      "y": 1260,
+      "width": 900,
+      "height": 880,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#7d5367",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:region:story:measure-rhythm",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c2:region:story:measure-rhythm"
+      },
+      "regionClass": "story",
+      "specification": {
+       "class": "story",
+       "anchor": "central-records-and-geometric-floor",
+       "interpretation": "measure-rhythm",
+       "contributesTo": [
+        "N3",
+        "T3",
+        "F1"
+       ],
+       "persistentStateKey": "c2.measureRhythmUnderstood",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c2:region:c2-measure-ritual-rhythm",
+       "sceneKey": "C2",
+       "regionClass": "interaction",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "6EP0YAGcfA27d9TX",
+       "sourceRegionName": "C2 Measure / Ritual Rhythm"
+      }
+     }
+    },
+    "_id": "6EP0YAGcfA27d9TX",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C2 — measure-rhythm-interpretation",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"observe\",\"trigger\":\"TOKEN_ENTER\",\"observationKey\":\"c2.measure-rhythm\",\"oncePerActor\":true,\"statePath\":\"puzzles.c2.measureRhythmInterpreted\",\"value\":true,\"message\":\"<p>The repeated measures and spacing in the ritual notes form a deliberate rhythm rather than decorative notation. The pattern is meaningful and can be carried forward to later infernal mechanisms.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl24-c2-apply-v001",
+         "stableId": "dbx:central-lodge:c2:behavior:measure-rhythm-interpretation",
+         "sceneKey": "C2",
+         "regionStableId": "dbx:central-lodge:c2:region:c2-measure-ritual-rhythm",
+         "sourceHash": "cf3bbb60bb9193e105cc725d9c3242c0846178a7b8bb03add981419b0d3d8934",
+         "behaviorSpec": {
+          "action": "observe",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "iCoG6HBUKE3BcxN1",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407394061,
+       "modifiedTime": 1791407394061,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   }
+  ],
+  "tiles": [],
+  "walls": [
+   {
+    "c": [
+     820,
+     260,
+     820,
+     2300
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:central-west-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:central-west-upper"
+      }
+     }
+    },
+    "_id": "Wbjc4d2AK2YIubx0",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1260,
+     70,
+     2540,
+     70
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:upper-projection-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:upper-projection-north"
+      }
+     }
+    },
+    "_id": "1xBsipV1WXicq556",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     820,
+     260,
+     1260,
+     260
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:central-north-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:central-north-west"
+      }
+     }
+    },
+    "_id": "xokX2cbQr5wUAp6M",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     260,
+     3010,
+     1320
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:central-east-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:central-east-upper"
+      }
+     }
+    },
+    "_id": "pJMuIcP2nm0cIpFC",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1260,
+     260,
+     1260,
+     70
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:upper-projection-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:upper-projection-west"
+      }
+     }
+    },
+    "_id": "qBZoXC0xKFu3xzeU",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2540,
+     260,
+     3010,
+     260
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:central-north-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:central-north-east"
+      }
+     }
+    },
+    "_id": "Y9r05qmDXB8tFYpM",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     1320,
+     3010,
+     1520
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:door-upper-archive",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c2:wall:door-upper-archive"
+      }
+     }
+    },
+    "_id": "NxzhzS1DBrOdQ0qt",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     1520,
+     3010,
+     2300
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:central-east-lower",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:central-east-lower"
+      }
+     }
+    },
+    "_id": "Xv63VU26m59NKXh9",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     820,
+     2300,
+     1660,
+     2300
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:central-south-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:central-south-west"
+      }
+     }
+    },
+    "_id": "22ALmtWoIi7xBoCq",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1660,
+     2300,
+     2260,
+     2300
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:door-main-entry",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c2:wall:door-main-entry"
+      }
+     }
+    },
+    "_id": "BLEU8Np9nMDUDhta",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     100,
+     590,
+     820,
+     590
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:left-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:left-north"
+      }
+     }
+    },
+    "_id": "zrwmBRGjBDavqztb",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     100,
+     2200,
+     820,
+     2200
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:left-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:left-south"
+      }
+     }
+    },
+    "_id": "QfvMqxKuVAnckPz0",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2260,
+     2300,
+     3010,
+     2300
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:central-south-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:central-south-east"
+      }
+     }
+    },
+    "_id": "UDLXxroml5j7yhRL",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     820,
+     1060,
+     820,
+     1320
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:door-left-archive",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c2:wall:door-left-archive"
+      }
+     }
+    },
+    "_id": "ax9zWJS6QYTuhmiA",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     100,
+     590,
+     100,
+     2200
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:left-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:left-west"
+      }
+     }
+    },
+    "_id": "bdYdnp1NKbbCq02o",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     820,
+     1320,
+     820,
+     2200
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:left-divider-lower",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:left-divider-lower"
+      }
+     }
+    },
+    "_id": "TVfafGGJK6OSnjD3",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2540,
+     70,
+     2540,
+     260
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:upper-projection-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:upper-projection-east"
+      }
+     }
+    },
+    "_id": "LFDb6P57S0GMQlR7",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     820,
+     590,
+     820,
+     1060
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:left-divider-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:left-divider-upper"
+      }
+     }
+    },
+    "_id": "bVIA6Wdzka1Sn6bs",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3960,
+     280,
+     3960,
+     1300
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:right-upper-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:right-upper-east"
+      }
+     }
+    },
+    "_id": "PvYSgbCgXnPSkUX1",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     1450,
+     4160,
+     1450
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:right-lower-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:right-lower-north"
+      }
+     }
+    },
+    "_id": "Im31UnfFJLUit531",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     280,
+     3960,
+     280
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:right-upper-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:right-upper-north"
+      }
+     }
+    },
+    "_id": "lOPpTMN58wx094kR",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     4160,
+     1450,
+     4160,
+     2570
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:right-lower-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:right-lower-east"
+      }
+     }
+    },
+    "_id": "os0K4JKdBxxxDrsI",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     1880,
+     3010,
+     2140
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:door-right-lower",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c2:wall:door-right-lower"
+      }
+     }
+    },
+    "_id": "K0HcGg9u5SMncep9",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1660,
+     820,
+     1660,
+     1230
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:dais-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:dais-west"
+      }
+     }
+    },
+    "_id": "PDTtJaIRu6SWlGg4",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1660,
+     820,
+     2320,
+     820
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:dais-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:dais-north"
+      }
+     }
+    },
+    "_id": "iI38GCBVtzWOaxVP",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2320,
+     820,
+     2320,
+     1230
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:dais-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:dais-east"
+      }
+     }
+    },
+    "_id": "bKwsbCkS3cGnKLOs",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2100,
+     1230,
+     2320,
+     1230
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:dais-front-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:dais-front-east"
+      }
+     }
+    },
+    "_id": "Bwgv7tKBGFK6zCvw",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     2570,
+     4160,
+     2570
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:right-lower-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:right-lower-south"
+      }
+     }
+    },
+    "_id": "W3WSbcqWgLUPNg6K",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3010,
+     1300,
+     3960,
+     1300
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:right-upper-south",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:right-upper-south"
+      }
+     }
+    },
+    "_id": "q194fPnftN9NWq5P",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1660,
+     1230,
+     1880,
+     1230
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c2:wall:dais-front-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c2:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c2:wall:dais-front-west"
+      }
+     }
+    },
+    "_id": "N7PFr7e2ZKyb01oo",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "weather": "",
+  "folder": "4iXeDJuCRBVhdM1M",
+  "sort": 125000,
+  "ownership": {
+   "default": 0,
+   "JESWV6CcU7m07VW6": 3
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "dnd5e",
+   "systemVersion": "5.3.3",
+   "createdTime": 1791323335401,
+   "modifiedTime": 1791351680801,
+   "lastModifiedBy": "JESWV6CcU7m07VW6",
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null
+  }
+ },
+ "sourceSHA": "fa29f5a8e5bde7648657c240271608be7d5adf5dfec5fe879dfdf2b2b030a661",
+ "ledgerSHA": "e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9"
+}

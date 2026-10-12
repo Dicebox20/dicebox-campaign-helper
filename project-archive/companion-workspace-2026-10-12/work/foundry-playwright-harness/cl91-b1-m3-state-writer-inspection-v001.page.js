@@ -1,0 +1,3 @@
+const keys=[["B1","0CSBwzcszPKyaB8u"],["M3","LXTA8mx1rJ2L6e2J"]],out=[];
+for(const [key,id] of keys){const s=game.scenes.get(id);for(const r of s.regions)for(const b of r.behaviors){if(!/water|underworks|bell|route/i.test(b.name))continue;out.push({scene:key,region:r.name,behavior:b.name,source:b.system?.source??"",stableId:b.getFlag("world","dicebox")?.stableId});}}
+return{operation:"cl91.b1-m3-state-writers-inspection",noWrite:true,behaviors:out};

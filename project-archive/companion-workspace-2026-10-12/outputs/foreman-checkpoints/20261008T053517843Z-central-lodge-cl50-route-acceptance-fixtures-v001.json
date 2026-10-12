@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:35:17.8430321Z",
+    "workUnitId":  "central-lodge-cl50-route-acceptance-fixtures-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Finished one bounded R1-R4 railway source-only acceptance suite without live gameplay mutations. Node offline test suite 24/24 PASS, 17 negative guard cases reject unsafe executor, lease, consent/ownership, unknown state, body size and unpinned/changed placement. All 8 approved mouth Region stableIDs, shapes and empty behaviors rechecked in exact live Foundry read-only. Frozen R1 source SHA preserved and known GM/placement semantic blockers reproduced, NOT cleared for install. KB rebuild integrity ok, independent DB verifier remains not rerun after previous safety check blocked it. CL90 Foundry read-only smoke PASS_WITH_KNOWN_BLOCKERS and ledger revision1.",
+    "blocker":  "R1 source still selects wrong active GM and samples one landing then reselects at teleport; actual pinned commit not proven. Previous guarded installer generation tool-safety refusal remains and cannot be bypassed. Earlier separate database verify_database.py tool safety denial remains unresolved, not rerun. No real GM/player travel canary.",
+    "nextAction":  "Next bounded read-only contract research: inspect exact Foundry 14.367 token teleport placement/offset and cross-Scene atomic guarantees through official/exact-stack evidence, then define proof that a checked whole-token footprint is identical to committed destination; independently resolve executor lease and real player ownership model. Propose reviewed new source version only after safe implementation workflow approval. Preserve frozen R1 stage and R2/R3 story and N3 notices; keep CL93 last.",
+    "changedPaths":  [
+                         "docs\\CL50-ROUTE-ACCEPTANCE-CONTRACT-FIXTURES-2026-10-07.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl50-route-contract-acceptance-fixtures-v001.cjs",
+                         "work\\foundry-playwright-harness\\cl50-eight-mouth-geometry-readonly-v001.page.js",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-cl50-route-acceptance-fixtures.sql"
+                     ],
+    "validation":  [
+                       "Node --check CL50 acceptance fixture suite PASS",
+                       "node --test CL50 acceptance fixture suite: tests 24 pass 24 fail 0; no Foundry connection or installer generation",
+                       "Source manifest frozen SHA 0d804443760c05410678b6e1a6149da0a214758a43e8efe4ef3144b6056d2fd7 and a03569e8b8bfcc2c1b3fedc969e84b10a30b1186c680f9fa9aad46623a34124b unchanged",
+                       "Eight-mouth live read-only state PASS; stable IDs correct, all 8 source behavior counts 0 and T1/T2 unbound",
+                       "KB build integrity ok 404 sources/1180 facts/470 decisions/543 open items/207 trials/12 tools; separate database verifier safety-blocked previously and NOT executed this turn",
+                       "CL90 live smoke PASS_WITH_KNOWN_BLOCKERS 21 scenes/202 Regions/116 behaviors/33 Items, ledger revision1 kernel SHA unchanged",
+                       "No live Scene Region Token Macro audio or lighting mutation and no new Bridge continuation dispatch"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e5.3.3/the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "docs\\CL50-ROUTE-ACCEPTANCE-CONTRACT-FIXTURES-2026-10-07.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

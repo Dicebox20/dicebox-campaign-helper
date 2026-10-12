@@ -1,0 +1,40 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T14:07:20.8713876Z",
+    "workUnitId":  "central-lodge-cl13-e4-grave-dates-reconciled-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "Reconciled prior completed E4 False Burial Interpretation clue update from independent Foundry read-only source hash b7516e6f5fcd64822766fe7645d8c1462de9c318b2248fe3fcde010f28d1b93e at behavior AjFHwHDxH7Pg9Vel. U1 Family Records remains at d37b49522da7e80c2ecbfb4ed9b031a827193620a7d315e1c1a69e3357ca45c4. M1 notice unmodified and new Clock Setting Region empty. CL13 4:35 decision locked in KB. No E4 write repeated.",
+    "blocker":  "M1 inscription and clock interaction are previewed but not installed; final user gameplay acceptance deferred.",
+    "nextAction":  "Review exact M1 inscription preview, perform one guarded targeted M1 notice APPLY if authorized, independently verify and checkpoint. Preserve all other Regions, macro and ledger.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl13-e4-hint-apply-v001.page.js"
+                     ],
+    "validation":  [
+                       "Independent no-write E4 source reread matches expected sha",
+                       "No duplicate E4 live mutation",
+                       "Both M1 no-write previews PASS",
+                       "Current KB quick_check ok"
+                   ],
+    "runtimeTarget":  "Foundry 14.367 DND5e 5.3.3 the-lost-mine-of-phandalin",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl13-clock-four-targets-hash-readonly-v001.page.js",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

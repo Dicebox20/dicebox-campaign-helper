@@ -1,0 +1,37 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T02:47:58.3827099Z",
+    "workUnitId":  "clscale-n2-grid160-with-reference-token-verified-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "After independent N1 PASS checkpoint, completed separately guarded user-accepted N2 120 to160 pixel grid for Scene 4pc5akMBieHU7GvV with existing standard 1x1 Mr MeowMeow token. Original full Scene backup outputs/foreman-checkpoints/clscale-ref-n2-grid160-v001-before.json, old source SHA 80b12d293127eafac9f0385b0bfc8e884dacd9055ee95767e993e266a8a1607a. Candidate160 passes door minimum200px and two CL50 Region entries 430x760; 2x2 320 sampled Wall-free. Guarded no-write preview PASS, one authorized Assistant Gamemaster Scene.update grid.size160 autoReposition:false PASS, independent normalized entire Scene original SHA PASS. New source SHA c683e2ccffa4588a61f1df67d902cfa2de2f9d7f888f8ef990761ec7f2899f9d. Original N2 36 Walls,9 Regions,4 Lights, one token yrEySwR08mLg8Xll x2836 y1662 unchanged, map4320x2880 original. Sovereign ledger revision13 SHA ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4 unchanged after N2. CL90 v014 read-only PASS_WITH_KNOWN_BLOCKERS failures[]. The separate N1 150 update remains independently checkpointed PASS. No teleport installer, player tests or rail travel changes.",
+    "blocker":  "F1 320 blocked by arrival geometry, 240 requires 2x2 fail-closed transfer safeguards. F2 240 candidate needs fresh staged technical review. CL50 installers quarantined, no player canaries. Bridge previous receipt unresolved; do not resend blindly.",
+    "nextAction":  "Publish chronologically new cleanup + N1 grid150 + N2 grid160 facts in canonical SQLite seed fragment and reconcile Central Lodge roadmap/checklist. Verify regenerated SQLite and CL90 v014. Then separate read-only F2 240 candidate visual/source-arrival review; no F1 live change until 2x2 route clearance solved. Establish Windows XP startup sound file for future desktop ping if user intervention needed.",
+    "changedPaths":  [
+
+                     ],
+    "validation":  [
+
+                   ],
+    "runtimeTarget":  "",
+    "receiptRef":  "outputs\\foreman-checkpoints\\clscale-ref-n2-grid160-v001-before.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

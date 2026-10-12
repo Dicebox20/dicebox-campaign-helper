@@ -1,0 +1,42 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T02:36:56.5755759Z",
+    "workUnitId":  "clscale-meow-live-drift-audit-blocked-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Read-only Sir Toppleton MeowMeow scale-audit: actor 2g6CmPQqhSkRQQZm at 15 Central Lodge scenes plus F1 and F2; 1x1 scale1; standard grid dimensions remain B1 150 B2 240 C1 240 C2 160 M2 320 M3 240 U1 180 U2 160 N1 120 N2 120 N3 120 F1 120 F2 120. M1 observed grid320 with protected Ret unchanged. N1 grid150 and N2 grid160 visual previews from exact scene imagery suggest plausible scale; read-only Wall/Region 289-point samples show 1x1 and 2x2 nominal target footprints at both railway entrances have Wall-free samples. F1 prior grid320 fails full-footprint arrival because 840x520 arrival Region overlaps solid y2640 Wall for all 320-square candidate positions. F1 tentative240 fits 1x1 at 284/1369 sampled arrivals but not 2x2 at480; no permitted migration without token-size fail-closed and landing protections. F2 tentative240 looks plausible in corrected art overlay and arrival Region960x500 has 625/625 sampled 480-square placements clear of recorded Walls; gameplay untested. Source art F1/F2 native1800x1200 stretched to Scene4320x2880, corrected offline visual preview. Major blocker after actor placement: sovereign ledger rose from revision3 SHA e8485e53 to revision12 SHA 9336ee4b38457f27d34cc005f7d216300b38932048e224ec915770f161589906 and CL90 v013 now FAIL kernel/ledger, M2-U2 additive, E1 notice keys. New notes/observation-rolls associated with measuring actor and Water Control Wheel recovered true by actor at 2026-10-09T02:28:53Z, actor inventory gained copy. All current Scenes/Regions/Behaviors/Items counts remain21/202/119/33. No calibration Scene grid update or actor/ledger mutation was performed by Foreman in this audit.",
+    "blocker":  "Do not apply N1/N2/F1/F2 grid changes while live puzzle ledger revision12 diverges from locked revision3: measuring actor Region tokenEnter behaviors created notice state and item recovery. Need exact non-destructive reconciliation and explicit author approval before targeted rollback; preserve all real player state and never blindly reset. Do not place or move measuring actor through further Regions. F1 240 candidate unsafe for 2x2 arrivals without separate route guard, F2 visual sample not accepted gameplay. Prior Bridge Foreman continuation receipt msg-0c37711c-649a-40ec-b78a-8d3ca36759d4 remains unconsumed due Invalid operationId; do not replay or stage duplicate continuation.",
+    "nextAction":  "Preserve current live revision12 and actor inventory; compare all Meow-associated ledger notices and item grant against exact revision3 snapshot sources, identify legitimate versus measurement-generated records, propose strictly scoped cleanup with snapshots and require owner confirmation before any edit. After valid baseline reconciliation rerun CL90 and plan N1/N2 grid-only one-Scene guarded backups/previews separately with current 1x1 measuring tokens preserved, F1 240 candidate only after 2x2 arrival/route safety, F2 art/footprint and source review. Bridge receipt reconciliation must be repaired separately, no duplicate sends.",
+    "changedPaths":  [
+
+                     ],
+    "validation":  [
+                       "Read-only Foundry token census confirms 17 campaign reference tokens; original actor present",
+                       "N1/N2 dry-run 1x1 and 2x2 Region/Wall sample clearance without live writes",
+                       "F1 320 blocked by solid Wall y2640; F1 240 1x1 viable in samples, 2x2 blocked",
+                       "F2 240 offline visual candidate and 2x2 480 region clearance source checks",
+                       "Sovereign ledger revision12 hash9336ee4, Meow-specific notices and Water Control Wheel recovered true",
+                       "CL90 v013 FAIL baseline drift, no correction or rollback performed"
+                   ],
+    "runtimeTarget":  "Foundry 14.367/dnd5e 5.3.3/the-lost-mine-of-phandalin/Assistant Gamemaster",
+    "receiptRef":  "Foundry read-only Source; CL90 smoke and recent partner F1 review",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,19 @@
+﻿{
+    "title":  "DiceBox F1 Teleport Acceptance - Private Disposable",
+    "id":  "dicebox-f1-teleport-acceptance-v001",
+    "system":  "dnd5e",
+    "description":  "Disposable isolated test. Contains no real campaign scenes, users, or tokens.",
+    "coreVersion":  "14.367",
+    "systemVersion":  "5.3.3",
+    "compatibility":  {
+                          "minimum":  "14",
+                          "verified":  "14.367"
+                      },
+    "packs":  [
+
+              ],
+    "modules":  [
+
+                ],
+    "joinTheme":  "default"
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "workUnit": "central-lodge-cl50-r1-bidirectional-stage-v001",
+  "evidence": "local-staged-not-installed",
+  "routes": [
+    {
+      "file": "cl50-r1-n1-to-t1-source-v001.txt",
+      "sha256": "0d804443760c05410678b6e1a6149da0a214758a43e8efe4ef3144b6056d2fd7",
+      "bytes": 5114,
+      "key": "n1-to-t1",
+      "sourceScene": "MAbLfBqG7qIVVuLN",
+      "sourceRegion": "xsitdXO94BHJkYKX",
+      "sourceStable": "dbx:central-lodge:n1:region:n1-rail-tunnel-east",
+      "targetScene": "ImeIdHbYb6kZKAdt",
+      "targetRegion": "ewIAYppRLvgIV1b7",
+      "targetStable": "dbx:central-lodge:t1:region:mouth-a",
+      "binding": "BOUND_CL50_R1_N1_TO_T1",
+      "targetSceneStable": "dbx:central-lodge:t1",
+      "behaviorStable": "dbx:central-lodge:n1:behavior:r1-n1-east-to-t1-a",
+      "destinationRect": {
+        "x": 430,
+        "y": 1240,
+        "width": 380,
+        "height": 400
+      },
+      "directionText": "Walk east from the Lodge railway station into the Grotto railway tunnel.",
+      "yes": "Enter T1",
+      "dialogTitle": "Railway: Lodge Station to Tunnel"
+    },
+    {
+      "file": "cl50-r1-t1-to-n1-source-v001.txt",
+      "sha256": "a03569e8b8bfcc2c1b3fedc969e84b10a30b1186c680f9fa9aad46623a34124b",
+      "bytes": 5111,
+      "key": "t1-to-n1",
+      "sourceScene": "ImeIdHbYb6kZKAdt",
+      "sourceRegion": "ewIAYppRLvgIV1b7",
+      "sourceStable": "dbx:central-lodge:t1:region:mouth-a",
+      "targetScene": "MAbLfBqG7qIVVuLN",
+      "targetRegion": "xsitdXO94BHJkYKX",
+      "targetStable": "dbx:central-lodge:n1:region:n1-rail-tunnel-east",
+      "binding": "BOUND_CL50_R1_T1_TO_N1",
+      "targetSceneStable": "dbx:central-lodge:n1",
+      "behaviorStable": "dbx:central-lodge:t1:behavior:r1-t1-a-to-n1-east",
+      "destinationRect": {
+        "x": 3722,
+        "y": 1310,
+        "width": 136,
+        "height": 320
+      },
+      "directionText": "Leave the Grotto railway tunnel and return to the Lodge station.",
+      "yes": "Return to N1",
+      "dialogTitle": "Railway: Tunnel to Lodge Station"
+    }
+  ]
+}

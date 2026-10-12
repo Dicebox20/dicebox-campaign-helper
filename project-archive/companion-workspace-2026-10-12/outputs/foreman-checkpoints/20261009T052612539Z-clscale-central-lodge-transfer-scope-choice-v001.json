@@ -1,0 +1,46 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T05:26:12.5393264Z",
+    "workUnitId":  "clscale-central-lodge-transfer-scope-choice-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Owner requested moving/copying Scenes from production Tuesday Campaign to new dbx-test-world fixture while preserving wiring. Paused before import because source contains 183 root Scenes, only 21 known Central Lodge Scenes with 202 Regions and 119 Behaviors; other Scenes include Castle of Dreams and Feywild. Read-only filesystem audit confirmed source the-lost-mine-of-phandalin offline (no port30000 and no Foundry process using source dataPath); fixture dbx-test-world on port30005, existing Gamemaster no user password, core14.367 dnd5e5.3.3, fixture data nearly empty. Source has 60 installed modules, fixture only dicebox-campaign-helper and regionwright, so preserving ID wiring does not by itself supply all runtime dependencies. Staged exact cold source snapshot (515 files 468224752 bytes) under C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\source-cold-snapshot, separately complete by file count/bytes, no source edits and no target edits. Investigated staged native Foundry LevelDB using classic-level; root scene keys !scenes!sceneId enumerate 183 Scenes, composite LevelDB entries (23955) include related embedded data, so naive per-record copy would damage wiring. 22 broad scene flag/name matches include an unrelated L3-07 false positive; use authoritative 21 Central Lodge scene IDs from project references. Do NOT import entire 183-scene source or production users to fixture until owner clarifies scope. Production scene/ledger hashes unchanged by this turn; no live scene or firewall mutation, no bridge, no committed teleports.",
+    "blocker":  "Explicit scope ambiguity: does owner want only 21 Central Lodge Scenes and dependency graph or every 183 root Scenes from Tuesday Campaign? Fixture only has 2 installed modules versus 60 production and binds external interface on port30005, so after import must review runtime dependencies and ensure test world not inadvertently exposing production campaign data. Source snapshot only, no import executed.",
+    "nextAction":  "Ask owner: should migration include only all 21 Central Lodge Scenes or all 183 Scenes from Tuesday Campaign? Then build staged fixture import preserving root scene IDs and all composite embedded Region/Behavior keys, referenced actors/journals/items/macros, flags, packages and artwork; keep fixture Gamemaster user database. Independently verify closure and module dependencies before stopping fixture and applying import, then compare exact source and target record hashes, and do not activate risky transfers. Never touch production world or Bridge.",
+    "changedPaths":  [
+                         "work\\clscale-world-clone-audit-readonly-v001.ps1",
+                         "work\\clscale-db-driver-audit-v001.ps1",
+                         "work\\clscale-stage-source-snapshot-v001.ps1",
+                         "work\\clscale-inspect-source-snapshot-database-v001.mjs",
+                         "work\\clscale-central-lodge-scene-scope-v001.mjs",
+                         "work\\clscale-scene-root-audit-v001.mjs",
+                         "work\\clscale-central-lodge-migration-v001\\source-cold-snapshot"
+                     ],
+    "validation":  [
+                       "Source snapshot 515 exact source files, 468224752 matching bytes, source offline",
+                       "Source 183 root Scenes; 21 Central Lodge versus 162 unrelated adventures (broad flag matches require strict filtering)",
+                       "Fixture world core14.367 dnd5e5.3.3, data near empty, local GM account to preserve",
+                       "No production, fixture document, firewall or bridge change, no teleport"
+                   ],
+    "runtimeTarget":  "Source the-lost-mine-of-phandalin offline; fixture dbx-test-world port30005 running, import not started",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\source-cold-snapshot",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

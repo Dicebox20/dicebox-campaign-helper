@@ -1,0 +1,1 @@
+const fn=foundry.documents.modifyBatch;const src=String(fn);return{readOnly:true,isFunction:typeof fn==="function",length:src.length,source:src.slice(0,12000)};

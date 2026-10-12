@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T06:54:52.1525531Z",
+    "workUnitId":  "central-lodge-cl50-token-movein-source-contract-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "User requested actual next Foreman development turn instead of relay acknowledgement. Recovered exact local PARTIAL/STOP checkpoint, inspected authorized Bridge binding (prior msg-8825172c consumed and no debt), consulted canonical read-only KB decision and blocked R1 item. Conducted bounded official Foundry v14 movement/Region event research and created independent offline-only synthetic railway movement-intent contract tests. Confirmed Region TOKEN_MOVE_IN is movement event, while TOKEN_ENTER can be creation/boundary activation; built-in v14 TeleportTokenRegionBehaviorType declares tokenMoveIn; however movement includes x/y/elevation/size and thus event type alone does not prove planar player intent. TokenMovementOperation documents origin, destination, id, chain, finished Promise; documentation currently served for 14.368 so exact installed 14.367 runtime semantics still need safe independent verification. Node syntax passed, 24/24 offline contract cases passed, independent CL90 no-write Foundry regression passed with same world counts/ledger. No gameplay changes, no install, no blocked tool retry. Manual GM fallback retained until server lease/CAS and arrival safety demonstrated.",
+    "blocker":  "World settings, activeGM election and documented batch protocol do not themselves prove exclusive server-enforced executor lease or atomic occupancy predicate. R1 installer generation, earlier document write, targeted runtime teleport handler read, and independent KB verifier were tool-safety-blocked; all remain blocked and not retried. No real-player canary; v14 public docs currently describe 14.368 while target is 14.367.",
+    "nextAction":  "Recover this checkpoint and new pure Node 24-case movement contract fixture. Continue bounded source-only exploration of documented server-authoritative lease/transaction collision guarantees and Region-movement event fidelity for exact installed v14.367 using allowed nonblocked inspection paths. Do not install or attempt live teleport; preserve all story Region effects and CL93 lighting/VFX final. Retain GM manual travel fallback; fail closed if no proof. Reconcile Bridge obligation and request one native Codex continuation only after checkpoint, no duplicate.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl50-railway-token-movein-acceptance-offline-v001.cjs"
+                     ],
+    "validation":  [
+                       "SQLite read-only KB four route decision locked and R1 source item blocked",
+                       "Official v14 API REGION_EVENTS distinguishes TOKEN_ENTER created/changed vs TOKEN_MOVE_IN movement; builtin teleport behavior binds tokenMoveIn",
+                       "Official TokenMovementOperation contains origin/destination, ID, finish promise; no consent or GM lease guarantee",
+                       "Node --check cl50-railway-token-movein-acceptance-offline-v001.cjs PASS",
+                       "Node --test cl50-railway-token-movein-acceptance-offline-v001.cjs PASS 24 tests/0 failures, synthetic only",
+                       "CL90 independent exact Foundry v14.367 read-only smoke PASS_WITH_KNOWN_BLOCKERS, 21 Scenes/202 Regions/116 behaviors/33 Items, ledger rev1 and kernel hash unchanged",
+                       "No route handler, Token, Region, Scene, Macro, player, KB or installer mutation; all earlier refused operations preserved"
+                   ],
+    "runtimeTarget":  "Foundry 14.367 / dnd5e 5.3.3 / the-lost-mine-of-phandalin; Bridge ses-82468164-38fe-47f1-a198-eb13aee1cb04",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl50-railway-token-movein-acceptance-offline-v001.cjs",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

@@ -1,0 +1,1 @@
+const fs=require("node:fs"),A=Object.getPrototypeOf(async function(){}).constructor;for(const p of ["cl50-e1m1-guarded-preview-v001.page.js","cl50-e1m1-guarded-apply-v001.page.js","cl50-e1m1-final-verify-v001.page.js"]){try{new A("event",fs.readFileSync(p,"utf8"));console.log("SYNTAX_PASS",p)}catch(e){console.error("SYNTAX_FAIL",p,e.stack);process.exitCode=1}}

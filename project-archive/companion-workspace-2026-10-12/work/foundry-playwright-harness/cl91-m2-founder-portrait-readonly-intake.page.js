@@ -1,0 +1,3 @@
+const s=game.scenes.get("JZkxX6lUQe8Nc8xJ"),r=Array.from(s.regions).find(r=>r.behaviors.some(b=>b.id==="IdriZEGhxUY9whcV")),b=r?.behaviors.get("IdriZEGhxUY9whcV");
+const l=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{},items=["founders-signet","old-estate-survey"].map(k=>({key:k,ledger:l.items?.[k],matches:game.items.filter(i=>i.getFlag("world","dicebox")?.stableId==="dbx:central-lodge:item:"+k).map(i=>({id:i.id,name:i.name}))}));
+return{operation:"cl91.m2.founder-portrait.source-contract",noWrite:true,region:{id:r?.id,name:r?.name,stableId:r?.getFlag("world","dicebox")?.stableId,behaviors:r?.behaviors.size},behavior:{id:b?.id,name:b?.name,events:Array.from(b?.system?.events??[]),source:b?.system?.source??""},ledgerM2:l.puzzles?.m2,items};

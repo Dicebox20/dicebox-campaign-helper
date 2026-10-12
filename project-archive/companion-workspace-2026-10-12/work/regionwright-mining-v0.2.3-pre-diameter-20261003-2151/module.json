@@ -1,0 +1,44 @@
+{
+  "id": "regionwright-mining",
+  "title": "Mining Deposits & Extraction",
+  "description": "Region-driven mining with a three-strike pulsing-circle timing puzzle, pickaxe checks, GM-authoritative rewards, and shared five-attempt depletion.",
+  "authors": [
+    {
+      "name": "DiceBox / Regionwright"
+    }
+  ],
+  "version": "0.2.3",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.367"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.3.3",
+          "verified": "5.3.3"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "module.js"
+  ],
+  "styles": [
+    "styles/mining.css"
+  ],
+  "packs": [
+    {
+      "name": "mining-resources",
+      "label": "Mining Resources",
+      "path": "packs/mining-items.db",
+      "type": "Item"
+    }
+  ],
+  "license": "LICENSE",
+  "readme": "README.md",
+  "socket": true
+}

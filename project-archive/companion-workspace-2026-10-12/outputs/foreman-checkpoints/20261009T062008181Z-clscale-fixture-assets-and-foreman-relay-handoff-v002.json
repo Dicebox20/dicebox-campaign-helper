@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T06:20:08.1812727Z",
+    "workUnitId":  "clscale-fixture-assets-and-foreman-relay-handoff-v002",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Foreman Mode user-activated with exact partner ChatGPT conversation6ac80c3c-2cac-83e8-8d8a-7ed65a84e135 and Codex project01a02313-4304-77f2-9a7c-1cee833d9832 thread01a11e4b-5d11-7302-aa23-2bc681da307f. 15-minute bounded turn. Bridge native MESSAGE_ACTION msg-1d7d46b5-4103-4ef7-957f-63cc82e1b30d staged to Codex; delivery FAILED from missing waitForNativeIdle import. One-line source fix added, focused8/8 full135/135 tests PASS but active plugin instance not reloaded; do not retry on uncertain receipt. Local Foreman checkpoint clscale-fixture-and-bridge-v001 action CONTINUE saved. All 21 Central Lodge scenes/202 Regions/119 executeScript behavior records and 6 Actor documents preserved in isolated dbx-test-world. Independently statically parsed all 119 Region scripts with no syntax failures; 4 contain teleport references,22 document-write references,10 dialogs, no missing imported Scene links. Discovered 34 missing Actor/token image references, identified 12 unique global Data files; copied only those 12 from source global data into fixture paths (3,846,041 bytes) with source SHA-256 readback. Repeat audit now reports 34/34 image references PRESENT, 0 missing. All earlier 28 world art alias files verified. Fixture TCP30005 remains STOPPED, no production changes, no Windows Firewall edits, no Region scripts executed.",
+    "blocker":  "Native Codex relay is NOT confirmed delivered. Current Bridge MCP process still old code; user must refresh/reconnect plugin or a separately validated safe restart before retrying only after exact message-journal reconciliation. Foundry --hostname does NOT restrict listening interfaces, fixture GM login blank; no safe private runtime gate yet. Production action and teleport gates remain blocked.",
+    "nextAction":  "On next bounded turn, verify Codex exact handoff receipt, plugin process nonce/reload, and reconcile existing message before any native resend. Resume bounded offline module/Scene integrity work; before launching fixture find proven private binding or request authorization for protected GM login, without modifying Windows Firewall. Only after safe identity and runtime gates perform read-only module/Region validation. Keep all live scene/ledger/actor state untouched and no committed teleports.",
+    "changedPaths":  [
+                         "C:\\Users\\rujie\\Downloads\\dicebox-bridge-repo\\server\\mcp.mjs",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-region-script-safety-scan-v004.json",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\actor-token-image-copy-receipt-v001.json",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\actor-token-images-offline-audit-v002.json"
+                     ],
+    "validation":  [
+                       "Bridge test full 135/135 PASS, active process has not reloaded, one native send failed before delivery and journal preserved",
+                       "21 Scenes 202 Regions 119 script behaviors: all 119 scripts statically parse, no execute",
+                       "12 token and actor image files copied with SHA-256 readback and 34/34 references now PRESENT",
+                       "Fixture TCP30005 STOPPED, no production world/actor/ledger, firewall or Bridge infrastructure changes beyond one-line source import"
+                   ],
+    "runtimeTarget":  "Fixture dbx-test-world port30005 STOPPED; production the-lost-mine-of-phandalin untouched; Bridge v0.1.11 current plugin not refreshed",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\actor-token-image-copy-receipt-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

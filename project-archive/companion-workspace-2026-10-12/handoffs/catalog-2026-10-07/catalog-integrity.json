@@ -1,0 +1,51 @@
+{
+  "file_manifest": {
+    "bytes": 750707,
+    "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\handoffs\\catalog-2026-10-07\\project-file-metadata-sha256.json",
+    "sha256": "9836256421d122946373286981dcc5d06609ec0550493754098a0c7b077da0ec"
+  },
+  "file_read_errors": [],
+  "files": {
+    "files_hashed": 2267,
+    "foreman_project_files": 2186,
+    "hashed_bytes": 181266309,
+    "original_lodge_source_files": 81
+  },
+  "generated_utc": "2026-10-08T04:09:28.592833+00:00",
+  "kb_snapshot": {
+    "bytes": 2089815,
+    "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\handoffs\\catalog-2026-10-07\\all-kb-data-and-metadata.json",
+    "sha256": "9d264663b94e24472896cfb153a2c585ac8861356c930498bd6efa7b122c23de"
+  },
+  "kb_sqlite_integrity": "ok",
+  "kb_table_counts": {
+    "kb_decisions": 468,
+    "kb_facts": 1170,
+    "kb_metadata": 154,
+    "kb_milestones": 19,
+    "kb_open_items": 540,
+    "kb_relationships": 23,
+    "kb_research_subjects": 40,
+    "kb_sources": 395,
+    "kb_tools": 7,
+    "kb_trials": 201
+  },
+  "latest_handoff": {
+    "bytes": 19937,
+    "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\handoffs\\FOREMAN-NEXT-CHAT-COMPLETE-CATALOG-2026-10-07.md",
+    "sha256": "15f504fb4097c8c6161df082312179179c17ad8182ef6a4f5a9ed44c185c4293"
+  },
+  "schema_version": "1.0.0",
+  "self_consistency_checks": {
+    "all_fact_rows_exported": true,
+    "all_source_rows_exported": true,
+    "canonical_table_count": 10,
+    "no_orphaned_export": true
+  },
+  "sqlite_snapshot": {
+    "bytes": 3391488,
+    "path": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper\\database\\dicebox_campaign_helper_knowledge.sqlite",
+    "sha256": "17471914adc2370fc1c86d5985c2a94a75c2b439e5b9cde5971958cfc8832d81"
+  },
+  "status": "PASS"
+}

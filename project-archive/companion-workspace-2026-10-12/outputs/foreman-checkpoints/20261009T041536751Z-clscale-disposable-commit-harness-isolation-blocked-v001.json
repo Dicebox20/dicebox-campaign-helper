@@ -1,0 +1,52 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T04:15:36.7515358Z",
+    "workUnitId":  "clscale-disposable-commit-harness-isolation-blocked-v001",
+    "status":  "BLOCKED",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Designed a separate Foundry v14.367 / dnd5e 5.3.3 disposable committed T3-to-F1 teleport acceptance harness. Live Foundry process pid22284 listens on port30000, dataPath C:\\Users\\rujie\\AppData\\Local\\FoundryVTT; all existing test worlds share it and are prohibited. New scratch root work\\foundry-teleport-sandbox-v001\\userdata, unique world dicebox-f1-teleport-acceptance-v001 and proposed port30010, scratch Config/options.json upnp false; only synthetic world manifest and no license/admin secrets copied. Guard clscale-isolated-foundry-server-gate-v001.ps1 verifies root not production or reparse, exactly one scratch world, local private complete dnd5e system, zero installed modules, sandbox options/admin key, unique server PID and command line port/world/dataRoot/noupnp, inbound Windows firewall block proof; exits fail-closed on any mismatch. Harness clscale-disposable-teleport-acceptance-v001.mjs requires guard, exact localhost 127.0.0.1:30010/game, world id, GM non-production ID, no player accounts, zero Scenes/Actors/modules, separate absent authorizing file; --preflight read-only and --commit only after explicit scratch authorization. Intended commit tests only synthetic source and destination Scenes, no real campaign scene, Region at 2390,1860,280x280 grid240, 1x1 Token, core ephemeral 2410,1880 then core teleportToken, checks batch result, source deletion, destination creation, exact coordinates and create/delete hooks, stores evidence receipt and refuses blind retry. Node isolation fixture tests PASS 27/27. Attempt to copy live dnd5e into scratch stopped on active LevelDB LOCK after269 of1458 files; stopped and quarantined partial at scratch/quarantine/incomplete-live-system-copy-20261009-v001, no delete or forcing live lock; scratch Data/systems/dnd5e now absent. Official clean system release-5.3.3 from foundryvtt/dnd5e needed. Scratch not started, no firewall changes or license copy, no authorization marker and no committed test attempted. Live read-only CL90 v014 PASS_WITH_KNOWN_BLOCKERS zero failures, counts21 Scenes/202 Regions/119 Behaviors/33 Items, ledger rev13 SHAec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4 unchanged. Independent exact F1 Scene SHA readback DRIFT from prior85ec24e6... to eff632c06bb6e3281c2116e3959af3171ac95dc16ddab3a2ddd7fc23e316cd03, isolated exactly F1 Region uJsKPrR5yEXhhLZ3 System Infernal Light rectangle x141-\u003e-3 and y-7-\u003e-4; no Region behaviors. T3 and F2 stored SHAs unchanged, F1 grid120, Meow and Ret token coordinates preserved. No Bridge calls, railway installs, player test or live Foundry write.",
+    "blocker":  "NOT READY FOR COMMITTED TEST: isolated scratch Data/systems/dnd5e clean 5.3.3 package absent after locked source copy quarantined; Config/admin.txt absent; no test server listening on30010; no approved external Windows firewall blocking rule; isolated test login and separate explicit commit authorization absent. Guard returns safeToCommit false and Node --preflight BLOCKED_FAIL_CLOSED; these are intended protective failures. Independently detected F1 live source hash drift in system Infernal Light Region rect, so staged T3/F1 exact-hash migration needs new review and must not be replayed. Only same hash T3 and F2; ledger unchanged. Real committed core test and future migration not approved. Do not retry locked package copy or touch live LevelDB.",
+    "nextAction":  "Install clean official dnd5e release-5.3.3 solely into scratch userData using separate package installer/archive after verifying checksum; never copy live locked compendium data. Establish scratch-only admin/GM login without sharing secrets, configure local-only firewall protection and separate Foundry server using --dataPath scratch, --port=30010, --world dicebox-f1-teleport-acceptance-v001, --noupnp, --noipdiscovery. Run independent isolation PowerShell guard and Node --preflight, prove 100% safe identity. Keep commit authorization marker absent until separately approved. Reconcile unexplained F1 infernal-light Region x/y drift with new source backup without reverting. Only if the scratch is isolated and user-approved run one committed synthetic-token test and inspect hooks/persistence; preserve disposable receipt. F1 production remains grid120 and T3 handler, sovereign ledger, Meow, Ret and CL50 unchanged.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\clscale-disposable-foundry-inventory-readonly-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-disposable-world-manifests-readonly-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-isolated-foundry-server-gate-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-disposable-teleport-acceptance-v001.mjs",
+                         "work\\foundry-playwright-harness\\clscale-disposable-isolation-fixtures-v001.test.mjs",
+                         "work\\foundry-playwright-harness\\clscale-provision-disposable-world-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-quarantine-incomplete-scratch-system-v001.ps1",
+                         "work\\foundry-playwright-harness\\clscale-f1-source-drift-readonly-v001.mjs",
+                         "work\\foundry-teleport-sandbox-v001\\userdata\\Data\\worlds\\dicebox-f1-teleport-acceptance-v001\\world.json",
+                         "work\\foundry-teleport-sandbox-v001\\userdata\\Config\\options.json"
+                     ],
+    "validation":  [
+                       "Node isolated identity and URL boundary fixtures 27/27 PASS",
+                       "Read-only Foundry v14 public source and installation docs: separate private server must have separate dataPath and port, second personal-only server allowed under license if no user access",
+                       "Sandbox PowerShell guard safeToCommit false with 4 named blockers (system/admin/listener/firewall)",
+                       "Node --preflight BLOCKED_FAIL_CLOSED, attemptedCommit false; no server launch or authorization marker",
+                       "Scratch partial 269-file dnd5e copy safely quarantined outside userData, no live LOCK touched",
+                       "Read-only F1 source drift 2 coordinate fields in system Infernal Light Region; freeze candidate migration",
+                       "CL90 v014 zero unexpected failures, ledger revision13 unchanged, T3/F2 scene fingerprints unchanged"
+                   ],
+    "runtimeTarget":  "Live Foundry v14.367 dnd5e 5.3.3 at port30000 unchanged; disposable proposed port30010 NOT RUNNING",
+    "receiptRef":  "work\\foundry-playwright-harness\\clscale-disposable-teleport-acceptance-v001.mjs",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

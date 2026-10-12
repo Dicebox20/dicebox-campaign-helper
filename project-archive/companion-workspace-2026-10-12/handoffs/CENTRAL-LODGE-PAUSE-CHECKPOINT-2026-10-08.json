@@ -1,0 +1,54 @@
+{
+  "checkpoint": "2026-10-08-central-lodge-pause",
+  "project": "DiceBox Campaign Helper",
+  "workspace": "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+  "runtime": {
+    "foundry": "14.367",
+    "system": "dnd5e 5.3.3",
+    "world": "the-lost-mine-of-phandalin"
+  },
+  "baseline": {
+    "scenes": 21,
+    "regions": 202,
+    "behaviors": 51,
+    "items": 33
+  },
+  "kernel": {
+    "id": "FHQiFYx6OntZVo9d",
+    "sha256": "6264c467211d4f5c94cfaaa9437eae88582599061b9d8a4951391830a3e8f814"
+  },
+  "ledger": {
+    "id": "xhlXv6CCH34HVga3",
+    "revision": 0,
+    "notices": {}
+  },
+  "phase": {
+    "completeThrough": "CL-15",
+    "next": "CL-16 M3 Read-Only Preflight"
+  },
+  "e3": {
+    "sceneId": "iqfCcDpEer4pwrJj",
+    "regions": 12,
+    "behaviors": 8,
+    "geometrySha256": "d409885c23e5777808c5bb0964ccb3b855b2957a5e750f2b18d2a593d4c13a5d",
+    "finalVerify": "PASS"
+  },
+  "b1": {
+    "sceneId": "0CSBwzcszPKyaB8u",
+    "regions": 11,
+    "behaviors": 4,
+    "waterwheelRegionId": "xIFjdjHmF2qn5Nij",
+    "waterwheelBehaviorId": "jL7OU30qz2hVwLI2",
+    "metadataCleanup": "PASS"
+  },
+  "automation": {
+    "executor": "Assistant Gamemaster",
+    "harness": "work\\foundry-playwright-harness",
+    "authorized": true
+  },
+  "safety": {
+    "outcomeUnknownWrite": false,
+    "m3Modified": false
+  },
+  "nextAction": "Query KB for M3 via local Python helper, inspect live M3 read-only, then build CL-16 PREVIEW."
+}

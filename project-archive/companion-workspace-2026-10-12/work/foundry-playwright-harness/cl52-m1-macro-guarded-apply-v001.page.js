@@ -1,0 +1,38 @@
+const SRC="// CL-52 M1: Original distant-footsteps one-shot; explicit primary-GM invocation only.\n// No RegionBehavior trigger, no day/night state, no player forced movement.\nconst __primary = game.users.filter(u => u.active && u.isGM).sort((a,b) => a.id.localeCompare(b.id))[0];\nif (!game.user?.isGM || !__primary || game.user.id !== __primary.id) return {status:\"IGNORED_NON_PRIMARY_GM\"};\nconst __scene = game.scenes.get(\"U8S5ZrTjaPIkTUIL\");\nif (!__scene) return {status:\"BLOCKED_SCENE_MISSING\"};\nif (canvas.scene?.id !== __scene.id) return {status:\"BLOCKED_GM_NOT_VIEWING_M1\"};\nconst __consumed = () => __scene.getFlag(\"world\",\"dicebox\")?.cl52?.m1DistantFootstepsPlayed === true;\nif (__consumed()) return {status:\"ALREADY_PLAYED\"};\nconst __audience = () => game.users.filter(u => u.active && !u.isGM && u.viewedScene === __scene.id).map(u=>u.id);\nif (__audience().length === 0) return {status:\"BLOCKED_NO_PLAYERS_VIEWING_M1\"};\nconst __lock = globalThis.__diceboxCl52M1FootstepsLock ??= {pending:false};\nif (__lock.pending) return {status:\"BUSY\"};\n__lock.pending=true;\ntry {\n  const __ok = await foundry.applications.api.DialogV2.confirm({\n    window:{title:\"Central Lodge M1 — Distant Footsteps\"},\n    content:\"<p>Play a brief, restrained footstep and floorboard-creak cue to players currently viewing M1?</p><p>This consumes the cue for this campaign. It does not alter lights, puzzle state, or token positions.</p>\",\n    yes:{label:\"Play Footsteps Once\"},no:{label:\"Cancel\"},modal:true,rejectClose:false\n  });\n  if (!__ok) return {status:\"CANCELLED\"};\n  if (__consumed() || canvas.scene?.id !== __scene.id) return {status:\"BLOCKED_STATE_CHANGED\"};\n  const __recipients=__audience();\n  if (__recipients.length===0) return {status:\"BLOCKED_AUDIENCE_CHANGED\"};\n  await __scene.update({\"flags.world.dicebox.cl52.m1DistantFootstepsPlayed\":true});\n  // Record first. Once broadcast starts, playback success cannot be atomically rolled back across clients.\n  try {\n    await foundry.audio.AudioHelper.play({\n      src:\"worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52/m1-distant-footsteps-v001.wav\",\n      volume:0.32,loop:false,channel:\"interface\",autoplay:true\n    },{recipients:__recipients});\n  } catch(__audioError) {\n    console.error(\"[DiceBox CL-52 M1] Audio playback outcome uncertain; cue remains consumed to prevent duplicate broadcasts.\",__audioError);\n    ui.notifications?.warn(\"Footsteps playback outcome uncertain. Cue remains consumed; consult GM before resetting.\");\n    return {status:\"PLAYBACK_OUTCOME_UNKNOWN_CONSUMED\"};\n  }\n  return {status:\"PASS\",sceneId:__scene.id,recipientsCount:__recipients.length,oneShot:true};\n} catch(__error) {\n  console.error(\"[DiceBox CL-52 M1] No confirmed playback.\",__error);\n  ui.notifications?.error(\"M1 Footsteps cue did not complete. Review Scene flags before retry.\");\n  return {status:\"FAILED_NO_CONFIRMED_PLAYBACK\"};\n} finally {\n  __lock.pending=false;\n}",stable="dbx:central-lodge:cl52:macro:m1-distant-footsteps-one-shot";
+const sha=async s=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(s??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+const same=game.macros.filter(m=>m.getFlag("world","dicebox")?.stableId===stable),byName=game.macros.filter(m=>m.name==="DiceBox CL-52 — M1 Distant Footsteps (GM One-Shot)");
+const model=new Macro({name:"DiceBox CL-52 — M1 Distant Footsteps (GM One-Shot)",type:"script",command:SRC,ownership:{default:0,JESWV6CcU7m07VW6:3,pnTxw7VYpYR4IKWE:3}});
+const scene=game.scenes.get("U8S5ZrTjaPIkTUIL"),cues=scene?.getFlag("world","dicebox")?.cl52??null;
+const errors=[];
+try{new(Object.getPrototypeOf(async function(){}).constructor)("event",SRC)}catch(e){errors.push(String(e))}
+if(same.length||byName.length)errors.push("Macro collision");
+if(cues!==null)errors.push("M1 cue state already exists, inspect");
+if(game.macros.size!==132)errors.push("Global Macro roster drift");
+if(await sha(SRC)!=="4ff5a82aa5d57f8831f47063fab893eaea4d315942d59b9fbda99a0a1a9a42b6")errors.push("Macro source hash drift");
+
+if(errors.length)return{operation:"cl52.m1.audio-macro.guarded-apply.v001",status:"BLOCKED",noWrite:true,errors};
+const sceneState=scene.getFlag("world","dicebox")?.cl52??null,ledgerBefore=JSON.stringify(game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{});
+const asset="worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52/m1-distant-footsteps-v001.wav";
+const files=await FilePicker.browse("data","worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52");
+if((files?.files??[]).filter(f=>f===asset).length!==1)return{operation:"cl52.m1.audio-macro.guarded-apply.v001",status:"BLOCKED_ASSET_MISSING"};
+const hdr=await fetch(asset,{method:"HEAD"});
+if(!hdr.ok||Number(hdr.headers.get("content-length"))!==1056044)return{operation:"cl52.m1.audio-macro.guarded-apply.v001",status:"BLOCKED_ASSET_HTTP"};
+let totalR=0,totalB=0;for(const id of ["0CSBwzcszPKyaB8u","5K1uASAARnX8aZhP","EDdktL7VUihbpKe9","UNySMm7YkyYfh41x","Zq8iXByDVhHRbA7w","sI4YVZZChgey1qNi","iqfCcDpEer4pwrJj","DLcheEi6e5OHOYmU","U8S5ZrTjaPIkTUIL","JZkxX6lUQe8Nc8xJ","LXTA8mx1rJ2L6e2J","MAbLfBqG7qIVVuLN","4pc5akMBieHU7GvV","pHQvDUDlyWZFuNrX","if9iWDRjSwI87EeX","PVf6Gbrv9HbB88uZ","La9krMOMBhAhDLi6","ImeIdHbYb6kZKAdt","ez9MSQ8QIO4cW6zo","aIKQmFiuXWipEdyb","HWitOe1wSid7MZ1y"]){const sc=game.scenes.get(id);totalR+=sc.regions.size;totalB+=Array.from(sc.regions).reduce((n,r)=>n+r.behaviors.size,0);}
+if(totalR!==202||totalB!==116||sceneState!==null||!game.user?.isGM||game.user.id!=="pnTxw7VYpYR4IKWE")return{operation:"cl52.m1.audio-macro.guarded-apply.v001",status:"BLOCKED_RUNTIME_BASELINE"};
+let made;
+try{
+ made=await Macro.create({
+  name:"DiceBox CL-52 — M1 Distant Footsteps (GM One-Shot)",
+  type:"script",command:SRC,img:"icons/svg/sound.svg",
+  ownership:{default:0,JESWV6CcU7m07VW6:3,pnTxw7VYpYR4IKWE:3},
+  flags:{world:{dicebox:{schemaVersion:"1.0.0",campaignId:"central-lodge",managed:true,stableId:stable,sceneKey:"M1",documentRole:"gm-manual-horror-audio",installer:"cl52-m1-audio-macro-apply-v001",sourceHash:"4ff5a82aa5d57f8831f47063fab893eaea4d315942d59b9fbda99a0a1a9a42b6",assetPath:asset,assetHash:"3e29666ae6a5a5819fcb7d2f58f5060c43cd18d23af0123918c758bb340ee3b5",oneShotFlagPath:"flags.world.dicebox.cl52.m1DistantFootstepsPlayed"}}}
+ });
+ const installed=game.macros.get(made?.id),f=installed?.getFlag("world","dicebox")??{};
+ if(!installed||await sha(installed.command)!=="4ff5a82aa5d57f8831f47063fab893eaea4d315942d59b9fbda99a0a1a9a42b6"||f.stableId!==stable||f.assetPath!==asset||installed.ownership?.default!==0||installed.ownership?.JESWV6CcU7m07VW6!==3||installed.ownership?.pnTxw7VYpYR4IKWE!==3)throw Error("Post macro contract drift");
+ if(game.macros.size!==133||scene.getFlag("world","dicebox")?.cl52!==undefined||JSON.stringify(game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{})!==ledgerBefore)throw Error("Macro count or gameplay state drift");
+ return{operation:"cl52.m1.audio-macro.guarded-apply.v001",status:"PASS",noPlayback:true,macroId:installed.id,sourceHash:await sha(installed.command),assetPath:asset,macroCount:game.macros.size,sceneCueAlreadyConsumed:false,finalVerifyRequired:true};
+}catch(e){
+ let restore="NOT_CREATED";
+ if(made?.id){try{await Macro.deleteDocuments([made.id]);restore="DELETED_MACRO"}catch(err){restore="ROLLBACK_FAILED:"+String(err)}}
+ return{operation:"cl52.m1.audio-macro.guarded-apply.v001",status:restore==="ROLLBACK_FAILED"?"OUTCOME_UNKNOWN_ROLLBACK_INCOMPLETE":"FAIL_ROLLBACK_COMPLETE",error:String(e),rollback:restore};
+}

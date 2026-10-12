@@ -1,0 +1,7 @@
+const fs=require("node:fs");const s=fs.readFileSync("cl33-migration-preview-v001.page.js","utf8"),idx=s.lastIndexOf("\nreturn{operation:OPERATION");if(idx<0)throw Error("preview layout drift");fs.writeFileSync("cl33-synthetic-model-v001.page.js",s.slice(0,idx)+`
+const x=SPECS[0],r=game.scenes.get(x.sceneId).regions.get(x.regionId),source=x.source;
+const data={name:x.behaviorName,type:"executeScript",disabled:false,system:{events:x.events,source},flags:{world:{dicebox:{schemaVersion:"1.0.0",campaignId:"central-lodge",managed:true,installer:"central-lodge-cl33-canonical-migration-apply-v001",stableId:x.stableId,sourceHash:await sha(source),sceneKey:"T1",regionStableId:r.getFlag("world","dicebox")?.stableId,sourceType:"GM-adjudicated-canonical-pickup"}}}};
+let constructed,error;
+try{const c=new (CONFIG.RegionBehavior.documentClass)(data,{parent:r});constructed={sourceHash:await sha(c.system?.source??""),sourceEqual:c.system?.source===source,stableId:c.getFlag("world","dicebox")?.stableId,events:Array.from(c.system?.events??[]),isEmbedded:c.isEmbedded,hasSceneParent:!!c.region};}catch(e){error=String(e);}
+return{operation:"cl33-synthetic-behavior-constructor",noWrite:true,previewErrors:failures,dataHash:await sha(source),constructed,error};
+`);

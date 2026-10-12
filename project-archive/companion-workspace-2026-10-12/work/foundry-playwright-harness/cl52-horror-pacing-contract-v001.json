@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "1.0.0",
+  "operation": "central-lodge.cl52.horror-pacing.source-contract.v001",
+  "state": "CANDIDATE_SOURCE_INTAKE_NO_LIVE_IMPLEMENTATION",
+  "evidenceLayer": "local source + read-only Foundry",
+  "world": "the-lost-mine-of-phandalin",
+  "sourceAuthority": [
+    "work/lodge-campaign/AUTOMATION-RULES.md",
+    "work/lodge-campaign/scenes/E2-rear-service-yard/prepare/PREPARE-v002.md",
+    "work/lodge-campaign/scenes/E3-formal-garden-greenhouse/prepare/PREPARE-v001.md",
+    "work/lodge-campaign/scenes/E4-family-graveyard-crypt/prepare/PREPARE-v001.md",
+    "work/lodge-campaign/scenes/M1-entrance-hall-great-room/prepare/PREPARE-v001.md",
+    "work/lodge-campaign/scenes/M2-study-parlor-formal-rooms/prepare/PREPARE-v001.md",
+    "work/lodge-campaign/scenes/M3-kitchen-service-wing/prepare/PREPARE-v001.md",
+    "work/lodge-campaign/scenes/U1-family-guest-rooms/prepare/PREPARE-v001.md"
+  ],
+  "sceneCategories": {
+    "ABANDONED": [
+      "E1",
+      "E2"
+    ],
+    "HAUNTED": [
+      "E3",
+      "E4",
+      "M1",
+      "M2"
+    ],
+    "HAUNTED_SACRIFICIAL_APPROACH": [
+      "M3"
+    ],
+    "HAUNTED_VICTIM_HISTORY": [
+      "U1",
+      "U2"
+    ],
+    "SACRIFICIAL": [
+      "B1",
+      "B2"
+    ],
+    "ACTIVE_CULT": [
+      "C1",
+      "C2"
+    ],
+    "RAILWAY": [
+      "N1",
+      "N2",
+      "N3",
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "INFERNAL": [
+      "F1",
+      "F2"
+    ]
+  },
+  "globalHardRules": {
+    "duplicateNightScenesForbidden": true,
+    "globalDayNightTrigger": "UNRESOLVED_GM_APPROVAL",
+    "timeOfDayDefault": "day",
+    "nightEventDrivenOnly": true,
+    "noRealtimeSunset": true,
+    "noStrobe": true,
+    "noRapidFlicker": true,
+    "noBakedApparitions": true,
+    "noAutomaticMajorE2Ghost": true,
+    "GMAuthoredCueGateRequired": true,
+    "oneShotStageRequiresPersistentFlag": true,
+    "neverChangeExistingPuzzleFlags": true,
+    "playerControlMustNotBeRemoved": true,
+    "lightingByOwner": true,
+    "environmentalCueMayNotCompleteQuest": true
+  },
+  "candidateCues": [
+    {
+      "key": "e2-recent-use",
+      "scene": "E2",
+      "kind": "environmental",
+      "source": "E2 PREPARE lines 120-129",
+      "intent": "recent-use evidence or isolated movement implication",
+      "trigger": "manual_story_selection",
+      "allowed": true,
+      "sourceRegionId": null
+    },
+    {
+      "key": "e3-moving-reflection",
+      "scene": "E3",
+      "kind": "peripheral-visual",
+      "source": "E3 PREPARE lines 96-98",
+      "intent": "uncanny reflection or brief transient manifestation",
+      "trigger": "GM_approved_story_state",
+      "allowed": true,
+      "sourceRegionId": null
+    },
+    {
+      "key": "e4-child-apparition",
+      "scene": "E4",
+      "kind": "one-shot-visual",
+      "source": "E4 PREPARE lines 147-157",
+      "intent": "brief childlike apparition after child-burial clue is understood",
+      "trigger": "child_burial_clue_understood",
+      "allowed": true,
+      "sourceRegionId": "BjAgwMeaS9UUi7er"
+    },
+    {
+      "key": "m1-distant-footstep",
+      "scene": "M1",
+      "kind": "one-shot-audio",
+      "source": "M1 PREPARE lines 139-149",
+      "intent": "brief footsteps or floorboard response",
+      "trigger": "GM_approved_story_state",
+      "allowed": true,
+      "sourceRegionId": null
+    },
+    {
+      "key": "m1-clock-chime",
+      "scene": "M1",
+      "kind": "conditional-audio",
+      "source": "M1 PREPARE lines 139-149",
+      "intent": "clock chime only when story and mechanism state permit",
+      "trigger": "M1_clock_mechanism_authorized",
+      "allowed": true,
+      "sourceRegionId": "3tIrR12uv8ppFkOb"
+    },
+    {
+      "key": "m2-piano-sound",
+      "scene": "M2",
+      "kind": "one-shot-audio",
+      "source": "M2 PREPARE lines 137-139",
+      "intent": "brief player-piano sound as haunted response",
+      "trigger": "GM_approved_story_state",
+      "allowed": true,
+      "sourceRegionId": null
+    },
+    {
+      "key": "m3-bell-phantom",
+      "scene": "M3",
+      "kind": "one-shot-audio",
+      "source": "M3 PREPARE lines 119-129",
+      "intent": "brief bell from inactive line or metallic response after restoration",
+      "trigger": "bell_line_state_and_GM",
+      "allowed": true,
+      "sourceRegionId": "we3V3jbMDvVDaO4U"
+    },
+    {
+      "key": "u1-child-silhouette",
+      "scene": "U1",
+      "kind": "brief-visual",
+      "source": "U1 PREPARE lines 116-126",
+      "intent": "brief corridor silhouette or empty room sound",
+      "trigger": "GM_approved_story_state",
+      "allowed": true,
+      "sourceRegionId": null
+    },
+    {
+      "key": "t1-passing-car",
+      "scene": "T1",
+      "kind": "optional-scare",
+      "source": "T1 Region runtime role",
+      "intent": "optional escalation from abandoned to haunted; never automatic on entry",
+      "trigger": "GM_opt_in_and_pacing_state",
+      "allowed": true,
+      "sourceRegionId": "DO8VWcuqRKGJGCs8"
+    },
+    {
+      "key": "t1-drainage-ambience",
+      "scene": "T1",
+      "kind": "ambient-audio",
+      "source": "T1 Region runtime role",
+      "intent": "subterranean tension with subtle drainage sound",
+      "trigger": "GM_approved_story_state",
+      "allowed": true,
+      "sourceRegionId": "5mn1ZJx2DWCFTDoa"
+    },
+    {
+      "key": "t2-passing-car",
+      "scene": "T2",
+      "kind": "optional-scare",
+      "source": "T2 Region runtime role",
+      "intent": "passing-car scare placeholder; no configured timing or transport",
+      "trigger": "GM_opt_in_and_pacing_state",
+      "allowed": true,
+      "sourceRegionId": "dCgvAayMrKnIetOh"
+    },
+    {
+      "key": "t3-ancient-extension",
+      "scene": "T3",
+      "kind": "optional-scare",
+      "source": "T3 Region runtime role",
+      "intent": "ancient extension horror beat, unscripted",
+      "trigger": "GM_opt_in_and_pacing_state",
+      "allowed": true,
+      "sourceRegionId": "mAkGjkyDrt7ulw7K"
+    }
+  ],
+  "deferredAuthorizations": [
+    "One-way event-driven night trigger unresolved",
+    "M1 exact clock setting unresolved",
+    "N3 t3BranchUnlocked prerequisites unresolved",
+    "Sound and apparition assets not yet source-verified",
+    "No combat or forced movement added by ambience",
+    "One-shot flag storage has not been approved"
+  ]
+}

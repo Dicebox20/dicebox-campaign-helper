@@ -1,0 +1,16 @@
+{
+  "assetId": "dbx:central-lodge:cl52:audio:m1-distant-footsteps-v001",
+  "createdBy": "original procedural synthesis, no third-party samples",
+  "intendedScene": "M1",
+  "cue": "GM-triggered distant footsteps",
+  "path": "assets\\cl52\\audio\\m1-distant-footsteps-v001.wav",
+  "foundryAssetPath": "worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52/m1-distant-footsteps-v001.wav",
+  "sha256": "3e29666ae6a5a5819fcb7d2f58f5060c43cd18d23af0123918c758bb340ee3b5",
+  "bytes": 1056044,
+  "sampleRate": 48000,
+  "channels": 2,
+  "seconds": 5.5,
+  "format": "WAV PCM16 stereo",
+  "peakTarget": 0.36,
+  "notes": "Subtle floorboard steps and creaks; no sharp strobe-like beats; playback should be moderate volume and manually GM-authorized."
+}

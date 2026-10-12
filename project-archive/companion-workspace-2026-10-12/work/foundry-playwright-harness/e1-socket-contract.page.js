@@ -1,0 +1,1 @@
+const k=game.macros.get("FHQiFYx6OntZVo9d");const src=String(k?.command??"");const i=src.indexOf("const runSocket");const j=src.indexOf("const runGate",i+1);return{operation:"central-lodge.cl21.socket-contract",status:"PASS",noWrite:true,source:i>=0&&j>i?src.slice(i,j):null};

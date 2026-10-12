@@ -1,0 +1,38 @@
+const SRC="// CL-52 M2: Original haunted-piano one-shot; explicit primary-GM invocation only.\n// No RegionBehavior trigger, no day/night state, no player forced movement.\nconst __primary = game.users.filter(u => u.active && u.isGM).sort((a,b) => a.id.localeCompare(b.id))[0];\nif (!game.user?.isGM || !__primary || game.user.id !== __primary.id) return {status:\"IGNORED_NON_PRIMARY_GM\"};\nconst __scene = game.scenes.get(\"JZkxX6lUQe8Nc8xJ\");\nif (!__scene) return {status:\"BLOCKED_SCENE_MISSING\"};\nif (canvas.scene?.id !== __scene.id) return {status:\"BLOCKED_GM_NOT_VIEWING_M2\"};\nconst __consumed = () => __scene.getFlag(\"world\",\"dicebox\")?.cl52?.m2HauntedPianoPlayed === true;\nif (__consumed()) return {status:\"ALREADY_PLAYED\"};\nconst __audience = () => game.users.filter(u => u.active && !u.isGM && u.viewedScene === __scene.id).map(u=>u.id);\nif (__audience().length === 0) return {status:\"BLOCKED_NO_PLAYERS_VIEWING_M2\"};\nconst __lock = globalThis.__diceboxCl52M2PianoLock ??= {pending:false};\nif (__lock.pending) return {status:\"BUSY\"};\n__lock.pending=true;\ntry {\n  const __ok = await foundry.applications.api.DialogV2.confirm({\n    window:{title:\"Central Lodge M2 — Haunted Piano\"},\n    content:\"<p>Play a brief, restrained haunted, slightly discordant piano cue to players currently viewing M2?</p><p>This consumes the cue for this campaign. It does not alter lights, puzzle state, or token positions.</p>\",\n    yes:{label:\"Play Piano Once\"},no:{label:\"Cancel\"},modal:true,rejectClose:false\n  });\n  if (!__ok) return {status:\"CANCELLED\"};\n  if (__consumed() || canvas.scene?.id !== __scene.id) return {status:\"BLOCKED_STATE_CHANGED\"};\n  const __recipients=__audience();\n  if (__recipients.length===0) return {status:\"BLOCKED_AUDIENCE_CHANGED\"};\n  await __scene.update({\"flags.world.dicebox.cl52.m2HauntedPianoPlayed\":true});\n  // Record first. Once broadcast starts, playback success cannot be atomically rolled back across clients.\n  try {\n    await foundry.audio.AudioHelper.play({\n      src:\"worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52/m2-haunted-piano-v001.wav\",\n      volume:0.32,loop:false,channel:\"interface\",autoplay:true\n    },{recipients:__recipients});\n  } catch(__audioError) {\n    console.error(\"[DiceBox CL-52 M2] Audio playback outcome uncertain; cue remains consumed to prevent duplicate broadcasts.\",__audioError);\n    ui.notifications?.warn(\"Piano playback outcome uncertain. Cue remains consumed; consult GM before resetting.\");\n    return {status:\"PLAYBACK_OUTCOME_UNKNOWN_CONSUMED\"};\n  }\n  return {status:\"PASS\",sceneId:__scene.id,recipientsCount:__recipients.length,oneShot:true};\n} catch(__error) {\n  console.error(\"[DiceBox CL-52 M2] No confirmed playback.\",__error);\n  ui.notifications?.error(\"M2 Piano cue did not complete. Review Scene flags before retry.\");\n  return {status:\"FAILED_NO_CONFIRMED_PLAYBACK\"};\n} finally {\n  __lock.pending=false;\n}",stable="dbx:central-lodge:cl52:macro:m2-haunted-piano-one-shot";
+const sha=async s=>Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(String(s??"")))),b=>b.toString(16).padStart(2,"0")).join("");
+const same=game.macros.filter(m=>m.getFlag("world","dicebox")?.stableId===stable),byName=game.macros.filter(m=>m.name==="DiceBox CL-52 — M2 Haunted Piano (GM One-Shot)");
+const model=new Macro({name:"DiceBox CL-52 — M2 Haunted Piano (GM One-Shot)",type:"script",command:SRC,ownership:{default:0,JESWV6CcU7m07VW6:3,pnTxw7VYpYR4IKWE:3}});
+const scene=game.scenes.get("JZkxX6lUQe8Nc8xJ"),cues=scene?.getFlag("world","dicebox")?.cl52??null;
+const errors=[];
+try{new(Object.getPrototypeOf(async function(){}).constructor)("event",SRC)}catch(e){errors.push(String(e))}
+if(same.length||byName.length)errors.push("Macro collision");
+if(cues!==null)errors.push("M2 cue state already exists, inspect");
+if(game.macros.size!==133)errors.push("Global Macro roster drift");
+if(await sha(SRC)!=="c27e902c6232b946ee36a61572ac17a88cd5fca54acbe391afd7fdbf483e0e3b")errors.push("Macro source hash drift");
+
+if(errors.length)return{operation:"cl52.m2.audio-macro.guarded-apply.v001",status:"BLOCKED",noWrite:true,errors};
+const sceneState=scene.getFlag("world","dicebox")?.cl52??null,ledgerBefore=JSON.stringify(game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{});
+const asset="worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52/m2-haunted-piano-v001.wav";
+const files=await FilePicker.browse("data","worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52");
+if((files?.files??[]).filter(f=>f===asset).length!==1)return{operation:"cl52.m2.audio-macro.guarded-apply.v001",status:"BLOCKED_ASSET_MISSING"};
+const hdr=await fetch(asset,{method:"HEAD"});
+if(!hdr.ok||Number(hdr.headers.get("content-length"))!==1152044)return{operation:"cl52.m2.audio-macro.guarded-apply.v001",status:"BLOCKED_ASSET_HTTP"};
+let totalR=0,totalB=0;for(const id of ["0CSBwzcszPKyaB8u","5K1uASAARnX8aZhP","EDdktL7VUihbpKe9","UNySMm7YkyYfh41x","Zq8iXByDVhHRbA7w","sI4YVZZChgey1qNi","iqfCcDpEer4pwrJj","DLcheEi6e5OHOYmU","U8S5ZrTjaPIkTUIL","JZkxX6lUQe8Nc8xJ","LXTA8mx1rJ2L6e2J","MAbLfBqG7qIVVuLN","4pc5akMBieHU7GvV","pHQvDUDlyWZFuNrX","if9iWDRjSwI87EeX","PVf6Gbrv9HbB88uZ","La9krMOMBhAhDLi6","ImeIdHbYb6kZKAdt","ez9MSQ8QIO4cW6zo","aIKQmFiuXWipEdyb","HWitOe1wSid7MZ1y"]){const sc=game.scenes.get(id);totalR+=sc.regions.size;totalB+=Array.from(sc.regions).reduce((n,r)=>n+r.behaviors.size,0);}
+if(ledgerBefore.indexOf("\"revision\":1")<0||totalR!==202||totalB!==116||sceneState!==null||!game.user?.isGM||game.user.id!=="pnTxw7VYpYR4IKWE")return{operation:"cl52.m2.audio-macro.guarded-apply.v001",status:"BLOCKED_RUNTIME_BASELINE"};
+let made;
+try{
+ made=await Macro.create({
+  name:"DiceBox CL-52 — M2 Haunted Piano (GM One-Shot)",
+  type:"script",command:SRC,img:"icons/svg/sound.svg",
+  ownership:{default:0,JESWV6CcU7m07VW6:3,pnTxw7VYpYR4IKWE:3},
+  flags:{world:{dicebox:{schemaVersion:"1.0.0",campaignId:"central-lodge",managed:true,stableId:stable,sceneKey:"M2",documentRole:"gm-manual-horror-audio",installer:"cl52-m2-audio-macro-apply-v001",sourceHash:"c27e902c6232b946ee36a61572ac17a88cd5fca54acbe391afd7fdbf483e0e3b",assetPath:asset,assetHash:"d450137c82e8691ea31b48d6d7786421491e017651bca2d4ba916c7d7d147ba9",oneShotFlagPath:"flags.world.dicebox.cl52.m2HauntedPianoPlayed"}}}
+ });
+ const installed=game.macros.get(made?.id),f=installed?.getFlag("world","dicebox")??{};
+ if(!installed||await sha(installed.command)!=="c27e902c6232b946ee36a61572ac17a88cd5fca54acbe391afd7fdbf483e0e3b"||f.stableId!==stable||f.assetPath!==asset||installed.ownership?.default!==0||installed.ownership?.JESWV6CcU7m07VW6!==3||installed.ownership?.pnTxw7VYpYR4IKWE!==3)throw Error("Post macro contract drift");
+ if(game.macros.size!==134||scene.getFlag("world","dicebox")?.cl52!==undefined||JSON.stringify(game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{})!==ledgerBefore)throw Error("Macro count or gameplay state drift");
+ return{operation:"cl52.m2.audio-macro.guarded-apply.v001",status:"PASS",noPlayback:true,macroId:installed.id,sourceHash:await sha(installed.command),assetPath:asset,macroCount:game.macros.size,sceneCueAlreadyConsumed:false,finalVerifyRequired:true};
+}catch(e){
+ let restore="NOT_CREATED";
+ if(made?.id){try{await Macro.deleteDocuments([made.id]);restore="DELETED_MACRO"}catch(err){restore="ROLLBACK_FAILED:"+String(err)}}
+ return{operation:"cl52.m2.audio-macro.guarded-apply.v001",status:restore==="ROLLBACK_FAILED"?"OUTCOME_UNKNOWN_ROLLBACK_INCOMPLETE":"FAIL_ROLLBACK_COMPLETE",error:String(e),rollback:restore};
+}

@@ -1,0 +1,11 @@
+-- CL52 M2 accepted change; gate before implementation. Live ledger revision 1 is external campaign play and must remain intact.
+INSERT OR REPLACE INTO kb_sources(source_id,title,source_kind,scope,authority,status,location,captured_at,version_fingerprint,notes) VALUES
+('S-2026-10-07-CL52-M2-ACCEPTED-PIANO-SLICE','M2 haunted player-piano one-shot sound accepted work unit','verification','Central Lodge M2 CL52','M2 PREPARE source and explicit GM approval for original Foundry horror assets','active','docs/CL52-M2-PIANO-ACCEPTED-BUNDLE-2026-10-07.md; docs/CL52-M2-PIANO-ACTIVE-CHECKLIST.md','2026-10-07','proposed single M2 GM Macro and original stereo WAV; no playback','Source allows brief haunted piano audio separately from the U2 Piano Roll puzzle and Silver Family Emblem. No real world effects authorized on token entry. New live ledger revision 1 from E1 recent-use observation must be preserved.');
+INSERT OR REPLACE INTO kb_decisions(decision_id,topic,decision,rationale,scope,status,owner,source_id,next_review) VALUES
+('D-463','CL52 M2 haunted piano original cue accepted as next bounded GM-only Foundry slice','Generate an original subtle discordant player-piano audio asset and one manually confirmed, primary-GM-only M2-scoped one-shot sound Macro. Use Scene-owned persistent m2HauntedPianoPlayed state, audience targeting, source hash/asset guards, and no automatic cue on entering a Region. Preserve current live revision 1 E1 recent-use observation and all M2 Piano Roll puzzle flags. Controlled playback with player audience is separately deferred.','M2 PREPARE explicitly supports transient brief piano sound; prior M1 sound one-shot pattern completed guarded source install, and the user approved creative assets/triggers for private Foundry game usage.','campaign','locked','Foreman','S-2026-10-07-CL52-M2-ACCEPTED-PIANO-SLICE',NULL);
+INSERT INTO decisions_fts(decision_id,topic,decision,rationale) SELECT decision_id,topic,decision,rationale FROM kb_decisions WHERE decision_id='D-463'
+AND NOT EXISTS(SELECT 1 FROM decisions_fts f WHERE f.decision_id=kb_decisions.decision_id);
+INSERT OR REPLACE INTO kb_metadata(key,value) VALUES
+('central_lodge_cl52_active_slice','CL52 M2 original piano one-shot audio: ACCEPTED_BEFORE_IMPLEMENTATION'),
+('central_lodge_last_observed_ledger_revision','1'),
+('central_lodge_region_behavior_count','116');

@@ -1,0 +1,3 @@
+.rw-mining-setup { display:grid; gap:.7rem; min-width:320px; }
+.rw-mining-setup label { display:grid; gap:.3rem; font-weight:600; }
+.rw-mining-setup select { width:100%; }

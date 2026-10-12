@@ -1,0 +1,3 @@
+const r=game.scenes.get("La9krMOMBhAhDLi6")?.regions.get("zKNU1R3JGIMMt017");if(!r)throw Error("NO_REGION");
+const chain=[];for(let obj=r,i=0;obj&&i<7;obj=Object.getPrototypeOf(obj),i++){const nm=obj.constructor?.name??"?";const ctor=String(obj.constructor??"");const pos=ctor.indexOf("#getTokenDestinations");const desc=Object.getOwnPropertyDescriptors(obj);const methodNames=Object.keys(desc).filter(n=>/teleport|spawn|destination|create|place|token/i.test(n));chain.push({i,name:nm,ctorLength:ctor.length,privateDestinationAt:pos,privateDestinationAround:pos<0?null:ctor.slice(Math.max(0,pos-300),pos+3200),methods:methodNames});}
+return{noWrite:true,chain};

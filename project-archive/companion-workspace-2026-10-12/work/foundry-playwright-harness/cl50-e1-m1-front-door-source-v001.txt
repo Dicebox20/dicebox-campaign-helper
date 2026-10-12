@@ -1,0 +1,45 @@
+// CL-50 approved T3 ancient passage → F1 arrival; single GM-authoritative confirmation, no auto-teleport.
+const __primary = game.users.filter(u => u.active && u.isGM).sort((a,b) => a.id.localeCompare(b.id))[0];
+if (!__primary || !game.user?.isGM || game.user.id !== __primary.id) return;
+const __token = event?.data?.token ?? event?.token ?? null;
+const __actor = __token?.actor ?? null;
+const __source = event?.region?.parent ?? game.scenes.get("Zq8iXByDVhHRbA7w");
+if (!__token || !__actor || __source?.id !== "Zq8iXByDVhHRbA7w") return;
+const __sourceRegion = __source.regions.get("QS7OpvIilyyDpmLc");
+const __destination = game.scenes.get("U8S5ZrTjaPIkTUIL")?.regions.get("4b8vfvKAKXBS6kfW");
+if (__sourceRegion?.getFlag("world","dicebox")?.destinationStableSceneId !== "dbx:central-lodge:m1") return;
+if (!__destination || __destination.getFlag("world","dicebox")?.stableId !== "dbx:central-lodge:m1:region:m1-transition-main-door") return;
+const __key = String(__actor.uuid ?? __token.id);
+const __slots = globalThis.__diceboxCl50E1M1Entrance ??= { pending:new Set(), declinedUntil:new Map() };
+if (__slots.pending.has(__key) || Date.now() < (__slots.declinedUntil.get(__key) ?? 0)) return;
+__slots.pending.add(__key);
+try {
+  const __go = await foundry.applications.api.DialogV2.confirm({
+    window:{ title:"Lodge Entrance — GM Travel Confirmation" },
+    content:"<p>The front door of the abandoned lodge opens into the old entrance hall.</p><p>Confirm that the character wants to enter the <strong>Main Lodge Entrance Hall (M1)</strong>. This is a voluntary move, not an automatic forced transition.</p>",
+    yes:{label:"Enter the Lodge"},no:{label:"Remain Outside"},modal:true,rejectClose:false
+  });
+  if (!__go) {
+    __slots.declinedUntil.set(__key,Date.now()+15000);
+    return;
+  }
+  const __updated = __source.regions.get("QS7OpvIilyyDpmLc");
+  if (__updated?.getFlag("world","dicebox")?.destinationStableSceneId !== "dbx:central-lodge:m1") return;
+  const __nowTarget = game.scenes.get("U8S5ZrTjaPIkTUIL")?.regions.get("4b8vfvKAKXBS6kfW");
+  if (!__nowTarget || __nowTarget.getFlag("world","dicebox")?.stableId !== "dbx:central-lodge:m1:region:m1-transition-main-door") return;
+  let __user = game.users.get(event?.user?.id) ?? null;
+  if (!__user || __user.isGM) {
+    __user = game.users.find(u => u.active && !u.isGM && u.character?.id === __actor.id) ?? null;
+  }
+  if (!__user) {
+    const __owners = game.users.filter(u => u.active && !u.isGM && __actor.testUserPermission(u,CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER));
+    if (__owners.length === 1) __user=__owners[0];
+  }
+  await __nowTarget.teleportToken(__token,{placement:"random",snap:false,pan:true});
+  if (__user) await __nowTarget.parent.pullUsers([__user.id]);
+} catch(__error) {
+  console.error("[DiceBox CL-50 E1→M1] Travel failed; GM can use normal Scene navigation.",__error);
+  ui.notifications?.warn("Travel was not confirmed. Ask the GM to navigate manually if needed.");
+} finally {
+  __slots.pending.delete(__key);
+}

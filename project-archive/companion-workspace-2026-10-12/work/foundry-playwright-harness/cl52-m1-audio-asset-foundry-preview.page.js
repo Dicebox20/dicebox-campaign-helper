@@ -1,0 +1,4 @@
+const dir="worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52",name="m1-distant-footsteps-v001.wav",p=dir+"/"+name;
+const found=await FilePicker.browse("data",dir);const files=found?.files??[],matching=files.filter(f=>f===p||f.endsWith("/"+name));let head={status:"NOT_RUN"};
+try{const r=await fetch(p,{method:"HEAD"});head={ok:r.ok,status:r.status,contentType:r.headers.get("content-type"),contentLength:r.headers.get("content-length")}}catch(e){head={error:String(e)}}
+return{operation:"cl52.m1.foundry-filepicker-and-http-verify",noWrite:true,directory:dir,matchedPaths:matching,matchCount:matching.length,head,status:matching.length===1&&head.ok?"PASS":"FAIL",noPlayback:true};

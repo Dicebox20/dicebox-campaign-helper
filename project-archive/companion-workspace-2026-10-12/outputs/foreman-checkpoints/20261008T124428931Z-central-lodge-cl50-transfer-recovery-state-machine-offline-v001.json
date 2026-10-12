@@ -1,0 +1,43 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T12:44:28.9316644Z",
+    "workUnitId":  "central-lodge-cl50-transfer-recovery-state-machine-offline-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "research",
+    "summary":  "Recovered current campaign roadmap, active checklist and CL50 PARTIAL/STOP checkpoint. Implemented pure Node offline railway transfer recovery-state-machine simulation and acceptance fixtures. 25/25 new tests PASS. Model guards event/consent/owner/lease/atomic-reservation prerequisites as HYPOTHETICAL, deduplicates movement IDs, reserves mock slots per Token, persists OUTCOME_UNKNOWN before any theoretical dispatch, forbids automatic reissue after crash/reload, reconciles independently observed source/destination outcomes, and quarantines both/neither, wrong landing, wrong Actor delta, duplicate Token and changed source for GM review. No Foundry calls or installs. Previous 33/33 collision/lease fixture PASS and live Foundry v14.367 no-write CL90 smoke PASS_WITH_KNOWN_BLOCKERS with unchanged world counts, kernel hash and ledger. User-confirmed landing Regions preserved and final hands-on gameplay acceptance reserved for user after development.",
+    "blocker":  "Real Foundry cross-GM server lease/CAS and fixed exact-position commit are NOT established by offline mock behavior, so automatic CL50 route installation remains blocked; immutable R1 source quarantined. Four CL90 progression blockers remain M1 clock solution, N3-\u003eT3 branch unlock, M2 Founder Portrait statePath, U2 Servant History statePath. Earlier runtime handler source inspection, installer generator, independent DB verifier and design doc write were tool-safety refused; none repeated. Foreman Bridge has previous host-accepted unmatched native dispatch (correlation foreman-6f3a0342-8fa7-4db7-8d7c-6494e35f0273): no new continuation send until independently reconciled.",
+    "nextAction":  "Avoid further relay heartbeat loops. Independently research and resolve the CL90 story-progression semantic blockers from canonical story source and read-only KB, beginning M1 clock setting and M2/U2 path reconciliation, without inventing user-approved puzzle answers or altering live Foundry. Keep manual-GM CL50 railway fallback and no installer. Preserve CL51/CL52 pending work; CL93 final lighting/VFX after readiness. User will perform final gameplay testing when development is done; do not schedule intermediate player canaries.",
+    "changedPaths":  [
+                         "work\\foundry-playwright-harness\\cl50-transfer-recovery-state-machine-offline-v001.cjs"
+                     ],
+    "validation":  [
+                       "Read-only existing campaign roadmap, active checklist and CL50 route integration reviewed",
+                       "SQLite read-only KB authoritative route decision locked and R1 installation open item blocked",
+                       "Node --check cl50-transfer-recovery-state-machine-offline-v001.cjs passed",
+                       "Node --test cl50-transfer-recovery-state-machine-offline-v001.cjs 25 passed, 0 failed, offline only",
+                       "Node --test cl50-transfer-lease-collision-research-offline-v001.cjs 33 passed, 0 failed, offline only",
+                       "CL90 exact Foundry 14.367 no-write PASS_WITH_KNOWN_BLOCKERS: 21 Scenes, 202 Regions, 116 behaviors, 33 Items, ledger rev1, baseline SHA 6264c467211d4f5c94cfaaa9437eae88582599061b9d8a4951391830a3e8f814",
+                       "No Foundry Token/Region/Scene mutation or R1 installer or real-player acceptance"
+                   ],
+    "runtimeTarget":  "Foundry VTT v14.367 / D\u0026D5e v5.3.3 / the-lost-mine-of-phandalin; railway research test harness only.",
+    "receiptRef":  "work\\foundry-playwright-harness\\cl50-transfer-recovery-state-machine-offline-v001.cjs",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

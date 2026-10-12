@@ -1,0 +1,6 @@
+const OP="central-lodge.cl91.n3-t3-branch-writer-audit.v001",KEY="t3BranchUnlocked",scriptPattern="t3BranchUnlocked",refs=[],mutationCandidates=[];
+const inspect=(owner,src)=>{const text=String(src??"");let pos=0;while((pos=text.indexOf(KEY,pos))!==-1){const near=text.slice(Math.max(0,pos-220),Math.min(text.length,pos+270));refs.push({owner,index:pos,context:near});if(/(?:\.|\[["'])t3BranchUnlocked(?:["']\])?\s*=|t3BranchUnlocked\s*:/i.test(near))mutationCandidates.push({owner,index:pos,context:near});pos+=KEY.length;}};
+inspect("runtime kernel",game.macros.get("FHQiFYx6OntZVo9d")?.command);
+for(const s of game.scenes)if(s.name.startsWith("Central Lodge")||/^(T[123]|F[12])\b/.test(s.name))for(const r of s.regions)for(const b of r.behaviors)inspect(s.name+" | "+r.name+" | "+b.name,b.system?.source);
+const ledger=game.journal.get("xhlXv6CCH34HVga3")?.getFlag("world","dicebox")?.state??{};
+return{operation:OP,noWrite:true,flagValue:ledger.puzzles?.n3?.t3BranchUnlocked,referenceCount:refs.length,mutationCandidateCount:mutationCandidates.length,refs,mutationCandidates,limits:"This source scan covers shared kernel and Lodge RegionBehavior scripts only, not other global macros or Foundry modules."};

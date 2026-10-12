@@ -1,0 +1,45 @@
+// CL-50 approved T3 ancient passage → F1 arrival; single GM-authoritative confirmation, no auto-teleport.
+const __primary = game.users.filter(u => u.active && u.isGM).sort((a,b) => a.id.localeCompare(b.id))[0];
+if (!__primary || !game.user?.isGM || game.user.id !== __primary.id) return;
+const __token = event?.data?.token ?? event?.token ?? null;
+const __actor = __token?.actor ?? null;
+const __source = event?.region?.parent ?? game.scenes.get("aIKQmFiuXWipEdyb");
+if (!__token || !__actor || __source?.id !== "aIKQmFiuXWipEdyb") return;
+const __sourceRegion = __source.regions.get("YElrtisbXN3DJ2Sw");
+const __destination = game.scenes.get("pHQvDUDlyWZFuNrX")?.regions.get("RP1jYOH738xl9hks");
+if (__sourceRegion?.getFlag("world","dicebox")?.destinationStableSceneId !== "dbx:central-lodge:n3") return;
+if (!__destination || __destination.getFlag("world","dicebox")?.stableId !== "dbx:central-lodge:n3:region:n3-branch-railway") return;
+const __key = String(__actor.uuid ?? __token.id);
+const __slots = globalThis.__diceboxCl50T3N3Return ??= { pending:new Set(), declinedUntil:new Map() };
+if (__slots.pending.has(__key) || Date.now() < (__slots.declinedUntil.get(__key) ?? 0)) return;
+__slots.pending.add(__key);
+try {
+  const __go = await foundry.applications.api.DialogV2.confirm({
+    window:{ title:"Return to Depot — GM Travel Confirmation" },
+    content:"<p>The abandoned spur reconnects with the Collection Vaults railway branch.</p><p>Confirm the character intends to return to <strong>Collection Vaults / Underground Depot (N3)</strong>. This is not an automatic forced move.</p>",
+    yes:{label:"Return to N3"},no:{label:"Remain in T3"},modal:true,rejectClose:false
+  });
+  if (!__go) {
+    __slots.declinedUntil.set(__key,Date.now()+15000);
+    return;
+  }
+  const __updated = __source.regions.get("YElrtisbXN3DJ2Sw");
+  if (__updated?.getFlag("world","dicebox")?.destinationStableSceneId !== "dbx:central-lodge:n3") return;
+  const __nowTarget = game.scenes.get("pHQvDUDlyWZFuNrX")?.regions.get("RP1jYOH738xl9hks");
+  if (!__nowTarget || __nowTarget.getFlag("world","dicebox")?.stableId !== "dbx:central-lodge:n3:region:n3-branch-railway") return;
+  let __user = game.users.get(event?.user?.id) ?? null;
+  if (!__user || __user.isGM) {
+    __user = game.users.find(u => u.active && !u.isGM && u.character?.id === __actor.id) ?? null;
+  }
+  if (!__user) {
+    const __owners = game.users.filter(u => u.active && !u.isGM && __actor.testUserPermission(u,CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER));
+    if (__owners.length === 1) __user=__owners[0];
+  }
+  await __nowTarget.teleportToken(__token,{placement:"random",snap:false,pan:true});
+  if (__user) await __nowTarget.parent.pullUsers([__user.id]);
+} catch(__error) {
+  console.error("[DiceBox CL-50 T3→N3] Travel failed; GM can use normal Scene navigation.",__error);
+  ui.notifications?.warn("Travel was not confirmed. Ask the GM to navigate manually if needed.");
+} finally {
+  __slots.pending.delete(__key);
+}

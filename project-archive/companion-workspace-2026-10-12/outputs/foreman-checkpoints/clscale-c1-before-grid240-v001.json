@@ -1,0 +1,2135 @@
+{
+ "scene": {
+  "name": "Central Lodge — C1 Hidden Chapel / Shrine of Asmodeus",
+  "width": 4320,
+  "height": 2880,
+  "padding": 0,
+  "grid": {
+   "type": 0,
+   "size": 120,
+   "distance": 5,
+   "units": "ft",
+   "style": "solidLines",
+   "thickness": 1,
+   "color": "#000000",
+   "alpha": 0.2
+  },
+  "flags": {
+   "dicebox-campaign-helper": {
+    "stableId": "dbx:central-lodge:c1",
+    "managed": {
+     "owner": "dicebox-campaign-helper",
+     "packageId": "dbx:central-lodge:c1:v1",
+     "kind": "scene",
+     "stableId": "dbx:central-lodge:c1"
+    },
+    "campaignId": "central-lodge",
+    "mapId": "C1",
+    "buildContract": "dicebox-scene-injector-build/v2",
+    "scaleProfile": "battlemap-120",
+    "rendererLightingProfile": "underground-shrine-neutral",
+    "localLighting": "off",
+    "buildInstalled": true,
+    "ready": false,
+    "puzzleState": {
+     "shrineIncompletenessUnderstood": false,
+     "historicalUseUnderstood": false,
+     "asmodeanSealInserted": false,
+     "ceremonialCenserPlaced": false,
+     "shrineCompleted": false,
+     "devilWorshipUnderstood": false
+    },
+    "localLightingController": {
+     "stateKey": "central-lodge.c1.shrineLighting",
+     "activeState": "activated",
+     "lightStableIds": [
+      "dbx:central-lodge:c1:light:chapel-west",
+      "dbx:central-lodge:c1:light:chapel-east",
+      "dbx:central-lodge:c1:light:shrine"
+     ]
+    },
+    "assetReceipt": {
+     "base": {
+      "path": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/c1/c1-hidden-chapel-shrine.webp",
+      "sha256": "87f8a67709ccb8529819687b5892d75ccca0efb5b9c761de986fc972da21aaec",
+      "bytes": 283082,
+      "lightingProfile": "underground-shrine-neutral"
+     }
+    },
+    "implementationPending": [
+     "bind hidden Notice behavior for shrine incompleteness and historical-use evidence",
+     "bind Asmodean Covenant Seal socket interaction",
+     "bind Ceremonial Censer placement interaction",
+     "bind combined shrine-completion state and inner-threshold opening",
+     "bind shrine activation lighting and sound response",
+     "bind C2 transition destination and VERIFY exact wall, Region, and light alignment"
+    ]
+   }
+  },
+  "_id": "EDdktL7VUihbpKe9",
+  "active": false,
+  "navigation": true,
+  "navOrder": 0,
+  "thumb": null,
+  "shiftX": 0,
+  "shiftY": 0,
+  "initial": {
+   "x": null,
+   "y": null,
+   "scale": null
+  },
+  "initialLevel": "defaultLevel0000",
+  "tokenVision": true,
+  "fog": {
+   "mode": 1,
+   "colors": {
+    "explored": null,
+    "unexplored": null
+   }
+  },
+  "environment": {
+   "darknessLevel": 0,
+   "darknessLock": false,
+   "globalLight": {
+    "enabled": false,
+    "alpha": 0.5,
+    "bright": false,
+    "color": null,
+    "coloration": 1,
+    "luminosity": 0,
+    "saturation": 0,
+    "contrast": 0,
+    "shadows": 0,
+    "darkness": {
+     "min": 0,
+     "max": 1
+    }
+   },
+   "cycle": true,
+   "base": {
+    "hue": 0,
+    "intensity": 0,
+    "luminosity": 0,
+    "saturation": 0,
+    "shadows": 0
+   },
+   "dark": {
+    "hue": 0.7138888888888889,
+    "intensity": 0,
+    "luminosity": -0.25,
+    "saturation": 0,
+    "shadows": 0
+   }
+  },
+  "transition": {
+   "type": null,
+   "duration": 1500,
+   "activeOnly": false
+  },
+  "drawings": [],
+  "tokens": [],
+  "levels": [
+   {
+    "_id": "defaultLevel0000",
+    "name": "Level",
+    "elevation": {
+     "bottom": 0,
+     "top": 20
+    },
+    "background": {
+     "color": "#999999",
+     "src": "worlds/the-lost-mine-of-phandalin/assets/central-lodge/c1/c1-hidden-chapel-shrine.webp",
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "foreground": {
+     "src": null,
+     "tint": "#ffffff",
+     "alphaThreshold": 0.75
+    },
+    "fog": {
+     "src": null
+    },
+    "textures": {
+     "anchorX": 0.5,
+     "anchorY": 0.5,
+     "offsetX": 0,
+     "offsetY": 0,
+     "fit": "fill",
+     "scaleX": 1,
+     "scaleY": 1,
+     "rotation": 0
+    },
+    "visibility": {
+     "levels": []
+    },
+    "sort": 0,
+    "flags": {}
+   }
+  ],
+  "lights": [
+   {
+    "name": "C1 Chapel East Sconce Response",
+    "x": 2780,
+    "y": 1420,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 14,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d87b45",
+     "alpha": 0.13,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:light:chapel-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:c1:light:chapel-east"
+      },
+      "stateKey": "central-lodge.c1.shrineLighting",
+      "activeState": "activated",
+      "pacingGroup": "shrine-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "pXfIUevCMUYITUNB",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "C1 Chapel West Sconce Response",
+    "x": 1580,
+    "y": 1420,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 14,
+     "bright": 3,
+     "angle": 360,
+     "color": "#d87b45",
+     "alpha": 0.13,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:light:chapel-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:c1:light:chapel-west"
+      },
+      "stateKey": "central-lodge.c1.shrineLighting",
+      "activeState": "activated",
+      "pacingGroup": "shrine-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "70rJmDhm04s4P0YF",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   },
+   {
+    "name": "C1 Shrine Activation Response",
+    "x": 2190,
+    "y": 650,
+    "hidden": true,
+    "rotation": 0,
+    "walls": true,
+    "vision": false,
+    "config": {
+     "dim": 16,
+     "bright": 4,
+     "angle": 360,
+     "color": "#b6452f",
+     "alpha": 0.12,
+     "animation": {
+      "type": "torch",
+      "speed": 1,
+      "intensity": 1,
+      "reverse": false
+     },
+     "negative": false,
+     "priority": 0,
+     "coloration": 1,
+     "attenuation": 0.5,
+     "luminosity": 0.5,
+     "saturation": 0,
+     "contrast": 0,
+     "shadows": 0,
+     "darkness": {
+      "min": 0,
+      "max": 1
+     }
+    },
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:light:shrine",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "ambient-light",
+       "stableId": "dbx:central-lodge:c1:light:shrine"
+      },
+      "stateKey": "central-lodge.c1.shrineLighting",
+      "activeState": "activated",
+      "pacingGroup": "shrine-response",
+      "photosensitivitySafe": true
+     }
+    },
+    "_id": "lN3FceEOTA7j3zbX",
+    "elevation": 0,
+    "levels": [],
+    "locked": false
+   }
+  ],
+  "notes": [],
+  "sounds": [],
+  "regions": [
+   {
+    "name": "C1 Shrine Incompleteness Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1640,
+      "y": 300,
+      "width": 1100,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:notice:shrine-incompleteness",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:notice:shrine-incompleteness"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "raised-shrine-platform",
+       "discoveryId": "c1-shrine-incompleteness",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The shrine looks deliberately unfinished in a way ordinary damage does not explain.",
+       "successHint": "Two deliberately empty fittings are worked into the same shrine mechanism and were made to receive different ceremonial objects.",
+       "persistentStateKey": "c1.shrineIncompletenessUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-shrine-incompleteness-notice",
+       "sceneKey": "C1",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "vo0nWk5uv5oCTw6I",
+       "sourceRegionName": "C1 Shrine Incompleteness Notice"
+      }
+     }
+    },
+    "_id": "vo0nWk5uv5oCTw6I",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C1 — shrine-incompleteness-notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"c1.shrine-incompleteness\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The shrine is incomplete by design rather than by simple damage. Two fitted ritual positions are conspicuously empty.</p>\",\"followUp\":\"Suggested follow-up: Investigation.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate inspection of the shrine reveals the two missing ritual placements.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl23-c1-apply-v001",
+         "stableId": "dbx:central-lodge:c1:behavior:shrine-incompleteness-notice",
+         "sceneKey": "C1",
+         "regionStableId": "dbx:central-lodge:c1:region:c1-shrine-incompleteness-notice",
+         "sourceHash": "4eed08c8a464839615eb332c8f6f113c1cd096c236f24f23ecd80abd060bfd21",
+         "behaviorSpec": {
+          "action": "notice",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "kjNImu4Jk0vRBwPH",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407145009,
+       "modifiedTime": 1791407145009,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Historical Use Notice",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1320,
+      "y": 280,
+      "width": 1740,
+      "height": 1260,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#597b8f",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:notice:historical-use",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:notice:historical-use"
+      },
+      "regionClass": "notice",
+      "specification": {
+       "class": "notice",
+       "anchor": "shrine-and-ritual-floor",
+       "discoveryId": "c1-historical-use",
+       "noticePolicy": "flat-d20-no-modifiers",
+       "noticeDc": 10,
+       "oncePerCharacterUntilReset": true,
+       "failureHint": "The old residue and wear do not all seem equally old.",
+       "successHint": "Most wax, soot, and ritual wear are ancient, but several handled surfaces show substantially newer maintenance or contact.",
+       "persistentStateKey": "c1.historicalUseUnderstood"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-historical-use-notice",
+       "sceneKey": "C1",
+       "regionClass": "notice",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "vtATTAilVH94Ij8t",
+       "sourceRegionName": "C1 Historical Use Notice"
+      }
+     }
+    },
+    "_id": "vtATTAilVH94Ij8t",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C1 — historical-use-notice",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-discovery/v1\",\"action\":\"notice\",\"trigger\":\"TOKEN_ENTER\",\"noticeKey\":\"c1.historical-use\",\"dc\":6,\"stage2Skill\":\"Investigation\",\"successMessage\":\"<p>The chapel's marks of use span different periods. Old devotional wear is layered beneath signs that the shrine was returned to service much more recently.</p>\",\"followUp\":\"Suggested follow-up: Investigation or Religion.\",\"failure\":\"silent\",\"oncePerCharacter\":true,\"autoAwardItem\":false,\"criticalClueFallback\":\"Deliberate examination can still establish that the shrine was used again after a long interval.\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl23-c1-apply-v001",
+         "stableId": "dbx:central-lodge:c1:behavior:historical-use-notice",
+         "sceneKey": "C1",
+         "regionStableId": "dbx:central-lodge:c1:region:c1-historical-use-notice",
+         "sourceHash": "128a9b7159c59567ee5b2e86fee8a212e0d655ae73ec35e735e24aabe7ab4af5",
+         "behaviorSpec": {
+          "action": "notice",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "QGerMXwNayL2juM0",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407145031,
+       "modifiedTime": 1791407145031,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Ceremonial Censer Socket",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 2280,
+      "y": 470,
+      "width": 420,
+      "height": 360,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:puzzle:censer-socket",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:puzzle:censer-socket"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "shrine-censer-fitting",
+       "interaction": "place-item",
+       "itemId": "ceremonial-censer",
+       "dependencySource": "M2",
+       "persistentStateKey": "c1.ceremonialCenserPlaced"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-ceremonial-censer-socket",
+       "sceneKey": "C1",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "mBEkRRKsVNBHjWts",
+       "sourceRegionName": "C1 Ceremonial Censer Socket"
+      }
+     }
+    },
+    "_id": "mBEkRRKsVNBHjWts",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C1 — ceremonial-censer-install",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"socket\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"ceremonial-censer\",\"statePath\":\"puzzles.c1.ceremonialCenserInstalled\",\"consume\":false,\"missingMessage\":\"<p>A fitted place beside the altar is empty, shaped to receive a ritual vessel.</p>\",\"successMessage\":\"<p>The <strong>Ceremonial Censer</strong> settles into the shrine's prepared fitting.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl23-c1-apply-v001",
+         "stableId": "dbx:central-lodge:c1:behavior:ceremonial-censer-install",
+         "sceneKey": "C1",
+         "regionStableId": "dbx:central-lodge:c1:region:c1-ceremonial-censer-socket",
+         "sourceHash": "f9f7f92656c896adea6e663d8693b73dedba0abb1ec54751004620d12f8e56d6",
+         "behaviorSpec": {
+          "action": "socket",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "w4USynLRaeNCujg3",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407145074,
+       "modifiedTime": 1791407145074,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Chapel Lighting",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1280,
+      "y": 250,
+      "width": 1900,
+      "height": 2250,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:light:chapel",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:light:chapel"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "chapel-fixtures",
+       "stateKey": "central-lodge.c1.shrineLighting",
+       "activeState": "activated",
+       "lightStableIds": [
+        "dbx:central-lodge:c1:light:chapel-west",
+        "dbx:central-lodge:c1:light:chapel-east"
+       ]
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-chapel-lighting",
+       "sceneKey": "C1",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "CN8sZmLnRarJcP7s",
+       "sourceRegionName": "C1 Chapel Lighting"
+      }
+     }
+    },
+    "_id": "CN8sZmLnRarJcP7s",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Asmodean Covenant Seal Socket",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1840,
+      "y": 470,
+      "width": 420,
+      "height": 360,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:puzzle:seal-socket",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:puzzle:seal-socket"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "shrine-seal-fitting",
+       "interaction": "insert-item",
+       "itemId": "asmodean-covenant-seal",
+       "dependencySource": "E4",
+       "persistentStateKey": "c1.asmodeanSealInserted"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-asmodean-covenant-seal-socket",
+       "sceneKey": "C1",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "rGOQGO05fQJipGZo",
+       "sourceRegionName": "C1 Asmodean Covenant Seal Socket"
+      }
+     }
+    },
+    "_id": "rGOQGO05fQJipGZo",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C1 — covenant-seal-install",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"socket\",\"trigger\":\"TOKEN_ENTER\",\"itemKey\":\"asmodean-covenant-seal\",\"statePath\":\"puzzles.c1.covenantSealInstalled\",\"consume\":false,\"missingMessage\":\"<p>The shrine's seal recess is empty.</p>\",\"successMessage\":\"<p>The <strong>Asmodean Covenant Seal</strong> fits the prepared recess in the shrine.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl23-c1-apply-v001",
+         "stableId": "dbx:central-lodge:c1:behavior:covenant-seal-install",
+         "sceneKey": "C1",
+         "regionStableId": "dbx:central-lodge:c1:region:c1-asmodean-covenant-seal-socket",
+         "sourceHash": "ad3d87687c669559d22ffb1150f69d8f4d0c6d45b11b8061c3b7e42fe45ed362",
+         "behaviorSpec": {
+          "action": "socket",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "wuoQIgWq0JEezFWs",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407145054,
+       "modifiedTime": 1791407145054,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Shrine Completion",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1640,
+      "y": 300,
+      "width": 1120,
+      "height": 760,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#8b6d42",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:puzzle:shrine-completion",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:puzzle:shrine-completion"
+      },
+      "regionClass": "puzzle",
+      "specification": {
+       "class": "puzzle",
+       "anchor": "raised-shrine-platform",
+       "requiresStateKeys": [
+        "c1.asmodeanSealInserted",
+        "c1.ceremonialCenserPlaced"
+       ],
+       "persistentStateKey": "c1.shrineCompleted",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-shrine-completion",
+       "sceneKey": "C1",
+       "regionClass": "puzzle",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "pMXX61CEbcLVTghI",
+       "sourceRegionName": "C1 Shrine Completion"
+      }
+     }
+    },
+    "_id": "pMXX61CEbcLVTghI",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C1 — shrine-completion-gate",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nconst result = await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"gate\",\"trigger\":\"TOKEN_ENTER\",\"statePath\":\"puzzles.c1.shrineResolved\",\"requirements\":[{\"type\":\"state\",\"path\":\"puzzles.c1.covenantSealInstalled\",\"equals\":true},{\"type\":\"state\",\"path\":\"puzzles.c1.ceremonialCenserInstalled\",\"equals\":true}],\"set\":[{\"path\":\"puzzles.c1.c2Unlocked\",\"value\":true}],\"incompleteMessage\":\"<p>The shrine remains incomplete. Two prepared positions in the altar arrangement still need their proper ritual objects.</p>\",\"successMessage\":\"<p>With the covenant seal and ceremonial censer restored to the shrine, the altar mechanism settles into alignment and the inner threshold releases.</p>\"}}});\nif (![\"PASS\",\"ALREADY_RESOLVED\"].includes(result?.status)) return result;\nconst gms = Array.from(game.users ?? []).filter(u => u.active && u.isGM).sort((a,b)=>a.id.localeCompare(b.id));\nif (gms[0]?.id !== game.user?.id) return result;\nconst l = game.journal.get(\"xhlXv6CCH34HVga3\");\nconst s = l?.getFlag?.(\"world\",\"dicebox\")?.state ?? {};\nif (foundry.utils.getProperty(s,\"puzzles.c1.c2Unlocked\") !== true) return result;\nconst w = game.scenes.get(\"EDdktL7VUihbpKe9\")?.walls.get(\"oVJ6kFkHMxu4EKF8\");\nif (w && w.ds !== CONST.WALL_DOOR_STATES.OPEN) await w.update({ds:CONST.WALL_DOOR_STATES.OPEN});\nreturn result;"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl23-c1-apply-v001",
+         "stableId": "dbx:central-lodge:c1:behavior:shrine-completion-gate",
+         "sceneKey": "C1",
+         "regionStableId": "dbx:central-lodge:c1:region:c1-shrine-completion",
+         "sourceHash": "70a56affbc7a9b3fa4abe31e0899680a4377d416af616416e8e4fb6400441dc8",
+         "behaviorSpec": {
+          "action": "gate",
+          "sourceType": "kernel+door"
+         }
+        }
+       }
+      },
+      "_id": "gejvhtep5PqwBPqX",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407145097,
+       "modifiedTime": 1791407145097,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Transition — Inner Threshold",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 3000,
+      "y": 1650,
+      "width": 900,
+      "height": 1120,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:transition:c2-threshold",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:transition:c2-threshold"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "heavy-inner-threshold",
+       "requiresStateKey": "c1.shrineCompleted",
+       "destinationMapId": "C2",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-transition-inner-threshold",
+       "sceneKey": "C1",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "6uVdAl6EJJO0GCMi",
+       "sourceRegionName": "C1 Transition — Inner Threshold"
+      }
+     }
+    },
+    "_id": "6uVdAl6EJJO0GCMi",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Transition — Chapel Entry",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1700,
+      "y": 2320,
+      "width": 920,
+      "height": 500,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#648c6a",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:transition:entry",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:transition:entry"
+      },
+      "regionClass": "transition",
+      "specification": {
+       "class": "transition",
+       "anchor": "main-entry-threshold",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-transition-chapel-entry",
+       "sceneKey": "C1",
+       "regionClass": "transition",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "5KyrJb5OqSCIA4Tm",
+       "sourceRegionName": "C1 Transition — Chapel Entry"
+      }
+     }
+    },
+    "_id": "5KyrJb5OqSCIA4Tm",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Shrine Lighting",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1600,
+      "y": 250,
+      "width": 1200,
+      "height": 900,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#c99246",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:light:shrine",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:light:shrine"
+      },
+      "regionClass": "light",
+      "specification": {
+       "class": "light",
+       "anchor": "shrine-fixtures",
+       "stateKey": "central-lodge.c1.shrineLighting",
+       "activeState": "activated",
+       "lightStableIds": [
+        "dbx:central-lodge:c1:light:shrine"
+       ]
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-shrine-lighting",
+       "sceneKey": "C1",
+       "regionClass": "light",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "T4rHBf9hq6wf1Qsl",
+       "sourceRegionName": "C1 Shrine Lighting"
+      }
+     }
+    },
+    "_id": "T4rHBf9hq6wf1Qsl",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   },
+   {
+    "name": "C1 Devil Worship Interpretation",
+    "shapes": [
+     {
+      "type": "rectangle",
+      "x": 1450,
+      "y": 250,
+      "width": 1500,
+      "height": 1550,
+      "rotation": 0,
+      "hole": false,
+      "anchorX": 0,
+      "anchorY": 0,
+      "gridBased": false
+     }
+    ],
+    "locked": false,
+    "color": "#7d5367",
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:region:story:devil-worship",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "region",
+       "stableId": "dbx:central-lodge:c1:region:story:devil-worship"
+      },
+      "regionClass": "story",
+      "specification": {
+       "class": "story",
+       "anchor": "chapel-ritual-architecture",
+       "persistentStateKey": "c1.devilWorshipUnderstood",
+       "runtimeBinding": "IMPLEMENT"
+      },
+      "runtimeBinding": "IMPLEMENT/REGION-BEHAVIOR-BINDING"
+     },
+     "world": {
+      "dicebox": {
+       "campaignId": "central-lodge",
+       "managed": true,
+       "stableId": "dbx:central-lodge:c1:region:c1-devil-worship-interpretation",
+       "sceneKey": "C1",
+       "regionClass": "story",
+       "metadataVersion": "1.0.0",
+       "metadataInstaller": "central-lodge-cl04-region-metadata-normalizer-v001",
+       "sourceRegionId": "YOsNkDK8UwmTtotq",
+       "sourceRegionName": "C1 Devil Worship Interpretation"
+      }
+     }
+    },
+    "_id": "YOsNkDK8UwmTtotq",
+    "elevation": {
+     "bottom": null,
+     "top": null,
+     "topInclusive": false
+    },
+    "levels": [],
+    "restriction": {
+     "enabled": false,
+     "type": "move",
+     "priority": 0
+    },
+    "attachment": {
+     "token": null
+    },
+    "behaviors": [
+     {
+      "name": "DiceBox C1 — devil-worship-interpretation",
+      "type": "executeScript",
+      "disabled": false,
+      "system": {
+       "events": [
+        "tokenEnter"
+       ],
+       "source": "const k = game.macros.find(m => m.getFlag?.(\"world\",\"dicebox\")?.stableId === \"dbx:central-lodge:macro:runtime\");\nif (!k) return;\nconst t = event?.data?.token ?? event?.token ?? null;\nconst a = t?.actor ?? null;\nreturn await k.execute({actor:a,token:t,event,speaker:{dicebox:{\"contract\":\"dicebox-region-behavior/v1\",\"action\":\"observe\",\"trigger\":\"TOKEN_ENTER\",\"observationKey\":\"c1.devil-worship\",\"oncePerActor\":true,\"statePath\":\"puzzles.c1.devilWorshipInterpreted\",\"value\":true,\"message\":\"<p>Taken together, the iconography, offerings, and ritual fittings identify this chamber as a concealed Asmodean shrine rather than an ordinary family chapel.</p>\"}}});"
+      },
+      "flags": {
+       "world": {
+        "dicebox": {
+         "schemaVersion": "1.0.0",
+         "campaignId": "central-lodge",
+         "managed": true,
+         "installer": "central-lodge-cl23-c1-apply-v001",
+         "stableId": "dbx:central-lodge:c1:behavior:devil-worship-interpretation",
+         "sceneKey": "C1",
+         "regionStableId": "dbx:central-lodge:c1:region:c1-devil-worship-interpretation",
+         "sourceHash": "145cc0e38cf3b7183fb031ee168a2f657a8658fbd6961ad0b54aad8897700fa4",
+         "behaviorSpec": {
+          "action": "observe",
+          "sourceType": "kernel"
+         }
+        }
+       }
+      },
+      "_id": "vUO5NSyC1SZSD4XF",
+      "_stats": {
+       "coreVersion": "14.367",
+       "systemId": "dnd5e",
+       "systemVersion": "5.3.3",
+       "createdTime": 1791407145113,
+       "modifiedTime": 1791407145113,
+       "lastModifiedBy": "pnTxw7VYpYR4IKWE",
+       "compendiumSource": null,
+       "duplicateSource": null,
+       "exportSource": null
+      }
+     }
+    ],
+    "visibility": 0,
+    "highlightMode": "shapes",
+    "displayMeasurements": false,
+    "hidden": false,
+    "ownership": {
+     "default": 0,
+     "JESWV6CcU7m07VW6": 3
+    },
+    "_shapeConstraints": null
+   }
+  ],
+  "tiles": [],
+  "walls": [
+   {
+    "c": [
+     270,
+     110,
+     270,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:outer-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:outer-west"
+      }
+     }
+    },
+    "_id": "SyvrS9XVGHi9zAWg",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     270,
+     2700,
+     1880,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:outer-south-west",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:outer-south-west"
+      }
+     }
+    },
+    "_id": "FyTrOZrI49rlmC3D",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2440,
+     2700,
+     4050,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:outer-south-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:outer-south-east"
+      }
+     }
+    },
+    "_id": "EGDsTS8rZWDBz4b9",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1880,
+     2700,
+     2440,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:door-main-entry",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c1:wall:door-main-entry"
+      }
+     }
+    },
+    "_id": "BzoVmXKasrqajDnN",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     270,
+     110,
+     4050,
+     110
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:outer-north",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:outer-north"
+      }
+     }
+    },
+    "_id": "5sAxFrBXM7m00DRF",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1250,
+     110,
+     1250,
+     760
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:left-divider-top",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:left-divider-top"
+      }
+     }
+    },
+    "_id": "Xaqrj5nus28Qclgj",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     4050,
+     110,
+     4050,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:outer-east",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:outer-east"
+      }
+     }
+    },
+    "_id": "aUuKYaKxBOWp7ist",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1250,
+     2060,
+     1250,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:left-divider-low",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:left-divider-low"
+      }
+     }
+    },
+    "_id": "lYPJ9VieYYxYWFIA",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1250,
+     760,
+     1250,
+     1060
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:door-left-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c1:wall:door-left-upper"
+      }
+     }
+    },
+    "_id": "CUYz7KO9KmYzkxOs",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1250,
+     1760,
+     1250,
+     2060
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:door-left-lower",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c1:wall:door-left-lower"
+      }
+     }
+    },
+    "_id": "cizce6L8xdujTxn7",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3100,
+     110,
+     3100,
+     760
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:right-divider-top",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:right-divider-top"
+      }
+     }
+    },
+    "_id": "dwC9Mx0SWpd6yOdh",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3100,
+     1060,
+     3100,
+     1780
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:right-divider-mid",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:right-divider-mid"
+      }
+     }
+    },
+    "_id": "XM5BksNReAMXrRvW",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3100,
+     1780,
+     3100,
+     2100
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:door-c2-threshold",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c1:wall:door-c2-threshold"
+      }
+     }
+    },
+    "_id": "oVJ6kFkHMxu4EKF8",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1680,
+     400,
+     1680,
+     920
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:altar-left",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:altar-left"
+      }
+     }
+    },
+    "_id": "aWC6RgKWkUX41z3B",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1680,
+     400,
+     2670,
+     400
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:altar-top",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:altar-top"
+      }
+     }
+    },
+    "_id": "Dm0YxnVWbphPge1G",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3100,
+     760,
+     3100,
+     1060
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 1,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:door-right-upper",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "door",
+       "stableId": "dbx:central-lodge:c1:wall:door-right-upper"
+      }
+     }
+    },
+    "_id": "YwYElyleKRNkyulz",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1680,
+     920,
+     2000,
+     920
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:altar-front-left",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:altar-front-left"
+      }
+     }
+    },
+    "_id": "umscf5G83fexdYfP",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2350,
+     920,
+     2670,
+     920
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:altar-front-right",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:altar-front-right"
+      }
+     }
+    },
+    "_id": "oL3ndb9YFz5SulSR",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     1250,
+     1060,
+     1250,
+     1760
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:left-divider-mid",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:left-divider-mid"
+      }
+     }
+    },
+    "_id": "3ofaMzuFbiPLCwo4",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     3100,
+     2100,
+     3100,
+     2700
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:right-divider-low",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:right-divider-low"
+      }
+     }
+    },
+    "_id": "quRPMyYVjItGdE40",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   },
+   {
+    "c": [
+     2670,
+     400,
+     2670,
+     920
+    ],
+    "move": 20,
+    "sight": 20,
+    "light": 20,
+    "sound": 20,
+    "dir": 0,
+    "door": 0,
+    "ds": 0,
+    "flags": {
+     "dicebox-campaign-helper": {
+      "stableId": "dbx:central-lodge:c1:wall:altar-right",
+      "managed": {
+       "owner": "dicebox-campaign-helper",
+       "packageId": "dbx:central-lodge:c1:v1",
+       "kind": "wall",
+       "stableId": "dbx:central-lodge:c1:wall:altar-right"
+      }
+     }
+    },
+    "_id": "NsHA6iUz21yIxmOj",
+    "levels": [],
+    "threshold": {
+     "light": null,
+     "sight": null,
+     "sound": null,
+     "attenuation": false
+    },
+    "animation": null
+   }
+  ],
+  "playlist": null,
+  "playlistSound": null,
+  "journal": null,
+  "journalEntryPage": null,
+  "weather": "",
+  "folder": "4iXeDJuCRBVhdM1M",
+  "sort": 150000,
+  "ownership": {
+   "default": 0,
+   "JESWV6CcU7m07VW6": 3
+  },
+  "_stats": {
+   "coreVersion": "14.367",
+   "systemId": "dnd5e",
+   "systemVersion": "5.3.3",
+   "createdTime": 1791322126119,
+   "modifiedTime": 1791351679514,
+   "lastModifiedBy": "JESWV6CcU7m07VW6",
+   "compendiumSource": null,
+   "duplicateSource": null,
+   "exportSource": null
+  }
+ },
+ "sourceSHA": "664816c5ff2c42521682f9bcdc5ec5ac7b1e52cc5760a75174f84d5c538d3fc1",
+ "ledgerSHA": "e8485e53ea171208894098b263b0223940140e1d52284e26e0546043543977d9"
+}

@@ -1,0 +1,16 @@
+{
+  "assetId": "dbx:central-lodge:cl52:audio:m2-haunted-piano-v001",
+  "createdBy": "Original procedural additive synthesis; no third-party samples or recognizable melody",
+  "scene": "M2",
+  "sourcePlan": "M2 PREPARE v001 Haunted piano cue, independent of Piano Roll mechanism",
+  "assetPath": "assets\\cl52\\audio\\m2-haunted-piano-v001.wav",
+  "foundryAssetPath": "worlds/the-lost-mine-of-phandalin/assets/dicebox-cl52/m2-haunted-piano-v001.wav",
+  "sha256": "d450137c82e8691ea31b48d6d7786421491e017651bca2d4ba916c7d7d147ba9",
+  "bytes": 1152044,
+  "sampleRate": 48000,
+  "channels": 2,
+  "seconds": 6,
+  "format": "WAV PCM16 stereo",
+  "peakTarget": 0.3,
+  "notes": "Five isolated uneven, dissonant felt-piano tones with gentle wooden resonance; no jump-scare or strobe. GM-only controlled manual one-shot."
+}

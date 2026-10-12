@@ -1,0 +1,44 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T05:45:31.1821282Z",
+    "workUnitId":  "clscale-testworld-modules-and-central-scenes-id-preserving-import-v001",
+    "status":  "PARTIAL",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "Owner requested copy production modules first, enable them, then copy Central Lodge scenes into isolated test world dbx-test-world port30005. Source production the-lost-mine-of-phandalin was OFFLINE, no writes. Full original world source-cold-snapshot staged 515 files/468224752 bytes. Production had 60 module directories, 39 enabled entries; active rest-recovery module missing, huge inactive 11GB reskin and backups excluded. Copied 37 production installed/active modules (1975470043 bytes) into fixture, preserving newer fixture dicebox-campaign-helper 0.1.15 and regionwright 0.1.5; 39 modules installed and enabled in fixture, rest-recovery explicitly disabled; fixture module-ready smoke PASS with 39 modules, server then STOPPED. Independently audited exact 21 Central Lodge root scenes and 927 raw Foundry LevelDB composite documents: Scenes roots21, Regions202, RegionBehaviors119, Walls444, Tokens22. Copied all 927 records byte-identically into offline fixture, plus six referenced Actors with 882 root+embedded records, four required Folder documents, and 28 cryptographically verified artwork files mapped to original path in a static alias directory (NO duplicate Foundry world manifest). Document IDs and embedded IDs preserved, no live F1/T3/Meow/Ret/ledger/CL50 changes. Separate fixture backups before module install and after module smoke. Original fixture Gamemaster user, settings, world manifest unchanged by scene import; independent migration audit PASS confirms 21 scene roots, 6 actor roots, 202 Regions, 119 Behaviors, 444 Walls, actor embedded data, 28 assets, users/settings exact hashes, no port30005 listener. No bridge, no firewall changes, no committed teleport attempted. Source production port30000 was not listening. Fixture intentionally STOPPED after import pending network access protection because it normally binds beyond localhost and the GM account has a blank login password. Runtime wiring/Region event behavior not yet certified.",
+    "blocker":  "LIVE RUNTIME WIRING NOT YET VALIDATED: fixture is intentionally STOPPED because GM login has no password and port30005 listens on all interfaces whenever running. Confirm a safe access method before opening imported scenes. Source module rest-recovery missing; fixture DiceBox/Regionwright versions are newer than production and require actual runtime behavior checks. No committed T3/F1 teleports authorized. Only Central Lodge 21 Scenes migrated, not all 183 Tuesday Campaign Scenes.",
+    "nextAction":  "Confirm a local/private way to run fixture or user approves accepting current network exposure, without changing Windows Firewall. When permitted, start via owners canonical supervisor command, join as Gamemaster with blank player password, inspect Scenes IDs, backgrounds, Actors, all Region behavior references, active modules and console errors read-only. Do not trigger committed teleports until separate acceptance gates; keep live campaign objects and Bridge untouched.",
+    "changedPaths":  [
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\module-stage-v001",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\central-scene-import-receipt-v001.json",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\scene-asset-alias-receipt-v001.json",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-permanent\\Data\\worlds\\dbx-test-world"
+                     ],
+    "validation":  [
+                       "Production 39 enabled source module entries: 38 installed plus fixture DiceBox, rest-recovery absent/disabled; 37 copied folders verified, 39 activated",
+                       "Fixture module runtime smoke PASS core14.367 dnd5e5.3.3; fixture stopped post-import",
+                       "21 Scenes 927 raw records exact SHA-256; 6 actors 882 records, 4 folders; 28 images hash checked",
+                       "Independent offline migration audit PASS: all 202 Regions,119 Behaviors,444 walls,22 tokens, actor effects/items preserved",
+                       "Fixture users, settings and world manifest hashes equal post-module-before-scenes backup; original scene DB unchanged; no production or Bridge mutation"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world, dataPath separate at Codex\\2026-08-20\\dicebox-campaign-helper\\work\\foundry-fixture-data-permanent, TCP30005 STOPPED; source production TCP30000 not running and unmodified",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\central-scene-import-receipt-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

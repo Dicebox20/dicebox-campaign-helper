@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-08T05:47:14.0134978Z",
+    "workUnitId":  "foreman-mandatory-every-turn-partner-trigger-v001",
+    "status":  "PASS",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "local",
+    "summary":  "User-required Foreman rule updated across AGENTS.md and canonical Foreman workflow: every active development turn must close with checkpoint then exact verified current Codex partner native Bridge request for next same-ChatGPT-conversation turn, including early completed work units. Replaced obsolete hard-coded ChatGPT conversation and marked historical relay binding inactive. Reconcile receipt-first obligations; never duplicate pending/sent unknown deliveries. Updated local roadmap/checklist, KB source/locked decision/fact and rebuilt DB integrity ok. Did not change Foundry gameplay or previously safety-blocked installer.",
+    "blocker":  "",
+    "nextAction":  "On receipt-verified next turn recover latest disk checkpoint, AGENTS, roadmap and KB; use one bounded no-write CL50 analysis to characterize exact Foundry 14.367 teleport offset / target placement and cross-Scene atomic guarantees, plus approved executor lease and player ownership evidence. Preserve R1 quarantined source and installer safety refusal, verify baseline and record checkpoint. At each turn end request exactly one next-turn trigger through the connected Codex partner after receipt reconciliation.",
+    "changedPaths":  [
+                         "AGENTS.md",
+                         "docs\\FOREMAN-WORKFLOW-CURRENT.md",
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "database\\seed.d\\2026-10-08-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz-foreman-every-turn-trigger.sql"
+                     ],
+    "validation":  [
+                       "Exact current Bridge Foreman status active enabled true, same bound ChatGPT conversation and Codex partner, reconciliationRequired false before native partner request",
+                       "AGENTS.md 15-minute rule now requires partner trigger request every active turn, not only on timeout",
+                       "Old hard-coded retired target reclassified historical; current exact Codex and ChatGPT binding recorded",
+                       "Canonical Foreman workflow records turn-end checkpoint -\u003e verified native partner trigger with no-duplicate and blocker/disable exceptions",
+                       "SQLite KB official builder integrity ok: 405 sources, 1181 facts, 471 decisions, 543 open items, 207 trials, 12 tools",
+                       "Separate database verifier was previously safety-blocked and not retried or represented as passing",
+                       "No live Foundry/Token/Region/lighting/installer change"
+                   ],
+    "runtimeTarget":  "Foreman Bridge session ses-82468164-38fe-47f1-a198-eb13aee1cb04, Codex conversation 01a0e88f-c6de-7b41-853f-1de0bb464886, ChatGPT conversation 6ac717c4-f450-83e8-8650-2658501b5853",
+    "receiptRef":  "docs\\FOREMAN-WORKFLOW-CURRENT.md",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "A4C302E002FC3A229EFA0E059871AC0E1A6CF6E98AE84065B99323204523E4F3"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

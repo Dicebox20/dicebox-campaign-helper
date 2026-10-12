@@ -1,0 +1,18 @@
+const s=game.scenes.get('MAbLfBqG7qIVVuLN'),ledger=game.journal.get('xhlXv6CCH34HVga3')?.getFlag('world','dicebox')?.state,canonical=["0CSBwzcszPKyaB8u", "5K1uASAARnX8aZhP", "EDdktL7VUihbpKe9", "UNySMm7YkyYfh41x", "Zq8iXByDVhHRbA7w", "sI4YVZZChgey1qNi", "iqfCcDpEer4pwrJj", "DLcheEi6e5OHOYmU", "U8S5ZrTjaPIkTUIL", "JZkxX6lUQe8Nc8xJ", "LXTA8mx1rJ2L6e2J", "MAbLfBqG7qIVVuLN", "4pc5akMBieHU7GvV", "pHQvDUDlyWZFuNrX", "if9iWDRjSwI87EeX", "PVf6Gbrv9HbB88uZ", "La9krMOMBhAhDLi6", "ImeIdHbYb6kZKAdt", "ez9MSQ8QIO4cW6zo", "aIKQmFiuXWipEdyb", "HWitOe1wSid7MZ1y"].map(id=>game.scenes.get(id));
+const H=async v=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(v)))),b=>b.toString(16).padStart(2,'0')).join('');
+if(!game.ready||game.version!=='14.367'||game.world.id!=='the-lost-mine-of-phandalin'||game.system.version!=='5.3.3'||game.user.name!=='Assistant Gamemaster'||!game.user.isGM||game.users.some(u=>u.active&&!u.isGM))throw Error('AUTHORITY_DRIFT');
+if(!s||s.active||s.grid.size!==120||s.grid.type!==0||s.grid.distance!==5||s.grid.units!=='ft'||s.width!==4320||s.height!==2880||s.padding!==0||s.tokens.size!==1||s.regions.size!==11)throw Error('SCENE_DRIFT');
+const t=s.tokens.get('DOCKvaCKDr8MUP8S');
+if(!t||t.actorId!=='2g6CmPQqhSkRQQZm'||t.x!==3207||t.y!==1079||t.width!==1||t.height!==1||t.texture.scaleX!==1||t.texture.scaleY!==1)throw Error('REFERENCE_TOKEN_DRIFT');
+if(canonical.some(x=>!x)||canonical.reduce((n,s)=>n+s.regions.size,0)!==202||canonical.reduce((n,s)=>n+[...s.regions].reduce((m,r)=>m+r.behaviors.size,0),0)!==119)throw Error('ROSTER_DRIFT');
+if(ledger?.revision!==13||await H(ledger)!=='ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4')throw Error('SOVEREIGN_LEDGER_DRIFT');
+const trans=['h0rAVwjsaVkKLQBa','xsitdXO94BHJkYKX'].map(id=>s.regions.get(id));if(trans.some(r=>!r||!r.getFlag('world','dicebox')?.stableId||![...r.shapes].some(q=>q.type==='rectangle'&&q.width>=300&&q.height>=300)))throw Error('CL50_TRANSITION_SIZE_DRIFT');
+const walls=[...s.walls],doors=walls.filter(w=>w.door>0);
+if(doors.some(w=>Math.hypot(w.c[2]-w.c[0],w.c[3]-w.c[1])<1.15*150))throw Error('DOOR_TOO_NARROW');
+const orig=s.toObject();
+if(await H(orig)!=='1ccb5122328a6032a9a3164943c3c599d7bca0d674a9bfd206f9a99f8ef59413')throw Error('EXACT_ORIGINAL_SOURCE_DRIFT');
+await s.update({'grid.size':150},{autoReposition:false});
+const now=s.toObject(),normal=JSON.parse(JSON.stringify(now));
+normal.grid.size=120;normal._stats.modifiedTime=1791351693469;normal._stats.lastModifiedBy="JESWV6CcU7m07VW6";
+if(now.grid.size!==150||await H(normal)!=='1ccb5122328a6032a9a3164943c3c599d7bca0d674a9bfd206f9a99f8ef59413'||await H(game.journal.get('xhlXv6CCH34HVga3')?.getFlag('world','dicebox')?.state)!=='ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4')throw Error('OUTCOME_UNKNOWN_DO_NOT_RETRY');
+return{operation:'clscale-ref-n1-grid150-v001-apply',status:'PASS_SOURCE_UPDATED',oldSHA:'1ccb5122328a6032a9a3164943c3c599d7bca0d674a9bfd206f9a99f8ef59413',afterSHA:await H(now),normalizedSHA:await H(normal),tokenId:t.id,tokenX:t.x,tokenY:t.y};

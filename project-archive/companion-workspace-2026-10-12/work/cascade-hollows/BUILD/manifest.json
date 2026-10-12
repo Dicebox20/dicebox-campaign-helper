@@ -1,0 +1,76 @@
+{
+  "schemaVersion": "1.0.0",
+  "packageId": "dicebox-underdark-cascade-hollows-v1",
+  "mapId": "cascade-hollows",
+  "sceneName": "Cascade Hollows",
+  "status": "staged-not-live-verified",
+  "target": {
+    "foundry": "14.367",
+    "system": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "canvas": {
+    "width": 1536,
+    "height": 1024,
+    "gridType": 0
+  },
+  "renderer": {
+    "filename": "cascade-hollows.webp",
+    "foundryPathTemplate": "worlds/<world-id>/dicebox/maps/underdark/cascade-hollows.webp",
+    "sourceChatArtifact": "Cascade_Hollows.webp",
+    "sha256": "6b8107a2e40d193db50bcd2fe1d595ccdecbfdeb7c189b99318c832816b09369",
+    "note": "Generated and approved in the ChatGPT conversation; copy into the Foundry path before runtime injection."
+  },
+  "regionCount": 19,
+  "regions": [
+    "cascade-arrival-shimmerdeep",
+    "cascade-return-shimmerdeep",
+    "cascade-arrival-fossil-deeps",
+    "cascade-exit-fossil-deeps",
+    "cascade-ore-common-01",
+    "cascade-fishing-plunge-01",
+    "cascade-fishing-channel-02",
+    "cascade-fishing-deep-03",
+    "cascade-resource-glowcap-01",
+    "cascade-resource-deepmoss-02",
+    "cascade-resource-clay-03",
+    "cascade-resource-shellbed-04",
+    "cascade-salvage-washup-01",
+    "cascade-discovery-crystal-01",
+    "cascade-discovery-shellcase-02",
+    "cascade-discovery-cache-03",
+    "cascade-creature-zone-crab-01",
+    "cascade-environment-dry-shelf-01",
+    "cascade-environment-waterfall-path-02"
+  ],
+  "systemIntegrations": {
+    "fishing": {
+      "module": "regionwright-fishing",
+      "api": "game.modules.get('regionwright-fishing').api.inject",
+      "biome": "underdark",
+      "regions": 3
+    },
+    "mining": {
+      "module": "regionwright-mining",
+      "api": "game.modules.get('regionwright-mining').api.configureRegion",
+      "oreId": "iron",
+      "regions": 1
+    }
+  },
+  "teleports": [
+    { "routeKey":"shimmerdeep-cascade", "from":"cascade-return-shimmerdeep", "to":"shimmerdeep-arrival-cascade" },
+    { "routeKey":"shimmerdeep-cascade", "from":"shimmerdeep-exit-cascade", "to":"cascade-arrival-shimmerdeep" },
+    { "routeKey":"cascade-fossil-deeps", "from":"cascade-exit-fossil-deeps", "to":"fossil-arrival-cascade" },
+    { "routeKey":"cascade-fossil-deeps", "from":"fossil-return-cascade", "to":"cascade-arrival-fossil-deeps" }
+  ],
+  "preservation": {
+    "foreignRegions": "preserve",
+    "walls": "preserve",
+    "lights": "preserve",
+    "drawings": "preserve",
+    "tokens": "preserve",
+    "notes": "preserve",
+    "tiles": "preserve",
+    "manualState": "preserve"
+  }
+}

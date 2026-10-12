@@ -1,0 +1,3 @@
+let obj=game.scenes.get("La9krMOMBhAhDLi6")?.regions.get("zKNU1R3JGIMMt017"),source=null;for(let i=0;obj&&i<9;i++,obj=Object.getPrototypeOf(obj)){if(obj.constructor?.name==="RegionDocument"){source=String(obj.constructor);break;}}if(!source)throw Error("NO_BASE");
+const matches=[...source.matchAll(/#getTokenDestinations\s*\(/g)].map(m=>m.index);const pos=matches.at(-1);
+return{readOnly:true,pos,body:source.slice(pos,pos+10500)};

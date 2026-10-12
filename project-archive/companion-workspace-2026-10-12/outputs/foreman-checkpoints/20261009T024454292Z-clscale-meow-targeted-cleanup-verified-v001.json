@@ -1,0 +1,37 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T02:44:54.2929050Z",
+    "workUnitId":  "clscale-meow-targeted-cleanup-verified-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "User explicitly delegated creative/safety calibration decisions. Saved full sovereign ledger revision12 and Meow actor, Journal, 21 Scene source hashes, 17 token objects to exact source backup clscale-meow-ledger-before-targeted-cleanup-v001.json. Guarded no-write cleanup preview PASS: 13 actor-authored post-2026-10-09 02:00 Region-tokenEnter notice records, six derived observed/interpreted flags, one Water Control Wheel recovered entry. One bounded authorized developer-GM cleanup script updated top-level Journal world.dicebox state with non-recursive replacement, revision12 to 13; deleted only generated actor item 6YiaeulYci78TZRg. Independent full normalized backup comparison PASS: only approved ledger changes, revision13 and updatedAt, actor item removal plus audit fields; all 21 original Scene.toObject SHA match; prior E1 and Ret M1 notices unchanged, Wheel unrecovered, 17 reference tokens intact. Updated CL90 read-only v014 PASS_WITH_KNOWN_BLOCKERS zero failures; canonical 21 Scenes/202 Regions/119 behaviors/33 items. Ledger sha ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4. Original v013 regression deliberately remains historical (revision3). No railway installers, music, teleport, other actor writes or player tests.",
+    "blocker":  "Actual 1x1/2x2 railway pathing playtests deferred, CL50 quarantined. Active Bridge Foreman receipt remained unresolved with Invalid operationId; no duplicate boundary triggered. F1 320 unsafe near inbound Wall; possible 240 with 2x2 fail-closed needs separate plan.",
+    "nextAction":  "One new bounded N1 grid120 to150 Scene-only candidate after current ledger13 hash ec3f1a02 fresh source backup and guard, one Scene grid change preserving Meow token x/y and all Wall/Region coordinates. Independently verify, rerun CL90 v014. Then distinct N2 120 to160 with same gate; do not activate CL50 installers. Need KB source and roadmap later synchronized with final installed facts and new regression baseline.",
+    "changedPaths":  [
+
+                     ],
+    "validation":  [
+
+                   ],
+    "runtimeTarget":  "Foundry14.367/dnd5e5.3.3/the-lost-mine-of-phandalin/Assistant Gamemaster",
+    "receiptRef":  "outputs\\foreman-checkpoints\\clscale-meow-ledger-before-targeted-cleanup-v001.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

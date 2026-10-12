@@ -1,0 +1,10 @@
+{
+  "operation": "central-lodge.cl52.local-contract-tests-v001",
+  "status": "PASS",
+  "noWrite": true,
+  "cueCount": 12,
+  "scenes": 21,
+  "checks": 101,
+  "contractSha256": "510bfdb9e19ab9db09cc3ecd9607bfbcb6430fd78b4b83f0989c346c6e7e1985",
+  "noGameplayCanary": true
+}

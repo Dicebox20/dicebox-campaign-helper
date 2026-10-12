@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T02:56:27.8151771Z",
+    "workUnitId":  "clscale-reference-token-three-room-kb-reconciled-v001",
+    "status":  "PASS",
+    "continuation":  "STOP",
+    "evidenceLayer":  "local",
+    "summary":  "All work after owner delegated calibration discretion completed under authorized Foundry Assistant Gamemaster. Targeted Meow ledger side effects cleanup independent full normalized backup PASS, current revision13 SHA ec3f1a02887b80a342653681d217d357f7bb7f5b44fa436555d57bf12c44cfd4; actor item newly granted Water Control Wheel deleted and state unrecovered, 13 notice entries and six derived flags cleared; old E1/M1 progress and actor unrelated inventory preserved. N1 Source Scene MAbLfBqG7qIVVuLN 120 to150 source-normalized PASS after SHA8fee014d032ce5b2a70405b7212db2bf05534c7c51994d073c617243d78a379e. N2 Scene4pc5akMBieHU7GvV 120 to160 source-normalized PASS after SHAc683e2ccffa4588a61f1df67d902cfa2de2f9d7f888f8ef990761ec7f2899f9d. F2 Scene HWitOe1wSid7MZ1y 120 to240 source verification PASS after stable SHA5ad191d492195bf227bb099d9b356992aca44fe6d884ac940e085db8c2342639, with explicit verified derived token membership in behavior-free F2 arrival Region; full original Unicode source restored to backup original SHA f2b20ebe6b1ccd788fd77f16f8a6887459a978a968259d838c2902aa4fd04680. All three guarded original backups, previews, precisely one scene grid update each, independent readbacks completed; all original Walls/Regions/Lights and Meow token coordinates preserved. CL90 v014 after final F2 PASS_WITH_KNOWN_BLOCKERS zero failures and 21 Scenes/202 Regions/119 behaviors/33 Items. Owner visually reviewed candidate sizes; none of CL50 installers, teleports, story audio, player tests executed. Canonical KB seed chronology 80 seed fragments rebuilt and verified integrity ok, 432 sources 1206 facts 477 decisions 548 open items, docs/roadmap/checklist updated F2 completion and future F1 safety gate. Windows Media Windows Startup.wav found, but not verified to be XP startup; no ping needed or played.",
+    "blocker":  "F1 candidate320 is unsafe for 1x1 token in inbound T3 Region because y2640 solid Wall. F1 visual candidate240 not safe for 2x2 inbound under existing arrival Region without separate fail-closed large token policy and GM manual fallback; keep F1 grid120 and T3-\u003eF1 behavior source untouched. N3 grid120 narrow doors; Ret M1 already320 protected. CL50 R1-R4 quarantine and no real player canaries remain. Exact XP startup music not independently identified; Windows Startup.wav available but may be newer version, do not claim XP. Bridge receipt reconciliation prior Invalid operationId and staged unresolved; no duplicate automatic continuation sent.",
+    "nextAction":  "Next bounded read-only F1 240 safe-arrival design study: identify T3-\u003eF1 GM-confirmed Region teleportToken random/unsnapped, size gates and whether modifying destination region vs fail-closed manual transfer can preserve 2x2 and existing puzzle state. Keep F1 grid120 until explicit source/wall/route proof and one distinct guarded work unit. Do not use Meow token as a gameplay canary or activate CL50 installers. If owner input needed, attempt verified exact Windows XP startup sound via authorized desktop relay to ping user; do not assume generic Windows Startup.wav is XP.",
+    "changedPaths":  [
+                         "database\\seed.d\\zzzzzzzzzzzzzzzzzzzzzzzz-2026-10-09-clscale-meow-n1-n2-verified.sql",
+                         "database\\seed.d\\zzzzzzzzzzzzzzzzzzzzzzzzz-2026-10-09-clscale-f2-grid240-verified.sql",
+                         "docs\\CENTRAL-LODGE-ROADMAP.md",
+                         "docs\\CENTRAL-LODGE-ACTIVE-CHECKLIST.md",
+                         "work\\foundry-playwright-harness\\cl90-progress-safety-smoke-v014.page.js"
+                     ],
+    "validation":  [
+                       "Meow cleanup independent complete ledger/actor/21-scene normalized source PASS",
+                       "N1 grid150 source/token/Walls/Region independent final PASS",
+                       "N2 grid160 source/token/Walls/Region independent final PASS",
+                       "F2 grid240 independent after-state normalized source PASS after known automatic token Region-membership change",
+                       "CL90 v014 zero unexpected failures after all changes, ledger revision13",
+                       "SQLite build_database.py and verify_database.py integrity ok 432 sources 1206 facts 80 fragments",
+                       "CL50 installers, audio, live teleport and player tests untouched"
+                   ],
+    "runtimeTarget":  "",
+    "receiptRef":  "outputs\\foreman-checkpoints\\clscale-ref-f2-grid240-v001-original-source-recovered.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}

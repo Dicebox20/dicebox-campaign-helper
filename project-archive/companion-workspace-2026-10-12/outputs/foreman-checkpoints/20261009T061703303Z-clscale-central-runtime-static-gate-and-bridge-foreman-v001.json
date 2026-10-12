@@ -1,0 +1,42 @@
+{
+    "schemaVersion":  "1.0.0",
+    "checkpointType":  "campaign-helper-foreman",
+    "timestampUtc":  "2026-10-09T06:17:03.3035073Z",
+    "workUnitId":  "clscale-central-runtime-static-gate-and-bridge-foreman-v001",
+    "status":  "PARTIAL",
+    "continuation":  "CONTINUE",
+    "evidenceLayer":  "fixture",
+    "summary":  "Owner explicitly activated Foreman Mode, authorized exact Codex partner and 15-minute bounded turns. Dicebox Bridge local session exact endpoints chatgpt projectless conversation6ac80c3c-2cac-83e8-8d8a-7ed65a84e135 and codex project01a02313-4304-77f2-9a7c-1cee833d9832 conversation01a11e4b-5d11-7302-aa23-2bc681da307f. Foreman enabled and local work checkpoint complete. Native MESSAGE_ACTION was staged id msg-1d7d46b5-4103-4ef7-957f-63cc82e1b30d but native dispatch failed before sending due undefined waitForNativeIdle. No blind resend. Added missing waitForNativeIdle import in C:\\Users\\rujie\\Downloads\\dicebox-bridge-repo\\server\\mcp.mjs; focused8/8 full135/135 Bridge tests PASS. Active Bridge MCP process not restarted, so native handoff not proven. Fixture dbx-test-world TCP30005 kept STOPPED, original Tuesday Campaign untouched. Post-import offline verification 21 scenes,202 Regions,119 executeScript behaviors 118 enabled,22 tokens,6 actors,4 folders,28 scene art files verified. All 119 region scripts parse statically with no execution, four scripts reference teleport,22 reference document writes,10 dialogs; no missing Scene UUID destinations detected. Official Foundry docs state hostname/localHostname do not change listening interfaces. No committed teleport, production F1 T3 F2 Meow Ret CL50 ledger mutation, or Windows Firewall change.",
+    "blocker":  "Native return/wake is NOT delivered: current plugin must reload repaired import before resending exact queued message; host current chat identity also not independently reported. Runtime fixture launch is blocked for safe private login because its GM account has blank password and Node binds all interfaces. Region executeScript behaviors may mutate fixture when triggered; offline scan is not live certification.",
+    "nextAction":  "Within next bounded autonomous Foreman cycle, verify Bridge plugin reload safely without spraying duplicate native messages; if needed ask owner to reload Dicebox Bridge in ChatGPT. Preserve queued message ID and reconcile before any retry. Continue offline source-static checks. Before launching dbx-test-world find proven interface isolation without firewall changes or request owner authorization for authenticated GM login. Upon safe runtime gate verify actual module/Scene wiring read-only. Never commit live teleports without separate gating.",
+    "changedPaths":  [
+                         "C:\\Users\\rujie\\Downloads\\dicebox-bridge-repo\\server\\mcp.mjs",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\central-runtime-wiring-offline-audit-v001.json",
+                         "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-region-script-safety-scan-v004.json"
+                     ],
+    "validation":  [
+                       "Bridge missing function import fixed in source and 135/135 tests passed, active plugin unrefreshed",
+                       "21 Scenes 202 Regions 119 script behaviors 118 enabled, all script JS syntax checks PASS",
+                       "4 teleport references, 22 script document writes, 10 dialogs, no missing 16-char Scene UUID destinations",
+                       "Fixture remains STOPPED, local no production or firewall mutations; failed native message logged and not replayed"
+                   ],
+    "runtimeTarget":  "Disposable dbx-test-world Foundry14.367 dnd5e5.3.3 port30005 STOPPED; production Tuesday Campaign unchanged; Dicebox Bridge plugin v0.1.11 local Foreman active, native delivery blocked until reload",
+    "receiptRef":  "C:\\Users\\rujie\\Documents\\Codex\\2026-08-20\\dicebox-campaign-helper\\work\\clscale-central-lodge-migration-v001\\clscale-region-script-safety-scan-v004.json",
+    "repository":  {
+                       "root":  "C:\\Users\\rujie\\Documents\\Codex\\DiceBox Campaign Helper",
+                       "head":  null,
+                       "dirtyCount":  0,
+                       "dirtyFingerprintSha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+                       "dirtySample":  [
+
+                                       ],
+                       "dirtySampleTruncated":  false
+                   },
+    "controlPlane":  {
+                         "activeCard":  null,
+                         "activeCardSha256":  null,
+                         "roadmapSha256":  null,
+                         "seedSha256":  "ED04F347EFAF99AF9F82834FFEC26937456F0DF05D227E8296F3BE019722E94B"
+                     },
+    "authorityBoundary":  "Continuity evidence only. This checkpoint does not accept project changes, promote a stage, confer Foundry authority, or satisfy Ready-to-Play."
+}
