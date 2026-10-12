@@ -1,6 +1,8 @@
 # START HERE — next-chat handoff: DiceBox canonical workflows
 
 **Prepared:** October 12, 2026 (America/Los_Angeles)  
+**Continuation pass:** [Evidence Pass 2 (2026-10-12)](EVIDENCE-PASS-2-2026-10-12.md) — GitHub ref/PR revalidation, direct source/test witnesses for all five subsystems, trial T-190 vs locally claimed T-209, full-size file read blocker, and next safe source-capable DB/active-slice gate. This is documentation-only and carries **PARTIAL / STOP**. Read it after this handoff and protocol; it does not replace accepted main.  
+
 **Current work unit:** Multi-pass workflow reconciliation and durable next-chat transfer  
 **Status:** `PARTIAL — DOCUMENTED / STOP` (reconciled source findings, no full DB/active-slice test, no promotion or Foundry work)  
 **Repository:** https://github.com/Dicebox20/dicebox-campaign-helper  
