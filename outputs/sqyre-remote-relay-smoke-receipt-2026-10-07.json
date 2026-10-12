@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "topology": "Sqyre browser -> outbound wss:// relay -> HTTPS MCP /mcp",
+  "oidc": "issuer/audience/JWKS verifier accepted a valid fixture and rejected an invalid fixture",
+  "foundryPairing": "separate client token and exact world/GM handshake passed",
+  "originAllowlist": "exact configured Sqyre origin passed; unexpected origin rejected",
+  "secureUrl": "wss:// remote URL accepted; ws:// non-loopback URL rejected",
+  "noLive": true,
+  "noSqyreLogin": true,
+  "noSecrets": true,
+  "doesNotProve": [
+    "public DNS/TLS",
+    "OIDC provider configuration",
+    "Desktop Commander account binding",
+    "Sqyre module upload",
+    "live Foundry connection",
+    "Foundry mutation"
+  ]
+}

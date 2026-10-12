@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.38.0",
+  "capturedAt": "2026-10-06",
+  "mode": "foreman",
+  "campaign": "central-lodge",
+  "currentScene": "B1",
+  "phase": "BUILD",
+  "status": "INSPECT_PASS",
+  "approvedRender": {
+    "genId": "6c51e4dd-3a84-40ad-8d68-775a07ab5e72",
+    "path": "/mnt/data/top_down_isometric_like_dungeon_underground_cellar.png"
+  },
+  "nextAction": "BUILD B1 from the approved render."
+}

@@ -1,57 +1,111 @@
-# Dicebox Campaign Helper Unification — 2026-10-01
+﻿# Dicebox Campaign Helper - Project Unification
 
-## Canonical identity
+Date: 2026-10-01
+Status: CANONICAL
 
-The canonical project name is **Dicebox Campaign Helper**.
+## Authority
 
-Former names and scopes are preserved as historical lineage or subsystems:
+The canonical project identity is **Dicebox Campaign Helper**.
 
-- **Dicebox Injector** — Foundry compilation, deployment, injection, reconciliation, transfer, and verification subsystem inside Dicebox Campaign Helper.
-- **BTR Injector** — older legacy name for Injector work.
-- **Beyond the Realms (BTR)** — campaign content, not the project.
-- **Regionwright** — companion tooling/integration used by the project; not a competing project authority.
+The former **Dicebox Injector / BTR Injector** work is not a separate peer project. It is a technical subsystem and historical lineage inside Dicebox Campaign Helper.
 
-## Repository authority
+Where older Injector-era material conflicts with newer Campaign Helper or current Injector-successor material, preserve the older material as evidence/history and reconcile against the newest verified implementation before changing behavior.
 
-`Dicebox20/dicebox-campaign-helper` is the canonical source repository for the full project.
+## Canonical Scope
 
-GitHub is the permanent source of truth for project code, documentation, schemas, tests, migrations, roadmap/control files, and reproducible knowledge sources. Local checkouts, cloud workspaces, build machines, and runtime servers are replaceable execution environments.
+Dicebox Campaign Helper now owns:
 
-The migration snapshot that previously occupied `main` is preserved on branch `archive/migration-2026-10-01`. It is provenance and recovery evidence, not current project authority.
-
-## Unified scope
-
-Dicebox Campaign Helper owns the complete product:
-
-- campaign planning, lore, continuity, NPCs, factions, quests, encounters, puzzles, locations, sessions, and GM knowledge;
-- the TTRPG-specialized ChatGPT/Campaign Director experience;
-- desktop workspace and UI;
-- campaign knowledge/database systems;
-- map, scene, token, handout, audio, image, and asset workflows;
-- Foundry Scene, Actor, Item, Journal, RollTable, Playlist, Token, Wall, Light, Region, Note, Macro, Compendium, and related document workflows;
-- Dicebox Injector compiler/deployment/reconciliation machinery;
-- Regionwright integration;
-- Foundry runtime inspection, preview, approval, apply, reread, verification, backup, rollback, and receipts;
-- remote/shared-server deployment;
+- campaign planning, lore, continuity, NPCs, factions, quests, encounters, puzzles, locations, and GM knowledge;
+- Foundry VTT scene compilation and injection;
+- the Dicebox Injector architecture and transport/compression/reassembly techniques;
+- Regionwright integration and scene-region workflows;
+- map and scene authoring;
+- asset, token, handout, audio, and image workflows;
+- desktop Campaign Helper application development;
+- knowledge database and campaign database maintenance;
 - Codex development, handoff, review, and escalation workflows;
-- GitHub, cloud-development, CI, release, and bootstrap/self-development infrastructure.
+- GitHub/repository workflows and documentation;
+- Beyond the Realms campaign bridge material;
+- reusable Dicebox compiler/core/scene/Foundry packages.
 
-## Product direction
+## Current Sources of Truth
 
-Dicebox Campaign Helper is an AI-native TTRPG workspace and Foundry control plane. The LLM provides campaign/TTRPG reasoning and orchestrates typed Dicebox capabilities; deterministic services perform filesystem, deployment, Foundry, asset, validation, and runtime operations.
+1. docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md
+2. docs/GPT-DEVELOPMENT-WORKSPACE-ROADMAP-AUDIT-2026-10-01.md
+3. PROJECT_CHARTER.md
+4. AGENTS.md
+5. database/
+6. beyond-the-realms-bridge/
+7. current source under apps/, packages/, tools/, and tests/
+8. verified runtime/closure receipts under outputs/ when a claim depends on them
 
-The target user experience is deliberately simple even when the backend is sophisticated. The baseline workspace shell is:
+## Migration Classification
 
-**Conversation | Workspace | Preview | Needs Attention**
+### Canonical knowledge
+- campaign database and BTR bridge;
+- current roadmap and current audit;
+- project charter and workflow rules;
+- current compiler/Foundry/desktop source;
+- current Regionwright handoffs and verified integration state.
 
-with **LIVE / CHAT / FEED** as the primary conversation/activity modes.
+### Historical evidence
+- milestone receipts;
+- old fixture-only proofs;
+- superseded Injector implementations;
+- obsolete roadmap steps that remain useful for provenance.
 
-## Current infrastructure principle
+### Non-knowledge / reproducibility material
+- node_modules/;
+- large temporary Foundry fixture directories;
+- Playwright reports;
+- transient caches and trace targets;
+- generated dependency/build material.
 
-The project must not depend on Rujiel's local PC for continuity. GitHub is canonical; development and test work may run in remote/cloud workspaces; the shared Foundry server is a deployment/runtime target. A failed or replaced local computer must not endanger the project.
+These are not to be treated as campaign knowledge merely because they exist in the workspace.
 
-## Working rule
+## Injector Subsystem
 
-**One project, one roadmap, one knowledge authority, one current implementation.**
+The term **Dicebox Injector** may still be used for the subsystem that converts structured campaign/scene specifications into Foundry-ready artifacts and guarded runtime operations.
 
-Historical evidence remains valuable, but historical project naming or migration policy cannot silently override current accepted decisions.
+It includes, as applicable:
+
+- scene/background creation;
+- walls and doors;
+- regions and RegionBehavior;
+- tiles;
+- tokens;
+- lights;
+- sounds;
+- drawings and notes;
+- journals/handouts;
+- stable IDs and ownership markers;
+- preview/approval/apply/reread;
+- foreign-state preservation;
+- outcome-unknown handling;
+- compact transfer/chunking/reassembly mechanisms;
+- deterministic compilation and validation.
+
+The subsystem is governed by Dicebox Campaign Helper project authority.
+
+## Beyond the Realms
+
+beyond-the-realms-bridge/ is a first-class campaign migration source, not a disposable compatibility folder.
+
+Its campaign continuity and Injector reconciliation documents should be incorporated into the canonical knowledge model while preserving established-canon versus proposed-content distinctions.
+
+## Working Rule
+
+One project, one roadmap, one knowledge authority, one current implementation.
+
+Do not fork campaign truth, Injector truth, or Foundry truth into separate competing project identities.
+
+## Immediate Integration Work
+
+1. ingest and reconcile the Campaign Helper knowledge databases;
+2. ingest the Beyond the Realms bridge;
+3. catalog current roadmap state and unresolved gates;
+4. reconcile Injector-era methods against current compiler/Foundry architecture;
+5. identify the active Codex conversation(s) associated with this workspace;
+6. reconcile repository copies/remotes before publishing migration changes;
+7. preserve historical receipts without treating all receipts as current authority;
+8. establish a single searchable catalogue for campaign knowledge, technical architecture, assets, and workflows.

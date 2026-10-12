@@ -1,5 +1,4 @@
 export * from "./plan.js";
-export * from "./image-prompt-clean-restart.js";
 export * from "./document-plan.js";
 export * from "./transaction.js";
 export * from "./transaction-ledger.js";
@@ -7,7 +6,6 @@ export * from "./transaction-journal-store.js";
 export * from "./link-plan.js";
 export * from "./media-registry.js";
 export * from "./spatial-blueprint.js";
-export * from "./geometry-tolerance.js";
 export * from "./spatial-projection-plan.js";
 export * from "./furnishing-projection-plan.js";
 export * from "./ascendancy-furnishing-plan-fixture.js";

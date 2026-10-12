@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "workUnitId": "chatgpt-foundry-plugin-implementation-20261007",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "target": "local MCP gateway and repository documentation only",
+  "acceptedSlice": "chatgpt-foundry-plugin-2026-10-07",
+  "acceptance": {
+    "chatgptInitializeInstructions": true,
+    "customMcpPluginSetupGuide": true,
+    "fixedToolAnnotationsPreserved": true,
+    "futureAppCanReuseSameMcpEndpoint": true
+  },
+  "validation": {
+    "focusedTests": "10/10 passed across 2 files",
+    "initializePayload": "PASS; self-contained ChatGPT plugin instructions returned",
+    "toolMetadata": "PASS; read-only/preview/write annotations preserved",
+    "packageBuild": "PASS",
+    "syntaxChecks": "PASS",
+    "toolingVerification": "PASS",
+    "workflowCheck": "PASS; Stage 12 active; readyClaim false",
+    "knowledgeBase": "PASS; integrity ok; rebuilt from schema.sql and seed.sql"
+  },
+  "changedSurface": [
+    "tools/dicebox-foundry-remote-gateway.mjs",
+    "tests/dicebox-foundry-remote-gateway.test.ts",
+    "docs/CHATGPT-FOUNDRY-PLUGIN.md",
+    "deploy/sqyre-relay/README.md",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "docs/DICEBOX-CAMPAIGN-HELPER-ROADMAP-2026-08-23.md",
+    "database/seed.sql",
+    "database/dicebox_campaign_helper_knowledge.sqlite",
+    "outputs/chatgpt-foundry-plugin-closure-receipt-2026-10-07.json"
+  ],
+  "preservedBoundaries": [
+    "No ChatGPT account/plugin installation",
+    "No public relay publication or external OAuth provisioning",
+    "No Sqyre login/upload",
+    "No live Foundry/browser authentication or mutation",
+    "No arbitrary macro/script/shell/document execution",
+    "No Stage 12 promotion or Ready-to-Play claim",
+    "M1284 remains closed at the manual Gamemaster rejoin boundary"
+  ],
+  "nextPrerequisites": [
+    "Public HTTPS relay `/mcp` URL or supported Secure MCP Tunnel",
+    "Compatible OAuth/OIDC provider configuration",
+    "User-installed ChatGPT custom MCP plugin",
+    "Read-only connector profile/readiness probe before any write"
+  ],
+  "doesNotProve": [
+    "ChatGPT account installation",
+    "public relay or OAuth availability",
+    "live Sqyre module upload",
+    "live Foundry connection or active-GM authority",
+    "Foundry mutation or Ready-to-Play"
+  ]
+}

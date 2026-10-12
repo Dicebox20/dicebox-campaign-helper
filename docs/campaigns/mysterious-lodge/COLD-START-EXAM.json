@@ -1,0 +1,78 @@
+{
+  "schema": "mysterious-lodge-cold-start-exam/v1",
+  "passingRule": "Candidate answers each question using only linked campaign source documents, with a specific source file and passage/field for each response. Do not read the separate examiner rubric before answering. Passing requires independent examiner review of all critical answers. Local machine verification is necessary but not sufficient.",
+  "questions": [
+    {
+      "id": "C01",
+      "critical": true,
+      "q": "What were the original and current campaign names, and which similarly named campaign is unrelated?",
+      "source": "CREATIVE-CANON.md"
+    },
+    {
+      "id": "C02",
+      "critical": true,
+      "q": "Why and where do the characters encounter the Lodge?",
+      "source": "CREATIVE-CANON.md"
+    },
+    {
+      "id": "C03",
+      "critical": true,
+      "q": "What is the campaign objective and finale revelation?",
+      "source": "CREATIVE-CANON.md"
+    },
+    {
+      "id": "C04",
+      "critical": true,
+      "q": "Who exactly is the summoned master and what happens after arriving?",
+      "source": "CREATIVE-CANON.md"
+    },
+    {
+      "id": "C05",
+      "critical": true,
+      "q": "What are the progression influences and campaign prototype?",
+      "source": "CREATIVE-CANON.md"
+    },
+    {
+      "id": "C06",
+      "critical": true,
+      "q": "Distinguish verified installation counts from actual readiness.",
+      "source": "CURRENT-STATE.json"
+    },
+    {
+      "id": "C07",
+      "critical": true,
+      "q": "Trace two cross-scene item puzzle chains accurately.",
+      "source": "PUZZLE-ROUTES.md"
+    },
+    {
+      "id": "C08",
+      "critical": true,
+      "q": "Which depot dependency might prevent progress?",
+      "source": "PUZZLE-ROUTES.md"
+    },
+    {
+      "id": "C09",
+      "critical": true,
+      "q": "What's the status of Scene background artwork?",
+      "source": "CURRENT-STATE.json"
+    },
+    {
+      "id": "C10",
+      "critical": true,
+      "q": "Which checkpoint is authoritative and what happens if a prior operation has an unknown result?",
+      "source": "START-HERE.md"
+    },
+    {
+      "id": "C11",
+      "critical": true,
+      "q": "How may a new assistant change family members, the master or ending?",
+      "source": "CREATIVE-CANON.md"
+    },
+    {
+      "id": "C12",
+      "critical": false,
+      "q": "What must be done before Foundry launch or mutation?",
+      "source": "SESSION-HANDOFF.md"
+    }
+  ]
+}

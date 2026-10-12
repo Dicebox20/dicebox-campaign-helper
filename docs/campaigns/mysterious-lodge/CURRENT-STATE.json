@@ -1,0 +1,108 @@
+{
+  "schema": "mysterious-lodge-campaign-state/v1",
+  "campaignId": "mysterious-lodge",
+  "aliases": [
+    "Central Lodge"
+  ],
+  "separateCampaigns": [
+    "House of the Damned"
+  ],
+  "updatedDate": "2026-10-11",
+  "status": "PLAYTEST_ACTIVE_ALL_WORLD_MACRO_LIMITED_EXECUTION_VERIFIED_AWAITING_E1_RETEST",
+  "documentation": {"changeLog": "docs/campaigns/mysterious-lodge/CHANGELOG.md", "newChatWorkflow": "docs/campaigns/mysterious-lodge/NEW-CHAT-WORKFLOW.md", "established": "2026-10-11", "scope": "documentation-only; no gameplay status promotion"},
+  "operatingMode": {"status": "ACTIVE_OWNER_RESUMED_PLAYTEST", "resumption": "Owner explicitly resumed The Mysterious Lodge playtest; player uses Randal / Player 1 and assistant operates GM 1. Bridge remains separate; no automatic monitoring or destructive action.", "bridgeConnection": "not assumed"},
+  "creativeAuthority": "CREATIVE-CANON.md",
+  "creativeEndingStatus": "UNDECIDED",
+  "sourceEvidence": "work/clscale-central-lodge-migration-v001/story-reconstruction-audit-20261010/",
+  "verifiedFixture": {
+    "worldId": "dbx-test-world",
+    "sceneCount": 21,
+    "regions": 202,
+    "regionBehaviors": 120,
+    "items": 33,
+    "structuredContracts": 96,
+    "artFiles": 26,
+    "sceneBackgroundBindings": 0,
+    "fixtureDate": "2026-10-10",
+    "evidenceLevel": "READ_ONLY_FROZEN_FIXTURE_NOT_LIVE"
+  },
+  "progress": {
+    "completed": [
+      "Owner's premise and unresolved ending recorded",
+      "Frozen fixture 109-file copy and per-file hashes",
+      "Scene and puzzle source audit including multiline scripts",
+      "Image file presence and hash survey",
+      "N3/T3 read-only dependency audit: two custom nested item grants recovered and source cycle confirmed; 31 static depot tests pass"
+    ],
+    "open": [
+      "Owner review of reconstructed story and puzzle implications",
+      "N3/T3 gate script repair installed and reloaded; physical N3-to-T3 Scene travel and live token-entry tests remain pending",  
+      "Old Estate Survey nested pickup identified at M2 Founder Portrait; live grant test pending",
+      "Station Route Plate nested pickup identified at N3 baggage locker; live grant test pending",
+      "Correct background art assignment and visual test",
+      "Reciprocal railway and other scene travel validation",
+      "Authorized runtime safety and group playtest",
+      "F2 family staging and post-revelation ending (creative TBD)"
+    ]
+  },
+  "mostRecentCampaignWorkUnit": "mysterious-lodge-all-world-macro-limited-access-20261011",
+  "mostRecentEvidenceReceipt": "work/clscale-central-lodge-migration-v001/e1-all-world-macro-limited-permissions-v002-once.json",
+  "n3TwoStage": {"ownerApproved": true, "stageOne": "oldEstateSurvey+cultPassageDiagram => preliminaryResolved", "branch": "departureBoardResolved+switchWheelInstalled+preliminaryResolved => t3BranchUnlocked", "stageTwo": "OldEstateSurvey+CultPassageDiagram+T3RecentRouteFragment => routeOverlay.resolved", "stagePatch": "work/clscale-central-lodge-migration-v001/n3-two-stage-20261010/staged-source-patch.json", "sourceTestSuite": "PASS_39_OF_39", "canonicalKB": "PASS_CANONICAL_SYNCHRONIZED", "runtimeInstallation": "PASS_TWO_REGION_BEHAVIORS_PERSISTED_RELOAD_VERIFIED", "liveInstallReceipt": "work/clscale-central-lodge-migration-v001/n3-two-stage-20261010/n3-two-stage-live-install-once-receipt.json", "completeWorldBackup": "work/clscale-central-lodge-migration-v001/n3-two-stage-20261010/full-world-backup-before-two-stage-install-receipt.json", "physicalN3ToT3Transfer": "NOT_INSTALLED", "actualTokenEntryTest": "NOT_TESTED"},
+  "n3Review": {"status": "STATIC_AUDIT_COMPLETE", "report": "work/clscale-central-lodge-migration-v001/N3-DEPENDENCY-REVIEW-20261010.md", "itemAcquisition": "TWO_NESTED_PICKUP_PATHS_VERIFIED_IN_SOURCE", "sourceDependencyCycle": "CONFIRMED_NO_VALIDATED_ALTERNATE_T3_ENTRY", "depotStaticTests": "PASS_31_OF_31", "worldModified": false},
+  "continuitySystem": {
+    "status": "COMPLETE_LOCAL_WITH_INDEPENDENT_CODEX_RECOVERY_PASS",
+    "scope": "Creative knowledge, technical evidence and safe new-chat recovery, NOT finished playable campaign",
+    "maintenanceProcedure": "docs/campaigns/mysterious-lodge/MAINTENANCE.md",
+    "gitSnapshot": "UNCOMMITTED_LARGE_SHARED_WORKTREE; preserve all other changes",
+    "chatGptAppNewChatTrial": "OPTIONAL_NOT_PERFORMED"
+  },
+  "persistentCodexPartner": {
+    "sessionId": "01a128f9-b5f8-7340-a5b6-c2038edb1341",
+    "partnerInstructions": "docs/campaigns/mysterious-lodge/CODEX-PARTNER.md",
+    "startup": "PASS_11_OF_11_CRITICAL_1_OF_1_OPTIONAL",
+    "exactSessionResume": "PASS_SAME_SESSION_RESUMED",
+    "mode": "READ_ONLY_PARTNER_NO_BACKGROUND_AUTOMATION",
+    "chatGptFifthChatExam": "NOT_TESTED"
+  },
+  "coldStartVerification": {
+    "localVerifier": "PASS_LOCAL",
+    "negativeCases": "PASS_5_OF_5",
+    "candidateQuestionFile": "docs/campaigns/mysterious-lodge/COLD-START-EXAM.json",
+    "examinerRubric": "work/clscale-central-lodge-migration-v001/cold-start-recovery-20261010/COLD-START-GRADING-RUBRIC.json",
+    "rubricExcludedFromCandidateExam": true,
+    "actualFreshChatExam": "NOT_YET_TESTED_CHATGPT_UI",
+    "independentPersistentCodexCliExam": "PASS_11_OF_11_CRITICAL_AND_1_OF_1_OPTIONAL",
+    "portableFallback": "outputs/mysterious-lodge-continuity-portable-20261011-v6.zip"
+  },
+  "lastGlobalCheckpointObserved": "mysterious-lodge-short-roadmap-20261009; this global pointer is NOT owned by the campaign and may change",
+  "knowledgeBaseSync": {
+    "reproducibleSeedUpdated": true,
+    "stagedRebuildIntegrity": "PASS",
+    "canonicalDatabasePromotion": "PASS_CANONICAL_KB_SYNCHRONIZED",
+    "canonicalDatabaseUnchanged": false,
+    "originalCanonicalBackupPreserved": true,
+    "databaseBackupApiRehearsal": "PASS_10_TABLE_EXACT_MATCH",
+    "databaseBackupApiFinal": "PASS_10_TABLE_EXACT_MATCH",
+    "databaseBackupApiReceipt": "work/clscale-central-lodge-migration-v001/mysterious-lodge-handoff-kb-backup-20261010-v002/sqlite-backup-api-once-receipt.json",
+    "exactLogicalDiffVerified": "PASS_ONLY_ONE_NEW_SOURCE_ONE_NEW_DECISION_ONE_NEW_OPEN_ITEM_NO_DELETIONS",
+    "oneShotPromotionAttempt": "STOP_WINERROR32_NO_RETRY_CANONICAL_AND_STAGED_INTACT",
+    "promotionReceipt": "work/clscale-central-lodge-migration-v001/mysterious-lodge-handoff-kb-backup-20261010-v002/promotion-once-receipt.json",
+    "stagedDatabase": "work/clscale-central-lodge-migration-v001/mysterious-lodge-handoff-kb-backup-20261010-v002/staged-new.sqlite",
+    "n3TwoStageDecisionSync": "PASS_CANONICAL_SYNCHRONIZED",
+    "n3TwoStageKBReceipt": "work/clscale-central-lodge-migration-v001/n3-two-stage-kb-20261010/kb-promotion-receipt.json",
+    "nextStep": "The owner-approved N3 two-stage gate was installed in two existing RegionBehaviors and survived independent Foundry browser-reload source-hash verification. Complete 181-file preinstall world backup passed. Next is supervised clean-state token-entry verification and separately gated safe physical N3-to-T3 Scene transfer."
+  },
+  "runtime": {
+    "currentStatus": "LIVE_30005_ALL_WORLD_MACRO_EXECUTION_PERMISSION_PERSISTED",
+    "historicalIssue": "A launch encountered a world.json Windows lock owned by Desktop Commander. Do not assume it is currently locked or unlocked.",
+    "lastVerifiedLivePlaytest": false
+  },
+  "nextAction": {
+    "id": "MLODGE-E1-HOUND-PLAYER-RETEST-001",
+    "type": "DIRECT_PLAYER_RETEST",
+    "instruction": "All five world Macros in dbx-test-world on port 30005 now have default execution permission at least LIMITED. Player 1 (Randal) and Player 2 canUserExecute all five after independent reload; neither is Macro OWNER, all five source hashes and non-Macro document counts are unchanged, and GM 1 remains OWNER. This proves permission capability only. Next, have Randal refresh, move out of and re-enter the E1 Hound Notice Region, and report whether the warnings disappear and the clue appears. Fix only the next observed gameplay blocker. Port 30000 remains untouched; N3 physical travel is still uninstalled.",
+    "mayMutateWorld": false
+  },
+  "writerScope": "One authorized campaign writer at a time; observe root AGENTS.md, data and safety gates.",
+  "evidenceBoundary": "Fixture inventory is not full original creative history or live runtime certification."
+}

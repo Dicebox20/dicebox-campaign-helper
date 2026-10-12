@@ -1,0 +1,30 @@
+{
+  "schema": "mysterious-lodge-handoff-seal/v1",
+  "tracked": {
+    "START-HERE.md": "328f158eda9dbb166255924f06f487471e832d165d72d7ee7cf02870d49381a6",
+    "CHANGELOG.md": "84dd2d0e0ade3b6525451218825694dba64a21997a8a8b307393e42b1e4d0758",
+    "NEW-CHAT-WORKFLOW.md": "63de105951fe35fd3fd8b937ad1662e43c15cd2603b1a9ea8b2a2e9066ade80f",
+    "CREATIVE-CANON.md": "0c71dcbbdc217f5543938ecaeae755e6a3f61efc4f1bfc6f5fe99d82080ff84d",
+    "PUZZLE-ROUTES.md": "c861419637a5b484baff05049ba011c446a47f475cfa1a4ab48140e25da6fa95",
+    "SOURCE-INDEX.md": "fdd725588cfd0a3db6bb56e68b0ee3073dec08b4316b4286fc7a5880d59a56cf",
+    "SESSION-HANDOFF.md": "b9d44efc537adbd7ef196fe111ed5abe1cb7de6376c503378b626471dc5552af",
+    "CURRENT-STATE.json": "ccd8cad8a5432b79672e3adf16c3b4f22e254ac39daedb373a33cdd7a7b71667",
+    "COLD-START-EXAM.json": "694ff6079d3d97a7e0080fa2a153cdaab2d6ab222b8c2b467f932f4076d4cd82",
+    "DECISIONS.jsonl": "a7e89932f455c6d0c8b5c4333d24660aa15359ed05825336ffac5c24aad46e8b",
+    "COLD-START-TEST.md": "c9955ab6d889766dfec0cd3d0bf3778de360eb7926aae9d7966b0f033f0177bd",
+    "PORTABLE-HANDOFF.md": "8ab9d67a5560b068be5f7004c5603b7899d218b9524b7a9ad12e6ff454facdf2",
+    "CODEX-PARTNER.md": "4d8890d7e7e357c6a44c51b3d638bba9c4ab647ef3c2d23b3f18379db3159052",
+    "MAINTENANCE.md": "d4ca70f89bc6b76bc4529599c68d7fd2908c806263f4a53607989340511a396d"
+  },
+  "sourceReceiptSha256": "c3dd5e7b71d0e40385a8def911230e6ee4e864dfef074091eecbf89bea750b07",
+  "sourceSnapshotManifestSha256": "846ea8b7f82fdffc7624184428a7ced3982030da6b09dc0bcb86f8d0af5fd8ae",
+  "extractedEvidenceHashes": {
+    "snapshot-provenance.json": "846ea8b7f82fdffc7624184428a7ced3982030da6b09dc0bcb86f8d0af5fd8ae",
+    "full-evidence-catalog.json": "5d92d2fd408fb91d3298be52c99c13132a32a7bdc05ccde8bfb1da408f56fcd4",
+    "enhanced-puzzle-interaction-audit.json": "5b1f03a3d5e454cd05a03e2e7667ab6d0bd64bad221489b560345874f9d810c3",
+    "visual-artwork-file-manifest.json": "3f210a55c475913a47471d39ee0bf89170fdc73a59018dbb6fd9f2a043c96914",
+    "story-audit-continuation-receipt-20261010.json": "c3dd5e7b71d0e40385a8def911230e6ee4e864dfef074091eecbf89bea750b07",
+    "THE-MYSTERIOUS-LODGE-RECONSTRUCTION-FINDINGS-20261010.md": "75755a43866ddc7644e14313e073e1ede7ac7b159b4b181eda315b46f326bb29"
+  },
+  "note": "Intentional handoff edits require explicit --seal, not silent recomputation. Does not establish Foundry authority."
+}

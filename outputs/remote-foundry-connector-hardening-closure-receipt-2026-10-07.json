@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "1.0.0",
+  "workUnitId": "remote-foundry-connector-implementation-20261007",
+  "status": "PASS_LOCAL",
+  "evidenceClass": "local",
+  "target": "local repository and isolated fixture only",
+  "acceptedSlice": "remote-foundry-connector-hardening-2026-10-07",
+  "acceptance": {
+    "officialSdkStreamableHttp": true,
+    "protectedResourceMetadataAndBearerChallenge": true,
+    "nonLoopbackDeploymentGuard": true,
+    "reviewedRecipeRegistry": true,
+    "structuredSchemasAndAnnotations": true,
+    "exactFoundryProfileAndAttestation": true,
+    "isolatedBuildStageProfileProbe": true
+  },
+  "validation": {
+    "focusedTests": "113/113 passed",
+    "packageBuild": "PASS",
+    "syntaxChecks": "PASS",
+    "toolingVerification": "PASS",
+    "workflowCheck": "PASS; Stage 12 active; readyClaim false",
+    "knowledgeBase": "PASS; integrity ok; rebuilt from schema.sql and seed.sql",
+    "connectorSmoke": "PASS_LOCAL; source/stage parity; attestation PASS_SOURCE_AND_RUNTIME_PROFILE"
+  },
+  "changedSurface": [
+    "tools/dicebox-foundry-remote-gateway.mjs",
+    "tools/dicebox-foundry-connector-contract.mjs",
+    "tools/dicebox-foundry-live-bridge.mjs",
+    "packages/dicebox-foundry/src/foundry-live-bridge.js",
+    "tools/run-dicebox-foundry-connector-smoke.mjs",
+    "tests/dicebox-foundry-connector-contract.test.ts",
+    "tests/dicebox-foundry-remote-gateway.test.ts",
+    "tests/dicebox-foundry-live-bridge-host.test.ts",
+    "tests/foundry-live-bridge.test.ts",
+    "tests/knowledge-base-query.test.ts",
+    "docs/REMOTE-FOUNDRY-CONNECTOR-HARDENING-2026-10-07.md",
+    "docs/ACTIVE-PROGRAM-SLICE.json",
+    "database/seed.sql",
+    "package.json",
+    "package-lock.json"
+  ],
+  "preservedBoundaries": [
+    "No live Foundry or browser action",
+    "No public deployment or Desktop Commander account binding",
+    "No arbitrary macro/script/shell/document execution",
+    "No loaded-byte identity claim",
+    "No Stage 12 promotion or Ready-to-Play claim",
+    "M1284 remains closed at the manual Gamemaster rejoin boundary"
+  ],
+  "knownBaselineMismatch": "The earlier full-suite audit exposed unrelated pre-existing dirty-tree snapshot mismatches in M1259 artifact spec, served-worker receipt, and Regionwright staged fixture. Those files were preserved; this slice does not claim a full-suite green result.",
+  "doesNotProve": [
+    "live WSS connectivity",
+    "reverse-proxy or OAuth provider configuration",
+    "browser authentication",
+    "Desktop Commander account binding",
+    "Foundry loaded module bytes",
+    "native Foundry mutation or Ready-to-Play"
+  ]
+}

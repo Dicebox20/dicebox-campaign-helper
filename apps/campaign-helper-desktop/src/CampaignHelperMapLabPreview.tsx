@@ -1,8 +1,6 @@
 import mapLabSvg from "../../../assets/testing/campaign-helper-map-lab-v1.svg?raw";
 import { useMemo } from "react";
 import { createCampaignHelperMapLabDesktopPreview } from "./campaign-helper-map-lab-preview";
-import { DICEBOX_DESKTOP_IMAGE_PROMPT_POLICY } from "./image-prompt-restart-preflight";
-import { DICEBOX_GEOMETRY_TOLERANCE_PROFILE, DICEBOX_ROUTE_PROFILES } from "@dicebox/compiler";
 
 type CampaignHelperMapLabPreviewProps = Readonly<{
   selectedAnchorId: string | null;
@@ -50,8 +48,6 @@ export function CampaignHelperMapLabPreview({ selectedAnchorId, onSelectAnchor }
         <strong>{preview.blueprintId}</strong> · {preview.walls.length} Walls · {preview.regions.length} Regions · {preview.anchors.length} anchors · {preview.assetByteLength} bytes
       </p>
       <p className="map-lab-preview__authority">Geometry: Blueprint · Renderer: background only · Runtime: not modeled · Mutation: disabled</p>
-      <p className="map-lab-preview__authority">Geometry policy: {DICEBOX_GEOMETRY_TOLERANCE_PROFILE} · Main road {DICEBOX_ROUTE_PROFILES["main-road"].targetWidthFt}ft (preferred {DICEBOX_ROUTE_PROFILES["main-road"].preferredMinWidthFt}–{DICEBOX_ROUTE_PROFILES["main-road"].preferredMaxWidthFt}ft), forest trails {DICEBOX_ROUTE_PROFILES["forest-trail"].targetWidthFt}ft (preferred {DICEBOX_ROUTE_PROFILES["forest-trail"].preferredMinWidthFt}–{DICEBOX_ROUTE_PROFILES["forest-trail"].preferredMaxWidthFt}ft) · Footprint verification not modeled.</p>
-      <p className="map-lab-preview__authority">Image generation rule: Clean restart from the accepted specification; never a variation of a previous prompt. Policy: {DICEBOX_DESKTOP_IMAGE_PROMPT_POLICY} · Provider runtime not connected.</p>
     </section>
   );
 }

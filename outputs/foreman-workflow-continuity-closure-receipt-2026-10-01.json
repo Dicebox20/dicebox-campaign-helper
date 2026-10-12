@@ -1,0 +1,47 @@
+{
+    "schemaVersion":  "1.0.0",
+    "operation":  "dicebox.foreman-workflow.continuity.close",
+    "status":  "PASS_LOCAL",
+    "date":  "2026-10-01",
+    "evidenceLayer":  "local",
+    "sourcePattern":  "Star*Tup repository-first foreman workflow",
+    "implemented":  [
+                        "docs/FOREMAN-WORKFLOW-CURRENT.md",
+                        "scripts/Write-CampaignHelperCheckpoint.ps1",
+                        "scripts/Show-CampaignHelperRecoveryState.ps1",
+                        "AGENTS.md continuity pointers/rules"
+                    ],
+    "validation":  [
+                       "KB authorization rebuild integrity ok",
+                       "KB authorization verification integrity ok",
+                       "checkpoint writer smoke pass",
+                       "recovery-state reader smoke pass",
+                       "workflow:check PASS with active stage scene-authoring-breadth and zero violations",
+                       "workflow:test PASS with 5 cases"
+                   ],
+    "hashes":  {
+                   "workflowSha256":  "973EC2527B6128EC02ABBF2F7F9F8F32BAB756780AE4CD5F6AA332D2A9426D15",
+                   "checkpointWriterSha256":  "44CE176A172EFCFB98ECABA5184C0FBD2DEACD5FADF26810084B255624DB632C",
+                   "recoveryReaderSha256":  "F6B04A4DE3E0F1B8E859F6CEC1BC12A9F30F99EF41DC25610D0558602A9D923A",
+                   "agentsSha256":  "CB8E5149764EFE78ABD9C19793A83A39362AF2F3E674D403E7E471409CEBAF76",
+                   "activeCardSha256":  "CAE3743A02F0C98B93012452D28E8DBA76F231422448F1A293AF19127816BF92",
+                   "roadmapSha256":  "7FF0886236A3893ECB7F5576943AE54035194AD5DD200B08756696A34D539817"
+               },
+    "preserved":  {
+                      "activeStage":  "scene-authoring-breadth",
+                      "stageNumber":  12,
+                      "immediateRuntimeBoundary":  "M1284 manual Gamemaster rejoin, then already-authorized single loaded identity-control observation",
+                      "readyClaim":  false,
+                      "liveActionPerformed":  false,
+                      "foundryMutationPerformed":  false,
+                      "authenticationAutomated":  false,
+                      "unrelatedDirtyTreePreserved":  true
+                  },
+    "doesNotProve":  [
+                         "M1284 closure",
+                         "Stage 12 acceptance",
+                         "Ready-to-Play",
+                         "ChatGPT workspace implementation",
+                         "Foundry or Regionwright runtime behavior"
+                     ]
+}

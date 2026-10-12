@@ -1,0 +1,302 @@
+[
+  {
+    "name": "companion-foreman-workspace:AGENTS.md",
+    "files": 1,
+    "bytes": 29879
+  },
+  {
+    "name": "companion-foreman-workspace:BUYER_VALIDATION.md",
+    "files": 1,
+    "bytes": 160549
+  },
+  {
+    "name": "companion-foreman-workspace:FOUNDATION_PLAN.md",
+    "files": 1,
+    "bytes": 4428
+  },
+  {
+    "name": "companion-foreman-workspace:GAP_RESEARCH.md",
+    "files": 1,
+    "bytes": 4158
+  },
+  {
+    "name": "companion-foreman-workspace:PRODUCT_RESEARCH.md",
+    "files": 1,
+    "bytes": 462610
+  },
+  {
+    "name": "companion-foreman-workspace:PROJECT_CHARTER.md",
+    "files": 1,
+    "bytes": 2504
+  },
+  {
+    "name": "companion-foreman-workspace:README.md",
+    "files": 1,
+    "bytes": 1933
+  },
+  {
+    "name": "companion-foreman-workspace:STATUS.md",
+    "files": 1,
+    "bytes": 44633
+  },
+  {
+    "name": "companion-foreman-workspace:assets",
+    "files": 4,
+    "bytes": 2209642
+  },
+  {
+    "name": "companion-foreman-workspace:database",
+    "files": 121,
+    "bytes": 109859816
+  },
+  {
+    "name": "companion-foreman-workspace:docs",
+    "files": 38,
+    "bytes": 322460
+  },
+  {
+    "name": "companion-foreman-workspace:handoffs",
+    "files": 30,
+    "bytes": 6272384
+  },
+  {
+    "name": "companion-foreman-workspace:integrated_projects",
+    "files": 1,
+    "bytes": 11506
+  },
+  {
+    "name": "companion-foreman-workspace:outputs",
+    "files": 120,
+    "bytes": 2896070
+  },
+  {
+    "name": "companion-foreman-workspace:scripts",
+    "files": 5,
+    "bytes": 19841
+  },
+  {
+    "name": "companion-foreman-workspace:work",
+    "files": 4035,
+    "bytes": 421341749
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m202",
+    "files": 6,
+    "bytes": 1706623
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m213-closure-3",
+    "files": 1,
+    "bytes": 988182
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m213-closure-4",
+    "files": 6,
+    "bytes": 1862072
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m214-accepted-1",
+    "files": 1,
+    "bytes": 0
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m214-accepted-2",
+    "files": 1,
+    "bytes": 0
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m214-accepted-3",
+    "files": 1,
+    "bytes": 0
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m214-accepted-4",
+    "files": 1,
+    "bytes": 0
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m214-accepted-5",
+    "files": 1,
+    "bytes": 0
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m214-accepted-6",
+    "files": 2,
+    "bytes": 1276
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m214-accepted-7",
+    "files": 6,
+    "bytes": 1879118
+  },
+  {
+    "name": "source-repository:.codex-trusted-read-m215-closure-1",
+    "files": 6,
+    "bytes": 1890253
+  },
+  {
+    "name": "source-repository:.dbx-lodge-browserdiag.mjs",
+    "files": 1,
+    "bytes": 790
+  },
+  {
+    "name": "source-repository:.dbx-lodge-headful.mjs",
+    "files": 1,
+    "bytes": 1552
+  },
+  {
+    "name": "source-repository:.gitignore",
+    "files": 1,
+    "bytes": 216
+  },
+  {
+    "name": "source-repository:.m367-final-target",
+    "files": 4153,
+    "bytes": 4470504903
+  },
+  {
+    "name": "source-repository:.m367-trace-target",
+    "files": 4432,
+    "bytes": 4875920493
+  },
+  {
+    "name": "source-repository:.m373-trace-target",
+    "files": 4423,
+    "bytes": 4879025759
+  },
+  {
+    "name": "source-repository:=",
+    "files": 1,
+    "bytes": 0
+  },
+  {
+    "name": "source-repository:AGENTS.md",
+    "files": 1,
+    "bytes": 21424
+  },
+  {
+    "name": "source-repository:FOUNDATION_PLAN.md",
+    "files": 1,
+    "bytes": 10675
+  },
+  {
+    "name": "source-repository:GAP_RESEARCH.md",
+    "files": 1,
+    "bytes": 4605
+  },
+  {
+    "name": "source-repository:PROJECT_CHARTER.md",
+    "files": 1,
+    "bytes": 4507
+  },
+  {
+    "name": "source-repository:README.md",
+    "files": 1,
+    "bytes": 7419
+  },
+  {
+    "name": "source-repository:STATUS.md",
+    "files": 1,
+    "bytes": 24359
+  },
+  {
+    "name": "source-repository:apps",
+    "files": 17388,
+    "bytes": 18707550918
+  },
+  {
+    "name": "source-repository:assets",
+    "files": 53,
+    "bytes": 83407059
+  },
+  {
+    "name": "source-repository:beyond-the-realms-bridge",
+    "files": 17,
+    "bytes": 2657153
+  },
+  {
+    "name": "source-repository:database",
+    "files": 17,
+    "bytes": 53520115
+  },
+  {
+    "name": "source-repository:deploy",
+    "files": 7,
+    "bytes": 6756
+  },
+  {
+    "name": "source-repository:docs",
+    "files": 54,
+    "bytes": 4714914
+  },
+  {
+    "name": "source-repository:outputs",
+    "files": 1504,
+    "bytes": 131731176
+  },
+  {
+    "name": "source-repository:package-lock.json",
+    "files": 1,
+    "bytes": 141398
+  },
+  {
+    "name": "source-repository:package.json",
+    "files": 1,
+    "bytes": 6510
+  },
+  {
+    "name": "source-repository:packages",
+    "files": 185,
+    "bytes": 1831205
+  },
+  {
+    "name": "source-repository:playwright-report",
+    "files": 1,
+    "bytes": 518531
+  },
+  {
+    "name": "source-repository:playwright.config.ts",
+    "files": 1,
+    "bytes": 709
+  },
+  {
+    "name": "source-repository:report-source.md",
+    "files": 1,
+    "bytes": 4243
+  },
+  {
+    "name": "source-repository:scripts",
+    "files": 2,
+    "bytes": 8535
+  },
+  {
+    "name": "source-repository:test-results",
+    "files": 1,
+    "bytes": 45
+  },
+  {
+    "name": "source-repository:tests",
+    "files": 308,
+    "bytes": 2090496
+  },
+  {
+    "name": "source-repository:tools",
+    "files": 92,
+    "bytes": 497217
+  },
+  {
+    "name": "source-repository:tsconfig.json",
+    "files": 1,
+    "bytes": 910
+  },
+  {
+    "name": "source-repository:vitest.config.ts",
+    "files": 1,
+    "bytes": 341
+  },
+  {
+    "name": "source-repository:work",
+    "files": 25741,
+    "bytes": 5298366729
+  }
+]

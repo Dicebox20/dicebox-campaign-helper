@@ -24,11 +24,10 @@ describe("active-slice workflow gate", () => {
         ideaDocument: "https://docs.google.com/document/d/14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o/edit",
         order: [
           "accepted-change",
-          "repository-roadmap-and-active-card",
+          "roadmap-and-active-checklist",
           "knowledge-base-rebuild-and-verification",
           "implementation",
-          "authoritative-reread-and-receipt",
-          "scheduled-communication-mirror",
+          "scheduled-shared-document-mirror",
         ],
       },
       sharedFileSynchronizationSchedule: {
@@ -63,16 +62,15 @@ describe("active-slice workflow gate", () => {
     const card = cloneCard();
     card.changeSynchronization.order = [
       "accepted-change",
-      "repository-roadmap-and-active-card",
+      "roadmap-and-active-checklist",
       "shared-idea-document",
       "knowledge-base-rebuild-and-verification",
       "implementation",
-      "authoritative-reread-and-receipt",
-      "scheduled-communication-mirror",
+      "scheduled-shared-document-mirror",
     ];
     const result = evaluateActiveSlice(card);
     expect(result.status).toBe("FAIL");
-    expect(result.violations).toContain("changeSynchronization.order must be accepted-change, repository-roadmap-and-active-card, knowledge-base-rebuild-and-verification, implementation, authoritative-reread-and-receipt, scheduled-communication-mirror.");
+    expect(result.violations).toContain("changeSynchronization.order must be accepted-change, roadmap-and-active-checklist, knowledge-base-rebuild-and-verification, implementation, scheduled-shared-document-mirror.");
   });
 
   it("rejects a missing synchronization gate", () => {
@@ -112,7 +110,7 @@ describe("active-slice workflow gate", () => {
     const result = evaluateActiveSlice(card);
     expect(result.status).toBe("FAIL");
     expect(result.violations).toContain("sharedFileSynchronizationSchedule.cadence must preserve the non-blocking Google session/24-hour and GitHub Monday cadence.");
-    expect(result.violations).toContain("sharedFileSynchronizationSchedule.safetyBoundary must preserve source reread, disclosure, repository authority, and reproducible seed.d boundaries.");
+    expect(result.violations).toContain("sharedFileSynchronizationSchedule.safetyBoundary must preserve source reread, disclosure, and local bundle boundaries.");
   });
 
   it("rejects drift in the private communication-repository identity or authority", () => {

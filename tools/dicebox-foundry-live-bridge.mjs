@@ -3,7 +3,7 @@
 /*
  * Loopback MCP host for the DiceBox page-main Foundry bridge.
  *
- * The host exposes only the eight fixed operations below. It never receives a
+ * The host exposes only the fixed reviewed operations below. It never receives a
  * script, macro body, arbitrary Document payload, world ID, or execute-as-GM
  * request. Foundry remains the authority for active-GM checks, preview-token
  * validation, native writes, and authoritative reread.
@@ -12,6 +12,7 @@
 import { createHash, randomUUID } from "node:crypto";
 import { createServer } from "node:http";
 import { pathToFileURL } from "node:url";
+import { RECIPE_REGISTRY } from "./dicebox-foundry-connector-contract.mjs";
 
 const BRIDGE_PROTOCOL = "dicebox-foundry-live-bridge/1";
 const BRIDGE_PATH = "/dicebox-foundry";
@@ -20,23 +21,28 @@ const BRIDGE_PORT = Number(process.env.DICEBOX_MCP_BRIDGE_PORT ?? 8797);
 const EXPECTED_WORLD_ID = process.env.DICEBOX_MCP_WORLD_ID ?? "the-ballad-of-chauser-bill";
 const REQUEST_TIMEOUT_MS = 15_000;
 const MAX_FRAME_BYTES = 64 * 1024;
+const DEFAULT_ORIGIN_HOSTS = Object.freeze(["localhost", "127.0.0.1", "[::1]", "::1"]);
 
-const TOOL_DEFINITIONS = Object.freeze([
-  { name: "dbx_foundry_bridge_status", description: "Read DiceBox loopback bridge status.", inputSchema: { type: "object", additionalProperties: false, properties: {} }, operation: "bridge.status" },
-  { name: "dbx_foundry_harness_status", description: "Read the exact-world and elected-GM harness boundary.", inputSchema: { type: "object", additionalProperties: false, properties: {} }, operation: "harness.status" },
-  { name: "dbx_foundry_helper_readiness", description: "Read the redacted Campaign Helper readiness report.", inputSchema: { type: "object", additionalProperties: false, properties: {} }, operation: "helper.readiness" },
-  { name: "dbx_foundry_ascendancy_preview", description: "Validate the exact-runtime Ascendancy installer without writing and receive a short-lived approval token.", inputSchema: { type: "object", additionalProperties: false, properties: {} }, operation: "ascendancy.preview" },
-  { name: "dbx_foundry_ascendancy_install", description: "Apply one current approved Ascendancy preview through native Foundry APIs and return the installer reread receipt.", inputSchema: { type: "object", additionalProperties: false, required: ["planToken", "approved"], properties: { planToken: { type: "string", minLength: 1 }, approved: { type: "boolean", const: true } } }, operation: "ascendancy.install" },
-  { name: "dbx_foundry_ascendancy_repair_preview", description: "Validate the exact-runtime owned Ascendancy renderer and boundary-Wall repair without writing and receive a short-lived approval token.", inputSchema: { type: "object", additionalProperties: false, properties: {} }, operation: "ascendancy.repair.preview" },
-  { name: "dbx_foundry_ascendancy_repair", description: "Apply one current approved Ascendancy renderer and owned boundary-Wall repair through native Foundry APIs and return the reread receipt.", inputSchema: { type: "object", additionalProperties: false, required: ["planToken", "approved"], properties: { planToken: { type: "string", minLength: 1 }, approved: { type: "boolean", const: true } } }, operation: "ascendancy.repair" },
-  { name: "dbx_foundry_ascendancy_snapshot", description: "Read a redacted DiceBox-owned Scene/Wall/Region snapshot after installation.", inputSchema: { type: "object", additionalProperties: false, properties: {} }, operation: "ascendancy.snapshot" }
-]);
+const TOOL_DEFINITIONS = Object.freeze(RECIPE_REGISTRY.map(recipe => Object.freeze({
+  name: recipe.name,
+  description: recipe.description,
+  inputSchema: recipe.inputSchema,
+  outputSchema: recipe.outputSchema,
+  annotations: recipe.annotations,
+  _meta: Object.freeze({
+    "dicebox/recipeId": `dbx:connector-recipe:${recipe.operation}`,
+    "dicebox/recipeVersion": "1.0.0",
+    "dicebox/authority": recipe.authority,
+    "dicebox/readWrite": recipe.readWrite,
+  }),
+  operation: recipe.operation,
+})));
 
 function errorText(error) { return String(error?.message ?? error ?? "Bridge request failed.").replace(/[\r\n]+/g, " ").trim().slice(0, 480) || "Bridge request failed."; }
 function isObject(value) { return Boolean(value) && typeof value === "object" && !Array.isArray(value); }
-function allowedOrigin(origin) {
+function allowedOrigin(origin, allowedHosts = DEFAULT_ORIGIN_HOSTS) {
   if (!origin) return false;
-  try { return ["localhost", "127.0.0.1", "[::1]", "::1"].includes(new URL(origin).hostname); } catch { return false; }
+  try { return allowedHosts.includes(new URL(origin).hostname); } catch { return false; }
 }
 function encodeFrame(text) {
   const payload = Buffer.from(text, "utf8");
@@ -111,19 +117,25 @@ class FoundryConnection {
   }
 }
 
-function createBridgeServer({ host = BRIDGE_HOST, port = BRIDGE_PORT, expectedWorldId = EXPECTED_WORLD_ID } = {}) {
+function validateFoundryHello(hello, { expectedWorldId = EXPECTED_WORLD_ID, expectedToken = "" } = {}) {
+  if (hello?.protocol !== BRIDGE_PROTOCOL || hello?.moduleId !== "dicebox-campaign-helper" || hello?.worldId !== expectedWorldId || hello?.isGM !== true) throw new Error("The Foundry client did not satisfy the private bridge boundary.");
+  if (expectedToken && hello?.token !== expectedToken) throw new Error("The Foundry client did not provide the remote bridge token.");
+  return true;
+}
+
+function createBridgeServer({ host = BRIDGE_HOST, port = BRIDGE_PORT, expectedWorldId = EXPECTED_WORLD_ID, expectedToken = "", allowedOriginHosts = DEFAULT_ORIGIN_HOSTS, requestHandler } = {}) {
   let connection = null;
   let handshaking = false;
-  const server = createServer((_, response) => { response.writeHead(404, { "Content-Type": "text/plain" }); response.end("DiceBox Foundry live bridge."); });
+  const server = createServer(requestHandler ?? ((_, response) => { response.writeHead(404, { "Content-Type": "text/plain" }); response.end("DiceBox Foundry live bridge."); }));
   server.on("upgrade", (request, socket, head) => {
-    if (request.url !== BRIDGE_PATH || !allowedOrigin(request.headers.origin) || connection || handshaking) { socket.write("HTTP/1.1 403 Forbidden\r\nConnection: close\r\n\r\n"); socket.destroy(); return; }
+    if (request.url !== BRIDGE_PATH || !allowedOrigin(request.headers.origin, allowedOriginHosts) || connection || handshaking) { socket.write("HTTP/1.1 403 Forbidden\r\nConnection: close\r\n\r\n"); socket.destroy(); return; }
     const key = request.headers["sec-websocket-key"];
     if (typeof key !== "string") { socket.write("HTTP/1.1 400 Bad Request\r\nConnection: close\r\n\r\n"); socket.destroy(); return; }
     const accept = createHash("sha1").update(`${key}258EAFA5-E914-47DA-95CA-C5AB0DC85B11`).digest("base64");
     socket.write(["HTTP/1.1 101 Switching Protocols", "Upgrade: websocket", "Connection: Upgrade", `Sec-WebSocket-Accept: ${accept}`, "\r\n"].join("\r\n"));
     handshaking = true;
     const candidate = new FoundryConnection(socket);
-    const receive = chunk => { try { candidate.receive(chunk, hello => { if (candidate.ready || hello?.protocol !== BRIDGE_PROTOCOL || hello?.moduleId !== "dicebox-campaign-helper" || hello?.worldId !== expectedWorldId || hello?.isGM !== true) throw new Error("The Foundry client did not satisfy the private bridge boundary."); candidate.ready = true; connection = candidate; handshaking = false; candidate.send({ type: "ready", protocol: BRIDGE_PROTOCOL }); }); } catch { handshaking = false; socket.destroy(); } };
+    const receive = chunk => { try { candidate.receive(chunk, hello => { if (candidate.ready) throw new Error("The Foundry client sent a duplicate handshake."); validateFoundryHello(hello, { expectedWorldId, expectedToken }); candidate.ready = true; connection = candidate; handshaking = false; candidate.send({ type: "ready", protocol: BRIDGE_PROTOCOL }); }); } catch { handshaking = false; socket.destroy(); } };
     socket.on("data", receive); if (head?.length) receive(head);
     socket.on("close", () => { handshaking = false; candidate.close(); if (connection === candidate) connection = null; });
     socket.on("error", () => { handshaking = false; candidate.close(); if (connection === candidate) connection = null; });
@@ -154,4 +166,4 @@ async function runStdioServer() {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) runStdioServer().catch(error => { process.stderr.write(`DiceBox Foundry bridge failed: ${errorText(error)}\n`); process.exit(1); });
 
-export { BRIDGE_HOST, BRIDGE_PATH, BRIDGE_PORT, BRIDGE_PROTOCOL, EXPECTED_WORLD_ID, TOOL_DEFINITIONS, allowedOrigin, createBridgeServer, decodeFrames, encodeFrame, handleMcpMessage, validateToolArguments };
+export { BRIDGE_HOST, BRIDGE_PATH, BRIDGE_PORT, BRIDGE_PROTOCOL, DEFAULT_ORIGIN_HOSTS, EXPECTED_WORLD_ID, RECIPE_REGISTRY, TOOL_DEFINITIONS, allowedOrigin, createBridgeServer, decodeFrames, encodeFrame, handleMcpMessage, validateFoundryHello, validateToolArguments };

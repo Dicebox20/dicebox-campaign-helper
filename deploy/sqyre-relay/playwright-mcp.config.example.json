@@ -1,0 +1,19 @@
+{
+  "extension": true,
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8931,
+    "allowedHosts": ["127.0.0.1"]
+  },
+  "network": {
+    "allowedOrigins": ["https://replace-with-exact-sqyre-origin.example"]
+  },
+  "capabilities": ["core"],
+  "sharedBrowserContext": false,
+  "allowUnrestrictedFileAccess": false,
+  "snapshot": {
+    "mode": "full",
+    "boxes": false
+  },
+  "filePaths": "relative"
+}
