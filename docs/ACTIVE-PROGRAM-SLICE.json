@@ -1,6 +1,15 @@
 {
   "schemaVersion": "1.0.0",
   "updatedAt": "2026-10-07",
+  "acceptedRegionHiddenRuleRetirement20261015": {
+    "id": "region-hidden-rule-retirement-2026-10-15",
+    "status": "accepted-policy-no-live-canary",
+    "acceptanceObservation": "Do not apply a blanket hidden=true RegionBehavior-disable rule; preserve historical evidence and require exact-runtime testing.",
+    "allowedScope": "Roadmap, active-card acceptance note, KB delta, binding documentation, no product-stage movement or Foundry changes.",
+    "deterministicCheck": "KB build/verify, JSON validation, historical identifiers unchanged.",
+    "liveCheck": "None; correction user reported.",
+    "stopCondition": "No live install or Ready-to-Play claim."
+  },
   "acceptedFoundryHistoricalEvidenceIngest20261007": {
     "id": "foundry-historical-evidence-ingest-2026-10-07",
     "status": "closed-local-evidence-pass",
