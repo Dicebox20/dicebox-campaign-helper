@@ -4,6 +4,12 @@ This is the API authority for DiceBox development plans. DiceBox semantic IDs, p
 
 Target: Foundry VTT **14.367** and D&D5e **5.3.3**. The official API pages are v14 references and still require exact-target runtime verification before capability promotion.
 
+## Hidden Region policy correction (accepted 2026-10-15)
+
+**The blanket rule "hidden=true disables RegionBehaviors" is retired.** Do not reject or automatically unhide a functional Region based on that historical assumption. The user reports that a recent update corrected this limitation. A hidden Region is a valid design candidate. Before claiming gameplay functionality, verify the exact Foundry version, game system, modules, Region enabled state, event delivery, user permissions, active-GM boundary, and authoritative reread after reload.
+
+This correction is user-accepted policy, not an independently verified live compatibility result. Earlier dated world observations remain historical evidence and must not be generalized to the current runtime.
+
 ## Binding rules
 
 1. Every implementation-plan item that can affect a world must name its Foundry API, lifecycle boundary, capability ID, authority check, read-back API, and receipt evidence.
