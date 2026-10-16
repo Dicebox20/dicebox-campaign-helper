@@ -1,0 +1,136 @@
+{
+  "operation": "DiceBox Scene Injector V2.1 Beta GEOMETRY INSPECT",
+  "sceneKey": "dark-arch-m01",
+  "verdict": "PASS_PURE_GEOMETRY_WITH_RUNTIME_GATES",
+  "sourceMainCommit": "1137241a7df431a5cc4bc775ab56dcd283e1db29",
+  "sourcePrepareSha256": "466ec64942219e9aa249508b4e1bcc877f50a461923c73afe008f43b9a2608f2",
+  "sourceSpecSha256": "5d3472def81f1ec73ede8e1a2cab11006c80e60b74414c1a24311cedbee1ce68",
+  "blueprintSha256": "f975614af795a357bb3c6b67f10a64721b391474fc429483a439a685e2590ae3",
+  "previewSha256": "43f3f322e22770873f99dea0cb6654dc2ec5407f84bb06c72e7b1bc78ebffc8e",
+  "tests": {
+    "bridge_medium_open": {
+      "passed": true,
+      "found": true,
+      "expected": true,
+      "footprintFeet": 5,
+      "gateOpen": true,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": 190.0
+    },
+    "bridge_large_open": {
+      "passed": true,
+      "found": true,
+      "expected": true,
+      "footprintFeet": 10,
+      "gateOpen": true,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": 190.0
+    },
+    "gate_blocks_normal_medium": {
+      "passed": true,
+      "found": false,
+      "expected": false,
+      "footprintFeet": 5,
+      "gateOpen": false,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": null
+    },
+    "gate_blocks_normal_large": {
+      "passed": true,
+      "found": false,
+      "expected": false,
+      "footprintFeet": 10,
+      "gateOpen": false,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": null
+    },
+    "city_quay_access_medium": {
+      "passed": true,
+      "found": true,
+      "expected": true,
+      "footprintFeet": 5,
+      "gateOpen": false,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": 58.75
+    },
+    "island_dock_postgate_medium": {
+      "passed": true,
+      "found": true,
+      "expected": true,
+      "footprintFeet": 5,
+      "gateOpen": false,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": 50.0
+    },
+    "rope_departure_access_medium": {
+      "passed": true,
+      "found": true,
+      "expected": true,
+      "footprintFeet": 5,
+      "gateOpen": false,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": 130.0
+    },
+    "rope_postgate_medium": {
+      "passed": true,
+      "found": true,
+      "expected": true,
+      "footprintFeet": 5,
+      "gateOpen": false,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": 55.0
+    },
+    "gate_limits_nonportal_crossing": {
+      "passed": true,
+      "found": false,
+      "expected": false,
+      "footprintFeet": 5,
+      "gateOpen": false,
+      "sampleStepFeet": 1.25,
+      "pathLengthFt": null
+    },
+    "missing_island_stair_blocks_boat_bypass": {
+      "passed": true,
+      "negativeControl": true
+    },
+    "missing_upper_walkway_blocks_rope_bypass": {
+      "passed": true,
+      "negativeControl": true
+    },
+    "boat_hull_fits_tidal_gap": {
+      "passed": true,
+      "hullWidthFeet": 10,
+      "gapWidthFeet": 15
+    }
+  },
+  "countWalkablePolygons": 13,
+  "countCandidateWallSegments": 11,
+  "geometryAssertions": {
+    "bridgeWidthFeet": 20,
+    "mainGateOpeningFeet": 15,
+    "ropeCrossingAboveFortifiedWallFt": 5.667,
+    "elevationTransitions": [
+      "V01",
+      "V02",
+      "V03",
+      "V04"
+    ],
+    "stairsAreExplicitGMAdjudicatedFeatures": true,
+    "boatPassesOnlyWaterlineOpening": true,
+    "boatChannelClearFeet": 15,
+    "skiffNotBakedInArt": true,
+    "boatAndRopeArrivePostGate": true,
+    "gateClosedBypassesIndependentlyValid": true,
+    "boatTransferRequiresGMApproval": true,
+    "ropeTransferRequiresGMApproval": true
+  },
+  "limits": [
+    "This is an exact union-of-rectangles axis-aligned square token footprint sweep on a 1.25ft lattice, not a Foundry collision canary.",
+    "Water transfer uses planned separate skiff, not traversable land; vessel control and actual Foundry movement are untested.",
+    "Rope transfer clears authored wall top by vertical geometry but real climb/swing skill/DC and collision are GM-adjudicated.",
+    "Parapet/wall semantics are intent-only until reconciled with render, Feature Manifest and exact Foundry runtime.",
+    "No live Foundry Scene, Region, Wall, skiff Tile, Token, or macro was created."
+  ],
+  "next": "EMBOSSED GRAYSCALE RENDER from this Geometry Blueprint after creative authority reconciliation",
+  "readyToPlay": false
+}

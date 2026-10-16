@@ -10,7 +10,15 @@
     "allowedScope": "Versioned governance, roadmap/active card, dated KB, workflow skill, Dark Arch handoff, local checks. No product-stage promotion or live Foundry writes.",
     "deterministicCheck": "KB rebuild/verify, 40x24 battlemap-120 Scene spec, staged geometry connectivity checks, unchanged BUILD v2 validator.",
     "liveCheck": "None; no renderer/provider/exact-stack runtime claim.",
-    "stopCondition": "Fail closed on missing authority, geometry route failures, changed BUILD v2 contract or six pre-existing active-slice violations; no Ready-to-Play claim."
+    "stopCondition": "Fail closed on missing authority, geometry route failures, changed BUILD v2 contract or six pre-existing active-slice violations; no Ready-to-Play claim.",
+    "darkArchGeometryEvidence20261016": {
+      "status": "PASS_LOCAL_GEOMETRY_ONLY",
+      "scene": "dbx.heist.kurth.m01.dark-arch",
+      "artifact": "handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/spatial-blueprint.json",
+      "testReceipt": "handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/geometry-inspection.json",
+      "workState": "PREPARED with GEOMETRY INSPECT PASS nested beta substage",
+      "outstanding": "Embossed grayscale render, structural inspection, feature manifest, paint/final inspect, build, Foundry runtime."
+    }
   },
   "acceptedFoundryHistoricalEvidenceIngest20261007": {
     "id": "foundry-historical-evidence-ingest-2026-10-07",

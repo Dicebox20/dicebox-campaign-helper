@@ -1,0 +1,966 @@
+{
+  "schemaVersion": "dicebox-geometry-blueprint/v2.1-beta-preview",
+  "sceneKey": "dark-arch-m01",
+  "source": "PREPARE.md+spec.json only; no prior generated art",
+  "units": "logical-5ft-cells",
+  "canvas": {
+    "logical": [
+      40,
+      24
+    ],
+    "physicalFeet": [
+      200,
+      120
+    ],
+    "pixels": [
+      4800,
+      2880
+    ],
+    "pxPerCell": 120
+  },
+  "axes": {
+    "origin": "upper-left",
+    "x": "east/right",
+    "y": "south/down",
+    "elevations": "feet relative to bridge reference"
+  },
+  "geometry": {
+    "surfaces": [
+      {
+        "id": "G01",
+        "name": "city-bank",
+        "kind": "ground",
+        "bounds": [
+          0,
+          7,
+          9,
+          17
+        ],
+        "polygon": [
+          [
+            0,
+            7
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            9,
+            17
+          ],
+          [
+            0,
+            17
+          ]
+        ],
+        "elevationFt": 18,
+        "groundWalkable": true
+      },
+      {
+        "id": "G02",
+        "name": "bridge-deck",
+        "kind": "stone-bridge",
+        "bounds": [
+          8,
+          10,
+          32.5,
+          14
+        ],
+        "polygon": [
+          [
+            8,
+            10
+          ],
+          [
+            32.5,
+            10
+          ],
+          [
+            32.5,
+            14
+          ],
+          [
+            8,
+            14
+          ]
+        ],
+        "elevationFt": 18,
+        "groundWalkable": true
+      },
+      {
+        "id": "G03",
+        "name": "passing-bay",
+        "kind": "stone-bridge",
+        "bounds": [
+          17,
+          8.5,
+          22,
+          15.5
+        ],
+        "polygon": [
+          [
+            17,
+            8.5
+          ],
+          [
+            22,
+            8.5
+          ],
+          [
+            22,
+            15.5
+          ],
+          [
+            17,
+            15.5
+          ]
+        ],
+        "elevationFt": 18,
+        "groundWalkable": true
+      },
+      {
+        "id": "G04",
+        "name": "crane-landing",
+        "kind": "stone-bridge",
+        "bounds": [
+          24,
+          7.5,
+          28,
+          12
+        ],
+        "polygon": [
+          [
+            24,
+            7.5
+          ],
+          [
+            28,
+            7.5
+          ],
+          [
+            28,
+            12
+          ],
+          [
+            24,
+            12
+          ]
+        ],
+        "elevationFt": 18,
+        "groundWalkable": true
+      },
+      {
+        "id": "G05",
+        "name": "island-inner-approach",
+        "kind": "ground",
+        "bounds": [
+          32,
+          10.5,
+          40,
+          17.5
+        ],
+        "polygon": [
+          [
+            32,
+            10.5
+          ],
+          [
+            40,
+            10.5
+          ],
+          [
+            40,
+            17.5
+          ],
+          [
+            32,
+            17.5
+          ]
+        ],
+        "elevationFt": 18,
+        "groundWalkable": true
+      },
+      {
+        "id": "G06",
+        "name": "m02-departure",
+        "kind": "ground",
+        "bounds": [
+          38,
+          13,
+          40,
+          16
+        ],
+        "polygon": [
+          [
+            38,
+            13
+          ],
+          [
+            40,
+            13
+          ],
+          [
+            40,
+            16
+          ],
+          [
+            38,
+            16
+          ]
+        ],
+        "elevationFt": 18,
+        "groundWalkable": true
+      },
+      {
+        "id": "G07",
+        "name": "city-lower-stair",
+        "kind": "stair",
+        "bounds": [
+          3,
+          15.5,
+          8,
+          20.5
+        ],
+        "polygon": [
+          [
+            3,
+            15.5
+          ],
+          [
+            8,
+            15.5
+          ],
+          [
+            8,
+            20.5
+          ],
+          [
+            3,
+            20.5
+          ]
+        ],
+        "elevationFt": [
+          18,
+          -8
+        ],
+        "groundWalkable": true
+      },
+      {
+        "id": "G08",
+        "name": "city-quay",
+        "kind": "dock",
+        "bounds": [
+          2,
+          19,
+          9,
+          22
+        ],
+        "polygon": [
+          [
+            2,
+            19
+          ],
+          [
+            9,
+            19
+          ],
+          [
+            9,
+            22
+          ],
+          [
+            2,
+            22
+          ]
+        ],
+        "elevationFt": -8,
+        "groundWalkable": true
+      },
+      {
+        "id": "G09",
+        "name": "island-dock",
+        "kind": "dock",
+        "bounds": [
+          33,
+          19,
+          38,
+          22
+        ],
+        "polygon": [
+          [
+            33,
+            19
+          ],
+          [
+            38,
+            19
+          ],
+          [
+            38,
+            22
+          ],
+          [
+            33,
+            22
+          ]
+        ],
+        "elevationFt": -8,
+        "groundWalkable": true
+      },
+      {
+        "id": "G10",
+        "name": "island-lower-stair",
+        "kind": "stair",
+        "bounds": [
+          33.5,
+          16,
+          38.5,
+          20.5
+        ],
+        "polygon": [
+          [
+            33.5,
+            16
+          ],
+          [
+            38.5,
+            16
+          ],
+          [
+            38.5,
+            20.5
+          ],
+          [
+            33.5,
+            20.5
+          ]
+        ],
+        "elevationFt": [
+          -8,
+          18
+        ],
+        "groundWalkable": true
+      },
+      {
+        "id": "G11",
+        "name": "island-upper-terrace",
+        "kind": "terrace",
+        "bounds": [
+          33,
+          5,
+          39,
+          9.2
+        ],
+        "polygon": [
+          [
+            33,
+            5
+          ],
+          [
+            39,
+            5
+          ],
+          [
+            39,
+            9.2
+          ],
+          [
+            33,
+            9.2
+          ]
+        ],
+        "elevationFt": 31,
+        "groundWalkable": true
+      },
+      {
+        "id": "G12",
+        "name": "postgate-upper-walkway",
+        "kind": "walkway",
+        "bounds": [
+          36,
+          8,
+          38,
+          12
+        ],
+        "polygon": [
+          [
+            36,
+            8
+          ],
+          [
+            38,
+            8
+          ],
+          [
+            38,
+            12
+          ],
+          [
+            36,
+            12
+          ]
+        ],
+        "elevationFt": [
+          31,
+          18
+        ],
+        "groundWalkable": true
+      },
+      {
+        "id": "G13",
+        "name": "city-north-hoist-yard",
+        "kind": "platform",
+        "bounds": [
+          25,
+          6.5,
+          27,
+          10.5
+        ],
+        "polygon": [
+          [
+            25,
+            6.5
+          ],
+          [
+            27,
+            6.5
+          ],
+          [
+            27,
+            10.5
+          ],
+          [
+            25,
+            10.5
+          ]
+        ],
+        "elevationFt": [
+          18,
+          45
+        ],
+        "groundWalkable": true
+      }
+    ],
+    "walls": [
+      {
+        "id": "W01",
+        "kind": "stone-parapet",
+        "segment": [
+          [
+            8,
+            10
+          ],
+          [
+            17,
+            10
+          ]
+        ],
+        "topFt": 24
+      },
+      {
+        "id": "W02",
+        "kind": "stone-parapet",
+        "segment": [
+          [
+            22,
+            10
+          ],
+          [
+            24,
+            10
+          ]
+        ],
+        "topFt": 24
+      },
+      {
+        "id": "W03",
+        "kind": "stone-parapet",
+        "segment": [
+          [
+            28,
+            10
+          ],
+          [
+            32,
+            10
+          ]
+        ],
+        "topFt": 24
+      },
+      {
+        "id": "W04",
+        "kind": "stone-parapet",
+        "segment": [
+          [
+            8,
+            14
+          ],
+          [
+            17,
+            14
+          ]
+        ],
+        "topFt": 24
+      },
+      {
+        "id": "W05",
+        "kind": "stone-parapet",
+        "segment": [
+          [
+            22,
+            14
+          ],
+          [
+            32,
+            14
+          ]
+        ],
+        "topFt": 24
+      },
+      {
+        "id": "W06",
+        "kind": "guarded-gate-wall",
+        "segment": [
+          [
+            32,
+            0
+          ],
+          [
+            32,
+            10.5
+          ]
+        ],
+        "topFt": 30
+      },
+      {
+        "id": "W07",
+        "kind": "guarded-gate-wall",
+        "segment": [
+          [
+            32,
+            13.5
+          ],
+          [
+            32,
+            19
+          ]
+        ],
+        "topFt": 30
+      },
+      {
+        "id": "W08",
+        "kind": "controllable-gate",
+        "segment": [
+          [
+            32,
+            10.5
+          ],
+          [
+            32,
+            13.5
+          ]
+        ],
+        "topFt": 30,
+        "clearWidthFt": 15,
+        "state": "GM-controlled"
+      },
+      {
+        "id": "W09",
+        "kind": "upper-island-parapet",
+        "segment": [
+          [
+            33,
+            5
+          ],
+          [
+            39,
+            5
+          ]
+        ],
+        "topFt": 36
+      },
+      {
+        "id": "W10",
+        "kind": "island-dock-edge",
+        "segment": [
+          [
+            33,
+            22
+          ],
+          [
+            38,
+            22
+          ]
+        ],
+        "topFt": -8
+      },
+      {
+        "id": "W11",
+        "kind": "south-seawall",
+        "segment": [
+          [
+            32,
+            22
+          ],
+          [
+            32,
+            24
+          ]
+        ],
+        "topFt": 18
+      }
+    ],
+    "verticalTransitions": [
+      {
+        "id": "V01",
+        "kind": "city-switchback-stairs",
+        "surface": "G07",
+        "start": [
+          5.5,
+          16
+        ],
+        "end": [
+          5.5,
+          20
+        ],
+        "fromElevationFt": 18,
+        "toElevationFt": -8,
+        "runIntentFeet": 50,
+        "clearWalkwayFt": 5,
+        "plan": "two/three switchback flights with accessible 5ft tread"
+      },
+      {
+        "id": "V02",
+        "kind": "island-switchback-stairs",
+        "surface": "G10",
+        "start": [
+          35.5,
+          20
+        ],
+        "end": [
+          36.5,
+          16.5
+        ],
+        "fromElevationFt": -8,
+        "toElevationFt": 18,
+        "runIntentFeet": 50,
+        "clearWalkwayFt": 5,
+        "plan": "switchback flights from dock to inner approach behind gate"
+      },
+      {
+        "id": "V03",
+        "kind": "upper-terrace-steps",
+        "surface": "G12",
+        "start": [
+          37,
+          8.5
+        ],
+        "end": [
+          37,
+          11.5
+        ],
+        "fromElevationFt": 31,
+        "toElevationFt": 18,
+        "runIntentFeet": 20,
+        "clearWalkwayFt": 5,
+        "plan": "stone stairs inward from rope landing to postgate court"
+      },
+      {
+        "id": "V04",
+        "kind": "hoist-crane-access",
+        "surface": "G13",
+        "start": [
+          26,
+          10.5
+        ],
+        "end": [
+          26,
+          9
+        ],
+        "fromElevationFt": 18,
+        "toElevationFt": 45,
+        "runIntentFeet": 0,
+        "clearWalkwayFt": 0,
+        "plan": "climbable crane/ladder; climbing and fall risks GM adjudicated"
+      }
+    ],
+    "transfers": [
+      {
+        "id": "T01",
+        "kind": "water-vessel",
+        "from": [
+          6.3,
+          20.5
+        ],
+        "to": [
+          35.5,
+          20.5
+        ],
+        "fromSurface": "G08",
+        "toSurface": "G09",
+        "transport": "skiff separate movable Tile",
+        "lengthFt": 146,
+        "preflight": "GM adjudicates boarding/movement; no walking on water"
+      },
+      {
+        "id": "T02",
+        "kind": "hoist-assisted-swing",
+        "from": [
+          26,
+          9
+        ],
+        "to": [
+          35,
+          7
+        ],
+        "fromSurface": "G13",
+        "toSurface": "G11",
+        "transport": "rope over fortified wall",
+        "originElevationFt": 45,
+        "destinationElevationFt": 31,
+        "wallTopFt": 30,
+        "crossingAtX": 32,
+        "requires": "Reach elevated crane, use rope and land on terrace; GM adjudicates",
+        "wallCrossingElevationFt": 35.667,
+        "wallClearanceFt": 5.667
+      }
+    ],
+    "anchors": [
+      {
+        "id": "A01",
+        "key": "south-bank-arrival",
+        "point": [
+          3,
+          12
+        ],
+        "kind": "arrivalRegionCandidate"
+      },
+      {
+        "id": "A02",
+        "key": "main-bridge-approach",
+        "point": [
+          18.5,
+          12
+        ],
+        "kind": "cover/patrol"
+      },
+      {
+        "id": "A03",
+        "key": "alarm-bell",
+        "point": [
+          7.8,
+          9
+        ],
+        "kind": "static-baked"
+      },
+      {
+        "id": "A04",
+        "key": "inspection-desk",
+        "point": [
+          5,
+          10
+        ],
+        "kind": "static-baked"
+      },
+      {
+        "id": "A05",
+        "key": "cargo-woooden-wagon",
+        "point": [
+          3.3,
+          14.6
+        ],
+        "kind": "static-baked"
+      },
+      {
+        "id": "A06",
+        "key": "rope-departure",
+        "point": [
+          26,
+          9
+        ],
+        "kind": "swing-hoist"
+      },
+      {
+        "id": "A07",
+        "key": "upper-postgate-rope-landing",
+        "point": [
+          35,
+          7
+        ],
+        "kind": "swing-landing"
+      },
+      {
+        "id": "A08",
+        "key": "city-boat-berth",
+        "point": [
+          6.3,
+          20.5
+        ],
+        "kind": "empty-berth"
+      },
+      {
+        "id": "A09",
+        "key": "island-boat-berth",
+        "point": [
+          35.5,
+          20.5
+        ],
+        "kind": "empty-berth"
+      },
+      {
+        "id": "A10",
+        "key": "island-inner-approach",
+        "point": [
+          36,
+          13.5
+        ],
+        "kind": "post-gate"
+      },
+      {
+        "id": "A11",
+        "key": "m02-exit",
+        "point": [
+          39,
+          14.2
+        ],
+        "kind": "transitionRegionCandidate"
+      }
+    ],
+    "objects": [
+      {
+        "id": "O01",
+        "kind": "checkpoint-booth",
+        "center": [
+          4.5,
+          9
+        ],
+        "footprint": [
+          3.3,
+          7.6,
+          5.3,
+          9.7
+        ],
+        "ownership": "background"
+      },
+      {
+        "id": "O02",
+        "kind": "freight-crane",
+        "center": [
+          26,
+          8
+        ],
+        "footprint": [
+          25,
+          7,
+          27,
+          9
+        ],
+        "ownership": "background",
+        "rigging": "T02"
+      },
+      {
+        "id": "O03",
+        "kind": "signal-bell",
+        "center": [
+          7.8,
+          9
+        ],
+        "ownership": "background"
+      },
+      {
+        "id": "O04",
+        "kind": "cargo-crates",
+        "center": [
+          18.5,
+          9.2
+        ],
+        "footprint": [
+          17.5,
+          8.8,
+          19,
+          9.7
+        ],
+        "ownership": "background"
+      },
+      {
+        "id": "O05",
+        "kind": "empty-skiff-berth",
+        "center": [
+          6.3,
+          20.5
+        ],
+        "ownership": "background-empty"
+      },
+      {
+        "id": "O06",
+        "kind": "skiff",
+        "ownership": "separate Foundry Tile candidate",
+        "notBakedIntoArt": true
+      }
+    ]
+  },
+  "gate": {
+    "planeX": 32,
+    "gapY": [
+      10.5,
+      13.5
+    ],
+    "widthFeet": 15,
+    "barrier": "blocks main passage when closed; bypass landings on x>32",
+    "boatChannelY": [
+      19,
+      22
+    ],
+    "boatChannelClearFeet": 15,
+    "maxSkiffHullWidthFeet": 10,
+    "boatChannelType": "open tidal inlet at waterline (not walkable)"
+  },
+  "traversalChecks": {
+    "normal": {
+      "requiredFootprintFeet": [
+        5,
+        10
+      ],
+      "doorCondition": "open",
+      "postgateArrival": [
+        39,
+        14
+      ]
+    },
+    "water": {
+      "boarding": [
+        6.3,
+        20.5
+      ],
+      "landing": [
+        35.5,
+        20.5
+      ],
+      "postgateReachableWithGateClosed": true,
+      "noWalkableWaterClaim": true
+    },
+    "rope": {
+      "departure": [
+        26,
+        9
+      ],
+      "arrival": [
+        35,
+        7
+      ],
+      "clearanceOverWallFt": 5.667,
+      "gateClosedIndependent": true
+    }
+  },
+  "projection": {
+    "background": "all static surfaces/cargo parapets; empty berth only",
+    "nativeWalls": "wall segments marked as candidates, no runtime installation",
+    "nativeTile": "skiff separately positioned at GM discretion",
+    "regions": "South Bank arrival and postgate M02 transition, exact polygons pending implementation"
+  },
+  "runtime": {
+    "foundryVerified": false,
+    "readyToPlay": false
+  }
+}

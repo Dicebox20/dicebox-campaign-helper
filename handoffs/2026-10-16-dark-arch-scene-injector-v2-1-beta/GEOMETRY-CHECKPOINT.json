@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-16",
+  "sourceRepository": "Dicebox20/dicebox-campaign-helper",
+  "sourceHeadBeforeCommit": "12b0ed7054fdd1ca93fd3fef8546cc674c625a55",
+  "branch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+  "workflow": "DiceBox Scene Injector V2.1 Beta",
+  "sceneKey": "dark-arch-m01",
+  "outerSceneState": "PREPARED",
+  "geometryNestedVerdict": "PASS_PURE_GEOMETRY_WITH_RUNTIME_GATES",
+  "validated": {
+    "scale": "40x24 Gridless 120px per 5ft; 4800x2880px",
+    "checks": 12,
+    "allPassed": true,
+    "mediumLargeGate": "PASS",
+    "boatViaIslandDock": "PASS",
+    "ropeViaUpperWalkway": "PASS",
+    "negativeControls": "PASS",
+    "elevationTransitionPlans": 4,
+    "draftWalls": 11,
+    "blueprintSurfaces": 13,
+    "sqliteBuild": "PASS",
+    "sqliteVerify": "PASS",
+    "geometryFileReRead": "PASS"
+  },
+  "artifactsSha256": {
+    "PREPARE.md": "466ec64942219e9aa249508b4e1bcc877f50a461923c73afe008f43b9a2608f2",
+    "spec.json": "5d3472def81f1ec73ede8e1a2cab11006c80e60b74414c1a24311cedbee1ce68",
+    "GEOMETRY.md": "93a172f459ab8c3971f41259c5d5059b45f086c53f031321d3016a9468b30587",
+    "author_geometry.py": "d5665b9b869ba9b023bf4eea2f982ca40920e497052da351e3c830de0c042a1b",
+    "spatial-blueprint.json": "f975614af795a357bb3c6b67f10a64721b391474fc429483a439a685e2590ae3",
+    "geometry-preview.png": "43f3f322e22770873f99dea0cb6654dc2ec5407f84bb06c72e7b1bc78ebffc8e",
+    "geometry-inspection.json": "1fd41cb659b34163483894aada003f5e8daa48cc594bbd123558241bd4070acf"
+  },
+  "blockedGates": [
+    "image-provider pending",
+    "embossed grayscale pending",
+    "structural inspect pending",
+    "painterly pending",
+    "final inspect pending",
+    "BUILD/stage/inject/verify pending"
+  ],
+  "activeStageMoved": false,
+  "liveFoundryMutation": false,
+  "readyToPlay": false,
+  "next": "RENDER: embossed grayscale using accepted typed geometry, not prior rejected prompts/images."
+}
