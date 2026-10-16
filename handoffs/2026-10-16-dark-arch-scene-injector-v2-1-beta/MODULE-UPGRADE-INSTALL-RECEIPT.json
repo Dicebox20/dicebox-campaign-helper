@@ -1,0 +1,21 @@
+{
+  "status": "INSTALLED_ON_DISK_VERIFIED_RUNTIME_UNTESTED",
+  "targetWorld": "world-template-2",
+  "installedModule": "dicebox-campaign-helper",
+  "installedVersion": "0.1.15",
+  "sourceRepoHead": "b77ba8fbdda45e4c51dec9476a3bbf0f2e2ccaf9",
+  "moduleManifestSha256": "467b56314411c5b40d7505d5da2a0e4b2f9e8f7a182b3ab413ce7f4e1ec5673b",
+  "filesFromCanonicalMainVerified": 41,
+  "staticJavaScriptFilesChecked": 28,
+  "originalModuleRollback": "C:\\Users\\rujie\\Documents\\DiceBox-Rollback\\world-template-2-module-0.1.2-20261016-153952\\quarantined-original-module-v0.1.2",
+  "originalModuleIndependentBackup": "C:\\Users\\rujie\\Documents\\DiceBox-Rollback\\world-template-2-module-0.1.2-20261016-153952\\rollback-module-v0.1.2",
+  "worldRollback": "C:\\Users\\rujie\\Documents\\DiceBox-Rollback\\world-template-2-module-0.1.2-20261016-153952\\rollback-world-template-2",
+  "worldUntouched": true,
+  "foreignAndLegacyFilesPreserved": true,
+  "foundryProcesses": 0,
+  "runtimeModuleEnabled": "UNVERIFIED_REQUIRES_USER",
+  "installedPackageLoaded": "UNVERIFIED_REQUIRES_RESTART",
+  "sceneMutation": false,
+  "darkArchInjected": false,
+  "readyToPlay": false
+}
