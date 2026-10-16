@@ -1,5 +1,8 @@
 # DiceBox Campaign Helper Program Roadmap
 
+**2026-10-16 Kurth Tower M02 PREPARE fixture:** User elected to continue from M01, which they report usable for play (not product/runtime VERIFIED). Drafted M02 reception credential/social-engineering fixture for Sarmenti as map 2 of six, 40x24 gridless battlemap-120, with public guard-checkpoint, north inspector registry and south staff route all intended to join secured-side M03 lift/stair. Stable ID dbx.heist.kurth.m02.reception. Stage PREPARE_DRAFT_REVIEW; awaiting semantic/geometric acceptance. Do not generate art/inject or promote active program stage. See handoffs/2026-10-16-kurth-tower-reception-m02/PREPARE.md and spec.json; KB chronological seed database/seed.d/2026-10-16-heist-m02-prepare-draft.sql.
+
+
 **2026-10-16 Dark Arch auto-world UX correction:** User rejects typed world-ID prompts. Accepted Injector macros detect current game.world.id and compare to the pinned authorized target, preserving one native DialogV2.confirm preview and post-dialog authority reread. The existing previewable Library Markdown was overwritten in place, SHA256 c57f0469c17fe3f6782f543dbdf16f867faccd361fb17933b5d897c834f1fde3; embedded image/geometry unchanged. Node syntax, embedded art and 10/10 no-write VM tests passed; exact canonical build validator and live Foundry remain outstanding. See handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/AUTO-WORLD-DETECTION-2026-10-16.md. No active stage promotion.
 
 

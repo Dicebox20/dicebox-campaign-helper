@@ -1,0 +1,170 @@
+{
+  "schemaVersion": "dicebox-scene-prepare/v1",
+  "status": "PREPARE_DRAFT_REVIEW",
+  "sceneKey": "kurth-tower-reception-m02",
+  "stableSceneId": "dbx.heist.kurth.m02.reception",
+  "sceneName": "Kurth Tower Reception",
+  "stage": "PREPARE",
+  "nextGate": "GEOMETRY_AUTHOR",
+  "campaign": "Acquisitions Incorporated Luskan Closeguard Island Kurth Tower heist",
+  "sceneIndex": 2,
+  "sceneCount": 6,
+  "characterSpotlight": "Sarmenti",
+  "party": {
+    "pcs": 6,
+    "jimDarkmagic": "witty non-mechanical guide",
+    "bakedNPCs": 0
+  },
+  "mission": {
+    "target": "unnamed vault treasure",
+    "faction": "Ship Kurth / Bregan D'aerthe",
+    "previousSceneId": "dbx.heist.kurth.m01.dark-arch",
+    "nextSceneId": "dbx.heist.kurth.m03.security-machinery",
+    "previousSceneUserReportsUsable": true,
+    "previousSceneRuntimeVerified": false
+  },
+  "scale": {
+    "profile": "battlemap-120",
+    "gridType": 0,
+    "gridSizePx": 120,
+    "feetPerLogicalCell": 5,
+    "logicalColumns": 40,
+    "logicalRows": 24,
+    "sceneWidthPx": 4800,
+    "sceneHeightPx": 2880,
+    "padding": 0
+  },
+  "camera": "strict 90-degree overhead orthographic battlemap, camera perpendicular to ground plane, no perspective tilt, no horizon",
+  "orientations": {
+    "west": "M01 public vestibule",
+    "north": "permit registry and inspector passage",
+    "center": "reception hall with credentials counter and guard screening",
+    "south": "delivery/staff circulation",
+    "east": "secured postcheckpoint vertical vestibule to M03"
+  },
+  "areas": [
+    "arrival vestibule",
+    "public visitor hall",
+    "permit registry",
+    "inspector back passage",
+    "guard checkpoint",
+    "receiving alcove",
+    "staff service corridor",
+    "postcheckpoint lift/stair vestibule"
+  ],
+  "mustConnectPaths": [
+    {
+      "id": "public-credentials",
+      "path": [
+        "M01 arrival",
+        "public hall",
+        "guard checkpoint",
+        "postcheckpoint vestibule",
+        "M03 transition"
+      ],
+      "requiredFootprintFt": 10,
+      "gateTargetFt": 15
+    },
+    {
+      "id": "staff-logistics",
+      "path": [
+        "M01 arrival",
+        "public hall",
+        "receiving alcove",
+        "staff door",
+        "staff corridor",
+        "postcheckpoint vestibule",
+        "M03 transition"
+      ],
+      "requiredFootprintFt": 5,
+      "preferredFt": 10
+    },
+    {
+      "id": "inspector-records",
+      "path": [
+        "M01 arrival",
+        "public hall",
+        "permit registry",
+        "inspector passage",
+        "postcheckpoint vestibule",
+        "M03 transition"
+      ],
+      "requiredFootprintFt": 5,
+      "preferredFt": 10
+    }
+  ],
+  "interaction": {
+    "type": "credential/authorization",
+    "designProposal": [
+      "purpose",
+      "sponsor",
+      "clearance"
+    ],
+    "skillDCsLocked": false,
+    "fixedAnswerRequired": false,
+    "permanentFailure": false,
+    "postureProposal": [
+      "quiet",
+      "suspicious",
+      "alarm"
+    ],
+    "automaticReinforcements": false,
+    "discoveryCount": 0
+  },
+  "plannedRegionKeys": [
+    "dbx.heist.m02.arrival.reception",
+    "dbx.heist.m02.check.credentials",
+    "dbx.heist.m02.access.staff",
+    "dbx.heist.m02.transition.security-machinery"
+  ],
+  "nativeRuntime": {
+    "targetWorld": "unbound until exact authority read",
+    "foundryMutation": false,
+    "sceneUUIDsVerified": false
+  },
+  "art": {
+    "staticFeatures": [
+      "reception desk",
+      "queue railings",
+      "permit office",
+      "paper ledgers",
+      "bell",
+      "inert sentry alcove",
+      "delivery crates"
+    ],
+    "forbid": [
+      "actors",
+      "tokens",
+      "visible grid",
+      "readable labels",
+      "puzzle text",
+      "moving constructs"
+    ]
+  },
+  "gates": {
+    "geometryAuthored": false,
+    "geometryInspected": false,
+    "structuralRendered": false,
+    "structuralInspected": false,
+    "structuralBuilt": false,
+    "painterlyRendered": false,
+    "finalInspected": false,
+    "foundryVerified": false
+  },
+  "workflowOrder": [
+    "PREPARE",
+    "GEOMETRY AUTHOR",
+    "GEOMETRY INSPECT",
+    "EMBOSSED STRUCTURAL GRAYSCALE",
+    "STRUCTURAL INSPECT",
+    "FEATURE MANIFEST RECONCILIATION",
+    "OFFLINE STRUCTURAL BUILD",
+    "PAINTERLY RENDER",
+    "FINAL INSPECT",
+    "FINAL INJECTION ASSEMBLY",
+    "STAGE",
+    "INJECT",
+    "VERIFY",
+    "RECEIPT"
+  ]
+}
