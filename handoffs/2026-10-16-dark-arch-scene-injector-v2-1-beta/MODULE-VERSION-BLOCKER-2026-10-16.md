@@ -54,3 +54,21 @@ This check runs before asset deployment, Scene creation, Walls, or Regions. User
 ## Evidence boundary
 
 There is no exact-world runtime inspection, user-supplied probe, module upgrade, or successful injection receipt yet. This is a recoverable preflight blocker, not an art/geometry defect. No live Foundry or installed module files were changed during diagnosis.
+
+## User live module probe — additional confirmation (2026-10-16)
+
+User-supplied read-only in-world console observation confirmed:
+- Foundry Core: `14.367`.
+- D&D5e: `5.3.3`.
+- Module `dicebox-campaign-helper`: found `true`, active `false`, version `0.1.2`.
+
+**Both module checks fail.** Enabling the current version will not satisfy the exact `0.1.15` requirement.
+
+Read-only source inspection on the authorized Windows host found:
+- Foundry desktop server remains running; do not replace installed module files while in use.
+- Candidate repository manifest is `0.1.15`, entry `src/entry-20260823-program-scene-v2.js` exists. 28 source JavaScript files passed `node --check` and local import-closure checks. These checks do not certify release readiness or live compatibility.
+- Installed `0.1.2` includes extra assets absent from candidate repo package. Preserve existing assets and full rollback; never perform a blind destructive replacement.
+- Candidate source imports currently use cache token `?dbx=0.1.21` while the manifest and internal package descriptors declare `0.1.15`. This is a source-lineage detail to reconcile rather than evidence of a verified `0.1.21` release.
+- No manifest/download auto-update URLs are declared.
+
+**Recovery remains BLOCKED** until Foundry is stopped for controlled upgrade, world and module backups are verified, target world and active GM authority checked, then installed module is restarted/enabled and reread. No live module/world changes made by this diagnostic.
