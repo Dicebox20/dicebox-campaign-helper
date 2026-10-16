@@ -1,5 +1,8 @@
 # DiceBox Campaign Helper Program Roadmap
 
+**2026-10-16 Dark Arch macro-preview recovery:** Foundry world-template-2 module 0.1.15 active and current GM succeeded, but the original self-contained map injector failed at unsupported browser prompt() in the no-write preview gate. A local-only exact-world DialogV2.input() + DialogV2.confirm() patched artifact SHA256 c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6 passed local syntax/packaging and 10/10 deterministic mock tests; image, authored Walls and Regions unchanged. It remains uninstalled and unverified in live Foundry, exact repo validator pending on artifact bytes. Handoff: handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/DIALOGV2-PREVIEW-HOTFIX-2026-10-16.md. No product active-stage promotion.
+
+
 **2026-10-16 runtime maintenance (not scene installation):** The disabled/outdated local DiceBox module 0.1.2 blocked the Dark Arch Injector. After user-confirmed world-template-2 active GM and verified Foundry shutdown, the complete module and 164MB world were backed up and verified, and 0.1.15 was installed on disk from main-equivalent repository source, preserving 55 foreign/legacy files. New installed manifest SHA256 467b56314411c5b40d7505d5da2a0e4b2f9e8f7a182b3ab413ce7f4e1ec5673b. Runtime reload, module enable, active GM reconfirmation, macro preflight, and Dark Arch injection are outstanding. See handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/MODULE-UPGRADE-INSTALL-RECEIPT.json; KB chronological source database/seed.d/2026-10-16-dicebox-module-v0-1-15-disk-upgrade.sql. The retired O-112 active-stage checker remains FAIL, so do not mark product stage advanced or Ready-to-Play.
 
 
