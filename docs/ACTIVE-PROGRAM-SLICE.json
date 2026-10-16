@@ -18,7 +18,8 @@
       "testReceipt": "handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/geometry-inspection.json",
       "workState": "PREPARED with GEOMETRY INSPECT PASS nested beta substage",
       "outstanding": "Embossed grayscale render, structural inspection, feature manifest, paint/final inspect, build, Foundry runtime."
-    }
+    },
+    "structuralRenderVariance20261016": {"status":"structural-PASS-with-user-accepted-layout-variance-and-local-semantic-reconciliation","renderSha256":"036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8","geometryEvidence":"handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/render-reconciliation-receipt.json","deterministicChecks":"10/10 pure local, needs Foundry reread after BUILD","nextGate":"painterly rendering based on reconciled feature manifest; FINAL_INSPECT still required"}
   },
   "acceptedFoundryHistoricalEvidenceIngest20261007": {
     "id": "foundry-historical-evidence-ingest-2026-10-07",

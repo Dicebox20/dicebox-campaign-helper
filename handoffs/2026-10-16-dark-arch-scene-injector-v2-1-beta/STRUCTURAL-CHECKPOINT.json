@@ -1,0 +1,24 @@
+{
+  "operation": "Dark Arch M01 Structural user variance reconciliation",
+  "date": "2026-10-16",
+  "sourceHead": "4e3be1185e62017afa7e8107eb12a95b0d6c3635",
+  "userAccepted": "north-shifted bridge and west-shifted gate emphasize water route",
+  "structuralVerdict": "PASS_WITH_DOCUMENTED_VARIANCE",
+  "grayscaleSourceSha256": "036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8",
+  "grayscaleNativePixels": [
+    1619,
+    971
+  ],
+  "rendererBytesPresentInBranch": false,
+  "reconciledBlueprintSha256": "6386442ea0e241d0f58581d66146e9177d54ebe86497b83636fffa7d12f117ab",
+  "featureManifestSha256": "2eed1dba7bbad0a0754a7cab626ba8441fb852fb12e4c9f3e1f12c9a877da9f4",
+  "localRouteChecks": "PASS 10/10 including medium/large gate clearance and connector-removal negative controls",
+  "sourceModel": "independent human-reviewed semantic authoring; pixel-derived Walls prohibited",
+  "next": "PAINTERLY RENDER from bound inspected grayscale + feature manifest, then FINAL INSPECT",
+  "notDone": [
+    "final artwork",
+    "Foundry build",
+    "live GM verify"
+  ],
+  "mainMerged": false
+}

@@ -1,0 +1,100 @@
+{
+  "sourceImageSha256": "036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8",
+  "structuralImageNative": [
+    1619,
+    971
+  ],
+  "acceptedVisualDeviation": "northward bridge and westward gate emphasize river",
+  "geometryBlueprintSha256": "6386442ea0e241d0f58581d66146e9177d54ebe86497b83636fffa7d12f117ab",
+  "label": "PASS_WITH_DOCUMENTED_VARIANCE_LOCAL_REVIEW",
+  "tests": {
+    "bridge_open_medium": {
+      "pass_": true,
+      "found": true,
+      "expected": true,
+      "tokenFootprintFt": 5,
+      "gateOpen": true,
+      "landTravelDistanceFt": 180.0
+    },
+    "bridge_open_large": {
+      "pass_": true,
+      "found": true,
+      "expected": true,
+      "tokenFootprintFt": 10,
+      "gateOpen": true,
+      "landTravelDistanceFt": 180.0
+    },
+    "bridge_closed_medium": {
+      "pass_": true,
+      "found": false,
+      "expected": false,
+      "tokenFootprintFt": 5,
+      "gateOpen": false,
+      "landTravelDistanceFt": null
+    },
+    "bridge_closed_large": {
+      "pass_": true,
+      "found": false,
+      "expected": false,
+      "tokenFootprintFt": 10,
+      "gateOpen": false,
+      "landTravelDistanceFt": null
+    },
+    "city_quay_access": {
+      "pass_": true,
+      "found": true,
+      "expected": true,
+      "tokenFootprintFt": 5,
+      "gateOpen": false,
+      "landTravelDistanceFt": 70.0
+    },
+    "island_postgate_from_dock": {
+      "pass_": true,
+      "found": true,
+      "expected": true,
+      "tokenFootprintFt": 5,
+      "gateOpen": false,
+      "landTravelDistanceFt": 70.0
+    },
+    "hoist_access": {
+      "pass_": true,
+      "found": true,
+      "expected": true,
+      "tokenFootprintFt": 5,
+      "gateOpen": false,
+      "landTravelDistanceFt": 112.5
+    },
+    "rope_terrace_to_inner": {
+      "pass_": true,
+      "found": true,
+      "expected": true,
+      "tokenFootprintFt": 5,
+      "gateOpen": false,
+      "landTravelDistanceFt": 58.8
+    },
+    "missing_island_dock_stair": {
+      "pass_": true,
+      "found": false,
+      "expected": false,
+      "tokenFootprintFt": 5,
+      "gateOpen": false,
+      "landTravelDistanceFt": null
+    },
+    "missing_upper_terrace_stair": {
+      "pass_": true,
+      "found": false,
+      "expected": false,
+      "tokenFootprintFt": 5,
+      "gateOpen": false,
+      "landTravelDistanceFt": null
+    }
+  },
+  "stopConditions": "paint before visual/feature reconciliation or runtime auto-wall derivation prohibited",
+  "caveats": [
+    "No automatic tracing of walls from pixels",
+    "Footprint/tidal/rope movements checked in pure author model only",
+    "Structural visual source not archived in this GitHub branch",
+    "Later Feature Manifest / artwork image identity binding required"
+  ],
+  "nextGate": "FEATURE_MANIFEST_RECONCILIATION_THEN_PAINTERLY"
+}
