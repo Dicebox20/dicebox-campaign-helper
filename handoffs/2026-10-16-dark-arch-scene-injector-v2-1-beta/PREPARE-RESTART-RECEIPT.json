@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-16",
+  "task": "DiceBox Scene Injector V2.1 Beta acceptance + Dark Arch M01 PREPARE restart",
+  "sourceMainCommit": "1137241a7df431a5cc4bc775ab56dcd283e1db29",
+  "branch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+  "status": "PREPARE_VALIDATED_LOCAL",
+  "workflow": "dicebox-scene-injector-workflow/v2.1-beta",
+  "buildContract": "dicebox-scene-injector-build/v2",
+  "checks": {
+    "jsonParse": "PASS",
+    "scale": "PASS",
+    "3RequiredRouteIntentDeclarations": "PASS_INTENT_ONLY",
+    "postGateDestinationsDeclared": "PASS_INTENT_ONLY",
+    "geometryCoordinateRouteSweep": "PENDING_NEXT_GATE",
+    "geometryAuthoritativeBlueprint": "PENDING_NEXT_GATE",
+    "gameplayRuntime": "NOT_TESTED"
+  },
+  "filesSha256": {
+    "PREPARE.md": "466ec64942219e9aa249508b4e1bcc877f50a461923c73afe008f43b9a2608f2",
+    "spec.json": "5d3472def81f1ec73ede8e1a2cab11006c80e60b74414c1a24311cedbee1ce68"
+  },
+  "priorImages": "archived, not authoritative; new geometry from PREPARE only",
+  "next": "GEOMETRY AUTHOR then GEOMETRY INSPECT; no painterly or grayscale until proof",
+  "liveFoundryMutation": false
+}

@@ -11,6 +11,8 @@ Treat the named workflow commands as API operations, not ordinary-language sugge
 
 Do not silently substitute another pipeline.
 
+**Current creative stage version (user-accepted 2026-10-16):** DiceBox Scene Injector V2.1 Beta. Read docs/DICEBOX-SCENE-INJECTOR-V2.1-BETA-2026-10-16.md as the newest geometry-first overlay. Perform GEOMETRY + GEOMETRY INSPECT before embossed grayscale + STRUCTURAL INSPECT, then Feature Manifest reconciliation, painterly render and FINAL INSPECT. Prior two-pass instructions below remain applicable inside those stages unless contradicted by V2.1 Beta. Do not confuse this beta workflow with BUILD contract v2 or Foundry module version.
+
 ## Mandatory source checks
 
 For Foundry Scene Injector work, read the current scene specification plus:

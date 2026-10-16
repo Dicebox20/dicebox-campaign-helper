@@ -1,6 +1,17 @@
 {
   "schemaVersion": "1.0.0",
   "updatedAt": "2026-10-07",
+  "acceptedDiceboxSceneInjectorV21Beta20261016": {
+    "id": "scene-injector-v2-1-beta-2026-10-16",
+    "status": "accepted-beta-workflow-review-branch",
+    "acceptanceObservation": "Three-stage pipeline: explicit deterministic geometry and inspection, embossed grayscale and structural inspection, painterly and final inspection; Dark Arch M01 restarts PREPARE.",
+    "owner": "DiceBox Campaign Helper Foreman",
+    "targetAuthority": "DiceBox scene workflow and Dark Arch test fixture; beta accepted by user, not main merged",
+    "allowedScope": "Versioned governance, roadmap/active card, dated KB, workflow skill, Dark Arch handoff, local checks. No product-stage promotion or live Foundry writes.",
+    "deterministicCheck": "KB rebuild/verify, 40x24 battlemap-120 Scene spec, staged geometry connectivity checks, unchanged BUILD v2 validator.",
+    "liveCheck": "None; no renderer/provider/exact-stack runtime claim.",
+    "stopCondition": "Fail closed on missing authority, geometry route failures, changed BUILD v2 contract or six pre-existing active-slice violations; no Ready-to-Play claim."
+  },
   "acceptedFoundryHistoricalEvidenceIngest20261007": {
     "id": "foundry-historical-evidence-ingest-2026-10-07",
     "status": "closed-local-evidence-pass",
