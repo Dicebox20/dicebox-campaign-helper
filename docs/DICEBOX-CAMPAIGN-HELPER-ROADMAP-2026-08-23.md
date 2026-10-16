@@ -1,5 +1,8 @@
 # DiceBox Campaign Helper Program Roadmap
 
+**2026-10-16 Dark Arch auto-world UX correction:** User rejects typed world-ID prompts. Accepted Injector macros detect current game.world.id and compare to the pinned authorized target, preserving one native DialogV2.confirm preview and post-dialog authority reread. The existing previewable Library Markdown was overwritten in place, SHA256 c57f0469c17fe3f6782f543dbdf16f867faccd361fb17933b5d897c834f1fde3; embedded image/geometry unchanged. Node syntax, embedded art and 10/10 no-write VM tests passed; exact canonical build validator and live Foundry remain outstanding. See handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/AUTO-WORLD-DETECTION-2026-10-16.md. No active stage promotion.
+
+
 **2026-10-16 Dark Arch macro-preview recovery:** Foundry world-template-2 module 0.1.15 active and current GM succeeded, but the original self-contained map injector failed at unsupported browser prompt() in the no-write preview gate. A local-only exact-world DialogV2.input() + DialogV2.confirm() patched artifact SHA256 c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6 passed local syntax/packaging and 10/10 deterministic mock tests; image, authored Walls and Regions unchanged. It remains uninstalled and unverified in live Foundry, exact repo validator pending on artifact bytes. Handoff: handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/DIALOGV2-PREVIEW-HOTFIX-2026-10-16.md. No product active-stage promotion.
 
 

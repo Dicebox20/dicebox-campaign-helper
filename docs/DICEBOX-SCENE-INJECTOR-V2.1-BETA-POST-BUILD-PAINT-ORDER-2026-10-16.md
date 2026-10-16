@@ -26,6 +26,10 @@ This explicitly **supersedes** the earlier V2.1 Beta ordering, which incorrectly
 - New offline candidate builds on manually reviewed gate/bridge/dock alignment, 14 initial Wall segments, one operable gate, two hidden GM-only intent Regions, no NPC/boat Tile/teleport behavior. Off-map Foundry exact-stack verification, installer asset upload and authoritative reread remain pending.
 - Local static contract parity / Node syntax and 3 fail-closed tests passed. **Canonical repo validator has not been run against the exact artifact bytes**, and no live Foundry installation is claimed.
 
+## Exact-world identification usability revision (accepted 2026-10-16)
+
+New Injector macros read the currently loaded game.world.id automatically and compare it to the explicitly authorized scene target. Do not require a GM to type the loaded world ID into a second modal. The reviewed changes and automatically detected world are shown in a single DialogV2.confirm preview; cancellation/close means no upload/writes, and active-GM/target checks are revalidated after confirmation. Detailed evidence: handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/AUTO-WORLD-DETECTION-2026-10-16.md.
+
 ## Next gate / recovery
 
 Before using the macro on an actual world: (1) reconcile the exact artifact using the repository's `tools/validate-dicebox-build.mjs` (artifact bytes must be available in runtime), (2) verify exact world, core, DND5e and module version, and active-GM authority, (3) preview and approve the exact document diff and asset upload, (4) install once, reread Scene/Level/background/Walls/Regions, then test 5/10-ft token movement, open/closed gate, boat/swing bypass, and player Region ownership. Remain `NOT_READY_TO_PLAY` until verified.
