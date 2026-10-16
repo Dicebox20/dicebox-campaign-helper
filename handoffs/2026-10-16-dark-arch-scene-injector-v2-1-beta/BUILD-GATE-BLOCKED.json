@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "dicebox-scene-build-gate/v2.1-beta",
+  "date": "2026-10-16",
+  "sceneId": "dbx.heist.kurth.m01.dark-arch",
+  "branch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+  "verifiedPriorHead": "63b9c59e2938d25498e6692c68ebdb52cfb14a05",
+  "requestedAction": "BUILD",
+  "verdict": "BLOCKED_MISSING_APPROVED_FINAL_ART",
+  "workflow": "DiceBox Scene Injector V2.1 Beta",
+  "buildContract": "dicebox-scene-injector-build/v2",
+  "evidence": {
+    "geometry": "PASS local geometry",
+    "embossedGrayscaleStructuralInspection": "PASS_WITH_DOCUMENTED_VARIANCE",
+    "grayscaleArtwork": {
+      "dimensions": [
+        1619,
+        971
+      ],
+      "sha256": "036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8",
+      "bytesVerifiedInConversationContainer": true,
+      "storedInGit": false
+    },
+    "featureManifest": "feature-manifest-render-reconciled.json",
+    "featureManifestFinalArtApproved": false,
+    "painterlyRenderExistsInHandoff": false,
+    "finalInspectReceiptExistsInHandoff": false,
+    "approved4800x2880SceneBackground": false,
+    "exactLiveFoundryAuthorityChecked": false
+  },
+  "mandatorySteps": [
+    "Produce painterly map from accepted grayscale and feature manifest without changing topology",
+    "Verify final image against approved spatial blueprint and features; FINAL_INSPECT PASS approves it",
+    "Bind and stage approved art with exact hash and 4800x2880 Scene dimensions",
+    "Generate one Markdown with one self-contained JavaScript macro and run existing BUILD v2 validator"
+  ],
+  "forbiddenActions": [
+    "No substitute grayscale as final painterly art without new explicit workflow acceptance",
+    "No fabricated FINAL_INSPECT PASS",
+    "No mutation of active Foundry or promotion to Ready-to-Play"
+  ],
+  "macroEmitted": false,
+  "sceneInstalled": false,
+  "readyToPlay": false
+}
