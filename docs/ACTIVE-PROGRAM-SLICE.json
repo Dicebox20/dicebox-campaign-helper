@@ -19,7 +19,8 @@
       "workState": "PREPARED with GEOMETRY INSPECT PASS nested beta substage",
       "outstanding": "Embossed grayscale render, structural inspection, feature manifest, paint/final inspect, build, Foundry runtime."
     },
-    "structuralRenderVariance20261016": {"status":"structural-PASS-with-user-accepted-layout-variance-and-local-semantic-reconciliation","renderSha256":"036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8","geometryEvidence":"handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/render-reconciliation-receipt.json","deterministicChecks":"10/10 pure local, needs Foundry reread after BUILD","nextGate":"painterly rendering based on reconciled feature manifest; FINAL_INSPECT still required"}
+    "structuralRenderVariance20261016": {"status":"structural-PASS-with-user-accepted-layout-variance-and-local-semantic-reconciliation","renderSha256":"036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8","geometryEvidence":"handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/render-reconciliation-receipt.json","deterministicChecks":"10/10 pure local, needs Foundry reread after BUILD","nextGate":"painterly rendering based on reconciled feature manifest; FINAL_INSPECT still required"},
+    "painterlyFinalAssembly20261016": {"status":"user-approved-art-offline-injector-not-runtime-certified","artSha256":"02cdd354371721961ce277f00b8bfe2a322d2678000f7c44d8596800194cab61","singleMarkdownSha256":"efdad8978ee82ad6a9720282a1cb3f7bd81da2aa3db5d78b1e5386cb4985b35a","sequence":"STRUCTURAL BUILD -> PAINTERLY -> FINAL INSPECT -> FINAL ASSEMBLY -> STAGE -> INJECT -> VERIFY","liveStatus":"not installed; exact canonical validator and runtime canaries pending"}
   },
   "acceptedFoundryHistoricalEvidenceIngest20261007": {
     "id": "foundry-historical-evidence-ingest-2026-10-07",

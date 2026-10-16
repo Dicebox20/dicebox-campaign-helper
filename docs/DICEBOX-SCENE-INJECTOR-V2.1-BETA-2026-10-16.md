@@ -5,6 +5,8 @@
 **Authority:** user instruction 2026-10-16; repository `AGENTS.md`; existing October 7 semantic rendering, October 9 geometry tolerance and clean-restart rules, automation/BUILD contracts, KB/active program gate.
 **Compatibility:** Retains the existing single-Markdown, single-self-contained-JavaScript `dicebox-scene-injector-build/v2` artifact. Does not rename the 0.1.15 Foundry module or alter the 16-stage product roadmap. The v2.1 Beta label is a **creative workflow version**, not a release number.
 
+**Latest accepted 2026-10-16 stage-order override:** See docs/DICEBOX-SCENE-INJECTOR-V2.1-BETA-POST-BUILD-PAINT-ORDER-2026-10-16.md. The project now performs structural BUILD from inspected grayscale before painterly render, then FINAL INSPECT, then final injection assembly binding painted art to grayscale-derived geometry, then STAGE/INJECT/VERIFY. The older ordering below is history where conflicting; one-MD/one-macro BUILD v2 and runtime gates remain.
+
 ## Accepted goal
 
 Do not ask the image generator to invent topology and architectural aesthetics at the same time. Prove required geometric connectivity first; then render structural embossed grayscale; then render painterly colors/materials without changing the geometry. Explicit user acceptance of this approach on 2026-10-16 supersedes the older two-art-pass workflow **only for the creative-stage orchestration**. All existing integrity, authority, safety, and inspection requirements remain.
