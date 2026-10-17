@@ -15,6 +15,16 @@
   "chatContextFillPercent": null,
   "chatContextFillDisplay": "N/A% \u2014 no authoritative platform telemetry",
   "continuityRisk": "HIGH",
-  "githubPersistence": "PENDING",
-  "kbRebuild": "PENDING"
+  "githubPersistence": "VERIFIED feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+  "kbRebuild": "PENDING",
+  "governanceLinkage": {
+    "AGENTS.md": "VERIFIED on feature branch",
+    "docs/DICEBOX-20-MINUTE-TURN-CAP-2026-10-09.md": "VERIFIED on feature branch",
+    "docs/DICEBOX-CHAT-CAPACITY-METER-2026-10-17.md": "VERIFIED on feature branch"
+  },
+  "handoffFile": "handoffs/2026-10-17-m02-provisional-build-chat-handoff/START-HERE.md",
+  "canonicalMainModified": false,
+  "activeSliceUpdated": "NOT VERIFIED \u2014 readback unavailable, no machine-stage promotion",
+  "kbSeedStatus": "GitHub seed.d delta verified present; canonical SQLite build/verify PENDING",
+  "latestGitHubCommit": "e40aed4d9cd8869b0ea0ec3fb0b57c2a1dae13da"
 }
