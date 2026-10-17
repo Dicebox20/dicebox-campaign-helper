@@ -1,0 +1,133 @@
+{
+  "contract": "dicebox-scene-prepare/v1",
+  "status": "PREPARE_RESTART_DRAFT_REVIEW",
+  "sceneKey": "kurth-tower-reception-m02",
+  "stableSceneId": "dbx.heist.kurth.m02.reception",
+  "sceneName": "Kurth Tower Grand Entrance",
+  "sequenceIndex": 2,
+  "sequenceCount": 6,
+  "version": "2026-10-16-restart-proposal",
+  "supersession": {
+    "previousPrepare": "2026-10-16-kurth-tower-reception-m02/PREPARE.md",
+    "previousGeometry": "REJECTED_AS_DESIGN_AUTHORITY",
+    "previousGray": "REJECTED_AS_DESIGN_AUTHORITY",
+    "oldDrawingMayBeRenderInput": false
+  },
+  "source": "Explicit current user instruction to restart at PREPARE after rejecting small tollhouse/back entrance",
+  "footprint": {
+    "profile": "battlemap-120",
+    "gridType": "gridless",
+    "logicalColumns": 54,
+    "logicalRows": 36,
+    "gridSizePx": 120,
+    "distanceFt": 5,
+    "width": 6480,
+    "height": 4320,
+    "padding": 0,
+    "reviewStatus": "PROPOSED"
+  },
+  "camera": "strict 90-degree overhead orthographic, no tilt, no horizon",
+  "exterior": {
+    "count": 1,
+    "edge": "west",
+    "from": "M01 Dark Arch",
+    "description": "monumental entrance portal inside large tower"
+  },
+  "continuation": {
+    "edge": "east",
+    "to": "M03 Security Machinery",
+    "kind": "internal secured tower-core vestibule; no outdoors"
+  },
+  "rooms": [
+    "monumental arrival portico",
+    "grand ceremonial hall with generous open floor",
+    "north clerk/records office and inspector internal gallery",
+    "south servants receiving and internal service route",
+    "east inner guard barrier and tower core",
+    "galleries reached by verified staircases only"
+  ],
+  "mandatoryRoutes": [
+    {
+      "id": "PUBLIC",
+      "description": "M01 portal → grand hall → social credential desk → guarded inner barrier → secured core → M03",
+      "minFt": 10,
+      "preferredFt": "15-20",
+      "gateOpeningFt": 15
+    },
+    {
+      "id": "RECORDS",
+      "description": "M01 portal → hall → north registry → inspector internal passage → secured core → M03",
+      "minFt": 5,
+      "preferredFt": 10
+    },
+    {
+      "id": "STAFF",
+      "description": "M01 portal → hall → south service receiving → servant internal passage → secured core → M03",
+      "minFt": 5,
+      "preferredFt": 10
+    }
+  ],
+  "actors": {
+    "pcs": 6,
+    "jimDarkmagic": "narrative only, not baked or auto-placed",
+    "guards": "GM-owned/no automatic spawn"
+  },
+  "encounter": {
+    "spotlight": "Sarmenti social infiltration",
+    "possibleClearanceConcept": "purpose/sponsor/clearance proposal only",
+    "skillDCsLocked": false,
+    "forcedCombat": false,
+    "permanentSoftlock": false,
+    "treasureIdentity": "UNSPECIFIED",
+    "discoveryCount": 0
+  },
+  "proposedRegionIntent": [
+    "M01 west arrival",
+    "security audience cue",
+    "north inspector cue",
+    "south staff cue",
+    "M03 secured-side exit"
+  ],
+  "artwork": {
+    "allow": [
+      "masonry",
+      "columns",
+      "arches",
+      "fixed desks",
+      "monumental stairs",
+      "optional verified galleries"
+    ],
+    "forbid": [
+      "exterior back entrance",
+      "isolated freestanding tollhouse building",
+      "baked grid",
+      "characters",
+      "baked guards",
+      "Jim miniature",
+      "readable room labels",
+      "invented solutions"
+    ]
+  },
+  "geometryGate": {
+    "approved": false,
+    "authored": false,
+    "inspected": false,
+    "prove": [
+      "one exterior west entrance",
+      "north/south bypasses end postguard",
+      "all security paths closed blocks access",
+      "10-ft Large public clearance",
+      "5-ft Medium side clearance",
+      "15-ft guard opening",
+      "no prop/column overlap",
+      "no painted fake doors",
+      "verified stair connections"
+    ]
+  },
+  "runtime": {
+    "m01ObservedWorld": "world-template-2",
+    "m02LiveAuthorityRereadPending": true,
+    "foundryMutationAllowed": false
+  },
+  "nextGate": "User PREPARE approval → new GEOMETRY AUTHOR; do not render or inject"
+}
