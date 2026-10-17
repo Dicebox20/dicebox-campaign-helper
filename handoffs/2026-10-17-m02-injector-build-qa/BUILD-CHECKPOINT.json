@@ -1,0 +1,27 @@
+{
+  "stage": "BUILD_LOCAL_UNSTAGED_PROVISIONAL",
+  "canonicalSingleMarkdown": "/mnt/data/dicebox_heist_design/kurth-tower-m02/injection-build-2026-10-17/DiceBox-Kurth-Tower-M02-Provisional-Single-Macro-Injector.md",
+  "sourceImagePngSha256": "a342988f238b42162af2052ed37fc4513c9dff1553e6c64a83273aeb5c4371f4",
+  "sourceImageNative": [
+    1619,
+    971
+  ],
+  "embeddedWebpSha256": "95aca5e9010def8d9d8ffea2e11dde2a5f8c0948de2970b461e779175620234a",
+  "embeddedWebpBytes": 425026,
+  "macroBytes": 587289,
+  "macroSha256": "22e562dfd03daa1172d4632fc3f020463705a0c2ee90b4ae59fde80e4bab005d",
+  "sourceGeometry": "selected-art-v1-manually-reconciled",
+  "localGeometryTest": {
+    "total": 15,
+    "passed": 15,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "walls": 11,
+  "doors": 3,
+  "regions": 4,
+  "runtimeTests": "PENDING",
+  "finalPainterlyApproval": false,
+  "foundryMutation": false,
+  "next": "offline test + visual/geometry acceptance before STAGE"
+}
