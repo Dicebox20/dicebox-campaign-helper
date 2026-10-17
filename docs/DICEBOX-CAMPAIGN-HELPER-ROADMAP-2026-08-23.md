@@ -1,5 +1,7 @@
 # DiceBox Campaign Helper Program Roadmap
 
+**2026-10-16 M02 restart from PREPARE (user-directed):** Earlier M02 40×24 tollhouse-like geometry and structural grayscale are archival/rejected as new-map design authority. Drafted `handoffs/2026-10-16-kurth-tower-reception-m02/PREPARE-RESTART-2026-10-16.md` and versioned spec for a massive Kurth Tower interior with one west outdoor M01 entrance, an eastern **internal** secure core to M03, grand ceremonial hall and north inspector/south servant infiltration routes. **54×36 / 6480×4320 battlemap-120 is proposed pending PREPARE review**, not accepted geometry. New GEOMETRY AUTHOR, sweep/door/prop tests, grayscale and all Foundry stages remain pending; no runtime mutations. The original M02 source and its failures remain preserved as history.
+
 **2026-10-16 Kurth Tower M02 PREPARE fixture:** User elected to continue from M01, which they report usable for play (not product/runtime VERIFIED). Drafted M02 reception credential/social-engineering fixture for Sarmenti as map 2 of six, 40x24 gridless battlemap-120, with public guard-checkpoint, north inspector registry and south staff route all intended to join secured-side M03 lift/stair. Stable ID dbx.heist.kurth.m02.reception. Stage PREPARE_DRAFT_REVIEW; awaiting semantic/geometric acceptance. Do not generate art/inject or promote active program stage. See handoffs/2026-10-16-kurth-tower-reception-m02/PREPARE.md and spec.json; KB chronological seed database/seed.d/2026-10-16-heist-m02-prepare-draft.sql.
 
 
