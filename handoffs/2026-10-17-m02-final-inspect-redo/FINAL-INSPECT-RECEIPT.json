@@ -1,0 +1,160 @@
+{
+  "documentType": "dicebox-scene-final-inspect/v1",
+  "sceneId": "dbx.heist.kurth.m02.reception",
+  "date": "2026-10-17",
+  "verdict": "REDO",
+  "stage": "FINAL_INSPECT_REJECTED_REQUIRES_STRUCTURAL_RENDER_RESTART",
+  "cause": "Color preserves rejected grayscale pixels but grayscale does not reproduce approved calibrated v7 geometry/artwork.",
+  "authoritativeSources": {
+    "approvedV7SpatialBlueprintCanonicalSha256": "f3bdcfb3c8ed73648e1a7f98c59e09e94c19a5b76ad208f88b35716f382b3add",
+    "approvedM01ArtSha256": "02cdd354371721961ce277f00b8bfe2a322d2678000f7c44d8596800194cab61",
+    "approvedGrayscaleCandidateSha256": "418df8bb3431db1984d0d9def8655ad882074f8d6fdbcce373ef20ab67d921be",
+    "colorCandidateSha256": "82096aaa2f5783a5b0b8ec21d2b5acef5acc1a8fb51b005fcc4621319fafbff7",
+    "colorizerScriptSha256": "a972b7bae8180aae487389e44a3816225c8ef60a5c7ee7303c3013f104e2f677",
+    "libraryCandidateMatchedBySha256": true
+  },
+  "imageSizeNativePx": [
+    1619,
+    971
+  ],
+  "checks": {
+    "libraryAssetMatchesLocalCandidate": true,
+    "sourceResolutionMatchesCandidate": true,
+    "colorizerProvenanceNoSpatialRemap": true,
+    "geometryStructuralEdgesRetainedRatio": 0.973154,
+    "sourceColorLuminanceCorrelation": 0.996823,
+    "sourceArchitectureMovedDuringColorization": false,
+    "v7ArtworkCoordinateAlignment": false,
+    "v7M01OriginalBridgeSourceExactlyPreserved": false,
+    "v7ExteriorEntranceDoorLocationMatchesArtwork": false,
+    "v7SecurityWallAndThreeOpeningsAppearAtExpectedPositions": false,
+    "noGridLabelsNPCTokens": true,
+    "grayscalePriorStructuralPassSufficient": false,
+    "foundryReadOrMutation": false
+  },
+  "spatialEvidence": {
+    "v7RegisteredM01JoinAtImageXpx": 804,
+    "v7M01GateExpectedPx": [
+      [
+        394,
+        295
+      ],
+      [
+        394,
+        419
+      ]
+    ],
+    "v7TowerWestWallExpectedImageXpx": 1190,
+    "v7SecurityCheckpointExpectedImageXpx": 1460,
+    "doors": {
+      "D01": {
+        "name": "Single outdoor tower entrance",
+        "segmentLogical": [
+          [
+            29.39215,
+            20
+          ],
+          [
+            29.39215,
+            23
+          ]
+        ],
+        "segmentNativeImagePx": [
+          [
+            1190,
+            809
+          ],
+          [
+            1190,
+            931
+          ]
+        ]
+      },
+      "D02": {
+        "name": "North inspector records access",
+        "segmentLogical": [
+          [
+            36.07463,
+            4.3
+          ],
+          [
+            36.07463,
+            6.8
+          ]
+        ],
+        "segmentNativeImagePx": [
+          [
+            1460,
+            174
+          ],
+          [
+            1460,
+            275
+          ]
+        ]
+      },
+      "D03": {
+        "name": "Main reception credential checkpoint",
+        "segmentLogical": [
+          [
+            36.07463,
+            12
+          ],
+          [
+            36.07463,
+            15
+          ]
+        ],
+        "segmentNativeImagePx": [
+          [
+            1460,
+            486
+          ],
+          [
+            1460,
+            607
+          ]
+        ]
+      },
+      "D04": {
+        "name": "South service security bypass",
+        "segmentLogical": [
+          [
+            36.07463,
+            20
+          ],
+          [
+            36.07463,
+            22.5
+          ]
+        ],
+        "segmentNativeImagePx": [
+          [
+            1460,
+            809
+          ],
+          [
+            1460,
+            910
+          ]
+        ]
+      }
+    },
+    "visualFinding": "At the tower exterior west wall x\u22481190, the red blueprint wall overlay lies in visible reception-floor space, not over its actual facade. Cyan door D01 at x\u22481190, y\u2248809\u2013931 lies in the wrong place; an arched door is depicted much farther left/up. The checkpoint wall planes at x\u22481460 lie across an open furnished reception floor rather than distinct blocked planes and passages. Inherited M01 portcullis/gate x\u2248394 diverges from rendered gate farther right. These features were redesigned by the structural generation relative to v7.",
+    "pixelGeometryClaimScope": "Only grayscale versus candidate, not grayscale versus approved v7. Quantities are image native; user-approved typed blueprint remains authoritative."
+  },
+  "previousStructuralInspectionVerdict": "Earlier assistant asserted PASS, but did not reconcile the structural render to the exact v7 wall/door/scene registration; superseded by this source-based evidence.",
+  "actions": {
+    "renderApproval": false,
+    "injectorBuildBlocked": true,
+    "stageInjectBlocked": true,
+    "nextStep": "New structural render from accepted v7 PREPARE and blueprint (fresh image prompt; no rejected prompt or rejected image as design authority), then compare geometry before painterly color; do not patch geometry to fit unapproved pixels.",
+    "runtimeFoundryValidationRequiredLater": true,
+    "foundryWorldChanged": false
+  },
+  "limitations": [
+    "No live Foundry reread.",
+    "Exact original M01 art should be aligned and composited/registered from master asset; grayscale generative recreation is not equivalent.",
+    "Any art regenerated with perspective or re-located doors must be rejected."
+  ]
+}
