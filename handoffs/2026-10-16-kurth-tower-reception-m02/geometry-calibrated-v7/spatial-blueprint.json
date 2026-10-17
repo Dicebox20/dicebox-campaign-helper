@@ -1,0 +1,1519 @@
+{
+  "schemaVersion": "dicebox-geometry-blueprint/v2.1-beta-m01-calibrated-v7",
+  "sceneId": "dbx.heist.kurth.m02.reception",
+  "sceneKey": "kurth-tower-reception-m02",
+  "stage": "FINAL_GEOMETRY_INSPECT_LOCAL_PENDING_USER_REVIEW",
+  "coordinateUnits": "logical-5ft-cells-not-unreviewed-pixels",
+  "scale": {
+    "profile": "battlemap-120",
+    "gridType": "gridless",
+    "logicalColumns": 40,
+    "logicalRows": 24,
+    "gridSizePx": 120,
+    "distanceFeet": 5,
+    "pixels": [
+      4800,
+      2880
+    ],
+    "padding": 0,
+    "coordinateUnits": "logical 5ft cells"
+  },
+  "sources": {
+    "prepareRef": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16:handoffs/2026-10-16-kurth-tower-reception-m02/PREPARE.md",
+    "userAnnotatedCompositeSha256": "a755a79ec2a282422390548d115bc7f64f8b72c56ebfaff22fdd05783c70a243",
+    "userCloseupSha256": "9a8c41d9a6d95e9f23fc8938c3cb1987e32340f2de07e8ff517f196213caf5b0",
+    "referenceAlignment": "visual-provenance-only; exact prior M01 wall/elevation/Scene UUID still pending source reread"
+  },
+  "continuity": {
+    "layout": "ONE continuous M02 scene viewport (M01 inherited context + new exterior path + tower building first floor)",
+    "visualReferenceJoinXLogical": 19.85911,
+    "isPhysicalWallAtReferenceJoin": false,
+    "buildingIsSingleConnectedFootprint": true,
+    "visibleBuildingStartsInM01": true,
+    "existingBuildingRoofB01DirectlyJoinsNewRoofB02": true,
+    "newRoofB02AdjoinsFirstFloorB03": true,
+    "courtyardOutdoors": true,
+    "oneExternalTowerDoor": "D01",
+    "rearEntranceVisible": false,
+    "towerInteriorCroppedAt": [
+      "top",
+      "bottom",
+      "right"
+    ],
+    "m03OutOfFrameNotNewExteriorDoor": true,
+    "towerFacingExteriorWallXLogical": 29.39215,
+    "doorAtLowerWestFacade": true,
+    "geometryFromAcceptedM01OriginalBlueprint": true,
+    "imageJoinPhysicalWall": false
+  },
+  "sourceRefRegions": {
+    "M01InheritedArtViewport": [
+      0,
+      0,
+      19.85911,
+      24
+    ],
+    "sketchScaleIsNotNativeM01Geometry": false,
+    "originalM01InstalledAssetUnverified": true
+  },
+  "buildingSurfaces": [
+    {
+      "id": "B01",
+      "name": "Existing building wing visible on bridge map",
+      "kind": "existing-visible-roof",
+      "polygon": [
+        [
+          16.36089,
+          0
+        ],
+        [
+          19.85911,
+          0
+        ],
+        [
+          19.85911,
+          7.3
+        ],
+        [
+          16.36089,
+          7.3
+        ]
+      ],
+      "bounds": [
+        16.36089,
+        0,
+        19.85911,
+        7.3
+      ],
+      "walkableAtReceptionLevel": false,
+      "visualBoundaryIsProposal": true
+    },
+    {
+      "id": "B02",
+      "name": "Same roofline continuing beyond bridge map",
+      "kind": "new-contiguous-roof",
+      "polygon": [
+        [
+          19.85911,
+          0
+        ],
+        [
+          29.39215,
+          0
+        ],
+        [
+          29.39215,
+          7.3
+        ],
+        [
+          19.85911,
+          7.3
+        ]
+      ],
+      "bounds": [
+        19.85911,
+        0,
+        29.39215,
+        7.3
+      ],
+      "walkableAtReceptionLevel": false
+    },
+    {
+      "id": "B03",
+      "name": "Tower reception first floor cropped north/south/east",
+      "kind": "interior-building",
+      "polygon": [
+        [
+          29.39215,
+          0
+        ],
+        [
+          40.0,
+          0
+        ],
+        [
+          40.0,
+          24
+        ],
+        [
+          29.39215,
+          24
+        ]
+      ],
+      "bounds": [
+        29.39215,
+        0,
+        40.0,
+        24
+      ],
+      "walkableAtReceptionLevel": true
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "S05",
+      "name": "New exterior eastbound courtyard path",
+      "ownership": "m02-outdoor",
+      "polygon": [
+        [
+          19.85911,
+          7.3
+        ],
+        [
+          29.39215,
+          7.3
+        ],
+        [
+          29.39215,
+          12.4
+        ],
+        [
+          19.85911,
+          12.4
+        ]
+      ],
+      "bounds": [
+        19.85911,
+        7.3,
+        29.39215,
+        12.4
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "elevationProvenance": "M01 accepted G05 inner island court +18ft; no unapproved stair across artwork seam"
+    },
+    {
+      "id": "S06",
+      "name": "New exterior lower path to one tower door",
+      "ownership": "m02-outdoor",
+      "polygon": [
+        [
+          25.1864,
+          10.8
+        ],
+        [
+          29.39215,
+          10.8
+        ],
+        [
+          29.39215,
+          24
+        ],
+        [
+          25.1864,
+          24
+        ]
+      ],
+      "bounds": [
+        25.1864,
+        10.8,
+        29.39215,
+        24
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "elevationProvenance": "M01 accepted G05 inner island court +18ft; no unapproved stair across artwork seam"
+    },
+    {
+      "id": "S07",
+      "name": "First-floor tower reception, visitor/records/staff side",
+      "ownership": "m02-interior",
+      "polygon": [
+        [
+          29.39215,
+          0
+        ],
+        [
+          36.07463,
+          0
+        ],
+        [
+          36.07463,
+          24
+        ],
+        [
+          29.39215,
+          24
+        ]
+      ],
+      "bounds": [
+        29.39215,
+        0,
+        36.07463,
+        24
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "elevationProvenance": "M01 accepted G05 inner island court +18ft; no unapproved stair across artwork seam"
+    },
+    {
+      "id": "S08",
+      "name": "Secured first-floor interior cropped to scene edge",
+      "ownership": "m02-interior",
+      "polygon": [
+        [
+          36.07463,
+          0
+        ],
+        [
+          40.0,
+          0
+        ],
+        [
+          40.0,
+          24
+        ],
+        [
+          36.07463,
+          24
+        ]
+      ],
+      "bounds": [
+        36.07463,
+        0,
+        40.0,
+        24
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "elevationProvenance": "M01 accepted G05 inner island court +18ft; no unapproved stair across artwork seam"
+    },
+    {
+      "id": "M01-G02",
+      "sourceId": "G02",
+      "name": "bridge",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          9.85911,
+          11.1
+        ],
+        [
+          9.85911,
+          7.1
+        ],
+        [
+          0.0,
+          7.1
+        ],
+        [
+          0.0,
+          11.1
+        ]
+      ],
+      "bounds": [
+        0.0,
+        7.1,
+        9.85911,
+        11.1
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G03",
+      "sourceId": "G03",
+      "name": "bridge",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          1.05911,
+          12.0
+        ],
+        [
+          1.05911,
+          6.5
+        ],
+        [
+          0.0,
+          6.5
+        ],
+        [
+          0.0,
+          12.0
+        ]
+      ],
+      "bounds": [
+        0.0,
+        6.5,
+        1.05911,
+        12.0
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G04",
+      "sourceId": "G04",
+      "name": "hoist-yard",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          1.35911,
+          5.3
+        ],
+        [
+          1.35911,
+          8.2
+        ],
+        [
+          6.65911,
+          8.2
+        ],
+        [
+          6.65911,
+          5.3
+        ]
+      ],
+      "bounds": [
+        1.35911,
+        5.3,
+        6.65911,
+        8.2
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G05",
+      "sourceId": "G05",
+      "name": "court",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          19.85911,
+          6.7
+        ],
+        [
+          9.35911,
+          6.7
+        ],
+        [
+          9.35911,
+          14.2
+        ],
+        [
+          19.85911,
+          14.2
+        ]
+      ],
+      "bounds": [
+        9.35911,
+        6.7,
+        19.85911,
+        14.2
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G06",
+      "sourceId": "G06",
+      "name": "map2-exit",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          19.85911,
+          8.5
+        ],
+        [
+          17.85911,
+          8.5
+        ],
+        [
+          17.85911,
+          11.5
+        ],
+        [
+          19.85911,
+          11.5
+        ]
+      ],
+      "bounds": [
+        17.85911,
+        8.5,
+        19.85911,
+        11.5
+      ],
+      "elevationFt": 18,
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G09",
+      "sourceId": "G09",
+      "name": "island-dock",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          10.15911,
+          16.5
+        ],
+        [
+          10.15911,
+          21.5
+        ],
+        [
+          18.35911,
+          21.5
+        ],
+        [
+          18.35911,
+          16.5
+        ]
+      ],
+      "bounds": [
+        10.15911,
+        16.5,
+        18.35911,
+        21.5
+      ],
+      "elevationFt": -8,
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G10",
+      "sourceId": "G10",
+      "name": "island-dock-stair",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          15.35911,
+          12.7
+        ],
+        [
+          15.35911,
+          18.2
+        ],
+        [
+          18.55911,
+          18.2
+        ],
+        [
+          18.55911,
+          12.7
+        ]
+      ],
+      "bounds": [
+        15.35911,
+        12.7,
+        18.55911,
+        18.2
+      ],
+      "elevationFt": [
+        -8,
+        18
+      ],
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G11",
+      "sourceId": "G11",
+      "name": "upper-terrace",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          9.85911,
+          0.8
+        ],
+        [
+          9.85911,
+          4.7
+        ],
+        [
+          16.45911,
+          4.7
+        ],
+        [
+          16.45911,
+          0.8
+        ]
+      ],
+      "bounds": [
+        9.85911,
+        0.8,
+        16.45911,
+        4.7
+      ],
+      "elevationFt": 31,
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G12",
+      "sourceId": "G12",
+      "name": "upper-terrace-stair",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          14.35911,
+          3.5
+        ],
+        [
+          14.35911,
+          8.4
+        ],
+        [
+          17.85911,
+          8.4
+        ],
+        [
+          17.85911,
+          3.5
+        ]
+      ],
+      "bounds": [
+        14.35911,
+        3.5,
+        17.85911,
+        8.4
+      ],
+      "elevationFt": [
+        31,
+        18
+      ],
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    },
+    {
+      "id": "M01-G13",
+      "sourceId": "G13",
+      "name": "rig-access",
+      "ownership": "inherited-M01-proposed-geometry-only",
+      "polygon": [
+        [
+          1.35911,
+          5.3
+        ],
+        [
+          1.35911,
+          7.9
+        ],
+        [
+          3.85911,
+          7.9
+        ],
+        [
+          3.85911,
+          5.3
+        ]
+      ],
+      "bounds": [
+        1.35911,
+        5.3,
+        3.85911,
+        7.9
+      ],
+      "elevationFt": [
+        18,
+        45
+      ],
+      "walkable": true,
+      "sourceAuthority": "M01 accepted spatial blueprint; installed live document not reread"
+    }
+  ],
+  "walls": [
+    {
+      "id": "W01",
+      "name": "West exterior facade above entrance",
+      "segment": [
+        [
+          29.39215,
+          7.3
+        ],
+        [
+          29.39215,
+          20
+        ]
+      ],
+      "semantic": "stone-exterior",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W02",
+      "name": "West exterior facade below entrance",
+      "segment": [
+        [
+          29.39215,
+          23
+        ],
+        [
+          29.39215,
+          24
+        ]
+      ],
+      "semantic": "stone-exterior",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W03",
+      "name": "Secure screening line northmost",
+      "segment": [
+        [
+          36.07463,
+          0
+        ],
+        [
+          36.07463,
+          4.3
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W04",
+      "name": "Secure screening line north-middle",
+      "segment": [
+        [
+          36.07463,
+          6.8
+        ],
+        [
+          36.07463,
+          12
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W05",
+      "name": "Secure screening line south-middle",
+      "segment": [
+        [
+          36.07463,
+          15
+        ],
+        [
+          36.07463,
+          20
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W06",
+      "name": "Secure screening line southmost",
+      "segment": [
+        [
+          36.07463,
+          22.5
+        ],
+        [
+          36.07463,
+          24
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    }
+  ],
+  "doorPlanes": [
+    {
+      "id": "D01",
+      "name": "Single outdoor tower entrance",
+      "segment": [
+        [
+          29.39215,
+          20
+        ],
+        [
+          29.39215,
+          23
+        ]
+      ],
+      "kind": "exterior-door",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 15,
+      "exteriorAccess": true,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "D02",
+      "name": "North inspector records access",
+      "segment": [
+        [
+          36.07463,
+          4.3
+        ],
+        [
+          36.07463,
+          6.8
+        ]
+      ],
+      "kind": "interior-door",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 12.5,
+      "exteriorAccess": false,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "D03",
+      "name": "Main reception credential checkpoint",
+      "segment": [
+        [
+          36.07463,
+          12
+        ],
+        [
+          36.07463,
+          15
+        ]
+      ],
+      "kind": "guarded-checkpoint",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 15,
+      "exteriorAccess": false,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "D04",
+      "name": "South service security bypass",
+      "segment": [
+        [
+          36.07463,
+          20
+        ],
+        [
+          36.07463,
+          22.5
+        ]
+      ],
+      "kind": "interior-door",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 12.5,
+      "exteriorAccess": false,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    }
+  ],
+  "staticBlockingProps": [
+    {
+      "id": "P01",
+      "name": "Reception desk",
+      "bounds": [
+        32.61656,
+        9.3,
+        35.04655,
+        10.5
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P02",
+      "name": "Registry shelves",
+      "bounds": [
+        32.89695,
+        1.5,
+        34.76617,
+        2.5
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P03",
+      "name": "Registry clerk desk",
+      "bounds": [
+        32.61656,
+        7.5,
+        34.85963,
+        8.4
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P04",
+      "name": "Receiving desk / supplies",
+      "bounds": [
+        32.61656,
+        18.5,
+        34.76617,
+        19.4
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P05",
+      "name": "Column one",
+      "bounds": [
+        34.39233,
+        10.7,
+        34.95309,
+        11.3
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P06",
+      "name": "Column two",
+      "bounds": [
+        38.13078,
+        9.1,
+        38.69154,
+        9.7
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P07",
+      "name": "Column three",
+      "bounds": [
+        38.13078,
+        17.1,
+        38.69154,
+        17.7
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    }
+  ],
+  "routeTests": [
+    {
+      "id": "R-PUBLIC",
+      "name": "Public credential screening",
+      "requiredFootprintFt": 10,
+      "doors": [
+        "D01",
+        "D03"
+      ],
+      "polyline": [
+        [
+          17.86781,
+          10.0
+        ],
+        [
+          22.24237,
+          10.0
+        ],
+        [
+          27.28927,
+          10.0
+        ],
+        [
+          27.28927,
+          21.5
+        ],
+        [
+          30.56042,
+          21.5
+        ],
+        [
+          31.58849,
+          19.1
+        ],
+        [
+          31.58849,
+          13.3
+        ],
+        [
+          34.85963,
+          13.3
+        ],
+        [
+          37.19616,
+          13.3
+        ],
+        [
+          39.15885,
+          13.3
+        ]
+      ],
+      "start": "existing-M01-courtyard",
+      "finish": "M03-internal-continuation-beyond-right-crop",
+      "doorBindingsAreProposed": true,
+      "waypointRefinement": "half-foot westward waypoint adjustment near receiving desk P04 to preserve Large-token swept clearance"
+    },
+    {
+      "id": "R-INSPECTOR",
+      "name": "North records/inspector bypass",
+      "requiredFootprintFt": 5,
+      "doors": [
+        "D01",
+        "D02"
+      ],
+      "polyline": [
+        [
+          17.86781,
+          10.0
+        ],
+        [
+          22.24237,
+          10.0
+        ],
+        [
+          27.28927,
+          10.0
+        ],
+        [
+          27.28927,
+          21.5
+        ],
+        [
+          30.56042,
+          21.5
+        ],
+        [
+          31.02772,
+          19.4
+        ],
+        [
+          31.02772,
+          5.55
+        ],
+        [
+          34.95309,
+          5.55
+        ],
+        [
+          37.19616,
+          5.55
+        ],
+        [
+          37.19616,
+          13.3
+        ],
+        [
+          39.15885,
+          13.3
+        ]
+      ],
+      "start": "existing-M01-courtyard",
+      "finish": "M03-internal-continuation-beyond-right-crop",
+      "doorBindingsAreProposed": true
+    },
+    {
+      "id": "R-STAFF",
+      "name": "South staff/logistics bypass",
+      "requiredFootprintFt": 5,
+      "doors": [
+        "D01",
+        "D04"
+      ],
+      "polyline": [
+        [
+          17.86781,
+          10.0
+        ],
+        [
+          22.24237,
+          10.0
+        ],
+        [
+          27.28927,
+          10.0
+        ],
+        [
+          27.28927,
+          21.5
+        ],
+        [
+          30.56042,
+          21.5
+        ],
+        [
+          32.89695,
+          21.5
+        ],
+        [
+          35.04655,
+          21.5
+        ],
+        [
+          37.19616,
+          21.5
+        ],
+        [
+          37.19616,
+          13.3
+        ],
+        [
+          39.15885,
+          13.3
+        ]
+      ],
+      "start": "existing-M01-courtyard",
+      "finish": "M03-internal-continuation-beyond-right-crop",
+      "doorBindingsAreProposed": true
+    }
+  ],
+  "plannedRegions": [
+    {
+      "id": "dbx.heist.m02.arrival.reception",
+      "bounds": [
+        16.57616,
+        9.0,
+        19.05182,
+        11.2
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    },
+    {
+      "id": "dbx.heist.m02.check.credentials",
+      "bounds": [
+        33.45771,
+        12.0,
+        35.60732,
+        14.8
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    },
+    {
+      "id": "dbx.heist.m02.access.staff",
+      "bounds": [
+        32.5231,
+        20.2,
+        34.85963,
+        22.3
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    },
+    {
+      "id": "dbx.heist.m02.transition.security-machinery",
+      "bounds": [
+        38.41116,
+        12.3,
+        39.81308,
+        14.7
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    }
+  ],
+  "verticalTransitions": [
+    {
+      "id": "M01-V03",
+      "sourceId": "V03",
+      "name": "Upper terrace stair to inner court",
+      "surface": "M01-G12",
+      "startElevationFt": 31,
+      "endElevationFt": 18,
+      "elevationDeltaFt": -13,
+      "clearanceStatus": "tread/landing measurement unresolved",
+      "bounds": [
+        14.35911,
+        3.5,
+        17.85911,
+        8.4
+      ],
+      "source": "M01 accepted reconciled spatial blueprint, not pixel height inference",
+      "liveFoundryVerified": false
+    },
+    {
+      "id": "M01-V02",
+      "sourceId": "V02",
+      "name": "Lower dock switchback stair to inner court",
+      "surface": "M01-G10",
+      "startElevationFt": -8,
+      "endElevationFt": 18,
+      "elevationDeltaFt": 26,
+      "clearanceStatus": "tread/landing measurement unresolved",
+      "bounds": [
+        15.35911,
+        12.7,
+        18.55911,
+        18.2
+      ],
+      "source": "M01 accepted reconciled spatial blueprint, not pixel height inference",
+      "liveFoundryVerified": false
+    }
+  ],
+  "hazardPolygons": [
+    {
+      "id": "H01",
+      "kind": "water",
+      "polygon": [
+        [
+          19.85911,
+          20.6
+        ],
+        [
+          21.30775,
+          20.7
+        ],
+        [
+          22.42929,
+          21.8
+        ],
+        [
+          24.76582,
+          22.3
+        ],
+        [
+          24.76582,
+          24.0
+        ],
+        [
+          19.85911,
+          24.0
+        ],
+        [
+          19.85911,
+          20.6
+        ]
+      ],
+      "walkable": false
+    },
+    {
+      "id": "H02",
+      "kind": "rock",
+      "polygon": [
+        [
+          19.85911,
+          12.5
+        ],
+        [
+          24.95274,
+          12.5
+        ],
+        [
+          24.76582,
+          15.0
+        ],
+        [
+          23.27044,
+          18.0
+        ],
+        [
+          24.85928,
+          22.0
+        ],
+        [
+          22.61621,
+          21.0
+        ],
+        [
+          19.85911,
+          20.4
+        ],
+        [
+          19.85911,
+          12.5
+        ]
+      ],
+      "walkable": false
+    }
+  ],
+  "runtimeBindingsAuthored": false,
+  "createdNativeFoundryDocuments": false,
+  "authoritativeFoundryGeometryFromUnreviewedPixels": false,
+  "geometryStageOnly": true,
+  "registration": {
+    "status": "LOCAL_SOURCE_ART_TO_SCREEN_VERIFIED_RUNTIME_NOT_VERIFIED",
+    "method": "SIFT plus affine RANSAC; original approved M01 painterly source to user screenshot crop",
+    "masterApprovedArtSha256": "02cdd354371721961ce277f00b8bfe2a322d2678000f7c44d8596800194cab61",
+    "userCompositeSha256": "a755a79ec2a282422390548d115bc7f64f8b72c56ebfaff22fdd05783c70a243",
+    "screenshotToArtAffine": [
+      [
+        1.3665524905006579,
+        0.00017954041426032492,
+        815.2027052621331
+      ],
+      [
+        -0.00017954041426032492,
+        1.3665524905006579,
+        -14.844110263035068
+      ]
+    ],
+    "inlierCount": 526,
+    "candidateMatchCount": 571,
+    "medianInlierResidualPx": 0.28984,
+    "p95InlierResidualPx": 0.88538,
+    "originalMasterDimensionsPx": [
+      1619,
+      971
+    ],
+    "screenshotOriginalSourcePixelLeft": 815.2027,
+    "m01OriginalLeftLogicalCell": 20.14089,
+    "m01ToM02Logical": {
+      "x": "newX = oldM01X - 20.14089",
+      "y": "unchanged; full master native art height 971px mapped to scene height 24 cells"
+    },
+    "m02ImageJoinXLogical": 19.85911,
+    "sceneLogicalSize": [
+      40,
+      24
+    ],
+    "pixelToFoundryLocal": "M01 native source crop placed at source-native scale = (2880 / 971) output px per source px; no horizontal stretching",
+    "originalM01ImageActuallyInstalledInLiveFoundry": "NOT_VERIFIED",
+    "paintingPixelsNotNativeWallAuthority": true
+  },
+  "inheritedWalls": [
+    {
+      "id": "M01-DEPLOY-W03",
+      "sourceId": "W03",
+      "segment": [
+        [
+          0.0,
+          6.66
+        ],
+        [
+          0.50911,
+          6.66
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W04",
+      "sourceId": "W04",
+      "segment": [
+        [
+          0.50911,
+          6.66
+        ],
+        [
+          1.10911,
+          7.15
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W05",
+      "sourceId": "W05",
+      "segment": [
+        [
+          1.10911,
+          7.15
+        ],
+        [
+          9.63911,
+          7.15
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W08",
+      "sourceId": "W08",
+      "segment": [
+        [
+          0.0,
+          11.17
+        ],
+        [
+          0.40911,
+          11.17
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W09",
+      "sourceId": "W09",
+      "segment": [
+        [
+          0.40911,
+          11.17
+        ],
+        [
+          1.05911,
+          10.55
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W10",
+      "sourceId": "W10",
+      "segment": [
+        [
+          1.05911,
+          10.55
+        ],
+        [
+          9.63911,
+          10.55
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W11",
+      "sourceId": "W11",
+      "segment": [
+        [
+          9.73911,
+          0.8
+        ],
+        [
+          9.73911,
+          7.3
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W13",
+      "sourceId": "W13",
+      "segment": [
+        [
+          9.73911,
+          10.35
+        ],
+        [
+          9.73911,
+          16.05
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    },
+    {
+      "id": "M01-DEPLOY-W14",
+      "sourceId": "W14",
+      "segment": [
+        [
+          10.20911,
+          0.85
+        ],
+        [
+          16.43911,
+          0.85
+        ]
+      ],
+      "semantic": "macro-solid-wall",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": true
+    }
+  ],
+  "inheritedSpecialPlanes": [
+    {
+      "id": "M01-DEPLOY-W12",
+      "sourceId": "W12",
+      "segment": [
+        [
+          9.73911,
+          7.3
+        ],
+        [
+          9.73911,
+          10.35
+        ]
+      ],
+      "semantic": "gate-portal",
+      "owner": "M01-deployed-macro-intent",
+      "installedDocumentReread": false,
+      "referenceMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+      "notNewRuntimeOwnedGeometry": true,
+      "authoredAsSolidWall": false,
+      "requiresRuntimeDoorInterpretation": true
+    }
+  ],
+  "sourceReconciliation": {
+    "M01Source": "handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/spatial-blueprint-render-reconciled.json",
+    "M01GitHubBlobSha": "64162fde8842fee029a5a2183d0679c9c5453f15",
+    "M01SemanticModelSha256": "6386442ea0e241d0f58581d66146e9177d54ebe86497b83636fffa7d12f117ab",
+    "M01LaterDeploymentMacroReference": "dark-arch-m01/final-injection/DiceBox-Dark-Arch-M01-Painterly-Injector-V2.1-Beta-PREVIEW-FIX.md",
+    "M01LaterDeploymentMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+    "M01LaterMacroWallSpecCount": 14,
+    "sourceDisagreement": "accepted original M01 model gate x29.4 vs later macro gate x29.88; original model seawall exists but later macro omits it; use later macro-intent wall geometry for overlap; runtime document reread still pending",
+    "inheritedNativeWallsStatuses": "later deployment macro candidate, actual live Wall/Region documents NOT verified",
+    "inheritedSolidWallCount": 9,
+    "inheritedSpecialOpeningCount": 1,
+    "inheritedSourceSurfacesCount": 10,
+    "M01WaterOpeningIsNotWalkable": true,
+    "M01SeawallExcludedFromProposedGeometry": true,
+    "M01TidalOpening": {
+      "sourceId": "W08",
+      "xLogical": 9.25911,
+      "yInterval": [
+        16,
+        20
+      ],
+      "nonWalkableWater": true,
+      "skiffAdjudicated": true,
+      "notNativeWall": true
+    },
+    "M01LowerWaterAccess": {
+      "sourceId": "T01",
+      "fromDockElevationFt": -8,
+      "toDockElevationFt": -8,
+      "crossingWaterNonWalkable": true
+    },
+    "semanticRoofContinuation": "user visual-approved architectural boundary, NOT inferred runtime wall ownership"
+  },
+  "finalGeometrySourceM01ArtRegisteredButNotLiveVerified": true,
+  "independentInspectionStatus": "PENDING"
+}
