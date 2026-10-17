@@ -1,0 +1,61 @@
+{
+  "buildStatus": "OFFLINE_SINGLE_MACRO_BUILT_QA_ONLY",
+  "validations": {
+    "requiredMarkers": 19,
+    "oneMarkdownOneJSBlock": true,
+    "forbiddenExecutionPrimitives": false,
+    "EmbeddedWebpDigestAndDimensions": true,
+    "SceneScaleSourceReferences": true,
+    "NodeCheck": "PASS",
+    "MockRuntimeScenariosPassed": 9
+  },
+  "mockScenarios": [
+    "wrong-world",
+    "module-inactive",
+    "GM-not-active",
+    "non-GM",
+    "existing-owned-scene",
+    "cancel-dialog",
+    "lost-active-GM-during-preview",
+    "wrong-world-during-preview",
+    "happy-path-QA-only"
+  ],
+  "assetOriginal": {
+    "name": "M02-SELECTED-STRUCTURAL-ART.png",
+    "sha256": "a342988f238b42162af2052ed37fc4513c9dff1553e6c64a83273aeb5c4371f4",
+    "sourcePixels": [
+      1619,
+      971
+    ]
+  },
+  "assetEmbedded": {
+    "format": "image/webp",
+    "bytes": 425026,
+    "sha256": "95aca5e9010def8d9d8ffea2e11dde2a5f8c0948de2970b461e779175620234a",
+    "compression": "lossy quality=85",
+    "runtimeScenePixels": [
+      4800,
+      2880
+    ]
+  },
+  "macro": {
+    "filename": "DiceBox-Kurth-Tower-M02-Provisional-Single-Macro-Injector.md",
+    "bytes": 587289,
+    "sha256": "22e562dfd03daa1172d4632fc3f020463705a0c2ee90b4ae59fde80e4bab005d",
+    "walls": 11,
+    "interiorSecurityDoors": 3,
+    "proposedRegions": 4,
+    "RegionBehaviors": 0
+  },
+  "outstanding": [
+    "User visual approval of manually reconciled geometry",
+    "Outer tower entrance placement does not yet match a verified external doorway",
+    "Inherited M01 native collision walls not verified/installed",
+    "Painterly FINAL_INSPECT and active program stage not complete",
+    "Canonical repository tools/validate-dicebox-build.mjs not run on these exact bytes",
+    "Live Foundry v14 API/schema/authority/runtime rereads not tested"
+  ],
+  "worldMutation": false,
+  "desktopCommanderUsed": false,
+  "readyToPlay": false
+}
