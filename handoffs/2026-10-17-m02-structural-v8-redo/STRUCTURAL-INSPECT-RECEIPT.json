@@ -1,0 +1,115 @@
+{
+  "contract": "dicebox-structural-inspect/v1",
+  "sceneId": "dbx.heist.kurth.m02.reception",
+  "date": "2026-10-17",
+  "stage": "STRUCTURAL_INSPECT",
+  "verdict": "REDO_REQUIRED_GEOMETRY_MISMATCH",
+  "userFeedback": "looks pretty good (visual appreciation, not geometric clearance)",
+  "sourceGeometry": {
+    "model": "calibrated-v7",
+    "canonicalSha256": "f3bdcfb3c8ed73648e1a7f98c59e09e94c19a5b76ad208f88b35716f382b3add",
+    "physicalScale": "40x24 logical five-foot spaces, 4800x2880 target"
+  },
+  "art": {
+    "file": "monochrome_coastal_fortress_battlemap.png",
+    "sha256": "a86c545d5ae9abb2ebd07f7e5af01c7e4f535321a7af7b08c80bfe0a39668a53",
+    "dimensions": [
+      1619,
+      971
+    ],
+    "role": "grayscale structural candidate"
+  },
+  "visualOverlay": {
+    "file": "V8-blueprint-overlay.png",
+    "sha256": "5f8a9036f15bea803323a727353cb0961adaa16abd8f6b91686d8399ae58b1be",
+    "scalePixelsPerLogicalUnit": [
+      40.475,
+      40.458333333333336
+    ]
+  },
+  "expectedPixelPositions": {
+    "sourceArtJoinX": 804,
+    "towerExteriorFacadeX": 1190,
+    "exteriorDoorSpanY": [
+      809,
+      931
+    ],
+    "securityDividerX": 1460
+  },
+  "approximateObservedFromVisualReview": {
+    "exteriorFacadeXpx": "~830\u2013845 (varies along facade)",
+    "securityDividerXpx": "~1250\u20131270; structural lines do not align with approved x1460"
+  },
+  "checks": [
+    {
+      "id": "OVERHEAD",
+      "result": "PASS",
+      "evidence": "Perpendicular overhead rendering, no horizon/perspective."
+    },
+    {
+      "id": "GRAYSCALE",
+      "result": "PASS",
+      "evidence": "Neutral monochrome structural art."
+    },
+    {
+      "id": "NO_TOKENS_GRID_LABELS",
+      "result": "PASS",
+      "evidence": "No visible actor figures, token markers, coordinate text or painted grid."
+    },
+    {
+      "id": "MAIN_BRIDGE_TERRACE_DOCK",
+      "result": "VISUAL_PASS_PROVISIONAL",
+      "evidence": "Bridge, hoist, courtyard, upper steps, dock and lower steps are visually identifiable. Exact registered M01 pixel fidelity was not established."
+    },
+    {
+      "id": "SCALE_TARGET",
+      "result": "PENDING",
+      "evidence": "Render is 1619\u00d7971, not final 4800\u00d72880. Scale projection evaluated against 40\u00d724 conceptual canvas."
+    },
+    {
+      "id": "M01_IMAGE_REGISTRATION",
+      "result": "NOT_VERIFIED",
+      "evidence": "A reimagined grayscale depiction is not a verified pixel-preserving reuse of the registered M01 art."
+    },
+    {
+      "id": "TOWER_FACADE_WALL_W01_W02",
+      "result": "FAIL",
+      "evidence": "Approved x29.39215 projects to x1190 px. Rendered tower exterior/courtyard division is near x830\u2013845 px over the middle and top of map; red overlay falls across an interior hall rather than exterior facade."
+    },
+    {
+      "id": "TOWER_ENTRANCE_D01",
+      "result": "FAIL",
+      "evidence": "Approved lower west facade exterior door at projected x1190, y809\u2013931 px; render does not place a matching exterior doorway and adjoining wall segment there."
+    },
+    {
+      "id": "SECURITY_DIVIDER_D02_D03_D04",
+      "result": "FAIL",
+      "evidence": "Approved x36.07463 projects to x1460 px; rendered main interior divider lies closer to x1250\u20131270 px, so intended checkpoint doors project inside the right-hand administrative rooms."
+    },
+    {
+      "id": "CROPPED_TOWER_INTERIOR",
+      "result": "PARTIAL",
+      "evidence": "Rooms continue beyond upper and right edges, but the lower edge also includes an exterior tower-front facade and the segmentation differs from approved v7."
+    },
+    {
+      "id": "THREE_ROUTE_WALKABILITY_FROM_ART",
+      "result": "BLOCKED",
+      "evidence": "The three paths passed deterministic v7 geometry, but cannot be certified against this render while the partition and facade positions differ."
+    },
+    {
+      "id": "STAIR_ELEVATION_SOURCE",
+      "result": "SOURCE_ONLY",
+      "evidence": "Source elevations +31 ft upper terrace, +18 ft courtyard/tower, \u22128 ft dock are preserved in blueprint; art alone cannot verify exact runtime levels."
+    }
+  ],
+  "failed": [
+    "TOWER_FACADE_WALL_W01_W02",
+    "TOWER_ENTRANCE_D01",
+    "SECURITY_DIVIDER_D02_D03_D04"
+  ],
+  "nextGate": "fresh structural render from approved geometry OR separately accepted and inspected geometry reconciliation; do not paint, build, stage or inject",
+  "foundryMutated": false,
+  "geometryBaselineChanged": false,
+  "runtimeVerified": false,
+  "limitations": "Observed architectural boundary coordinates are manually estimated from the displayed grayscale; failures are much larger than plausible single-feature tolerance. Grayscale is not a runtime wall source."
+}
