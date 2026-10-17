@@ -1,0 +1,28 @@
+{
+  "status": "LOCAL_VISUAL_ART_REGISTRATION_PASS",
+  "siftRansacInliers": 526,
+  "goodMatches": 571,
+  "medianResidualPx": 0.2898397445678711,
+  "p95ResidualPx": 0.8853796720504761,
+  "screenToSourceAffine": [
+    [
+      1.3665524905006579,
+      0.00017954041426032492,
+      815.2027052621331
+    ],
+    [
+      -0.00017954041426032492,
+      1.3665524905006579,
+      -14.844110263035068
+    ]
+  ],
+  "M01ApprovedArtSHA256": "02cdd354371721961ce277f00b8bfe2a322d2678000f7c44d8596800194cab61",
+  "sourceExcerptSha256": "40ee49c84011a38fc55190b10b7c4871ee8a2afd134f3c2e4e0f35c376f84c27",
+  "deploymentMacroSha256": "c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6",
+  "screenshotSHA256": "a755a79ec2a282422390548d115bc7f64f8b72c56ebfaff22fdd05783c70a243",
+  "M01LocalCropXSourcePx": 815.2027052621331,
+  "M01OriginalOffsetLogical": 20.140894509255915,
+  "newSeamXLogical": 19.859105490744085,
+  "nativeArtScalePreserved": true,
+  "installedArtReread": false
+}
