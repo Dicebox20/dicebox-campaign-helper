@@ -1,0 +1,16 @@
+{
+  "objective": "M02 user-approved calibrated v7 exact structural grayscale rerender and strict inspect",
+  "branch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+  "approvedGeometrySha256": "f3bdcfb3c8ed73648e1a7f98c59e09e94c19a5b76ad208f88b35716f382b3add",
+  "sceneId": "dbx.heist.kurth.m02.reception",
+  "artifactSha256": "38f420ba72abed36a604a4292ae6b4a9f8b0323c0bde1f1cc727c62892309490",
+  "structuralInspect": "PASS_LOCAL_TYPED_GEOMETRY",
+  "checksPassed": 44,
+  "checksFailed": 0,
+  "artisticallyApprovedForNextStep": false,
+  "targetWorld": "world-template-2",
+  "runtimeWorldReread": false,
+  "foundryMutation": false,
+  "terminalStage": "STRUCTURAL_INSPECT",
+  "nextAction": "User accepts current structural geometry and appearance, then feature-manifest reconciliation and offline structural BUILD; no painterly coloring or installation until their gates"
+}
