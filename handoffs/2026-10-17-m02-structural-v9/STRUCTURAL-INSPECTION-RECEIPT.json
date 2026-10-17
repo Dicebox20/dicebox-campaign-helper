@@ -1,0 +1,341 @@
+{
+  "schemaVersion": "dicebox-structural-inspection/v1",
+  "sceneId": "dbx.heist.kurth.m02.reception",
+  "status": "PASS_LOCAL_TYPED_GEOMETRY",
+  "passedCount": 44,
+  "failedCount": 0,
+  "passed": [
+    {
+      "key": "blueprint-approved-sha256",
+      "details": null
+    },
+    {
+      "key": "source-M01-approved-identity",
+      "details": null
+    },
+    {
+      "key": "render-manifest-identity",
+      "details": null
+    },
+    {
+      "key": "native-size-grayscale",
+      "details": null
+    },
+    {
+      "key": "native-masks-size-and-hashes",
+      "details": null
+    },
+    {
+      "key": "registered-seam-facade-security-anchors",
+      "details": {
+        "sourceSeamPx": 2383,
+        "facadePx": 3527,
+        "securityPx": 4329
+      }
+    },
+    {
+      "key": "M01-entire-inherited-native-image-subpixel-identity",
+      "details": {
+        "maxPixelError": 0,
+        "meanPixelError": 0.0,
+        "differingPixels": 0,
+        "registeredWidthPx": 2383,
+        "heightPx": 2880
+      }
+    },
+    {
+      "key": "no-M01-native-wall-duplication-in-new-wall-mask",
+      "details": null
+    },
+    {
+      "key": "no-M01-native-door-duplication-in-new-door-mask",
+      "details": null
+    },
+    {
+      "key": "six-walls-present",
+      "details": null
+    },
+    {
+      "key": "four-door-planes-present",
+      "details": null
+    },
+    {
+      "key": "vertical-wall-W01",
+      "details": {
+        "segment": [
+          [
+            29.39215,
+            7.3
+          ],
+          [
+            29.39215,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "key": "vertical-wall-W02",
+      "details": {
+        "segment": [
+          [
+            29.39215,
+            23
+          ],
+          [
+            29.39215,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "key": "vertical-wall-W03",
+      "details": {
+        "segment": [
+          [
+            36.07463,
+            0
+          ],
+          [
+            36.07463,
+            4.3
+          ]
+        ]
+      }
+    },
+    {
+      "key": "vertical-wall-W04",
+      "details": {
+        "segment": [
+          [
+            36.07463,
+            6.8
+          ],
+          [
+            36.07463,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "key": "vertical-wall-W05",
+      "details": {
+        "segment": [
+          [
+            36.07463,
+            15
+          ],
+          [
+            36.07463,
+            20
+          ]
+        ]
+      }
+    },
+    {
+      "key": "vertical-wall-W06",
+      "details": {
+        "segment": [
+          [
+            36.07463,
+            22.5
+          ],
+          [
+            36.07463,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "key": "wall-mask-exactly-matches-v7",
+      "details": {
+        "misregisteredPixels": 0
+      }
+    },
+    {
+      "key": "door-present-D01",
+      "details": {
+        "segment": [
+          [
+            29.39215,
+            20
+          ],
+          [
+            29.39215,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "key": "door-present-D02",
+      "details": {
+        "segment": [
+          [
+            36.07463,
+            4.3
+          ],
+          [
+            36.07463,
+            6.8
+          ]
+        ]
+      }
+    },
+    {
+      "key": "door-present-D03",
+      "details": {
+        "segment": [
+          [
+            36.07463,
+            12
+          ],
+          [
+            36.07463,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "key": "door-present-D04",
+      "details": {
+        "segment": [
+          [
+            36.07463,
+            20
+          ],
+          [
+            36.07463,
+            22.5
+          ]
+        ]
+      }
+    },
+    {
+      "key": "door-mask-exactly-matches-v7",
+      "details": {
+        "misregisteredPixels": 0
+      }
+    },
+    {
+      "key": "no-wall-through-exterior-D01-gap",
+      "details": null
+    },
+    {
+      "key": "only-D01-exterior-entrance",
+      "details": null
+    },
+    {
+      "key": "no-partition-wall-through-D02",
+      "details": null
+    },
+    {
+      "key": "no-partition-wall-through-D03",
+      "details": null
+    },
+    {
+      "key": "no-partition-wall-through-D04",
+      "details": null
+    },
+    {
+      "key": "swept-clearance-R-PUBLIC",
+      "details": {
+        "footprintFt": 10,
+        "collisionAreaLogical2": 0.0
+      }
+    },
+    {
+      "key": "route-door-exists-R-PUBLIC-D01",
+      "details": null
+    },
+    {
+      "key": "route-door-exists-R-PUBLIC-D03",
+      "details": null
+    },
+    {
+      "key": "swept-clearance-R-INSPECTOR",
+      "details": {
+        "footprintFt": 5,
+        "collisionAreaLogical2": 0.0
+      }
+    },
+    {
+      "key": "route-door-exists-R-INSPECTOR-D01",
+      "details": null
+    },
+    {
+      "key": "route-door-exists-R-INSPECTOR-D02",
+      "details": null
+    },
+    {
+      "key": "swept-clearance-R-STAFF",
+      "details": {
+        "footprintFt": 5,
+        "collisionAreaLogical2": 0.0
+      }
+    },
+    {
+      "key": "route-door-exists-R-STAFF-D01",
+      "details": null
+    },
+    {
+      "key": "route-door-exists-R-STAFF-D04",
+      "details": null
+    },
+    {
+      "key": "roof-physically-continuous-across-art-join",
+      "details": null
+    },
+    {
+      "key": "no-visual-map-boundary-registered-as-wall",
+      "details": null
+    },
+    {
+      "key": "reception-cropped-at-edges",
+      "details": null
+    },
+    {
+      "key": "stair-elevations-derived-M01-v02-v03",
+      "details": null
+    },
+    {
+      "key": "source-stair-tread-still-unverified",
+      "details": null
+    },
+    {
+      "key": "no-Foundry-document-modified",
+      "details": null
+    },
+    {
+      "key": "all-native-props-from-v7",
+      "details": null
+    }
+  ],
+  "failed": [],
+  "warnings": [
+    "This verifies typed artwork geometry and source-pixel identity, NOT Foundry runtime collision, exact stair tread/Levels state or wall duplication.",
+    "V7 bridge native wall/portcullis reread in world-template-2 is pending; inherited segment is intentionally sourced from approved original M01 art.",
+    "Right-side deterministic texture is an architectural grayscale construction render; user aesthetic approval for later painterly finish remains separate."
+  ],
+  "sourceBlueprintSha256": "f3bdcfb3c8ed73648e1a7f98c59e09e94c19a5b76ad208f88b35716f382b3add",
+  "renderSha256": "38f420ba72abed36a604a4292ae6b4a9f8b0323c0bde1f1cc727c62892309490",
+  "originalM01ImageSha256": "02cdd354371721961ce277f00b8bfe2a322d2678000f7c44d8596800194cab61",
+  "pixelRegistration": {
+    "seamPx": 2383,
+    "maxDeviationPx": 0,
+    "pixelIdentity": true
+  },
+  "dimensionsPx": [
+    4800,
+    2880
+  ],
+  "noRuntimeAuthority": true,
+  "noFoundryMutation": true,
+  "painterlyRenderApproved": false,
+  "nativeFoundryReadyToPlay": false,
+  "nextStage": "FEATURE_MANIFEST_AND_STRUCTURAL_BUILD_IF_USER_ACCEPTS_STRUCTURAL_RENDER"
+}
