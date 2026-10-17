@@ -1,0 +1,240 @@
+{
+  "operation": "dicebox.geometry-final-independent-inspect/v7",
+  "sourceBlueprintCanonicalSHA256": "f3bdcfb3c8ed73648e1a7f98c59e09e94c19a5b76ad208f88b35716f382b3add",
+  "status": "LOCAL_PASS_WITH_RUNTIME_BLOCKERS",
+  "passed": [
+    {
+      "check": "scale-40x24-gridless-120",
+      "pass": true
+    },
+    {
+      "check": "source-image-registration",
+      "pass": true,
+      "detail": {
+        "RANSACinliers": 526,
+        "medianResidualPx": 0.2898397445678711,
+        "M01AtM02Join": 19.85911
+      }
+    },
+    {
+      "check": "native-M01-horizontal-proportion-preserved",
+      "pass": true
+    },
+    {
+      "check": "one-and-only-one-exterior-door",
+      "pass": true
+    },
+    {
+      "check": "first-floor-crop-boundaries-only",
+      "pass": true
+    },
+    {
+      "check": "image-seam-not-a-wall",
+      "pass": true
+    },
+    {
+      "check": "roof-wing-connectivity",
+      "pass": true
+    },
+    {
+      "check": "no-runtime-state-modification",
+      "pass": true
+    },
+    {
+      "check": "native-wall-authority-typed-source",
+      "pass": true
+    },
+    {
+      "check": "latest-M01-macro-hash-reconciled",
+      "pass": true
+    },
+    {
+      "check": "later-M01-gate-plane-preserved",
+      "pass": true
+    },
+    {
+      "check": "M01-skiff-opening-not-accidentally-blocked",
+      "pass": true
+    },
+    {
+      "check": "M01-to-M02-ground-elevations-continuous",
+      "pass": true
+    },
+    {
+      "check": "upper-terrace-downstairs-elevations",
+      "pass": true
+    },
+    {
+      "check": "lower-dock-upstairs-elevations",
+      "pass": true
+    },
+    {
+      "check": "treads-and-live-elevations-not-claimed",
+      "pass": true
+    },
+    {
+      "check": "route-R-PUBLIC",
+      "pass": true,
+      "detail": {
+        "id": "R-PUBLIC",
+        "footprintFt": 10,
+        "lengthFt": 200.9,
+        "collisionAreaLogical": 0.0,
+        "doorCrossings": {
+          "D01": true,
+          "D03": true
+        },
+        "crossesSeam": true,
+        "passes": true
+      }
+    },
+    {
+      "check": "route-R-INSPECTOR",
+      "pass": true,
+      "detail": {
+        "id": "R-INSPECTOR",
+        "footprintFt": 5,
+        "lengthFt": 280.4,
+        "collisionAreaLogical": 0.0,
+        "doorCrossings": {
+          "D01": true,
+          "D02": true
+        },
+        "crossesSeam": true,
+        "passes": true
+      }
+    },
+    {
+      "check": "route-R-STAFF",
+      "pass": true,
+      "detail": {
+        "id": "R-STAFF",
+        "footprintFt": 5,
+        "lengthFt": 205.0,
+        "collisionAreaLogical": 0.0,
+        "doorCrossings": {
+          "D01": true,
+          "D04": true
+        },
+        "crossesSeam": true,
+        "passes": true
+      }
+    },
+    {
+      "check": "M01-bridge-gate-to-M02-courtyard-large-footprint-open",
+      "pass": true,
+      "detail": {
+        "sweptCollisionAreaLogical": 0.0,
+        "passageWidthFt": 15.25
+      }
+    },
+    {
+      "check": "single-tower-front-door-closure",
+      "pass": true
+    },
+    {
+      "check": "security-ALL_CLOSED",
+      "pass": true,
+      "detail": {
+        "connected": false,
+        "expected": false
+      }
+    },
+    {
+      "check": "security-D02",
+      "pass": true,
+      "detail": {
+        "connected": true,
+        "expected": true
+      }
+    },
+    {
+      "check": "security-D03",
+      "pass": true,
+      "detail": {
+        "connected": true,
+        "expected": true
+      }
+    },
+    {
+      "check": "security-D04",
+      "pass": true,
+      "detail": {
+        "connected": true,
+        "expected": true
+      }
+    },
+    {
+      "check": "security-D02+D03+D04",
+      "pass": true,
+      "detail": {
+        "connected": true,
+        "expected": true
+      }
+    },
+    {
+      "check": "M01-gate-model-not-autoblock-boating",
+      "pass": true
+    },
+    {
+      "check": "planned-regions-have-no-active-behaviors",
+      "pass": true
+    }
+  ],
+  "failed": [],
+  "caveats": [
+    "M01 runtime Wall/Region/door state has not been authoritatively reread; inherited walls reflect the later tested macro source, not installed Scene certification.",
+    "M01 native artwork file identity in the installed live Scene has not been reread; pixel registration is between the approved image file and user screenshot.",
+    "Stair landing elevations come from accepted M01 typed geometry; exact treads and native Foundry elevation/Levels require runtime canaries.",
+    "The M02 new exterior path/first-floor height uses the +18ft M01 courtyard datum to avoid an invented stair at image join; user should review this elevation inference.",
+    "The M01 designer semantic wall source disagrees with the later macro (gate x29.4 vs x29.88; seawall removed); the later macro is used only as intended-source geometry."
+  ],
+  "routeTests": [
+    {
+      "id": "R-PUBLIC",
+      "footprintFt": 10,
+      "lengthFt": 200.9,
+      "collisionAreaLogical": 0.0,
+      "doorCrossings": {
+        "D01": true,
+        "D03": true
+      },
+      "crossesSeam": true,
+      "passes": true
+    },
+    {
+      "id": "R-INSPECTOR",
+      "footprintFt": 5,
+      "lengthFt": 280.4,
+      "collisionAreaLogical": 0.0,
+      "doorCrossings": {
+        "D01": true,
+        "D02": true
+      },
+      "crossesSeam": true,
+      "passes": true
+    },
+    {
+      "id": "R-STAFF",
+      "footprintFt": 5,
+      "lengthFt": 205.0,
+      "collisionAreaLogical": 0.0,
+      "doorCrossings": {
+        "D01": true,
+        "D04": true
+      },
+      "crossesSeam": true,
+      "passes": true
+    }
+  ],
+  "semanticElevationsFt": {
+    "groundCourtAndTower": 18,
+    "upperTerrace": 31,
+    "lowerDock": -8,
+    "upperStairDelta": -13,
+    "lowerStairDelta": 26
+  },
+  "foundryWorldModified": false,
+  "readyForGrayscaleWithoutFurtherEvidence": false,
+  "nextGate": "REVIEW_REGISTERED_SOURCE_AND_STAIR_LEVELS_THEN_GRAYSCALE; LIVE REREAD REQUIRED BEFORE INJECTION"
+}
