@@ -1,0 +1,821 @@
+{
+  "schemaVersion": "dicebox-geometry-blueprint/v2.1-beta-reconciled-review",
+  "sceneKey": "dark-arch-m01",
+  "basedOn": "reviewed source PREPARE; accepted visual bridge-north/gate-west composition",
+  "pixelTraceAuthoritative": false,
+  "artisticallyAcceptedByUser": true,
+  "priorApprovedBlueprintSha256": "f975614af795a357bb3c6b67f10a64721b391474fc429483a439a685e2590ae3",
+  "scale": {
+    "logical": [
+      40,
+      24
+    ],
+    "physicalFeet": [
+      200,
+      120
+    ],
+    "pixels": [
+      4800,
+      2880
+    ],
+    "pxPerCell": 120
+  },
+  "coordinateUnits": "logical 5-foot spaces",
+  "surfaces": [
+    {
+      "id": "G01",
+      "name": "South Bank Approach",
+      "kind": "ground",
+      "bounds": [
+        0,
+        5.3,
+        9,
+        13
+      ],
+      "polygon": [
+        [
+          0,
+          5.3
+        ],
+        [
+          9,
+          5.3
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          0,
+          13
+        ]
+      ],
+      "elevationFt": 18,
+      "walkable": true
+    },
+    {
+      "id": "G02",
+      "name": "Dark Arch Main Deck",
+      "kind": "bridge",
+      "bounds": [
+        8,
+        7.1,
+        30,
+        11.1
+      ],
+      "polygon": [
+        [
+          8,
+          7.1
+        ],
+        [
+          30,
+          7.1
+        ],
+        [
+          30,
+          11.1
+        ],
+        [
+          8,
+          11.1
+        ]
+      ],
+      "elevationFt": 18,
+      "walkable": true
+    },
+    {
+      "id": "G03",
+      "name": "Central Passing Bay",
+      "kind": "bridge",
+      "bounds": [
+        15.5,
+        6.5,
+        21.2,
+        12
+      ],
+      "polygon": [
+        [
+          15.5,
+          6.5
+        ],
+        [
+          21.2,
+          6.5
+        ],
+        [
+          21.2,
+          12
+        ],
+        [
+          15.5,
+          12
+        ]
+      ],
+      "elevationFt": 18,
+      "walkable": true
+    },
+    {
+      "id": "G04",
+      "name": "Hoist Yard",
+      "kind": "bridge",
+      "bounds": [
+        21.5,
+        5.3,
+        26.8,
+        8.2
+      ],
+      "polygon": [
+        [
+          21.5,
+          5.3
+        ],
+        [
+          26.8,
+          5.3
+        ],
+        [
+          26.8,
+          8.2
+        ],
+        [
+          21.5,
+          8.2
+        ]
+      ],
+      "elevationFt": 18,
+      "walkable": true
+    },
+    {
+      "id": "G05",
+      "name": "Inner Island Court",
+      "kind": "ground",
+      "bounds": [
+        29.5,
+        6.7,
+        40,
+        14.2
+      ],
+      "polygon": [
+        [
+          29.5,
+          6.7
+        ],
+        [
+          40,
+          6.7
+        ],
+        [
+          40,
+          14.2
+        ],
+        [
+          29.5,
+          14.2
+        ]
+      ],
+      "elevationFt": 18,
+      "walkable": true
+    },
+    {
+      "id": "G06",
+      "name": "Map 2 Exit",
+      "kind": "ground",
+      "bounds": [
+        38,
+        8.5,
+        40,
+        11.5
+      ],
+      "polygon": [
+        [
+          38,
+          8.5
+        ],
+        [
+          40,
+          8.5
+        ],
+        [
+          40,
+          11.5
+        ],
+        [
+          38,
+          11.5
+        ]
+      ],
+      "elevationFt": 18,
+      "walkable": true
+    },
+    {
+      "id": "G07",
+      "name": "City Quay Stair",
+      "kind": "stair",
+      "bounds": [
+        4.7,
+        11.2,
+        8.5,
+        17
+      ],
+      "polygon": [
+        [
+          4.7,
+          11.2
+        ],
+        [
+          8.5,
+          11.2
+        ],
+        [
+          8.5,
+          17
+        ],
+        [
+          4.7,
+          17
+        ]
+      ],
+      "elevationFt": [
+        18,
+        -8
+      ],
+      "walkable": true
+    },
+    {
+      "id": "G08",
+      "name": "City Boat Berth",
+      "kind": "dock",
+      "bounds": [
+        4.2,
+        15.8,
+        11.5,
+        21.5
+      ],
+      "polygon": [
+        [
+          4.2,
+          15.8
+        ],
+        [
+          11.5,
+          15.8
+        ],
+        [
+          11.5,
+          21.5
+        ],
+        [
+          4.2,
+          21.5
+        ]
+      ],
+      "elevationFt": -8,
+      "walkable": true
+    },
+    {
+      "id": "G09",
+      "name": "Island Dock",
+      "kind": "dock",
+      "bounds": [
+        30.3,
+        16.5,
+        38.5,
+        21.5
+      ],
+      "polygon": [
+        [
+          30.3,
+          16.5
+        ],
+        [
+          38.5,
+          16.5
+        ],
+        [
+          38.5,
+          21.5
+        ],
+        [
+          30.3,
+          21.5
+        ]
+      ],
+      "elevationFt": -8,
+      "walkable": true
+    },
+    {
+      "id": "G10",
+      "name": "Island Dock Stair",
+      "kind": "stair",
+      "bounds": [
+        35.5,
+        12.7,
+        38.7,
+        18.2
+      ],
+      "polygon": [
+        [
+          35.5,
+          12.7
+        ],
+        [
+          38.7,
+          12.7
+        ],
+        [
+          38.7,
+          18.2
+        ],
+        [
+          35.5,
+          18.2
+        ]
+      ],
+      "elevationFt": [
+        -8,
+        18
+      ],
+      "walkable": true
+    },
+    {
+      "id": "G11",
+      "name": "Upper Island Terrace",
+      "kind": "terrace",
+      "bounds": [
+        30,
+        0.8,
+        36.6,
+        4.7
+      ],
+      "polygon": [
+        [
+          30,
+          0.8
+        ],
+        [
+          36.6,
+          0.8
+        ],
+        [
+          36.6,
+          4.7
+        ],
+        [
+          30,
+          4.7
+        ]
+      ],
+      "elevationFt": 31,
+      "walkable": true
+    },
+    {
+      "id": "G12",
+      "name": "Upper Terrace Stair",
+      "kind": "stair",
+      "bounds": [
+        34.5,
+        3.5,
+        38,
+        8.4
+      ],
+      "polygon": [
+        [
+          34.5,
+          3.5
+        ],
+        [
+          38,
+          3.5
+        ],
+        [
+          38,
+          8.4
+        ],
+        [
+          34.5,
+          8.4
+        ]
+      ],
+      "elevationFt": [
+        31,
+        18
+      ],
+      "walkable": true
+    },
+    {
+      "id": "G13",
+      "name": "Hoist Rig Access",
+      "kind": "platform",
+      "bounds": [
+        21.5,
+        5.3,
+        24,
+        7.9
+      ],
+      "polygon": [
+        [
+          21.5,
+          5.3
+        ],
+        [
+          24,
+          5.3
+        ],
+        [
+          24,
+          7.9
+        ],
+        [
+          21.5,
+          7.9
+        ]
+      ],
+      "elevationFt": [
+        18,
+        45
+      ],
+      "walkable": true
+    }
+  ],
+  "walls": [
+    {
+      "id": "W01",
+      "kind": "bridge-parapet",
+      "segment": [
+        [
+          8,
+          7.1
+        ],
+        [
+          15.5,
+          7.1
+        ]
+      ],
+      "topFt": 24
+    },
+    {
+      "id": "W02",
+      "kind": "bridge-parapet",
+      "segment": [
+        [
+          21.2,
+          7.1
+        ],
+        [
+          29.4,
+          7.1
+        ]
+      ],
+      "topFt": 24
+    },
+    {
+      "id": "W03",
+      "kind": "bridge-parapet",
+      "segment": [
+        [
+          8,
+          11.1
+        ],
+        [
+          15.5,
+          11.1
+        ]
+      ],
+      "topFt": 24
+    },
+    {
+      "id": "W04",
+      "kind": "bridge-parapet",
+      "segment": [
+        [
+          21.2,
+          11.1
+        ],
+        [
+          29.4,
+          11.1
+        ]
+      ],
+      "topFt": 24
+    },
+    {
+      "id": "W05",
+      "kind": "fortress-wall",
+      "segment": [
+        [
+          29.4,
+          0
+        ],
+        [
+          29.4,
+          7.2
+        ]
+      ],
+      "topFt": 30
+    },
+    {
+      "id": "W06",
+      "kind": "gate-portal",
+      "segment": [
+        [
+          29.4,
+          7.2
+        ],
+        [
+          29.4,
+          10.2
+        ]
+      ],
+      "widthFt": 15,
+      "topFt": 30
+    },
+    {
+      "id": "W07",
+      "kind": "fortress-wall",
+      "segment": [
+        [
+          29.4,
+          10.2
+        ],
+        [
+          29.4,
+          16
+        ]
+      ],
+      "topFt": 30
+    },
+    {
+      "id": "W08",
+      "kind": "tidal-opening",
+      "segment": [
+        [
+          29.4,
+          16
+        ],
+        [
+          29.4,
+          20
+        ]
+      ],
+      "clearWidthFt": 20,
+      "walkable": false
+    },
+    {
+      "id": "W09",
+      "kind": "fortress-seawall",
+      "segment": [
+        [
+          29.4,
+          20
+        ],
+        [
+          29.4,
+          24
+        ]
+      ],
+      "topFt": 18
+    },
+    {
+      "id": "W10",
+      "kind": "terrace-parapet",
+      "segment": [
+        [
+          30,
+          0.8
+        ],
+        [
+          36.6,
+          0.8
+        ]
+      ],
+      "topFt": 36
+    }
+  ],
+  "verticalTransitions": [
+    {
+      "id": "V01",
+      "surface": "G07",
+      "startElevationFt": 18,
+      "endElevationFt": -8,
+      "kind": "city-quay-switchback",
+      "review": "tread details not yet final"
+    },
+    {
+      "id": "V02",
+      "surface": "G10",
+      "startElevationFt": -8,
+      "endElevationFt": 18,
+      "kind": "island-dock-switchback",
+      "review": "tread details not yet final"
+    },
+    {
+      "id": "V03",
+      "surface": "G12",
+      "startElevationFt": 31,
+      "endElevationFt": 18,
+      "kind": "upper-terrace-steps",
+      "review": "tread details not yet final"
+    },
+    {
+      "id": "V04",
+      "surface": "G13",
+      "startElevationFt": 18,
+      "endElevationFt": 45,
+      "kind": "rig-climb",
+      "review": "rope rig climb GM-adjudicated"
+    }
+  ],
+  "transfers": [
+    {
+      "id": "T01",
+      "kind": "water-vessel",
+      "start": [
+        7.4,
+        18.4
+      ],
+      "end": [
+        34.5,
+        18.4
+      ],
+      "through": [
+        29.4,
+        18.4
+      ],
+      "startSurface": "G08",
+      "endSurface": "G09",
+      "hullWidthFt": 10,
+      "waterOpeningFt": 20,
+      "notWalkable": true,
+      "gmAdjudicated": true
+    },
+    {
+      "id": "T02",
+      "kind": "rope-swing",
+      "start": [
+        23,
+        6.5
+      ],
+      "end": [
+        34,
+        2.3
+      ],
+      "startSurface": "G13",
+      "endSurface": "G11",
+      "startElevationFt": 45,
+      "endElevationFt": 31,
+      "wallAtX": 29.4,
+      "wallTopFt": 30,
+      "gmAdjudicated": true,
+      "wallCrossingElevationFt": 36.855,
+      "wallVerticalClearFt": 6.855
+    }
+  ],
+  "semanticFeatures": [
+    {
+      "id": "F-GATE",
+      "class_": "securable_gate",
+      "at": [
+        29.4,
+        8.7
+      ],
+      "mandatory": false
+    },
+    {
+      "id": "F-ROPE",
+      "class_": "hoist_and_rope",
+      "start": [
+        23,
+        6.5
+      ],
+      "end": [
+        34,
+        2.3
+      ],
+      "movement": "GM"
+    },
+    {
+      "id": "F-BOAT",
+      "class_": "empty_quay_and_separate_skiff",
+      "fromPt": [
+        7.4,
+        18.4
+      ],
+      "toPt": [
+        34.5,
+        18.4
+      ],
+      "movement": "GM"
+    },
+    {
+      "id": "F-ALARMBELL",
+      "class_": "static_interactable",
+      "at": [
+        6,
+        7.0
+      ]
+    },
+    {
+      "id": "F-M02",
+      "class_": "map_transition",
+      "at": [
+        39,
+        9.0
+      ]
+    }
+  ],
+  "inspection": {
+    "geometryTests": {
+      "bridge_open_medium": {
+        "pass_": true,
+        "found": true,
+        "expected": true,
+        "tokenFootprintFt": 5,
+        "gateOpen": true,
+        "landTravelDistanceFt": 180.0
+      },
+      "bridge_open_large": {
+        "pass_": true,
+        "found": true,
+        "expected": true,
+        "tokenFootprintFt": 10,
+        "gateOpen": true,
+        "landTravelDistanceFt": 180.0
+      },
+      "bridge_closed_medium": {
+        "pass_": true,
+        "found": false,
+        "expected": false,
+        "tokenFootprintFt": 5,
+        "gateOpen": false,
+        "landTravelDistanceFt": null
+      },
+      "bridge_closed_large": {
+        "pass_": true,
+        "found": false,
+        "expected": false,
+        "tokenFootprintFt": 10,
+        "gateOpen": false,
+        "landTravelDistanceFt": null
+      },
+      "city_quay_access": {
+        "pass_": true,
+        "found": true,
+        "expected": true,
+        "tokenFootprintFt": 5,
+        "gateOpen": false,
+        "landTravelDistanceFt": 70.0
+      },
+      "island_postgate_from_dock": {
+        "pass_": true,
+        "found": true,
+        "expected": true,
+        "tokenFootprintFt": 5,
+        "gateOpen": false,
+        "landTravelDistanceFt": 70.0
+      },
+      "hoist_access": {
+        "pass_": true,
+        "found": true,
+        "expected": true,
+        "tokenFootprintFt": 5,
+        "gateOpen": false,
+        "landTravelDistanceFt": 112.5
+      },
+      "rope_terrace_to_inner": {
+        "pass_": true,
+        "found": true,
+        "expected": true,
+        "tokenFootprintFt": 5,
+        "gateOpen": false,
+        "landTravelDistanceFt": 58.8
+      },
+      "missing_island_dock_stair": {
+        "pass_": true,
+        "found": false,
+        "expected": false,
+        "tokenFootprintFt": 5,
+        "gateOpen": false,
+        "landTravelDistanceFt": null
+      },
+      "missing_upper_terrace_stair": {
+        "pass_": true,
+        "found": false,
+        "expected": false,
+        "tokenFootprintFt": 5,
+        "gateOpen": false,
+        "landTravelDistanceFt": null
+      }
+    },
+    "gateClosedAlternativesConnected": true,
+    "boatMovementNotCertified": true,
+    "ropeDynamicsNotCertified": true,
+    "foundryNotVerified": true
+  },
+  "workflow": {
+    "stage": "STRUCTURAL_INSPECT_RECONCILED_GEOMETRY",
+    "artworkRetained": true,
+    "artReview": "PASS_WITH_DOCUMENTED_VARIANCE",
+    "finalArtworkApproved": false
+  }
+}

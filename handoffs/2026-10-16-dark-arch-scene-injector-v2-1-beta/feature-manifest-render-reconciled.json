@@ -1,0 +1,155 @@
+{
+  "schemaVersion": "dicebox-scene-feature-manifest/v2.1-beta",
+  "sceneKey": "dark-arch-m01",
+  "creativeStatus": "STRUCTURAL_PASS_WITH_DOCUMENTED_VARIANCE_FEATURES_RECONCILED_LOCAL",
+  "source": {
+    "art": "ChatGPT-generated 2026-10-16 grayscale source retained in conversation; original raster not yet committed to repository",
+    "nativeDimensions": [
+      1619,
+      971
+    ],
+    "imageSha256": "036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8",
+    "geometryModel": "spatial-blueprint-render-reconciled.json",
+    "type": "manual semantic reauthoring after user-approved layout variance, not raw pixel tracing"
+  },
+  "hardConstraints": {
+    "futureCanvasPx": [
+      4800,
+      2880
+    ],
+    "logicalUnits": [
+      40,
+      24
+    ],
+    "gridless": true,
+    "pixelsPer5Feet": 120,
+    "noTokenFigures": true,
+    "noBakedSkiff": true,
+    "strictOrthographic": true,
+    "noCompulsoryPuzzle": true
+  },
+  "visualFeatures": [
+    {
+      "id": "F-ENTRY",
+      "name": "South Bank checkpoint and cargo staging",
+      "sceneSide": "west",
+      "surfaces": [
+        "G01"
+      ],
+      "role": "GM sets guard patrols later"
+    },
+    {
+      "id": "F-BRIDGE",
+      "name": "Stone Dark Arch main crossing with lateral passing bay",
+      "surfaces": [
+        "G02",
+        "G03"
+      ],
+      "role": "20-ft semantic bridge path for Large access"
+    },
+    {
+      "id": "F-GATE",
+      "name": "Portcullis across bridge at island end",
+      "surfaces": [
+        "G02",
+        "G05"
+      ],
+      "role": "15-ft GM-controlled gate; ordinary crossing"
+    },
+    {
+      "id": "F-CITYQUAY",
+      "name": "Stair down to city mooring; vacant skiff berth",
+      "surfaces": [
+        "G07",
+        "G08"
+      ],
+      "role": "alternative water departure"
+    },
+    {
+      "id": "F-ISLANDDOCK",
+      "name": "Island dock behind fortified gate with stairs up",
+      "surfaces": [
+        "G09",
+        "G10",
+        "G05"
+      ],
+      "role": "water alternative arrives postgate"
+    },
+    {
+      "id": "F-HOIST",
+      "name": "Fixed hoist rig and suspended cargo rope",
+      "surfaces": [
+        "G04",
+        "G13"
+      ],
+      "role": "improvised player stunt, not mandatory puzzle"
+    },
+    {
+      "id": "F-TERRACE",
+      "name": "Upper island terrace and stairs down into inner court",
+      "surfaces": [
+        "G11",
+        "G12",
+        "G05"
+      ],
+      "role": "rope alternative arrives postgate"
+    },
+    {
+      "id": "F-BELL",
+      "name": "Large signal bell",
+      "surfaces": [
+        "G01"
+      ],
+      "role": "guard/alarm interaction"
+    },
+    {
+      "id": "F-EXIT",
+      "name": "Kurth Tower approach and scene transition",
+      "surfaces": [
+        "G05",
+        "G06"
+      ],
+      "role": "Map 2 connection candidate"
+    }
+  ],
+  "worldObjects": [
+    {
+      "id": "TILE-SKIFF",
+      "kind": "planned Foundry Tile",
+      "mode": "separate movable, not part of render",
+      "validation": "not installed"
+    },
+    {
+      "id": "GM-GUARDS",
+      "kind": "GM-added Actors",
+      "mode": "excluded from artwork",
+      "validation": "not installed"
+    },
+    {
+      "id": "JIM",
+      "kind": "narrative guide setpiece",
+      "mode": "not placed on art",
+      "validation": "not installed"
+    }
+  ],
+  "gameplay": {
+    "routes": [
+      "normal bridge via GM-controlled gate",
+      "water via separate skiff plus lower island stairs",
+      "hoist rope plus upper terrace stair"
+    ],
+    "featureCount": 9,
+    "regionIntentKeys": [
+      "dbx.heist.m01.arrival.south-bank",
+      "dbx.heist.m01.transition.kurth-reception"
+    ],
+    "noAutomaticPuzzle": true
+  },
+  "limitations": [
+    "Detailed Wall collision, stair treads, Foundry token sweep and actual skiff/rope gameplay require later Foundry verification",
+    "Native grayscale art file must be bound to its SHA256 before painterly image generation or image staging",
+    "Final artwork requires separate FINAL_INSPECT"
+  ],
+  "approvedForNextCreativeStage": true,
+  "finalArtApproved": false
+}

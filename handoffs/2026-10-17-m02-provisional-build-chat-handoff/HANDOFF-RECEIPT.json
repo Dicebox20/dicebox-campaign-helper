@@ -1,0 +1,30 @@
+{
+  "title": "M02 provisional QA build new chat handoff and chat capacity meter",
+  "date": "2026-10-17",
+  "repository": "Dicebox20/dicebox-campaign-helper",
+  "branch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+  "userArtifactSha256": "22e562dfd03daa1172d4632fc3f020463705a0c2ee90b4ae59fde80e4bab005d",
+  "userArtifactBytes": 587289,
+  "userSelectedArtSha256": "a342988f238b42162af2052ed37fc4513c9dff1553e6c64a83273aeb5c4371f4",
+  "stage": "BUILD_LOCAL_UNSTAGED_PROVISIONAL",
+  "mockScenariosPass": 9,
+  "geometryPreliminaryChecksPass": 15,
+  "canonicalValidatorExactBytes": "NOT_RUN",
+  "foundryMutation": false,
+  "desktopCommanderUsed": false,
+  "chatContextFillPercent": null,
+  "chatContextFillDisplay": "N/A% \u2014 no authoritative platform telemetry",
+  "continuityRisk": "HIGH",
+  "githubPersistence": "VERIFIED feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+  "kbRebuild": "PENDING",
+  "governanceLinkage": {
+    "AGENTS.md": "VERIFIED on feature branch",
+    "docs/DICEBOX-20-MINUTE-TURN-CAP-2026-10-09.md": "VERIFIED on feature branch",
+    "docs/DICEBOX-CHAT-CAPACITY-METER-2026-10-17.md": "VERIFIED on feature branch"
+  },
+  "handoffFile": "handoffs/2026-10-17-m02-provisional-build-chat-handoff/START-HERE.md",
+  "canonicalMainModified": false,
+  "activeSliceUpdated": "NOT VERIFIED \u2014 readback unavailable, no machine-stage promotion",
+  "kbSeedStatus": "GitHub seed.d delta verified present; canonical SQLite build/verify PENDING",
+  "latestGitHubCommit": "e40aed4d9cd8869b0ea0ec3fb0b57c2a1dae13da"
+}

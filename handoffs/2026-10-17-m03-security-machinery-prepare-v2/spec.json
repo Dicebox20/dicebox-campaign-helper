@@ -1,0 +1,300 @@
+{
+  "schemaVersion": "dicebox-scene-prepare/v1",
+  "draftVersion": "2026-10-17-m03-prepare-draft-v2-m02-exit-topology",
+  "status": "PREPARE_DRAFT_REVIEW",
+  "sceneKey": "kurth-tower-security-machinery-m03",
+  "stableSceneId": "dbx.heist.kurth.m03.security-machinery",
+  "sceneName": "Kurth Tower — Security Machinery",
+  "sequenceIndex": 3,
+  "sequenceCount": 6,
+  "campaign": "Acquisitions Incorporated-style heist, Kurth Tower, Closeguard Island, Luskan",
+  "governance": {
+    "repository": "Dicebox20/dicebox-campaign-helper",
+    "reviewBranch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+    "reviewHeadObserved": "353a0a24481c581d661d52a0e30c0201cfa4ab39",
+    "acceptedMainRemainsAuthority": true,
+    "phase": "PREPARE only",
+    "assembledSqliteReadOnlyQuery": "NOT_EXECUTED; seed.sql and dated KB source records inspected through GitHub connector",
+    "kbRebuildVerification": "PENDING",
+    "productActiveStageCheck": "NOT_RUN; do not promote product stage"
+  },
+  "sourceEvidence": {
+    "m02Prepare": "handoffs/2026-10-16-kurth-tower-reception-m02/PREPARE.md",
+    "m02ProvisionalHandoff": "handoffs/2026-10-17-m02-provisional-build-chat-handoff/START-HERE.md",
+    "m02SelectedGrayscaleSHA256": "a342988f238b42162af2052ed37fc4513c9dff1553e6c64a83273aeb5c4371f4",
+    "m02ProvisionalMacroSHA256": "22e562dfd03daa1172d4632fc3f020463705a0c2ee90b4ae59fde80e4bab005d",
+    "m02NewPainterlyCandidateSHA256": "cf6833c747549dce02f6d7e8b00a19a5d2eb78c765e07265b453aa1a26f94223",
+    "m02PainterlyStatus": "Generated in chat; no recorded FINAL_INSPECT PASS / authoritative Foundry readback",
+    "m02InstallationStatus": "User stated previous injection included grayscale map; no verified scene/readback available this turn",
+    "m02CurrentUserColorReferenceSHA256": "80f4196a7a2f76c6b327c4b19193752720497c16a7ee3586dd8bde2281133155",
+    "m02CurrentUserColorReferencePixels": [
+      1619,
+      971
+    ],
+    "m02CurrentUserColorAuthority": "user-selected continuity artwork; no Foundry wall/stair/Region authority derived from pixels",
+    "m02DesignStatus": "user closed M02 for design; no new Foundry runtime certification claim"
+  },
+  "intent": {
+    "purpose": "Grimgor spotlight for creative mechanical infiltration and tower security control without solving M04",
+    "previousSceneId": "dbx.heist.kurth.m02.reception",
+    "nextSceneId": "dbx.heist.kurth.m04.luminary-cipher",
+    "nextSceneName": "Luminary Cipher — 5×5 Lights Out",
+    "treasureIdentity": "UNSPECIFIED",
+    "narrativeTone": "Humorous Acquisitions Incorporated caper, tension from clever controls and malfunctioning security",
+    "proposedMechanicsNotAccepted": true
+  },
+  "dimensions": {
+    "status": "PROPOSED_NOT_APPROVED",
+    "profile": "battlemap-120",
+    "gridType": 0,
+    "logicalColumns": 40,
+    "logicalRows": 24,
+    "gridSizePx": 120,
+    "distanceFt": 5,
+    "sceneWidthPx": 4800,
+    "sceneHeightPx": 2880,
+    "padding": 0
+  },
+  "camera": "strict 90-degree overhead orthographic battlemap, camera perpendicular to ground plane, no perspective tilt, no horizon",
+  "orientation": {
+    "west": "PROPOSED local orientation only: internal arrival at bottom landing of M02 northeast descending stairs; M03 link UNBOUND; NOT from M02 north forest",
+    "center": "main mechanism gallery with open circulation and heavy static machinery",
+    "north": "M03 internal control gallery (proposed); unrelated to M02 northern exterior forest exit",
+    "south": "maintenance deck and pressure/service workways",
+    "east": "inner security seal and staging space leading to M04; orientation is proposed pending final M02 alignment"
+  },
+  "areas": [
+    {
+      "id": "M03-A01",
+      "name": "Proposed Lower-Level Stair Arrival",
+      "kind": "potential bottom-of-M02-NE-stair landing; exact elevation unverified",
+      "north_south_split": true,
+      "entrySource": "M02-NE-DESCENDING-STAIR (working proposal)"
+    },
+    {
+      "id": "M03-A02",
+      "name": "Central Machinery Gallery",
+      "kind": "public-ish restricted floor"
+    },
+    {
+      "id": "M03-A03",
+      "name": "Control and Surveillance Gallery",
+      "kind": "north restricted controls"
+    },
+    {
+      "id": "M03-A04",
+      "name": "Maintenance and Pressure Service",
+      "kind": "south back-of-house"
+    },
+    {
+      "id": "M03-A05",
+      "name": "Security Interlock and Exit Vestibule",
+      "kind": "east controlled transition to M04"
+    }
+  ],
+  "proposedTraversalRoutes": [
+    {
+      "id": "CENTRAL",
+      "start": "proposed M03 landing at bottom of M02 northeast descending stair; no forest arrival",
+      "via": [
+        "A01",
+        "A02",
+        "main security interlock",
+        "A05"
+      ],
+      "end": "M04 arrival staging",
+      "hardFootprintFt": 10,
+      "preferredClearanceFt": "15-20",
+      "challenge": "mechanical obstruction, authorization or guarded control",
+      "failsafe": "manually operated or alternative route, no permanent softlock",
+      "entryBindingStatus": "UNBOUND_NOT_YET_CONFIRMED"
+    },
+    {
+      "id": "CONTROL",
+      "start": "proposed M03 landing at bottom of M02 northeast descending stair; no forest arrival",
+      "via": [
+        "A01",
+        "A03",
+        "north control return",
+        "A05"
+      ],
+      "end": "M04 arrival staging",
+      "hardFootprintFt": 5,
+      "preferredClearanceFt": 10,
+      "challenge": "observe controls or divert locks",
+      "failsafe": "disguised, borrowed credential, mechanical/manual alternate",
+      "entryBindingStatus": "UNBOUND_NOT_YET_CONFIRMED"
+    },
+    {
+      "id": "MAINTENANCE",
+      "start": "proposed M03 landing at bottom of M02 northeast descending stair; no forest arrival",
+      "via": [
+        "A01",
+        "A04",
+        "south pressure-service bypass",
+        "A05"
+      ],
+      "end": "M04 arrival staging",
+      "hardFootprintFt": 5,
+      "preferredClearanceFt": 10,
+      "challenge": "physical maintenance and hazard timing",
+      "failsafe": "manual isolation and return route",
+      "entryBindingStatus": "UNBOUND_NOT_YET_CONFIRMED"
+    }
+  ],
+  "securityInteractionProposal": {
+    "layers": [
+      "read current posture/indicators",
+      "choose an intervention",
+      "manage consequences and cross interlock"
+    ],
+    "controls": [
+      "shutters/interlock",
+      "steam pressure bypass",
+      "counterweight locking relay",
+      "alarm diversion"
+    ],
+    "playerChoice": [
+      "physically repair/isolate",
+      "study controls and reroute",
+      "deceive authorized staff or use stolen permit",
+      "force passage with consequences"
+    ],
+    "noMandatorySingleSkillCheck": true,
+    "noUnapprovedDCs": true,
+    "noRequiredCombat": true,
+    "noPermanentSoftlock": true,
+    "noAutoSolveM04": true,
+    "noAutoGrantM04PuzzleAnswer": true,
+    "carryFromM02": [
+      "Quiet",
+      "Suspicious",
+      "Alarm"
+    ],
+    "securityPosturePersistence": "GM-ADJUDICATED_PROPOSAL_ONLY; not a new automated state owner"
+  },
+  "obstaclesAndHazardsProposal": [
+    {
+      "id": "HZ01",
+      "name": "steam vent",
+      "representation": "static visual until separately authored active Region/effect",
+      "safeAlternate": true
+    },
+    {
+      "id": "HZ02",
+      "name": "counterweight sweep",
+      "representation": "static heavy gear; no default autonomous movement",
+      "safeAlternate": true
+    },
+    {
+      "id": "HZ03",
+      "name": "mechanical shutter",
+      "representation": "native Wall/door/interlock only if approved",
+      "safeAlternate": true
+    }
+  ],
+  "actorAndObjectOwnership": {
+    "playerCharacters": 6,
+    "spotlight": "Grimgor",
+    "jimDarkmagic": "narrative guide only; no token or puzzle solution",
+    "guards": "GM-owned; none baked or automatically created",
+    "automatedSentries": "NOT_APPROVED",
+    "staticMachinery": "Background Objects baked into art only when permanently static",
+    "statefulObjects": "native Foundry Tile/Wall/Region only after specific behavior ownership approved",
+    "hiddenDiscoveries": 0
+  },
+  "plannedRegionsUnapproved": [
+    {
+      "id": "dbx.heist.m03.arrival.secured",
+      "type": "hidden GM-only arrival intent"
+    },
+    {
+      "id": "dbx.heist.m03.control.console",
+      "type": "hidden GM-only interaction cue"
+    },
+    {
+      "id": "dbx.heist.m03.access.maintenance",
+      "type": "hidden GM-only alternate-path cue"
+    },
+    {
+      "id": "dbx.heist.m03.transition.luminary",
+      "type": "hidden GM-only M04 exit intent"
+    }
+  ],
+  "outOfScope": [
+    "M04 Lights Out board, grid, solution, or reset logic",
+    "M05/M06 objective disclosure",
+    "invented M02 exit UUID or elevation",
+    "auto-placed guards or NPCs",
+    "automatic moving hazards or machinery scripts",
+    "baked tokens, puzzle text, map labels, visible grid",
+    "new exterior or tower back entrance",
+    "M02 northern forest exit onward route and destination",
+    "Any automatically assumed forest-to-M03 connection",
+    "Assumed northeast staircase bottom landing, depth or teleport UUID"
+  ],
+  "geometryInspectionRequirements": [
+    "Do not bind M02 northern forest exit to M03: it is a separate unresolved exterior destination",
+    "Confirm stair starts on M02 reception floor and descends to different lower level; resolve actual lower landing and elevations before any geometry authority",
+    "Lock M03 exit anchor to M04 without inventing vertical level or live UUID",
+    "Prove west-to-east 10ft Large central route through valid solid ground",
+    "Prove separate north and south 5ft Medium routes to the secured east side",
+    "With central interlock closed, test each bypass reachability and recorded consequences",
+    "With all access gates closed, prevent bypass while preserving GM-controlled recovery",
+    "No controls or scenery overlap required token sweep polygons",
+    "Distinguish actual solid Walls, open railings, elevated catwalks, floors, hazards, doors and stateful Tiles",
+    "No vertical-only route passes without explicit stair/lift landing and verified elevation mapping",
+    "No hidden external entrance and no direct bypass of M04",
+    "All planned Regions remain hidden GM-only and have no behaviors until approved"
+  ],
+  "stageGates": {
+    "prepare": "USER_CONFIRMED_M02_EXIT_CLASSIFICATION_M03_DRAFT_REVIEW",
+    "geometryAuthored": false,
+    "geometryInspected": false,
+    "grayscaleRendered": false,
+    "structuralInspected": false,
+    "featureManifestReconciled": false,
+    "offlineStructuralBuilt": false,
+    "painterlyRendered": false,
+    "finalInspected": false,
+    "finalMacroAssembled": false,
+    "staged": false,
+    "injected": false,
+    "runtimeVerified": false
+  },
+  "liveAuthority": {
+    "foundryMutationAuthorized": false,
+    "worldId": "UNBOUND_FOR_M03",
+    "activeGmVerified": false
+  },
+  "nextGate": "PREPARE review of M03 dimensions, lower landing layout and the M03 interior route proposal; database-first and active-stage gates before GEOMETRY AUTHOR; no render or Foundry operation",
+  "continuityCorrection": {
+    "date": "2026-10-17",
+    "authority": "explicit current user clarification and confirmation; PREPARE only",
+    "northernExit": {
+      "stableIntentId": "M02-NORTH-FOREST-EXIT",
+      "startsAt": "northern exit of M02 reception building",
+      "immediateDestination": "exterior forest-like environment",
+      "onwardDestination": "UNRESOLVED",
+      "m03Connection": "NOT_ESTABLISHED",
+      "regionUuid": "UNBOUND",
+      "status": "EXIT_CLASSIFICATION_USER_CONFIRMED_NO_FURTHER_DESTINATION"
+    },
+    "northeastStair": {
+      "stableIntentId": "M02-NE-DESCENDING-STAIR",
+      "topLanding": "on M02 reception floor",
+      "direction": "DESCENDS_FROM_M02_FLOOR",
+      "bottomLevel": "DIFFERENT_LOWER_LEVEL",
+      "bottomLanding": "UNSURVEYED",
+      "elevationDeltaFt": "UNKNOWN",
+      "stairDimensions": "UNKNOWN",
+      "candidateNextScene": "dbx.heist.kurth.m03.security-machinery",
+      "connectionStatus": "WORKING_PROPOSAL_NOT_BOUND",
+      "regionUuid": "UNBOUND",
+      "reverseTransition": "NOT_VERIFIED"
+    },
+    "m03Entrances": "ONE_POTENTIAL_BOTTOM_OF_NE_STAIR_ARRIVAL_ONLY",
+    "noM03ForestEntry": true,
+    "m03NorthGalleryDistinctFromM02NorthernExit": true
+  }
+}

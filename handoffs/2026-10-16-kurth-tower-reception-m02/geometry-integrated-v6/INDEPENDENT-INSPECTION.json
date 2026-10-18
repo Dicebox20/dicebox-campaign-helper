@@ -1,0 +1,99 @@
+{
+  "operation": "dicebox.geometry.independent-inspect/v6",
+  "status": "LOCAL_PASS",
+  "geometrySha256": "f822725e697e39a07241f6ff8219a6a4321cab7a84b32766774fce0a83e66fd6",
+  "sourceImageSha256": "a755a79ec2a282422390548d115bc7f64f8b72c56ebfaff22fdd05783c70a243",
+  "closeupSha256": "9a8c41d9a6d95e9f23fc8938c3cb1987e32340f2de07e8ff517f196213caf5b0",
+  "scenePixels": [
+    4800,
+    2880
+  ],
+  "sceneLogical": [
+    40,
+    24
+  ],
+  "oneIntegratedViewport": true,
+  "connectedSharedBuildingFootprint": true,
+  "imageJoinX": 18.45,
+  "imageJoinPhysicalWall": false,
+  "roofExistingAndExtensionTouch": true,
+  "towerFirstFloorCropsTopBottomRight": true,
+  "visibleExteriorDoors": 1,
+  "surfaceCount": 8,
+  "wallCountNewOnly": 6,
+  "doorPlaneCount": 4,
+  "routeTests": [
+    {
+      "id": "R-PUBLIC",
+      "footprintFt": 10,
+      "lengthFt": 206.4,
+      "collisionAreaLogical": 0.0,
+      "crossesImageJoinWithoutWall": true,
+      "doorsCrossed": {
+        "D01": true,
+        "D03": true
+      },
+      "pass": true
+    },
+    {
+      "id": "R-INSPECTOR",
+      "footprintFt": 5,
+      "lengthFt": 286.3,
+      "collisionAreaLogical": 0.0,
+      "crossesImageJoinWithoutWall": true,
+      "doorsCrossed": {
+        "D01": true,
+        "D02": true
+      },
+      "pass": true
+    },
+    {
+      "id": "R-STAFF",
+      "footprintFt": 5,
+      "lengthFt": 211.0,
+      "collisionAreaLogical": 0.0,
+      "crossesImageJoinWithoutWall": true,
+      "doorsCrossed": {
+        "D01": true,
+        "D04": true
+      },
+      "pass": true
+    }
+  ],
+  "securityTests": {
+    "ALL_SECURITY_CLOSED": {
+      "connected": false,
+      "expected": false,
+      "pass": true
+    },
+    "D02": {
+      "connected": true,
+      "expected": true,
+      "pass": true
+    },
+    "D03": {
+      "connected": true,
+      "expected": true,
+      "pass": true
+    },
+    "D04": {
+      "connected": true,
+      "expected": true,
+      "pass": true
+    },
+    "D02+D03+D04": {
+      "connected": true,
+      "expected": true,
+      "pass": true
+    }
+  },
+  "closedFrontDoorSeparatesOutdoorFromReception": true,
+  "stairElevationsVerified": false,
+  "M01OriginalPixelScaleCalibrated": false,
+  "bridgeM01NativeWallsVerified": false,
+  "foundryWorldModified": false,
+  "foundryRuntimeCertified": false,
+  "noArtRenderYet": true,
+  "userV6Approval": "PENDING",
+  "nextGate": "GEOMETRY_VISUAL_REVIEW_THEN_SOURCE_SCALE_AND_STAIRS_RECONCILIATION"
+}

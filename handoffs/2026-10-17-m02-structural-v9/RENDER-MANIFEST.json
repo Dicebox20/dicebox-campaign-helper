@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "dicebox-structural-render/v1",
+  "sceneId": "dbx.heist.kurth.m02.reception",
+  "stage": "STRUCTURAL_RENDER_CANDIDATE_PENDING_INSPECT",
+  "sourceBlueprintCanonicalSha256": "f3bdcfb3c8ed73648e1a7f98c59e09e94c19a5b76ad208f88b35716f382b3add",
+  "sourceM01ArtSha256": "02cdd354371721961ce277f00b8bfe2a322d2678000f7c44d8596800194cab61",
+  "renderSha256": "38f420ba72abed36a604a4292ae6b4a9f8b0323c0bde1f1cc727c62892309490",
+  "renderPath": "M02-v9-structural-grayscale.png",
+  "resolutionPx": [
+    4800,
+    2880
+  ],
+  "seamCellX": 19.85911,
+  "seamPixelX": 2383,
+  "towerFacadeX": 29.39215,
+  "towerFacadePixelX": 3527,
+  "securityPartitionX": 36.07463,
+  "securityPartitionPixelX": 4329,
+  "newSolidWallIds": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06"
+  ],
+  "doorCoordinates": {
+    "D01": [
+      [
+        29.39215,
+        20
+      ],
+      [
+        29.39215,
+        23
+      ]
+    ],
+    "D02": [
+      [
+        36.07463,
+        4.3
+      ],
+      [
+        36.07463,
+        6.8
+      ]
+    ],
+    "D03": [
+      [
+        36.07463,
+        12
+      ],
+      [
+        36.07463,
+        15
+      ]
+    ],
+    "D04": [
+      [
+        36.07463,
+        20
+      ],
+      [
+        36.07463,
+        22.5
+      ]
+    ]
+  },
+  "fullSceneContainsNativeM01SourceCrop": true,
+  "originalM01NativeMasterDimensions": [
+    1619,
+    971
+  ],
+  "registrationMethod": "PIL affine from original M01 source with subpixel registration, then deterministic typed-v7 architectural relief",
+  "coordinateAuthors": "typed-v7 only",
+  "separateGeometryMasks": {
+    "wall": "e22afd36aac37cdad2568c040fea063e82489cbf16eaddcf56094e2053d8b6df",
+    "door": "66429e6aeddc86c6befd34d29da04dbf23b7880d9197e66924be410ce14c7d40"
+  },
+  "noPlayerTokens": true,
+  "noOverlaidMeasurementGrid": true,
+  "noTextLabels": true,
+  "noFoundryMutation": true,
+  "painterlyRenderGenerated": false,
+  "readyToPlay": false
+}

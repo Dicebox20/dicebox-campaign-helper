@@ -1,5 +1,7 @@
 # DiceBox Scene Semantic Render Workflow — 2026-10-07
 
+**2026-10-16 accepted beta overlay:** docs/DICEBOX-SCENE-INJECTOR-V2.1-BETA-2026-10-16.md now governs geometry-first creative workflow for new/restarted maps. This October 7 document remains dated provenance for structural/paint subpasses and compatibility. V2.1 Beta takes precedence wherever a separate geometry author/inspect gate was absent. BUILD v2, final INSPECT automatic approval and geometry/Foundry authority remain unchanged.
+
 **Status:** current canonical Scene Creation rendering rendition  
 **Version:** 2026-10-07.2  
 **Scope:** new DiceBox Campaign Helper Scene Creation map generation unless PREPARE records an explicit user-approved exception

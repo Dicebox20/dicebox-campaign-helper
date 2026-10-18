@@ -1,0 +1,20 @@
+{
+  "status": "GEOMETRY_AUTHOR_COMPLETE_PENDING_INDEPENDENT_INSPECT",
+  "blueprintSha256": "f822725e697e39a07241f6ff8219a6a4321cab7a84b32766774fce0a83e66fd6",
+  "integratedViewport": true,
+  "oneContinuousBuildingFootprint": true,
+  "imageJoinNotWall": true,
+  "newPhysicalWalls": 6,
+  "towerExteriorDoorCount": 1,
+  "firstFloorCroppedAt": [
+    "top",
+    "bottom",
+    "right"
+  ],
+  "output": "/mnt/data/dicebox_heist_design/kurth-tower-m02/geometry-integrated-v6/M02-unified-geometry-v6-preview.png",
+  "sourceHashes": {
+    "userComposite": "a755a79ec2a282422390548d115bc7f64f8b72c56ebfaff22fdd05783c70a243",
+    "userBuildingCloseup": "9a8c41d9a6d95e9f23fc8938c3cb1987e32340f2de07e8ff517f196213caf5b0"
+  },
+  "liveFoundryMutation": false
+}

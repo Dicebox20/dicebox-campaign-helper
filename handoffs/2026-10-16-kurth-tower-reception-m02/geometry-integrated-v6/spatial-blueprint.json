@@ -1,0 +1,1003 @@
+{
+  "schemaVersion": "dicebox-geometry-blueprint/v2.1-beta-integrated-v6",
+  "sceneId": "dbx.heist.kurth.m02.reception",
+  "sceneKey": "kurth-tower-reception-m02",
+  "stage": "GEOMETRY_AUTHOR_LOCAL_CANDIDATE_NEEDS_USER_APPROVAL",
+  "coordinateUnits": "logical-5ft-cells-not-unreviewed-pixels",
+  "scale": {
+    "profile": "battlemap-120",
+    "gridType": "gridless",
+    "logicalColumns": 40,
+    "logicalRows": 24,
+    "gridSizePx": 120,
+    "distanceFeet": 5,
+    "pixels": [
+      4800,
+      2880
+    ],
+    "padding": 0,
+    "coordinateUnits": "logical 5ft cells"
+  },
+  "sources": {
+    "prepareRef": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16:handoffs/2026-10-16-kurth-tower-reception-m02/PREPARE.md",
+    "userAnnotatedCompositeSha256": "a755a79ec2a282422390548d115bc7f64f8b72c56ebfaff22fdd05783c70a243",
+    "userCloseupSha256": "9a8c41d9a6d95e9f23fc8938c3cb1987e32340f2de07e8ff517f196213caf5b0",
+    "referenceAlignment": "visual-provenance-only; exact prior M01 wall/elevation/Scene UUID still pending source reread"
+  },
+  "continuity": {
+    "layout": "ONE continuous M02 scene viewport (M01 inherited context + new exterior path + tower building first floor)",
+    "visualReferenceJoinXLogical": 18.45,
+    "isPhysicalWallAtReferenceJoin": false,
+    "buildingIsSingleConnectedFootprint": true,
+    "visibleBuildingStartsInM01": true,
+    "existingBuildingRoofB01DirectlyJoinsNewRoofB02": true,
+    "newRoofB02AdjoinsFirstFloorB03": true,
+    "courtyardOutdoors": true,
+    "oneExternalTowerDoor": "D01",
+    "rearEntranceVisible": false,
+    "towerInteriorCroppedAt": [
+      "top",
+      "bottom",
+      "right"
+    ],
+    "m03OutOfFrameNotNewExteriorDoor": true,
+    "towerFacingExteriorWallXLogical": 28.65,
+    "doorAtLowerWestFacade": true
+  },
+  "sourceRefRegions": {
+    "M01InheritedArtViewport": [
+      0,
+      0,
+      18.45,
+      24
+    ],
+    "sketchScaleIsNotNativeM01Geometry": true
+  },
+  "buildingSurfaces": [
+    {
+      "id": "B01",
+      "name": "Existing building wing visible on bridge map",
+      "kind": "existing-visible-roof",
+      "polygon": [
+        [
+          15.2,
+          0
+        ],
+        [
+          18.45,
+          0
+        ],
+        [
+          18.45,
+          7.3
+        ],
+        [
+          15.2,
+          7.3
+        ]
+      ],
+      "bounds": [
+        15.2,
+        0,
+        18.45,
+        7.3
+      ],
+      "walkableAtReceptionLevel": false
+    },
+    {
+      "id": "B02",
+      "name": "Same roofline continuing beyond bridge map",
+      "kind": "new-contiguous-roof",
+      "polygon": [
+        [
+          18.45,
+          0
+        ],
+        [
+          28.65,
+          0
+        ],
+        [
+          28.65,
+          7.3
+        ],
+        [
+          18.45,
+          7.3
+        ]
+      ],
+      "bounds": [
+        18.45,
+        0,
+        28.65,
+        7.3
+      ],
+      "walkableAtReceptionLevel": false
+    },
+    {
+      "id": "B03",
+      "name": "Tower reception first floor cropped north/south/east",
+      "kind": "interior-building",
+      "polygon": [
+        [
+          28.65,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          40,
+          24
+        ],
+        [
+          28.65,
+          24
+        ]
+      ],
+      "bounds": [
+        28.65,
+        0,
+        40,
+        24
+      ],
+      "walkableAtReceptionLevel": true
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "S01",
+      "name": "Inherited bridge deck",
+      "ownership": "inherited-m01",
+      "polygon": [
+        [
+          0,
+          10
+        ],
+        [
+          11.4,
+          10
+        ],
+        [
+          11.4,
+          14
+        ],
+        [
+          0,
+          14
+        ]
+      ],
+      "bounds": [
+        0,
+        10,
+        11.4,
+        14
+      ],
+      "elevationFt": "inherited-M01-elevation-verify",
+      "walkable": true
+    },
+    {
+      "id": "S02",
+      "name": "Inherited bridge-end courtyard",
+      "ownership": "inherited-m01",
+      "polygon": [
+        [
+          10.3,
+          7.1
+        ],
+        [
+          18.45,
+          7.1
+        ],
+        [
+          18.45,
+          18
+        ],
+        [
+          10.3,
+          18
+        ]
+      ],
+      "bounds": [
+        10.3,
+        7.1,
+        18.45,
+        18
+      ],
+      "elevationFt": "inherited-M01-elevation-verify",
+      "walkable": true
+    },
+    {
+      "id": "S03",
+      "name": "Inherited upper terrace and steps",
+      "ownership": "inherited-m01",
+      "polygon": [
+        [
+          11.5,
+          2
+        ],
+        [
+          18.45,
+          2
+        ],
+        [
+          18.45,
+          7.6
+        ],
+        [
+          11.5,
+          7.6
+        ]
+      ],
+      "bounds": [
+        11.5,
+        2,
+        18.45,
+        7.6
+      ],
+      "elevationFt": "inherited-M01-elevation-verify",
+      "walkable": true
+    },
+    {
+      "id": "S04",
+      "name": "Inherited lower dock",
+      "ownership": "inherited-m01",
+      "polygon": [
+        [
+          11.5,
+          17.4
+        ],
+        [
+          18.45,
+          17.4
+        ],
+        [
+          18.45,
+          21.9
+        ],
+        [
+          11.5,
+          21.9
+        ]
+      ],
+      "bounds": [
+        11.5,
+        17.4,
+        18.45,
+        21.9
+      ],
+      "elevationFt": "inherited-M01-elevation-verify",
+      "walkable": true
+    },
+    {
+      "id": "S05",
+      "name": "New exterior eastbound courtyard path",
+      "ownership": "m02-outdoor",
+      "polygon": [
+        [
+          18.45,
+          7.3
+        ],
+        [
+          28.65,
+          7.3
+        ],
+        [
+          28.65,
+          12.4
+        ],
+        [
+          18.45,
+          12.4
+        ]
+      ],
+      "bounds": [
+        18.45,
+        7.3,
+        28.65,
+        12.4
+      ],
+      "elevationFt": 0,
+      "walkable": true
+    },
+    {
+      "id": "S06",
+      "name": "New exterior lower path to one tower door",
+      "ownership": "m02-outdoor",
+      "polygon": [
+        [
+          24.15,
+          10.8
+        ],
+        [
+          28.65,
+          10.8
+        ],
+        [
+          28.65,
+          24
+        ],
+        [
+          24.15,
+          24
+        ]
+      ],
+      "bounds": [
+        24.15,
+        10.8,
+        28.65,
+        24
+      ],
+      "elevationFt": 0,
+      "walkable": true
+    },
+    {
+      "id": "S07",
+      "name": "First-floor tower reception, visitor/records/staff side",
+      "ownership": "m02-interior",
+      "polygon": [
+        [
+          28.65,
+          0
+        ],
+        [
+          35.8,
+          0
+        ],
+        [
+          35.8,
+          24
+        ],
+        [
+          28.65,
+          24
+        ]
+      ],
+      "bounds": [
+        28.65,
+        0,
+        35.8,
+        24
+      ],
+      "elevationFt": 0,
+      "walkable": true
+    },
+    {
+      "id": "S08",
+      "name": "Secured first-floor interior cropped to scene edge",
+      "ownership": "m02-interior",
+      "polygon": [
+        [
+          35.8,
+          0
+        ],
+        [
+          40,
+          0
+        ],
+        [
+          40,
+          24
+        ],
+        [
+          35.8,
+          24
+        ]
+      ],
+      "bounds": [
+        35.8,
+        0,
+        40,
+        24
+      ],
+      "elevationFt": 0,
+      "walkable": true
+    }
+  ],
+  "walls": [
+    {
+      "id": "W01",
+      "name": "West exterior facade above entrance",
+      "segment": [
+        [
+          28.65,
+          7.3
+        ],
+        [
+          28.65,
+          20
+        ]
+      ],
+      "semantic": "stone-exterior",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W02",
+      "name": "West exterior facade below entrance",
+      "segment": [
+        [
+          28.65,
+          23
+        ],
+        [
+          28.65,
+          24
+        ]
+      ],
+      "semantic": "stone-exterior",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W03",
+      "name": "Secure screening line northmost",
+      "segment": [
+        [
+          35.8,
+          0
+        ],
+        [
+          35.8,
+          4.3
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W04",
+      "name": "Secure screening line north-middle",
+      "segment": [
+        [
+          35.8,
+          6.8
+        ],
+        [
+          35.8,
+          12
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W05",
+      "name": "Secure screening line south-middle",
+      "segment": [
+        [
+          35.8,
+          15
+        ],
+        [
+          35.8,
+          20
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "W06",
+      "name": "Secure screening line southmost",
+      "segment": [
+        [
+          35.8,
+          22.5
+        ],
+        [
+          35.8,
+          24
+        ]
+      ],
+      "semantic": "interior-security",
+      "movement": true,
+      "sight": true,
+      "owner": "new-m02"
+    }
+  ],
+  "doorPlanes": [
+    {
+      "id": "D01",
+      "name": "Single outdoor tower entrance",
+      "segment": [
+        [
+          28.65,
+          20
+        ],
+        [
+          28.65,
+          23
+        ]
+      ],
+      "kind": "exterior-door",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 15,
+      "exteriorAccess": true,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "D02",
+      "name": "North inspector records access",
+      "segment": [
+        [
+          35.8,
+          4.3
+        ],
+        [
+          35.8,
+          6.8
+        ]
+      ],
+      "kind": "interior-door",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 12.5,
+      "exteriorAccess": false,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "D03",
+      "name": "Main reception credential checkpoint",
+      "segment": [
+        [
+          35.8,
+          12
+        ],
+        [
+          35.8,
+          15
+        ]
+      ],
+      "kind": "guarded-checkpoint",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 15,
+      "exteriorAccess": false,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    },
+    {
+      "id": "D04",
+      "name": "South service security bypass",
+      "segment": [
+        [
+          35.8,
+          20
+        ],
+        [
+          35.8,
+          22.5
+        ]
+      ],
+      "kind": "interior-door",
+      "intendedInitialState": "closed",
+      "clearWidthFt": 12.5,
+      "exteriorAccess": false,
+      "manualGMAdjudication": true,
+      "owner": "new-m02"
+    }
+  ],
+  "staticBlockingProps": [
+    {
+      "id": "P01",
+      "name": "Reception desk",
+      "bounds": [
+        32.1,
+        9.3,
+        34.7,
+        10.5
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P02",
+      "name": "Registry shelves",
+      "bounds": [
+        32.4,
+        1.5,
+        34.4,
+        2.5
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P03",
+      "name": "Registry clerk desk",
+      "bounds": [
+        32.1,
+        7.5,
+        34.5,
+        8.4
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P04",
+      "name": "Receiving desk / supplies",
+      "bounds": [
+        32.1,
+        18.5,
+        34.4,
+        19.4
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P05",
+      "name": "Column one",
+      "bounds": [
+        34,
+        10.7,
+        34.6,
+        11.3
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P06",
+      "name": "Column two",
+      "bounds": [
+        38.0,
+        9.1,
+        38.6,
+        9.7
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    },
+    {
+      "id": "P07",
+      "name": "Column three",
+      "bounds": [
+        38.0,
+        17.1,
+        38.6,
+        17.7
+      ],
+      "kind": "interior",
+      "artOwnership": "static-background",
+      "movementBlock": true
+    }
+  ],
+  "routeTests": [
+    {
+      "id": "R-PUBLIC",
+      "name": "Public credential screening",
+      "requiredFootprintFt": 10,
+      "doors": [
+        "D01",
+        "D03"
+      ],
+      "polyline": [
+        [
+          16.6,
+          10.0
+        ],
+        [
+          21.0,
+          10.0
+        ],
+        [
+          26.4,
+          10.0
+        ],
+        [
+          26.4,
+          21.5
+        ],
+        [
+          29.9,
+          21.5
+        ],
+        [
+          31.1,
+          19.1
+        ],
+        [
+          31.1,
+          13.3
+        ],
+        [
+          34.5,
+          13.3
+        ],
+        [
+          37.0,
+          13.3
+        ],
+        [
+          39.1,
+          13.3
+        ]
+      ],
+      "start": "existing-M01-courtyard",
+      "finish": "M03-internal-continuation-beyond-right-crop",
+      "doorBindingsAreProposed": true
+    },
+    {
+      "id": "R-INSPECTOR",
+      "name": "North records/inspector bypass",
+      "requiredFootprintFt": 5,
+      "doors": [
+        "D01",
+        "D02"
+      ],
+      "polyline": [
+        [
+          16.6,
+          10.0
+        ],
+        [
+          21.0,
+          10.0
+        ],
+        [
+          26.4,
+          10.0
+        ],
+        [
+          26.4,
+          21.5
+        ],
+        [
+          29.9,
+          21.5
+        ],
+        [
+          30.4,
+          19.4
+        ],
+        [
+          30.4,
+          5.55
+        ],
+        [
+          34.6,
+          5.55
+        ],
+        [
+          37.0,
+          5.55
+        ],
+        [
+          37.0,
+          13.3
+        ],
+        [
+          39.1,
+          13.3
+        ]
+      ],
+      "start": "existing-M01-courtyard",
+      "finish": "M03-internal-continuation-beyond-right-crop",
+      "doorBindingsAreProposed": true
+    },
+    {
+      "id": "R-STAFF",
+      "name": "South staff/logistics bypass",
+      "requiredFootprintFt": 5,
+      "doors": [
+        "D01",
+        "D04"
+      ],
+      "polyline": [
+        [
+          16.6,
+          10.0
+        ],
+        [
+          21.0,
+          10.0
+        ],
+        [
+          26.4,
+          10.0
+        ],
+        [
+          26.4,
+          21.5
+        ],
+        [
+          29.9,
+          21.5
+        ],
+        [
+          32.4,
+          21.5
+        ],
+        [
+          34.7,
+          21.5
+        ],
+        [
+          37.0,
+          21.5
+        ],
+        [
+          37.0,
+          13.3
+        ],
+        [
+          39.1,
+          13.3
+        ]
+      ],
+      "start": "existing-M01-courtyard",
+      "finish": "M03-internal-continuation-beyond-right-crop",
+      "doorBindingsAreProposed": true
+    }
+  ],
+  "plannedRegions": [
+    {
+      "id": "dbx.heist.m02.arrival.reception",
+      "bounds": [
+        15.4,
+        9.0,
+        17.7,
+        11.2
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    },
+    {
+      "id": "dbx.heist.m02.check.credentials",
+      "bounds": [
+        33.0,
+        12.0,
+        35.3,
+        14.8
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    },
+    {
+      "id": "dbx.heist.m02.access.staff",
+      "bounds": [
+        32.0,
+        20.2,
+        34.5,
+        22.3
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    },
+    {
+      "id": "dbx.heist.m02.transition.security-machinery",
+      "bounds": [
+        38.3,
+        12.3,
+        39.8,
+        14.7
+      ],
+      "kind": "GM-hidden-proposed",
+      "noRuntimeBindings": true
+    }
+  ],
+  "verticalTransitions": [
+    {
+      "id": "V01",
+      "name": "Existing M01 upper terrace landing",
+      "bounds": [
+        14.0,
+        6.3,
+        17.5,
+        8.6
+      ],
+      "status": "source M01 elevation/stair reread pending",
+      "wallAuthority": "inherited-M01-not-recreated"
+    },
+    {
+      "id": "V02",
+      "name": "Existing M01 lower dock landing",
+      "bounds": [
+        14.0,
+        17.2,
+        17.7,
+        20.8
+      ],
+      "status": "source M01 elevation/stair reread pending",
+      "wallAuthority": "inherited-M01-not-recreated"
+    }
+  ],
+  "hazardPolygons": [
+    {
+      "id": "H01",
+      "kind": "water",
+      "polygon": [
+        [
+          18.45,
+          20.6
+        ],
+        [
+          20.0,
+          20.7
+        ],
+        [
+          21.2,
+          21.8
+        ],
+        [
+          23.7,
+          22.3
+        ],
+        [
+          23.7,
+          24.0
+        ],
+        [
+          18.45,
+          24.0
+        ],
+        [
+          18.45,
+          20.6
+        ]
+      ],
+      "walkable": false
+    },
+    {
+      "id": "H02",
+      "kind": "rock",
+      "polygon": [
+        [
+          18.45,
+          12.5
+        ],
+        [
+          23.9,
+          12.5
+        ],
+        [
+          23.7,
+          15.0
+        ],
+        [
+          22.1,
+          18.0
+        ],
+        [
+          23.8,
+          22.0
+        ],
+        [
+          21.4,
+          21.0
+        ],
+        [
+          18.45,
+          20.4
+        ],
+        [
+          18.45,
+          12.5
+        ]
+      ],
+      "walkable": false
+    }
+  ],
+  "runtimeBindingsAuthored": false,
+  "createdNativeFoundryDocuments": false,
+  "authoritativeFoundryGeometryFromUnreviewedPixels": false,
+  "geometryStageOnly": true
+}

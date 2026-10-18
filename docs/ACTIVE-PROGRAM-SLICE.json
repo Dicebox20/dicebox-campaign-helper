@@ -1,6 +1,32 @@
 {
   "schemaVersion": "1.0.0",
   "updatedAt": "2026-10-07",
+  "acceptedDiceboxSceneInjectorV21Beta20261016": {
+    "id": "scene-injector-v2-1-beta-2026-10-16",
+    "status": "accepted-beta-workflow-review-branch",
+    "acceptanceObservation": "Three-stage pipeline: explicit deterministic geometry and inspection, embossed grayscale and structural inspection, painterly and final inspection; Dark Arch M01 restarts PREPARE.",
+    "owner": "DiceBox Campaign Helper Foreman",
+    "targetAuthority": "DiceBox scene workflow and Dark Arch test fixture; beta accepted by user, not main merged",
+    "allowedScope": "Versioned governance, roadmap/active card, dated KB, workflow skill, Dark Arch handoff, local checks. No product-stage promotion or live Foundry writes.",
+    "deterministicCheck": "KB rebuild/verify, 40x24 battlemap-120 Scene spec, staged geometry connectivity checks, unchanged BUILD v2 validator.",
+    "liveCheck": "None; no renderer/provider/exact-stack runtime claim.",
+    "stopCondition": "Fail closed on missing authority, geometry route failures, changed BUILD v2 contract or six pre-existing active-slice violations; no Ready-to-Play claim.",
+    "darkArchGeometryEvidence20261016": {
+      "status": "PASS_LOCAL_GEOMETRY_ONLY",
+      "scene": "dbx.heist.kurth.m01.dark-arch",
+      "artifact": "handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/spatial-blueprint.json",
+      "testReceipt": "handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/geometry-inspection.json",
+      "workState": "PREPARED with GEOMETRY INSPECT PASS nested beta substage",
+      "outstanding": "Embossed grayscale render, structural inspection, feature manifest, paint/final inspect, build, Foundry runtime."
+    },
+    "structuralRenderVariance20261016": {"status":"structural-PASS-with-user-accepted-layout-variance-and-local-semantic-reconciliation","renderSha256":"036823143bce9d2c92a818ccc9e7cc9496a08a0f99608a3cc3564115b06880f8","geometryEvidence":"handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/render-reconciliation-receipt.json","deterministicChecks":"10/10 pure local, needs Foundry reread after BUILD","nextGate":"painterly rendering based on reconciled feature manifest; FINAL_INSPECT still required"},
+    "painterlyFinalAssembly20261016": {"status":"user-approved-art-offline-injector-not-runtime-certified","artSha256":"02cdd354371721961ce277f00b8bfe2a322d2678000f7c44d8596800194cab61","singleMarkdownSha256":"efdad8978ee82ad6a9720282a1cb3f7bd81da2aa3db5d78b1e5386cb4985b35a","sequence":"STRUCTURAL BUILD -> PAINTERLY -> FINAL INSPECT -> FINAL ASSEMBLY -> STAGE -> INJECT -> VERIFY","liveStatus":"not installed; exact canonical validator and runtime canaries pending"},
+    "moduleDiskUpgrade20261016":{"status":"disk-v0.1.15-installed-verified","mainModuleSha256":"467b56314411c5b40d7505d5da2a0e4b2f9e8f7a182b3ab413ce7f4e1ec5673b","world":"world-template-2","worldUntouched":true,"rollbackVerified":true,"runtimeLoaded":false,"moduleEnabled":"unknown","darkArchSceneInjected":false},
+    "darkArchPreviewRepair20261016":{"status":"local-macro-dialog-fix-tested-not-runtime-verified","failedBrowserApi":"globalThis.prompt","replacement":"DialogV2.input-plus-confirm","targetWorld":"world-template-2","patchedArtifactSha256":"c474f184e49fb61f2cd4c989ee99ca737399770dd8f03198f2642e6d1037f0a6","localMockTests":"10-of-10-pass","liveFoundryInstalled":false,"readyToPlay":false},
+    "darkArchAutoWorld20261016":{"status":"user-accepted-local-fix-passed-no-live-injection","detector":"game.world.id","authorizedWorld":"world-template-2","dialog":"DialogV2.confirm-only","artifactLibraryId":"libfile_a0680cb8b2c881919789a881b4299377","artifactSha256":"c57f0469c17fe3f6782f543dbdf16f867faccd361fb17933b5d897c834f1fde3","offlineGateScenarios":"10/10-pass","moduleAndGeometryUnchanged":true,"canonicalValidator":"not-yet-run-on-exact-bytes","liveFoundryInjected":false},
+    "kurthReceptionM02Prepare20261016":{"status":"user-authorized-prepare-draft-review-no-scene-creation","sceneId":"dbx.heist.kurth.m02.reception","sequenceIndex":2,"sequenceCount":6,"mapFootprint":"40x24 battlemap-120 gridless","nextGate":"geometry-author-after-scene-review","foundryMutation":false,"activeProductStagePromoted":false},
+    "kurthGrandEntranceM02PrepareRestart20261016":{"status":"PREPARE_RESTART_DRAFT_REVIEW","source":"handoffs/2026-10-16-kurth-tower-reception-m02/PREPARE-RESTART-2026-10-16.md","sceneId":"dbx.heist.kurth.m02.reception","formerM02Geometry":"ARCHIVED_NOT_AUTHORITY","proposedLogicalSize":"54x36","proposedScenePixels":"6480x4320","newGeometryAuthored":false,"newStructuralRender":false,"worldMutation":false,"productStagePromoted":false,"nextGate":"user-prepare-review-then-geometry-author"}
+  },
   "acceptedFoundryHistoricalEvidenceIngest20261007": {
     "id": "foundry-historical-evidence-ingest-2026-10-07",
     "status": "closed-local-evidence-pass",

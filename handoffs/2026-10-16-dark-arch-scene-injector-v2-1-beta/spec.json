@@ -1,0 +1,186 @@
+{
+  "contract": "dicebox-scene-prepare/v1",
+  "workflow": {
+    "name": "DiceBox Scene Injector",
+    "version": "2.1-beta",
+    "contract": "dicebox-scene-injector-workflow/v2.1-beta",
+    "buildContract": "dicebox-scene-injector-build/v2",
+    "nextGate": "GEOMETRY",
+    "geometryInspector": "PENDING"
+  },
+  "sceneKey": "dark-arch-m01",
+  "stableSceneId": "dbx.heist.kurth.m01.dark-arch",
+  "sceneName": "The Dark Arch — Bridge to Closeguard Island",
+  "campaign": "Acquisitions Incorporated comedy heist in Luskan; Kurth Tower",
+  "sceneIndex": 1,
+  "sceneCount": 6,
+  "status": "PREPARED",
+  "source": {
+    "governingBranch": "main",
+    "governingCommit": "1137241a7df431a5cc4bc775ab56dcd283e1db29",
+    "acceptanceDate": "2026-10-16",
+    "reviewBranch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+    "sceneContinuity": "Original Dark Arch M01 PREPARE retained; earlier render attempts #001–#011 archive only",
+    "authoritativeDocuments": [
+      "AGENTS.md",
+      "docs/DICEBOX-SCENE-INJECTOR-V2.1-BETA-2026-10-16.md",
+      "docs/DICEBOX-GEOMETRY-TOLERANCE-STANDARD-2026-10-09.md",
+      "docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md",
+      "docs/DICEBOX-IMAGE-PROMPT-CLEAN-RESTART-RULE-2026-10-09.md"
+    ]
+  },
+  "scale": {
+    "profile": "battlemap-120",
+    "gridType": "gridless",
+    "gridSizePx": 120,
+    "feetPerLogicalCell": 5,
+    "logicalColumns": 40,
+    "logicalRows": 24,
+    "sceneWidthPx": 4800,
+    "sceneHeightPx": 2880,
+    "physicalWidthFeet": 200,
+    "physicalHeightFeet": 120,
+    "padding": 0
+  },
+  "camera": "strict 90-degree overhead orthographic battlemap, camera perpendicular to the ground plane, no perspective tilt, no horizon",
+  "content": {
+    "puzzleRequired": false,
+    "guardsAuthored": false,
+    "jimAsToken": false,
+    "discoveryCount": 0,
+    "gmFreeform": true,
+    "environment": "Luskan south bank, Dark Arch, Closeguard island and Kurth Tower approach",
+    "staticFeatures": [
+      "guard checkpoint booth",
+      "cargo wagon and crates",
+      "stone bridge and parapets",
+      "freight hoist and swing rope",
+      "signal bell",
+      "15ft gatehouse opening",
+      "city lower quay",
+      "island dock",
+      "island ascending stairs",
+      "upper service terrace"
+    ],
+    "separateRuntimePlaceables": [
+      "movable skiff"
+    ],
+    "forbiddenInArtwork": [
+      "preplaced actors or guards",
+      "Jim Darkmagic model",
+      "baked skiff",
+      "baked grid",
+      "labels",
+      "mandatory puzzle mechanism"
+    ]
+  },
+  "geometryIntent": {
+    "status": "PENDING",
+    "spatialBlueprintId": null,
+    "approvedGeometryHash": null,
+    "gateDivides": [
+      "island-exterior",
+      "inner-approach"
+    ],
+    "routeNodes": [
+      "south-bank",
+      "bridge-checkpoint",
+      "bridge-deck",
+      "outer-gate",
+      "inner-approach",
+      "m02-exit",
+      "city-quay",
+      "island-dock",
+      "postgate-island-stair",
+      "bridge-hoist",
+      "inner-service-terrace"
+    ],
+    "mandatoryRoutes": [
+      {
+        "id": "normal-bridge",
+        "nodes": [
+          "south-bank",
+          "bridge-checkpoint",
+          "bridge-deck",
+          "outer-gate",
+          "inner-approach",
+          "m02-exit"
+        ],
+        "method": "bridge, controllable gate"
+      },
+      {
+        "id": "boat-bypass",
+        "nodes": [
+          "south-bank",
+          "city-quay",
+          "island-dock",
+          "postgate-island-stair",
+          "inner-approach",
+          "m02-exit"
+        ],
+        "method": "separate skiff and foot"
+      },
+      {
+        "id": "rope-bypass",
+        "nodes": [
+          "south-bank",
+          "bridge-deck",
+          "bridge-hoist",
+          "inner-service-terrace",
+          "inner-approach",
+          "m02-exit"
+        ],
+        "method": "improvised rope/swing"
+      }
+    ],
+    "normalBridgeClearFeet": 20,
+    "gateClearFeet": 15,
+    "largeFootprintFeet": 10,
+    "requiresPostGateProof": true,
+    "requiresVerticalClearanceProof": true,
+    "requiresSweptFootprintChecks": true
+  },
+  "regionIntents": [
+    {
+      "key": "dbx.heist.m01.arrival.south-bank",
+      "kind": "arrival",
+      "runtimeUuid": null
+    },
+    {
+      "key": "dbx.heist.m01.transition.kurth-reception",
+      "kind": "exit-to-m02",
+      "runtimeUuid": null
+    }
+  ],
+  "artStages": {
+    "geometry": {
+      "status": "PENDING",
+      "imageArt": false
+    },
+    "embossedGrayscale": {
+      "status": "BLOCKED_UNTIL_GEOMETRY_PASS",
+      "visualStyle": "grayscale embossed 3D stone",
+      "promptPrepared": false
+    },
+    "painterly": {
+      "status": "BLOCKED_UNTIL_STRUCTURAL_PASS",
+      "promptPrepared": false
+    },
+    "finalInspect": {
+      "status": "NOT_STARTED",
+      "approved": false
+    }
+  },
+  "history": {
+    "previousStructuralAttempts": 11,
+    "priorRenderedArtifacts": "ARCHIVAL_REJECTED_OR_UNAPPROVED",
+    "priorGraybox11": "HISTORICAL_UNAPPROVED_NOT_GEOMETRY_AUTHORITY",
+    "reusedPrompts": 0
+  },
+  "runtime": {
+    "foundryWorld": null,
+    "activeGMVerified": false,
+    "installed": false,
+    "readyToPlay": false
+  }
+}

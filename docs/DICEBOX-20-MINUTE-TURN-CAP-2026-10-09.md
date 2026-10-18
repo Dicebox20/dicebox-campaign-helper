@@ -28,3 +28,7 @@ At the user's 2026-10-09 request, the M02 attempt #5 v003 candidate data and pri
 ## Evidence and precedence
 
 Explicit user request: "put a 20 minute cap for each turn" in DiceBox project chat 2026-10-09. This rule is additive to `AGENTS.md`, project mission/Foreman procedures, database-first chronology and all existing Foundry and image prompt clean-restart safety gates. It does not increase tool permissions, change billing, or authorize background work.
+
+## Additive chat capacity meter (2026-10-17)
+
+The user requested a `chat % filled` meter at project checkpoints and a durable new-chat handoff. Apply [the accepted chat-capacity meter/continuity rule](DICEBOX-CHAT-CAPACITY-METER-2026-10-17.md) alongside this 20-minute cap. Where verified current context tokens and applicable context capacity are unavailable (the normal ChatGPT case), display `Chat capacity: [??????????] N/A% (unavailable)` plus a qualitative continuity-risk/handoff indicator rather than fabricating a percentage. Measured capacity thresholds trigger **earlier** checkpoints when present; the independent 20-minute upper bound still applies. Preserve the exact model/tool source and record new handoff assets in GitHub/Library. No change to Foundry/GM authorization or stage advancement.

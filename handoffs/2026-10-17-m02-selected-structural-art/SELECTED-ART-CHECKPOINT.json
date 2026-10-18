@@ -1,0 +1,32 @@
+{
+  "project": "DiceBox Campaign Helper",
+  "scene": "Kurth Tower Reception M02",
+  "event": "USER_SELECTED_EXACT_STRUCTURAL_IMAGE",
+  "selectedImage": "M02-SELECTED-STRUCTURAL-ART.png",
+  "selectedSource": "user upload image(20261017-163805).png",
+  "sourceImageSha256": "a342988f238b42162af2052ed37fc4513c9dff1553e6c64a83273aeb5c4371f4",
+  "copySha256": "a342988f238b42162af2052ed37fc4513c9dff1553e6c64a83273aeb5c4371f4",
+  "dimensions": [
+    1619,
+    971
+  ],
+  "earlierV8RgbContentIdentical": true,
+  "earlierV8FileSha256": "a86c545d5ae9abb2ebd07f7e5af01c7e4f535321a7af7b08c80bfe0a39668a53",
+  "approvalScope": "selected creative/visual base image; not a structural geometry approval or Foundry runtime verification",
+  "previousStructuralInspectVerdict": "REDO due v7 geometry mismatch; still unresolved",
+  "notSelected": "v9 deterministic blueprint-driven render",
+  "geometryAuthority": "approved v7 typed blueprint is the existing geometric baseline; proposed replacement must be reviewed and tested against accepted gameplay requirements and exact selected image",
+  "requiredNextStep": "semantic geometry reconciliation without silently auto-tracing authoritative Foundry walls from pixels",
+  "stillRequired": [
+    "exterior lower-west tower entrance",
+    "three passage routes to M03",
+    "M01 registered continuity and stairs",
+    "door and wall pixel registration",
+    "geometry clearance tests and independent inspection",
+    "approval before offline structural build",
+    "Foundry runtime verification at later gate"
+  ],
+  "foundryMutation": false,
+  "newRenderGenerated": false,
+  "readyToPlay": false
+}

@@ -11,6 +11,12 @@ Treat the named workflow commands as API operations, not ordinary-language sugge
 
 Do not silently substitute another pipeline.
 
+**Current creative stage version (user-accepted 2026-10-16):** DiceBox Scene Injector V2.1 Beta. Read docs/DICEBOX-SCENE-INJECTOR-V2.1-BETA-2026-10-16.md as the newest geometry-first overlay. Perform GEOMETRY + GEOMETRY INSPECT before embossed grayscale + STRUCTURAL INSPECT, then Feature Manifest reconciliation, painterly render and FINAL INSPECT. Prior two-pass instructions below remain applicable inside those stages unless contradicted by V2.1 Beta. Do not confuse this beta workflow with BUILD contract v2 or Foundry module version.
+
+**Current V2.1 Beta order override 2026-10-16:** Read docs/DICEBOX-SCENE-INJECTOR-V2.1-BETA-POST-BUILD-PAINT-ORDER-2026-10-16.md before BUILD. Structural grayscale BUILD precedes painterly render; FINAL_INSPECT precedes final injection assembly and STAGE. Do not install the draft grayscale background when user approved painterly art.
+
+**Accepted auto-world identification rule, 2026-10-16:** Generated Scene Injector macros automatically read game.world.id, compare it against the authorized pinned world ID, then present one native DialogV2.confirm installation preview. Never ask a GM to retype an already-known world ID. Reread world, module, stack and current active GM after approval and before any writes. Cancellation means zero writes. See handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/AUTO-WORLD-DETECTION-2026-10-16.md. This supersedes the earlier manual DialogV2.input world-identification gate without loosening target authority.
+
 ## Mandatory source checks
 
 For Foundry Scene Injector work, read the current scene specification plus:

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "dicebox-m03-prepare-correction-receipt/v1",
+  "date": "2026-10-17",
+  "project": "DiceBox Campaign Helper",
+  "sceneId": "dbx.heist.kurth.m03.security-machinery",
+  "stage": "PREPARE_DRAFT_REVIEW",
+  "userConfirmedOnly": [
+    "M02 northern exit leads outdoors into a forest-like environment; onward destination unresolved and no M03 connection established",
+    "M02 northeastern stairwell starts on the M02 reception floor and descends to another lower level",
+    "Potential M03 arrival at lower stair landing remains a working proposal; exact elevation, geometry, UUID and Foundry state unbound"
+  ],
+  "parentArtifacts": {
+    "markdown": "M03-PREPARE-DRAFT-v1.md",
+    "json": "M03-spec-draft-v1.json",
+    "status": "preserved historical Library drafts"
+  },
+  "sourceM02ColorImage": {
+    "sha256": "80f4196a7a2f76c6b327c4b19193752720497c16a7ee3586dd8bde2281133155",
+    "size": [
+      1619,
+      971
+    ],
+    "role": "user-supplied visual continuity reference only"
+  },
+  "currentArtifacts": {
+    "markdown": {
+      "path": "handoffs/2026-10-17-m03-security-machinery-prepare-v2/PREPARE.md",
+      "sha256": "df690118bd424ed5008f0149632f32fdd0851f175016746bbdd76de4cf09def7",
+      "githubBlobSha": "c5ea1d16343fb7c48ed73d74cd49a9bec62b9cb2"
+    },
+    "json": {
+      "path": "handoffs/2026-10-17-m03-security-machinery-prepare-v2/spec.json",
+      "sha256": "8d4505af15fcb69d8a01e1ac4499a573173832f47602d7b231025eeda927b921",
+      "githubBlobSha": "0617ab5845024bb130d49ab7d6f5f9982f854385"
+    }
+  },
+  "validation": {
+    "localContinuityInvariants": "15/15 PASS",
+    "remoteContentMatchesLocal": "2/2 PASS",
+    "render": "NOT_STARTED",
+    "geometry": "NOT_AUTHORED",
+    "build": "NOT_STARTED",
+    "installed": false,
+    "foundryTouched": false
+  },
+  "governance": {
+    "repositoryBranch": "feature/dicebox-scene-injector-v2-1-beta-2026-10-16",
+    "acceptedMainNotChanged": true,
+    "compiledReadOnlySqlite": "NOT_QUERIED",
+    "kbBuildVerify": "NOT_RUN",
+    "activeProgramStageMachine": "NOT_RUN",
+    "nextAuthorizationGate": "database-first reconciliation and active-slice check before GEOMETRY AUTHOR"
+  },
+  "nextAction": "Review proposed M03 footprint and internal layout; preserve north forest as separate unresolved destination; no render, macro or live Foundry mutation."
+}

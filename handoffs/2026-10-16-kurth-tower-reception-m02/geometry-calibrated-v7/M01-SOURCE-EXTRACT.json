@@ -1,0 +1,335 @@
+{
+  "reference": "handoffs/2026-10-16-dark-arch-scene-injector-v2-1-beta/spatial-blueprint-render-reconciled.json",
+  "githubBlobSha": "64162fde8842fee029a5a2183d0679c9c5453f15",
+  "blueprintCanonicalSha256": "6386442ea0e241d0f58581d66146e9177d54ebe86497b83636fffa7d12f117ab",
+  "scale": {
+    "logical": [
+      40,
+      24
+    ],
+    "pixels": [
+      4800,
+      2880
+    ],
+    "feetPerCell": 5,
+    "nativeArtPx": [
+      1619,
+      971
+    ]
+  },
+  "surfaces": [
+    [
+      "G02",
+      "bridge",
+      [
+        8,
+        7.1,
+        30,
+        11.1
+      ],
+      18
+    ],
+    [
+      "G03",
+      "bridge",
+      [
+        15.5,
+        6.5,
+        21.2,
+        12
+      ],
+      18
+    ],
+    [
+      "G04",
+      "hoist-yard",
+      [
+        21.5,
+        5.3,
+        26.8,
+        8.2
+      ],
+      18
+    ],
+    [
+      "G05",
+      "court",
+      [
+        29.5,
+        6.7,
+        40,
+        14.2
+      ],
+      18
+    ],
+    [
+      "G06",
+      "map2-exit",
+      [
+        38,
+        8.5,
+        40,
+        11.5
+      ],
+      18
+    ],
+    [
+      "G09",
+      "island-dock",
+      [
+        30.3,
+        16.5,
+        38.5,
+        21.5
+      ],
+      -8
+    ],
+    [
+      "G10",
+      "island-dock-stair",
+      [
+        35.5,
+        12.7,
+        38.7,
+        18.2
+      ],
+      [
+        -8,
+        18
+      ]
+    ],
+    [
+      "G11",
+      "upper-terrace",
+      [
+        30,
+        0.8,
+        36.6,
+        4.7
+      ],
+      31
+    ],
+    [
+      "G12",
+      "upper-terrace-stair",
+      [
+        34.5,
+        3.5,
+        38,
+        8.4
+      ],
+      [
+        31,
+        18
+      ]
+    ],
+    [
+      "G13",
+      "rig-access",
+      [
+        21.5,
+        5.3,
+        24,
+        7.9
+      ],
+      [
+        18,
+        45
+      ]
+    ]
+  ],
+  "walls": [
+    [
+      "W01",
+      "bridge-parapet",
+      [
+        [
+          8,
+          7.1
+        ],
+        [
+          15.5,
+          7.1
+        ]
+      ],
+      24
+    ],
+    [
+      "W02",
+      "bridge-parapet",
+      [
+        [
+          21.2,
+          7.1
+        ],
+        [
+          29.4,
+          7.1
+        ]
+      ],
+      24
+    ],
+    [
+      "W03",
+      "bridge-parapet",
+      [
+        [
+          8,
+          11.1
+        ],
+        [
+          15.5,
+          11.1
+        ]
+      ],
+      24
+    ],
+    [
+      "W04",
+      "bridge-parapet",
+      [
+        [
+          21.2,
+          11.1
+        ],
+        [
+          29.4,
+          11.1
+        ]
+      ],
+      24
+    ],
+    [
+      "W05",
+      "fortress-wall",
+      [
+        [
+          29.4,
+          0
+        ],
+        [
+          29.4,
+          7.2
+        ]
+      ],
+      30
+    ],
+    [
+      "W06",
+      "gate-portal",
+      [
+        [
+          29.4,
+          7.2
+        ],
+        [
+          29.4,
+          10.2
+        ]
+      ],
+      30
+    ],
+    [
+      "W07",
+      "fortress-wall",
+      [
+        [
+          29.4,
+          10.2
+        ],
+        [
+          29.4,
+          16
+        ]
+      ],
+      30
+    ],
+    [
+      "W08",
+      "tidal-opening",
+      [
+        [
+          29.4,
+          16
+        ],
+        [
+          29.4,
+          20
+        ]
+      ],
+      null
+    ],
+    [
+      "W09",
+      "fortress-seawall",
+      [
+        [
+          29.4,
+          20
+        ],
+        [
+          29.4,
+          24
+        ]
+      ],
+      18
+    ],
+    [
+      "W10",
+      "terrace-parapet",
+      [
+        [
+          30,
+          0.8
+        ],
+        [
+          36.6,
+          0.8
+        ]
+      ],
+      36
+    ]
+  ],
+  "verticalTransitions": [
+    {
+      "sourceId": "V02",
+      "sourceSurface": "G10",
+      "name": "island-dock-switchback",
+      "startElevationFt": -8,
+      "endElevationFt": 18,
+      "treadsVerified": false
+    },
+    {
+      "sourceId": "V03",
+      "sourceSurface": "G12",
+      "name": "upper-terrace-steps",
+      "startElevationFt": 31,
+      "endElevationFt": 18,
+      "treadsVerified": false
+    },
+    {
+      "sourceId": "V04",
+      "sourceSurface": "G13",
+      "name": "hoist-rig-climb",
+      "startElevationFt": 18,
+      "endElevationFt": 45,
+      "treadsVerified": false
+    }
+  ],
+  "transfers": [
+    {
+      "sourceId": "T01",
+      "kind": "water-vessel",
+      "notWalkable": true,
+      "m01OpeningFt": 20
+    },
+    {
+      "sourceId": "T02",
+      "kind": "rope-swing",
+      "GMAdjudicated": true,
+      "startElevationFt": 45,
+      "endElevationFt": 31
+    }
+  ],
+  "runtimeVerified": false
+}
