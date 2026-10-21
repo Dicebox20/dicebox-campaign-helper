@@ -16,3 +16,7 @@ Start with:
 4. `artifact-inventory.md` - recovered file paths, sizes, and SHA-256 hashes.
 
 This is an archive for handoff and continuity. It is not integrated into the DiceBox Campaign Helper application or its knowledge base, and it does not claim Foundry runtime verification or production readiness.
+
+## Continuation decision catalogue (2026-10-20)
+
+The campaign was resumed after this recovery package was created. The [owner decision catalogue and estate topology checkpoint](./campaign-decision-catalogue-2026-10-20.md) reconciles the original transcript with the latest puzzle audits and new owner decisions. **Start there for current canon and map-planning rules**, then consult the original transcript and older handoffs for full provenance. It records the Carriage Yard as central exterior hub, a Bathhouse spur off the route toward Sune's memorial, and the still-binding **one Foundry map per individual house room** rule. Historical references to a fixed 29-map total are not binding. No Foundry implementation is certified by that update.
