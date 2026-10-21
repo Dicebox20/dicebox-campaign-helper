@@ -1,0 +1,51 @@
+# Cabin in the Ashen Veil — Puzzle Chain Reconciliation
+
+**Date:** 2026-10-20. **Status:** Consolidated campaign DESIGN from current conversation; not a GitHub main/KB commit and not a Foundry/Regionwright test receipt. Source hierarchy: explicit latest user decisions in this chat supersede dated Library continuity when conflicting; repository AGENTS.md governance remains controlling for implementation. No implementation claimed.
+
+## Checkpoints
+
+- Morning arrival: exploration, pond fishing, early cabin and Sune's Grove puzzles.
+- Early finale (~1/3): Brass Key unlocks Father's Study.
+- Mid-game (~2 PM): pond sluice drainage, basement/aqueduct gate, first Crooked Man chase along aqueduct to forest well/maze; visible Gondian charger and secondary utility door.
+- Late-game (~2/3, nightfall): **second** Crooked Man chase in Sune's Grove when party reaches NW bust on *later return* after waterworks clue, not during first visit; Silver Tiny Key is dropped, recoverable after chase.
+- Crimson Veil (~7/9, night hard mode): charge Rufus's recovered power source in aqueduct; supernatural red moon/fiendish fog and escalation. Nightfall alone does not trigger Crimson Veil.
+
+## Main route (approved item dependencies)
+
+1. Pond full: freely take wooden Oars from Donovan's Shack; row to older sunken rowboat and retrieve Ornate Mirror *without draining*. Old Fishing Rod at pond landing supports optional Regionwright: Hunting & Gathering-style fishing while full.
+2. Mother's accessible Art Studio: fit Mirror to vanity -> drawers unlock -> **Brass Tiny Key #1** (grandfather clock glass face, oversized Hour Hand) and Carriage Key.
+3. Carriage Key -> locked family carriage -> mother's remains and Ladder Hook. Hook retrieves attic ladder. Attic -> Minute Hand, Clockwork Winder, one storybook. Roof chimney flue has a different storybook; roof chimney clock requires Hour + Minute Hands, set 12:00 and press central button -> Replacement Gear for aqueduct.
+4. Clockwork Winder -> Sune's Grove four busts, order **SW → NE → NW → SE**, each retracts into pedestal -> embossed sliding-picture relief concealed in central Sune statue base -> family savings (1,000 gp) with Brass Key accidentally under bag -> Father's Study. Exact order-clue placement and sliding solution remain Regionwright content, not independently demonstrated.
+5. Study -> father's `587` note. Donovan's Shack lockbox `587` -> Sluice Crank -> open sluice. Pond drains -> Weathered Key -> unlock basement. Bathhouse bathing pool *also drains* -> Screwdriver on bottom -> parents' broken nightstand drawer -> Aqueduct Gate Handle. Replacement Gear + Handle -> aqueduct gate opens.
+6. First Crooked Man chase in aqueduct drives party to forest well/maze; charger noticed, second door to utility room noticed. Return path remains traversable. Closing sluice refills pond and Bathhouse; forest well permits reentry when pond full.
+7. Greenhouse initially has no sprinkler/mixing water; handwritten recipe note; all ingredients except lye exist at station. Aqueduct secondary door -> Waterworks Utility Room. With sluice **closed**, pressure distribution can function; Greenhouse Line choked with ordinary stones, dirt, debris, cleared by suitable tool/bare hands and appropriate Athletics/Sleight of Hand/Acrobatics DC check. Regionwright owns pressure-balancing interactions. Restore Greenhouse sprinklers and mixing water; unlock inner utility compartment -> father's journal warning against Sophia entering the Memorial Clearing at night, plus **Rufus's Collar** (while worn, immunity to psychic damage). The exact spatial identification of the memorial clearing versus Sune's Grove needs confirmation; do not silently equate them.
+8. Late-game checkpoint: party follows clue/other discovery back to Sune's Grove; on later approach to **NW bust** trigger second Crooked Man chase. Silver Tiny Key #2 drops during encounter, recoverable afterward -> parents' Hope Chest -> Ornate Music Box. Opening box reveals Prayer of Protection, item action `Read prayer?` -> use at mother's Art Studio Sune shrine -> protected illusion/magic entrance to adjoining Candle Workshop opens -> wick.
+9. Donovan's Shack early oil + Wick -> Forgotten Gazebo lantern; igniting flashes away cobwebs without lasting damage -> Rufus's Second Eye. First eye is in Sophia's stuffed bear (Old Iron Key from parents' coat opens her room). Return both eyes to taxidermied Rufus in Study -> jaw reveals button -> body panel reveals **uncharged Gondian power source**. Charge at previously observed Aqueduct station (no extra charging puzzle) -> Crimson Veil.
+10. During Crimson Veil: final/sixth *Miss Lulubug's Wondrous Tales* volume **appears on Sophia's bed**, not at far-side Boathouse. Arrange all six books in publication order at Sophia's Spine Mosaic -> hidden room -> Gond's semicircle emblem half. Other book sites: 2 already on Sophia's shelf; pond hollow log; attic; chimney flue. Publication-order clues/actual order not yet formally proven.
+11. During Crimson Veil: Outhouse opens and Copper Tiny Key #3 lies in privy, obtainable using Old Fishing Rod by parody of **Regionwright: Hunting & Gathering Java fishing minigame**, 'Legendary Fish' reward; description `How many of these are there?`. Clever alternative retrieval allowed. Copper Tiny Key -> Bathhouse soap-making room glass lye case -> lye -> Greenhouse mixing station with restored water -> fictional plant killer -> refilled pond/rowboat -> far dock vegetation removal -> Boathouse. Boathouse holds masonry-inscribed **Prayer of Devotion**, not sixth storybook. Use prayer at mother's Sune shrine -> Sune's semicircle emblem half.
+12. Final vault requires four established primary lines: Weathered-Key basement access, charged Gondian power, Gond's half, Sune's half. Join halves as circular Gond/Sune arm-in-arm symbol -> open final vault -> Sune's Scrying Bowl. Great Room's `027` lockbox (painting of lockbox displaying 027 in Art Studio) contains water-filled Dust of Dryness pellet. Carry Bowl to outstretched hands of Sune main statue and use pellet -> water-channel mechanism exposes undercroft entrance -> Maldrath Voss/Vharzagul final sequence.
+
+## Optional systems
+
+- Pond fish can be caught while full, remaining fish can be picked up from exposed pond floor on drainage; refilling doesn't automatically restore fish. Feeding gathered fish to mother's supernatural ~50-year-old white cat with black emo-fringe marking increases cat affection. Exact per-PC/party affection policy and balance remain unimplemented.
+- Rufus collar proposed player reward is confirmed: immune to psychic damage **while worn**. Attunement, stacking, item class and encounter impact remain unverified.
+- All three keys player-facing name **Tiny Key** with identical silhouette/tooth shape but material variations: #1 brass, #2 silver, #3 copper; #2 original item-description quip `This is different than the other tiny key`; #3 `How many of these are there?`.
+
+## Conflict and topology checks
+
+**Resolved design:** avoid a book at Gazebo or Boathouse; sixth book at Sophia bed only once Crimson Veil begins. Music Box available only after second chase. Greenhouse has no Prayer of Protection (music box has it). Screwdriver removed from basement tool pickup to drained Bathhouse pool. Lye from Bathhouse glass case, not Candle Workshop. Shrine hands receive Bowl, never Gondian charger. Sluice may be closed for the waterworks pressure puzzle, with forest-well alternative access when pond full. Family protective mechanisms predate deaths; Crimson Veil triggers state changes, not retroactive placement of pre-death artifacts, except supernatural book appearance.
+
+**Still needs explicit confirmation or implementation-safe interpretation:**
+- Memorial Clearing warning vs Sune's Grove NW bust: are these names for one area, adjacent areas, or separate? Do not presume same. Late chase location is unambiguously Sune's Grove NW bust.
+- NW bust is reached in mandatory *early* order SW→NE→NW→SE. Second chase MUST be conditional on late progression/utility clue and return, not merely unconditional proximity.
+- Sluice closed/refill + pond-side aqueduct entrance vs forest-well navigation need tested path states; ensure return to utility room possible before and after close and that players can reopen sluice if necessary.
+- Utility water pressure solution must not require early greenhouse plant killer/lye; greenhouse water comes online BEFORE Crimson Veil.
+- Exact pressure puzzle DC, valve numbers, recipe ingredients, relic sliding image, publication order, night hard-mode rules, puzzle bypass handling, and mini-game Java spoof require implementation/specification by Regionwright and verification, not fabricated success claims.
+- Mother's journal dialogue/father journal entry ending finalized as `I am again reminded how incomplete I am without her.` Father dies before wife; father's past-tense statement that he dismantled Rufus needs caution because in the game taxidermied Rufus retains reactivatable mechanical eye/button/power-source system. Interpret as project abandoned/partly disassembled, not that all mechanisms were removed, or reconcile exact text before publishing.
+- Earlier recommendation of `a small brass-socket charging station side chamber` is not separate from later utility door unless scene geometry validates it. Do not add fifth final gate.
+- Grave in Sune's Grove: exactly one grave for unborn child (supersedes historical Library `no grave` claim).
+- Major final challenge/boss conditions and specific haunt mechanics not audited as puzzle item placement; require their own certification.
+
+## Work ownership / verification
+
+Puzzle logic for Waterworks pressure balancing, sliding relief, Greenhouse mixing, and outhouse Regionwright fishing parody is designated Regionwright responsibility **at design level**. Read current Regionwright implementation before building adaptations; no system test, runtime install, or automated behavioral receipt exists from this audit. Narrative journal/clue exact wording and chase triggers still need scene integration. This artifact is a local handoff only; accepted-change repo roadmap/KB synchronization and runtime receipts remain outstanding.

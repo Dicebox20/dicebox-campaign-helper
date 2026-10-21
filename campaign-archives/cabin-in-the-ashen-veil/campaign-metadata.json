@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-10-20",
+  "campaign": {
+    "title": "Cabin in the Ashen Veil",
+    "status": "Campaign design / continuity recovery; not repository-synchronized or Foundry-verified",
+    "format": "Multi-session horror campaign (began as Halloween one-shot concept)",
+    "setting": {
+      "world": "Forgotten Realms",
+      "location": "Neverwinter Wood",
+      "approximateDate": "c. 1501 DR",
+      "historicalBackdrop": "Mount Hotenow catastrophe and Ash Zombie attack, 1451 DR"
+    },
+    "inspirations": [
+      "Resident Evil",
+      "Devil May Cry",
+      "Castle of Dreams"
+    ],
+    "storyThreads": [
+      {
+        "name": "Active ritual",
+        "summary": "Maldrath Voss attempts to summon Vharzagul; final-site and encounter logic remain partly open."
+      },
+      {
+        "name": "Older family haunting",
+        "summary": "Five sentient haunts predate the ritual; players infer the family story from clues."
+      }
+    ],
+    "antagonist": {
+      "summoner": "Maldrath Voss",
+      "summonedEntity": "Vharzagul",
+      "classification": "Original yagnoloth/yugoloth; not a demon"
+    },
+    "haunts": [
+      {
+        "name": "The Crooked Man",
+        "identity": "Donovan, former groundskeeper",
+        "motive": "Tries to retrieve/wrangle children and return them to safety."
+      },
+      {
+        "name": "The Eyeless Girl",
+        "identity": "Sophia",
+        "motive": "Longs to see again; not a combat ally."
+      },
+      {
+        "name": "The Shadow That Sees",
+        "identity": "Sophia’s mother",
+        "motive": "Appears to be admired; source-less flat wall shadow with an eye."
+      },
+      {
+        "name": "The Null Child",
+        "identity": "Incomplete consciousness of the unborn child lost to miscarriage",
+        "motive": "Cosmic-horror projection; not intentionally tactical or guaranteed harmless."
+      },
+      {
+        "name": "The House That Loves",
+        "identity": "The father’s protective will infused into the house",
+        "motive": "Protects its haunt-family from the summoner and resists their leaving."
+      }
+    ],
+    "milestones": [
+      {
+        "phase": "Arrival",
+        "time": "~9 AM",
+        "trigger": "Campaign begins; early estate exploration."
+      },
+      {
+        "phase": "Early finale",
+        "progress": "~1/3",
+        "trigger": "Brass Key opens the Study."
+      },
+      {
+        "phase": "Mid-game",
+        "time": "~2 PM",
+        "trigger": "Sluice, basement, Aqueduct, first Crooked Man chase."
+      },
+      {
+        "phase": "Late-game",
+        "progress": "~2/3; nightfall",
+        "trigger": "Second Crooked Man chase at NW Sune bust on later return."
+      },
+      {
+        "phase": "Crimson Veil",
+        "progress": "~75%; night hard mode",
+        "trigger": "Charge the recovered Gondian power source at Aqueduct station."
+      }
+    ],
+    "currentMajorDependencies": [
+      "Four Sune busts (SW → NE → NW → SE) reveal sliding relief → 1,000 gp and Brass Key → Study.",
+      "Study note 587 → Donovan shack lockbox → sluice crank → pond drains → Weathered Key → basement.",
+      "Clockwork Winder (attic, per 2026-10-20 audit) + four busts; the order clue remains open.",
+      "Tiny Key/hour hand + attic minute hand → chimney clock at noon → replacement gear.",
+      "Basement workshop repair tool → parents’ nightstand drawer → Aqueduct gate handle; gear + handle opens Aqueduct.",
+      "First Rufus eye from Sophia’s bear + late second eye → uncharged Gondian power source → Aqueduct charger → Crimson Veil.",
+      "Six storybooks / Spine Mosaic → Gond emblem half; Boathouse prayer / Sune shrine → Sune half.",
+      "Basement access + charged power + two joined emblem halves → final vault → Scrying Bowl.",
+      "Scrying Bowl + Great Room 027 water-filled Dust of Dryness pellet → Undercroft access."
+    ],
+    "openItems": [
+      "Four-bust order clue and sliding-relief configuration; the 2026-10-20 audit places the Clockwork Winder in the attic.",
+      "Whether Memorial Clearing and Sune’s Grove are the same place.",
+      "Exact Regionwright puzzle definitions, item/order hints, and publication order.",
+      "Aqueduct charger physical location; second Rufus eye timing; vault footprint and mechanism.",
+      "Exact ritual/boss conditions and how the yugoloth summoning relates to the Abyssal breach.",
+      "Family chronology and several physical remains locations; optional haunt mechanics and buff rules."
+    ],
+    "recoveredModelAssets": [
+      "artifacts/models/haunt02_preview.png",
+      "artifacts/models/haunt02_elongated_grinner.glb",
+      "artifacts/models/haunt02_elongated_grinner.obj",
+      "artifacts/models/build.py"
+    ]
+  },
+  "source": {
+    "chatTitle": "Halloween Campaign Idea",
+    "chatUrl": "https://chatgpt.com/g/g-p-6acd33daa4c48191b59d29423b0fc892-dicebox-campaign-helper/c/6ad3d825-6e90-83e8-a481-4994198dc5c2",
+    "captureFile": "conversation-capture-working.json",
+    "transcriptFile": "campaign-chat-transcript.md",
+    "capturedAt": "2026-10-20",
+    "relativeCoverageStart": "Saturday 1:19 PM",
+    "relativeCoverageEnd": "Today 4:48 AM",
+    "fineSnapshots": 352,
+    "coarseSnapshots": 10,
+    "deduplicatedTextEntries": 1321,
+    "userEntries": 624,
+    "assistantMediaOnlyBlockOccurrences": 29,
+    "perMessageTimestamps": "Not preserved; transcript chronology was reconstructed from overlapping snapshot order.",
+    "assistantEntries": 697
+  },
+  "recovery": {
+    "campaignOnly": true,
+    "diceboxHelperRepositoryIncluded": false,
+    "knowledgeBaseIncluded": false,
+    "unavailableItem": {
+      "filename": "index.html",
+      "description": "User-uploaded 3×3 sliding-picture puzzle example.",
+      "sourcePresence": "Visible in source chat and Library.",
+      "recoveryStatus": "Not recovered; Library download returned “Failed to download file” and chat attachment card exposed no direct download URL.",
+      "additionalAttempt": "Library item preview was opened; viewer HTML export timed out and produced no file."
+    },
+    "authoritativeContinuityFiles": [
+      "artifacts/library-files/Cabin_in_the_Ashen_Veil_Puzzle_Chain_Audit_2026-10-20.md",
+      "artifacts/library-files/CANON-ADDENDUM-2026-10-19-CRIMSON-VEIL.md",
+      "artifacts/library-files/CONFLICTS-AND-DEPENDENCY-AUDIT-2026-10-19.md",
+      "artifacts/library-files/START-HERE-2026-10-19.md"
+    ],
+    "uncertainArtwork": {
+      "status": "Present, but the original handoff says the exact approved Eyeless Girl image cannot be confidently identified; this file is not asserted to be that approved image.",
+      "file": "artifacts/library-files/Artwork/Sophia-Ghost-Form-Turnaround.png"
+    }
+  }
+}

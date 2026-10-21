@@ -1,0 +1,321 @@
+{
+  "scenes": [
+    {
+      "id": "E07",
+      "name": "Forest Approach",
+      "level": "Exterior"
+    },
+    {
+      "id": "E01",
+      "name": "Front Porch",
+      "level": "Exterior"
+    },
+    {
+      "id": "E02",
+      "name": "Rear Porch",
+      "level": "Exterior"
+    },
+    {
+      "id": "E03",
+      "name": "Privy",
+      "level": "Exterior"
+    },
+    {
+      "id": "E04",
+      "name": "Woodshed",
+      "level": "Exterior"
+    },
+    {
+      "id": "E05",
+      "name": "Well & Pump",
+      "level": "Exterior"
+    },
+    {
+      "id": "E06",
+      "name": "Memorial Clearing",
+      "level": "Exterior"
+    },
+    {
+      "id": "G01",
+      "name": "Entrance Foyer",
+      "level": "Ground"
+    },
+    {
+      "id": "G02",
+      "name": "Great Room",
+      "level": "Ground"
+    },
+    {
+      "id": "G03",
+      "name": "Dining Room",
+      "level": "Ground"
+    },
+    {
+      "id": "G04",
+      "name": "Kitchen",
+      "level": "Ground"
+    },
+    {
+      "id": "G05",
+      "name": "Pantry",
+      "level": "Ground"
+    },
+    {
+      "id": "G06",
+      "name": "Study / Library",
+      "level": "Ground"
+    },
+    {
+      "id": "G07",
+      "name": "Mudroom",
+      "level": "Ground"
+    },
+    {
+      "id": "G08",
+      "name": "Main Hall / Stair",
+      "level": "Ground"
+    },
+    {
+      "id": "U01",
+      "name": "Master Bedroom",
+      "level": "Upper"
+    },
+    {
+      "id": "U02",
+      "name": "Child Bedroom",
+      "level": "Upper"
+    },
+    {
+      "id": "U03",
+      "name": "Guest Bedroom",
+      "level": "Upper"
+    },
+    {
+      "id": "U04",
+      "name": "Washroom",
+      "level": "Upper"
+    },
+    {
+      "id": "U05",
+      "name": "Upper Hall / Landing",
+      "level": "Upper"
+    },
+    {
+      "id": "U06",
+      "name": "Linen Closet",
+      "level": "Upper"
+    },
+    {
+      "id": "A01",
+      "name": "Attic Storage",
+      "level": "Attic"
+    },
+    {
+      "id": "A02",
+      "name": "Sealed Storage",
+      "level": "Attic"
+    },
+    {
+      "id": "B01",
+      "name": "Basement Landing",
+      "level": "Basement"
+    },
+    {
+      "id": "B02",
+      "name": "Root Cellar",
+      "level": "Basement"
+    },
+    {
+      "id": "B03",
+      "name": "Workshop",
+      "level": "Basement"
+    },
+    {
+      "id": "B04",
+      "name": "Fuel / Furnace",
+      "level": "Basement"
+    },
+    {
+      "id": "B05",
+      "name": "Old Storage",
+      "level": "Basement"
+    },
+    {
+      "id": "B06",
+      "name": "Hidden Thayan Lab",
+      "level": "Basement"
+    }
+  ],
+  "edges": [
+    {
+      "from": "E07",
+      "to": "E01",
+      "type": "path"
+    },
+    {
+      "from": "E07",
+      "to": "E06",
+      "type": "path"
+    },
+    {
+      "from": "E07",
+      "to": "E03",
+      "type": "path"
+    },
+    {
+      "from": "E07",
+      "to": "E04",
+      "type": "path"
+    },
+    {
+      "from": "E07",
+      "to": "E05",
+      "type": "path"
+    },
+    {
+      "from": "E07",
+      "to": "E02",
+      "type": "path"
+    },
+    {
+      "from": "E01",
+      "to": "G01",
+      "type": "front door"
+    },
+    {
+      "from": "G01",
+      "to": "G02",
+      "type": "door"
+    },
+    {
+      "from": "G01",
+      "to": "G08",
+      "type": "opening"
+    },
+    {
+      "from": "G02",
+      "to": "G03",
+      "type": "door"
+    },
+    {
+      "from": "G02",
+      "to": "G06",
+      "type": "door"
+    },
+    {
+      "from": "G02",
+      "to": "G08",
+      "type": "opening"
+    },
+    {
+      "from": "G03",
+      "to": "G04",
+      "type": "door"
+    },
+    {
+      "from": "G04",
+      "to": "G05",
+      "type": "door"
+    },
+    {
+      "from": "G04",
+      "to": "G07",
+      "type": "door"
+    },
+    {
+      "from": "G07",
+      "to": "E02",
+      "type": "rear door"
+    },
+    {
+      "from": "E02",
+      "to": "E05",
+      "type": "path"
+    },
+    {
+      "from": "E02",
+      "to": "E04",
+      "type": "path"
+    },
+    {
+      "from": "E02",
+      "to": "E03",
+      "type": "path"
+    },
+    {
+      "from": "E05",
+      "to": "E06",
+      "type": "path"
+    },
+    {
+      "from": "G08",
+      "to": "U05",
+      "type": "stairs up"
+    },
+    {
+      "from": "G08",
+      "to": "B01",
+      "type": "stairs down"
+    },
+    {
+      "from": "U05",
+      "to": "U01",
+      "type": "door"
+    },
+    {
+      "from": "U05",
+      "to": "U02",
+      "type": "door"
+    },
+    {
+      "from": "U05",
+      "to": "U03",
+      "type": "door"
+    },
+    {
+      "from": "U05",
+      "to": "U04",
+      "type": "door"
+    },
+    {
+      "from": "U05",
+      "to": "U06",
+      "type": "door"
+    },
+    {
+      "from": "U05",
+      "to": "A01",
+      "type": "attic stairs"
+    },
+    {
+      "from": "A01",
+      "to": "A02",
+      "type": "locked door"
+    },
+    {
+      "from": "B01",
+      "to": "B02",
+      "type": "door"
+    },
+    {
+      "from": "B01",
+      "to": "B03",
+      "type": "door"
+    },
+    {
+      "from": "B01",
+      "to": "B04",
+      "type": "door"
+    },
+    {
+      "from": "B01",
+      "to": "B05",
+      "type": "door"
+    },
+    {
+      "from": "B05",
+      "to": "B06",
+      "type": "secret passage"
+    }
+  ]
+}
