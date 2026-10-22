@@ -50,3 +50,9 @@ No scene art or Foundry builds were started.
 ## Pre-map production consistency audit (2026-10-21)
 
 The [final pre-map creation audit](./final-pre-map-audit-2026-10-21.md) rechecked the current Bowl-in-Rosewater-Reliquary decision, Bathhouse map cluster, Keystone/Undercroft finale, and staged Grove/pond/bath transitions. A **57-node conceptual quest prerequisite graph** has **no cycles**, but **four Bathhouse render-preparation geometry/art-state gates** and several later Foundry/Regionwright and unrelated campaign design gates remain explicitly OPEN. This is a **planning audit**, not a runtime test or evidence that PREPARE/INJECT occurred. Follow the audit's next steps; retain old audit snapshots for chronological provenance.
+
+## Rough map atlas and house blueprint zoning (2026-10-21)
+
+The owner directed **rough layout for every current questline location first**, then creation of a **true house architectural blueprint** rather than immediately rendering each unrelated room. The [31-location rough layout atlas](./rough-layout-atlas-v1-2026-10-21.md) gives north/center/south and west/central/east spatial zones, transitions, required puzzle fixtures, visual-story anchors and stage-state guards. Its [SVG 31-map schematic sheet](./rough-layout-atlas-31-sheet-v1-2026-10-21.svg) is visual, schematic and **not measured map artwork**.
+
+[House blueprint input brief](./house-blueprint-input-brief-v0-2026-10-21.md) and [house multi-floor zoning sketch](./house-zoning-sketch-v0-2026-10-21.svg) show tentative Ground, Upper, Basement, Attic/Roof coordination with story-only rooms marked RESERVED. They are **pre-blueprint drafts**, not an approved measured house envelope. Original 29-map layout remains retired; new narrative rooms, floor bounds and precise door portal coordinates must be reconciled before measuring.
