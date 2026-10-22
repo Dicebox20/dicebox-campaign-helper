@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Sune Shrine, Independent Bowl, Undercroft and Keystone — Revision v2
 
+> **UPDATED BY OWNER REVISION v3 (2026-10-21):** The Keystone door is explicitly the thick ornate barrier Donovan tried to dig through. Behind it is the trapped Undercroft where **Donovan and Sophia's skeletal remains** are found; the hall beyond leads to the final ritual. The owner wants an **independent mid-game Bowl map** and suggested a **drain-revealed Bathhouse area** (precise architecture proposed/open). Healing requires sluice **shut** and Bathhouse **filled**, in addition to Waterworks/Boiler operation. [Read current v3 design](./undercroft-keystone-bathhouse-bowl-healing-design-v3-2026-10-21.md).
+
+
 **Date:** 2026-10-21. **Scope:** Side-campaign design chronology, NOT an implementation/Foundry/Regionwright/KB acceptance receipt.
 **Authority:** Owner explicitly superseded the earlier final chain: “the scrying bowl is actually not the final puzzle piece”; “implement the undercroft into the puzzle chain, and let people see the final door before they can unlock it”; “simply make the Scrying bowl a standalone piece of progression, and replace the item inside the vault to a keystone.” The owner-directed topology and reward substitution here are **OWNER APPROVED**; invented details remain **PROPOSED/OPEN**.
 **Previous design:** [v1 Grove contract](./sune-memorial-clearing-puzzle-design-v1-2026-10-21.md), superseded only where it incorrectly places Bowl in Vault and lets Bowl mechanism lead straight to final encounter. Other accepted early and late Grove interactions continue unchanged. The retired 29-map roster is NOT a baseline.
