@@ -1,0 +1,1324 @@
+{
+  "schema": "ashen-veil/house-room-frames.v1",
+  "status": "DETERMINISTIC_PROJECTION_FROM_APPROVED_BLUEPRINT;NOT_ART_OR_RUNTIME_VERIFIED",
+  "generatedFrom": {
+    "path": "./blueprints/house-master-v1-2026-10-22.json",
+    "gitBlobSha": "7db184a4a83d5c425bb1b6e408c90e2d3e191d2e"
+  },
+  "units": "ft",
+  "northUp": true,
+  "globalAxis": "+x east +y north; each Foundry image uses x right,y down",
+  "defaultProfile": "battlemap-120",
+  "grid": {
+    "type": "GRIDLESS",
+    "sizePx": 120,
+    "distanceFt": 5,
+    "units": "ft",
+    "padding": 0
+  },
+  "marginPolicy": "5 ft beyond polygon min x and min y, 5 ft desired beyond max, ceil canvas dimensions to whole 5ft steps; no change to original room shape",
+  "projection": "pxX = (globalX-frame.originSWGlobalFeet[0])*24; pxY = (frame.originSWGlobalFeet[1]+frame.heightFt-globalY)*24",
+  "commitGate": "Do not use these pixel targets as image-aligned Wall positions until actual approved interior painting/structure matches this exact frame. Check source door and vertical centers against artwork.",
+  "roomCount": 18,
+  "frames": [
+    {
+      "id": "H-G01",
+      "roomName": "Dining Room",
+      "sourceStatus": "PROPOSED_STORY",
+      "globalBBoxFeet": {
+        "minX": 0,
+        "maxX": 24,
+        "minY": 0,
+        "maxY": 16
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          -5,
+          -5
+        ],
+        "widthFt": 35,
+        "heightFt": 30,
+        "widthPixels": 840,
+        "heightPixels": 720
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            600
+          ],
+          [
+            696,
+            600
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-FOYER-DINING",
+          "role": "to",
+          "globalCenterFeet": [
+            24,
+            8
+          ],
+          "localPixels": [
+            696,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        }
+      ]
+    },
+    {
+      "id": "H-G02",
+      "roomName": "Foyer",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": 24,
+        "maxX": 52,
+        "minY": 0,
+        "maxY": 16
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          19,
+          -5
+        ],
+        "widthFt": 40,
+        "heightFt": 30,
+        "widthPixels": 960,
+        "heightPixels": 720
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            600
+          ],
+          [
+            792,
+            600
+          ],
+          [
+            792,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-EXTERIOR",
+          "role": "to",
+          "globalCenterFeet": [
+            38,
+            0
+          ],
+          "localPixels": [
+            456,
+            600
+          ],
+          "gate": "front door"
+        },
+        {
+          "id": "D-FOYER-GREAT",
+          "role": "from",
+          "globalCenterFeet": [
+            38,
+            16
+          ],
+          "localPixels": [
+            456,
+            216
+          ],
+          "gate": "normal"
+        },
+        {
+          "id": "D-FOYER-DINING",
+          "role": "from",
+          "globalCenterFeet": [
+            24,
+            8
+          ],
+          "localPixels": [
+            120,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        },
+        {
+          "id": "D-FOYER-KITCHEN",
+          "role": "from",
+          "globalCenterFeet": [
+            52,
+            8
+          ],
+          "localPixels": [
+            792,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        },
+        {
+          "id": "V-FOYER-UPPER",
+          "role": "from",
+          "globalCenterFeet": [
+            43,
+            8
+          ],
+          "localPixels": [
+            576,
+            408
+          ],
+          "gate": "normal upstairs"
+        },
+        {
+          "id": "V-FOYER-BASEMENT",
+          "role": "from",
+          "globalCenterFeet": [
+            31,
+            8
+          ],
+          "localPixels": [
+            288,
+            408
+          ],
+          "gate": "Weathered Key"
+        }
+      ]
+    },
+    {
+      "id": "H-G03",
+      "roomName": "Kitchen",
+      "sourceStatus": "PROPOSED_STORY",
+      "globalBBoxFeet": {
+        "minX": 52,
+        "maxX": 76,
+        "minY": 0,
+        "maxY": 16
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          47,
+          -5
+        ],
+        "widthFt": 35,
+        "heightFt": 30,
+        "widthPixels": 840,
+        "heightPixels": 720
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            600
+          ],
+          [
+            696,
+            600
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-FOYER-KITCHEN",
+          "role": "to",
+          "globalCenterFeet": [
+            52,
+            8
+          ],
+          "localPixels": [
+            120,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        },
+        {
+          "id": "D-KITCHEN-PANTRY",
+          "role": "from",
+          "globalCenterFeet": [
+            76,
+            8
+          ],
+          "localPixels": [
+            696,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        }
+      ]
+    },
+    {
+      "id": "H-G04",
+      "roomName": "Pantry",
+      "sourceStatus": "PROPOSED_STORY",
+      "globalBBoxFeet": {
+        "minX": 76,
+        "maxX": 90,
+        "minY": 0,
+        "maxY": 16
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          71,
+          -5
+        ],
+        "widthFt": 25,
+        "heightFt": 30,
+        "widthPixels": 600,
+        "heightPixels": 720
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            600
+          ],
+          [
+            456,
+            600
+          ],
+          [
+            456,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-KITCHEN-PANTRY",
+          "role": "to",
+          "globalCenterFeet": [
+            76,
+            8
+          ],
+          "localPixels": [
+            120,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        }
+      ]
+    },
+    {
+      "id": "H-G05",
+      "roomName": "Allen's Study",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": -10,
+        "maxX": 24,
+        "minY": 16,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          -15,
+          11
+        ],
+        "widthFt": 45,
+        "heightFt": 50,
+        "widthPixels": 1080,
+        "heightPixels": 1200
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            360,
+            1080
+          ],
+          [
+            936,
+            1080
+          ],
+          [
+            936,
+            216
+          ],
+          [
+            360,
+            216
+          ]
+        ],
+        [
+          [
+            120,
+            840
+          ],
+          [
+            360,
+            840
+          ],
+          [
+            360,
+            360
+          ],
+          [
+            120,
+            360
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-GREAT-STUDY",
+          "role": "to",
+          "globalCenterFeet": [
+            24,
+            34
+          ],
+          "localPixels": [
+            936,
+            648
+          ],
+          "gate": "Brass Study Key"
+        }
+      ]
+    },
+    {
+      "id": "H-G06",
+      "roomName": "Great Room",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": 24,
+        "maxX": 52,
+        "minY": 16,
+        "maxY": 57
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          19,
+          11
+        ],
+        "widthFt": 40,
+        "heightFt": 55,
+        "widthPixels": 960,
+        "heightPixels": 1320
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            1200
+          ],
+          [
+            792,
+            1200
+          ],
+          [
+            792,
+            336
+          ],
+          [
+            120,
+            336
+          ]
+        ],
+        [
+          [
+            216,
+            336
+          ],
+          [
+            696,
+            336
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            216,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-FOYER-GREAT",
+          "role": "to",
+          "globalCenterFeet": [
+            38,
+            16
+          ],
+          "localPixels": [
+            456,
+            1200
+          ],
+          "gate": "normal"
+        },
+        {
+          "id": "D-GREAT-STUDY",
+          "role": "from",
+          "globalCenterFeet": [
+            24,
+            34
+          ],
+          "localPixels": [
+            120,
+            768
+          ],
+          "gate": "Brass Study Key"
+        },
+        {
+          "id": "D-GREAT-STUDIO",
+          "role": "from",
+          "globalCenterFeet": [
+            52,
+            34
+          ],
+          "localPixels": [
+            792,
+            768
+          ],
+          "gate": "normal"
+        }
+      ]
+    },
+    {
+      "id": "H-G07",
+      "roomName": "Dahlia's Art Studio",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": 52,
+        "maxX": 76,
+        "minY": 16,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          47,
+          11
+        ],
+        "widthFt": 35,
+        "heightFt": 50,
+        "widthPixels": 840,
+        "heightPixels": 1200
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            1080
+          ],
+          [
+            696,
+            1080
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-GREAT-STUDIO",
+          "role": "to",
+          "globalCenterFeet": [
+            52,
+            34
+          ],
+          "localPixels": [
+            120,
+            648
+          ],
+          "gate": "normal"
+        },
+        {
+          "id": "D-STUDIO-CANDLE",
+          "role": "from",
+          "globalCenterFeet": [
+            76,
+            41
+          ],
+          "localPixels": [
+            696,
+            480
+          ],
+          "gate": "secret; Prayer of Protection"
+        }
+      ]
+    },
+    {
+      "id": "H-G08",
+      "roomName": "Hidden Candle Workshop",
+      "sourceStatus": "REQUIRED_SECRET",
+      "globalBBoxFeet": {
+        "minX": 76,
+        "maxX": 90,
+        "minY": 30,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          71,
+          25
+        ],
+        "widthFt": 25,
+        "heightFt": 35,
+        "widthPixels": 600,
+        "heightPixels": 840
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            720
+          ],
+          [
+            456,
+            720
+          ],
+          [
+            456,
+            192
+          ],
+          [
+            120,
+            192
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-STUDIO-CANDLE",
+          "role": "to",
+          "globalCenterFeet": [
+            76,
+            41
+          ],
+          "localPixels": [
+            120,
+            456
+          ],
+          "gate": "secret; Prayer of Protection"
+        }
+      ]
+    },
+    {
+      "id": "H-U01",
+      "roomName": "Unused Nursery",
+      "sourceStatus": "PROPOSED_STORY",
+      "globalBBoxFeet": {
+        "minX": 0,
+        "maxX": 24,
+        "minY": 0,
+        "maxY": 16
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          -5,
+          -5
+        ],
+        "widthFt": 35,
+        "heightFt": 30,
+        "widthPixels": 840,
+        "heightPixels": 720
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            600
+          ],
+          [
+            696,
+            600
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-UPPER-NURSERY",
+          "role": "to",
+          "globalCenterFeet": [
+            24,
+            8
+          ],
+          "localPixels": [
+            696,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        }
+      ]
+    },
+    {
+      "id": "H-U02",
+      "roomName": "Upper Gallery / Landing",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": 24,
+        "maxX": 52,
+        "minY": 0,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          19,
+          -5
+        ],
+        "widthFt": 40,
+        "heightFt": 65,
+        "widthPixels": 960,
+        "heightPixels": 1560
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            1440
+          ],
+          [
+            792,
+            1440
+          ],
+          [
+            792,
+            1056
+          ],
+          [
+            120,
+            1056
+          ]
+        ],
+        [
+          [
+            120,
+            1056
+          ],
+          [
+            240,
+            1056
+          ],
+          [
+            240,
+            192
+          ],
+          [
+            120,
+            192
+          ]
+        ],
+        [
+          [
+            672,
+            1056
+          ],
+          [
+            792,
+            1056
+          ],
+          [
+            792,
+            192
+          ],
+          [
+            672,
+            192
+          ]
+        ],
+        [
+          [
+            240,
+            312
+          ],
+          [
+            672,
+            312
+          ],
+          [
+            672,
+            192
+          ],
+          [
+            240,
+            192
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-UPPER-NURSERY",
+          "role": "from",
+          "globalCenterFeet": [
+            24,
+            8
+          ],
+          "localPixels": [
+            120,
+            1248
+          ],
+          "gate": "normal; proposed story room"
+        },
+        {
+          "id": "D-UPPER-GUEST",
+          "role": "from",
+          "globalCenterFeet": [
+            52,
+            8
+          ],
+          "localPixels": [
+            792,
+            1248
+          ],
+          "gate": "normal; proposed story room"
+        },
+        {
+          "id": "D-UPPER-PARENTS",
+          "role": "from",
+          "globalCenterFeet": [
+            24,
+            34
+          ],
+          "localPixels": [
+            120,
+            624
+          ],
+          "gate": "normal"
+        },
+        {
+          "id": "D-UPPER-SOPHIA",
+          "role": "from",
+          "globalCenterFeet": [
+            52,
+            34
+          ],
+          "localPixels": [
+            792,
+            624
+          ],
+          "gate": "Old Iron Key"
+        },
+        {
+          "id": "V-FOYER-UPPER",
+          "role": "to",
+          "globalCenterFeet": [
+            43,
+            8
+          ],
+          "localPixels": [
+            576,
+            1248
+          ],
+          "gate": "normal upstairs"
+        },
+        {
+          "id": "V-UPPER-ATTIC",
+          "role": "from",
+          "globalCenterFeet": [
+            38,
+            49
+          ],
+          "localPixels": [
+            456,
+            264
+          ],
+          "gate": "Ladder Hook"
+        }
+      ]
+    },
+    {
+      "id": "H-U03",
+      "roomName": "Guest Bedroom",
+      "sourceStatus": "PROPOSED_STORY",
+      "globalBBoxFeet": {
+        "minX": 52,
+        "maxX": 76,
+        "minY": 0,
+        "maxY": 16
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          47,
+          -5
+        ],
+        "widthFt": 35,
+        "heightFt": 30,
+        "widthPixels": 840,
+        "heightPixels": 720
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            600
+          ],
+          [
+            696,
+            600
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-UPPER-GUEST",
+          "role": "to",
+          "globalCenterFeet": [
+            52,
+            8
+          ],
+          "localPixels": [
+            120,
+            408
+          ],
+          "gate": "normal; proposed story room"
+        }
+      ]
+    },
+    {
+      "id": "H-U04",
+      "roomName": "Parents' Bedroom",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": -10,
+        "maxX": 24,
+        "minY": 16,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          -15,
+          11
+        ],
+        "widthFt": 45,
+        "heightFt": 50,
+        "widthPixels": 1080,
+        "heightPixels": 1200
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            360,
+            1080
+          ],
+          [
+            936,
+            1080
+          ],
+          [
+            936,
+            216
+          ],
+          [
+            360,
+            216
+          ]
+        ],
+        [
+          [
+            120,
+            840
+          ],
+          [
+            360,
+            840
+          ],
+          [
+            360,
+            360
+          ],
+          [
+            120,
+            360
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-UPPER-PARENTS",
+          "role": "to",
+          "globalCenterFeet": [
+            24,
+            34
+          ],
+          "localPixels": [
+            936,
+            648
+          ],
+          "gate": "normal"
+        },
+        {
+          "id": "V-UPPER-ROOF",
+          "role": "from",
+          "globalCenterFeet": [
+            12,
+            52
+          ],
+          "localPixels": [
+            648,
+            216
+          ],
+          "gate": "parents upper north window, roof traversal proposal"
+        }
+      ]
+    },
+    {
+      "id": "H-U05",
+      "roomName": "Sophia's Bedroom",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": 52,
+        "maxX": 76,
+        "minY": 16,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          47,
+          11
+        ],
+        "widthFt": 35,
+        "heightFt": 50,
+        "widthPixels": 840,
+        "heightPixels": 1200
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            1080
+          ],
+          [
+            696,
+            1080
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-UPPER-SOPHIA",
+          "role": "to",
+          "globalCenterFeet": [
+            52,
+            34
+          ],
+          "localPixels": [
+            120,
+            648
+          ],
+          "gate": "Old Iron Key"
+        },
+        {
+          "id": "D-SOPHIA-SPINE",
+          "role": "from",
+          "globalCenterFeet": [
+            76,
+            41
+          ],
+          "localPixels": [
+            696,
+            480
+          ],
+          "gate": "secret; completed six-book Spine Mosaic"
+        }
+      ]
+    },
+    {
+      "id": "H-U06",
+      "roomName": "Spine Mosaic Hidden Room",
+      "sourceStatus": "REQUIRED_SECRET",
+      "globalBBoxFeet": {
+        "minX": 76,
+        "maxX": 90,
+        "minY": 30,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          71,
+          25
+        ],
+        "widthFt": 25,
+        "heightFt": 35,
+        "widthPixels": 600,
+        "heightPixels": 840
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            720
+          ],
+          [
+            456,
+            720
+          ],
+          [
+            456,
+            192
+          ],
+          [
+            120,
+            192
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-SOPHIA-SPINE",
+          "role": "to",
+          "globalCenterFeet": [
+            76,
+            41
+          ],
+          "localPixels": [
+            120,
+            456
+          ],
+          "gate": "secret; completed six-book Spine Mosaic"
+        }
+      ]
+    },
+    {
+      "id": "H-B01",
+      "roomName": "Allen's Workshop",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": 24,
+        "maxX": 52,
+        "minY": 0,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          19,
+          -5
+        ],
+        "widthFt": 40,
+        "heightFt": 65,
+        "widthPixels": 960,
+        "heightPixels": 1560
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            1440
+          ],
+          [
+            792,
+            1440
+          ],
+          [
+            792,
+            192
+          ],
+          [
+            120,
+            192
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-WORKSHOP-VAULT",
+          "role": "from",
+          "globalCenterFeet": [
+            52,
+            38
+          ],
+          "localPixels": [
+            792,
+            528
+          ],
+          "gate": "four approved Vault inputs"
+        },
+        {
+          "id": "V-FOYER-BASEMENT",
+          "role": "to",
+          "globalCenterFeet": [
+            31,
+            8
+          ],
+          "localPixels": [
+            288,
+            1248
+          ],
+          "gate": "Weathered Key"
+        }
+      ]
+    },
+    {
+      "id": "H-B02",
+      "roomName": "Secured Vault",
+      "sourceStatus": "REQUIRED_SECRET",
+      "globalBBoxFeet": {
+        "minX": 52,
+        "maxX": 76,
+        "minY": 26,
+        "maxY": 52
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          47,
+          21
+        ],
+        "widthFt": 35,
+        "heightFt": 40,
+        "widthPixels": 840,
+        "heightPixels": 960
+      },
+      "physicalRoomPolygonsPixel": [
+        [
+          [
+            120,
+            840
+          ],
+          [
+            696,
+            840
+          ],
+          [
+            696,
+            216
+          ],
+          [
+            120,
+            216
+          ]
+        ]
+      ],
+      "portals": [
+        {
+          "id": "D-WORKSHOP-VAULT",
+          "role": "to",
+          "globalCenterFeet": [
+            52,
+            38
+          ],
+          "localPixels": [
+            120,
+            552
+          ],
+          "gate": "four approved Vault inputs"
+        }
+      ]
+    },
+    {
+      "id": "H-A01",
+      "roomName": "Attic Storage",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": null,
+        "maxX": null,
+        "minY": null,
+        "maxY": null
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          null,
+          null
+        ],
+        "widthFt": null,
+        "heightFt": null,
+        "widthPixels": null,
+        "heightPixels": null
+      },
+      "physicalRoomPolygonsPixel": [],
+      "portals": [
+        {
+          "id": "V-UPPER-ATTIC",
+          "role": "to",
+          "globalCenterFeet": [
+            38,
+            49
+          ],
+          "localPixels": [
+            null,
+            null
+          ],
+          "gate": "Ladder Hook"
+        }
+      ]
+    },
+    {
+      "id": "H-R01",
+      "roomName": "Roof and Chimney",
+      "sourceStatus": "REQUIRED",
+      "globalBBoxFeet": {
+        "minX": null,
+        "maxX": null,
+        "minY": null,
+        "maxY": null
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          null,
+          null
+        ],
+        "widthFt": null,
+        "heightFt": null,
+        "widthPixels": null,
+        "heightPixels": null
+      },
+      "physicalRoomPolygonsPixel": [],
+      "portals": [
+        {
+          "id": "V-UPPER-ROOF",
+          "role": "to",
+          "globalCenterFeet": [
+            12,
+            52
+          ],
+          "localPixels": [
+            null,
+            null
+          ],
+          "gate": "parents upper north window, roof traversal proposal"
+        }
+      ]
+    }
+  ]
+}
