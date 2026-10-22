@@ -20,3 +20,7 @@ This is an archive for handoff and continuity. It is not integrated into the Dic
 ## Continuation decision catalogue (2026-10-20)
 
 The campaign was resumed after this recovery package was created. The [owner decision catalogue and estate topology checkpoint](./campaign-decision-catalogue-2026-10-20.md) reconciles the original transcript with the latest puzzle audits and new owner decisions. **Start there for current canon and map-planning rules**, then consult the original transcript and older handoffs for full provenance. It records the Carriage Yard as central exterior hub, a Bathhouse spur off the route toward Sune's memorial, and the still-binding **one Foundry map per individual house room** rule. Historical references to a fixed 29-map total are not binding. No Foundry implementation is certified by that update.
+
+## Questline map census (2026-10-21)
+
+The historical 29-map roster is **discarded completely** by explicit owner direction, not used as a map count or starter inventory. The [questline-only map census](./questline-map-inventory-2026-10-21.md) independently calculates a **working 28-scene estimate** (not yet an owner-approved final count) from the recovered transcript, current item chains, and the new Bathhouse boiler-healing dependency. Separate household flavor maps can be considered later. See the [decision catalogue](./campaign-decision-catalogue-2026-10-20.md) for current continuity and supersessions.
