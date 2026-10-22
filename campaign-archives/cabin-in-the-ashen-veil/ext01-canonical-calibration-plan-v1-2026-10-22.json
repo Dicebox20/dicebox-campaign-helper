@@ -1,0 +1,263 @@
+{
+  "schema": "ashen-veil/ext01-preinstall-projection.v1",
+  "status": "OWNER_ACCEPTED_ART / TECHNICAL_PROJECTION_CANDIDATE; NO REGION_OR_WALL_PASS",
+  "source": {
+    "file": "cabin_in_the_ashen_veil_carriage_yard_new_render.png",
+    "format": "PNG",
+    "pixels": [
+      1536,
+      1024
+    ],
+    "sha256": "5284a039c2e990f65bb116e1167e0d9bc918a9a1eb895e9c2be95a33ed6cf4f8",
+    "ownerVisualApproval": "2026-10-22"
+  },
+  "derived": {
+    "file": "cabin_in_the_ashen_veil_EXT-01_battlemap-120_7200x4800.webp",
+    "format": "WebP",
+    "pixels": [
+      7200,
+      4800
+    ],
+    "sha256": "27c2581665ded20fa552bcbd800a1f03566af7bb604b41c1a53d81674840a00a",
+    "transportStatus": "DERIVED_IN_ACTIVE_CHAT_SANDBOX;NOT_PERSISTED_TO_GITHUB_AS_BINARY",
+    "method": "Pillow Lanczos resampling of owner-approved image at same aspect ratio, WebP q87"
+  },
+  "decision": {
+    "physicalWidthFt": 300,
+    "physicalHeightFt": 200,
+    "oldFootprint": "160x115ft PROPOSED earlier, explicitly superseded by 300x200ft for EXT-01 only",
+    "rationale": "Exact 3:2 image ratio, approx 100-ft house frontage consistent with source approved overall BP-1 west=-10 to east=90 when projected near x540..1055px. Candidate, not a measured Wall alignment certificate."
+  },
+  "foundryGrid": {
+    "type": "GRIDLESS",
+    "sizePixels": 120,
+    "distanceFt": 5,
+    "units": "ft",
+    "padding": 0,
+    "logicalGridColumns": 60,
+    "logicalGridRows": 40
+  },
+  "projection": {
+    "sourceTopLeftPx": "x increases east/right, y increases south/down",
+    "renderPx": "x'=x*4.6875, y'=y*4.6875",
+    "sceneFeetSW": "xFt = srcX*(300/1536); yFt=(1024-srcY)*(200/1024)",
+    "imageToWorldSouthwest": [
+      0,
+      0
+    ],
+    "houseMasterCoreOriginSceneFeet": [
+      116.2969,
+      130.4688
+    ],
+    "houseMasterCoreOriginBasis": "Anchor approved BP-1 foyer entry center (38,0) to visibly estimated doorway center raw (790,356). Preserve BP-1 interior geometry; do not bind Wall endpoints before source image registration."
+  },
+  "anchorStatus": "SEMANTIC PREPARE ESTIMATES, NOT FINAL DOCUMENT/REGION GEOMETRY",
+  "anchors": [
+    {
+      "semanticId": "HOUSE_FRONT_DOOR",
+      "routeId": "house-front",
+      "sourcePx": [
+        790,
+        356
+      ],
+      "renderPx": [
+        3703,
+        1669
+      ],
+      "sceneFeetFromSW": [
+        154.297,
+        130.469
+      ],
+      "description": "portal center; visual estimated",
+      "confidence": "high",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "HOUSE_FRONT_SAFE_LANDING",
+      "routeId": "house-front",
+      "sourcePx": [
+        791,
+        425
+      ],
+      "renderPx": [
+        3708,
+        1992
+      ],
+      "sceneFeetFromSW": [
+        154.492,
+        116.992
+      ],
+      "description": "safe exterior arrival below porch steps; preflight estimate",
+      "confidence": "medium",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "FOREST_GATE",
+      "routeId": "yard-iron-gate",
+      "sourcePx": [
+        380,
+        47
+      ],
+      "renderPx": [
+        1781,
+        220
+      ],
+      "sceneFeetFromSW": [
+        74.219,
+        190.82
+      ],
+      "description": "iron gate center; barrier site",
+      "confidence": "high",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "FOREST_GATE_APPROACH",
+      "routeId": "yard-iron-gate",
+      "sourcePx": [
+        380,
+        116
+      ],
+      "renderPx": [
+        1781,
+        544
+      ],
+      "sceneFeetFromSW": [
+        74.219,
+        177.344
+      ],
+      "description": "yard-side path landing; check medium clearance",
+      "confidence": "medium",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "DONOVAN_SHACK_ENTRY",
+      "routeId": "yard-shack",
+      "sourcePx": [
+        252,
+        239
+      ],
+      "renderPx": [
+        1181,
+        1120
+      ],
+      "sceneFeetFromSW": [
+        49.219,
+        153.32
+      ],
+      "description": "visible outbuilding door; portal to separate Shack scene",
+      "confidence": "medium",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "SHRINE_TRAIL_WEST",
+      "routeId": "yard-shrine-trail",
+      "sourcePx": [
+        24,
+        348
+      ],
+      "renderPx": [
+        113,
+        1631
+      ],
+      "sceneFeetFromSW": [
+        4.688,
+        132.031
+      ],
+      "description": "west scene border crossing to SG-06",
+      "confidence": "medium",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "PRIVY_ENTRY",
+      "routeId": "yard-privy",
+      "sourcePx": [
+        1187,
+        236
+      ],
+      "renderPx": [
+        5564,
+        1106
+      ],
+      "sceneFeetFromSW": [
+        231.836,
+        153.906
+      ],
+      "description": "visible privy structure door; conditional Veil entry",
+      "confidence": "medium",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "POND_DOCK_APPROACH",
+      "routeId": "yard-pond",
+      "sourcePx": [
+        1190,
+        557
+      ],
+      "renderPx": [
+        5578,
+        2611
+      ],
+      "sceneFeetFromSW": [
+        232.422,
+        91.211
+      ],
+      "description": "approach to near dock, Pond owns water interactions",
+      "confidence": "high",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "CARRIAGE_INSPECT",
+      "routeId": "none",
+      "sourcePx": [
+        559,
+        603
+      ],
+      "renderPx": [
+        2620,
+        2827
+      ],
+      "sceneFeetFromSW": [
+        109.18,
+        82.227
+      ],
+      "description": "locked carriage interactable, not a Region travel portal",
+      "confidence": "high",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    },
+    {
+      "semanticId": "SOUTH_ROAD_ENTRY",
+      "routeId": "outside",
+      "sourcePx": [
+        775,
+        990
+      ],
+      "renderPx": [
+        3633,
+        4641
+      ],
+      "sceneFeetFromSW": [
+        151.367,
+        6.641
+      ],
+      "description": "starting party road arrival; not a separate logical Scene",
+      "confidence": "high",
+      "geometryAuthority": "visual estimate pending deterministic map overlay / physically safe-region footprint review"
+    }
+  ],
+  "ambientPlan": {
+    "lighting": "neutral diffuse base; existing tiny baked lamp pixels tolerated under owner good-enough visual PASS",
+    "environment": "cold late fall / early winter; mild breeze, sparse fog/weather driven by Foundry only",
+    "lightFixtures": "Optional amber lantern sources near gate, porch, dock and road posts, matched to accepted raster upon scene authoring; no arbitrary filler light count",
+    "sounds": "optional low woodland wind and yard creaks; no automatic scare triggers"
+  },
+  "shapePolicies": [
+    "Trace cabin/trunk/stone/fence Walls from ground footprint only.",
+    "Trees at perimeter remain scenery where off-path; overhead crowns separate Tiles only if tokens can move beneath.",
+    "Road and lane regions use narrow threshold rectangles in actual walkable dirt, not giant proximity Regions.",
+    "Gate traverses the cleared NW trail between pillars; initially blocks entry from Yard, opens on SG-03 inner unlatch.",
+    "Shack and privy exteriors are visible roof structures on Yard but interiors belong to separate scenes.",
+    "Bathhouse enters via SG-06 shrine-trail fork so no new unseen side exit is invented on the already-approved Yard art.",
+    "Locked carriage visible but inner contents and Ladder Hook are explicit post-unlock interaction states."
+  ],
+  "releaseGate": "This establishes image scale and candidate point anchors only. Placement of Wall segments, Region polygons, Tile footprints, lights and door links must use verified semantic geometry + source dimensions in installed Scene; no runtime success implied."
+}
