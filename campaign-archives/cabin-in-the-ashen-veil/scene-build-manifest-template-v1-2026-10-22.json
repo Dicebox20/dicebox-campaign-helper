@@ -167,9 +167,10 @@
       "routeId": "house-front",
       "destinationLogicalId": "H-G02",
       "localAnchor": "HOUSE_FRONT_DOOR",
-      "arrivalAnchor": "HOUSE_FRONT_SAFE_LANDING",
       "gate": "always",
-      "regionStatus": "PENDING_GEOMETRY"
+      "regionStatus": "PENDING_GEOMETRY",
+      "localReturnArrivalAnchor": "HOUSE_FRONT_SAFE_LANDING",
+      "destinationArrivalAnchor": "H-G02 interior landing near BP-1 D-EXTERIOR, pixel geometry from separate Foyer PREPARE"
     },
     {
       "routeId": "yard-iron-gate",
@@ -177,35 +178,40 @@
       "localAnchor": "FOREST_GATE",
       "arrivalAnchor": "FOREST_GATE_APPROACH",
       "gate": "mazeGateOpenedFromInside",
-      "regionStatus": "PENDING_GEOMETRY"
+      "regionStatus": "PENDING_GEOMETRY",
+      "destinationArrivalAnchor": "PENDING_DESTINATION_SCENE_PREPARE"
     },
     {
       "routeId": "yard-shack",
       "destinationLogicalId": "EXT-03",
       "localAnchor": "DONOVAN_SHACK_ENTRY",
       "gate": "always",
-      "regionStatus": "PENDING_GEOMETRY"
+      "regionStatus": "PENDING_GEOMETRY",
+      "destinationArrivalAnchor": "PENDING_DESTINATION_SCENE_PREPARE"
     },
     {
       "routeId": "yard-shrine-trail",
       "destinationLogicalId": "SG-06",
       "localAnchor": "SHRINE_TRAIL_WEST",
       "gate": "always",
-      "regionStatus": "PENDING_GEOMETRY"
+      "regionStatus": "PENDING_GEOMETRY",
+      "destinationArrivalAnchor": "PENDING_DESTINATION_SCENE_PREPARE"
     },
     {
       "routeId": "yard-privy",
       "destinationLogicalId": "EXT-04",
       "localAnchor": "PRIVY_ENTRY",
       "gate": "crimsonVeilActive",
-      "regionStatus": "PENDING_GEOMETRY"
+      "regionStatus": "PENDING_GEOMETRY",
+      "destinationArrivalAnchor": "PENDING_DESTINATION_SCENE_PREPARE"
     },
     {
       "routeId": "yard-pond",
       "destinationLogicalId": "EXT-02",
       "localAnchor": "POND_DOCK_APPROACH",
       "gate": "always",
-      "regionStatus": "PENDING_GEOMETRY"
+      "regionStatus": "PENDING_GEOMETRY",
+      "destinationArrivalAnchor": "PENDING_DESTINATION_SCENE_PREPARE"
     }
   ],
   "runtimeBindings": {
@@ -226,5 +232,6 @@
     "require active GM + exact world at runtime",
     "route all stage aliases through logical location resolution",
     "geometry-specific Walls/Regions withheld until real image trace"
-  ]
+  ],
+  "portalsNote": "The localAnchor is the source threshold in EXT-01. localReturnArrivalAnchor is the safe arrival BACK INTO EXT-01 from the destination. Destination arrival anchors must be defined in the destination's own Scene specification; never reuse the Yard-side source footprint as a destination landing."
 }
