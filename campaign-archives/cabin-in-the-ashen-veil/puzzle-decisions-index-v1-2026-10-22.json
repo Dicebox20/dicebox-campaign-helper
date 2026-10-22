@@ -1,0 +1,331 @@
+{
+  "schema": "dicebox.ashen-veil.puzzle-decisions/v1",
+  "recorded": "2026-10-22",
+  "authority": "owner-delegated-design-lock",
+  "implementationStatus": "UNVERIFIED_DESIGN_ONLY",
+  "sourceMarkdown": {
+    "path": "campaign-archives/cabin-in-the-ashen-veil/authoritative-puzzle-design-and-foundry-implementation-spec-v1-2026-10-22.md",
+    "gitBlobSha": "857516ea0745ac1fccae5934fe886361eeb3b99c",
+    "governs": "This is a derived index. If anything disagrees with the source Markdown, the source Markdown controls."
+  },
+  "topology": {
+    "sunesGroveScenes": 9,
+    "memorialClearingScene": "SG-05",
+    "workingLogicalLocations": 43,
+    "carriageYardArt": "OWNER_ACCEPTED"
+  },
+  "decisions": {
+    "suneBust": {
+      "scene": "SG-05",
+      "sequence": [
+        "SW",
+        "NE",
+        "NW",
+        "SE"
+      ],
+      "motifs": {
+        "SW": "rose",
+        "NE": "star",
+        "NW": "moon",
+        "SE": "sun"
+      },
+      "earlyClue": "SG-05 bench",
+      "incorrectAction": "reset index to 0",
+      "winderConsumed": false
+    },
+    "stoneRelief": {
+      "scene": "SG-05",
+      "grid": [
+        3,
+        3
+      ],
+      "start": [
+        4,
+        5,
+        1,
+        2,
+        0,
+        8,
+        7,
+        6,
+        3
+      ],
+      "goal": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "empty": 0,
+      "adjacentMovesOnly": true,
+      "rewards": [
+        "gold:1000gp",
+        "key:brass-study"
+      ]
+    },
+    "codeLocks": {
+      "great-room": "027",
+      "donovan-shack": "587"
+    },
+    "roofClock": {
+      "set": "12:00",
+      "needs": [
+        "hour-hand",
+        "minute-hand"
+      ],
+      "reward": "replacement-gear"
+    },
+    "water": {
+      "initialSluice": "CLOSED",
+      "pondAndBathShareState": true,
+      "closeInterlockForUnsafeTravel": true,
+      "wellReturn": "SG-07"
+    },
+    "rosewater": {
+      "scene": "BATH-01",
+      "initialDegrees": [
+        0,
+        0,
+        0
+      ],
+      "solutionDegrees": [
+        90,
+        270,
+        180
+      ],
+      "order": [
+        "outer",
+        "middle",
+        "inner"
+      ],
+      "incrementDegrees": 90,
+      "requiredBath": "DRAINED",
+      "rewardScene": "BATH-04",
+      "reliquaryDryExit": "BATH-03"
+    },
+    "waterworks": {
+      "scene": "AQ-02",
+      "requiredSluice": "CLOSED",
+      "debrisSkillDC": 12,
+      "allowedSkills": [
+        "Athletics",
+        "Sleight of Hand",
+        "Acrobatics"
+      ],
+      "intakeCanBeClearedWithoutRoll": true,
+      "initialValves": [
+        0,
+        1,
+        3
+      ],
+      "goalValves": [
+        2,
+        2,
+        2
+      ],
+      "gaugeExpressions": [
+        "clamp(1+P+B-G,0,4)",
+        "clamp(1+B+G-P,0,4)",
+        "clamp(1+G+P-B,0,4)"
+      ],
+      "safeGauges": [
+        3,
+        3,
+        3
+      ],
+      "effects": [
+        "greenhouse-feed",
+        "boiler-feed",
+        "inner-compartment-open"
+      ]
+    },
+    "boiler": {
+      "scene": "BATH-03",
+      "initialValves": [
+        0,
+        3
+      ],
+      "goalValves": [
+        2,
+        1
+      ],
+      "pressureExpression": "clamp(1+I-V,0,4)",
+      "circulationExpression": "I+V",
+      "targetGauges": [
+        2,
+        3
+      ],
+      "needs": [
+        "sluice-closed",
+        "waterworks-restored"
+      ]
+    },
+    "healing": {
+      "scene": "BATH-01",
+      "requires": [
+        "sluice-closed",
+        "bath-full",
+        "waterworks-restored",
+        "boiler-solved",
+        "water-heated"
+      ],
+      "dice": "4d8+8",
+      "durationInWorldMinutes": 10,
+      "perCharacter": "once per completed long-rest cycle",
+      "consciousOnly": true,
+      "outOfCombatOnly": true,
+      "grantsRest": false
+    },
+    "chases": {
+      "first": {
+        "start": "AQ-01",
+        "escape": "SG-07"
+      },
+      "second": {
+        "start": "SG-05 NW bust",
+        "requires": [
+          "firstChaseDone",
+          "waterworksRestored",
+          "waterworksNoteRead",
+          "!crimsonVeilActive"
+        ],
+        "reward": "key:tiny-silver",
+        "stageVariants": [
+          "dormant",
+          "activated"
+        ]
+      },
+      "skillChallenge": {
+        "successesToEscape": 3,
+        "failuresToCapture": 2,
+        "dc": 13,
+        "maxCapturedPCsAtOneTime": 1,
+        "emergencyGMReleaseRealMinutes": 20
+      }
+    },
+    "gazebo": {
+      "scene": "EXT-05",
+      "primaryInputs": [
+        "lantern-oil",
+        "wick"
+      ],
+      "primaryReward": "rufus-eye-2",
+      "optionalMotifs": [
+        "rose-toward-center",
+        "cog-toward-center",
+        "star-toward-center"
+      ],
+      "optionalReward": "allens-folding-surveyors-rule"
+    },
+    "books": {
+      "scene": "H-U05",
+      "order": [
+        {
+          "title": "The Knight Who Befriended a Dragon",
+          "yearDR": 1442,
+          "location": "H-U05-shelf"
+        },
+        {
+          "title": "Moonlight and the Missing Stars",
+          "yearDR": 1443,
+          "location": "H-AT"
+        },
+        {
+          "title": "Felix Fox and the Forgotten Kingdom",
+          "yearDR": 1444,
+          "location": "EXT-02-hollow-log"
+        },
+        {
+          "title": "Whispers of the Little Witch",
+          "yearDR": 1445,
+          "location": "H-U05-shelf"
+        },
+        {
+          "title": "The Clockmaker's Starless Sky",
+          "yearDR": 1446,
+          "location": "H-RF-chimney"
+        },
+        {
+          "title": "Princess Penelope and the Sea of Stars",
+          "yearDR": 1447,
+          "location": "H-U05-bed",
+          "spawn": "crimsonVeilActive"
+        }
+      ],
+      "reward": "gond-emblem-half"
+    },
+    "privy": {
+      "scene": "EXT-04",
+      "requires": "crimsonVeilActive",
+      "reward": "key:tiny-copper",
+      "minigamePreferred": "verified Regionwright/Hunting and Gathering",
+      "fallbackCheckDC": 12,
+      "fallbackSkills": [
+        "Sleight of Hand",
+        "Survival"
+      ],
+      "canRetry": true
+    },
+    "greenhouse": {
+      "scene": "EXT-06",
+      "requires": [
+        "waterworksRestored",
+        "fictional-lye-quest-item"
+      ],
+      "operations": [
+        "activate-water",
+        "add-thornroot-ash",
+        "add-lye",
+        "operate-lever"
+      ],
+      "failure": "reset without consuming unique inputs",
+      "reward": "plant-killer-flask",
+      "target": "far-pond-magical-thorns"
+    },
+    "vault": {
+      "scene": "H-B02",
+      "requires": [
+        "basement-reached",
+        "gond-source-charged",
+        "gond-emblem-half",
+        "sune-emblem-half"
+      ],
+      "reward": "keystone",
+      "bowlInVault": false
+    },
+    "undercroft": {
+      "outer": {
+        "start": "SG-05",
+        "requires": [
+          "scrying-bowl-installed",
+          "027-pellet-installed"
+        ],
+        "destination": "UD-01"
+      },
+      "inner": {
+        "start": "UD-01",
+        "requires": [
+          "keystone-inserted",
+          "stone-lever-pressed"
+        ],
+        "destination": "UD-02"
+      },
+      "vossIngress": "single-use collapsed planar transposition",
+      "ritualCombatStatus": "DEFERRED_OWNER_FINAL_STAGE"
+    }
+  },
+  "verificationBoundaries": [
+    "No real Foundry scene IDs asserted",
+    "No World Flags or adapters claimed installed",
+    "No arbitrary client code execution",
+    "Exact world/GM checks required before writes",
+    "Pair every Region/portal with safe return",
+    "Stateful items awarded exactly once",
+    "Good-enough visual art does not waive functionality"
+  ]
+}
