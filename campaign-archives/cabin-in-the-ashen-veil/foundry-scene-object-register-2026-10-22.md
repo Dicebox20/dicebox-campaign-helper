@@ -1,3 +1,5 @@
+> **HOUSE V2 OWNER OVERRIDE — 2026-10-22:** This was a pre-v2 feature register. **Do not implement `H-U06` as a room/scene.** Sophia's (`H-U05`) Spine Mosaic opens a concealed, non-traversable **bookshelf compartment** with one Gond emblem half. Use in-scene Tile/interaction/item pickup and persistent claim, not a Wall-door/Region teleport. The separately hidden Candle Workshop moves upstairs with Dahlia's Studio. Remaining house locations, connections and map counts must be reconciled to [House Layout v2](./blueprints/house-layout-revision-v2-2026-10-22.md) before building. [Binding correction](./blueprints/spine-mosaic-compartment-owner-correction-2026-10-22.md).
+
 
 # Cabin in the Ashen Veil — Scene Object and Feature Register (Foundry planning)
 
