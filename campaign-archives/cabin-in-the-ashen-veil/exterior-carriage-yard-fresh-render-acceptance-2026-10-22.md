@@ -30,3 +30,8 @@ Applied `good enough`: required gameplay landmarks clearly visible; route and po
 **Art inspection:** `VISUAL PASS / usable candidate with recorded cosmetic and prompt-provenance note`. This does **not** establish a formal Foundry-ready receipt, nor that provider-level prompt inclusion-only enforcement was achieved. The existing project-wide positive-only rule remains in force. No Foundry world was changed.
 
 **Control:** [EXT-01 PREPARE](./exterior-carriage-yard-prepare-2026-10-22.md), [campaign decision catalogue §26](./campaign-decision-catalogue-2026-10-20.md), [global battlemap standard](../../docs/DICEBOX-UNIVERSAL-REPRESENTATIVE-WALL-BATTLEMAP-STANDARD-2026-10-22.md).
+
+
+## Owner acceptance (2026-10-22)
+
+**OWNER APPROVED — visual map:** The campaign owner reviewed the complete fresh Carriage Yard painterly candidate and replied **“looks good”**. This upgrades its **visual artwork acceptance** from inspected candidate to **OWNER-ACCEPTED ART / READY FOR DOWNSTREAM TECHNICAL VALIDATION**. Exact identity: generation `e5fb9677-a8f9-4fc2-b2a5-df1f83088950`, PNG `cabin_in_the_ashen_veil_carriage_yard_new_render.png`, SHA-256 `5284a039c2e990f65bb116e1167e0d9bc918a9a1eb895e9c2be95a33ed6cf4f8` (1536×1024). Continue recording the minor lighting/prompt provenance caveats, without declaring art rejection. **No Foundry build, scene ID, verified navigation/portal mechanics, or world installation is implied.**
