@@ -628,11 +628,15 @@
       "id": "yard-iron-gate",
       "from": "EXT-01",
       "to": "SG-03",
-      "gate": "mazeGateOpenedFromInside",
+      "gate": "directionalGateState",
       "source": "exterior-accepted-art",
       "type": "gate",
       "pairRequired": true,
-      "spatialAnchors": "PREPARE_REQUIRED"
+      "spatialAnchors": "PREPARE_REQUIRED",
+      "directional": {
+        "EXT-01->SG-03": "mazeGateOpenedFromInside",
+        "SG-03->EXT-01": "openFromInsideAction || mazeGateOpenedFromInside"
+      }
     },
     {
       "id": "yard-shrine-trail",
@@ -868,11 +872,15 @@
       "id": "boiler-reliquary",
       "from": "BATH-03",
       "to": "BATH-04",
-      "gate": "reliquaryServiceOpen",
+      "gate": "directionalServiceLatch",
       "source": "puzzle-LOCK05",
       "type": "serviceDoor",
       "pairRequired": true,
-      "spatialAnchors": "PREPARE_REQUIRED"
+      "spatialAnchors": "PREPARE_REQUIRED",
+      "directional": {
+        "BATH-03->BATH-04": "reliquaryServiceOpen",
+        "BATH-04->BATH-03": "insideUnboltAction || reliquaryServiceOpen"
+      }
     },
     {
       "id": "aqueduct-utility",
