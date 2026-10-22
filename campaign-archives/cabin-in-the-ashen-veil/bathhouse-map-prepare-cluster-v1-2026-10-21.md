@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Bathhouse Four-Scene Cluster — Map PREPARE Draft v1
 
+> **PRE-RENDER AUDIT HOLD (2026-10-21):** The [final pre-map audit](./final-pre-map-audit-2026-10-21.md) confirms a logically consistent Bowl chain but requires four remaining PREPARE geometry/semantics locks before structural rendering: two-level service and staircase route, exact three-ring solvable artwork, filled/drained token-safe scene visual states, and Bathhouse footprint/door anchors against owner estate reference. These drafts are **not yet actual PREPARED automation state**.
+
+
 **Date:** 2026-10-21. **Type:** Campaign-specific design / PREPARE draft; **not** durable `PREPARED` state in active Dicebox automation, not rendered, not accepted Foundry Scene IDs, not a working Regionwright implementation, not a runtime receipt.
 **Design decision source:** [Rosewater Reliquary / Scrying Bowl](./rosewater-reliquary-bowl-decision-2026-10-21.md), chosen under explicit owner delegation. Owner's approved existing constraints: Bathhouse off southwest branch from path toward Sune's memorial; separate bathing hall, soap-making room, boiler room; drain Bathhouse with sluice to reveal screwdriver; heal only with sluice closed and pool full, after original Waterworks and boiler puzzle.
 
