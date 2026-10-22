@@ -46,3 +46,7 @@ Under explicit owner delegation to decide the Bowl's location and retrieval, the
 - [Current campaign decision catalogue](./campaign-decision-catalogue-2026-10-20.md)
 
 No scene art or Foundry builds were started.
+
+## Pre-map production consistency audit (2026-10-21)
+
+The [final pre-map creation audit](./final-pre-map-audit-2026-10-21.md) rechecked the current Bowl-in-Rosewater-Reliquary decision, Bathhouse map cluster, Keystone/Undercroft finale, and staged Grove/pond/bath transitions. A **57-node conceptual quest prerequisite graph** has **no cycles**, but **four Bathhouse render-preparation geometry/art-state gates** and several later Foundry/Regionwright and unrelated campaign design gates remain explicitly OPEN. This is a **planning audit**, not a runtime test or evidence that PREPARE/INJECT occurred. Follow the audit's next steps; retain old audit snapshots for chronological provenance.
