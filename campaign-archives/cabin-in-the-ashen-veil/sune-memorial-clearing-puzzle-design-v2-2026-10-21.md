@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Sune Shrine, Independent Bowl, Undercroft and Keystone — Revision v2
 
+> **LATER BOWL SOURCE LOCKED (2026-10-21):** The subsequent owner-delegated decision places the independent Bowl in **the Rosewater Reliquary beneath the drained Bathhouse**, reached through the three-ring mosaic puzzle. The v2 “source OPEN” references are historical only. [Controlling Bowl placement](./rosewater-reliquary-bowl-decision-2026-10-21.md); [final audit](./final-pre-map-audit-2026-10-21.md).
+
+
 > **UPDATED BY OWNER REVISION v3 (2026-10-21):** The Keystone door is explicitly the thick ornate barrier Donovan tried to dig through. Behind it is the trapped Undercroft where **Donovan and Sophia's skeletal remains** are found; the hall beyond leads to the final ritual. The owner wants an **independent mid-game Bowl map** and suggested a **drain-revealed Bathhouse area** (precise architecture proposed/open). Healing requires sluice **shut** and Bathhouse **filled**, in addition to Waterworks/Boiler operation. [Read current v3 design](./undercroft-keystone-bathhouse-bowl-healing-design-v3-2026-10-21.md).
 
 
