@@ -103,3 +103,23 @@ The recovered conversation and older architectural sketches also discuss a **kit
 - User's current instruction: discard 29-map plan **completely**, count questline maps first, add flavor maps later.
 
 **Not performed:** No map rendering, Foundry writes, Regionwright behavior creation, scene registry in production DB, or runtime tests. Count approval, bowl source, final door and ritual-chamber geometry, door endpoints, healing rules and flavor allocation remain open.
+
+## Additive scene audit — Donovan/Sophia refuge and standalone Bowl map (2026-10-21)
+
+**Latest owner facts:** Keystone unlocks an ornate door INSIDE Undercroft; behind it are Donovan/Sophia remains and digging marks on the interior face; beyond the remains a hall goes to the ritual/final boss. Bowl is a separate mid-game location; owner suggested Bathhouse drainage as an entrance. Bathhouse healing requires sluice shut + bath full, as well as restored Waterworks and solved boiler/heating puzzle. See [design v3](./undercroft-keystone-bathhouse-bowl-healing-design-v3-2026-10-21.md).
+
+**Location count reconciliation (geometry-dependent, NOT approved total):** Start with the previously independent questline list of 28 (whose #28 now means Undercroft approach, not ritual room). Add the following **distinct proposed/required map footprints** without resurrecting the discarded 29-map historic roster:
+
+| Provisional extra ID | New location | Phase | Count logic | Status |
+|---|---|---|---|---|
+| 29 (provisional) | **Standalone Scrying Bowl location** (perhaps a drain-revealed Bathhouse lower cistern/reliquary) | Mid-game | +1 new distinct physical map | Separate map owner-directed; exact Bathhouse location **proposal**, not canon |
+| 30 (provisional) | **Undercroft — Donovan and Sophia's sealed refuge** beyond ornate Keystone door | After Keystone | +1 distinct room beyond door from #28 Undercroft approach | Owner established environment, room geometry pending |
+| 31 (provisional) | **Voss's ritual chamber** beyond hall after skeletons | Finale | +1 distinct ritual destination/room | Owner-established destination, exact corridor/room partition pending |
+
+**Preliminary working total if all three are distinct:** **31 questline maps**, subject to further spatial splits/merges governed by playable room geometry and original continuity. This is a *consequence of the design*, not a target. A navigable corridor might itself be a scene (+1) only if physically justified; the owner has not decided. No separate room should be created for the ornate door itself or for a Keystone socket. The Bowl chamber should not be mistaken for the preexisting Bathhouse Boiler Room or bath room itself.
+
+**Proposed visual fixtures:** Bathhouse bath floor when drained exposes screwdriver and an optional discreet opening to the Bowl area (specific reveal unapproved); Bowl displayed separately; Undercroft arrival shows the decorative sealed Keystone door; trapped room contains two skeletons and scars on door's **inside face**; a hall leads deeper to the ritual space. All remain staged/canon-safe until visual geometry approved.
+
+**Healing contract:** Only with sluice **CLOSED**, pool **FILLED**, first Aqueduct **Waterworks RESTORED**, second Bathhouse **Boiler puzzle COMPLETE**, water **HEATED**. It is not enough to finish boiler puzzle once; draining pool later disables the actual healing interaction.
+
+**Anti-softlock gate:** Any drain-exposed Bowl site must permit safe exit, prevent automatic flooding while PCs are inside, and ensure Bowl is obtainable before needing the refilled Bathhouse/Waterworks. Do not make players repeat a consumed one-shot water puzzle to escape.
