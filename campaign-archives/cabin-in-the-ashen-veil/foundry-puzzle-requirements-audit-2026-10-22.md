@@ -1,4 +1,3 @@
-
 # Cabin in the Ashen Veil — Foundry Puzzle Requirements Audit
 
 **Date:** 2026-10-22. **Status:** DESIGN / READ-ONLY AUDIT; not an implemented or runtime-verified Foundry system.  
@@ -43,7 +42,7 @@ Legend: **C** = controlling owner canon or accepted decision; **D** = assistant 
 | P12 Basement/nightstand [C/OPEN] | Basement Weathered Key door; Workshop repair tool; Parents broken nightstand | Door lock, repair tool & Screwdriver identity/requisite rule, drawer Tile, Gate Handle item | Correct role of both repair tools must be reconciled, without relocating screwdriver into workshop |
 | P13 Aqueduct gate [C] | Drained Pond Aqueduct threshold; roof Replacement Gear and Parents Gate Handle | Two-item assembly, gate Wall, paired portal to Aqueduct | Both required; safe travel and backtracking |
 | P14 First chase [C/OPEN] | Aqueduct corridor→forest well SG-07; visible Gondian charger | NPC Token, guarded event Region, encounter/audio, chase escape and return | First Crooked Man pursuit; optional capture max one player at once; runtime/escape/GM-reset OPEN |
-| P15 Waterworks [C/OPEN] | Utility room valves/gauges, Greenhouse-line debris, reward compartment | Sluice CLOSED gating; debris clear via hand/tool or Athletics/Sleight of Hand/Acrobatics; pressure state; compartment Tile, warning Journal, Rufus Collar Item | No DC yet. Restores Greenhouse water and Bathhouse boiler feed. Exact pressure solution OPEN |
+| P15 Waterworks [C/OPEN] | Utility room valves/gauges, Greenhouse-line debris, reward compartment | Sluice CLOSED gating; debris clear via hand/tool or Athletics/Sleight of Hand/Acrobatics; pressure state; compartment Tile, warning Journal, Rufus Collar Item/equip effect | No DC yet. Restores Greenhouse water and Bathhouse boiler feed. Collar grants psychic-damage immunity **while worn** under owner canon, but precise item effect/attunement and balance are OPEN. Exact pressure solution OPEN |
 | P16 Boiler healing [C/OPEN] | Boiler control; Bathing Hall pool, steam/hot-water visuals | Boiler UI, dynamic temperature FX, approved Actor heal interaction | Only when sluice CLOSED + pool FULL + Waterworks RESTORED + boiler solved + water HEATED. Amount/frequency/Veil rules OPEN |
 | P17 Second chase [C/OPEN] | SG-05 NW bust during later return; Silver Tiny Key | Late-state Region condition on **both** dormant/activated Grove versions; NPC chase, drop item | Must not trigger during early four-bust sequence; exact arming timing and bypass OPEN |
 | P18 Hope Chest [C] | Parents Hope Chest, Music Box and Prayer of Protection | Silver Tiny Key opens chest; box action/Journal “Read prayer?” | Separate from Prayer of Devotion; once-only items |
