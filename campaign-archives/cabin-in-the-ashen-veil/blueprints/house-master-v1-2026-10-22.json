@@ -1,7 +1,7 @@
 {
   "schema": "ashen.working-house-blueprint.v1",
   "date": "2026-10-22",
-  "status": "PROPOSAL_NOT_OWNER_APPROVED",
+  "status": "OWNER_APPROVED_HOUSE_DESIGN_BASELINE_RUNTIME_UNVERIFIED",
   "campaign": "Cabin in the Ashen Veil",
   "sourceScope": "independent side campaign",
   "coords": "Feet; North up; origin SW main 76x52 ft core. Positive x=E, y=N",
@@ -840,5 +840,22 @@
     "Room/storey dimensions and gates are working proposals, not canon",
     "Approved exterior orientation Cabin north of Yard, south-facing porch",
     "Map scale target gridless logical 120px per 5ft; final map geometry awaits structural inspection"
-  ]
+  ],
+  "ownerApproval": {
+    "date": "2026-10-22",
+    "statement": "approved, next we decide how to make all the maps",
+    "scope": "House Master v1 overall architectural design including connected multi-floor house, Great Room hub, secret wing and existing listed story rooms",
+    "remainingEvidence": "before inject, validate wall thickness, door clearance, stair/roof landings, locked/hidden portal behavior; no Foundry IDs or installed scene receipts"
+  },
+  "geometryAudit": {
+    "type": "bounded coordinate/route audit",
+    "date": "2026-10-22",
+    "sameFloorPositiveAreaOverlapCount": 0,
+    "horizontalDoorAnchorBoundaryMissCount": 0,
+    "earlyFoyerToStudioReachable": true,
+    "earlyStudyReachable": false,
+    "earlySophiaReachable": false,
+    "earlyCandleRoomReachable": false,
+    "verification": "source-model math only; not Foundry physics or inspection of accepted original estate image"
+  }
 }
