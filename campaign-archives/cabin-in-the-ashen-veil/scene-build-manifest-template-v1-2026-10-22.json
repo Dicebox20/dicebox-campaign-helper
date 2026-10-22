@@ -1,0 +1,230 @@
+{
+  "schema": "ashen-veil/scene-package-preinstall.v1",
+  "status": "TEMPLATE_ONLY:semantic model for Dicebox BUILD adapter; not an existing installed module format",
+  "identity": {
+    "logicalLocationId": "EXT-01",
+    "stageId": "base",
+    "canonicalSceneKey": "ashen-veil/EXT-01/base",
+    "name": "Carriage Yard",
+    "liveFoundrySceneId": null
+  },
+  "provenance": {
+    "authority": [
+      "campaign-decision-catalogue-2026-10-20.md §27-§28",
+      "exterior-carriage-yard-fresh-render-acceptance-2026-10-22.md"
+    ],
+    "designFile": "ext01-canonical-calibration-plan-v1-2026-10-22.json",
+    "sourceAssetSha256": "5284a039c2e990f65bb116e1167e0d9bc918a9a1eb895e9c2be95a33ed6cf4f8",
+    "runtimeReceipt": null
+  },
+  "background": {
+    "fileHint": "cabin_in_the_ashen_veil_EXT-01_battlemap-120_7200x4800.webp",
+    "sha256": "27c2581665ded20fa552bcbd800a1f03566af7bb604b41c1a53d81674840a00a",
+    "widthPx": 7200,
+    "heightPx": 4800,
+    "visualApproved": true,
+    "assetPersistence": "current-chat sandbox; stage/embed for actual installer",
+    "artContent": "owner-approved late-fall scene; dynamic fog/night supplied at Foundry layer"
+  },
+  "sceneScale": {
+    "gridType": "GRIDLESS",
+    "gridPixels": 120,
+    "distanceFt": 5,
+    "units": "ft",
+    "widthFt": 300,
+    "heightFt": 200,
+    "padding": 0
+  },
+  "featureManifest": {
+    "scenic": [
+      {
+        "id": "cabin-house-roof",
+        "kind": "roof",
+        "mustSee": true
+      },
+      {
+        "id": "carriage-yard-loop",
+        "kind": "walkableFloor",
+        "mustSee": true
+      },
+      {
+        "id": "locked-family-carriage",
+        "kind": "fixedFixture",
+        "mustSee": true
+      },
+      {
+        "id": "forest-maze-iron-gate",
+        "kind": "physicalDoor",
+        "mustSee": true
+      },
+      {
+        "id": "pond-near-dock",
+        "kind": "pier",
+        "mustSee": true
+      },
+      {
+        "id": "southern-road",
+        "kind": "traversal",
+        "mustSee": true
+      }
+    ],
+    "physicalObstacles": [
+      {
+        "id": "cabin-wall-footprint",
+        "kind": "wallNetwork",
+        "geometryStatus": "requires corrected polygon from accepted imagery+BP1"
+      },
+      {
+        "id": "forest-gate-walls",
+        "kind": "wrought-iron-gate-door",
+        "geometryStatus": "requires pillar/leaf trace"
+      },
+      {
+        "id": "tree-ground-bases",
+        "kind": "occludingTrunkBodies",
+        "geometryStatus": "trace physically relevant bases not canopy pixels"
+      }
+    ],
+    "interactive": [
+      {
+        "id": "carriage-keyhole",
+        "kind": "itemUse",
+        "actionId": "carriage.unlock",
+        "requires": [
+          "item:carriage-key"
+        ],
+        "success": [
+          "carriageUnlocked"
+        ],
+        "states": [
+          "locked",
+          "unlocked"
+        ],
+        "claimOnce": false
+      },
+      {
+        "id": "carriage-ladder-hook",
+        "kind": "itemPickup",
+        "actionId": "carriage.claimLadderHook",
+        "requires": [
+          "carriageUnlocked"
+        ],
+        "claimOnce": true,
+        "states": [
+          "hidden",
+          "visible",
+          "claimed"
+        ]
+      },
+      {
+        "id": "maze-gate-inside-latch",
+        "kind": "doorUse",
+        "actionId": "mazeGate.unlatchInside",
+        "requires": [
+          "approachingFromSG03"
+        ],
+        "states": [
+          "lockedFromYard",
+          "unlocked"
+        ]
+      }
+    ],
+    "notes": [
+      {
+        "id": "carriage-interior-story",
+        "kind": "Journal",
+        "visibilityPredicate": "carriageUnlocked",
+        "contentKey": "dahlia-carriage-remains"
+      },
+      {
+        "id": "front-entry",
+        "kind": "portalNote",
+        "visibilityPredicate": "always"
+      }
+    ],
+    "optionalAmbient": [
+      {
+        "id": "forest-wind",
+        "kind": "ambientSound",
+        "configureAtSceneAuthoring": true
+      },
+      {
+        "id": "porch-and-gate-luminaires",
+        "kind": "ambientLight",
+        "configureAtSceneAuthoring": true
+      }
+    ],
+    "overhead": [
+      {
+        "id": "tree-canopy-edge",
+        "kind": "optionalOverheadTile",
+        "condition": "only if accessible token movement under canopy"
+      }
+    ]
+  },
+  "portals": [
+    {
+      "routeId": "house-front",
+      "destinationLogicalId": "H-G02",
+      "localAnchor": "HOUSE_FRONT_DOOR",
+      "arrivalAnchor": "HOUSE_FRONT_SAFE_LANDING",
+      "gate": "always",
+      "regionStatus": "PENDING_GEOMETRY"
+    },
+    {
+      "routeId": "yard-iron-gate",
+      "destinationLogicalId": "SG-03",
+      "localAnchor": "FOREST_GATE",
+      "arrivalAnchor": "FOREST_GATE_APPROACH",
+      "gate": "mazeGateOpenedFromInside",
+      "regionStatus": "PENDING_GEOMETRY"
+    },
+    {
+      "routeId": "yard-shack",
+      "destinationLogicalId": "EXT-03",
+      "localAnchor": "DONOVAN_SHACK_ENTRY",
+      "gate": "always",
+      "regionStatus": "PENDING_GEOMETRY"
+    },
+    {
+      "routeId": "yard-shrine-trail",
+      "destinationLogicalId": "SG-06",
+      "localAnchor": "SHRINE_TRAIL_WEST",
+      "gate": "always",
+      "regionStatus": "PENDING_GEOMETRY"
+    },
+    {
+      "routeId": "yard-privy",
+      "destinationLogicalId": "EXT-04",
+      "localAnchor": "PRIVY_ENTRY",
+      "gate": "crimsonVeilActive",
+      "regionStatus": "PENDING_GEOMETRY"
+    },
+    {
+      "routeId": "yard-pond",
+      "destinationLogicalId": "EXT-02",
+      "localAnchor": "POND_DOCK_APPROACH",
+      "gate": "always",
+      "regionStatus": "PENDING_GEOMETRY"
+    }
+  ],
+  "runtimeBindings": {
+    "stateOwner": "future verified GM-authoritative campaign adapter",
+    "featureToUuid": {},
+    "disabledUntilVerified": true
+  },
+  "packaging": {
+    "expectedFormat": "one Markdown file with exactly one fenced self-contained JavaScript injection macro",
+    "validator": "tools/validate-dicebox-build.mjs",
+    "sourceStage": "BUILD after accepted art+geometry",
+    "releaseStage": "not attempted"
+  },
+  "constraints": [
+    "no built-in clickable Region assumption",
+    "no automatic item awards on raw Region entry",
+    "do not add hidden puzzle features to painted background",
+    "require active GM + exact world at runtime",
+    "route all stage aliases through logical location resolution",
+    "geometry-specific Walls/Regions withheld until real image trace"
+  ]
+}
