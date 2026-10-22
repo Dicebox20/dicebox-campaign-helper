@@ -1266,8 +1266,22 @@
       "id": "H-A01",
       "roomName": "Attic Storage",
       "sourceStatus": "REQUIRED",
-      "globalBBoxFeet": null,
-      "frame": null,
+      "globalBBoxFeet": {
+        "minX": 10,
+        "maxX": 66,
+        "minY": 18,
+        "maxY": 53
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          5,
+          13
+        ],
+        "widthFt": 70,
+        "heightFt": 45,
+        "widthPixels": 1680,
+        "heightPixels": 1080
+      },
       "physicalRoomPolygonsPixel": [],
       "portals": [
         {
@@ -1277,18 +1291,36 @@
             38,
             49
           ],
-          "localPixels": null,
+          "localPixels": [
+            792,
+            216
+          ],
           "gate": "Ladder Hook"
         }
       ],
-      "projectionStatus": "UNRESOLVED_DIMENSIONAL_GEOMETRY;PRESERVE_VERTICAL_LINK_ONLY"
+      "projectionStatus": "ADDITIVE_DESIGNER_PREPARE_FOOTPRINT;NOT_BP1_SOURCE_APPROVED",
+      "proposedShapeNote": "DESIGNER_PROPOSED: attic storage floor rectangle within overall house; exact rafters/crawls to trace in PREPARE."
     },
     {
       "id": "H-R01",
       "roomName": "Roof and Chimney",
       "sourceStatus": "REQUIRED",
-      "globalBBoxFeet": null,
-      "frame": null,
+      "globalBBoxFeet": {
+        "minX": -13,
+        "maxX": 93,
+        "minY": -5,
+        "maxY": 62
+      },
+      "frame": {
+        "originSWGlobalFeet": [
+          -18,
+          -10
+        ],
+        "widthFt": 120,
+        "heightFt": 80,
+        "widthPixels": 2880,
+        "heightPixels": 1920
+      },
       "physicalRoomPolygonsPixel": [],
       "portals": [
         {
@@ -1298,16 +1330,22 @@
             12,
             52
           ],
-          "localPixels": null,
+          "localPixels": [
+            720,
+            432
+          ],
           "gate": "parents upper north window, roof traversal proposal"
         }
       ],
-      "projectionStatus": "UNRESOLVED_DIMENSIONAL_GEOMETRY;PRESERVE_VERTICAL_LINK_ONLY"
+      "projectionStatus": "ADDITIVE_DESIGNER_PREPARE_FOOTPRINT;NOT_BP1_SOURCE_APPROVED",
+      "proposedShapeNote": "DESIGNER_PROPOSED: roof envelope rectangle over overall house, not a polygon of walkable roof slopes; derive safe walkway/edge walls from accepted roof art."
     }
   ],
   "dimensionedRoomCount": 16,
-  "undimensionedRoomKeys": [
+  "undimensionedRoomKeys": [],
+  "proposedGeometryRoomKeys": [
     "H-A01",
     "H-R01"
-  ]
+  ],
+  "authorityCaveat": "The 16 source-dimensioned rooms derive from approved BP-1; H-A01 and H-R01 instead have chosen additive scene composition footprints and require art/structural agreement. Source BP-1 remains unchanged."
 }
