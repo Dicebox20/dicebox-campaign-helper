@@ -1,0 +1,908 @@
+{
+  "schema": "ashen-veil/route-contract.v1",
+  "authority": "owner-delegated pre-install design planning; no runtime receipt",
+  "count": {
+    "logicalScenes": 43,
+    "physicalSceneVariants": 46,
+    "undirectedPairedRoutes": 49
+  },
+  "sceneIdAliases": {
+    "H-AT": "H-A01",
+    "H-RF": "H-R01"
+  },
+  "sourceBlueprint": "./blueprints/house-master-v1-2026-10-22.json",
+  "visibilityPrinciple": "Source art controls visible landmark; current stage controls traversability. Region intent never means auto-loot.",
+  "gateLanguage": "These conditions are named semantic predicates resolved by the authoritative GM state controller; not expression strings to eval.",
+  "arrivalRule": "Each edge requires distinct source threshold and destination safe-landing geometry, paired reverse semantics unless gate direction specified; no hard-coded Foundry Scene UUID.",
+  "edgePreflight": "No exact non-house portal coordinates are authoritatively established by this route graph. Complete per-scene PREPARE and final art pixel calibration.",
+  "notes": [
+    "The west Shrine Trail passes from EXT-01 into SG-06; the Bathhouse fork sits inside SG-06, rather than adding an unseen separate Yard portal.",
+    "The iron gate initially opens from within SG-03. Entering SG-03 from SG-06 is possible while Yard-side gate is still closed; successful internal unlatch persists.",
+    "The Pond→Boathouse boat route requires full water and removal of thorn-growth; simple mirror recovery happens earlier without Boathouse access.",
+    "UD-03 and its final authorization/encounter are deferred under owner instruction."
+  ],
+  "scenes": [
+    {
+      "id": "H-G01",
+      "name": "Dining Room",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-G02",
+      "name": "Foyer",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-G03",
+      "name": "Kitchen",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-G04",
+      "name": "Pantry",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-G05",
+      "name": "Allen's Study",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-G06",
+      "name": "Great Room",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-G07",
+      "name": "Dahlia's Art Studio",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-G08",
+      "name": "Hidden Candle Workshop",
+      "group": "houseGround",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-U01",
+      "name": "Unused Nursery",
+      "group": "houseUpper",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-U02",
+      "name": "Upper Gallery",
+      "group": "houseUpper",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-U03",
+      "name": "Guest Bedroom",
+      "group": "houseUpper",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-U04",
+      "name": "Parents' Bedroom",
+      "group": "houseUpper",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-U05",
+      "name": "Sophia's Bedroom",
+      "group": "houseUpper",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-U06",
+      "name": "Spine Hidden Room",
+      "group": "houseUpper",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-A01",
+      "name": "Attic Storage",
+      "group": "houseOther",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-R01",
+      "name": "Roof and Chimney",
+      "group": "houseOther",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-B01",
+      "name": "Allen's Workshop",
+      "group": "houseOther",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "H-B02",
+      "name": "Secured Vault",
+      "group": "houseOther",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-01",
+      "name": "Ash-Bark Switchbacks",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-02",
+      "name": "Old Processional Path",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-03",
+      "name": "Iron Gate Thicket",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-04",
+      "name": "Mossbound Orchard",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-05",
+      "name": "Memorial Clearing",
+      "group": "grove",
+      "stageVariants": [
+        "dormant",
+        "activated"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-06",
+      "name": "Western Shrine Approach",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-07",
+      "name": "Rootbound Well",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-08",
+      "name": "Briar Crossroads",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "SG-09",
+      "name": "Glasshouse Approach",
+      "group": "grove",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "EXT-01",
+      "name": "Carriage Yard",
+      "group": "exterior",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "ART_ACCEPTED_COORDINATE_PREFLIGHT"
+    },
+    {
+      "id": "EXT-02",
+      "name": "Pond and Shorelines",
+      "group": "exterior",
+      "stageVariants": [
+        "full",
+        "drained"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "EXT-03",
+      "name": "Donovan's Shack",
+      "group": "exterior",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "EXT-04",
+      "name": "Privy",
+      "group": "exterior",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "EXT-05",
+      "name": "Forgotten Gazebo",
+      "group": "exterior",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "EXT-06",
+      "name": "Greenhouse",
+      "group": "exterior",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "EXT-07",
+      "name": "Boathouse",
+      "group": "exterior",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "BATH-01",
+      "name": "Bathing Hall",
+      "group": "bathhouse",
+      "stageVariants": [
+        "full",
+        "drained"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "BATH-02",
+      "name": "Soap Room",
+      "group": "bathhouse",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "BATH-03",
+      "name": "Boiler Room",
+      "group": "bathhouse",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "BATH-04",
+      "name": "Rosewater Reliquary",
+      "group": "bathhouse",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "AQ-01",
+      "name": "Aqueduct Main",
+      "group": "aqueduct",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "AQ-02",
+      "name": "Waterworks Utility",
+      "group": "aqueduct",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "UD-01",
+      "name": "Undercroft Approach",
+      "group": "undercroft",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "UD-02",
+      "name": "Sealed Refuge",
+      "group": "undercroft",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "PLANNED"
+    },
+    {
+      "id": "UD-03",
+      "name": "Ritual Chamber",
+      "group": "undercroft",
+      "stageVariants": [
+        "base"
+      ],
+      "designStatus": "FINALE_DEFERRED"
+    }
+  ],
+  "edges": [
+    {
+      "id": "house-front",
+      "from": "EXT-01",
+      "to": "H-G02",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "foyer-great",
+      "from": "H-G02",
+      "to": "H-G06",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "foyer-dining",
+      "from": "H-G02",
+      "to": "H-G01",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "foyer-kitchen",
+      "from": "H-G02",
+      "to": "H-G03",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "kitchen-pantry",
+      "from": "H-G03",
+      "to": "H-G04",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "great-study",
+      "from": "H-G06",
+      "to": "H-G05",
+      "gate": "brassStudyKey",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "lockedDoor",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "great-studio",
+      "from": "H-G06",
+      "to": "H-G07",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "studio-candle",
+      "from": "H-G07",
+      "to": "H-G08",
+      "gate": "prayerProtectionUsedAtStudio",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "secretDoor",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "foyer-upper",
+      "from": "H-G02",
+      "to": "H-U02",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "stair",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "foyer-basement",
+      "from": "H-G02",
+      "to": "H-B01",
+      "gate": "weatheredKey",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "lockedStair",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "upper-nursery",
+      "from": "H-U02",
+      "to": "H-U01",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "upper-guest",
+      "from": "H-U02",
+      "to": "H-U03",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "upper-parents",
+      "from": "H-U02",
+      "to": "H-U04",
+      "gate": "always",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "door",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "upper-sophia",
+      "from": "H-U02",
+      "to": "H-U05",
+      "gate": "oldIronKey",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "lockedDoor",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "sophia-spine",
+      "from": "H-U05",
+      "to": "H-U06",
+      "gate": "sixBooksSolved",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "secretDoor",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "upper-attic",
+      "from": "H-U02",
+      "to": "H-A01",
+      "gate": "ladderHookInstalled",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "hatch",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "parents-roof",
+      "from": "H-U04",
+      "to": "H-R01",
+      "gate": "parentsWindowAccessible",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "window",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "workshop-vault",
+      "from": "H-B01",
+      "to": "H-B02",
+      "gate": "fourVaultPredicates",
+      "source": "house-master-v1-2026-10-22.json",
+      "type": "lockedDoor",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "yard-pond",
+      "from": "EXT-01",
+      "to": "EXT-02",
+      "gate": "always",
+      "source": "exterior-accepted-art",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "yard-shack",
+      "from": "EXT-01",
+      "to": "EXT-03",
+      "gate": "always",
+      "source": "exterior-accepted-art",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "yard-privy",
+      "from": "EXT-01",
+      "to": "EXT-04",
+      "gate": "crimsonVeilActive",
+      "source": "exterior-accepted-art",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "yard-iron-gate",
+      "from": "EXT-01",
+      "to": "SG-03",
+      "gate": "mazeGateOpenedFromInside",
+      "source": "exterior-accepted-art",
+      "type": "gate",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "yard-shrine-trail",
+      "from": "EXT-01",
+      "to": "SG-06",
+      "gate": "always",
+      "source": "exterior-accepted-art",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "shrine-trail-bathhouse-spur",
+      "from": "SG-06",
+      "to": "BATH-01",
+      "gate": "always",
+      "source": "grove-nine-scene-plan",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "drained-pond-aqueduct",
+      "from": "EXT-02",
+      "to": "AQ-01",
+      "gate": "pondDrained && aqueductGateOpen",
+      "source": "puzzle-LOCK04-LOCK06",
+      "type": "gate",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "pond-far-boathouse",
+      "from": "EXT-02",
+      "to": "EXT-07",
+      "gate": "pondFull && greenhouseGrowthCleared && oarsObtained",
+      "source": "puzzle-LOCK12",
+      "type": "boat",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-01-02",
+      "from": "SG-01",
+      "to": "SG-02",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-01-04",
+      "from": "SG-01",
+      "to": "SG-04",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-02-03",
+      "from": "SG-02",
+      "to": "SG-03",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-02-05",
+      "from": "SG-02",
+      "to": "SG-05",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-03-06",
+      "from": "SG-03",
+      "to": "SG-06",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-04-05",
+      "from": "SG-04",
+      "to": "SG-05",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-04-07",
+      "from": "SG-04",
+      "to": "SG-07",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-05-06",
+      "from": "SG-05",
+      "to": "SG-06",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-05-08",
+      "from": "SG-05",
+      "to": "SG-08",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-06-09",
+      "from": "SG-06",
+      "to": "SG-09",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-07-08",
+      "from": "SG-07",
+      "to": "SG-08",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-08-09",
+      "from": "SG-08",
+      "to": "SG-09",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "well-aqueduct",
+      "from": "SG-07",
+      "to": "AQ-01",
+      "gate": "aqueductGateOpen",
+      "source": "puzzle-LOCK06",
+      "type": "well",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-gazebo",
+      "from": "SG-08",
+      "to": "EXT-05",
+      "gate": "always",
+      "source": "grove-nine-scene-plan",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "grove-greenhouse",
+      "from": "SG-09",
+      "to": "EXT-06",
+      "gate": "always",
+      "source": "grove-nine-scene-plan",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "shrine-undercroft",
+      "from": "SG-05",
+      "to": "UD-01",
+      "gate": "groveActivated",
+      "source": "puzzle-LOCK13",
+      "type": "stair",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "bath-soap",
+      "from": "BATH-01",
+      "to": "BATH-02",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "bath-boiler",
+      "from": "BATH-01",
+      "to": "BATH-03",
+      "gate": "always",
+      "source": "design",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "drained-bath-reliquary",
+      "from": "BATH-01",
+      "to": "BATH-04",
+      "gate": "bathDrained && rosewaterSolved",
+      "source": "puzzle-LOCK05",
+      "type": "hatchStair",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "boiler-reliquary",
+      "from": "BATH-03",
+      "to": "BATH-04",
+      "gate": "reliquaryServiceOpen",
+      "source": "puzzle-LOCK05",
+      "type": "serviceDoor",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "aqueduct-utility",
+      "from": "AQ-01",
+      "to": "AQ-02",
+      "gate": "always",
+      "source": "puzzle-LOCK07",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "undercroft-inner-door",
+      "from": "UD-01",
+      "to": "UD-02",
+      "gate": "keystoneDoorOpen",
+      "source": "puzzle-LOCK13",
+      "type": "sealedDoor",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    },
+    {
+      "id": "refuge-ritual",
+      "from": "UD-02",
+      "to": "UD-03",
+      "gate": "ritualPhaseAuthorized",
+      "source": "finishing-stage-deferred",
+      "type": "threshold",
+      "pairRequired": true,
+      "spatialAnchors": "PREPARE_REQUIRED"
+    }
+  ]
+}
