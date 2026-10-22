@@ -1,5 +1,8 @@
 # DiceBox Campaign Helper Implementation Contract
 
+**Render-prompt inclusion-only rule (owner-locked 2026-10-22):** **DO NOT MENTION ANYTHING YOU DON'T WANT ON THE MAP.** Every visual noun or feature named in a DiceBox image-provider map prompt is an inclusion authorization. Submit only positively specified visible objects, fixed room geometry and approved style. Keep forbidden examples, speculative furnishings, rejected attempts, exclusions, independent stateful objects and detailed failure-analysis words outside the provider prompt in PREPARE/Feature Manifest/inspection notes. Perform noun/asset-owner preflight against the approved source blueprint and render-layer list. Retain independent clean-restart prompts after genuine REDO. See the universal Battlemap Standard's prompt-inclusion section.
+
+
 The authoritative project contract is this repository's `AGENTS.md`, reconciled with the current roadmap, active program slice, accepted decisions, and reproducible knowledge base. Local and cloud workspaces are disposable execution environments and do not outrank the GitHub repository.
 
 
