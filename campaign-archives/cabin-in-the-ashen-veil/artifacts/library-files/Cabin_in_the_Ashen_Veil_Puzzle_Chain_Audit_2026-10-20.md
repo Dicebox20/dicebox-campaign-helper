@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Puzzle Chain Reconciliation
 
+> **HISTORICAL-SNAPSHOT WARNING (2026-10-21):** This October 20 puzzle audit is retained as historical evidence. It predates owner-approved **Keystone** substitution, donor/Sophia sealed Undercroft refuge, and the owner-delegated **Rosewater Reliquary** Bowl location beneath a drained Bathhouse. **Bowl is NOT in Allen's final Vault.** That four-input Vault now rewards Keystone, used on the ornate inner Undercroft door; Bowl and 027 pellet open outer Undercroft access. The sixth book remains on Sophia's bed during Veil, and latest water/healing rules apply. Use [current decisions](../../campaign-decision-catalogue-2026-10-20.md), [Bowl decision](../../rosewater-reliquary-bowl-decision-2026-10-21.md) and [final audit](../../final-pre-map-audit-2026-10-21.md) for controlling design. The old text below is not current authority where contradictory.
+
+
 **Date:** 2026-10-20. **Status:** Consolidated campaign DESIGN from current conversation; not a GitHub main/KB commit and not a Foundry/Regionwright test receipt. Source hierarchy: explicit latest user decisions in this chat supersede dated Library continuity when conflicting; repository AGENTS.md governance remains controlling for implementation. No implementation claimed.
 
 ## Checkpoints
