@@ -1,0 +1,66 @@
+{
+  "schema": "ashen-veil/house-v2-topology-overrides/1",
+  "status": "OWNER_DIRECTED;GEOMETRY_PENDING;NOT_INSTALLED",
+  "authority": "2026-10-22 direct owner correction following upper-floor Gondian blueprint approval",
+  "sources": [
+    "./house-layout-revision-v2-2026-10-22.md",
+    "./spine-mosaic-compartment-owner-correction-2026-10-22.md"
+  ],
+  "supersedesForAffectedHouseFacts": [
+    "../blueprints/house-master-v1-2026-10-22.json",
+    "../foundry-route-contract-v1-2026-10-22.json",
+    "../foundry-scene-object-register-2026-10-22.md"
+  ],
+  "removeLogicalScenes": [
+    "H-U06"
+  ],
+  "removePairedRoutes": [
+    "sophia-spine"
+  ],
+  "retiredBehavior": "The six-book Spine Mosaic opens an in-scene compartment inside H-U05; never create a separate map, room, wall doorway or teleport for it.",
+  "puzzle": {
+    "scene": "H-U05",
+    "fixtureId": "sophia-spine-mosaic",
+    "action": "orderSixStorybooks",
+    "solveFlag": "spineCompartmentOpen",
+    "rewardItemId": "gond-emblem-half",
+    "displayStates": [
+      "closed",
+      "opened",
+      "claimed"
+    ],
+    "rewardClaim": "exactly once via explicit interaction",
+    "additiveMapFootprintFt": 0,
+    "sceneTransition": null
+  },
+  "unchangedSecrets": {
+    "candleWorkshop": {
+      "physicallySeparateRoom": true,
+      "level": "upper",
+      "entryFrom": "Dahlia's upstairs Art Studio",
+      "reveal": "Prayer of Protection"
+    }
+  },
+  "ownerVisualApproval": {
+    "upperFloorSheet": "First Gondian upper-floor image submitted and reattached by the owner in the last turn",
+    "approval": "Visually accepted with declared Spine Mosaic chamber-label override",
+    "note": "Do not digitize drawn 'Spine Mosaic Hidden Room' protrusion as physical geometry."
+  },
+  "historicalCounts": {
+    "originalWorkingLogicalLocations": 43,
+    "originalStageSceneRecords": 46,
+    "originalPairedRoutes": 49,
+    "deltaFromCorrection": {
+      "logicalLocations": -1,
+      "stageSceneRecords": -1,
+      "pairedRoutes": -1
+    },
+    "provisionalIfNoOtherHouseV2Changes": {
+      "logicalLocations": 42,
+      "stageSceneRecords": 45,
+      "pairedRoutes": 48
+    },
+    "finalHouseV2Census": "TBD; family area and revised house scene assignments not reconciled"
+  },
+  "provenance": "Machine-readable correction overlay; never apply obsolete graph routes without reconciling House Master v2."
+}
