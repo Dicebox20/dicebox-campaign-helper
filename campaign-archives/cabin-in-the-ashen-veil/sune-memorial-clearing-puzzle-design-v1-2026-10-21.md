@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Sune's Memorial Clearing / Grove Interaction Design v1
 
+> **SUPERSEDED FOR FINAL CHAIN (2026-10-21):** The owner has moved the **Scrying Bowl out of Allen's Vault** to a separate acquisition branch and changed the Vault reward to a **Keystone**. The Bowl + pellet now open an **explorable Undercroft** containing a **sealed final door**; the Keystone opens that door to the ritual chamber. **[Read controlling revision v2](./sune-memorial-clearing-puzzle-design-v2-2026-10-21.md).** The early bust puzzle and late NW chase portions of v1 remain applicable where not superseded.
+
+
 **Prepared:** 2026-10-21.
 **Authority/status:** **DESIGN PROPOSAL FOR OWNER REVIEW**, not automatically canon; no map render, implementation, Foundry state change, Regionwright build, or runtime verification. Existing user-approved fixtures, items and progression are distinguished below from proposed puzzle clue/microinteraction specifics.
 **Source hierarchy:** Latest owner messages > [owner decision catalogue](./campaign-decision-catalogue-2026-10-20.md) > [October 20 puzzle audit](./artifacts/library-files/Cabin_in_the_Ashen_Veil_Puzzle_Chain_Audit_2026-10-20.md) > [original 1,321-message transcript](./campaign-chat-transcript.md) > older handoffs. The historical 29-map roster is discarded entirely. The separate 2026-10-19 Regionwright Sune sliding-portrait handoff is historical where its *separate standalone panel/3×3 mandate* conflicts with later accepted statue-base relief placement and the owner's decision to let Regionwright determine grid format.
