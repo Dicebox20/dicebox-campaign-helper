@@ -116,7 +116,7 @@ The **Carriage Yard** is the **central exterior map and architectural hub for th
 | Mid-game | ~2 PM | Study 587 / sluice / drained pond / basement / Aqueduct; first Crooked Man chase |
 | Late-game | ~two-thirds, nightfall | Follow utility-room clue; later return to Grove NW bust; **second** chase and Silver Tiny Key |
 | Crimson Veil | ~75% to 78%, night hard mode | **Charging** Rufus's uncharged Gondian source in accessible Aqueduct charger; time of night alone does not trigger it |
-| Final act | After Veil | Six books, emblems, bowl, Undercroft, Voss and Vharzagul |
+| Final act | After Veil | Independent Bowl + pellet open Undercroft; sealed final door visible before Keystone; four-requirement Vault yields Keystone, which opens final ritual chamber |
 
 ## 7. Approved puzzle inventory and dependencies
 
@@ -157,12 +157,14 @@ The **Carriage Yard** is the **central exterior map and architectural hub for th
 6. Prayer of Devotion at Dahlia's Sune shrine → **Sune half** of circular emblem.
 7. **OPEN / Regionwright-owned:** book chronology clues, Spine Mosaic interface, greenhouse recipe & mixing, fishing spoof, allowed bypasses; Sune prayer behaviors must follow established interaction workflow and verification before upstreaming.
 
-### Final vault, Scrying Bowl, Undercroft
-1. Four major requirements: **(a) basement access**, **(b) charged Gondian power source**, **(c) Gond emblem half**, **(d) Sune emblem half**. The halves interlock into a round Gond-and-Sune **arm-in-arm** actuator. Do not add a fifth major collectible/activation puzzle.
-2. Complete requirements open Allen's secured family vault → obtain **Sune's Scrying Bowl**.
-3. Great Room combination lockbox **027** (clue in Dahlia's Art Studio painting showing the lockbox/code) contains water-filled teardrop **Dust of Dryness pellet**, intentionally acquired early.
-4. Return Bowl to **outstretched Sune statue hands** (reserved for Bowl alone). Use pellet so engineered water channels expose **Undercroft** entrance. The separate statue-base relief does not share the Bowl interaction.
-5. Maldrath Voss performs contemporary ritual beneath estate; intended summoned entity **Vharzagul**, original **yagnoloth/yugoloth, NOT a demon**, will betray/kill Voss. Abyssal breach and demon invaders are separate from the yugoloth's classification. Precise cosmological and combat mechanism remain **OPEN**.
+### Final vault, independent Scrying Bowl, Keystone, Undercroft final door (OWNER-REVISED 2026-10-21)
+1. Four **unchanged Vault prerequisites**: **(a) basement access**, **(b) charged Gondian power source**, **(c) Gond emblem half**, **(d) Sune emblem half**. The two halves interlock into a round Gond-and-Sune **arm-in-arm** actuator. Do not add a fifth *Vault* prerequisite.
+2. **Sune's Scrying Bowl now belongs to an independent progression branch; its new exact source and acquisition event are OPEN.** The Bowl is **NOT** in Allen's Vault and must be obtainable without opening that Vault.
+3. Great Room combination lockbox **027** (clue in Dahlia's Art Studio painting showing the lockbox/code) still contains the water-filled teardrop **Dust of Dryness pellet**, intentionally available early.
+4. Bring Bowl to Sune's outstretched hands and put pellet into Bowl's sealed slow-release chamber. Engineered channels open **access to an explorable Undercroft** where players can reach and inspect a **visibly sealed final door** before having its unlocking piece.
+5. Complete the four Vault requirements → Allen's secured family Vault opens → obtain **Keystone** (the **replacement** Vault reward).
+6. Return to the accessible Undercroft and use Keystone to unlock the **final door**, entering the final ritual chamber. This is not a new Vault-input fifth gate; it moves the finale threshold *inside* the Undercroft.
+7. Maldrath Voss performs contemporary ritual beyond the door; intended summoned entity **Vharzagul**, original **yagnoloth/yugoloth, NOT a demon**, will betray/kill Voss. Abyssal breach and demon invaders are separate from the yugoloth's classification. Precise combat and ritual mechanics remain **OPEN**.
 
 ## 8. Haunt states and player-facing design
 
@@ -189,8 +191,8 @@ The **Carriage Yard** is the **central exterior map and architectural hub for th
 | Book puzzle | Exact publication order, in-world book metadata/hints, hidden-room footprint. |
 | Gazebo | Separate intended main puzzle and reward in addition to the lantern/second eye. |
 | Bathhouse and greenhouse | Final rooms, lye case, fictional recipe, water-line behavior, plants and alternate paths. |
-| Final vault | Exact location/size, electrical/mechanical connection, how four requirements operate without adding a fifth chain. |
-| Undercroft | Entrance geometry, Allen/Dahlia/Donovan/Sophia death and remains chronology. |
+| Final vault | Exact location/size and how the existing four requirements operate; reward is now Keystone, not Bowl. |
+| Undercroft | Entrance geometry, explorable area before sealed final door, physical final-door design, final ritual chamber separation, Allen/Dahlia/Donovan/Sophia death and remains chronology. |
 | Voss/Vharzagul | Yugoloth ritual vs Abyssal breach explanation, battle phases, haunt interference. |
 | Haunt rules | Faithful of Sune, House That Loves, capture interactions, perception/clue placement and effect balance. |
 | Implementation | No Foundry installation, Regionwright work, live scene objects, DC rules, runtime certification, or project DB synchronization established by this catalogue. |
@@ -258,3 +260,11 @@ The [independently derived questline map census (2026-10-21)](./questline-map-in
 **Execution gate:** The 28-map census remains a **working estimate** and exterior boundaries/room geometry must be accepted before batch art generation. Render in controllable batches to verify style, scale, feature completeness and access, while designing all maps against one comprehensive manifest. Reuse established Dicebox map/spatial workflows and source authority, with no premature runtime-write or Ready-to-Play claim. Flavor rooms are optional future expansions. Campaign-only archival catalogue update does not alter project-wide production SOP or global KB policy.
 
 **Still open:** Complete per-scene visual manifests, object-specific layer plans, conditional assets/variants, rendering batch boundaries and visual acceptance criteria.
+
+## 15. Owner-approved reward substitution and early Undercroft access (2026-10-21)
+
+**Direct owner instructions:** “I'd actually like to swap a couple things a bit, lets make it so the scrying bowl is actually not the final puzzle piece. I was thinking we could implement the undercroft into the puzzle chain, and let people see the final door before they can unlock it”; clarified immediately: “We won't need to change much, we just simply make the Scrying bowl a standalone piece of progression, and replace the item inside the vault to a keystone.”
+
+**Controlling revision:** The Scrying Bowl is **independently acquired** (new site/source **OPEN**, not guessed), and continues to operate with the Great Room `027` pellet at Sune's statue. The **water mechanism now opens the Undercroft to exploration**, where the players can encounter a **sealed final door**. The Vault's **same four existing requirements** now award a **Keystone** instead of a Bowl. The **Keystone unlocks the Undercroft final door**, beyond which the Voss/Vharzagul finale occurs. No new fifth Vault lock is introduced. The four-bust puzzle, sliding relief, Grove late chase, other original puzzle chains and Crimson Veil trigger remain intact. See [Sune Grove puzzle contract revision v2](./sune-memorial-clearing-puzzle-design-v2-2026-10-21.md).
+
+**Critical planning unknowns:** Where Bowl is independently found, the Undercroft approach footprint, sealed final door geometry, Keystone design, and whether a **separate final ritual chamber** physically distinct from the Undercroft approach requires its own Foundry scene. The prior working 28-scene census may consequently require recount; do not force the discarded old total. No maps, puzzles, Regionwright scripts, or runtime state changed. The old October 20 audit and Grove v1 are retained for historical provenance, **superseded where they say the Vault awards the Bowl or the Bowl opens directly onto the ritual finale**.
