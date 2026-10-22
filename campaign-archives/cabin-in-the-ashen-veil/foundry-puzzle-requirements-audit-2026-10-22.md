@@ -1,3 +1,5 @@
+> **HOUSE V2 OWNER OVERRIDE — 2026-10-22:** P24 six-book Spine Mosaic reveals an **in-place concealed compartment inside Sophia's Bedroom** holding one Gond emblem half; there is **no `H-U06` secret-room Scene, doorway or Region**. Source audit below is historical. See [current owner correction](./blueprints/spine-mosaic-compartment-owner-correction-2026-10-22.md).
+
 # Cabin in the Ashen Veil — Foundry Puzzle Requirements Audit
 
 **Date:** 2026-10-22. **Status:** DESIGN / READ-ONLY AUDIT; not an implemented or runtime-verified Foundry system.  
