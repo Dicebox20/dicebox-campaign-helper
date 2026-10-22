@@ -28,3 +28,7 @@ The historical 29-map roster is **discarded completely** by explicit owner direc
 ## Sune's Grove three-phase puzzle proposal (2026-10-21)
 
 A [separate owner-review design specification](./sune-memorial-clearing-puzzle-design-v1-2026-10-21.md) defines visible statue/bust/water fixtures, early bust order and sliding relief, **late-only** NW-bust Crooked Man chase and Silver Tiny Key drop, and final Bowl/pellet/Undercroft behavior with provisional puzzle-state contracts and anti-softlock checks. **Proposals requiring explicit owner acceptance:** rose-sequence visual clue/inscription, wrong-bust reset, late chase arming conditions, and exact hidden Undercroft threshold geometry. This proposal is **not** an implementation receipt or a global workflow change.
+
+## Keystone and explorable Undercroft revision (2026-10-21)
+
+The owner replaced the Vault's **Scrying Bowl** prize with a **Keystone** while keeping all four existing Vault prerequisites. The **independently acquired Bowl** (pickup location not yet established) and `027` water pellet open an **explorable Undercroft**. Players can inspect the sealed final door before having the Keystone; returning with the Keystone unlocks access to the final ritual chamber. The original 28-map working count requires a new room-boundary audit. See [Grove/final door v2](./sune-memorial-clearing-puzzle-design-v2-2026-10-21.md) and [current decision catalogue](./campaign-decision-catalogue-2026-10-20.md).
