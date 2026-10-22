@@ -233,3 +233,15 @@ The default visual target for new tactical maps is:
 **strict overhead orthographic, Blender-like grayscale structural clarity first, then a painterly live treatment with clearly differentiated materials and identifiable objects.**
 
 Walls and environmental objects must remain visually physical and readable after coloring. The final map should not collapse the structural model into flat graphic bands or simplified symbols.
+
+## Permanent project-wide painterly and representative-wall requirement (owner-locked 2026-10-22)
+
+**Mandatory for EVERY newly created DiceBox tactical map**: [Universal Representative-Wall Battlemap Standard](DICEBOX-UNIVERSAL-REPRESENTATIVE-WALL-BATTLEMAP-STANDARD-2026-10-22.md). This is an owner-directed global visual/semantic quality gate and **supersedes any generic painterly wording elsewhere in this document where inconsistent**; it does not replace structural evidence, Feature Manifest/Spatial Blueprint, build validation or live Foundry authorization.
+
+- Show a **strict 90° plan-view painterly game map** and **representative walls**: narrow, top-facing plan-view stone/timber caps with shallow material/bevel cues. No dollhouse/full-height interior vertical wall cutaways, pseudo-isometric perspective, or facade views. Wall pixels do not become Foundry blocking Wall segments; use semantic BP geometry.
+- Use **neutral diffuse baked light** and subtle contact shadows only. Preserve material colors; transfer active illumination, vignette/darkness, torches, fireplaces, magical glow, red Veil and time-of-day to Foundry-specific lighting/effect layers. The older PAINT_RENDER suggestion to visually distinguish lit fixtures now means semantic labels/placeable/light candidates, **not** baked light pools in the base image.
+- Keep **doors/openings matched exactly to BP source**; essential story/puzzle anchors legible; walkable room free enough for tokens; pickups, changing mechanisms and spoilers separate from static background. No baked grid or tokens.
+- **STRUCTURAL_INSPECT and FINAL_INSPECT hard-fail** a vertical-wall cutaway, invented/hidden doorway mismatch, significant overhead angle drift, painted permanent acquired loot or a missing critical anchor. Harmless decorative variance may still be PASS with notes when a project/campaign has an applicable owner-approved fast-track exception.
+- Clean-restart and immutable failed render evidence remain mandatory; a rejected image/prompt is NEVER a positive render reference for its own retry.
+
+Status: **normative source-code/repository policy**. Project Settings mirror and desktop image-provider validator wiring are independent synchronization tasks, not automatically completed by this rule.
