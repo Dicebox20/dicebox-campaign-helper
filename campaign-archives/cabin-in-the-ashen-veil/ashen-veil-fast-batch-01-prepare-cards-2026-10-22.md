@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Fast Map Batch 01 / Four PREPARE Cards
 
+**OWNER LOCK (2026-10-22):** First batch order fixed: **Foyer → Great Room → Dahlia's Art Studio → Allen's Study**. The accepted [Map Production Locks v1](./ashen-veil-map-production-locks-v1-2026-10-22.md) overrides descriptive phrases below about warm/dark light: ALL FOUR painted backgrounds use **neutral, diffuse, even lighting** without baked fireplace glow, candle/torch light, colored light pools, dramatic darkness, or Crimson Veil illumination. Warm wood/copper/material colors are retained; neutral contact shadows remain for object readability. Lighting/mood belongs to Foundry, not to these painted backgrounds. Existing six-field layout and gate descriptions remain controlling.
+
+
 **Date:** 2026-10-22. **Status:** COMPACT PREPARE INPUT, not accepted painted render, runtime `PREPARED` state, installed Scene or receipt.
 **Owner approval:** [House Master v1](./blueprints/house-master-v1-2026-10-22.md), [coordinate source](./blueprints/house-master-v1-2026-10-22.json), [campaign-specific fast map process](./ashen-veil-fast-map-creation-profile-v1-2026-10-22.md). Explicitly reuse BP-1 room geometry, not the old undimensioned nine-box house diagram. Only new artistic choices need authoring. Story elements are required to be noticeable from a true overhead tabletop view.
 
