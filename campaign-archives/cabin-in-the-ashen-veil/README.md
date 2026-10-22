@@ -24,3 +24,7 @@ The campaign was resumed after this recovery package was created. The [owner dec
 ## Questline map census (2026-10-21)
 
 The historical 29-map roster is **discarded completely** by explicit owner direction, not used as a map count or starter inventory. The [questline-only map census](./questline-map-inventory-2026-10-21.md) independently calculates a **working 28-scene estimate** (not yet an owner-approved final count) from the recovered transcript, current item chains, and the new Bathhouse boiler-healing dependency. Separate household flavor maps can be considered later. See the [decision catalogue](./campaign-decision-catalogue-2026-10-20.md) for current continuity and supersessions.
+
+## Sune's Grove three-phase puzzle proposal (2026-10-21)
+
+A [separate owner-review design specification](./sune-memorial-clearing-puzzle-design-v1-2026-10-21.md) defines visible statue/bust/water fixtures, early bust order and sliding relief, **late-only** NW-bust Crooked Man chase and Silver Tiny Key drop, and final Bowl/pellet/Undercroft behavior with provisional puzzle-state contracts and anti-softlock checks. **Proposals requiring explicit owner acceptance:** rose-sequence visual clue/inscription, wrong-bust reset, late chase arming conditions, and exact hidden Undercroft threshold geometry. This proposal is **not** an implementation receipt or a global workflow change.
