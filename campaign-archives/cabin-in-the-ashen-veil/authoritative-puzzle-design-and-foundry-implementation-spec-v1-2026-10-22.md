@@ -1,3 +1,5 @@
+> **LATER OWNER OVERRIDE — 2026-10-22:** References below to a separate `H-U06 Spine Hidden Room`, `spineRoomOpen`, a bookcase doorway, or a Region portal are **superseded**. Six ordered books unlock a **concealed bookshelf compartment within Sophia's Bedroom (`H-U05`)** containing the single Gond emblem half; state is `spineCompartmentOpen`. The six-book chronology, Veil-only sixth book, and four-input Vault remain unchanged. See [owner correction](./blueprints/spine-mosaic-compartment-owner-correction-2026-10-22.md). This note preserves the original v1 decision text as historical evidence.
+
 # Cabin in the Ashen Veil — Puzzle Canon, Rules and Foundry Implementation Specification v1
 
 **Recorded:** 2026-10-22  
