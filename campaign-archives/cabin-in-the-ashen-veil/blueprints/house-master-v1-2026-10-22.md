@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Master House Blueprint V1
 
+> **OWNER APPROVED — DESIGN BASELINE (2026-10-22):** The owner responded “approved” to this house blueprint and directed map production planning. Treat its shell, Great Room/gallery, room adjacency, hidden east wings, coordinates, and story-room placement as the **approved creative architectural design** for this campaign. Original v1 proposal wording below is retained as historical drafting context and **superseded where it says the house design was unapproved**. Mechanical wall thickness, door clearance, stair landings, actual render quality and Foundry Scene IDs still require later validation. [Fast Map Creation Profile](../ashen-veil-fast-map-creation-profile-v1-2026-10-22.md) is the owner-directed campaign exception to the usual perfection-focused process.
+
+
 **Date:** 2026-10-22. **Authority:** Assistant-authored, owner-requested first measured ARCHITECTURAL PROPOSAL. **Not** an owner-approved floorplan, Foundry Scene, full structural engineer's blueprint, map render, or product KB sync. It supersedes the undimensioned nine-square zoning *only as a proposed design*, while owner-established quest items, real exterior orientation, and one-room-per-scene policy remain authoritative.
 
 ## Structural idea: real linked home rather than a square of independent rooms
