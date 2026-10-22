@@ -8,7 +8,7 @@ On 2026-10-21, the owner explicitly instructed: **“Scrap the 29-map completely
 
 ## Result and assumptions
 
-**Current working estimate: 28 questline-serving scenes = 5 playable exterior environment maps + 7 functional outbuilding interior maps + 13 house/roof/access scenes + 2 Aqueduct scenes + 1 Undercroft scene.** This number is **derived, not targeted**, and it is not a reinstatement of the historic 29 count.
+**Historical working estimate before the 2026-10-21 Keystone revision: 28 questline-serving scenes** (5 exterior, 7 outbuilding interiors, 13 house/roof/access, 2 Aqueduct, 1 Undercroft). **UNDER RECONCILIATION:** The Undercroft now includes an accessible pre-door space and a final ritual area behind a sealed door. Distinct physically explorable rooms require distinct Foundry scenes. The new independent Bowl pickup location is still unassigned. **Do not treat 28 as an approved/current final count, and do not resurrect the discarded 29-map roster.**
 
 Assumptions that must be reviewed at physical-layout stage:
 
@@ -16,7 +16,7 @@ Assumptions that must be reviewed at physical-layout stage:
 - **Memorial Clearing and Sune's Grove** are shown together for **counting only** as one playable Sune statue/four-bust environment. The canonical name/area equivalence is still OPEN. Do not state that the owner resolved it, or spawn a second shrine based solely on terminology.
 - The **Forgotten Gazebo** receives a dedicated map because it is an independent late puzzle destination; the owner may prefer it inside the Maze map if physically suitable (one less scene).
 - The **Upper Hall/Landing** is counted as a separate traversal map to serve multiple separately mapped rooms. The **Basement Landing** is not independently counted yet; where basement door arrival and vault access land remains subject to layout.
-- **Spine Mosaic hidden room**, **Candle Workshop**, and **Allen's secured final Vault** are physical explorable rooms and receive their own maps. Ordinary mechanisms/compartments do not. The vault has no agreed precise building placement.
+- **Spine Mosaic hidden room**, **Candle Workshop**, and **Allen's secured Vault** are physical explorable rooms and receive their own maps. Ordinary mechanisms/compartments do not. The vault has no agreed precise building placement. Its reward is **Keystone**, not Scrying Bowl.
 - **Boiler Room** is a separate Bathhouse room. It restores heat and a player recovery point **only after** completion of the Aqueduct's first pressure puzzle, which restores *both* Greenhouse and Boiler supply lines. Healing mechanics remain unchosen.
 - The forest well is a portal/transition to the Aqueduct and **not a separate scene**. The charging station, inner Utility Room equipment compartment, older rowboat, sluice, carriage interior, cliff/roof windows, family stash, statue relief and all locked item containers remain content within their respective mapped scenes unless later physical specifications clearly require something else.
 
@@ -69,12 +69,18 @@ Assumptions that must be reviewed at physical-layout stage:
 |---|---|---|---|---|
 | 25 | Spine Mosaic Hidden Room | Physical secret room behind Sophia's bookcase, Gond emblem half after sixth book | House hidden room | Required if planned physical room as transcript states |
 | 26 | Boathouse | Across refilled pond behind vegetation; holds Prayer of Devotion | Outbuilding room | Required |
-| 27 | Allen's Secured Vault | Four conditions grant Bowl: basement access, charged Gondian device, two emblem halves | House hidden/secured room | Required physical room, exact site unresolved |
-| 28 | Undercroft Ritual Chamber | Sune bowl/pellet water mechanism opens entrance; final ritual and battle | Underground | Required |
+| 27 | Allen's Secured Vault | Original four conditions remain: basement access, charged Gondian source, two emblem halves; **reward is Keystone**, not Scrying Bowl | House hidden/secured room | Required physical room, exact site unresolved |
+| 28 | Undercroft — pre-door exploration | **Independent Scrying Bowl** + pellet at Sune statue open entrance; players can explore Undercroft and inspect locked final door before obtaining Keystone | Underground | Required; revised from previous ritual-chamber conception |
+
+## Revision note — Undercroft final door and Keystone (2026-10-21)
+
+**Direct owner change:** Bowl is no longer the item in Allen's Vault; Bowl is an independent progression piece (exact pickup map is OPEN). Bowl + existing `027` pellet opens an **explorable Undercroft** in which the players can see the sealed final door. The old four-branch Vault grants **Keystone**, used to open that door and access Voss's final ritual encounter. See [v2 Grove/final-door spec](./sune-memorial-clearing-puzzle-design-v2-2026-10-21.md).
+
+**New potential distinct map (not assigned stable ID yet):** **Final Ritual Chamber beyond sealed Undercroft door**. If separated by its own room boundary, it must have its own Foundry scene under the individual-room rule. The original 28-scene count therefore requires recount after topology is fixed; no target number should drive design. An independently acquired Bowl may occupy an existing scene or a newly approved separate location, also unknown.
 
 ## Reconciliation checklist (no premature final count)
 
-| Change if later confirmed | Delta from 28 |
+| Change if later confirmed | Potential change to the pre-revision 28-scene working estimate |
 |---|---:|
 | Gazebo is fully navigable and playable on the Forest Maze scene without a separate destination scene | −1 |
 | Full navigable pond, far shore and rowboat activity truly fit on Carriage Yard map without crowding/distorting approved visual reference | −1 |
@@ -96,4 +102,4 @@ The recovered conversation and older architectural sketches also discuss a **kit
 - [Owner Decision Catalogue and Topology Checkpoint](./campaign-decision-catalogue-2026-10-20.md), including post-transcript Allen/Dahlia, authoritative Carriage Yard picture, southwestern Bathhouse branch, Bathhouse Boiler Room as recovery puzzle.
 - User's current instruction: discard 29-map plan **completely**, count questline maps first, add flavor maps later.
 
-**Not performed:** No map rendering, Foundry writes, Regionwright behavior creation, scene registry in production DB, or runtime tests. Count approval, door endpoints, room geometry, healing rules and flavor allocation remain open.
+**Not performed:** No map rendering, Foundry writes, Regionwright behavior creation, scene registry in production DB, or runtime tests. Count approval, bowl source, final door and ritual-chamber geometry, door endpoints, healing rules and flavor allocation remain open.
