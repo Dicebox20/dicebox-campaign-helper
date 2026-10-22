@@ -16,11 +16,22 @@
 - **Treatment:** Primary historical evidence of early proposals and subsequent decisions, **not automatically current canon**. Later explicit owner decisions and accepted design locks supersede conflicting historical proposals.
 - **Source preservation:** No modifications to the source transcript.
 
-## Part 2 of 2 — PENDING
+## Part 2 of 2 — RECEIVED / SOURCE VERIFIED
 
-- **Source:** Not yet supplied by the owner.
-- **Designation:** Reserve for the second Halloween campaign chat transcript.
-- **Treatment:** When received, register exact URL/path and source identity, then audit Part 1 + Part 2 chronologically against owner-approved canon, revisions, map-render failures, and current handoff. Do not invent absent transcript content.
+- **Owner designation:** Second Halloween campaign chat; **Part 2 of 2**.
+- **Source conversation:** `This Is Halloween` — later map creation / rendering conversation.
+- **Repository path:** [map-creation-conversation-transcript-2026-10-22.md](./map-creation-conversation-transcript-2026-10-22.md).
+- **Branch at registration:** `codex/cabin-ashen-veil-recovery`.
+- **Git blob SHA:** `48b19d3b074820b73f0159a39d84d22aeb0bcc7c`.
+- **Text length observed:** 22,034 characters.
+- **Archive date:** 2026-10-22.
+- **Historical reconstruction:** 22 chronological exchange/decision sections; owner messages transcribed verbatim from available context; assistant replies summarized unless expressly quoted. Some assistant/tool messages and raw image bytes are unavailable. **Not** a complete native platform export.
+- **Treatment:** Later campaign process and art-standard owner instructions control where applicable, subject to newer explicit corrections; failed renders remain rejected evidence.
+- **Source preservation:** No modifications to the source transcript.
+
+## Two-part registration status
+
+**COMPLETE FOR OWNER-DESIGNATED TWO CHAT SOURCES.** Perform a chronological audit against accepted campaign canon, design supersessions, remaining dependencies and the 2026-10-22 clean-room handoff. A subsequent separate conversation named `Halloween Campaign Handoff` is referenced in Part 2 and is **not silently asserted to be included** within either source transcript.
 
 ## Audit policy
 
