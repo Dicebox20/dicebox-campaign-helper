@@ -1,0 +1,844 @@
+{
+  "schema": "ashen.working-house-blueprint.v1",
+  "date": "2026-10-22",
+  "status": "PROPOSAL_NOT_OWNER_APPROVED",
+  "campaign": "Cabin in the Ashen Veil",
+  "sourceScope": "independent side campaign",
+  "coords": "Feet; North up; origin SW main 76x52 ft core. Positive x=E, y=N",
+  "dimensions_ft": {
+    "main_width": 76,
+    "main_depth": 52,
+    "overall_west": -10,
+    "east": 90,
+    "north": 57,
+    "porch_south": -7,
+    "wall_nominal_exterior": 1,
+    "wall_nominal_interior": 0.6
+  },
+  "feature_model": "One physical room per Foundry scene; no runtime Scene UUIDs assigned",
+  "rooms": [
+    {
+      "id": "H-G01",
+      "name": "Dining Room",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            24,
+            0
+          ],
+          [
+            24,
+            16
+          ],
+          [
+            0,
+            16
+          ]
+        ]
+      ],
+      "status": "PROPOSED_STORY",
+      "fixtures": [
+        "family dining table"
+      ]
+    },
+    {
+      "id": "H-G02",
+      "name": "Foyer",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            24,
+            0
+          ],
+          [
+            52,
+            0
+          ],
+          [
+            52,
+            16
+          ],
+          [
+            24,
+            16
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "grandfather clock",
+        "stair up and locked basement stair",
+        "south front porch"
+      ]
+    },
+    {
+      "id": "H-G03",
+      "name": "Kitchen",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            52,
+            0
+          ],
+          [
+            76,
+            0
+          ],
+          [
+            76,
+            16
+          ],
+          [
+            52,
+            16
+          ]
+        ]
+      ],
+      "status": "PROPOSED_STORY",
+      "fixtures": [
+        "domestic hearth",
+        "family kitchen"
+      ]
+    },
+    {
+      "id": "H-G04",
+      "name": "Pantry",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            76,
+            0
+          ],
+          [
+            90,
+            0
+          ],
+          [
+            90,
+            16
+          ],
+          [
+            76,
+            16
+          ]
+        ]
+      ],
+      "status": "PROPOSED_STORY",
+      "fixtures": [
+        "shelves",
+        "food storage"
+      ]
+    },
+    {
+      "id": "H-G05",
+      "name": "Allen's Study",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            0,
+            16
+          ],
+          [
+            24,
+            16
+          ],
+          [
+            24,
+            52
+          ],
+          [
+            0,
+            52
+          ]
+        ],
+        [
+          [
+            -10,
+            26
+          ],
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            46
+          ],
+          [
+            -10,
+            46
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "Rufus two missing eyes",
+        "587 note"
+      ]
+    },
+    {
+      "id": "H-G06",
+      "name": "Great Room",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            24,
+            16
+          ],
+          [
+            52,
+            16
+          ],
+          [
+            52,
+            52
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        [
+          [
+            28,
+            52
+          ],
+          [
+            48,
+            52
+          ],
+          [
+            48,
+            57
+          ],
+          [
+            28,
+            57
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "in-world blueprint table",
+        "027 box",
+        "double-height hearth",
+        "family portraits"
+      ]
+    },
+    {
+      "id": "H-G07",
+      "name": "Dahlia's Art Studio",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            52,
+            16
+          ],
+          [
+            76,
+            16
+          ],
+          [
+            76,
+            52
+          ],
+          [
+            52,
+            52
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "vanity and mirror fitment",
+        "painting 027",
+        "Sune altar"
+      ]
+    },
+    {
+      "id": "H-G08",
+      "name": "Hidden Candle Workshop",
+      "level": "ground",
+      "parts": [
+        [
+          [
+            76,
+            30
+          ],
+          [
+            90,
+            30
+          ],
+          [
+            90,
+            52
+          ],
+          [
+            76,
+            52
+          ]
+        ]
+      ],
+      "status": "REQUIRED_SECRET",
+      "fixtures": [
+        "wick",
+        "candle materials"
+      ]
+    },
+    {
+      "id": "H-U01",
+      "name": "Unused Nursery",
+      "level": "upper",
+      "parts": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            24,
+            0
+          ],
+          [
+            24,
+            16
+          ],
+          [
+            0,
+            16
+          ]
+        ]
+      ],
+      "status": "PROPOSED_STORY",
+      "fixtures": [
+        "carefully preserved crib",
+        "folded infant linens"
+      ]
+    },
+    {
+      "id": "H-U02",
+      "name": "Upper Gallery / Landing",
+      "level": "upper",
+      "parts": [
+        [
+          [
+            24,
+            0
+          ],
+          [
+            52,
+            0
+          ],
+          [
+            52,
+            16
+          ],
+          [
+            24,
+            16
+          ]
+        ],
+        [
+          [
+            24,
+            16
+          ],
+          [
+            29,
+            16
+          ],
+          [
+            29,
+            52
+          ],
+          [
+            24,
+            52
+          ]
+        ],
+        [
+          [
+            47,
+            16
+          ],
+          [
+            52,
+            16
+          ],
+          [
+            52,
+            52
+          ],
+          [
+            47,
+            52
+          ]
+        ],
+        [
+          [
+            29,
+            47
+          ],
+          [
+            47,
+            47
+          ],
+          [
+            47,
+            52
+          ],
+          [
+            29,
+            52
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "attic hook-ladder hatch",
+        "overlook to Great Room"
+      ]
+    },
+    {
+      "id": "H-U03",
+      "name": "Guest Bedroom",
+      "level": "upper",
+      "parts": [
+        [
+          [
+            52,
+            0
+          ],
+          [
+            76,
+            0
+          ],
+          [
+            76,
+            16
+          ],
+          [
+            52,
+            16
+          ]
+        ]
+      ],
+      "status": "PROPOSED_STORY",
+      "fixtures": [
+        "spare bed"
+      ]
+    },
+    {
+      "id": "H-U04",
+      "name": "Parents' Bedroom",
+      "level": "upper",
+      "parts": [
+        [
+          [
+            0,
+            16
+          ],
+          [
+            24,
+            16
+          ],
+          [
+            24,
+            52
+          ],
+          [
+            0,
+            52
+          ]
+        ],
+        [
+          [
+            -10,
+            26
+          ],
+          [
+            0,
+            26
+          ],
+          [
+            0,
+            46
+          ],
+          [
+            -10,
+            46
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "coat Old Iron Key",
+        "nightstand Gate Handle",
+        "Hope Chest music box"
+      ]
+    },
+    {
+      "id": "H-U05",
+      "name": "Sophia's Bedroom",
+      "level": "upper",
+      "parts": [
+        [
+          [
+            52,
+            16
+          ],
+          [
+            76,
+            16
+          ],
+          [
+            76,
+            52
+          ],
+          [
+            52,
+            52
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "bear first Rufus eye",
+        "six-book Spine Mosaic",
+        "Veil-only book on bed"
+      ]
+    },
+    {
+      "id": "H-U06",
+      "name": "Spine Mosaic Hidden Room",
+      "level": "upper",
+      "parts": [
+        [
+          [
+            76,
+            30
+          ],
+          [
+            90,
+            30
+          ],
+          [
+            90,
+            52
+          ],
+          [
+            76,
+            52
+          ]
+        ]
+      ],
+      "status": "REQUIRED_SECRET",
+      "fixtures": [
+        "Gond emblem half"
+      ]
+    },
+    {
+      "id": "H-B01",
+      "name": "Allen's Workshop",
+      "level": "basement",
+      "parts": [
+        [
+          [
+            24,
+            0
+          ],
+          [
+            52,
+            0
+          ],
+          [
+            52,
+            52
+          ],
+          [
+            24,
+            52
+          ]
+        ]
+      ],
+      "status": "REQUIRED",
+      "fixtures": [
+        "repair benches",
+        "Weathered-Key stair arrival"
+      ]
+    },
+    {
+      "id": "H-B02",
+      "name": "Secured Vault",
+      "level": "basement",
+      "parts": [
+        [
+          [
+            52,
+            26
+          ],
+          [
+            76,
+            26
+          ],
+          [
+            76,
+            52
+          ],
+          [
+            52,
+            52
+          ]
+        ]
+      ],
+      "status": "REQUIRED_SECRET",
+      "fixtures": [
+        "four-input lock",
+        "Keystone, not Bowl"
+      ]
+    },
+    {
+      "id": "H-A01",
+      "name": "Attic Storage",
+      "level": "attic",
+      "parts": [],
+      "status": "REQUIRED",
+      "fixtures": [
+        "Clockwork Winder",
+        "Minute Hand",
+        "storybook"
+      ]
+    },
+    {
+      "id": "H-R01",
+      "name": "Roof and Chimney",
+      "level": "roof",
+      "parts": [],
+      "status": "REQUIRED",
+      "fixtures": [
+        "two-hand clock noon gear",
+        "separate chimney-flue storybook"
+      ]
+    }
+  ],
+  "doors": [
+    {
+      "id": "D-EXTERIOR",
+      "from": "OUTSIDE",
+      "to": "H-G02",
+      "center_ft": [
+        38,
+        0
+      ],
+      "gate": "front door"
+    },
+    {
+      "id": "D-FOYER-GREAT",
+      "from": "H-G02",
+      "to": "H-G06",
+      "center_ft": [
+        38,
+        16
+      ],
+      "gate": "normal"
+    },
+    {
+      "id": "D-FOYER-DINING",
+      "from": "H-G02",
+      "to": "H-G01",
+      "center_ft": [
+        24,
+        8
+      ],
+      "gate": "normal; proposed story room"
+    },
+    {
+      "id": "D-FOYER-KITCHEN",
+      "from": "H-G02",
+      "to": "H-G03",
+      "center_ft": [
+        52,
+        8
+      ],
+      "gate": "normal; proposed story room"
+    },
+    {
+      "id": "D-GREAT-STUDY",
+      "from": "H-G06",
+      "to": "H-G05",
+      "center_ft": [
+        24,
+        34
+      ],
+      "gate": "Brass Study Key"
+    },
+    {
+      "id": "D-GREAT-STUDIO",
+      "from": "H-G06",
+      "to": "H-G07",
+      "center_ft": [
+        52,
+        34
+      ],
+      "gate": "normal"
+    },
+    {
+      "id": "D-KITCHEN-PANTRY",
+      "from": "H-G03",
+      "to": "H-G04",
+      "center_ft": [
+        76,
+        8
+      ],
+      "gate": "normal; proposed story room"
+    },
+    {
+      "id": "D-STUDIO-CANDLE",
+      "from": "H-G07",
+      "to": "H-G08",
+      "center_ft": [
+        76,
+        41
+      ],
+      "gate": "secret; Prayer of Protection"
+    },
+    {
+      "id": "D-UPPER-NURSERY",
+      "from": "H-U02",
+      "to": "H-U01",
+      "center_ft": [
+        24,
+        8
+      ],
+      "gate": "normal; proposed story room"
+    },
+    {
+      "id": "D-UPPER-GUEST",
+      "from": "H-U02",
+      "to": "H-U03",
+      "center_ft": [
+        52,
+        8
+      ],
+      "gate": "normal; proposed story room"
+    },
+    {
+      "id": "D-UPPER-PARENTS",
+      "from": "H-U02",
+      "to": "H-U04",
+      "center_ft": [
+        24,
+        34
+      ],
+      "gate": "normal"
+    },
+    {
+      "id": "D-UPPER-SOPHIA",
+      "from": "H-U02",
+      "to": "H-U05",
+      "center_ft": [
+        52,
+        34
+      ],
+      "gate": "Old Iron Key"
+    },
+    {
+      "id": "D-SOPHIA-SPINE",
+      "from": "H-U05",
+      "to": "H-U06",
+      "center_ft": [
+        76,
+        41
+      ],
+      "gate": "secret; completed six-book Spine Mosaic"
+    },
+    {
+      "id": "D-WORKSHOP-VAULT",
+      "from": "H-B01",
+      "to": "H-B02",
+      "center_ft": [
+        52,
+        38
+      ],
+      "gate": "four approved Vault inputs"
+    }
+  ],
+  "vertical": [
+    {
+      "id": "V-FOYER-UPPER",
+      "from": "H-G02",
+      "to": "H-U02",
+      "center_ft": [
+        43,
+        8
+      ],
+      "gate": "normal upstairs"
+    },
+    {
+      "id": "V-FOYER-BASEMENT",
+      "from": "H-G02",
+      "to": "H-B01",
+      "center_ft": [
+        31,
+        8
+      ],
+      "gate": "Weathered Key"
+    },
+    {
+      "id": "V-UPPER-ATTIC",
+      "from": "H-U02",
+      "to": "H-A01",
+      "center_ft": [
+        38,
+        49
+      ],
+      "gate": "Ladder Hook"
+    },
+    {
+      "id": "V-UPPER-ROOF",
+      "from": "H-U04",
+      "to": "H-R01",
+      "center_ft": [
+        12,
+        52
+      ],
+      "gate": "parents upper north window, roof traversal proposal"
+    }
+  ],
+  "story_clues": {
+    "great_room_blueprint_center_ft": [
+      38,
+      25.5
+    ],
+    "lockbox027_center_ft": [
+      27,
+      26
+    ],
+    "player_handout_erasures": [
+      "Dahlia Art Studio EAST wall x76, y30..52; hidden Candle room beyond",
+      "Sophia Bedroom EAST wall x76, y30..52; Spine Mosaic hidden room directly above Candle room"
+    ],
+    "player_handout_must_be_derived_from_master": true
+  },
+  "constraints": [
+    "Ground all eight room footprints non-overlapping; upper six room footprints non-overlapping; basement two non-overlapping",
+    "upper void: x=29..47, y=16..47, open to Great Room",
+    "East two secret rooms occupy identical footprint on different floors, separated by floor, no inter-level secret link",
+    "Unexcavated basement earth is not added as traversable rooms",
+    "No unapproved route from house basement to Undercroft",
+    "Room/storey dimensions and gates are working proposals, not canon",
+    "Approved exterior orientation Cabin north of Yard, south-facing porch",
+    "Map scale target gridless logical 120px per 5ft; final map geometry awaits structural inspection"
+  ]
+}
