@@ -36,3 +36,13 @@ The owner replaced the Vault's **Scrying Bowl** prize with a **Keystone** while 
 ## Donovan/Sophia Undercroft and Bathhouse Bowl refinement (2026-10-21)
 
 The [current Undercroft/Bathhouse design v3](./undercroft-keystone-bathhouse-bowl-healing-design-v3-2026-10-21.md) fixes the ornate **Keystone door** as the barrier that Donovan tried to dig through, directly enclosing **his and Sophia's remains**; the passage beyond goes to the ritual encounter. A **standalone Bowl mid-game scene** is directed, with a Bathhouse drain-revealed cistern a **proposed** entrance, not yet approved exact geometry. The bath heals only while the sluice is **closed**, pool **filled**, Waterworks **restored** and boiler **heated**. [Questline map inventory](./questline-map-inventory-2026-10-21.md) now shows a provisional *31 distinct-scene working estimate* arising from the extra Bowl, refuge and ritual destinations—not a fixed target or revival of the retired 29-map roster.
+
+## Rosewater Reliquary Bowl placement and map PREPARE (2026-10-21)
+
+Under explicit owner delegation to decide the Bowl's location and retrieval, the assistant selected a **new standalone mid-game Bathhouse — Rosewater Reliquary scene**. Opening the sluice drains pool and pond, exposing the established Screwdriver and a **three-ring rosewater floor mosaic**. Align the carved channel from wave to rose to reveal stair access; take Bowl from dry devotional plinth; an inside-unboltable dry escape/service door connects to Bathhouse Boiler Room to avoid refill softlocks. The item remains independent of Allen's four-input Keystone Vault and the Crimson Veil.
+
+- [Bowl location, puzzle and safety decision](./rosewater-reliquary-bowl-decision-2026-10-21.md)
+- [First Bathhouse four-map PREPARE design](./bathhouse-map-prepare-cluster-v1-2026-10-21.md)
+- [Current campaign decision catalogue](./campaign-decision-catalogue-2026-10-20.md)
+
+No scene art or Foundry builds were started.
