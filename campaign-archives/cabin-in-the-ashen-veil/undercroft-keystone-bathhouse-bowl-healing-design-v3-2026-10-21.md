@@ -106,3 +106,7 @@ The owner now explicitly mandated the first **two** conditions. The others were 
 7. Select healing amount, duration/charges, player interaction (bath/Region), resting restrictions and reset policy.
 
 **No Foundry, Regionwright, product KB, scene art or live state has been changed by this design document.**
+
+## Subsequent Bowl location decision (2026-10-21)
+
+**SUPERSEDED ONLY FOR BOWL PLACEMENT:** The owner later delegated an exact decision to the assistant, who selected the **Rosewater Reliquary** as an underground map reached by a rosewater-ring mosaic hatch exposed when the Bathhouse pool drains. See [delegated Bowl design](./rosewater-reliquary-bowl-decision-2026-10-21.md) and [Bathhouse PREPARE draft](./bathhouse-map-prepare-cluster-v1-2026-10-21.md). The prior v3 “proposed/open” placement is **no longer open**; its **Undercroft Keystone door and healing rules** remain current and controlling. A separate dry one-way service exit to the Boiler Room is now part of the design to avoid refill trapping.
