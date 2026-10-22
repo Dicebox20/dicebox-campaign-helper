@@ -106,3 +106,7 @@ The owner selected the **first** recent Gondian upper-floor drawing as visually 
 ## Owner-selected attic and optional Mini-Robo Rufus (2026-10-22)
 
 The owner chose the **first cross-shaped Gondian attic drawing**: central attic, three attached storage rooms north/west/east, and a surrounding non-walkable roof projection. Optional [Mini-Robo Rufus assembly puzzle and complete Item description](./blueprints/attic-three-storage-rooms-mini-robo-rufus-puzzle-v1-2026-10-22.md) distribute three parts through the rooms and reward a benign clockwork dog with Allen's exact inscription **“This was a better plan than the other one”**. This is separate from mandatory taxidermied Rufus's two-eye Study puzzle. The attic retains its existing ceiling hatch/ladder and required Winder, Minute Hand and storybook. No live Foundry changes.
+
+## Owner-accepted Basement room program (2026-10-22)
+
+Owner accepted the two-space Basement composition: [Allen's Workshop + Secured Vault — approved design program](./blueprints/basement-layout-design-v1-2026-10-22.md). The locked Foyer door leads to a walled descending flight with the lower safe landing in the Workshop. West tool recess and north mechanical testing offset are **subzones, not extra Scenes**; a single reinforced door enters the separately mapped Vault containing the Keystone after the already locked four predicates. No alternate Undercroft tunnel. This is design approval, not measured blueprint/image approval or Foundry installation.
