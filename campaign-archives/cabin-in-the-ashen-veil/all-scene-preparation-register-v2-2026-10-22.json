@@ -5,6 +5,7 @@
   "status": "12_OF_48_CONFIRMED_BASE_MAP_ART_APPROVED_36_PENDING_AFTER_OWNER_ROOM_GRANULARITY_SPLIT;_EXTERIOR_CONSOLIDATIONS_PROPOSED",
   "ownerScope": "Owner: ONE separate Foundry scene/map per enclosed cabin ROOM across every floor, attic storage included. Non-cabin destinations default to larger area-wide maps, preserving nine separate SG and single Bathhouse and Aqueduct scene exceptions.",
   "sourcePriority": [
+    "2026-10-23 owner: EXT-02 Pond+Sluice only, matching FULL/DRAINED backgrounds, far-bank teleport into distinct EXT-07 overgrowth scene",
     "2026-10-23 OWNER cabin rooms ALL separate; add attic west/north/east storage scenes; non-cabin default area-wide; unified aqueduct owner-approved",
     "2026-10-23 unified Bathhouse owner APPROVED exact attempt 7: seven surface zones consolidated in one map; lower Reliquary staged, runtime gates pending",
     "2026-10-23 all nine Grove maps owner accepted / visually archived: see grove-nine-map-visual-completion-receipt-2026-10-23.md",
@@ -873,28 +874,28 @@
     },
     {
       "id": "EXT-02",
-      "name": "Pond and Both Shorelines",
+      "name": "Pond & Sluice Gate — Full / Drained",
       "zone": "Estate grounds",
       "track": "COMPLEX",
-      "geometry": "Pond from estate east side including dock, opposite dock, sluice and drained submerged gate",
+      "geometry": "Area-scale Pond map: near/W estate shore via EXT-01, immense pond basin and accessible Sluice Gate at near/northern shore; narrow far/E landing is a teleport Region to separate EXT-07 Overgrown Boathouse Approach. NO Boathouse location painted on Pond. Two exact matching physical background variants: FULL first, DRAINED later exposing Aqueduct gate.",
       "plannedNeighborIds": [
         "EXT-01",
         "EXT-07",
         "AQ-01"
       ],
       "mustSee": [
-        "sluice control socket",
-        "near dock/boat",
-        "opposite dock",
-        "hollow log",
-        "lower Aqueduct gate exposure"
+        "significant quiet lake occupying majority of map",
+        "clearly accessible stone/metal Sluice Gate control with empty crank socket",
+        "near-shore safe estate approach and understated mooring",
+        "opposite-shore safe teleport landing to EXT-07",
+        "DRAINED variant: exposed lakebed stairs and Aqueduct door, geometry identical to FULL"
       ],
-      "stateAndSeparateAssets": "Full/drained state changes; fishing rod, Mirror, book Felix, Weathered Key, pond gear/handle access when drained; far vegetation blockade",
+      "stateAndSeparateAssets": "Global sluiceState CLOSED→FULL vs OPEN→DRAINED also synchronized with Bathhouse. Crank from Shack installed once, toggled repeatedly. Boat/rowboat, original wreck Mirror, near hollow-log Felix book, fishing rod are independent minimal Tiles/Regions/Items. Drained exposes Weathered Key and Aqueduct Gear+Handle gate, independent pickups. Plant overgrowth removed from Pond and staged in EXT-07. Paired guarded shoreline transitions and flood interlocks.",
       "density": "SPARSE",
-      "inspectionHardGates": "Close/open sluice safely; distinct safe near and far shores; no always-visible bottom rewards",
-      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "inspectionHardGates": "Art focus exclusively pond and sluice, restrained shore landing cues. FULL first owner approval before DRAINED aligned version. Distinct E far-bank Region to EXT-07, W approach EXT-01, conditional AQ-01 on dry floor. No extra destination environments competing with pond. Neutral diffuse light. No always-exposed collectibles/door on FULL.",
+      "sourceAuthority": "Direct owner 2026-10-23 pond-only and sluice gate instruction; controlling replacement PREPARE v2",
+      "designNotes": "Read ./pond-full-drained-and-far-bank-transition-prepare-v2-2026-10-23.md before any future generation. 2026-10-23 attempt 1 was REDO; user specifically moved plant overgrowth to EXT-07, not the Pond. Preserve quest items as small separate interactions.",
+      "status": "OWNER_SCOPE_REVISED_V2_POND_FULL_DRAINED_RENDER_PENDING_ATTEMPT1_REDO"
     },
     {
       "id": "EXT-03",
@@ -984,24 +985,25 @@
     },
     {
       "id": "EXT-07",
-      "name": "Boathouse",
+      "name": "Boathouse Approach & Overgrown Landing",
       "zone": "Estate grounds",
       "track": "FAST",
-      "geometry": "Independent destination at opposite pond dock across water",
+      "geometry": "SEPARATE follow-on map after rowing across EXT-02 Pond and entering paired far-bank teleport Region. Overgrown dock/landing area, magical thorn barrier guarding boathouse, and small Boathouse destination/prayer scene inside. Return Region to Pond far bank.",
       "plannedNeighborIds": [
         "EXT-02"
       ],
       "mustSee": [
-        "dock doorway",
-        "rowing equipment",
-        "Prayer of Devotion clue/fixture"
+        "paired arrival/return landing from far pond shoreline",
+        "marked magical thorn overgrowth obstructing boathouse access in early/blocked stage",
+        "approachable Boathouse door and old rowing/dock equipment",
+        "readable Prayer of Devotion pickup location beyond cleared obstacle"
       ],
-      "stateAndSeparateAssets": "Far dock plant obstruction cleared by Greenhouse preparation; prayer pickup/dedication, unique and idempotent",
+      "stateAndSeparateAssets": "Late Greenhouse fictional Plant-Killer Flask clears overgrowth via Region-controlled Tile/stage, permanently opens access. Prayer of Devotion is one-time pickup accessible only after barrier removed. Before unblocking, can inspect and return safely to Pond. Player teleport in far-side Pond arrival is not automatic clearance/reward.",
       "density": "DOMESTIC",
-      "inspectionHardGates": "Dock/boat back-route preserved; prayer not granted before reachability",
-      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "inspectionHardGates": "Separate from Pond base art; EXT-07 teleport paired safe arrival, far-side obstacle inspectable and not automatically solved, blocked vs cleared versions retained. Avoid early Prayer access or one-way softlock.",
+      "sourceAuthority": "2026-10-23 direct owner: opposite Pond shore teleports to next map with plant overgrowth; retains prior EXT-07 Boathouse story",
+      "designNotes": "Mapped counterpart to ./pond-full-drained-and-far-bank-transition-prepare-v2-2026-10-23.md. Owner explicitly keeps Pond and overgrowth on independent maps.",
+      "status": "OWNER_SCOPE_REVISED_OVERGROWN_LANDING_PREPARED_RENDER_PENDING"
     },
     {
       "id": "EXT-08",
@@ -1350,6 +1352,6 @@
     "ownerAcceptedBaseMapArt": 12,
     "remainingBaseMapTargets": 36,
     "calculations": "56 logical location cards -7 Bathhouse merge -1 Aqueduct merge =48 base-map targets; 9 SG + EXT-01 + Bathhouse + Aqueduct =12 owner-accepted. Includes three newly separated attic storage room targets under current owner rule.",
-    "proposedExteriorConsolidation": "Maze FM-01..04 could become one map (-3); Pond EXT-02 plus Boathouse EXT-07 could become one (-1); then 44 total targets and 32 remaining. Not yet approved as specific grouping; other ester outbuildings may reduce further after geometry and puzzle checks."
+    "proposedExteriorConsolidation": "Pond EXT-02 and Boathouse EXT-07 are now expressly SEPARATE by owner direction; DO NOT merge. Forest Maze FM-01..04 area-scale consolidation remains a candidate (-3) subject to physical routes and destination check. Current target count unchanged until another grouping approved."
   }
 }
