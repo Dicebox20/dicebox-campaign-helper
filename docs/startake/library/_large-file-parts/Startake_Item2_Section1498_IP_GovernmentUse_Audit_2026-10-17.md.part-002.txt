@@ -1,0 +1,40 @@
+
+Bill v1.7 § 105(c) excluded compulsory transfer of intellectual property. Section 108(a) allowed software and intellectual-property access only through legally effective assignments, licenses, novations, or other lawful instruments. Those provisions correctly avoided assumed title transfer, but supplied no specified statutory route if a particular U.S.-patented invention were essential to domestic service continuity and no reasonable license could be obtained. The existing § 1498 remedy alone does not make the proposed corporation's patent-use status certain or establish a notice-and-negotiation procedure.
+
+**Disposition:** Bill v1.8 changes only § 105(c) and § 108. It preserves negotiated acquisition as the default and adds a limited, written, time-bound domestic U.S.-patent use authorization. The order must identify the patent, users, covered acts, service, scope, term, findings, alternatives, and owner negotiations. An emergency use is limited to 30 days with prompt notice. The Act expressly treats a covered authorized use by or for the corporation as use by or for the United States with authorization or consent for § 1498(a), preserving the owner's action for reasonable and entire compensation against the United States in the Court of Federal Claims. No title passes.
+
+The new subsection does not authorize copyright use, software copying or source-code access, trade-secret or customer-data access, performance of third-party contracts, use of foreign patents, or acts outside the United States. Copyright claims remain subject to existing § 1498(b). Compensation amounts are unknown; § 301(a) authorizes sums for compensation but does not itself appropriate funds, and § 302 continues to require legally available budget authority before an obligation. No compensation estimate or budget score is supplied.
+
+## Proposed operative text in Bill v1.8
+
+### SEC. 105(c). EXCLUSIONS.
+
+This section does not authorize compulsory transfer of corporate shares, foreign-situs property, satellites situated outside the territorial United States, intellectual property, customer property, classified systems, regulatory permissions, or contracts requiring third-party performance. Acquisition of such interests must proceed by lawful agreement or further specific legislation. A use-specific authorization under section 108(b) does not transfer title or grant rights beyond the identified U.S.-patent use. A court shall determine any disputed territorial situs; the Secretary's designation is not conclusive.
+
+### SEC. 108. CONTRACTS, INTELLECTUAL PROPERTY AND WORKERS.
+
+(a) CONTRACTS AND INTELLECTUAL PROPERTY.—Contract succession and access to or use of software and intellectual property shall occur only under legally effective assignments, licenses, novations or other lawful instruments, subject to the limited patent-use authorization in subsection (b). Payment for a physical asset does not by itself convey associated intellectual property, source code or third-party rights.
+
+(b) LIMITED DOMESTIC PATENT-USE AUTHORIZATION.—
+
+(1) AUTHORIZATION.—After consultation with the Attorney General, the Secretary may authorize and consent, by written order, to the use or manufacture by the Corporation, or by a contractor or subcontractor performing for the Corporation, of an invention specifically identified in the order and covered by a patent of the United States, solely to provide a communications service operated by the Corporation under this Act, and only if the Secretary finds in writing that—
+
+(A) the use is necessary to avoid a material interruption or substantial degradation of that service and no reasonably available noninfringing alternative exists; and
+
+(B) after written notice and a reasonable, good-faith opportunity to negotiate, the Secretary determines that no license or other lawful instrument is available on reasonable terms before the use is required, except that a temporary authorization may issue under paragraph (2) when immediate action is necessary to avoid the interruption or degradation.
+
+(2) TEMPORARY EMERGENCY ORDER.—After making the findings required under paragraph (1)(A) and consulting the Attorney General, if the Secretary finds in writing that immediate action is necessary to avoid a material interruption or substantial degradation and prior notice is impracticable, the Secretary may issue a temporary order for not more than 30 days. The Secretary shall provide the patent owner a copy and an opportunity to negotiate as soon as practicable, and not later than 48 hours after issuance. A temporary order may not be renewed.
+
+(3) ORDER CONTENT AND DISCLOSURE.—An order under paragraph (1) or (2) shall identify the patent number and owner; the covered invention, acts, users, domestic territory, communications service and effective dates; the findings and alternatives considered; and the reasons a license or other lawful instrument was unavailable or could not be obtained in time. A paragraph (1) order may remain in effect for not more than 180 days and may be renewed once, for not more than 180 days, only on a fresh record and renewed findings. Within 15 days, the Secretary shall provide the order to the patent owner and the congressional committees of jurisdiction and publish an unclassified, nonconfidential summary.
+
+(4) COMPENSATION.—For purposes of section 1498(a) of title 28, United States Code, a use or manufacture within an order under this subsection by or for the Corporation or its contractor or subcontractor shall be treated as use or manufacture by or for the United States with its authorization or consent. The United States shall be the defendant, and the patent owner's action and compensation shall be governed by section 1498(a).
+
+(5) LIMITS.—An order under this subsection authorizes only the identified use or manufacture of the identified United States patent within the territorial United States and only for the term stated. It does not transfer title or authorize use of a copyrighted work, access to source code, a trade secret or customer data, access to classified systems, performance of a contract by a third party, or any use of a foreign patent. Nothing in this subsection alters section 1498(b) or (c) of title 28, United States Code.
+
+(c) WORKERS.—No individual shall be compelled to work for the United States, the Corporation or a contractor. Employment offers, benefits, bargaining obligations, pensions and any workforce transition shall be addressed in a disclosed plan consistent with applicable labor and employment law. Existing employee rights are not waived by this Act.
+
+## Contrary considerations and remaining gaps
+
+- Existing § 1498(a) may already apply to some corporate or contractor conduct when the statutory “by or for” and authorization/consent elements are met. *Advanced Software* shows that a Government need not sign the contractor's contract, but its holding depended on documented Government participation, consent, and direct benefit. I found no decision in this bounded review deciding § 1498(a)'s application to the proposed entity.
+- The proposal creates a new, narrow authorization. Even if validly issued, it may displace an owner's ordinary ability to seek an injunction for the covered use and substitute compensation litigation. Notice, negotiation, specific findings, a short term, disclosure, and fresh renewal findings are therefore substantive owner protections, not clerical steps.
+- The exception covers patent rights only. If the required service also needs copyrighted expression, code, confidential information, or third-party performance, separate lawful rights are required; a patent-use order alone does not ensure technical continuity.
