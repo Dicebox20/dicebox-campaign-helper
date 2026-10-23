@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "11_OF_46_CURRENT_BASE_MAP_ART_APPROVED_35_REMAINING_FOUNDRY_NOT_BUILT",
-  "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
+  "status": "12_OF_48_CONFIRMED_BASE_MAP_ART_APPROVED_36_PENDING_AFTER_OWNER_ROOM_GRANULARITY_SPLIT;_EXTERIOR_CONSOLIDATIONS_PROPOSED",
+  "ownerScope": "Owner: ONE separate Foundry scene/map per enclosed cabin ROOM across every floor, attic storage included. Non-cabin destinations default to larger area-wide maps, preserving nine separate SG and single Bathhouse and Aqueduct scene exceptions.",
   "sourcePriority": [
+    "2026-10-23 OWNER cabin rooms ALL separate; add attic west/north/east storage scenes; non-cabin default area-wide; unified aqueduct owner-approved",
     "2026-10-23 unified Bathhouse owner APPROVED exact attempt 7: seven surface zones consolidated in one map; lower Reliquary staged, runtime gates pending",
     "2026-10-23 all nine Grove maps owner accepted / visually archived: see grove-nine-map-visual-completion-receipt-2026-10-23.md",
     "2026-10-23 owner approved SG-01 northwestern moon bust render generation 7190055e",
@@ -31,7 +32,7 @@
     "freshPromptOnRedo": true
   },
   "scope": {
-    "logicalSceneDesignCards": 53,
+    "logicalSceneDesignCards": 56,
     "plannedPairedAdjacencies": 62,
     "physicalStageVariants": "UNCERTIFIED; main Pond, Bath and Memorial likely need stage-specific art. Count after per-art geometry inspection",
     "prior43SceneCount": "SUPERSEDED; not authoritative under House v2, new Bath, independent Forest Maze and square Sune Grove",
@@ -363,25 +364,90 @@
     },
     {
       "id": "H-A01",
-      "name": "Attic / Three Storage Rooms",
+      "name": "Central Attic",
       "zone": "House — attic",
       "track": "FAST",
-      "geometry": "Irregular central walkable attic plus north, west and east storage rooms; overhead roof projection larger than attic footprint; Landing hatch/ladder",
+      "geometry": "Irregular central walkable attic with west, north and east doorways to three SEPARATE storage-room Scenes; upper landing hatch with deployable ladder. Overhead roof projection greater than accessible room.",
       "plannedNeighborIds": [
-        "H-U02"
+        "H-U02",
+        "H-A02",
+        "H-A03",
+        "H-A04"
       ],
       "mustSee": [
-        "north storage",
-        "west storage",
-        "east storage",
         "central assembly bench",
-        "central ladder hatch"
+        "secured pull-down ladder hatch from Upper Landing",
+        "three distinct door anchors toward west/north/east storage rooms",
+        "roof framing, attic dust and family relic storage"
       ],
-      "stateAndSeparateAssets": "Required independent Winder, Minute Hand and Moonlight book; 3 optional Mini-Robo Rufus pieces and assembled harmless clockwork companion",
+      "stateAndSeparateAssets": "Clockwork Minute Hand/Winder/Moonlight book canon remains; place each in its PREPARE-selected reachable location in attic suite. Optional three Mini-Robo Rufus parts are in the separate storage Rooms H-A02/03/04, assembled at central bench. Do not make optional Mini-Robo gate required plot items.",
       "density": "DOMESTIC",
-      "inspectionHardGates": "Ladder Hook attic entry, not fixed public stairs; all three parts separately recoverable; source items not gated by optional reward",
-      "sourceAuthority": "Owner-selected first cross-shaped attic survey",
-      "designNotes": "",
+      "inspectionHardGates": "One room = one Foundry Scene: central attic only in this image; visible doors pair to three separate storage Scenes. Ladder Hook access from upper landing; token-safe arrival. No merged full-attic-with-all-rooms render.",
+      "sourceAuthority": "Owner-selected first attic plan plus 2026-10-23 explicit universal cabin room-per-scene clarification",
+      "designNotes": "Unmerged under latest owner rule; new storage room-specific cards H-A02/03/04. Exact item allocations/measurements need source check before rendering.",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-A04",
+      "name": "East Attic Storage",
+      "zone": "House — attic",
+      "track": "FAST",
+      "geometry": "Separate enclosed east attic storage ROOM approximately 12×8 ft per owner-approved first cross-shaped attic survey; sole doorway to Central Attic H-A01. Exact door coordinate to be calibrated.",
+      "plannedNeighborIds": [
+        "H-A01"
+      ],
+      "mustSee": [
+        "one clear passage/door to central attic",
+        "Gondian repair materials and covered household relics",
+        "old stored household objects and roof structural framing"
+      ],
+      "stateAndSeparateAssets": "One part of the optional Gondian Mini-Robo Rufus assembly trail is associated with each of the three attic storage rooms; ensure parts are separately obtainable and assembled in Central Attic. Place exact required puzzle items according to original attic source once verified; independent interaction/tile for collectible.",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Independent room-scene map, not part of one composite attic background. Safe landing and paired doorway with H-A01. Optional reward must never gate required Moonlight storybook/Winder/Minute Hand.",
+      "sourceAuthority": "Owner-approved cross-shaped attic blueprint and 2026-10-23 binding one-cabin-room-per-map instruction",
+      "designNotes": "New logical render target split from formerly aggregated H-A01. PREPARE card needs measured walls and item-placement check before render.",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-A03",
+      "name": "North Attic Storage",
+      "zone": "House — attic",
+      "track": "FAST",
+      "geometry": "Separate enclosed north attic storage ROOM approximately 8×10 ft per owner-approved first cross-shaped attic survey; sole doorway to Central Attic H-A01. Exact door coordinate to be calibrated.",
+      "plannedNeighborIds": [
+        "H-A01"
+      ],
+      "mustSee": [
+        "one clear passage/door to central attic",
+        "stacked boxes, folded garments, family household supplies",
+        "old stored household objects and roof structural framing"
+      ],
+      "stateAndSeparateAssets": "One part of the optional Gondian Mini-Robo Rufus assembly trail is associated with each of the three attic storage rooms; ensure parts are separately obtainable and assembled in Central Attic. Place exact required puzzle items according to original attic source once verified; independent interaction/tile for collectible.",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Independent room-scene map, not part of one composite attic background. Safe landing and paired doorway with H-A01. Optional reward must never gate required Moonlight storybook/Winder/Minute Hand.",
+      "sourceAuthority": "Owner-approved cross-shaped attic blueprint and 2026-10-23 binding one-cabin-room-per-map instruction",
+      "designNotes": "New logical render target split from formerly aggregated H-A01. PREPARE card needs measured walls and item-placement check before render.",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-A02",
+      "name": "West Attic Storage",
+      "zone": "House — attic",
+      "track": "FAST",
+      "geometry": "Separate enclosed west attic storage ROOM approximately 10×8 ft per owner-approved first cross-shaped attic survey; sole doorway to Central Attic H-A01. Exact door coordinate to be calibrated.",
+      "plannedNeighborIds": [
+        "H-A01"
+      ],
+      "mustSee": [
+        "one clear passage/door to central attic",
+        "low crates, old field equipment, woodworking remnants",
+        "old stored household objects and roof structural framing"
+      ],
+      "stateAndSeparateAssets": "One part of the optional Gondian Mini-Robo Rufus assembly trail is associated with each of the three attic storage rooms; ensure parts are separately obtainable and assembled in Central Attic. Place exact required puzzle items according to original attic source once verified; independent interaction/tile for collectible.",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Independent room-scene map, not part of one composite attic background. Safe landing and paired doorway with H-A01. Optional reward must never gate required Moonlight storybook/Winder/Minute Hand.",
+      "sourceAuthority": "Owner-approved cross-shaped attic blueprint and 2026-10-23 binding one-cabin-room-per-map instruction",
+      "designNotes": "New logical render target split from formerly aggregated H-A01. PREPARE card needs measured walls and item-placement check before render.",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     },
     {
@@ -1180,8 +1246,9 @@
       "density": "MECHANICAL",
       "inspectionHardGates": "Well WEST, Waterworks SW, Pond gate separate; charger visible during chase; no invented Undercroft tunnel",
       "sourceAuthority": "Owner-approved west-well/SW-service Aqueduct survey + puzzle canon",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner PASS large Gondian brass-waterworks rendering gen 0a42e944-445b-435a-8821-9aa5a66aa30a; contains AQ-01 and AQ-02 feature Regions in one base map, runtime routes/scale unverified.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_AQUEDUCT_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "AQ-UNIFIED-01"
     },
     {
       "id": "AQ-02",
@@ -1203,8 +1270,9 @@
       "density": "MECHANICAL",
       "inspectionHardGates": "No separate Greenhouse valve puzzle, Aqueduct source charger remains AQ-01; bath service not early bypass",
       "sourceAuthority": "Owner-approved west-well/SW-service Aqueduct survey + puzzle canon",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner PASS large Gondian brass-waterworks rendering gen 0a42e944-445b-435a-8821-9aa5a66aa30a; contains AQ-01 and AQ-02 feature Regions in one base map, runtime routes/scale unverified.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_AQUEDUCT_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "AQ-UNIFIED-01"
     },
     {
       "id": "UND-01",
@@ -1276,10 +1344,12 @@
   ],
   "renderTargetCensus": {
     "asOf": "2026-10-23",
-    "legacyFeatureCards": 53,
-    "currentBaseMapTargets": 46,
-    "ownerAcceptedBaseMapArt": 11,
-    "remainingBaseMapTargets": 35,
-    "countPolicy": "Eight Bathhouse feature cards grouped under BATH-UNIFIED-01 as one rendered base map; separate staged art may still be needed for submerged and lower-floor puzzles. Nine SG, one EXT-01, one Bathhouse have accepted art; separate forest trail-fork not numbered in original 53."
+    "legacyFeatureCardsBeforeAtticRoomSplit": 53,
+    "logicalSceneDesignCards": 56,
+    "confirmedBaseMapTargets": 48,
+    "ownerAcceptedBaseMapArt": 12,
+    "remainingBaseMapTargets": 36,
+    "calculations": "56 logical location cards -7 Bathhouse merge -1 Aqueduct merge =48 base-map targets; 9 SG + EXT-01 + Bathhouse + Aqueduct =12 owner-accepted. Includes three newly separated attic storage room targets under current owner rule.",
+    "proposedExteriorConsolidation": "Maze FM-01..04 could become one map (-3); Pond EXT-02 plus Boathouse EXT-07 could become one (-1); then 44 total targets and 32 remaining. Not yet approved as specific grouping; other ester outbuildings may reduce further after geometry and puzzle checks."
   }
 }
