@@ -1,0 +1,140 @@
+## Proposed bill text
+
+Be it enacted by the Senate and House of Representatives of the United States of America in Congress assembled,
+
+### SECTION 1. SHORT TITLE.
+
+This Act may be cited as “The Starlink and Stripes Act”.
+
+### SEC. 2. PURPOSES AND RULES OF CONSTRUCTION.
+
+(a) PURPOSES.—The purposes of this Act are to establish publicly owned commercial satellite communications infrastructure; maintain reliable civilian, emergency and commercial connectivity; provide lawful continuity for public customers; protect communications rights; and acquire property only through voluntary agreement or constitutionally valid proceedings with just compensation.
+
+(b) NONPUNITIVE APPLICATION.—No determination, acquisition price, service decision or enforcement action under this Act may be based on an individual's political affiliation, protected expression, disability, or personal animus.
+
+(c) EVIDENCE.—The Secretary shall publish a dated acquisition rationale identifying dependence, service concentration, resilience objectives, costs, alternatives, contrary evidence and uncertainty. No numerical fleet share, incident allegation, private financial estimate, or disputed attribution is incorporated as a congressional factual finding by this section.
+
+(d) ASSESSMENT STANDARD.—The rationale required by subsection (c) shall distinguish observations, company reports, attributed allegations, disputed accounts, forecasts and proposed policy judgments. Each material quantitative statement shall identify its date, geography, unit, denominator, source and uncertainty. Satellite numbers shall not be presented as communications capacity or customer market share. Installation, availability, subscription and use shall be reported separately. This Act does not determine the cause or consequences of a disputed historical incident.
+
+### SEC. 3. DEFINITIONS.
+
+In this Act:
+
+(1) “Secretary” means the Secretary of Commerce.
+(2) “Corporation” means the public operator established under title II of this Act.
+(3) “Covered commercial business” means the commercial Starlink communications business to the extent identified in the schedule under section 101, excluding unrelated SpaceX businesses, dedicated Starshield and classified programs, and property of customers or third parties except specifically identified interests lawfully acquired from their owners.
+(4) “Covered interest” means a specifically described property, contractual, intellectual-property or equity interest proposed for acquisition under section 102; it does not mean the electromagnetic spectrum, a foreign sovereign authorization, or the right to compel personal labor.
+(5) “Closing” means the transfer of a covered interest under an executed agreement or final judicial transfer order, as applicable.
+(6) “Commission” means the Federal Communications Commission.
+
+## TITLE I—LAWFUL COMMERCIAL ACQUISITION
+
+### SEC. 101. TRANSACTION SCHEDULE AND SEPARATION PLAN.
+
+(a) Before committing to acquisition, the Secretary shall prepare an owner-by-interest schedule identifying the proposed commercial assets, obligations, liabilities, encumbrances, necessary permissions, shared services and exclusions. The schedule shall distinguish assets from nontransferable permissions, acquired ownership from licensed use, and verified facts from unresolved claims.
+
+(b) The Secretary shall obtain independent legal, financial and engineering assessments of the schedule, separability and continuity. Commercially sensitive and security information shall be protected under applicable law; a public summary shall identify material limitations and categories withheld.
+
+(c) Inclusion on a schedule creates no title, lien release, regulatory consent, entitlement to confidential information, or presumption against an affected owner. This Act confers no investigative subpoena power.
+
+### SEC. 102. NEGOTIATED ACQUISITION AUTHORITY.
+
+(a) Subject to appropriations and sections 101, 104 and 110, the Secretary is authorized to acquire, for transfer to the Corporation, covered interests through negotiated purchase, lease, license, or acquisition of equity in a voluntarily separated commercial entity.
+
+(b) The Secretary may negotiate transition-service, launch, manufacturing, intellectual-property, software-support and access agreements necessary for independent operation. Such agreements shall specify price, term, service obligations, remedies, renewal options and exit arrangements. This subsection neither transfers excluded property nor obligates a counterparty without agreement.
+
+(c) No contract may require acquisition of unrelated businesses as a condition of closing unless Congress expressly authorizes the expanded perimeter by a subsequent law. No officer may waive the exclusions in section 3 by administrative designation.
+
+### SEC. 103. APPRAISAL AND FAIR NEGOTIATION.
+
+(a) The Secretary shall retain at least two independent appraisers with relevant enterprise and asset expertise, disclose material conflicts, and reconcile divergent conclusions in writing. Valuation shall distinguish enterprise value, equity value, liabilities, required separation costs, acquired rights and retained rights, avoiding duplicate payment for the same interest.
+
+(b) Owners shall receive an intelligible description of the interest sought and a supported written offer, with a reasonable opportunity to obtain advice, present contrary evidence and negotiate. No acquisition discount may be imposed as punishment or by equating historical government spending with property already owned by the United States.
+
+(c) No appraisal, negotiated payment or budget estimate binds a court's constitutional compensation determination.
+
+(d) APPRAISAL RECORD.—Before making the supported written offer under subsection (b), the Secretary shall prepare a dated appraisal record identifying the interests and valuation date, legal and economic perimeter, sources and their limitations, material assumptions, methods considered, excluded businesses and rights, and unresolved information. The record shall address discounted cash flow, relevant market and transaction evidence, and asset replacement approaches, explaining any method rejected as unreliable or inapplicable. It shall preserve each appraiser's conclusion and material dissent; reconciliation does not require agreement or a favorable value. Material gaps preventing a supported offer shall be resolved before that offer is made. This subsection creates no power to compel disclosure not otherwise authorized by law.
+
+(e) RECONCILIATIONS.—The appraisal record shall separately reconcile—
+
+(1) enterprise value to equity value and the interests actually acquired, identifying cash, debt, leases, working capital, assumed liabilities and any change in perimeter;
+(2) announced transaction measures to closing measures, identifying cash, share consideration and its measurement date, contingent consideration, distributions and other material adjustments;
+(3) reported earnings to the cash-flow measure used, identifying noncash revenue, related-party charges, allocations, taxes, capital expenditure and accounting-policy differences;
+(4) business value to acquisition consideration, separation and transition costs, operating support and the fiscal measures required under section 301; and
+(5) each adjustment for anticipated synergies, control, growth or risk, identifying whose benefits or costs are assumed and preventing duplicate inclusion or deduction.
+
+(f) REPLACEMENT AND COMPARABILITY.—Any replacement estimate shall identify the satellite generation, condition, expected remaining service life, failure and retirement assumptions, capacity and service requirements, manufacturing, launch, ground infrastructure, terminals, software, spares, disposal obligations and material permission constraints. Continuing replacement expenditure shall be reflected consistently in terminal cash flows. Whole-program budgets or acquisition consideration divided by satellite counts shall not be presented as verified manufacturing or launch unit prices. A peer transaction or program measure may inform the appraisal only with an explanation of differences in date, currency, perimeter, service, accounting, capital intensity and risk, and of the resulting limitations. Alternative valuation methods shall not be added together where doing so counts the same economic interest twice.
+
+(g) UNCERTAINTY AND UPDATES.—The record shall distinguish observed amounts, management forecasts, independent estimates, illustrative scenarios and unavailable data. Missing information shall not be represented as zero. Sensitivities shall address material adverse cases and replacement, transition and permission risks. The Secretary shall update the record for material changes before a binding acquisition commitment and before closing, afford the owner a reasonable opportunity to respond to material changes to the offer, and obtain updated independent assessments where necessary. Nothing in this subsection permits a commitment or closing that fails another requirement of this Act.
+
+(h) DISCLOSURE AND COMPENSATION SAVINGS.—The record, each independent appraisal and material dissent shall be provided to the congressional committees of jurisdiction and the Comptroller General before closing, subject to applicable law protecting classified information, privileged material and confidential commercial information. A public summary shall disclose methods, material assumptions, ranges and limitations to the extent lawfully publishable, and identify categories withheld. Nothing in subsections (d) through (h) prescribes a constitutional compensation formula, establishes an administrative price ceiling, or authorizes a deduction from compensation otherwise required by law.
+
+### SEC. 104. CONDITIONS TO CLOSING.
+
+The Secretary may close only after certifying, on a reviewable record, that—
+
+(1) the specific title, interests, liabilities and creditor treatment are resolved to a legally sufficient standard;
+(2) all permissions required for that closing and continued operation are effective, or lawful transitional permissions cover the relevant period;
+(3) critical workforce, manufacturing, launch, network control, software, security, supplier and customer continuity arrangements are funded and executable;
+(4) the Corporation is legally constituted, has responsible officers and has demonstrated operational readiness through independently witnessed tests;
+(5) lawful budget authority covers the obligations proposed to be incurred, with a disclosed compensation and transition contingency plan;
+(6) the independent comparison under section 404(a) is complete, and the Secretary has issued a written determination explaining the expected public benefits of the proposed acquisition, why the recommended perimeter and transaction are justified in light of lawful alternatives, and how material contrary evidence and unresolved objections are addressed;
+(7) that determination, material unresolved risks, dissenting assessments, alternatives, mitigation measures and the appraisal record required under section 103 have been reported to Congress at least 60 days before closing; and
+(8) the appraisal record and independent assessments required by sections 103 and 404 are current for the proposed transaction, material changes have been evaluated, and the offer, consideration, fiscal submission and closing certification are reconciled to the same specified interests and assumptions.
+
+A material revision to the proposed perimeter, consideration, fiscal exposure, continuity plan or alternatives determination after the report under paragraph (7) shall be reported with updated independent assessments, and closing shall occur no earlier than 60 days after the revised report. Expiration of a notice period does not waive any other condition. The report is notice, not a committee veto or authorization for either House to change legal obligations outside enactment of law.
+
+### SEC. 105. LIMITED JUDICIAL CONDEMNATION AUTHORITY.
+
+(a) NEW DELEGATION.—The Secretary, acting through the Attorney General, may institute a civil action in the name of the United States to acquire a specifically identified domestic real-property interest or domestic tangible personal-property interest indispensable to the covered commercial business, only after a supported good-faith offer and not less than 180 days of negotiations unless the owner expressly declines further negotiation.
+
+(b) NECESSITY RECORD.—Before instituting the action the Secretary shall publish findings explaining the public use, the precise interest, the negotiations, why purchase or a less burdensome interest is unavailable, and why the taking is necessary for the public communications purposes of this Act. Political retaliation, punishment and private favoritism are prohibited purposes.
+
+(c) EXCLUSIONS.—This section does not authorize compulsory transfer of corporate shares, foreign-situs property, satellites situated outside the territorial United States, intellectual property, customer property, classified systems, regulatory permissions, or contracts requiring third-party performance. Acquisition of such interests must proceed by lawful agreement or further specific legislation. A use-specific authorization under section 108(b) does not transfer title or grant rights beyond the identified U.S.-patent use. A court shall determine any disputed territorial situs; the Secretary's designation is not conclusive.
+
+(d) NEW JURISDICTION AND PROCEDURE.—The district courts of the United States shall have original jurisdiction over actions under this section involving covered domestic real or tangible personal property, including objections to authority, public use, compliance with this Act, and compensation. Venue shall lie in a district where the property is situated. Rule 71.1 of the Federal Rules of Civil Procedure shall apply except as expressly provided by this Act. Affected owners and lienholders shall receive notice and a meaningful opportunity to contest authority, scope and compensation.
+
+(e) NO PERSONAL-PROPERTY QUICK TAKE.—Title or possession to personal property shall transfer only after a judicial determination sustaining authority and public use, determination and payment or court deposit of compensation, and a court order specifying the interest and possession date. This Act does not extend the declaration-of-taking procedure in section 3114 of title 40 to personal property.
+
+(f) LAND PROCEDURE.—For qualifying real-property interests, sections 3113 through 3118 of title 40 may be used only in accordance with their terms, available appropriations, this Act and the Constitution. No occupation before lawful possession is authorized by this Act.
+
+### SEC. 106. JUST COMPENSATION AND CLAIMANT RIGHTS.
+
+(a) No property may be taken under this Act without just compensation. The United States shall be liable for the full amount constitutionally required, including any required interest. A payment estimate, price ceiling or deposit does not extinguish that liability.
+
+(b) Compensation shall be determined for legally recognized interests under applicable constitutional law, with evidence of fair value and any legally compensable associated loss. No categorical statutory exclusion of legally compensable goodwill, trade secrets or going-concern value is created. No entitlement to speculative, duplicative or legally noncompensable value is created.
+
+(c) The court shall determine entitlement among owners and encumbrance holders, protect disputed proceeds and permit withdrawal of undisputed deposits without surrender of a claim to additional lawful compensation. No claimant shall recover twice for the same taking.
+
+(d) The United States consents to suit in the action under section 105 for compensation, interest and relief necessary to enforce that section. Other remedies and jurisdiction otherwise available for a taking are preserved, subject to applicable jurisdictional requirements. Nothing in this Act treats the Tucker Act as the source of acquisition authority or promises simultaneous jurisdiction in multiple courts.
+
+### SEC. 107. REGULATORY AND INTERNATIONAL SAVINGS.
+
+(a) This Act does not itself transfer a radio authorization, assign frequencies, approve control changes, establish foreign landing rights, or alter a treaty obligation. Required permissions shall be obtained from the responsible authorities before affected operations transfer.
+
+(b) Before closing, the Secretary, the Federal Communications Commission and the National Telecommunications and Information Administration shall publish a transaction-specific domestic authorization plan, including the applicability of sections 301, 305 and 310 of the Communications Act of 1934. Publication shall comply with applicable law protecting classified, privileged or confidential commercial information. For each Commission authorization affected by the transaction, the plan shall identify—
+(1) the authorization holder and the applicable Commission file number, call sign or other unique identifier;
+(2) each application, notification or other filing, and each Commission action, required by law for the proposed assignment, transfer of control or modification, together with its status;
+(3) each applicable orbital-debris mitigation plan, authorization condition, reporting duty and deadline, filing status of each required report, and deployment restriction;
+(4) the custodian of records supporting those plans, conditions and reports, and the method for preserving, transferring or maintaining access to those records; and
+(5) the proposed post-closing entity and designated official responsible for each continuing duty and related records, subject to any Commission action required by law; and
+(6) any designation of the covered commercial business as an eligible telecommunications carrier under section 214(e) of the Communications Act of 1934, identifying the designating authority and service area; any related Federal universal-service support and applicable use, reporting, and repayment duties; any application, notice, consent, or determination of continuing eligibility required by law for the proposed transaction; and the entity and designated official responsible after closing for each continuing duty. For this paragraph, the Secretary shall consult the Commission and each State commission with jurisdiction, as applicable.
+The plan shall identify records or filing status that are unavailable or unverified. The plan itself shall not effect or approve a transfer, assignment, modification or waiver, deem a filing made or condition satisfied, or dispense with Commission action required by law. Nothing in this Act grants or transfers an eligible-telecommunications-carrier designation or authority to receive universal-service support, or deems an applicable Federal or State requirement satisfied. No assumption that federal ownership automatically resolves the FCC–federal spectrum boundary is authorized.
+
+(c) Foreign property and permissions shall be acquired or continued only through agreements and approvals effective under the relevant jurisdiction's law. Domestic enactment creates no presumption of foreign recognition.
+
+### SEC. 108. CONTRACTS, INTELLECTUAL PROPERTY AND WORKERS.
+
+(a) CONTRACTS AND INTELLECTUAL PROPERTY.—Contract succession and access to or use of software and intellectual property shall occur only under legally effective assignments, licenses, novations or other lawful instruments, subject to the limited patent-use authorization in subsection (b). Payment for a physical asset does not by itself convey associated intellectual property, source code or third-party rights.
+
+(b) LIMITED DOMESTIC PATENT-USE AUTHORIZATION.—
+
+(1) AUTHORIZATION.—After consultation with the Attorney General, the Secretary may authorize and consent, by written order, to the use or manufacture by the Corporation, or by a contractor or subcontractor performing for the Corporation, of an invention specifically identified in the order and covered by a patent of the United States, solely to provide a communications service operated by the Corporation under this Act, and only if the Secretary finds in writing that—
+
+(A) the use is necessary to avoid a material interruption or substantial degradation of that service and no reasonably available noninfringing alternative exists; and
+
+(B) after written notice and a reasonable, good-faith opportunity to negotiate, the Secretary determines that no license or other lawful instrument is available on reasonable terms before the use is required, except that a temporary authorization may issue under paragraph (2) when immediate action is necessary to avoid the interruption or degradation.
+
+(2) TEMPORARY EMERGENCY ORDER.—After making the findings required under paragraph (1)(A) and consulting the Attorney General, if the Secretary finds in writing that immediate action is necessary to avoid a material interruption or substantial degradation and prior notice is impracticable, the Secretary may issue a temporary order for not more than 30 days. The Secretary shall provide the patent owner a copy and an opportunity to negotiate as soon as practicable, and not later than 48 hours after issuance. A temporary order may not be renewed.
+
+(3) ORDER CONTENT AND DISCLOSURE.—An order under paragraph (1) or (2) shall identify the patent number and owner; the covered invention, acts, users, domestic territory, communications service and effective dates; the findings and alternatives considered; and the reasons a license or other lawful instrument was unavailable or could not be obtained in time. A paragraph (1) order may remain in effect for not more than 180 days and may be renewed once, for not more than 180 days, only on a fresh record and renewed findings. Within 15 days, the Secretary shall provide the order to the patent owner and the congressional committees of jurisdiction and publish an unclassified, nonconfidential summary.
