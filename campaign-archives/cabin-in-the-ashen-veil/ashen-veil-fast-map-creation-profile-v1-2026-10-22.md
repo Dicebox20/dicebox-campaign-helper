@@ -109,3 +109,7 @@ No long repetitive manifest for plain furniture. Carry only objects relevant to 
 - Does **not** promote the campaign exception into Dicebox global Scene SOP or silently modify product code.
 - Every image attempt after a rejected prompt still obeys the 2026-10-09 global clean-restart rule. PREPARE is fast because references are reused; it is not allowed to guess missing portals/items.
 - The owner retains explicit authority to change any quality, workflow, acceptance or scope choice.
+
+## Mandatory immediate PREPARE recheck before each map render (owner locked 2026-10-22)
+
+**Hard gate:** Before **every** image generation, including all REDO attempts, reopen the specific scene's current PREPARE card and accepted blueprint, recheck the **exact border exit count/directions/neighbor IDs, junction shape, must-see puzzle fixtures, latest owner overrides, active art standard and prior inspection failure**. Record PREPARE_RECHECK_PASS or BLOCKED. A blocked recheck means no generation. Compose a new positive-only prompt independently from accepted source requirements, render one map, inspect honestly, then stop; do not auto-REDO. This is mandatory and applies irrespective of the project's fast-map exception. See [binding rule](./mandatory-pre-render-prepare-recheck-rule-2026-10-22.md).
