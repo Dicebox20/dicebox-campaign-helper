@@ -110,3 +110,7 @@ The owner chose the **first cross-shaped Gondian attic drawing**: central attic,
 ## Owner-accepted Basement room program (2026-10-22)
 
 Owner accepted the two-space Basement composition: [Allen's Workshop + Secured Vault — approved design program](./blueprints/basement-layout-design-v1-2026-10-22.md). The locked Foyer door leads to a walled descending flight with the lower safe landing in the Workshop. West tool recess and north mechanical testing offset are **subzones, not extra Scenes**; a single reinforced door enters the separately mapped Vault containing the Keystone after the already locked four predicates. No alternate Undercroft tunnel. This is design approval, not measured blueprint/image approval or Foundry installation.
+
+## Tom Cartos style research — moderate playable detail (2026-10-22)
+
+The owner clarified that playable maps should be **moderately detailed, not hyper-detailed** and requested a study of Tom Cartos's Patreon work for inspiration. [Public gallery style research and a proposed density preset](./tom-cartos-public-gallery-map-detail-study-2026-10-22.md) cover houses, Forest/Winter, Bathhouse, Aqueduct/Sewers, furnishings, clear geometry, variants, and image-layer separation. Public examples inform composition without copying exact maps. This is a research supplement pending first art test, not replacement of existing universal rendering rules or any Foundry/BUILD receipt.
