@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "ALL_LOCATIONS_CONTENT_CARD_AUTHORED / EXACT_GEOMETRY_AND_ROUTE_PREFLIGHT_PENDING",
+  "status": "CONTENT_CARDS_UPDATED_WITH_OWNER_SG03_AND_SG06_GEOMETRY_OVERRIDES; IMAGE_SPACE_RECONCILIATION_PENDING",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 SG-03 NE bust + west/south two-exit clarification and SG-06 four-way correction",
     "Latest explicit owner decisions and approved Gondian blueprint images",
     "House Layout v2 / Bathhouse approval / selected Attic/Basement/Aqueduct/Forest visuals",
     "Locked puzzle specification and later override documents",
@@ -514,21 +515,21 @@
       "name": "Northeast Grove Corner",
       "zone": "Sune's Grove — perimeter",
       "track": "FAST",
-      "geometry": "Square loop northeast corner turn",
+      "geometry": "Northeastern square-loop 90-degree bend: the path arrives from the WEST border (SG-02) and turns SOUTH to the bottom border (SG-06), with exactly two exits",
       "plannedNeighborIds": [
         "SG-02",
         "SG-06"
       ],
       "mustSee": [
-        "north/east hedge bend",
-        "old stone corner cap",
-        "dying garden tree"
+        "west-to-south right-angle dirt walk through the full image edges",
+        "weathered northeastern puzzle bust on stone pedestal in a distinct alcove beside the turn",
+        "old garden-wall caps and neglected late-autumn trees"
       ],
-      "stateAndSeparateAssets": "Scenery only",
+      "stateAndSeparateAssets": "Bust monument visible permanently; sequence-sensitive bust interaction remains a separate Foundry asset. Bust sequence SW→NE→NW→SE.",
       "density": "SPARSE",
-      "inspectionHardGates": "Exactly continuous square-loop turning movement",
-      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
-      "designNotes": "",
+      "inspectionHardGates": "Exactly two image-border exits: WEST and SOUTH. Continuous L-shaped path; NE puzzle bust readily identifiable. The other two borders are foliage/stone perimeter. Owner-approved exterior visual perspective and neutral diffuse lighting.",
+      "sourceAuthority": "Owner-directed four-corner bust revision + mandatory pre-render recheck (2026-10-22), superseding historic scenery-only register field",
+      "designNotes": "Prompt recheck SG-03: west→SG-02, south→SG-06, exactly TWO border exits; source art tone is old/creepy moderately detailed neutral-lit. Visual generation only; stateful interaction later.",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     },
     {
@@ -587,7 +588,7 @@
       "name": "Eastern Grove Walk",
       "zone": "Sune's Grove — perimeter",
       "track": "FAST",
-      "geometry": "East straight of square circuit with center path",
+      "geometry": "Eastern square-loop walkway with owner-approved FOUR-way crossroads: north to SG-03, south to SG-09, west toward SG-05, and east-facing secondary Grove garden spur (local additional pathway).",
       "plannedNeighborIds": [
         "SG-03",
         "SG-09",
@@ -600,9 +601,9 @@
       ],
       "stateAndSeparateAssets": "Optional story details, normal ambient",
       "density": "SPARSE",
-      "inspectionHardGates": "East loop remains distinct from NW Forest Maze",
+      "inspectionHardGates": "Four-way visible crossroads, approved image 7154f541-3e6a-4870-95e9-4600df186e13; no duplicate standalone destination authorized by east border road until route registered.",
       "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
-      "designNotes": "",
+      "designNotes": "Owner explicitly corrected old SG-06 three-way to a four-way, visually approved it. East branch physical portal destination needs boundary reconciliation rather than inventing unrelated scene.",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     },
     {
