@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "CONTENT_PREPARE_RECONCILED_FOR_OWNER_FOUR_CORNER_BUSTS_SG02_PENDING_PASS; EXACT_SPATIAL_FOUNDY_MEASUREMENTS_PENDING",
+  "status": "SG05_AND_SG02_OWNER_APPROVED_SG01_REDO_SG09_VISUAL_CANDIDATE_PUZZLES_DESIGNED_FOUNDRY_PENDING",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 SG05 owner visual PASS and SG02 acceptance; approved archive v2 and Grove puzzle completion audit",
     "2026-10-23 SG-05 v6 owner: base art's statue rear plain, mosaic shown only via conditional separate runtime Tile",
     "2026-10-23 SG-05 v5 owner decision: obvious mosaic appears on rear statue Tile after four busts, behind-statue player Region discovery message",
     "2026-10-23 SG-05 v4 owner criticism: standing Sune, mosaic on back, dedication stone, no reuse rejected image",
@@ -489,7 +490,7 @@
       "inspectionHardGates": "Exactly two path exits, east and south; required NW corner bust; old neutral-lit outdoor art.",
       "sourceAuthority": "Later owner directive: all four Grove corner maps require busts; square Grove path topology.",
       "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "status": "RENDERED_INSPECT_REDO_NW_BUST_MISSING_APPROVED_ART_PENDING"
     },
     {
       "id": "SG-02",
@@ -511,8 +512,8 @@
       "density": "SPARSE",
       "inspectionHardGates": "Walk width and all three paired path landings readable",
       "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner accepted scene after inspection; exact approved image gen b20957a6-73eb-43fd-8333-89de8d7b06f3.",
+      "status": "OWNER_VISUAL_APPROVED_GEN_b20957a6_2026-10-23"
     },
     {
       "id": "SG-03",
@@ -585,8 +586,8 @@
       "density": "MECHANICAL",
       "inspectionHardGates": "Base-art SG-05: exactly four open cardinal roads, upright Sune with empty offering hands, modest PLAIN continuous rear stone without grid/panel; accessible north rear space for later Foundry mosaic Tile and Region; dedication stone separate from one child's grave; neutral painterly late-autumn garden. Mosaic becomes visible ONLY as runtime Tile after busts solved; no incorrect static clue.",
       "sourceAuthority": "2026-10-23 user-directed SG-05 PREPARE v6: clean pedestal initial image; v5 revealed Tile and Region unchanged.",
-      "designNotes": "Controlling immediate static ART PREPARE ./sg-05-memorial-clearing-prepare-v6-clean-pedestal-base-art-2026-10-23.md; v5 Tile+Region after four busts. Never use/reuse previously rejected SG-05 image prompts.",
-      "status": "PREPARE_RECHECK_PASS_RENDER_ONCE_PENDING_VISUAL_INSPECTION"
+      "designNotes": "Controlling immediate static ART PREPARE ./sg-05-memorial-clearing-prepare-v6-clean-pedestal-base-art-2026-10-23.md; v5 Tile+Region after four busts. Never use/reuse previously rejected SG-05 image prompts. Latest exact approved PNG top_down_detailed_pixel_illustration_style_fantas.png sha256=3fd75029dd49397d93b6d580a9695fbce5e89766bcf2105ec7934e58f800edfc; logged approval ./sg-05-memorial-clearing-owner-approval-2026-10-23.md. Puzzles designed, implementation not started.",
+      "status": "OWNER_VISUAL_APPROVED_GEN_01a34994_2026-10-23_FOUNDRY_NOT_INSTALLED"
     },
     {
       "id": "SG-06",
