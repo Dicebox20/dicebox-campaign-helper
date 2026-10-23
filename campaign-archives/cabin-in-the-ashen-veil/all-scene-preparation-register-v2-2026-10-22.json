@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "SG05_AND_SG02_OWNER_APPROVED_SG01_REDO_SG09_VISUAL_CANDIDATE_PUZZLES_DESIGNED_FOUNDRY_PENDING",
+  "status": "53_PREPARE_CARDS_8_OF_9_GROVE_PAINTED_APPROVED_SG09_VISUAL_PASS_PENDING_OWNER_APPROVAL_BUILD_NOT_STARTED",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 owner approved SG-01 northwestern moon bust render generation 7190055e",
     "2026-10-23 SG05 owner visual PASS and SG02 acceptance; approved archive v2 and Grove puzzle completion audit",
     "2026-10-23 SG-05 v6 owner: base art's statue rear plain, mosaic shown only via conditional separate runtime Tile",
     "2026-10-23 SG-05 v5 owner decision: obvious mosaic appears on rear statue Tile after four busts, behind-statue player Region discovery message",
@@ -489,8 +490,8 @@
       "density": "SPARSE",
       "inspectionHardGates": "Exactly two path exits, east and south; required NW corner bust; old neutral-lit outdoor art.",
       "sourceAuthority": "Later owner directive: all four Grove corner maps require busts; square Grove path topology.",
-      "designNotes": "",
-      "status": "RENDERED_INSPECT_REDO_NW_BUST_MISSING_APPROVED_ART_PENDING"
+      "designNotes": " Owner approved exact image 7190055e-d16c-4eb9-b6d0-eddfa00677a8; ./sg-01-northwest-grove-corner-owner-approval-2026-10-23.md. Earlier rejects do not control current status.",
+      "status": "OWNER_VISUAL_APPROVED_GEN_7190055e_2026-10-23_FOUNDRY_NOT_INSTALLED"
     },
     {
       "id": "SG-02",
