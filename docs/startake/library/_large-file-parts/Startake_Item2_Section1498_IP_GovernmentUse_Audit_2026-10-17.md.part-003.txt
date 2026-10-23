@@ -1,0 +1,15 @@
+- The 180-day order plus one renewal is a temporary bridge. Continued use after that period requires a license, another lawful instrument, service redesign, or further legislation. The bill identifies no patent inventory, service-essential patent, owner, or compensation amount.
+- No evidence here establishes a particular Starlink-owned patent, copyright, software license, trade secret, contract, U.S. government-use authorization, or foreign permission. Item 2 and the named topic remain formally unchecked; no professional legal opinion or independent review is represented.
+
+## Scope and status limits
+
+This is a bounded statute-and-case audit for proposed scope 03.03, not an audit of all eight original subcategories under *Statutory acquisition procedure and property remedies*. The remaining categories and the broader practical Item 2 stay open. The crosswalk records research-pass completion only; formal verification remains pending and no Item 2 or named-topic acceptance is claimed. Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scope rows remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall readiness remains unestablished.
+
+## Sources
+
+1. [28 U.S.C. § 1498, official U.S. House Office of the Law Revision Counsel text](https://uscode.house.gov/us/usc/119-118/t28/s1498/) (text effective through Pub. L. 119-120, 7 October 2026).
+2. [FAR Subpart 27.2, official Acquisition.gov text](https://www.acquisition.gov/far/subpart-27.2), including FAR 27.201-1 (FAC 2026-01, effective 13 March 2026).
+3. [*Advanced Software Design Corp. v. Federal Reserve Bank of St. Louis*, official U.S. Court of Appeals for the Federal Circuit opinion](https://www.cafc.uscourts.gov/opinions-orders/08-1152.pdf) (decided 30 September 2009).
+4. [*IRIS Corp. v. Japan Airlines Corp.*, official U.S. Court of Appeals for the Federal Circuit opinion](https://www.cafc.uscourts.gov/opinions-orders/10-1051.opinion.10-17-2014.1.pdf) (decided 21 October 2014).
+5. [17 U.S.C. § 102, official U.S. House Office of the Law Revision Counsel text](https://uscode.house.gov/us/usc/119-118/t17/s102/).
+6. [17 U.S.C. § 106, official U.S. House Office of the Law Revision Counsel text](https://uscode.house.gov/us/usc/119-118/t17/s106/).
