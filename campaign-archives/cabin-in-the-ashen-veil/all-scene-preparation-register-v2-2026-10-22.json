@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "NINE_GROVE_SCENE_BASE_ART_VISUALLY_COMPLETE_2026-10-23_FOUNDY_WIRING_NOT_BUILT",
+  "status": "11_OF_46_CURRENT_BASE_MAP_ART_APPROVED_35_REMAINING_FOUNDRY_NOT_BUILT",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 unified Bathhouse owner APPROVED exact attempt 7: seven surface zones consolidated in one map; lower Reliquary staged, runtime gates pending",
     "2026-10-23 all nine Grove maps owner accepted / visually archived: see grove-nine-map-visual-completion-receipt-2026-10-23.md",
     "2026-10-23 owner approved SG-01 northwestern moon bust render generation 7190055e",
     "2026-10-23 SG05 owner visual PASS and SG02 acceptance; approved archive v2 and Grove puzzle completion audit",
@@ -983,8 +984,10 @@
       "density": "MECHANICAL",
       "inspectionHardGates": "No always-exposed screwdriver or Reliquary hatch; stage geometry token-safe; dry rescue route remains",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_BATH_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "BATH-02",
@@ -1004,8 +1007,10 @@
       "density": "DOMESTIC",
       "inspectionHardGates": "Preserve Soap Room puzzle function under approved Herbal label, no missing quest item",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_BATH_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "BATH-03",
@@ -1028,8 +1033,10 @@
       "density": "MECHANICAL",
       "inspectionHardGates": "Boiler cannot bypass supply gate; Reliquary service exit unbolts from below even without boiler solved",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_BATH_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "BATH-04",
@@ -1051,8 +1058,10 @@
       "density": "MECHANICAL",
       "inspectionHardGates": "No magical bowl in Vault; nonflooded lower chamber and return safety verified before stage swap",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "STAGED_RELIQUARY_FEATURE_PENDING_VISUAL_AND_FOUNDRY_IMPLEMENTATION",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "BATH-05",
@@ -1073,8 +1082,10 @@
       "density": "DOMESTIC",
       "inspectionHardGates": "Public exterior threshold faces NORTH and enters Changing Room; not connected from southwest",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_BATH_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "BATH-06",
@@ -1095,8 +1106,10 @@
       "density": "DOMESTIC",
       "inspectionHardGates": "Warm Bath is not alternate healing unlock; Aqueduct entrance direction NORTHEAST, paired service threshold",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "New Aqueduct route gate reuses existing AqueductOpened predicate; no extra key or puzzle.",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": "New Aqueduct route gate reuses existing AqueductOpened predicate; no extra key or puzzle. Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_BATH_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "BATH-07",
@@ -1116,8 +1129,10 @@
       "density": "DOMESTIC",
       "inspectionHardGates": "Do not merge Cold Bath into Main pool state; no new essential healing trigger",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_BATH_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "BATH-08",
@@ -1137,8 +1152,10 @@
       "density": "MECHANICAL",
       "inspectionHardGates": "No unapproved southwest exterior exit; retain boiler access",
       "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner approved attempt 7 image generation 2b1e643d-2dd2-45a6-b5ee-0e15c5897d46; see ./bathhouse-unified-owner-approval-2026-10-23.md. Blueprint BWE-032A outranks assistant invented mechanical-room doorway predicate. Human walkability of NE aqueduct route pending.",
+      "status": "FEATURE_ZONE_IN_OWNER_APPROVED_UNIFIED_BATH_MAP_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "BATH-UNIFIED-01",
+      "groupingOwnerDecision": "Seven surface-room cards on ONE owner-approved Bathhouse surface battlemap; BATH-04 underfloor is stage/hidden-level feature within same location pending implementation."
     },
     {
       "id": "AQ-01",
@@ -1256,5 +1273,13 @@
       "designNotes": "BOUNDED_CONTENT_ONLY_FINAL_ENCOUNTER_DESIGN_DEFERRED",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     }
-  ]
+  ],
+  "renderTargetCensus": {
+    "asOf": "2026-10-23",
+    "legacyFeatureCards": 53,
+    "currentBaseMapTargets": 46,
+    "ownerAcceptedBaseMapArt": 11,
+    "remainingBaseMapTargets": 35,
+    "countPolicy": "Eight Bathhouse feature cards grouped under BATH-UNIFIED-01 as one rendered base map; separate staged art may still be needed for submerged and lower-floor puzzles. Nine SG, one EXT-01, one Bathhouse have accepted art; separate forest trail-fork not numbered in original 53."
+  }
 }
