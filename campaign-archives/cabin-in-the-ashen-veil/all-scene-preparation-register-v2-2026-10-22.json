@@ -1,0 +1,1251 @@
+{
+  "schema": "ashen-veil/preparation-ledger.v2",
+  "asOf": "2026-10-22",
+  "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
+  "status": "ALL_LOCATIONS_CONTENT_CARD_AUTHORED / EXACT_GEOMETRY_AND_ROUTE_PREFLIGHT_PENDING",
+  "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
+  "sourcePriority": [
+    "Latest explicit owner decisions and approved Gondian blueprint images",
+    "House Layout v2 / Bathhouse approval / selected Attic/Basement/Aqueduct/Forest visuals",
+    "Locked puzzle specification and later override documents",
+    "Estate overview and prior production registers where not superseded"
+  ],
+  "style": {
+    "camera": "STRICT_90_DEG_ORTHOGRAPHIC",
+    "wallArt": "thin_overhead_representative_wall_caps",
+    "baseIllumination": "EVEN_NEUTRAL_DIFFUSE",
+    "treatment": "OLD_EERIE_LATE_FALL_EARLY_WINTER_MODERATE_DETAIL_CARTOS_INSPIRED_ORIGINAL",
+    "artItems": "bake_nonchanging_architecture_and_permanent_furniture_only",
+    "dynamic": "foundry_handles_lights_sounds_doors_gear_items_rewards_weather_and_stage_fx",
+    "surfaceScale": "battlemap-120 = 120px/5ft logical cell, gridless output",
+    "positiveOnlyPrompt": true,
+    "freshPromptOnRedo": true
+  },
+  "scope": {
+    "logicalSceneDesignCards": 53,
+    "plannedPairedAdjacencies": 62,
+    "physicalStageVariants": "UNCERTIFIED; main Pond, Bath and Memorial likely need stage-specific art. Count after per-art geometry inspection",
+    "prior43SceneCount": "SUPERSEDED; not authoritative under House v2, new Bath, independent Forest Maze and square Sune Grove",
+    "renderStatus": "NOT_STARTED_FOR_REMAINING_MAPS; Carriage Yard accepted background historical",
+    "foundryBuildStatus": "NOT_ATTEMPTED_BY_THIS_TASK"
+  },
+  "authority": "Direct owner request for complete planning; owner approvals apply to recorded source geometry/topology, designer-added links remain PREPARE proposals requiring reconciliation",
+  "cards": [
+    {
+      "id": "H-G01",
+      "name": "Dining Room",
+      "zone": "House — ground",
+      "track": "FAST",
+      "geometry": "West of Great Room; direct doorway from Great Room and separate kitchen door; small formal domestic room",
+      "plannedNeighborIds": [
+        "H-G06",
+        "H-G03"
+      ],
+      "mustSee": [
+        "dining table outline",
+        "family sideboard",
+        "north-west kitchen threshold"
+      ],
+      "stateAndSeparateAssets": "Optional Dahlia shadow sighting via separate overlay, not always visible",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Kitchen reachable exclusively from Dining; no Foyer or direct Great Room–Kitchen link",
+      "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-G02",
+      "name": "Foyer",
+      "zone": "House — ground",
+      "track": "FAST",
+      "geometry": "Small south entrance chamber at porch; north door to Great Room; east/side literal locked basement door opens to an enclosed stair shaft",
+      "plannedNeighborIds": [
+        "EXT-01",
+        "H-G06",
+        "H-B01"
+      ],
+      "mustSee": [
+        "coatrack",
+        "public front threshold",
+        "Great Room door",
+        "separate basement door frame"
+      ],
+      "stateAndSeparateAssets": "Weathered-Key basement lock and descending stairs behind real solid door; door states Foundry-owned",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Exactly two inner doors (Great Room, Basement) and one outside entry; no main-upstairs stair or living-room bypass; practical Medium-token arrival",
+      "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-G03",
+      "name": "Kitchen",
+      "zone": "House — ground",
+      "track": "FAST",
+      "geometry": "West/northwest off Dining; terminus except kitchen-only Pantry door",
+      "plannedNeighborIds": [
+        "H-G01",
+        "H-G04"
+      ],
+      "mustSee": [
+        "stone hearth or cookstove",
+        "kitchen preparation surface",
+        "kitchen-to-Pantry door"
+      ],
+      "stateAndSeparateAssets": "Static tools and pantry storage; no unique progression reward",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Kitchen has no secondary access to Foyer, Great Room, deck, or exterior",
+      "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-G04",
+      "name": "Pantry",
+      "zone": "House — ground",
+      "track": "FAST",
+      "geometry": "Compact service pantry entirely inside Kitchen's circulation",
+      "plannedNeighborIds": [
+        "H-G03"
+      ],
+      "mustSee": [
+        "dry-goods shelving",
+        "old crockery niche",
+        "door to Kitchen"
+      ],
+      "stateAndSeparateAssets": "Optional household diary detail; no gate or alternate access",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Dead-end room, reachable only via Kitchen",
+      "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
+      "designNotes": "Retained on owner-accepted ground-floor composition under earlier delegation.",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-G05",
+      "name": "Allen's Study",
+      "zone": "House — ground",
+      "track": "FAST",
+      "geometry": "East/opposite Dining across Great Room; Study has one locked inner door and one locked exterior north door in place of prior window",
+      "plannedNeighborIds": [
+        "H-G06",
+        "EXT-08"
+      ],
+      "mustSee": [
+        "Rufus taxidermied hound fixture",
+        "'587' clue note prop",
+        "drafting/work desk",
+        "two door thresholds"
+      ],
+      "stateAndSeparateAssets": "Brass Study Key opens both locks; separate Rufus eyes and reward Gondian source; source compartment states separate",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "North door exits to rear exterior, not Family Room; both doors same key; missing eyes are legible; source remains concealed",
+      "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-G06",
+      "name": "Great Room",
+      "zone": "House — ground",
+      "track": "FAST",
+      "geometry": "Central double-height home hub; south Foyer, west Dining, east locked Study, rear Family Room; ascending main stairs to upper central Landing",
+      "plannedNeighborIds": [
+        "H-G02",
+        "H-G01",
+        "H-G05",
+        "H-G09",
+        "H-U02"
+      ],
+      "mustSee": [
+        "main upstairs staircase",
+        "hearth",
+        "illustrated architectural blueprint table",
+        "'027' lockbox",
+        "large grandfather clock"
+      ],
+      "stateAndSeparateAssets": "027 lockbox and water-filled Dust of Dryness pellet are separate states; clock glass/Hour Hand removed via Brass Tiny Key; active hearth lighting Foundry-owned",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Grandfather clock placed here under delegated design; 027 and house blueprint independently inspectable; open stair paired with Upper Landing; no old Studio ground door",
+      "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
+      "designNotes": "Relocation of Foyer clock resolved by designer under owner's 'unresolved details up to you' delegation.",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-G09",
+      "name": "Rear Family Room",
+      "zone": "House — ground",
+      "track": "FAST",
+      "geometry": "Shallow northern family sitting area between Great Room and rear Back Deck",
+      "plannedNeighborIds": [
+        "H-G06",
+        "EXT-08"
+      ],
+      "mustSee": [
+        "family sitting-space footprint",
+        "doorway to Great Room",
+        "back-deck threshold",
+        "faded domestic rug"
+      ],
+      "stateAndSeparateAssets": "Background aged family photographs and light lore only",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Back deck external access distinct from Study north exit; furnishings leave clear flow",
+      "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-U01",
+      "name": "Nursery",
+      "zone": "House — upper",
+      "track": "FAST",
+      "geometry": "Northeast of center Upper Landing",
+      "plannedNeighborIds": [
+        "H-U02"
+      ],
+      "mustSee": [
+        "nursery cot/cradle",
+        "shelf or small dresser",
+        "family memorial detail"
+      ],
+      "stateAndSeparateAssets": "No living fifth child; environmental storytelling only",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Nursery physically northeast; no extra secret nursery portal",
+      "sourceAuthority": "Owner-selected first Gondian upper-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-U02",
+      "name": "Upper Landing",
+      "zone": "House — upper",
+      "track": "FAST",
+      "geometry": "Central landing served by main stairs from Great Room, bedrooms at cardinal wings and studio east; attic hatch in ceiling",
+      "plannedNeighborIds": [
+        "H-G06",
+        "H-U01",
+        "H-U03",
+        "H-U04",
+        "H-U05",
+        "H-U07",
+        "H-A01"
+      ],
+      "mustSee": [
+        "main stair head",
+        "corridor thresholds",
+        "ceiling hatch/ladder anchor",
+        "overlook safety rail if actual architecture"
+      ],
+      "stateAndSeparateAssets": "Attic hatch requires carriage Ladder Hook; no permanent open attic staircase",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "No entrance to actual Spine room; north Parents, southwest Sophia, northeast Nursery, east Dahlia; paired stair landing",
+      "sourceAuthority": "Owner-selected first Gondian upper-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-U03",
+      "name": "Guest Bedroom",
+      "zone": "House — upper",
+      "track": "FAST",
+      "geometry": "Northwest of landing, established owner-accepted visual flavor room",
+      "plannedNeighborIds": [
+        "H-U02"
+      ],
+      "mustSee": [
+        "guest bed",
+        "old travel chest",
+        "guest door"
+      ],
+      "stateAndSeparateAssets": "Optional flavor; no required key or scene transition",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Single entrance through Landing; not conflated with Nursery",
+      "sourceAuthority": "Owner-selected first Gondian upper-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-U04",
+      "name": "Parents' Bedroom",
+      "zone": "House — upper",
+      "track": "FAST",
+      "geometry": "North of central Upper Landing; established roof egress via safe exterior window route",
+      "plannedNeighborIds": [
+        "H-U02",
+        "H-R01"
+      ],
+      "mustSee": [
+        "parents' bedside cabinet",
+        "Hope Chest",
+        "roof-access window or dormer"
+      ],
+      "stateAndSeparateAssets": "Old Iron Key, Nightstand screwdriver repair/Gate Handle, Hope Chest with Silver Tiny Key; roof safety separate",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Roof return and safe platform, functional nightstand tool and physical Hope Chest remain distinct",
+      "sourceAuthority": "Owner-selected first Gondian upper-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-U05",
+      "name": "Sophia's Bedroom",
+      "zone": "House — upper",
+      "track": "FAST",
+      "geometry": "Southwest of landing, no extra spine-room footprint",
+      "plannedNeighborIds": [
+        "H-U02"
+      ],
+      "mustSee": [
+        "Sophia's bed",
+        "torn teddy bear",
+        "bookshelf with Spine Mosaic",
+        "private child's belongings"
+      ],
+      "stateAndSeparateAssets": "Rufus eye #1 collectible, two starting books, Veil-only sixth bed book, six-book mosaic opens same-room compartment with Gond emblem half",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "No H-U06 room, no secret door to landing; compartment only; Veil sixth book not baked into base map",
+      "sourceAuthority": "Owner-selected first Gondian upper-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-U07",
+      "name": "Dahlia's Art Studio",
+      "zone": "House — upper",
+      "track": "FAST",
+      "geometry": "East wing off Landing with a secret adjoining Candle Workshop hidden behind genuine wall",
+      "plannedNeighborIds": [
+        "H-U02",
+        "H-U08"
+      ],
+      "mustSee": [
+        "vanity mirror mounting area",
+        "recognizable '027' painting",
+        "private Sune shrine",
+        "easel"
+      ],
+      "stateAndSeparateAssets": "Mirror installation → Carriage + Brass Tiny Keys; later prayers cause shrine reward and hidden workshop reveal",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Open early without Study key; hidden Workshop concealed in ordinary art until prayer; Shrine and code painting distinct",
+      "sourceAuthority": "Owner-selected first Gondian upper-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-U08",
+      "name": "Concealed Candle Workshop",
+      "zone": "House — upper",
+      "track": "FAST",
+      "geometry": "Small true-room footprint directly adjoining east side of Dahlia Studio; erased from in-world player blueprint",
+      "plannedNeighborIds": [
+        "H-U07"
+      ],
+      "mustSee": [
+        "candle-making bench",
+        "wax molds",
+        "wall shelf",
+        "concealed studio doorway threshold"
+      ],
+      "stateAndSeparateAssets": "Prayer of Protection makes Studio wall passage available; Wick is a separate pickup",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Door geometry physically adjoins Studio and is genuinely hidden until activation; no old ground-level Studio or Workshop IDs",
+      "sourceAuthority": "Owner-selected first Gondian upper-floor survey + House Layout v2",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-A01",
+      "name": "Attic / Three Storage Rooms",
+      "zone": "House — attic",
+      "track": "FAST",
+      "geometry": "Irregular central walkable attic plus north, west and east storage rooms; overhead roof projection larger than attic footprint; Landing hatch/ladder",
+      "plannedNeighborIds": [
+        "H-U02"
+      ],
+      "mustSee": [
+        "north storage",
+        "west storage",
+        "east storage",
+        "central assembly bench",
+        "central ladder hatch"
+      ],
+      "stateAndSeparateAssets": "Required independent Winder, Minute Hand and Moonlight book; 3 optional Mini-Robo Rufus pieces and assembled harmless clockwork companion",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Ladder Hook attic entry, not fixed public stairs; all three parts separately recoverable; source items not gated by optional reward",
+      "sourceAuthority": "Owner-selected first cross-shaped attic survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-R01",
+      "name": "Roof / Chimney Clock",
+      "zone": "House — roof",
+      "track": "COMPLEX",
+      "geometry": "Limited safe roof walkway reached via Parents' Bedroom roof window or dormer; visible two-hand chimney mechanism",
+      "plannedNeighborIds": [
+        "H-U04"
+      ],
+      "mustSee": [
+        "roof clock mount",
+        "exposed chimney/flue",
+        "viable walkable roof strip"
+      ],
+      "stateAndSeparateAssets": "Hour + Minute Hands at 12:00 plus center press → Replacement Gear; chimney Clockmaker storybook separately collectible",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "No false floor/walkway over steep slopes; distinct clock and book interaction; safe return landing",
+      "sourceAuthority": "Owner-approved access intent + provisional roof geometry",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-B01",
+      "name": "Allen's Basement Workshop",
+      "zone": "House — basement",
+      "track": "FAST",
+      "geometry": "Enclosed stair arrives south; irregular main workshop western tool bay, northern test recess, separate Vault and supply-closet doors",
+      "plannedNeighborIds": [
+        "H-G02",
+        "H-B02",
+        "H-B03"
+      ],
+      "mustSee": [
+        "bottom stair landing",
+        "main engineering bench",
+        "west machine/storage bay",
+        "northern test platform",
+        "vault doorway"
+      ],
+      "stateAndSeparateAssets": "Optional General Repair Kit, lore notes; Vault mechanism state at door; stair separation via Foundry Walls",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Workshop and Vault distinct Scenes; no Undercroft tunnel; plain stairs behind Foyer basement door",
+      "sourceAuthority": "Owner-selected Gondian basement survey with supply closet",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-B02",
+      "name": "Secured Keystone Vault",
+      "zone": "House — basement",
+      "track": "COMPLEX",
+      "geometry": "One rectangular thick-walled chamber east of Workshop, one reinforced threshold",
+      "plannedNeighborIds": [
+        "H-B01"
+      ],
+      "mustSee": [
+        "one secured door",
+        "joined Gond/Sune emblem socket",
+        "charged-source socket",
+        "Keystone plinth"
+      ],
+      "stateAndSeparateAssets": "4 predicates = basement access, charged source, Gond half from Sophia bookshelf compartment, Sune half from studio; explicit Turn Joined Emblem; claim Keystone once",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Keystone is sole prize; Bowl elsewhere; no extraneous required insertions or exits",
+      "sourceAuthority": "Owner-selected Gondian basement survey with supply closet",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "H-B03",
+      "name": "Basement Supply Closet",
+      "zone": "House — basement",
+      "track": "FAST",
+      "geometry": "Small separate walled closet along Workshop's southwest service recess in owner-approved final basement sheet",
+      "plannedNeighborIds": [
+        "H-B01"
+      ],
+      "mustSee": [
+        "closet door",
+        "stacked supply shelves",
+        "spare engineering parts"
+      ],
+      "stateAndSeparateAssets": "Optional mundane supplies only, no mandatory progression item",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Separate small closet with one Workshop door; don't consume Vault or stair clearance",
+      "sourceAuthority": "Owner-selected Gondian basement survey with supply closet",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-01",
+      "name": "Northwest Grove Corner",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "Square loop northwest 90-degree turning path; west/north park masonry",
+      "plannedNeighborIds": [
+        "SG-02",
+        "SG-04"
+      ],
+      "mustSee": [
+        "corner path bend",
+        "weathered boundary marker",
+        "sparse old orchard tree"
+      ],
+      "stateAndSeparateAssets": "Ambient optional inspection notes only",
+      "density": "SPARSE",
+      "inspectionHardGates": "Visible north/east and south/west loop continuation; no forest maze destination grafted onto Grove",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-02",
+      "name": "Northern Processional Walk",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "Northern straight of square circuit, central short spur toward Memorial Clearing",
+      "plannedNeighborIds": [
+        "SG-01",
+        "SG-03",
+        "SG-05"
+      ],
+      "mustSee": [
+        "mossy processional paving",
+        "rose-cut masonry",
+        "obvious center spur"
+      ],
+      "stateAndSeparateAssets": "Optional Sune background inscription as journal/handout",
+      "density": "SPARSE",
+      "inspectionHardGates": "Walk width and all three paired path landings readable",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-03",
+      "name": "Northeast Grove Corner",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "Square loop northeast corner turn",
+      "plannedNeighborIds": [
+        "SG-02",
+        "SG-06"
+      ],
+      "mustSee": [
+        "north/east hedge bend",
+        "old stone corner cap",
+        "dying garden tree"
+      ],
+      "stateAndSeparateAssets": "Scenery only",
+      "density": "SPARSE",
+      "inspectionHardGates": "Exactly continuous square-loop turning movement",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-04",
+      "name": "Western Grove Walk",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "Square loop western straight, entrance west trail from Yard with center spur",
+      "plannedNeighborIds": [
+        "EXT-01",
+        "SG-01",
+        "SG-07",
+        "SG-05"
+      ],
+      "mustSee": [
+        "estate path junction",
+        "family-crafted low wall",
+        "center clearing spur"
+      ],
+      "stateAndSeparateAssets": "One optional shadow sighting later as overlay",
+      "density": "SPARSE",
+      "inspectionHardGates": "Distinct yard entrance and clear connection to center; bathhouse fork belongs to exterior approach, not fabricated Grove shortcut",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-05",
+      "name": "Memorial Clearing",
+      "zone": "Sune's Grove — center",
+      "track": "COMPLEX",
+      "geometry": "Central square Grove destination bounded by independent ring walks at N/E/S/W with four distinct bust interaction quadrants",
+      "plannedNeighborIds": [
+        "SG-02",
+        "SG-04",
+        "SG-06",
+        "SG-08",
+        "UND-01"
+      ],
+      "mustSee": [
+        "central Sune statue with cupped hands",
+        "four cardinal-quadrant busts",
+        "stone relief housing",
+        "drainage groove seams",
+        "single unborn child's grave"
+      ],
+      "stateAndSeparateAssets": "Bust sequence SW→NE→NW→SE; sliding-image puzzle; 1000gp+Brass Study Key; later NW Silver Tiny Key chase; Scrying Bowl+filled 027 pellet activates Undercroft",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Early and late fixtures reachable; sculpture hands visible; Undercroft passage stage concealed until correct mechanics; no spoiler/gore",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-06",
+      "name": "Eastern Grove Walk",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "East straight of square circuit with center path",
+      "plannedNeighborIds": [
+        "SG-03",
+        "SG-09",
+        "SG-05"
+      ],
+      "mustSee": [
+        "rose trellis remnants",
+        "path against stone border",
+        "obvious center spur"
+      ],
+      "stateAndSeparateAssets": "Optional story details, normal ambient",
+      "density": "SPARSE",
+      "inspectionHardGates": "East loop remains distinct from NW Forest Maze",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-07",
+      "name": "Southwest Grove Corner",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "Southwest corner of square grove circuit",
+      "plannedNeighborIds": [
+        "SG-04",
+        "SG-08"
+      ],
+      "mustSee": [
+        "square-loop bend",
+        "worn bench",
+        "bracken edge"
+      ],
+      "stateAndSeparateAssets": "Noncritical environment inspect",
+      "density": "SPARSE",
+      "inspectionHardGates": "No old Rootbound Well here; Well belongs to independent NW Forest Maze",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-08",
+      "name": "Southern Grove Walk",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "Southern straight with spur north to Memorial",
+      "plannedNeighborIds": [
+        "SG-07",
+        "SG-09",
+        "SG-05"
+      ],
+      "mustSee": [
+        "stone stepping path",
+        "fallen leaves",
+        "shrine-facing center spur"
+      ],
+      "stateAndSeparateAssets": "Noncritical family memorial wayfinding",
+      "density": "SPARSE",
+      "inspectionHardGates": "Exactly three paired pedestrian exits, not an unintended gazebo/greenhouse portal",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "SG-09",
+      "name": "Southeast Grove Corner",
+      "zone": "Sune's Grove — perimeter",
+      "track": "FAST",
+      "geometry": "Southeast corner of square grove circuit",
+      "plannedNeighborIds": [
+        "SG-08",
+        "SG-06"
+      ],
+      "mustSee": [
+        "garden wall turn",
+        "dried climbing roses",
+        "overgrown planter"
+      ],
+      "stateAndSeparateAssets": "Scenery only",
+      "density": "SPARSE",
+      "inspectionHardGates": "Separate from former glasshouse approach map, now FM forest destination",
+      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "FM-01",
+      "name": "Iron Gate Maze Entrance",
+      "zone": "Northwestern Forest Maze",
+      "track": "FAST",
+      "geometry": "South wrought-iron gate from Yard, a token-clear initial hedge passage",
+      "plannedNeighborIds": [
+        "EXT-01",
+        "FM-02"
+      ],
+      "mustSee": [
+        "wrought iron arch",
+        "hedgerow barriers",
+        "branching earthen trail"
+      ],
+      "stateAndSeparateAssets": "Gate opened from inside after activation, persistent; no incidental auto-teleport",
+      "density": "SPARSE",
+      "inspectionHardGates": "Maze gate at legitimate boundary from NW of Yard, not misplaced mid-forest",
+      "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "FM-02",
+      "name": "Lower Hedge Switchbacks",
+      "zone": "Northwestern Forest Maze",
+      "track": "FAST",
+      "geometry": "Southern spiral/switchback network with distinguishable turnbacks",
+      "plannedNeighborIds": [
+        "FM-01",
+        "FM-03",
+        "FM-04"
+      ],
+      "mustSee": [
+        "spiraling hedge turn",
+        "broken paving fragments",
+        "one raised-root landmark"
+      ],
+      "stateAndSeparateAssets": "Optional navigational hint only",
+      "density": "SPARSE",
+      "inspectionHardGates": "Playable trails passable at source scale; adjacent scene landings stable",
+      "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "FM-03",
+      "name": "Northern Forks",
+      "zone": "Northwestern Forest Maze",
+      "track": "FAST",
+      "geometry": "North branch crossroads linking Gazebo NW and Greenhouse NE with return to central Well routes",
+      "plannedNeighborIds": [
+        "FM-02",
+        "FM-04",
+        "EXT-05",
+        "EXT-06"
+      ],
+      "mustSee": [
+        "forking old garden paths",
+        "north hedgerow",
+        "west gazebo spur",
+        "east glasshouse spur"
+      ],
+      "stateAndSeparateAssets": "No new mandatory maze collection key",
+      "density": "SPARSE",
+      "inspectionHardGates": "Gazebo and Greenhouse each lead to independent map with return",
+      "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "FM-04",
+      "name": "Rootbound Well Clearing",
+      "zone": "Northwestern Forest Maze",
+      "track": "COMPLEX",
+      "geometry": "Central ancient stone Well on dedicated destination scene, adjacent to separate maze paths",
+      "plannedNeighborIds": [
+        "FM-02",
+        "FM-03",
+        "AQ-01"
+      ],
+      "mustSee": [
+        "ancient stone well",
+        "root-encircled opening",
+        "identifiable arrival landing"
+      ],
+      "stateAndSeparateAssets": "Bidirectional Well↔Aqueduct passage, including after pond refills; first-chase arrival safety",
+      "density": "SPARSE",
+      "inspectionHardGates": "Real well destination and return; no new SG-07 well duplicate",
+      "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-01",
+      "name": "Carriage Yard / Front Estate",
+      "zone": "Estate grounds",
+      "track": "FAST",
+      "geometry": "Accepted painted exterior; cabin frontage north, road south, forest maze northwest, shrine/west fork, pond east and paths to outbuildings",
+      "plannedNeighborIds": [
+        "H-G02",
+        "EXT-02",
+        "EXT-03",
+        "EXT-04",
+        "EXT-08",
+        "SG-04",
+        "FM-01",
+        "BATH-05"
+      ],
+      "mustSee": [
+        "front porch stairs",
+        "broad turning circle",
+        "enclosed locked family carriage",
+        "maze gate approach",
+        "west shrine/bath fork"
+      ],
+      "stateAndSeparateAssets": "Carriage Key reveals Dahlia's remains and separate Ladder Hook; gate/water states runtime; original accepted art already exists",
+      "density": "SPARSE",
+      "inspectionHardGates": "No invented exits, roof facades or premature corpse visibility; inspect source art against approved latest yard map",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-02",
+      "name": "Pond and Both Shorelines",
+      "zone": "Estate grounds",
+      "track": "COMPLEX",
+      "geometry": "Pond from estate east side including dock, opposite dock, sluice and drained submerged gate",
+      "plannedNeighborIds": [
+        "EXT-01",
+        "EXT-07",
+        "AQ-01"
+      ],
+      "mustSee": [
+        "sluice control socket",
+        "near dock/boat",
+        "opposite dock",
+        "hollow log",
+        "lower Aqueduct gate exposure"
+      ],
+      "stateAndSeparateAssets": "Full/drained state changes; fishing rod, Mirror, book Felix, Weathered Key, pond gear/handle access when drained; far vegetation blockade",
+      "density": "SPARSE",
+      "inspectionHardGates": "Close/open sluice safely; distinct safe near and far shores; no always-visible bottom rewards",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-03",
+      "name": "Donovan's Shack",
+      "zone": "Estate grounds",
+      "track": "FAST",
+      "geometry": "Northwest small groundskeeper hut off estate yard",
+      "plannedNeighborIds": [
+        "EXT-01"
+      ],
+      "mustSee": [
+        "groundskeeper cot and work tools",
+        "secured '587' box",
+        "spare oar storage"
+      ],
+      "stateAndSeparateAssets": "Code 587→Sluice Crank; Oars and Lamp Oil unique pickups; Donovan environmental note",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "No early Sluice Crank on raster; believable small domestic shack with navigable clear door",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-04",
+      "name": "Privy",
+      "zone": "Estate grounds",
+      "track": "FAST",
+      "geometry": "Northeast humble privy near cabin/pond approach",
+      "plannedNeighborIds": [
+        "EXT-01"
+      ],
+      "mustSee": [
+        "single privy stall",
+        "iron/wooden door",
+        "retrieval spot"
+      ],
+      "stateAndSeparateAssets": "Copper Tiny Key late-stage retrieval puzzle; one-time claim; stage gating",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "No key revealed prematurely; usable doorway and private room proportions",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-05",
+      "name": "Forgotten Gazebo",
+      "zone": "Estate grounds",
+      "track": "FAST",
+      "geometry": "Independent northwest-forest destination reached from FM-03, older masonry under decomposing timber canopy",
+      "plannedNeighborIds": [
+        "FM-03"
+      ],
+      "mustSee": [
+        "center garden lantern",
+        "inherited picnic table",
+        "vine-laced roof-post stubs",
+        "carved family symbols"
+      ],
+      "stateAndSeparateAssets": "Shack Oil + upper Candle Workshop Wick release Rufus eye #2; optional 3-marker picnic puzzle yields Surveyor's Rule",
+      "density": "SPARSE",
+      "inspectionHardGates": "No eye permanently depicted; oil/wick logic distinct; true overhead roof posts and interactive room to stand",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-06",
+      "name": "Greenhouse",
+      "zone": "Estate grounds",
+      "track": "COMPLEX",
+      "geometry": "Independent northeastern maze destination reached from FM-03",
+      "plannedNeighborIds": [
+        "FM-03"
+      ],
+      "mustSee": [
+        "glasshouse boundaries",
+        "planter beds",
+        "mixing table",
+        "irrigation piping and sprinklers"
+      ],
+      "stateAndSeparateAssets": "Waterworks restoration → supply; late Herbal Room lye plus ingredients → plant killer for far dock",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Greenhouse water state separate from Aqueduct valve puzzle; recipe and plant-killer not pre-baked",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-07",
+      "name": "Boathouse",
+      "zone": "Estate grounds",
+      "track": "FAST",
+      "geometry": "Independent destination at opposite pond dock across water",
+      "plannedNeighborIds": [
+        "EXT-02"
+      ],
+      "mustSee": [
+        "dock doorway",
+        "rowing equipment",
+        "Prayer of Devotion clue/fixture"
+      ],
+      "stateAndSeparateAssets": "Far dock plant obstruction cleared by Greenhouse preparation; prayer pickup/dedication, unique and idempotent",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Dock/boat back-route preserved; prayer not granted before reachability",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "EXT-08",
+      "name": "Rear Deck & Family Grounds",
+      "zone": "Estate grounds",
+      "track": "FAST",
+      "geometry": "Northern rear exterior, back deck adjacent to Family Room, Allen Study's north locked exterior door, and yard perimeter",
+      "plannedNeighborIds": [
+        "EXT-01",
+        "H-G09",
+        "H-G05"
+      ],
+      "mustSee": [
+        "back deck steps",
+        "weathered outdoor family sitting area",
+        "exterior Study doorway at its former north window"
+      ],
+      "stateAndSeparateAssets": "Study north lock shares Brass Study Key with interior door; outdoor flavor only",
+      "density": "SPARSE",
+      "inspectionHardGates": "Study door actually opens outdoors; deck reachable from Family Room and yard; no secret additional Study-family room passage",
+      "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-01",
+      "name": "Main Bath",
+      "zone": "Bathhouse",
+      "track": "COMPLEX",
+      "geometry": "Center of owner-approved surface plan, principal 14×14 labeled bathing pool; from north Changing Room, west fixtures, east plunge rooms, subfloor mosaic",
+      "plannedNeighborIds": [
+        "BATH-05",
+        "BATH-02",
+        "BATH-03",
+        "BATH-06",
+        "BATH-07",
+        "BATH-04"
+      ],
+      "mustSee": [
+        "clear main pool rim and entry steps",
+        "copper water feed",
+        "submerged rosewater mosaic",
+        "bath benches"
+      ],
+      "stateAndSeparateAssets": "Full/drained/hot phase; Screwdriver revealed drained; 3-ring rotate mosaic and hatch/stairs; explicit warm healing only after five checks",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "No always-exposed screwdriver or Reliquary hatch; stage geometry token-safe; dry rescue route remains",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-02",
+      "name": "Herbal Room / Former Soap Room",
+      "zone": "Bathhouse",
+      "track": "FAST",
+      "geometry": "Northwest compact ingredient and apothecary room adjoining Main Bath",
+      "plannedNeighborIds": [
+        "BATH-01"
+      ],
+      "mustSee": [
+        "herbal preparation shelf",
+        "brass herb dryer",
+        "small glass lye case"
+      ],
+      "stateAndSeparateAssets": "Late Copper Tiny Key opens glass cabinet; player retrieves lye for Greenhouse",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Preserve Soap Room puzzle function under approved Herbal label, no missing quest item",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-03",
+      "name": "Boiler Room",
+      "zone": "Bathhouse",
+      "track": "COMPLEX",
+      "geometry": "West central engineering room adjoining Main Bath, Mechanical Room and lower Reliquary dry service egress",
+      "plannedNeighborIds": [
+        "BATH-01",
+        "BATH-08",
+        "BATH-04"
+      ],
+      "mustSee": [
+        "boiler tank",
+        "intake wheel and vent wheel",
+        "pressure/circulation gauges",
+        "engage lever"
+      ],
+      "stateAndSeparateAssets": "Requires restored Waterworks, closed sluice, filled bath; wheel solution (2,1); operating steam and active heat separate",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Boiler cannot bypass supply gate; Reliquary service exit unbolts from below even without boiler solved",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-04",
+      "name": "Rosewater Reliquary",
+      "zone": "Bathhouse — lower level",
+      "track": "COMPLEX",
+      "geometry": "A separate dry sanctuary below central Main Bath reached by drained mosaic hatch, with secondary safe service route to Boiler Room",
+      "plannedNeighborIds": [
+        "BATH-01",
+        "BATH-03"
+      ],
+      "mustSee": [
+        "dry stone plinth",
+        "carved Sune rose",
+        "stair landing from mosaic",
+        "discreet boiler service door"
+      ],
+      "stateAndSeparateAssets": "Scrying Bowl once-only reward; inside unbolts dry emergency passage, stays safe after refill",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "No magical bowl in Vault; nonflooded lower chamber and return safety verified before stage swap",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-05",
+      "name": "Changing Room / Public Entrance",
+      "zone": "Bathhouse",
+      "track": "FAST",
+      "geometry": "Northern room with only estate path public exterior threshold and Main Bath doorway",
+      "plannedNeighborIds": [
+        "EXT-01",
+        "BATH-01"
+      ],
+      "mustSee": [
+        "north public exterior door",
+        "changing benches",
+        "small clothing storage"
+      ],
+      "stateAndSeparateAssets": "Ordinary dressing; no mandatory puzzle",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Public exterior threshold faces NORTH and enters Changing Room; not connected from southwest",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-06",
+      "name": "Warm Bath / NE Service Vestibule",
+      "zone": "Bathhouse",
+      "track": "COMPLEX",
+      "geometry": "Small upper-east plunge room with northeast Aqueduct service approach on owner-approved plan",
+      "plannedNeighborIds": [
+        "BATH-01",
+        "AQ-02"
+      ],
+      "mustSee": [
+        "small warm pool",
+        "door to Main Bath",
+        "northeast masonry service arch"
+      ],
+      "stateAndSeparateAssets": "Pure flavor warm pool; service corridor gate must share existing access progression to avoid early Aqueduct bypass",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Warm Bath is not alternate healing unlock; Aqueduct entrance direction NORTHEAST, paired service threshold",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "New Aqueduct route gate reuses existing AqueductOpened predicate; no extra key or puzzle.",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-07",
+      "name": "Cold Bath",
+      "zone": "Bathhouse",
+      "track": "FAST",
+      "geometry": "Small lower-east private plunge reached only from Main Bath",
+      "plannedNeighborIds": [
+        "BATH-01"
+      ],
+      "mustSee": [
+        "small cold-plunge rim",
+        "non-slip floor",
+        "clear door"
+      ],
+      "stateAndSeparateAssets": "Flavor room, no extra mandatory power or water puzzle",
+      "density": "DOMESTIC",
+      "inspectionHardGates": "Do not merge Cold Bath into Main pool state; no new essential healing trigger",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "BATH-08",
+      "name": "Mechanical Room",
+      "zone": "Bathhouse",
+      "track": "FAST",
+      "geometry": "Southwest internal plant room linked to Boiler Room, separate from public southwest exterior",
+      "plannedNeighborIds": [
+        "BATH-03"
+      ],
+      "mustSee": [
+        "utility pipe manifold",
+        "repair/access grate",
+        "ordinary tool rack"
+      ],
+      "stateAndSeparateAssets": "Decorative engineering information; no independent restore/boiler puzzle",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "No unapproved southwest exterior exit; retain boiler access",
+      "sourceAuthority": "Owner-approved compact Bathhouse BWE-032A survey",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "AQ-01",
+      "name": "Main Aqueduct / Charger Network",
+      "zone": "Aqueducts",
+      "track": "COMPLEX",
+      "geometry": "Broad central junction; Pond gate east, Well egress west, service/Waterworks branch southwest; north/east/south inspection pockets as internal alcoves",
+      "plannedNeighborIds": [
+        "EXT-02",
+        "FM-04",
+        "AQ-02"
+      ],
+      "mustSee": [
+        "gear-and-handle entry gate",
+        "central spanning walkways",
+        "Gondian charger",
+        "west well stair",
+        "SW maintenance doorway",
+        "north/east/south inspection pockets"
+      ],
+      "stateAndSeparateAssets": "Roof Gear + repaired nightstand Handle gate; first Crooked Man chase; charge Rufus source here to trigger Crimson Veil once",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Well WEST, Waterworks SW, Pond gate separate; charger visible during chase; no invented Undercroft tunnel",
+      "sourceAuthority": "Owner-approved west-well/SW-service Aqueduct survey + puzzle canon",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "AQ-02",
+      "name": "Waterworks Maintenance / Service Gallery",
+      "zone": "Aqueducts",
+      "track": "COMPLEX",
+      "geometry": "Southwest maintenance chamber off AQ-01 with three valve branches, Greenhouse inlet and service link toward Bathhouse northeast",
+      "plannedNeighborIds": [
+        "AQ-01",
+        "BATH-06"
+      ],
+      "mustSee": [
+        "three valves and gauges",
+        "dirt/rocks/roots Greenhouse-line debris",
+        "sealed warning-and-collar niche",
+        "Bathhouse service exit"
+      ],
+      "stateAndSeparateAssets": "Sluice must be closed; debris cleared; three-line pressure balance restores Pond, Greenhouse and Bathhouse feed; grants Rufus Collar and warning in compartment",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "No separate Greenhouse valve puzzle, Aqueduct source charger remains AQ-01; bath service not early bypass",
+      "sourceAuthority": "Owner-approved west-well/SW-service Aqueduct survey + puzzle canon",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "UND-01",
+      "name": "Undercroft Approach / Keystone Door",
+      "zone": "Undercroft",
+      "track": "COMPLEX",
+      "geometry": "Outer stair descent revealed from activated Sune Memorial mechanism, ending at conspicuous sealed carved inner Keystone door",
+      "plannedNeighborIds": [
+        "SG-05",
+        "UND-02"
+      ],
+      "mustSee": [
+        "damp stone approach",
+        "thick carved stone barrier",
+        "chest-height keystone recess",
+        "mechanical lever"
+      ],
+      "stateAndSeparateAssets": "Bowl in Sune statue plus filled 027 pellet reveals approach; Keystone inserted and lever pressed later opens inner door",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "No early sightline to Donovan/Sophia remains and no alternate tunnel through wall",
+      "sourceAuthority": "Undercroft architectural canon and puzzle decisions",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "UND-02",
+      "name": "Donovan & Sophia's Sealed Refuge",
+      "zone": "Undercroft",
+      "track": "COMPLEX",
+      "geometry": "Separate shelter behind inner Keystone door, with passage continuing toward ritual site",
+      "plannedNeighborIds": [
+        "UND-01",
+        "UND-03"
+      ],
+      "mustSee": [
+        "inner-side digging marks",
+        "Donovan's remains near door",
+        "Sophia's remains farther in",
+        "refuge debris"
+      ],
+      "stateAndSeparateAssets": "Keystone access once-only; environmental story reveal after entry",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "Remains only within refuge, inner-face scratch marks, route forward not prematurely open",
+      "sourceAuthority": "Undercroft architectural canon and puzzle decisions",
+      "designNotes": "",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    },
+    {
+      "id": "UND-03",
+      "name": "Voss's Ritual Chamber",
+      "zone": "Undercroft — finale",
+      "track": "COMPLEX",
+      "geometry": "Final destination beyond Refuge with one known incoming hall; final arena dimensions intentionally deferred by prior owner request",
+      "plannedNeighborIds": [
+        "UND-02"
+      ],
+      "mustSee": [
+        "clear arrival hall",
+        "identifiable ritual focus",
+        "large walkable final confrontation footprint"
+      ],
+      "stateAndSeparateAssets": "Stage-linked Crimson Veil finale and ritual; full encounter staging deferred by owner's 'design last' choice",
+      "density": "MECHANICAL",
+      "inspectionHardGates": "No invented escape tunnel or unsupported encounter rules; mark final arena geometry deferred",
+      "sourceAuthority": "Undercroft architectural canon and puzzle decisions",
+      "designNotes": "BOUNDED_CONTENT_ONLY_FINAL_ENCOUNTER_DESIGN_DEFERRED",
+      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+    }
+  ]
+}
