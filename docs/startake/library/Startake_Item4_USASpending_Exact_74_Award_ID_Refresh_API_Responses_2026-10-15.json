@@ -1,0 +1,1157 @@
+{
+  "source_url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+  "api_version": "v2",
+  "started_utc": "2026-10-15T17:41:00.870108+00:00",
+  "batches": [
+    {
+      "batch": 1,
+      "retrieved_utc": "2026-10-15T17:41:00.871108+00:00",
+      "request": {
+        "fields": [
+          "Award ID",
+          "Recipient UEI",
+          "Recipient Name",
+          "CFDA Number",
+          "Award Amount",
+          "Total Outlays",
+          "Description"
+        ],
+        "filters": {
+          "award_ids": [
+            "SL-2399032946",
+            "SL-2399033864",
+            "SL-2399036291",
+            "SL-2399038471",
+            "SL-2399045008",
+            "SL-2399045017",
+            "SL-2399046997",
+            "SL-2399047100",
+            "SL-2399048704",
+            "SL-2399048708",
+            "SL-2399048710",
+            "SL-2399048713",
+            "SL-2399048719",
+            "SL-2399050913",
+            "SL-2399051032",
+            "SL-2399051045",
+            "SL-2399051179",
+            "SL-2399056447",
+            "SL-2399056633",
+            "SL-2499009670"
+          ],
+          "award_type_codes": [
+            "06",
+            "10",
+            "F006",
+            "F007"
+          ]
+        },
+        "limit": 100,
+        "order": "asc",
+        "page": 1,
+        "sort": "Award ID"
+      },
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Thu, 15 Oct 2026 17:41:00 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "7965",
+        "Connection": "close",
+        "Vary": "Accept, Cookie, origin",
+        "Allow": "POST, OPTIONS",
+        "Cache-Trace": "set-cache",
+        "key": "8f93163a1b7b62d3d5e0d43707911f55",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Set-Cookie": "cookiesession1=678A3E0D238238674DFB34A5D1F28CD3;Expires=Fri, 15 Oct 2027 17:41:00 GMT;Path=/;HttpOnly"
+      },
+      "response": {
+        "spending_level": "awards",
+        "limit": 100,
+        "results": [
+          {
+            "internal_id": 271342033,
+            "Award ID": "SL-2399032946",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399032946_027"
+          },
+          {
+            "internal_id": 271342620,
+            "Award ID": "SL-2399033864",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399033864_027"
+          },
+          {
+            "internal_id": 271344161,
+            "Award ID": "SL-2399036291",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399036291_027"
+          },
+          {
+            "internal_id": 271345419,
+            "Award ID": "SL-2399038471",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399038471_027"
+          },
+          {
+            "internal_id": 271349202,
+            "Award ID": "SL-2399045008",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399045008_027"
+          },
+          {
+            "internal_id": 271349208,
+            "Award ID": "SL-2399045017",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399045017_027"
+          },
+          {
+            "internal_id": 271350425,
+            "Award ID": "SL-2399046997",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399046997_027"
+          },
+          {
+            "internal_id": 271350484,
+            "Award ID": "SL-2399047100",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399047100_027"
+          },
+          {
+            "internal_id": 271351361,
+            "Award ID": "SL-2399048704",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399048704_027"
+          },
+          {
+            "internal_id": 271351364,
+            "Award ID": "SL-2399048708",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399048708_027"
+          },
+          {
+            "internal_id": 271351366,
+            "Award ID": "SL-2399048710",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399048710_027"
+          },
+          {
+            "internal_id": 271351369,
+            "Award ID": "SL-2399048713",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399048713_027"
+          },
+          {
+            "internal_id": 271351372,
+            "Award ID": "SL-2399048719",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399048719_027"
+          },
+          {
+            "internal_id": 271352646,
+            "Award ID": "SL-2399050913",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399050913_027"
+          },
+          {
+            "internal_id": 271352708,
+            "Award ID": "SL-2399051032",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399051032_027"
+          },
+          {
+            "internal_id": 271352714,
+            "Award ID": "SL-2399051045",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399051045_027"
+          },
+          {
+            "internal_id": 271352816,
+            "Award ID": "SL-2399051179",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399051179_027"
+          },
+          {
+            "internal_id": 271355824,
+            "Award ID": "SL-2399056447",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399056447_027"
+          },
+          {
+            "internal_id": 271355922,
+            "Award ID": "SL-2399056633",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": null,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2399056633_027"
+          },
+          {
+            "internal_id": 271362935,
+            "Award ID": "SL-2499009670",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1728,
+            "Total Outlays": 1728,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499009670_027"
+          }
+        ],
+        "page_metadata": {
+          "page": 1,
+          "hasNext": false,
+          "last_record_unique_id": null,
+          "last_record_sort_value": "None"
+        },
+        "messages": [
+          "For searches, time period start and end dates are currently limited to an earliest date of 2007-10-01.  For data going back to 2000-10-01, use either the Custom Award Download feature on the website or one of our download or bulk_download API endpoints as listed on https://api.usaspending.gov/docs/endpoints. "
+        ]
+      }
+    },
+    {
+      "batch": 2,
+      "retrieved_utc": "2026-10-15T17:41:01.818599+00:00",
+      "request": {
+        "fields": [
+          "Award ID",
+          "Recipient UEI",
+          "Recipient Name",
+          "CFDA Number",
+          "Award Amount",
+          "Total Outlays",
+          "Description"
+        ],
+        "filters": {
+          "award_ids": [
+            "SL-2499018027",
+            "SL-2499028163",
+            "SL-2499034596",
+            "SL-2499034657",
+            "SL-2499034674",
+            "SL-2499034682",
+            "SL-2499035124",
+            "SL-2499035126",
+            "SL-2499035127",
+            "SL-2499036250",
+            "SL-2499038382",
+            "SL-2499039197",
+            "SL-2499040008",
+            "SL-2499042166",
+            "SL-2499043965",
+            "SL-2499044638",
+            "SL-2499044652",
+            "SL-2499047890",
+            "SL-2499047897",
+            "SL-2499048334"
+          ],
+          "award_type_codes": [
+            "06",
+            "10",
+            "F006",
+            "F007"
+          ]
+        },
+        "limit": 100,
+        "order": "asc",
+        "page": 1,
+        "sort": "Award ID"
+      },
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Thu, 15 Oct 2026 17:41:01 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "7954",
+        "Connection": "close",
+        "Vary": "Accept, Cookie, origin",
+        "Allow": "POST, OPTIONS",
+        "Cache-Trace": "set-cache",
+        "key": "2c6364498d982c0a1481feb71541d56a",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Set-Cookie": "cookiesession1=678A3E0DFED833252343956B2CFF92AA;Expires=Fri, 15 Oct 2027 17:41:01 GMT;Path=/;HttpOnly"
+      },
+      "response": {
+        "spending_level": "awards",
+        "limit": 100,
+        "results": [
+          {
+            "internal_id": 271367387,
+            "Award ID": "SL-2499018027",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1620,
+            "Total Outlays": 1296,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499018027_027"
+          },
+          {
+            "internal_id": 271372640,
+            "Award ID": "SL-2499028163",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499028163_027"
+          },
+          {
+            "internal_id": 271375743,
+            "Award ID": "SL-2499034596",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499034596_027"
+          },
+          {
+            "internal_id": 271375771,
+            "Award ID": "SL-2499034657",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499034657_027"
+          },
+          {
+            "internal_id": 271375779,
+            "Award ID": "SL-2499034674",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499034674_027"
+          },
+          {
+            "internal_id": 271375784,
+            "Award ID": "SL-2499034682",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499034682_027"
+          },
+          {
+            "internal_id": 271375990,
+            "Award ID": "SL-2499035124",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499035124_027"
+          },
+          {
+            "internal_id": 271375992,
+            "Award ID": "SL-2499035126",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499035126_027"
+          },
+          {
+            "internal_id": 271375993,
+            "Award ID": "SL-2499035127",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499035127_027"
+          },
+          {
+            "internal_id": 271376507,
+            "Award ID": "SL-2499036250",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499036250_027"
+          },
+          {
+            "internal_id": 271377517,
+            "Award ID": "SL-2499038382",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499038382_027"
+          },
+          {
+            "internal_id": 271377898,
+            "Award ID": "SL-2499039197",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 4198.5,
+            "Total Outlays": 1317.91,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499039197_027"
+          },
+          {
+            "internal_id": 271378265,
+            "Award ID": "SL-2499040008",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499040008_027"
+          },
+          {
+            "internal_id": 271379219,
+            "Award ID": "SL-2499042166",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499042166_027"
+          },
+          {
+            "internal_id": 271380061,
+            "Award ID": "SL-2499043965",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499043965_027"
+          },
+          {
+            "internal_id": 271380393,
+            "Award ID": "SL-2499044638",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499044638_027"
+          },
+          {
+            "internal_id": 271380401,
+            "Award ID": "SL-2499044652",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499044652_027"
+          },
+          {
+            "internal_id": 271381914,
+            "Award ID": "SL-2499047890",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499047890_027"
+          },
+          {
+            "internal_id": 271381919,
+            "Award ID": "SL-2499047897",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499047897_027"
+          },
+          {
+            "internal_id": 271382111,
+            "Award ID": "SL-2499048334",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499048334_027"
+          }
+        ],
+        "page_metadata": {
+          "page": 1,
+          "hasNext": false,
+          "last_record_unique_id": null,
+          "last_record_sort_value": "None"
+        },
+        "messages": [
+          "For searches, time period start and end dates are currently limited to an earliest date of 2007-10-01.  For data going back to 2000-10-01, use either the Custom Award Download feature on the website or one of our download or bulk_download API endpoints as listed on https://api.usaspending.gov/docs/endpoints. "
+        ]
+      }
+    },
+    {
+      "batch": 3,
+      "retrieved_utc": "2026-10-15T17:41:02.749135+00:00",
+      "request": {
+        "fields": [
+          "Award ID",
+          "Recipient UEI",
+          "Recipient Name",
+          "CFDA Number",
+          "Award Amount",
+          "Total Outlays",
+          "Description"
+        ],
+        "filters": {
+          "award_ids": [
+            "SL-2499052091",
+            "SL-2499054648",
+            "SL-2499055527",
+            "SL-2499056291",
+            "SL-2499057267",
+            "SL-2499058087",
+            "SL-2599005457",
+            "SL-2599006827",
+            "SL-2599013244",
+            "SL-2599016356",
+            "SL-2599016877",
+            "SL-2599016895",
+            "SL-2599026206",
+            "SL-2599027753",
+            "SL-2599029317",
+            "SL-2599029987",
+            "SL-2599031864",
+            "SL-2599036607",
+            "SL-2599039320",
+            "SL-2599039419"
+          ],
+          "award_type_codes": [
+            "06",
+            "10",
+            "F006",
+            "F007"
+          ]
+        },
+        "limit": 100,
+        "order": "asc",
+        "page": 1,
+        "sort": "Award ID"
+      },
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Thu, 15 Oct 2026 17:41:02 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "7988",
+        "Connection": "close",
+        "Vary": "Accept, Cookie, origin",
+        "Allow": "POST, OPTIONS",
+        "Cache-Trace": "set-cache",
+        "key": "2a1157ebcdd1cf94d27cc78a1cb75bc1",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Set-Cookie": "cookiesession1=678A3E0DF5ACF98CA91CF4E153D6072A;Expires=Fri, 15 Oct 2027 17:41:02 GMT;Path=/;HttpOnly"
+      },
+      "response": {
+        "spending_level": "awards",
+        "limit": 100,
+        "results": [
+          {
+            "internal_id": 271383770,
+            "Award ID": "SL-2499052091",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499052091_027"
+          },
+          {
+            "internal_id": 271384870,
+            "Award ID": "SL-2499054648",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499054648_027"
+          },
+          {
+            "internal_id": 271385262,
+            "Award ID": "SL-2499055527",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499055527_027"
+          },
+          {
+            "internal_id": 271385561,
+            "Award ID": "SL-2499056291",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499056291_027"
+          },
+          {
+            "internal_id": 271385938,
+            "Award ID": "SL-2499057267",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1008,
+            "Total Outlays": 1008,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499057267_027"
+          },
+          {
+            "internal_id": 271386224,
+            "Award ID": "SL-2499058087",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 2332.5,
+            "Total Outlays": 2332.5,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2499058087_027"
+          },
+          {
+            "internal_id": 271388798,
+            "Award ID": "SL-2599005457",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1512,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599005457_027"
+          },
+          {
+            "internal_id": 271389250,
+            "Award ID": "SL-2599006827",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 2700,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599006827_027"
+          },
+          {
+            "internal_id": 271391560,
+            "Award ID": "SL-2599013244",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1728,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599013244_027"
+          },
+          {
+            "internal_id": 271392682,
+            "Award ID": "SL-2599016356",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599016356_027"
+          },
+          {
+            "internal_id": 271392908,
+            "Award ID": "SL-2599016877",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599016877_027"
+          },
+          {
+            "internal_id": 271392915,
+            "Award ID": "SL-2599016895",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 5400,
+            "Total Outlays": 4050,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599016895_027"
+          },
+          {
+            "internal_id": 271396274,
+            "Award ID": "SL-2599026206",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1344,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599026206_027"
+          },
+          {
+            "internal_id": 271396780,
+            "Award ID": "SL-2599027753",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 2164.5,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599027753_027"
+          },
+          {
+            "internal_id": 271397214,
+            "Award ID": "SL-2599029317",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 0,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599029317_027"
+          },
+          {
+            "internal_id": 271397446,
+            "Award ID": "SL-2599029987",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1296,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599029987_027"
+          },
+          {
+            "internal_id": 271398018,
+            "Award ID": "SL-2599031864",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 324,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599031864_027"
+          },
+          {
+            "internal_id": 271399535,
+            "Award ID": "SL-2599036607",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1008,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599036607_027"
+          },
+          {
+            "internal_id": 271400290,
+            "Award ID": "SL-2599039320",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 2784,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599039320_027"
+          },
+          {
+            "internal_id": 271400327,
+            "Award ID": "SL-2599039419",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 3489,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599039419_027"
+          }
+        ],
+        "page_metadata": {
+          "page": 1,
+          "hasNext": false,
+          "last_record_unique_id": null,
+          "last_record_sort_value": "None"
+        },
+        "messages": [
+          "For searches, time period start and end dates are currently limited to an earliest date of 2007-10-01.  For data going back to 2000-10-01, use either the Custom Award Download feature on the website or one of our download or bulk_download API endpoints as listed on https://api.usaspending.gov/docs/endpoints. "
+        ]
+      }
+    },
+    {
+      "batch": 4,
+      "retrieved_utc": "2026-10-15T17:41:03.656485+00:00",
+      "request": {
+        "fields": [
+          "Award ID",
+          "Recipient UEI",
+          "Recipient Name",
+          "CFDA Number",
+          "Award Amount",
+          "Total Outlays",
+          "Description"
+        ],
+        "filters": {
+          "award_ids": [
+            "SL-2599041964",
+            "SL-2599043565",
+            "SL-2599044091",
+            "SL-2599044168",
+            "SL-2599045223",
+            "SL-2599045406",
+            "SL-2599051429",
+            "SL-2599056805",
+            "SL-2599057823",
+            "SL-2699003724",
+            "SL-2699015208",
+            "SL-2699032134",
+            "SL-2699032189",
+            "SL-2699053556"
+          ],
+          "award_type_codes": [
+            "06",
+            "10",
+            "F006",
+            "F007"
+          ]
+        },
+        "limit": 100,
+        "order": "asc",
+        "page": 1,
+        "sort": "Award ID"
+      },
+      "http_status": 200,
+      "response_headers": {
+        "Date": "Thu, 15 Oct 2026 17:41:03 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "5748",
+        "Connection": "close",
+        "Vary": "Accept, Cookie, origin",
+        "Allow": "POST, OPTIONS",
+        "Cache-Trace": "set-cache",
+        "key": "126956e36b3dd3922187cc015bef217d",
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "same-origin",
+        "Cross-Origin-Opener-Policy": "same-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+        "Set-Cookie": "cookiesession1=678A3E0DE781AF59568252A92A77A530;Expires=Fri, 15 Oct 2027 17:41:03 GMT;Path=/;HttpOnly"
+      },
+      "response": {
+        "spending_level": "awards",
+        "limit": 100,
+        "results": [
+          {
+            "internal_id": 271401157,
+            "Award ID": "SL-2599041964",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 420,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599041964_027"
+          },
+          {
+            "internal_id": 271401698,
+            "Award ID": "SL-2599043565",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1293.6,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599043565_027"
+          },
+          {
+            "internal_id": 271401864,
+            "Award ID": "SL-2599044091",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 3132,            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599044091_027"
+          },
+          {
+            "internal_id": 271401886,
+            "Award ID": "SL-2599044168",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 3132,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599044168_027"
+          },
+          {
+            "internal_id": 271402230,
+            "Award ID": "SL-2599045223",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 4556,
+            "Total Outlays": 4555.92,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599045223_027"
+          },
+          {
+            "internal_id": 271402299,
+            "Award ID": "SL-2599045406",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 450,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599045406_027"
+          },
+          {
+            "internal_id": 271404260,
+            "Award ID": "SL-2599051429",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 16200,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599051429_027"
+          },
+          {
+            "internal_id": 271405999,
+            "Award ID": "SL-2599056805",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 2592,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599056805_027"
+          },
+          {
+            "internal_id": 271406326,
+            "Award ID": "SL-2599057823",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 3240,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2599057823_027"
+          },
+          {
+            "internal_id": 361157483,
+            "Award ID": "SL-2699003724",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1728,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2699003724_027"
+          },
+          {
+            "internal_id": 358917681,
+            "Award ID": "SL-2699015208",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1782,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2699015208_027"
+          },
+          {
+            "internal_id": 358921648,
+            "Award ID": "SL-2699032134",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 6552,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2699032134_027"
+          },
+          {
+            "internal_id": 358921659,
+            "Award ID": "SL-2699032189",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1512,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2699032189_027"
+          },
+          {
+            "internal_id": 360901470,
+            "Award ID": "SL-2699053556",
+            "Recipient UEI": "C6M7C2FLKER5",
+            "Recipient Name": "SPACE EXPLORATION TECHNOLOGIES CORP.",
+            "CFDA Number": "32.004",
+            "Award Amount": 1293.6,
+            "Total Outlays": 0,
+            "Description": "THE SCHOOLS AND LIBRARIES PROGRAM KEEPS STUDENTS AND LIBRARY PATRONS CONNECTED TO BROADBAND SERVICES.",
+            "generated_internal_id": "ASST_NON_SL-2699053556_027"
+          }
+        ],
+        "page_metadata": {
+          "page": 1,
+          "hasNext": false,
+          "last_record_unique_id": null,
+          "last_record_sort_value": "None"
+        },
+        "messages": [
+          "For searches, time period start and end dates are currently limited to an earliest date of 2007-10-01.  For data going back to 2000-10-01, use either the Custom Award Download feature on the website or one of our download or bulk_download API endpoints as listed on https://api.usaspending.gov/docs/endpoints. "
+        ]
+      }
+    }
+  ],
+  "completed_utc": "2026-10-15T17:41:04.497597+00:00",
+  "summary": {
+    "requested_ids": 74,
+    "returned_rows": 74,
+    "statuses": [
+      200,
+      200,
+      200,
+      200
+    ]
+  },
+  "awards_last_updated_endpoint": {
+    "url": "https://api.usaspending.gov/api/v2/awards/last_updated/",
+    "response": {
+      "last_updated": "10/15/2026"
+    },
+    "retrieval_started_utc": "2026-10-15T17:44:37.648Z",
+    "retrieval_completed_utc": "2026-10-15T17:44:40.795Z"
+  }
+}
