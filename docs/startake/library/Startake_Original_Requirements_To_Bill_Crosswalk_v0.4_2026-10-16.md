@@ -1,0 +1,158 @@
+# Original Requirements to Bill Crosswalk v0.4
+
+15 October 2026 UTC baseline; 16 October 2026 UTC M07, 04.06, 05.09 and M16.01 overlays. This integration checkpoint supports The Starlink and Stripes Act. The bill remains a proposed federal package, not enacted law or independent legal advice.
+
+## v0.2 dated Item 6 overlay (16 October 2026)
+
+This successor preserves the v0.1 baseline and overlays only M07.01–M07.08 with a grouped primary-source legal audit of Bill v1.4 §§203, 205 and 207. The [First Amendment and public-expression audit](/Startake/Startake_Item6_First_Amendment_Public_Expression_State_Action_Audit_2026-10-16.md) (Library ID `libfile_33c92c2492f48191a17decb1bac6365c`, SHA-256 `8eef09e7259fc57359b867152b68fd508b01be00ab48dbdc333d50c8f1933b96`) finds that *Lebron* can make a specially chartered, government-controlled operator subject to First Amendment limits; *Halleck* distinguishes private operators and public benefit alone; and *Vullo* requires attention to materially coercive indirect pressure. The existing draft has substantial viewpoint-neutrality, recordkeeping, notice/review and injunctive-remedy protections. One narrow follow-up for counsel is whether §203(b) should expressly record materially coercive informal requests or threats. No bill redline, operator-conduct finding, regulatory classification, or formal acceptance is made.
+
+The v0.2 successor updated only M07.01–M07.08 with the Item 6 report reference and Bill v1.4 §§203, 205 and 207. The v0.3 successor adds the Item 3 04.06 classification report and updates only that CSV row; the other 310 rows are unchanged from v0.2. This v0.4 successor adds the Item 3 debris-authorization transfer crosswalk for 05.09 and M16.01; those two rows are the only changes relative to v0.3, and the other 309 are preserved. The compact evidence-row counts below remain the v0.1 baseline; this v0.3 overlay does not add a separate named-topic row or change the 0/7 and 0/36 formal counts.
+
+## v0.3 dated Item 3 overlay (16 October 2026)
+
+The [Broadband and Common-Carrier Classification Audit](Startake_Item3_Broadband_Common_Carrier_Classification_Audit_2026-10-16.md) (Library ID `libfile_9ba93a2d392c8191b7cbe5c7f1d65eec`, SHA-256 `c615e7974555fe9ee45d9fb3f58608820f27aedf2186e08d272badf271eb6b62`) reconciles original scope 04.06 against the official Communications Act definitions, FCC broadband-classification orders, the Sixth Circuit's BIAS judgment and the subsequent FCC rule restoration. It supports the post-vacatur information-service baseline for mass-market satellite BIAS, while preserving separate unresolved questions about Starlink-specific treatment, the statutory satellite common-carriage proviso and a future Government corporation. It recommends a future §107(b) drafting check; it makes no Bill redline or formal acceptance decision.
+
+The v0.3 companion CSV has 311 original-scope rows; exactly 04.06 changed relative to v0.2, and the other 310 rows are unchanged. The 04.06 mapping now points to Bill v1.4 §§107, 201(b), 201(c) and 404(a)(1). The separate Item 3 spectrum audit for 04.05 remains preserved. This is supporting evidence only, not acceptance of the parent topic, practical Item 3, or subcategory.
+
+**Records refreshed for this overlay:** Workflow v2.2 (Library ID `libfile_c61da08367148191ad4e5d76ce7aeff0`); tracker v252 (Library ID `libfile_590fd34e579c819189c02261fe34c456`); Completion Checklist v2.0 v56 (Library ID `libfile_cc7518a16af48191815df91c0bc809da`); Bill v1.4 (Library ID `libfile_03ca9a5a45288191a4b45522926265aa`); original Topic 04; released Item 3 NTIA/FCC audit; released Item 6 First Amendment audit.
+
+
+## v0.4 dated Item 3 debris-authorization transfer overlay (16 October 2026)
+
+The [FCC Debris-Authorization Transfer Continuity and Bill Crosswalk](/Startake/Startake_Item3_FCC_Debris_Authorization_Transfer_Continuity_Bill_Crosswalk_2026-10-16.md) (Library ID `libfile_1cfec2f50a148191904feabe19dbf7b6`, SHA-256 `5a49262303f6d8fab4104680013170ba3112c742971ca6eb915ab02f9368627a`) maps the existing primary-source debris audit to Bill v1.4 and checks 47 U.S.C. §310(d) and 47 C.F.R. §§25.117 and 25.119. Covered license assignments and changes of control require applicable FCC filings/approval; material changes to authorization terms generally require the relevant modification action. The proposed §107(b) plan already preserves FCC authority, but does not expressly list each authorization's debris plans, conditions, reports, record custodian, or proposed successor official. The report recommends this as a narrow future drafting check, leaves Bill v1.4 unchanged, and adds no operator-compliance or cost finding.
+
+The v0.4 CSV changes only the original 05.09 *Space sustainability* and M16.01 *Orbital debris and collision risk* rows relative to v0.3. It adds the scoped report and maps §§107 and 208 only as transfer/authorization and limited cost interfaces. Actual filing contents, spacecraft performance, collision probabilities, astronomical interference, deorbit costs, parent-topic acceptance, and formal Item 3 status remain open.
+
+**Records refreshed for this overlay:** Workflow v2.2 (Library ID `libfile_c61da08367148191ad4e5d76ce7aeff0`); tracker v254 (Library ID `libfile_590fd34e579c819189c02261fe34c456`); dashboard v57 (Library ID `libfile_cc7518a16af48191815df91c0bc809da`); Bill v1.4 (Library ID `libfile_03ca9a5a45288191a4b45522926265aa`); prior Item 3 orbital-debris and Gen2 public-record reports.
+
+## Findings
+
+The canonical records preserve two distinct formal acceptance structures: seven practical requirements and 36 named-topic frameworks. The current goal also asks that applicable recovered scope text be reconciled. The 311 lower-level entries are source-authenticated as recovered text and now mapped to their full topic, proposed bill sections, topic-level evidence/limits, and existing report references where the tracker provides them. They remain proposed scope text and are not a separate user-ratified checklist or acceptance denominator.
+
+The 311 rows comprise 150 legal and 161 moral scopes across 36 topics. Every row retains its original label, title, full scope, archive member and hash, custody status, mapping, current evidence-row availability, and remaining verification note in the companion CSV. Mapping does not establish subject-level verification. No separate approval of every lower-level proposal is claimed.
+
+Initial research coverage remains 7/7. Formal acceptance remains 0/7 practical and 0/36 named. All 311 proposal rows remain outside any formal completion count. At the v0.1 baseline, the working bill was v1.1 with 31 operative sections; the only changes from v1.0 refreshed explanatory crosswalk material. The v0.2 overlay compares only M07.01–M07.08 with Bill v1.4. Drafting maturity remains 29/50 (58%); overall congressional readiness is unestablished.
+
+## Criteria and custody status
+
+| Layer | Status |
+|---|---|
+| Seven practical requirements | Authenticated project-level checklist preserved in tracker and source report; 0/7 formally accepted |
+| 36 full named topics | All 36 names/order reconciled among original archives, canonical tracker and Bill; 0/36 formally accepted |
+| 311 proposed lower-level scopes | Recovered source text and hashes checked; mapped by parent topic; not separately ratified or accepted |
+| Public Funding and Wealth Attribution | Separate cross-cutting requirement; not an eighth item or 37th topic |
+
+The source-authentication report says that the 311 scopes were proposed organizational refinements and that no record proves separate user approval of every subcategory. This crosswalk satisfies the user-directed reconciliation task while preserving that limit.
+
+I recalculated all 5 bundle-file hashes and all 38 source-member hashes/sizes. For each of the 311 rows, the exact title and full scope text appear in the referenced source member. These checks authenticate recovered bytes, not the truth of factual claims cited in the source documents or whether the evidence is sufficient.
+
+Bundle hashes:
+
+- Starlink_Research_Topic_Documents_17.zip — SHA-256 53a528197249427a9b878a75c0a4a5fdcaba8c2edfaa65bb5e5fa7c641f2623f
+- requirements_311.json — SHA-256 35992f587a475b80c4e0c8e9c92f0d0350ceb3deabaadf53f77cd01549c2335a
+- README.md — SHA-256 6ba1271753cdeb3bbc8f6feba2de4937d1683cabb01e0c5f75f26a7704a50c61
+- archive_member_manifest.json — SHA-256 9e1078e3eb57d0a6b0c5f0ae3fa1cb2bfe1d19c73ee2c800ec52dc1212d0c114
+- Starlink_Moral_Foundation_Research_Topics_19.zip — SHA-256 26ab27f27c0099f19ee0ac32d02e3245ba32555196d001fd4b60756fac66c8e0
+
+The two unchanged ZIP archives contain 36 topic documents and two distinct master indexes, 38 members total. Original archives remain preserved.
+
+## Mapping method
+
+1. Join all 311 ledger entries to the 36 full topic names and Bill's 36-topic table by exact topic text. All topic names match; no row was dropped.
+2. Attach each row to that parent topic's proposed bill sections and the Bill's topic-level evidence/remaining-limit text.
+3. Add current report paths and Library IDs from the tracker’s compact evidence overlay where available.
+4. Preserve the seven practical-item evidence-to-bill map separately. Do not infer a universal one-to-many mapping between practical items and named topics.
+5. Mark every lower-level row as topic-level mapping only. No separate source investigation or formal acceptance is performed here.
+
+At the v0.1 baseline, the compact tracker evidence table contained 15 topics. The other 21 names remain in the full tracker topic lists and the Bill's 36-topic crosswalk, but did not have a separate evidence row in that compact table. The v0.2 M07, v0.3 04.06 and v0.4 05.09/M16.01 audits are cross-referenced here; none adds a separate compact named-topic row. A missing row is not treated as proof that no evidence exists; scope evidence and limits are carried in the CSV. All 36 formal statuses remain unchecked.
+
+Internal records reviewed: Workflow v2.2 (Library ID libfile_c61da08367148191ad4e5d76ce7aeff0); canonical tracker v202 (libfile_590fd34e579c819189c02261fe34c456); Completion Checklist v2.0 v31 (libfile_cc7518a16af48191815df91c0bc809da); original requirements report (libfile_9027017d96d88191b360fbc3bff197d8); custody bundle (libfile_083fe8c435148191b127f221d0e8ef5c); Bill v1.0 (libfile_d738eaa0f1648191ac0f8ad8446e2243); current Item 4 refresh report and crosswalk (libfile_6d3cb2320c5081918abe1f06ffee9b65; libfile_70681a74afc88191b92e937ac0044d9c). This chat is the sole inheritor including Item 1; the pass did not add new Item 1 factual findings.
+
+## Seven practical items mapped to the proposal
+
+| Authenticated practical requirement | Existing evidence noted in Bill | Proposed bill sections | Current limitation / acceptance |
+|---|---|---|---|
+| Ownership and acquisition perimeter | 3, 101, 104, 107 | Sole inheritor now owns Item1; prior evidence retained, no new title research here | No Item 1 finding or status changed; actual schedule required |
+| Constitutional and statutory acquisition authority | 2, 101–110, 501–503 | [Public-use audit](Startake_Item2_Federal_Public_Use_Eminent_Domain_Precedents_Audit_2026-10-15.md), [declaration audit](Startake_Item2_Declaration_Of_Taking_Real_Property_Condemnation_Audit_2026-10-15.md), [Tucker Act audit](Startake_Item2_Tucker_Act_Takings_Compensation_Forums_2026-10-15.md), prior core report | Working draft only; independent opinion and property-specific application absent |
+| Independent operation and international permissions | 104, 107–108, 401–403 | [Item 3 source/gaps report](Startake_Verification_Item3_International_Permissions_Operational_Continuity_2026-10-15.md) | Plan and gates drafted; no permissions or operational independence certified |
+| Verified public-funding ledger | 103, 302 separate historic support from compensation | [Latest exact-ID refresh report](Startake_Item4_USASpending_Exact_74_Award_ID_Refresh_Retry_2026-10-15.md) and [v0.5 record crosswalk](Startake_Item4_USAC_USASpending_ERate_Crosswalk_v0.5_2026-10-15.csv): 74 current-funded USAC FRNs, 74 USAspending award IDs, 68 exact cross-system joins, and six unmatched records on each side; the 15 October refresh returned all 74 submitted IDs and matched the prior summary fields | Incomplete cohort only. No complete public-support total, beneficiary service, final payee, provider payment, or SpaceX cash receipt is established |
+| Starlink-only valuation and financial model | 103–104, 208, 301–303, 404 | Saved disclosure audit, workbook/report and COMPS evidence; actual commercial inputs incomplete | Appraisal record/fiscal controls drafted; no real valuation, populated forecast or professional acceptance |
+| Public governance, security, and service protections | 201–208, 402 | [Item 6 original source/gaps report](Startake_Verification_Item6_Public_Governance_Privacy_Accountability_2026-10-15.md) and refreshed official sources above | Charter and enforceable protections drafted; no implemented safeguards certified |
+| Necessity assessment and independent legal review | 2, 104, 404, review queue | [Item 7 alternatives audit](Startake_Verification_Item7_Necessity_Alternatives_Independent_Review_2026-10-15.md) | Review requirements and adverse case drafted; no actual expert opinion |
+
+The Item 4 row was refreshed in Bill v1.1 because the v1.0 explanatory record predated the exact-ID retry. The 74/74 query and 68/6/6 cross-system results do not establish beneficiary service for all awards, final payees, invoice completeness, payment settlement, supplier/SpaceX receipts, or a full public-support total. No operative funding or payment clause changed.
+
+## Thirty-six named topics and bill sections
+
+| Authenticated full named topic | Proposed bill sections | Separate current tracker evidence row |
+|---|---|---|
+| Acquisition perimeter and beneficial ownership | 101, 104 | Current evidence row |
+| Constitutional power, public purpose, and separation of powers | 2, 105, 501 | Current evidence row |
+| Statutory acquisition procedure and property remedies | 102–110, 501 | Current evidence row |
+| Telecommunications, satellite, and spectrum status | 107, 201(b), 201(c), 404(a)(1) | Item 3 supporting 04.06 audit; no separate compact evidence row |
+| Space and international law | 107, 403 | Current evidence row |
+| Starlink-only historic funding ledger | 103, 302 | Current evidence row |
+| Standalone Starlink valuation | 103–104, 301, 404 | Current evidence row |
+| Launch/manufacturing/technical independence | 104, 401–402 | Current evidence row |
+| Starshield, defense contracts and classified systems | 3, 101, 401 | No separate current evidence row |
+| Ukraine incident and service interruption evidence | 2(c) | No separate current evidence row |
+| Public services and international dependence | 2(c), 205, 401 | Current evidence row |
+| Corporate governance and civil liberties | 201–208 | Current evidence row |
+| Historical acquisition and regulatory precedents | 404 | Current evidence row |
+| Fiscal policy and economic impact | 208, 301–303 | Current evidence row |
+| Alternatives and necessity test | 404 | Current evidence row |
+| Stakeholders and diplomatic process | 403–404 | No separate current evidence row |
+| Legislative architecture and drafting standards | All 31 sections | Current evidence row |
+| Concentration of Control over Essential Communications | 2(c), 203 | No separate current evidence row |
+| Documented Leadership Decisions and Personal Accountability | 2(b)–(c) | No separate current evidence row |
+| Transparency, Notice, and Procedural Fairness | 103, 205–207 | No separate current evidence row |
+| Civilian Life, Emergency Response, and Humanitarian Dependence | 104, 205, 401–402 | No separate current evidence row |
+| Ukraine and Ethics of Communications in Armed Conflict | 2(c), 401 | No separate current evidence row |
+| Defense Dependence, Starshield, and Stewardship of Security | 3, 107, 401 | No separate current evidence row |
+| Freedom of Communication and Public Expression | 203, 205, 207 | No separate current evidence row |
+| Privacy, Surveillance, and Digital Autonomy | 204, 207 | No separate current evidence row |
+| Universal Access, Affordability, and Distributive Justice | 205, 208 | No separate current evidence row |
+| International Sovereignty and Self-Determination | 107, 403 | No separate current evidence row |
+| Public Investment, Reciprocity, and the Social Contract | 103, 302 | Current evidence row |
+| Wealth, Political Influence, and Conflicts of Interest | 2(b), 202, 206 | No separate current evidence row |
+| Democratic Legitimacy and Public Accountability | 202–203, 206–207 | No separate current evidence row |
+| Private Property, Fair Compensation, and Innovation Ethics | 103, 105–106 | No separate current evidence row |
+| Employees, Engineers, and Professional Responsibility | 108, 202, 206, 401 | No separate current evidence row |
+| Orbital Commons and Future Generations | 401–403 | No separate current evidence row |
+| Ethical Design of a Publicly Owned Starlink | 201–208 | Current evidence row |
+| Moral Philosophy and Competing Conceptions of the Public Good | 2, 404 | No separate current evidence row |
+| Neurodiversity, Autism, and Responsible Attribution | 2(b) | No separate current evidence row |
+
+The CSV contains the full topic-level evidence and limitation text, plus saved report paths/IDs where the current tracker supplies them, repeated for each applicable original scope row.
+
+## Legislative effect and open blockers
+
+- At the v0.1 baseline, legislation drafted was Integrated Working Bill v1.1, 31 operative sections; all 31 operative sections were byte-identical to v1.0, with explanatory crosswalk changes only. The v0.2 Item 6 overlay reviews Bill v1.4 §§203, 205 and 207 and makes no redline.
+- Deliverables: requirements-to-bill report and 311-row CSV; updated bill evidence crosswalk.
+- Research status: Source custody and topic mapping verified; no individual subject-level evidence sufficiency finding or formal acceptance made.
+- Formal acceptance: 0/7 practical, 0/36 named. No 311 denominator is defined.
+- Drafting maturity: 29/50 (58%); unchanged.
+- Overall readiness: unestablished.
+
+Remaining blockers include complete commercial-only public-funding and wealth attribution; provider payment/receipt; service delivery and operating-cost inputs; populated valuation, compensation, liability and appropriation schedules; commercial title and transfer permissions; transaction-specific acquisition and foreign law; tested operational independence; subject-level primary-source verification for applicable proposed scopes; and independent legal, accounting, appraisal, engineering and budget review. No external professional opinion is represented.
+
+## Next action
+
+Refresh Workflow v2.2, tracker and dashboard; select one distinct unclaimed Item 2–7 gap; verify its scope and full-title overlaps under conditional CAS/readback before further research. Preserve all formal checklist statuses unless their original gates are satisfied.
+
+## Integrity record
+
+- Source ledger rows: 311.
+- Full topic-name set matches among ledger, tracker full list and Bill: 36.
+- v0.1 baseline compact tracker topic evidence rows with report status: 15; without a separate row: 21. The v0.2 M07 and v0.3 Item 3 04.06 crosswalk overlays reference saved audits but add no separate compact named-topic tracker row.
+- Bundle hashes checked: 5; archive members checked: 38.
+- Exact original titles and scope texts verified against source members: 311.
+- v0.1 baseline Bill operative sections: 31; changed from v1.0: 0. v0.2 Item 6 review scope: Bill v1.4 §§203, 205 and 207; redline: none. v0.4 Item 3 overlay: original rows 05.09 and M16.01 mapped to §§107 and 208 interfaces; redline: none.
+- v0.3 Item 3 scope 04.06: Bill v1.4 §§107, 201(b), 201(c), and 404(a)(1); one CSV row updated relative to v0.2. v0.4 Item 3 transfer crosswalk: §§107 and 208 interfaces; two CSV rows updated relative to v0.3. Both make no bill redline and do not change formal acceptance.
+- v0.2 crosswalk CSV SHA-256 (preserved baseline): 24685eb1db536bb2034137b14cd928593b4643cb586928ea4effd2c13a6c2562.
+- v0.3 crosswalk CSV SHA-256 (preserved predecessor): fb43b0b5f82ff38c8d1f56709981cbadc223efd552c3c931a75b5dcab812e630.
+- v0.4 crosswalk CSV SHA-256: d3b910a09480cd57326179d619bd55ab52e507f0e108bfa2404f1cbdebfa540b.
+- v0.4 changed original scope rows: exactly 05.09 and M16.01; the other 309 CSV rows are unchanged from v0.3.
+- Bill v1.1 SHA-256: 6ff2a3320a0ee770e3e841ab67964f6551adcb054266274bb4abf81901aa9e89.
+
+Procedure: direct review and local integrity checks against saved original records. The v0.3 overlay adds the bounded 04.06 classification audit; the v0.4 overlay maps the previously released orbital-debris transfer findings to 05.09 and M16.01. No third-party contact or publication is made; formal acceptance is unchanged.
