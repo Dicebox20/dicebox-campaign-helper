@@ -26,3 +26,7 @@ Building facades/porch height and some trees remain obliquely projected rather t
 - Outcome is **conditional visual acceptance** only and does not advance BUILD/INJECT/VERIFY state.
 
 **No user request to modify existing art was made.**
+
+## Later owner exterior-perspective exception (2026-10-22)
+
+The owner explicitly directed that strict overhead projection be reserved for **interiors**. Under [this binding exterior exception](./exterior-perspective-owner-exception-2026-10-22.md), the previously flagged roof/facade/tree elevation in this **exterior Carriage Yard** is permissible so long as traversable ground and route boundaries remain credible. **Updated classification: VISUAL PASS, STRUCTURAL COORDINATE VERIFICATION PENDING.** The scene is neither installed nor gameplay-verified. Route topology still requires paired threshold/landing checks.
