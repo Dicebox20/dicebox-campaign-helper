@@ -2,7 +2,7 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "CONTENT_CARDS_UPDATED_WITH_OWNER_SG03_AND_SG06_GEOMETRY_OVERRIDES; IMAGE_SPACE_RECONCILIATION_PENDING",
+  "status": "CONTENT_PREPARE_RECONCILED_FOR_OWNER_FOUR_CORNER_BUSTS_SG02_PENDING_PASS; EXACT_SPATIAL_FOUNDY_MEASUREMENTS_PENDING",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
     "2026-10-23 SG-03 NE bust + west/south two-exit clarification and SG-06 four-way correction",
@@ -470,20 +470,20 @@
       "name": "Northwest Grove Corner",
       "zone": "Sune's Grove — perimeter",
       "track": "FAST",
-      "geometry": "Square loop northwest 90-degree turning path; west/north park masonry",
+      "geometry": "Northwest square-loop corner, exactly EAST exit to SG-02 and SOUTH exit to SG-04; L-shaped path with corner bust.",
       "plannedNeighborIds": [
         "SG-02",
         "SG-04"
       ],
       "mustSee": [
-        "corner path bend",
-        "weathered boundary marker",
-        "sparse old orchard tree"
+        "east-to-south 90-degree walk crossing those two image edges",
+        "northwestern female stone puzzle bust and readable pedestal alcove",
+        "aged garden boundary stonework and autumn woodland"
       ],
-      "stateAndSeparateAssets": "Ambient optional inspection notes only",
+      "stateAndSeparateAssets": "NW corner bust visually present; sequence interaction separate Foundry asset, SW→NE→NW→SE.",
       "density": "SPARSE",
-      "inspectionHardGates": "Visible north/east and south/west loop continuation; no forest maze destination grafted onto Grove",
-      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "inspectionHardGates": "Exactly two path exits, east and south; required NW corner bust; old neutral-lit outdoor art.",
+      "sourceAuthority": "Later owner directive: all four Grove corner maps require busts; square Grove path topology.",
       "designNotes": "",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     },
@@ -570,16 +570,16 @@
         "UND-01"
       ],
       "mustSee": [
-        "central Sune statue with cupped hands",
-        "four cardinal-quadrant busts",
-        "stone relief housing",
-        "drainage groove seams",
-        "single unborn child's grave"
+        "central Sune statue with visibly empty cupped hands",
+        "four approaches at cardinal directions from the square perimeter",
+        "stone sliding-relief puzzle housing",
+        "single unborn-child grave",
+        "drainage groove seams"
       ],
-      "stateAndSeparateAssets": "Bust sequence SW→NE→NW→SE; sliding-image puzzle; 1000gp+Brass Study Key; later NW Silver Tiny Key chase; Scrying Bowl+filled 027 pellet activates Undercroft",
+      "stateAndSeparateAssets": "Four busts physically occupy separate Grove CORNER maps (SG-07 SW, SG-03 NE, SG-01 NW, SG-09 SE) and report ordered state to central memorial; SW→NE→NW→SE. Separate sliding image, Brass Study Key, 1000gp, Scrying Bowl+filled pellet and Undercroft access remain center-map puzzle state.",
       "density": "MECHANICAL",
-      "inspectionHardGates": "Early and late fixtures reachable; sculpture hands visible; Undercroft passage stage concealed until correct mechanics; no spoiler/gore",
-      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "inspectionHardGates": "Readable central statue, empty hands, grave and relief; corner busts are on other images, not duplicates in central image; four clear connections; no early Undercroft reveal.",
+      "sourceAuthority": "Later owner override placing four interactive busts on four separate Grove corner maps",
       "designNotes": "",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     },
@@ -611,20 +611,20 @@
       "name": "Southwest Grove Corner",
       "zone": "Sune's Grove — perimeter",
       "track": "FAST",
-      "geometry": "Southwest corner of square grove circuit",
+      "geometry": "Southwest square-loop corner; only NORTH exit toward SG-04 and EAST exit toward SG-08; includes southwest bust and owner's already-approved painted reference.",
       "plannedNeighborIds": [
         "SG-04",
         "SG-08"
       ],
       "mustSee": [
-        "square-loop bend",
-        "worn bench",
-        "bracken edge"
+        "northern perimeter exit and eastern perimeter exit",
+        "southwest female stone puzzle bust in distinct ornamental alcove",
+        "old mossy masonry and neglected autumn woodlands"
       ],
-      "stateAndSeparateAssets": "Noncritical environment inspect",
+      "stateAndSeparateAssets": "SW corner bust visually present, puzzle interaction state separate.",
       "density": "SPARSE",
-      "inspectionHardGates": "No old Rootbound Well here; Well belongs to independent NW Forest Maze",
-      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "inspectionHardGates": "Match exact owner-approved image ee59e197-572b-4a7e-9430-2b3a0435fa38; north/east boundary connections and puzzle bust.",
+      "sourceAuthority": "Owner visual approval southwestern bust map 2026-10-22",
       "designNotes": "",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     },
@@ -656,20 +656,20 @@
       "name": "Southeast Grove Corner",
       "zone": "Sune's Grove — perimeter",
       "track": "FAST",
-      "geometry": "Southeast corner of square grove circuit",
+      "geometry": "Southeast square-loop corner; exactly WEST exit toward SG-08 and NORTH exit toward SG-06, right-angle path with southeast bust.",
       "plannedNeighborIds": [
         "SG-08",
         "SG-06"
       ],
       "mustSee": [
-        "garden wall turn",
-        "dried climbing roses",
-        "overgrown planter"
+        "west-to-north path bend, open at left and top image borders",
+        "southeastern puzzle bust in stone alcove",
+        "stone garden walls and late-autumn vegetation"
       ],
-      "stateAndSeparateAssets": "Scenery only",
+      "stateAndSeparateAssets": "SE corner bust visually present; puzzle interaction separately stateful in Foundry.",
       "density": "SPARSE",
-      "inspectionHardGates": "Separate from former glasshouse approach map, now FM forest destination",
-      "sourceAuthority": "Owner-edited square-loop Sune Grove geometry; nine-map grove mandate",
+      "inspectionHardGates": "Exactly west and north exits with no other border route; required SE bust; owner showed visual PASS candidate but exact owner archival approval not explicitly registered.",
+      "sourceAuthority": "Later owner direction: all four Grove corners require busts and proper square-loop turns.",
       "designNotes": "",
       "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
     },
