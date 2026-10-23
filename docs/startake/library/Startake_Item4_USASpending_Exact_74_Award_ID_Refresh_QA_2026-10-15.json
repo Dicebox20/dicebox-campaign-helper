@@ -1,0 +1,72 @@
+{
+  "award_rows": 74,
+  "unique_ids": 74,
+  "missing_ids": [],
+  "extra_ids": [],
+  "duplicates": [],
+  "statuses": [
+    200,
+    200,
+    200,
+    200
+  ],
+  "batch_sizes": [
+    20,
+    20,
+    20,
+    14
+  ],
+  "award_amount_sum_nonnull": "82519.7",
+  "award_amount_zero": 44,
+  "award_amount_positive": 30,
+  "award_amount_null": 0,
+  "total_outlays_sum_nonnull": "16288.33",
+  "total_outlays_zero": 49,
+  "total_outlays_positive": 7,
+  "total_outlays_null": 18,
+  "comparison": {
+    "Award ID": {
+      "compared": 74,
+      "identical": 74,
+      "mismatched": 0,
+      "mismatch_ids": []
+    },
+    "CFDA Number": {
+      "compared": 74,
+      "identical": 74,
+      "mismatched": 0,
+      "mismatch_ids": []
+    },
+    "Award Amount": {
+      "compared": 74,
+      "identical": 74,
+      "mismatched": 0,
+      "mismatch_ids": []
+    },
+    "Total Outlays": {
+      "compared": 74,
+      "identical": 74,
+      "mismatched": 0,
+      "mismatch_ids": []
+    },
+    "Description": {
+      "compared": 74,
+      "identical": 74,
+      "mismatched": 0,
+      "mismatch_ids": []
+    }
+  },
+  "recipient_uei": {
+    "C6M7C2FLKER5": 74
+  },
+  "recipient_name": {
+    "SPACE EXPLORATION TECHNOLOGIES CORP.": 74
+  },
+  "cfda": {
+    "32.004": 74
+  },
+  "api_json_sha256": "afbe2bd569fabe5cf933ea34670cff761f2408ddc8e404dcc761a5b0e931dc24",
+  "api_json_bytes": 49289,
+  "crosswalk_sha256": "af84e5778593eb7176cdc2482d6a52f4ebcc1e08e48bf45f9831e17c5369dce1",
+  "crosswalk_bytes": 83582
+}
