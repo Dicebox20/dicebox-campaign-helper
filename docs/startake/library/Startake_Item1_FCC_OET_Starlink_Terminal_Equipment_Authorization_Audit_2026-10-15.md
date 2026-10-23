@@ -1,0 +1,34 @@
+# STARTAKE — Item 1 FCC OET Starlink customer-terminal radio equipment authorization evidence audit
+
+**Cutoff:** 2026-10-15 UTC. **Method:** One bounded public FCC published-guidance and equipment-grant indexed-source pass, **not OpenAI Deep Research**, not a certified current FCC EAS export. **Verified claim:** `STARTAKE-20261015-item1-fccoet-5b82ce`, tracker v94. **Checklist:** Item 1 Ownership and acquisition perimeter. **Overlaps:** Acquisition perimeter and beneficial ownership; Telecommunications, satellite, and spectrum status. **Perimeter:** Commercial Starlink communications equipment only, not all SpaceX and presumptively not Starshield/classified items.
+
+## Summary and evidence matrix
+
+| ID | Record and source | Observed evidence | Limits / contrary evidence |
+|---|---|---|---|
+| E-01 | FCC equipment approval instructions, https://docs.fcc.gov/public/attachments/DOC-205212A1.pdf; FCC Order 15-92, https://docs.fcc.gov/public/attachments/FCC-15-92A1_Rcd.pdf | FCC identifiers combine grantee code and product code; certification grantee warrants that marketed devices conform to authorization. TCBs issue many equipment certifications. | Equipment authorization regulates radio device compliance; it is not a deed or proof of inventory, customer title, patent rights, software title or licence to operate an NGSO space station. Agency documents are general rule/practice, not a certified Starlink EAS row. |
+| E-02 | Independent FCC grant mirror for `2AWHPR231`, https://fccid.io/2AWHPR231; original July 19, 2023, later permissive-change date November 29, 2023 | The reproduced grant text names **Space Exploration Technologies Corp.** as grantee, Starlink Router as equipment, grantee code **2AWHP**, product **R231**. Frequencies include 2412–2462 MHz and 5745–5825 MHz for original equipment. | This is a third-party reproduction of FCC/TCB grant, not a live FCC EAS download. The grant explicitly says NOT TRANSFERABLE. It does not mean the grantee owns every shipped physical router. |
+| E-03 | Independent grant mirror `2AWHPR232`, https://fccid.io/2AWHPR232; November 22, 2023 original grant, January 15, 2024 change record | Same named grantee and Starlink Router description; FCC ID 2AWHPR232. 2.4/5 GHz Part 15-type bands in the reproduced grant. | Verify primary FCC EAS certificate, exhibits and present authorization status; product identity does not prove actual deployment or ownership. |
+| E-04 | Independent grant mirror `2AWHPR251`, https://fccid.io/2AWHPR251; April 16, 2025 original, May 8, 2025 change | Space Exploration Technologies Corp. is named as grantee of a newer Starlink Router FCC ID, not SpaceX Services, Inc. or the UK operating company. | Grant date, modifications and model scope require live FCC EAS validation; cannot extrapolate from one product line to full terminal fleet. |
+| E-05 | Independent grant mirror `2AWHPR261`, https://fccid.io/2AWHPR261; August 13, 2026 grant | Same grantee **Space Exploration Technologies Corp.** and equipment class digital transmission system for Starlink Router; reproduced grant lists frequency 2412–2462 MHz. | Grant mirror only; not a certificate of beneficial ownership or brand ownership, nor the satellite link terminal's separate transmit authorization. |
+| E-06 | Third-party grantee index `2AWHP`, https://fccid.io/2AWHP | Provides a tractable seven-FCC-ID lead set, including R201, R211, R231, R232, W231, R251 and R261, and a reported FRN **0029602463**. | The index cannot certify a comprehensive October 2026 EAS company search. Device entries may represent Wi-Fi routers/modules rather than satellite customer-terminal antenna assemblies. Do not count it as all commercial Starlink hardware. |
+
+## Analytic distinctions and counterevidence
+
+- A U.S. **FCC equipment authorization grantee** is responsible for certified radio-device conformity. It is not necessarily the contracting internet-service company, a separate gateway/space-station licensee, the manufacturer of every component, an IP owner or the legal holder of every sold/leased router.
+- The accessible grant mirrors explicitly reproduce **NOT TRANSFERABLE** language. This is reason to request specific FCC authorization and business-reorganization advice for a proposed public acquisition, not an assumption that ownership of commercial inventory or a share transfer is forbidden.
+- Earlier Starlink ICFS reports place space station licenses with Space Exploration Holdings, LLC and named earth-station permissions with SpaceX Services, Inc. The EAS applicant name **Space Exploration Technologies Corp.** must remain a separate row until a certified legal-entity, equipment and service-rights crosswalk is produced.
+- Part 15 router-frequency equipment approvals do **not** establish user terminal transmit authorization on satellite Ku/Ka bands. The scope here is radio device certification examples and the distinction from operational licensing.
+
+## Original-criteria reconciliation and outstanding evidence gaps
+
+| Verification issue | This pass | Required next record |
+|---|---|---|
+| Existence of specific Starlink-branded FCC IDs and grantee names | **Supported by indexed reproduced grant text, not source-native current certified export** | Direct FCC EAS search results/grant certificates and documents by 2AWHP; capture as-of date and checksums |
+| Product families/models and operating bands | **Sample-supported** | Certified exhibit, labeling, manual, device/test documentation and all later modifications per ID |
+| Legal owner of terminals in inventory or customer possession | **Not established** | Invoices, sales/leases, inventory ledgers, customer contracts, equipment financing and return rights |
+| Commercial-only asset and embedded software ownership | **Not established** | Corporate title schedules, technology licences, OEM manufacturing and embedded software source rights, Starshield carve-out |
+| FCC transfer/recertification consequences | **Not determined for hypothetical deal** | Actual transaction structure, live 47 CFR §§2.929–2.935, FCC/TCB consultation and written applicable determinations |
+| Original nine approved acquisition-topic subheadings | **Unavailable / unauthenticated** | Recover exact original approved headings, then separately audit completion requirements |
+
+**Disposition:** **Research pass complete — formal verification pending.** This pass adds specific, bounded radio-device grant and grantee leads; it does not convert search mirrors into primary certified records, establish full terminal title or verify Item 1/any named topic. Counts remain **7/7 initial passes complete**, **0/7** practical items formally verified and **0/36** named topics formally verified.
