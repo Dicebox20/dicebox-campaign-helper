@@ -1,3 +1,5 @@
+> **LATER OWNER V5 MOSAIC REVEAL (2026-10-23):** The four correct corner-bust activations now **visibly expose a rear-pedestal 3×3 mosaic via a separate Tile**. A conditional **player-facing Foundry Region directly behind the statue** announces the discovery on entering, once per player: *“Behind Sune's statue, a concealed stone panel has shifted, revealing an intricate sliding mosaic.”* The old suggestion to rely principally on a remote stone click/Note is superseded. Keep all other standing-Sune, dedication stone and one-grave geometry from this v4 document. [Controlling implementation-ready PREPARE v5](./sg-05-revealed-mosaic-region-prepare-v5-2026-10-23.md). No scene rendered or built.
+
 # SG-05 Memorial Clearing — PREPARE v4: Standing Sune and Dedicated Memorial Stone
 
 **Date:** 2026-10-23  
