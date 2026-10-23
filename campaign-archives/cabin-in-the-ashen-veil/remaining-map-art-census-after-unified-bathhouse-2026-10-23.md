@@ -1,3 +1,7 @@
+
+
+> **SUPERSEDED by later owner instruction (2026-10-23):** The 53→46 / 35 outstanding counts in this Bathhouse-era census are **historical**. [Current owner map-granularity audit](./map-granularity-owner-rule-and-consolidation-audit-2026-10-23.md) now requires every enclosed cabin room to have a distinct scene, including three attic storage rooms, and counts the approved Aqueduct as one large combined background. The live PREPARE register has **56 logical cards, 48 confirmed base-map targets, 12 approved, and 36 remaining** pending further exterior grouping. Do not treat the historical count as current.
+
 # Cabin in the Ashen Veil — Remaining Map Art After Bathhouse Approval
 
 **Date:** 2026-10-23
