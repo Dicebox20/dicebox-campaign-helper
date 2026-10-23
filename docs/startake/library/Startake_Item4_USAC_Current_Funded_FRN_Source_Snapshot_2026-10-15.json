@@ -1,0 +1,459 @@
+{
+  "http_status": 200,
+  "query": {
+    "$limit": "1000",
+    "$order": "funding_request_number",
+    "$select": "funding_request_number,form_version,form_471_frn_status_name,epc_organization_id",
+    "$where": "epc_organization_id='143053761' AND form_version='Current' AND form_471_frn_status_name='Funded'"
+  },
+  "records": [
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399032946"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399033864"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399036291"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399038471"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399045008"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399045017"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399046997"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399047100"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399048704"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399048708"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399048710"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399048713"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399048719"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399050913"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399051032"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399051045"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399051179"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399056447"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2399056633"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499009670"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499018027"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499031960"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499034596"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499034657"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499034674"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499034682"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499035124"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499035126"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499035127"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499036250"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499038382"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499039197"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499040008"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499042130"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499042166"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499043965"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499044638"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499044652"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499047890"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499047897"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499048334"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499050062"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499052091"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499054648"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499055527"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499056291"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499056696"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499056732"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499057267"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499057486"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2499058087"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599005457"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599006827"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599013244"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599026206"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599027753"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599029987"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599031864"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599036607"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599039320"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599039419"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599041964"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599043565"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599044091"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599044168"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599045406"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599051429"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599056805"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2599057823"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2699003724"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2699015208"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2699032134"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2699032189"
+    },
+    {
+      "epc_organization_id": "143053761",
+      "form_471_frn_status_name": "Funded",
+      "form_version": "Current",
+      "funding_request_number": "2699053556"
+    }
+  ],
+  "retrieved_utc": "2026-10-15T16:59:44.683229+00:00",
+  "row_count": 74,
+  "source_url": "https://opendata.usac.org/resource/qdmp-ygft.json",
+  "unique_frn_count": 74
+}
