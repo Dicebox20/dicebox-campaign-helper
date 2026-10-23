@@ -988,23 +988,24 @@
       "name": "Boathouse Approach & Overgrown Landing",
       "zone": "Estate grounds",
       "track": "FAST",
-      "geometry": "SEPARATE follow-on map after rowing across EXT-02 Pond and entering paired far-bank teleport Region. Overgrown dock/landing area, magical thorn barrier guarding boathouse, and small Boathouse destination/prayer scene inside. Return Region to Pond far bank.",
+      "geometry": "Land-dominant separate Boathouse scene: tiny water edge and short truncated dock only on WEST exit → EXT-02; 80–90% dry path, rooted autumn ground and abandoned timber Boathouse EAST/NE. Single narrow ground chokepoint supports removable Plant-Killer magical thorn blocker; small disturbed dig spot by birch root behind gate, plus Boathouse Prayer of Devotion.",
       "plannedNeighborIds": [
         "EXT-02"
       ],
       "mustSee": [
-        "paired arrival/return landing from far pond shoreline",
-        "marked magical thorn overgrowth obstructing boathouse access in early/blocked stage",
-        "approachable Boathouse door and old rowing/dock equipment",
-        "readable Prayer of Devotion pickup location beyond cleared obstacle",
-        "subtle disturbed earth patch near tree roots on safe ground beyond magical growth barrier"
+        "short west edge dock segment and small shallow water pocket occupying <=20% frame; safe paired pond portal",
+        "broad dry walkable land and coherent eastward path",
+        "one nonbypassable narrow root/stone choke with removable magical thorn overlays",
+        "eastern abandoned timber boathouse with clear practical door/interior interactive floor",
+        "subtle disturbed earth patch by pale tree roots BEHIND thorn gate for optional Sophie's Favorite Doll",
+        "one safe return route to west dock portal"
       ],
       "stateAndSeparateAssets": "Late Greenhouse fictional Plant-Killer Flask clears overgrowth via Region-controlled Tile/stage, permanently opens access. Prayer of Devotion is one-time pickup accessible only after barrier removed. Before unblocking, can inspect and return safely to Pond. Player teleport in far-side Pond arrival is not automatic clearance/reward. Optional buried Sophie's Favorite Doll: one dig-and-pickup, worn accessory +1 to all attack rolls and +1 to all saving throws; requires dedicated Foundry item verification. Owner specified +1 effects, rarity/attunement proposal only.",
       "density": "DOMESTIC",
-      "inspectionHardGates": "Separate from Pond base art; EXT-07 teleport paired safe arrival, far-side obstacle inspectable and not automatically solved, blocked vs cleared versions retained. Avoid early Prayer access or one-way softlock.",
-      "sourceAuthority": "2026-10-23 direct owner: opposite Pond shore teleports to next map with plant overgrowth; retains prior EXT-07 Boathouse story; owner 2026-10-23 optional doll buried at boathouse",
-      "designNotes": "Mapped counterpart to ./pond-full-drained-and-far-bank-transition-prepare-v2-2026-10-23.md. Owner explicitly keeps Pond and overgrowth on independent maps. Fresh PREPARE: ./boathouse-doll-feature-2026-10-23.md. EXT-07 west entrance portal from Pond east bank; path east to Boathouse/Prayer; dig site beyond growth. Single render then INSPECT and owner PASS/REDO.",
-      "status": "OWNER_SCOPE_REVISED_OVERGROWN_LANDING_PREPARED_RENDER_PENDING"
+      "inspectionHardGates": "One actual border-crossing portal WEST to EXT-02 dock; remaining edges closed by forest/rugged terrain. Land >80%; no broad lake, and no full pond. Thorn gate choke blocks ordinary footpath until separate dynamic Tile removed; doll and prayer behind it, safe return until cleared. Strict overhead and diffuse neutral light. Render inspect stop.",
+      "sourceAuthority": "2026-10-23 direct owner: opposite Pond shore teleports to next map with plant overgrowth; retains prior EXT-07 Boathouse story; owner 2026-10-23 optional doll buried at boathouse; direct owner 2026-10-23 corrective land-dominant boathouse composition",
+      "designNotes": "Mapped counterpart to ./pond-full-drained-and-far-bank-transition-prepare-v2-2026-10-23.md. Owner explicitly keeps Pond and overgrowth on independent maps. Fresh PREPARE: ./boathouse-doll-feature-2026-10-23.md. EXT-07 west entrance portal from Pond east bank; path east to Boathouse/Prayer; dig site beyond growth. Single render then INSPECT and owner PASS/REDO. Superseded by OWNER 2026-10-23: boathouse is dry land area with short dock only and a small amount of water. Use ./boathouse-prepare-v3-land-dominant-2026-10-23.md controlling PREPARE; discarded prior water-dominant attempt (REDO).",
+      "status": "OWNER_SCOPE_REVISED_V3_LAND_DOMINANT_FRESH_RENDER_PENDING"
     },
     {
       "id": "EXT-08",
