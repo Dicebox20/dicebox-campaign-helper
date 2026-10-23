@@ -1,0 +1,37 @@
+# STARTAKE — Item 1: Ofcom UK Starlink authorization and licensee register audit
+
+**Research date:** 2026-10-15 UTC. **Claim:** `STARTAKE-20261015-item1-ofcom-8b6c21`. **Research method:** direct original public Ofcom HTML register and agency-decision pages, **not** Deep Research; no PDF technical annexes independently analyzed. **Scope:** identify named UK satellite network and gateway licensees and licence identifiers relevant to the commercial Starlink carve-out. Excludes UK Companies House PSC04 or charges claims and broader SpaceX/Starshield.
+
+## Findings and original-source evidence index
+
+| ID | Official source | Observed evidence | Limit |
+|---|---|---|---|
+| OF-01 | Ofcom, [NGSO earth-station licence application and register](https://www.ofcom.org.uk/spectrum/space-and-satellites/non-geo-fss?language=en), accessed 2026-10-15 | **Starlink Internet Services Limited**, existing UK NGSO network licence **1239247**, first issued **16 November 2020**. | Network authorization holder is not a certified parent-company shareowner or proof of spacecraft/site/IP title. |
+| OF-02 | Same original Ofcom register | Existing NGSO gateway licences associated with Starlink network licence 1239247: **Morn Hill 1293713, Wherstead 1293534, Woodwalton 1293303**, first issued **14 November 2022**, directly named **Starlink Internet Services Limited**. | Licence-list snapshot and issue dates, not licence grant deeds/current signed conditions or site legal-title chain. |
+| OF-03 | Same original Ofcom register | Starlink-associated gateways under **other named legal licensees**: **Arqiva Ltd (Chalfont) 1242714**, first issued 1 Feb 2021; **Goonhilly Earth Station Limited (Goonhilly) 1224918**, first issued 1 Apr 2020; both associated network licensee Starlink Internet Services Limited #1239247. | These are separate authorization-holding corporations; cannot assume these licences, ground stations or real estate are assets of a Starlink subsidiary. Commercial contract/service relationships and property rights require independent verification. |
+| OF-04 | Ofcom [temporary E-band gateway licence register](https://www.ofcom.org.uk/cy/spectrum/space-and-satellites/apply-for-a-temporary-E-Band-Gateway-Licence), accessed 2026-10-15 | **Starlink Internet Services Limited** named E-band licensee: **Morn Hill #1398959; Wherstead #1398998; Woodwalton #1399007**, all first issued **29 October 2025**, linked network #1239247. | Explicitly temporary licence class, not perpetual assignment or uncontested title to spectrum. Original specific licences and expiration/variation status still require inspection. |
+| OF-05 | Ofcom [2026 Starlink two-gateway decision](https://www.ofcom.org.uk/spectrum/space-and-satellites/consultation-starlink-application-for-two-non-geostationary-gateway-earth-station-licences), decision **20 July 2026** | Regulator decided to **grant** two additional NGSO gateway licences to **Starlink Internet Services Limited**, for **Harlow, Essex** and **Mulberry Wharf, London**, application reference **STRLNK-GAT-3**. | Decision text alone does not supply individual new numerical licence IDs, executed grant copy, technical conditions or land ownership. |
+| OF-06 | Ofcom [2024 gateway variation decision](https://www.ofcom.org.uk/spectrum/space-and-satellites/spacex-application-variation-non-geostationary-gateway-licence), 1 Aug 2024 | Ofcom **approved variation of four** Starlink Internet Services Limited gateway licences: **Fawley, Wherstead, Woodwalton, Isle of Man** sites. | Name of site and authorizations do not certify each physical site's owner, and the Isle of Man's jurisdiction requires special diligence. |
+| OF-07 | Ofcom [2023 six-gateway decision](https://www.ofcom.org.uk/spectrum/space-and-satellites/starlink-gateway-licence-applications?language=en), 4 Oct 2023 | Agency describes six 2022 NGSO gateway licence applications by Starlink Internet Services Limited, a SpaceX subsidiary. | Historical permission event, not complete current licence inventory or guarantee of operational independence. |
+
+## Analysis and contradictory/competing interpretations
+
+1. The UK is not a single-entity asset bucket. The official register expressly distinguishes the Starlink **network licensee** from independent named **gateway licensees** (Arqiva and Goonhilly) associated with the same Starlink network. Acquiring Starlink company shares would not automatically convey third-party licences, gateways, leases, service agreements or permissions.
+2. A regulatory licence is a right to operate subject to terms; a public licence table is not a deed for satellites, land, antennas, data centres, or intellectual property. Do not infer transfer/consent terms without reading individual grants and applicable Ofcom instruments.
+3. The July 2026 decision provides evidence of two later licence grants, while the general register excerpt does not by itself provide the specific new numerical IDs. This is an **inventory reconciliation gap**, not grounds to claim only older locations are licensed.
+4. The 2024 variation decision names Fawley/Isle of Man alongside two earlier gateway sites; reconcile all live identifiers and geography with direct grant instruments rather than assuming each is absent or included in the shorter register table.
+5. The company named **Starlink Internet Services Limited** on Ofcom grants should not casually be equated with **Starlink Internet Services UK Limited (company 12794964)** in Companies House. Verify legal names, company numbers and contracting entities from native licence documents and authenticated filings.
+
+## Verification matrix and outstanding evidence
+
+| Requirement | Result | Next required evidence |
+|---|---|---|
+| Publicly identified network licensee and number | **Supported** by original Ofcom HTML register | Authenticated executed network grant and live status at transaction date |
+| Multiple Starlink UK gateway grant names/numbers | **Supported** for listed Ka-band and temporary E-band licences | Native PDFs for each authorization, site-specific conditions, renewals and transfer clauses |
+| Third-party gateway licensees | **Supported** for Arqiva/Goonhilly | Contracts, site leases, property titles and operational dependency map |
+| July 2026 Harlow/Mulberry Wharf approvals | **Supported at decision level** | Individual issued licence IDs, signed conditions, effective dates |
+| UK national/international assignment approval package | **Not verified** | Legal interpretation from Ofcom, formal transfer applications/consents, Isle of Man jurisdiction, FCC/foreign crosswalk |
+| Ownership/encumbrance and global commercial Starlink-only perimeter | **Not verified** | Entity-to-asset titles, creditor/contract rights, comprehensive licences, audited carve-out excluding Starshield |
+| Original nine approved subcategory headings and formal Item 1 acceptance | **Not verified** | Authentic original source headings and completed criteria audit |
+
+**Disposition:** One bounded targeted source-register research pass completed with material open gaps. Item 1 and related named topics remain **formally unchecked**. This report is neither a general foreign-regulatory approval nor a claim that another chat's UK PSC04 or charges evidence passes were repeated. Save/re-read and release only this pass's claim after tracker integration. Project formal tally stays 0/7 and 0/36.
