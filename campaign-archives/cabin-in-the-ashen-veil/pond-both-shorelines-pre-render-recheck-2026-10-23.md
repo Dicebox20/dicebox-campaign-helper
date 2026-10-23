@@ -1,3 +1,5 @@
+> **SUPERSEDED 2026-10-23:** The owner has replaced this broad pond/boathouse visualization with [EXT-02 Pond & Sluice PREPARE v2](./pond-full-drained-and-far-bank-transition-prepare-v2-2026-10-23.md). Paint **only pond and sluice as dominant subjects**, prepare aligned FULL/DRAINED variants, and place plant overgrowth on separate EXT-07 map entered by the far-bank teleport. The original content below remains historical evidence, not current image direction.
+
 # EXT-02 — Pond and Both Shorelines | Mandatory pre-render recheck
 
 **Date:** 2026-10-23  
