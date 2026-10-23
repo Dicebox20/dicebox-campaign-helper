@@ -1,3 +1,5 @@
+> **SCENE-SPECIFIC SG-05 REPLACEMENT PREPARE (2026-10-23):** Read [SG-05 Memorial Clearing v3](./sg-05-memorial-clearing-prepare-v3-2026-10-23.md) and the synchronized [machine-readable register](./all-scene-preparation-register-v2-2026-10-22.json) **instead of the old SG-05 paragraph below**. There are four **external** cardinal entrances to SG-05 and one conditional **inner** Undercroft descent. The statue, clue bench and single child's grave are SG-05 fixtures; puzzle busts are in the four separate corner maps. The previous SG-01 four-way standing-stone image is a rejected NW corner attempt and must never serve as SG-05 painting reference. Legacy prose retained for traceability.  
+
 # Cabin in the Ashen Veil — Campaign-wide Scene PREPARE Register v2
 
 **Date:** 2026-10-22  
