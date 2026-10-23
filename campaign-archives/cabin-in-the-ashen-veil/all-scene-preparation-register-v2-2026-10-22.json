@@ -5,6 +5,7 @@
   "status": "CONTENT_PREPARE_RECONCILED_FOR_OWNER_FOUR_CORNER_BUSTS_SG02_PENDING_PASS; EXACT_SPATIAL_FOUNDY_MEASUREMENTS_PENDING",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 SG-05 v4 owner criticism: standing Sune, mosaic on back, dedication stone, no reuse rejected image",
     "2026-10-23 new SG-05 replacement PREPARE v3 for central memorial; all four puzzle busts located on Grove corner maps",
     "2026-10-23 SG-03 NE bust + west/south two-exit clarification and SG-06 four-way correction",
     "Latest explicit owner decisions and approved Gondian blueprint images",
@@ -562,7 +563,7 @@
       "name": "Memorial Clearing",
       "zone": "Sune's Grove — center",
       "track": "COMPLEX",
-      "geometry": "Center of the square nine-map Sune Grove: one old family memorial garden court and Sune statue; four external cardinal edge exits N SG-02, W SG-04, E SG-06, S SG-08, plus distinct conditional INNER stair UND-01 after Bowl+filled pellet. Slightly oval garden path around centerpiece, not a monumental road crossroads.",
+      "geometry": "Central neglected family devotional garden with four cardinal border routes, walkable ring around single upright STANDING Sune statue on low plinth, rear mosaic inspectable from north side, separate Sune dedication stele and single child grave. Hidden UND-01 descent is internal stage-gated.",
       "plannedNeighborIds": [
         "SG-02",
         "SG-04",
@@ -571,19 +572,19 @@
         "UND-01"
       ],
       "mustSee": [
-        "single expressive Sune statue with empty cupped hands on central pedestal",
-        "closed floral sliding-relief cover on statue base, independently puzzle-controlled",
-        "stone family bench with early rose-star-moon-sun order clue",
-        "one modest grave for unborn child",
-        "faint dry engineered stone runnels toward concealed undercroft stair",
-        "four obvious garden approaches N W E S with safe floor around statue"
+        "upright standing Sune sculpture with readable overhead head shoulders long robes and two EMPTY offering hands",
+        "rear/NORTH-side closed nine-seam sliding relief on pedestal with reachable stone inspection path",
+        "engraved dedication stone to Sune on west/southwest rim holding early order clue",
+        "ONE unborn child's small grave in southeast garden pocket",
+        "four border-reaching paths exactly north SG-02 west SG-04 east SG-06 south SG-08",
+        "dry dormant runoff grooves and disguised undercroft access in worn garden paving"
       ],
-      "stateAndSeparateAssets": "Four Winder-socket busts live on CORNER maps SG-07 SW Rose, SG-03 NE Star, SG-01 NW Moon, SG-09 SE Sun. On correct order reveal 3×3 family picnic sliding-panel UI at SG-05, with 1000gp cloth bag and Brass Study Key explicit separate rewards. Bowl from Rosewater Reliquary placed in Sune hands then filled 027 pellet activates water channel and outer UND-01 stair. Stage overlays/Items remain dynamic. Old SG-05 late NW-bust chase anchor is a migration conflict; SG-01 NW bust suggested as new trigger/key-drop location pending route contract signoff.",
+      "stateAndSeparateAssets": "Four busts at Grove corner Scenes only, SW SG-07 Rose → NE SG-03 Star → NW SG-01 Moon → SE SG-09 Sun; on completion cue scrape/click from behind Sune's pedestal and reveal close-up 3×3 sliding relief. Separate 1000gp bag and Brass Study Key. Later Bowl fits into initially EMPTY offering hands; filled 027 pellet unlocks staged internal UND-01 stairs. Late NW chase anchor migration remains unverified.",
       "density": "MECHANICAL",
-      "inspectionHardGates": "Exactly FOUR border crossings N SG-02, W SG-04, E SG-06, S SG-08; statue must clearly be Sune with EMPTY cupped accessible hands; single grave, stone clue bench, closed relief, dry channels, dormant hidden undercroft entrance; no on-map corner puzzle busts, monolithic standing-stone circle or premature items; original old/creepy garden, neutral diffuse illumination and safe circulation; render one then inspect.",
-      "sourceAuthority": "2026-10-23 new scene-specific owner-requested replacement PREPARE v3 + owner four-corner bust correction, supersedes obsolete all-busts-at-SG-05 spec",
-      "designNotes": "Controlling detailed PREPARE: ./sg-05-memorial-clearing-prepare-v3-2026-10-23.md. Provisional geometry ~80ft square, not measured or owner-ratified. Runtime late NW chase relocation is pending separate reconciliation; do not silently build obsolete SG-05 trigger.",
-      "status": "DESIGN_PREPARED_V3_RENDER_PENDING_OWNER_REQUEST_GEOMETRY_NOT_CERTIFIED"
+      "inspectionHardGates": "4 border exits N/W/E/S exactly; statue unmistakably STANDING high-angle, two visibly EMPTY forward hands; rear/NORTH closed mosaic reachable; actual Sune memorial dedication stone and exactly one distinct small unborn child grave, no bench; unobstructed garden circulation; inactive channels and hidden descent, neutral diffuse light, painterly aged autumn horror. Never generate by editing/reusing failed SG-05 v1/v2 images.",
+      "sourceAuthority": "Owner visual rejection of seated/squat Sune and acceptance of rear puzzle placement, 2026-10-23; controlling SG-05 PREPARE v4",
+      "designNotes": "Controlling new source: ./sg-05-memorial-clearing-prepare-v4-standing-sune-2026-10-23.md; supersedes statue pose, clue bench, panel south-face in v3. Last two SG-05 renders rejected and not archived. After bust puzzle complete, use stone-click cue from BEHIND pedestal so puzzle can be discovered.",
+      "status": "DESIGN_PREPARED_V4_PREVIOUS_IMAGES_REDO_NO_NEW_RENDER"
     },
     {
       "id": "SG-06",
