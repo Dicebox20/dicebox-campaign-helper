@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "53_PREPARE_CARDS_8_OF_9_GROVE_PAINTED_APPROVED_SG09_VISUAL_PASS_PENDING_OWNER_APPROVAL_BUILD_NOT_STARTED",
+  "status": "NINE_GROVE_SCENE_BASE_ART_VISUALLY_COMPLETE_2026-10-23_FOUNDY_WIRING_NOT_BUILT",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 all nine Grove maps owner accepted / visually archived: see grove-nine-map-visual-completion-receipt-2026-10-23.md",
     "2026-10-23 owner approved SG-01 northwestern moon bust render generation 7190055e",
     "2026-10-23 SG05 owner visual PASS and SG02 acceptance; approved archive v2 and Grove puzzle completion audit",
     "2026-10-23 SG-05 v6 owner: base art's statue rear plain, mosaic shown only via conditional separate runtime Tile",
@@ -677,8 +678,8 @@
       "density": "SPARSE",
       "inspectionHardGates": "Exactly west and north exits with no other border route; required SE bust; owner showed visual PASS candidate but exact owner archival approval not explicitly registered.",
       "sourceAuthority": "Later owner direction: all four Grove corners require busts and proper square-loop turns.",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Final user acceptance after correct-map confirmation. Exact image gen 681f825d-1f3e-44d2-9cb7-cd1696265905, sha256 681806132e2b56fa75c72224751aac8658ebd52c76e6a076b2dea6bb557ce7a9. Archive v4 original image. See ./sg-09-southeast-corner-owner-acceptance-2026-10-23.md.",
+      "status": "OWNER_ACCEPTED_VISUAL_GEN_681f825d_2026-10-23_FOUNDY_PENDING"
     },
     {
       "id": "FM-01",
