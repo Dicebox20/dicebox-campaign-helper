@@ -5,6 +5,7 @@
   "status": "CONTENT_PREPARE_RECONCILED_FOR_OWNER_FOUR_CORNER_BUSTS_SG02_PENDING_PASS; EXACT_SPATIAL_FOUNDY_MEASUREMENTS_PENDING",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 SG-05 v6 owner: base art's statue rear plain, mosaic shown only via conditional separate runtime Tile",
     "2026-10-23 SG-05 v5 owner decision: obvious mosaic appears on rear statue Tile after four busts, behind-statue player Region discovery message",
     "2026-10-23 SG-05 v4 owner criticism: standing Sune, mosaic on back, dedication stone, no reuse rejected image",
     "2026-10-23 new SG-05 replacement PREPARE v3 for central memorial; all four puzzle busts located on Grove corner maps",
@@ -564,7 +565,7 @@
       "name": "Memorial Clearing",
       "zone": "Sune's Grove — center",
       "track": "COMPLEX",
-      "geometry": "Central neglected family devotional garden with four cardinal border routes, walkable ring around single upright STANDING Sune statue on low plinth, rear mosaic inspectable from north side, separate Sune dedication stele and single child grave. Hidden UND-01 descent is internal stage-gated.",
+      "geometry": "Four-approach old Sune devotional garden with upright standing statue in center on simple aged stone base, clean/plain rear pedestal and accessible strip reserved for mosaic overlay. Four cardinal edges N SG-02 W SG-04 E SG-06 S SG-08, Sune dedication stone W/SW and one small child grave SE.",
       "plannedNeighborIds": [
         "SG-02",
         "SG-04",
@@ -573,19 +574,19 @@
         "UND-01"
       ],
       "mustSee": [
-        "upright standing Sune sculpture with readable overhead head, shoulders, long robes and two EMPTY offering hands",
-        "rear/NORTH-side stone cover with a clear approach strip reserved for visually revealed mosaic Tile and player Region",
-        "engraved dedication stone to Sune on west/southwest holding early four-bust clue",
-        "ONE unborn child's small grave in southeast garden pocket",
-        "four border-reaching paths exactly north SG-02 west SG-04 east SG-06 south SG-08",
-        "dry dormant runoff grooves and disguised undercroft access in worn garden paving"
+        "upright high overhead full standing Sune statue with long robes, two EMPTY open offering hands",
+        "modest plain weathered stone pedestal and clear walkable strip behind/north for deferred mosaic Tile",
+        "upright dedicated Sune memorial stone west/southwest bearing early puzzle clue",
+        "one modest unborn-child grave southeast with family flowers",
+        "four visible border-opening walks north west east south with clear courtyard circuit",
+        "neglected autumn rose garden neutral ambient illumination and subtle dry inlaid stone runnels"
       ],
       "stateAndSeparateAssets": "Four corner Winder busts SG-07 SW Rose → SG-03 NE Star → SG-01 NW Moon → SG-09 SE Sun. On all four correct, persistent grove.bustsSolved=true reveals an obvious 3×3 mosaic on separate rear/NORTH pedestal Tile. Conditional player-facing Foundry Region behind statue displays discovery text on player-token entry, once per player, with inspect fallback. Revealed Tile opens existing sliding UI, separate 1000gp bag and Brass Study Key. Later Scrying Bowl + filled 027 pellet in initially empty Sune hands opens inner UND-01 stair. NW chase anchor migration remains pending.",
       "density": "MECHANICAL",
-      "inspectionHardGates": "Exactly four map-border exits N/W/E/S; standing Sune with empty offering hands; accessible rear/NORTH pedestal for clear mosaics overlay and player Region; dedicated stone clue, one child grave; dormant base imagery shows closed rear panel, neutral lighting and safe paths. Active reveal must be VISIBLY evident via Tile once busts solved; Region is conditional, player-facing and anti-spam. Do not paint opening/reward permanently into base map.",
-      "sourceAuthority": "Owner SG-05 v4 standing statue plus 2026-10-23 v5 reveal Tile and player-facing behind-statue Region.",
-      "designNotes": "SG-05 v4 controls physical composition; NEW controlling mosaic discovery owner refinement v5: ./sg-05-revealed-mosaic-region-prepare-v5-2026-10-23.md. Separate reveal Tile and on-approach Region with explicit player-facing message, gated by grove.bustsSolved. Fresh independent prompt per render.",
-      "status": "DESIGN_PREPARED_V5_MOSAIC_DISCOVERY_REGION_SPEC_AUTHORED_NO_RENDER_OR_FOUNDY_BUILD"
+      "inspectionHardGates": "Base-art SG-05: exactly four open cardinal roads, upright Sune with empty offering hands, modest PLAIN continuous rear stone without grid/panel; accessible north rear space for later Foundry mosaic Tile and Region; dedication stone separate from one child's grave; neutral painterly late-autumn garden. Mosaic becomes visible ONLY as runtime Tile after busts solved; no incorrect static clue.",
+      "sourceAuthority": "2026-10-23 user-directed SG-05 PREPARE v6: clean pedestal initial image; v5 revealed Tile and Region unchanged.",
+      "designNotes": "Controlling immediate static ART PREPARE ./sg-05-memorial-clearing-prepare-v6-clean-pedestal-base-art-2026-10-23.md; v5 Tile+Region after four busts. Never use/reuse previously rejected SG-05 image prompts.",
+      "status": "PREPARE_RECHECK_PASS_RENDER_ONCE_PENDING_VISUAL_INSPECTION"
     },
     {
       "id": "SG-06",
