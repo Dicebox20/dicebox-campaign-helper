@@ -5,6 +5,7 @@
   "status": "CONTENT_PREPARE_RECONCILED_FOR_OWNER_FOUR_CORNER_BUSTS_SG02_PENDING_PASS; EXACT_SPATIAL_FOUNDY_MEASUREMENTS_PENDING",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 new SG-05 replacement PREPARE v3 for central memorial; all four puzzle busts located on Grove corner maps",
     "2026-10-23 SG-03 NE bust + west/south two-exit clarification and SG-06 four-way correction",
     "Latest explicit owner decisions and approved Gondian blueprint images",
     "House Layout v2 / Bathhouse approval / selected Attic/Basement/Aqueduct/Forest visuals",
@@ -561,7 +562,7 @@
       "name": "Memorial Clearing",
       "zone": "Sune's Grove — center",
       "track": "COMPLEX",
-      "geometry": "Central square Grove destination bounded by independent ring walks at N/E/S/W with four distinct bust interaction quadrants",
+      "geometry": "Center of the square nine-map Sune Grove: one old family memorial garden court and Sune statue; four external cardinal edge exits N SG-02, W SG-04, E SG-06, S SG-08, plus distinct conditional INNER stair UND-01 after Bowl+filled pellet. Slightly oval garden path around centerpiece, not a monumental road crossroads.",
       "plannedNeighborIds": [
         "SG-02",
         "SG-04",
@@ -570,18 +571,19 @@
         "UND-01"
       ],
       "mustSee": [
-        "central Sune statue with visibly empty cupped hands",
-        "four approaches at cardinal directions from the square perimeter",
-        "stone sliding-relief puzzle housing",
-        "single unborn-child grave",
-        "drainage groove seams"
+        "single expressive Sune statue with empty cupped hands on central pedestal",
+        "closed floral sliding-relief cover on statue base, independently puzzle-controlled",
+        "stone family bench with early rose-star-moon-sun order clue",
+        "one modest grave for unborn child",
+        "faint dry engineered stone runnels toward concealed undercroft stair",
+        "four obvious garden approaches N W E S with safe floor around statue"
       ],
-      "stateAndSeparateAssets": "Four busts physically occupy separate Grove CORNER maps (SG-07 SW, SG-03 NE, SG-01 NW, SG-09 SE) and report ordered state to central memorial; SW→NE→NW→SE. Separate sliding image, Brass Study Key, 1000gp, Scrying Bowl+filled pellet and Undercroft access remain center-map puzzle state.",
+      "stateAndSeparateAssets": "Four Winder-socket busts live on CORNER maps SG-07 SW Rose, SG-03 NE Star, SG-01 NW Moon, SG-09 SE Sun. On correct order reveal 3×3 family picnic sliding-panel UI at SG-05, with 1000gp cloth bag and Brass Study Key explicit separate rewards. Bowl from Rosewater Reliquary placed in Sune hands then filled 027 pellet activates water channel and outer UND-01 stair. Stage overlays/Items remain dynamic. Old SG-05 late NW-bust chase anchor is a migration conflict; SG-01 NW bust suggested as new trigger/key-drop location pending route contract signoff.",
       "density": "MECHANICAL",
-      "inspectionHardGates": "Readable central statue, empty hands, grave and relief; corner busts are on other images, not duplicates in central image; four clear connections; no early Undercroft reveal.",
-      "sourceAuthority": "Later owner override placing four interactive busts on four separate Grove corner maps",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "inspectionHardGates": "Exactly FOUR border crossings N SG-02, W SG-04, E SG-06, S SG-08; statue must clearly be Sune with EMPTY cupped accessible hands; single grave, stone clue bench, closed relief, dry channels, dormant hidden undercroft entrance; no on-map corner puzzle busts, monolithic standing-stone circle or premature items; original old/creepy garden, neutral diffuse illumination and safe circulation; render one then inspect.",
+      "sourceAuthority": "2026-10-23 new scene-specific owner-requested replacement PREPARE v3 + owner four-corner bust correction, supersedes obsolete all-busts-at-SG-05 spec",
+      "designNotes": "Controlling detailed PREPARE: ./sg-05-memorial-clearing-prepare-v3-2026-10-23.md. Provisional geometry ~80ft square, not measured or owner-ratified. Runtime late NW chase relocation is pending separate reconciliation; do not silently build obsolete SG-05 trigger.",
+      "status": "DESIGN_PREPARED_V3_RENDER_PENDING_OWNER_REQUEST_GEOMETRY_NOT_CERTIFIED"
     },
     {
       "id": "SG-06",
