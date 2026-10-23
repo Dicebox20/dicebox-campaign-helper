@@ -5,6 +5,7 @@
   "status": "CONTENT_PREPARE_RECONCILED_FOR_OWNER_FOUR_CORNER_BUSTS_SG02_PENDING_PASS; EXACT_SPATIAL_FOUNDY_MEASUREMENTS_PENDING",
   "ownerScope": "Prepare all maps before rendering; Cabin side-campaign FAST exception",
   "sourcePriority": [
+    "2026-10-23 SG-05 v5 owner decision: obvious mosaic appears on rear statue Tile after four busts, behind-statue player Region discovery message",
     "2026-10-23 SG-05 v4 owner criticism: standing Sune, mosaic on back, dedication stone, no reuse rejected image",
     "2026-10-23 new SG-05 replacement PREPARE v3 for central memorial; all four puzzle busts located on Grove corner maps",
     "2026-10-23 SG-03 NE bust + west/south two-exit clarification and SG-06 four-way correction",
@@ -572,19 +573,19 @@
         "UND-01"
       ],
       "mustSee": [
-        "upright standing Sune sculpture with readable overhead head shoulders long robes and two EMPTY offering hands",
-        "rear/NORTH-side closed nine-seam sliding relief on pedestal with reachable stone inspection path",
-        "engraved dedication stone to Sune on west/southwest rim holding early order clue",
+        "upright standing Sune sculpture with readable overhead head, shoulders, long robes and two EMPTY offering hands",
+        "rear/NORTH-side stone cover with a clear approach strip reserved for visually revealed mosaic Tile and player Region",
+        "engraved dedication stone to Sune on west/southwest holding early four-bust clue",
         "ONE unborn child's small grave in southeast garden pocket",
         "four border-reaching paths exactly north SG-02 west SG-04 east SG-06 south SG-08",
         "dry dormant runoff grooves and disguised undercroft access in worn garden paving"
       ],
-      "stateAndSeparateAssets": "Four busts at Grove corner Scenes only, SW SG-07 Rose → NE SG-03 Star → NW SG-01 Moon → SE SG-09 Sun; on completion cue scrape/click from behind Sune's pedestal and reveal close-up 3×3 sliding relief. Separate 1000gp bag and Brass Study Key. Later Bowl fits into initially EMPTY offering hands; filled 027 pellet unlocks staged internal UND-01 stairs. Late NW chase anchor migration remains unverified.",
+      "stateAndSeparateAssets": "Four corner Winder busts SG-07 SW Rose → SG-03 NE Star → SG-01 NW Moon → SG-09 SE Sun. On all four correct, persistent grove.bustsSolved=true reveals an obvious 3×3 mosaic on separate rear/NORTH pedestal Tile. Conditional player-facing Foundry Region behind statue displays discovery text on player-token entry, once per player, with inspect fallback. Revealed Tile opens existing sliding UI, separate 1000gp bag and Brass Study Key. Later Scrying Bowl + filled 027 pellet in initially empty Sune hands opens inner UND-01 stair. NW chase anchor migration remains pending.",
       "density": "MECHANICAL",
-      "inspectionHardGates": "4 border exits N/W/E/S exactly; statue unmistakably STANDING high-angle, two visibly EMPTY forward hands; rear/NORTH closed mosaic reachable; actual Sune memorial dedication stone and exactly one distinct small unborn child grave, no bench; unobstructed garden circulation; inactive channels and hidden descent, neutral diffuse light, painterly aged autumn horror. Never generate by editing/reusing failed SG-05 v1/v2 images.",
-      "sourceAuthority": "Owner visual rejection of seated/squat Sune and acceptance of rear puzzle placement, 2026-10-23; controlling SG-05 PREPARE v4",
-      "designNotes": "Controlling new source: ./sg-05-memorial-clearing-prepare-v4-standing-sune-2026-10-23.md; supersedes statue pose, clue bench, panel south-face in v3. Last two SG-05 renders rejected and not archived. After bust puzzle complete, use stone-click cue from BEHIND pedestal so puzzle can be discovered.",
-      "status": "DESIGN_PREPARED_V4_PREVIOUS_IMAGES_REDO_NO_NEW_RENDER"
+      "inspectionHardGates": "Exactly four map-border exits N/W/E/S; standing Sune with empty offering hands; accessible rear/NORTH pedestal for clear mosaics overlay and player Region; dedicated stone clue, one child grave; dormant base imagery shows closed rear panel, neutral lighting and safe paths. Active reveal must be VISIBLY evident via Tile once busts solved; Region is conditional, player-facing and anti-spam. Do not paint opening/reward permanently into base map.",
+      "sourceAuthority": "Owner SG-05 v4 standing statue plus 2026-10-23 v5 reveal Tile and player-facing behind-statue Region.",
+      "designNotes": "SG-05 v4 controls physical composition; NEW controlling mosaic discovery owner refinement v5: ./sg-05-revealed-mosaic-region-prepare-v5-2026-10-23.md. Separate reveal Tile and on-approach Region with explicit player-facing message, gated by grove.bustsSolved. Fresh independent prompt per render.",
+      "status": "DESIGN_PREPARED_V5_MOSAIC_DISCOVERY_REGION_SPEC_AUTHORED_NO_RENDER_OR_FOUNDY_BUILD"
     },
     {
       "id": "SG-06",
