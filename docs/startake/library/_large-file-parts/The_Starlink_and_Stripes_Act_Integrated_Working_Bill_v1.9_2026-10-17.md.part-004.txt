@@ -1,0 +1,140 @@
+
+(c) PURPOSE, AMOUNT, AND PERIOD CONTROLS.—
+(1) Each appropriation under this section shall state its amount, purpose, and period of availability. No amount may be obligated or expended in excess of amounts legally available for that purpose and period, or before an appropriation is made, except as otherwise authorized by law.
+(2) An appropriation limited to a definite period is available only as provided under section 1502(a) of title 31, United States Code. This Act does not make an amount in a closed appropriation account available for a new obligation. Recording, adjusting, and liquidating an obligation after expiration or account closing remain governed by sections 1552 and 1553 of title 31, United States Code, and other applicable law.
+
+(d) OBLIGATION RECORDING.—The Secretary shall record and report an obligation under this Act only when supported by documentary evidence and otherwise consistent with section 1501 of title 31, United States Code, and other applicable law. This subsection does not determine the legal event that creates an obligation for a particular transaction.
+
+(e) JUDGMENT FUND.—This section does not establish that a negotiated acquisition payment or advance purchase payment is payable from the Judgment Fund solely because this Act authorizes an acquisition. Any payment sought from the Judgment Fund for a judgment, award, or compromise settlement remains subject to section 1304 of title 31, United States Code, and other applicable law. Nothing in this subsection limits compensation or interest owed for property already taken.
+
+## TITLE IV—CONTINUITY, SEPARATION AND INDEPENDENT REVIEW
+
+### SEC. 401. STAGED TRANSITION PLAN.
+
+(a) Within 180 days after enactment, the Secretary shall submit a staged transition plan and ten-year technical baseline. The plan shall identify negotiated launch and manufacturing capacity; satellite replenishment and disposal; tooling, suppliers and spares; software and source access; workforce and benefits; network and spacecraft control; customer, defense and emergency service obligations; foreign permissions; insurance and liabilities; and alternatives if a dependency cannot be secured.
+
+(b) The plan shall exclude dedicated classified and Starshield systems from acquisition and require appropriately cleared review of necessary interfaces. No classified information or command credential shall be presumed transferable through a commercial sale.
+
+(c) A transition-services agreement shall specify measurable service levels, price, duration, minimum staffing, support access, enforceable remedies and a funded exit plan. No deadline alone establishes technical independence or authorizes takeover of a supplier.
+
+(d) CRITICAL-SERVICE REGISTER.—For each proposed phase of operating-control transfer, the Secretary and Corporation shall maintain a register of contracted services whose interruption would foreseeably threaten life, emergency response or essential public functions. The register shall identify the responsible customer, mission requirements, affected sites or mobile-service categories, technical dependencies, alternative paths, restoration objectives and responsible continuity officer. Classification shall be based on documented service obligations and risk, not merely on the customer being an airline, vessel, school, hospital or government. Protected details shall be maintained in a controlled annex, with safe aggregate information reported to Congress.
+
+### SEC. 402. SECURITY AND CUTOVER GATES.
+
+(a) Before each material transfer of operating control, independent qualified assessors shall witness tests of command integrity, identity and key separation, software-update authority, billing and customer support, emergency coordination, network monitoring, backup restoration, supplier failure and safe rollback. Tests shall use approved safety controls; live spacecraft actions require lawful operating authority.
+
+(b) The Board and Secretary shall approve documented service tolerances, recovery objectives and measurable test criteria before testing, based on mission requirements and customer obligations. Failed criteria shall block the affected cutover until corrected and retested. No certification may be based solely on a vendor assertion or absence of observed incidents.
+
+(c) A failed cutover shall trigger a funded, contractually and legally authorized recovery arrangement. Rollback may not be presumed to restore expired permits, return title automatically or compel a former owner's labor. If safe recovery is unavailable, the affected transfer shall not proceed.
+
+(d) SITE AND SERVICE TESTS.—The tests for critical services listed under section 401(d) shall assess the required sites or representative mobile-service conditions, including power autonomy, sky-view and installation constraints, terminal supply, capacity, independent backhaul, security, accessibility and support escalation. Acceptance criteria shall be agreed in writing before testing by the responsible officers and affected contracting customers. A connection's observed speed or successful installation alone does not establish continuity readiness.
+
+(e) DIVERSE CONTINUITY.—Each critical service shall have a tested independently supplied alternative communications path, unless the independent assessors document that no such path is reasonably feasible for that phase and certify a funded interim arrangement that meets the documented mission tolerances. The record shall disclose shared power, ground, launch, software and supplier dependencies; explain residual risks; and specify a remediation deadline and accountable officer. A waiver may not excuse a failed mission tolerance, replace a required permission, or treat another Starlink subscription as an independent supplier. Failure to establish a safe arrangement blocks the affected transfer under subsection (c).
+
+### SEC. 403. FOREIGN PERMISSIONS AND CONTINUITY REGISTER.
+
+The Secretary, in consultation with the Secretary of State and responsible regulators, shall maintain a jurisdiction-by-jurisdiction register identifying the legal operator, authorization, expiry, ownership/control consent, data duties, spectrum coordination, launch and registration obligations and outstanding conditions. The register shall distinguish verified approvals from pending requests and research leads. No country shall be marked ready solely because a U.S. statute has been enacted or a general foreign procedure exists. No operating transfer may precede the permissions required for that phase.
+
+### SEC. 404. ALTERNATIVES, PROFESSIONAL REVIEW AND IMPLEMENTATION TIMETABLE.
+
+(a) Within 270 days after enactment and before a binding acquisition commitment, the Secretary shall publish an independent comparison of the proposed public-ownership transaction and each of the following alternatives and decision paths:
+
+(1) Public-service regulation, including statutory nondiscrimination, service obligations and any proposed public-utility classification;
+
+(2) Government service and procurement contracts, including defense and agency service-level agreements, notices, remedies and continuity clauses;
+
+(3) Emergency powers and temporary operation, based on a specifically identified statutory authority and only when its triggering conditions are met;
+
+(4) Competition and network redundancy, including alternative low-Earth-orbit systems, procurement diversification, interoperability and backup capacity;
+
+(5) A publicly owned critical overlay network, including targeted Federal constellation capacity or redundant mission-specific capacity;
+
+(6) A negotiated Starlink asset purchase, including voluntary acquisition design, financing and agreement with current owners;
+
+(7) Congressionally authorized compulsory acquisition, evaluated as proposed authority under this Act and subject to the applicable compensation, transition and legal-remedy provisions; and
+
+(8) Necessity and proportionality criteria, applied to the documented objectives, cost, effectiveness, risks and rights burdens of every option. This paragraph is a decision standard and not a separate service-delivery option.
+
+The comparison shall distinguish non-acquisition service or resilience paths from the negotiated and compulsory routes to public ownership. It shall not treat an emergency authority as ordinary-course or permanent acquisition authority, assume that a statutory trigger has been met, or characterize a proposed power as existing law. It shall use common mission requirements, lifecycle costs, public rights, technical risk, international permissions and sensitivity analysis; disclose conflicts and dissent; and explain the route recommended to accomplish the public-ownership purposes of this Act lawfully and prudently. No independent reviewer is required to endorse acquisition.
+
+(b) Before closing, independent constitutional, fiscal, compensation, telecom, foreign-law, engineering, privacy and financial reviewers shall provide written assessments and unresolved objections. Their opinions shall inform, but not replace, the Secretary's legal responsibility and judicial review. Classified and confidential annexes may accompany public conclusions under applicable law.
+
+(c) Within 90 days after enactment the President shall submit Board nominations and the Secretary shall publish a due-diligence plan; within 180 days the budget and transition plan are due; within 270 days the alternatives report is due. Negotiation and permission applications may proceed concurrently where lawful. The section 104 closing conditions, 60-day congressional notice and section 105 negotiation minimum remain controlling. No calendar date requires a closing before those conditions are met.
+
+(d) Annual reports shall assess public outcomes, costs, competition effects, rights complaints, service continuity and whether additional legislation is needed. Missing evidence and failed assumptions shall be reported expressly.
+
+(e) COMMON BASIS AND DETERMINATION.—The comparison under subsection (a) shall identify the geography, population, essential missions, required start date, capacity, service quality, rights protections, permissions and duration supplied by each option. The Secretary shall evaluate the proposed public-ownership transaction and each alternative on the same ten criteria: security, access, international trust, price, speed, enforceability, political interference, cyber risk, continuity and legal cost. For each criterion, the assessment shall identify the evidence, source quality, date, method, uncertainty, material favorable and adverse evidence, and whether the proposition is measured, proposed, inferred or unknown. Costs shall distinguish acquisition consideration, separation, financing, operations, replacement, launch, labor, access support, security, contingent liabilities and transition failure. The assessment shall disclose missing inputs, sensitivity ranges and distribution of benefits and burdens. Forecasts shall not be reported as observed results. If a defined common baseline or reliable evidence necessary for comparison is unavailable, the Secretary shall not assign a composite score or rank; the Secretary shall identify the missing evidence and bound or defer conclusions that depend on it. This limitation does not bar a supported qualitative finding. Before the determination under section 104(6), reviewers shall be given an opportunity to respond to material revisions. The Secretary shall publish a reasoned response to material objections; favorable reviewer conclusions are not a condition that may be presumed or manufactured.
+
+(f) AUDITABLE ALTERNATIVES EXHIBIT.—The comparison shall include a reproducible exhibit using common assessment dates, price and currency conventions, planning horizon, service requirements and treatment of uncertainty. The exhibit shall present a distinct row for the proposed public-ownership transaction and for each alternative in subsection (a); paragraph (a)(8) shall be shown as a decision standard applied across those rows, not scored as a service-delivery option. The exhibit shall display each of the ten criteria in subsection (e), identify which ownership, accountability, service and rights objectives are met or unmet, and cite the evidence supporting any proposed mitigation. It shall distinguish fiscal cost, total resource cost and distribution of benefits and burdens. Where equivalent service or enforceable rights cannot be demonstrated, that limitation shall be reported rather than concealed through a cost-only ranking. Differences in implementation timing, residual assets and liabilities, continuing replacement, termination rights, permissions and transition-failure exposure shall be explicit. Unsupported inputs shall remain identified as unavailable; conclusions depending on them shall be bounded or deferred. The exhibit shall permit independent reproduction to the extent consistent with applicable information-protection law and shall retain material contrary results.
+
+## TITLE V—REVIEW AND EFFECTIVE DATE
+
+### SEC. 501. JUDICIAL REVIEW AND SAVINGS.
+
+(a) Final agency action under this Act remains subject to applicable judicial review. In addition, the United States waives sovereign immunity for nonmonetary relief sought by a person adversely affected by an alleged violation of this Act, within the jurisdiction of the district courts, except where a specific statutory review route governs the challenged action. No new restriction on constitutional claims or compensation remedies is imposed.
+
+(b) Nothing in this Act displaces a court's authority to prevent an unlawful acquisition, alters otherwise applicable FCC review procedures, waives a lawful privilege, or authorizes a taking without constitutionally adequate compensation.
+
+### SEC. 502. SEVERABILITY WITH OPERATIONAL SAFETY.
+
+If a provision or application is held invalid, the remainder shall continue to the extent legally and operationally practicable. No severability determination authorizes a transfer without compensation, required operating permissions, funded continuity, or the rights safeguards of this Act. The Secretary shall suspend any affected closing until the remaining lawful transaction satisfies section 104.
+
+### SEC. 503. EFFECTIVE DATE.
+
+This Act takes effect on enactment. No property or operating control transfers by enactment alone.
+
+## Drafting notes — not part of proposed bill text
+
+**Section 303 — unresolved appropriations choices.** The bracketed amounts, due-diligence fiscal year and availability date remain unresolved legislative choices requiring the Item 5 model, CBO/OMB scorekeeping and appropriations counsel. The acquisition and transition appropriation is drafted as expressly available until expended; Congress must supply its amount and decide whether to retain that no-year term or replace it with a fixed period. Section 303 is a conditional template, not a completed funding estimate, score, professional opinion, or source of funds before enactment.
+
+## Adversarial review and remaining blockers
+
+| Strongest objection | Draft response | Still unresolved / who must review |
+|---|---|---|
+| A targeted acquisition could become punishment or favoritism | §§2, 103, 105 require nonpunitive purpose, public record and court process | Current dependence evidence, adverse case-law check, enumerated-power and purpose review by independent constitutional counsel |
+| A narrow compulsory fallback may leave the indispensable network unattainable if the owner refuses | §102 permits negotiated commercial carve-out; §105 openly limits coercion; §104 blocks unsafe partial closing | Orbital and intangible situs, IP/equity mechanisms, foreign enforceability and revised specific legislation if negotiation fails; acquisition counsel must not infer a solved fallback |
+| Paying fair compensation may be extraordinarily expensive | Two appraisals, price reconciliation, no parent-value shortcut, title III account controls | No defensible dollar price, audited carve-out, ten-year forecast, compensation range or score; independent appraisal and budget experts required |
+| Public ownership may worsen censorship, surveillance or political capture | §§203–207 prohibit discrimination, minimize data, require logs and create nonmonetary judicial remedy | Foreign conflicts, lawful-access interactions, privacy remedies, emergency exceptions and practical enforcement need specialist redlines and tests |
+| Board appointments can remain political; statutory independence cannot guarantee behavior | Senate-confirmed specialist board, disclosures, independent audits, court-enforceable duties | §202 removal and CEO structure, Appointments Clause, current removal jurisprudence, labor and civil-service regime need constitutional and personnel counsel; no claim of insulated tenure |
+| Launch/manufacturing/software dependencies may defeat independence | §§104, 401–403 require agreements, witnessed tests, permissions and funded recovery | Actual source access, key inventories, supplier prices, launch capacity, staff retention, safe rollback and security clearance assessments absent |
+| Procurement/regulation/diversification could achieve continuity for less | §404 requires common-basis independent comparison and dissent | Alternatives not quantified; acquisition objective does not establish superiority or satisfy the requirement for an honest adverse case |
+| Receipts retention and the public corporation may create hidden federal liabilities | §§208, 301–303 separate receipts appropriation, funding and no borrowing | CBO/OMB classification, Treasury execution, tax, procurement, debt, federal tort/contract and personnel treatment unresolved; not introduction-ready |
+
+## Implementation timetable — proposed, contingent on lawful funding
+
+| Enactment-relative time | Deliverable | Gate that cannot be bypassed |
+|---|---|---|
+| Day 0 | Charter and acquisition framework take effect | No property/control transfers automatically; actual funds required |
+| By day 90 | Board nominations and due-diligence plan | Confirmation/quorum and lawful appointment before operating control |
+| By day 180 | Budget, technical baseline, transition plan | Independent evidence, no invented private financial inputs |
+| By day 270 | Independent alternatives and adverse-case report | Before binding acquisition commitment; no presumed endorsement |
+| At least 60 days before closing | Congressional risk/continuity notice | No legislative veto; all other legal gates remain |
+| Before a domestic condemnation action | Supported offer and negotiation record | §105 minimum 180 days unless owner declines further negotiation |
+| Before each operating cutover | Permissions, funding, independent tests and recovery plan | Failed material test blocks transfer |
+| Quarterly / annually | Oversight, financial, rights and outcomes reporting | Protected information remains protected; lawfully accessible audits required |
+| Five years | New acquisition delegation expires | Existing obligations and compensation survive; operations and rights do not sunset |
+
+## Practical-item evidence-to-bill crosswalk
+
+These are authenticated tracker-level practical requirements. They are not newly invented subcategory acceptance gates.
+
+| Original item | Existing evidence reviewed | Draft sections | Acceptance status |
+|---|---|---|---|
+| Ownership and acquisition perimeter | Sole inheritor now owns Item1; prior evidence retained, no new title research here | 3, 101, 104, 107 | No Item 1 finding or status changed; actual schedule required |
+| Constitutional and statutory acquisition authority | [Public-use audit](Startake_Item2_Federal_Public_Use_Eminent_Domain_Precedents_Audit_2026-10-15.md), [declaration audit](Startake_Item2_Declaration_Of_Taking_Real_Property_Condemnation_Audit_2026-10-15.md), [Tucker Act audit](Startake_Item2_Tucker_Act_Takings_Compensation_Forums_2026-10-15.md), prior core report | 2, 101–110, 501–503 | Working draft only; independent opinion and property-specific application absent |
+| Independent operation and international permissions | [Item 3 source/gaps report](Startake_Verification_Item3_International_Permissions_Operational_Continuity_2026-10-15.md) | 104, 107–108, 401–403 | Plan and gates drafted; no permissions or operational independence certified |
+| Verified public-funding ledger | [Latest exact-ID refresh report](Startake_Item4_USASpending_Exact_74_Award_ID_Refresh_Retry_2026-10-15.md) and [v0.5 record crosswalk](Startake_Item4_USAC_USASpending_ERate_Crosswalk_v0.5_2026-10-15.csv): 74 current-funded USAC FRNs, 74 USAspending award IDs, 68 exact cross-system joins, and six unmatched records on each side; the 15 October refresh returned all 74 submitted IDs and matched the prior summary fields | 103, 302 separate historic support from compensation | Incomplete cohort only. No complete public-support total, beneficiary service, final payee, provider payment, or SpaceX cash receipt is established |
+| Starlink-only valuation and financial model | Saved disclosure audit, workbook/report and COMPS evidence; actual commercial inputs incomplete | 103–104, 208, 301–303, 404 | Appraisal record/fiscal controls drafted; no real valuation, populated forecast or professional acceptance |
+| Public governance, security, and service protections | [Item 6 original source/gaps report](Startake_Verification_Item6_Public_Governance_Privacy_Accountability_2026-10-15.md) and refreshed official sources above | 201–208, 402 | Charter and enforceable protections drafted; no implemented safeguards certified |
+| Necessity assessment and independent legal review | [Item 7 alternatives audit](Startake_Verification_Item7_Necessity_Alternatives_Independent_Review_2026-10-15.md) | 2, 104, 404, review queue | Review requirements and adverse case drafted; no actual expert opinion |
+
+## Named-topic coverage crosswalk — all 36 names preserved
+
+All36 names and311 original proposed scope texts have now been recovered and reconciled in the Requirements Authentication report; that recovery is not substantive approval or verification. “Mapped” means a proposed section or identified gap, not completed research or formal acceptance. Historical topic states remain unchanged. The independent cross-cutting Public Funding and Wealth Attribution requirement is still separate, not a 37th topic.
+
+| Full original named topic | Proposed sections | Evidence/remaining limit |
+|---|---|---|
+| Acquisition perimeter and beneficial ownership | 101, 104 | Sole inheritor owns Item1; no new title finding here; formally unchecked |
+| Constitutional power, public purpose, and separation of powers | 2, 105, 501 | Constitutional counsel and current cases pending; formally unchecked |
+| Statutory acquisition procedure and property remedies | 102–110, 501 | Acquisition draft; original eight subject scopes recovered, substantive audit pending; formally unchecked |
+| Telecommunications, satellite, and spectrum status | 107, 403 | Item1 inventory remains unverified; FCC/NTIA regime unresolved; formally unchecked |
