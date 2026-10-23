@@ -1,3 +1,5 @@
+> **LATER OWNER EXT-02/EXT-07 OVERRIDE — 2026-10-23:** The previously proposed Pond+Boathouse one-image consolidation is **REJECTED BY CURRENT OWNER LAYOUT DIRECTION**. EXT-02 contains the Pond and Sluice Gate, two matching FULL/DRAINED background variants. Its opposite shoreline has a guarded teleport to a **separate EXT-07 Overgrown Landing/Boathouse map**; its plant blockade lives on EXT-07. The remaining base-map target count remains **36** before other area-merges; only the optional four-to-one Forest Maze consolidation could reduce it to **33**, not 32. See [pond owner v2 PREPARE](./pond-full-drained-and-far-bank-transition-prepare-v2-2026-10-23.md). The old Pond+Boathouse merge suggestion lower in this document is retained strictly for history.
+
 # Cabin in the Ashen Veil — Owner Map Granularity Rule and Exterior Consolidation Audit
 **Date:** 2026-10-23
 **Owner clarified:** “I want to be clear that the cabin's rooms are all seperate. Only the areas outside of the cabin use full areas.” Then: “now that I think about it, that probably reduces the maps by a lot.”
