@@ -1,40 +1,39 @@
 # STARTAKE migration status — 2026-10-23 UTC
 
-## Inventory and current result
+## Current verified state
 
-The source `/Startake/` Library snapshot contained **405 files totaling 39,677,682 bytes (37.84 MiB)**.
+The source `/Startake/` inventory contains **405 files totaling 39,677,682 bytes (37.84 MiB)**. The migration remains on `startake/migration-2026-10-22` and PR #21 remains open and draft. The repository's `main` branch has not been changed.
 
-| Source category | Count | Status |
+A recursive Git-tree audit of the migration branch found **79 manifest paths not present**: 73 raw binary originals and six Foundry Actor JSON exports. All remaining manifest paths are present; four large/tool-filtered text records are represented by pointer files and ordered chunks.
+
+| Source category | Count | Current repository state |
 |---|---:|---|
-| Markdown, CSV, JSON, and plain-text records | 332 | 322 copied as original UTF-8 text; 4 large/filtered records preserved as ordered chunks with pointer files; 6 Foundry Actor JSON exports not mirrored |
-| PNG images | 52 | Raw image bytes not copied |
-| XLSX workbooks | 6 | Raw workbook bytes not copied |
-| ZIP archives | 15 | Raw archive bytes not copied |
+| Markdown, CSV, JSON, and plain-text records | 332 | 322 copied as UTF-8 text; four more represented by pointer files and ordered chunks; six Foundry Actor exports not mirrored |
+| PNG images | 52 | Manifested; raw bytes not transferred |
+| XLSX workbooks | 6 | Manifested; raw bytes not transferred |
+| ZIP archives | 15 | Manifested; raw bytes not transferred |
 
-The source paths, types, sizes and Library identifiers are retained in `asset-manifest.json`. The mirror preserves the original folder-relative paths under `library/`.
+The four split text records are reconstructable by concatenating the referenced parts in numeric order. They are not byte-identical files at their original repository paths.
 
-## Split-file source records
+## Verified blocker and attempted recovery
 
-These source documents are represented by a pointer file and ordered parts under `library/_large-file-parts/`:
+The Library file listing and manifest provide source identifiers and sizes, but the available file-materialization operation rejected raw-byte materialization for a representative PNG with: “This Project file does not have an authorized raw-byte materialization path.” Retrying with both the projected file ID and stable Library ID returned the same denial. The original binary bytes therefore cannot be read by the available authorized connector in this session, so they cannot be faithfully uploaded or checksum-verified from here. No image/workbook/archive has been replaced with a reconstruction or falsely marked as transferred.
 
-- `Starlink_Communications_Research_Progress_Tracker_v1.4_receipt_v371_checklist.md`
-- `The_Starlink_and_Stripes_Act_Completion_Checklist_v2.0_v80.md`
-- `Startake_Item2_Section1498_IP_GovernmentUse_Audit_2026-10-17.md`
-- `The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.9_2026-10-17.md`
+A local helper, [`complete-startake-binary-migration.ps1`](complete-startake-binary-migration.ps1), has been added to this branch. Once original source files are available in a local directory, it preflights expected filenames and byte sizes against the manifest, copies eligible raw files into their mapped repository paths, updates manifest/status handling, and stages the changes on this migration branch only. It does not commit, push, merge, or alter `main`. Foundry Actor exports are excluded by default; the optional `-IncludeActorExports` switch must be used only when intentionally archiving those unrelated files.
 
-Each pointer gives the exact part order and source line ranges. Concatenating its parts in numeric order reconstructs the source text. These four are reconstructable text records, but not byte-identical files at the original path.
+## What is and is not complete
 
-## Explicit exclusions and open migration work
+- **Verified present:** repository README, source manifest, this status report, and the migrated text archive with its split-record pointers/parts.
+- **Not transferred:** 52 PNGs, 6 XLSX workbooks, 15 ZIP archives, and 6 Foundry Actor JSON exports.
+- **Not verified:** byte-for-byte parity for original binary assets, binary hashes, or archive/workbook parsing after upload.
+- **Not changed:** canonical Startake Library tracker, research claims, formal acceptance metrics, bill verification status, or repository `main`.
 
-1. **Binary originals are not yet in GitHub.** The connector path used here did not expose raw file bytes in a form that could be uploaded and verified. Do not infer that an image, workbook or ZIP is preserved merely because it appears in the manifest.
-2. Six `fvtt-Actor-*.json` files appear in the Startake Library folder but are Foundry Actor exports rather than Starlink and Stripes Act research artifacts. They are listed in the manifest and have not been copied into the Startake package.
-3. The manifest and README do not replace the live Library tracker as the canonical coordination record. This migration preserves historic evidence; it does not validate legal claims, source accuracy, or formal acceptance.
-4. The repository's existing `main` branch was not changed. The migration is isolated on `startake/migration-2026-10-22` and should remain a draft PR until the binary and excluded-file decisions are resolved.
+## Required remaining step
 
-## Verification status
+The raw originals must be made available to a local filesystem or another authorized byte-transfer path. Run the helper from a local clone on branch `startake/migration-2026-10-22`, with the original files in a flat source directory matching the manifest filenames. For example:
 
-- Source inventory and manifest saved to the branch.
-- UTF-8 source copies written to their mapped repository paths.
-- Four split records have pointer files and ordered chunks.
-- Original binary-byte parity has **not** been verified.
-- No research assignment was reserved, no canonical tracker claim was changed, and no formal acceptance or legal-review status was advanced.
+```powershell
+./docs/startake/complete-startake-binary-migration.ps1 -SourceRoot "C:\path\to\Startake-export" -RepoRoot "C:\path\to\dicebox-campaign-helper"
+```
+
+Add `-IncludeActorExports` only if the six unrelated Foundry exports should be archived too. Review the staged diff, verify representative PNG/XLSX/ZIP files open correctly, then commit and push the branch. Keep PR #21 draft until that review is complete. This is a migration-status report, not evidence that the Starlink and Stripes Act is legally or substantively complete.
