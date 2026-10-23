@@ -1,0 +1,399 @@
+
+## Prior checkpoint — Item 5 §208 operating-account receipts, appropriations and scorekeeping audit, 15 October 2026 UTC
+
+[Item 5 §208 operating-account and scorekeeping audit](Startake_Item5_Section208_Operating_Account_Receipts_and_Scorekeeping_Audit_2026-10-15.md), Library ID libfile_b52860d505a481918ef19be1ff11aae6; and [Integrated Working Bill v0.9](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.9_2026-10-15.md), Library ID libfile_925dd5f052bc819187f7aa575fd671e1, were saved and independently byte-verified. Claim STARTAKE-20261015-WORK-ITEM5-SEC208-SCOREKEEPING-1-8c2f7a was reserved from tracker v191 and verified in v192; release was conditionally saved from actual v192 to v193 and independently read back at v193.
+
+**Research verification:** Primary appropriations law and current official OMB, CBO and GAO guidance show that account receipts, permanent budget authority, separately appropriated deposits, obligations, outlays and scorekeeping classifications must remain distinct. The v0.9 bill clarifies that only actual service receipts are permanently appropriated under §208(a); separately appropriated deposits retain source-law purpose, amount and period. Section 301(c) now requires source/authority/classification assumptions and gross/net presentation where applicable. No official classification or CBO score was produced.
+
+**Legislation and deliverables:** The 31-section working bill is now v0.9. Only §§208(a) and 301(c) changed from v0.8; the other 29 numbered sections are byte-identical. No amounts, forecasts, appropriation estimate or score were supplied. The new Item 5 report documents the source basis, contrary reading and remaining CBO/OMB/counsel questions.
+
+**Research and maturity status:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**; the 36 topic frameworks and 311 proposed scopes remain recovered but unaudited. Ten-stream descriptive document maturity remains **29/50 (58%)**. **Overall congressional readiness is unestablished; no defensible aggregate score or completion percentage is available.** No professional review is represented.
+
+**Remaining blockers:** Commercial service receipts and operating-cost inputs; official entity/account classification and federal score; populated appropriation, valuation, compensation and liability schedules; complete commercial title/permission records; the 311-scope audit; independent legal, accounting, appraisal, engineering and budget review. The subsequent Item 4 record-level crosswalk is documented in the current checkpoint above; no payment or receipt is inferred from matching totals.
+
+**Follow-up:** The subsequent Item 4 record-level crosswalk and its limits are recorded in the current checkpoint above.
+
+## Prior checkpoint — USAspending award-detail and transaction histories for six historical E-Rate FRNs, 15 October 2026 UTC
+
+[USAspending detail/history report](Startake_Item4_USASpending_Detail_and_Transaction_History_Six_USAC_Historical_FRNs_2026-10-15.md), Library ID libfile_15527fa269f881918742774ef3e1bc5f; [80-row crosswalk v0.4](Startake_Item4_USAC_USASpending_ERate_Crosswalk_v0.4_2026-10-15.csv), Library ID libfile_004683ddd44081919fc8877a474d00fd; and [six-award API response appendix](Startake_Item4_USASpending_Six_Award_Detail_and_Transaction_Histories_2026-10-15.json), Library ID libfile_24f83cd387488191800104ebe929532b, were saved and independently materialized byte-for-byte. Assignment STARTAKE-20261015-WORK-ITEM4-USA-DTL-6-3b9ad2 was reserved/read back in tracker v190, then released by conditional update to v191 and independently read back byte-identically. Workflow v2.2 remains active; the sole-inheritor scope includes Items 1–7.
+
+**Research verification:** The six exact USAspending detail records confirm each generated award key and FAIN matches its USAC FRN suffix. All list SPACE EXPLORATION TECHNOLOGIES CORP. (UEI C6M7C2FLKER5) as award recipient, FCC as agency, and CFDA 32.004 as the E-Rate program. The transaction endpoint returned 11 rows across six complete pages; transaction-count responses matched those page counts. A1 New Award actions total $23,756, EX actions net to −$13,800, and net actions total $9,956. This is an obligation/action reconciliation, not a cash-receipt total.
+
+All six account-list responses identify FCC Universal Service Fund account 027-5183, one result per award. The separate federal-account count endpoint reported 11, 7, 2, 2, 2, and 3 for the same awards. This conflict is unresolved; those values are not represented as counts of distinct accounts.
+
+USAC Current records show two Funded records with approved provider changes: OrbitLink, LLC on FRN 2599016895 and Ronan Telephone Company on FRN 2599045223. Their 21 SPI lines are recorded as SENT TO USAC; authorized invoice totals and USAC authorized-disbursement amounts match USAspending outlays of $4,050.00 and $4,555.92. This does not prove settlement or bank receipt by SpaceX or either provider. Four Current records are Cancelled, with zero commitment, a null USAC authorized-disbursement value, and no returned authorized invoice rows. For those records the award summary shows zero, detail total_outlay is null, and account-level outlay is zero. Historical service or payment remains unknown.
+
+**Legislation and deliverables:** The Starlink and Stripes Act Integrated Working Bill remains **v0.8, 31 sections**. Sections 302(d)(2), (3), and (5) already distinguish award recipient, applicant/beneficiary, provider/payee, award actions, outlays, invoicing status, and verified receipts. No new statutory gap was identified; no bill-text change was made. This pass completed one report, one 80-row crosswalk revision, and one source-response appendix. The v0.3 crosswalk and all earlier records remain preserved.
+
+**Research and maturity status:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**; the 36 frameworks and 311 proposed scope texts remain recovered but unaudited. Ten-stream descriptive document maturity remains **29/50 (58%)**, with stream scores 3,2,3,3,3,3,3,3,3,3. **Overall congressional readiness is unestablished; no defensible aggregate readiness score or completion percentage is available.** No professional review is represented.
+
+**Remaining blockers:** transaction-level remittance/bank evidence; the USAspending account-count discrepancy; broader Starlink-only funding and assistance attribution; actual valuation and operating-cost inputs; populated appropriation and scorekeeping materials; asset/title/contract/permission and liability schedules; substantive audit of 311 proposed scopes; and independent legal, appraisal, engineering, and budget review.
+
+**Next work:** Reserve a distinct Item 5 financial-model evidence assignment after this dashboard update is conditionally committed and independently read back. Continue only from public or otherwise authorized sources, preserving unknown private inputs.
+
+**Original baseline record:** 15 October 2026 UTC, tracker read-side version 141 and Workflow v2.1. That baseline is historical. The canonical tracker now independently verifies Workflow v2.2 activation and the user-confirmed sole-inheritor scope, including Item 1; current status is in the checkpoints below. This companion dashboard does not create or release an assignment claim or replace the canonical register.
+
+## Prior checkpoint — Historical USAC FRN crosswalk, authorized SPI lines and Integrated Working Bill v0.8, 15 October 2026 UTC
+
+[Historical FRN status and SPI reconciliation report](Startake_Item4_USAC_Historical_FRN_Status_and_SPI_Disbursement_Reconciliation_2026-10-15.md), Library ID libfile_fffd8d9796388191be966c20d9556938; [80-row crosswalk v0.3](Startake_Item4_USAC_USASpending_ERate_Crosswalk_v0.3_2026-10-15.csv), Library ID libfile_1ea5077ee8e48191864bb4c7b28cc19f; and [21-line SPI extract](Startake_Item4_USAC_Historical_SPI_Invoice_Lines_Six_FRN_2026-10-15.csv), Library ID libfile_e093a67b774081919e23d5e3628e9adc, were saved and independently materialized byte-for-byte. Item 4 reservation STARTAKE-20261015-WORK-ITEM4-ERATE-HIST-6-2d46c1 was independently verified at tracker v188; conditional release from v188 is independently read back at tracker v189.
+
+**Research verification:** Each of the six previously summary-only USAspending suffixes now matches an official USAC FRN record across both Original and Current form versions; 12 source rows establish six record-level exact joins. All six Original records are Pending with SpaceX SPIN 143053761. Four Current records are Cancelled with current commitment $0 and null authorized-disbursement values; the published invoice query returned no lines for those four, which does not establish no earlier service or payment. Two are Current Funded after explicit USAC-approved provider changes: Yavapai County Educational Technology Consortium FRN 2599016895 to OrbitLink, LLC SPIN 143054717, and Valley View School District 35 FRN 2599045223 to Ronan Telephone Company SPIN 143002541.
+
+The official invoice dataset has nine SPI lines for the first FRN and twelve for the second, each with status SENT TO USAC. Requested/approved totals and USAC total-authorized-disbursement fields are $4,050 and $4,555.92; they match the USAspending Total Outlays fields exactly. This confirms authorized-disbursement/outlay reconciliation, not supplier bank receipt. No remittance statements or bank records were obtained, and USAspending recipient/beneficiary details for these six records remain unverified. All 74 earlier current-funded joins remain in the crosswalk, and these six historical matches bring the crosswalk's same-suffix identity coverage to 80/80 records. Item 4 formal acceptance remains pending.
+
+**Legislation and deliverables:** The proposed Act remains **v0.8, 31 sections**; no operative change was warranted because proposed section 302(d)(2), (3) and (5) already requires recipient/beneficiary, provider/payee, invoice-route, requested/authorized/disbursed and verified-receipt distinctions. This pass completed one research report, one expanded crosswalk and one invoice-line extract. Descriptive drafting maturity remains **29/50**. **Overall congressional readiness remains unestablished; no defensible aggregate score or percentage is available.**
+
+**Formal status:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 36 frameworks and 311 proposed scope texts remain recovered but unaudited. This record-level join and authorized-disbursement reconciliation are research evidence only, not formal acceptance.
+
+**Remaining blockers:** Recipient/beneficiary records and award-level transactions for these six identifiers; remittance or bank proof of any supplier receipts; cancelled-FRN service/payment history; complete federal-funding coverage; populated commercial valuation, compensation and operating forecast; appropriations and scorekeeping; asset/title/contract/permission records; 311-scope audit; and independent legal, accounting, appraisal, engineering and budget review.
+
+**Next work:** After the tracker release and this dashboard checkpoint are independently read back, refresh the canonical workflow and tracker and reserve a separate official USAspending award-detail/transaction-history pass for the six identifiers. Verify generated keys, award recipients, action/outlay records and their relationship to the USAC applicant and current provider. Keep any unproven payee nexus or cash receipt unresolved, then continue the next unblocked Items 2-7 research and financial-model gaps.
+
+## Prior checkpoint — Item 4 record-level E-Rate crosswalk and Integrated Working Bill v0.8, 15 October 2026 UTC
+
+
+
+[Item 4 USAC E-Rate application and payment-link audit](Startake_Item4_USAC_Erate_USF_Application_and_Payment_Link_Audit_2026-10-15.md), Library ID libfile_186da839568c819190d35b48808c367b; [80-row USAC/USAspending crosswalk](Startake_Item4_USAC_USASpending_ERate_Crosswalk_2026-10-15.csv), Library ID libfile_8341278e07188191a9bf3675417fe908; and [56-row authorized invoice-line extract](Startake_Item4_USAC_ERate_Authorized_Invoice_Lines_2026-10-15.csv), Library ID libfile_4c5f2ead7a2081919db1c6b2ac93e29a, were saved and independently materialized byte-for-byte. Reservation STARTAKE-20261015-WORK-ITEM4-ERATE-7c52e1 was conditionally recorded from tracker v182 and independently verified in v183 before research; release was conditionally recorded from v183 and independently read back in v184. The sole-inheritor override continues to include Items 1–7; historical partitions are preserved as records.
+
+**Research verification:** Official USAC current-funded FRN records and USAspending CFDA 32.004 summary rows produce 68 exact same-suffix joins out of 74 records. Six current-funded FRNs lack same-suffix USAspending summary rows and six summary IDs lack same-suffix current-funded FRNs. Matched and unmatched dollar fields remain separately classified as commitments, summary Award Amount and displayed Total Outlays. The transaction-only $16,200 action `SL-2499057486` now joins to FY2024 FRN `2499057486`, application `241039200`, Akiak Tribal Library (BEN17032308), SpaceX SPIN `143053761`, funded Data Transmission and/or Internet Access service nicknamed “Starlink Monthly Service,” and a $16,200 USAC commitment. Its BEAR invoice line requested and was approved for $4,050 with status SENT TO USAC; neither the invoice status nor applicant reimbursement certification proves bank-confirmed SpaceX receipt, and the $16,200 transaction-to-summary difference remains unresolved. Across the provider-filtered invoice extract, 56 applicant BEAR lines for 11 FRNs total $38,529.41 requested/approved; no provider SPI line was returned. Five other exact USAspending transaction checks returned HTTP 503 twice. Formal acceptance remains **0/7 practical and 0/36 named**; the 36 frameworks and 311 proposed scope texts remain recovered but unaudited.
+
+**Legislation and deliverables:** The integrated proposed Act is now **v0.8, 31 sections**, saved as [Integrated Working Bill v0.8](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.8_2026-10-15.md), Library ID libfile_bd46f5bd2538819194a30478be44cc94. Only proposed §302(d)(5) changed from v0.7; the other 30 operative sections are byte-identical. It requires separate reporting of the invoicing route/payee and requested, authorized and disbursed amounts, and states that applicant prior-payment certification alone is not transaction-level evidence of provider cash receipt. This pass completed one audit report, two machine-readable extracts, and one bill revision. Descriptive drafting maturity remains **29/50**. **Overall congressional readiness is unestablished; no defensible aggregate score or percentage is available.**
+
+**Remaining blockers:** Twelve crosswalk nonmatches, five transaction lookups affected by HTTP 503, the unresolved $16,200 action-to-summary difference, invoice and bank/payment evidence for the wider record set, complete public-funding coverage, populated commercial valuation and operating model, owner compensation/liability schedules, appropriations and scorekeeping, commercial asset/title/permission records, the unaudited 311 scope texts and independent legal, accounting, appraisal, engineering and budget review remain open. The invoice dataset excludes in-process, pending and cancelled lines; no payment conclusion is inferred from absent rows.
+
+**Next work:** After this dashboard's conditional update and independent readback, refresh Workflow v2.2 and the tracker, then reserve the next distinct assignment. First retry the five saved exact transaction lookups that returned HTTP 503 using an independently available official endpoint; record any continued access limitation and then proceed to another unclaimed evidence gap. Keep formal research acceptance, evidence verification, drafting maturity and overall readiness separate.
+## Prior checkpoint — Item 4 USAspending recipient-UEI reconciliation and Bill v0.7, 15 October 2026 UTC
+
+[USAspending UEI Award-Universe Reconciliation](Startake_Item4_USASpending_UEI_Award_Universe_Reconciliation_2026-10-15.md), Library ID libfile_0b9694885ad88191bcd537654a0dc7f3; [candidate-awards appendix](Startake_Item4_UEI_Starlink_Candidate_Awards_2026-10-15.csv), Library ID libfile_0f2b17f60ca88191a74fe6f9f88c3760; and [Integrated Working Bill v0.7](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.7_2026-10-15.md), Library ID libfile_320e3b94d5cc8191a8991b1b372f923a, were saved and independently materialized byte-for-byte. Reservation STARTAKE-20261015-WORK-ITEM4-UEI-STARLINK-3a4f91 was independently verified at tracker v181 after reservation from v180; release is conditionally written from actual v181, with readback required at v182. The user-confirmed sole inheritor is responsible for Items 1–7; historic cross-chat partitions remain records of their time.
+
+**Research verification:** Official USAspending v2 searches returned 347 exact-UEI award-summary rows and 2,043 exact-UEI action rows across 348 award identifiers in the bounded 2019-10-01–2026-10-15 date window. Results include procurement, IDV and assistance records; candidate text screening found 62 STARLINK-literal leads, 11 generic satellite/LEO leads and one STARSHIELD record excluded from the commercial target. The 74 Universal Service Fund Schools and Libraries summary records show $82,519.70 in the Award Amount field and $16,288.33 in nonzero displayed Total Outlays; their 123 action rows net $98,719.70, including a transaction-only $16,200 record that creates an unresolved cross-endpoint difference. One NASA assistance record reports $971,324.64 Award Amount and $0 displayed Total Outlays. None of those recipient-level fields proves Starlink service, eligible beneficiary, payment or SpaceX cash receipt. No overall support total or Starlink-specific allocation is claimed. Formal acceptance remains **0/7 practical and 0/36 named**; all 36 frameworks and 311 proposed scope texts remain recovered, not accepted or substantively audited.
+
+**Legislation and deliverables:** The integrated proposal is now **v0.7, 31 sections**. Proposed §302(d)(5) requires a source-backed program, application, beneficiary, service, provider/payee, action, outlay and payment-status link before recipient-level assistance can be attributed to the covered commercial business. Unresolved leads must state the missing link; no unsupported amount or verified cash receipt may be claimed. Only §302 changed from v0.6; the other 30 operative sections are byte-identical, and no dollar amount, acquisition value, appropriation or score was inserted. One report, one candidate appendix and one bill revision were completed. Descriptive drafting maturity remains **29/50**. **Overall congressional readiness is unestablished; no defensible aggregate score or percentage is available.**
+
+**Remaining blockers:** USF/E-Rate recipient records do not identify the underlying Starlink service, eligible beneficiary, provider/payee or payment; the transaction-to-summary difference remains $16,200 unresolved. The 273 unselected award rows and 11 generic satellite leads have no resolved Starlink attribution; mixed SpaceX, launch and Starshield work stays unallocated. The complete public-funding ledger, actual receipts, Item 5 commercial valuation and operating model, compensation/liability schedules, commercial asset/title/permission records and independent professional review remain open.
+
+**Next work:** Reserve a separate Item 4 assignment to reconcile USF/E-Rate program/application/eligible-service/provider and payment records, including the 74 summaries and transaction-only $16,200 lead. If public source records do not provide those links, preserve the blocker and move to the next independently reserved evidence gap. Item 1 is within the sole inheritor's current scope.
+## Prior checkpoint — Item 2 §303 appropriations controls and Bill v0.6, 15 October 2026 UTC
+[Item 2 §303 Appropriations Controls and Bill Revision](Startake_Item2_Section303_Appropriations_Controls_Bill_Revision_v0.1_2026-10-15.md), Library ID libfile_185ef326ef8481919a8559c4f64420d9, and [Integrated Working Bill v0.6](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.6_2026-10-15.md), Library ID libfile_369656325d44819186848ae34e5d4342, were saved and independently reread byte-for-byte. Reservation STARTAKE-20261015-WORK-SEC303-APPROP-1b7d4c was independently verified in tracker v179; release was conditionally saved from actual current version 179 and independently reread at v180.
+
+**Research verification:** Official House U.S. Code and GAO sources confirm the drafting basis for explicit appropriation terms, purpose/amount/period limits, documentary support for recorded obligations, fixed-period account controls, and conditional Judgment Fund treatment. The already-saved Item 2 appropriation audit was reused, not duplicated. This pass establishes no appropriated amount, available funding account, Starlink-specific obligation or payment path, or score. Direct opens of some official Code pages returned maintenance responses; the searchable official text carried September 2026 effective-date labels, and the report records that access limit. Formal acceptance remains **0/7 practical and 0/36 named**; initial research coverage remains **7/7**. The 36 frameworks and 311 proposed scope texts remain recovered, not accepted or audited.
+
+**Legislation and deliverables:** The integrated proposed Act is now **v0.6, 31 sections**. Proposed §303 now expressly separates the due-diligence appropriation line from the acquisition/transition/continuity line, sets the applicable fiscal and obligation controls, preserves final compensation and interest, and leaves Judgment Fund eligibility under 31 U.S.C. §1304. Only §303 changed from v0.5; the other 30 sections are byte-identical. All amounts and the due-diligence fiscal year/date remain placeholders. No appropriation estimate or federal score was inserted. Descriptive drafting maturity remains **29/50**. **Overall congressional readiness is unestablished; no defensible aggregate score or percentage is available.**
+
+**Remaining blockers:** populated commercial valuation and ten-year operating/transition model; enacted appropriation amounts, account, period and scorekeeping analysis; owner-by-owner compensation and creditor/liability schedules; complete commercial-only asset, title, contract and permission records; and independent appropriations, legal, appraisal, engineering and budget review. The 311 proposed scopes remain unaudited, and formal checks remain open.
+
+**Next work:** Refresh the canonical tracker and select a distinct unclaimed evidence or modeling gap that can add authenticated inputs to the still-unpopulated compensation and federal financing schedule under Workflow v2.2.
+
+## Prior checkpoint — Item 4 transaction verification and Bill v0.5, 15 October 2026 UTC
+
+[Item 4 USAspending Transaction API follow-up](Startake_Item4_USASpending_Transaction_API_Primary_Record_Followup_2026-10-15.md), Library ID libfile_bd2589412f9c819198970f5e3cde9b42, and [Integrated Working Bill v0.5](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.5_2026-10-15.md), Library ID libfile_e22743c23cf4819197c1691f2f590add, were saved and independently reread byte-for-byte. The Item 4 reservation was independently verified in tracker v176 after conditional source v175; release was conditionally saved from actual current version 176 and independently reread.
+
+**Research verification:** Officially published USAspending award summaries and action records verify three selected child awards: 19AQMM25F1270 ($8,209,572.00), 19AQMM25F1269 ($348,513.86), and FA254126FB049 ($130,579.40), for a limited combined obligation of $8,688,665.26. This is not a national support total, outlay, appropriation, or cash receipt. Account-linked outlays display $0 for all three; the third award has an obligation but no linked federal account, and its award-level total outlay is null. No invoice, acceptance, disbursement, or recipient-receipt record was obtained. A previously indexed $348,514 figure differs by $0.14 from the official summary. The report preserves the action-level crosswalk and source limits. Formal acceptance remains **0/7 practical and 0/36 named**; initial research coverage remains **7/7**. The 36 frameworks and 311 proposed scope texts remain recovered, not accepted or audited.
+
+**Legislation and deliverables:** The integrated proposed Act is now **v0.5, 31 sections**. Proposed §302(d) adds source-indexed public-funding ledger and reconciliation requirements, including a clear separation between obligations, outlays, appropriations, contract value, and verified cash receipts. Only §302 changed from v0.4; the other 30 sections are byte-identical. No PIID subtotal was inserted into the operative bill. One new research report and one bill revision were completed. Descriptive drafting maturity remains **29/50**. **Overall congressional readiness is unestablished; no defensible aggregate score or percentage is available.**
+
+**Remaining blockers:** invoice acceptance and actual Treasury/recipient payment records; comprehensive Starlink-only funding and assistance classification; appropriations and scorekeeping inputs; populated compensation and fiscal figures; complete asset, title, contract, financing and operational schedules; and independent legal, appraisal, engineering and budget review. The 311 proposed scopes remain unaudited, and the formal checks remain open.
+
+**Next work:** Select and reserve a distinct consequential evidence gap under Workflow v2.2, then continue evidence verification and bill integration without converting this bounded award result into a broader funding or readiness claim.
+
+## Prior checkpoint — Bill v0.4 §404 alternatives-enumeration revision, 15 October 2026 UTC
+
+[Integrated Working Bill v0.4](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.4_2026-10-15.md), stable Library ID libfile_f90a2e1d20dc819196cdfc258795e1d7, saved and independently reread in full (529 lines; 89,245 bytes). Reservation STARTAKE-20261015-WORK-ALT404-9b284e was independently verified in tracker v174 after conditional source173; release was conditionally saved from actual current_version_number 174 and independently reread in tracker v175.
+
+**Research verification:** This was a drafting integration using the authenticated original topic 15 schedule, the saved Alternatives and Necessity Evidence Matrix, and Bill v0.3; no new legal or financial research was performed. Section 404 now names the eight original subcategories, separately identifies necessity/proportionality as a decision standard, carries the ten assessment criteria into the proposed Act, and requires an auditable exhibit that preserves unknown inputs and blocks composite rankings when necessary common-basis evidence is missing. The matrix still does not prove comparative cost, equivalent service, or option superiority. Formal acceptance remains **0/7 practical and 0/36 named**; initial research coverage remains **7/7**. The 36 topic frameworks and 311 proposed scope texts remain recovered, not accepted or audited.
+
+**Legislation and deliverables:** The integrated proposed Act is now **v0.4, 31 sections**. Only §404 changed; the other 30 operative sections were verified byte-identical to v0.3. One drafting deliverable was added; no cost, price, option winner or actual legal opinion was inserted. Descriptive drafting maturity remains **29/50**. **Overall congressional readiness is unestablished; no defensible aggregate score or percentage is available.**
+
+**Remaining blockers:** common mission and operating baselines; reliable comparable prices and lifecycle costs; actual contracts, permits, asset/title and financing schedules; technical and foreign-rights analysis; compensation and fiscal figures; and independent legal, appraisal, engineering and budget review. Drafting an evidence duty does not satisfy those requirements.
+
+**Next work:** Reserve another distinct consequential Item 2–7 evidence or modeling assignment under Workflow v2.2, then continue to integrate only evidence that survives source and scope checks.
+
+## Prior checkpoint — SEC significant-subsidiary schedule and Starlink legal-person gap audit, 15 October 2026 UTC
+
+[SEC Significant-Subsidiary Schedule and Starlink Legal-Person Gap Audit](Startake_Item1_SEC_Significant_Subsidiaries_and_Starlink_Legal_Person_Gap_Audit_2026-10-15.md), stable Library ID `libfile_8d96555e613c8191979c109b2a6fe7b8`, saved and independently reread in full (71 lines; 11,670 bytes). Reservation `STARTAKE-20261015-WORK-I1-ENTITY-3d8f72` was independently verified in tracker v171 after conditional source170; its release was conditionally saved from actual `current_version_number` 171 and independently reread in tracker v172.
+
+**Research verification:** The latest located SEC Exhibit 21.1 is the May 20 S-1 schedule of four significant subsidiaries; it is not a complete group or asset/title chart. FCC DA 26-471 separately names Space Exploration Holdings LLC and SpaceX Services Inc. as wholly owned subsidiaries and license holders. The June 30 Form 10-Q presents Space, Connectivity/Starlink offering, and AI segments without mapping segment assets to legal entities. X Corp., X.AI LLC, and CTC Property LLC are guarantors under the May 19 credit facility; SpaceX Services Inc. is not on that facility’s execution roster. The August 14 8-K adds Cursor as a wholly owned AI-related subsidiary, outside the Starlink target. This narrows the public-record entity gap but does not establish a complete ownership chart, asset title, consent, transferability, or legal conclusion. Practical Item 1 remains unchecked; formal acceptance is **0/7 practical and 0/36 named**. Initial research coverage remains **7/7**. The 36 topic frameworks and 311 proposed scope texts remain recovered, not accepted or audited.
+
+**Legislation and deliverables:** The integrated proposal remains **v0.3, 31 sections**. This pass adds one independently read-back research report and makes no bill-text or financial-input change. Descriptive drafting maturity remains **29/50**. **Overall congressional readiness is unestablished; no defensible aggregate percentage or readiness score is available.**
+
+**Remaining blockers:** authenticated current entity and ownership chart; complete commercial Starlink asset/title, financing, contract, customer, and regulatory-rights schedules; allocation of shared operations and explicit excluded-business perimeter; populated compensation/fiscal model; and independent legal, appraisal, engineering, and budget review. This report does not close those gaps.
+
+**Next work:** Make a separately reserved revision to bill §404 that explicitly enumerates all eight authenticated alternatives and retains the missing common-basis operational and cost evidence as an open proof requirement; then continue the other unblocked Items 2–7 gaps under Workflow v2.2.
+
+## Prior checkpoint — Item 1 SEC financing-covenant version audit, 15 October 2026 UTC
+
+[SEC Financing Covenant Version and Perimeter Audit v0.1](The_Starlink_and_Stripes_Act_SEC_Financing_Covenant_Version_and_Perimeter_Audit_v0.1_2026-10-15.md) saved and independently reread in full (92 lines; 13,172 bytes). The narrow Item 1 reservation was independently verified in tracker v169 after CAS source168; its release was conditionally saved from actual current_version_number169 and independently read back at tracker v170. The updated tracker preserves prior reports and other assignments.
+
+**Research verification:** SEC filings distinguish the repaid/extinguished March Bridge Loan from the separate May19 amended-and-restated revolving facility. The current filed facility contains §7.03(c), restricting specified Starlink/material-asset transfers and third-party control; the June30 Form10-Q reports the facility remained available at $5 billion with no balance drawn and a May19,2031 maturity. This identifies a material contract issue but does not resolve whether a statutory acquisition requires lender consent or establish asset title. Practical Item1 remains unchecked; formal acceptance remains **0/7 practical and 0/36 named**. Initial coverage remains **7/7**. The original 36 topic frameworks and 311 proposed scope texts remain recovered, not accepted or audited.
+
+**Legislation and deliverables:** The integrated proposed Act remains **v0.3, 31 sections**; this assignment changed no bill text or financial-model input. The new SEC audit is the completed deliverable. Descriptive drafting maturity remains **29/50** (stages 3,2,3,3,3,3,3,3,3,3). **Overall congressional readiness remains unestablished; no defensible aggregate readiness score is available.**
+
+**Remaining blockers:** complete current debt/waiver and guarantor schedules; asset-by-asset commercial-only title and financing records; complete Starlink entity and shared-operations chart; current regulatory, customer and government-contract rights; legal analysis of statutory transfer, contract remedies and any approval path; and independent counsel, appraisal, engineering and budget review.
+
+**Next work:** continue the nonduplicate commercial acquisition-perimeter audit under the sole-inheritor scope, or select another unclaimed consequential evidence gap under Workflow v2.2.
+
+## Prior checkpoint — alternatives and necessity evidence, 15 October 2026 UTC
+
+[Alternatives and Necessity Evidence Matrix v0.1](The_Starlink_and_Stripes_Act_Alternatives_Necessity_Evidence_Matrix_v0.1_2026-10-15.md) saved and independently reread in full (93 lines; 25,001 bytes). ALT-5c47b1 was reserved/read back at tracker v166 after CAS source165, and released/read back at tracker v167 after CAS source166; dashboard version15 records the closeout. Direct official-source research covers all eight original topic-15 options and all ten criteria; it establishes bounded legal/program anchors but no ranked winner or common-basis cost result. The Sixth Circuit’s July31,2026 en banc order vacated the prior panel judgment and restored the broadband-classification case as pending, so this package assumes no settled Starlink common-carrier classification. The report is research evidence only: no bill or model changed, no Starlink price or operational substitution established, no independent review claimed.
+
+**Research verification:** Item15.01–.08 crosswalked with verified/inferred/unknown limits. Direct authorities include communications/service statutes, procurement/contract rules, emergency control with just compensation, public-safety overlay precedent, FCC map capabilities/limitations, and GAO cost-estimating controls. FirstNet’s FY2025 claims are identified as issuer-reported and are not a Starlink cost comparator. The report flags a drafting crosswalk gap: v0.3 §404 does not expressly enumerate every original alternative. Formal acceptance remains 0/7 practical and 0/36 named; 36 frameworks/311 proposed scopes are recovered but not accepted.
+
+**Drafting and readiness:** The working bill remains v0.3 with 31 sections; no legislation was revised during this evidence assignment. Descriptive drafting maturity remains **29/50** (stages 3,2,3,3,3,3,3,3,3,3). **Overall congressional readiness: unestablished; no readiness score can be responsibly assigned.** This is distinct from the 29/50 drafting-maturity tally. Unresolved comparison inputs include Starlink contract terms, mission-level alternative performance and bids, private asset/perimeter records, permissions, costed transition and operation, and independent legal, appraisal, engineering, and budget review. Next assignment: refresh and reserve a distinct commercial-perimeter/Item1 evidence gap under the user-confirmed sole-inheritor scope.
+
+## Prior checkpoint — appraisal-record bill revision, 15 October 2026 UTC
+
+[Integrated Working Bill v0.3](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.3_2026-10-15.md) saved and fully reread478 lines. APPRAISAL-2d8c61 reserved/readback tracker164 and released/readback tracker165.31 sections retained; §§103,104,301,404 revised;27 other operative sections byte-identical to v0.2. Added proposed duties for a dated appraisal record, EV/equity/closing/fiscal reconciliations, replacement-cost and peer comparability limits, missing-data/sensitivity updates, preclosing disclosure and a reproducible alternatives exhibit. Structural cross-reference checks passed. The proposal does not create actual price, valuation, appropriation, source access or outside review.
+
+**Research verification:** This was legislative synthesis of saved direct-source research, not a new research or legal-review pass. The previous comparables report remains evidence of disclosed peer terms with explicit limitations. Starlink title/perimeter schedule, commercial-only accounts, actual cost/life data, multi-method appraisal and source-based fiscal forecasts remain open. Initial coverage7/7; formal practical0/7 and named0/36; original36 frameworks/311 scopes recovered, not accepted.
+
+**Drafting maturity:**29/50 descriptive points; stages3,2,3,3,3,3,3,3,3,3. No stage increase because the evidence and professional gates remain unresolved. Working bill now v0.3; it is not introduction-ready. Overall congressional readiness remains unestablished. Next unblocked work: build quantified common-basis acquisition-versus-alternatives evidence or close another distinct legal/financial evidence gap. Workflow v2.2 remains active; sole-inheritor override, including Item1, controls over older historical dashboard text.
+
+## Prior checkpoint — comparable and replacement evidence, 15 October 2026 UTC
+
+[Comparable and Replacement-Cost Evidence v0.1](The_Starlink_and_Stripes_Act_Comparable_and_Replacement_Cost_Evidence_v0.1_2026-10-15.md) saved and fully reread120lines. COMPS-76b291 reserved/readback tracker162, released/readback163. Three transactions compared with announced/closing/accounting distinctions; SES promoted multiples reproduced with explicit synergy and earnings-definition controls; prospective OneWeb and historical Iridium program observations bounded. Formula checks passed. No peer ratio or program quotient imported as a Starlink assumption. Eutelsat PDF visual403 and oversized SES full filing recorded; accessible text/official Note4 used within stated limits.
+
+**Research verification:** direct primary-source disclosure review, not independent forecast validation, appraisal or executed Deep Research. Original Item5 ten requirements/five exits and valuation nine subjects crosswalked. New evidence narrows peer-evidence gaps; actual commercial cash flows, cost/life/rights allocations, multi-method range and expert review remain open. Initial7/7, formally accepted0/7 practical and0/36 named;36 frameworks/311 scopes recovered, not accepted.
+
+**Drafting maturity:**29/50 descriptive document points, stages3,2,3,3,3,3,3,3,3,3, unchanged.31working bill sections and existing eight-sheet workbook preserved. Overall congressional readiness remains unestablished; no percentage of research completion implied. All owned claims released at this checkpoint. Next unblocked work: translate appraisal-evidence controls into proposed bill requirements or build a common-basis alternatives exhibit. Sole-inheritor override and active Workflow v2.2 remain controlling over historical snapshots below.
+
+## Prior checkpoint — ten-year financial workbook delivered, 15 October 2026 UTC
+
+[Financial Workbook v0.1](The_Starlink_and_Stripes_Act_Financial_Workbook_v0.1_2026-10-15.xlsx) saved and independently byte/hash-verified; [Workbook report](The_Starlink_and_Stripes_Act_Workbook_Report_v0.1_2026-10-15.md) saved and fully reread; [reproducibility bundle](The_Starlink_and_Stripes_Act_Workbook_Reproducibility_v0.1_2026-10-15.zip) independently materialized with ZIP/member hashes verified. WORKBOOK-83e0a4 reserved/readback160, released/readback161 from actual conditional source160. All owned claims released; sole inheritor remains responsible for all seven items. Workflow v2.2 active; historical snapshots below remain preserved.
+
+**Delivered:** eight editable sheets; one authoritative commercial/synthetic selector; ten-year subscriber/contract/equipment revenue and cash-flow build; capital additions/composite depreciation cohorts; closing sources/uses and operating support; hypothetical debt/interest/principal; DCF/equity/fiscal distinctions; source/date/status per driver; native and formula rate sensitivities; original Item5 ten-scope/five-exit and valuation nine-subject matrices. The commercial case opens with unavailable results and 237 required numeric cells blank. That input count is not a research denominator or evidence-completion score. No actual Starlink price, populated commercial forecast or appropriation proposed.
+
+**Verification:** three synthetic cases reconcile, including negative downside; zero-versus-blank, case changes, later-year perturbation, provenance, depreciation/net-asset, debt/principal and cash conservation checks passed. Eight sheets visually reviewed. LibreOffice temporary copies recalculate core and formula-grid results correctly. Native What-If sensitivity returns n.a. in LibreOffice; Excel desktop remains untested. The limitation is visible in the workbook and report; no native Excel validation claimed. Historical inputs remain separate from synthetic forecast assumptions. Current bill grants no borrowing authority; debt cases explicitly hypothetical.
+
+| Output stream | Document stage /5 | Current evidence and remaining blocker |
+|---|---:|---|
+| Public-interest / Ukraine evidence | 3 | Executive case, dated sector baseline and bounded chronology; representative denominators and operational records missing |
+| Commercial perimeter / title | 2 | Sole inheritor controls Item1; actual commercial asset/title/license/contract schedules incomplete |
+| Constitutional / acquisition mechanisms | 3 | Working acquisition provisions; orbital/IP/foreign fallback, spectrum classification and specialist opinions pending |
+| Valuation / economics | 3 | Editable workbook and synthetic tests now delivered; real carve-out inputs, comps/replacement appraisal and independent valuation absent |
+| Federal funding / finance | 3 | Item 4 exact-UEI award/action universe, procurement/assistance screen, prior three-PIID cross-check and proposed Bill §302(d)(5); USF/E-Rate service, beneficiary, provider/payment links and actual receipts unresolved |
+| Operations / international transition | 3 | Draft gates and critical-service/failover duties; real contracts, host approvals and witnessed tests missing |
+| Governance / privacy safeguards | 3 | Public charter and enforceable rights proposals; architecture, country conflicts and implementation review pending |
+| Necessity / alternatives | 3 | Common-basis comparison and closing determination duties; quantified equivalent-service costs and independent challenge missing |
+| Full bill / appropriations | 3 | 31-section Bill v0.7; §302(d)(5) added from recipient-assistance attribution gap and only §302 changed from v0.6 | Dollar placeholders, complete supporting schedules, formal verification and professional redlines remain
+| Dossier / crosswalk / review | 3 | All original36/311 scopes recovered and report matrices; full substantive audit and professional signoff absent |
+
+**Document maturity remains 3+2+3+3+3+3+3+3+3+3 =29/50, versus16/50 baseline.** The financial workbook and Bill v0.7 remain Stage3 while material evidence gaps remain. **Overall congressional readiness is unestablished; no research-completion percentage.** Initial coverage7/7; formal acceptance0/7 practical and0/36 named; all36 original frameworks and311 proposed scope texts recovered, not accepted. No Stage4/5 or expert approval inferred.
+
+**Gap narrowed:** requested editable workbook is available; Item 4 now has a bounded exact-UEI federal award/action universe, assistance classification and a proposed §302(d)(5) evidence rule. USF/E-Rate attribution remains unresolved. **Still blocked:** populated actual commercial forecast/valuation, physical satellite-replacement model, full GAAP balance sheet/tax attributes, multi-method range, real title/contracts/permissions and outside review. Source-backed comparables, replacement-cost assumptions and public-source asset/permission/legal research remain unblocked and authorized. Next separate assignment: reconcile USF/E-Rate application, eligible-service, provider/payee and payment records, including the unresolved $16,200 action difference; then continue other unblocked evidence gaps. Do not fill private unknowns with synthetic values or seek repeated permission for routine work.
+
+## Prior checkpoint — five sequential assignments verified, 15 October 2026 UTC
+
+User-confirmed **sole STARTAKE inheritor, including Item1**. Workflow v2.2 activation remains verified in tracker142; latest canonical checkpoint159. No other chat is assumed. All five assignments below reserved conditionally, independently read back, saved/verified and released individually. No formal acceptance follows from release.
+
+| Assignment | Reserved / released tracker versions | Saved verified deliverable |
+|---|---|---|
+| UKRAINE-0e7a6d |149 /151; succession override150 preserved |[Ukraine Incident Evidence Dossier v0.1](The_Starlink_and_Stripes_Act_Ukraine_Incident_Evidence_Dossier_v0.1_2026-10-15.md) |
+| TAXONOMY-6c812e |152 /153 |[Original Requirements Authentication](Startake_Original_Requirements_Authentication_36_Topics_311_Subcategories_2026-10-15.md) and [hash-verified custody bundle](Startake_Original_Requirements_Custody_Bundle_2026-10-15.zip) |
+| DEPENDENCE-5af03d |154 /155 |[Public-Interest and Dependence Baseline v0.1](The_Starlink_and_Stripes_Act_Public_Interest_Dependence_Baseline_v0.1_2026-10-15.md) |
+| REVISION-41c8d2 |156 /157 |[Integrated Working Bill v0.2](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.2_2026-10-15.md),31sections;9changed/22preserved |
+| FILING-7ab903 |158 /159 |[Current Financial Disclosure Audit v0.1](The_Starlink_and_Stripes_Act_Current_Financial_Disclosure_Audit_v0.1_2026-10-15.md) |
+
+**Current financial finding:** Prior Item5 audit already held segment accounts; this pass adds definition-to-model eligibility, dated/average line caveats, standalone diligence bridge and all nine original valuation-subject matrix. It does not count known figures as a new evidence gap closed. Actual valuation inputs/model remain unpopulated; no acquisition price, cash-flow estimate or professional signoff certified. Requested workbook remains outstanding.
+
+**Research verification:** initial passes7/7; formal practical0/7 and named0/36; all36 original frameworks and311 proposed headings/scope texts recovered and reconciled. The311 subjects remain substantively unaudited, not311accepted. **Drafting maturity:** ten stages3,2,3,3,3,3,3,3,3,3=29/50, versus original16/50 baseline. Current table below gives all ten evidence/blocker details. No new stage gain for the financial source audit. **Overall congressional readiness: unestablished; no completion percentage.** All31 bill sections working draft/structurally checked, none professionally accepted; funding amounts remain placeholders.
+
+**Gaps closed or narrowed:** original-scope access/custody; careful incident chronology; dated concentration/sector baseline; executive proposal and objectives; nine-section evidence-to-bill integration; definition-level model input eligibility. **Real acceptance blockers:** actual commercial title/carve-out, shared contracts/IP, FCC/NTIA and foreign permissions, cash/debt/tax/working-capital/capex evidence, common-basis alternatives cost, operational test records, independent appraisal/counsel/engineering/privacy/budget review. LDH quota temporarily unavailable; official-source research used with limits disclosed. No blanket block on further public research.
+
+**Execution checkpoint:** All owned claims released at tracker159. This checkpoint does not certify goal completion, create a schedule or imply background work after the run ends. Resume under current v2.2 with the same already-authorized goal: next consequential scope is formula-auditable financial workbook with explicit missing commercial inputs, followed by public-source asset/title, country-permission and legal/alternative gaps. Do not seek repeated permission for those routine authorized steps. Contacting third parties still requires actual authorization; no review was requested or obtained here.
+
+## Current bill checkpoint — v0.2 evidence integration, 15 October 2026 UTC
+
+[Integrated Working Bill v0.2](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.2_2026-10-15.md), stable libfile_440b7a4e43f0819180bbf324dfd99463, saved and fully reread431lines.31sections remain working drafts. Nine changed:2,104,203,204,205,206,401,402,404;22other operative sections checked byte-identical to preserved v0.1. New evidence/closing determination, restriction log/notice rules, data-migration gate, secondary-use protections, costed access baseline, comparable audits and critical-service/failover tests. Source-linked revision memo and recovered-scope trace included. Structural/editorial checks passed; constitutional, operational, budget and enforceability review pending. Drafting a test or approval requirement does not establish that it was satisfied.
+
+REVISION-41c8d2 reserved/readback156; released/readback157 with actual conditional source156. All owned claims released. Current ten document stages remain **3,2,3,3,3,3,3,3,3,3 =29/50**; no score gain for an improved draft within Stage3. **Overall congressional readiness unestablished.** Original formal0/7 practical,0/36 named; initial7/7; source recovery36/36 and311/311 proposed scopes only. No professional signoff. Critical gaps and all ten streams are in the current table below. Next unblocked work: authenticate new issuer financial disclosures and subscriber definitions against the commercial-only boundary, retaining Starshield/shared-cost exclusions; then populate only defensible inputs and prepare the requested workbook.
+
+## Prior checkpoint — public-interest proposal and dependence evidence, 15 October 2026 UTC
+
+[Public-Interest and Dependence Baseline v0.1](The_Starlink_and_Stripes_Act_Public_Interest_Dependence_Baseline_v0.1_2026-10-15.md) saved and fully reread. DEPENDENCE-5af03d reserved/readback v154, released/readback v155 using actual CAS154. Executive public-ownership proposal, dated fleet/subscriber definitions, specific sector evidence, alternatives, six measurable implementation objectives and all nine original scope subjects (partial evidence) now exist. No global installed-base, causal harm/benefit, universal affordability or necessity proof is claimed. Historical and indexed-only sources remain labeled.
+
+| Output | Document stage /5 | Main remaining blocker |
+|---|---:|---|
+| Public-interest/Ukraine | 3 | Representative dependence/outcome denominators, original contracts/telemetry and costed necessity |
+| Commercial perimeter/title | 2 | Sole inheritor now owns Item 1; asset/title/license and separation schedules remain unverified |
+| Constitutional/acquisition | 3 | Orbital/IP/foreign compulsory fallback, spectrum status, independent counsel |
+| Valuation/economics | 3 | Actual commercial carve-out inputs, requested workbook, comps/appraisal |
+| Federal finance | 3 | Amounts, scoring, actual receipts and funded operating obligations |
+| Operations/international | 3 | Contracts, host approvals, critical-site inventories and witnessed tests |
+| Governance/privacy | 3 | Data/practice authentication, country-specific rules and enforceable implementation |
+| Necessity/alternatives | 3 | Common-basis lifecycle costs and independent challenge |
+| Bill/appropriations | 3 | 31-section working draft; new evidence not yet integrated; placeholders/redlines |
+| Dossier/crosswalk | 3 | Original 36/311 recovered; full evidence-to-criteria validation and expert review pending |
+
+Arithmetic 3+2+3+3+3+3+3+3+3+3 = **29/50 descriptive document maturity**, up one because the executive proposal and measurable objectives are drafted. **Overall congressional readiness: unestablished; no verified completion percentage.** Initial passes 7/7; formal acceptance 0/7 practical, 0/36 named; source recovery 36/36 frameworks, 311/311 proposed headings/scope texts, not substantive acceptance. No Stage4/5 or independent sign-off. All owned claims released. Next distinct assignment: integrate saved incident/dependence evidence into operative bill requirements and trace changes, then source-authenticated commercial financial/asset work. Preserve previous snapshots below as history.
+
+## Current research checkpoint — original criteria recovered, 2026-10-15 UTC
+
+**Source access/authentication:** 36/36 original topic frameworks and 311/311 proposed subject headings/scope texts recovered, preserved and reconciled. Legal 17/150 and moral 19/161 agree with both original master indexes and the canonical tracker. All 17 legal original audit-scope blocks match the independently retrieved pre-drafting audit after whitespace normalization. Seven original practical gates retained. [Consolidated original-requirements matrix](Startake_Original_Requirements_Authentication_36_Topics_311_Subcategories_2026-10-15.md) saved/readback; [custody bundle](Startake_Original_Requirements_Custody_Bundle_2026-10-15.zip) independently hash-verified.
+
+**Substantive acceptance:** still 0/7 practical and 0/36 named; 311 subject-level evidence audits pending. Recovery counts do not measure completed research. Original indexes explicitly describe proposed scope, not completed investigations. No individual expert opinion or original criterion rewritten. Prior access-failure history preserved, now superseded on current access status.
+
+TAXONOMY-6c812e reserved/readback v152; released by conditional update sourced from actual CAS 152. UKRAINE-0e7a6d release verified v151. Sole inheritor controls all seven items. Current descriptive document stages **2,2,3,3,3,3,3,3,3,3 =28/50**; dossier 2→3 because a complete source-scope matrix now exists. Overall congressional readiness remains unestablished, with no verified completion percentage. Next task: current dated public-dependence/fleet evidence under recovered Public services and international dependence scope, then evidence/asset/financial gaps and substantive legal redlines.
+
+## Current research checkpoint — Ukraine evidence, 2026-10-15 UTC
+
+[Ukraine Incident Evidence Dossier v0.1](The_Starlink_and_Stripes_Act_Ukraine_Incident_Evidence_Dossier_v0.1_2026-10-15.md) saved and reread. UKRAINE-0e7a6d reserved/readback v149; closeout conditional source 150. Source-access gap closed: recovered original eight-subject legal and nine-subject moral Ukraine frameworks, with ZIP/member hashes. Evidence now distinguishes event/publication dates, Crimea correction, separate Kherson report/denial, current military-package ambiguity and unverified consequences. No expert verdict, contract/telemetry authentication or casualty finding.
+
+**Verified research completion:** 0/7 practical and 0/36 named; initial coverage remains 7/7. Two original frameworks recovered; this is not 17 subcategories accepted. 311 proposed still require project-wide reconciliation. Current descriptive document stages: **2,2,3,3,3,3,3,3,3,2 = 27/50**. This is drafting/evidence-foundation maturity only. **Overall congressional readiness is unestablished**, not 54% verified complete. Public-interest stream moved 1→2 because a dated dedicated evidence foundation exists; full current public-dependence/fleet baseline and executive case remain open.
+
+Sole-inheritor assignment includes Item 1. Next consequential task: recover and reconcile all original archived 7/36/311 requirements now that archive access works, then evaluate evidence against those originals. Keep all prior reports and historic scores. No independent review or native background activation is inferred.
+
+## Current responsibility — sole inheritor, 2026-10-15 UTC
+
+The user's latest explicit instruction assigns this Work chat the entire STARTAKE project, including Item 1. There is no other active research chat. This supersedes all older partition/exclusion notes below and in the historical handoff/workflow. Continue safe sequential reservation and verification; preserve historic evidence and claims. The already reserved Ukraine chronology remains active; no additional research assignment is created by this responsibility update. Formal verification and drafting maturity remain separate.
+
+## Pursued project goal — set by user 2026-10-15 UTC
+
+**Goal:** Close the outstanding evidence gaps and develop The Starlink and Stripes Act into a source-verified, legally defensible, fairly compensated congressional legislative package for public ownership of commercial Starlink, with operational continuity and enforceable democratic and civil-liberties safeguards.
+
+**Immediate milestone:** Complete a dated, primary-source-indexed public-dependence and Ukraine incident dossier, distinguishing verified events, competing accounts, disputed effects and unresolved evidence. Reserve each scope in the canonical tracker before research. Then prioritize authenticating commercial financial inputs, acquisition-law gaps, operational/international permissions and quantitative alternatives over additional unvalidated drafting. Item 1 remains exclusively the other research chat's assignment.
+
+**Success measures:** Report substantive evidence gaps closed and remaining; original requirements authenticated and verified; model inputs actually supported; adverse findings retained; and professional review obtained or explicitly pending. Report research verification separately from drafting maturity. The current 26/50 (52%) is document/model development only, NOT verified research completion or overall congressional readiness. A defensible overall readiness percentage is not established while critical factual/legal gates remain unresolved. Formal counts remain 0/7 practical and 0/36 named topics, initial passes 7/7, 311 proposed without a completed subcategory audit.
+
+**Execution:** Follow activated Workflow v2.2 and supported Work limits, with conditional reservation/readback and save/closeout for each sequential assignment. This goal records direction, not a research claim, scheduled automation, native background pursuit or evidence that any external review occurred. No claim or formal status changes through this dashboard maintenance.
+
+## Current dashboard — three-assignment Work checkpoint, 2026-10-15 UTC
+
+**26/50 = 52% provisional output readiness**, compared with **16/50 = 32%** baseline. The gain is concrete draft work, not formal acceptance or a finding that a purchase is financially/legalistically achievable. All ten streams remain below Stage 4. Earlier dashboard snapshots below are historical.
+
+| Act output | Stage /5 | Change from baseline | Proof / remaining blocker |
+|---|---:|---:|---|
+| Public-interest/Ukraine evidence | 1 | 0 | Current dependence/satellite baseline and source-checked chronology still needed |
+| Commercial perimeter/title | 2 | 0 | Item 1 exclusively other chat; untouched |
+| Constitutional/acquisition mechanism | 3 | +1 | [Acquisition-title report](The_Starlink_and_Stripes_Act_Acquisition_Title_Working_Draft_v0.1_2026-10-15.md); orbital/IP/foreign fallback and specialist review open |
+| Starlink valuation/economics | 3 | +1 | [Model report](The_Starlink_and_Stripes_Act_Valuation_Funding_Model_Report_v0.1_2026-10-15.md) and executable bundle; actual data, workbook, comps and appraisal missing |
+| Federal funding/finance | 3 | +1 | Ten-year closing/operating federal cash build and bill account clauses; appropriation amounts/score unresolved |
+| Operations/international transition | 3 | +1 | [Integrated bill §§401–403](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.1_2026-10-15.md); actual contracts, consents and witnessed tests missing |
+| Governance/privacy/safeguards | 3 | +1 | Integrated bill §§201–208; proposed charter, rights and remedies need counsel and implementation |
+| Necessity/objections/alternatives | 3 | +1 | Adverse-case matrix and §404; common-basis quantitative comparison and independent review missing |
+| Full bill/appropriations | 3 | +3 | 31-section five-title working bill; draft text structurally checked, dollar placeholders and legal redlines remain |
+| Integrated dossier/crosswalk/review | 2 | +1 | All-seven-item/all-36-name mapping; original subcriteria and complete empirical/financial exhibits missing |
+
+Arithmetic: 1+2+3+3+3+3+3+3+3+2=26/50. Stage 3 finance means an executable unpopulated model, not a real valuation or completed funding plan. No Stage 4 authenticated-criteria validation or Stage 5 review-readiness claimed.
+
+**Assignments and saved outputs:** ACTCORE-74ab19 reserved/readback v143, released/readback v144; CHARTER-63e8c2 reserved/readback v145, released/readback v146; MODEL-9da412 reserved/readback v147, closeout conditionally saved from actual CAS 147, with independent final readback required. Workflow v2.2 activation verified v142. [Model ZIP](The_Starlink_and_Stripes_Act_Financial_Model_v0.1.zip) independently downloaded and hash/member-verified. Ten arithmetic/missing-input tests passed. Three report passes counted; reused sections and source counts do not create extra passes.
+
+**Formal status:** initial coverage 7/7; original practical 0/7; named 0/36 (17 legal/19 moral); 311 proposed, no invented acceptance denominator. No professional sign-off. All Work-owned claims released on successful closeout; Item 1 untouched.
+
+**Closed drafting gaps:** proposed authority/compensation/fiscal controls, charter and enforceable rights, staged transition, timetable, integrated bill, topic coverage crosswalk, and executable ten-year model structure. **Still open:** real public-interest/Ukraine evidence, authenticated subcriteria, actual financial carve-out and valuation ranges, requested spreadsheet, legal/title/permission schedules, orbital/IP/foreign compulsory coverage, actual appropriations and federal score, modern legal redlines and engineering/appraisal/counsel review.
+
+**Next action:** dated dependence and Ukraine incident dossier, then source-authenticated financial population. This checkpoint creates no ongoing background execution or schedule. The earlier 22-section count was an editorial error: acquisition core 19, integrated bill 31.
+
+## Current dashboard — integrated bill, 2026-10-15 UTC
+
+**Readiness: 24/50 = 48%, versus baseline 16/50 = 32%.** Workflow v2.2 activation verified in canonical tracker 142. ACTCORE reservation 143/release 144 verified; CHARTER reservation 145 verified, closeout conditionally saved from CAS 145. Both reports saved and reread in full. No formal requirement accepted.
+
+| Output stream | Current stage /5 | Saved evidence and next blocker |
+|---|---:|---|
+| Public-interest/Ukraine evidence | 1 | Dated public dependence, satellite baseline and chronology remain absent |
+| Commercial perimeter/title | 2 | Other chat exclusively owns Item 1; no status changed |
+| Constitutional/acquisition mechanisms | 3 | [Acquisition title](The_Starlink_and_Stripes_Act_Acquisition_Title_Working_Draft_v0.1_2026-10-15.md); orbital/IP/foreign compulsory scope and counsel pending |
+| Starlink valuation/economics | 2 | Actual commercial carve-out model and appraisal missing |
+| Federal funding/finance | 2 | Appropriation framework drafted; amounts, scoring and receipts/funding models missing |
+| Operational transition/permissions | 3 | [Integrated bill §§401–403](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.1_2026-10-15.md); actual agreements, tests and consents missing |
+| Governance/privacy/safeguards | 3 | Integrated bill §§201–208; constitutional/remedies/personnel redline and implementation missing |
+| Necessity/objections/alternatives | 3 | Integrated adverse-case matrix and §404; quantified comparisons and outside review missing |
+| Full bill/appropriations text | 3 | Integrated 31-section bill; dollar placeholders and specialist redlines block introduction-readiness |
+| Dossier/crosswalk/review | 2 | Seven-item/all-36-name crosswalk drafted; original subcriteria and source-complete exhibits absent |
+
+Arithmetic: 1+2+3+2+2+3+3+3+3+2=24. The score reflects draft maturity, not legal feasibility, percentage of effort, enactment likelihood or independent sign-off. No stage 4/5 claim. Core draft section-count correction: 19, not 22; integrated bill 31. Earlier update below is preserved as history.
+
+Initial coverage **7/7**; formal practical **0/7**, named **0/36** (17 legal/19 moral); **311 proposed** not fully audited. Two distinct assignments complete, not one count for every source or reused bill section. Closed drafting gaps: operative acquisition provisions, charter, enforceable rights, continuity gates, timetable, integrated bill and topic coverage mapping. Factual gaps remain open. Next concrete output: reproducible ten-year valuation/federal sources-and-uses model with explicit missing private inputs.
+
+## Live Work update — acquisition title, 2026-10-15 UTC
+
+Workflow v2.2 activated and independently verified in tracker v142. Assignment ACTCORE-74ab19 reserved/readback v143; [Acquisition Title Working Draft v0.1](The_Starlink_and_Stripes_Act_Acquisition_Title_Working_Draft_v0.1_2026-10-15.md) saved and independently reread. Closeout uses source CAS 143; next tracker readback establishes committed revision. Historic baseline below remains intact.
+
+Current provisional score: **20/50 = 40%**, up from 16/50 = 32%. Stages in stream order: **1, 2, 3, 2, 2, 2, 2, 2, 3, 1**. Constitutional/acquisition mechanisms 2→3 and bill 0→3 because concrete operative acquisition, compensation, fiscal and review text now exists. Bill stage 3 means substantial partial working draft, not full integrated bill; public charter and continuity title remain undrafted. The five-title architecture has 22 drafted sections; no Stage 4 criteria validation or outside sign-off.
+
+Closed drafting gaps: no acquisition delegation, compensation process, bounded fallback, fiscal account framework or review clauses. Open: actual ownership/rights schedule (other chat Item 1), orbital/IP/foreign compulsory mechanism, empirical justification/Ukraine chronology, independent valuation, dollar amounts, spectrum classification, public charter, tested transition and counsel/CBO/engineering review. Initial research 7/7; formal 0/7 practical and 0/36 named; 311 proposed not line-audited. Next output: charter and continuity provisions followed by integrated bill. The baseline table below is historical, not live maturity.
+
+## Progress at a glance
+
+| Indicator | Verified status as of baseline | What this means |
+|---|---|---|
+| Original practical-item initial research coverage | **7 of 7 first passes recorded** | All seven domains have had at least one research pass; it does not mean they meet acceptance criteria. |
+| Original practical items formally accepted | **0 of 7** | Each original completion gate remains unchecked. |
+| Named research topics formally accepted | **0 of 36** (17 legal; 19 moral) | Original named-topic verification remains pending. |
+| Proposed subcategory reconciliation | **311 proposed; full authenticated acceptance audit not established** | Do not claim 0/311 or 311/311 without an actual line-by-line audit. |
+| Evidence-gap research | **Substantial follow-up work recorded, unevenly distributed** | Numerous Item 1 and Item 2 audits; later practical items have fewer. Report counts are NOT completion counts. |
+| Integrated draft of The Starlink and Stripes Act | **Not verified in the reviewed root Library inventory** | A full bill, appropriation text, and integration package need explicit deliverables. |
+| Independent professional review | **Not established** | Cannot be counted as complete. |
+
+**Provisional output-readiness indicator:** 16 of 50 possible maturity points = **32%**. This is a transparent planning indicator, **not a formally audited percentage of total effort, legal feasibility, quality, or acceptance**. It weights the ten output streams equally; revise the scores only against saved evidence and document why. With this simplified scoring, more research alone cannot advance a stream beyond Stage 2: drafted proposals, audited acceptance, and package review are required.
+
+### What stage means
+
+- **Stage 0 — No dedicated output verified:** no completed source-backed work product confirmed for this deliverable.
+- **Stage 1 — Scoped:** scope, requirements, and plan exist, but source review is incomplete or not established.
+- **Stage 2 — Evidence foundation:** a relevant saved research report is documented; significant gaps may remain.
+- **Stage 3 — Drafted:** a deliverable-specific section, model, or proposed statutory provisions exist and are linked to evidence.
+- **Stage 4 — Internally validated:** authenticated original criteria crosswalked; material factual/legal gaps either resolved or expressly treated with defensible bounded assumptions and audit notes.
+- **Stage 5 — Congressional-review ready:** consolidated, source-checked, internally reviewed and prepared for required independent professional scrutiny; external expert sign-off recorded as complete only when actually obtained.
+
+No stage requires pretending that currently inaccessible nonpublic records have been acquired. Unresolved gaps must remain visible; Stage 4/5 requires a defensible way of handling them, not their concealment. A stage score is a dashboard aid, distinct from formal 7/36 acceptance.
+
+## Ten deliverable checklists, with current baseline
+
+The following are **new output milestones**, not substitutes for original seven practical checks or 36 named research topics. Each stream advances through Stages 0–5 above. A progress update must show the most recent saved supporting report(s), key unresolved barrier, next concrete output, and whether the assessment was independently reviewed.
+
+| Output stream | Stage / 5 | Evidence of work completed | Highest-priority remaining output |
+|---|---:|---|---|
+| 1. Public-interest case and incident evidence | **1** | Mission/scopes and related existing research expectations recorded | Dated, sourced Starlink dependence and active-satellite baseline; rigorous Ukraine event chronology; weighed public-interest narrative and rebuttals |
+| 2. Commercial asset perimeter and title | **2** | Extensive Item 1 primary-source and rights audits documented | Verified commercial carve-out, actual legal title, licenses, contracts, shared SpaceX dependencies, and transfer conditions; Item 1 remains other chat's responsibility |
+| 3. Constitutional and acquisition mechanisms | **2** | Extensive Item 2 statutory, litigation, compensation, and regulatory reports | Transaction-specific legal route matrix, explicit new-legislation text and defenses, external constitutional review |
+| 4. Starlink valuation and acquisition economics | **2** | Item 5 financial/standalone-source audit and gaps recorded | Scenario-based valuation and sources/uses model with bounded assumptions and auditable sensitivities |
+| 5. Federal funding and public finance | **2** | Item 4 public-funding ledger, BEAD/RDOF and contract evidence-gaps recorded | Verified receipts-versus-obligations ledger, government funding plan, federal budget and operating appropriations |
+| 6. Operational transition and international permissions | **2** | Item 3 permission-layer and technical-dependency audits recorded | Transaction-specific service continuity, manufacturing/launch, workforce, security, foreign permission, and contract succession plan |
+| 7. Public governance, privacy and safeguards | **2** | Item 6 governance/privacy/civil-rights framework reviewed in verification passes | Government operator charter, independence and oversight provisions, enforceable privacy/speech/access/security rules |
+| 8. Necessity, counterarguments and alternatives | **2** | Item 7 alternatives/necessity gate and precedent audits saved | Quantified acquisition-vs-regulation comparison, adverse-case memo and independent legal/financial critique |
+| 9. Full proposed bill and appropriations text | **0** | No verified comprehensive bill draft found in reviewed root inventory | Draft The Starlink and Stripes Act section-by-section: findings, authorities, definitions, acquisition process, just compensation, appropriations, operator, transition, oversight, remedies, effective dates |
+| 10. Integrated dossier, criteria crosswalk and review | **1** | Individual source reports, provenance and canonical original taxonomy retained | Crosswalk evidence to 7/36/311 original criteria; compile dated indexed exhibits, contradictions, legal memos, review matrix, external-review queue |
+
+**Original baseline maturity arithmetic (superseded for current status):** 1 + 2 + 2 + 2 + 2 + 2 + 2 + 2 + 0 + 1 = 16, out of a possible 10 × 5 = 50. The current descriptive drafting maturity is 29/50 as recorded in the latest checkpoint above. The 32% estimate is *provisional, low-resolution and equal-weighted*. It should never be stated as '32% of the acquisition is legally achievable' or '32% formally verified'.
+
+## Original-checklist crosswalk — preserve exact underlying requirements
+
+| Original practical item (never renumber) | Act output streams | Formal verification |
+|---|---|---|
+| 1. Ownership and acquisition perimeter | 2, 6, 9 | **Unchecked; Item 1 remains excluded from this Work instance** |
+| 2. Constitutional and statutory acquisition authority | 3, 9 | Unchecked |
+| 3. Independent operation and international permissions | 6, 9 | Unchecked |
+| 4. Verified public-funding ledger | 5, 1 | Unchecked |
+| 5. Starlink-only valuation and financial model | 4, 5 | Unchecked |
+| 6. Public governance, security, and service protections | 7, 9 | Unchecked |
+| 7. Necessity assessment and independent legal review | 8, 10 | Unchecked |
+
+The original 36 named legal/moral topics and their 311 proposed subcategories remain separate, unchanged, and auditable. They must be mapped by **full topic name**, not assumed covered because an output stream reaches Stage 2. The cross-cutting public-funding/wealth-attribution requirement remains a separate original verification gate, not a 37th named topic.
+
+## What counts as progress after every Work run
+
+1. **Research produced:** count *distinct claimed, completed, saved and reread* passes; do not double-count duplicate filenames or one pass's many sources.
+2. **Evidence gaps:** list important gaps closed and still blocking the bill. A newly discovered gap is not a regression when transparently disclosed.
+3. **Output milestones:** identify which of ten streams advanced and link the exact bill section/report/model proving the change. An additional legal report alone does not move a stream from Stage 2 to Stage 3.
+4. **Draft legislation:** report section-by-section status: not drafted / working draft / internally checked / ready for external review.
+5. **Formal original acceptance:** separately state x/7, x/36, and reconciled x/311 only if authentication supports the subcategory denominator.
+6. **Human blockers:** identify inaccessible corporate materials, potential statutory/constitutional dead ends, independent counsel/financial/engineering review, or missing permission data; name the specific next action.
+7. **Planning maturity:** recompute the stage-score numerator/50 with supporting evidence and give a short narrative of what changed.
+
+### Suggested standard progress paragraph
+
+> The Starlink and Stripes Act: provisional readiness [N]/50 ([P]%) based on ten output streams, with research coverage [R]/7, formal acceptance [V]/7 practical items and [T]/36 named topics. This run delivered [saved reports, legal provisions, models], advanced [streams] from Stage [A] to [B], and closed [evidence gaps]. Critical remaining blockers are [specific obstacles]. Next highest-value output: [specific bill/model/evidence deliverable].
+
+## Next priorities based on this baseline
+
+1. Create an evidence-to-bill crosswalk linking **existing** item reports to the ten Act sections; authenticate original criteria when available. This should reduce repeated research and expose what remains to draft.
+2. Draft the Act's bill architecture and operative sections for acquisition authority, commercial perimeter, fair compensation, public operator, federal appropriation and transition. Clearly flag all unverified Starlink-specific facts and legal mechanisms needing new law.
+3. Build explicit model inputs and bounded scenarios for valuation, funding and ongoing launch/operational service cost; do not fabricate financial data.
+4. Develop an acquisition-vs-regulation opposition matrix with the strongest adverse constitutional, technical and diplomatic arguments.
+5. Request appropriate independent reviews only with separate user authorization for third-party contact. Record opinions as pending until received.
+
+## Coordination and maintenance rule
+
+This checklist is the **human-facing companion dashboard**. The stable canonical tracker remains the sole assignment/claim and original formal-verification register. Item 1 remains excluded from this Work instance; no Item 1 assignment is claimed here. Preserve historical ownership notes, and never change formal acceptance without evidence.
+
+After each verified assignment closeout under the active workflow, update this dashboard using the new tracker and exact saved source documents. If canonical tracker modification is required, use its documented conditional write/readback mechanism and preserve all concurrent assignments. Future Workflow v2.2 activation, if performed separately, may require more frequent dashboard updates; this document alone does not activate it.
