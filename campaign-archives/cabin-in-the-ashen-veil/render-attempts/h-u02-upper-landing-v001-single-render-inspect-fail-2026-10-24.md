@@ -1,0 +1,11 @@
+# H-U02 Upper Landing — V001 final INSPECT FAIL
+
+**2026-10-24. Chat A / Foreman.** PREPARE checked from owner scene preparation register and House Layout v2. Central Upper Landing, main stairs from H-G06 Great Room, cardinal bedroom thresholds including Parents north, Sophia southwest, Nursery northeast, Studio east, plus optional northwest Guest; attic hatch/Carriage Ladder Hook interaction located here. Owner-supplied fifty-year-aged H-G06 Great Room image was the age/material/neutral lighting reference; room geometry is distinct. This was a **single ImageGen render** followed by same-turn visual INSPECT.
+
+- ImageGen gen `3cc74768-8e32-4c1a-a404-b173a267b004`; output `top_down_isometric_plan_view_of_an_old_dusty_aba.png`.
+- Rejected source privately archived at [H-U02 V001](https://drive.google.com/file/d/1fSKYUTOirKXEzQD_L-kqHLwTfhcX7Uin/view?usp=drivesdk).
+- **PASS:** correctly aged, neutral-lit upper gallery, central descending stairwell from Great Room, sound safety rail, north bedroom corridor threshold.
+- **FAIL:** missing separate east Studio doorway, northeast Nursery doorway, southwest Sophia doorway and other required bedroom exits; no recognizable closed attic hatch/later Ladder Hook anchor. An upper landing with only north/south openings is not a functional hub. Correct small-room details cannot replace missing major portals.
+- **FINAL ART VERDICT: FAIL.** No second render in this turn. No Foundry Scene, Walls, RegionBehavior, teleport, puzzle state, or player token was modified.
+- Next independently initiated Chat A render turn: reread owner H-U02 PREPARE, show approved aged H-G06 Great Room example for materials and even lighting, author completely NEW affirmative-only prompt depicting a broad Upper Landing with identifiable distinct north Parents, southwest Sophia, northeast Nursery, east Studio, optional northwest Guest doorway, central staircase head and a ceiling hatch access point. Only **ONE** new image render, immediate INSPECT, owner-delegated final PASS/FAIL. Mechanical attic hook unlock happens later in Foundry script, not map art.
+- Current verified working approval count before independent Chat B updates: **25/45** base map arts, 20 still pending, including H-U02. H-G09 V002 was owner-approved and archived; this new H-U02 FAIL does not change totals.
