@@ -1,0 +1,202 @@
+{
+  "schema": "cav/room-render-geometry-anchor/v001",
+  "roomId": "H-U07",
+  "roomName": "Dahlia's Art Studio",
+  "level": "upper",
+  "planStatus": "PROVISIONAL_ART_GUIDE_OWNER_INSPECT_PENDING",
+  "authority": [
+    "2026-10-22 owner-approved House Layout v2",
+    "2026-10-23 aged H-G06 above-ground style lock",
+    "H-U07 current PREPARE 2026-10-23"
+  ],
+  "note": "Image-space semantic layout only. Pixel dimensions and rectangle coordinates are not accepted physical feet or Foundry Wall/Region/portal coordinates.",
+  "source": {
+    "editableVector": "render-guides/h-u07-upper-studio-geometry-anchor-v001.svg",
+    "pngDriveUrl": "https://drive.google.com/file/d/1eVcLw6pVPvMlOU18VLmkr_PwAdaBq6Fg/view?usp=drivesdk",
+    "pngSha256": "7a3d5d150f203e0ab84fd3fab1128e0640b2cc3e0650e391731916257905dd11",
+    "pngBytes": 62894,
+    "pngDimensions": [
+      1536,
+      1024
+    ]
+  },
+  "coordSystem": {
+    "origin": "image upper-left",
+    "xPositive": "east/right",
+    "yPositive": "south/down",
+    "canvasSize": [
+      1536,
+      1024
+    ],
+    "walkableInteriorBounds": {
+      "left": 270,
+      "top": 136,
+      "right": 1270,
+      "bottom": 872
+    }
+  },
+  "walls": [
+    {
+      "side": "north",
+      "pixelSegment": [
+        [
+          230,
+          96
+        ],
+        [
+          1310,
+          136
+        ]
+      ],
+      "continuity": "FULL"
+    },
+    {
+      "side": "south",
+      "pixelSegment": [
+        [
+          230,
+          872
+        ],
+        [
+          1310,
+          912
+        ]
+      ],
+      "continuity": "FULL"
+    },
+    {
+      "side": "east",
+      "pixelSegment": [
+        [
+          1270,
+          96
+        ],
+        [
+          1310,
+          912
+        ]
+      ],
+      "continuity": "FULL_AND_CONCEALED_WORKSHOP_ADJOINING"
+    },
+    {
+      "side": "west",
+      "pixelSegments": [
+        [
+          [
+            230,
+            96
+          ],
+          [
+            270,
+            417
+          ]
+        ],
+        [
+          [
+            230,
+            592
+          ],
+          [
+            270,
+            912
+          ]
+        ]
+      ],
+      "opening": [
+        417,
+        592
+      ],
+      "linksTo": "H-U02"
+    }
+  ],
+  "fixtureAnchors": [
+    {
+      "id": "vanity",
+      "label": "Vanity with vacant Ornate Mirror fitting",
+      "roughPixelRect": [
+        370,
+        142,
+        630,
+        306
+      ],
+      "corner": "northwest",
+      "actionGate": "Ornate Mirror recovered; mirror absent in base"
+    },
+    {
+      "id": "027-painting",
+      "label": "Framed chest-portrait code 027",
+      "roughPixelRect": [
+        814,
+        170,
+        1088,
+        306
+      ],
+      "corner": "northeast",
+      "actionGate": "Readable inspectable clue, not automatically shared in chat"
+    },
+    {
+      "id": "sune-shrine",
+      "label": "Private Sune altar and rose emblem",
+      "roughPixelRect": [
+        1120,
+        392,
+        1260,
+        630
+      ],
+      "wall": "east",
+      "actionGate": "Two independent prayers; workshop remains visually concealed"
+    },
+    {
+      "id": "art-table",
+      "label": "Paint-and-brush worktable",
+      "roughPixelRect": [
+        660,
+        426,
+        960,
+        601
+      ],
+      "zone": "center",
+      "actionGate": "none"
+    },
+    {
+      "id": "easel",
+      "label": "Easel and faded canvases",
+      "roughPixelRect": [
+        453,
+        667,
+        583,
+        759
+      ],
+      "zone": "southwest",
+      "actionGate": "none"
+    }
+  ],
+  "verificationGates": [
+    "exactly one ordinary visible entrance on west side linked to H-U02",
+    "east wall presents continuous domestic shrine boundary; H-U08 physically separate and its hidden entrance a later state",
+    "south wall visibly continuous from southwest to southeast",
+    "no internal staircase, landing or second room in this H-U07 base art",
+    "vanity vacant mirror fitting, 027 painting, and Sune shrine each visually distinct and reachable",
+    "50-year abandoned above-ground styling reference matches owner-approved H-G06",
+    "baked neutral even ambient light; dynamic lighting left to Foundry",
+    "owner explicit INSPECT PASS before map installation"
+  ],
+  "unapprovedCandidates": [
+    {
+      "generationId": "13151df0-970e-42e2-a480-d3528a5cbda1",
+      "reason": "south entrance; unwanted staircase"
+    },
+    {
+      "generationId": "a8b6b706-5594-4b31-8202-0f0eddcad8bf",
+      "reason": "south entrance; mandatory quest fixtures indistinct"
+    },
+    {
+      "generationId": "044cd057-b611-4b39-a967-f68af16ef20b",
+      "pngSha256": "7b401a361caec4efbcc32406033fa1d87833bef69236b8532bbf8ef3738d8915",
+      "reason": "third painted candidate repeats wrong south portal and southeast stairs, guide not respected"
+    }
+  ],
+  "nextAction": "Condition one image rendering explicitly on this geometry guide as an input image, then structural INSPECT. If the renderer cannot hold the west entrance and east wall, stop painting and refine the geometry-lock technique rather than passing inaccurate art.",
+  "foundryMutation": false,
+  "ownerApproved": false
+}
