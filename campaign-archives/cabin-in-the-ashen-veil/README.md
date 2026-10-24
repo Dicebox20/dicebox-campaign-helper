@@ -168,3 +168,17 @@ The owner rejected the first H-G06 Great Room art (gen `a7c8bbde-a17c-4329-9997-
 ## Great Room workflow research: actual measured geometry, not another freeform render
 
 Owner rejected second H-G06 Great Room painting `f4150872-49e3-4a7a-ac4a-d5d2ceb01ff3`. The [2026-10-23 community battlemap + Tom Cartos library audit](./community-ai-battlemap-and-tom-cartos-library-workflow-audit-2026-10-23.md) finds a robust precedent for **fixed geometry first, image-guided detailing next**, and notes licensing restrictions against embedding Tom Cartos artwork in AI-generated products. Key physical contradiction: BWE-027 Great Room labeled 14×16 feet supports only ~9 nominal five-foot token spaces, insufficient for main stairs/hearth/family seating/clock/blueprint/027 lockbox; owner-reviewed updated footprint must be spatially reconciled with other house rooms before any further painting. No change to current owner-approved exact artwork: **18/45 base maps accepted, 27 outstanding**. Neither failed Great Room raster is in approved archive.
+
+
+## 2026-10-23 map creation long-chat archival handoff — restart here
+
+The map-art conversation reached its context boundary after **two rejected H-G06 Great Room generations** and the owner's request to research community AI battlemap methods and Tom Cartos references. New generation is **on hold pending measured house-scale reconciliation**; the approved BWE-027 Great Room is labeled 14×16ft (~9 five-foot cells) and cannot fit all mandatory gameplay fixtures with adequate tactical movement. The owner has not approved new dimensions or a product workflow release-stage change. We preserve **18 owner-approved base maps out of 45; 27 remain**. H-G02 Foyer gen f6fb7e04 is accepted exact art; no Foundry feature scripts/Wall routes are certified.
+
+**Resumption package (catalogued and chronological):**
+- [Strong continuation handoff](./chat-archives/2026-10-23-strong-continuation-handoff.md) — immediate blockers, source precedence, full map status, technical research and exact next bounded steps.
+- [Available-message conversation transcript](./chat-archives/2026-10-23-map-production-available-transcript.md) — **48 verbatim visible owner utterances** and explicitly non-verbatim event summaries. Earlier skipped assistant/tool/image turns are NOT recoverable in this environment; this is not asserted to be a complete lossless export.
+- [Conversation metadata JSON](./chat-archives/2026-10-23-conversation-metadata.json) — count, approvals, provenance, unknown chat IDs, source paths, open work and exact accepted source image hash.
+- [Owner-requested MEDETA entry](./chat-archives/2026-10-23-medeta-knowledge-entry.md) — named catalogue record and status.
+- [Reproducible KB delta](../../database/seed.d/2026-10-23-ashen-veil-map-chat-handoff.sql) — KB sources/facts/decisions/open items/trials/milestone relationships; runtime DB rebuild and verification must be distinguished from committed source.
+
+Before any further H-G06 render, review [community/Tom Cartos workflow audit](./community-ai-battlemap-and-tom-cartos-library-workflow-audit-2026-10-23.md), [scale and inclusion-only audit](./great-room-scale-and-inclusion-only-prompt-audit-2026-10-23.md), and universal map/clean restart rules in repository AGENTS.md. Design deterministic physical room geometry with all five Great Room connections and token-clearance proof, then obtain an owner decision on coherently revised house dimensions. Never reuse the rejected image/prompt; never place unwanted scenery even in a negative renderer prompt.
