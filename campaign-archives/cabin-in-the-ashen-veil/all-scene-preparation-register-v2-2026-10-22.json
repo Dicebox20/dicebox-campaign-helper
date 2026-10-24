@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "16_OF_45_BASE_MAP_ART_OWNER_APPROVED_29_REMAINING_GREENHOUSE_PREPARED",
+  "status": "17_OF_45_BASE_MAP_ART_OWNER_APPROVED_28_REMAINING_THREE_ESTATE_MAPS_OUTSTANDING",
   "ownerScope": "Owner: ONE separate Foundry scene/map per enclosed cabin ROOM across every floor, attic storage included. Non-cabin destinations default to larger area-wide maps, preserving nine separate SG and single Bathhouse and Aqueduct scene exceptions.",
   "sourcePriority": [
+    "2026-10-23 owner PASS exact roof-open greenhouse interior EXT-06 generation 994306e9-3d20-4269-a47c-6d3a1fa3eb25; three estate ground maps remain EXT-03,04,08.",
     "2026-10-23 owner approved exact EXT-05 Gazebo gen 9d1d3ed3-e2db-4971-9fb4-f5d3757b2bbc; Greenhouse EXT-06 next with separate irrigation and mixing puzzle, no live Foundry build.",
     "2026-10-23 owner approved exact unified FM-01..FM-04 forest maze raster 89c47c7f-8ef0-4ebf-9f5c-e2374d74e173; central Well and NW/NE building portals live within one large background, Sune Grove untouched.",
     "2026-10-23 owner explicitly approved edited EXT-07 Boathouse image as-is, including residual water foliage; never rerender without new instruction. Owner also approved both current Pond FULL and DRAINED South Sluice backgrounds. Runtime not verified.",
@@ -1032,8 +1033,19 @@
       "density": "DOMESTIC",
       "inspectionHardGates": "Greenhouse water state separate from Aqueduct valve puzzle; recipe and plant-killer not pre-baked",
       "sourceAuthority": "Owner-approved estate overview and area-specific continuity",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " Owner 2026-10-23 explicitly accepted GREENHOUSE INTERIOR attempt 2. First greenhouse roof-dominant candidate remains REDO. See ./greenhouse-owner-visual-approval-2026-10-23.md; separate room puzzle and water state via Foundry.",
+      "status": "OWNER_VISUAL_APPROVED_GREENHOUSE_INTERIOR_GEN_994306e9_FOUNDRY_NOT_BUILT",
+      "approvedArt": {
+        "file": "abandoned_greenhouse_garden_laboratory.png",
+        "generationId": "994306e9-3d20-4269-a47c-6d3a1fa3eb25",
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "bytes": 4053079,
+        "sha256": "f69bdc6b5e85da64cf3f3a7c53fd223346d58b5fba1d40e703f290d2d074a6cf",
+        "foundryVerified": false
+      }
     },
     {
       "id": "EXT-07",
@@ -1416,9 +1428,9 @@
     "legacyFeatureCardsBeforeAtticRoomSplit": 53,
     "logicalSceneDesignCards": 56,
     "confirmedBaseMapTargets": 45,
-    "ownerAcceptedBaseMapArt": 16,
-    "remainingBaseMapTargets": 29,
-    "calculations": "56 logical cards, 45 grouped base-map targets after Bathhouse(-7), Aqueduct(-1), Maze(-3) consolidation. 16 owner-approved base maps = prior 15 + EXT-05 Forgotten Gazebo. 29 remaining (Greenhouse currently NOT approved).",
+    "ownerAcceptedBaseMapArt": 17,
+    "remainingBaseMapTargets": 28,
+    "calculations": "56 logical cards −7 Bathhouse unified −1 Aqueduct unified −3 Forest Maze unified =45 base-map targets. 17 owner-accepted base maps after EXT-06 greenhouse interior approval; 28 remain: 22 separate cabin room/roof maps + 3 estate EXTs (03 Shack, 04 Privy, 08 Rear Deck) + 3 Undercroft/finale.",
     "proposedExteriorConsolidation": "Forest Maze FM-01–04 consolidated into one owner-approved render. Pond EXT-02 and Boathouse EXT-07 remain separate; any other outdoor grouping requires new owner direction or compatible accepted geometry. No further deductions assumed."
   }
 }
