@@ -1,0 +1,28 @@
+# Cabin in the Ashen Veil — Reliable Clickable + Discovery Puzzle Installation SOP
+Date: 2026-10-24. PLAN ONLY, no additional Foundry mutation. Superseding owner goal: minimize failure, make start-to-midgame fully playable, established clickable and discovery Region rules.
+
+## Authority and baseline
+PREPARE -> INSPECT -> BUILD -> STAGE -> INJECT -> VERIFY -> CATALOGUE. Newer explicit owner canon prevails over old library notes. 32 current Foundry Scenes; 15 original Regions + 5 geometry-only measured Grove Regions = 20. One existing Fireplace behavior; five new Grove Regions are **not functional puzzle scripts**. Other 13 of 45 map targets not installed as native Scenes. Never overwrite owner Walls or Regions; store precise stable Region IDs.
+
+## Installation contract
+1. PREPARE per Scene: exact image approval hash, Scene ID/dimensions, physical entrance/exit geometry, puzzle prerequisites/outputs, state namespace, UI text and player spoiler level, all alternate paths, test vectors, backup/rollback list. No inferred pixels without inspecting exact approved map.
+2. INSPECT current live native world, active exact GM and 14.367/dnd5e 5.3.3 module API, enabled dependencies, Region/Tile/Wall IDs; validate clickable adapter supported. Regions detect presence; click actions come from proven clickable Tile/button adapter, not presumed native Region-click events.
+3. Two layers per prop: discovery Region (entry, player-only one-time notice, repeat inspect, already-inside fallback) and interaction footprint/Tile (explicit click, range, PC permission, stage). Link via stable logical feature key and immutable Scene ID.
+4. Single module-owned semantic dispatcher: fixed allowlisted actions, validate world, current GM, actor, spatial proximity, token ownership, item presence, progression flags and idempotency key; no arbitrary code execution by players, no all-player open Macro. Use RegionBehavior for eligible triggers and vetted module click controls. Authoritative state in one versioned world namespace, per-character notices separately, item disposition UNIQUE.
+5. Non-destructive, additive, idempotent installation Macros: PREPARE diff preview -> snapshot relevant embedded docs -> refuse wrong world/mismatched geometry/duplicate keys -> create missing only -> semantic readback and exact counts -> receipt; rollback only objects tagged with that installation manifest. Never delete hand-edited Regions.
+6. Persistent visual projections (Tiles/scene variants/doors/lights) rehydrate after reload/reconnect/stage swap, never store state only in UI. Region enter is discovery or travel only; never automatically advance ordered puzzles, take items, unlock doors or award prizes. All player-facing interactions clearly describe unsatisfied conditions without granting spoilers.
+7. Test read-only geometry before enabling a behavior. Then run controlled canary with one non-GM PC; test both ordinary failure and success, repeat click/entry/reload, missing item, incorrect order/code, 2 PCs simultaneous, wrong world, GM handover, alternate passage, rollback. Stage changes validate every token's safe landing.
+8. Fail closed: if missing selected module function, destination, actor, valid world ID, or authenticated GM, do not mutate puzzle flags. Return player-appropriate feedback and a concise GM diagnostic. Keep GM recovery per unique item/puzzle with audited reconciliation, not silent freebies.
+9. CATALOGUE per unit with PREPARE source, commit, exact Scene and Region IDs, image hash, screenshot/measurement evidence, Macro UUID, behavioral script hash, before/after counts, PASS/FAIL tests, state snapshots/rollbacks. No blanket PASS without true player exercise.
+
+## Controlled rollout
+Wave 0: missing native Scenes and images for all required midgame map areas; audit topology and safe arrival, preserve owner walls. Verify map source dimensions.
+Wave 1: floor/scene transitions and paired safe portal pads; these use deliberate travel Region triggers only on actual movement, no spoofed scene-load enter.
+Wave 2: four busts SW SG-07 Rose, NE SG-03 Star, NW SG-01 Moon, SE SG-09 Sun; install separate clickable controls, Clockwork Winder requirement, order/reset/no item consumption. Fourth correct exposes rear 3x3 mosaic Tile SG-05 and activates discovery Region; player's explicit Tile click opens deterministic sliding UI; separately claim gold and Brass Study Key.
+Wave 3: Pond Mirror, Studio Vanity keys, Carriage/Ladder Hook, attic Clockwinder/Minute Hand, Foyer Hour Hand, roof noon Clock/Replacement Gear; 027 and 587 code locks.
+Wave 4: Study keyed entry and EXT-08 exterior, Shack 587 Crank, safe synchronized Bath/Pond sluice, drained Weathered Key and Bath Screwdriver, Parents nightstand Gate Handle, Gear+Handle Aqueduct Gate and first Crooked Man chase, safe SG-07 Well return and captured-player release.
+Wave 5: Waterworks/Boiler then second SG-01 NW chase and later progression; Veil/Vault/Undercroft postponed only once Wave 4 complete E2E test PASSES.
+Each wave requires a short, isolated native GM install Macro run, readback, ordinary player canary, no regressions and checkpoint; do not bundle 20 regions in one unaudited transactional blast.
+
+## MVP release gates
+Opening-to-first-Aqueduct-chase end-to-end without GM intervention during standard route; all required keys/clues collectible and irrecoverable losses impossible; visible puzzle surfaces genuine clickable; puzzle hints private; scene joins both directions safe; water changes safe for party; one capture and emergency release work; progress survives reload. Do not label release ready before all pass.
