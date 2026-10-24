@@ -1,0 +1,26 @@
+# Northwestern Forest Maze — one-area PREPARE before first unified render
+
+**Date:** 2026-10-23
+**User direction:** “Okay, next map.” Last owner rule: only rooms inside cabin separate; outdoor places generally use full-area images. Selected next area: standalone Northwestern Forest Maze. This is a **render candidate** for grouping `FM-01..04`, not yet owner-approved consolidation or target-census reduction.
+**Current evidence read:** latest master scene-card register FM-01, FM-02, FM-03, FM-04, EXT-01, EXT-05, EXT-06, AQ-01; maze consolidation audit; original owner-selected `forest_maze_estate_map.png` at 1448x1086 verified and visually inspected from local file; source PREPARE / general map production rules.
+**State:** `PREPARE_RECHECK_PASS` → render exactly ONE image → inspect once → owner PASS/REDO; no Foundry or census promotion unless owner approves.
+
+## Architecture, scale and route
+
+- **ONE large connected, complex and actually navigable hedge/old-root labyrinth**, roughly portrait-to-landscape aerial footprint matching the owner's source blueprint. A large number of meaningful zigzags, spirals, forks, several dead-ends, hedges and old stone boundary walls with practical player token-clear paths. No random teleport through maze segments.
+- **SOUTH border:** exactly ONE iron entry gate from **Carriage Yard EXT-01**. Visible aged wrought-iron arch with flanking stone gateposts. Maze gate latches from inside after later Aqueduct/well entrance: initially closed from Yard, openable on interior side after chase/required stage, then two-way. Actual state changes belong to Foundry Walls/Regions, not static painted art.
+- **WEST-NORTHWEST edge:** ONE distinct onward portal/arrival landing toward **Gazebo EXT-05**, approached by northwestern maze paths. Gazebo is separately prepared artwork/scene with oil+wick lantern puzzle and optional picnic table; on maze art portray only a small stone threshold/opening/sightline, no full Gazebo structure as if it were an on-map playable puzzle.
+- **EAST-NORTHEAST edge:** ONE distinct onward portal/arrival landing toward **Greenhouse EXT-06**, approached by northeastern maze paths. A small broken glasshouse threshold or old irrigation channels signal destination; keep full playable Greenhouse and mixing puzzle for separate EXT-06 scene.
+- **CENTER:** A recognizable old stone **forest Well** in a small circular **root-encircled clearing** reached via multiple hedgerow paths. This is an INTERIOR traversal Region **FM-04 ↔ AQ-01** via safe stone opening/entry. It is the first Crooked Man chase emergence from Aqueduct into maze; free backtracking to Aqueduct remains possible after pond refills and lawful access. Do not draw a second unrelated well at Sune Grove.
+- **SOUTHWEST maze:** a distinctive spiral/roundabout hedge pattern and broken pavers.
+- **SOUTHEAST maze:** winding switchbacks, dead-ends and one or two large-root landmarks so players can orient after trial-and-error.
+- **NORTH interior:** branching, credible travel between central well, NW Gazebo landing and NE Greenhouse landing, with labyrinth confusion but no unavoidable progression traps. Clear walkable paths at planned 5ft token measurement and practical camera scale. Rescale Foundry grid if needed after art acceptance rather than force tiny corridors.
+- No additional external exits. **TOTAL map-edge portals = 3** (S entrance, NW Gazebo portal, NE Greenhouse portal), plus **ONE interior well↔Aqueduct** travel Region. The four `FM-xx` prior logical cards remain as semantic Regions, not distinct background Scenes.
+
+## Visual style
+- Strict 90° overhead, minimal 3D tree relief; weathered old estate hedgerows dense and genuinely impassable, autumn leaf-scattered dirt and broken cobbles, roots, bits of collapsed garden stone; cool/neutral overcast diffuse light. Gently disorienting woodland-horror mood, moderate readable detail, player-operable central well.
+- **Positive-only composition brief:** wide overhead cartographic VTT painting of a large abandoned estate hedge maze, intricate winding and spiraling narrow dirt lanes separated by thick tall briar hedgerows and old stone borders. Southern ornate wrought iron entry gate, central circular stone well nestled in sprawling roots, northwest terminal threshold with family garden stonework, northeast terminal threshold near old copper irrigation piping, maze spirals southwest and deep switchbacks southeast, a few carved stone direction markers, scattered russet autumn leaves, moss and gray earth, dense northern forest framing the boundary, soft neutral late fall daylight, high-legibility navigable architecture and traditional dark fantasy painterly map quality.
+- Inspect actual geometry, token-walk route, portal destinations, no premature items, accepted source landmark orientation, 3 border exits and 1 well transition, and single-area feel.
+
+## Distinct active-state/puzzle requirements not to bake in painting
+The southern gate's late unlock persistence; AQ first chase arrival via well; Gazebo lantern, Rufus's second eye and optional survey rule; Greenhouse sprinkler, materials, plant-killer recipe; fear/lighting/ambient cues. Specific extra rewards and game logic are future Regionwright/Foundry build items.
