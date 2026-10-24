@@ -31,3 +31,14 @@
 6. Full floor navigability, geometric independence from Great Room walls/Regions. Final art decision PASS/FAIL based on exact pixels only; implementation/PLAYTESTED are separate statuses.
 
 **Pending not to infer:** exact physical room dimensions, real scene ID, portal vertex coordinates and current elected-GM state. No native document changes authorized by this PREPARE alone. 
+
+
+## Owner supersession: scale-aware details, preservation of aged furnishings and V003 visual PASS
+
+**Latest direct owner clarification 2026-10-24:** Rufus's physically missing eye sockets are **too small to insist on showing in full-room battlemap art**. Their absence is conveyed upon a relevant *Investigation* interaction by player-facing text/appropriate closeup, and the underlying two-eye-installation puzzle and one-time compartment release remain unchanged. At art-approval scale Rufus must be a recognizable taxidermied hound, an accessible interactable region/fixture; do not create a generic corpse that changes canon. Eye sockets/hidden fasteners are micro-detail, not map-level FAIL conditions.
+
+The owner also says that intact or comparatively well-preserved furnishings are **acceptable if the room is clearly aged**. Check room-wide accumulated dust, cobwebs, wear, faded materials and neglect against owner-approved aged H-G06 Great Room; do not require extreme destruction of every object. Neutral diffuse baked ambient light remains the standard.
+
+**H-G05 V003 re-evaluated on exact pixels:** image gen `118b14f9-ec13-42ea-9e75-91d799ad30e1`, dimensions `1536×1024`; both canonical west Study↔Great Room and north Study↔rear exterior thresholds are present; east/south boundaries continuous; Rufus is identifiable as a lifeless taxidermied dark hunting hound; desk has clearly legible `587`; Study atmosphere is dusty, cobwebbed, visibly aged and evenly lit. **OWNER-DELEGATED FINAL VISUAL ART PASS.** This **supersedes** the earlier provisional V003 art FAIL solely due to eye socket detail and furnishings not damaged enough. The visual-art approval is separate from native Foundry Scene installation and player mechanics; both remain pending.
+
+**Later native interaction rule:** Player targets Rufus → a check/inspection reveals two empty eye fittings **by prose** (player appropriate channel), later both distinct actual eyes can be installed; the jaw button and sealed source compartment unlock only when required distinct puzzle states are satisfied. Never auto-award the source on merely inspecting the art.
