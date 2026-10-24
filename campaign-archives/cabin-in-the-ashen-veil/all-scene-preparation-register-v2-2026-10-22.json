@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "17_OF_45_BASE_MAP_ART_OWNER_APPROVED_28_REMAINING_THREE_ESTATE_MAPS_OUTSTANDING",
+  "status": "18_OF_45_BASE_MAP_ART_OWNER_APPROVED_27_REMAINING_FOYER_ATTEMPT3_FINAL",
   "ownerScope": "Owner: ONE separate Foundry scene/map per enclosed cabin ROOM across every floor, attic storage included. Non-cabin destinations default to larger area-wide maps, preserving nine separate SG and single Bathhouse and Aqueduct scene exceptions.",
   "sourcePriority": [
+    "2026-10-23 owner explicitly APPROVED H-G02 Foyer attempt3 exact gen f6fb7e04-0835-4481-906f-35c83bb8502d and visible east enclosed locked-door basement stairs; Foundry mechanisms untested.",
     "2026-10-23 owner PASS exact roof-open greenhouse interior EXT-06 generation 994306e9-3d20-4269-a47c-6d3a1fa3eb25; three estate ground maps remain EXT-03,04,08.",
     "2026-10-23 owner approved exact EXT-05 Gazebo gen 9d1d3ed3-e2db-4971-9fb4-f5d3757b2bbc; Greenhouse EXT-06 next with separate irrigation and mixing puzzle, no live Foundry build.",
     "2026-10-23 owner approved exact unified FM-01..FM-04 forest maze raster 89c47c7f-8ef0-4ebf-9f5c-e2374d74e173; central Well and NW/NE building portals live within one large background, Sune Grove untouched.",
@@ -90,8 +91,19 @@
       "density": "DOMESTIC",
       "inspectionHardGates": "BWE-027: Foyer has exactly 3 doors/exits S from front porch, N to Great Room, E locked to adjacent enclosed basement stairwell. The latter must be drawn as an actual descending staircase in separate EAST footprint behind solid locked east door, not empty floor or upstairs staircase. Upstairs main stairs belong H-G06. Strict overhead representative thin wall caps, neutral diffuse base, practical token landing.",
       "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
-      "designNotes": " 2026-10-23 Foyer generated gen 01f031c9-1052-415b-9e3d-b6211a132546 and inspected REDO: tall vertical wall-cutaways violate representative cap style, east basement door visibly open/exposed stairs instead of Weathered-Key locked closed state, excessive exterior framing. This first attempt did NOT receive fresh same-turn PREPARE before rendering; log workflow miss, do not retrospectively mark prepare PASS. See ./h-g02-foyer-attempt1-style-and-geometry-inspection-redo-2026-10-23.md. Do not use failed prompt/raster for REDO. 2026-10-23 second candidate gen 3930c77b-ef2b-49d0-a8a2-97bece1d7c12 improves walls and uses closed east door but is also REDO: owner identified missing enclosed staircase east of door. Compare owner-attached BWE-027. See ./h-g02-foyer-attempt2-inspection-missing-basement-stairs-2026-10-23.md. No approval/count increment. 2026-10-23 third image gen f6fb7e04-0835-4481-906f-35c83bb8502d VISUAL INSPECT PASS recommended: east enclosed descending staircase now depicted beyond closed Weathered-Key door, three required portals align, overhead representative walls. Verify Foundry vision hides stairwell until unlocked; door shown edge-on. Await owner explicit approval before census/art archive promotion. See ./h-g02-foyer-attempt3-inspection-pass-recommended-2026-10-23.md.",
-      "status": "RENDERED_INSPECT_PASS_RECOMMENDED_ATTEMPT3_OWNER_APPROVAL_PENDING"
+      "designNotes": " 2026-10-23 Foyer generated gen 01f031c9-1052-415b-9e3d-b6211a132546 and inspected REDO: tall vertical wall-cutaways violate representative cap style, east basement door visibly open/exposed stairs instead of Weathered-Key locked closed state, excessive exterior framing. This first attempt did NOT receive fresh same-turn PREPARE before rendering; log workflow miss, do not retrospectively mark prepare PASS. See ./h-g02-foyer-attempt1-style-and-geometry-inspection-redo-2026-10-23.md. Do not use failed prompt/raster for REDO. 2026-10-23 second candidate gen 3930c77b-ef2b-49d0-a8a2-97bece1d7c12 improves walls and uses closed east door but is also REDO: owner identified missing enclosed staircase east of door. Compare owner-attached BWE-027. See ./h-g02-foyer-attempt2-inspection-missing-basement-stairs-2026-10-23.md. No approval/count increment. 2026-10-23 third image gen f6fb7e04-0835-4481-906f-35c83bb8502d VISUAL INSPECT PASS recommended: east enclosed descending staircase now depicted beyond closed Weathered-Key door, three required portals align, overhead representative walls. Verify Foundry vision hides stairwell until unlocked; door shown edge-on. Await owner explicit approval before census/art archive promotion. See ./h-g02-foyer-attempt3-inspection-pass-recommended-2026-10-23.md. Owner 2026-10-23 explicitly said approve to attempt3 render; see ./h-g02-foyer-owner-visual-approval-2026-10-23.md and verified v10 approved archive. Stairwell east is visible in GM art, but player Wall vision must conceal until authorized Weathered-Key access; no Foundry verification yet.",
+      "status": "OWNER_VISUAL_APPROVED_H_G02_FOYER_ATTEMPT3_FOUNDRY_NOT_INSTALLED",
+      "approvedArt": {
+        "file": "rustic_foyer_and_hidden_stairwell_map.png",
+        "generationId": "f6fb7e04-0835-4481-906f-35c83bb8502d",
+        "sha256": "34c5e7dab1193893ef6e557745e85821362f76741464567a73120a689cb6b1e8",
+        "bytes": 2597211,
+        "dimensions": [
+          1448,
+          1086
+        ],
+        "foundryVerified": false
+      }
     },
     {
       "id": "H-G03",
@@ -1429,9 +1441,9 @@
     "legacyFeatureCardsBeforeAtticRoomSplit": 53,
     "logicalSceneDesignCards": 56,
     "confirmedBaseMapTargets": 45,
-    "ownerAcceptedBaseMapArt": 17,
-    "remainingBaseMapTargets": 28,
-    "calculations": "56 logical cards −7 Bathhouse unified −1 Aqueduct unified −3 Forest Maze unified =45 base-map targets. 17 owner-accepted base maps after EXT-06 greenhouse interior approval; 28 remain: 22 separate cabin room/roof maps + 3 estate EXTs (03 Shack, 04 Privy, 08 Rear Deck) + 3 Undercroft/finale.",
+    "ownerAcceptedBaseMapArt": 18,
+    "remainingBaseMapTargets": 27,
+    "calculations": "56 logical design cards −7 Bathhouse merge −1 Aqueduct merge −3 Forest Maze merge =45 grouped base-map targets. 18 owner-approved after H-G02 Foyer attempt 3. 27 remaining: 21 other cabin room/roof maps, 3 estate EXTs (03 Shack, 04 Privy, 08 Rear Deck), 3 Undercroft. Stage/overlay assets are separate.",
     "proposedExteriorConsolidation": "Forest Maze FM-01–04 consolidated into one owner-approved render. Pond EXT-02 and Boathouse EXT-07 remain separate; any other outdoor grouping requires new owner direction or compatible accepted geometry. No further deductions assumed."
   }
 }
