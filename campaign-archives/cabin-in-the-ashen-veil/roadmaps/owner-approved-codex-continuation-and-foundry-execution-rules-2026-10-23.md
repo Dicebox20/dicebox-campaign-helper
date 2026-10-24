@@ -37,3 +37,17 @@ Owner gives **broad, ongoing permission to change their Foundry VTT world as nee
 ## D. State at protocol adoption
 
 19/45 base-map art approved; 20 Foundry Scenes (including one separately counted EXT-TRAIL); 26 missing map base images. H-G06 fireplace Region click→Tinderbox→AmbientLight script installed, but real non-GM player canary was pending. Live world last reported 1 actor, 1 token; current audit before testing required.
+
+## E. Owner-approved per-turn timebox and crash-safe checkpoint policy
+
+**Owner directive added 2026-10-23 Pacific:** “set a 20 minute time limit on each turn so you don't lose freeze and lose data, make that another persistent rule for this project and continue your next turn.”
+
+1. **Hard work-turn limit: 20 elapsed minutes** from receiving the next user or Codex continuation prompt. Do not initiate any expensive task or external native relay likely to exceed the remaining turn budget. Prefer finish at **15–18 minutes** to leave time for receipts, audit checkpoint, Codex flow-control and user-facing conclusion.
+2. **Checkpoint continuously:** At the start of each bounded work unit identify the exact next roadmap item and previous receipt. After each meaningful write/test, persist source, IDs, native readback, authoritative state, evidence class, outcome, and the smallest next action in the versioned campaign archive/KB seed. Update a current checkpoint before stopping; never keep the only recovery state in conversation context, unsaved transient scripting output, or a chat summary.
+3. At the timebox boundary, **STOP launching new work**. Mark outstanding work as `PENDING` / `UNVERIFIED` / `NEEDS_OWNER_INSPECT` rather than treating it as success. Leave the exact verified status and continuation pointer; do not reset, delete or retry any pending Bridge/native send without exact evidence.
+4. **Each new Codex continuation triggers a distinct bounded turn**, not a license to resume an old suspended tool call, run forever, or send a courtesy acknowledgment to Codex. Continue from the latest durable receipt using the next smallest safe step.
+5. **Per-turn completion signal:** The owner's single authorized message `Turn done, please send continuation prompt` remains the final bridge flow-control action when safe. Only one send per turn; if its delivery is pending/unknown, no duplicate attempt without verified reconciliation. A hard timebox must not supersede safety, user approval gates, unique item/reward integrity or the owner-only visual INSPECT step.
+6. **No 20-minute alarm needed:** This is a bounded assistant execution-time rule, not a user reminder or recurring automation. If the host/tool environment cannot guarantee a wall-clock timeout, use small bounded calls and early receipts rather than claim enforcement that does not exist.
+
+**Next work unit at adoption:** `H-U07` Dahlia Art Studio aged interior candidate render against owner-approved H-G06 example; mark art unapproved until owner's explicit INSPECT PASS. Previous H-G06 Fireplace GM-handler native canary (three conditions) and private bubble local canary passed; non-GM player canary is still pending.
+
