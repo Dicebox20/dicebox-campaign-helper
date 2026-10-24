@@ -2,9 +2,10 @@
   "schema": "ashen-veil/preparation-ledger.v2",
   "asOf": "2026-10-22",
   "type": "DESIGN_PREPARE_INPUT_NOT_PAINTED_OR_INSTALLED",
-  "status": "14_OF_48_BASE_MAP_ART_OWNER_APPROVED_34_REMAINING;_POND_TWO_STAGES_AND_FINAL_BOATHOUSE_EDIT_APPROVED_FOUNDRY_NOT_INSTALLED",
+  "status": "15_OF_45_BASE_MAP_ART_OWNER_APPROVED_30_REMAINING_UNIFIED_FM_VISUAL_PASS_FOUNDRY_NOT_INSTALLED",
   "ownerScope": "Owner: ONE separate Foundry scene/map per enclosed cabin ROOM across every floor, attic storage included. Non-cabin destinations default to larger area-wide maps, preserving nine separate SG and single Bathhouse and Aqueduct scene exceptions.",
   "sourcePriority": [
+    "2026-10-23 owner approved exact unified FM-01..FM-04 forest maze raster 89c47c7f-8ef0-4ebf-9f5c-e2374d74e173; central Well and NW/NE building portals live within one large background, Sune Grove untouched.",
     "2026-10-23 owner explicitly approved edited EXT-07 Boathouse image as-is, including residual water foliage; never rerender without new instruction. Owner also approved both current Pond FULL and DRAINED South Sluice backgrounds. Runtime not verified.",
     "2026-10-23 owner: EXT-02 Pond+Sluice only, matching FULL/DRAINED backgrounds, far-bank teleport into distinct EXT-07 overgrowth scene",
     "2026-10-23 OWNER cabin rooms ALL separate; add attic west/north/east storage scenes; non-cabin default area-wide; unified aqueduct owner-approved",
@@ -755,7 +756,7 @@
       "name": "Iron Gate Maze Entrance",
       "zone": "Northwestern Forest Maze",
       "track": "FAST",
-      "geometry": "South wrought-iron gate from Yard, a token-clear initial hedge passage",
+      "geometry": "Southern perimeter wrought-iron gate and token-clear approach inside unified FM-UNIFIED-01 maze; paired gate to EXT-01 Yard; later persistent inside-open state.",
       "plannedNeighborIds": [
         "EXT-01",
         "FM-02"
@@ -769,15 +770,19 @@
       "density": "SPARSE",
       "inspectionHardGates": "Maze gate at legitimate boundary from NW of Yard, not misplaced mid-forest",
       "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " 2026-10-23 owner accepted one large hedge maze visual covering all four FM logical cards; do not create separate playable FM-xx image scenes. Preserve logical gameplay/Region identity. Source ./forest-maze-unified-owner-approval-2026-10-23.md. Southerly iron Yard gate and Well↔Aqueduct, plus internal Gazebo/Greenhouse entry footprints remain gated transitions. Old SG-07 well scheme superseded. Actual teleport points, token scale, safe egress remain unverified.",
+      "status": "OWNER_VISUAL_APPROVED_UNIFIED_MAZE_FEATURE_REGION_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "FM-UNIFIED-01",
+      "renderSource": "autumn_s_haunted_hedge_maze.png",
+      "renderGenerationId": "89c47c7f-8ef0-4ebf-9f5c-e2374d74e173",
+      "renderSourceSha256": "9ff3c83d0e906581b93fe701bd920f1d6e2899b5ce9700b298637f591ff6b7cf"
     },
     {
       "id": "FM-02",
       "name": "Lower Hedge Switchbacks",
       "zone": "Northwestern Forest Maze",
       "track": "FAST",
-      "geometry": "Southern spiral/switchback network with distinguishable turnbacks",
+      "geometry": "Southern and southwestern hedgerow spirals, switchbacks and recognizable dead ends INSIDE unified FM-UNIFIED-01 maze; normal token movement from gate/northern forks/Well.",
       "plannedNeighborIds": [
         "FM-01",
         "FM-03",
@@ -792,15 +797,19 @@
       "density": "SPARSE",
       "inspectionHardGates": "Playable trails passable at source scale; adjacent scene landings stable",
       "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " 2026-10-23 owner accepted one large hedge maze visual covering all four FM logical cards; do not create separate playable FM-xx image scenes. Preserve logical gameplay/Region identity. Source ./forest-maze-unified-owner-approval-2026-10-23.md. Southerly iron Yard gate and Well↔Aqueduct, plus internal Gazebo/Greenhouse entry footprints remain gated transitions. Old SG-07 well scheme superseded. Actual teleport points, token scale, safe egress remain unverified.",
+      "status": "OWNER_VISUAL_APPROVED_UNIFIED_MAZE_FEATURE_REGION_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "FM-UNIFIED-01",
+      "renderSource": "autumn_s_haunted_hedge_maze.png",
+      "renderGenerationId": "89c47c7f-8ef0-4ebf-9f5c-e2374d74e173",
+      "renderSourceSha256": "9ff3c83d0e906581b93fe701bd920f1d6e2899b5ce9700b298637f591ff6b7cf"
     },
     {
       "id": "FM-03",
       "name": "Northern Forks",
       "zone": "Northwestern Forest Maze",
       "track": "FAST",
-      "geometry": "North branch crossroads linking Gazebo NW and Greenhouse NE with return to central Well routes",
+      "geometry": "Northern internal hedge forks of FM-UNIFIED-01 reach visible NW Gazebo roof/landmark and NE Greenhouse roof/landmark. Paired building-entry Regions lead to their separate gameplay maps EXT-05 and EXT-06, not extra hedge-edge exits.",
       "plannedNeighborIds": [
         "FM-02",
         "FM-04",
@@ -817,15 +826,19 @@
       "density": "SPARSE",
       "inspectionHardGates": "Gazebo and Greenhouse each lead to independent map with return",
       "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " 2026-10-23 owner accepted one large hedge maze visual covering all four FM logical cards; do not create separate playable FM-xx image scenes. Preserve logical gameplay/Region identity. Source ./forest-maze-unified-owner-approval-2026-10-23.md. Southerly iron Yard gate and Well↔Aqueduct, plus internal Gazebo/Greenhouse entry footprints remain gated transitions. Old SG-07 well scheme superseded. Actual teleport points, token scale, safe egress remain unverified.",
+      "status": "OWNER_VISUAL_APPROVED_UNIFIED_MAZE_FEATURE_REGION_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "FM-UNIFIED-01",
+      "renderSource": "autumn_s_haunted_hedge_maze.png",
+      "renderGenerationId": "89c47c7f-8ef0-4ebf-9f5c-e2374d74e173",
+      "renderSourceSha256": "9ff3c83d0e906581b93fe701bd920f1d6e2899b5ce9700b298637f591ff6b7cf"
     },
     {
       "id": "FM-04",
       "name": "Rootbound Well Clearing",
       "zone": "Northwestern Forest Maze",
       "track": "COMPLEX",
-      "geometry": "Central ancient stone Well on dedicated destination scene, adjacent to separate maze paths",
+      "geometry": "Central ancient Rootbound Well CLEARING inside the one owner-approved FM-UNIFIED-01 maze background; unique region/portal to AQ-01, not a separate scene and not SG-07.",
       "plannedNeighborIds": [
         "FM-02",
         "FM-03",
@@ -840,8 +853,12 @@
       "density": "SPARSE",
       "inspectionHardGates": "Real well destination and return; no new SG-07 well duplicate",
       "sourceAuthority": "Owner-selected Forest Maze aerial planning blueprint",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " 2026-10-23 owner accepted one large hedge maze visual covering all four FM logical cards; do not create separate playable FM-xx image scenes. Preserve logical gameplay/Region identity. Source ./forest-maze-unified-owner-approval-2026-10-23.md. Southerly iron Yard gate and Well↔Aqueduct, plus internal Gazebo/Greenhouse entry footprints remain gated transitions. Old SG-07 well scheme superseded. Actual teleport points, token scale, safe egress remain unverified.",
+      "status": "OWNER_VISUAL_APPROVED_UNIFIED_MAZE_FEATURE_REGION_FOUNDRY_NOT_BUILT",
+      "visualSceneGroup": "FM-UNIFIED-01",
+      "renderSource": "autumn_s_haunted_hedge_maze.png",
+      "renderGenerationId": "89c47c7f-8ef0-4ebf-9f5c-e2374d74e173",
+      "renderSourceSha256": "9ff3c83d0e906581b93fe701bd920f1d6e2899b5ce9700b298637f591ff6b7cf"
     },
     {
       "id": "EXT-01",
@@ -1387,10 +1404,10 @@
     "asOf": "2026-10-23",
     "legacyFeatureCardsBeforeAtticRoomSplit": 53,
     "logicalSceneDesignCards": 56,
-    "confirmedBaseMapTargets": 48,
-    "ownerAcceptedBaseMapArt": 14,
-    "remainingBaseMapTargets": 34,
-    "calculations": "56 logical location cards -7 Bathhouse unified -1 Aqueduct unified =48 base-map targets; accepted 9 Sune Grove + 1 Carriage Yard + 1 Bathhouse + 1 Aqueduct + 1 Pond (TWO owner-approved FULL/DRAINED art variants, counted as ONE target) + 1 Boathouse (edited final) =14. Remaining =34.",
-    "proposedExteriorConsolidation": "Pond EXT-02 and Boathouse EXT-07 remain SEPARATE owner-approved locations. The Forest Maze FM-01..04 could still become one map (-3) only upon compatible owner decision; no approved exterior split changes from these artifacts."
+    "confirmedBaseMapTargets": 45,
+    "ownerAcceptedBaseMapArt": 15,
+    "remainingBaseMapTargets": 30,
+    "calculations": "56 logical location cards − 7 Bathhouse unified savings − 1 Aqueduct unified savings − 3 unified Forest Maze savings = 45 base-map targets; 15 owner-approved (9 Sune Grove, 1 Carriage Yard, 1 Bathhouse, 1 Aqueduct, 1 Pond two states, 1 Boathouse exact edited image, 1 unified Forest Maze), 30 remaining.",
+    "proposedExteriorConsolidation": "Forest Maze FM-01–04 consolidated into one owner-approved render. Pond EXT-02 and Boathouse EXT-07 remain separate; any other outdoor grouping requires new owner direction or compatible accepted geometry. No further deductions assumed."
   }
 }
