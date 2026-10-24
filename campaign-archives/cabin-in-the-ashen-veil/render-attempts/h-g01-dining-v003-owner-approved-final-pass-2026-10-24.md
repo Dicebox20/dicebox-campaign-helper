@@ -1,0 +1,5 @@
+# H-G01 Dining Room V003 — Owner-approved final art PASS
+
+2026-10-24. Owner explicitly confirmed **approved** after assistant same-turn INSPECT PASS. Correct northwest north-wall Kitchen doorway, east Great Room doorway, continuous other walls, six-chair dining table, sideboard, neutral diffuse lighting and fifty-year aged finish compared to owner-uploaded aged H-G06 Great Room visual example. Conditional Dahlia shadow remains a later Foundry overlay, not baked art.
+
+Original generated image: `top_down_isometric_orthographic_fantasy_interior_s.png`; ImageGen `371cdba6-78d6-4b2a-96d3-a1fc746a492f`; RGB PNG 1536x1024; SHA256 `1aa4345d6aa69dadc335e82cb9e33af7e38f4de7056acb6565e02e8aba9792b8` verified against the local exact source. Owner-approved artwork archived in [approved Cabin art Drive folder](https://drive.google.com/file/d/1H6n1xy1qS6Pz8dEF1SXXlXyQ8GQ69tMc/view?usp=drivesdk). This is **art only**: no native Foundry Scene implementation or puzzle verification. Approved inventory **22/45**, 23 outstanding across both chats. Next Chat A target H-G03 Kitchen. Preserve the exact PNG, check hash before transferring into Foundry Data.
