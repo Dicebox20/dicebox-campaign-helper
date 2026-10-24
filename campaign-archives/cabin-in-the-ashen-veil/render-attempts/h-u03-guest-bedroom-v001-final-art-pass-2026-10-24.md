@@ -1,0 +1,9 @@
+# H-U03 Guest Bedroom — V001 Final Art PASS
+
+Date: 2026-10-24. Chat A exclusive workstream under two-chat roadmap. Current PREPARE register H-U03 reviewed before render: upstairs northwest of H-U02 Upper Landing, sole access from Landing, guest bed and antique travel chest, no essential key or secondary route. Owner's approved aged H-G06 Great Room image provided in conversation governs fifty-year neglect and even neutral material lighting.
+
+Exactly one fresh ImageGen generation: `e0a57de9-7286-4d8c-a6a3-949cb06a6e6b` (`edit_op:null`), original `a_detailed_overhead_isometric_top_down_interior_sc.png`. Verified original 1536x1024 RGB PNG, **2,154,307 bytes**, SHA256 **`c93de7b43304636a6277c5e725dffde57cd3783300a629137cdd7e772174d652`**.
+
+[Exact artwork in approved private Drive](https://drive.google.com/file/d/19Asl4skVNRIKpfAtcvOunepBKji2VVHT/view). Same-turn delegated FINAL ART INSPECT: **PASS**. One southern doorway to Upper Landing, intact other walls, recognizable guest bed and travel chest, wardrobes, writing desk and modest domestic furniture, walkable center, accumulated cobwebs and dust, faded textiles and old timber, subdued neutral diffuse baked light. No puzzle reward or alternate passage is depicted. Intact yet aged furniture is consistent with direct owner instruction.
+
+Art-only approval, not native Foundry Scene or Region implementation. No world mutations in this render work unit. Prior 27/45 approved artwork plus this H-U03 = provisional **28/45**, **17 remaining**, pending independent Chat B reconciliation. Next Chat A target H-U04 Parents' Bedroom; rereread PREPARE, use the actual approved aged Great Room image, entirely fresh affirmative-only render prompt, one image maximum per turn, same-turn INSPECT and evidence receipt. Never use failed image as new visual reference.
