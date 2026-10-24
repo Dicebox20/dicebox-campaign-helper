@@ -41,3 +41,7 @@ Image-provider outputs have repeatedly copied a prior room's dominant stair/furn
 - **RENDERED:** Two draft images.
 - **ASSISTANT STRUCTURAL FAIL:** Both lack the required west-wall doorway.
 - **NOT IMPLEMENTED / NOT PLAYTESTED:** H-U07 Scene, portal, vanity, `027`, Sune shrine, related Items/Regions/scripts.
+
+## End-of-turn Codex handoff receipt
+
+The owner-authorized **single** `Turn done, please send continuation prompt` was issued through the exact live-session native Bridge relay to Codex project `892a0d8a-b2de-404a-894e-b6bae4def9e0`, thread `01a16158-1f92-7f22-8f45-c37bd3dfd1a0`. Bridge outgoing message `msg-d98ac324-5c14-4603-8ed0-243067c6327a`, idempotency/client key `cav-20min-hu07-geometry-checkpoint-continuation-20261024-v1`. **Bridge state `host_accepted`, `delivered=false`, `replyPending=true`** after one 60-second wait; actual target native transcript delivery unconfirmed. Do not repeat this same flow-control send without fresh exact-target native idle proof and journal reconciliation. A prior Codex continuation prompt was already present in local bridge inbox and was used as a continuation cue, not acknowledged.
