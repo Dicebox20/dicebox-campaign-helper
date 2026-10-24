@@ -44,3 +44,7 @@
 5. Continue respecting the maximum 20-minute work-unit rule, a durable receipt after every meaningful operation, and one safe exact-thread Codex continuation signal at end of work. For this correlated inbound relay, **reply once via its exact `bridge_message` correlated return route** rather than starting another native roundtrip.
 
 **Continuity protection:** H-U07 upstairs Studio remains early accessible from upper Landing; prayer-gated H-U08 remains separate and hidden; `027` references the lockbox physically in H-G06; Sune Prayer of Protection and Prayer of Devotion are distinct and have separate item rewards. No external Foundry edits were performed.
+
+## Deterministic SVG geometry source verification
+
+A local read-only `xml.etree.ElementTree` parsing test of the archived SVG geometry source returned **PASS 11/11** for the source wall segments, west gap, and five separate semantic fixture anchors. Source SHA-256 `4bb736d6718cd430146905e532f1888395d8b8cf64667ccaa428fabb26e38fca`. Tests checked intact north/south/east bounding wall rectangles, two west wall segments divided by the sole 175px west door, and distinct vanity, `027` painting, Sune shrine, paint table and easel guide rectangles. **These checks validate vector source geometry only; they do not certify the incorrectly generated painted image.** The machine-readable source-check receipt is created at `/mnt/data/cav_hu07_geometry_source_verify_v001.json` in this execution, and the authoritative constraints are permanently in the committed guide JSON.
