@@ -64,3 +64,12 @@ A same-turn assistant `PASS` is **not** a substitute for the owner's explicit ar
 New effective campaign pipeline: `PREPARE → [RENDER + immediate INSPECT in one turn] → owner final approval as applicable → BUILD → STAGE → INJECT → VERIFY → RECEIPT`.
 
 **Next H-U07 task:** Start from the saved geometry-anchored west-door/east-shrine guide, produce one image-conditioned candidate, immediately inspect that exact image for west entrance / continuous south-and-east walls / no Studio staircase / three independent fixture anchors, and file a PASS or REDO in the same turn. Never recycle the earlier three rejected south-door painterly outputs as passable render candidates.
+
+
+## G. Owner-delegated FINAL PASS/FAIL authority for each render
+
+**Latest owner directive 2026-10-24:** “you're final pass fail is the new authorization, you can decide. start next step.”
+
+For Cabin in the Ashen Veil only, the owner's previous **separate explicit final art INSPECT PASS** requirement is superseded: the assistant's documented **final PASS/FAIL of the actual rendered pixels**, carried out immediately in that same 20-minute RENDER+INSPECT turn, **is the authorization gate** to accept or reject that exact image. A confident final **PASS** is sufficient visual authorization for versioned art BUILD/STAGE/Foundry INJECT; no additional owner art inspection is necessary. PASS must establish correct scene topology, doorway and stair placement, correct puzzle fixtures/softlock behavior, neutral lighting, approved above-ground fifty-year aging (basement exemption), world geometry and spoiler safety. Distinguish final **visual** pass from native Foundry VERIFY/PLAYER-PLAYTESTED; the latter remain independently mandatory. A **FAIL, BLOCKED, or uncertainty** retains the artwork as unapproved; record explicit reasons and keep all previous versions. This authorization does not automatically approve modifying manually drawn Walls or breaking owner canon.
+
+**Updated pipeline:** `PREPARE → [RENDER + FINAL INSPECT (assistant PASS/FAIL in same turn)] → BUILD → STAGE → INJECT → VERIFY → RECEIPT`. Existing visual notes requiring an extra owner PASS are historical for this campaign from this date forward.
