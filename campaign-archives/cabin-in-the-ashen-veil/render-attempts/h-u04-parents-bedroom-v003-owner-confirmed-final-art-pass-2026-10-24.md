@@ -1,0 +1,9 @@
+# H-U04 Parents’ Bedroom — V003 owner-confirmed FINAL ART PASS
+
+**2026-10-24.** Owner explicitly replied **PASS** after inspection and a requested correction that the northern roof-access window must be **closed**. V003 supersedes V001 and V002 for art approval; do not use rejected images as render references.
+
+The accepted composition has one southern doorway to H-U02 Upper Landing, a distinctly **closed** northern roof window/dormer with glass and frame, separate parents’ bed/bedside cabinet and Hope Chest, preserved but aged furnishings, cobwebs and dust, neutral ambient light and navigable floor. The approved H-G06 aged Great Room image is the above-ground style reference only, not layout. The window-opening action, safe climb and H-R01 roof return, nightstand screwdriver/Gate Handle and Hope Chest Silver Tiny Key all remain native interaction implementation and playtest dependencies.
+
+**Exact approved source:** ImageGen generation `51346c35-1873-4826-9a5c-9c272ea06522`, original `top_down_isometric_3d_rendered_interior_of_a_richl.png`, PNG RGB 1536×1024, **2,089,586 bytes**, SHA256 `aa35b9cd39aeecd7bb614296a7b1bbc4f7583b9ed6f9ea56dc84e61bd311f8fc`, verified locally. Archived in [owner-approved private Drive](https://drive.google.com/file/d/1fwM2HXswTzYcybjPBj1wHFNuWsoH4r66/view?usp=drivesdk). Source is owner-approved artwork **only**; no native Foundry Scene installation, region scripting or player test is claimed here.
+
+Working base-art count **29/45 approved**, 16 remaining before reconciling parallel Chat B changes. **Next Chat A target H-U05 Sophia’s Bedroom**, with new PREPARE-first positive-only prompt, actual approved aged H-G06 example, one render maximum in a turn plus immediate INSPECT, and reject/archival gating.
