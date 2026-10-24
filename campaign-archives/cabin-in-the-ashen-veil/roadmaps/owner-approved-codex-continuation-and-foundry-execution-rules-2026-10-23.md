@@ -115,3 +115,21 @@ Every time a Cabin room art RENDER is initiated:
 5. Source precedence: latest explicit owner canon and room PREPARE → owner-corrected house topology/puzzle design → approved material/style reference → near-pass rejected examples (aesthetic hints only). A west-side entry to H-U07 from H-U02 is binding; H-U08's entrance is concealed within the EAST wall and prayer-gated; any south-wall doorway on Studio base art fails the room PREPARE.
 
 This owner-directed PREPARE gate applies to every new render, including repeat attempts after a failed inspection. It supersedes any stale PREPARE line requiring a separate owner FINAL_INSPECT, because the owner delegated that final art decision to the assistant on 2026-10-24. All other Foundry verification, puzzle canon and safety gates remain.
+
+
+## L. Hard one-image-per-turn cap and authentic fifty-year abandoned interior certification
+
+**Owner's newest explicit decision 2026-10-24:** “Never render two images in a row, it needs a fresh turn to work properly. Really need to harden that ‘abandoned for 50 years’ rule too.” This supersedes any earlier instruction in this file permitting a repaired second render after a FAIL within the current execution turn.
+
+**Maximum ONE newly rendered or edited image per assistant turn.** Inspect its exact pixels in that same turn; if a connection interruption occurs after generation, the immediately resumed work unit finishes the inspection of that exact image and **does not create another image**. The assistant always leaves a checkpoint and waits for the next distinct Codex/user continuation prompt before a second image. Keep the 20-minute timebox, mandatory room PREPARE reread, fresh positive-only prompt, owner-delegated assistant final PASS/FAIL, established side-campaign puzzle canon, owner-created geometry protection, and last-action exact live Codex handoff when the inbound Bridge contract permits it.
+
+**Fifty-year interior certification rubric — every above-ground lodge image must pass all categories:**
+1. Material age: widespread deep scratches/wear/chips, visibly decayed plaster, distressed trim, weathered aged flooring and rubble/debris from a truly unoccupied house.
+2. Decades-long accumulation: settled thick dust, repeated cobwebs along fixtures/corners, leaf/dirt drifts, dead foliage, neglected aging of paintings/candles/metal.
+3. Fabric/furniture age: visibly fraying or torn upholstery, worn carpets/curtains, faded pigment, tarnished metal, antiquated and unmaintained furnishings.
+4. Neutral lighting: evenly distributed natural-neutral diffuse baked illumination at map level, consistent with the **exact approved aged H-G06 Great Room**. Bright window shafts, amber hotspots and theatrical torch/candle illumination fail when baked into the map.
+5. Gameplay readability: still traversable and legible at normal tactical zoom, distinct required puzzle/region fixtures, no narrative secrets or state-dependent rewards prematurely revealed.
+
+Keep technical descriptions of undesirable details in inspection records only; **renderer-facing prompts contain strictly affirmative descriptions of desired visible imagery**. Use H-G06 image as mandatory visual age/neutrality reference each new above-ground room; a near-pass image may be offered concurrently ONLY as arrangement reference, never as topology authority. Basement maps remain excluded from this style rule, not from their own documented standard.
+
+**Latest H-U07 continuation:** Interrupted immediately after new image generation `ba5bd27a-a04c-4ece-b0b1-8cab213779d6`; resume exact existing pixels at `/mnt/data/abandoned_painter_s_atelier_map.png` and complete final INSPECT without rerendering. Original H-U07 PREPARE: west entry to H-U02, continuous SOUTH and EAST; Sune altar, mirror mount and 027 clue, H-U08 secret behind EAST wall. This continuation makes no Foundry changes on FAIL.
