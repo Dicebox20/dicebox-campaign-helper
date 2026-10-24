@@ -1,0 +1,7 @@
+# H-U02 Upper Landing V005 — owner-confirmed final art PASS
+
+2026-10-24. Assistant same-turn INSPECT PASS and owner replied **Approved**. Source original ImageGen **d5b24dbb-10dd-4b5f-8e04-6a3c0f8229d3**, `top_down_isometric_plan_view_of_an_atmospheric_de.png`, RGB **1536×1024**, **2,225,259 bytes**, locally verified SHA256 **14aa003e4e03bd5246f9e0adaf25c4287669216bd2374edf0755e015a4f08d9e**. Exact original archived in [owner-approved private Drive](https://drive.google.com/file/d/1oaBgZdRaODGwqa15U9KMDmRTTL1OS-4B/view).
+
+Room has a **southeast staircase descending SOUTH**, a top/north doorway, clear traversable east and west thresholds, a closed northeast attic hatch, open circulation, severely aged but recognizable furnishing finishes and neutral ambient shading. The approved aged H-G06 Great Room was the style source only. **Owner-confirmed ART PASS.** Attic hatch remains **locked until Carriage Ladder Hook** and is not a permanently open vertical stair. Actual individual room destinations, multiple west/southwest room connections, native regions, stair/portal landings, locked hatch behavior and non-GM player tests remain **not implemented/not verified** by art approval. No native Foundry writes or scene installation claimed.
+
+Chat A exclusive H-U02 under [12/12 two-chat split](../roadmaps/two-chat-24-remaining-map-handoff-2026-10-24.md). Approved inventory after H-U02 was 26/45, subsequently H-U01 V001 increments to 27/45, subject to Chat B independent reconciliation.
