@@ -1,0 +1,19 @@
+# H-U07 V016 — PREPARE-first, fresh independently authored one-render prompt
+
+**2026-10-24, Pacific.** Reviewed the latest H-U07 PREPARE v1 (including 2026-10-24 supersession), verified the locked West/Upper Landing connection, South/East boundary, the 3 puzzle-interaction fixtures, the hidden H-U08 rule, and the authoritative owner-approved H-G06 aged Great Room precedent. One render maximum this work turn, immediate pixel inspection, assistant final PASS/FAIL. Each new prompt abandons the old. The actual image-facing prompt below contains only desired visual elements.
+
+## Image-facing prompt
+
+A new, original portrait-format orthographic fantasy tabletop battlemap viewed from directly overhead at 90 degrees, showing a single long rectangular upstairs painter's studio inside a manor abandoned for FIFTY YEARS. Four heavy soot-charcoal timber-and-stone perimeter walls frame the map over a black exterior. The WEST/LEFT wall contains one large traversable central doorway with a light stone threshold continuing to a few visible flagstones immediately outside on the left; substantial uninterrupted wall sections extend toward both corners. The SOUTH/BOTTOM wall forms a completely SOLID, CONTINUOUS horizontal timber-capped masonry boundary from southwest to southeast corner, with old dusty drawers nestled along its inner surface. The EAST/RIGHT wall is a solid continuous decorated old-plaster boundary. Most of the room is open navigable herringbone floor with clear paths between THREE BIG, DISTINCT QUEST OBJECTS:
+
+1. In the UPPER-LEFT stands a large simple carved vanity. Above its tabletop rises a VACANT OVAL BRASS ORNAMENT FRAME consisting of clearly visible empty curved retaining claws around faded BURGUNDY VELVET BACKING; a narrow tray of dull antique cosmetic bottles rests below it.
+2. In the UPPER-RIGHT hangs a very large gilded old CHEST PORTRAIT showing a SMALL LOCKED IRON-BOUND WOODEN CHEST painted on burgundy cloth, with the NUMERALS 027 boldly and legibly painted directly across the pictured chest. The framed numbered-chest portrait is a dominant, independently readable object.
+3. At the CENTER OF THE EAST/RIGHT WALL stands an intimate but prominent devotional SUNE ALTAR with one LARGE SCULPTED FIVE-PETAL STONE ROSE, crimson-worn cloth, prayer book, two dull votive bowls, and wilted flowers. The sculpted rose rises clearly above the altar table and is immediately recognizable.
+
+A small artist's easel with a faded landscape canvas, one paintbrush palette and a weathered low worktable occupy the middle on a ragged olive-burgundy rug. The rest of the floor remains generous and open.
+
+Match the exact approved owner H-G06 Aged Great Room image as the physical material and color example: half a century of thick undisturbed gray dust, discolored flaking plaster, extensive lacy cobwebs, dry old leaf drifts, weathered and split wood, frayed threadbare fabrics, darkened stained oak, dead shriveled greenery, tarnished brass, chipped masonry, faded dusty colors. The entire room is rendered with perfectly UNIFORM NEUTRAL DIFFUSE AMBIENT EXPOSURE from corner to corner, soft gray natural illumination on every floorboard and fixture, grounded dark-umber/charcoal/muted-burgundy palette. Beautiful painterly top-down VTT map detail, clearly delineated wall caps and puzzle-object silhouettes.
+
+## Independent inspector checklist (outside image-facing prompt)
+
+Assess exactly one west-wall opening, continuous south and east, no shown H-U08 route, clearly VACANT velvet mirror fitting, painting depicts numbered chest with 027 ON CHEST, east-wall independent Sune stone rose shrine, drastic 50-year deterioration comparable H-G06, strictly neutral even ambient baked lighting, practical orthographic 90° VTT floor. If any hard gate fails, final FAIL; preserve exact PNG checksum and no Foundry installation.
