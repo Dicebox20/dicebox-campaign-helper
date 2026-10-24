@@ -1,0 +1,45 @@
+# Cabin in the Ashen Veil — Durable Foundry/Puzzle Handoff
+**Recorded:** 2026-10-24. **Scope:** this conversation's latest owner-authorized decisions and observed implementation evidence. **Authority:** newer explicit owner messages supersede older documents; art approval is not gameplay verification.
+
+## Active owner request at handoff
+Build a *clean, reliable puzzle installation plan* using established PREPARE → INSPECT → BUILD → STAGE → INJECT → VERIFY → CATALOGUE, clickable interactions with physically measured Regions, independent discovery Regions, GM-authoritative state, non-GM playtesting, and low chance of softlocks. Session-one objective: playable through first Aqueduct Crooked Man chase, bidirectional return via SG-07 well, safe recovery for captured characters. Owner then requested this durable handoff and chat transcript in repository.
+
+## Verified LIVE evidence (2026-10-24)
+- Dicebox Bridge persistent PowerShell works; Foundry 14.367, dnd5e 5.3.3 at local port 30000. Chrome-for-Testing utility harness exposed a verified `/game` GM session for `cabin-in-the-ashen-veil`. The harness's native `macro` operation requires game.ready, isGM and exact world ID. Its `evaluate`/Playwright control is privileged; allowlisted, bounded, identity-checked probes used. No reliance on raw world database.
+- Exactly **32 live Scenes** in this world at prebuild snapshot. Before Region creation, **15 Regions** total: EXT-01 has 8, H-G06 Great Room has 7. Just **one existing executeScript RegionBehavior** on H-G06 Fireplace; all other Scene Regions 0. Five additional measured Region footprints were created by GM Macros and verified via live readback; now **20 Regions, 1 behavior** (latest verified snapshot; do not infer subsequent changes). Existing 15 Regions and owner Walls preserved.
+- Created: SG-05 `Mosaic Discovery - North Statue` region `L15BdSqcbCOLPnIN` (macro `Macro.AVW228oYajM2e2pc`), polygon [2000,720,2320,720,2320,825,2000,825] on 4320×2880 approved map. **Inert geometry only** until four-bust solved and separate puzzle Tile/Region script verified.
+- Four bust regions via macro `Macro.Ivh7g6fyaPQnVDLj`, **all behaviorless**: SG-07 SW Rose `0JAM9urrHnAxVUgM`, [1440,700,1780,700,1780,1030,1440,1030]; SG-03 NE Star `BfKhb34dSEfVTf2e`, [2920,350,3320,350,3320,820,2920,820]; SG-01 NW Moon `gksvZIqj8jWdqzn7`, [1290,680,1860,680,1860,1410,1290,1410]; SG-09 SE Sun `BrugKqcQyDImUvwt`, [1800,1360,2210,1360,2210,1840,1800,1840]. Macro receipts + exact polygons recorded in `builds/live-foundry-measured-region-install-checkpoint-2026-10-24.md`. Four-bust order SW→NE→NW→SE. New Regions are NOT working puzzles.
+
+## Key missing maps / world gaps
+Foundry preflight enumerated 32 existing Scenes and approved background paths. Standalone approved artwork is NOT equal to installed Scene. Some essential house Scenes absent as native docs, including H-G05 Study, H-G09 Rear Family Room, EXT-03 Donovan Shack, H-U05 Sophia Bedroom, Studio. Make a coverage matrix for ~45 planned map targets; read current Chat B art approvals before assuming all approved. H-G02 Foyer, H-G06 Great Room, Grove, Bath, Pond and Aqueduct are among currently present scenes. Do not invent teleport positions on absent scenes.
+
+## Binding logic and exclusions
+- SG-05 one standing Sune statue; four busts on independent Grove corners. After sequence solve, visible **3×3 mosaic Tile** at north/rear pedestal and independently a once-per-player discovery Region that only gives a message; a player explicitly clicks Tile for 3×3 puzzle (fixed initial board 4,5,1 / 2,empty,8 / 7,6,3; solved 1,2,3 / 4,5,6 / 7,8,empty). Rewards 1000 gp bag and Brass Study Key are distinct once-only claims. No Region auto-solve or auto-loot.
+- NW late second Crooked Man chase anchored SG-01, not obsolete SG-05 NW bust; distinct from early Winder step.
+- H-U05 Spine Mosaic reveals small Gond half compartment **within Sophia's Bedroom**, no H-U06, no spine room teleport. Six books: Knight 1442, Moonlight 1443, Felix 1444, Whispers 1445, Clockmaker 1446, Princess Penelope 1447 (only on bed after Veil).
+- Study Brass Study Key opens both inner west Great Room door and independent north exterior door to EXT-08 (approved final fence-flush private yard). No Study↔Family shortcut. Study 587 gives Shack Sluice Crank. Pond+BATH paired drainage, retrieve Weathered Key and Bath Screwdriver; screwdriver repairs Parents drawer for Gate Handle. Roof clock hour/minute hands at 12:00 yields Replacement Gear. Both gear+handle open Aqueduct.
+- Distinct Protection prayer → Candle Workshop Wick, and Devotion prayer → Sune emblem. Rufus both eyes → source → Aqueduct charge triggers Crimson Veil **once**. Four Vault predicates: basement access, charged source, Gond half, Sune half; Vault yields Keystone, NOT Bowl. Reliquary Bowl + 027 pellet open OUTER Undercroft; Keystone inner door after.
+- No essential single-roll gate, consume-on-failure, unrecoverable transition, scene reset duplicate, or mandatory player Macro. Distinct Region discovery on movement and explicit click actions. Local, GM-authoritative persistent versioned quest state and guarded semantic actions, deterministic puzzles, player-private notices, clear retry feedback, recoverable GM-only repair, and stage-hydration.
+- Adopt exact current installed Dicebox/Regionwright UI contract **after probing installed module**. Foundry native Region enter is NOT a click event; use verified click target Tile/interaction adapter + Region proximity guard. Must actually test as non-GM PC before calling functional.
+- Previously generated puzzle artwork included Sune rose/sun sliding relief, three-digit chest, roof clock and sluice mechanism. These are **unapproved draft art unless owner says PASS**. Sliding artwork currently depicts nine full tiles/no empty slot and a sun portrait; mechanical 3×3 requires eight tiles+one gap and approved family picnic, so do not wire uncorrected image as final.
+
+## Reliable installation procedure (proposed, not completed)
+0. Read controlling project rules and current source; pin exact world, GM, Scene/background hashes, dims, UUIDs, existing Regions/Walls, current code/modules. Snapshot before each bounded write.
+1. For each Scene, measure visible fixtures on approved raster + map scale. Create precise **discovery Regions** and **interaction eligibility Regions** separately; add clickable Tile/UI targets only where actually supported; preserve owner-created shapes. Every object gets stable semantic key, version, scene ID, polygon and intent.
+2. Author a single reusable, typed, GM-only puzzle action dispatcher with allowlisted actions, state/permission/range validation, idempotent one-time reward reservations, guarded rehydration, transaction/readback receipts and GM-only recovery. Avoid arbitrary page code or broad execute-as-GM.
+3. Use a **single-use installation Macro** per bounded Scene/feature group: preflight → dry-run plan and duplicate/conflict diff → explicit owner-authorized execute → immediate readback and rollback manifest (never automatically delete owner content). Build/verify native script behavior and clickable Tile behavior in a canary before bulk rollout.
+4. Install reachable NAV Regions/doors before interaction chains, using paired exact Scene UUID and safe landing; prove returnability. Then install early progression through Aqueduct first chase. Do not activate unfinished late triggers.
+5. Tests: entering discovery as each PC, standing-inside when reveal occurs, explicit click reachable, wrong order, duplicate click, refresh/GM disconnect, multi-PC state, impossible items, teleport near walls, water-stage token safety, permissions as non-GM, GM recovery, and full arrival-to-midgame replay.
+6. Separate statuses ART_APPROVED, GEOMETRY_PREPARED, BEHAVIOR_INSTALLED, VERIFIED_GM, VERIFIED_PLAYER, PLAYTESTED. Preserve exact receipts in repository.
+
+## Outstanding work at handoff
+- Complete reliable installation plan with detailed schemas, acceptance test matrix, staging dependency waves and failure response; no such full plan yet committed before this handoff.
+- Continue measured Region geometry and missing Scene creation, but not blindly; existing five inert new Regions verified.
+- Full original 1321-entry chat capture returned empty contents via GitHub connector; cannot assert comprehensive verbatim reconciliation. This handoff references a *reconstructed current-chat transcript*, not a complete ChatGPT export.
+
+## Source pointers
+`campaign-archives/cabin-in-the-ashen-veil/authoritative-puzzle-design-and-foundry-implementation-spec-v1-2026-10-22.md`
+`campaign-archives/cabin-in-the-ashen-veil/sg-05-revealed-mosaic-region-prepare-v5-2026-10-23.md`
+`campaign-archives/cabin-in-the-ashen-veil/builds/live-foundry-measured-region-install-checkpoint-2026-10-24.md`
+`campaign-archives/cabin-in-the-ashen-veil/builds/session-one-midgame-playable-slice-and-softlock-guards-2026-10-24.md`
+`campaign-archives/cabin-in-the-ashen-veil/builds/prebuild-puzzle-continuity-audit-and-staging-roadmap-2026-10-24.md`
