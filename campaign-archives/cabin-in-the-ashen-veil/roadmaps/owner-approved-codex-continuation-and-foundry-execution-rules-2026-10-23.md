@@ -87,3 +87,10 @@ For Cabin in the Ashen Veil only, the owner's previous **separate explicit final
 - **Still binding:** The owner-delegated final map-art PASS/FAIL after same-turn RENDER+INSPECT, 20-minute timeboxing, exact Foundry identity checks, puzzle canon, private player thought hints, 50-year-aged H-G06 style and basement exemption.
 
 **Permanent direction within the scope of this side-campaign project until the owner revises it.**
+
+
+## I. Owner-mandated independent fresh prompt before every render
+
+**Owner directive 2026-10-24:** “add this to each turn, remind yourself to create an entirely new prompt for each render, and abandon the previous. Continue to your next step.”
+
+For **every RENDER operation**, generate a **fresh, standalone prompt** anew from the current PREPARE, owner-approved architecture/geometry, room-specific features and established 50-year-aged Great Room look. **Discard preceding failed prompts, candidate image compositions and iterative “change this previous render” instructions as inputs** for a new RENDER. The next image should not automatically inherit a previous failed layout. Each prompt must uniquely identify the room's positive visible requirements, single-level floorplan, right entrance and physical fixtures. Use inclusion-only render wording, then inspect the actual new output **in the same ≤20-minute work turn**, record final owner-delegated PASS/FAIL against immutable room/puzzle requirements, and persist prompt ID, text/provenance and output ID/checksum. A failure must remain unapproved and uninstalled. If editing rather than generating, explicitly classify that work as an EDIT/COMPOSITE rather than claiming a fresh independent RENDER.
