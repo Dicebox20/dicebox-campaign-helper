@@ -1,0 +1,90 @@
+{
+  "schema": "dicebox.campaign-conversation-handoff/v1",
+  "record_id": "CAV-CHAT-2026-10-23-MAP-ART-GREAT-ROOM-LIMIT-01",
+  "title": "Cabin in the Ashen Veil — long map art session, scale and renderer workflow handoff",
+  "project": "Dicebox Campaign Helper",
+  "campaign": "Cabin in the Ashen Veil",
+  "classification": "historical conversation/decision provenance; campaign scoped",
+  "event_local_date": "2026-10-23",
+  "event_timezone": "America/Los_Angeles",
+  "capture_utc_date": "2026-10-24",
+  "thread_id": null,
+  "raw_full_transcript_available": false,
+  "transcript_completeness": "partially reconstructed; exact available owner utterances; missing assistant/tool turns explicitly acknowledged",
+  "user_utterances_visible_count": 48,
+  "archive_branch": "codex/cabin-ashen-veil-recovery",
+  "source_repository": "Dicebox20/dicebox-campaign-helper",
+  "authority_order": [
+    "AGENTS.md and KB",
+    "owner-accepted campaign scene PREPARE and plan",
+    "owner-approved exact image receipts",
+    "inspection/research records",
+    "this historical transcript"
+  ],
+  "latest_owner_request": "Create transcript, metadata, medeta repository entry, and strong continuation handoff.",
+  "latest_map_focus": "H-G06 Great Room; two rejected generated candidates, geometry-first research complete, redesign decision pending.",
+  "current_workflow_status": "PREPARE_RECONCILIATION_BLOCKED_FOR_MORE_GREAT_ROOM_RENDERING",
+  "approved_base_maps": 18,
+  "planned_base_maps": 45,
+  "remaining_base_maps": 27,
+  "remaining_breakdown": {
+    "cabin_rooms_and_roof": 21,
+    "estate": 3,
+    "undercroft_and_finale": 3
+  },
+  "remaining_estate_ids": [
+    "EXT-03",
+    "EXT-04",
+    "EXT-08"
+  ],
+  "canonical_original_house_floorplan": "Blackwood Estate Cabin Gondian BWE-027, approved design reference",
+  "nominal_great_room_ft": {
+    "width": 14,
+    "depth": 16
+  },
+  "physical_size_revision_owner_approved": false,
+  "required_story_anchors": [
+    "north Family Room portal",
+    "south Foyer portal",
+    "west Dining portal",
+    "east locked Study portal",
+    "east upstairs stairs to Upper Landing",
+    "hearth",
+    "grandfather clock",
+    "architectural blueprint table",
+    "separate 027 lockbox"
+  ],
+  "current_critical_issue": "14x16ft Great Room is too small at physical 5ft-token scale for all mandatory features; text-to-image invents geometry; establish measured coherent larger house scale before art generation",
+  "accepted_art_archive": "ashen_veil_approved_maps_2026-10-23_v10_foyer_approved.zip",
+  "approved_foyer": {
+    "filename": "rustic_foyer_and_hidden_stairwell_map.png",
+    "gen_id": "f6fb7e04-0835-4481-906f-35c83bb8502d",
+    "sha256": "34c5e7dab1193893ef6e557745e85821362f76741464567a73120a689cb6b1e8"
+  },
+  "rejected_great_room_generations": [
+    "a7c8bbde-a17c-4329-9997-bf7eea9c4069",
+    "f4150872-49e3-4a7a-ac4a-d5d2ceb01ff3"
+  ],
+  "auxiliary_great_room_trial_documented_in_register": "d2e018d9-14f3-41eb-a687-7b002dc3b765",
+  "foundry_art_verified": false,
+  "foundry_world_modified_in_handoff": false,
+  "product_stage_changed": false,
+  "transcript_file": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-23-map-production-available-transcript.md",
+  "handoff_file": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-23-strong-continuation-handoff.md",
+  "medeta_file": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-23-medeta-knowledge-entry.md",
+  "database_delta": "database/seed.d/2026-10-23-ashen-veil-map-chat-handoff.sql",
+  "status": "ARCHIVED_WITH_DECLARED_TRANSCRIPT_GAPS",
+  "tags": [
+    "dicebox",
+    "campaign",
+    "map-creation",
+    "great-room",
+    "ai-battlemap",
+    "tom-cartos",
+    "geometry-first",
+    "representative-walls",
+    "inclusion-only",
+    "handoff",
+    "transcript"
+  ]
+}
