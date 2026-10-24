@@ -46,3 +46,12 @@ Use current [all-scene PREPARE v2 ledger](../all-scene-preparation-register-v2-2
 ## 5. Technical hint-channel canary evidence
 
 Read-only Foundry 14.367 native API inspection on the existing H-G06 test token confirmed `canvas.hud.bubbles.say(token, message, {cssClasses,requireVisible,pan})` exists. That local API shows an ephemeral overhead bubble, subject to core `chatBubbles` setting; it does not by itself create a persistent chat log. For actual non-GM recipients, execute only on their selected client, not solely on elected GM. Avoid showing private hint text to everyone via `game.socket` broadcast. A real player-client proof remains pending.
+
+
+## 6. Subsequent owner-approved workflow and visual gates (2026-10-24)
+
+**Latest owner overrides supersede the older acceptance wording above, without changing this room's story canon.** Before **each** H-U07 or other Cabin map RENDER, re-read this PREPARE and its house-v2 portal/puzzle dependencies. The assistant now has owner-delegated **FINAL art PASS/FAIL** authority after immediate same-turn RENDER+INSPECT, and no second owner image signoff is required for a passing map. The 20-minute limit and proof/receipts remain.
+
+Every new image render uses a **newly written affirmative-only prompt**, referencing only features desired in the image. Rejected prompts/images cannot supply the next prompt. However, a *near-pass* rejected image may serve as **a visual arrangement exemplar**, alongside the **exact owner-approved H-G06 Great Room as the binding 50-year abandonment/neutral-light style exemplar**. The near-pass is never authority for architecture or item reveal. Later final image PASS cannot override H-U07's required WEST doorway to Upper Landing, continuous SOUTH boundary, EAST disguised workshop boundary, vacant Ornate Mirror mount, painted chest clue `027`, and separate Sune shrine/prayer gating. A generated SOUTH opening does **not** represent access to H-U08 and must be rejected.
+
+**2026-10-24 PREPARE reread checkpoint:** Verified this document's upper-floor and east-workshop location, normal western Studio entry and separate prayer-gated H-U08 reveal against the owner directive. The latest near-pass is the upright Studio with clearly legible 027 chest portrait and east rose shrine, gen `82087a56-2adc-4846-b5ed-a91dc4a95b6f`, but it failed due a south doorway and unqualified lighting. Use only its useful room fixture composition as an image example; all design requirements remain from this PREPARE and the aged Great Room.
