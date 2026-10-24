@@ -25,3 +25,21 @@ The owner has **not** called INSPECT for this attempt. It remains a trial and do
 At INSPECT, review four cardinal access points and ≥5ft token passability, coherent single-room boundary, side staircase leading up, separate north hearth, clock, readable independent blueprint and 027 fixture, neutral diffuse painterly base lighting, no image text, overhead representative walls, and correct proportions. A user-requested clean restart of prompt does not waive any geometry/lighting hard gate.
 
 **Effects:** None; no accepted art, house-plan, actor/item, scene, Wall, Region, or workflow product-stage write. Preserve previous attempt receipts without recycling rejected generations into the next image prompt.
+
+
+---
+
+## Follow-up INSPECT: OWNER-IDENTIFIED PROMPT REGRESSION — REDO
+
+**Owner verdict/context:** After requesting INSPECT, the owner said: **"that was actually a regression, you started using the previuos style of prompt again."** This statement explicitly rejects the latest render's compositional/style direction and corrects the assistant's earlier claim of a successful clean restart. The attempt is now `INSPECT REDO`, **not** INSPECT PENDING/PASS.
+
+**Failure diagnosis:**
+- The generation direction returned to a generic lavish, symmetrical fantasy manor/lounge recipe emphasizing abundant furnishings and decorative storytelling rather than the prepared geometry-first Great Room with inclusion-only, authorized fixtures.
+- The image recreates several rejected stylistic hall tropes: conspicuous central decorative rug and seating, rich warm candle/flame lighting, over-decorated perimeter, and visible peripheral floor patches. It is not a valid fresh semantic composition merely because the model generated new image bytes.
+- Specific scene errors: the north doorway's central approach conflicts with a centrally placed blazing hearth; the grandfather clock is not recognizably represented; map is landscape `1402×1122px` although the study Candidate B is portrait `35×40ft`; and the modeled painting has no source-matched 5-ft/6-ft door-aperture proof. The eastern side staircase, cardinal openings, blueprint drawing table and independent southwest chest are improvement signals only, **not sufficient to override** the hard failures.
+- The visible image-generation request's genre/compositional wording appears to repeat older unsuccessful approaches. The image provider returned an empty `prompt` field in its generation metadata, so the **exact internal provider-side effective prompt cannot be independently verified**. Do not claim provider prompt isolation or a verified fully independent authoring pass.
+- The user's prior scoped direction remains binding: **no text in the image**; do not name destination rooms on the map; say **"side staircase leading up"** rather than over-directing a giant formal central stair. Required four directional openings are physical portal anchors, not painted labels.
+
+**Corrective workflow gate:** Abandon this attempt's original text/raster as positive inputs. Before any later `RENDER`, use the canonical H-G06 PREPARE card and approved DiceBox style standards only, draft a *new independently composed, short, positive-only feature capsule* that authorizes solely required architectural and object elements, and verify that the chosen rendering approach can hold structural spatial relationships. Maintain distinct north passage/hearth, four >=5ft usable portal openings, accessible east staircase, clock, blueprint table, and separate `027` housing. Put failed-object lists and QA diagnoses strictly outside any generation description. Do not claim a prompt process fix without independent preflight.
+
+**State:** `INSPECT REDO — OWNER REGRESSION`; `18/45` owner-approved art remains; approved Foyer immutable; no H-G06 art promotion, revised house blueprint approval, Foundry changes, or runtime verification. The prior section's historical INSPECT PENDING designation reflected its status immediately after generation and is superseded by this dated follow-up.
