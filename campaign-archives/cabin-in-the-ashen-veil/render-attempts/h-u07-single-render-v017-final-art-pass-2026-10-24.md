@@ -54,3 +54,10 @@ ImageGen was called **exactly once** in this turn. Returned fresh generation `be
 `RENDERED`: original V017 PNG exactly as hashed.  
 `INSPECTED`: full image and actual five inspection crops.  
 `NOT_IMPLEMENTED/UNVERIFIED`: H-U07 Foundry Scene, entry/secret passage behaviors, item key rewards, player testing.  
+
+
+## 6. Post-approval native Foundry preflight result (same bounded turn)
+
+After archiving the exact approved PNG, a single read-only preflight `cav-hu07-v017-approved-art-native-readonly-stage-preflight-20261024-v1` attempted to inspect the exact local Foundry `/game` origin and world via the established Chrome for Testing Dev Playwright CDP utility harness. The host-returned Node result was `BLOCKED browserType.connectOverCDP: connect ECONNREFUSED 127.0.0.1:9224`. The PowerShell wrapper itself reported execution, but the CDP endpoint refused connections. **No authoritative live Foundry Scene readback occurred and no Foundry write/injection was attempted.** Next BUILD turn must re-probe exact world and elected GM, check H-U07 uniqueness and source transfer route before any staging or scene creation. Maintain distinction between **ART PASS** and **NATIVE INSTALL UNVERIFIED**.
+
+A reproducible KB seed exists as `database/seed.d/2026-10-24-cav-hu07-v017-visual-pass-build-pending.sql`, but was not executed against the live knowledge database this turn.
