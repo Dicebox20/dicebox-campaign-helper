@@ -89,8 +89,8 @@
       "density": "DOMESTIC",
       "inspectionHardGates": "Exactly two inner doors (Great Room, Basement) and one outside entry; no main-upstairs stair or living-room bypass; practical Medium-token arrival",
       "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
-      "designNotes": "",
-      "status": "CONTENT_PREPARED_GEOMETRY_RECONCILIATION_PENDING"
+      "designNotes": " 2026-10-23 Foyer generated gen 01f031c9-1052-415b-9e3d-b6211a132546 and inspected REDO: tall vertical wall-cutaways violate representative cap style, east basement door visibly open/exposed stairs instead of Weathered-Key locked closed state, excessive exterior framing. This first attempt did NOT receive fresh same-turn PREPARE before rendering; log workflow miss, do not retrospectively mark prepare PASS. See ./h-g02-foyer-attempt1-style-and-geometry-inspection-redo-2026-10-23.md. Do not use failed prompt/raster for REDO.",
+      "status": "RENDERED_INSPECT_REDO_ATTEMPT1_STYLE_CAP_AND_PREMATURE_BASEMENT_DOOR"
     },
     {
       "id": "H-G03",
