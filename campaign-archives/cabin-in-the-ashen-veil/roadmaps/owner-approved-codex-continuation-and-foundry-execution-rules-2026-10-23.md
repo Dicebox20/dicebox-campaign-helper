@@ -51,3 +51,16 @@ Owner gives **broad, ongoing permission to change their Foundry VTT world as nee
 
 **Next work unit at adoption:** `H-U07` Dahlia Art Studio aged interior candidate render against owner-approved H-G06 example; mark art unapproved until owner's explicit INSPECT PASS. Previous H-G06 Fireplace GM-handler native canary (three conditions) and private bubble local canary passed; non-GM player canary is still pending.
 
+
+
+## F. Owner-approved mandatory combined RENDER + INSPECT turn
+
+**Owner directive 2026-10-24:** “another persistent rule, every render turn must include inspect, we're combining them.”
+
+Every Cabin in the Ashen Veil **render turn** must incorporate **both RENDER and immediate INSPECT in the same 20-minute bounded execution turn**, with enough remaining time for evidence and crash-safe handoff. Never generate an image, defer inspection to the next turn and consider that render turn completed. The assistant must evaluate **the exact generated pixels** against the authoritative room's topology (walls, entrances, stairs, floor level, scene-specific fixtures, locked puzzle clues, spoilers), appropriate aging/style and readable 90° overhead geometry. The turn ends with an explicit `PASS`, `REDO` or `BLOCKED` inspection result, reasons and provenance. Revisions in the same turn each require their own immediate inspection.
+
+A same-turn assistant `PASS` is **not** a substitute for the owner's explicit artwork acceptance when the owner has reserved FINAL_INSPECT. The combined work unit can result in `ASSISTANT_INSPECT_PASS / OWNER_INSPECT_PENDING`, `ASSISTANT_INSPECT_REDO`, or `BLOCKED`; only owner-passed exact art proceeds to native BUILD/INJECT. This changes the scheduling/granularity of the workflow rather than overriding the owner's design authority, chronology, existing Foundry Wall/Region work or 20-minute limit. Other campaigns are not automatically affected.
+
+New effective campaign pipeline: `PREPARE → [RENDER + immediate INSPECT in one turn] → owner final approval as applicable → BUILD → STAGE → INJECT → VERIFY → RECEIPT`.
+
+**Next H-U07 task:** Start from the saved geometry-anchored west-door/east-shrine guide, produce one image-conditioned candidate, immediately inspect that exact image for west entrance / continuous south-and-east walls / no Studio staircase / three independent fixture anchors, and file a PASS or REDO in the same turn. Never recycle the earlier three rejected south-door painterly outputs as passable render candidates.
