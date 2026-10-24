@@ -83,14 +83,15 @@
         "coatrack",
         "public front threshold",
         "Great Room door",
-        "separate basement door frame"
+        "separate basement door frame",
+        "east adjacent enclosed descending basement stairwell footprint beyond locked door"
       ],
       "stateAndSeparateAssets": "Weathered-Key basement lock and descending stairs behind real solid door; door states Foundry-owned",
       "density": "DOMESTIC",
-      "inspectionHardGates": "Exactly two inner doors (Great Room, Basement) and one outside entry; no main-upstairs stair or living-room bypass; practical Medium-token arrival",
+      "inspectionHardGates": "BWE-027: Foyer has exactly 3 doors/exits S from front porch, N to Great Room, E locked to adjacent enclosed basement stairwell. The latter must be drawn as an actual descending staircase in separate EAST footprint behind solid locked east door, not empty floor or upstairs staircase. Upstairs main stairs belong H-G06. Strict overhead representative thin wall caps, neutral diffuse base, practical token landing.",
       "sourceAuthority": "Owner-selected Gondian ground-floor survey + House Layout v2",
-      "designNotes": " 2026-10-23 Foyer generated gen 01f031c9-1052-415b-9e3d-b6211a132546 and inspected REDO: tall vertical wall-cutaways violate representative cap style, east basement door visibly open/exposed stairs instead of Weathered-Key locked closed state, excessive exterior framing. This first attempt did NOT receive fresh same-turn PREPARE before rendering; log workflow miss, do not retrospectively mark prepare PASS. See ./h-g02-foyer-attempt1-style-and-geometry-inspection-redo-2026-10-23.md. Do not use failed prompt/raster for REDO.",
-      "status": "RENDERED_INSPECT_REDO_ATTEMPT1_STYLE_CAP_AND_PREMATURE_BASEMENT_DOOR"
+      "designNotes": " 2026-10-23 Foyer generated gen 01f031c9-1052-415b-9e3d-b6211a132546 and inspected REDO: tall vertical wall-cutaways violate representative cap style, east basement door visibly open/exposed stairs instead of Weathered-Key locked closed state, excessive exterior framing. This first attempt did NOT receive fresh same-turn PREPARE before rendering; log workflow miss, do not retrospectively mark prepare PASS. See ./h-g02-foyer-attempt1-style-and-geometry-inspection-redo-2026-10-23.md. Do not use failed prompt/raster for REDO. 2026-10-23 second candidate gen 3930c77b-ef2b-49d0-a8a2-97bece1d7c12 improves walls and uses closed east door but is also REDO: owner identified missing enclosed staircase east of door. Compare owner-attached BWE-027. See ./h-g02-foyer-attempt2-inspection-missing-basement-stairs-2026-10-23.md. No approval/count increment.",
+      "status": "RENDERED_INSPECT_REDO_ATTEMPT2_OWNER_FOUND_MISSING_BASEMENT_STAIRWELL"
     },
     {
       "id": "H-G03",
