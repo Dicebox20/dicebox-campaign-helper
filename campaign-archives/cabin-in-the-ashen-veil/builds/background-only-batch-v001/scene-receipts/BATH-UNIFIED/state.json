@@ -1,0 +1,15 @@
+{
+  "schema": "dicebox-scene-automation-state/v1",
+  "sceneKey": "BATH-UNIFIED",
+  "stage": "INSTALLED_BACKGROUND_ONLY",
+  "status": "READY_FOR_OWNER_WALLS",
+  "sceneId": "CAVBATHScene0001",
+  "buildSHA256": "324793204b42f0d6525b17a11063dd9baa9d06d5f1c257b2725d75b60f485617",
+  "latestReceipt": "verification-receipt.json",
+  "requiresOwnerWallPlacement": true,
+  "pending": [
+    "Owner check aspect/scale before wall placement",
+    "Owner places Walls/doors",
+    "Add regions/puzzles in separate approved phase"
+  ]
+}

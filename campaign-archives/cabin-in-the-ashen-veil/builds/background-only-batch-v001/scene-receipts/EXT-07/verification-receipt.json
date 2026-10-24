@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "EXT-07",
+  "sceneId": "CAVEXT07Scene001",
+  "sceneUuid": "Scene.CAVEXT07Scene001",
+  "buildSHA256": "fd07c32e2fe883045e66665e8b8f84d7a7a723de6ab4d985361fd4af1f9f5d02",
+  "sourceArtSHA256": "37553712296cda930faf7f8a1439cc2026bfdf498e5fddae3d0ca2185f687ba8",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/ext-07_boathouse_clearing_edited_owner-approved.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

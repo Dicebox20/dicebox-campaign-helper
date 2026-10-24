@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-01",
+  "sceneId": "CAVSG01Scene0001",
+  "sceneUuid": "Scene.CAVSG01Scene0001",
+  "buildSHA256": "15a3f901a2b42700641e662e005be09bc524c8d5a2550fdb255a7bbaeadf9aaa",
+  "sourceArtSHA256": "29772eb5c2fba227d64a6b2f9baa761001b674fc60588393c4fb03e81a48c883",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-01_northwest-grove-corner_moon-bust_owner-pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

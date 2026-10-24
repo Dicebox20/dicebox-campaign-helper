@@ -1,0 +1,315 @@
+{
+  "schema": "cav-background-batch-install-receipts/v1",
+  "status": "COMPLETE_VERIFIED",
+  "completed": 18,
+  "expected": 18,
+  "items": [
+    {
+      "key": "AQ-01",
+      "id": "CAVAQ01Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/aqueducts_unified_gondian_owner-approved.png",
+      "buildSha256": "4ab1319b053fa7b0884d3806285ef5b95aa6fcaafe86c74859962dbbfb464689",
+      "persisted": {
+        "exists": true,
+        "id": "CAVAQ01Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/aqueducts_unified_gondian_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "BATH-UNIFIED",
+      "id": "CAVBATHScene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_owner-approved.png",
+      "buildSha256": "324793204b42f0d6525b17a11063dd9baa9d06d5f1c257b2725d75b60f485617",
+      "persisted": {
+        "exists": true,
+        "id": "CAVBATHScene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "EXT-02",
+      "id": "CAVEXT02Scene001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/ext-02_pond_full_owner-approved.png",
+      "buildSha256": "ea541840fcf907149ddfcfda2468c3ad46da56871a9eb72b19b750a78f1f33ac",
+      "persisted": {
+        "exists": true,
+        "id": "CAVEXT02Scene001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/ext-02_pond_full_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "EXT-05",
+      "id": "CAVEXT05Scene001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/ext-05_forgotten-gazebo_owner-approved.png",
+      "buildSha256": "6b54d9ed93ed261dfde54e6d8de4ad0afb576a12383add084dbffcca95e62dd7",
+      "persisted": {
+        "exists": true,
+        "id": "CAVEXT05Scene001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/ext-05_forgotten-gazebo_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "EXT-06",
+      "id": "CAVEXT06Scene001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/ext-06_greenhouse-interior_owner-approved.png",
+      "buildSha256": "6c162b2cb9fddb1bdd08cc6e4b2f9e1f98a7270b6ce120f3312ad8205cae1995",
+      "persisted": {
+        "exists": true,
+        "id": "CAVEXT06Scene001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/ext-06_greenhouse-interior_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "EXT-07",
+      "id": "CAVEXT07Scene001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/ext-07_boathouse_clearing_edited_owner-approved.png",
+      "buildSha256": "fd07c32e2fe883045e66665e8b8f84d7a7a723de6ab4d985361fd4af1f9f5d02",
+      "persisted": {
+        "exists": true,
+        "id": "CAVEXT07Scene001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/ext-07_boathouse_clearing_edited_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "EXT-TRAIL",
+      "id": "CAVTRAILScene001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/ext-trail_grove-bathhouse-fork_pass.png",
+      "buildSha256": "e431fdf97a970dfd8df44d447d1351a4062bfe395743879b1f88a4c83e73418f",
+      "persisted": {
+        "exists": true,
+        "id": "CAVTRAILScene001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/ext-trail_grove-bathhouse-fork_pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "FM-UNIFIED",
+      "id": "CAVFM01Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/fm-unified_northwestern-forest-maze_owner-approved.png",
+      "buildSha256": "3760e2ea5cd9cb252ba71ba9f0c2e68e8c17b129011ca912579b79626b2a7a78",
+      "persisted": {
+        "exists": true,
+        "id": "CAVFM01Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/fm-unified_northwestern-forest-maze_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "H-G02",
+      "id": "CAVHG02Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/h-g02_foyer_with_basement-stairwell_owner-approved.png",
+      "buildSha256": "2d9e2bc74c94b65ea10ce4b48f862de21d22a62328b3210746561d39bdb9b3ea",
+      "persisted": {
+        "exists": true,
+        "id": "CAVHG02Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/h-g02_foyer_with_basement-stairwell_owner-approved.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-01",
+      "id": "CAVSG01Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-01_northwest-grove-corner_moon-bust_owner-pass.png",
+      "buildSha256": "15a3f901a2b42700641e662e005be09bc524c8d5a2550fdb255a7bbaeadf9aaa",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG01Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-01_northwest-grove-corner_moon-bust_owner-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-02",
+      "id": "CAVSG02Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-02_northern-processional-walk_owner-pass.png",
+      "buildSha256": "f68b2cb608a879ac5067d8357bc36eab0045281eac00fbd1beb8dc2de9cf7b5c",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG02Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-02_northern-processional-walk_owner-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-03",
+      "id": "CAVSG03Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-03_northeast-grove-corner_owner-pass.png",
+      "buildSha256": "b92421aca2cb5bb8a399b0bad5070235e9c619fc2c66e2be4463e994ff5c5bc7",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG03Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-03_northeast-grove-corner_owner-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-04",
+      "id": "CAVSG04Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-04_western-entrance_visual-pass.png",
+      "buildSha256": "22227f42de05af7a6703bc5f39a7161d1cd079ccbe54fdf0790018557cdfd2e2",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG04Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-04_western-entrance_visual-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-05",
+      "id": "CAVSG05Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-05_memorial-clearing_dormant_owner-pass.png",
+      "buildSha256": "0c7f5c5be916240ab84aa51e7666759727a9118553a3d2147c2fbe06ba005887",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG05Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-05_memorial-clearing_dormant_owner-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-06",
+      "id": "CAVSG06Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-06_eastern-grove-walk_four-way_owner-pass.png",
+      "buildSha256": "7af09c9f9db1c35dea74809ed195398e911a62190fd36b42fa10cdb0a31caabc",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG06Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-06_eastern-grove-walk_four-way_owner-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-07",
+      "id": "CAVSG07Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-07_southwest-grove-corner_bust_visual-pass.png",
+      "buildSha256": "ed2bfea401e3b0d9e2fd417c13e9150cef280bf9626f89bb9a7e74669d30a067",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG07Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-07_southwest-grove-corner_bust_visual-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-08",
+      "id": "CAVSG08Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-08_southern-grove-walk_visual-pass.png",
+      "buildSha256": "ad402f6757d71998ce59ea0ec8058df8a6d7d6d632348721149adea941927205",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG08Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-08_southern-grove-walk_visual-pass.png"
+      },
+      "reason": null
+    },
+    {
+      "key": "SG-09",
+      "id": "CAVSG09Scene0001",
+      "status": "READY_FOR_OWNER_WALLS",
+      "verified": true,
+      "source": "Maps/cabin-in-the-ashen-veil/sg-09_southeast-grove-corner_sun-bust_owner-accepted.png",
+      "buildSha256": "cf2aa8ebcc0912a9cc1dc27880493ced101b3a5ac9cde36282af493918e849f4",
+      "persisted": {
+        "exists": true,
+        "id": "CAVSG09Scene0001",
+        "levels": 1,
+        "walls": 0,
+        "regions": 0,
+        "path": "Maps/cabin-in-the-ashen-veil/sg-09_southeast-grove-corner_sun-bust_owner-accepted.png"
+      },
+      "reason": null
+    }
+  ],
+  "timestamp": "2026-10-24T05:04:37.587Z"
+}

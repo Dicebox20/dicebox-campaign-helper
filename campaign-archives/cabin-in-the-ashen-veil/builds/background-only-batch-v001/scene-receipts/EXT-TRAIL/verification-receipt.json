@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "EXT-TRAIL",
+  "sceneId": "CAVTRAILScene001",
+  "sceneUuid": "Scene.CAVTRAILScene001",
+  "buildSHA256": "e431fdf97a970dfd8df44d447d1351a4062bfe395743879b1f88a4c83e73418f",
+  "sourceArtSHA256": "b0b089f80314d6715f72caba7096fc796083da93ac0ad8ffd6a7ddbb891cb4a3",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/ext-trail_grove-bathhouse-fork_pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

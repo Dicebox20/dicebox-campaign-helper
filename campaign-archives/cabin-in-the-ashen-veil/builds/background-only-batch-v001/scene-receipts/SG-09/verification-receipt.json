@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-09",
+  "sceneId": "CAVSG09Scene0001",
+  "sceneUuid": "Scene.CAVSG09Scene0001",
+  "buildSHA256": "cf2aa8ebcc0912a9cc1dc27880493ced101b3a5ac9cde36282af493918e849f4",
+  "sourceArtSHA256": "681806132e2b56fa75c72224751aac8658ebd52c76e6a076b2dea6bb557ce7a9",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-09_southeast-grove-corner_sun-bust_owner-accepted.png",
+  "sceneSizePixels": [
+    2880,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "H-G02",
+  "sceneId": "CAVHG02Scene0001",
+  "sceneUuid": "Scene.CAVHG02Scene0001",
+  "buildSHA256": "2d9e2bc74c94b65ea10ce4b48f862de21d22a62328b3210746561d39bdb9b3ea",
+  "sourceArtSHA256": "34c5e7dab1193893ef6e557745e85821362f76741464567a73120a689cb6b1e8",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/h-g02_foyer_with_basement-stairwell_owner-approved.png",
+  "sceneSizePixels": [
+    960,
+    720
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-03",
+  "sceneId": "CAVSG03Scene0001",
+  "sceneUuid": "Scene.CAVSG03Scene0001",
+  "buildSHA256": "b92421aca2cb5bb8a399b0bad5070235e9c619fc2c66e2be4463e994ff5c5bc7",
+  "sourceArtSHA256": "cc5a181651827fa43d8ac603c92733105d30fbf1c3d48f2d08230e2e98dc56e4",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-03_northeast-grove-corner_owner-pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

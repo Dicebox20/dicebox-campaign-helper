@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "EXT-05",
+  "sceneId": "CAVEXT05Scene001",
+  "sceneUuid": "Scene.CAVEXT05Scene001",
+  "buildSHA256": "6b54d9ed93ed261dfde54e6d8de4ad0afb576a12383add084dbffcca95e62dd7",
+  "sourceArtSHA256": "9750d785c05078bec3014f00ea139f37b6d6340560a475c2a462cb9673cf45b2",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/ext-05_forgotten-gazebo_owner-approved.png",
+  "sceneSizePixels": [
+    1920,
+    1440
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-05",
+  "sceneId": "CAVSG05Scene0001",
+  "sceneUuid": "Scene.CAVSG05Scene0001",
+  "buildSHA256": "0c7f5c5be916240ab84aa51e7666759727a9118553a3d2147c2fbe06ba005887",
+  "sourceArtSHA256": "3fd75029dd49397d93b6d580a9695fbce5e89766bcf2105ec7934e58f800edfc",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-05_memorial-clearing_dormant_owner-pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

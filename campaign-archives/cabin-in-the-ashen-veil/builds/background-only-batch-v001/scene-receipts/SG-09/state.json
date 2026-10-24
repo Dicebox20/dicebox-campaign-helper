@@ -1,0 +1,15 @@
+{
+  "schema": "dicebox-scene-automation-state/v1",
+  "sceneKey": "SG-09",
+  "stage": "INSTALLED_BACKGROUND_ONLY",
+  "status": "READY_FOR_OWNER_WALLS",
+  "sceneId": "CAVSG09Scene0001",
+  "buildSHA256": "cf2aa8ebcc0912a9cc1dc27880493ced101b3a5ac9cde36282af493918e849f4",
+  "latestReceipt": "verification-receipt.json",
+  "requiresOwnerWallPlacement": true,
+  "pending": [
+    "Owner check aspect/scale before wall placement",
+    "Owner places Walls/doors",
+    "Add regions/puzzles in separate approved phase"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-08",
+  "sceneId": "CAVSG08Scene0001",
+  "sceneUuid": "Scene.CAVSG08Scene0001",
+  "buildSHA256": "ad402f6757d71998ce59ea0ec8058df8a6d7d6d632348721149adea941927205",
+  "sourceArtSHA256": "e033ccb7b5acbcbb7b444259ab336810b9d1760ddd161fe87a8447add3b58ce8",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-08_southern-grove-walk_visual-pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

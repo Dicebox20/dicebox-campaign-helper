@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-07",
+  "sceneId": "CAVSG07Scene0001",
+  "sceneUuid": "Scene.CAVSG07Scene0001",
+  "buildSHA256": "ed2bfea401e3b0d9e2fd417c13e9150cef280bf9626f89bb9a7e74669d30a067",
+  "sourceArtSHA256": "921beb78d4c27de0f52b6dfb9d42c6302e95916632ce661b44eb5bd491a3009b",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-07_southwest-grove-corner_bust_visual-pass.png",
+  "sceneSizePixels": [
+    2880,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

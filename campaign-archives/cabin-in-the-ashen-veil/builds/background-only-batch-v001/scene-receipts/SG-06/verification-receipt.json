@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-06",
+  "sceneId": "CAVSG06Scene0001",
+  "sceneUuid": "Scene.CAVSG06Scene0001",
+  "buildSHA256": "7af09c9f9db1c35dea74809ed195398e911a62190fd36b42fa10cdb0a31caabc",
+  "sourceArtSHA256": "780cc6b499ed01e67bcdc2a00a98dacdbb4a03e5fb31358489d5eba2ab0db1b3",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-06_eastern-grove-walk_four-way_owner-pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

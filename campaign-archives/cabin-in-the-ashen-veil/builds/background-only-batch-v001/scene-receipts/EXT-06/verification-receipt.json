@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "EXT-06",
+  "sceneId": "CAVEXT06Scene001",
+  "sceneUuid": "Scene.CAVEXT06Scene001",
+  "buildSHA256": "6c162b2cb9fddb1bdd08cc6e4b2f9e1f98a7270b6ce120f3312ad8205cae1995",
+  "sourceArtSHA256": "f69bdc6b5e85da64cf3f3a7c53fd223346d58b5fba1d40e703f290d2d074a6cf",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/ext-06_greenhouse-interior_owner-approved.png",
+  "sceneSizePixels": [
+    1920,
+    1440
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

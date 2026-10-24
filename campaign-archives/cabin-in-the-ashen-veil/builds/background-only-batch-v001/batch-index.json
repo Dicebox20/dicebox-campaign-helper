@@ -1,0 +1,448 @@
+{
+  "schema": "cav-approved-map-background-batch/v1",
+  "status": "STAGED_VALIDATED",
+  "count": 18,
+  "entries": [
+    {
+      "key": "AQ-01",
+      "sceneId": "CAVAQ01Scene0001",
+      "build": "AQ_01.md",
+      "buildSha256": "4ab1319b053fa7b0884d3806285ef5b95aa6fcaafe86c74859962dbbfb464689",
+      "art": {
+        "sceneId": "CAVAQ01Scene0001",
+        "key": "AQ-01",
+        "title": "AQ-01 - Unified Aqueduct Network",
+        "manifestId": "AQ-UNIFIED-01",
+        "path": "Maps/cabin-in-the-ashen-veil/aqueducts_unified_gondian_owner-approved.png",
+        "sha256": "8b91c5c941a0b37231a83b062fb62adfc501c6c33401e9a1d6c2cab75444842c",
+        "bytes": 3426362,
+        "dims": [
+          1448,
+          1086
+        ]
+      },
+      "scale": [
+        48,
+        36
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "BATH-UNIFIED",
+      "sceneId": "CAVBATHScene0001",
+      "build": "BATH_UNIFIED.md",
+      "buildSha256": "324793204b42f0d6525b17a11063dd9baa9d06d5f1c257b2725d75b60f485617",
+      "art": {
+        "sceneId": "CAVBATHScene0001",
+        "key": "BATH-UNIFIED",
+        "title": "BATH - Unified Bathhouse Surface",
+        "manifestId": "BATH-UNIFIED-01",
+        "path": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_owner-approved.png",
+        "sha256": "a878d19046b4ba79adbac36c620a53c8648fe5cfed1504469978fae0a353b132",
+        "bytes": 3891297,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        18,
+        12
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "EXT-02",
+      "sceneId": "CAVEXT02Scene001",
+      "build": "EXT_02.md",
+      "buildSha256": "ea541840fcf907149ddfcfda2468c3ad46da56871a9eb72b19b750a78f1f33ac",
+      "art": {
+        "sceneId": "CAVEXT02Scene001",
+        "key": "EXT-02",
+        "title": "EXT-02 - Pond and Sluice Gate",
+        "manifestId": "EXT-02-FULL",
+        "path": "Maps/cabin-in-the-ashen-veil/ext-02_pond_full_owner-approved.png",
+        "sha256": "f4b397db05c688f4f152eb63d60d9d708530a7d93fecaa9ab028084fed51a28c",
+        "bytes": 3897886,
+        "dims": [
+          1448,
+          1086
+        ],
+        "alt": {
+          "path": "Maps/cabin-in-the-ashen-veil/ext-02_pond_drained_owner-approved.png",
+          "sha256": "e29bdbb680613ead432593c2dbf3f32452ebb1c1c8bd968be5144a88dea2903a",
+          "bytes": 3899788,
+          "dims": [
+            1448,
+            1086
+          ]
+        }
+      },
+      "scale": [
+        48,
+        36
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "EXT-05",
+      "sceneId": "CAVEXT05Scene001",
+      "build": "EXT_05.md",
+      "buildSha256": "6b54d9ed93ed261dfde54e6d8de4ad0afb576a12383add084dbffcca95e62dd7",
+      "art": {
+        "sceneId": "CAVEXT05Scene001",
+        "key": "EXT-05",
+        "title": "EXT-05 - Forgotten Gazebo",
+        "manifestId": "EXT-05",
+        "path": "Maps/cabin-in-the-ashen-veil/ext-05_forgotten-gazebo_owner-approved.png",
+        "sha256": "9750d785c05078bec3014f00ea139f37b6d6340560a475c2a462cb9673cf45b2",
+        "bytes": 4029887,
+        "dims": [
+          1448,
+          1086
+        ]
+      },
+      "scale": [
+        16,
+        12
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "EXT-06",
+      "sceneId": "CAVEXT06Scene001",
+      "build": "EXT_06.md",
+      "buildSha256": "6c162b2cb9fddb1bdd08cc6e4b2f9e1f98a7270b6ce120f3312ad8205cae1995",
+      "art": {
+        "sceneId": "CAVEXT06Scene001",
+        "key": "EXT-06",
+        "title": "EXT-06 - Greenhouse Interior",
+        "manifestId": "EXT-06",
+        "path": "Maps/cabin-in-the-ashen-veil/ext-06_greenhouse-interior_owner-approved.png",
+        "sha256": "f69bdc6b5e85da64cf3f3a7c53fd223346d58b5fba1d40e703f290d2d074a6cf",
+        "bytes": 4053079,
+        "dims": [
+          1448,
+          1086
+        ]
+      },
+      "scale": [
+        16,
+        12
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "EXT-07",
+      "sceneId": "CAVEXT07Scene001",
+      "build": "EXT_07.md",
+      "buildSha256": "fd07c32e2fe883045e66665e8b8f84d7a7a723de6ab4d985361fd4af1f9f5d02",
+      "art": {
+        "sceneId": "CAVEXT07Scene001",
+        "key": "EXT-07",
+        "title": "EXT-07 - Boathouse Clearing",
+        "manifestId": "EXT-07",
+        "path": "Maps/cabin-in-the-ashen-veil/ext-07_boathouse_clearing_edited_owner-approved.png",
+        "sha256": "37553712296cda930faf7f8a1439cc2026bfdf498e5fddae3d0ca2185f687ba8",
+        "bytes": 3482768,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "EXT-TRAIL",
+      "sceneId": "CAVTRAILScene001",
+      "build": "EXT_TRAIL.md",
+      "buildSha256": "e431fdf97a970dfd8df44d447d1351a4062bfe395743879b1f88a4c83e73418f",
+      "art": {
+        "sceneId": "CAVTRAILScene001",
+        "key": "EXT-TRAIL",
+        "title": "EXT-TRAIL - Grove Bathhouse Fork",
+        "manifestId": "EXT-TRAIL",
+        "path": "Maps/cabin-in-the-ashen-veil/ext-trail_grove-bathhouse-fork_pass.png",
+        "sha256": "b0b089f80314d6715f72caba7096fc796083da93ac0ad8ffd6a7ddbb891cb4a3",
+        "bytes": 4248433,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "FM-UNIFIED",
+      "sceneId": "CAVFM01Scene0001",
+      "build": "FM_UNIFIED.md",
+      "buildSha256": "3760e2ea5cd9cb252ba71ba9f0c2e68e8c17b129011ca912579b79626b2a7a78",
+      "art": {
+        "sceneId": "CAVFM01Scene0001",
+        "key": "FM-UNIFIED",
+        "title": "FM - Northwestern Forest Maze",
+        "manifestId": "FM-UNIFIED-01",
+        "path": "Maps/cabin-in-the-ashen-veil/fm-unified_northwestern-forest-maze_owner-approved.png",
+        "sha256": "9ff3c83d0e906581b93fe701bd920f1d6e2899b5ce9700b298637f591ff6b7cf",
+        "bytes": 4211161,
+        "dims": [
+          1448,
+          1086
+        ]
+      },
+      "scale": [
+        48,
+        36
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "H-G02",
+      "sceneId": "CAVHG02Scene0001",
+      "build": "H_G02.md",
+      "buildSha256": "2d9e2bc74c94b65ea10ce4b48f862de21d22a62328b3210746561d39bdb9b3ea",
+      "art": {
+        "sceneId": "CAVHG02Scene0001",
+        "key": "H-G02",
+        "title": "H-G02 - Foyer and Basement Stairwell",
+        "manifestId": "H-G02",
+        "path": "Maps/cabin-in-the-ashen-veil/h-g02_foyer_with_basement-stairwell_owner-approved.png",
+        "sha256": "34c5e7dab1193893ef6e557745e85821362f76741464567a73120a689cb6b1e8",
+        "bytes": 2597211,
+        "dims": [
+          1448,
+          1086
+        ]
+      },
+      "scale": [
+        8,
+        6
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-01",
+      "sceneId": "CAVSG01Scene0001",
+      "build": "SG_01.md",
+      "buildSha256": "15a3f901a2b42700641e662e005be09bc524c8d5a2550fdb255a7bbaeadf9aaa",
+      "art": {
+        "sceneId": "CAVSG01Scene0001",
+        "key": "SG-01",
+        "title": "SG-01 - Northwest Grove Corner",
+        "manifestId": "SG-01",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-01_northwest-grove-corner_moon-bust_owner-pass.png",
+        "sha256": "29772eb5c2fba227d64a6b2f9baa761001b674fc60588393c4fb03e81a48c883",
+        "bytes": 3608114,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-02",
+      "sceneId": "CAVSG02Scene0001",
+      "build": "SG_02.md",
+      "buildSha256": "f68b2cb608a879ac5067d8357bc36eab0045281eac00fbd1beb8dc2de9cf7b5c",
+      "art": {
+        "sceneId": "CAVSG02Scene0001",
+        "key": "SG-02",
+        "title": "SG-02 - Northern Processional Walk",
+        "manifestId": "SG-02",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-02_northern-processional-walk_owner-pass.png",
+        "sha256": "ca5f806cecec8e4a30f62d07d6595c645ce02c55824f300a4babc6ad9aa235be",
+        "bytes": 3715589,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-03",
+      "sceneId": "CAVSG03Scene0001",
+      "build": "SG_03.md",
+      "buildSha256": "b92421aca2cb5bb8a399b0bad5070235e9c619fc2c66e2be4463e994ff5c5bc7",
+      "art": {
+        "sceneId": "CAVSG03Scene0001",
+        "key": "SG-03",
+        "title": "SG-03 - Northeast Grove Corner",
+        "manifestId": "SG-03",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-03_northeast-grove-corner_owner-pass.png",
+        "sha256": "cc5a181651827fa43d8ac603c92733105d30fbf1c3d48f2d08230e2e98dc56e4",
+        "bytes": 3774928,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-04",
+      "sceneId": "CAVSG04Scene0001",
+      "build": "SG_04.md",
+      "buildSha256": "22227f42de05af7a6703bc5f39a7161d1cd079ccbe54fdf0790018557cdfd2e2",
+      "art": {
+        "sceneId": "CAVSG04Scene0001",
+        "key": "SG-04",
+        "title": "SG-04 - Western Grove Entrance",
+        "manifestId": "SG-04",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-04_western-entrance_visual-pass.png",
+        "sha256": "a34706750bf3805f3554a8f72ed1fb34acc168757014425c7c9eccd5c870b696",
+        "bytes": 4085464,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-05",
+      "sceneId": "CAVSG05Scene0001",
+      "build": "SG_05.md",
+      "buildSha256": "0c7f5c5be916240ab84aa51e7666759727a9118553a3d2147c2fbe06ba005887",
+      "art": {
+        "sceneId": "CAVSG05Scene0001",
+        "key": "SG-05",
+        "title": "SG-05 - Memorial Clearing",
+        "manifestId": "SG-05",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-05_memorial-clearing_dormant_owner-pass.png",
+        "sha256": "3fd75029dd49397d93b6d580a9695fbce5e89766bcf2105ec7934e58f800edfc",
+        "bytes": 3920898,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-06",
+      "sceneId": "CAVSG06Scene0001",
+      "build": "SG_06.md",
+      "buildSha256": "7af09c9f9db1c35dea74809ed195398e911a62190fd36b42fa10cdb0a31caabc",
+      "art": {
+        "sceneId": "CAVSG06Scene0001",
+        "key": "SG-06",
+        "title": "SG-06 - Eastern Grove Walk",
+        "manifestId": "SG-06",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-06_eastern-grove-walk_four-way_owner-pass.png",
+        "sha256": "780cc6b499ed01e67bcdc2a00a98dacdbb4a03e5fb31358489d5eba2ab0db1b3",
+        "bytes": 4054854,
+        "dims": [
+          1448,
+          1086
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-07",
+      "sceneId": "CAVSG07Scene0001",
+      "build": "SG_07.md",
+      "buildSha256": "ed2bfea401e3b0d9e2fd417c13e9150cef280bf9626f89bb9a7e74669d30a067",
+      "art": {
+        "sceneId": "CAVSG07Scene0001",
+        "key": "SG-07",
+        "title": "SG-07 - Southwest Grove Corner",
+        "manifestId": "SG-07",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-07_southwest-grove-corner_bust_visual-pass.png",
+        "sha256": "921beb78d4c27de0f52b6dfb9d42c6302e95916632ce661b44eb5bd491a3009b",
+        "bytes": 4180705,
+        "dims": [
+          1254,
+          1254
+        ]
+      },
+      "scale": [
+        24,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-08",
+      "sceneId": "CAVSG08Scene0001",
+      "build": "SG_08.md",
+      "buildSha256": "ad402f6757d71998ce59ea0ec8058df8a6d7d6d632348721149adea941927205",
+      "art": {
+        "sceneId": "CAVSG08Scene0001",
+        "key": "SG-08",
+        "title": "SG-08 - Southern Grove Walk",
+        "manifestId": "SG-08",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-08_southern-grove-walk_visual-pass.png",
+        "sha256": "e033ccb7b5acbcbb7b444259ab336810b9d1760ddd161fe87a8447add3b58ce8",
+        "bytes": 3850446,
+        "dims": [
+          1536,
+          1024
+        ]
+      },
+      "scale": [
+        36,
+        24
+      ],
+      "validation": "PASS"
+    },
+    {
+      "key": "SG-09",
+      "sceneId": "CAVSG09Scene0001",
+      "build": "SG_09.md",
+      "buildSha256": "cf2aa8ebcc0912a9cc1dc27880493ced101b3a5ac9cde36282af493918e849f4",
+      "art": {
+        "sceneId": "CAVSG09Scene0001",
+        "key": "SG-09",
+        "title": "SG-09 - Southeast Grove Corner",
+        "manifestId": "SG-09",
+        "path": "Maps/cabin-in-the-ashen-veil/sg-09_southeast-grove-corner_sun-bust_owner-accepted.png",
+        "sha256": "681806132e2b56fa75c72224751aac8658ebd52c76e6a076b2dea6bb557ce7a9",
+        "bytes": 3943144,
+        "dims": [
+          1254,
+          1254
+        ]
+      },
+      "scale": [
+        24,
+        24
+      ],
+      "validation": "PASS"
+    }
+  ]
+}

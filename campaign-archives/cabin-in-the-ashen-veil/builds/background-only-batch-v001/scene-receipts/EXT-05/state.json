@@ -1,0 +1,15 @@
+{
+  "schema": "dicebox-scene-automation-state/v1",
+  "sceneKey": "EXT-05",
+  "stage": "INSTALLED_BACKGROUND_ONLY",
+  "status": "READY_FOR_OWNER_WALLS",
+  "sceneId": "CAVEXT05Scene001",
+  "buildSHA256": "6b54d9ed93ed261dfde54e6d8de4ad0afb576a12383add084dbffcca95e62dd7",
+  "latestReceipt": "verification-receipt.json",
+  "requiresOwnerWallPlacement": true,
+  "pending": [
+    "Owner check aspect/scale before wall placement",
+    "Owner places Walls/doors",
+    "Add regions/puzzles in separate approved phase"
+  ]
+}

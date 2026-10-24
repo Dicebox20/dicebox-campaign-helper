@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "FM-UNIFIED",
+  "sceneId": "CAVFM01Scene0001",
+  "sceneUuid": "Scene.CAVFM01Scene0001",
+  "buildSHA256": "3760e2ea5cd9cb252ba71ba9f0c2e68e8c17b129011ca912579b79626b2a7a78",
+  "sourceArtSHA256": "9ff3c83d0e906581b93fe701bd920f1d6e2899b5ce9700b298637f591ff6b7cf",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/fm-unified_northwestern-forest-maze_owner-approved.png",
+  "sceneSizePixels": [
+    5760,
+    4320
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

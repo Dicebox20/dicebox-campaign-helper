@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-02",
+  "sceneId": "CAVSG02Scene0001",
+  "sceneUuid": "Scene.CAVSG02Scene0001",
+  "buildSHA256": "f68b2cb608a879ac5067d8357bc36eab0045281eac00fbd1beb8dc2de9cf7b5c",
+  "sourceArtSHA256": "ca5f806cecec8e4a30f62d07d6595c645ce02c55824f300a4babc6ad9aa235be",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-02_northern-processional-walk_owner-pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

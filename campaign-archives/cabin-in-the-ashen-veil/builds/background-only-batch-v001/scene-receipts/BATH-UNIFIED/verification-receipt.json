@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "BATH-UNIFIED",
+  "sceneId": "CAVBATHScene0001",
+  "sceneUuid": "Scene.CAVBATHScene0001",
+  "buildSHA256": "324793204b42f0d6525b17a11063dd9baa9d06d5f1c257b2725d75b60f485617",
+  "sourceArtSHA256": "a878d19046b4ba79adbac36c620a53c8648fe5cfed1504469978fae0a353b132",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_owner-approved.png",
+  "sceneSizePixels": [
+    2160,
+    1440
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

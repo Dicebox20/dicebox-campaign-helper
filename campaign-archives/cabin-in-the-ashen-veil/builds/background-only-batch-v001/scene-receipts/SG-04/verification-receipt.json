@@ -1,0 +1,24 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "SG-04",
+  "sceneId": "CAVSG04Scene0001",
+  "sceneUuid": "Scene.CAVSG04Scene0001",
+  "buildSHA256": "22227f42de05af7a6703bc5f39a7161d1cd079ccbe54fdf0790018557cdfd2e2",
+  "sourceArtSHA256": "a34706750bf3805f3554a8f72ed1fb34acc168757014425c7c9eccd5c870b696",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/sg-04_western-entrance_visual-pass.png",
+  "sceneSizePixels": [
+    4320,
+    2880
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": null
+}

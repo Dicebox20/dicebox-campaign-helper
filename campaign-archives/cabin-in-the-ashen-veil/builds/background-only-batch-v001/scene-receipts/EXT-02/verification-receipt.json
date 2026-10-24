@@ -1,0 +1,32 @@
+{
+  "schema": "cav-background-only-scene-receipt/v1",
+  "status": "READY_FOR_OWNER_WALLS",
+  "evidenceState": "NATIVE_FOUNDRY_POSTCREATE_REREAD",
+  "sceneKey": "EXT-02",
+  "sceneId": "CAVEXT02Scene001",
+  "sceneUuid": "Scene.CAVEXT02Scene001",
+  "buildSHA256": "ea541840fcf907149ddfcfda2468c3ad46da56871a9eb72b19b750a78f1f33ac",
+  "sourceArtSHA256": "f4b397db05c688f4f152eb63d60d9d708530a7d93fecaa9ab028084fed51a28c",
+  "sourceArtPath": "Maps/cabin-in-the-ashen-veil/ext-02_pond_full_owner-approved.png",
+  "sceneSizePixels": [
+    5760,
+    4320
+  ],
+  "gridProfile": "battlemap-120-gridless",
+  "wallsInstalled": 0,
+  "doorsInstalled": 0,
+  "regionsInstalled": 0,
+  "regionBehaviorsInstalled": 0,
+  "provisionalScale": true,
+  "ownerPlacesWalls": true,
+  "ownerInspects": true,
+  "alternateArt": {
+    "path": "Maps/cabin-in-the-ashen-veil/ext-02_pond_drained_owner-approved.png",
+    "sha256": "e29bdbb680613ead432593c2dbf3f32452ebb1c1c8bd968be5144a88dea2903a",
+    "bytes": 3899788,
+    "dims": [
+      1448,
+      1086
+    ]
+  }
+}
