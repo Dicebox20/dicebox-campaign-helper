@@ -1,0 +1,36 @@
+{
+  "schema": "dicebox.cav.usability-question/v1",
+  "date": "2026-10-26",
+  "ownerQuestion": "Can you give me an upate on how much of the chain is usable?",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "508406a87f4d58df480da5461bd053a64924d820",
+    "report": "docs/cabin-ashen-veil/chain-usability-baseline-2026-10-26.md"
+  },
+  "estimate": {
+    "substantialBuildFractionApproximate": 0.4,
+    "metric": "qualitative portion of major puzzle progression with meaningful source/native integration, not audited node count",
+    "verifiedPlayableFraction": null,
+    "fullNonGMEndToEndTests": 0,
+    "sourceTestsPass": 83
+  },
+  "stages": {
+    "early": "largely installed, structural/not playtested",
+    "middle": "partial; Sluice can handle future original Crank fit+drain, Aqueduct/chase staged disabled, Boiler enabled untested, Rosewater disabled",
+    "late": "major remaining Region/controller/inventory integrations"
+  },
+  "liveLast": {
+    "foundry30000": true,
+    "chromeCDP9224": false,
+    "world": "cabin-in-the-ashen-veil",
+    "electedGM": "Gamemaster 1",
+    "lastRosewaterStrictSourceVerified": true
+  },
+  "ownerExplicitDeferrals": [
+    "Full non-GM player gameplay tests until later phase",
+    "Crooked Man Actor/token and active chase activation until final testing"
+  ],
+  "safety": "no native world edits, no quest-state writes in this status turn",
+  "fidelity": "available-message reconstruction, not full native transcript"
+}
