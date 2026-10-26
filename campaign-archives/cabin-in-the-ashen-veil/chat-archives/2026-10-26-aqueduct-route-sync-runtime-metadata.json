@@ -1,0 +1,113 @@
+{
+  "schema": "dicebox.cav.route-sync-outage/v1",
+  "recordedDate": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerDirective": "Lets keep going",
+  "policy": {
+    "turnLimitMinutes": 25,
+    "progression": "player prerequisite",
+    "fullGameplayTesting": "deferred",
+    "crookedManActor": "deferred by owner until gameplay testing",
+    "changeLogAndHandoffEachTurn": true
+  },
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "435bb84d7da1f77de994398b4ef3f8008312e55a",
+    "newScript": "modules/regionwright/scripts/studio-cav-aqueduct-routing.js",
+    "newTest": "tests/cav-aqueduct-routing.test.mjs",
+    "changedScripts": [
+      "studio-campaign.js",
+      "studio-cav-water-controller.js",
+      "studio-cav-first-chase.js"
+    ],
+    "tests": {
+      "pass": 31,
+      "fail": 0
+    },
+    "installedSourceHashesMatched": true
+  },
+  "priorNativeReadback": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "pondRegions": 8,
+    "aqueductRegions": 8,
+    "forestMazeRegions": 4,
+    "pondTokens": 0,
+    "aqueductTokens": 0,
+    "forestTokens": 0,
+    "entryDisabled": true,
+    "aqReturnDisabled": true,
+    "aqToWellDisabled": true,
+    "fmToAqDisabled": true,
+    "chaseTriggerDisabled": true,
+    "source": "cav-route-stage-commissioning-exact-native-audit-20261026.json"
+  },
+  "route": {
+    "api": "game.modules.get('regionwright').api.campaign.cabin.aqueductRoutes",
+    "methods": [
+      "describe",
+      "commissionForGameplay",
+      "unlockWellAfterChase"
+    ],
+    "commissionRequires": [
+      "real NPC Crooked Man Actor and nonplaceholder token art",
+      "explicit GM confirmation",
+      "both original gate parts installed",
+      "Pond/Bath drained and Sluice transaction done",
+      "no AQ occupants",
+      "exact native topology"
+    ],
+    "gmCommissionCalled": false,
+    "forestWellDependsOn": "first chase verified success or certified captured PC",
+    "nativePortalsActivated": 0
+  },
+  "sluice": {
+    "authority": "cavPondBathWaterState",
+    "closeOrder": [
+      "reserve",
+      "disable Pond entrance",
+      "disable AQ return",
+      "Pond full artwork",
+      "Trail Bathhouse full route",
+      "commit full state",
+      "route receipt",
+      "transaction done"
+    ],
+    "openOrder": [
+      "reserve",
+      "Pond drained artwork",
+      "Trail Bathhouse drained route",
+      "enable AQ return",
+      "enable Pond entrance",
+      "commit drained state",
+      "route receipt",
+      "transaction done"
+    ],
+    "wellReentryIndependentOfPondWater": true,
+    "abortAndReconcileOnPartialState": true
+  },
+  "outage": {
+    "firstFailure": "GM page reload timed out 19000ms",
+    "secondFailure": "subsequent exact GM readback outer-timeout; receipt inspected",
+    "bridgeRecoveredBy": "official harmless bridge_smoke_test",
+    "observedNoListenerPorts": [
+      9224,
+      30000
+    ],
+    "lastLocalCheck": "2026-10-26T05:22:48-07:00",
+    "foundryHTTP": "unreachable",
+    "chromeCDP": "unreachable",
+    "initialFreePhysicalGB": 1.63,
+    "totalPhysicalGB": 15.94,
+    "laterFreePhysicalGB": 1.9,
+    "rootCause": "unconfirmed",
+    "foundryRestartAttempted": false,
+    "devChromeRestartAttempted": false,
+    "liveRuntimeAfterSourceDeploy": "UNVERIFIED",
+    "foundryWorldWritesAfterOutage": 0
+  },
+  "next": "diagnose/recover local Foundry and Dev Chrome before any additional world writes; exact GM/module/API/route readback then Rosewater branch",
+  "transcriptFidelity": "available-message reconstruction, not full lossless native export"
+}
