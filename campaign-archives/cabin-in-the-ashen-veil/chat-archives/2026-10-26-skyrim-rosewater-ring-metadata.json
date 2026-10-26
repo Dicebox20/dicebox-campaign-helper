@@ -1,0 +1,60 @@
+{
+  "schema": "dicebox.cav.skyrim-rosewater-handoff/v1",
+  "date": "2026-10-26",
+  "sourceCommit": "829114b1dcb0ecc5205251b3d068975aabebca01",
+  "ownerDirection": "Three rings based on Skyrim rotating dragon claw locks",
+  "canon": {
+    "ringCount": 3,
+    "sectors": 4,
+    "solution": [
+      1,
+      3,
+      2
+    ],
+    "degrees": [
+      90,
+      270,
+      180
+    ],
+    "symbolSetApproved": false,
+    "oneUnifiedBathhouse": true
+  },
+  "native": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "scene": "8yLMRDvxyw58dydh",
+    "region": "CAVBROSEWATER001",
+    "behaviorId": "CAVROSEWATERSCR1",
+    "disabled": true,
+    "binding": "STAGED_DISABLED",
+    "session": null,
+    "originalScrewdriverPreserved": true,
+    "noOtherWorldChanges": true
+  },
+  "tests": {
+    "pass": 79,
+    "fail": 0
+  },
+  "uiSmoke": {
+    "rings": 3,
+    "medallions": 12,
+    "marker": true,
+    "seal": true,
+    "reset": true,
+    "temporaryLabelsOnly": true,
+    "nonplaying": true
+  },
+  "host": {
+    "foundry30000OnlineAt1318": false,
+    "chrome9224OnlineAt1318": false,
+    "cleanPreviewBlockedByDndAnimationsWarning": true
+  },
+  "next": [
+    "Approve four symbols",
+    "Recover elected GM and verify native disabled Behavior",
+    "Inspect clean visual",
+    "Commission only after art and drained-state approvals",
+    "Original Bowl pickup location"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless native transcript"
+}
