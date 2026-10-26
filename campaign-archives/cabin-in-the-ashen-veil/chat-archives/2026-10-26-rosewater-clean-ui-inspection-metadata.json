@@ -66,7 +66,10 @@
     "bytes": 49390,
     "sha256": "B44419BEDCCFA7AA9CC6E31CE99B197484E692820AB0D6DD435631486695C14C",
     "uiCorrection": "Inverse glyph rotation makes labels readable upright",
-    "artApproval": false
+    "artApproval": false,
+    "githubUnapprovedImage": "https://github.com/Dicebox20/regionwright/blob/codex/cav-sune-integration-20261026/docs/cabin-ashen-veil/unapproved-previews/rosewater-dragon-claw-ui-draft-2026-10-26.jpg",
+    "githubArchiveCommit": "b69f0fc8bf2d6ab9c4af6c3ce2298ed507bb53c7",
+    "ownerApproval": false
   },
   "dependencyModal": {
     "provider": "D&D5e Animations",
