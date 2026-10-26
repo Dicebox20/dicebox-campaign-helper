@@ -1,0 +1,81 @@
+{
+  "schema": "dicebox.cav.rosewater-boiler-water-interlock-v1",
+  "ownerMessage": "continue",
+  "localStart": "2026-10-26T10:05:00-07:00",
+  "localCheckpoint": "2026-10-26T10:20:24-07:00",
+  "timezone": "America/Los_Angeles",
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "nativeScenes": 47,
+    "worldItems": 73,
+    "source": "prior read-only cloned root LevelDB",
+    "bath03Present": false,
+    "bath04Present": false
+  },
+  "host": {
+    "foundryPortListening": false,
+    "devChromePortListening": false,
+    "ramFreeGbAtPreflight": 2.87,
+    "foundryRestartAttempted": false,
+    "gmRuntimeReadback": false,
+    "liveFoundryWrites": 0,
+    "outageRootCause": "unknown"
+  },
+  "art": {
+    "approvedDriveFolderId": "1S4Gj3YYWv33PulkBMY5QDnJ64c-oH7P-",
+    "approvedFilesReturned": 16,
+    "approvedBath03Map": false,
+    "approvedBath04Map": false,
+    "bowlImageCandidate": "scrying_bowl_512.png",
+    "bowlCandidateOwnerApproved": false,
+    "conceptDiagramGenerated": true,
+    "conceptDiagramStatus": "unapproved/planning-only, NOT a tactical PNG; speculative estate exit is noncanonical"
+  },
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "6cb7d42460bc13b134f68eb0fe35fa823c1ee281",
+    "changedFiles": [
+      "modules/regionwright/scripts/studio-cav-rosewater-safety.js",
+      "modules/regionwright/scripts/studio-cav-water-controller.js",
+      "tests/cav-rosewater-safety.test.mjs",
+      "tests/cav-rosewater-native-refill-guard.test.mjs",
+      "docs/cabin-ashen-veil/regionwright-puzzle-update-log-2026-10-26.md",
+      "docs/cabin-ashen-veil/rosewater-boiler-static-battlemap-render-brief-2026-10-26.md"
+    ],
+    "testSuite": {
+      "passed": 46,
+      "failed": 0
+    },
+    "liveModuleSourceShaVerified": true
+  },
+  "newGuard": {
+    "refillActionOnly": "close",
+    "noneInstalled": "allow existing behavior",
+    "singleOrDuplicateLowerScene": "deny",
+    "bothEmpty": "allow",
+    "occupiedWithNoVerifiedDryDoor": "deny",
+    "occupiedWithNativeBidirectionalDoorAndVerifiedEstateExit": "allow",
+    "requiresNativeTaggedRegionBehaviors": true,
+    "pressureIndependenceCertificateRequired": true,
+    "noNativeWorldTransactionsPerformed": true
+  },
+  "canon": {
+    "ringAnglesDegrees": [
+      90,
+      270,
+      180
+    ],
+    "bowlUuid": "Item.1n5LONw3nYIy61O9",
+    "vaultReward": "Keystone",
+    "dryServiceDirection": "BATH-04 EAST to BATH-03 WEST",
+    "boilerOnwardExit": "needs owner decision",
+    "boilerWheelSolution": [
+      2,
+      1
+    ],
+    "crookedManActorStillDeferred": true
+  },
+  "next": "Approve static BATH-03 and BATH-04 battlemap art/geometry, regain stable elected GM, install rooms + pressure-independent dry escape, then native ring/hatch/Bowl once-only pickup",
+  "transcriptFidelity": "available-message reconstruction, not a lossless native export"
+}
