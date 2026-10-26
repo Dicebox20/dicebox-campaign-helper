@@ -1,0 +1,71 @@
+{
+  "schema": "dicebox.cav.sluice-original-readiness-live-gm/v1",
+  "date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "Alright, lets contonue",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "462bc1cf9cfad4b2bdcbf4f7a78f828591418e41",
+    "sourceJsChanged": false,
+    "testsPassed": 83,
+    "testsFailed": 0,
+    "artifact": "docs/cabin-ashen-veil/rosewater-sluice-original-prerequisites-live-audit-2026-10-26.md"
+  },
+  "live": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "electedActive": true,
+    "rosewaterSourceStrictProofLoaded": true,
+    "rosewaterStatus": "not-commissioned",
+    "symbolsApproved": [
+      "rose",
+      "sun",
+      "moth",
+      "thorn"
+    ],
+    "behavior": "CAVROSEWATERSCR1",
+    "behaviorDisabled": true,
+    "binding": "STAGED_DISABLED",
+    "session": null,
+    "sluiceProof": {
+      "ready": false,
+      "blockers": [
+        "original-crank-not-installed",
+        "pond-bath-not-committed-drained",
+        "original-sluice-transaction-not-complete"
+      ]
+    },
+    "sluiceRegion": "CAVEXT02SLUICE01",
+    "sluiceNativeBehavior": "CAVEXT02SLCBEH01",
+    "sluiceBehaviorEnabled": true,
+    "sluiceHasPlayerInstallAndOpenCloseScript": true,
+    "sluiceControllerDrainEnabled": true,
+    "crankInstalled": false,
+    "waterStage": null,
+    "transaction": null,
+    "originalCrank": "Item.g3VYdgc1qkgkHGvn",
+    "tokenMoves": 0,
+    "worldWrites": 0
+  },
+  "host": {
+    "foundryPort30000AtEnd": true,
+    "devChrome9224AtEnd": false,
+    "oneReadOnlyExtraScriptFailedSyntaxBeforeBrowser": true,
+    "secondReadOnlyExtraScriptCouldNotConnect": true,
+    "deeperGeometryPortalReadbackCompleted": false,
+    "autoRestartsAvoided": true
+  },
+  "receipts": [
+    "utility-harness/artifacts/cav-rosewater-loaded-strict-proof-and-sluice-native-audit-20261026.json"
+  ],
+  "next": [
+    "Read-only water map and Trail portal geometry audit when Chrome stable",
+    "Original in-game Crank/sluice progression, NOT hand-forced",
+    "Rosewater native commissioning only with matching original water GM receipts",
+    "Bowl pickup point undecided",
+    "Crooked Man and full player testing deferred"
+  ],
+  "transcriptFidelity": "available-message reconstruction; not lossless native transcript"
+}
