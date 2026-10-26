@@ -1,0 +1,110 @@
+{
+  "schema": "dicebox.cav.puzzle-turn-metadata/v1",
+  "recordedLocalDate": "2026-10-25",
+  "timezone": "America/Los_Angeles",
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundryVersion": "14.367",
+    "activeGM": "Gamemaster 1",
+    "sceneCount": 46,
+    "regionCount": 203,
+    "behaviorCount": 96,
+    "teleportCount": 68,
+    "executeScriptCount": 28,
+    "tileCount": 0
+  },
+  "scope": {
+    "maxTurnMinutes": 25,
+    "fullGameplayTesting": "DEFERRED_UNTIL_CHAIN_COMPLETE",
+    "testingStillPerformed": "SOURCE_STATIC_NATIVE_REREAD",
+    "installationOrder": "PLAYER_PREREQUISITE_ORDER",
+    "regionwright": "EXCLUSIVE_INTERACTIVE_ART_ENGINE",
+    "campaignHelper": "STATIC_IMAGES_HINTS_COMPATIBILITY"
+  },
+  "modules": [
+    {
+      "id": "regionwright",
+      "registered": true,
+      "active": true,
+      "version": "0.2.0"
+    },
+    {
+      "id": "regionwright-puzzles-locks",
+      "registered": false,
+      "active": false,
+      "diskInstall": true,
+      "diskVersion": "0.1.2"
+    },
+    {
+      "id": "regionwright-hunting-gathering",
+      "registered": true,
+      "active": false,
+      "version": "0.4.2"
+    },
+    {
+      "id": "dicebox-campaign-helper",
+      "registered": true,
+      "active": true,
+      "version": "0.1.15"
+    }
+  ],
+  "findings": [
+    {
+      "stage": "Shack Oars",
+      "status": "EXISTING_CLAIM_DONE",
+      "region": "Scene.CAVEXT01Yard0001.Region.CAV01R0000000006"
+    },
+    {
+      "stage": "Sune busts",
+      "status": "REGIONS_INSTALLED_GM_LISTENER_INACTIVE",
+      "wrongOrderResets": false,
+      "canonicalWrongOrderResets": true
+    },
+    {
+      "stage": "Sune SG-05 slider",
+      "status": "REGION_DISABLED",
+      "region": "Scene.CAVSG05Scene0001.Region.L15BdSqcbCOLPnIN",
+      "behaviorId": "Q8Hr2Dnw6hBpWNjr",
+      "configuredSize": 4,
+      "canonicalSize": 3,
+      "installedImageOnDisk": true
+    },
+    {
+      "stage": "Roof clock/587/Pond Felix",
+      "status": "GM_MACROS_SAVED_BUT_HOOKS_INACTIVE"
+    },
+    {
+      "stage": "Great Room 024/027",
+      "status": "CANON_MISMATCH_UNRESOLVED"
+    },
+    {
+      "stage": "Sluice",
+      "status": "INSPECTION_ONLY"
+    }
+  ],
+  "gmHooksUnarmed": [
+    "__CAV_SUNE_GM_MESSAGE_HOOK_v002",
+    "__CAV_ROOFCLOCK_GM_SERVICE_v001",
+    "__CAV_POND_FELIX_GM_SERVICE_v001",
+    "__CAV_587_ELECTED_GM_SERVICE_v001"
+  ],
+  "receipts": [
+    "cav-fastplan-inventory-sources-20261025-v1",
+    "cav-fastplan-live-script-categories-20261025-v1",
+    "cav-fastplan-live-hooks-20261025-v1",
+    "cav-turn-early-state-sune-review-20261025-v1",
+    "cav-turn-first-regionwright-module-scan-20261025-v1"
+  ],
+  "actions": {
+    "foundryMutations": 0,
+    "moduleWrites": 0,
+    "playerGameplayTests": 0,
+    "repoArchiveWrite": "GitHub connector"
+  },
+  "nextUnit": "Correct and stage Sune bust wrong-order reset and GM hook lifecycle; reconcile Puzzles & Locks registration and SG-05 3x3 configuration before enabling.",
+  "fidelity": {
+    "transcript": "AVAILABLE_MESSAGE_RECONSTRUCTION",
+    "lossless": false,
+    "metadataNotNativeExport": true
+  }
+}
