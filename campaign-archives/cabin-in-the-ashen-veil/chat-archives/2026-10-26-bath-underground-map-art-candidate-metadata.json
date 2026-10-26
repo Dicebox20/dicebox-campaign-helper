@@ -1,0 +1,83 @@
+{
+  "schema": "dicebox.cav.map-render-inspect-failure/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerInstruction": "continue",
+  "workflowStage": "RENDER/INSPECT_FAIL",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "6e7909f3d766dd4abadab5095f540b612832f0ab",
+    "sourceCodeChangedThisTurn": false,
+    "sourceAlreadyShaMatchedInstalled": true
+  },
+  "art": {
+    "destinationFolderId": "1ganNpKYPh53_OgEV9jOU-iMfjgovXpo8",
+    "approvedFolderUntouched": true,
+    "generatedAsCombinedAnnotatedComposites": true,
+    "mechanicalSeparateCrop": true,
+    "approved": false,
+    "items": [
+      {
+        "scene": "BATH-04",
+        "driveId": "1d7-Po_Yy8ZAtsD1wiyJMksbfpHgbzZKx",
+        "url": "https://drive.google.com/file/d/1d7-Po_Yy8ZAtsD1wiyJMksbfpHgbzZKx/view?usp=drivesdk",
+        "widthPx": 662,
+        "heightPx": 546,
+        "bytes": 758245,
+        "sha256": "8cb20727ba3d95e599c1bbee947f7b500f79cb4fa21f78132d8e1d0f4934bfcf",
+        "issues": [
+          "residual arrow at stair and east door",
+          "too small",
+          "door and landing coordinates unapproved"
+        ]
+      },
+      {
+        "scene": "BATH-03",
+        "driveId": "1EcPofwwE08Ec1S_mKacqxJckY4H6Gnp9",
+        "url": "https://drive.google.com/file/d/1EcPofwwE08Ec1S_mKacqxJckY4H6Gnp9/view?usp=drivesdk",
+        "widthPx": 661,
+        "heightPx": 593,
+        "bytes": 757722,
+        "sha256": "2000bc2e8b5870d5096a9608eac1b2db567b4ed62cf125fd9a35b4547c42a46d",
+        "issues": [
+          "annotation at side edges",
+          "too small",
+          "onward east estate exit not in canon"
+        ]
+      }
+    ]
+  },
+  "host": {
+    "foundryPort30000": false,
+    "devChromeCDP9224": false,
+    "worldWrites": 0,
+    "restartAttempted": false,
+    "gmAuthenticated": false
+  },
+  "canon": {
+    "originalBowlUuid": "Item.1n5LONw3nYIy61O9",
+    "bowlItemChanged": false,
+    "ringAnglesDegrees": [
+      90,
+      270,
+      180
+    ],
+    "boilerWheelSolution": [
+      2,
+      1
+    ],
+    "dryServiceDoorEastReliquaryWestBoiler": true,
+    "boilerOnwardEstateExit": "UNDECIDED",
+    "crookedManActorDeferred": true,
+    "scenesCreated": 0
+  },
+  "next": [
+    "clean high-resolution separate gridless tactical maps without arrow/text overlays",
+    "owner explicit review and approval",
+    "identify Boiler estate exit destination",
+    "stable elected GM",
+    "native BUILD + verification"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless export"
+}
