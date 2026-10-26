@@ -1,0 +1,69 @@
+{
+  "schema": "dicebox.cav.rosewater-source/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "userInstruction": "continue",
+  "sourceCommit": "4942bf7cb77e65e1847b6ef7f98e9205f6b5b2f8",
+  "sourceBranch": "codex/cav-sune-integration-20261026",
+  "files": [
+    "modules/regionwright-puzzles-locks/scripts/rosewater-campaign-preset.js",
+    "modules/regionwright-puzzles-locks/scripts/api.js",
+    "modules/regionwright/scripts/studio-cav-rosewater-safety.js",
+    "modules/regionwright/scripts/studio-campaign.js",
+    "tests/cav-rosewater-canon-preset.test.mjs",
+    "tests/cav-rosewater-safety.test.mjs"
+  ],
+  "sourceTests": {
+    "passed": 39,
+    "failed": 0
+  },
+  "canon": {
+    "ringAngles": [
+      90,
+      270,
+      180
+    ],
+    "ringQuarterTurnIndices": [
+      1,
+      3,
+      2
+    ],
+    "demoIndicesNotCanonical": [
+      1,
+      3,
+      5
+    ],
+    "approvedSymbolsUnknown": true,
+    "bowlLocation": "BATH-04 Rosewater Reliquary",
+    "permanentDryExit": "BATH-04 east service door to BATH-03 Boiler",
+    "vaultReward": "Keystone"
+  },
+  "live": {
+    "foundryRestartedOnce": true,
+    "harnessRestartedOnce": true,
+    "correctCabinJoinObserved": true,
+    "postRestartBrowserReadTimeout": true,
+    "port30000NowDown": true,
+    "port9224NowDown": true,
+    "activeGMReadback": false,
+    "worldWrites": 0,
+    "sceneListFull": false,
+    "lowerRoomIdsVerified": false,
+    "originalBowlItemUuidVerified": false,
+    "liveRosewaterInstalled": false,
+    "gameplayTests": 0
+  },
+  "ownerWorkflow": {
+    "crookedManActorDeferred": true,
+    "interactiveArtOwnedByRegionwright": true,
+    "turnLimitMinutes": 25
+  },
+  "next": [
+    "recover stable GM and full scene/item inventory",
+    "confirm approved lower-chamber maps and symbols",
+    "GM-authoritative Rosewater solve and hatch",
+    "Boiler dry service exit and refill occupancy",
+    "once-only original Bowl pickup"
+  ],
+  "fidelity": "available-message reconstruction not lossless transcript"
+}
