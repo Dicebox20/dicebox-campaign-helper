@@ -1,0 +1,82 @@
+{
+  "schema": "dicebox.cav.turn-continuity/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "maxTurnMinutes": 25,
+  "ownerPolicy": {
+    "gameplayTests": "DEFER_UNTIL_CHAIN_INSTALLED",
+    "structuralTests": true,
+    "interactivePuzzleOwner": "Regionwright",
+    "regionwrightChangesApproved": true,
+    "installOrder": "PLAYER_DEPENDENCY"
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "activeGM": "Gamemaster 1"
+  },
+  "regionwright": {
+    "branch": "codex/cav-sune-integration-20261026",
+    "commits": [
+      "638c4a8ae516fa9ebea0142b263ce68aa58d208f",
+      "9817700baa188627e785f14a6eba377d60797a61",
+      "9aa43cdabdd64b7bf1f921971008ae52c11570c5"
+    ],
+    "log": "docs/cabin-ashen-veil/regionwright-puzzle-update-log-2026-10-26.md",
+    "modules": {
+      "studioActive": true,
+      "puzzlesLocksActive": true
+    }
+  },
+  "sg05": {
+    "regionUuid": "Scene.CAVSG05Scene0001.Region.L15BdSqcbCOLPnIN",
+    "behaviorId": "Q8Hr2Dnw6hBpWNjr",
+    "disabled": false,
+    "events": [
+      "behaviorViewed",
+      "behaviorUnviewed",
+      "behaviorDeactivated"
+    ],
+    "puzzleStatus": "locked",
+    "initialOrder": [
+      4,
+      5,
+      1,
+      2,
+      0,
+      8,
+      7,
+      6,
+      3
+    ],
+    "goldSource": "Item.CAVSUNEGPBAG0001",
+    "goldSourceCurrencyGp": 1000,
+    "keySource": "Item.CAVSTUDYBRASS001",
+    "goldLedger": "cavSuneGoldClaim",
+    "keyLedger": "cavSuneBrassKeyClaim",
+    "claimStatuses": "UNCLAIMED",
+    "downstreamStudyDoorProvenanceFlags": [
+      "cavStudyKeySourceUuid",
+      "cavStudyKeySourceRegionUuid"
+    ]
+  },
+  "gmHooks": {
+    "suneBustVersion": 3,
+    "suneReliefVersion": 1,
+    "study587Active": true
+  },
+  "testEvidence": {
+    "unitPass": 11,
+    "unitFail": 0,
+    "structuralFoundryReadback": true,
+    "fullPlayerGameplay": 0
+  },
+  "receipts": [
+    "cav20261026-sg05-click-rewards-live-install-v1",
+    "cav20261026-sg05-study-587-live-verified-v1",
+    "cav20261026-study-door-key-compatibility-readonly-v1",
+    "cav20261026-sg05-provenance-final-live-readback-v1"
+  ],
+  "next": "Keyed Study entry + 587 note/Crank chain; then Sluice and synchronized Pond/Bath state",
+  "transcriptFidelity": "available-message reconstruction, not lossless native export"
+}
