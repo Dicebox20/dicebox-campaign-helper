@@ -1,0 +1,18 @@
+# Cabin in the Ashen Veil — Native Boiler Puzzle Installation Transcript Reconstruction
+**Date:** 2026-10-26 Pacific. **Fidelity:** exact most recent user instruction and tool-backed action summary, not a full native export.
+## Exact owner message
+> continue
+## Actions in order
+1. Gave upfront plan to install campaign 2/1 Boiler on existing unified Bathhouse, not old separate Boiler Scene, with elected-GM request/receipt and no player gameplay test.
+2. Bridge PowerShell verified Foundry HTTP 30000/Chrome Dev CDP 9224 healthy, Regionwright worktree at 98fdeff, 47 Scenes, previous source 70 tests. Audited established Cabin RegionScript `behaviorViewed/Unviewed/Deactivated`, existing original Puzzles & Locks waterworks-pressure art UI, two-valve engine, and world/native Region documents.
+3. Added pure Boiler action reducer handling valve left/right steps, reset, submit at exactly [2,1], revision/idempotency/transaction guards; initial 3 tests pass.
+4. Added elected-GM `createChatMessage` service. Validates actual sender and user, viewed Scene, player character ownership, token position inside Boiler control Region, exact Game/world, paired native Regions and GM-only state. Mirrored pressure sessions use reserve → mirror → commit and fail-closed on uncertain state. No automatic water or item side effects.
+5. Adapted existing Puzzles & Locks waterworks-pressure artwork/markup as campaign Boiler dialog that sends GM-authoritative actions; exposed `boilerCampaign.open`, Studio `campaign.cabin.boiler` and installed service. Copied five script files into installed Regionwright modules, verified exact SHA and syntax.
+6. Ran full Cabin source/regression 73/73 PASS. Reloaded authenticated GM; new service and Boiler player panel API present, both native controls still had zero Behaviors.
+7. First attempt to create 2 native disabled Behaviors used invalid 17-character ID and tool reported uncertain. **Read-only** audited both regions: neither had new Behavior. Did NOT blindly replay. Corrected supported 16-character ID `CAVBOILERSCRPT01`.
+8. Created one disabled native Behavior on filled Bath Region, verified exact saved `executeScript` source and events. Created matching disabled Behavior on drained Bath Region and verified pair. Set both puzzle-binding flags to ENABLED, with playerAcceptanceTesting DEFERRED; enabled exactly two Behaviors and read back GM service `status:'ready'`, with sessions still NULL.
+9. Non-gameplay GM UI smoke opened existing approved Boiler pressure image and 2 valve gauges, closed it, verified no chat/item/session writes.
+10. Hardened sourceReady to require exact 16-character Behavior ID, exact script/event allowlist. First attempted patch had a prewrite assertion error; inspected actual source and repaired exact patch, then deployed SHA matching. Reloaded elected GM, verified both enabled native Behaviors and service ready, goals [2,1], original screwdriver/Bowl untouched, Rosewater has no active script, Sluice stage/transaction NULL.
+11. Created dated Regionwright source checkout/install proof and metadata, appended chronological update log; normalized file formatting, reran 73/73 tests, staged exact nine related source/test/docs, cleaned diff whitespace. Committed/pushed Regionwright commit `d9f4e73d5c4cc16404d6ff51c1a648ba9326fe48` and read back exact remote SHA. Prepared DCH campaign handoff, structured metadata and this honest reconstruction.
+## Next
+Four owner-approved ring symbols and GM-verified Rosewater UI to drained-only Region; exact Bowl pickup location on unified map still owner decision. Do not claim actual player Boiler valve test or completion receipt yet. Crooked Man Actor and full playtest remain postponed.
