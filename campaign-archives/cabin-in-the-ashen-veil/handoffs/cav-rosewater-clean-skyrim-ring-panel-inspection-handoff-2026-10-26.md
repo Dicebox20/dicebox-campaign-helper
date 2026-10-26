@@ -20,3 +20,7 @@ Owner replaced old separate BATH-03/BATH-04 room plan with ONE installed unified
 - Continue DCH workflow, dated chronological source log, bounded exact pre/post receipts, Regionwright source commit and DCH handoff/metadata/available-message reconstruction at end of turn.
 
 **Classification:** VISUAL INSPECT PASS for current draft panel, SOURCE REFINEMENT VERIFIED, NATIVE PENDING COMMISSION, NOT OWNER-APPROVED SYMBOLS, NOT PLAYTESTED.
+
+
+## Addendum — screenshot archived after inspection
+The exact 49,390-byte clean live Foundry Rosewater preview was subsequently byte-for-byte archived in the **unapproved previews** directory of Regionwright at source commit `b69f0fc8bf2d6ab9c4af6c3ce2298ed507bb53c7`: [View actual Rosewater draft screenshot](https://github.com/Dicebox20/regionwright/blob/codex/cav-sune-integration-20261026/docs/cabin-ashen-veil/unapproved-previews/rosewater-dragon-claw-ui-draft-2026-10-26.jpg). SHA256 `B44419BEDCCFA7AA9CC6E31CE99B197484E692820AB0D6DD435631486695C14C`, matching original local screenshot. Still **DRAFT**, not owner-approved glyph artwork or a playable commissioned Region.
