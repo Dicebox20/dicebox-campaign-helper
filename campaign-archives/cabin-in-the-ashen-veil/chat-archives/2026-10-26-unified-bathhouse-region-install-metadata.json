@@ -1,0 +1,83 @@
+{
+  "schema": "dicebox.cav.unified-bath-nine-regions-live-20261026/v1",
+  "localDate": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "userInstruction": "looks like we'll need to add the missing regions",
+  "ownerCorrection": "Use the existing single unified Bathhouse map; separate Boiler/Reliquary Scene plans superseded",
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGM": "Gamemaster 1",
+    "sceneCount": 47,
+    "foundryOnlineAtFinalCheck": true,
+    "chromeCDPOnlineAtFinalCheck": true
+  },
+  "installation": {
+    "batch": "cav-unified-bath-fixtures-20261026-v1",
+    "addedNativeRegions": 9,
+    "addedNativeBehaviors": 0,
+    "addedScenes": 0,
+    "movedTokens": 0,
+    "changedWalls": 0,
+    "changedArtworks": 0,
+    "oldOriginalRegionDocsUnchanged": true,
+    "originalTrailTeleportsEnabled": true,
+    "originalScrewdriverScriptEnabled": true,
+    "sourceWorldItemPreserved": true,
+    "filled": {
+      "scene": "Scene.CAVBATHScene0001",
+      "before": 2,
+      "after": 6,
+      "newIds": [
+        "CAVBBOILERVESL01",
+        "CAVBBOILERCTRL01",
+        "CAVBSIDENORTH001",
+        "CAVBSIDESOUTH001"
+      ]
+    },
+    "drained": {
+      "scene": "Scene.8yLMRDvxyw58dydh",
+      "before": 3,
+      "after": 8,
+      "newIds": [
+        "CAVBBOILERVESL01",
+        "CAVBBOILERCTRL01",
+        "CAVBSIDENORTH001",
+        "CAVBSIDESOUTH001",
+        "CAVBROSEWATER001"
+      ]
+    },
+    "rosewaterRingOverlapsDrainedScrewdriver": true,
+    "newFlagsStatus": "PASSIVE_GM_REVIEW",
+    "artGeometryStatus": "PROVISIONAL_OWNER_TO_SET_WALLS_AND_APPROVE_SCALE"
+  },
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "3ba251010fb3d5e4bdfb7a3e5c17245df0871510",
+    "newDocs": [
+      "docs/cabin-ashen-veil/unified-bathhouse-region-install-manifest-2026-10-26.json",
+      "docs/cabin-ashen-veil/unified-bathhouse-regions-installed-2026-10-26.md"
+    ],
+    "newTest": "tests/cav-unified-bath-installed-regions.test.mjs",
+    "fullTestsPassed": 50,
+    "fullTestsFailed": 0,
+    "sourceModulesModified": false
+  },
+  "receipts": [
+    "cav-unified-bath-missing-region-live-before-20261026.json",
+    "cav-bath-filled-unified-fixtures-installed-20261026.json",
+    "cav-bath-drained-unified-fixtures-installed-20261026.json",
+    "cav-bath-unified-nine-regions-post-verification-20261026.json"
+  ],
+  "overlayDrive": "https://drive.google.com/file/d/1D0SnfkahA3bndF-vp3gTXWRxPJwCx322/view?usp=drivesdk",
+  "originalBowlUuid": "Item.1n5LONw3nYIy61O9",
+  "canonPending": [
+    "right-side basin role and actual Bowl pickup site",
+    "revise Sluice lower-room Scene assumptions for unified map",
+    "GM-authoritative Rosewater ring binding with screwdriver collision resolution",
+    "Boiler pressure interface at newly installed controls"
+  ],
+  "ownerException": "Crooked Man NPC and full gameplay tests postponed",
+  "transcriptFidelity": "available-message reconstruction not lossless transcript"
+}
