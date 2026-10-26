@@ -1,0 +1,105 @@
+{
+  "schema": "dicebox.cav.puzzle-continuation-turn/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "maxTurnMinutes": 25,
+  "workflow": {
+    "installationOrder": "player prerequisite",
+    "fullGameplayTests": "deferred until all chains",
+    "regionwrightEditsOwnerAuthorized": true,
+    "artifactCadence": "handoff,metadata,available-message transcript each bounded turn"
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "electedGmVerified": true
+  },
+  "regionwright": {
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "ad08e789bbfa5db192ee7110a694509c27c9123a",
+    "studioHookBasement": 1,
+    "studioHookAqueduct": 1,
+    "studioHookRoof": 617,
+    "sourceTestsPassed": 16,
+    "sourceTestsFailed": 0,
+    "changeLog": "docs/cabin-ashen-veil/regionwright-puzzle-update-log-2026-10-26.md"
+  },
+  "installed": {
+    "basement": {
+      "door": "Scene.CAVHG02Scene0001.Region.CAVFOYERBASEDR01",
+      "behavior": "CAVBASEMENTBEH01",
+      "portal": "CAVFOYERBASPORT1",
+      "portalDisabled": true,
+      "arrival": "Scene.G6NMonfCwMvNzipL.Region.CAVB9C0F653A2A6F",
+      "foyerArrival": "Scene.CAVHG02Scene0001.Region.CAVFOYERBASEAR01",
+      "returnRegion": "Scene.G6NMonfCwMvNzipL.Region.CAVBASEMENTRET01",
+      "returnBehavior": "CAVBASEMENTPRT01",
+      "ledger": null,
+      "keySource": "Item.CAVWEATHERKEY001"
+    },
+    "parents": {
+      "nightstand": "Scene.CAVHU04Scene0001.Region.CAVPARENTNIGHT01",
+      "behavior": "CAVPARENTNITBE01",
+      "screwdriver": "Item.CAVBATHSCREW0001",
+      "repair": null,
+      "claim": null,
+      "handle": "Item.nRVZJL9JOwEwfnLq",
+      "twoSeparateActions": true
+    },
+    "roof": {
+      "existingMacroId": "rEo3v6pIjbAzxVw1",
+      "gmServiceArmed": true,
+      "replacementGearSource": "Item.wDKqETOykWEdKF1Z"
+    },
+    "aqueduct": {
+      "gate": "Scene.CAVEXT02Scene001.Region.CAVPONDAQGATE001",
+      "clickBehavior": "CAVPONDAQBEH0001",
+      "nativeEntryPortal": "CAVPONDAQPORT001",
+      "entryDisabled": true,
+      "aqDestination": "Scene.CAVAQ01Scene0001.Region.woZ98KXx0RsWIPpl",
+      "pondReturnArrival": "Scene.CAVEXT02Scene001.Region.CAVPONDAQARRV001",
+      "aqReturnRegion": "Scene.CAVAQ01Scene0001.Region.CAVAQ01RETURN001",
+      "nativeReturnPortal": "CAVAQ01RETBEH001",
+      "returnDisabled": true,
+      "gearInstalled": null,
+      "handleInstalled": null,
+      "mechanicalReady": null,
+      "waterState": null
+    }
+  },
+  "assetHashes": {
+    "nightstand": "AF18E315A08855BF6C848211953B89B8B763A265DFFE56D54A649784F9B8E71E",
+    "aqueductGate": "81FA3D49AACF13DD2520B4CB8A48A4D675E6E1F7D45182112D59ABC2EC64D3B3"
+  },
+  "sceneCounts": {
+    "before": {
+      "foyer": 4,
+      "basement": 2,
+      "parents": 3,
+      "pond": 6,
+      "aqueduct": 5
+    },
+    "after": {
+      "foyer": 6,
+      "basement": 3,
+      "parents": 4,
+      "pond": 8,
+      "aqueduct": 6
+    }
+  },
+  "tests": {
+    "source": 16,
+    "pass": 16,
+    "fail": 0,
+    "fullPlayerGameplay": 0
+  },
+  "writes": {
+    "newRegions": 7,
+    "changesToOriginalScenes": false,
+    "itemsGrantedToActors": 0,
+    "waterStageTransitions": 0
+  },
+  "next": "aqueduct full bidirectional stage synchronization and first Crooked Man chase",
+  "transcriptFidelity": "available-message reconstruction, not complete lossless ChatGPT export"
+}
