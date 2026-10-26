@@ -1,0 +1,89 @@
+{
+  "schema": "dicebox.cav.aqueduct-forest-well-first-chase-staged/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerDirective": "Alright, lets continue",
+  "policy": {
+    "turnMaxMinutes": 25,
+    "installOrder": "player-prerequisite",
+    "deferGameplayTests": true,
+    "regionwrightAuthorized": true,
+    "archive": "GitHub handoff metadata transcript each turn"
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "scenes": 47
+  },
+  "regionwright": {
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "c15de1ecf9d2437432dc4cb1c81837fe3d990280",
+    "sourceFiles": [
+      "studio-cav-aqueduct-gate.js",
+      "studio-cav-water-controller.js",
+      "studio-cav-first-chase-state.js",
+      "studio-cav-first-chase.js",
+      "studio-campaign.js"
+    ],
+    "unitTestsPassed": 24,
+    "unitTestsFailed": 0
+  },
+  "geometry": {
+    "forestWellUsedScene": "CAVFM01Scene0001",
+    "wellPositionSource": "center stone well visible on owner-approved FM art, placement inferred",
+    "aqExitRegion": "Scene.CAVAQ01Scene0001.Region.CAVAQWELLNORTH01",
+    "aqExitPortal": "CAVAQWELLPORT001",
+    "fmArrival": "Scene.CAVFM01Scene0001.Region.CAVFMWELLARRV001",
+    "fmWellReentryRegion": "Scene.CAVFM01Scene0001.Region.CAVFMWELLPORT001",
+    "fmReentryPortal": "CAVFMWELLREENT01",
+    "aqWellArrival": "Scene.CAVAQ01Scene0001.Region.CAVAQWELLARRV001",
+    "aqChaseTrigger": "Scene.CAVAQ01Scene0001.Region.woZ98KXx0RsWIPpl.RegionBehavior.CAVAQCHASETRIG01",
+    "allNewPortalsDisabled": true,
+    "chaseTriggerDisabled": true,
+    "aqRegionsAfter": 8,
+    "mazeRegionsAfter": 4
+  },
+  "sourceFixes": [
+    "correct undefined FPORT to PORT at final Aqueduct component",
+    "offer missing, not already-installed component",
+    "readback consumed actor original Gear/Handle",
+    "deny sluice water transitions with AQ occupants",
+    "fail closed if AQ traversal active pending water-route synchronization",
+    "GM-authoritative first chase DC13 and 3 success/2 failure with no repeat tactics",
+    "capture confirmation requires GM physical transfer and Sophia locked portal"
+  ],
+  "firstChase": {
+    "status": null,
+    "thresholdSuccesses": 3,
+    "thresholdFailures": 2,
+    "dc": 13,
+    "captureMax": 1,
+    "automaticPlayerTransfer": false,
+    "gmFallbackMinutes": 20,
+    "gmFallbackMandatoryTimer": false
+  },
+  "runtime": {
+    "pondWater": null,
+    "aqueductGateReady": null,
+    "originalPondGateDisabled": true,
+    "aqPondReturnDisabled": true,
+    "aqWellExitDisabled": true,
+    "fmWellReentryDisabled": true,
+    "chaseTriggerDisabled": true,
+    "actorMovement": 0,
+    "gameplayTests": 0
+  },
+  "staticWellCloseup": {
+    "file": "cav-forest-well-owner-map-crop-20261026.png",
+    "sha256": "27F6A8C73F6D67D8419315329A2401B0139FE2FF3C2FD281F634BCCCB5F2D3E7"
+  },
+  "receipts": [
+    "cav-20261026-chase-well-maze-scene-network-audit-v1",
+    "cav-20261026-aqueduct-forest-well-staged-regions-v1",
+    "cav-20261026-first-chase-final-gm-native-readback-v1",
+    "cav-20261026-aqueduct-well-firstchase-final-reload-v1"
+  ],
+  "next": "Sophia release capture and verified first chase egress, then reversible Aqueduct portal state with Pond full/drained",
+  "transcriptFidelity": "available-message reconstruction, not lossless native export"
+}
