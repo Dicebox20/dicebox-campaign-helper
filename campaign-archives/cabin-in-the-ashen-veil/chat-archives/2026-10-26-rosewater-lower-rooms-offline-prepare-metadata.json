@@ -1,0 +1,90 @@
+{
+  "schema": "dicebox.cav.rosewater-full-world-offline-prepare/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerDirective": "Continue",
+  "workflow": [
+    "PREPARE",
+    "RENDER",
+    "INSPECT",
+    "BUILD",
+    "VERIFY",
+    "CATALOGUE"
+  ],
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "64870b4581120e6a3271abd7f8694010efc7c5ad",
+    "testsPassed": 39,
+    "testsFailed": 0,
+    "newDocs": [
+      "docs/cabin-ashen-veil/rosewater-lower-rooms-prepare-2026-10-26.md",
+      "docs/cabin-ashen-veil/rosewater-lower-rooms-build-manifest-2026-10-26.json"
+    ],
+    "installedSourceShaVerified": true
+  },
+  "evidence": {
+    "originalLevelDbFilesOpened": false,
+    "readOnlyClones": true,
+    "localReceipt": "utility-harness/artifacts/cav-offline-db-audit-20261026-0615/verified-root-scenes-and-bowl.json",
+    "sceneRoots": 47,
+    "itemRoots": 73,
+    "bathFullScene": "CAVBATHScene0001",
+    "bathDrainedScene": "8yLMRDvxyw58dydh",
+    "bathOwnerGeometryStatus": "PROVISIONAL_OWNER_TO_SET_WALLS_AND_APPROVE_SCALE",
+    "boilerBATH03ScenePresent": false,
+    "reliquaryBATH04ScenePresent": false,
+    "basementSupplyClosetNotBoiler": true
+  },
+  "originalScryingBowl": {
+    "uuid": "Item.1n5LONw3nYIy61O9",
+    "type": "loot",
+    "quantity": 1,
+    "source": "2026-10-24-approved-puzzle-chain",
+    "status": "GM_LIBRARY_ONLY",
+    "directRealTemplatePureGuardTest": "verified",
+    "forgedBooleanGuardTest": "missing-canonical-source",
+    "liveItemGrant": false
+  },
+  "distinctPelletUuid": "Item.VjdQNwil7pPKzkHU",
+  "canon": {
+    "ringDegrees": [
+      90,
+      270,
+      180
+    ],
+    "ringQuarterTurnIndices": [
+      1,
+      3,
+      2
+    ],
+    "oldStandaloneDemoNoncanon": [
+      1,
+      3,
+      5
+    ],
+    "bowlLocation": "BATH-04",
+    "permanentDryEscape": "BATH-04 eastern passage to BATH-03",
+    "boilerPressureNotRequiredForDryEscape": true,
+    "vaultReward": "Keystone",
+    "latterSG05": "Bowl plus 027 Dust of Dryness pellet"
+  },
+  "host": {
+    "port30000Listening": false,
+    "port9224Listening": false,
+    "earlierFoundryLogAuthenticatedGM": "2026-10-26 05:38:17 Pacific",
+    "lastErrorEvidence": "no confirmed crash root cause",
+    "bridgeRunspaceProcessLifetimeHypothesis": "not yet confirmed",
+    "furtherRestartsDuringThisTurn": 0,
+    "activeGMReadback": false,
+    "foundryNativeWrites": 0
+  },
+  "next": [
+    "approved lower-room art and four symbols",
+    "stable in-game active GM",
+    "build BATH-03 BATH-04 with measured safe wall/landing",
+    "GM authoritative Rosewater ring proof and original Bowl one-time claim",
+    "Sluice underwater occupancy and permanent dry exit"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless native export"
+}
