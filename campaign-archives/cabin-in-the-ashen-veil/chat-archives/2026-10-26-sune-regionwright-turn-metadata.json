@@ -1,0 +1,84 @@
+{
+  "schema": "dicebox.cav.puzzle-continuation-turn/v1",
+  "localDate": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "maxTurnMinutes": 25,
+  "authority": "owner authorized Regionwright source changes; full gameplay testing deferred",
+  "world": "cabin-in-the-ashen-veil",
+  "foundry": "14.367",
+  "system": "dnd5e 5.3.3",
+  "activeGM": "Gamemaster 1",
+  "regionwrightCommit": "99d5474ab12a0ff7227380cebdd38cee34be1a0a",
+  "regionwrightBranch": "codex/cav-sune-integration-20261026",
+  "updateLog": "docs/cabin-ashen-veil/regionwright-puzzle-update-log-2026-10-26.md",
+  "sourceChanges": [
+    "modules/regionwright/scripts/studio-cav-sune.js",
+    "modules/regionwright/scripts/studio-campaign.js",
+    "modules/regionwright-puzzles-locks/scripts/sliding-mosaic-engine.js",
+    "modules/regionwright-puzzles-locks/scripts/sliding-mosaic.js",
+    "modules/regionwright-puzzles-locks/scripts/sune-sliding-preset.js"
+  ],
+  "runtime": {
+    "studioSuneService": {
+      "installed": true,
+      "armed": true,
+      "version": 3
+    },
+    "puzzlesLocks": {
+      "registered": true,
+      "active": true,
+      "version": "0.1.2",
+      "manifestBomRepaired": true
+    },
+    "sg05": {
+      "regionUuid": "Scene.CAVSG05Scene0001.Region.L15BdSqcbCOLPnIN",
+      "oldSize": 4,
+      "newSize": 3,
+      "initialOrder": [
+        4,
+        5,
+        1,
+        2,
+        0,
+        8,
+        7,
+        6,
+        3
+      ],
+      "status": "CONFIGURED_NOT_ACTIVATED",
+      "behaviorId": "Q8Hr2Dnw6hBpWNjr",
+      "behaviorDisabled": true
+    },
+    "startupOptionsRestored": true
+  },
+  "tests": {
+    "unit": 7,
+    "passed": 7,
+    "fullPlayerGameplay": 0,
+    "structuralReadback": true
+  },
+  "writes": {
+    "foundryRegionConfigUpdates": 1,
+    "moduleFilesUpdated": true,
+    "newActorsOrItems": 0,
+    "newSceneTiles": 0
+  },
+  "blockers": [
+    "SG05 explicit-click opening and owner-approved static relief display not wired",
+    "SG05 GM reward completion and separate bag/Brass Key claims not wired",
+    "Other session GM-service macros unarmed",
+    "024 vs 027 ambiguity unresolved"
+  ],
+  "evidence": [
+    "cav20261026-sune-regionwright-source-write-v2",
+    "cav20261026-sune-regionwright-deploy-v1",
+    "cav20261026-reload-live-studio-sune-v1",
+    "cav20261026-regionwright-puzzle-manifest-bom-fix-v1",
+    "cav20261026-gm-rejoin-world-v1",
+    "cav20261026-regionwright-fixed-slider-engine-v1",
+    "cav20261026-live-sg05-regionwright-canonical-3x3-v1",
+    "cav20261026-regionwright-push-reviewed-branch-v1"
+  ],
+  "transcriptFidelity": "available owner-message reconstruction only; not native lossless ChatGPT export",
+  "next": "SG05 deliberate-click -> Regionwright slider solved -> GM reward ledgers -> Brass Study Key -> Study 587"
+}
