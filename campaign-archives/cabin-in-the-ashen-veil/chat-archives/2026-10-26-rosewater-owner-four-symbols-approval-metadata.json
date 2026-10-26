@@ -1,0 +1,80 @@
+{
+  "schema": "dicebox.cav.rosewater-owner-approves-symbols-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "Yes I approve",
+  "ownerApprovedSymbols": [
+    "rose",
+    "sun",
+    "moth",
+    "thorn"
+  ],
+  "gameplaySolution": {
+    "quarterTurns": [
+      1,
+      3,
+      2
+    ],
+    "degrees": [
+      90,
+      270,
+      180
+    ],
+    "topSymbols": [
+      "sun",
+      "thorn",
+      "moth"
+    ]
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGM": "Gamemaster 1",
+    "sceneCount": 47,
+    "nativeOwnerApprovalWriteVerified": true,
+    "regionUuid": "Scene.8yLMRDvxyw58dydh.Region.CAVBROSEWATER001",
+    "regionBehaviorId": "CAVROSEWATERSCR1",
+    "behaviorDisabled": true,
+    "bindingStatus": "STAGED_DISABLED",
+    "ringSession": null,
+    "sluiceWaterState": null,
+    "sluiceTransaction": null,
+    "existingScrewdriverEnabled": true,
+    "originalBowlPreserved": true
+  },
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "1a766f8b56eb80de576a00debf92b062774893d6",
+    "testsPass": 80,
+    "testsFail": 0,
+    "moduleSourceFilesSHAEqualInstalled": true,
+    "liveRuntimeAfterLatestSourceReloadVerified": false
+  },
+  "receipts": {
+    "before": "cav-rosewater-owner-approved-symbols-before-20261026.json",
+    "nativeWriteAndReadback": "cav-rosewater-owner-approves-four-symbols-native-receipt-20261026.json",
+    "laterSourceReload": "timed out; receipt inspected and found outcome-unknown; no replay",
+    "hostStateAfter": {
+      "foundryPort30000": true,
+      "devChrome9224": false
+    }
+  },
+  "boundary": {
+    "symbolsOwnerApproved": true,
+    "iconArtworkApproval": false,
+    "puzzleEnabled": false,
+    "puzzleSolved": false,
+    "waterStateChanged": false,
+    "itemsGranted": 0,
+    "actorsTokensMoved": 0,
+    "originalBowlPickupLocationDecided": false,
+    "fullGameplayTestingOwnerDeferred": true
+  },
+  "next": [
+    "Recover one safe Chrome CDP and elected-GM native readback",
+    "Wait for real Pond and Bath both drained safely before commissioning Region",
+    "Confirm original Bowl pickup location later"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless native chat export"
+}
