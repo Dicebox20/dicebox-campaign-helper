@@ -1,0 +1,63 @@
+{
+  "schema": "dicebox.cav.chat-a-original-crank-prestate-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "resume",
+  "chat": "A",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "base": "ca177160fd5721eb721da40652f8b389d3340a1b",
+    "commit": "fb8ef607d4cf892557db402e5041c93294b3a79d",
+    "testsPass": 101,
+    "testsFail": 0,
+    "newTests": 6,
+    "modified": [
+      "modules/regionwright/scripts/studio-cav-water-state.js",
+      "modules/regionwright/scripts/studio-cav-water-controller.js"
+    ],
+    "newTest": "tests/cav-sluice-prestate-recovery.test.mjs",
+    "sha": [
+      "379E53BEC1B3E67CA5283F01197BA88E891B4C97FD30C948AD6601ADE7E8DF8E",
+      "454C974214658F0D1BFB430777F41D8CFC3743AE6FBE991952E2E76F1BDC53B4"
+    ],
+    "installedShaEqual": true
+  },
+  "sourceRisk": "A Crank DONE ledger with missing initial water receipt normalized as legitimate initial full/closed, and stale completed stage could lack matching prior transaction",
+  "runtime": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGM": "Gamemaster 1",
+    "sourceReloadVerified": true,
+    "gmWaterListenerPresent": true,
+    "bathFixturesSafe": true,
+    "pureMissingWaterRejected": true,
+    "pureValidInitialAccepted": true,
+    "purePriorCommittedAccepted": true,
+    "pureReservedPriorDenied": true,
+    "nativeSluiceEnabled": true,
+    "nativeRosewaterDisabled": true,
+    "crankFlag": null,
+    "waterFlag": null,
+    "waterTransaction": null,
+    "rosewaterSession": null,
+    "ownerSymbols": [
+      "rose",
+      "sun",
+      "moth",
+      "thorn"
+    ],
+    "chatMessageCount": 54,
+    "worldWrites": 0
+  },
+  "future": [
+    "Read-only reserved Study587 grant and Crank consumption reconciliation and tests",
+    "No automatic item retry or fake player-progress flags",
+    "Owner-deferred ordinary player test",
+    "Keep Rosewater and first chase disabled"
+  ],
+  "evidence": [
+    "utility-harness/artifacts/cav-chat-a-original-crank-water-prestate-after-reload-electedgm-20261026.json"
+  ],
+  "fidelity": "available-message reconstruction, not lossless transcript"
+}
