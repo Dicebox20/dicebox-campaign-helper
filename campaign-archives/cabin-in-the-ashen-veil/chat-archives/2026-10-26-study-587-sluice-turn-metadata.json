@@ -1,0 +1,74 @@
+{
+  "schema": "dicebox.cav.turn-metadata/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "turnMaxMinutes": 25,
+  "ownerOverrides": [
+    "Implement in player dependency order",
+    "Full gameplay tests only at end",
+    "Regionwright source changes authorized; update log required",
+    "GitHub handoff+metadata+available-message transcript at every turn"
+  ],
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "activeElectedGMVerified": true
+  },
+  "regionwright": {
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "05ea5fc2a571c6b29c975d2c34d261dcf0f53bb3",
+    "sourceFiles": [
+      "modules/regionwright/scripts/studio-campaign.js",
+      "modules/regionwright/scripts/studio-cav-sluice.js",
+      "modules/regionwright/scripts/studio-cav-water-state.js"
+    ],
+    "changeLog": "docs/cabin-ashen-veil/regionwright-puzzle-update-log-2026-10-26.md",
+    "sourceUnitTests": {
+      "pass": 8,
+      "fail": 0
+    }
+  },
+  "study587": {
+    "doorRegion": "Scene.CAVHG06GreatRoom.Region.CAV06R0000000003",
+    "doorTeleportBehavior": "CAVHG06STUDYT001",
+    "studyNoteRegion": "Scene.CAVHG05Scene0001.Region.CAVB3E32BD6B01BD",
+    "shackRegion": "Scene.CAVEXT03Scene001.Region.CAVEXT03BOXREG01",
+    "crankSource": "Item.g3VYdgc1qkgkHGvn",
+    "gmServiceActive": true,
+    "sourceArtPathsVerified": true
+  },
+  "sluice": {
+    "scene": "CAVEXT02Scene001",
+    "region": "CAVEXT02SLUICE01",
+    "regionBehavior": "CAVEXT02SLCBEH01",
+    "api": "game.modules.get('regionwright').api.campaign.cabin.sluice.handleRegionEvent",
+    "hookVersion": 1,
+    "sourceInstalled": true,
+    "sourceSHAReadback": true,
+    "drainEnabled": false,
+    "priorNoDrainFlag": true,
+    "crankInstall": null,
+    "waterState": null,
+    "fullPlayerGameplayTests": 0,
+    "liveReceipt": "utility-harness/artifacts/cav-sluice-crank-controller-install-20261026.json"
+  },
+  "approvedBathhouse": {
+    "path": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_owner-approved.png",
+    "sha256": "A878D19046B4BA79ADBAC36C620A53C8648FE5CFED1504469978FAE0A353B132",
+    "width": 1536,
+    "height": 1024,
+    "displayedInChat": true,
+    "drainedVariantConfirmed": false,
+    "alternateBackground": null
+  },
+  "pond": {
+    "fullPath": "Maps/cabin-in-the-ashen-veil/ext-02_pond_full_owner-approved.png",
+    "drainedPath": "Maps/cabin-in-the-ashen-veil/ext-02_pond_drained_owner-approved.png",
+    "approvedBoth": true
+  },
+  "next": "recover/approve Bath drained static visual -> measure safe token landings/egress -> sync Pond/Bath water transitions -> Weathered Key and Screwdriver",
+  "noGameplayTests": true,
+  "noActorWrites": true,
+  "transcriptFidelity": "available-message reconstruction, not lossless native export"
+}
