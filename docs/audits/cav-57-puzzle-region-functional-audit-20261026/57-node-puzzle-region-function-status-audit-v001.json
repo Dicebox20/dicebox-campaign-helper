@@ -1,0 +1,1160 @@
+{
+  "at": "2026-10-26T02:49:30.001Z",
+  "referenceLedger": "v015",
+  "graph": "puzzle-dependencies-2026-10-24.json",
+  "scenes": 46,
+  "regions": 203,
+  "behaviors": 96,
+  "teleports": 68,
+  "brokenTargets": [],
+  "nativeRegionScriptSyntaxFailures": [],
+  "sceneRouteReachable": 24,
+  "sceneRouteTotal": 46,
+  "gmHooksNow": {
+    "roof": null,
+    "study": null,
+    "sune": null,
+    "felix": null
+  },
+  "regionwright": {
+    "enabled": true,
+    "active": false
+  },
+  "counts": {
+    "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED": 20,
+    "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED": 31,
+    "PARTIAL_OR_BLOCKED": 6
+  },
+  "nodes": [
+    {
+      "node": "oars",
+      "title": "Wooden Oars",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [],
+      "ledgerStatus": "LIVE_BEHAVIOR_AND_PLAYER_REWARD_VERIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVEXT01Yard0001",
+        "Region.CAV01R0000000006"
+      ],
+      "observations": "Canonical first Oars reward has ledger record of previous player verification; current source exists, but no retest today.",
+      "candidateWorldItems": [
+        "CAVOARSPOND00001 Wooden Oars"
+      ],
+      "candidateRegions": [
+        "CAV01R0000000006 EXT-01 - Donovan Shack Approach",
+        "CAVROWBOATREG001 EXT-02 - Old Rowboat Investigation (Oars Required)"
+      ],
+      "canClaimPlaytested": true
+    },
+    {
+      "node": "oil",
+      "title": "Lamp Oil",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [],
+      "ledgerStatus": "SHACK_LAMP_OIL_APPROVED_ART_INSPECT_AND_GM_ONCE_ONLY_PICKUP_SOURCE_INSTALLED_NOT_PLAYER_TESTED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVEXT03Scene001",
+        "Region.CAVEXT03OILREG01",
+        "RegionBehavior.CAVEXT03OILBEH01",
+        "Item.CAVLAMPOIL000001"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "CAVLAMPOIL000001 Lamp Oil"
+      ],
+      "candidateRegions": [
+        "CAVEXT03OILREG01 EXT-03 - Worktable Lantern / Lamp Oil"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "old_iron_key",
+      "title": "Old Iron Key",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [],
+      "ledgerStatus": "PARENTS_COAT_CANONICAL_ITEM_AND_GM_ONCE_ONLY_PICKUP_SOURCE_INSTALLED_PLAYER_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHU04Scene0001",
+        "Region.CAVHU04COATREG01",
+        "RegionBehavior.CAVHU04COATBEH01",
+        "Item.CAVOLDIRONKEY001"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "CAVOLDIRONKEY001 Old Iron Key"
+      ],
+      "candidateRegions": [
+        "UV4YAstBe0WCuLcM H-U02 \u2014 Sophia Bedroom Entrance (Locked)",
+        "CAVHU04COATREG01 H-U04 - Hanging Coat / Old Iron Key"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "book_pond",
+      "title": "Pond hollow-log storybook",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [],
+      "ledgerStatus": "OWNER_2026_10_18_FELIX_ORIGINAL_ITEM_AUTHENTIC_GM_ONCE_REWARD_SOURCE_INSTALLED_PLAYER_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVEXT02Scene001",
+        "Region.CAVEXT02HLOGR001",
+        "RegionBehavior.CAVEXT02HLOGB001",
+        "Item.TO69wBYN8sRJuxtH",
+        "Macro.CAVPONDBOOKGM001"
+      ],
+      "observations": "Original Felix book source and GM macro exist, but elected GM browser session listener is currently unarmed; no actor claim.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "pellet_027",
+      "title": "Water-filled Dust of Dryness pellet",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [],
+      "ledgerStatus": "OWNER_REPORTS_ALREADY_DONE_LIVE_CURRENT_WORLD_SOURCE_NOT_IDENTIFIED_DO_NOT_DUPLICATE",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHG06GreatRoom",
+        "Region.ibN7AGsY4AlG582M",
+        "Item.VjdQNwil7pPKzkHU",
+        "Macro.CAVCHEST024MAC01"
+      ],
+      "observations": "Owner reports completed, but current 203 Regions/28 native scripts/19 macros have no identifiable distinct 027 handler; 024 Chest is a different puzzle; original Dust World Item exists. Investigate provenance; do not duplicate.",
+      "candidateWorldItems": [
+        "VjdQNwil7pPKzkHU Dust of Dryness"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "mirror",
+      "title": "Ornate Mirror",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "oars"
+      ],
+      "ledgerStatus": "LIVE_BEHAVIOR_INSTALLED_PLAYER_SUCCESS_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVEXT02Scene001",
+        "Region.CAVROWBOATREG001"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "CAVBRASSKEYVAN01 Brass Tiny Key #1",
+        "CAVCARRIAGEKEY01 Carriage Key",
+        "CAVMIRRORSUNK001 Ornate Mirror"
+      ],
+      "candidateRegions": [
+        "CAVROWBOATREG001 EXT-02 - Old Rowboat Investigation (Oars Required)",
+        "CAVVANITYREG0001 H-U07 - Dahlia Vanity \u2014 Mirror Socket"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "sophia_access",
+      "title": "Sophia bedroom accessible",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "old_iron_key"
+      ],
+      "ledgerStatus": "SOURCE_INSTALLED_KEY_GATED_NATIVE_TELEPORT_DISABLED_UNTIL_UNLOCK",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.gGgUHlHdI7RFrbUh",
+        "Region.UV4YAstBe0WCuLcM",
+        "RegionBehavior.CAVHU02SOPHGATE1"
+      ],
+      "observations": "Native Sophia entrance teleport intentionally disabled until original Coat Key source unlock.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "vanity",
+      "title": "Art Studio vanity unlocked",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "mirror"
+      ],
+      "ledgerStatus": "LIVE_BEHAVIOR_INSTALLED_ACCESS_PLAYER_TEST_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHU07Scene0001",
+        "Region.CAVVANITYREG0001"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "CAVBRASSKEYVAN01 Brass Tiny Key #1",
+        "CAVCARRIAGEKEY01 Carriage Key"
+      ],
+      "candidateRegions": [
+        "CAVVANITYREG0001 H-U07 - Dahlia Vanity \u2014 Mirror Socket"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "first_eye",
+      "title": "Rufus First Eye",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "sophia_access"
+      ],
+      "ledgerStatus": "SOPHIA_STUFFED_BEAR_GM_GATED_FIRST_GLASS_EYE_SOURCE_INSTALLED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHU05Scene0001",
+        "Region.CAVB0FDF8543F6D9",
+        "RegionBehavior.aZlQOQfF6gPrMaye"
+      ],
+      "observations": "Sophia stuffed bear original First Eye inspect/GM reward source installed; player canary deferred.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "books_shelf",
+      "title": "Two shelf storybooks",
+      "status": "PARTIAL_OR_BLOCKED",
+      "canonicalRequires": [
+        "sophia_access"
+      ],
+      "ledgerStatus": "SOPHIA_BOOKCASE_OBSERVATION_CLOSEUP_ONLY_BOOK_ASSIGNMENT_UNRESOLVED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHU05Scene0001",
+        "Region.CAVB994894A7432F",
+        "RegionBehavior.LRYrBIQNN92SCJai"
+      ],
+      "observations": "Sophia bookcase original image inspection only; no two-book assignment, inventory award or six-slot Mosaic source.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "tiny_brass",
+      "title": "Brass Tiny Key #1",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "vanity"
+      ],
+      "ledgerStatus": "PREEXISTING_VANITY_GM_PAIRED_REWARD_SOURCE_VERIFIED_PLAYER_TEST_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHU07Scene0001",
+        "Region.CAVVANITYREG0001",
+        "RegionBehavior.CAVVANITYBEH0001",
+        "Item.CAVBRASSKEYVAN01"
+      ],
+      "observations": "Paired vanity Region awards Brass Tiny Key #1 and Carriage Key; current claim absent, no new player canary.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "carriage_key",
+      "title": "Carriage Key",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "vanity"
+      ],
+      "ledgerStatus": "PREEXISTING_VANITY_GM_PAIRED_REWARD_SOURCE_VERIFIED_PLAYER_TEST_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHU07Scene0001",
+        "Region.CAVVANITYREG0001",
+        "RegionBehavior.CAVVANITYBEH0001",
+        "Item.CAVCARRIAGEKEY01"
+      ],
+      "observations": "Paired vanity Region awards two keys; source installed once, no duplicate handler.",
+      "candidateWorldItems": [
+        "CAVCARRIAGEKEY01 Carriage Key"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "hour_hand",
+      "title": "Oversized Hour Hand",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "tiny_brass"
+      ],
+      "ledgerStatus": "FOUNDRY_NATIVE_CLOCK_AND_CLOSEUP_INSTALLED_PLAYER_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHG06GreatRoom",
+        "Region.MrWgTyGg0d0DI53Q",
+        "RegionBehavior.SAshGMH5A3AsJC0Y"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "HVZnNaV2SxNWck6H Grandfather Clock Hour Hand"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "ladder_hook",
+      "title": "Ladder Hook",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "carriage_key"
+      ],
+      "ledgerStatus": "FOUNDRY_NATIVE_BEHAVIOR_INSTALLED_PLAYER_TEST_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVEXT01Yard0001",
+        "Region.CAV01R0000000008"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "CAVLADDERHOOK001 Ladder Hook"
+      ],
+      "candidateRegions": [
+        "iiUiIaQxybYR73lH H-A01 - Return down the Ladder",
+        "UOudBnxOGVlAlPoa H-U02 \u2014 Attic Hatch",
+        "1DJ0FCse01r9J5P5 H-U02 - Arrival from Central Attic"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "attic_access",
+      "title": "Attic ladder lowered",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "ladder_hook"
+      ],
+      "ledgerStatus": "FOUNDRY_HOOK_HANDLER_INSTALLED_TELEPORTS_INTENTIONALLY_DISABLED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.gGgUHlHdI7RFrbUh",
+        "Region.UOudBnxOGVlAlPoa",
+        "RegionBehavior.8gISLbFWqUhxy9e8"
+      ],
+      "observations": "Native Attic return/entry teleports intentionally disabled until ladder lowered with Hook.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "minute_hand",
+      "title": "Minute Hand",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "attic_access"
+      ],
+      "ledgerStatus": "FOUNDRY_ATTIC_STORAGE_PICKUP_SOURCE_INSTALLED_PLAYER_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.nyF5EX0JiEu23C3p",
+        "Region.UtXhS68vd1czWfTG",
+        "RegionBehavior.whiZBUmM3mbZEOwF"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "smvovibxtjJ9NW56 Attic Clock Minute Hand"
+      ],
+      "candidateRegions": [
+        "UtXhS68vd1czWfTG H-A04 - Attic Minute Hand in Storage Crate"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "winder",
+      "title": "Clockwork Winder",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "attic_access"
+      ],
+      "ledgerStatus": "FOUNDRY_ATTIC_STORAGE_PICKUP_SOURCE_INSTALLED_PLAYER_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.KwpmPrYgEC7KQVCZ",
+        "Region.82gAoSwyIPu8EdQs",
+        "RegionBehavior.SuECFpdFlDtFf3j0"
+      ],
+      "observations": "Original puzzle Region/Item source documented and live reference exists; final authentic player interaction not certified.",
+      "candidateWorldItems": [
+        "JdxWT2pmO0aRrv3l Clockwork Winder"
+      ],
+      "candidateRegions": [
+        "82gAoSwyIPu8EdQs H-A02 - Clockwork Winder in Storage Box",
+        "gksvZIqj8jWdqzn7 Grove Bust - NW Moon - Winder",
+        "BfKhb34dSEfVTf2e Grove Bust - NE Star - Winder",
+        "0JAM9urrHnAxVUgM Grove Bust - SW Rose - Winder",
+        "BrugKqcQyDImUvwt Grove Bust - SE Sun - Winder"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "attic_book",
+      "title": "Attic storybook",
+      "status": "PARTIAL_OR_BLOCKED",
+      "canonicalRequires": [
+        "attic_access"
+      ],
+      "ledgerStatus": "APPROVED_NORTH_ATTIC_ART_OBSERVER_INSTALLED_TITLE_REWARD_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.gDqaEOR4qaB5IOut",
+        "Region.CAVATTICBOOKR001",
+        "RegionBehavior.CAVATTICBOOKB001"
+      ],
+      "observations": "New H-A03 north shelf player closeup only; exact owner-approved book title-to-location reward not wired.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "flue_book",
+      "title": "Chimney-flue storybook",
+      "status": "PARTIAL_OR_BLOCKED",
+      "canonicalRequires": [
+        "attic_access"
+      ],
+      "ledgerStatus": "APPROVED_ROOF_FLUE_ART_OBSERVER_INSTALLED_TITLE_REWARD_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.LhtyO17QenuCExsb",
+        "Region.CAVFLUEBOOKREG01",
+        "RegionBehavior.CAVFLUEBOOKBEH01"
+      ],
+      "observations": "New H-R01 flue approach closeup only; distinct book item reward missing.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "replacement_gear",
+      "title": "Replacement Gear",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "hour_hand",
+        "minute_hand"
+      ],
+      "ledgerStatus": "FOUNDRY_ROOF_CLOCK_CLICK_INSPECT_AND_GM_VALIDATED_12_NOON_SOURCE_INSTALLED_PLAYER_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.LhtyO17QenuCExsb",
+        "Region.CAVROOFCLOCKR001",
+        "RegionBehavior.i6UNtWSFFaZgkdZD",
+        "Macro.rEo3v6pIjbAzxVw1"
+      ],
+      "observations": "Roof clock Region source + GM macro exist; browser-session GM handler currently unarmed.",
+      "candidateWorldItems": [
+        "wDKqETOykWEdKF1Z Replacement Gear"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "grove_busts",
+      "title": "Four Sune busts retracted",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "winder"
+      ],
+      "ledgerStatus": "FOUR_APPROVED_SUNE_CLOSEUPS_AND_CLICK_TO_GM_WINDER_ORDERED_HANDLER_INSTALLED_MOCK_VERIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVSG07Scene0001",
+        "Scene.CAVSG03Scene0001",
+        "Scene.CAVSG01Scene0001",
+        "Scene.CAVSG09Scene0001",
+        "Region.0JAM9urrHnAxVUgM",
+        "Region.BfKhb34dSEfVTf2e",
+        "Region.gksvZIqj8jWdqzn7",
+        "Region.BrugKqcQyDImUvwt",
+        "Macro.CAVSUNEGMCLICK01"
+      ],
+      "observations": "Four approved corner inspections and GM macro exist; GM listener unarmed and no successful player sequence.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "sliding_relief",
+      "title": "Sune concealed relief solved",
+      "status": "PARTIAL_OR_BLOCKED",
+      "canonicalRequires": [
+        "grove_busts"
+      ],
+      "ledgerStatus": "EXISTING_REGIONWRIGHT_VENDOR_4X4_CONFIG_LOCKED_DISABLED_RUNTIME_RESTART_REQUIRED_3X3_UPDATE_STAGED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVSG05Scene0001",
+        "Region.L15BdSqcbCOLPnIN",
+        "RegionBehavior.Q8Hr2Dnw6hBpWNjr"
+      ],
+      "observations": "Official Regionwright mosaic 4x4 vendor behavior deliberately disabled, Regionwright enabled configuration but inactive runtime; owner-approved 3x3 requires coordinated restart and configure.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "brass_study_key",
+      "title": "Brass Key",
+      "status": "PARTIAL_OR_BLOCKED",
+      "canonicalRequires": [
+        "sliding_relief"
+      ],
+      "ledgerStatus": "WORLD_ITEM_TEMPLATE_PRESENT_VENDOR_SOLVED_REWARD_PROVENANCE_INTEGRATION_PENDING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVSG05Scene0001",
+        "Region.L15BdSqcbCOLPnIN",
+        "Item.CAVSTUDYBRASS001"
+      ],
+      "observations": "Original World Item exists, but SG05 solved mosaic has no authenticated once-only Key award handler.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "study_access",
+      "title": "Father Study unlocked",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "brass_study_key"
+      ],
+      "ledgerStatus": "LOCKED_STUDY_NATIVE_TELEPORT_GM_BRASS_KEY_SOURCE_INSTALLED_NO_KEY_ISSUED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHG06GreatRoom",
+        "Region.CAV06R0000000003",
+        "RegionBehavior.CAVHG06STUDYT001",
+        "RegionBehavior.CAVHG06STUDYG001"
+      ],
+      "observations": "Native Study teleport intentionally disabled until authentic Brass Key possession.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "code_587",
+      "title": "587 learned",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "study_access"
+      ],
+      "ledgerStatus": "STUDY_DESK_APPROVED_587_NOTE_PLAYER_CLICK_GM_LEARN_LEDGER_INSTALLED_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVHG05Scene0001",
+        "Region.CAVB3E32BD6B01BD",
+        "RegionBehavior.CAVHG05NOTE00001",
+        "Macro.CAV587GMSERVICE1"
+      ],
+      "observations": "Study paper inspect + GM service Macro installed; listener unarmed after GM browser reload.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "sluice_crank",
+      "title": "Sluice Crank",
+      "status": "SOURCE_PRESENT_NOT_PLAYER_CERTIFIED",
+      "canonicalRequires": [
+        "code_587"
+      ],
+      "ledgerStatus": "DONOVAN_LOCKBOX_3DIGIT_NATIVE_CLOSEUP_AND_ONCE_ONLY_GM_CRANK_SOURCE_INSTALLED_PLAYER_TEST_DEFERRED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVEXT03Scene001",
+        "Region.CAVEXT03BOXREG01",
+        "RegionBehavior.CAVEXT03BOXBEH01",
+        "Item.g3VYdgc1qkgkHGvn",
+        "Macro.CAV587GMSERVICE1"
+      ],
+      "observations": "Shack 587 click Region + original Crank item and GM service installed; listener unarmed.",
+      "candidateWorldItems": [
+        "g3VYdgc1qkgkHGvn Sluice Crank"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "pond_drained",
+      "title": "Pond and bathhouse drained",
+      "status": "PARTIAL_OR_BLOCKED",
+      "canonicalRequires": [
+        "sluice_crank"
+      ],
+      "ledgerStatus": "EXT02_SLUICE_APPROVED_ART_CLOSEUP_INSPECT_ONLY_INSTALLED_PHYSICAL_DRAIN_BLOCKED_BATHHOUSE_DRAINED_VISUAL_MISSING",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [
+        "Scene.CAVEXT02Scene001",
+        "Region.CAVEXT02SLUICE01",
+        "RegionBehavior.CAVEXT02SLCBEH01"
+      ],
+      "observations": "EXT02 sluice original-art inspection only; no full + drained synchronized pond/Bathhouse state and return-to-full, dry Bathhouse art not approved.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "weathered_key",
+      "title": "Weathered Key",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "pond_drained"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original World Item.CAVWEATHERKEY001 exists; no drained pond floor Region/item pickup.",
+      "candidateWorldItems": [
+        "CAVOLDIRONKEY001 Old Iron Key",
+        "CAVWEATHERKEY001 Weathered Key"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "screwdriver",
+      "title": "Screwdriver",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "pond_drained"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "No distinct original Screwdriver World Item or drained Bathhouse pool retrieval Region; Bathhouse scene has just return and arrival.",
+      "candidateWorldItems": [],
+      "candidateRegions": [
+        "SLovYxFAWVAMFzXg BATH - Return to Trail Fork",
+        "R2Pg9eHODtb1C1Yk BATH - Arrival from Trail Fork",
+        "CAVEXT02SLUICE01 EXT-02 - Sluice Control Inspection",
+        "13g6uK1QrR9PFOzA EXT-TRAIL - To Bathhouse",
+        "N5LomZ7TrVBMoExk EXT-TRAIL - Arrival from Bathhouse"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "basement_access",
+      "title": "Basement accessible",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "weathered_key"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Weathered Key gate/route not installed; basement scenes have passive Regions, no enabled travel into basement.",
+      "candidateWorldItems": [
+        "CAVWEATHERKEY001 Weathered Key"
+      ],
+      "candidateRegions": [
+        "CAVB9C0F653A2A6F Basement Workshop ? stairhead",
+        "CAVBABA9513F73A3 Basement Workshop ? central bench"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "gate_handle",
+      "title": "Aqueduct Gate Handle",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "screwdriver"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Aqueduct Gate Handle item exists, but Parents nightstand/screwdriver gated pickup Region/behavior absent.",
+      "candidateWorldItems": [
+        "nRVZJL9JOwEwfnLq Aqueduct Gate Handle"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "aqueduct_open",
+      "title": "Aqueduct gate open",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "pond_drained",
+        "replacement_gear",
+        "gate_handle"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "AQ01 contains five passive Regions and zero behaviors; exact multi-prerequisite gate activation/route not installed.",
+      "candidateWorldItems": [
+        "nRVZJL9JOwEwfnLq Aqueduct Gate Handle"
+      ],
+      "candidateRegions": [
+        "woZ98KXx0RsWIPpl Southern Aqueduct Access"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "waterworks_access",
+      "title": "Waterworks Utility Room accessible",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "aqueduct_open"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "AQ01 Waterworks Annex observation Region passive, no gated utility-room access.",
+      "candidateWorldItems": [],
+      "candidateRegions": [
+        "kmPmr5ijLCEOJNk3 Waterworks Annex ? observation"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "greenhouse_water",
+      "title": "Greenhouse water restored",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "waterworks_access"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "EXT06 controls and planting-bed Regions are passive, no water/choke/balance puzzle.",
+      "candidateWorldItems": [],
+      "candidateRegions": [
+        "CAVB22FBB1C7077B Greenhouse South Entrance ? interior landing",
+        "CAVB6E433D528867 Greenhouse Controls ? observation",
+        "CAVB8E20313B8F53 Greenhouse Planting Beds ? observation"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "waterworks_clue",
+      "title": "Later-return waterworks clue",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "greenhouse_water"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "No source for later return clue after greenhouse restored; AQ01 Waterworks Annex passive.",
+      "candidateWorldItems": [
+        "yVW4Cq6Z919JnK9T Rufus\u2019s Collar"
+      ],
+      "candidateRegions": [
+        "kmPmr5ijLCEOJNk3 Waterworks Annex ? observation"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "late_nw_chase",
+      "title": "Second Crooked Man chase",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "waterworks_clue",
+        "grove_busts"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "SG01 Northwest bust has source only for first Winder inspection; no later Crooked Man chase trigger.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "silver_tiny",
+      "title": "Silver Tiny Key #2",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "late_nw_chase"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "No distinct Silver Tiny Key #2 World Item or authentic later NW chase once-only recovery handler.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "hope_chest",
+      "title": "Hope Chest opened",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "silver_tiny"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Parents room only return/arrival/old coat; no Hope Chest open Region.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "music_box",
+      "title": "Ornate Music Box opened",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "hope_chest"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "No World Item or Region handler for ornate Music Box.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "prayer_protection",
+      "title": "Prayer of Protection",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "music_box"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "No World Item named Prayer of Protection and no music-box reward source.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "candle_workshop",
+      "title": "Candle Workshop reached",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "prayer_protection"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "H-U08 Candle Workshop only two passive Regions, no prayer-gated entry or crafting Region behavior.",
+      "candidateWorldItems": [],
+      "candidateRegions": [
+        "CAVB78B258E0A0BB Candle Workshop ? central crafting table",
+        "CAVBE5639AEC2179 Candle Workshop ? shelving observation"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "wick",
+      "title": "Gazebo lantern Wick",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "candle_workshop"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "No Wick World Item, gazebo has only two passive landing Regions; no lantern-wick interaction.",
+      "candidateWorldItems": [
+        "CAVLAMPOIL000001 Lamp Oil"
+      ],
+      "candidateRegions": [
+        "CAVEXT03OILREG01 EXT-03 - Worktable Lantern / Lamp Oil"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "second_eye",
+      "title": "Rufus Second Eye",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "wick",
+        "oil"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Rufus Second Glass Eye item template exists; no gazebo lantern/flash reward Region.",
+      "candidateWorldItems": [
+        "yVW4Cq6Z919JnK9T Rufus\u2019s Collar",
+        "mN1dk0qlr7hyfupk Rufus\u2019s First Glass Eye",
+        "QIH1ugEWGOO1U6LN Rufus\u2019s Second Glass Eye"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "power_source",
+      "title": "Uncharged Gondian power source",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "first_eye",
+        "second_eye",
+        "study_access"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Uncharged Gondian Power Source exists; no two-glass-eye Rufus-compartment handler.",
+      "candidateWorldItems": [
+        "yVW4Cq6Z919JnK9T Rufus\u2019s Collar",
+        "mN1dk0qlr7hyfupk Rufus\u2019s First Glass Eye",
+        "QIH1ugEWGOO1U6LN Rufus\u2019s Second Glass Eye",
+        "pbmUZPfC3WnsBRgi Uncharged Gondian Power Source"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "charged_power",
+      "title": "Charged Gondian power",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "power_source",
+        "aqueduct_open"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Aqueduct charger Region/source and charged-power state absent; only uncharged World Item template exists.",
+      "candidateWorldItems": [
+        "pbmUZPfC3WnsBRgi Uncharged Gondian Power Source"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "crimson_veil",
+      "title": "Crimson Veil active",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "charged_power"
+      ],
+      "ledgerStatus": "DESIGN_TRIGGER_VERIFIED_RUNTIME_UNCERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Trigger is a documented design state only; no runtime region/macro source or flag progression.",
+      "candidateWorldItems": [],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "book_six",
+      "title": "Sixth storybook",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "crimson_veil",
+        "sophia_access"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Sophia bedroom has bear/bookcase inspection, not Crimson Veil bed materialization; no sixth-copy award.",
+      "candidateWorldItems": [],
+      "candidateRegions": [
+        "UV4YAstBe0WCuLcM H-U02 \u2014 Sophia Bedroom Entrance (Locked)",
+        "CAVHU02SOPHAR001 H-U02 - Arrival from Sophia Bedroom",
+        "CAVB0FDF8543F6D9 Sophia Bedroom ? stuffed bear observation",
+        "CAVB994894A7432F Sophia Bedroom ? bookcase observation"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "copper_tiny",
+      "title": "Copper Tiny Key #3",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "crimson_veil"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Copper Tiny Key exists; Privy has only return/arrival travel, no minigame/recovery.",
+      "candidateWorldItems": [
+        "D1LRRg4n7y7pRWvk Copper Tiny Key"
+      ],
+      "candidateRegions": [
+        "CAV01R0000000007 EXT-01 - Privy Approach",
+        "hc9kcjO4lIsV08MJ EXT-01 - Arrival from Privy",
+        "zVgVWvnpPetxlF5e EXT-04 - Return to Carriage Yard",
+        "663WrP9V8tPPOLvt EXT-04 - Arrival from Carriage Yard"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "gond_half",
+      "title": "Gond emblem half",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "books_shelf",
+        "book_pond",
+        "attic_book",
+        "flue_book",
+        "book_six"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Gond Emblem Half World Item exists; six-volume publication-order Spine Mosaic solution/reward absent.",
+      "candidateWorldItems": [
+        "o9G3UJjEe2QX1ZH0 Gond Emblem Half"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "lye",
+      "title": "Lye",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "copper_tiny"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Lye World Item exists; Bathhouse lacks soap room pickup Region.",
+      "candidateWorldItems": [
+        "vDR4cJU35iODR6gh Lye"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "plant_killer",
+      "title": "Plant killer",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "lye",
+        "greenhouse_water"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Plant Killer World Item exists; Greenhouse mixing/water-prerequisite handler missing.",
+      "candidateWorldItems": [
+        "YNWpGEGB17mqDFWe Plant Killer"
+      ],
+      "candidateRegions": [
+        "CAVB22FBB1C7077B Greenhouse South Entrance ? interior landing",
+        "CAVB6E433D528867 Greenhouse Controls ? observation",
+        "CAVB8E20313B8F53 Greenhouse Planting Beds ? observation"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "boathouse",
+      "title": "Boathouse reached",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "plant_killer",
+        "oars"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Boathouse Clearing has passive Region staging only, no gated overgrown dock traversal.",
+      "candidateWorldItems": [],
+      "candidateRegions": [
+        "CAVB295859043E3B Boathouse Forest Trail ? clearing",
+        "CAVBDC8953715C50 Boathouse Porch ? landing",
+        "CAVBBFF38CB54B53 Boathouse Dock ? landing"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "prayer_devotion",
+      "title": "Prayer of Devotion",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "boathouse"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Prayer of Devotion Item exists but no boathouse inscription/pickup Region.",
+      "candidateWorldItems": [
+        "GXLYq6Tf4OgPNbkU Prayer of Devotion"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "sune_half",
+      "title": "Sune emblem half",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "prayer_devotion"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Sune emblem half exists, but Art Studio has no Devotion prayer at shrine handler (only vanity/return).",
+      "candidateWorldItems": [
+        "vbDWTbnAZg65ErSS Completed Gond\u2013Sune Emblem",
+        "GXLYq6Tf4OgPNbkU Prayer of Devotion",
+        "t9uCIpsKeSvtC31w Sune Emblem Half"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "final_vault",
+      "title": "Final vault open",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "basement_access",
+        "charged_power",
+        "gond_half",
+        "sune_half"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "H-B02 Keystone Vault has only two passive Regions, no four-gate auth/reveal source.",
+      "candidateWorldItems": [],
+      "candidateRegions": [
+        "CAVB1F6B8321128A Keystone Vault ? inside western threshold",
+        "CAVB799A5357A114 Keystone Vault ? dais observation"
+      ],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "scrying_bowl",
+      "title": "Sune Scrying Bowl",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "final_vault"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "Original Scrying Bowl template exists, no final vault reward Region or claim.",
+      "candidateWorldItems": [
+        "1n5LONw3nYIy61O9 Sune\u2019s Scrying Bowl"
+      ],
+      "candidateRegions": [],
+      "canClaimPlaytested": false
+    },
+    {
+      "node": "undercroft",
+      "title": "Undercroft revealed",
+      "status": "NO_ACTIVE_PUZZLE_IMPLEMENTATION_CONFIRMED",
+      "canonicalRequires": [
+        "scrying_bowl",
+        "pellet_027"
+      ],
+      "ledgerStatus": "NOT_YET_RUNTIME_CERTIFIED",
+      "exactReferencesVerified": true,
+      "existingExactReferences": [],
+      "observations": "UND01/02/03 Scenes each have passive Regions only, no scrying bowl/027 finale/reveal route.",
+      "candidateWorldItems": [
+        "1n5LONw3nYIy61O9 Sune\u2019s Scrying Bowl"
+      ],
+      "candidateRegions": [
+        "CAVBB3383706E610 Undercroft Approach ? southern stairhead",
+        "CAVB67AABD1B35C6 Undercroft Approach ? keystone wall"
+      ],
+      "canClaimPlaytested": false
+    }
+  ]
+}
