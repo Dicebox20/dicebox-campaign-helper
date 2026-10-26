@@ -1,0 +1,99 @@
+{
+  "schema": "dicebox.cav.native-boiler-pressure-live-install/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerDirective": "continue",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "d9f4e73d5c4cc16404d6ff51c1a648ba9326fe48",
+    "tests": {
+      "passed": 73,
+      "failed": 0
+    },
+    "nodeSourceSyntaxVerified": true,
+    "installedModuleSourceHashMatches": true
+  },
+  "foundry": {
+    "version": "14.367",
+    "world": "cabin-in-the-ashen-veil",
+    "gm": "Gamemaster 1",
+    "electedActive": true,
+    "totalScenes": 47,
+    "originalItemsUnchanged": true,
+    "sourceBowluuid": "Item.1n5LONw3nYIy61O9",
+    "screwdriverRegionBehaviorEnabled": true,
+    "waterStage": null,
+    "sluiceTransaction": null,
+    "changedScenes": 0,
+    "regionsCreated": 0,
+    "behaviorsCreated": 2,
+    "behaviorsEnabled": 2,
+    "tokenMoves": 0
+  },
+  "boiler": {
+    "goal": [
+      2,
+      1
+    ],
+    "originalDemoGoal": [
+      2,
+      4
+    ],
+    "namespace": "dicebox-campaign-helper",
+    "regionId": "CAVBBOILERCTRL01",
+    "behaviorId": "CAVBOILERSCRPT01",
+    "enabledSourceRegions": [
+      "Scene.CAVBATHScene0001.Region.CAVBBOILERCTRL01",
+      "Scene.8yLMRDvxyw58dydh.Region.CAVBBOILERCTRL01"
+    ],
+    "gmSessionFlag": "cavUnifiedBoilerPressureSession",
+    "gmStatus": "ready",
+    "sessions": [
+      null,
+      null
+    ],
+    "ownerPlayerGameplayTestDeferred": true,
+    "nonGameplayUiSmokePassed": true,
+    "art": "boiler-pressure-approved.png",
+    "eventSource": "await game.modules.get(\"regionwright\")?.api?.campaign?.cabin?.boiler?.handleRegionEvent(region, event);",
+    "eventNames": [
+      "behaviorViewed",
+      "behaviorUnviewed",
+      "behaviorDeactivated"
+    ],
+    "serverAuthoritative": true,
+    "transactionalReservedMirrored": true
+  },
+  "rosewater": {
+    "newBehaviors": 0,
+    "ownerApprovedSymbols": false,
+    "goal": [
+      1,
+      3,
+      2
+    ],
+    "ownerBowlPickupPointUndecided": true
+  },
+  "recovery": {
+    "firstInvalidBehaviorIdLength": 17,
+    "readOnlyReconcileConfirmedBothEmpty": true,
+    "replacementBehaviorIdLength": 16,
+    "eachSeparateReadback": true,
+    "initialHardeningPatchPrewriteFailure": true,
+    "retryAfterExactSourceRead": true
+  },
+  "receipts": [
+    "cav-boiler-new-gm-service-loaded-preinstall-20261026.json",
+    "cav-boiler-both-native-disabled-behaviors-verified-20261026.json",
+    "cav-boiler-unified-pair-native-commissioned-structural-20261026.json",
+    "cav-boiler-gm-service-enabled-after-final-reload-20261026.json"
+  ],
+  "next": [
+    "owner-approved four Rosewater symbols",
+    "GM-authoritative ring panel setup",
+    "specific original Bowl pickup region",
+    "deferred full player Boiler acceptance test"
+  ],
+  "fidelity": "available-message reconstruction, not verbatim transcript export"
+}
