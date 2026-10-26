@@ -1,0 +1,78 @@
+{
+  "schema": "dicebox.cav.bathhouse-stage-continuity/v1",
+  "recordedDate": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerInstruction": "approved, copy the other bathhouse scene settings exactly and use that map",
+  "turnMaxMinutes": 25,
+  "world": "cabin-in-the-ashen-veil",
+  "foundry": "14.367",
+  "activeGMVerified": true,
+  "sourceScene": {
+    "uuid": "Scene.CAVBATHScene0001",
+    "title": "BATH - Unified Bathhouse Surface",
+    "background": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_owner-approved.png",
+    "unchanged": true
+  },
+  "drainedScene": {
+    "uuid": "Scene.8yLMRDvxyw58dydh",
+    "title": "BATH-DRAINED - Unified Bathhouse Surface",
+    "background": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_drained_owner-approved_2026-10-26.png",
+    "active": false,
+    "navigation": true,
+    "ownerApproved": true,
+    "nativeSettingsCompared": 19,
+    "settingsDifferences": [],
+    "levelsIdenticalExceptImage": true,
+    "regionCount": 2,
+    "wallCount": 0,
+    "tokenCount": 0,
+    "lightCount": 0,
+    "embeddedRegionIds": [
+      "SLovYxFAWVAMFzXg",
+      "R2Pg9eHODtb1C1Yk"
+    ],
+    "copiedTeleportId": "EK3UbdrVWwe28PmW",
+    "copiedTeleportDestination": "Scene.CAVTRAILScene001.Region.N5LomZ7TrVBMoExk",
+    "creatingGMOwnershipAdditional": true,
+    "flagChanges": [
+      "cavStructuralSceneKey",
+      "manifestId",
+      "approvedArtSha256",
+      "cavWaterVariant",
+      "cavVariantOfSceneUuid",
+      "cavWaterVariantStaged"
+    ]
+  },
+  "asset": {
+    "sha256": "337d84929ca93eaf29527124f33ffa26dad24082ffcf4659cca6c7932892c11e",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "bytes": 3328028,
+    "driveFileId": "1fuBiXZGbzxC-U1DSn6EJz8qSBWgdVJ84",
+    "driveFolderId": "1S4Gj3YYWv33PulkBMY5QDnJ64c-oH7P-",
+    "installedFoundryPath": "Maps/cabin-in-the-ashen-veil/bathhouse_unified_surface_drained_owner-approved_2026-10-26.png",
+    "verifiedHttp200": true
+  },
+  "worldSceneCountAfter": 47,
+  "safety": {
+    "drainEnabled": false,
+    "sceneSwapWired": false,
+    "fullGameplayTests": 0
+  },
+  "regionwrightDocsCommit": "e7559c11b9ab3cbb6835ad419073a9965a6c9f33",
+  "receipts": [
+    "cav-bath-drained-map-asset-install-20261026-v1",
+    "cav-bath-drained-clone-source-scene-audit-20261026-v1",
+    "cav-create-drained-bathhouse-exact-settings-20261026-v1",
+    "cav-bath-drained-scene-exact-content-readback-20261026-v1",
+    "cav-bath-drained-clone-region-semantic-diff-20261026-v1"
+  ],
+  "snapshotFiles": [
+    "cav-bath-original-scene-full-backup-20261026.json",
+    "cav-bath-drained-clone-verified-20261026.json"
+  ],
+  "next": "Wire synchronized Pond/Bath drain/refill once token-safe routing/return paths validated",
+  "transcriptFidelity": "available-message reconstruction, not lossless native export"
+}
