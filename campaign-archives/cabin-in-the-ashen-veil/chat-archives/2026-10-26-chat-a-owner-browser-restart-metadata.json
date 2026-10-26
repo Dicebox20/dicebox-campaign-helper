@@ -1,0 +1,73 @@
+{
+  "schema": "dicebox.cav.chat-a-owner-restart-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "ownerMessage": "go ahead and restart now, the other chat is idle",
+  "chat": "A",
+  "status": "browser_relaunched_gm_runtime_verified",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "ca177160fd5721eb721da40652f8b389d3340a1b",
+    "previousSourceCommit": "bd9969f6f5d99922db7fc86348c7ba1297af9c32",
+    "jsSourceChanged": false,
+    "sourceTestsPreviouslyPassed": 95
+  },
+  "reload": {
+    "firstScriptRejectedByNodeSyntaxBeforeAccess": true,
+    "actualSinglePageReloadCommitted": true,
+    "bridgeWaitTimeoutOutcomeUnknown": true,
+    "receiptInspected": true,
+    "replayed": false,
+    "foundryStayedOnline": true,
+    "chromeClosedDuringReload": true,
+    "oneCftHarnessRelaunch": true,
+    "chromePortRestored": true,
+    "noDuplicateGmLogin": true
+  },
+  "positiveCurrentRuntime": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGm": "Gamemaster 1",
+    "ready": true,
+    "nearOutside": {
+      "fit": true,
+      "operate": false
+    },
+    "inside": {
+      "fit": true,
+      "operate": true
+    },
+    "far": {
+      "fit": false,
+      "operate": false
+    },
+    "bathhouseSafety": true,
+    "waterGmListenerPresent": true,
+    "originalCrankFitted": null,
+    "waterState": null,
+    "waterTransaction": null,
+    "sluiceNativeEnabled": true,
+    "rosewaterNativeDisabled": true,
+    "rosewaterOwnerApprovedSymbols": [
+      "rose",
+      "sun",
+      "moth",
+      "thorn"
+    ],
+    "rosewaterSession": null,
+    "sourceGmRuntimeVerified": true,
+    "chatCount": 54
+  },
+  "nativeWrites": 0,
+  "playerGameplayPerformed": false,
+  "evidence": [
+    "utility-harness/artifacts/cav-chat-a-owner-approved-postrelaunch-gm-source-verified-20261026.json",
+    "docs/cabin-ashen-veil/chat-a-owner-authorized-browser-restart-verification-2026-10-26.md"
+  ],
+  "next": [
+    "Original in-game Crank/sluice progression, no forged flags",
+    "Keep disabled Rosewater/Aqueduct first chase until true prerequisites",
+    "Future player acceptance owner-deferred"
+  ],
+  "fidelity": "available-message reconstruction, not verbatim chat export"
+}
