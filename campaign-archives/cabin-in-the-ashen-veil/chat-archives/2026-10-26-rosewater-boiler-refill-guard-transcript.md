@@ -1,0 +1,20 @@
+# Cabin in the Ashen Veil — Rosewater/Boiler Dry Egress Source Turn Reconstruction
+Date: 2026-10-26 Pacific. This is a **verified tool action summary**, not a verbatim export of hidden/omitted conversation turns.
+## Exact owner instruction
+> continue
+## Carried-forward approvals/constraints
+Established DCH PREPARE/RENDER/INSPECT/BUILD/VERIFY/CATALOGUE, Regionwright owns interactive artwork/UI and the six-sector demo is noncanonical; static tactical art requires owner approval. Crooked Man actor and full gameplay tests deferred. The Scrying Bowl remains unique item in BATH-04, not Vault. The dry eastern passage from Reliquary to Boiler must remain independent of refilling and pressure.
+## Chronology
+1. Checked Bridge PowerShell/Foundry/Chrome at ~10:05; Bridge healthy, both Foundry/Chrome listener ports offline, no Foundry process, free RAM ~2.87GB; current Regionwright source commit 64870b4. Did not restart repeatedly.
+2. Searched local approved map package/archive/Download/art folders for BATH-03/BATH-04. Found Waterworks/Boiler UI fixture assets, not approved underground tactical maps.
+3. Searched connected Google Drive and enumerated explicit approved map folder using list_folder (16 files) to correct parent-filter search failure. Confirmed no BATH-03/04 map art. Unapproved folder held unrelated failed map attempts.
+4. Inspected original approved item-artwork attachment macro. Found downloaded 512px Scrying Bowl image candidate, SHA256 5916B9DD7B286920BF0565B19791EC8C7CC2F3B60FAA762AD22F998B22C70BE9, but original macro does not list Bowl; therefore no owner-approval claim and no world item change.
+5. A planning-only diagram was generated for Bathhouse→Rosewater→Boiler progression; the result is NOT a separately usable tactical battlemap, never owner-approved and never installed. Any depicted onward estate portal is only illustrative; precise estate exit is unverified.
+6. Read official Regionwright owner directive on interactive art, scene automation source and prior full 47-scene clone of offline Foundry world. Confirmed no lower underground scenes, exact original Bowl ID and provisional Bathhouse scene walls.
+7. Implemented pure Rosewater lower-room Sluice safety function, added 3 pure regression tests. Implemented native scene/Region-tagged portal inspection in original GM Sluice water controller prior to any CLOSE-stage transaction. Lower rooms absent means unchanged play; partial/duplicate lower Scenes block refill; occupied lower rooms require actual bilateral portal destinations, pressure independence and verified exit out to estate.
+8. Added 4 native mock-document tests that fail when route is missing, merely flagged, disabled or incomplete, and pass only when active native destinations match valid Regions plus certified onward estate exit. Tests PASS.
+9. Prepared unapproved static battlemap render briefs for BATH-04 Reliquary and BATH-03 Boiler, flagging the onward estate egress position unknown. Did not invent approved interior art, Scene IDs or automatic portal routes.
+10. Copied updated source JS to existing installed Regionwright module directory with SHA matching. Full relevant 46/46 regression tests PASS; JS syntax checks PASS. No live Foundry GM/world changes.
+11. Updated dated Regionwright chronology, staged precisely six relevant files, git diff --check clean; committed/pushed and verified exact remote SHA 6cb7d42460bc13b134f68eb0fe35fa823c1ee281. Recorded DCH handoff, machine metadata and this reconstruction.
+## Follow-up
+Require owner-approved separate, label-free BATH-03/04 tactical maps and exact dry Boiler onward estate egress, stable elected Foundry GM, then install native scenes, Regionwright four-sector rings and original Bowl pickup. Retain full safety/verification workflow; no Crooked Man Actor until testing.
