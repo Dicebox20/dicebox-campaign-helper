@@ -96,9 +96,10 @@
   },
   "writes": {
     "newRegions": 7,
-    "changesToOriginalScenes": false,
     "itemsGrantedToActors": 0,
-    "waterStageTransitions": 0
+    "waterStageTransitions": 0,
+    "sceneRegionCollectionsExtended": true,
+    "preexistingEmbeddedDocumentsModified": false
   },
   "next": "aqueduct full bidirectional stage synchronization and first Crooked Man chase",
   "transcriptFidelity": "available-message reconstruction, not complete lossless ChatGPT export"
