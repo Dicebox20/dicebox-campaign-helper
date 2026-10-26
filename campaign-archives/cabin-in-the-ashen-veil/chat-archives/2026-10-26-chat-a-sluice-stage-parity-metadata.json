@@ -1,0 +1,69 @@
+{
+  "schema": "dicebox.cav.chat-a-sluice-water-stage-hotspot-handoff/v1",
+  "date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "Lets continue",
+  "chatACommit": "bd9969f6f5d99922db7fc86348c7ba1297af9c32",
+  "sourceRepo": "Dicebox20/regionwright",
+  "sourceBranch": "codex/cav-sune-integration-20261026",
+  "originalCrank": "Item.g3VYdgc1qkgkHGvn",
+  "status": {
+    "sourceDeployed": true,
+    "sourceHashesMatched": true,
+    "pureTestsPass": 95,
+    "pureTestsFail": 0,
+    "activeRuntimeReloadedAfterChange": false,
+    "gmWorldReadOnlyAfterCopy": true,
+    "ordinaryPlayerTested": false,
+    "liveWorldWrites": 0
+  },
+  "change": {
+    "fitting": "valid character within original 400px",
+    "stage": "valid character center physically inside original Sluice native Region and within 400px",
+    "predicates": [
+      "isSluiceCharacterNearControl",
+      "isSluiceStageTokenAtControl"
+    ],
+    "sourceFiles": [
+      "modules/regionwright/scripts/studio-cav-sluice.js",
+      "modules/regionwright/scripts/studio-cav-water-controller.js"
+    ],
+    "testFile": "tests/cav-sluice-stage-control-parity.test.mjs"
+  },
+  "gm": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundryVersion": "14.367",
+    "name": "Gamemaster 1",
+    "elected": true,
+    "crankFlag": null,
+    "waterState": null,
+    "transaction": null,
+    "sluiceBehaviorEnabled": true,
+    "rosewaterBehaviorDisabled": true,
+    "rosewaterSymbols": [
+      "rose",
+      "sun",
+      "moth",
+      "thorn"
+    ],
+    "ringSession": null,
+    "chatMessages": 54
+  },
+  "runtime": {
+    "liveReloadSkippedBecauseFreeRAMGiB": 1,
+    "activeUpdatedEventHandlersVerified": false,
+    "sourceInstalledChecks": true
+  },
+  "evidence": [
+    "CFT Dev utility-harness/artifacts/cav-chat-a-water-stage-client-gm-contract-native-state-20261026.json",
+    "docs/cabin-ashen-veil/chat-a-sluice-stage-control-parity-2026-10-26.md",
+    "docs/cabin-ashen-veil/chat-a-sluice-stage-control-parity-2026-10-26.json"
+  ],
+  "next": [
+    "At safe RAM perform one guarded GM browser refresh then confirm current source receipt",
+    "Owner-deferred actual Study587 original crank player acceptance",
+    "No fake water stage or PC token",
+    "Keep Chat B late game source isolated"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless native chat transcript"
+}
