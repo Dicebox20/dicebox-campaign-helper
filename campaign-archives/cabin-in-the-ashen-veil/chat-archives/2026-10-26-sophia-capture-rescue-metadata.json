@@ -1,0 +1,78 @@
+{
+  "schema": "dicebox.cav.sophia-capture-rescue/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "oh okay, I forgot we changed the scrying bowl. lets continue",
+  "ownerExceptions": [
+    "defer Crooked Man actor/token and chase gameplay to final testing",
+    "25-minute bounded installation turns",
+    "Regionwright Studio owns interactive mechanics, copy static approved images only",
+    "each turn chronological change log, GitHub handoff metadata transcript"
+  ],
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "verifiedElectedGM": true
+  },
+  "regionwright": {
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "b47937a7dead29965c63458021fb1cc6704f4378",
+    "sourceFiles": [
+      "modules/regionwright/scripts/studio-cav-sophia-state.js",
+      "modules/regionwright/scripts/studio-cav-sophia-confinement.js",
+      "modules/regionwright/scripts/studio-cav-first-chase.js",
+      "modules/regionwright/scripts/studio-campaign.js"
+    ],
+    "testsPassed": 28,
+    "testsFailed": 0,
+    "gmServiceVersion": 1
+  },
+  "foundry": {
+    "galleryRegion": "Scene.gGgUHlHdI7RFrbUh.Region.UV4YAstBe0WCuLcM",
+    "galleryOriginalPortal": "CAVHU02SOPHTEL01",
+    "galleryOriginalKeyGate": "CAVHU02SOPHGATE1",
+    "newRescueClickBehavior": "CAVHU02RESCUE001",
+    "bedroomReturnRegion": "Scene.CAVHU05Scene0001.Region.CAVHU05RETURN001",
+    "bedroomReturnBehavior": "CAVHU05RETURNB01",
+    "originalKeySource": "Item.CAVOLDIRONKEY001",
+    "originalKeyCoatRegion": "Scene.CAVHU04Scene0001.Region.CAVHU04COATREG01",
+    "roomTokensAfter": 0,
+    "galleryEntryDisabledAfter": true,
+    "galleryOriginalKeyScriptDisabledAfter": false,
+    "bedroomReturnDisabledAfter": false,
+    "captureSession": null,
+    "firstChaseState": null,
+    "actorMovements": 0,
+    "playerGameplayTests": 0
+  },
+  "safety": {
+    "captureRequiresPendingChase": true,
+    "requiresEmptySophiaBeforePrepare": true,
+    "disablesBothEntrancesAndReturnDuringCapture": true,
+    "capturesAtMostOne": true,
+    "noAutomaticTransfer": true,
+    "keyRescueRequiresAuthenticKeyProvenance": true,
+    "manualEmergencyAfterMs": 1200000,
+    "emergencyOverrideRequiresReason": true,
+    "partialWritesRequireReconciliation": true
+  },
+  "canonicalBowl": {
+    "location": "BATH-04 Rosewater Reliquary",
+    "threeRingAnglesDegrees": [
+      90,
+      270,
+      180
+    ],
+    "dryEscape": "BATH-04 east door to BATH-03 Boiler",
+    "waterIndependentDryEscape": true,
+    "notChaseLoot": true
+  },
+  "next": "staged reversible Pond/Aqueduct/Forest Well route commissioning; preserve disabled first chase until actor and gameplay tests",
+  "evidence": [
+    "cav-sophia-capture-release-full-readonly-20261026.json",
+    "cav-sophia-rescue-behavior-installed-receipt-20261026.json",
+    "cav-sophia-capture-release-final-readback-20261026.json"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not full native/lossless export"
+}
