@@ -1,0 +1,78 @@
+{
+  "schema": "dicebox.cav.rosewater-strict-sluice-proof-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "ownerMessage": "Lets continue",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "b0d7e7b9655f658be29ef3eb9785f316beb702cd",
+    "testsPass": 83,
+    "testsFail": 0,
+    "installedSourceShaVerified": true,
+    "postReloadRuntimeVerified": false
+  },
+  "ownerApproved": {
+    "symbols": [
+      "rose",
+      "sun",
+      "moth",
+      "thorn"
+    ],
+    "degrees": [
+      90,
+      270,
+      180
+    ],
+    "sourceOnlyArtPending": true
+  },
+  "worldBefore": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "elected": true,
+    "sceneCount": 47,
+    "rosewaterRegion": "Scene.8yLMRDvxyw58dydh.Region.CAVBROSEWATER001",
+    "behavior": "CAVROSEWATERSCR1",
+    "behaviorDisabled": true,
+    "binding": "STAGED_DISABLED",
+    "symbolFlag": "OWNER_APPROVED",
+    "ringSession": null,
+    "waterState": null,
+    "sluiceTransaction": null,
+    "crankFitted": null,
+    "originalScrewdriverEnabled": true,
+    "originalBowlPresent": true,
+    "boilerStatus": "ready",
+    "tokenMoves": 0
+  },
+  "sourceHardening": {
+    "pureFunction": "evaluateRosewaterSluiceProof",
+    "requiredCrankSource": "Item.g3VYdgc1qkgkHGvn",
+    "requiredController": "drainEnabled=true",
+    "requiredWater": "open;drained;drained;committed;sluice",
+    "requiredTransaction": "done;open;committedState open",
+    "blocksSyntheticOrStaleOpen": true,
+    "newTests": 3
+  },
+  "browser": {
+    "restoredOneOriginalCftHarness": true,
+    "loginViaExistingGM1": true,
+    "foundry30000AfterTimeout": true,
+    "chrome9224AfterTimeout": false,
+    "reloadOutcome": "unknown",
+    "durableReceiptInspected": true,
+    "noReplay": true
+  },
+  "evidence": [
+    "cav-owner-symbols-recovered-elected-gm-exact-readback-20261026.json",
+    "cav-rosewater-proof-post-source-reload-20261026.cjs"
+  ],
+  "next": [
+    "Elected-GM CDP readback of changed source",
+    "Actual original 587 Crank fit and legitimate synchronized Sluice drain in gameplay",
+    "Region geometry approval and native Rosewater activation after dry proof",
+    "Single-map original Bowl pickup location decision",
+    "Deferred PC acceptance and Crooked Man NPC"
+  ],
+  "fidelity": "available-message reconstruction, not lossless export"
+}
