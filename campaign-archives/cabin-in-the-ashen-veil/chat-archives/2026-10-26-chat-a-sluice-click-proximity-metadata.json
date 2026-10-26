@@ -1,0 +1,64 @@
+{
+  "schema": "dicebox.cav.chat-a-sluice-client-proximity-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "ownerMessage": "next please",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "0a0a2896c096d8e4159fbb1af479bda581cfe2f1",
+    "files": [
+      "modules/regionwright/scripts/studio-cav-sluice.js",
+      "tests/cav-sluice-client-proximity.test.mjs"
+    ],
+    "testsPass": 91,
+    "testsFail": 0,
+    "sha256": "3ADEA8FD254EEF7DF0BCFED0A787E359681549F72E2C5B0B67CCA8B454D6AEC5"
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "elected": true,
+    "scene": "CAVEXT02Scene001",
+    "region": "CAVEXT02SLUICE01",
+    "behavior": "CAVEXT02SLCBEH01",
+    "behaviorEnabled": true,
+    "positiveOverlapCount": 0,
+    "closeupPresent": true,
+    "sourceCrank": "Item.g3VYdgc1qkgkHGvn",
+    "reachPixels": 400,
+    "nearSelectedTokenAccepted": true,
+    "farSelectedTokenRejected": true,
+    "sourceHelperActiveLive": true,
+    "nativeWorldWrites": 0,
+    "chatMessageCount": 54,
+    "waterState": null,
+    "crankInstalled": null,
+    "sluiceStageTransaction": null,
+    "rosewaterNativeDisabled": true,
+    "ownerApprovedSymbols": [
+      "rose",
+      "sun",
+      "moth",
+      "thorn"
+    ]
+  },
+  "browser": {
+    "singleReloadAttempt": true,
+    "navReachedFoundry": true,
+    "domContentLoadedTimedOut": true,
+    "didNotReplay": true,
+    "independentNoReloadElectedGMReadback": true,
+    "ports30000And9224Online": true
+  },
+  "evidence": [
+    "utility-harness/artifacts/cav-chat-a-sluice-click-overlap-live-readonly-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-sluice-runtime-after-timeout-readonly-20261026.json"
+  ],
+  "next": [
+    "When owner authorizes, real non-GM Player1 vertical-slice test 587 Crank/install/sluice drain",
+    "Keep Rosewater disabled until legitimate synchronized drain",
+    "Maintain Chat B separate source-only late branch"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless native chat transcript"
+}
