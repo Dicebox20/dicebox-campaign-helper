@@ -1,0 +1,73 @@
+{
+  "schema": "dicebox.cav.chat-a-safe-bath-return-after-split/v1",
+  "date": "2026-10-26",
+  "timeWindowLocal": "15:30-15:44 America/Los_Angeles",
+  "ownerInstruction": "get started on your tasks, I sent it",
+  "ownerWorkstream": "Chat A early/midgame, live Foundry and final integration",
+  "otherWorkstream": "Chat B independent late-game source-only",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "54faf5c29b75cd8ef4b3ea26eda6d3ed0f2db9a8",
+    "changedFiles": [
+      "modules/regionwright/scripts/studio-cav-water-controller.js",
+      "tests/cav-bathhouse-return-route-failclosed.test.mjs"
+    ],
+    "docs": [
+      "docs/cabin-ashen-veil/chat-a-unified-water-route-geometry-live-audit-2026-10-26.md",
+      "docs/cabin-ashen-veil/chat-a-unified-water-route-geometry-live-audit-2026-10-26.json"
+    ],
+    "sourceSha256": "331E4685418718E88E19D25C72020D6049BD7FF57185BE0D8A1A53CEB56F6551",
+    "sourceMatchesInstalled": true,
+    "fullTestCount": 87,
+    "pass": 87,
+    "fail": 0
+  },
+  "live": {
+    "foundry": "14.367",
+    "world": "cabin-in-the-ashen-veil",
+    "electedGM": "Gamemaster 1",
+    "fullDryGeometry": [
+      2160,
+      1440,
+      120
+    ],
+    "pairedArrivalAndReturnMatch": true,
+    "bathReturnTarget": "Scene.CAVTRAILScene001.Region.N5LomZ7TrVBMoExk",
+    "bathReturnScriptId": "EK3UbdrVWwe28PmW",
+    "trailEntryTargetsOriginalFilledBath": true,
+    "pondFullArtAndLevelMatches": true,
+    "aqTopology": "verified-topology",
+    "aqWaterRouteState": {
+      "status": "ready",
+      "commissioned": false
+    },
+    "aqFirstChaseAndForestWellPortalsDisabled": true,
+    "boilerAndBasinFixturesMatch": true,
+    "rosewaterOwnerSymbols": [
+      "rose",
+      "sun",
+      "moth",
+      "thorn"
+    ],
+    "rosewaterNativeDisabled": true,
+    "rosewaterSession": null,
+    "waterState": null,
+    "sluiceCrank": null,
+    "waterTransaction": null,
+    "postSourceReloadGMVerified": true,
+    "worldStateWrites": 0
+  },
+  "receipts": [
+    "cav-chat-a-unified-bath-pond-trail-aqueduct-geometry-audit-20261026.json",
+    "cav-chat-a-aqueduct-live-pregame-routing-ready-20261026.json",
+    "cav-chat-a-safe-bath-return-postreload-gm-receipt-20261026.json"
+  ],
+  "next": [
+    "Inspect original Sluice click/hit zone without world writes",
+    "Prepare future nonGM original Crank/sluice/Bath vertical-slice acceptance contract",
+    "Commission Rosewater only on genuine committed open+drained state",
+    "Retain Aqueduct first chase and NPC/token defer"
+  ],
+  "transcriptFidelity": "tool-backed available-message reconstruction, not lossless native transcript"
+}
