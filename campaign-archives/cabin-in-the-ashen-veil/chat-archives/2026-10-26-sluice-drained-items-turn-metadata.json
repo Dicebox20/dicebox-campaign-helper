@@ -1,0 +1,93 @@
+{
+  "schema": "dicebox.cav.fast-install-turn/v1",
+  "dateLocal": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "turnLimitMinutes": 25,
+  "policy": {
+    "order": "player dependency",
+    "fullGameplayTests": "DEFERRED_UNTIL_FULL_CHAIN",
+    "sourceVerification": true,
+    "regionwrightEditsAuthorized": true
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "sceneCountBefore": 47
+  },
+  "regionwright": {
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "b37bd5a0b5debbf8bce5d9a884cf30bd5efb51e6",
+    "gmHooks": {
+      "crank": 1,
+      "water": 1,
+      "drainedPickups": 1
+    },
+    "sourceFiles": [
+      "studio-cav-water-controller.js",
+      "studio-cav-drained-pickups.js",
+      "studio-cav-sluice.js",
+      "studio-campaign.js"
+    ],
+    "testsPass": 13,
+    "testsFail": 0
+  },
+  "sluice": {
+    "regionUuid": "Scene.CAVEXT02Scene001.Region.CAVEXT02SLUICE01",
+    "stageEnable": true,
+    "noDrainActivation": false,
+    "waterState": null,
+    "crankInstalled": null,
+    "transaction": null,
+    "fullBathUuid": "Scene.CAVBATHScene0001",
+    "drainedBathUuid": "Scene.8yLMRDvxyw58dydh",
+    "trailPortal": "Scene.CAVBATHScene0001.Region.R2Pg9eHODtb1C1Yk",
+    "safety": [
+      "no tokens in either Bathhouse",
+      "every Pond token inside control",
+      "exact elected GM and source Crank",
+      "all relevant backgrounds match stage",
+      "reconcile reserved partial transitions"
+    ]
+  },
+  "pickups": [
+    {
+      "region": "Scene.CAVEXT02Scene001.Region.CAVPONDWEATHER01",
+      "behavior": "CAVPONDWEATHB001",
+      "source": "Item.CAVWEATHERKEY001",
+      "claim": null
+    },
+    {
+      "region": "Scene.8yLMRDvxyw58dydh.Region.CAVBATHSCRDRY001",
+      "behavior": "CAVBATHSCRBEH001",
+      "source": "Item.CAVBATHSCREW0001",
+      "claim": null
+    }
+  ],
+  "visuals": [
+    {
+      "file": "cav-pond-drained-weathered-stairs-crop-20261026.png",
+      "sha256": "5C3DDE4EA819881D07F047C88BB0F26EFBC647D91492329A3BBCEB687BC94474"
+    },
+    {
+      "file": "cav-bath-drained-floor-screwdriver-crop-20261026.png",
+      "sha256": "B6C20B7F2E8364E44D01758BB1B56CA0921166870A9C6E4BEE3D3C8353512827"
+    }
+  ],
+  "receipts": [
+    "cav-20261026-sluice-watersync-enable-guarded-live-v1",
+    "cav-20261026-install-both-drained-pickup-regions-v1",
+    "cav-20261026-sluice-and-drained-pickups-final-reload-readback-v1"
+  ],
+  "remaining": [
+    "Weathered Key Basement route",
+    "Screwdriver Parents nightstand and Gate Handle",
+    "Aqueduct gate with Roof Gear",
+    "Rosewater Reliquary and dry exit interlock",
+    "Great Room 027 chest"
+  ],
+  "fullGameplayTests": 0,
+  "actorItemsGranted": 0,
+  "actualStageTransitions": 0,
+  "transcriptFidelity": "available-message reconstruction, not complete native export"
+}
