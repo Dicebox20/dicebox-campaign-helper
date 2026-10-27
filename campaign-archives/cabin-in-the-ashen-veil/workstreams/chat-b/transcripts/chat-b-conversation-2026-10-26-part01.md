@@ -178,3 +178,46 @@ Understood—I made the process more complicated than you wanted. I’ll simplif
 The main project rule and both repository instruction copies now say to use one ongoing transcript document per chat. I’ll update the existing Chat B document with your correction and retire the earlier, more elaborate bookkeeping requirement.
 
 **Implementation record (not speech):** The canonical and archive-branch policy files and AGENTS.md now specify one ongoing transcript document per chat. A dated KB refinement SQL supersedes the previous segmented archive requirement while preserving the older decision historically. This original file remains the living transcript; no new transcript segment was created. Append subsequent available messages here at the next between-turn checkpoint.
+
+
+---
+
+## Between Turns 16 and 17; Turn 17 Greenhouse installation — 2026-10-26
+
+### M0028 · USER · time: unknown · START_TURN_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+> Lets continue working on the campaign, next step please
+
+### M0029 · ASSISTANT · time: unknown · TURN_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll begin Chat B’s next late-game turn by checking the current Foundry world and the latest handoff. I’ll revisit the Prayer/Studio blocker first; if it still lacks approved source material, I’ll move to the next independent late-game sequence rather than install an unsafe shortcut. I’ll verify any changes and append this conversation to our single transcript document between turns.
+
+### M0030 · ASSISTANT · time: unknown · TURN_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Prayer and Studio passage are still blocked by the missing approved text and overlapping Vanity Region. I’m moving to Batch 2’s **Greenhouse Plant Killer** step instead.
+
+The live world has the original Lye and Plant Killer Items and an existing Greenhouse Controls Region with no Behavior. I’ll add the guarded interaction there, requiring genuine Soap Case Lye and restored Waterworks evidence. Those prerequisites are not yet satisfied, so it must remain unable to grant a reward.
+
+### M0031 · ASSISTANT · time: unknown · TURN_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Greenhouse preflight passed after correcting a read-only geometry check. It verified the original Controls Region and both Item sources. It also confirmed there is no completed Waterworks ledger or Soap Case claim, so no Plant Killer can be awarded yet.
+
+I’ll install the single guarded Behavior on that existing Region, then independently reread its source and state.
+
+### M0032 · ASSISTANT · time: unknown · TURN_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Greenhouse mixer Behavior is installed and independently verified in Foundry. It matches the tested source, preserves the existing puzzle infrastructure, and has not granted Plant Killer or consumed Lye. Its reward logic remains blocked until the original Waterworks and Soap Case stages are completed.
+
+I’ll run the full regression suite, then update the Turn 17 continuity log and the same living Chat B transcript document.
+
+### M0033 · ASSISTANT · time: unknown · TURN_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+The **Greenhouse Plant Killer mixing interaction** is now installed in our shared Foundry world.
+
+The native Region source and original Lye and Plant Killer templates were verified. Waterworks and Soap Case safeguards remain required; no player reward or puzzle state was advanced. **1,200/1,200 local tests passed across 42 files.** The Lye was not consumed without approval.
+
+**Coverage note:** M0033 reproduces the substantive text of the user-visible partial completion message, not its full rich formatting. The remaining final Git handoff response, if any, is to be appended at the next between-turn checkpoint rather than invented in advance.
+
+**Technical receipt referent:** Turn 17 new original Greenhouse mixer native Behavior `Scene.CAVEXT06Scene001.Region.CAVB6E433D528867.RegionBehavior.CAVEXT06LYEMIX01`; its independent GM readback was PASS, with source SHA256 `d3ad8040e862e27f37163df21f3a3ea7b78f49f2f83480d76aff5b194aa7bdf9`. This factual evidence line is an authored note, not a verbatim speech message.
+
+**Living document:** Continue appending this same file at the next between-turn checkpoint; no new transcript document or index is needed.
