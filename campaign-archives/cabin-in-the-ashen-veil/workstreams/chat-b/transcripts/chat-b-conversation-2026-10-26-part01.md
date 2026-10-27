@@ -484,3 +484,62 @@ I’m completing the continuity mirror and appending this turn to the same trans
 Turn 22 new elected-GM active native Behavior `Scene.CAVHU04Scene0001.Region.CAVHU04HOPECHST1.RegionBehavior.CAVPRAYERBOXBEH1` source SHA256 `70f9133223c4acf48df34a63975095b18f9ce6dc7a04822b4967847b342a54e1`. Preexisting `CAVHOPECHSTBEH01` remains enabled and unchanged. Independent Foundry postread `pass:true`, original Item and Journal sources intact, zero actor quest copies, all Hope/Box/Prayer ledgers NULL; SG-01 late chase/Silver marker and Sune Studio teleport still dormant. Installed code is **GM-assisted and fail-closed** until original Silver and Music Box custody; no live nonGM gameplay testing and no actual Prayer grant. Source commit `5fd22ae3859f95be2c8f8542ad98db77aa261a65`, full isolated Cabin tests `1251/1251` PASS across `46` files. Native scripts/preflight/postread JSON in source repository `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-turn22-original-music-prayer/`.
 
 Continue to append the NEXT turn's owner response and eventually the Turn22 terminal Git handoff response to this same living Chat B file. Do not create new transcript segments or indexes.
+
+
+---
+
+## Between Turns 22–23 — Owner authority, Crooked Man deferral and independent Keystone puzzle, Pacific 2026-10-26
+
+### M0079 · ASSISTANT · time: unknown · END_TURN_22 · RECONSTRUCTED_SUMMARY
+
+Turn22 ended with actual original Hope Chest/Ornate Music Box→Prayer guarded native Behavior installed, 1251/1251 source tests, pushed commit `5fd22ae3859f95be2c8f8542ad98db77aa261a65`, live player progression still blocked by Silver original chase. This is a labeled summary of earlier rich final response.
+
+### M0080 · USER · time: unknown · START_TURN_23 · VERBATIM_FROM_VISIBLE_CHAT
+
+> you have approval authority for the cabin in the ashen campaign creative and technical decisions continue.. continue
+
+### M0081 · ASSISTANT · time: unknown · TURN_23 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll use that authority to make and document Cabin-specific creative and technical decisions without stopping for routine approvals. I’ll preserve the established story dependencies and keep Chat A’s live work separate.
+
+Next I’m auditing the Crooked Man’s second chase and Silver Tiny Key recovery. I’ll install the largest safe portion that the current Foundry evidence supports, test it, and update the handoff and living transcript.
+
+### M0082 · ASSISTANT · time: unknown · TURN_23 · RECONSTRUCTED_SUMMARY
+
+Initial elected GM audit found the Crooked Man NPC absent, first Aqueduct and second northwest Grove chase scripts DISABLED and original Silver marker disabled. Assistant began tentative original Silver guard source and installer; one installer returned an ERROR after reserving and partially updating the native silver behavior. A separate GM readback confirmed an intermediate reserved flag, Behavior enabled, no Silver Actor copy, no drop or claim, both chase triggers disabled. Detailed source and forensic native receipts reside in this turn's dated handoff. No second chase or Silver reward was claimed.
+
+### M0083 · USER · time: unknown · DURING_TURN_23 · VERBATIM_FROM_VISIBLE_CHAT
+
+> you can wait on cCrooked an, those aren't puzzle related
+
+### M0084 · ASSISTANT · time: unknown · TURN_23_OWNER_DEFERRAL · VERBATIM_FROM_VISIBLE_CHAT
+
+Understood. I’ll defer the Crooked Man encounters and their chase mechanics and focus on the remaining puzzles.
+
+The Silver Key update I just attempted stopped during verification, so I’ll first inspect and safely reconcile that partial change. Then I’ll move to an independent late-game puzzle, leaving both chases and all player rewards untouched.
+
+### M0085 · ASSISTANT · time: unknown · TURN_23_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+The intermediate Silver pickup change was safely reconciled: original old disabled native Silver script and events restored, forensic restoration flag saved, both chase scripts still disabled, no Item or claim. The assistant explicitly switched to independent non-Crooked puzzle work. This is a faithful summary of a rich visible partial final.
+
+### M0086 · ASSISTANT · time: unknown · TURN_23 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ve moved to the Undercroft puzzle, which does not depend on the Crooked Man. The approved artwork clearly separates the Keystone door, its mechanical lever, and the route into Donovan and Sophia’s sealed Refuge.
+
+I’ll prepare those as distinct interactions. The door will remain sealed until the authentic Keystone and lever conditions are met; I won’t create a substitute Keystone or open the Refuge early.
+
+### M0087 · ASSISTANT · time: unknown · TURN_23_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+Independent native Foundry staging put four new original-map Regions and four DISABLED Behaviors, including a non-mutating behavior on the preexisting carved Keystone door wall. A separate Stone Lever, sealed two-way door crossing and safe paired arrival/return are physically staged; old Refuge entry and observation preserved, actual original Keystone Item remains missing, no door opened. Both Crooked chases stayed deferred. This is a faithful summary of a rich visible partial final.
+
+### M0088 · ASSISTANT · time: unknown · TURN_23 · VERBATIM_FROM_VISIBLE_CHAT
+
+Turn 23’s Undercroft staging and the Silver Key rollback evidence are committed. The active Crooked Man draft code has been taken out of the runtime source and preserved only as deferred forensic material.
+
+The final puzzle checks passed **1,259/1,259 tests across 47 files**. I’m mirroring this checkpoint and your new approval/deferment decisions into the campaign archive and living transcript.
+
+### TECHNICAL NON-DIALOGUE CHECKPOINT
+
+Turn23 Regionwright source SHA `a0cf8e603c08e3133a5095950dad7c37437a818a`, independent worker clean and pushed, native current GM independent postread `pass:true`. Original Keystone source still absent; 4 new Regions/4 all-disabled Behaviors staged on UND-01/UND-02, no player tests. Silver old native source restored disabled after partial attempted change; no Silver rewards, both first and second Crooked chases disabled. Full Cabin 1259/1259 tests across 47 files PASS. Date T23 starts Pacific Oct26 and ends just after midnight Oct27.
+
+**Next:** Owner-approved real original Keystone Item workflow, genuine Vault award and separate lever, or outer SG05 Sune Bowl+actual filled Great Room 027 pellet. Crooked Man is owner deferred. Keep updating this SAME living Chat B transcript; no new transcripts or indexes.
