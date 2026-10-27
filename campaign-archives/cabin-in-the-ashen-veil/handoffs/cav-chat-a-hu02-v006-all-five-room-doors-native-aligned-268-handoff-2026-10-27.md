@@ -41,3 +41,13 @@ H-U02 **native doorway/return Region geometry fully aligned**. Do NOT rerun olde
 Next Chat A work should move to a different confirmed missing early/midgame installation item or properly plan H-U02 wall/collision processing after feature inspection; do not circle back to completed H-U02 doors.
 
 **End state:** H-U02 owner-approved five door physical access geometry + original landing routes ready for later player test; 268/268 source PASS; native + independent GM verification PASS; no fake story flags or player Items.
+
+
+## LATER OWNER-DELEGATED STRUCTURAL INSTALLATION — six Walls installed; shell still partial
+
+**October 27, 2026 Pacific.** Chat A installed **SIX native ordinary blocking Wall documents** (original stable IDs `CAVHU02WALL00001`–`00006`) in H-U02 on the owner-approved V006 background, leaving the five original room-door routes and all 14 Regions untouched. **273/273 source PASS**, original elected-GM native write/readback **PASS**, independent second read-only elected-GM readback **PASS**. Regionwright remote verified head: **`b136fb9fd64e2a16cfbafd3cd12d235dfe1aa778`**. World now has **61 Walls total**, of which six belong to H-U02 (formerly zero).
+
+This **supersedes the earlier statement that H-U02 has zero Walls**, but it does NOT mean a complete perimeter. The **lower/south wall and north diagonal frame remain intentionally pending** because two existing H-U02 PCs have center coordinates south of the painted lower boundary and could be trapped by full closure. Existing characters were NOT moved. No new Door Wall was installed through original portal Regions; all five original teleport routes remain as previously aligned; original Sophia and Attic gates remain intact.
+
+Read [current authoritative partial structural handoff](./cav-chat-a-hu02-v006-six-partial-walls-273-verified-handoff-2026-10-27.md), [source report](https://github.com/Dicebox20/regionwright/blob/codex/cav-sune-integration-20261026/docs/cabin-ashen-veil/chat-a-hu02-v006-six-structural-walls-native-install-2026-10-27.md). Final wall completion, genuine non-GM movement/vision testing and global compatibility diagnostic are not yet completed and remain separately gated by owner install-first sequencing.
+
