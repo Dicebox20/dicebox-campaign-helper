@@ -1,0 +1,69 @@
+{
+  "schema": "dicebox.cav.chat-a-opening-claim-three/v1",
+  "date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerVerbatim": "Lets continue",
+  "source": "coordinator user-visible transcript and verified Bridge/GitHub receipts",
+  "fidelity": "owner message verbatim, selected assistant replies verbatim, tool activity summarized; incomplete native platform turn capture",
+  "workstream": "Chat A early-midgame",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "830d48788bcfae13a760c73ad2cbc129be68c63c",
+    "after": "17ea82bda1a0da04a233f9173630cb8763b7cd2a",
+    "remoteVerified": true
+  },
+  "tests": {
+    "before": 198,
+    "added": 19,
+    "passing": 217,
+    "failed": 0,
+    "files": 42
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGM": "Gamemaster 1",
+    "scenes": 47,
+    "regions": 232,
+    "behaviors": 121,
+    "executeScripts": 46,
+    "teleports": 75,
+    "chatMessages": 54,
+    "originalOarsDone": true,
+    "originalOarsExactActorItem": true,
+    "sevenOtherClaimsNull": true,
+    "atticEntryDisabled": true,
+    "atticReturnDisabled": true,
+    "actualPlayerTesting": false,
+    "ChatBModifiedByChatA": false
+  },
+  "nativeEdits": [
+    {
+      "kind": "rowboat",
+      "id": "CAVMIRRORBEH0001",
+      "sourceSha": "e310f3684eb4299cd4cc9171c0d4098e5a5c87548505f5edeac252eaac65ad09"
+    },
+    {
+      "kind": "carriage",
+      "id": "3nhNHvdSWo9ix10a",
+      "sourceSha": "c0623e82535d9b0c372e31fd74a9dfd95a4e6149c0599b5b8b8ad0c82bd62e31"
+    },
+    {
+      "kind": "hatch",
+      "id": "8gISLbFWqUhxy9e8",
+      "sourceSha": "6b673d12f662c0ea95570c048e32e5f0bd7da359ef1699d2931d6862b02547d0"
+    }
+  ],
+  "additiveSharedWorldBehavior": "CAVEXT06LYEMIX01 Greenhouse Lye (separate Chat B)",
+  "installReceipt": "utility-harness/artifacts/cav-chat-a-original-rowboat-carriage-hatch-three-native-install-20261026.json",
+  "postreadReceipt": "utility-harness/artifacts/cav-chat-a-opening-triple-native-independent-postread-20261026.json",
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-oars-carriage-hatch-original-done-proof-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-oars-rowboat-carriage-hatch-proof-turn-transcript.md",
+  "limitations": [
+    "First CRLF source test failed closed; corrected before any world write",
+    "First installer wrapper parsed unsuccessfully before Bridge/Foundry call",
+    "First independent census rejected concurrent Chat B additive Behavior count; classified with separate read-only delta and repeated readback passed",
+    "PowerShell raised stderr after git push; separately verified exact remote SHA"
+  ]
+}
