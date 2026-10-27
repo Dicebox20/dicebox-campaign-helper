@@ -604,3 +604,54 @@ The installed Foundry Item and plinth are unaffected; this is only the final Git
 Exact source SHA `f83d8742307085cd6f87402d7af5f0c73dfc9977` was independently confirmed by `git ls-remote` on Regionwright origin. Source worktree clean. Owner-authorized NEW original Keystone `Item.CAVKEYSTONEITEM1` is a GM-only world loot template (quantity 1), proven by independent elected-GM readback; it is NOT a player reward yet. The original Vault H-B02 existing plinth `Scene.tjTpG2RVZNoCqRLh.Region.CAVB799A5357A114` has one additional **DISABLED** and non-mutating `CAVVKEYPLINTH001` Behavior. The four previously installed UND-01/UND-02 Keystone/lever/native travel Behaviors remain **DISABLED**, Crooked Man remains owner-deferred, no Items granted to a character, no Vault opening. Original Vault and inner Undercroft pure review contracts now accept only this exact native original source Item; real claims require independent current GM validation. Full isolated Cabin tests **1282/1282 across 50 files PASS**. See unique Turn24 handoff and `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn24-original-keystone/`.
 
 Append subsequent terminal response to this SAME one living Chat B document at the next interturn checkpoint. Do not create a per-turn transcript segment or new index.
+
+
+---
+
+## Between Turns 24–25; Turn 25 original Vault three-item socket native staging — 2026-10-27 Pacific
+
+### M0098 · ASSISTANT · time: unknown · END_TURN_24 · RECONSTRUCTED_SUMMARY
+
+Turn 24 completed with owner-authorized new original Keystone `Item.CAVKEYSTONEITEM1` GM-only source, disabled native plinth on existing H-B02 dais, byte-exact elected GM readback, 1,282/1,282 Cabin tests in 50 files and Regionwright source commit `f83d8742307085cd6f87402d7af5f0c73dfc9977`, plus dated archive and living transcript. It specifically proposed three authentic Vault sockets plus a separate *Turn Joined Emblem* control next. Crooked Man remained owner deferred. Labeled summary, not verbatim rich rendering.
+
+### M0099 · USER · time: unknown · START_TURN_25 · VERBATIM_FROM_VISIBLE_CHAT
+
+> resume
+
+### M0100 · ASSISTANT · time: unknown · TURN_25 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll resume Chat B at Turn 25 with the Secured Keystone Vault. I’ll inspect the live Basement Workshop and Vault geometry, then build the largest safe batch of the three Item sockets and separate *Turn Joined Emblem* control. I’ll keep the Vault locked until the genuine puzzle conditions are met, leave Crooked Man work deferred, and update the same handoff and transcript.
+
+### M0101 · ASSISTANT · time: unknown · TURN_25 · VERBATIM_FROM_VISIBLE_CHAT
+
+The live census confirms the Workshop has only its original stairhead, central bench, and active return stair Region—no Vault sockets or Vault passage yet. The approved art gives us a clear central mechanism, and the Vault has a passive western entry and an untouched Keystone dais.
+
+I’ll keep the **three sockets distinct** and use the existing central bench for *Turn Joined Emblem*, rather than adding a fourth component. I’ll also stage a sealed Workshop-to-Vault route with a separate return point so entering the Vault cannot immediately send players back.
+
+### M0102 · ASSISTANT · time: unknown · TURN_25_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+Native installer completed: six new exact original-map-grounded Regions (three original Item sockets, Workshop sealed Vault departure, distinct passive Workshop landing, Vault return departure) and SIX deliberately DISABLED behaviors, including one on existing original bench for the separate *Turn Joined Emblem*. No item inserted, Keystone granted, door opened, or token moved. Rich partial final was user-visible; this summary is not a literal rendering.
+
+### M0103 · ASSISTANT · time: unknown · TURN_25 · VERBATIM_FROM_VISIBLE_CHAT
+
+The independent GM readback passed. All three socket Regions, the original-bench turn control, and both sealed travel Behaviors match their planned geometry and source. The existing basement stairs, Vault entry, Keystone plinth, and original Items are unchanged.
+
+This is a verified **physical installation**, not puzzle commissioning. I’m running the full regression and preserving the installation receipts now.
+
+### M0104 · ASSISTANT · time: unknown · TURN_25 · VERBATIM_FROM_VISIBLE_CHAT
+
+Turn 25’s full Cabin regression passed: **1,301/1,301 tests across 52 files**, including 19 new tests for the Vault layout and native receipts.
+
+The installation is complete at the geometry level. The next commissioning pass must implement the real Item custody and socket transactions, the four-gate check, and the final turn action. The current Workshop and Vault scenes also have no native wall documents, so collision and passage safety need explicit verification before enabling travel. I’ll record those as acceptance blockers rather than treat source tests as a player playtest.
+
+### M0105 · ASSISTANT · time: unknown · TURN_25 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Turn 25 source, native installation receipts, and evidence matrix have been committed and pushed at `5f4ae828d91052c1cf172cf28b5187f32bad0464`. The Chat B worktree is clean.
+
+I’m finishing the GitHub campaign archive mirror, updating the draft integration review, and appending this turn to the existing living transcript. The route remains sealed pending the real four-gate puzzle implementation.
+
+### NON-DIALOGUE T25 CHECKPOINT · dated evidence
+
+Regionwright worker source HEAD `5f4ae828d91052c1cf172cf28b5187f32bad0464`, same shared actual Foundry 14.367 GM world, separate Chat A checkout READ ONLY. Existing H-B01 Workshop approved art had three original Regions; original H-B02 Vault art had two. New six Region documents and six DISABLED Behaviors installed in one one-time guarded GM batch: exact original source sockets for `Item.pbmUZPfC3WnsBRgi`, `Item.o9G3UJjEe2QX1ZH0`, `Item.t9uCIpsKeSvtC31w`; separate turn on original Workshop central bench; paired sealed native Vault departure and return with independent passive landings; original foyer return and disabled Keystone dais preserved. Original Crooked Man chases and Silver remain disabled per owner. Independent elected GM postread `pass:true`, all exact source/destinations/geometry, 0 player original Items, **1301/1301 tests PASS across 52 files**. H-B01/H-B02 scenes have 0 native wall documents; wall/collision and actual player traversal not certified. Archive unique handoff and forensic script/JSON under `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn25-vault-workshop`; one-time installer MUST NOT be replayed. DCH archive mirrored progress/evidence matrix and unique T25 handoff metadata. No new transcript file/index.
+
+**Next turn:** Native elected-GM verified authentic Item socket custody/ownership, three independent exactly-once insertion ledgers; true Basement access as fourth predicate; separate *Turn Joined Emblem*, safe collision/portal handling, then explicit original Keystone plinth pickup. Continue to append T25 terminal final and user replies to THIS same living transcript.
