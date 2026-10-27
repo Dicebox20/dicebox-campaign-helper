@@ -46,3 +46,9 @@ Machine receipts on authorized host:
 Next safe Chat A priority: another genuinely missing early/midgame installation or a separately PREPARED structural plan for H-U02 lower shell/diagonal wall segments when player access can be preserved. Real non-GM wall collision and scene traversal test only during final owner-requested integrated campaign acceptance after all installations. Earlier Forest Well new handler remains cached in active module API until **coordinated reload with Chat B**, unlike these direct native Wall creations that do not require a reload.
 
 **End state:** Six owner-delegated normal solid Walls installed and independently verified; **PARTIAL SHELL**, 273/273 source PASS, zero player rewards/haunts/late-game mutations, two protected PCs unmoved.
+
+
+## Later owner-directed puzzle testing / no-solution prose policy (October 27)
+
+The owner explicitly changed this Chat A conversation into a puzzle-testing and wording-iteration workspace, requesting an audit of all player-facing descriptions and removal of direct solution instructions. This **supersedes** the narrower assumption in the prior handoff that *all* player-facing testing is deferred until complete installation; the **full campaign compatibility certification** remains deferred. The completed prose audit rewrote 70 texts, retained all mechanical gates and rewards, passed 278/278 tests, and was remote-verified in Regionwright source commit `83401ee6cacb45e2ab81ab9f83853c62f9ff4a56`. The exact [current narrative/QA policy](../policies/cav-player-facing-puzzle-prose-no-direct-solutions-v1-2026-10-27.md) and [current active handoff](./cav-chat-a-player-facing-puzzle-text-70-rewrites-278-source-tests-handoff-2026-10-27.md) are authoritative for this owner-directed exception. Coordinate module/client refresh with Chat B; no real non-GM click-through acceptance was claimed.
+
