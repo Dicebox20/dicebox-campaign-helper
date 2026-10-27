@@ -1,0 +1,59 @@
+{
+  "schema": "dicebox.cav.hu02.six-native-partial-walls-273/v1",
+  "date": "2026-10-27",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "continue",
+  "scope": "Chat A Cabin early/midgame, owner delegated creative/technical approval",
+  "chatB": "Undercroft and SG-01 Silver Key left untouched",
+  "regionwright": {
+    "repository": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "c3b35b0c0f6ade862c55993f91fad14adb242b8e",
+    "after": "b136fb9fd64e2a16cfbafd3cd12d235dfe1aa778",
+    "remoteVerified": true
+  },
+  "tests": {
+    "passed": 273,
+    "failures": 0,
+    "added": 5,
+    "files": 51
+  },
+  "foundry": {
+    "world": "cabin-in-the-ashen-veil",
+    "version": "14.367",
+    "sceneId": "gGgUHlHdI7RFrbUh",
+    "worldScenes": 47,
+    "worldRegions": 250,
+    "worldBehaviors": 140,
+    "worldWallsAfter": 61,
+    "upperGalleryWallsBefore": 0,
+    "upperGalleryWallsAfter": 6,
+    "upperGalleryRegions": 14,
+    "originalWallsAdded": [
+      "CAVHU02WALL00001",
+      "CAVHU02WALL00002",
+      "CAVHU02WALL00003",
+      "CAVHU02WALL00004",
+      "CAVHU02WALL00005",
+      "CAVHU02WALL00006"
+    ],
+    "independentNativeGMPostread": "PASS",
+    "newRegions": 0,
+    "playerTokenMoves": 0,
+    "existingRegionDocumentChanges": 0
+  },
+  "safety": {
+    "southernClosureDeliberatelyDeferred": true,
+    "why": "Glow and X'ul center positions are south of painted bottom wall and could become trapped",
+    "northDiagonalWallsPending": true,
+    "sophiaTeleportStillDisabled": true,
+    "atticTeleportStillDisabled": true,
+    "realPlayerTests": false,
+    "fullCompatibleTestDeferred": true
+  },
+  "receipt": "utility-harness/artifacts/cav-chat-a-hu02-owner-approved-six-partial-structural-walls-install-20261027.json",
+  "secondReadback": "utility-harness/artifacts/cav-chat-a-hu02-six-partial-structural-walls-independent-GM-postread-20261027.json",
+  "handoff": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-hu02-v006-six-partial-walls-273-verified-handoff-2026-10-27.md",
+  "transcript": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-27-chat-a-hu02-six-guarded-native-walls-install-turn-transcript.md",
+  "transcriptFidelity": "Owner exact and selected assistant progress plus verifiable tools; not lossless ChatGPT platform transcript"
+}
