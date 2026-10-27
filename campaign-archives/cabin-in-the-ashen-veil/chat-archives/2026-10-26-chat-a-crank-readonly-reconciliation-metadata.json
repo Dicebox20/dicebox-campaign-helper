@@ -1,0 +1,66 @@
+{
+  "schema": "dicebox.cav.chat-a-readonly-crank-reconciliation-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "ownerMessage": "resume",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "base": "fb8ef607d4cf892557db402e5041c93294b3a79d",
+    "commit": "b64771e203cbcf9b41607ebe63b12cb8fc0bb673",
+    "newModule": "modules/regionwright/scripts/studio-cav-crank-reconciliation.js",
+    "registry": "modules/regionwright/scripts/studio-campaign.js",
+    "newTest": "tests/cav-original-crank-readonly-reconciliation.test.mjs",
+    "testsPassed": 110,
+    "testsFailed": 0,
+    "newTestsCount": 9,
+    "sha": {
+      "module": "7AB389895C05B766CD889E17C3DE4428A5B786AE4BE4601424595EE1D628E620",
+      "registry": "BCF4855989A63E33C703D40D52FD8652E74104C59D75C7B282BC310F12F3774C"
+    },
+    "installedHashesMatch": true
+  },
+  "runtime": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "elected": true,
+    "gmListeners": {
+      "study": true,
+      "crank": true,
+      "water": true
+    },
+    "sourceCrank": "Item.g3VYdgc1qkgkHGvn",
+    "donovanBox": "Scene.CAVEXT03Scene001.Region.CAVEXT03BOXREG01",
+    "studyNote": "Scene.CAVHG05Scene0001.Region.CAVB3E32BD6B01BD",
+    "gmDiagnosticAPI": "game.modules.get('regionwright').api.campaign.cabin.crankReconciliation.describe()",
+    "status": "not-claimed",
+    "requiresGM": false,
+    "taggedItems": 0,
+    "actorCount": 6,
+    "liveClaim": null,
+    "liveFitting": null,
+    "liveWater": null,
+    "liveTransaction": null,
+    "rosewaterNativeDisabled": true,
+    "sluiceNativeEnabled": true,
+    "chatMessages": 54,
+    "postReloadLoaded": true,
+    "worldWrites": 0
+  },
+  "pureTest": {
+    "syntheticReservedAward": "reserved-award-item-not-found",
+    "requiresGM": true,
+    "worldMutation": false
+  },
+  "evidence": [
+    "utility-harness/artifacts/cav-chat-a-study587-crank-claim-readonly-baseline-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-crank-readonly-reconciliation-postreload-gm-20261026.json"
+  ],
+  "next": [
+    "Read-only verify player-side 587 Request provenance and Region interactions",
+    "No reserved Item automatic create/delete replay",
+    "Keep owner-deferred ordinary player QA and Crooked Man",
+    "Do not modify Chat B late game branch"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless native transcript"
+}
