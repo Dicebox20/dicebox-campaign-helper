@@ -1,0 +1,55 @@
+{
+  "schema": "dicebox.cav.player-facing-no-direct-instructions-handoff/v1",
+  "date": "2026-10-27",
+  "timezone": "America/Los_Angeles",
+  "ownerDirective": "Audit all player-facing puzzle text and remove direct solution instructions; this chat becomes puzzle testing/iteration workspace",
+  "interrruptionRecovered": true,
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "sha": "83401ee6cacb45e2ab81ab9f83853c62f9ff4a56",
+    "independentRemoteVerified": true
+  },
+  "scope": {
+    "world": "cabin-in-the-ashen-veil",
+    "scenes": 47,
+    "regions": 250,
+    "nativeScriptsScanned": 60,
+    "nativeRegionBehaviorsEdited": 11,
+    "nativePhraseChanges": 30,
+    "moduleFilesEdited": 8,
+    "modulePhraseChanges": 39,
+    "originalMacrosEdited": 1,
+    "macroPhraseChanges": 1,
+    "phraseChangesTotal": 70,
+    "journalPageRecords": 331,
+    "worldItems": 78,
+    "actorItems": 326,
+    "macrosInspected": 19,
+    "historyChatMessages": 52
+  },
+  "validation": {
+    "sourceTests": 278,
+    "testFiles": 52,
+    "failed": 0,
+    "independentNativeBehaviorChecks": "11/11 PASS",
+    "independentModuleDiskChecks": "8/8 PASS",
+    "independentFirstChestMacroCheck": "PASS",
+    "actualNonGMClickthrough": false,
+    "coordinatedModuleReloadCompleted": false
+  },
+  "safety": {
+    "noPlayerItemsAwarded": true,
+    "noStoryProgressForged": true,
+    "GMOnlySafetyAndProofRetained": true,
+    "disabledChasesStillDisabled": true,
+    "chatBUndercroftMechanicsUntouched": true
+  },
+  "files": {
+    "policy": "campaign-archives/cabin-in-the-ashen-veil/policies/cav-player-facing-puzzle-prose-no-direct-solutions-v1-2026-10-27.md",
+    "handoff": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-player-facing-puzzle-text-70-rewrites-278-source-tests-handoff-2026-10-27.md",
+    "transcript": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-27-chat-a-player-facing-puzzle-narration-audit-turn-transcript.md",
+    "sourceReport": "docs/cabin-ashen-veil/chat-a-player-facing-puzzle-text-anti-spoiler-audit-2026-10-27.md",
+    "sourceManifest": "docs/cabin-ashen-veil/player-facing-puzzle-nonspoiler-text-audit-manifest-2026-10-27.json"
+  }
+}
