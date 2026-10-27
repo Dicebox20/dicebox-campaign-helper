@@ -221,3 +221,54 @@ The native Region source and original Lye and Plant Killer templates were verifi
 **Technical receipt referent:** Turn 17 new original Greenhouse mixer native Behavior `Scene.CAVEXT06Scene001.Region.CAVB6E433D528867.RegionBehavior.CAVEXT06LYEMIX01`; its independent GM readback was PASS, with source SHA256 `d3ad8040e862e27f37163df21f3a3ea7b78f49f2f83480d76aff5b194aa7bdf9`. This factual evidence line is an authored note, not a verbatim speech message.
 
 **Living document:** Continue appending this same file at the next between-turn checkpoint; no new transcript document or index is needed.
+
+
+---
+
+## Between Turns 17 and 18; Turn 18 Privy Copper staging — 2026-10-26
+
+### M0034 · ASSISTANT · time: unknown · END_TURN_17 · RECONSTRUCTED_SUMMARY
+
+The final Turn 17 reply confirmed source commit `11408658e474034a578451720261137a38d693cf`, the verified independent Greenhouse installation, GitHub handoff and continuing single transcript link. It identified the original BATH-02 Soap Case/Copper Key as next step. This is a marked summary of a user-visible response, **not a verbatim reproduction of its rich layout**.
+
+### M0035 · USER · time: unknown · BETWEEN_TURNS_17_18 / START_TURN_18 · VERBATIM_FROM_VISIBLE_CHAT
+
+> continue
+
+### M0036 · ASSISTANT · time: unknown · TURN_18 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll take the next bounded late-game turn. First I’ll check the unified Bathhouse and Privy against Chat A’s current work, then verify the original Copper Key, Soap Case, and Lye dependencies. If there’s a safe, separate installation point, I’ll build and test it in Foundry; otherwise I’ll move to the next non-conflicting late-game component. I’ll update the same Chat B transcript and continuity log at the end.
+
+### M0037 · ASSISTANT · time: unknown · TURN_18 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Bathhouse artwork does not identify a trustworthy Soap Case position, and Chat A is actively working on the unified Bathhouse. I won’t add a guessed case or interfere with those Regions.
+
+The Privy is a safer independent target. Its approved map clearly identifies the retrieval opening, and the existing arrival/return Regions leave room for a separate recovery point. I’m checking the Crimson Veil authority next so the Copper Key cannot be collected early.
+
+### M0038 · ASSISTANT · time: unknown · TURN_18 · VERBATIM_FROM_VISIBLE_CHAT
+
+The live Privy check confirms the original Copper Tiny Key is still a single GM-library Item, with no copies on characters. The approved map has room for two non-overlapping fixtures near the retrieval opening and inside the Privy, without changing its arrival or return portals.
+
+There is still **no authoritative Crimson Veil ledger** in Foundry. I’m therefore staging the retrieval and key-recovery Regions with disabled Behaviors. They’ll preserve the DC 12 or careful-tools fallback in source, but won’t award the key until the Aqueduct’s real Veil transition is installed and verified.
+
+### M0039 · ASSISTANT · time: unknown · TURN_18 · VERBATIM_FROM_VISIBLE_CHAT
+
+The two Privy fixtures are now installed in the shared Foundry world: the retrieval opening and a separate Copper Key recovery spot. Both native Behaviors are **disabled**, so they cannot trigger a premature reward. The original Privy arrival and return portals were preserved.
+
+The source also records the approved recovery alternatives: careful tools without a roll when the GM agrees, or a retryable DC 12 Sleight of Hand/Survival check. I’m verifying the saved objects independently before closing the installation batch.
+
+### M0040 · ASSISTANT · time: unknown · TURN_18_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+The user-visible preliminary Turn 18 completion reported two genuinely installed original Privy Regions (`CAVPRIVYRETRIEV1`, `CAVPRIVYKEYMARK1`) with **disabled** native Behaviors, original travel portals preserved, no Copper Key grant or story advance, and **1,215/1,215 local Cabin tests passing across 43 files**. The message emphasized the Crimson Veil prerequisite and that no player gameplay acceptance had occurred. This entry summarizes visible rich formatting rather than falsely presenting it as a full verbatim export.
+
+### M0041 · ASSISTANT · time: unknown · TURN_18 · VERBATIM_FROM_VISIBLE_CHAT
+
+The live verification and regression checks passed. I’m archiving the exact Foundry IDs, source hashes, and preflight/readback receipts now.
+
+The next genuine progression blocker is upstream: the Aqueduct must establish the Crimson Veil before the Privy can release its Copper Key. The unified Bathhouse’s Soap Case position also needs to be reconciled with Chat A’s active Bathhouse work.
+
+### TECHNICAL EVIDENCE · authored provenance note, not conversational speech
+
+Independent elected-GM T18 postread `pass:true`: exact new native Region and disabled Behavior IDs, source digests `44e65b4f3e785d62c7630b8591f3847593257c5b2f3747755c3244b544fbed71` (retrieval) and `b65c8e060992a11f9812c0a48c37dad8e874408046a0f28250e6e78d4360d90d` (marker). Original yard return and arrival preserved, original Copper Item `Item.D1LRRg4n7y7pRWvk` in GM library only, zero Actor copies; no active canonical Crimson Veil. Tests 15 new, complete 1215/1215 across 43 files. Do not conflate dormant native staging with player-playtested Copper recovery.
+
+Continue appending this **same living Chat B transcript document** between future turns. Technical Git commit receipt/final response may be captured at the next checkpoint, with source provenance, not invented in advance.
