@@ -23,3 +23,13 @@
 - This handoff is a **scope and plan correction**, not a runtime change or claim that old chase-dependent scripts are already fixed. Preserve chronological transcript and source receipts after subsequent work.
 
 [Binding owner decision](../decisions/2026-10-26-owner-haunt-checkpoints-gm-roleplay-decouple-puzzle-progression.md)
+
+## Exclusive Silver Key / Forest Well workstream ownership — coordination correction
+
+**Coordination correction, October 26, 2026.** The owner reported that Chat B's Silver Tiny Key staging update was interrupted during verification and subsequently reconciled: its pickup Behavior was disabled again; first and second Crooked Man chase triggers remained disabled; no Silver Key or progression reward was granted. This is **owner-supplied Chat B status**, not independently verified by Chat A in the live world in this correction turn.
+
+- **Chat B exclusively owns** the late SG-01 Silver Tiny Key source, physical marker/pickup Behavior, reconciliation and regression tests, and subsequent Hope Chest/Music Box/Prayer puzzle-chain implementation. Chat A must NOT install, retry, activate, delete, or reset a Silver Tiny Key Behavior or its claim ledgers.
+- **Chat A exclusively owns** early/midgame independent Aqueduct/Forest Well progression, related route gates and puzzles. Chat B must NOT modify Forest Well unlock or original Aqueduct routing/source.
+- Both work in **one shared Foundry world** despite separate Regionwright Git branches. Treat a counterpart's region as read-only, do not run competing uncoordinated reloads, and require exact live state/source SHA + handoff before any cross-owner integration.
+- **Haunt/Crooked Man work** remains last and GM-directed, not a prerequisite for either worker's ordinary puzzle progress. This is an ownership separation, not proof either Silver or Forest Well is installed/working.
+- Prior coordinator wording “next priority: give the Silver Tiny Key and Forest Well their independent puzzle progression paths” was a **joint backlog statement**, not permission for Chat A to work on Silver Key.
