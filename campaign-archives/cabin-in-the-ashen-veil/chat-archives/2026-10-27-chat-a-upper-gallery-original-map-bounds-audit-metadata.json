@@ -1,0 +1,51 @@
+{
+  "schema": "dicebox.cav.chat-a.hu02-geometry-original-art-audit/v1",
+  "date": "2026-10-27",
+  "timeZone": "America/Los_Angeles",
+  "ownerMessage": "resume",
+  "workstream": "Chat A early/midgame only",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "f8542fec3fcab9a1f84a6c015fec9cd4d33730cb",
+    "after": "5f7841418268410fa39bcd3fab8b5d39f8d884f2",
+    "remoteVerified": true
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "version": "14.367",
+    "scenes": 47,
+    "regions": 244,
+    "walllessScenes": 42,
+    "offBoundRectangles": 9,
+    "affectedScenes": 2,
+    "nativeChanges": 0
+  },
+  "hU02": {
+    "sceneId": "gGgUHlHdI7RFrbUh",
+    "sceneSize": [
+      1440,
+      1800
+    ],
+    "installedApprovedImage": "Maps/cabin-in-the-ashen-veil/h-u02-upper-landing-owner-approved-textfree-v006-2026-10-24.png",
+    "imagePixelSize": [
+      1086,
+      1448
+    ],
+    "imageSha256": "89F276946506C45CE9F9D6AA6B08664A7029D8BAF90A18D9AECD6758DC06CB6C",
+    "totalRegions": 14,
+    "offBoundRegionCount": 8,
+    "walls": 0,
+    "geometryRepaired": false
+  },
+  "tests": {
+    "lastPreviousSourcePassed": 253,
+    "newTestsRun": 0,
+    "compatibilityTestPerformed": false,
+    "playerAccept": false
+  },
+  "receipt": "utility-harness/artifacts/cav-chat-a-original-scene-rect-bounds-geo-audit-20261027.json",
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-upper-gallery-v006-offscene-region-geometry-reconciliation-handoff-2026-10-27.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-27-chat-a-upper-gallery-original-map-bounds-audit-turn-transcript.md",
+  "transcriptFidelity": "Owner exact visible message and evidence summaries; not a lossless platform transcript"
+}
