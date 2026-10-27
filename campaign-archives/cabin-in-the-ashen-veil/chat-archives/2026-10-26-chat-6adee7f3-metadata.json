@@ -1,0 +1,19 @@
+{
+  "source_url": "https://chatgpt.com/g/g-p-6aad7787f0f08191b111b384b2a9c6ef-dicebox-campaign-helper/c/6adee7f3-2394-83e8-8284-080a518c8559",
+  "conversation_id": "6adee7f3-2394-83e8-8284-080a518c8559",
+  "capture_date": "2026-10-26",
+  "capture_method": "Owner pasted excerpt",
+  "completeness": "partial",
+  "message_counts": {
+    "user": null,
+    "assistant": null,
+    "total": null,
+    "reason": "Pasted excerpt did not retain reliable message boundaries or role labels."
+  },
+  "limitations": [
+    "Browser security policy blocked source page access.",
+    "Earlier and later conversation content is unavailable; extent unknown.",
+    "Original formatting, timestamps, link targets, attachments, tool messages, and message boundaries are not reliably preserved in the excerpt.",
+    "Claims about tests, commits, installation, and runtime are reported by the excerpt and were not independently verified during recovery."
+  ]
+}
