@@ -1,0 +1,16 @@
+# Chat B Turn 16 postcommit native review receipt
+**2026-10-26 Pacific** | **SOURCE SHA** `5e8e9dba58e8ae2c7d9cd4a21f4435b9333d0d73` pushed to Regionwright `codex/cav-late-game-chat-b-20261026` | Parent `4bcfe7f1f1fb145ca66d9e42bd2c9560c4c9d0f4` | Chat A read-only observed `a500b0d058f9adf6240188c2b37d3e9834971359`.
+
+**REAL shared world:** Foundry 14.367 `cabin-in-the-ashen-veil`, active elected GM1 verified. Owner has authorized disjoint late-game Chat B native installations; no Chat A early/mid or shared Studio registry writes.
+
+**New installed native objects:** Approved original gazebo image, existing `Scene.CAVEXT05Scene001.Region.CAVEXT05LANTERN1` retains `CAVLANTERNBEH001` and adds enabled `CAVLANTERNIGNIT1`. New `Scene.CAVEXT05Scene001.Region.CAVEXT05EYE2MARK` rectangle (690,390,150,145) contains enabled `CAVEXT05EYE2BEH1` distinct eye pickup. New **hidden** original Eye2 image Tile `Scene.CAVEXT05Scene001.Tile.CAVEXT05EYE2TILE` at (735,427), 60x60, exact original `Item.QIH1ugEWGOO1U6LN` approved image. Distinct ignition after authentic DONE Oil/Wick original source ledgers; persistent marker visible then separate elected-GM/owned-player confirmation and once-only original glass eye claim. No visual particle/cobweb FX installed.
+
+**Independent native readback:** `pass:true` from `cav-chatb-turn16-independent-postread-20261026.json`. All three source SHA256 verified: original part `3cd7547b4f941a7f7a707bb86d6977f96d45e38563fc9b247d02ef0242e8029b`, ignition `600fbc83365dbf1dbabc940a6f83592111de4dc19c674318381252e288e2041d`, eye pickup `f85e0673b55f91656604fa9dbcd08dcbf5542eea4d73ad36d701da077f3507b1`. Tile still hidden, stage hidden, Oil/Wick/Ignition ledgers none, zero actor eye copies, preexisting Wick and NW Winder enabled. **No actual gameplay test, reward or story progression.**
+
+**Tests:** 11 new native script compile/guard cases PASS, full Cabin **1189/1189** PASS across **41 files**, new Node source syntax PASS.
+
+**Forensic source:** `modules/regionwright/scripts/studio-cav-late-gazebo-native-ignition-eye.js`, tests `tests/cav-late-gazebo-native-ignition-eye.test.mjs`, first preflight/native installer/independent postread in `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-batch1-turn16/`; original native installer MUST NOT be replayed.
+
+**Studio STOP:** Current physical Dahlia H-U07 Studio Sune altar site overlaps original Vanity Region `CAVVANITYREG0001`; the complete owner-approved Prayer of Protection Journal is still not verified. Exact phrase Google Drive search yielded unrelated campaign documents, not canonical Prayer. Do not invent prayer text or add overlapping Region / paired teleport. First AQ Chase/Waterworks, Crooked Actor, and Rufus Study hit-target separate constraints persist.
+
+**GitHub:** PR #1 remains draft; DCH independent archive contains dated T16 handoff/metadata and appended chronological log/matrix. Next T17 should prioritize approved original Prayer text and conflict-free Studio action, safe paired Workshop route and actual non-GM acceptance of the Gazebo sequence; preserve original Regions.
