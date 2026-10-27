@@ -1,0 +1,42 @@
+{
+  "schema": "dicebox.cav.oars-shack-owner-approved-stepwise-repair/v1",
+  "date": "2026-10-27",
+  "ownerLastApproval": "Yes",
+  "newOwnerWorkflow": "Test one puzzle/Region at a time, obtain explicit owner approval BEFORE every repair",
+  "playtests": {
+    "carriageInspection": "PASS owner reported",
+    "yardToShackTeleport": "PASS owner reported",
+    "oarsShack": "Previously MISSING; native installed and independently verified; PLAYER RE-ENTRY NOT YET TESTED"
+  },
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "commit": "74ee7cba7791e52dc3b691600f984a694271bdb0",
+    "remoteVerified": true
+  },
+  "sourceTests": {
+    "passed": 284,
+    "failed": 0,
+    "added": 6,
+    "files": 53
+  },
+  "foundry": {
+    "oldRegion": "Scene.CAVEXT01Yard0001.Region.CAV01R0000000006",
+    "newRegion": "Scene.CAVEXT03Scene001.Region.TWKOyz83JjJu94E7",
+    "originalBehavior": "CAVOARSBEHAV0001",
+    "oldOriginalBehaviorRemoved": true,
+    "originalYardRegionStillExists": true,
+    "originalHistoricClaimDone": true,
+    "transferredClaimDone": true,
+    "oldItemStillOnSkaalTel": true,
+    "actorItemsCreated": 0,
+    "oldItemFlagsRewritten": false,
+    "rowboatBehavior": "CAVMIRRORBEH0001",
+    "newOarsSourceSha": "70c3a180a15e83aa0c5fd0b19dc8245d1d28ec6cdfd2a46f0841619659f3367e",
+    "newRowboatSourceSha": "44739c30f0dc05062a5dc501175157becfa3d0baaffca1f38ca66ad94e985242",
+    "independentGMReadback": "PASS",
+    "playerItemReplay": false
+  },
+  "handoff": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-oars-shack-interior-owner-approved-migration-playtest-checkpoint-2026-10-27.md",
+  "transcript": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-27-oars-shack-relocation-owner-approved-stepwise-playtest-turn.md"
+}
