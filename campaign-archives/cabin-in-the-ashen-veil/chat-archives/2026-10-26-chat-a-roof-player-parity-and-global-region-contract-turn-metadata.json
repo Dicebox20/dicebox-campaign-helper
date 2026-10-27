@@ -1,0 +1,49 @@
+{
+  "schema": "dicebox.cav.chat-a-global-audit-roof-player-ui/v1",
+  "date": "2026-10-26",
+  "conversationFidelity": "owner message verbatim; assistant visible excerpts; tool-receipt summaries; not lossless transcript",
+  "sourceConversation": "coordinator continuation",
+  "workstream": "Chat A",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "a500b0d058f9adf6240188c2b37d3e9834971359",
+    "after": "df73f0d303983e48d67d621181672ef64f368e40",
+    "remoteVerified": true
+  },
+  "native": {
+    "foundry": "14.367",
+    "world": "cabin-in-the-ashen-veil",
+    "electedGM": "Gamemaster 1",
+    "scenes": 47,
+    "regions": 232,
+    "regionBehaviors": 120,
+    "executeScripts": 45,
+    "teleports": 75,
+    "scriptCompilationFailures": 0,
+    "invalidDestinationUUIDs": 0,
+    "roofBehaviorId": "i6UNtWSFFaZgkdZD",
+    "beforeSha": "60136c5c25faf8de4a9931889a0e6efe1468c4790dd088cc77cd9fbaa2d6a55c",
+    "afterSha": "212584fe6c6eb0780a711b5e9ee23a34cf854c4518cd91d53175af15158a840d",
+    "installedReadback": "PASS",
+    "independentGMReadback": "PASS",
+    "activeStoryLedgerChanges": 0,
+    "realPlayerTests": 0
+  },
+  "tests": {
+    "sourceBefore": 177,
+    "added": 8,
+    "passed": 185,
+    "failed": 0
+  },
+  "notes": [
+    "First region-destination heuristic produced 74 false misses; corrected live audit verifies 75/75 real Region UUIDs",
+    "First PowerShell source snapshot changed Unicode bytes; rejected SHA and recovered exact source with Node before native write",
+    "Dev Chrome restored with documented persistent console launcher without Foundry restart",
+    "Chat B source and original late-game world work not changed by this turn",
+    "Owner Oct 27 evening completion goal cannot be claimed fulfilled without campaign-wide Player QA"
+  ],
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-global-region-audit-roof-player-receipt-parity-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-roof-player-parity-and-global-region-contract-turn-transcript.md",
+  "timeZone": "America/Los_Angeles"
+}
