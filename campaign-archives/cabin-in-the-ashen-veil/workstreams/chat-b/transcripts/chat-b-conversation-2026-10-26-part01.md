@@ -1,4 +1,4 @@
-# Chat B — Conversation Transcript — Part 01
+# Chat B — Ongoing Conversation Transcript
 
 **Conversation:** Chat B, Cabin in the Ashen Veil late-game workstream within DiceBox Campaign Helper.
 **Coverage:** visible selected exchanges after Turn 12 through the 2026-10-26 owner direction to begin continuous interturn transcription.
@@ -6,7 +6,7 @@
 **Captured:** 2026-10-26 Pacific. **Individual message times:** unknown (not supplied by reliable ChatGPT transcript export).
 **Original platform conversation ID:** unavailable in current Bridge identity; not inferred.
 **Fidelity boundary:** This is a *recoverable interturn backfill*, not an exhaustive historic transcript; retain Turn 1–16 handoffs, chronological progress and native evidence separately.
-**Previous segment:** none. **Next segment:** append as conversation continues after this checkpoint.
+**Previous segment:** none. **Going forward:** this is the ONE continuing transcript document for Chat B. Append new dialogue here between turns; no new segments required. The historic filename is retained to avoid breaking links.
 **Associated technical handoffs:** `cav-chat-b-turn-12-2026-10-26.md` through `cav-chat-b-turn-16-gazebo-eye-native-2026-10-26.md` in the parent Chat B workstream.
 **Archive rule:** [Global transcription policy](https://github.com/Dicebox20/dicebox-campaign-helper/blob/main/docs/PROJECT-WIDE-CHAT-TRANSCRIPTION-AND-INTERTURN-CONTINUITY-RULES-2026-10-26.md).
 
@@ -159,3 +159,22 @@ The present transcription requirement applies prospectively to **all subsequent 
 ### ERRATUM-0001 · 2026-10-26 · TRANSCRIPTION_CORRECTION
 
 An initial capture mistake duplicated the exact text of M0022 under M0024 even though it was not a separate observed assistant message. **M0024 is INVALID as a conversation message and must not be counted as an independent utterance.** The verified message sequence ends at M0023 for this segment. The duplicated text remains visible above solely as an auditable original-record error; no unseen assistant turn should be inferred. The Tool Evidence note under that misnumbered entry remains a catalogue observation, not user-visible speech.
+
+
+---
+
+## Between Turns 16 and 17 — Owner simplifies transcription workflow
+
+### M0025 · USER · time: unknown · BETWEEN_TURNS_16_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+> The transcript just needs to be a document you update between turns
+
+### M0026 · ASSISTANT · time: unknown · BETWEEN_TURNS_16_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+Understood—I made the process more complicated than you wanted. I’ll simplify it to **one transcript document per chat**, updated between development turns. I’ll revise the project rule and Chat B’s archive to match, while keeping the existing historical records.
+
+### M0027 · ASSISTANT · time: unknown · BETWEEN_TURNS_16_17 · VERBATIM_FROM_VISIBLE_CHAT
+
+The main project rule and both repository instruction copies now say to use one ongoing transcript document per chat. I’ll update the existing Chat B document with your correction and retire the earlier, more elaborate bookkeeping requirement.
+
+**Implementation record (not speech):** The canonical and archive-branch policy files and AGENTS.md now specify one ongoing transcript document per chat. A dated KB refinement SQL supersedes the previous segmented archive requirement while preserving the older decision historically. This original file remains the living transcript; no new transcript segment was created. Append subsequent available messages here at the next between-turn checkpoint.
