@@ -807,3 +807,90 @@ Acknowledged the provided exact Region UUIDs and performed another independent l
 Current AQ-01 count 11 Regions / 148 Walls, compared to historical earlier same-date 8 Regions / 143 Walls. Source or actor that created these Regions between snapshots not established. Earlier statements saying PHYSICAL Regions must be created are superseded. Repair must ADD behavior and authoritative source service to these exact existing Regions, NOT duplicate any physical Region. No world/Chat A writes during correction; current source and evidence on Regionwright commit `77c26f6e8260268e40aed0042d9f276a1e703b47`, mirrored to same DCH audit on archive branch. Current elected-GM proof JSON `docs/cabin-ashen-veil/audits/2026-10-27-regionwright-full-puzzle-region-audit/LIVE-RECHECK-2026-10-27-1403.json`. Historical audit retained with prominent correction notice, appendix and updated metadata. Standalone pressure engine target values remain design placeholders, not accepted values.
 
 Record terminal response and any further user input in this SAME single living Chat B transcript, not new transcript or index.
+
+
+---
+
+## Owner correction: Sophia bookcase source and all 47 spoiler-safe Scene titles — 2026-10-27 Pacific
+
+### M0127 · USER · time: unknown · VERBATIM_FROM_VISIBLE_CHAT
+
+> this is sophias bookcase region Scene.CAVHU05Scene0001.Region.CAVB994894A7432F, for some reason it's named "observation", but it's the one that should be hooked up with the puzzle and reward
+
+### M0128 · ASSISTANT · time: unknown · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll use that exact Region as Sophia’s bookcase puzzle and reward location. I’ll inspect its current Behaviors and Regionwright’s Spine Mosaic API, then connect the puzzle without replacing the existing close-up or prematurely granting the Gond Emblem Half.
+
+### M0129 · USER · time: unknown · INTERRUPTING_TASK_ADDITION · VERBATIM_FROM_VISIBLE_CHAT
+
+> After you are done, Please rename all of the Scenes to non-spoiler names, and use F1 and F2 instead of the scene ids we asigned them.
+
+### M0130 · ASSISTANT · time: unknown · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll finish the Sophia bookcase connection first, then rename the campaign Scenes with spoiler-safe titles. I’ll use **F1/F2 as visible floor labels**, while preserving Foundry’s internal Scene IDs, Region UUIDs, links, and teleport destinations so the renaming doesn’t break the campaign.
+
+### M0131 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+I found the mismatch: the existing bookcase Region has the close-up and the disabled Gond reward, but no Spine Mosaic configuration. Regionwright’s six-book UI is available, and all six original book images are present.
+
+Its configuration writes are currently disabled globally. I’ll use the supported Regionwright API to attach the real puzzle to this Region, restore those safety settings, and leave the puzzle’s entry Behavior disabled until the six-book and Veil conditions are authenticated.
+
+### M0132 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+I found a version mismatch in Regionwright: the installed Spine Mosaic API drops the book artwork, although the current source supports image-backed book spines. I’m checking the installed files before proceeding so we don’t register a downgraded puzzle that loses Sophia’s approved assets.
+
+### M0133 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+I found no live Region scripts depending on the old Scene titles; they use stable Scene IDs. That makes the naming change safe to stage without rewriting teleport targets. I’ll name house Scenes `F1` and `F2`, with plain-language labels for the attic, basement, grounds, and lower passages.
+
+For Sophia, I’m keeping the existing Region and its close-up, using Regionwright’s installed six-book puzzle API, and recording the book artwork separately until the installed module is brought up to the newer image-capable version.
+
+### M0134 · ASSISTANT · time: unknown · TURN_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+Reported original Sophia bookcase `Scene.CAVHU05Scene0001.Region.CAVB994894A7432F` successfully named Sophia’s Bookcase — Six Storybooks and native Regionwright `spineMosaic.configure` completed with six original 1442–1447 books. Newly generated owner-native Regionwright Behavior `dxrQM6HJPGqfAh5t` remains **DISABLED**; existing close-up is enabled, original Gond Half issuer disabled and visual tile hidden. No Item granted. This reflects a rich partial final, not a literal text export.
+
+### M0135 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+I found two old one-time installation macros that mention the former upper-gallery Scene title. They aren’t part of normal puzzle play, but I’ll flag them as legacy rather than silently rewriting their installation logic. Regular Region Behaviors and travel links are keyed by stable IDs.
+
+The Scene naming pass can now proceed without changing any Scene IDs or puzzle Regions.
+
+### M0136 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+All **47 Scene titles** have now been renamed successfully. Main-floor rooms use `F1`, upstairs rooms use `F2`, and the other areas use plain, non-spoiler names. Foundry confirmed that every Scene retained its original ID, artwork, Region count, wall count, and navigation settings.
+
+I’m running the final independent verification now, including Sophia’s puzzle settings and the existing Gond reward.
+
+### M0137 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+The independent check passed Sophia’s puzzle and 46 Scene title comparisons. One Scene failed a strict metadata comparison while a player was active in the world. I’m checking whether that’s a live activation/navigation change rather than a rename problem; I won’t rerun the Scene update.
+
+### M0138 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+The discrepancy is accounted for: the **Small Shack** Scene gained one Region while the audit was running. Its title, ID, art, walls, and existing Behaviors all match; I didn’t create that Region and won’t attribute it to another worker without evidence.
+
+The Scene renaming itself succeeded for all 47. I’ll preserve the concurrent-change note in the verification record.
+
+### M0139 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+The final independent readback now passes: **47/47 Scene names**, Sophia’s six-book Regionwright configuration, and both original bookcase Behaviors are verified. Both global Regionwright write settings are back off.
+
+I’m saving the receipts and running the full Cabin regression. One remaining compatibility item is the installed module’s older book-spine renderer, which doesn’t yet display the six approved images.
+
+### M0140 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+The complete Cabin regression passed: **1,362/1,362 tests across 59 files**. Sophia’s puzzle and the Scene renames are independently verified.
+
+I’m closing the work with a durable handoff, including the two limitations still to address: the older installed Spine renderer lacks book images, and the actual Gond reward remains gated until the six-book/Veil chain is earned.
+
+### M0141 · ASSISTANT · time: unknown · TURN_PROGRESS · VERBATIM_FROM_VISIBLE_CHAT
+
+The work has been committed locally. Git returned a transport-output warning during the push, so I’m verifying the remote commit directly before publishing the archive links. The live Foundry changes are already verified and unaffected.
+
+### NON-DIALOGUE T28 FORENSIC CHECKPOINT
+
+- Original exact elected GM Foundry14.367 native Regionwright `api.spineMosaic.configure` on original H-U05 bookcase. New Regionwright native `RegionBehavior.dxrQM6HJPGqfAh5t`, DISABLED; `spineMosaic.persistent.status=locked`. Native `LRYrBIQNN92SCJai` close-up remains enabled, T27 Gond `CAVGONDREWARD001` stays disabled, hidden Tile persists, zero PC book/half copies. Both global write settings restored false.
+- Owner-directed **all 47 Scene names** changed to non-spoiler title-only labels: house F1/F2, others descriptive area titles. Internal IDs/UUIDs and native map/teleports remained. Independent separately authored GM postread pass:true 47/47. One concurrent extra Region appeared in `Scene.CAVEXT03Scene001` while verifying, identity of creator unknown; not produced by this title-only change. Two old one-time upper-gallery installation macros reference retired original scene display title (not normal player puzzle logic).
+- Original game live installed Regionwright Spine code is older and strips book images, whereas current source provides six original spine artworks. New standard native configuration and source Item→six slot bindings installed but the native Spine UI/renderer remains image-limited until an approved no-disruption module deployment. Native puzzle Behavior intentionally disabled until actual sixth Veil-only original book acquisition is authenticated, so neither puzzle solve nor Gond reward is claimed.
+- Full Cabin tests **1362/1362 across 59 files PASS**. Unique Turn28 source handoff and chronological matrix/progress in Regionwright branch `codex/cav-late-game-chat-b-20261026` source SHA `c8d804efaa4c305c779d8525d67f8c77eca805f2`, pushed and remote SHA independently confirmed. One-time installer scripts and exact native receipts in `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn28-sophia-spine-scene-titles`; no native installer replay. DCH independent archive mirrored dated handoff/metadata and progress/matrix.
+- This one continuous Chat B transcript updated through M0141; append the terminal final and any owner response at next between-turn checkpoint. Do NOT create an additional transcript segment/index.
