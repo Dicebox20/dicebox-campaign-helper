@@ -1,0 +1,44 @@
+{
+  "schema": "dicebox.cav.chat-a-bowl-service-recovery-236/v1",
+  "date": "2026-10-26",
+  "timeZone": "America/Los_Angeles",
+  "ownerVerbatim": "the bridge is back up",
+  "sourceFidelity": "exact visible owner turn + selected assistant quotations + tool receipt summaries; not lossless export",
+  "workstream": "Chat A",
+  "bridge": {
+    "server": "0.1.26",
+    "local": "ready",
+    "currentChatIdentityVerified": false,
+    "powerShell": "ready",
+    "formerEditReceipt": "not-recorded"
+  },
+  "regionwright": {
+    "repository": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "b1f926418facb5d1e483fadf7bb7fd7c166743d1",
+    "after": "0b4a30f0efe69642e95d81be221ad688ed54859d",
+    "remoteVerified": true
+  },
+  "tests": {
+    "previous": 234,
+    "new": 2,
+    "focused": 19,
+    "pass": 236,
+    "fail": 0,
+    "files": 43
+  },
+  "bowl": {
+    "sourceWorldItem": "Item.1n5LONw3nYIy61O9",
+    "oldDiskSha": "CE9E9E08D61396FACA1366E5D16C2DF18DCCEF7E78830D761BD458CE4BC3BCB3",
+    "newDiskSha": "70732E8FD211AC2BC6887EBE2EA9EEC572BBE807BDADC47F68F909F92D758C65",
+    "diskDeployVerified": true,
+    "sourceCommitted": true,
+    "nativePickupInstalled": false,
+    "ownerFixtureApproved": false,
+    "foundryRuntimeVerified": false,
+    "gmReloaded": false,
+    "actualPlayerAcceptance": false
+  },
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-sune-bowl-gm-service-236-bridge-recovery-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-bridge-recovered-bowl-service-commissioning-turn-transcript.md"
+}
