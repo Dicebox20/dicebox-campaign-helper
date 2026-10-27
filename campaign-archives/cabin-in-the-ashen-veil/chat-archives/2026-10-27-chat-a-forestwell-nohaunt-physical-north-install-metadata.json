@@ -1,0 +1,45 @@
+{
+  "schema": "dicebox.cav.chat-a-forestwell-nohaunt-253/v1",
+  "date": "2026-10-27",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "its doing undercroft now, you may continue",
+  "workstream": "Chat A exclusive early/midgame",
+  "chatB": "Undercroft and Silver Key; untouched",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "from": "f3c1bfccf077ec9d3b4d97573889289dd6b598f0",
+    "to": "f8542fec3fcab9a1f84a6c015fec9cd4d33730cb",
+    "remoteVerified": true
+  },
+  "tests": {
+    "fullPassed": 253,
+    "failed": 0,
+    "new": 7,
+    "files": 45
+  },
+  "world": {
+    "foundry": "14.367",
+    "id": "cabin-in-the-ashen-veil",
+    "scenes": 47,
+    "regions": 244,
+    "behaviors": 133,
+    "northOriginalRegion": "CAVAQWELLNORTH01",
+    "newBehavior": "CAVAQWELLACCESS1",
+    "nativeInstalled": true,
+    "independentGmPostread": "PASS",
+    "originalGearDone": false,
+    "originalHandleDone": false,
+    "routeDone": false,
+    "wellDone": false,
+    "originalChaseEnabled": false,
+    "actualPlayerTests": false
+  },
+  "deployment": {
+    "fourSourcesOnDisk": "VERIFIED",
+    "activeApiReloadNeeded": true
+  },
+  "handoff": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-forest-well-aqueduct-independent-haunt-free-install-253-handoff-2026-10-27.md",
+  "transcript": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-27-chat-a-forestwell-nohaunt-physical-north-install-turn-transcript.md",
+  "metadataFidelity": "owner exact, assistant excerpts and verified receipts; not lossless export"
+}
