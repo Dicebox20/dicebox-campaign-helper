@@ -1,0 +1,18 @@
+# Chat B Turn 17 — Shared-World Greenhouse Native Install Git Verification Receipt
+**Pacific date:** 2026-10-26. **Latest source HEAD:** `11408658e474034a578451720261137a38d693cf` on `Dicebox20/regionwright:codex/cav-late-game-chat-b-20261026`, parent `b99c0873e123b6432d2f0e532c48307d9d7b02b3`. Worker worktree clean. Chat A separate HEAD `df73f0d303983e48d67d621181672ef64f368e40` READ ONLY; no Chat A or early/mid Region writes.
+
+**Native document actually INSTALLED:** exact original EXT-06 owner map and original Greenhouse Controls `Scene.CAVEXT06Scene001.Region.CAVB6E433D528867`, one newly enabled `RegionBehavior.CAVEXT06LYEMIX01`. Generated exact source SHA256 `d3ad8040e862e27f37163df21f3a3ea7b78f49f2f83480d76aff5b194aa7bdf9` verified by independent current GM readback.
+
+**Original Items:** Lye `Item.vDR4cJU35iODR6gh`, Plant Killer `Item.YNWpGEGB17mqDFWe`, exact GM_LIBRARY_ONLY world `loot` sources. No Actor Plant Killer copies, no Lye consumption, no new Item or Region generated in this turn.
+
+**Guarded game logic:** genuine separate Waterworks Annex `Scene.CAVAQ01Scene0001.Region.kmPmr5ijLCEOJNk3` native restoration must be DONE and certified; genuine original BATH-02 Soap Case ledger unlocked with real Soap Lye actor provenance, not arbitrary item name or Pond/Bath Sluice drained flag. Only elected active GM and properly owned player token in original Region, deliberate confirmed action, reserve→single original Plant Killer grant→readback→DONE. Lye intentionally preserved until owner defines consumption. Source contains no real-world chemical formula.
+
+**Independent elected-GM readback:** `pass:true` Foundry 14.367 exact `cabin-in-the-ashen-veil`, original Region geometry and source match, original items untouched, no Waterworks/SoapCase/Greenhouse done ledger, previous NW Winder, first AQ Chase disabled and Gazebo ignition intact. Thus mixer native handler exists but cannot currently award a reward; non-GM actual player testing NOT performed.
+
+**Regression:** new 11/11 native guarded Source tests PASS; complete isolated Cabin suite **1200/1200 across 42 files PASS**. Native results are not player acceptance.
+
+**Receipts:** source `modules/regionwright/scripts/studio-cav-late-greenhouse-native-lye-mixer.js` and local tests; one-time original installer/preflight, current live census and independent GM readback under `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-batch2-turn17/`; installation JSON SHA256 `DE4D9778F3DFC002CA0560FD6EDF0EEBDFE4E76DA8DF0C211AAF6527761661DC`, readback JSON SHA256 `159DB637971D33B8F9F91E0E125711D1F40582F2E2E1B7888B368595D1B1A2DB`. Installer already ran; do not replay.
+
+**Continuity:** T17 handoff/metadata, progress and matrix mirrored to DCH active Chat B workstream; **same ONE living transcript** `transcripts/chat-b-conversation-2026-10-26-part01.md` updated for the user's next-turn request and this turn's visible dialogue (M0028 onward), without a new index/segment. Final Git receipt response will be appended on next between-turn checkpoint. This Git receipt is part of existing technical handoff, not a separate transcript control.
+
+**Next:** Source original BATH-02 Soap Case in unified Bathhouse with explicit disjoint Chat A scene/Region collision coordination, native Privy Copper award, real Waterworks; then enable a testable end-to-end Greenhouse Plant Killer production. Independently complete Thorn Dock/Boathouse, and recover authentic Prayer Protection / H-U07 altar rather than creating unsupported fiction. PR remains DRAFT and unmerged.
