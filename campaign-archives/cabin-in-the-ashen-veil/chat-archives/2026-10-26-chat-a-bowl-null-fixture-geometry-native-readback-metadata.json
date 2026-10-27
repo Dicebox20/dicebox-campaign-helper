@@ -1,0 +1,72 @@
+{
+  "schema": "dicebox.cav.chat-a-null-bowl-owner-geometry/v1",
+  "date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "continue",
+  "transcriptFidelity": "owner verbatim; assistant visible excerpts and tool receipt summaries; not a lossless native export",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "prior": "0b4a30f0efe69642e95d81be221ad688ed54859d",
+    "after": "3d17007137bdc0a52f133c083737d5bc020ad1b2",
+    "remoteVerified": true
+  },
+  "tests": {
+    "previous": 236,
+    "added": 2,
+    "focused": 21,
+    "fullPassed": 238,
+    "failed": 0,
+    "files": 43
+  },
+  "bowl": {
+    "previousSourceSha": "70732E8FD211AC2BC6887EBE2EA9EEC572BBE807BDADC47F68F909F92D758C65",
+    "newSourceSha": "180BF7800E3AC5395257373E40BABA9A6DB60479A0E5AD203D93EBBEF0D25AB0",
+    "deployedDiskPass": true,
+    "freshFoundryImportPass": true,
+    "activeRuntimeApiRefreshed": false,
+    "nativePickupInstalled": false,
+    "ownerFixtureApproved": false,
+    "actorCopies": 0,
+    "actualPlayerAcceptance": false
+  },
+  "foundry": {
+    "world": "cabin-in-the-ashen-veil",
+    "version": "14.367",
+    "gm": "Gamemaster 1",
+    "scenes": 47,
+    "regions": 234,
+    "behaviors": 123,
+    "messages": 54
+  },
+  "geometry": {
+    "sceneId": "8yLMRDvxyw58dydh",
+    "width": 2160,
+    "height": 1440,
+    "rosewater": {
+      "region": "CAVBROSEWATER001",
+      "rectangle": [
+        976,
+        826,
+        108,
+        115
+      ],
+      "nativeDisabled": true
+    },
+    "screwdriver": {
+      "region": "CAVBATHSCRDRY001",
+      "rectangle": [
+        870,
+        710,
+        360,
+        330
+      ]
+    },
+    "completeOverlap": true,
+    "ownerReviewPending": true
+  },
+  "readbackReceipt": "utility-harness/artifacts/cav-chat-a-bowl-absent-owner-fixture-live-gm-readback-20261026.json",
+  "geometryReceipt": "utility-harness/artifacts/cav-chat-a-rosewater-screwdriver-owner-geometry-readonly-20261026.json",
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-bowl-missing-fixture-238-source-live-readback-and-geometry-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-bowl-null-fixture-geometry-native-readback-transcript.md"
+}
