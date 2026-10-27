@@ -272,3 +272,44 @@ The next genuine progression blocker is upstream: the Aqueduct must establish th
 Independent elected-GM T18 postread `pass:true`: exact new native Region and disabled Behavior IDs, source digests `44e65b4f3e785d62c7630b8591f3847593257c5b2f3747755c3244b544fbed71` (retrieval) and `b65c8e060992a11f9812c0a48c37dad8e874408046a0f28250e6e78d4360d90d` (marker). Original yard return and arrival preserved, original Copper Item `Item.D1LRRg4n7y7pRWvk` in GM library only, zero Actor copies; no active canonical Crimson Veil. Tests 15 new, complete 1215/1215 across 43 files. Do not conflate dormant native staging with player-playtested Copper recovery.
 
 Continue appending this **same living Chat B transcript document** between future turns. Technical Git commit receipt/final response may be captured at the next checkpoint, with source provenance, not invented in advance.
+
+
+---
+
+## Between Turns 18 and 19; Turn 19 late scene identity correction — 2026-10-26
+
+### M0042 · ASSISTANT · time: unknown · END_TURN_18 · RECONSTRUCTED_SUMMARY
+
+The final Turn18 response confirmed two disabled original-map Privy fixtures installed, 1,215/1,215 tests passing, commit `f85f9cb1a11a131e00bb7530f5d45d9aa3bb6b35`, archived handoff and one living transcript updated. It proposed true Crimson Veil verification and Bathhouse Soap Case reconciliation as the next step. This is a labeled summary, not a full verbatim reproduction.
+
+### M0043 · USER · time: unknown · BETWEEN_TURNS_18_19 / START_TURN_19 · VERBATIM_FROM_VISIBLE_CHAT
+
+> Continue to the next step.
+
+### M0044 · ASSISTANT · time: unknown · TURN_19 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll continue Chat B’s late-game work from Turn 18. First I’ll check whether Chat A has advanced the Aqueduct/Crimson Veil prerequisites, then inspect the Privy fixtures and original Copper Key. If those gates are still blocked, I’ll prepare the next safe native interaction without granting rewards prematurely. I’ll verify any installation, archive the evidence, and update the same living transcript.
+
+### M0045 · ASSISTANT · time: unknown · TURN_19 · VERBATIM_FROM_VISIBLE_CHAT
+
+The latest check shows the Aqueduct still has no verified Crimson Veil completion record, so commissioning the Copper Key now would bypass the intended progression. I’m leaving those two Privy Behaviors disabled.
+
+I also checked the Boathouse: its original Prayer of Devotion Item exists, but the world has no readable Prayer Journal or confirmed pickup fixture. I’m checking the project documents for that original text before placing anything on the map.
+
+### M0046 · ASSISTANT · time: unknown · TURN_19 · VERBATIM_FROM_VISIBLE_CHAT
+
+The document search didn’t recover an approved Prayer of Devotion text; the matching Drive files belong to other campaigns. I also found a concrete integration defect: two late-game source contracts still use the old Studio/Workshop labels `H-G07/H-G08`, while the live Foundry scenes are `H-U07/H-U08`.
+
+I’m correcting that mapping and its regression tests. This will prevent the later Prayer and Sune-half interactions from targeting the wrong room, without touching Chat A’s live Regions or inventing the missing Journal.
+
+### M0047 · ASSISTANT · time: unknown · TURN_19 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Studio/Workshop identity correction now passes its focused tests, and the full Cabin suite reports **1,219/1,219 passing**. The test run itself succeeded; a Windows Git line-ending warning interrupted the final diff display, so I’m checking the exact changes before committing.
+
+This turn is a **source-contract correction**, not a new live Foundry installation. It removes an incorrect room requirement that would otherwise block the later Prayer and Sune-half interactions.
+
+### M0048 · ASSISTANT · time: unknown · TURN_19_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+The partial Turn19 response explained the source-only H-U07 Art Studio/H-U08 Workshop correction, exact current Foundry native scene existence, obsolete H-G07/H-G08 nonexistence, missing complete player-readable Prayer of Devotion/Protection Journals, and the **1,219/1,219 PASS across 43** Cabin tests. It explicitly stated **no Foundry writes**. This is a summary rather than a reproduction of the rich formatting.
+
+**Authored technical evidence, not dialogue:** Exact original Studio `CAVHU07Scene0001`, Workshop `CAVHU08Scene0001`; original Prayer of Devotion `Item.GXLYq6Tf4OgPNbkU` and Protection `Item.5jwy75XyFezukf3b` both GM_LIBRARY_ONLY descriptions rather than original complete Journals. Source contracts and two tests corrected only in Chat B isolated checkout. Dated native read-only evidence and T19 handoff stored separately. This same document remains the only living Chat B transcript and should be appended again at the next between-turn checkpoint, including the terminal Git result.
