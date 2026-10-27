@@ -1,0 +1,44 @@
+{
+  "schema": "dicebox.cav.chat-a-install-first-metadata-turn/v1",
+  "date": "2026-10-26",
+  "ownerMessage": "continue",
+  "fidelity": "owner verbatim, assistant excerpts, verified tool summaries; not complete native platform export",
+  "workstream": "Chat A",
+  "regionwright": {
+    "repository": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "base": "17ea82bda1a0da04a233f9173630cb8763b7cd2a",
+    "after": "b1f926418facb5d1e483fadf7bb7fd7c166743d1",
+    "remoteVerified": true
+  },
+  "classification": "three installed evidence metadata flags; zero source/Behavior changes",
+  "native": {
+    "foundry": "14.367",
+    "world": "cabin-in-the-ashen-veil",
+    "electedGM": "Gamemaster 1",
+    "scenes": 47,
+    "messages": 54,
+    "receiptRegionIds": [
+      "CAV01R0000000006",
+      "CAVVANITYREG0001",
+      "CAVROOFCLOCKR001"
+    ],
+    "installReceipt": "utility-harness/artifacts/cav-chat-a-install-first-three-native-metadata-receipts-20261026.json",
+    "independentReadback": "PASS",
+    "independentReceipt": "utility-harness/artifacts/cav-chat-a-installed-state-metadata-independent-gm-postread-20261026.json",
+    "OarsOriginalDone": true,
+    "RosewaterDisabled": true,
+    "rosewaterOwnerGeometryReview": true,
+    "playerAcceptance": false
+  },
+  "lastSourceSuitePassed": 217,
+  "sourceTestsRepeatedThisTurn": false,
+  "blocked": [
+    "Rosewater geometry overlap with drained Screwdriver, owner review needed",
+    "Unique original Sune Bowl pickup exact position not approved",
+    "Crooked Man chase/Actor and Aqueduct commissioning owner-deferred",
+    "Chat B late-game integration independent"
+  ],
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-install-first-native-metadata-catalogue-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-install-first-metadata-reconciliation-turn-transcript.md"
+}
