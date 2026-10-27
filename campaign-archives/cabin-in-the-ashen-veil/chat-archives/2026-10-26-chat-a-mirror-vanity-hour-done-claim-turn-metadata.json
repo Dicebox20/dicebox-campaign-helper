@@ -1,0 +1,54 @@
+{
+  "schema": "dicebox.cav.chat-a-mirror-vanity-hour-batch/v1",
+  "date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerVerbatim": "Lets continue",
+  "fidelity": "owner quote verbatim, assistant visible excerpts, tool activity as evidence summaries; not native export",
+  "workstream": "Chat A",
+  "regionwright": {
+    "repository": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "df73f0d303983e48d67d621181672ef64f368e40",
+    "after": "830d48788bcfae13a760c73ad2cbc129be68c63c",
+    "remoteVerified": true
+  },
+  "tests": {
+    "before": 185,
+    "added": 13,
+    "passing": 198,
+    "failed": 0
+  },
+  "foundry": {
+    "world": "cabin-in-the-ashen-veil",
+    "version": "14.367",
+    "electedGM": "Gamemaster 1",
+    "scenes": 47,
+    "regions": 232,
+    "behaviors": 120,
+    "executeScripts": 45,
+    "teleports": 75,
+    "chatMessages": 54,
+    "originalSourceBehaviorEdits": 2,
+    "independentReadback": "PASS",
+    "zeroMirrorVanityHourMinuteRoofClaims": true,
+    "zeroRewardActorCopies": true,
+    "playerAcceptance": false,
+    "chatBModified": false
+  },
+  "sources": [
+    {
+      "kind": "vanity",
+      "id": "CAVVANITYBEH0001",
+      "previousSha": "8be78e1904677af764b63989db85749833895fa32aa0610a7863974e2d26c182",
+      "newSha": "744a523cc0e90b01a6ea91dc7145e7e8cfce4a9ed094b292edd4f4e845d2dfbd"
+    },
+    {
+      "kind": "hour",
+      "id": "SAshGMH5A3AsJC0Y",
+      "previousSha": "7acc56464e73dbf26527d6883154e05f928400c7b983bd646e92fe97dacd3786",
+      "newSha": "7964c9604084220eb7d9d83958e0351da2b2d8afcb347afec95450ea8daa96ef"
+    }
+  ],
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-mirror-vanity-hour-original-receipts-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-mirror-vanity-hour-done-claim-turn-transcript.md"
+}
