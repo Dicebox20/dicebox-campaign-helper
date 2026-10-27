@@ -763,3 +763,28 @@ I’m finishing the campaign archive and the same living transcript. The remaini
 Exact pushed source `3855d50b59cc1c0b9cfcc91b3e2b083d8b45cf2d`; original Sophia bookcase `Scene.CAVHU05Scene0001.Region.CAVB994894A7432F` has original enabled close-up `RegionBehavior.LRYrBIQNN92SCJai` unchanged plus NEW DISABLED native Gord? correction: **Gond** issuer `RegionBehavior.CAVGONDREWARD001`; new hidden and locked original Gond Item-image Tile `Scene.CAVHU05Scene0001.Tile.CAVHU05GONDTILE1`. Guard requires true six-book native Regionwright order, original canonical Veil sixth book, visible source tile and legitimate actor/GM deliberate claim before any original Item may be granted; currently none of those proof ledgers exist and source remains disabled. Current elected-GM independent Foundry readback `pass:true`, zero actor Gond copies and original Vault Gond socket disabled; original six books GM library only; same original Sophia exit enabled. Source code+one-time installer/readback JSON `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn27-sophia-gond/`; full Cabin suite **1340/1340 PASS across 56 files**. New T27 handoff/metadata and append-only matrix/progress mirrored to DCH archive. No native nonGM gameplay test, no fake puzzle completion, owner-deferral of Crooked Man preserved.
 
 Append user reply and terminal T27 response in THIS same living transcript at next turn; do not create new transcript/index file.
+
+
+---
+
+## Owner-requested read-only global Regionwright Region audit — 2026-10-27 Pacific
+
+### M0123 · USER · time: unknown · VERBATIM_FROM_VISIBLE_CHAT
+
+> Alright, can you audit all the regions that are supposed to have regionwright puzzles? I appear to be missing some regions in the aquaduct, including the water pressure puzzle
+
+### M0124 · ASSISTANT · time: unknown · RECONSTRUCTED_SUMMARY_OF_TURN_PROGRESS_AND_FINDINGS
+
+Acknowledged full read-only audit, focusing Aqueduct Waterworks pressure first and preserving Chat A's dirty independent checkout and the active shared Foundry world. Current elected GM `cabin-in-the-ashen-veil` showed **47 Scenes, 250 Regions, 141 Behaviors (112 enabled/29 disabled)**, both Regionwright modules active. Confirmed owner's suspicion: original AQ-01 has eight Regions, **no five-valve Waterworks gameplay Region/controller/GM pressure source**, only zero-Behavior Waterworks Annex observation `Scene.CAVAQ01Scene0001.Region.kmPmr5ijLCEOJNk3` at x1240,y2720,w300,h260. Engine, demo, and seven original pressure gauge art assets exist, but Waterworks pressure targets [2,4,3,1,5] are design placeholders and prototype obstruction toggle cannot be used as canonical world proof.
+
+Also independently confirmed Sophia's six-book **Spine Mosaic** is not configured on any Region/Wall/Tile in the world; existing close-up Region and T27 disabled Gond issuer are not actual Spine Mosaic completion. Confirmed one direct `flags.regionwright.slidingMosaic` on SG-05 Sune Region, and enabled campaign-specific Boiler controls on both full/drained unified Bathhouses and Rosewater ring Region on drained variant. Current Greenhouse lye Region has an enabled custom executeScript (not automatically missing), Roof Clock/Donovan 587/Great Room chest are custom integrations rather than proof of missing generic Regionwright families. Great Room chest native script says First Chest 024 while owner-approved 027 Dust downstream is a separate continuity concern requiring validation, not automatic reassignment. Some AQ travel and chase Behaviors intentionally disabled for unmet source and owner's Crooked Man deferral.
+
+### NON-DIALOGUE AUDIT RECEIPT
+
+Dated technical report and full immutable GM read-only inventory:
+- `https://github.com/Dicebox20/regionwright/blob/codex/cav-late-game-chat-b-20261026/docs/cabin-ashen-veil/audits/2026-10-27-regionwright-full-puzzle-region-audit/AUDIT.md`
+- `https://github.com/Dicebox20/regionwright/tree/codex/cav-late-game-chat-b-20261026/docs/cabin-ashen-veil/audits/2026-10-27-regionwright-full-puzzle-region-audit`
+- Regionwright source-only documentation commit `fd221501a367a2cd47bc0a20ddadc72a595e8b97` independently confirmed remotely by `git ls-remote`, Chat B checkout clean. Separate dirty Chat A checkout was NOT changed. Entire audit **zero Foundry world writes**.
+- DCH durable mirror `campaign-archives/cabin-in-the-ashen-veil/workstreams/chat-b/cav-regionwright-all-region-puzzle-audit-2026-10-27.md` and `.metadata.json` in independent DCH archive branch. Single living transcript updated in this existing document (no segment/index).
+
+Repair-order source-of-truth: authentic AQ artwork/143 original walls and dedicated console+obstruction native Region geometry; approve 5-valve canonical targets rather than demo defaults; create elected-GM campaign pressure service/persisted obstruction+balance, then native snapshot/player test; separately configure authentic Regionwright six-storybook Spine on original H-U05 bookcase without overwriting click close-up or fabricating Veil sixth-book proof. No Crooked Man chase activation in this audit. Record user reply and final answer at next between-turn checkpoint.
