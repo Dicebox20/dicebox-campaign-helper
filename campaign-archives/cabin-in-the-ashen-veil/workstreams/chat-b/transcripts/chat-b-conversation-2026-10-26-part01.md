@@ -154,3 +154,8 @@ The current conversation context includes some omitted/skipped intermediate mess
 ### RECOVERY NOTE
 
 The present transcription requirement applies prospectively to **all subsequent messages**, including conversations between work turns. Append the next available user/assistant exchange under a new numbered section or the next segment before the following handoff. The top-level project policy defines required coverage and GitHub verification.
+
+
+### ERRATUM-0001 · 2026-10-26 · TRANSCRIPTION_CORRECTION
+
+An initial capture mistake duplicated the exact text of M0022 under M0024 even though it was not a separate observed assistant message. **M0024 is INVALID as a conversation message and must not be counted as an independent utterance.** The verified message sequence ends at M0023 for this segment. The duplicated text remains visible above solely as an auditable original-record error; no unseen assistant turn should be inferred. The Tool Evidence note under that misnumbered entry remains a catalogue observation, not user-visible speech.
