@@ -543,3 +543,64 @@ The final puzzle checks passed **1,259/1,259 tests across 47 files**. I’m mirr
 Turn23 Regionwright source SHA `a0cf8e603c08e3133a5095950dad7c37437a818a`, independent worker clean and pushed, native current GM independent postread `pass:true`. Original Keystone source still absent; 4 new Regions/4 all-disabled Behaviors staged on UND-01/UND-02, no player tests. Silver old native source restored disabled after partial attempted change; no Silver rewards, both first and second Crooked chases disabled. Full Cabin 1259/1259 tests across 47 files PASS. Date T23 starts Pacific Oct26 and ends just after midnight Oct27.
 
 **Next:** Owner-approved real original Keystone Item workflow, genuine Vault award and separate lever, or outer SG05 Sune Bowl+actual filled Great Room 027 pellet. Crooked Man is owner deferred. Keep updating this SAME living Chat B transcript; no new transcripts or indexes.
+
+
+---
+
+## After interrupted Turn 23; Turn 24 Keystone source and Vault plinth continuation — 2026-10-27 Pacific
+
+### M0089 · USER · time: unknown · BETWEEN_TURNS_23_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+> you were interrupted on your last turn. last work was undercroft puzzles
+
+### M0090 · ASSISTANT · time: unknown · TURN_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+I found the interrupted checkpoint: Turn 23 installed the Undercroft’s Keystone recess, separate lever, sealed doorway, and return route. The independent Foundry readback passed, and the handoff was archived, but the final reply was interrupted.
+
+I’ll continue from there, keeping the Crooked Man work deferred. First I’ll verify the installed Undercroft fixtures and original Vault evidence, then tackle the missing Keystone Item and its puzzle dependency without opening the inner door prematurely.
+
+### M0091 · ASSISTANT · time: unknown · TURN_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+The missing Keystone is a genuine puzzle-content gap, not an unfinished chase dependency. The existing Vault contract already specifies how it must be earned: the three authentic item sockets and separate emblem-turn action open the Vault, and only then can a character take the Keystone from its plinth.
+
+I’ll create **one GM-library Keystone source Item** under your delegated authority, preserving that reward sequence. I’ll verify its native Item data before wiring any Vault pickup or Undercroft activation.
+
+### M0092 · ASSISTANT · time: unknown · TURN_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+The original Keystone source now exists in Foundry as `Item.CAVKEYSTONEITEM1`, in the campaign’s puzzle-item library. It is **GM-only and unclaimed**, with provenance pointing to the existing Vault plinth and Undercroft recess.
+
+I’m now updating the late-game contracts to require that exact Item UUID, then I’ll independently verify the live Item and stage its Vault plinth interaction without releasing it to players.
+
+### M0093 · ASSISTANT · time: unknown · TURN_24_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+The assistant publicly confirmed the new unique original Keystone world Item `Item.CAVKEYSTONEITEM1`, in GM library, zero characters granted, original Vault plinth and inner Undercroft door still sealed. This is a summary of rich inline presentation, not a verbatim rendering of all formatting.
+
+### M0094 · ASSISTANT · time: unknown · TURN_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Vault plinth now has its own native Keystone interaction fixture, installed on the **existing plinth Region**. Its Behavior is disabled and informational only; it cannot grant the Item or open the Vault.
+
+That gives the Keystone a verified world source and a physical reward location without changing the player’s route. I’m performing the final independent readback and full regression test before recording Turn 24.
+
+### M0095 · ASSISTANT · time: unknown · TURN_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+The independent Foundry readback passed for the new Keystone Item and the disabled Vault plinth Behavior. It also confirms one world source, zero character copies, all four inner-door Behaviors still disabled, and both Crooked Man chases still deferred.
+
+The full Cabin suite is at **1,275/1,275 passing across 49 files**. I’m preserving the native before/after receipts and updating the puzzle contracts and continuity records now.
+
+### M0096 · ASSISTANT · time: unknown · TURN_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+The full regression suite passed **1,282/1,282 tests across 50 files**. A Git line-ending warning interrupted the final diff display, but did not affect the test run or the Foundry installation.
+
+The new Keystone Item, the dormant plinth fixture, and the exact-UUID checks in both Vault and Undercroft contracts are ready to commit. I’m completing the durable handoff and continuity update.
+
+### M0097 · ASSISTANT · time: unknown · TURN_24 · VERBATIM_FROM_VISIBLE_CHAT
+
+The Keystone source and native evidence are committed locally at `f83d874`. Git reported a transport-output warning during the push, so I’m checking the remote branch directly rather than repeating the operation blindly.
+
+The installed Foundry Item and plinth are unaffected; this is only the final GitHub handoff step.
+
+### TECHNICAL EVIDENCE NOTE — authored non-dialogue
+
+Exact source SHA `f83d8742307085cd6f87402d7af5f0c73dfc9977` was independently confirmed by `git ls-remote` on Regionwright origin. Source worktree clean. Owner-authorized NEW original Keystone `Item.CAVKEYSTONEITEM1` is a GM-only world loot template (quantity 1), proven by independent elected-GM readback; it is NOT a player reward yet. The original Vault H-B02 existing plinth `Scene.tjTpG2RVZNoCqRLh.Region.CAVB799A5357A114` has one additional **DISABLED** and non-mutating `CAVVKEYPLINTH001` Behavior. The four previously installed UND-01/UND-02 Keystone/lever/native travel Behaviors remain **DISABLED**, Crooked Man remains owner-deferred, no Items granted to a character, no Vault opening. Original Vault and inner Undercroft pure review contracts now accept only this exact native original source Item; real claims require independent current GM validation. Full isolated Cabin tests **1282/1282 across 50 files PASS**. See unique Turn24 handoff and `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn24-original-keystone/`.
+
+Append subsequent terminal response to this SAME one living Chat B document at the next interturn checkpoint. Do not create a per-turn transcript segment or new index.
