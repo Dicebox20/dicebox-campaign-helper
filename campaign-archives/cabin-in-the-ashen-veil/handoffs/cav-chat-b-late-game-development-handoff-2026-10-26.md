@@ -1,5 +1,8 @@
 # Cabin in the Ashen Veil — Chat B Late-Game Development Handoff
 
+> **LATER OWNER OVERRIDE — October 26, 2026:** The campaign owner directed that **Crooked Man encounters be implemented LAST**, all **haunt encounters be checkpoint-related rather than directly required by puzzle chains**, and **the owner personally roleplays the encounters**. Any earlier clauses here that make chase completion a requirement for Silver Tiny Key, Forest Well access, music/prayer, Rufus, book/Vault or other puzzle progress are **superseded and must be reconciled in source**. Existing dormant encounters remain safely disabled; no fake player reward or puzzle flags. The puzzle chains need independent, genuine progression and Items. Do not automatically launch encounters. [Binding owner decision](../decisions/2026-10-26-owner-haunt-checkpoints-gm-roleplay-decouple-puzzle-progression.md) and [cross-workstream updated handoff](./cav-owner-haunts-last-checkpoint-driven-puzzle-decoupling-handoff-2026-10-26.md). Full compatibility/player testing remains AFTER all content is installed.
+
+
 **Handoff date:** 2026-10-26 (Pacific)
 **Issued by:** Chat A — current campaign coordinator / primary integrator
 **Recipient:** Chat B — bounded late-game implementation workstream
