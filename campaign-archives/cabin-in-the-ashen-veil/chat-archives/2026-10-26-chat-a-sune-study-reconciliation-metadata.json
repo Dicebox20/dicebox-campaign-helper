@@ -1,0 +1,63 @@
+{
+  "schema": "dicebox.cav.chat-a-sune-study-readonly-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "ownerMessage": "resume",
+  "chat": "A",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "beforeCommit": "55d4c233b2267e7f960ea902cab7bd25ca999e7f",
+    "commit": "7f7b9b1efabe5ce4943214b9e4c539875f6be1f0",
+    "newModule": "modules/regionwright/scripts/studio-cav-sune-study-reconciliation.js",
+    "modifiedRegistry": "modules/regionwright/scripts/studio-campaign.js",
+    "testFile": "tests/cav-sune-study-readonly-reconciliation.test.mjs",
+    "newTests": 12,
+    "totalTestsPassed": 137,
+    "totalTestsFailed": 0,
+    "sourceInstalledShaMatches": true,
+    "sha": {
+      "registry": "35F151217CAC0FBB24EC34BA4C55F36377B4A9C44D8CEADDF50BBBD4D342C744",
+      "module": "5967F35F8C3A4FAAB3838FDC3A23CFC5BECB0512AE288780F239DC7FDCD414ED"
+    }
+  },
+  "runtime": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGM": "Gamemaster 1",
+    "gmApi": "game.modules.get('regionwright').api.campaign.cabin.suneStudyReconciliation.describe()",
+    "status": "not-started",
+    "requiresGM": false,
+    "gold": "gold-unclaimed",
+    "key": "key-unclaimed",
+    "studyDoor": "study-door-locked",
+    "nativeGoldClaim": null,
+    "nativeKeyClaim": null,
+    "nativeStudyDoorLedger": null,
+    "originalPortalDisabled": true,
+    "taggedSuneActorItems": 0,
+    "chatMessages": 54,
+    "gmServices": {
+      "sune": true,
+      "study587": true
+    },
+    "postReloadGmReadbackVerified": true,
+    "sourceBehaviorsModified": 0,
+    "nativeWorldWrites": 0
+  },
+  "checks": {
+    "syntheticReservedGoldNeedsGM": true,
+    "syntheticPortalEnabledWithoutLedgerNeedsGM": true,
+    "notPlayerTested": true
+  },
+  "evidence": [
+    "utility-harness/artifacts/cav-chat-a-sune-gold-key-door-reconcile-baseline-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-sune-study-reconciliation-after-reload-gm-20261026.json"
+  ],
+  "next": [
+    "Read-only early/midgame dependency audit, no forced puzzle progression",
+    "Ordinary Player 1 test only after owner's final testing authorization",
+    "No reserved Item replay nor portal automatic repair",
+    "Chat B independent late-game source"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not a lossless native chat export"
+}
