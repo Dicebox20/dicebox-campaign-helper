@@ -1,0 +1,22 @@
+# Chat B Turn 21 — Live physical Sune/Workshop route postcommit Git receipt
+
+**Pacific date:** October 26, 2026. **Regionwright isolated worker source SHA:** `65548adf384e34de739e2169cbd0db16082d2830` on `codex/cav-late-game-chat-b-20261026`, parent `3d7b8432672a65768381526f661401dad2f6a518`. Clean local worker checkout. Chat A separate early/mid checkout observed read-only HEAD `0b4a30f0efe69642e95d81be221ad688ed54859d`, entirely untouched.
+
+**Native foundry ACTUAL INSTALL, not player-accepted:** exact Foundry 14.367 `cabin-in-the-ashen-veil`, elected `Gamemaster 1` confirmed. Visually inspected unchanged approved Art Studio v017 and Candle Workshop v002 owner maps. The original right/east Sune shrine mirror's active first-act Vanity Region `CAVVANITYREG0001` occupies x1270,310,200,255; new altar is adjacent floor x1120,350,130,180, not overlapping. Original gallery departure/arrival and Workshop worktable/Wick shelf preserved.
+
+**Five new LIVE physical fixture Regions:**
+- `Scene.CAVHU07Scene0001.Region.CAVSUNEACTION001` Sune east shrine floor, native `RegionBehavior.CAVSUNEPRAYBEH01` **DISABLED** read-only information source SHA256 `c24e291d3eea436ce46c850e870f87eff59c7fccc92b1231c8d52ad7d6933087`.
+- `Scene.CAVHU07Scene0001.Region.CAVSUNEEASTPASS1` sealed east passage, native **DISABLED** `RegionBehavior.CAVSUNEOUTTELE01`, exact destination existing passive `Scene.CAVHU08Scene0001.Region.CAVWORKARRIVAL01`.
+- `Scene.CAVHU07Scene0001.Region.CAVSTUDIORETURN1` passive Studio safe return landing, no Behavior.
+- `Scene.CAVHU08Scene0001.Region.CAVWORKARRIVAL01` passive Workshop entry from Studio, no Behavior.
+- `Scene.CAVHU08Scene0001.Region.CAVWORKRETURN001` sealed Workshop return, native **DISABLED** `RegionBehavior.CAVWORKBACKTEL01`, exact destination Studio passive `Scene.CAVHU07Scene0001.Region.CAVSTUDIORETURN1`.
+
+**Safety and source:** three new Behaviors are expressly `disabled:true`; two landing Regions have no Behaviors to avoid teleport loops. Native porter system read-only inspected from existing original gallery teleport; new destinations built and verified before dormant departure Regions. Exact fixed natural pixel rectangles and collision checks against preexisting native Regions and tokens passed. Workstream-specific `cavLateSuneEastFixture.status=dormant-uncommissioned` on all. Original Prayer of Protection source `Item.5jwy75XyFezukf3b` and full GM-hidden `JournalEntry.CAVPRAYERPROTECT` exist from T20, but ZERO character copies, no real original Music Box Prayer claim or explicit altar reading. Thus **no portal has been activated or tested with a player**. No Item, reward, actor, puzzle-stage, Chat A Region or shared module registry mutation in T21.
+
+**Independent live readback:** `pass:true` all 5 new Region shapes/IDs, 3 disabled native Behaviors, both exact paired teleport destination UUIDs, matched source hash, actor Prayer copies 0, original Vanity, Gallery, Wick and Gazebo unchanged. Original install JSON SHA256 `0863EEB144592FC646E511ED25708FE9E4F0A329362ACBAFE34C68F60109494A`; independent native readback JSON SHA256 `DFC582ED433848A2604A52D7107FA4898C8729B3FE0F7BE96B07E9F092266745`. Scripts and receipts in `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-turn21-sune-workshop/` on the above source commit. One-time native installer **must not be replayed**.
+
+**Tests:** 11 new physical plan, original label, geometry, nonoverlap, native script compilation, disabled portal and non-mutating altar tests PASS. Full Cabin **1,240/1,240 across 45 files PASS**. No player acceptance claims.
+
+**Archive:** T21 technical handoff, metadata, append-only progress/evidence matrix and this receipt in DCH independent branch `codex/cav-chat-b-late-handoffs-20261026`. As owner directed, exactly the **same one living Chat B transcript** `transcripts/chat-b-conversation-2026-10-26-part01.md` appended with T21 “continue” and assistant exchange through M0071; not a new transcript file or per-turn index. The eventual final handoff response may be appended next between-turn checkpoint.
+
+**Next:** Authenticate original Silver Key/Hope Chest/Ornate Music Box → character-held original Prayer Protection with legitimate provenance, explicit Sune read at adjacent altar, elected-GM reserved native enable east and safe Workshop return, independent after-write proof and real nonGM token passage. Separate Sune Devotion/half follows legitimate Boathouse route. Disabled gate remains sealed until then. PR #1 remains DRAFT/unmerged.
