@@ -10,7 +10,7 @@
 
 | Order | File | Covered interval | Coverage status | Last visible sequence |
 | --- | --- | --- | --- | --- |
-| 01 | [chat-b-conversation-2026-10-26-part01.md](chat-b-conversation-2026-10-26-part01.md) | After T12; all *available* interturn user requests and selected exact assistant replies through owner adoption of the all-chat rule after T16 | PARTIAL_VERBATIM, gap `GAP-0001` explicitly identified; other assistant turn summaries reconstructed | M0024 |
+| 01 | [chat-b-conversation-2026-10-26-part01.md](chat-b-conversation-2026-10-26-part01.md) | After T12; all *available* interturn user requests and selected exact assistant replies through owner adoption of the all-chat rule after T16 | PARTIAL_VERBATIM, gap `GAP-0001` explicitly identified; other assistant turn summaries reconstructed | M0023; M0024 invalidated by ERRATUM-0001 |
 
 ## Technical continuity
 
