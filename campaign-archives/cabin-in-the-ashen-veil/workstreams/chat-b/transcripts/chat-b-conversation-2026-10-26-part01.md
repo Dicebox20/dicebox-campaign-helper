@@ -894,3 +894,44 @@ The work has been committed locally. Git returned a transport-output warning dur
 - Original game live installed Regionwright Spine code is older and strips book images, whereas current source provides six original spine artworks. New standard native configuration and source Item→six slot bindings installed but the native Spine UI/renderer remains image-limited until an approved no-disruption module deployment. Native puzzle Behavior intentionally disabled until actual sixth Veil-only original book acquisition is authenticated, so neither puzzle solve nor Gond reward is claimed.
 - Full Cabin tests **1362/1362 across 59 files PASS**. Unique Turn28 source handoff and chronological matrix/progress in Regionwright branch `codex/cav-late-game-chat-b-20261026` source SHA `c8d804efaa4c305c779d8525d67f8c77eca805f2`, pushed and remote SHA independently confirmed. One-time installer scripts and exact native receipts in `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn28-sophia-spine-scene-titles`; no native installer replay. DCH independent archive mirrored dated handoff/metadata and progress/matrix.
 - This one continuous Chat B transcript updated through M0141; append the terminal final and any owner response at next between-turn checkpoint. Do NOT create an additional transcript segment/index.
+
+
+---
+
+## Turn 29 — owner requests all-room early ambience, then four distinct chapter phases (2026-10-27 PDT)
+
+### M0142 · USER · time: unknown · VERBATIM
+
+> excellent, thank you. Now I would like you to scan each of the room descriptions and use DND native scene settings, and FX master to set the moon on each scene. you can look online for advice on setting ambience, and use macros to change all the scenes simaltaniously
+
+### M0143 · ASSISTANT · time: unknown · TURN_PLAN · VERBATIM
+
+I’ll treat “set the moon” as **set the mood**—lighting, weather, sound, and atmosphere for each room. I’ll review the room descriptions and current Foundry/FXMaster settings first, then build a single guarded GM macro to apply the scene-by-scene ambience without disturbing puzzle Regions, walls, or teleports.
+
+I’ll check FXMaster’s current compatibility and configuration before making any world changes.
+
+### M0144 · USER · time: unknown · INTERRUPTING_OWNER_REFINEMENT · VERBATIM
+
+> When deciding on the scene settings, keeep early game in mind. we'll make different scene settings for mid game, late game, and crimson veil.
+
+### M0145 · ASSISTANT · time: unknown · OWNER_SCOPE_CONFIRMED · VERBATIM
+
+Agreed. I’ll make this a **four-phase ambience system**: Early Game, Midgame, Late Game, and Crimson Veil. I’ll apply only the **Early Game** settings now and save the other three as presets, so we can switch all Scenes together later without overwriting the baseline.
+
+I’ll preserve existing scene-specific lights, sounds, and active effects where they’re intentional, rather than flattening every room into the same darkness and fog.
+
+### M0146 · ASSISTANT · time: unknown · TURN_WORK · RECONSTRUCTED_SUMMARY
+
+Inspected current elected-GM real Foundry v14.367, 47 all newly spoiler-safe Scene titles, native Scene environment/weather/FX, existing five AmbientLights and 11 AmbientSounds, FXMaster8.3.6 active. Found no descriptions directly in Scenes but located original GM `JournalEntry.9dngVaa6ctgFAqd2` read-aloud with 59 full room/area pages and read them all. Reviewed current FXMaster official direct API and native v14 Scene environment documentation. Original Carriage Yard has custom FXMaster rain and .15 darkness; Great Room .50; almost all other Scenes had default native fog regardless of interior. Current nonGM user was in an unrelated Scene; original CFT Dev Chrome session was responsibly restored once after disconnection, no Foundry restart or Chat A source writes. Approved approach: four independent phase profiles, EARLY only activated, macro manual GM choice (no automatic story-phase listener), snapshot/restore and stable independent FXMaster IDs.
+
+### M0147 · ASSISTANT · time: unknown · IMPLEMENTATION_AND_NATIVE_VERIFICATION · RECONSTRUCTED_SUMMARY
+
+Created `modules/regionwright/scripts/studio-cav-ambience-four-phase.js` 47 Scene/4 phase config, source and forensic tests. Verified FXMaster8.3.6 documented `FXMASTER.api.effects.play/stop` on unoccupied Grove with stable temporary particle ID and cleaned it up. Installed ONE GM-only script Macro `Macro.CAVAMBIENCEMACR1` named **CAV — Ambience Phases (GM)**, hidden from nonGM ownership, with buttons Early, Mid, Late, Crimson Veil, Restore Original, Cancel. Preserved full original Scene snapshot and deterministic byte-exact macro copy source SHA256 `fbb298bad1053484545048e98a9c73162b7e707862cfc34507c0bc09dc3f65be`. Used native `Scene.updateDocuments` exact 47-source batch and documented FXMaster per-scene API. Macro script is an async IIFE; its immediate `Macro.execute()` return preceded the asynchronous inner work and was not evidence of final phase. A separate later elected-GM readback showed **phase=early**, pending null, all **47/47 Scene native settings** exact, **15/15 FXMaster low-density fog particles** on applicable exterior Scenes, ALL original FX including Carriage Yard rain preserved, all 11 AmbientSounds/five AmbientLights/Regions/Walls/Tiles/globalLight/tokenVision unchanged, no ID/teleport/puzzle modifications. Indoor blanket fog removed; only Early active. Other three profiles stored and not tested or applied.
+
+### M0148 · ASSISTANT · time: unknown · TURN_29_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+User-visible partial result: Early Game applied to all 47 native Scenes, FXMaster low-density fog on 15 outdoors; active yard existing original rain preserved, interiors no longer indiscriminately use blanket fog. Four different phase profiles explained, only Early active, no automated story switch.
+
+### M0149 · ASSISTANT · time: unknown · TURN_COMPLETION_EVIDENCE · RECONSTRUCTED_SUMMARY
+
+All 59 original read-aloud pages were linked to 47 scene-specific profiles and saved as `SCENE-PHASE-MATRIX.md`/JSON, full original snapshots and independent GM proofs in `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-cav-four-phase-ambience/`. GM macro backup exported as exact reconstructed 75 KB command and its SHA matched installed. Independent native GM postread `pass:true` 47/47 Scenes, 15 FX, everything else preserved. New 7 source +8 forensic receipt tests, full Cabin **1,377/1,377 PASS across 61 test files**. Regionwright independent source branch exact pushed and remotely checked `684390384817f15286ec97321b3478e79173c619`, worktree clean. DCH independent archive mirrored Turn29 dated handoff, metadata, 47-row matrix and cumulative progress. Historic Crooked Man owner deferral/puzzle prerequisites unchanged; no full nonGM visual acceptance. Do not replay one-time installers. Append next owner reply and Turn29 terminal result to THIS original living transcript (not a new segment).
