@@ -655,3 +655,60 @@ I’m finishing the GitHub campaign archive mirror, updating the draft integrati
 Regionwright worker source HEAD `5f4ae828d91052c1cf172cf28b5187f32bad0464`, same shared actual Foundry 14.367 GM world, separate Chat A checkout READ ONLY. Existing H-B01 Workshop approved art had three original Regions; original H-B02 Vault art had two. New six Region documents and six DISABLED Behaviors installed in one one-time guarded GM batch: exact original source sockets for `Item.pbmUZPfC3WnsBRgi`, `Item.o9G3UJjEe2QX1ZH0`, `Item.t9uCIpsKeSvtC31w`; separate turn on original Workshop central bench; paired sealed native Vault departure and return with independent passive landings; original foyer return and disabled Keystone dais preserved. Original Crooked Man chases and Silver remain disabled per owner. Independent elected GM postread `pass:true`, all exact source/destinations/geometry, 0 player original Items, **1301/1301 tests PASS across 52 files**. H-B01/H-B02 scenes have 0 native wall documents; wall/collision and actual player traversal not certified. Archive unique handoff and forensic script/JSON under `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn25-vault-workshop`; one-time installer MUST NOT be replayed. DCH archive mirrored progress/evidence matrix and unique T25 handoff metadata. No new transcript file/index.
 
 **Next turn:** Native elected-GM verified authentic Item socket custody/ownership, three independent exactly-once insertion ledgers; true Basement access as fourth predicate; separate *Turn Joined Emblem*, safe collision/portal handling, then explicit original Keystone plinth pickup. Continue to append T25 terminal final and user replies to THIS same living transcript.
+
+
+---
+
+## Between Turns 25–26; Turn 26 real original Vault socket transaction source commissioning (DISABLED) — 2026-10-27 PDT
+
+### M0106 · ASSISTANT · time: unknown · END_TURN_25 · RECONSTRUCTED_SUMMARY
+
+Turn25 closed with six new native Regions and six intentionally disabled Behaviors across original H-B01 Workshop and H-B02 Vault, three authentic source sockets and separate *Turn Joined Emblem*, safe paired sealed route, independent GM readback pass:true, 1301/1301 Cabin test results, and pushed source SHA `5f4ae828d91052c1cf172cf28b5187f32bad0464`. User-directed Crooked Man deferral remains. This is a faithful rich-final summary, not a lossless export.
+
+### M0107 · USER · time: unknown · START_TURN_26 · VERBATIM
+
+> Resume
+
+### M0108 · ASSISTANT · time: unknown · TURN_26 · VERBATIM
+
+I’ll resume Chat B at Turn 26 with the Vault’s three Item sockets. I’ll check the current Foundry state and existing puzzle contracts, then implement the authentic Item custody checks and one-time socket transactions. The Vault door, Keystone reward, and Crooked Man encounters will stay untouched until their separate requirements are verified.
+
+### M0109 · ASSISTANT · time: unknown · TURN_26 · VERBATIM
+
+The source audit found why the sockets cannot safely accept Items yet: the three original rewards are still only in the GM library, and their upstream player-acquisition Regions or completion records are not fully installed. I won’t let a matching Item name—or a copied flag—count as proof.
+
+I’ll install the transaction logic **disabled**, with explicit checks for the original world Item, a genuine player-held copy, its originating reward record, and one-time socket completion. That gives us the working transaction framework without making an unearned Vault opening possible.
+
+### M0110 · ASSISTANT · time: unknown · TURN_26 · VERBATIM
+
+The three transaction handlers now pass their source checks. They require an elected GM, the Weathered Key basement unlock, the exact original Item, a matching GM-written reward record from its source Region, and unique custody of the character-held copy. The Gondian source additionally requires genuine Aqueduct charging and Crimson Veil proof.
+
+The handlers reserve each socket before marking the existing Item installed, then verify the result. They do not clone or consume Items, turn the emblem, or open the Vault. I’ll stage them on the three existing Regions **disabled** until the upstream reward systems can supply those records.
+
+### M0111 · ASSISTANT · time: unknown · TURN_26 · VERBATIM
+
+The native source upgrade hit an error in its final verification check. That does **not** establish whether the three Behavior updates succeeded, so I won’t rerun the installer.
+
+I’m inspecting the current saved Regions independently. If all three sources match and remain disabled, I’ll accept the verified state and preserve the failed installer receipt; otherwise I’ll reconcile the exact mismatch without touching player Items or the Vault door.
+
+### M0112 · ASSISTANT · time: unknown · TURN_26_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+Three original Vault socket native source scripts were independently verified after an unsuccessful installer process caused by a JavaScript `ReferenceError: v is not defined` in postwrite verification only. Elected-GM readback proved all three exact byte-matching scripts and target native Behaviors installed, all DISABLED, no progression or Item awards. Rich partial final communicated that actual origin claimant ledgers and player acceptance were still missing.
+
+### M0113 · ASSISTANT · time: unknown · TURN_26 · VERBATIM
+
+The independent verification confirms all three transaction scripts are installed, remain disabled, and have no socket-completion records. The source-upgrade error has been reconciled without replaying the installer.
+
+The full Cabin regression also passed: **1,321/1,321 tests across 54 files**. I’m saving the failure-and-reconciliation evidence alongside the successful native readback so the next turn can continue safely from the exact state.
+
+### M0114 · ASSISTANT · time: unknown · TURN_26 · VERBATIM
+
+Turn 26’s source and reconciliation evidence are now committed and pushed at `577c883fe29f24cd362e4e758c2085a5497d6c3f`. The Chat B worktree is clean.
+
+I’m completing the campaign archive, draft PR, and single living transcript. The next functional work is the upstream Gondian, Gond-half, and Sune-half reward provenance—not enabling the Vault early.
+
+### NON-DIALOGUE T26 EVIDENCE RECORD
+
+Exact Regionwright source SHA `577c883fe29f24cd362e4e758c2085a5497d6c3f`, branch `codex/cav-late-game-chat-b-20261026`. 3 source updates in actual original Foundry H-B01: `CAVVPOWERBEH0001`, `CAVVGONDBEH00001`, `CAVVSUNEBEH00001`. Native GM independent readback pass:true for byte-exact updated source, DISABLED state and zero socket region ledgers; source hashes and full forward issuer protocol preserved under `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn26-vault-socket-transactions/`. Installer returned error AFTER writes because post-check code referred to `v` rather than `vault`. **Do not replay**; independently reconciled as complete staging. Basement Weathered Key unlock and actual player reward source claim native issuers NOT present, so all scripts intentionally disabled and original Vault/Keystone/turn travel remains sealed. No Item copies/quests/grants. Full source+evidence suite **1321/1321 tests across 54 files PASS**. Original first+second Crooked Man chase and Silver pickup remain deferred. DCH unique dated handoff, metadata, updated evidence matrix/progress, Git receipt and same ONE living transcript preserved.
+
+Continue appending this same file with the next turn's user reply and Turn26 terminal response at the next between-turn checkpoint; no duplicate transcript file or index.
