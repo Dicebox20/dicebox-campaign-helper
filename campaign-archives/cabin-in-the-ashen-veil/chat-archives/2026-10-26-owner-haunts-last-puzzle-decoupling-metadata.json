@@ -1,0 +1,28 @@
+{
+  "schema": "dicebox.cav.owner-haunts-last-checkpoint-decouple/v1",
+  "date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerStatement": "we will finish the Crooked Man encounters last, haunt encounters will be checkpoint related, not directly tied to the puzzle chains. ill be roleplaying those bits",
+  "authority": "Explicit owner campaign-scoped canon/workflow override",
+  "scope": "Cabin in the Ashen Veil",
+  "latestSourceBase": {
+    "chatA": "f3c1bfccf077ec9d3b4d97573889289dd6b598f0",
+    "chatB": "codex/cav-late-game-chat-b-20261026; tip requires reread"
+  },
+  "impact": [
+    "Crooked Man/haunt installation last",
+    "GM personally roleplays haunt scenes",
+    "checkpoint event readiness independent from puzzle progression",
+    "Aqueduct Forest Well progression cannot depend on first chase",
+    "SG-01 Silver Tiny Key/Hope Chest cannot depend on second chase",
+    "compatibility diagnostic after ALL installation"
+  ],
+  "changedSource": false,
+  "changedFoundry": false,
+  "changedPuzzleClaimState": false,
+  "playerAcceptance": false,
+  "decisionPath": "campaign-archives/cabin-in-the-ashen-veil/decisions/2026-10-26-owner-haunt-checkpoints-gm-roleplay-decouple-puzzle-progression.md",
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-owner-haunts-last-checkpoint-driven-puzzle-decoupling-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-owner-haunts-last-puzzle-chain-decoupling-turn-transcript.md",
+  "transcriptFidelity": "Exact owner turn; assistant summary, not lossless native export"
+}
