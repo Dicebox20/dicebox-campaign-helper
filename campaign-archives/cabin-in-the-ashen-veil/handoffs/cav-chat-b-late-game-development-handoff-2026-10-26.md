@@ -105,3 +105,9 @@ Work in **at most 25-minute bounded turns**. At START read the current owner app
 ---
 
 **Handoff integrity:** This file is a **delegation scope and starting record**, not a claim that Chat B has started, connected to Foundry, created its separate branch, run tests, or installed late-game content. Those are subsequent actions to verify and catalogue.
+
+## Coordination notice — Chat B exclusive late-game Silver Tiny Key ownership
+
+**October 26, 2026 owner-reported Chat B recovery:** The owner quoted Chat B reporting an interrupted Silver Key staging update safely restored: original pickup Behavior disabled, both chase triggers disabled, no Silver Key or progression reward granted. This report is **not a new independent live-world verification by Chat A**.
+
+**Chat B alone should reconcile, develop, source-test and install the late SG-01 Silver Tiny Key physical acquisition, its RegionBehavior/marker and ledgers, plus Hope Chest/Music Box/Prayer follow-on content.** Chat A will **not** reattempt, touch or stage the Silver Key and owns the independent Aqueduct/Forest Well work instead. Dormant Crooked Man haunts remain last and under owner manual roleplay direction. Although Git branches/worktrees are separate, the live Foundry world is SHARED; check actual document state before every write, coordinate module reloads and avoid overlapping world edits. This division refines the original handoff's overly broad Chat A integrator role for the specifically named Silver Key objects. [Cross-workstream boundary](./cav-owner-haunts-last-checkpoint-driven-puzzle-decoupling-handoff-2026-10-26.md).
