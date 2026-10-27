@@ -1,0 +1,21 @@
+# Cabin in the Ashen Veil — Chat A Roof Clock + Aqueduct Route + Boiler Inspection
+
+**2026-10-26 Pacific ~20:22–20:34.** Tool-backed available-message reconstruction, not lossless native chat transcript.
+
+## Owner
+> continue next turn
+
+## Chronology
+1. Announced next larger Chat A PREPARE/INSPECT/BUILD/VERIFY/CATALOGUE batch for Roof Clock→Aqueduct and Boiler; preserved separate Chat B late-game source, no fake puzzle/Items, deferred real player testing.
+2. Bridge PowerShell host preflight: Regionwright latest 0e83bfd, tracked clean, unrelated untracked art/archives preserved. Foundry port30000 and Dev Chrome CDP9224 ready. Inspected source `studio-cav-roof-clock.js`, AQ future `studio-cav-aqueduct-routing.js`, Boiler source/reducer and current dependencies; no separate Boiler reward consumer exists.
+3. Read-only native elected Gamemaster1 confirmed Grandfather Clock Hour Hand source original enabled Behavior+Item and Attic Minute Hand original enabled Behavior+Item, source flags/award ledgers NULL. Roof original native player script and image retained; Roof Gear award NULL. AQ consumed Gear/Handle/ready and route NULL, portals/chase disabled. Existing Boiler full/dry Regions READY for 2/1, both sessions NULL; 47 Scenes, 54 messages.
+4. Found Roof GM Gear request accepted mere provenance-tagged Hour and Minute Actor Items even if original awards were only RESERVED after create but before DONE. Built new pure original source+Region+DONE ledger+actor embedded Item identity proof `studio-cav-roof-hands-proof.js`, used in original `studio-cav-roof-clock.js` before Gear RESERVED award. Source install script initially hit whitespace anchor mismatch, no world modification; corrected exact original two-space indent. New GM adapter needed to guard `typeof game==='undefined'` found by tests, corrected.
+5. Found future explicit GM route commissioning trusted broad original Gear/Handle installed DONE and water OPEN/Stage DONE, rather than reconciling consumed Gear/Handle original Item IDs with Roof/Parents award DONE and strict original Crank committed water stage. Built new pure `studio-cav-aqueduct-route-proof.js`, invoked from original `studio-cav-aqueduct-routing.js` after existing explicit GM+CROOKED NPC+route checks, before RESERVED/portal/chase native writes. Exact original one-space indent patched after initial patch helper rejected anchor; no actual commissioner invoked.
+6. Added 7 pure+contract Roof tests and 8 pure+contract AQ route tests, targeted complete; fixed one test source `NS` vs `SCOPE` mismatch. Complete existing Cabin nonbrowser suite 177 PASS/0 FAIL (162 prior).
+7. Installed exactly four source JS files to owner Foundry Regionwright module with installed/source SHA identical and Node syntax checks; one authenticated elected GM/real original null stage+boiler+disabled chase state-guarded /game reload committed.
+8. Separate postreload read-only GM browser call confirmed Roof and AQ source/GM listeners loaded; synthetic valid original 2 DONE hand grants accepted and reserved Hour denied; synthetic genuine consumed Gear/Handle/repair+Crank stage accepted, reserved Handle and stale closed transaction denied. Actual original Hour, Minute, Roof, AQ part/mechanic/route, Crank/water flags all NULL; AQ portal, first chase and Rosewater disabled. Original paired Boiler source ready 2/1 sessions both NULL, 47 Scenes/54 messages preserved. Positive CFT harness JSON receipt saved.
+9. Source checkpoint Markdown+structured JSON+chronological append written to Regionwright docs. Scoped exactly nine source/test/document files, source-installed SHA matched and git diff --cached --check passed. Committed and pushed exact Regionwright HEAD **a500b0d058f9adf6240188c2b37d3e9834971359**; remote verified.
+10. Archived DCH handoff, structured metadata and this evidence-backed available-message reconstruction; no real Item transfers, token motion, puzzle completion, AQ commissioning, chase or ordinary Player acceptance.
+
+## Next
+Owner-directed enlarged batches continue. Chat A may inspect Roof native player source preflight parity and other genuinely missing early/midgame dependency, but not duplicate healthy Boiler or prematurely commission AQ/first chase/Rosewater. Chat B independent late-game source.
