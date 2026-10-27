@@ -1,0 +1,66 @@
+{
+  "schema": "dicebox.cav.chat-a-click-mask-geometry-proof-v1",
+  "date": "2026-10-26",
+  "timeZone": "America/Los_Angeles",
+  "ownerInstruction": "lets continue",
+  "conversationFidelity": "owner exact visible text, tool evidence summaries; not a lossless native export",
+  "workstream": "Chat A early/midgame",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "3d17007137bdc0a52f133c083737d5bc020ad1b2",
+    "after": "054fd0593fbf9087742793993efe8aa4d9e7597f",
+    "remoteVerified": true
+  },
+  "tests": {
+    "previous": 238,
+    "added": 4,
+    "focusedPassed": 6,
+    "fullPassed": 242,
+    "failed": 0,
+    "testFiles": 43
+  },
+  "foundry": {
+    "world": "cabin-in-the-ashen-veil",
+    "version": "14.367",
+    "electedGM": "Gamemaster 1",
+    "scenes": 47,
+    "regions": 239,
+    "behaviors": 126,
+    "worldEdits": 0,
+    "playerAcceptance": false
+  },
+  "clickMask": {
+    "sourceAndDiskSha": "305D50CDD6EFBEA963C30EFB8A2DBA0FEB82BE48E203B1ABDB1E88D5AE7BCC7E",
+    "screwdriver": {
+      "region": "CAVBATHSCRDRY001",
+      "rectangle": [
+        870,
+        710,
+        360,
+        330
+      ]
+    },
+    "rosewater": {
+      "region": "CAVBROSEWATER001",
+      "rectangle": [
+        976,
+        826,
+        108,
+        115
+      ],
+      "nativeDisabled": true,
+      "ownerReviewRequired": true
+    },
+    "nativeFivePointTest": "PASS",
+    "receipt": "utility-harness/artifacts/cav-chat-a-bath-click-separation-native-point-proof-20261026.json"
+  },
+  "blocking": {
+    "ownerRingPlacementApproval": false,
+    "ownerBowlFixtureApproval": false,
+    "foundryBowlActiveApiRefreshed": false,
+    "crookedManActorDeferred": true
+  },
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-bath-click-mask-242-source-geometry-owner-review-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-bath-click-mask-geometry-reconciliation-turn-transcript.md"
+}
