@@ -38,3 +38,13 @@ No Foundry wall, Region, Scene, Item, portal, script, actor, token, puzzle flag 
 - Host authoritative read-only receipt `utility-harness/artifacts/cav-chat-a-original-scene-rect-bounds-geo-audit-20261027.json`.
 - Live original GM query showed H-U02 Region IDs, shapes, destinations and enabled states; owner-approved artwork visually examined from the installed PNG. No outside image-generation/edit decision was made.
 - Next Chat A: resolve H-U02 exit geometry/visual art feature manifest and repair original Regions in-place under owner-delegated Cabin authority, with strict source UUID pinning and separate elected-GM postread; continue other genuine early/midgame installation where safe. Do not touch Chat B Undercroft.
+
+
+## SUPERSEDING STATUS — ten native Regions repaired (October 27)
+
+**Later verified installation supersedes the eight-off-bounds repair backlog in this handoff.** Chat A used owner-delegated Cabin creative/technical authority to reproject **ten ORIGINAL H-U02 Region rectangles** to the live approved V006 image, preserving the existing staircase/Parents/Sophia/Studio/attic native UUIDs and original locks. The source checkpoint is Regionwright **`8f2cac8cea2c20305bc99472f6b644186761d4d4`**, **265/265 source PASS**, and a separate elected-GM consolidated readback **PASS**. No new Region, Actor or player Item was created; no Chat B Undercroft edits.
+
+**Exactly two Region rectangles remain off the configured scene:** Nursery outgoing `aZ8eagmbvZUcPJ0g` and Nursery return `GOxaHb5OuQwPj6IC`. Guest entry/return are on-scene but their position lacks a matching V006 physical door. Do not rerun the obsolete V005 installer, undo the ten in-place changes, or falsely call the visual topology fully complete. [Authoritative new handoff](./cav-chat-a-hu02-v006-ten-original-native-regions-265-source-repair-handoff-2026-10-27.md).
+
+The attic native write had an initial **receipt JSON comparison mistake** (after object omitted return `type`); the actual geometry/source/flags were independently re-verified **PASS** without replay. Original uncertain receipt and independent reconciliation are preserved. No player acceptance test was run.
+
