@@ -1,0 +1,58 @@
+{
+  "schema": "dicebox.cav.chat-a-drained-pickup-water-proof-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "ownerMessage": "Lets continue",
+  "chat": "A",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "7f7b9b1efabe5ce4943214b9e4c539875f6be1f0",
+    "commit": "ef569be1d4da7355f5a4499e54ec135947b8255f",
+    "module": "modules/regionwright/scripts/studio-cav-drained-pickups.js",
+    "moduleSHA256": "305D50CDD6EFBEA963C30EFB8A2DBA0FEB82BE48E203B1ABDB1E88D5AE7BCC7E",
+    "newTest": "tests/cav-drained-pickup-water-receipt-proof.test.mjs",
+    "testsPassed": 144,
+    "testsFailed": 0,
+    "addedTests": 7,
+    "installedSourceSHAEqual": true
+  },
+  "native": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundryVersion": "14.367",
+    "electedGm": "Gamemaster 1",
+    "crank": null,
+    "water": null,
+    "transaction": null,
+    "pondFullArt": true,
+    "originalTrailRoute": "Scene.CAVBATHScene0001.Region.R2Pg9eHODtb1C1Yk",
+    "pondWeatheredKeyRegion": "CAVPONDWEATHER01",
+    "weatheredBehaviorEnabled": true,
+    "dryBathScrewdriverRegion": "CAVBATHSCRDRY001",
+    "screwdriverBehaviorEnabled": true,
+    "rosewaterBehaviorDisabled": true,
+    "taggedPickupItemCount": 0,
+    "chatMessages": 54,
+    "gmPickupListenerRegistered": true,
+    "worldWrites": 0
+  },
+  "verified": {
+    "oneGuardedReloadCommitted": true,
+    "electedGmSourceLoaded": true,
+    "validPureCommittedDrainAccepted": true,
+    "noCrankRejected": true,
+    "staleClosedTransactionRejected": true,
+    "extraTrailDestinationRejected": true,
+    "actualPlayerTested": false
+  },
+  "artifacts": [
+    "utility-harness/artifacts/cav-chat-a-drained-pickup-after-reload-gm-proof-20261026.json",
+    "docs/cabin-ashen-veil/chat-a-drained-pickup-committed-water-proof-2026-10-26.md"
+  ],
+  "next": [
+    "Downstream original Weathered Key/Screwdriver→Boiler receipt audit",
+    "Original Rosewater disabled until genuine drain",
+    "Owner-deferred player tests/Crooked Man",
+    "Chat B source isolated"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless platform chat"
+}
