@@ -43,3 +43,13 @@ Host artifact receipts under Chrome for Testing Dev `utility-harness/artifacts`:
 The previous Chat A Forest Well independent-from-Crooked-Man source/native installation remains available (original source commit `f8542fe`), with **active module cached handler pending coordinated reload with Chat B**. H-U02 Region-shape changes themselves do not require source/module reload. Do not touch Chat B Undercroft/Silver Key or launch any haunt.
 
 **End state:** Ten original H-U02 Regions reprojected, fully separate final elected-GM readback PASS, **265 source PASS**, two Nursery Regions and Guest art mismatch outstanding; **no real player acceptance yet**.
+
+
+## SUPERSEDING OCTOBER 27 UPDATE — V006 has two real side-wall doors; H-U02 navigation geometry complete
+
+**Later actual native installation and owner-delegate artwork reinspection supersede the unresolved Nursery/Guest recommendation above.** Enlarged read-only inspection of the same unchanged owner-approved V006 PNG reveals dark wooden door panels in **both west and east side walls**. Original PREPARE v003 corroborates **Nursery WEST / Guest EAST**. Under delegated Cabin creative/technical authority Chat A relocated the four ORIGINAL Nursery and Guest Region shapes in place with unchanged IDs, Behaviors and reciprocal destination UUIDs. No extra art, fabricated bare-floor portal or new Region was created.
+
+The new authoritative Regionwright remote-verified commit is **`c3b35b0c0f6ade862c55993f91fad14adb242b8e`**; full Cabin source **268/268 PASS**. Native guarded write PASS and independent elected-GM read-only postread PASS: all 14 original H-U02 Regions now inside the 1440×1800 scene (previously eight off-scene across both turns), and the four newly corrected door/return Regions do not collide with any other Region. The active two player character tokens were unmoved. Existing original Sophia and attic gates, scene artwork, other Behaviors and Chat B data preserved.
+
+**Follow [new authoritative handoff](./cav-chat-a-hu02-v006-all-five-room-doors-native-aligned-268-handoff-2026-10-27.md).** H-U02 doorway/landing **configuration alignment complete**, **not player-tested**. Physical Foundry walls (zero in this scene), real player teleport/landing and global compatibility remain separate subsequent work. Do not repeat previous ten/four Region migrations, rerun V005 installer or revert to stale coordinates.
+
