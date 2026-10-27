@@ -392,3 +392,50 @@ I’m finishing the shared campaign archive and updating the **same living trans
 **Technically verified deployment (not conversational speech):** Original `Item.5jwy75XyFezukf3b` linked to GM-only `JournalEntry.CAVPRAYERPROTECT`; original `Item.GXLYq6Tf4OgPNbkU` linked to GM-only `JournalEntry.CAVPRAYERDEVOTN1`. Exact full prose preserved in original Items and one text page per Journal, 0 character prayer copies, native readback pass:true. Source commit `3d7b8432672a65768381526f661401dad2f6a518`. The original preflight, one-time installer, independent postread, source proof and regression tests are archived in the Regionwright Chat B workstream.
 
 **ONE living transcript:** Append later between-turn dialogue and the eventual terminal Git handoff status to this SAME file. Do not make an extra transcript file or index.
+
+
+---
+
+## Between Turns 20–21; Turn 21 Sune east Studio/Workshop route — 2026-10-26 Pacific
+
+### M0065 · ASSISTANT · time: unknown · END_TURN_20 · RECONSTRUCTED_SUMMARY
+
+Turn 20 finished with the user-visible confirmation that original Dev Chrome and Foundry were healthy, both newly owner-authored full Prayers installed as GM-only Journal pages linked to their original Items, no character grants, a clean pushed source commit `3d7b8432672a65768381526f661401dad2f6a518`, and 1,229/1,229 source tests. User-visible links to handoff and same living transcript were provided. This is a summary of the prior rich final response, not a full literal export.
+
+### M0066 · USER · time: unknown · BETWEEN_TURNS_20_21 / START_TURN_21 · VERBATIM_FROM_VISIBLE_CHAT
+
+> continue
+
+### M0067 · ASSISTANT · time: unknown · TURN_21 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll continue Chat B with the Studio-to-Workshop passage. I’ll inspect the approved Studio and Workshop maps and the live Regions first, then look for a safe altar interaction that won’t overlap the existing Vanity. If the route can be grounded in those sources, I’ll install it with the Prayer of Protection gate, verify it in Foundry, and update the same transcript and handoff.
+
+### M0068 · ASSISTANT · time: unknown · TURN_21 · VERBATIM_FROM_VISIBLE_CHAT
+
+The approved Studio map shows the Sune shrine against the east wall, while the existing Vanity Region occupies the mirror itself. I can place a separate prayer interaction area on the floor beside it without changing the Vanity.
+
+The Workshop has room for separate arrival and return points outside its crafting table and Wick shelf. I’ll stage those physical route points with **disabled teleports**. That preserves the passage layout without opening it before a character legitimately acquires and reads the Prayer of Protection.
+
+### M0069 · ASSISTANT · time: unknown · TURN_21 · VERBATIM_FROM_VISIBLE_CHAT
+
+The five physical route Regions are installed: a separate shrine interaction area, the sealed east passage, two safe arrival points, and the Workshop return threshold.
+
+All three Behaviors remain **disabled**, so the installation cannot open the passage or move a token yet. The original Vanity, Wick shelf, and existing travel Regions were left unchanged. I’m checking the saved geometry and both teleport destinations independently now.
+
+### M0070 · ASSISTANT · time: unknown · TURN_21_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+A partial user-visible result reported **five new native Regions** for the Studio Sune altar, concealed east Workshop departure, passive Workshop entry, passive Studio return, and Workshop return departure. All **three native Behaviors disabled**; no actual player transit, Prayer reward or stage advanced. Independent GM readback preserved existing Vanity/Gallery/Wick/Gazebo sources. This is a faithful content summary rather than an exact reproduction of the rendered table.
+
+### M0071 · ASSISTANT · time: unknown · TURN_21 · VERBATIM_FROM_VISIBLE_CHAT
+
+The independent Foundry readback and full regression suite passed: **1,240/1,240 tests across 45 files**. I’ve prepared the exact Region IDs, coordinates, native source, and before/after receipts for the handoff.
+
+I’m committing those records now, then I’ll mirror the continuity log and append this turn to the existing transcript.
+
+### TECHNICAL CHECKPOINT · authored evidence (not conversational speech)
+
+Chat B pushed source and native forensic evidence HEAD `65548adf384e34de739e2169cbd0db16082d2830`, isolated worktree clean. Current Foundry GM independent readback `pass:true` for five exact native Regions, three disabled Behaviors and two passive paired return/entry endpoints. T21 installed objects remain DORMANT, not a tested playable teleport or authenticated Prayer-reading adapter. Main original first-act Vanity, existing gallery route, Wick shelf and Gazebo remain intact.
+
+Full campaign tests **1,240/1,240 across 45 files PASS**, 11 newly added static/native source tests. All source and independent JSON readback receipts are in `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-turn21-sune-workshop/` on the above source commit. No raw private assistant reasoning is transcribed.
+
+**Next:** Append additional subsequent final response or owner reply at the next between-turn checkpoint to this SAME one living Chat B document. Do not create a new per-turn transcript file or index.
