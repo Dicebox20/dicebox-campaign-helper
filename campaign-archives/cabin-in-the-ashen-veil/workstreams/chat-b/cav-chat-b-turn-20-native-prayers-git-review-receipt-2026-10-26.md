@@ -1,0 +1,23 @@
+# Chat B Turn 20 Recovery — Native Prayer installation postcommit Git receipt
+
+**Pacific date:** October 26, 2026. **Source SHA:** `3d7b8432672a65768381526f661401dad2f6a518` on `Dicebox20/regionwright:codex/cav-late-game-chat-b-20261026`, parent source-only T20 head `574a390a1e80612aa1bd1de4efcb044101b34eca`. Chat B isolated worktree clean. Chat A checkout untouched.
+
+**Bridge/Dev Chrome recovery:** Dicebox Bridge local PowerShell ready, but canonical current ChatGPT identity unverified (no peer relay used). Foundry 14.367 world `cabin-in-the-ashen-veil` on port 30000 healthy. Original Chrome for Testing Dev 158 unowned original `ChromeForTestingDev\Profile` relaunched on loopback debugging port 9224, without restarting Foundry. CDP briefly closed again after live installation; independent postread was retried after safe CFT relaunch. **Installer never rerun.**
+
+**Owner-authorized new texts:** The owner explicitly allowed assistant-created Prayer wording. New Protection/Devotion text in `docs/cabin-ashen-veil/owner-authorized-full-prayer-handouts-2026-10-26.md` / JSON is **new owner-delegated content**, not historical recovery or authority to bypass quests. The source creation-time manifest says SOURCE_ONLY_NOT_INSTALLED; later `owner-authorized-full-prayer-native-install-proof-2026-10-26.md` and current GM readback supersede that *deployment* status.
+
+**LIVE native Journal 1:** Existing `Item.5jwy75XyFezukf3b` Prayer of Protection preserves its original description, adds full new text, and links `JournalEntry.CAVPRAYERPROTECT`, one page `JournalEntry.CAVPRAYERPROTECT.JournalEntryPage.rcFIk4a2MGb4wUeD`, full-page SHA256 `3846ba592db63090b03281b557327e7907dd91fb9a5d0be1c3b7473691508caa`.
+
+**LIVE native Journal 2:** Existing `Item.GXLYq6Tf4OgPNbkU` Prayer of Devotion preserves original description, adds full new text and links `JournalEntry.CAVPRAYERDEVOTN1`, one page `JournalEntry.CAVPRAYERDEVOTN1.JournalEntryPage.qI6j50T4NxuwjCHk`, full-page SHA256 `c2791c061a43bc9498704dde4b66435f88d7e3c24ef4e1ae48ac118a2e5ae4bc`.
+
+**Current native verification:** Independent live elected-GM readback `pass:true` for BOTH original Item bindings, page byte-for-byte canonical hashes, GM-only Journal ownership 0, no non-GM Journal OBSERVER/OWNER permission, one original world Item/Journal each, unchanged `GM_LIBRARY_ONLY` Item custody, **zero Actor prayer copies**, original H-U07 Vanity and H-U08 Wick active, original Privy Copper disabled. No other Regions, player Items, teleports, story-ledger flags or rewards updated. Foundry native installation verified; ordinary player interactions and real handout acceptance **NOT** playtested.
+
+**Native evidence:** Dated source `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-turn20-full-prayer-journals/`: preflight original Item description backups, one-time installer, live installation JSON, independent read-only postread script and JSON. Original preflight receipt SHA256 `B3596EBAC830C950422711B9597C2E9B8D1BD910451C09B4E75DA6C8B3D3ADCB`; installation `A5F7D5C3E3AED333559D171875D5BDE9E6BC2EDA81B4E46A59716590226195CD`; independent postread `E87423F5795324D5CAA169C64713E84A61DCEC62FD70F7F74EB3F6F71E76629F`.
+
+**Tests:** 10/10 new content/native receipt assertions, **1,229/1,229 full Cabin tests across 44 files PASS**. Evidence tests do not substitute for non-GM testing.
+
+**Durable DCH archive:** Both historical T20 *source-only interrupted* handoff/metadata and the later T20 *live recovered* handoff/metadata, append-only progress/evidence matrix, this Git review receipt and **same one living Chat B transcript** `transcripts/chat-b-conversation-2026-10-26-part01.md` updated with the owner's Bridge recovery and Dev Chrome advice. No per-turn transcript segment or index.
+
+**Remaining implementation:** Original Protection must be acquired from the legitimate Hope Chest/Ornate Music Box/Key chain and read at H-U07 actual altar with owner-approved non-overlapping object interaction and safe paired H-U08 Workshop route. Devotion must still be acquired from original thorn-cleared Pond boat/Boathouse route and separately read for the original single Sune Emblem Half. AQ-01 original Crimson Veil/Waterworks and unified Bath Soap Case remain separate upstream tasks. No auto-grants or automatic Journal publication.
+
+**Review state:** Regionwright PR #1 must remain DRAFT and unmerged; native Foundry Journals are already installed under owner-authorized disjoint Chat B scope.
