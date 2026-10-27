@@ -1,0 +1,64 @@
+{
+  "schema": "dicebox.cav.chat-a-study-door-brass-key-award-proof-handoff/v1",
+  "dateLocal": "2026-10-26",
+  "ownerRequest": "resume",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "a3e880d35d06d2616fdac231620a25798f478edb",
+    "commit": "55d4c233b2267e7f960ea902cab7bd25ca999e7f",
+    "newPureModule": "modules/regionwright/scripts/studio-cav-study-door-preflight.js",
+    "newTest": "tests/cav-study-door-original-key-recovery.test.mjs",
+    "testsPassed": 125,
+    "testsFailed": 0,
+    "newTests": 7,
+    "sourceSHA": "50AB48FBCE3E81708A926A778D740A55BDCD065DCBA2CA293EA7BCB3CD33D888"
+  },
+  "native": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGm": "Gamemaster 1",
+    "originalDoor": "Scene.CAVHG06GreatRoom.Region.CAV06R0000000003",
+    "originalGate": "CAVHG06STUDYG001",
+    "originalGateSHA": "32243D17D8B7E93AE77535223952AAA88F72FAB852198B8D6B1D5DE6101692DE",
+    "updatedGateSHA": "4B1D0F90277912FB16B7948F6A14C233C4509FEF1D6C69C8A447E7DC281DAE11",
+    "teleportBehavior": "CAVHG06STUDYT001",
+    "teleportStillDisabled": true,
+    "originalTarget": "Scene.CAVHG05Scene0001.Region.CAVB9AA3D7BE9560",
+    "originalKeyWorldItem": "Item.CAVSTUDYBRASS001",
+    "originalKeySourceGrove": "Scene.CAVSG05Scene0001.Region.L15BdSqcbCOLPnIN",
+    "liveGoldClaim": null,
+    "liveKeyClaim": null,
+    "liveDoorLedger": null,
+    "actorTaggedKeys": 0,
+    "originalCrankFitted": null,
+    "studyNoteRead": null,
+    "chatMessages": 54
+  },
+  "verification": {
+    "devChromeOneRelaunch": true,
+    "foundryServerRebooted": false,
+    "nativeExistingBehaviorUpdates": 1,
+    "gmGameTabReloads": 1,
+    "sourceModuleLoaded": true,
+    "liveGmAfterReload": true,
+    "canonicalValidPureAccepted": true,
+    "reservedPureRejected": true,
+    "duplicatePureRejected": true,
+    "allStoryStateUnchanged": true,
+    "actualPlayerAcceptancePerformed": false
+  },
+  "evidence": [
+    "utility-harness/artifacts/cav-chat-a-study-door-brass-key-live-preflight-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-study-door-native-original-and-revised-source-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-study-door-brass-key-gate-install-receipt-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-study-door-after-reload-elected-gm-verified-20261026.json"
+  ],
+  "next": [
+    "Create read-only reserved Sune Gold/Key and Study Door topology reconciliation",
+    "No automatic transfer/portal repair",
+    "Maintain Chat B independent late-game scope",
+    "No real gameplay acceptance without owner approval"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not full native transcript"
+}
