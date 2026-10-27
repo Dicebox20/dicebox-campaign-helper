@@ -1,0 +1,76 @@
+{
+  "schema": "dicebox.cav.owner-delegated-ring-bowl-install-246/v1",
+  "date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "ownerVerbatim": "approved, you have approval authority for the cabin in the ashen campaign creative and technical decisions",
+  "authorityScope": "Cabin in the Ashen Veil creative and technical decisions only",
+  "sourceFidelity": "owner verbatim, assistant quotations and tool summaries; not a lossless platform transcript",
+  "workstream": "Chat A",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "parent": "054fd0593fbf9087742793993efe8aa4d9e7597f",
+    "head": "f3c1bfccf077ec9d3b4d97573889289dd6b598f0",
+    "remoteVerified": true
+  },
+  "tests": {
+    "pass": 246,
+    "added": 4,
+    "failed": 0,
+    "files": 44
+  },
+  "world": {
+    "id": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "electedGM": "Gamemaster 1",
+    "scenes": 47,
+    "regions": 240,
+    "behaviors": 128,
+    "independentGMPass": true
+  },
+  "placement": {
+    "decisionBy": "owner-delegated coordinator",
+    "drainedScene": "8yLMRDvxyw58dydh",
+    "artImagePixels": [
+      1536,
+      1024
+    ],
+    "scenePixels": [
+      2160,
+      1440
+    ],
+    "ringRegion": "CAVBROSEWATER001",
+    "ringRect": [
+      976,
+      826,
+      108,
+      115
+    ],
+    "bowlRegion": "CAVROSEBOWLREG01",
+    "bowlRect": [
+      977,
+      375,
+      108,
+      88
+    ],
+    "bowlNativeBehavior": "CAVROSEBOWLPICK1",
+    "originalWorldItem": "Item.1n5LONw3nYIy61O9"
+  },
+  "installed": {
+    "nativeBowl": true,
+    "nativeRingEnabled": true,
+    "bowlScriptDiskSha": "25E589ADD4E9A4C80F943E91AAFC5EF7FFCF426D6698E03700A1BB956BD825F5",
+    "activeBowlApiCachedOldVersion": true,
+    "coordinatedReloadRequired": true,
+    "originalCrankClaimDone": false,
+    "originalWaterDrained": false,
+    "ringSolved": false,
+    "bowlAwarded": false,
+    "actualPlayerAcceptance": false
+  },
+  "installationReceipt": "utility-harness/artifacts/cav-owner-delegated-rosewater-ring-bowl-fixture-native-install-20261027.json",
+  "independentReceipt": "utility-harness/artifacts/cav-owner-delegated-ring-bowl-native-independent-postread-20261027.json",
+  "handoffPath": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-owner-delegated-ring-and-sune-bowl-native-installed-246-source-handoff-2026-10-26.md",
+  "transcriptPath": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-26-chat-a-owner-authority-ring-bowl-native-install-turn-transcript.md",
+  "decisionPath": "campaign-archives/cabin-in-the-ashen-veil/decisions/2026-10-26-owner-cabin-creative-technical-delegation-and-fixtures.md"
+}
