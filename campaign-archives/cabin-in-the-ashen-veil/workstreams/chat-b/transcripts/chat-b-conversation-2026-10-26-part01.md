@@ -313,3 +313,82 @@ This turn is a **source-contract correction**, not a new live Foundry installati
 The partial Turn19 response explained the source-only H-U07 Art Studio/H-U08 Workshop correction, exact current Foundry native scene existence, obsolete H-G07/H-G08 nonexistence, missing complete player-readable Prayer of Devotion/Protection Journals, and the **1,219/1,219 PASS across 43** Cabin tests. It explicitly stated **no Foundry writes**. This is a summary rather than a reproduction of the rich formatting.
 
 **Authored technical evidence, not dialogue:** Exact original Studio `CAVHU07Scene0001`, Workshop `CAVHU08Scene0001`; original Prayer of Devotion `Item.GXLYq6Tf4OgPNbkU` and Protection `Item.5jwy75XyFezukf3b` both GM_LIBRARY_ONLY descriptions rather than original complete Journals. Source contracts and two tests corrected only in Chat B isolated checkout. Dated native read-only evidence and T19 handoff stored separately. This same document remains the only living Chat B transcript and should be appended again at the next between-turn checkpoint, including the terminal Git result.
+
+
+---
+
+## Turn 20 — owner-authored Sune prayer text and Bridge/Dev Chrome recovery, 2026-10-26
+
+### M0049 · USER · time: unknown · DURING_TURN_20 · VERBATIM_FROM_VISIBLE_CHAT
+
+> Continue
+
+### M0050 · ASSISTANT · time: unknown · DURING_TURN_20 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll continue as Chat B with the next bounded late-game turn. I’ll first check what Chat A has changed and whether the missing Prayer, Aqueduct, or Bathhouse prerequisites have been resolved. Then I’ll advance the next safe installation or source component without bypassing puzzle gates, verify it, and update our existing transcript and GitHub handoff.
+
+### M0051 · ASSISTANT · time: unknown · DURING_TURN_20 · RECONSTRUCTED_SUMMARY
+
+Initial T20 investigation found no original full Prayer text in available canonical documents, and the exact original Undercroft scene preflight was interrupted by the browser /join event. No Undercroft world writes happened. This is an authored summary rather than a quote of all intervening commentary.
+
+### M0052 · USER · time: unknown · DURING_TURN_20 · VERBATIM_FROM_VISIBLE_CHAT
+
+> you can make up your own prayer text
+
+### M0053 · ASSISTANT · time: unknown · DURING_TURN_20 · VERBATIM_FROM_VISIBLE_CHAT
+
+That resolves the missing-text blocker. I’ll write new **Prayer of Protection** and **Prayer of Devotion** passages that fit the established campaign, record them as owner-authorized new text rather than recovered originals, and attach them to the existing Items and readable Journals if the shared Foundry session is safe to edit. I’ll preserve the Studio and Boathouse progression gates.
+
+### M0054 · ASSISTANT · time: unknown · DURING_TURN_20 · RECONSTRUCTED_SUMMARY
+
+Assistant authored two complete distinct Sune prayers and displayed them to the owner, beginning “Lady of the Rose, let beauty be a shelter, not a prize” and “Bright Lady, I offer no perfect face and no spotless soul.” Exact full text is preserved in the canonical source document `docs/cabin-ashen-veil/owner-authorized-full-prayer-handouts-2026-10-26.md` and JSON on the Regionwright worker branch. This is new owner-delegated creative writing, not recovered original. The first portion of Turn20 ended SOURCE ONLY when Dicebox Bridge terminated; there was no native install at that point.
+
+### M0055 · USER · time: unknown · DURING_TURN_20 / BRIDGE_RECOVERY · VERBATIM_FROM_VISIBLE_CHAT
+
+> the bridge is back up
+
+### M0056 · ASSISTANT · time: unknown · DURING_TURN_20 / BRIDGE_RECOVERY · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll verify the restored Bridge and current Foundry GM session, then pick up where we stopped: installing the two newly authorized prayers as readable Journals linked to their original quest Items. I’ll first reconcile the remote Chat B source with the local checkout and check for existing Journals so nothing gets duplicated.
+
+### M0057 · USER · time: unknown · DURING_TURN_20 / DEV_CHROME_RECOVERY · VERBATIM_FROM_VISIBLE_CHAT
+
+> probably gonna need to relaunch dev chrome
+
+### M0058 · ASSISTANT · time: unknown · DURING_TURN_20 / DEV_CHROME_RECOVERY · VERBATIM_FROM_VISIBLE_CHAT
+
+Yes—the Bridge is responding again, but the Chrome for Testing debugging port (`9224`) is closed. I’ll check whether the dedicated Dev Chrome profile is already in use, then relaunch that profile without restarting Foundry or touching your regular Chrome session.
+
+### M0059 · ASSISTANT · time: unknown · DURING_TURN_20 / DEV_CHROME_RECOVERY · RECONSTRUCTED_SUMMARY
+
+Exact original Chrome for Testing Dev 158 profile was found unowned; first recovery started it on loopback 9224 without Foundry restart, elected GM world verified. Chat B isolated worktree was fast-forwarded from `82af2c57...` to remote original authored prayer source `574a390...`. The elected GM confirmed original Items and no duplicate prayer Journals or character copies; GM preflight passed. No other chat or studio registry was edited.
+
+### M0060 · ASSISTANT · time: unknown · DURING_TURN_20 / NATIVE_WRITE · VERBATIM_FROM_VISIBLE_CHAT
+
+The preflight passed for both original prayer Items. Neither has a matching Journal or a character-held copy, and both still have their original GM-library status.
+
+I can now install the two hidden, readable Journals and add the full text to the original Items. I’ll verify each saved Journal page and Item binding afterward; the installation will not distribute the prayers or open any passage.
+
+### M0061 · ASSISTANT · time: unknown · DURING_TURN_20 / NATIVE_WRITE · VERBATIM_FROM_VISIBLE_CHAT
+
+Both prayers are now installed in Foundry as **GM-only Journals**, and the full text is linked to each existing original quest Item. The original Items remain in the GM library; neither was given to a character.
+
+I’m performing an independent readback now, including the page text, Journal visibility to non-GM users, Item flags, and unchanged Studio/Workshop Regions.
+
+### M0062 · ASSISTANT · time: unknown · DURING_TURN_20 / RECONSTRUCTION · RECONSTRUCTED_SUMMARY
+
+The dedicated Dev Chrome connection briefly closed before the independent readback; the original profile was safely relaunched again after confirming port 9224 unowned and Foundry server healthy. The GM native installation was **NOT repeated**. The separate, read-only independent postread then passed for both full pages and Item links. It verified GM-only permissions, zero character Item copies, exact source hashes, preserved H-U07 Vanity/H-U08 Wick/disabled Privy Copper. Full Cabin suite 1,229/1,229 across 44 files passed, including 10 new native source and receipt tests.
+
+### M0063 · ASSISTANT · time: unknown · DURING_TURN_20 / PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+A partial user-facing completion confirmed Dev Chrome and the Bridge restored, correct elected GM world, two full prayer Journals installed and linked, GM-only permissions and no player rewards/progression. This entry is summarized because the original rich presentation differs from literal plain-text export.
+
+### M0064 · ASSISTANT · time: unknown · DURING_TURN_20 / ARCHIVE · VERBATIM_FROM_VISIBLE_CHAT
+
+The native installation and its recovery evidence are committed and pushed at `3d7b8432672a65768381526f661401dad2f6a518`. The local Chat B worktree is clean.
+
+I’m finishing the shared campaign archive and updating the **same living transcript** with your Bridge and Dev Chrome messages, then I’ll verify the handoff links.
+
+**Technically verified deployment (not conversational speech):** Original `Item.5jwy75XyFezukf3b` linked to GM-only `JournalEntry.CAVPRAYERPROTECT`; original `Item.GXLYq6Tf4OgPNbkU` linked to GM-only `JournalEntry.CAVPRAYERDEVOTN1`. Exact full prose preserved in original Items and one text page per Journal, 0 character prayer copies, native readback pass:true. Source commit `3d7b8432672a65768381526f661401dad2f6a518`. The original preflight, one-time installer, independent postread, source proof and regression tests are archived in the Regionwright Chat B workstream.
+
+**ONE living transcript:** Append later between-turn dialogue and the eventual terminal Git handoff status to this SAME file. Do not make an extra transcript file or index.
