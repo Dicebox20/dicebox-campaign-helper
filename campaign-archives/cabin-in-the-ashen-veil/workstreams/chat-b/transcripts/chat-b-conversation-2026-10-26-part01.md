@@ -788,3 +788,22 @@ Dated technical report and full immutable GM read-only inventory:
 - DCH durable mirror `campaign-archives/cabin-in-the-ashen-veil/workstreams/chat-b/cav-regionwright-all-region-puzzle-audit-2026-10-27.md` and `.metadata.json` in independent DCH archive branch. Single living transcript updated in this existing document (no segment/index).
 
 Repair-order source-of-truth: authentic AQ artwork/143 original walls and dedicated console+obstruction native Region geometry; approve 5-valve canonical targets rather than demo defaults; create elected-GM campaign pressure service/persisted obstruction+balance, then native snapshot/player test; separately configure authentic Regionwright six-storybook Spine on original H-U05 bookcase without overwriting click close-up or fabricating Veil sixth-book proof. No Crooked Man chase activation in this audit. Record user reply and final answer at next between-turn checkpoint.
+
+
+---
+
+## 2026-10-27 — Owner supplies the three actual AQ-01 Region UUIDs; immediate read-only correction
+
+### M0125 · USER · time: unknown · VERBATIM
+
+> Gondian Charging Stations: Scene.CAVAQ01Scene0001.Region.Aa4VBYBx3MRxr1H8 Five-Valve Pressure Puzzle: Scene.CAVAQ01Scene0001.Region.WdVwSJ9NJYOL8IYl Water Obstruction: Scene.CAVAQ01Scene0001.Region.9Rq8tVF0CrLGkYcT
+
+### M0126 · ASSISTANT · time: unknown · RECONSTRUCTED_SUMMARY
+
+Acknowledged the provided exact Region UUIDs and performed another independent live elected-GM read-only Foundry inspection. All three physical Regions now EXIST in `Scene.CAVAQ01Scene0001` and each has zero RegionBehaviors and zero puzzle flags. Exact current:
+- Gondian Charging Station `Region.Aa4VBYBx3MRxr1H8`, rectangle 3007,46,300×240;
+- Five-Valve Pressure Puzzle `Region.WdVwSJ9NJYOL8IYl`, rectangle 1116,3093,540×180 (generic current name "Region");
+- Water Obstruction `Region.9Rq8tVF0CrLGkYcT`, rectangle 402,3630,180×180 (generic name "Region (2)").
+Current AQ-01 count 11 Regions / 148 Walls, compared to historical earlier same-date 8 Regions / 143 Walls. Source or actor that created these Regions between snapshots not established. Earlier statements saying PHYSICAL Regions must be created are superseded. Repair must ADD behavior and authoritative source service to these exact existing Regions, NOT duplicate any physical Region. No world/Chat A writes during correction; current source and evidence on Regionwright commit `77c26f6e8260268e40aed0042d9f276a1e703b47`, mirrored to same DCH audit on archive branch. Current elected-GM proof JSON `docs/cabin-ashen-veil/audits/2026-10-27-regionwright-full-puzzle-region-audit/LIVE-RECHECK-2026-10-27-1403.json`. Historical audit retained with prominent correction notice, appendix and updated metadata. Standalone pressure engine target values remain design placeholders, not accepted values.
+
+Record terminal response and any further user input in this SAME single living Chat B transcript, not new transcript or index.
