@@ -1,0 +1,19 @@
+# Cabin in the Ashen Veil — Chat A Original Drained Pickup Water-Stage Hardening
+**Date:** 2026-10-26 Pacific ~19:55–20:03. Available-message reconstruction, not verbatim native chat transcript.
+
+## Exact owner
+> Lets continue
+
+## Evidence-backed chronology
+1. Announced PREPARE→INSPECT→BUILD→VERIFY→CATALOGUE Chat A early/mid original dependency audit while keeping Chat B late-game, first chase and ordinary-player acceptance isolated/deferred.
+2. Source/host preflight: Regionwright integration HEAD 7f7b9b1; tracked checkout clean but unrelated untracked owner artifacts preserved. Foundry30000/Dev Chrome9224 ON, RAM fluctuating 1.4–2.2 GiB. Read Sune source, remaining core source scripts and original downstream drained pickup code/test files; chose concrete Weathered Key + Screwdriver dependency rather than repeating 587/Grove audits.
+3. INSPECT original \`studio-cav-drained-pickups.js\`: prior DRY gate only required some DONE water transaction, water open and Bath drained, Pond drained art, Trail destinations membership. No original consumed Crank proof, no proof last transaction was current OPEN with matching Pond/Bath, no exclusive route. Original two item Regions and native Behaviors already enabled. Separate read-only live elected GM confirmed actual Pond FULL art, Trail target FULL Bath, original DRY Bath Scene installed, Crank/Water/Transaction NULL, 54 chat messages.
+4. Prepared existing shared pure validator \`evaluateSluiceRecordedPrestate\` reuse, planned new pure pickup proof and source tests. First Python exact anchor attempt failed before editing original source (verified from Bridge receipt), then scoped unique DRY source anchor patch succeeded; backup original source and installed copy retained locally.
+5. Added pure \`assessCavDrainedPickupWaterReady\` in original pickup module with authenticated DONE original Crank/consumed Item, exact committed OPEN synchronized Pond/Bath and prior transaction, approved drained Pond art, one original enabled Trail destination to DRY Bath, original landing present. Existing DRY() shared by both non-GM closeup and elected GM Item grant invokes it; no world action/source Item logic changed.
+6. Added 7 targeted negative/positive tests: completed stage succeeds, missing Crank/water/transition, mismatched stale/reserved prior transaction, altered Pond/Bath, wrong visual, extra/wrong/disabled Trail teleport, client+GM call-site parity; targeted 7 PASS. Full Cabin nonbrowser source suite **144 PASS/0 FAIL** (137 prior).
+7. Installed original updated JS into existing Foundry Regionwright with identical source/installed SHA 305D50CDD6EFBEA963C30EFB8A2DBA0FEB82BE48E203B1ABDB1E88D5AE7BCC7E. ONE elected-GM preflight-guarded browser /game reload committed. Independent post-reload elected GM source import proved valid pure committed OPEN stage eligible, missing Crank and stale close txn denied, extra Trail destination denied. Actual native World Crank/water/txn untouched, original Pond art full, trail to filled Bath, native Weathered/Screwdriver enabled and ring disabled, GM pickup service active, zero tagged Items, 54 messages; positive harness receipt saved.
+8. Wrote detailed Regionwright source checkpoint + machine JSON and appended chronological Regionwright log, staged only original pickup source, test, checkpoint, JSON and log. git diff --check and source/install SHA passed. Committed+pushed exact HEAD **ef569be1d4da7355f5a4499e54ec135947b8255f**, remote branch SHA verified.
+9. Archived DCH Chat A handoff, structured metadata and this available-message reconstruction; no player Items awarded, Water stage advanced or Crooked Man/first chase commissioned, Chat B source untouched.
+
+## Next Chat A
+Inspect next downstream owner-approved Boiler original dependency on actual Weathered Key/Screwdriver, without cloning Bath Scenes or attempting player testing. Continue 25-minute bounded chunks with chronological log and evidence-backed remote handoff.
