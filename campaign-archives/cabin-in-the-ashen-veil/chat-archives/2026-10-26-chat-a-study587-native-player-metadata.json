@@ -1,0 +1,65 @@
+{
+  "schema": "dicebox.cav.chat-a-study587-native-interaction-handoff/v1",
+  "date": "2026-10-26",
+  "owner": "resume",
+  "chat": "A",
+  "source": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "base": "b64771e203cbcf9b41607ebe63b12cb8fc0bb673",
+    "commit": "a3e880d35d06d2616fdac231620a25798f478edb",
+    "sourceReport": "docs/cabin-ashen-veil/chat-a-study587-original-native-player-proximity-2026-10-26.md",
+    "sourceManifest": "docs/cabin-ashen-veil/study587-original-native-click-sources-2026-10-26.json",
+    "GMSource": "modules/regionwright/scripts/studio-cav-587.js",
+    "GMSourceSHA": "BF738FEAEDD13A462181C8E147B4E4727927E3B196E07FD98260029F7BF38E39",
+    "testsPassed": 118,
+    "testsFailed": 0,
+    "addedTests": 8
+  },
+  "live": {
+    "world": "cabin-in-the-ashen-veil",
+    "version": "14.367",
+    "electedGm": "Gamemaster 1",
+    "GMServiceRegistered": true,
+    "nativeBehaviorsPatched": 2,
+    "nativeBehaviorsAdded": 0,
+    "originalNote": {
+      "region": "CAVB3E32BD6B01BD",
+      "behavior": "CAVHG05NOTE00001",
+      "afterSHA": "7F8D5D97C7209D6F7E2153818B5E9F10DCF9AFCDBE708641EC8F58AAEF66DD8F"
+    },
+    "originalBox": {
+      "region": "CAVEXT03BOXREG01",
+      "behavior": "CAVEXT03BOXBEH01",
+      "afterSHA": "8150402B76BC18457900701B69B0E19A0327D8E4381883CAC4B16CB0D915FBB4"
+    },
+    "nativeAfterReloadVerified": true,
+    "nearCharacterAllowed": true,
+    "farCharacterDenied": true,
+    "invalidRegionDenied": true,
+    "studyDoor": null,
+    "studyNote": null,
+    "lockboxClaim": null,
+    "crankInstalled": null,
+    "water": null,
+    "waterTransaction": null,
+    "rosewaterDisabled": true,
+    "crankReadOnlyStatus": "not-claimed",
+    "messages": 54,
+    "storyFlagsChanged": 0,
+    "actualItemTransfers": 0,
+    "realPlayerTests": 0
+  },
+  "receipts": [
+    "utility-harness/artifacts/cav-chat-a-study587-original-native-scripts-readonly-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-587-native-click-original-and-safe-source-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-587-native-client-proximity-install-receipt-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-study587-client-gm-reload-verified-20261026.json"
+  ],
+  "next": [
+    "Study Door Brass Key reserved state/recovery audit (read-only/pure until owner QA)",
+    "Do not force real 587 Crank award or drain",
+    "Do not affect Chat B late-game work"
+  ],
+  "transcriptFidelity": "available-message reconstruction, not lossless platform export"
+}
