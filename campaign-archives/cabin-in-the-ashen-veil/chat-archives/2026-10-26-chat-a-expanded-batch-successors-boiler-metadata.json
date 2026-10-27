@@ -1,0 +1,89 @@
+{
+  "schema": "dicebox.cav.chat-a-enlarged-batch-boiler-and-three-successors/v1",
+  "dateLocal": "2026-10-26",
+  "ownerMessage": "Lets start installing slightly larger batches, start doing installations and instpections in one turn",
+  "chat": "A",
+  "branch": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "before": "ef569be1d4da7355f5a4499e54ec135947b8255f",
+    "commit": "0e83bfdbdd3c13e45fc8f619e8c43a1d073f771b"
+  },
+  "scope": {
+    "sourceFiles": 4,
+    "modifiedExisting": 2,
+    "newPureModules": 2,
+    "addedTests": 18,
+    "fullTestsPassed": 162,
+    "fullTestsFailed": 0,
+    "newNativeRegions": 0,
+    "newNativeBehaviors": 0,
+    "existingNativeEdits": 0,
+    "originalActorItemWrites": 0,
+    "sourceReadiness": "installed",
+    "realPlayerGameplayTests": 0
+  },
+  "sha": {
+    "successor": "C62F4652A3BBACE1BC9610407278A4CF54617CDF2338ACF2DC7371F2CD32E3D2",
+    "aqueductPart": "A830DB8DF52CD5D5558C2E354F615C98C99F50D570062EFAAD8F9ED33FE0F408",
+    "basementNightstand": "D33D5A9970C8E2930093F5FB1A4ED3A2A9177B40B5F886D74012796570533C2E",
+    "aqueductGate": "0DFA3CD107AF2D33FABDCE04096ED7449B8D89EABD3195CFBAB1E84A42BDEE05"
+  },
+  "live": {
+    "world": "cabin-in-the-ashen-veil",
+    "foundry": "14.367",
+    "gm": "Gamemaster 1",
+    "elected": true,
+    "scenes": 47,
+    "chatMessages": 54,
+    "water": null,
+    "sluiceTransaction": null,
+    "crank": null,
+    "weatheredKeyClaim": null,
+    "screwdriverClaim": null,
+    "basementUnlock": null,
+    "nightstandRepair": null,
+    "nightstandHandleClaim": null,
+    "roofGearClaim": null,
+    "aqueductGear": null,
+    "aqueductHandle": null,
+    "aqueductReady": null,
+    "boiler": {
+      "status": "ready",
+      "variants": 2,
+      "canon": [
+        2,
+        1
+      ],
+      "sessions": null,
+      "changed": false
+    },
+    "basementPortalDisabled": true,
+    "aqueductPortalDisabled": true,
+    "rosewaterDisabled": true,
+    "trailFullBath": true,
+    "sourceReloadCount": 1,
+    "activeGmVerified": true,
+    "gmServicesAllRegistered": true,
+    "taggedDownstreamItems": 0
+  },
+  "pureCases": {
+    "originalWeatherKeyDoneAccept": true,
+    "originalWeatherKeyReservedDeny": true,
+    "originalHandleDoneRepairedAccept": true,
+    "originalHandleReservedDeny": true,
+    "originalHandleMissingRepairDeny": true
+  },
+  "evidence": [
+    "utility-harness/artifacts/cav-chat-a-batch-original-boiler-weathered-basement-nightstand-baseline-20261026.json",
+    "utility-harness/artifacts/cav-chat-a-large-batch-three-downstream-guard-and-boiler-postreload-gm-20261026.json"
+  ],
+  "workflowUpdate": "Chat A 2-3 adjacent fixes + existing live fixture inspection + full suite + one guarded reload + independent GM readback + one consolidated dated continuity turn",
+  "next": [
+    "Continue next source/region dependency group",
+    "No actual full PC gameplay until owner final testing",
+    "Crooked Man first chase and Rosewater native commissioning remain deferred",
+    "Keep Chat B isolated late-game source"
+  ],
+  "fidelity": "available-message reconstruction, not lossless platform transcript"
+}
