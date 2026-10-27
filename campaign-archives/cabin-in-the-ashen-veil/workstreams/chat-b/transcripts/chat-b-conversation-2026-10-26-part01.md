@@ -712,3 +712,54 @@ I’m completing the campaign archive, draft PR, and single living transcript. T
 Exact Regionwright source SHA `577c883fe29f24cd362e4e758c2085a5497d6c3f`, branch `codex/cav-late-game-chat-b-20261026`. 3 source updates in actual original Foundry H-B01: `CAVVPOWERBEH0001`, `CAVVGONDBEH00001`, `CAVVSUNEBEH00001`. Native GM independent readback pass:true for byte-exact updated source, DISABLED state and zero socket region ledgers; source hashes and full forward issuer protocol preserved under `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn26-vault-socket-transactions/`. Installer returned error AFTER writes because post-check code referred to `v` rather than `vault`. **Do not replay**; independently reconciled as complete staging. Basement Weathered Key unlock and actual player reward source claim native issuers NOT present, so all scripts intentionally disabled and original Vault/Keystone/turn travel remains sealed. No Item copies/quests/grants. Full source+evidence suite **1321/1321 tests across 54 files PASS**. Original first+second Crooked Man chase and Silver pickup remain deferred. DCH unique dated handoff, metadata, updated evidence matrix/progress, Git receipt and same ONE living transcript preserved.
 
 Continue appending this same file with the next turn's user reply and Turn26 terminal response at the next between-turn checkpoint; no duplicate transcript file or index.
+
+
+---
+
+## Turn 27 — user's remaining-tasks question and Sophia original Gond source continuation, Pacific 2026-10-27
+
+### M0115 · ASSISTANT · time: unknown · END_TURN_26 · RECONSTRUCTED_SUMMARY
+
+At Turn 26 close, all three original Vault socket executeScript sources had been updated in place but kept DISABLED, current elected GM after failed installer postcheck verified source exactly, full Cabin tests 1321/1321 across 54, source HEAD `577c883fe29f24cd362e4e758c2085a5497d6c3f`. Genuine upstream Item issuers/Veil and Weathered Basement still missing; no slot completion. Crooked Man deferred. This is a faithful compact summary, not literal rich formatting.
+
+### M0116 · USER · time: unknown · START_TURN_27 · VERBATIM
+
+> Lets continue working, what other tasks do you have left?
+
+### M0117 · ASSISTANT · time: unknown · TURN_27 · VERBATIM
+
+I’ll continue with the next puzzle-only work package and give you an updated task list. I’ll first check what Chat A has changed, then focus on the late-game reward sources feeding the Vault—starting with the six-book Gond Emblem Half and Sune Devotion—without enabling the Vault or touching Crooked Man encounters.
+
+### M0118 · ASSISTANT · time: unknown · TURN_27 · VERBATIM
+
+Sophia’s bedroom is a good next target. The approved map already has the bookcase in place, and its existing player close-up works, but the six-book ordering and hidden Gond reward are not yet connected.
+
+I’ll preserve that close-up and attach the progression logic to the **same bookcase Region**, rather than creating an overlapping hotspot or an obsolete extra room. The sixth book will remain Veil-gated, and the Gond Half will remain unclaimable until the real six-book sequence is completed.
+
+### M0119 · ASSISTANT · time: unknown · TURN_27 · VERBATIM
+
+The first remaining reward source is now physically staged in Sophia’s bedroom. I added a **hidden Gond Emblem Half visual** and a disabled, one-time pickup Behavior to the existing bookcase Region. Its original close-up and the room’s return route are unchanged.
+
+The pickup script is tied to the six real storybooks, the Veil-only sixth book, and the bookcase’s future solved/revealed records. It cannot award the Gond Half yet; I’m independently verifying the saved installation now.
+
+### M0120 · ASSISTANT · time: unknown · TURN_27_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+The assistant presented six major remaining puzzle packages plus one final campaign-wide diagnostic/playtest: Chat A early/midgame dependency completion; six books and Gond half; Sune Devotion and charged Gond source; Vault sockets/emblem/Keystone; outer Undercroft Bowl plus original filled 027 pellet; inner Undercroft Keystone recess/lever/Refuge. Crooked Man remains excluded. It confirmed hidden original Gond visual and disabled pickup Behavior were current native elected-GM verified without player grant; no claimed full-chain readiness. This is a summary of a rich visible partial final, not literal formatting.
+
+### M0121 · ASSISTANT · time: unknown · TURN_27 · VERBATIM
+
+The native readback passed, and the full Cabin suite is now **1,340/1,340 tests across 56 files**.
+
+That closes a concrete piece of the six-book reward chain: the original Gond Half now has a source-bound pickup script and hidden visual on the correct bookcase. The next step is the actual Regionwright six-book ordering service and its Veil-dependent completion record; only then can this pickup be enabled and tested by a player.
+
+### M0122 · ASSISTANT · time: unknown · TURN_27 · VERBATIM
+
+The source is committed at `3855d50`, and I’ve independently confirmed that exact commit is on the remote branch. The Chat B worktree is clean.
+
+I’m finishing the campaign archive and the same living transcript. The remaining-work list has not grown: this turn completed part of the six-book/Gond Half package, while its actual ordering and Veil proof still need commissioning.
+
+### T27 TECHNICAL NON-DIALOGUE CHECKPOINT
+
+Exact pushed source `3855d50b59cc1c0b9cfcc91b3e2b083d8b45cf2d`; original Sophia bookcase `Scene.CAVHU05Scene0001.Region.CAVB994894A7432F` has original enabled close-up `RegionBehavior.LRYrBIQNN92SCJai` unchanged plus NEW DISABLED native Gord? correction: **Gond** issuer `RegionBehavior.CAVGONDREWARD001`; new hidden and locked original Gond Item-image Tile `Scene.CAVHU05Scene0001.Tile.CAVHU05GONDTILE1`. Guard requires true six-book native Regionwright order, original canonical Veil sixth book, visible source tile and legitimate actor/GM deliberate claim before any original Item may be granted; currently none of those proof ledgers exist and source remains disabled. Current elected-GM independent Foundry readback `pass:true`, zero actor Gond copies and original Vault Gond socket disabled; original six books GM library only; same original Sophia exit enabled. Source code+one-time installer/readback JSON `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-chat-b-turn27-sophia-gond/`; full Cabin suite **1340/1340 PASS across 56 files**. New T27 handoff/metadata and append-only matrix/progress mirrored to DCH archive. No native nonGM gameplay test, no fake puzzle completion, owner-deferral of Crooked Man preserved.
+
+Append user reply and terminal T27 response in THIS same living transcript at next turn; do not create new transcript/index file.
