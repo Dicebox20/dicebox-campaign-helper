@@ -1,0 +1,52 @@
+{
+  "schema": "dicebox.cav.hu02-west-nursery-east-guest-install/v1",
+  "date": "2026-10-27",
+  "timezone": "America/Los_Angeles",
+  "ownerMessage": "Lets continue",
+  "workstream": "Chat A",
+  "chatB": "Late game/Undercroft and Silver Key exclusive; untouched",
+  "regionwright": {
+    "repo": "Dicebox20/regionwright",
+    "branch": "codex/cav-sune-integration-20261026",
+    "previous": "8f2cac8cea2c20305bc99472f6b644186761d4d4",
+    "current": "c3b35b0c0f6ade862c55993f91fad14adb242b8e",
+    "remoteVerified": true
+  },
+  "tests": {
+    "previous": 265,
+    "added": 3,
+    "current": 268,
+    "failures": 0,
+    "files": 50
+  },
+  "visual": {
+    "image": "h-u02-upper-landing-owner-approved-textfree-v006-2026-10-24.png",
+    "cropDiscovery": "West and East external wooden side-wall panels are real doors",
+    "canonicalOriginalMap": "H-U02 PREPARE v003: west Nursery, east Guest"
+  },
+  "native": {
+    "scene": "gGgUHlHdI7RFrbUh",
+    "regionsBefore": 14,
+    "regionsAfter": 14,
+    "changedOriginalShapes": 4,
+    "scenesAfter": 47,
+    "worldRegionsAfter": 250,
+    "worldBehaviorsAfter": 140,
+    "outOfBoundsBefore": 2,
+    "outOfBoundsAfter": 0,
+    "independentGMReadback": "PASS",
+    "newRegionCount": 0,
+    "actorTokenMoves": 0,
+    "originalBehaviorsAndDestinationsPreserved": true
+  },
+  "pending": {
+    "realPlayerAcceptance": true,
+    "sceneWallsInstalled": false,
+    "compatibilityDiagnosticDeferred": true
+  },
+  "receipt": "utility-harness/artifacts/cav-chat-a-hu02-v006-side-nursery-guest-four-region-guarded-native-install-20261027.json",
+  "independentReceipt": "utility-harness/artifacts/cav-chat-a-hu02-v006-nursery-guest-independent-gm-postread-20261027.json",
+  "handoff": "campaign-archives/cabin-in-the-ashen-veil/handoffs/cav-chat-a-hu02-v006-all-five-room-doors-native-aligned-268-handoff-2026-10-27.md",
+  "transcript": "campaign-archives/cabin-in-the-ashen-veil/chat-archives/2026-10-27-chat-a-hu02-west-nursery-east-guest-native-install-turn-transcript.md",
+  "transcriptFidelity": "Owner verbatim; assistant/tool evidence summaries; no lossless platform export"
+}
