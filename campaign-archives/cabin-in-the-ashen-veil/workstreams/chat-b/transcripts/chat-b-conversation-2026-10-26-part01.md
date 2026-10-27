@@ -439,3 +439,48 @@ Chat B pushed source and native forensic evidence HEAD `65548adf384e34de739e2169
 Full campaign tests **1,240/1,240 across 45 files PASS**, 11 newly added static/native source tests. All source and independent JSON readback receipts are in `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-turn21-sune-workshop/` on the above source commit. No raw private assistant reasoning is transcribed.
 
 **Next:** Append additional subsequent final response or owner reply at the next between-turn checkpoint to this SAME one living Chat B document. Do not create a new per-turn transcript file or index.
+
+
+---
+
+## Between Turns 21–22; Turn 22 original Music Box → Prayer native recovery link — 2026-10-26 Pacific
+
+### M0072 · ASSISTANT · time: unknown · END_TURN_21 · RECONSTRUCTED_SUMMARY
+
+The preceding final response confirmed five original physical Sune/Studio-to-Workshop Regions installed in one shared Foundry world, all three new Behaviors DISABLED, independent elected-GM postread and 1,240/1,240 tests passing, pushed commit `65548adf384e34de739e2169cbd0db16082d2830`, archived native evidence and the same living transcript. It identified the original Silver→Hope Chest→Music Box→Prayer custody and authentic altar reading as next steps. This is a rich-final summary, not invented verbatim source.
+
+### M0073 · USER · time: unknown · BETWEEN_TURNS_21_22 / START_TURN_22 · VERBATIM_FROM_VISIBLE_CHAT
+
+> continue
+
+### M0074 · ASSISTANT · time: unknown · TURN_22 · VERBATIM_FROM_VISIBLE_CHAT
+
+I’ll continue with the next late-game integration step: tracing the original Silver Key → Hope Chest → Ornate Music Box → Prayer of Protection chain into the installed Sune altar. I’ll verify the current Foundry Items, Regions, and progression records first. Then I’ll implement only the part that can be authenticated safely, run the checks, and update the same Chat B transcript and handoff.
+
+### M0075 · ASSISTANT · time: unknown · TURN_22_PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+The live original H-U04 Hope Chest Region and its old guarded Silver Key→Music Box native Behavior, all three distinct original GM-library sources, and the full GM-hidden Protection Journal were verified. The SG-01 late second chase/Silver marker remained DISABLED with zero actor-held quest Item copies and no original progress ledgers. The assistant proposed adding a separately guarded Music Box→Prayer native recovery link to the **same existing Hope Region**, rather than awarding the Prayer on entry. This summarizes the substantive early turn result rather than literal rendered rich formatting.
+
+### M0076 · ASSISTANT · time: unknown · TURN_22 · VERBATIM_FROM_VISIBLE_CHAT
+
+The guarded Music Box → Prayer interaction is now installed on the existing Hope Chest Region. The original Chest Behavior remains enabled, and the new Behavior checks the Silver Key claim, chest unlock, Music Box pickup, and full Prayer Journal before it can award anything.
+
+The Silver Key stage is still dormant, so the new interaction cannot legitimately grant the prayer yet. I’m independently rereading the saved Behavior and checking that all rewards and progression records remain untouched.
+
+### M0077 · ASSISTANT · time: unknown · TURN_22 · VERBATIM_FROM_VISIBLE_CHAT
+
+The independent Foundry readback passed. The new Music Box Behavior matches the tested source, the original Hope Chest Behavior remains active, and no Silver Key, Music Box, Prayer, or progression record has changed.
+
+That completes the native recovery link for this turn. It is installed and guarded, but **not player-tested or currently reachable** because the upstream Silver Key chase remains dormant. I’m running the full regression suite and recording the installation evidence now.
+
+### M0078 · ASSISTANT · time: unknown · TURN_22 · VERBATIM_FROM_VISIBLE_CHAT
+
+The original Music Box → Prayer recovery source, installation receipts, and 11 new tests are committed and pushed at `5fd22ae3859f95be2c8f8542ad98db77aa261a65`. The Chat B worktree is clean, and the full suite passed **1,251/1,251 tests across 46 files**.
+
+I’m completing the continuity mirror and appending this turn to the same transcript document. The next functional dependency is still the legitimate second-chase Silver Key award; I have not enabled that chase or bypassed it.
+
+### TECHNICAL EVIDENCE · author-maintained non-dialogue
+
+Turn 22 new elected-GM active native Behavior `Scene.CAVHU04Scene0001.Region.CAVHU04HOPECHST1.RegionBehavior.CAVPRAYERBOXBEH1` source SHA256 `70f9133223c4acf48df34a63975095b18f9ce6dc7a04822b4967847b342a54e1`. Preexisting `CAVHOPECHSTBEH01` remains enabled and unchanged. Independent Foundry postread `pass:true`, original Item and Journal sources intact, zero actor quest copies, all Hope/Box/Prayer ledgers NULL; SG-01 late chase/Silver marker and Sune Studio teleport still dormant. Installed code is **GM-assisted and fail-closed** until original Silver and Music Box custody; no live nonGM gameplay testing and no actual Prayer grant. Source commit `5fd22ae3859f95be2c8f8542ad98db77aa261a65`, full isolated Cabin tests `1251/1251` PASS across `46` files. Native scripts/preflight/postread JSON in source repository `docs/cabin-ashen-veil/native-install-evidence/2026-10-26-chat-b-turn22-original-music-prayer/`.
+
+Continue to append the NEXT turn's owner response and eventually the Turn22 terminal Git handoff response to this same living Chat B file. Do not create new transcript segments or indexes.
