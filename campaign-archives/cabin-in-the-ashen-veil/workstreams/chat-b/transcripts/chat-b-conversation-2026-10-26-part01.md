@@ -935,3 +935,50 @@ User-visible partial result: Early Game applied to all 47 native Scenes, FXMaste
 ### M0149 · ASSISTANT · time: unknown · TURN_COMPLETION_EVIDENCE · RECONSTRUCTED_SUMMARY
 
 All 59 original read-aloud pages were linked to 47 scene-specific profiles and saved as `SCENE-PHASE-MATRIX.md`/JSON, full original snapshots and independent GM proofs in `docs/cabin-ashen-veil/native-install-evidence/2026-10-27-cav-four-phase-ambience/`. GM macro backup exported as exact reconstructed 75 KB command and its SHA matched installed. Independent native GM postread `pass:true` 47/47 Scenes, 15 FX, everything else preserved. New 7 source +8 forensic receipt tests, full Cabin **1,377/1,377 PASS across 61 test files**. Regionwright independent source branch exact pushed and remotely checked `684390384817f15286ec97321b3478e79173c619`, worktree clean. DCH independent archive mirrored Turn29 dated handoff, metadata, 47-row matrix and cumulative progress. Historic Crooked Man owner deferral/puzzle prerequisites unchanged; no full nonGM visual acceptance. Do not replay one-time installers. Append next owner reply and Turn29 terminal result to THIS original living transcript (not a new segment).
+
+
+---
+
+## Turn 30 — original player-independent Ambient Sound music for all 47 Scenes, eight owner-specified Grove maps (2026-10-27 PDT)
+
+### M0150 · USER · time: unknown · VERBATIM
+
+> Lets do music too, add music to each scene using the ambient music tool, stretch it over the full screen and make the sound equal over the whole area. Doing this makes it so the music changes as the players navigate scenes independentently, because scene music only works when the scene is activated by the gm.
+
+### M0151 · ASSISTANT · time: unknown · PLAN · VERBATIM
+
+I’ll use **Foundry Ambient Sound placeables**, not Scene playlists, so each player hears the soundtrack for the Scene they’re viewing—even when the GM is elsewhere.
+
+I’ll first inventory the available music files and existing sound emitters, then install one full-scene, evenly audible music source per Scene. I’ll preserve environmental sounds and verify that the new music doesn’t overlap or restart unnecessarily.
+
+### M0152 · USER · time: unknown · INTERRUPTING_OWNER_TRACK_CHOICE · VERBATIM
+
+> for the 8 exterior maps of the Ceremonial Clearing please use Smell of Fear
+
+### M0153 · ASSISTANT · time: unknown · OWNER_SCOPE_ACCEPTED · VERBATIM
+
+I’ll use **“Smell of Fear” for the eight exterior Ceremonial Clearing maps** and keep it consistent across that connected area. I’ll verify the audio file already available in Foundry and the exact eight Scene IDs, then use the same full-scene, uniform-volume approach as the other maps.
+
+### M0154 · ASSISTANT · time: unknown · DEVELOPMENT_PROGRESS · RECONSTRUCTED_SUMMARY
+
+Reviewed official Foundry v14 AmbientSoundData/ambient sound documentation: native ambient radius is in grid distance units, easing:false makes uniform volume anywhere in the area, walls:false removes wall occlusion, repeat:true looping, darkness min0 max1; environmental sound ordinarily relies on player-controlled tokens in its radius rather than simply browsing any Scene. Scanned 169 owner-local music library files and found EXACT existing `Music/Demon%20Slayer%20-%20The%20Smell%20of%20Fear.mp3` (2.6 MB). Verified all 18 distinct selected locally owned music files through actual live authenticated Foundry server HTTP HEAD 200, including Smell of Fear; did not download/upload or transmit copyrighted audio.
+
+Elected-GM original native sound census: 47 world Scenes and 11 original ambient sounds, including 10 separate rain/atmos effects and one existing Elwynn Forest soundtrack on Yard `Scene.CAVEXT01Yard0001.AmbientSound.VycoO0Tl8O20uL8L`. Planned 46 NEW music placeables plus adoption/update of same existing Yard source (avoid double music). EXACT 8 outer Grove IDs SG01, SG02, SG03, SG04, SG06, SG07, SG08, SG09 all assigned `Demon Slayer - The Smell of Fear.mp3`. Original central SG05 uses separate `The Queen of Air and Darkness.mp3`.
+
+### M0155 · ASSISTANT · time: unknown · NATIVE_INSTALLATION_AND_TESTS · RECONSTRUCTED_SUMMARY
+
+Authored source `modules/regionwright/scripts/studio-cav-early-map-music-47.js` and 7 guarded source tests, confirmed 47 distinct 16-char native Sound document IDs, radius from exact original map center plus diagonal and 1.5 grid-square margin, native `AmbientSound` easing:false/walls:false/repeat:true/volume 0.14–0.22/darkness0–1. Owner GM macro named `CAV — Independent Scene Music (GM)`, `Macro.CAVMUSICGM000001`, GM-only, installed one time, includes Install/Verify/Restore and original 47 Scene sound documents snapshot. Activated first install from actual elected GM; immediate macro.execute return occurred BEFORE the async inner 47-Scene write settled. Subsequent independent live GM readback confirmed macro status `installed`, pending=null, lastVerified=47, all **47/47** source exact, world total **57** sound documents, all original ten atmospheric Sound documents EXACT unchanged, original Yard soundtrack same existing ID now expanded/normalized to 0.22, eight owner requested Grove tracks exact, central clearing separate. No original Scene/Region/Walls/Tokens/FX/lighting/playlist writes.
+
+After successful install, upgraded macro source once only to improve Restore Original: clearing original Yard managed source flag explicitly with `unsetFlag` after restoring original sound fields. New live source SHA256 `e954a16a4aeeb9104cc8bfa963365667d82c1403afec6d6cbbbdccfb4800ee07`; macro remains installed and sound sources unchanged. Source/copy aligned with backup `CAV-Independent-Scene-Music-GM-Macro.js`.
+
+### M0156 · ASSISTANT · time: unknown · PARTIAL_FINAL · RECONSTRUCTED_SUMMARY
+
+Confirmed all **47/47** original native Scene music sources installed, all EIGHT outer Grove maps playing the original local Smell of Fear file, central Grove distinct; equal volume everywhere in each area, no wall blocking, loop, constant darkness-range, original environmental sources preserved. Actual 57 total Sounds = 47 music +10 original effects. Cited official Foundry Ambient Sound documentation. Supported statement was installation proof, not nonGM audible acceptance.
+
+### M0157 · ASSISTANT · time: unknown · FINAL_TEST_ARCHIVE_CHECKPOINT · RECONSTRUCTED_SUMMARY
+
+Full isolated Cabin **1,392/1,392 tests PASS across 63 files**, consisting of 7 new music source guard + 8 independent native forensic receipt tests. Native independent GM audit `pass:true`, 47/47 full map radius and stable sources, 8 exact selected Grove, 10 previous effects intact, one existing yard reused. After copying forensic source/native snapshots into Regionwright docs, original personal player user IDs/names were redacted from GitHub copies, while complete local Chrome harness receipts remain available. Generated source/backup GM macro with correct safe restore, `47-SCENE-MUSIC-MATRIX.md` and JSON, current source native and one-time script. Native original audio file itself not included in GitHub.
+
+Git source branch `Dicebox20/regionwright:codex/cav-late-game-chat-b-20261026`, exact pushed HEAD `e35369acbcb50f89d476f733b26ca3d32344f324`, remote independently confirmed clean. DCH archive new unique Turn30 handoff + metadata + 47 music matrix and append-only progress mirrored to `codex/cav-chat-b-late-handoffs-20261026`. Same ONE living transcript continued (no new transcript file/index). Current user was in a distinct Scene with an owned token when audited; nonGM client audible transitions were NOT independently tested. Foundry native ambient sounds rely on owned/controlled token inside area; tokenless tab-only viewing is not guaranteed playback. The user may use GM Macro Directory to Verify or Restore audio setup. Original Early mood remains active; none of the original 4-phase scene ambience settings changed. Crooked Man deferred.
+
+At the next between-turn checkpoint, append owner reply plus final Turn30 response to this same living transcript; do not create per-turn segments or indexes.
