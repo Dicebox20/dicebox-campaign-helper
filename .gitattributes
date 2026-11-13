@@ -1,0 +1,7 @@
+# M1217/M1259 Foundry artifact SHA-256 pins use exact LF bytes.
+# Ensure Windows core.autocrlf does not change loaded and deployed identity.
+packages/dicebox-foundry/src/program-scene-vertical-slice.js text eol=lf
+packages/dicebox-foundry/src/ascendancy-installer.js text eol=lf
+packages/dicebox-foundry/ascendancy-campaign-package.json text eol=lf
+packages/dicebox-foundry/src/foundry-live-bridge.js text eol=lf
+packages/dicebox-foundry/src/module.js text eol=lf
