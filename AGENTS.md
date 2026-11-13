@@ -1,3 +1,7 @@
+<!-- DCH_OWNER_ROADMAP_V2_20261112 -->
+**Current owner-directed DCH roadmap authority, 2026-11-12:** ChatGPT Library DCH Roadmap v2; verbatim local mirror at docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md (SHA-256 3E400D33D2EEE5B5163D9A26E4E8E7F2F199F7E6A2B2368F95ECA667825DF936). Active product milestone is M0 ChatGPT Bootstrap, followed by M1 UI, M2 diagnostics/repair, M3 templates, M4 campaign compiler, M5 shared knowledge. The 0–16 stage checklist/Stage 12 label is historical, non-certifying implementation evidence. The owner's current Foreman limit is 20 minutes, superseding older 25-minute text. Coordinate two workers via exact native live Switchboard delivery, never stage; preserve a truthful end-turn checkpoint and request continuation only through a verified live route. Machine changes require receipts and must preserve unrelated dirty work and unknown Foundry outcomes.
+<!-- /DCH_OWNER_ROADMAP_V2_20261112 -->
+
 # DiceBox Campaign Helper Implementation Contract
 
 **Owner refinement (2026-10-26):** For each project chat, maintain **one ongoing transcript document** updated **between development turns**. Reuse that document rather than creating transcript segments, indexes or separate metadata each turn. Preserve the available conversation chronologically and label gaps honestly. See [the updated transcript policy](docs/PROJECT-WIDE-CHAT-TRANSCRIPTION-AND-INTERTURN-CONTINUITY-RULES-2026-10-26.md). This refinement supersedes earlier more elaborate transcript-recording procedures without changing Foundry edit permissions.
