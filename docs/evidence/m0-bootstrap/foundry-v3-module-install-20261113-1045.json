@@ -1,0 +1,228 @@
+{
+    "schemaVersion":  "1.0.0",
+    "receiptId":  "dch-m0-fixture-v3-module-install-20261113-1045",
+    "status":  "COLLECTING_NOT_ACCEPTED",
+    "operation":  "dch.m0.disposable-fixture.module-install",
+    "observedAtUtc":  "2026-11-13T18:45:58.3653708Z",
+    "source":  {
+                   "repository":  "Dicebox20/dicebox-campaign-helper",
+                   "canonicalCommit":  "cc9258bc6bda9789b7cf182e5e5c5e9f78a0593b",
+                   "isolatedWorktreeBranch":  "owner/dch-m0-foundry-install-20261113",
+                   "nodeVersion":  "v24.18.0",
+                   "dependencyInstall":  "dch-foreman-m0-20261113-1041-fixture-clean-npm-ci-v001",
+                   "build":  "dch-foreman-m0-20261113-1041-fixture-clean-build-v001"
+               },
+    "fixture":  {
+                    "relativeDataPath":  "work/foundry-fixture-data-v3",
+                    "worldId":  "dbx-test-world",
+                    "worldTitle":  "DiceBox Disposable Ascendancy Fixture",
+                    "system":  "dnd5e",
+                    "port":  30002,
+                    "launchBeforePid":  18228,
+                    "launchAfterPid":  17196,
+                    "moduleId":  "dicebox-campaign-helper",
+                    "moduleVersion":  "0.1.15",
+                    "backupRelativeModulePath":  "work/foundry-fixture-data-v3/Data/modules/dicebox-campaign-helper.m0-backup-20261113-1043",
+                    "backupFileCount":  29
+                },
+    "transaction":  {
+                        "initialModuleParity":  {
+                                                    "matched":  22,
+                                                    "changed":  7,
+                                                    "missing":  6
+                                                },
+                        "stagedFileCount":  35,
+                        "stageRequest":  "dch-foreman-m0-20261113-1042-fixture-stage-isolated-v001",
+                        "preInstallStartRequest":  "dch-foreman-m0-20261113-1038-fixture-v3-supervised-start-v001",
+                        "stopRequest":  "dch-foreman-m0-20261113-1043-fixture-v3-supervised-stop-v001",
+                        "promotionRequest":  "dch-foreman-m0-20261113-1043-v3-module-atomic-replace-v001",
+                        "postInstallStartRequest":  "dch-foreman-m0-20261113-1044-v3-post-install-start-v001",
+                        "beforeStartStatus":  "PASS",
+                        "stopStatus":  "PASS",
+                        "afterStartStatus":  "PASS",
+                        "afterStartClass":  "process-ready",
+                        "postStartLeaseReleased":  true
+                    },
+    "installedFiles":  [
+                           {
+                               "path":  "module.json",
+                               "sha256":  "467B56314411C5B40D7505D5DA2A0E4B2F9E8F7A182B3AB413CE7F4E1EC5673B"
+                           },
+                           {
+                               "path":  "src/entry-20260823-program-scene-v2.js",
+                               "sha256":  "0F2FBB63FFE79D5A7AD0D807C4CFAA57762EA3B88BCB1096A7D568D88C46D777"
+                           },
+                           {
+                               "path":  "src/module.js",
+                               "sha256":  "D8FC92676D5A0D275DF442125BCC8E45B44FEDF45B999E1424DA634F25D1A8F6"
+                           },
+                           {
+                               "path":  "src/module-byte-attestation.json",
+                               "sha256":  "08ECF060A40730D1DB3718C80965BF9CEA7AB6642C6DCC9DF869A1F326F06E4D"
+                           },
+                           {
+                               "path":  "src/persistent-world-write-accounting.js",
+                               "sha256":  "13A81669955D645E5A7C6816E97CA006C478ED22E89A81767D226839255B11C1"
+                           },
+                           {
+                               "path":  "src/signal-rune-identity-observation.js",
+                               "sha256":  "5F494F2BA299731370AEF84CAC0FFEF61A2217262DBAF7DBB037A376C3BBB038"
+                           },
+                           {
+                               "path":  "src/ascendancy-installer.js",
+                               "sha256":  "A3511B5D809B28A16F4ABA788A06102D011B41E9BFAD8B5D9CB9B1604E890272"
+                           },
+                           {
+                               "path":  "src/foundry-live-bridge.js",
+                               "sha256":  "6D7F278FA76EEC67786FD1F10C9E20AF8673BC7B2996D36C66BF2BE22A3019A6"
+                           },
+                           {
+                               "path":  "src/tram-calibration-installer.js",
+                               "sha256":  "AC20E5A49A1494A842F4129252041628812B905DF2723BA483E3DE767EF84A0E"
+                           },
+                           {
+                               "path":  "src/tram-routing-fixture-installer.js",
+                               "sha256":  "2BE32B3C257E53D02F361F85A6C77C111C069D88F572FC0F94EDA6BB2EE758A0"
+                           },
+                           {
+                               "path":  "src/tram-rush-hour-dialog.js",
+                               "sha256":  "3D52E6FC9C1392C4D0D10793FF5B409E34DB406C5660E119BAFC4DBC3C5F4856"
+                           },
+                           {
+                               "path":  "src/tram-coordinate-calibration.js",
+                               "sha256":  "9EE2842FB948867790EA59EA4262014A6866AD428DA49F31BDAD4A21AA80C43B"
+                           },
+                           {
+                               "path":  "src/tram-access-behavior.js",
+                               "sha256":  "3CE899A052441342F0D056372A030823BC83E918847E67106E7501EDB0F21602"
+                           },
+                           {
+                               "path":  "src/tram-access-fixture-installer.js",
+                               "sha256":  "CDCD8C7B871225B53FEF7CD11462655FF39B24B8E245E0DE8A9AB6F6DCECC06F"
+                           },
+                           {
+                               "path":  "src/program-scene-vertical-slice.js",
+                               "sha256":  "D01267A40EC9EC0D0FE6CC9DF4EE065F74BAEF596E5F798CA5ADF879B04C8525"
+                           },
+                           {
+                               "path":  "src/signal-rune-furnishing-preview.js",
+                               "sha256":  "1BB5D150D8DF9ED8729A06109B6D19CAF88EC1C07A414132E0F489CF1FC6599D"
+                           },
+                           {
+                               "path":  "src/signal-rune-partial-install-preview.js",
+                               "sha256":  "E71FDB09D66A3C663633F7BFA2908B8ED328D40E28003792403FE2A59674B8A7"
+                           },
+                           {
+                               "path":  "ascendancy-campaign-package.json",
+                               "sha256":  "2595E75FC2F3BDC678561D32B6DEA3B93790C571F582B0001DB9F46433C1928B"
+                           },
+                           {
+                               "path":  "tram-calibration-package.json",
+                               "sha256":  "2C1DEAB826F7A7871BA55ED431821BA349FF1AE6CD5BFA34D632CDFDEE7D0245"
+                           },
+                           {
+                               "path":  "tram-routing-fixture-package.json",
+                               "sha256":  "A8FF938113DEECB6DF6664E687D432454340400028755542C31C0EEB9F834923"
+                           },
+                           {
+                               "path":  "program-scene-vertical-slice-package.json",
+                               "sha256":  "5AEF585687F1626A0A120B8FDF205C231B8FE481C658FECBBBA5E5C89E3FC7D7"
+                           },
+                           {
+                               "path":  "assets/maps/ascendancy-tram-depot-v3.png",
+                               "sha256":  "60976B4B0DCBA4EB5302E081F20C5C43D20B693D2818998CE91AD5008FDAAEF7"
+                           },
+                           {
+                               "path":  "assets/maps/ascendancy-signal-frequency-chamber-v2.png",
+                               "sha256":  "DB9307932865B0D3A23C5A8AA61082D520206443318658DE7E03C773A1A9972E"
+                           },
+                           {
+                               "path":  "assets/maps/ascendancy-rune-mechanism-chamber-v2.png",
+                               "sha256":  "F45922E219A12FBA6B79A26AD0D6B5EBBAF51ADD86C025E9B676DA24707D507B"
+                           },
+                           {
+                               "path":  "assets/maps/ascendancy-central-core-control-chamber-v2.png",
+                               "sha256":  "40257A1FD60C8CBCC1517A4301DE2AE9489B7B94F38ADA33300C82DFD39C10AB"
+                           },
+                           {
+                               "path":  "assets/maps/manual-central-core-control-chamber-v5-neutral.png",
+                               "sha256":  "8BA721E5B8499323BCDC868284DBF20C53A2BA07EC919F1BF9E923D89238EF11"
+                           },
+                           {
+                               "path":  "assets/maps/ascendancy-tram-calibration-graybox-v1.png",
+                               "sha256":  "7ADEB330329550EB18753187E8DBF001815BF22E056F14BC2CDC76188B0CF852"
+                           },
+                           {
+                               "path":  "assets/maps/ascendancy-tram-calibration-marker-v1.svg",
+                               "sha256":  "797578105D39A618452FAE70E9FDEDD6167950B9B0D3F7B905D638FEAAD3CBEF"
+                           },
+                           {
+                               "path":  "assets/maps/ascendancy-tram-depot-routing-yard-v6-neutral.png",
+                               "sha256":  "591DB926FF0A733282CC047BCF5094B9057449D00D168EF751C0991107F1B988"
+                           },
+                           {
+                               "path":  "assets/tiles/ascendancy-tram-rail-grid-v2.svg",
+                               "sha256":  "2DD6BC210FDEE5707ACE37B641EC0B4FB5EFA4377380986BFC63FF7751F63531"
+                           },
+                           {
+                               "path":  "assets/tiles/ascendancy-tram-rail-grid-v3.svg",
+                               "sha256":  "DE148C0C425C4BC231D6DE9923164AF0E4A9230FFB574E49C3B1BA0C28F00F63"
+                           },
+                           {
+                               "path":  "assets/tiles/ascendancy-tram-core-rail-v2.svg",
+                               "sha256":  "E93B11A45C32124E220F68DE013FAE3C761D36B9F86E6E029B4E689C9930EF77"
+                           },
+                           {
+                               "path":  "assets/tiles/ascendancy-tram-gate-v2.svg",
+                               "sha256":  "67BCC118AC830AB498CBC9787F0A8D3714AC4CAF454977EC42227455E7ABB0B6"
+                           },
+                           {
+                               "path":  "assets/tiles/ascendancy-tram-car-horizontal-v1.svg",
+                               "sha256":  "67D84BAFBC94AD79068CBCF450AB17DFD83D1D5B3C21137DDEB51BB3BC184E3A"
+                           },
+                           {
+                               "path":  "assets/tiles/ascendancy-tram-car-vertical-v1.svg",
+                               "sha256":  "064C40110D07D09AA0B1C3B378ED402F55C534EB89A095D2ED68A9B5C2E225BC"
+                           }
+                       ],
+    "servedHttpFiles":  [
+                            {
+                                "path":  "module.json",
+                                "httpStatus":  200,
+                                "bytes":  719,
+                                "sha256":  "467B56314411C5B40D7505D5DA2A0E4B2F9E8F7A182B3AB413CE7F4E1EC5673B",
+                                "matchedInstalledFile":  true
+                            },
+                            {
+                                "path":  "src/module-byte-attestation.json",
+                                "httpStatus":  200,
+                                "bytes":  523,
+                                "sha256":  "08ECF060A40730D1DB3718C80965BF9CEA7AB6642C6DCC9DF869A1F326F06E4D",
+                                "matchedInstalledFile":  true
+                            },
+                            {
+                                "path":  "src/module.js",
+                                "httpStatus":  200,
+                                "bytes":  117022,
+                                "sha256":  "D8FC92676D5A0D275DF442125BCC8E45B44FEDF45B999E1424DA634F25D1A8F6",
+                                "matchedInstalledFile":  true
+                            },
+                            {
+                                "path":  "src/entry-20260823-program-scene-v2.js",
+                                "httpStatus":  200,
+                                "bytes":  34,
+                                "sha256":  "0F2FBB63FFE79D5A7AD0D807C4CFAA57762EA3B88BCB1096A7D568D88C46D777",
+                                "matchedInstalledFile":  true
+                            }
+                        ],
+    "acceptance":  {
+                       "moduleFilesHashVerified":  35,
+                       "httpServedFilesHashVerified":  4,
+                       "foundrySupervisorReady":  true,
+                       "foundryWorldDocumentWriteCountFromSupervisor":  0,
+                       "gmIdentityVerified":  false,
+                       "moduleEnabledInFoundryWorldVerified":  false,
+                       "behavioralTestVerified":  false,
+                       "milestoneAccepted":  false
+                   }
+}
