@@ -46,13 +46,17 @@ describe("DiceBox global image prompt clean-restart gate", () => {
   it("rejects admitted derivative prompts", () => blocks({...retry,attemptedPreviousPromptVariation:true},"REJECTED_PROMPT_VARIATION"));
   it("rejects missing attestation", () => blocks({...retry,independentRecompositionAttested:false},"INDEPENDENT_AUTHORING_NOT_ATTESTED"));
   it("rejects missing accepted specification", () => blocks({...retry,acceptedSourceId:""},"CANONICAL_SOURCE_REQUIRED"));
-  it("requires previous prompt archive", () => blocks({...retry,previousAttempts:[{...history[0],archived:false}]},"UNARCHIVED_PREVIOUS_ATTEMPT"));
-  it("requires retry lineage", () => blocks({...retry,retryOfAttemptId:undefined},"RETRY_PREDECESSOR_REQUIRED"));
+  it("requires previous prompt archive", () => blocks({...retry,previousAttempts:[{...history[0]!,archived:false}]},"UNARCHIVED_PREVIOUS_ATTEMPT"));
+  it("requires retry lineage", () => {
+    const { retryOfAttemptId: originalLineage, ...candidate } = retry;
+    expect(originalLineage).toBe("scene-01");
+    blocks(candidate,"RETRY_PREDECESSOR_REQUIRED");
+  });
   it("rejects repeated attempt IDs", () => blocks({...retry,attemptId:"scene-01"},"REPEATED_ATTEMPT_ID"));
   it("rejects a failed image as generation reference", () => blocks({...retry,referenceImageIds:["failed-image-01"],approvedReferenceImageIds:["failed-image-01"]},"FAILED_IMAGE_AS_INPUT"));
   it("rejects unapproved reference images", () => blocks({...retry,referenceImageIds:["unknown-image"]},"UNAPPROVED_IMAGE_REFERENCE"));
   it("allows an approved grayscale as painterly-stage source", () => {
-    const accepted=[{...history[0],outcome:"accepted" as const,outputImageId:"approved-grayscale"}];
+    const accepted=[{...history[0]!,outcome:"accepted" as const,outputImageId:"approved-grayscale"}];
     const candidate={...retry,stage:"painterly",previousAttempts:accepted,
       referenceImageIds:["approved-grayscale"],approvedReferenceImageIds:["approved-grayscale"]};
     expect(gate(candidate).status).toBe("PASS");

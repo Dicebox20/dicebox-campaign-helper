@@ -9,15 +9,17 @@ Governing authority: docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md, Priority 0, lines
 | Requirement | Concrete proof expected | Current state |
 | --- | --- | --- |
 | Authenticated ChatGPT control | ChatGPT-origin identity, approved tool scope and authenticated DCH app session | Missing |
-| Environment enumeration | Source tree and capability discovery with exact checkout version | Missing |
+| Environment enumeration | Source tree and capability discovery with exact checkout version | Collecting |
 | Isolated dev branch | Unique clean source baseline and reversible change boundary | Missing |
-| ChatGPT-initiated edit and build | Exact user-directed edit, before/after content, build command/exit receipt | Missing |
+| ChatGPT-initiated edit and build | Exact user-directed edit, before/after content, build command/exit receipt | Collecting |
 | Automated build and install | Build output plus DCH module installed in disposable Foundry; verified by readback | Missing |
-| Automated tests | Targeted test command, results and independent verification | Missing |
+| Automated tests | Targeted test command, results and independent verification | Collecting |
 | Diagnose and repair | Controlled recoverable failure, diagnosis, repair and re-verification receipt | Missing |
-| Self-contained provenance | Commit/hash chain, timestamps, tool identities and linked receipts | Missing |
+| Self-contained provenance | Commit/hash chain, timestamps, tool identities and linked receipts | Collecting |
 
 Environment enumeration evidence is now **collecting** in `docs/evidence/m0-bootstrap/environment-enumeration-20261113-0933.json`. This is a content-addressed observation of the clean source baseline and toolchain, not independently accepted app-control proof. The integrity self-test exercises intact, tampered and missing receipt files.
+
+A separate isolated build-repair observation is now **collecting** in docs/evidence/m0-bootstrap/chatgpt-edit-build-repair-20261113-1001.json: strict TypeScript test fixture correction, production desktop build PASS, 19 focused tests PASS, but the full suite had 20 failures out of 1,322 tests across 12 files. This does not establish successful Foundry installation, DCH desktop authentication, green full regression or M0 acceptance.
 
 Worker A's first M0 preflight was blocked before mutation in an unclean checkout. Worker B's first routing audit was read-only. Neither constitutes bootstrap acceptance. Prior Stage 12 engineering gates and older ADR-0002 “M0” packaging terminology do not certify the Roadmap v2 product M0.
 

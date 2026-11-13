@@ -1,0 +1,116 @@
+{
+    "schemaVersion":  "1.0.0",
+    "receiptId":  "dch-m0-chatgpt-edit-build-20261113-1001",
+    "milestone":  "M0",
+    "acceptanceState":  "COLLECTING_NOT_ACCEPTED",
+    "observedAtUtc":  "2026-11-13T18:02:20.2478992Z",
+    "origin":  {
+                   "initiator":  "ChatGPT Foreman, owner-authorized bounded development turn",
+                   "execution":  "Dicebox Bridge powershell_execute authenticated to exact ChatGPT session",
+                   "verifiedDchDesktopAppAuthentication":  false
+               },
+    "source":  {
+                   "repository":  "Dicebox20/dicebox-campaign-helper",
+                   "isolatedBranch":  "owner/dch-m0-build-repair-20261113",
+                   "baseCommit":  "e2e266b0eab4a29fe4266bc69e01112cc1814d13",
+                   "cleanBeforeChanges":  true,
+                   "changedFile":  "tests/image-prompt-clean-restart.test.ts",
+                   "beforeGitBlobSha1":  "671b6f2a5a90e304ff6601e87e4ff93ecca7ea87",
+                   "afterGitBlobSha1":  "208cf09b3a58a5765a21eae7e0a00c0c024f1567",
+                   "modifiedFileSha256":  "2D2394F3B2B5C102A6AB7B9472364413F4226238A3B859825A86DB1D3A2DA6EB",
+                   "editDescription":  "Make fixed fixture history indexing explicit and omit readonly optional retryOfAttemptId in a negative test rather than setting it to undefined."
+               },
+    "execution":  {
+                      "initialBuildFailure":  {
+                                                  "reason":  "Three TS2375/TS2379 exactOptionalPropertyTypes errors in image-prompt-clean-restart.test.ts",
+                                                  "priorAttempt":  "dch-foreman-0928-m0-isolated-build-baseline-v1",
+                                                  "exitCode":  2
+                                              },
+                      "dependencyInstall":  {
+                                                "command":  "npm ci --no-audit --no-fund",
+                                                "requestId":  "dch-foreman-m0-next20-build-repair-npm-ci-v1",
+                                                "exitCode":  0
+                                            },
+                      "verifiedBuild":  {
+                                            "command":  "npm run build",
+                                            "requestId":  "dch-foreman-m0-next20-build-repair-build-proof-v1",
+                                            "exitCode":  0,
+                                            "completedAtUtc":  "2026-11-13T18:01:01.0508110Z",
+                                            "result":  "TypeScript package checks and production Vite desktop bundle succeeded"
+                                        },
+                      "targetedTests":  {
+                                            "command":  "npm test -- tests/image-prompt-clean-restart.test.ts",
+                                            "requestId":  "dch-foreman-m0-next20-build-repair-targeted-test-proof-v1",
+                                            "exitCode":  0,
+                                            "passed":  19,
+                                            "failed":  0,
+                                            "completedAtUtc":  "2026-11-13T18:01:15.2160177Z"
+                                        },
+                      "priorFullSuite":  {
+                                             "command":  "npm test -- --reporter=json --outputFile=\u003clocal-temp-report\u003e",
+                                             "requestId":  "dch-foreman-m0-next20-full-test-structured-classification-v2",
+                                             "priorBaseCommit":  "51dfd6633622882b623ef872c0a85c4cb0ae580c",
+                                             "status":  "FAILED",
+                                             "passed":  1302,
+                                             "failed":  20,
+                                             "total":  1322,
+                                             "failedTestFiles":  [
+                                                                     {
+                                                                         "testFile":  "campaign-helper-map-lab-desktop-preview.test.ts",
+                                                                         "failedTests":  1
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "campaign-helper-map-lab.test.ts",
+                                                                         "failedTests":  1
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "current-foundry-artifact-spec-m1259.test.ts",
+                                                                         "failedTests":  1
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "dicebox-foundry-live-bridge-host.test.ts",
+                                                                         "failedTests":  2
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "foundry-package.test.ts",
+                                                                         "failedTests":  1
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "foundry-served-worker.test.ts",
+                                                                         "failedTests":  2
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "knowledge-base-query.test.ts",
+                                                                         "failedTests":  1
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "regionwright-handoff-audit-contract.test.ts",
+                                                                         "failedTests":  1
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "regionwright-handoff-preview-contract.test.ts",
+                                                                         "failedTests":  1
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "regionwright-handoff-state-readback-contract.test.ts",
+                                                                         "failedTests":  3
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "regionwright-loaded-identity-attestation.test.ts",
+                                                                         "failedTests":  3
+                                                                     },
+                                                                     {
+                                                                         "testFile":  "regionwright-staged-fixture-entrypoint-contract.test.ts",
+                                                                         "failedTests":  3
+                                                                     }
+                                                                 ],
+                                             "note":  "Full-suite failure classification is from the earlier isolated M0 worktree; this report is not a fresh full-suite run of this exact branch."
+                                         }
+                  },
+    "openGates":  [
+                      "Desktop DCH application authentication",
+                      "Foundry module install and runtime verification",
+                      "End-to-end repair and independent acceptance",
+                      "Full 1322-test regression suite remains failing"
+                  ]
+}
