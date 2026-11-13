@@ -63,3 +63,19 @@ The test was adjusted in an isolated worktree to import the executable through n
 - Remaining 11 failing test files correspond to the prior baseline excluding the now-passing bridge-host test file.
 - No production Bridge/DCH host logic, live Foundry world, or external Regionwright fixture was modified by this patch.
 - Full suite remains failing; M0 product acceptance remains NOT_ACCEPTED and must not be inferred from two fixed test-loader failures.
+## Committed knowledge-base count reconciliation (November 13, 2026)
+
+A single knowledge-base summary expectation was stale relative to the committed read-only database. The original test expected sources 2083, facts 1658, decisions 1678, trials 1260, research subjects 41 and milestones 117. Direct immutable-mode read-only SQLite counts independently confirmed the committed database actually contains sources 2092, facts 1670, decisions 1687, trials 1269, research subjects 45 and milestones 117.
+
+- Database: database/dicebox_campaign_helper_knowledge.sqlite (SHA256 BB1884D58CDA8FA603B3DF72C3E94A19D479D493F2E061001CFD0B08B5041A88)
+- Repair scope: only tests/knowledge-base-query.test.ts, summary expected counts and pinned database hash comment; no database or query implementation writes
+- Canonical starting main: a8821437d4ef2b5b7c448ecb9d45863acaf07513
+- Immutable read-only query receipt: dch-foreman-m0-1102-knowledge-db-independent-counts-v002
+- Focused baseline: dch-foreman-m0-1105-knowledge-base-query-baseline-v001, 95 PASS / 1 FAIL
+- Updated focused suite: dch-foreman-m0-1104-knowledge-test-targeted-v001, all 96 PASS
+- Desktop npm run build: dch-foreman-m0-1104-knowledge-build-after-count-update-v001, PASS
+- Full npm test: dch-foreman-m0-1105-knowledge-full-suite-regression-v002, 1305 PASS / 17 FAIL / 1322 total across 301 files; ten files still failing
+- Full-suite local JSON report SHA256: 59120411FF3D9DD2EB0401C93B41F21184518D1E49C1BEEB4F0DF018EFF163D2 (local untracked report, not published)
+- This fixes exactly one additional baseline failure after PR 28; no full-suite or M0 acceptance claim is implied.
+
+The remaining 17 tests still fail, and native-GM module activation as well as authenticated caller-thread proof require separate evidence. M0 product status remains NOT_ACCEPTED.
