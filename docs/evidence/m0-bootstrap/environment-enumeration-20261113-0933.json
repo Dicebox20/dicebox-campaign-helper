@@ -1,0 +1,37 @@
+{
+    "schemaVersion":  "1.0.0",
+    "receiptId":  "dch-m0-env-enumeration-20261113-0933",
+    "milestone":  "M0",
+    "criterion":  "environment-enumeration",
+    "state":  "COLLECTING_NOT_ACCEPTED",
+    "observedAtUtc":  "2026-11-13T17:33:32.6781790Z",
+    "commandSource":  {
+                          "transport":  "Dicebox Bridge powershell_execute",
+                          "requestId":  "dch-foreman-0928-m0-collect-environment-receipt-v1",
+                          "capability":  "authenticated-local-PowerShell-execution-only",
+                          "dchDesktopAppAuthenticationProven":  false
+                      },
+    "repository":  {
+                       "name":  "Dicebox20/dicebox-campaign-helper",
+                       "source":  "GitHub main",
+                       "isolatedBranch":  "owner/dch-m0-evidence-collection-20261113",
+                       "commit":  "4c47d4f8708cfb16159bf3f032f966979d5db778",
+                       "cleanBaseline":  true,
+                       "canonicalRoadmapSha256":  "3E400D33D2EEE5B5163D9A26E4E8E7F2F199F7E6A2B2368F95ECA667825DF936"
+                   },
+    "toolchain":  {
+                      "node":  "v24.18.0",
+                      "npm":  "11.16.0"
+                  },
+    "checks":  {
+                   "activeSliceCommand":  "node tools/check-active-slice.mjs docs/ACTIVE-PROGRAM-SLICE.json",
+                   "activeSliceStatus":  "PASS",
+                   "activeSliceProgramPriority":  "M0",
+                   "activeSliceReadyClaim":  false,
+                   "m0RegisterCommand":  "node tools/check-m0-bootstrap-evidence.mjs",
+                   "m0RegisterIntegrityStatus":  "PASS",
+                   "m0MilestoneAcceptance":  "NOT_ACCEPTED",
+                   "verifiedCriteria":  0
+               },
+    "scope":  "Read-only local environment enumeration captured in an isolated clean checkout; only the evidence file/register are edited afterwards. This does not prove DCH app authentication, a source-code edit/build/install or automatic repair."
+}
