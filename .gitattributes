@@ -5,3 +5,10 @@ packages/dicebox-foundry/src/ascendancy-installer.js text eol=lf
 packages/dicebox-foundry/ascendancy-campaign-package.json text eol=lf
 packages/dicebox-foundry/src/foundry-live-bridge.js text eol=lf
 packages/dicebox-foundry/src/module.js text eol=lf
+
+# Historic Regionwright v4/v5 disposable fixture contracts pin exact LF bytes.
+# These files are already tracked; keep caller/GMs and runtime behavior unchanged.
+work/foundry-fixture-data-v4/Data/modules/regionwright/premium/scripts/premium-module-readback-rw-0.1.5-20260907-readback-1.js text eol=lf
+work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js text eol=lf
+work/foundry-fixture-data-v5/Data/modules/regionwright/scripts/module-readback-rw-0.1.5-20260907-identity-1.js text eol=lf
+work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/premium-module-readback-rw-0.1.5-20260907-identity-1.js text eol=lf
