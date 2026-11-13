@@ -19,7 +19,8 @@ describe("read-only knowledge-base query service", () => {
   it("returns a deterministic summary from the compiled database", () => {
     const result = query("--kind", "summary");
     expect(result).toMatchObject({ schemaVersion: "0.1.0", mode: "read-only", kind: "summary" });
-      expect(result.rows[0]).toMatchObject({ sources: 2083, facts: 1658, decisions: 1678, trials: 1260, research_subjects: 41, milestones: 117 });
+    // Counts pinned to committed knowledge SQLite SHA256 BB1884D58CDA8FA603B3DF72C3E94A19D479D493F2E061001CFD0B08B5041A88.
+    expect(result.rows[0]).toMatchObject({ sources: 2092, facts: 1670, decisions: 1687, trials: 1269, research_subjects: 45, milestones: 117 });
   });
 
   it("returns the M227 fixed-root cross-process mutation-exclusion authorization", () => {
