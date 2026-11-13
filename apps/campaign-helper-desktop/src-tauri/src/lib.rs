@@ -1569,6 +1569,7 @@ pub fn run() {
             detach_missing_asset,
             preview_broken_reference_detach,
             detach_broken_reference,
+            #[cfg(debug_assertions)]
             prepare_broken_reference_detach_fixture,
             #[cfg(debug_assertions)]
             prepare_broken_reference_ui_lifecycle_fixture,
