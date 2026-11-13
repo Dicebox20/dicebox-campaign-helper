@@ -17,6 +17,8 @@ Governing authority: docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md, Priority 0, lines
 | Diagnose and repair | Controlled recoverable failure, diagnosis, repair and re-verification receipt | Missing |
 | Self-contained provenance | Commit/hash chain, timestamps, tool identities and linked receipts | Missing |
 
+Environment enumeration evidence is now **collecting** in `docs/evidence/m0-bootstrap/environment-enumeration-20261113-0933.json`. This is a content-addressed observation of the clean source baseline and toolchain, not independently accepted app-control proof. The integrity self-test exercises intact, tampered and missing receipt files.
+
 Worker A's first M0 preflight was blocked before mutation in an unclean checkout. Worker B's first routing audit was read-only. Neither constitutes bootstrap acceptance. Prior Stage 12 engineering gates and older ADR-0002 “M0” packaging terminology do not certify the Roadmap v2 product M0.
 
 ## Commands

@@ -1,23 +1,74 @@
 {
-  "schemaVersion": "1.0.0",
-  "programMilestone": "M0",
-  "roadmapFile": "docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
-  "roadmapSha256": "3E400D33D2EEE5B5163D9A26E4E8E7F2F199F7E6A2B2368F95ECA667825DF936",
-  "recordStatus": "NOT_ACCEPTED",
-  "evidenceRoot": "docs/evidence/m0-bootstrap",
-  "criteria": [
-    {"id": "authenticated-chatgpt-control", "state": "missing", "receipts": []},
-    {"id": "environment-enumeration", "state": "missing", "receipts": []},
-    {"id": "isolated-dev-branch", "state": "missing", "receipts": []},
-    {"id": "chatgpt-initiated-edit-and-build", "state": "missing", "receipts": []},
-    {"id": "automated-build-and-install", "state": "missing", "receipts": []},
-    {"id": "automated-tests", "state": "missing", "receipts": []},
-    {"id": "diagnose-and-repair-loop", "state": "missing", "receipts": []},
-    {"id": "self-contained-provenance", "state": "missing", "receipts": []}
-  ],
-  "notes": [
-    "Current M0 status remains not accepted; legacy Stage 12 technical gates are non-certifying.",
-    "Worker A's earlier preflight stopped before mutation. Worker B's routing audit is read-only.",
-    "No successful ChatGPT edit, build, install and verified Foundry receipt is recorded in this register."
-  ]
+    "schemaVersion":  "1.0.0",
+    "programMilestone":  "M0",
+    "roadmapFile":  "docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
+    "roadmapSha256":  "3E400D33D2EEE5B5163D9A26E4E8E7F2F199F7E6A2B2368F95ECA667825DF936",
+    "recordStatus":  "NOT_ACCEPTED",
+    "evidenceRoot":  "docs/evidence/m0-bootstrap",
+    "criteria":  [
+                     {
+                         "id":  "authenticated-chatgpt-control",
+                         "state":  "missing",
+                         "receipts":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "environment-enumeration",
+                         "state":  "collecting",
+                         "receipts":  [
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/environment-enumeration-20261113-0933.json",
+                                              "sha256":  "7EB90CE5EE9A664AF42B68D5B83590B08E2E0D9297161A633D0581F0DB699A61"
+                                          }
+                                      ]
+                     },
+                     {
+                         "id":  "isolated-dev-branch",
+                         "state":  "missing",
+                         "receipts":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "chatgpt-initiated-edit-and-build",
+                         "state":  "missing",
+                         "receipts":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "automated-build-and-install",
+                         "state":  "missing",
+                         "receipts":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "automated-tests",
+                         "state":  "missing",
+                         "receipts":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "diagnose-and-repair-loop",
+                         "state":  "missing",
+                         "receipts":  [
+
+                                      ]
+                     },
+                     {
+                         "id":  "self-contained-provenance",
+                         "state":  "missing",
+                         "receipts":  [
+
+                                      ]
+                     }
+                 ],
+    "notes":  [
+                  "Current M0 status remains not accepted; legacy Stage 12 technical gates are non-certifying.",
+                  "Worker A\u0027s earlier preflight stopped before mutation. Worker B\u0027s routing audit is read-only.",
+                  "No successful ChatGPT edit, build, install and verified Foundry receipt is recorded in this register."
+              ]
 }
