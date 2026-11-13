@@ -15,3 +15,6 @@ work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/premium-m
 
 # Exact M0 evidence receipt integrity is pinned to canonical LF checkout bytes.
 docs/evidence/m0-bootstrap/dch-v3-static-served-pins-20261113-1432.json text eol=lf
+
+# DCH M0 executable WebView evidence receipt must preserve exact LF hash on Windows.
+docs/evidence/m0-bootstrap/dch-native-desktop-transport-button-20261113-1533.json text eol=lf

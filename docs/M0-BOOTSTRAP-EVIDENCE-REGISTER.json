@@ -68,6 +68,10 @@
                                           {
                                               "path":  "docs/evidence/m0-bootstrap/dch-v3-static-served-pins-20261113-1432.json",
                                               "sha256":  "312968A86FE14F0F36859BF9B38B828951349E9818727F9E2A0B5BF0FC969448"
+                                          },
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/dch-native-desktop-transport-button-20261113-1533.json",
+                                              "sha256":  "C2ACC9336B8725FF5884FD5DB5AE21A99AAEFDC71B50BB8B7041FFBA90FF8723"
                                           }
                                       ]
                      },
@@ -89,6 +93,10 @@
                                           {
                                               "path":  "docs/evidence/m0-bootstrap/dch-v3-static-served-pins-20261113-1432.json",
                                               "sha256":  "312968A86FE14F0F36859BF9B38B828951349E9818727F9E2A0B5BF0FC969448"
+                                          },
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/dch-native-desktop-transport-button-20261113-1533.json",
+                                              "sha256":  "C2ACC9336B8725FF5884FD5DB5AE21A99AAEFDC71B50BB8B7041FFBA90FF8723"
                                           }
                                       ]
                      }
