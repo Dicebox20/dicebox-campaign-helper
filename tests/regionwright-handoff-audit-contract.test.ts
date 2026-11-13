@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 
 const packagePath = "packages/dicebox-foundry/ascendancy-campaign-package.json";
 const auditPaths = [
-  "C:/Users/rujie/Documents/Region Editor/premium/scripts/ascendancy-live-installer.js",
+  "C:/Users/rujie/Documents/Region Editor/modules/regionwright/scripts/ascendancy-live-installer.js",
   "work/foundry-fixture-data-v4/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
   "work/foundry-fixture-data-v5/Data/modules/regionwright/premium/scripts/ascendancy-live-installer.js",
 ];
