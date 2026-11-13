@@ -46,3 +46,20 @@ Status: TRIAGED, NOT RESOLVED. Governing product roadmap: DCH Roadmap v2, priori
 - The evidence register remains M0 NOT_ACCEPTED and 0 independently verified criteria. Preserve the exact source and required world/owner controls.
 
 Recorded by ChatGPT Foreman in isolated source worktree from merged main. No external Regionwright or Foundry world files were edited for this triage.
+
+## Native Node loader follow-up (November 13, 2026)
+
+The two baseline failures in tests/dicebox-foundry-live-bridge-host.test.ts reproduced under Vitest as a SyntaxError at the dynamic import of the shebang-bearing executable entrypoint. A separate native Node ES module import succeeded (8 allowed operations, expected loopback allow/remote deny). The production bridge source remained unchanged.
+
+The test was adjusted in an isolated worktree to import the executable through native Node child-process execution, preserving all original assertions for operations, origin restrictions, argument validation, and WebSocket frame behavior.
+
+- Clean starting main commit: 29a8f95b812b05279fc18348e41ab8aaecbb2afe
+- Native Node read-only import probe: dch-foreman-m0-bridge-host-native-import-probe-file-20261113-v001, PASS
+- Baseline focused test: dch-foreman-m0-native-host-test-baseline-20261113-v001, FAIL 2/2
+- Corrected focused test: dch-foreman-m0-native-host-test-targeted-after-fix-20261113-v001, PASS 2/2
+- Desktop npm run build: dch-foreman-m0-native-host-test-full-build-20261113-v001, PASS
+- Full-suite run: dch-foreman-m0-native-host-postfix-full-suite-20261113-v001, 1304 PASS, 18 FAIL, 1322 total, 301 test files, completed 2026-11-13 18:28:01Z
+- Full-suite structured output SHA256: 49D11E28144E831BBBD563DF57ADE5002082014D06D4C2821269080D9CE72329 (local temporary report kept outside repository)
+- Remaining 11 failing test files correspond to the prior baseline excluding the now-passing bridge-host test file.
+- No production Bridge/DCH host logic, live Foundry world, or external Regionwright fixture was modified by this patch.
+- Full suite remains failing; M0 product acceptance remains NOT_ACCEPTED and must not be inferred from two fixed test-loader failures.
