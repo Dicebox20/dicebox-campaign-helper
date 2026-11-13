@@ -50,6 +50,10 @@
                                           {
                                               "path":  "docs/evidence/m0-bootstrap/foundry-v3-module-install-20261113-1045.json",
                                               "sha256":  "267296F9546A76DA5E12BB69AB781F9AE035F5E184D0BF47545713491ED4F7AB"
+                                          },
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/dch-v3-static-served-pins-20261113-1432.json",
+                                              "sha256":  "B038956C144DD7BC0EB4108312B0068C1235490218B6D4E0ADCE8FA65636D7C1"
                                           }
                                       ]
                      },
@@ -60,6 +64,10 @@
                                           {
                                               "path":  "docs/evidence/m0-bootstrap/chatgpt-edit-build-repair-20261113-1001.json",
                                               "sha256":  "44BBCD4E81478FE4FBC90197439B37418492C49BF6CE3C0428E1D4BEDCFA8281"
+                                          },
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/dch-v3-static-served-pins-20261113-1432.json",
+                                              "sha256":  "B038956C144DD7BC0EB4108312B0068C1235490218B6D4E0ADCE8FA65636D7C1"
                                           }
                                       ]
                      },
@@ -77,6 +85,10 @@
                                           {
                                               "path":  "docs/evidence/m0-bootstrap/chatgpt-edit-build-repair-20261113-1001.json",
                                               "sha256":  "44BBCD4E81478FE4FBC90197439B37418492C49BF6CE3C0428E1D4BEDCFA8281"
+                                          },
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/dch-v3-static-served-pins-20261113-1432.json",
+                                              "sha256":  "B038956C144DD7BC0EB4108312B0068C1235490218B6D4E0ADCE8FA65636D7C1"
                                           }
                                       ]
                      }

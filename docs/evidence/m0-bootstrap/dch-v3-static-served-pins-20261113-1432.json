@@ -1,0 +1,99 @@
+{
+    "schemaVersion":  "1.0.0",
+    "receiptId":  "dch-m0-v3-static-served-pins-20261113-1432",
+    "status":  "COLLECTING_NOT_ACCEPTED",
+    "operation":  "dch.m0.disposable-v3.static-served-byte-check",
+    "recordedAtUtc":  "2026-11-13T22:33:20.9094779Z",
+    "source":  {
+                   "repository":  "Dicebox20/dicebox-campaign-helper",
+                   "canonicalCommit":  "d74cb9f3b5c444b645fdb5662d727c6f0e7122d7",
+                   "toolPath":  "tools/check-m0-dch-served-module.mjs",
+                   "powerShellRequestId":  "dch-foreman-1433-fresh-clean-main-actual-served-bytes-v001",
+                   "rawObservationSha256":  "A9CDB3C63247CDF0B05A501547F197561AFE695DCC0EFC859A54B8D27A62A628"
+               },
+    "fixture":  {
+                    "dataRoot":  "work/foundry-fixture-data-v3",
+                    "worldId":  "dbx-test-world",
+                    "worldIdentityObserved":  false,
+                    "systemId":  "dnd5e",
+                    "foundryVersion":  "14.367",
+                    "systemVersion":  "5.3.3",
+                    "port":  30002,
+                    "moduleId":  "dicebox-campaign-helper",
+                    "moduleVersion":  "0.1.15"
+                },
+    "staticCheck":  {
+                        "status":  "PASS_STATIC_BYTES_ONLY",
+                        "expectedModuleBytes":  114787,
+                        "expectedModuleSha256":  "cee29eb17aac6b53da42e2f35aaca4b521dc4f2338e24f4252f79b62891eee1f",
+                        "sourceMatchesPinnedSidecar":  true,
+                        "servedModuleMatchesPin":  true,
+                        "httpRequests":  3,
+                        "allowlistedReadOnlyGet":  true,
+                        "observations":  [
+                                             {
+                                                 "path":  "src/module-byte-attestation.json",
+                                                 "requestMethod":  "GET",
+                                                 "httpStatus":  200,
+                                                 "byteLength":  523,
+                                                 "servedSha256":  "08ecf060a40730d1db3718c80965bf9cea7ab6642c6dcc9df869a1f326f06e4d",
+                                                 "sourceSha256":  "08ecf060a40730d1db3718c80965bf9cea7ab6642c6dcc9df869a1f326f06e4d",
+                                                 "sourceServedMatch":  true,
+                                                 "fetchBlocked":  null
+                                             },
+                                             {
+                                                 "path":  "src/module.js",
+                                                 "requestMethod":  "GET",
+                                                 "httpStatus":  200,
+                                                 "byteLength":  114787,
+                                                 "servedSha256":  "cee29eb17aac6b53da42e2f35aaca4b521dc4f2338e24f4252f79b62891eee1f",
+                                                 "sourceSha256":  "cee29eb17aac6b53da42e2f35aaca4b521dc4f2338e24f4252f79b62891eee1f",
+                                                 "sourceServedMatch":  true,
+                                                 "fetchBlocked":  null
+                                             },
+                                             {
+                                                 "path":  "src/foundry-live-bridge.js",
+                                                 "requestMethod":  "GET",
+                                                 "httpStatus":  200,
+                                                 "byteLength":  12288,
+                                                 "servedSha256":  "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+                                                 "sourceSha256":  "2b4f79997cab9c963c7f3826bfd2baf2b3dec256f630970a8d7cdd983743aa87",
+                                                 "sourceServedMatch":  true,
+                                                 "fetchBlocked":  null
+                                             }
+                                         ],
+                        "blockers":  [
+
+                                     ]
+                    },
+    "validation":  {
+                       "newNodeSelfTestsPassed":  7,
+                       "dchHostModuleDesktopFocusedTestsPassed":  11,
+                       "desktopProductionBuild":  "PASS",
+                       "m0EvidenceIntegrity":  "PASS",
+                       "m0IndependentCriteriaVerified":  0,
+                       "m0IndependentCriteriaTotal":  8,
+                       "testReceipt":  "dch-foreman-1425-served-module-dch-test-build-m0-gates-v001",
+                       "newNodeTestReceipt":  "dch-foreman-1424-dch-served-module-selftest-7-v001"
+                   },
+    "acceptance":  {
+                       "status":  "NOT_ACCEPTED",
+                       "staticServedBytesVerified":  true,
+                       "authenticatedChatGptCaller":  "NOT_OBSERVED",
+                       "activeElectedGm":  "NOT_OBSERVED",
+                       "foundryUserCollection":  "NOT_OBSERVED",
+                       "browserLoadedModuleExecution":  "NOT_OBSERVED",
+                       "exactWorldGmSession":  "NOT_OBSERVED",
+                       "desktopModuleRoundtrip":  "NOT_OBSERVED",
+                       "worldDocumentWrites":  0,
+                       "noMutation":  true,
+                       "doesNotProve":  [
+                                            "authenticated active GM",
+                                            "executing module bytes",
+                                            "trusted ChatGPT connector caller",
+                                            "Foundry current User collection",
+                                            "DCH Desktop to module operation",
+                                            "complete M0 self-development bootstrap"
+                                        ]
+                   }
+}
