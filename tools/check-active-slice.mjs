@@ -414,7 +414,7 @@ export function evaluateActiveSlice(card) {
 }
 
 async function main() {
-  const cardPath = process.argv[2] ?? "docs/ACTIVE-TRAM-SLICE.json";
+  const cardPath = process.argv[2] ?? "docs/ACTIVE-PROGRAM-SLICE.json";
   const card = JSON.parse(await readFile(cardPath, "utf8"));
   const result = evaluateActiveSlice(card);
   process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
