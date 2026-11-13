@@ -25,9 +25,12 @@
                      },
                      {
                          "id":  "isolated-dev-branch",
-                         "state":  "missing",
+                         "state":  "collecting",
                          "receipts":  [
-
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/foundry-v3-module-install-20261113-1045.json",
+                                              "sha256":  "267296F9546A76DA5E12BB69AB781F9AE035F5E184D0BF47545713491ED4F7AB"
+                                          }
                                       ]
                      },
                      {
@@ -42,9 +45,12 @@
                      },
                      {
                          "id":  "automated-build-and-install",
-                         "state":  "missing",
+                         "state":  "collecting",
                          "receipts":  [
-
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/foundry-v3-module-install-20261113-1045.json",
+                                              "sha256":  "267296F9546A76DA5E12BB69AB781F9AE035F5E184D0BF47545713491ED4F7AB"
+                                          }
                                       ]
                      },
                      {
