@@ -46,6 +46,7 @@ import {
 } from "./geometry-kernel";
 import { SceneViewport } from "./SceneViewport";
 import { CampaignHelperMapLabPreview } from "./CampaignHelperMapLabPreview";
+import { DchFoundryTransportPanel } from "./DchFoundryTransportPanel";
 import { CampaignHelperMapLabOverlayReview } from "./CampaignHelperMapLabOverlayReview";
 import {
   AUDIO_ASSET_ROLE_SELF_TEST_WAV_BYTES,
@@ -7044,6 +7045,7 @@ export function App() {
                 : "No Codex technical job run.")}
           </output>
         </section>
+        <DchFoundryTransportPanel />
       </nav>
 
       <main className="workspace" aria-label="Scene editor">

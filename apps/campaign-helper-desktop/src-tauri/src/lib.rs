@@ -1463,6 +1463,72 @@ async fn run_codex_technical_job() -> Result<Value, String> {
         .map_err(|_| "Codex technical-job receipt was invalid JSON.".to_string())
 }
 
+#[derive(Serialize)]
+#[serde(rename_all = "camelCase")]
+struct DchLocalBridgeTransportProbe {
+    operation: &'static str,
+    status: &'static str,
+    endpoint: &'static str,
+    transport: &'static str,
+    authenticated_gm_verified: bool,
+    world_verified: bool,
+    module_runtime_verified: bool,
+    no_foundry_write: bool,
+}
+
+fn classify_dch_local_bridge_transport(port_reachable: bool) -> DchLocalBridgeTransportProbe {
+    DchLocalBridgeTransportProbe {
+        operation: "dch.desktop.foundry.local-bridge-transport",
+        status: "BLOCKED_AUTHENTICATED_RUNTIME_NOT_PROVEN",
+        endpoint: "127.0.0.1:8797",
+        transport: if port_reachable {
+            "DEFAULT_PORT_REACHABLE_UNVERIFIED"
+        } else {
+            "DEFAULT_PORT_NOT_REACHABLE"
+        },
+        authenticated_gm_verified: false,
+        world_verified: false,
+        module_runtime_verified: false,
+        no_foundry_write: true,
+    }
+}
+
+#[tauri::command]
+fn probe_dch_local_bridge_transport() -> DchLocalBridgeTransportProbe {
+    // TCP is transport-only. A listening socket is not a trusted elected GM,
+    // an authenticated ChatGPT caller, or an enabled DCH Foundry module.
+    let address = std::net::SocketAddr::from(([127, 0, 0, 1], 8797));
+    let reachable =
+        std::net::TcpStream::connect_timeout(&address, std::time::Duration::from_millis(350))
+            .is_ok();
+    classify_dch_local_bridge_transport(reachable)
+}
+
+#[cfg(test)]
+mod dch_local_bridge_transport_tests {
+    use super::classify_dch_local_bridge_transport;
+
+    #[test]
+    fn listening_port_does_not_promote_foundry_authority() {
+        let result = classify_dch_local_bridge_transport(true);
+        assert_eq!(result.transport, "DEFAULT_PORT_REACHABLE_UNVERIFIED");
+        assert_eq!(result.status, "BLOCKED_AUTHENTICATED_RUNTIME_NOT_PROVEN");
+        assert!(!result.authenticated_gm_verified);
+        assert!(!result.world_verified);
+        assert!(!result.module_runtime_verified);
+        assert!(result.no_foundry_write);
+    }
+
+    #[test]
+    fn unreachable_port_cannot_claim_module_runtime() {
+        let result = classify_dch_local_bridge_transport(false);
+        assert_eq!(result.transport, "DEFAULT_PORT_NOT_REACHABLE");
+        assert_eq!(result.status, "BLOCKED_AUTHENTICATED_RUNTIME_NOT_PROVEN");
+        assert!(!result.authenticated_gm_verified);
+        assert!(!result.module_runtime_verified);
+    }
+}
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
@@ -1521,6 +1587,7 @@ pub fn run() {
             campaign_director_credential_status,
             set_campaign_director_api_key,
             clear_campaign_director_api_key,
+            probe_dch_local_bridge_transport,
             probe_codex_app_server,
             request_campaign_director,
             request_campaign_director_managed,
