@@ -1,3 +1,5 @@
+> **Owner-selected product roadmap (2026-11-12):** [DCH Roadmap v2 — Executive Summary](docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md) controls product priority: **M0 ChatGPT Bootstrap**, then M1 Conversational Desktop, M2 Diagnostics & Repair, M3 Modular Templates, M4 Complete Campaign Compiler, M5 Shared Knowledge. Earlier Stage 0–16 plans remain historical engineering evidence; Stage 12 is not current product priority.
+
 # DiceBox Campaign Helper
 
 Canonical source repository for Dicebox Campaign Helper: the AI-native TTRPG campaign workspace, Foundry VTT control/deployment system, campaign knowledge layer, scene/asset tooling, and associated server/runtime components.

@@ -1,6 +1,53 @@
 {
   "schemaVersion": "1.0.0",
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-11-12",
+  "ownerRoadmapV2": {
+    "ownerAuthority": "ChatGPT Library DiceBox Campaign Helper (DCH) Roadmap v2 Executive Summary",
+    "adoptedAt": "2026-11-12",
+    "libraryModifiedAt": "2026-10-25T19:57:44.085668Z",
+    "canonicalFile": "docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
+    "canonicalSha256": "3E400D33D2EEE5B5163D9A26E4E8E7F2F199F7E6A2B2368F95ECA667825DF936",
+    "roadmapPriority": "M0",
+    "milestone0Acceptance": "NOT_YET_PROVEN_END_TO_END",
+    "milestones": [
+      {
+        "id": "M0",
+        "label": "ChatGPT Bootstrap",
+        "state": "active_not_accepted"
+      },
+      {
+        "id": "M1",
+        "label": "Conversational Desktop Interface",
+        "state": "next"
+      },
+      {
+        "id": "M2",
+        "label": "Automatic Diagnostics & Repair",
+        "state": "pending"
+      },
+      {
+        "id": "M3",
+        "label": "Modular Workflow Engine (Templates)",
+        "state": "pending"
+      },
+      {
+        "id": "M4",
+        "label": "Complete Campaign Compiler",
+        "state": "pending"
+      },
+      {
+        "id": "M5",
+        "label": "Shared Knowledge & Ecosystem",
+        "state": "pending"
+      }
+    ],
+    "legacyStageTracker": "scene-authoring-breadth",
+    "legacyPriorNextAction": "M1284 is closed at the manual Gamemaster rejoin gate. Await manual join in browser tab 14, then continue the already-authorized single v5 loaded identity-control observation; M1271/M1272 four-Scene apply remains complete and must not be replayed.",
+    "legacyAcceptanceStatus": "NON_CERTIFYING_ENGINEERING_HISTORY",
+    "workerDelivery": "LIVE_ONLY_NOT_STAGED",
+    "foremanTurnLimitMinutes": 20,
+    "unrelatedWorkingTree": "PRESERVED"
+  },
   "acceptedFoundryHistoricalEvidenceIngest20261007": {
     "id": "foundry-historical-evidence-ingest-2026-10-07",
     "status": "closed-local-evidence-pass",
@@ -388,7 +435,7 @@
   "outcome": "Deliver the DiceBox Campaign Helper product through ordered acceptance gates, including vision-assisted but GM-approved Spatial Blueprint proposals, beginning with a subscription-backed AI provider spine and continuing through real project authoring, conversation, approval, Foundry control, diagnostics, campaign content, image providers, and release.",
   "acceptanceObservation": "The packaged desktop creates and manages real campaign projects, provides bounded conversational assistance through managed ChatGPT by default with an explicit API-key backup, authors and compiles semantic content, can turn approved known-size map observations into editable grid-aligned geometry proposals without granting pixels authority, controls exact Foundry operations through approval and reread, and remains usable when AI is offline.",
   "owner": "DiceBox Campaign Helper Foreman",
-  "scopeBoundary": "One ordered product stage at a time. Stages 1-10 are accepted on their recorded bounded evidence; Stage 11 remains partial/blocked until its governed proposal, approval, history, recovery, packaged/runtime, cross-producer, and authority evidence gates are satisfied; the active stage is scene-authoring-breadth (Stage 12). Stage 12 remains active and non-certifying while its ordered local authoring, cross-plane, runtime, and acceptance gates are evaluated. Desktop Foundry control, campaign content, image-provider benchmarking, and product hardening/release remain pending until their ordered gates become active. Existing stage receipts do not certify unsupported behavior, generic authority, live-world safety, alpha readiness, or Ready-to-Play.",
+  "scopeBoundary": "Owner-selected Roadmap v2 is authoritative: M0 ChatGPT Bootstrap is active priority. M1 Conversational Desktop Interface, M2 Automatic Diagnostics & Repair, M3 Modular Workflow Templates, M4 Complete Campaign Compiler, M5 Shared Knowledge & Ecosystem follow. Legacy stages 0-16, including stage 12 scene-authoring-breadth, are retained as separately validated NON-CERTIFYING historical engineering gate evidence and must not override M0. ActiveLanes and steps describe that legacy gate checker only, not current program sequencing. Stage 11 remains partly blocked. M1284 manual Foundry rejoin is not replay authorization.",
   "changeSynchronization": {
     "ideaDocument": "https://docs.google.com/document/d/14clSbMu2QMqvokg6Y8svG-QcjSqpse-rO73z66muA7o/edit",
     "order": [
@@ -10601,6 +10648,5 @@
     "implementationVerification": "BLOCKED FIXTURE-RUNTIME M1284: the manual Gamemaster rejoin gate stopped the boundary before the loaded identity control could be observed. No identity control, installer, audit, preview, approval, Apply, or mutation action occurred. Receipt: outputs/m1284-stage12-v5-regionwright-loaded-identity-control-observation-closure-receipt.json",
     "nextAction": "M1284 is closed at the manual-authentication boundary. Leave v5 running; after the user manually joins `Gamemaster` in browser tab 14, reread the exact client and continue the already-authorized single identity-control observation. Do not automate join, restart again, retry M1282, invoke M1277 audit, or Apply.",
     "stopCondition": "Stop on any automated or submitted authentication, second restart/reload/control invocation, supervisor ambiguity, wrong owner/port/world, non-Gamemaster identity, source/staged/served/loaded/sidecar drift, missing/detached/duplicate control, BLOCKED or outcome-unknown identity result, installer/preview/approval/Apply, M1277 audit retry, any mutation/settings/document/RegionBehavior/teleport/raw-storage/player/password/foreign/Ballad/Tram/Core action, or Stage 12/Ready-to-Play indication."
-  },
-  "nextAction": "M1284 is closed at the manual Gamemaster rejoin gate. Await manual join in browser tab 14, then continue the already-authorized single v5 loaded identity-control observation; M1271/M1272 four-Scene apply remains complete and must not be replayed."
+  },  "nextAction": "M0 ChatGPT Bootstrap: demonstrate authenticated ChatGPT operation of local DCH source/tools, one bounded reversible code edit, build, DCH desktop and disposable Foundry module install, diagnostics/repair, and persistent verification receipt. Reconcile the native Codex app-control source context for live Switchboard and Worker A/B delivery; never stage messages. M0 is NOT YET VERIFIED; preserve Stage 12 non-certifying receipt history."
 }

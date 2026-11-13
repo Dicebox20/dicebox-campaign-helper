@@ -1,3 +1,7 @@
+<!-- DCH_OWNER_ROADMAP_V2_20261112 -->
+> **Roadmap precedence (owner decision 2026-11-12):** This is a specialist or historical DCH workstream, subordinate to the ChatGPT Library **DiceBox Campaign Helper Roadmap v2** (canonical local mirror docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md). The controlling program priority is M0 ChatGPT Bootstrap, then M1 UI, M2 diagnostics, M3 templates, M4 campaign compiler, M5 knowledge. Preserve this document's original scoped goals, receipts and evidence without promoting them over v2. DCH Foreman turns are 20 minutes; workers use live-only Switchboard messages.
+<!-- /DCH_OWNER_ROADMAP_V2_20261112 -->
+
 # ChatGPT Development Workspace and Roadmap Audit
 
 Date: 2026-10-01  

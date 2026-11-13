@@ -1,3 +1,5 @@
+> **Product priority (owner 2026-11-12):** M0 ChatGPT Bootstrap under [DCH Roadmap v2](docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md). This file preserves historical development-stage M0/M1 etc labels and does not certify v2 milestones or make Stage 12 the governing priority.
+
 # DiceBox Campaign Helper Status
 
 Status: M0 contract gate preserved; read-only M1/M2 runtime-probe slice and M3 preview/transaction contracts started; live exact-stack gate remains open.
