@@ -32,9 +32,12 @@
                      },
                      {
                          "id":  "chatgpt-initiated-edit-and-build",
-                         "state":  "missing",
+                         "state":  "collecting",
                          "receipts":  [
-
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/chatgpt-edit-build-repair-20261113-1001.json",
+                                              "sha256":  "44BBCD4E81478FE4FBC90197439B37418492C49BF6CE3C0428E1D4BEDCFA8281"
+                                          }
                                       ]
                      },
                      {
@@ -46,9 +49,12 @@
                      },
                      {
                          "id":  "automated-tests",
-                         "state":  "missing",
+                         "state":  "collecting",
                          "receipts":  [
-
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/chatgpt-edit-build-repair-20261113-1001.json",
+                                              "sha256":  "44BBCD4E81478FE4FBC90197439B37418492C49BF6CE3C0428E1D4BEDCFA8281"
+                                          }
                                       ]
                      },
                      {
@@ -60,9 +66,12 @@
                      },
                      {
                          "id":  "self-contained-provenance",
-                         "state":  "missing",
+                         "state":  "collecting",
                          "receipts":  [
-
+                                          {
+                                              "path":  "docs/evidence/m0-bootstrap/chatgpt-edit-build-repair-20261113-1001.json",
+                                              "sha256":  "44BBCD4E81478FE4FBC90197439B37418492C49BF6CE3C0428E1D4BEDCFA8281"
+                                          }
                                       ]
                      }
                  ],

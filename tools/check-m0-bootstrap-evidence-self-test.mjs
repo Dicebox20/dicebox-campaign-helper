@@ -43,13 +43,14 @@ assert.equal(evaluateM0Evidence(unsafePath, card, digest).integrityStatus, "FAIL
 const scratch = await mkdtemp(join(tmpdir(), "dch-m0-evidence-gate-"));
 try {
   const receipt = register.criteria.find((entry) => entry.id === "environment-enumeration")?.receipts?.[0];
+  const paths = [...new Set(register.criteria.flatMap((entry) => (entry.receipts || []).map((r) => r.path)))];
   assert.ok(receipt?.path, "A real collecting receipt must be present in the register.");
   await mkdir(join(scratch, "docs/evidence/m0-bootstrap"), { recursive: true });
   for (const path of [
     "docs/ACTIVE-PROGRAM-SLICE.json",
     "docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
     "docs/M0-BOOTSTRAP-EVIDENCE-REGISTER.json",
-    receipt.path,
+    ...paths,
   ]) {
     await copyFile(path, join(scratch, path));
   }
