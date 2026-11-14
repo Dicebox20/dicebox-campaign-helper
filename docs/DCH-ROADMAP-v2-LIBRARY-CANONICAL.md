@@ -1,3 +1,10 @@
+> **GITHUB AUTHORITY — consolidation 2026-11-14.** This document is the **sole active DCH product roadmap** following the owner's 2026-11-12 Roadmap v2 decision. [DCH Chronological Changelog](DCH-CHRONOLOGICAL-CHANGELOG.md) is the single authoritative historical change/acceptance record. Earlier Stage 0–16, M01/M02 and specialist workstream plans are [archived as historical evidence](archive/roadmaps/README.md), not competing current product priorities.
+>
+> **Milestone snapshot:** M0 ChatGPT Bootstrap is **ACTIVE / NOT_ACCEPTED (0/8 independently verified)**, with six criteria collecting evidence and two missing in the [M0 register](M0-BOOTSTRAP-ACCEPTANCE-TRACKER.md). The installed workstation Desktop has real ChatGPT Plus read-only chat; its checkout and newer PR50 bootstrap code have disconnected source histories and no accepted unified release. M1–M5 remain next/pending for roadmap acceptance, even where prototypes, source commits, installs, or test receipts exist.
+>
+> **Change-control rule:** Edit this file for future roadmap decisions and append dated verified change history in the single changelog. Retain originals in the historical archive and never infer owner acceptance from a checkpoint PASS or a source-only test.
+
+---
 # DiceBox Campaign Helper (DCH) Roadmap v2 — Executive Summary
 
 DiceBox Campaign Helper (DCH) is envisioned as a **conversational AI-operated campaign development environment** for Foundry VTT.  In contrast to traditional module editors, DCH puts **ChatGPT at the center**: the GM describes what they want, and ChatGPT (via the DCH Desktop App) **automatically generates, installs, and verifies** all campaign content.  The guiding principle is that *no GM should need technical expertise*: diagnostic checks, repairs, and Foundry integration are handled internally. 

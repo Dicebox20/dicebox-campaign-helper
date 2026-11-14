@@ -1,0 +1,226 @@
+origin,when,sha,subject
+workstation,2026-09-01T11:14:56Z,eb222b98342e17eaf6830182fac5d193be9e3784,chore: establish project baseline
+pr50,2026-10-01T21:08:55Z,f2e9b1a48a1d0fd3df50bb4dcef13175e3584874,Archive Dicebox Campaign Helper migration snapshot
+pr50,2026-10-01T21:18:00Z,dd44aba24d6686f9c454d7f4d6791ab9184bae64,Add Dicebox Injector migration handoff documents
+pr50,2026-10-02T00:14:19Z,6da5a9e0f9d8483289740ec88e97b789938b203a,Restore full Dicebox Campaign Helper project from migration snapshot
+pr50,2026-10-02T00:15:14Z,cc2162493849759e6b50ad206f688092f2878abd,Restore GitHub as canonical Campaign Helper authority
+pr50,2026-10-02T00:15:17Z,ab66723ecaedfe5327e950c5a89515c69199dd16,Make repository contract authoritative
+pr50,2026-10-02T00:15:19Z,3da1c6f0b5897ef4f4e05d9983948688a8ea87e1,Record Campaign Helper unification and repository authority
+pr50,2026-10-02T00:15:44Z,1ef3822587fa86b195e7f4e275faac689be1d877,Remove obsolete local-workspace authority from README
+pr50,2026-10-02T00:15:47Z,cba6ecc20bdf1608a4f15d7c9bebedf889064044,Remove obsolete local-workspace authority from contract
+pr50,2026-10-02T00:44:35Z,35a98b5e619cc374ae9874c02ba9831b47c43a5f,Restore the full Dicebox Campaign Helper project
+pr50,2026-10-05T20:04:28Z,a2c0beb803c134d36f45c8e75b77ec16f30628c3,Harden DiceBox injector workflow: add .codex/skills/dicebox-injector-workflow/SKILL.md
+pr50,2026-10-05T20:04:30Z,fb2333301aeb8a23362820d130b7c626aa94e708,Harden DiceBox injector workflow: add .codex/skills/dicebox-injector-workflow/references/scene-injector-contract.md
+pr50,2026-10-05T20:04:32Z,248919ab2ad0215574a5e4ba1f54ebb0e05ef278,Harden DiceBox injector workflow: add .codex/skills/dicebox-injector-workflow/assets/scene-build-template.md
+pr50,2026-10-05T20:04:35Z,bf70efcf8cdefda17b327731569e9cc7a17bb941,Harden DiceBox injector workflow: add tools/validate-dicebox-build.mjs
+pr50,2026-10-05T20:04:37Z,e6634e89efcec3f7032b6eb1f1a19a79ec7bbf1a,Harden DiceBox injector workflow: add tools/validate-dicebox-build-self-test.mjs
+pr50,2026-10-05T20:04:39Z,c8cf5ab67460aa61a7cadc8ddf51e4e71f779482,Harden DiceBox injector workflow: add docs/DICEBOX-INJECTOR-WORKFLOW-HARDENING-2026-10-05.md
+pr50,2026-10-05T20:05:04Z,5eb0e8665c00851a468244511b4d51bd85c78866,Harden named DiceBox injector workflow contract
+pr50,2026-10-05T20:05:07Z,d772235f69d7fd600c8f6c6063e44435a8ce9a47,Document additive Scene Injector workflow hardening
+pr50,2026-10-05T20:05:10Z,8c3abfa33313fc8c2363427d2ae9f5623636c40a,Wire injector workflow hardening into repository checks
+pr50,2026-10-06T01:51:14Z,53944600155557d6551b221e690bd5c09d8bac1a,Harden DiceBox map and token scale standard
+pr50,2026-10-06T01:51:30Z,d7919cca337265285f0962f2dbbf74256246c742,Lock DiceBox map and token scale invariants
+pr50,2026-10-06T01:51:54Z,4fad2c6c4ae676a56c4c6b04f340c80fe05abb2b,Upgrade Scene Injector skill to scale-safe BUILD v2
+pr50,2026-10-06T01:52:05Z,8ffb4949ba1435749e3d2718e82610d706c55d69,Add scale and token contract to injector reference
+pr50,2026-10-06T01:52:15Z,7c65fb7a4a0ab2adcfc0d836851cdf9d830ad294,Upgrade Scene BUILD template to scale-safe v2
+pr50,2026-10-06T01:52:51Z,ee5245c5080db6fbfb8570756dc73bf1e3095801,Upgrade DiceBox BUILD validator to scale-safe v2
+pr50,2026-10-06T01:53:11Z,81526e5570b5d1c76ee1b366627c6ebb53d3dda1,Add map-scale regressions to DiceBox BUILD self-test
+pr50,2026-10-06T01:53:23Z,34664325c373507d01791a731630f1ae963c17a4,Extend injector hardening to map and token scale
+pr50,2026-10-06T01:53:33Z,b65c23f72d2060aaffddbbf2e9c4f2e9e505d026,Record map and token scale hardening in workflow
+pr50,2026-10-06T02:07:48Z,91e34783cd77afec957d44d64e3fb5c49713bcff,Harden exploration discovery density and visible-hint rules
+pr50,2026-10-06T02:07:50Z,1f557caea48c71662bc6fb3fb91ff9fa4fe04e21,Add sparse visible-anchor discovery rules to injector workflow
+pr50,2026-10-06T02:10:49Z,5abfc670c3e74b4e7c3f73409fb8ee81ed13d2ae,Add hardened exploration discovery standard
+pr50,2026-10-06T02:11:18Z,03c41d9042b9aa50c945b24b8bd2d246a4a05a15,Bind AGENTS discovery rule to canonical hardened standard
+pr50,2026-10-06T02:11:33Z,563ce4b9752448fd872c4b969f2567ffbc21cdc1,Harden discovery contract in Scene Injector skill
+pr50,2026-10-06T02:11:39Z,3058d0ffb61cf2f116877813d8a7cfc8a9565639,Add hardened discovery markers to Scene BUILD template
+pr50,2026-10-06T02:11:56Z,0505651d9a3d7d22f5baf5bb0edcea40031d39ef,Enforce hardened discovery rules in BUILD validator
+pr50,2026-10-06T02:12:10Z,1e056c4029dc673cb9075ea485e9abb8daed2d2d,Add discovery-density and anti-farming BUILD regressions
+pr50,2026-10-06T02:12:43Z,1aa31b6d6cbc16469f862b4ae2dd95532d682ab5,Require discovery contract markers in BUILD validator
+pr50,2026-10-06T02:43:15Z,7064087f6d3db5bd16ad491b9b3d1f4e294b8c5e,Harden user-confirmed micro-hint authority
+pr50,2026-10-06T02:43:19Z,20d0c81e8c467c9dfbfe895fd7cd165f5ab5fa29,Add user-confirmed micro-hint rule to injector workflow
+pr50,2026-10-06T03:10:23Z,4734aef37a82c0ccbaaa92cf05bcc2709617d40d,Harden REDO prompt reset rule
+pr50,2026-10-06T03:10:26Z,31f2c55121a333df51a51d91fa451eeaf30d5f8b,Add hard REDO prompt reset rule to workflow
+pr50,2026-10-06T05:16:12Z,d2770f9f554c9b0b70fcb9f8200b2cf731dcd1b7,Harden strict orthographic map-camera rule
+pr50,2026-10-06T05:16:15Z,2c59290ae8878fff4fd57ea6df5843bf31a3f0cc,Add tactical-map orthographic camera guardrail
+pr50,2026-10-06T07:01:08Z,1b4828eccf23df33ad099b9e3e716f177f4eb09b,Add durable automated scene workflow
+pr50,2026-10-06T07:01:32Z,f48505501aab444b86201f7157a3d153c419a9fe,Add DiceBox scene automation state schema
+pr50,2026-10-06T07:02:00Z,09dfbf904fed8104eccb37a3157ff42b7bb583f9,Add scene automation state validator
+pr50,2026-10-06T07:02:08Z,47e2f495225086ba9963650cfd4163c80418b2c2,Add DiceBox scene-state validator script
+pr50,2026-10-06T07:02:31Z,c5fec078b08d7a0ed434c81559a24a453278a56f,Harden automated DiceBox scene-state workflow
+pr50,2026-10-06T07:02:34Z,63b22f2a7eb74a877898bf4be4f31e9dbb1fd472,Add durable automation overlay to injector skill
+pr50,2026-10-06T07:07:55Z,ce0649fc66deaa760fc50752fbfdd0d7d19ad414,Make INSPECT PASS automatically approve scene art
+pr50,2026-10-06T07:07:58Z,90837ab93a2dd9b1f756a2cee790323a528c3355,Make DiceBox inspection pass auto-approve
+pr50,2026-10-06T07:08:19Z,923440261c04cb040fe88b1469aa7bfc56563553,Make inspection PASS the approval event
+pr50,2026-10-06T07:08:22Z,814992abcdbe33368dd107136731f30602bba2e0,Remove inspection-pass wait state from schema
+pr50,2026-10-06T07:08:26Z,64f9bce5952462b379c665534f7ec84da4549d1c,Enforce automatic approval after inspection pass
+pr50,2026-10-06T07:09:22Z,6df3ce1a5e98fca3b35e16ca29acda603dc114a0,Accept automatic-approval workflow marker
+pr50,2026-10-06T07:09:25Z,6e82048cfac743e0238e4649421acf928d3bbd1b,Use automatic-approval marker in new BUILDs
+pr50,2026-10-06T07:09:28Z,94ac0a17a2b938b33784e977d44917f95451de60,Test automatic approval BUILD marker
+pr50,2026-10-06T07:18:37Z,0a74f86fec8b58bd62ceaf116e01a8262d30e89f,Align named workflow with automatic approval on PASS
+pr50,2026-10-06T07:29:15Z,972c44ee772d37527d856b293b7c50944fd4b7fd,Add Central Lodge campaign automation rules
+pr50,2026-10-06T07:29:17Z,913928edd9e1ce3a4ecc903cba1280a634cbcb69,Add Central Lodge campaign automation state
+pr50,2026-10-06T07:29:19Z,c0f205cffe29405e7006235cb431d00d334e2893,Add Central Lodge campaign workflow controller
+pr50,2026-10-06T08:08:34Z,50025823b52ae96a8e954f96d446e3a104b25a73,Make Lodge day-night cycle event-driven
+pr50,2026-10-06T08:08:37Z,4198f5af3a32dc2903ced9796b6828014b541c1a,Add event-driven Lodge campaign time state
+pr50,2026-10-06T08:11:59Z,6f6d189141729b1ac59edc605251695ff3f9f683,Add paced Lodge day-night sconce lighting standard
+pr50,2026-10-06T08:12:02Z,ac94df82192200c7353c34d52a0d299fcfe5f164,Add per-map Lodge lighting profiles
+pr50,2026-10-06T08:20:35Z,87b5b2f5b4919025e1fafa70f6e671d1dafed6b7,Harden Lodge map consolidation and purpose absorption
+pr50,2026-10-06T08:20:37Z,35c1d08c56655b5a161ac0347563e69bab8b4729,Record Lodge single-geography map consolidation
+pr50,2026-10-06T08:20:40Z,d2219d5f098ed3a363e003a51c330f9a80ede521,Add Lodge puzzle Region and state ownership plan
+pr50,2026-10-06T08:25:43Z,f4e69e9ccd42a676a633ad759e82851aa7bcd527,Advance Lodge workflow to E2 with E1 VERIFY deferred
+pr50,2026-10-06T08:25:45Z,7e7063cbef156fdccda3be3dce99ab5ad221d0b5,Allow deferred live verification in Lodge controller
+pr50,2026-10-06T08:25:48Z,1ca331a4345ee0d85c87d44834e2814a5b00436b,Prepare E2 rear service yard
+pr50,2026-10-06T08:26:00Z,60508d7ea6c7d704f82768532e098865366af859,Advance E2 from PREPARE to RENDER
+pr50,2026-10-06T08:29:58Z,6013d5958f9986bf3e52beaa6e1822ee003dd836,Harden Lodge render-context firewall
+pr50,2026-10-06T08:30:01Z,9142ed425d667050098cd7bb62f99587302ec993,Separate E2 design spec from render capsule
+pr50,2026-10-06T08:30:03Z,bca55375dd5e289d6199b0e541194155cdcc8719,Add clean E2 render capsule
+pr50,2026-10-06T08:35:23Z,292743963df4f18d85b7ec849719eb1f9a9b2828,Tighten E2 rear service yard render capsule
+pr50,2026-10-06T08:53:25Z,42091f001ef1eab9c52b327da283a32a9af277d0,Advance E2 BUILD to IMPLEMENT
+pr50,2026-10-06T08:53:27Z,e4a1e13ccbe1fefba2851ea9f5effe17860982ef,Record E2 BUILD v001 receipt
+pr50,2026-10-06T09:05:45Z,4b7356d568c33adf5fa95e36af27471dadbed55d,Record E2 implementation PASS and advance to VERIFY
+pr50,2026-10-06T23:28:38Z,722ce0d7742c20ee597053c0b4de5a0c17c2177b,docs: catalogue Central Lodge campaign state
+pr50,2026-10-06T23:42:25Z,8b17fb94a9b0ee038b55aa3c0da81d0953666cce,Add DiceBox scene workflow and active-map KB metadata
+pr50,2026-10-06T23:42:29Z,5e8e3b55ba8b19521b86195915af3a929597e222,Apply supplemental KB seed deltas during rebuild
+pr50,2026-10-06T23:42:31Z,1087e2cb73581e52c380efa5f21f1ed08689f3ad,Document supplemental KB seed deltas
+pr50,2026-10-06T23:43:58Z,26f6143a04d8ff8d7bd1dc59bdf5de07bc4e7c99,Add Forest Maze automation handoff
+pr50,2026-10-06T23:44:19Z,0d4cd4b5dd0f16364d513aef7defdee4858d88b2,Persist approved L2-03 scene workflow state
+pr50,2026-10-07T00:07:49Z,bacb85a1e47cf8ec2d9b73dec3e468f3824aa3f7,Add Central Lodge remaining-maps handoff
+pr50,2026-10-07T00:08:29Z,612ed984c5b3f8422834dbeca634aa537a6a13be,Add Central Lodge handoff metadata to knowledge base seed
+pr50,2026-10-07T00:31:21Z,cd0463fd07ceccb91e05857d0535561a62dc03f3,Record T1 BUILD v001 receipt
+pr50,2026-10-07T00:33:45Z,1422ce0982ea6b32f080e7769ee6b79bbb986495,Record T1 IMPLEMENT v001 flag-scope failure
+pr50,2026-10-07T00:37:21Z,a56d6b82f442325919482ad8d2257f9a56baa0a1,Record corrected T1 BUILD v002
+pr50,2026-10-07T00:38:37Z,d26247ccd6bd17112d02af3b611e02892383007e,Record T1 IMPLEMENT v002 PASS
+pr50,2026-10-07T00:45:03Z,0142fe14e110475ef96bd3d35bf5e863946d5eef,Record T1 behavior binding repair BUILD v003
+pr50,2026-10-07T00:47:28Z,f791a72a84dbd43bac083b8c752ae99985a140ab,Record T1 behavior patch v003 APPLY PASS
+pr50,2026-10-07T01:00:32Z,7624464a4191eae2d4036e5fa64125569fc9ff84,Record T2 BUILD v001 receipt
+pr50,2026-10-07T01:05:26Z,f358c71a747b29635f1d33addd8251cc6c04412b,Record T2 IMPLEMENT v001 PASS
+pr50,2026-10-07T01:07:52Z,503d71caccbb7c28756225a9043f6af11c848987,Record T2 VERIFY PASS
+pr50,2026-10-07T01:17:35Z,d623b07cc3fc4e2ac91977f0435de8bbf7d66d37,Record T3 BUILD v001 receipt
+pr50,2026-10-07T01:18:37Z,9dfb901ae597e60d4cbd746a8d7f5502668e84dd,Record T3 IMPLEMENT v001 PASS
+pr50,2026-10-07T01:20:17Z,065094233c68c09e35ce5fa01cc4028c3c5df971,Record T3 VERIFY PASS
+pr50,2026-10-07T02:06:01Z,3c926b7b192b7ce87d32dece5b5ae3121dae19a2,Record L2-03 manual Region migration PASS
+pr50,2026-10-07T02:14:40Z,4b1dbb8c8ea992739ebe66c77dd7eb1ff845b01b,Record DiceBox route player-follow repair PASS
+pr50,2026-10-07T02:21:29Z,ede0f82bdf123cefe3dce199c50159956aa1595e,Record L2-03 Region visibility repair PASS
+pr50,2026-10-07T02:54:58Z,a067d88d8863786c95a090c0246c0c429ee7bebc,Record Central Lodge F1 BUILD v001 PASS
+pr50,2026-10-07T04:08:02Z,586bd98c9e400c48843c96dedfd4d23d9dd73ed6,Record F1 shell-completion repair PASS
+pr50,2026-10-07T04:09:08Z,bac5c6af7daa8933522840aef022f32779b0c7c0,Record Central Lodge F1 VERIFY PASS
+pr50,2026-10-07T04:09:55Z,db5f9093c716d9c131e7284fef0889758f7bd32a,Prepare Central Lodge F2 final summoning chamber
+pr50,2026-10-07T04:26:25Z,e9d9ee5b438d8c53f3a7ee42f09c9400314052b5,Approve Central Lodge F2 final render
+pr50,2026-10-07T04:32:15Z,0112fa5d33c036141394ce8b51ea5914e5a97722,Record Central Lodge F2 BUILD v001 PASS
+pr50,2026-10-07T04:33:28Z,9ab73115911c12b7b677f1cb39ee11ad3107cef0,Record Central Lodge F2 IMPLEMENT PASS
+pr50,2026-10-07T04:36:47Z,d1db56134bc360b5441dbb14cc9d888717acff78,Record Central Lodge F2 VERIFY PASS
+pr50,2026-10-07T04:48:58Z,e515700c58d47c5f87a98a519a9ae21bb4b83000,Record final F1 F2 transition verify pass
+pr50,2026-10-07T04:51:27Z,d530cb08b81a04324b71eaf1605df1174bc12f28,Record Central Lodge Region repair v001 pass and scope
+pr50,2026-10-07T04:56:56Z,8930a95c883250316e5fd4d0d19fc308e2ed8e4a,Document Central Lodge Region behavior audit design
+pr50,2026-10-07T05:07:56Z,0f7df9880be4c40785186cb2d876b897cba86e3d,Plan Central Lodge puzzle Region installation sequence
+pr50,2026-10-07T05:15:34Z,05b062a804c929d5b6f45f5da1c3d6fe40c53cb6,Record Central Lodge required items v003 PASS
+pr50,2026-10-07T05:16:53Z,79c6298e6aa7143b3e3c0d5bc49c22d2b7329e9e,Record Central Lodge required item verify pass
+pr50,2026-10-07T05:18:27Z,5e62ddae605d4862d7332d11634023be132897ff,Record Central Lodge CL-00 preflight snapshot pass
+pr50,2026-10-07T05:22:39Z,d0978bb56f4eddf489af522e876bc8f088c4b3a8,Record CL-02 state ledger verification pass
+pr50,2026-10-07T05:23:21Z,e77d4e6d5391fd1c998804a3bad49950cdf48519,Record CL-02 state ledger implementation pass
+pr50,2026-10-07T05:26:27Z,43c2a6214f946813460fb8542f21452bc3e822be,Record CL-03 runtime kernel implementation pass
+pr50,2026-10-07T05:27:53Z,72eaf0c810ad2f57649bdcfebb29656706f2add7,Record CL-03 runtime kernel verification pass
+pr50,2026-10-07T05:30:17Z,4d532813087b3e6ece2b14cc100d08a3e9fd2819,Record CL-04 Region metadata implementation pass
+pr50,2026-10-07T05:33:52Z,ee96f245c062149fabc1c4cd808e3fe3c79ac2d1,Record CL-04 Region metadata final verification pass
+pr50,2026-10-07T05:38:49Z,fa23c856c603a3d2e145ab037a9ec081d93bff48,Record CL-10 E2 final verification pass
+pr50,2026-10-07T05:39:23Z,23d22e77ad302e25e9764f083dfe6fae3677b505,Record CL-10 E2 implementation pass
+pr50,2026-10-07T05:46:15Z,4768e9badea5198df5ef0eef88a24ee5e1e96a0c,Record CL-10 E2 final verification pass
+pr50,2026-10-07T05:48:17Z,f17f13f0057e43e6f796c3ec843b75a20e1ade4d,Sync Central Lodge puzzle install plan through CL-10
+pr50,2026-10-07T05:48:56Z,4b31bc4c318ae4bfc0be7ea00d1d4fcb8acf17cd,Create Central Lodge Region install handoff
+pr50,2026-10-07T05:49:39Z,af1262a167d0ed962a0848f42e42e74c4af31c75,Sync Central Lodge Region install handoff into KB seed
+pr50,2026-10-07T05:51:31Z,043e430fd8c81293a96e500d6684ef0003f975a7,Record Central Lodge project database sync pass
+pr50,2026-10-07T05:57:48Z,ce42b06938304266412d01ce65dc4f367ac0790f,Apply seed.d deltas during deterministic database rebuild
+pr50,2026-10-07T05:57:51Z,ffef93f0369d5bfbff2dc9014f0c610a36e20e25,Verify current Central Lodge database catalogue
+pr50,2026-10-07T05:57:54Z,94b3a5da95d4396b27b01f9eb5359331cbe6fafa,Catalogue Central Lodge project data and metadata
+pr50,2026-10-07T05:58:30Z,6ff054371ed231bb825571597aa3454e394cdd3a,Fix Central Lodge catalogue tool rows
+pr50,2026-10-07T05:59:39Z,075dc383d4c4792618d7450530bbaf23c151088a,Record comprehensive Central Lodge database catalogue in handoff
+pr50,2026-10-07T05:59:44Z,e8af0ee6dc72a623809f08e295253eae013b4559,Update Central Lodge project database sync receipt
+pr50,2026-10-07T16:59:53Z,97e0db4f05879d942775568034cf6be0744331a6,Organize project data governance and chronology
+pr50,2026-10-07T17:01:28Z,8a3b7e5493d16b9158163d61924a2bbe00b7f613,Merge pull request #2 from Dicebox20/data-governance-2026-10-07
+pr50,2026-10-07T17:03:25Z,027327ddecc0538910a0efa3afe19c227f25477e,Link project data governance into canonical contracts
+pr50,2026-10-07T17:03:53Z,2dde2e0695ab6f5bda1bbf41ab6978c2b64dc464,Merge pull request #3 from Dicebox20/data-governance-links-2026-10-07
+pr50,2026-10-07T17:07:10Z,34663ec3ccd1d34c13d3f9a0810f2fb0a69ee0bd,Record project data governance validation
+pr50,2026-10-07T17:07:46Z,bc959942ff714c536bdbf0fa1225b7f459af862b,Merge pull request #4 from Dicebox20/data-governance-validation-2026-10-07
+pr50,2026-10-07T17:23:18Z,4584b0f5c52110c50975cdc05f78fbf7c905690b,Catalogue rule conflicts and semantic render v2
+pr50,2026-10-07T17:59:28Z,68d6897cbd03267578fcfcb4fcf0e056deb7feb6,Reconcile active rules to semantic render v2
+pr50,2026-10-07T18:00:06Z,69c0563179e4efcb6fa4e141fd365d5c4fe9af4f,Merge pull request #5 from Dicebox20/reconcile-rules-latest-rendition-2026-10-07
+pr50,2026-10-07T19:59:36Z,6eefeff9653cb315a6edfed836d03f4bc6cf9796,Accumulate historical Foundry evidence
+pr50,2026-10-07T20:00:19Z,9445e4540c2bde36155b4bc3153fde8451cf74cf,Merge pull request #6 from Dicebox20/foundry-historical-evidence-ingest-2026-10-07
+pr50,2026-10-10T03:41:44Z,65757c60a199f4d65a1295941884b1cccdb3b170,Rule: enforce fresh image prompts from canonical DiceBox specifications
+pr50,2026-10-10T04:35:24Z,b9a5e38897d29425bb27acbfa6baf1070550c22d,Accept DiceBox geometry tolerance v0.1 across workflows and validators
+pr50,2026-10-10T04:42:58Z,91979c28b361e9ec318baaa72f57da00139af850,Fix accepted geometry KB seed and catalog M02 attempt #5 reinspection
+pr50,2026-10-10T04:58:32Z,6b6abf06443252d59c70f14208386bc6c548c714,Catalog M02 attempt #5 new Blueprint and raster sensitivity QA
+pr50,2026-10-10T05:15:47Z,63f356986387e96342e6affaeddadc5c78999531,Catalog M02 attempt 005 northern ground review and south clearance hold
+pr50,2026-10-10T05:39:35Z,f8d1319aefb52a6e0f17be24d7a3a340042844d9,Catalog M02 attempt 005 v003 modeled route clearance and remaining wall-ground QA
+pr50,2026-10-10T06:33:05Z,348bb356adb2c6d39beec3a918b6f82becf537fc,Adopt 20-minute DiceBox turn cap and verified checkpoints
+pr50,2026-10-10T06:41:38Z,1137241a7df431a5cc4bc775ab56dcd283e1db29,Catalog M02 v003 detailed handoff and full metadata index
+pr50,2026-10-22T08:20:22Z,78fb7678dc12d59c306b8d83b2a8a9758308c63d,policy: lock permanent project-wide representative-wall painterly battlemaps and neutral Foundry lighting
+pr50,2026-10-22T08:21:07Z,c7912e9142fd57fb3ab3deb54370b949a7ca86ad,kb: catalogue owner-locked universal representative-wall battlemap standard and implementation followups
+pr50,2026-10-22T08:21:37Z,c53dd5a373bce1220ad7ade73188b682af751113,policy: make representative walls and neutral painterly maps mandatory in canonical scene render workflow
+pr50,2026-10-22T08:22:00Z,9752eda75871e9ab877efc6a8b911a3ecb5f6f88,policy: expose universal representative-wall painterly battlemap standard to all DiceBox agents
+pr50,2026-10-22T08:29:27Z,474a5b216a0f1c555e524fadb63442c9e5d4251d,policy: lock project-wide inclusion-only map prompts—mention only desired visible content
+pr50,2026-10-22T08:29:33Z,4f14bf38dbe7198b455e55b781f7f3a23b66e5bd,policy: expose map-prompt inclusion-only rule in project-wide AGENTS contract
+pr50,2026-10-22T08:43:19Z,84beaae0dc33269ad097811f84d782d42489056a,policy: record owner single-use distinct map-prompt wording requirement
+pr50,2026-10-22T08:44:05Z,acea878150d7120ccc10e1dda6ff1ac520abfeb8,kb: catalogue owner-locked fresh wording for consecutive DiceBox map prompts
+pr50,2026-10-26T03:10:51Z,68abe871ad211f8b8d42521d9f629faf4a0b2aab,docs(cabin): durable 57-node region audit and 2026-10-26 handoff
+pr50,2026-10-26T03:13:03Z,97f5b8bcc4d8190c3b93b85d7915b0c3175646c9,docs(cabin): 57 puzzle region live source audit report
+pr50,2026-10-26T03:13:27Z,cb5cbee5e9e6b5a735d37f93a6f1b914cc063549,data(cabin): 57-node live region audit structured findings
+pr50,2026-10-26T03:13:53Z,1589a86b46332b47d76b540d8c44013d11e54693,data(cabin): per-node Foundry evidence comparison matrix
+pr50,2026-10-26T03:16:35Z,dcca82739477452e7018a0e9572707d550531527,data(cabin): original audit geometry and reachability evidence
+pr50,2026-10-26T03:16:47Z,55088ae10a3129a330dd530101fa3ec7443150bd,data(cabin): original audit geometry and reachability evidence
+workstation,2026-10-26T21:37:54Z,6a0bfb13f01d4d0275104344769a5e26fb8f3ffc,feat(desktop): stage approved ChatGPT workstation and guarded managed chat
+workstation,2026-10-26T22:36:31Z,5a6e436f38cebb10b426da2e9fff35833b31383f,feat(desktop): implement owner-approved workstation layout and chat UI
+workstation,2026-10-26T23:13:46Z,5f128c4555563b067d2837dfc06fea3a577ea0ff,fix(desktop): guard debug-only fixture and add tested SIWC native auth contract
+workstation,2026-10-26T23:41:17Z,7d9482208b2b5dec6b53073c41c1d4434f284aac,fix(desktop): enforce single instance and document safe test cleanup
+workstation,2026-10-26T23:53:30Z,96e2ba590870b9fc8a4b143d7122e526cfa6288c,feat(desktop): validate SIWC native loopback callbacks without user auth
+workstation,2026-10-27T00:11:48Z,a573cb4bccf0fb47ccfd3d29c42d103685d55490,feat(desktop): bind native SIWC PKCE transaction to loopback
+workstation,2026-10-27T00:13:39Z,923dae08f9154db4b13a8e20391081e87679629b,fix(desktop): preserve SIWC host identity JSON contract
+workstation,2026-10-27T00:52:36Z,a20901f5410d123a8ada0be6f6e3ffe03066b143,feat(desktop): verify OpenAI RS256 identity and isolate SIWC credential vault
+workstation,2026-10-27T02:23:16Z,1917cae874d4e01c6c2cd653a411b19c49101793,feat(desktop): guard SIWC authorization exchange and rotating refresh contract
+workstation,2026-10-27T02:33:55Z,5e83d7b3c312ac37bb83b9f4cacade489c3681e1,feat(desktop): connect SIWC browser consent coordinator behind native-only gate
+workstation,2026-10-27T02:54:40Z,4db06102a1b82985a3515fffe2f66342b50175a7,feat(desktop): protect returning SIWC accounts and cancel pending sign-ins
+workstation,2026-10-27T03:20:40Z,e0a3b322c280ff15a2c722b73cf107b40a1d2dcf,feat(desktop): support signed-in Free accounts and Chrome sign-in preview
+workstation,2026-10-27T03:45:43Z,a2bed9b013410c6f76eba6c80afac15c71fa749e,fix(desktop): split large SIWC credentials into atomic protected keyring generations and expose redacted auth phases
+pr50,2026-10-27T04:11:19Z,c67a958557996402220060363f19e585b986dd00,docs(governance): require continuous transcript capture including interturn dialogue
+pr50,2026-10-27T04:11:25Z,390a351f24fb5e945e67d0d674556858e89645f2,kb(governance): record owner-wide conversation archive decision
+pr50,2026-10-27T04:12:27Z,c4c6d0ffcb5eb79b10b2122bd43229041b985666,governance: enforce all-chat verbatim and interturn transcript rule
+workstation,2026-10-27T04:14:06Z,826f4877aba69d29667fbae54b82e00b30a2c345,fix(desktop): classify OAuth token rejections and preserve unfinished issued client for retry
+pr50,2026-10-27T04:22:55Z,23c787ab4b488c772c66f8d664e147a410ee19ae,governance: simplify all-chat transcripts to one living document updated between turns
+pr50,2026-10-27T04:23:46Z,99c0eb7edbe244da1b44f70b9662a01db14b6385,governance: simplify chat transcript handling per owner's correction
+pr50,2026-10-27T04:24:23Z,09a14ea8a847ac4397d7a548421992c052ec9201,kb(governance): refine transcripts to one updated document per chat
+workstation,2026-10-27T04:32:19Z,c3f0c56cbf15d2e356dcced97c2a627a3247f55f,fix(desktop): refresh unfinished ChatGPT registrations after OAuth error
+workstation,2026-10-27T04:51:22Z,64501c6cab9907764f5c1a7a25abd583ff2fc490,"feat(desktop): organize menus, left account profile and focused chat column"
+workstation,2026-10-27T05:52:51Z,c03efff4687c71fa4cb6ee1adb230cf6cc88a88a,fix(desktop): resolve unfinished SIWC account and add read-only chat continuity library
+workstation,2026-10-27T06:23:16Z,85bca003467ec2fd7569f5392f5a90bd44ddbf2b,feat(desktop): use plan-scoped SIWC native Responses for chat
+workstation,2026-10-27T06:50:24Z,17cb46822940b5af5ca5ea55b08e9f732f8bc3f8,fix(desktop): explicitly select plan-authorized SIWC account for chat
+workstation,2026-10-27T07:13:31Z,36b73fc8f74008aa5707448b49f615682a2cdc92,fix(desktop): bound SIWC model catalog and distinguish admission failures
+workstation,2026-10-27T14:11:13Z,36f545a9541e9ff43bb4a58f16218de2ffbe215d,feat(desktop): ground SIWC conversation in read-only roadmap context
+workstation,2026-10-27T20:35:58Z,d33d592c0da8182c891c23d6ea1635cf76b5ce40,feat(desktop): persist ChatGPT sign-in with silent OAuth renewal and account cleanup
+workstation,2026-10-27T21:29:23Z,1baad152776bd137cd2138b62a2a1078eea4de1e,fix(desktop): guard sign-out against in-flight OAuth refresh
+pr50,2026-11-13T07:42:08Z,326c9aed13f15172d90f27a29d76020bc07c2a9d,docs(governance): adopt Library DCH Roadmap v2 as controlling program roadmap (#23)
+pr50,2026-11-13T08:17:13Z,4c47d4f8708cfb16159bf3f032f966979d5db778,tools(m0): add non-certifying bootstrap evidence gate (#24)
+pr50,2026-11-13T17:35:59Z,e2e266b0eab4a29fe4266bc69e01112cc1814d13,docs(m0): add attested environment enumeration receipt (#25)
+pr50,2026-11-13T18:05:17Z,24ceafa2db787e117a58cde5a5ab9ad4977fdd0a,tests(m0): fix strict image-prompt fixtures and record build proof (#26)
+pr50,2026-11-13T18:10:03Z,29a8f95b812b05279fc18348e41ab8aaecbb2afe,docs(m0): classify full-suite regression failures (#27)
+pr50,2026-11-13T18:29:58Z,cc9258bc6bda9789b7cf182e5e5c5e9f78a0593b,test(m0): fix Foundry bridge host import loader (#28)
+pr50,2026-11-13T18:48:06Z,a8821437d4ef2b5b7c448ecb9d45863acaf07513,docs(m0): attest disposable Foundry install and served package (#29)
+pr50,2026-11-13T19:11:09Z,aa9c1abcac809fae655080029e5d9e6f2d30d0a4,test(m0): update knowledge counts to canonical SQLite (#30)
+pr50,2026-11-13T19:35:29Z,c28a72068c661ba68e133c8513c065c49fc723d7,tools(m0): detect historical Foundry artifact pin drift (#31)
+pr50,2026-11-13T19:38:52Z,d5c77d4f49e22974080d0babc19602493d0a8c95,docs(m0): preserve M1259 pinned source recovery candidates (#32)
+pr50,2026-11-13T20:01:26Z,676b291560f8a16242e916622f33bc73b71be02d,build(m0): enforce LF checkout for pinned Foundry artifacts (#33)
+pr50,2026-11-13T20:29:05Z,134810a90442701a94e6a8963a0842ef686b9a78,fix(m0): select canonical active program card by default (#34)
+pr50,2026-11-13T21:04:06Z,0eaa5980ae0ed64ae39f1fd94da09c5a68880cd7,test(m0): reconcile Regionwright paths and pinned LF fixture bytes (#35)
+pr50,2026-11-13T21:29:14Z,0bd8c328fd66fb1fa691b373f73dc5bfd306f0e9,tools(m0): inspect DCH local MCP bootstrap without GM claims (#36)
+pr50,2026-11-13T21:51:36Z,848b259c1e62de5f8a13d44a9829f9fe251a2d74,test(m0): verify tracked DCH MCP no-GM guard and v3 served bytes (#37)
+pr50,2026-11-13T22:12:19Z,81416f732086aaa721576d18ce0120a199ecfadc,feat(m0): show DCH local MCP transport without GM authority claims (#38)
+pr50,2026-11-13T22:28:33Z,d74cb9f3b5c444b645fdb5662d727c6f0e7122d7,test(m0): verify DCH static served module bytes against source and fixed sidecar (#39)
+pr50,2026-11-13T22:35:08Z,108463f1c64c646b4fc1ffad776870188f0c2728,docs(m0): hash-attest DCH static served module evidence (#40)
+pr50,2026-11-13T22:39:33Z,a22be590f6fdc73c11cf6ddf9e116adb19238d8e,fix(m0): pin hash-attested receipt to canonical LF working-tree bytes (#41)
+pr50,2026-11-13T23:19:32Z,3325c14e1eb6cda64062ac32459bbcfa9939e71d,fix(desktop): gate debug-only fixture in release handler (#42)
+pr50,2026-11-13T23:36:47Z,cf2efb716ee8cf9f18a27acc8b9ced621fb4feeb,docs(m0): attest native DCH desktop transport button runtime proof (#43)
+pr50,2026-11-13T23:58:46Z,48868610c3d5f9fd19fe3b974d754b5dbc348033,test(m0): add fail-closed DCH client GM observation (#44)
+pr50,2026-11-14T00:26:13Z,0a5bdb38d2bebc64837d9bd566258b42085dbd28,test(m0): safely classify private client GM observation shape (#46)
+pr50,2026-11-14T00:37:26Z,2e6412d8dd66744c9f68635c8b216663b8b02aa6,fix(m0): enforce exact Foundry 14.367 client observation pin (#47)
+pr50,2026-11-14T01:04:47Z,fc21075e00deb9944f527e2b9c32ae8cc065f404,"test(m0): verify DCH native desktop to tracked MCP host, no GM (#48)"
+pr50,2026-11-14T01:24:00Z,5c3272d10aeccb506cfc7d9c3da0d9702fa807ac,test(m0): bind native DCH transport check to owned MCP host PID (#49)
+pr50,2026-11-14T01:46:43Z,aceb65ba007020464749ef30563cf1f8a1a2df50,test(m0): preserve historical vs current manual GM auth log boundary (#50)
