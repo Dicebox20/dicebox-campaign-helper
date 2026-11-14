@@ -35,7 +35,7 @@
       observation = blocked("EXACT_DISPOSABLE_WORLD_NOT_OBSERVED");
     } else if (currentGame?.system?.id !== "dnd5e" ||
       currentGame?.system?.version !== "5.3.3" ||
-      !/^14\./.test(String(currentGame?.version ?? ""))) {
+      currentGame?.version !== "14.367") {
       observation = blocked("PINNED_FOUNDRY_SYSTEM_NOT_OBSERVED");
     } else if (!user?.id || typeof user?.name !== "string" || !user.name.trim() || user?.isSelf !== true || user?.isGM !== true ||
       user?.isActiveGM !== true || user?.role !== 4 || user?.active !== true) {

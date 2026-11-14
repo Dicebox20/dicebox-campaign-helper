@@ -78,7 +78,7 @@ export function classifyClientObservation(v) {
   const target = v.target;
   if (!keys(target, ["exactWorldId", "foundryVersion", "systemId", "systemVersion"]) ||
       target.exactWorldId !== worldId ||
-      !/^14\.\d+(?:\.\d+)?$/.test(String(target.foundryVersion ?? "")) ||
+      target.foundryVersion !== "14.367" ||
       target.systemId !== "dnd5e" || target.systemVersion !== "5.3.3") {
     return blocked("WRONG_WORLD_OR_VERSION");
   }
