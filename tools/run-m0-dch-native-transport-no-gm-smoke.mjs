@@ -12,6 +12,7 @@ import { createConnection } from "node:net";
 import { createInterface } from "node:readline";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { readWindowsLocalTcpListeningPids } from "./m0-local-tcp-listening-pids.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const hostFile = resolve(root, "tools/dicebox-foundry-live-bridge.mjs");
@@ -195,6 +196,8 @@ async function run() {
   try {
     assert.equal(await poll(() => tcp(port), 40, 150), true,
       "TRACKED_HOST_NEVER_LISTENED_" + errors);
+    assert.deepEqual(readWindowsLocalTcpListeningPids(port), [host.pid],
+      "MCP_PORT_LISTENER_PID_NOT_OWNED_TRACKED_HOST");
     const initialized = await mcp(1, "initialize", {
       protocolVersion: "2024-11-05", capabilities: {},
       clientInfo: { name: "dch-native-transport-no-gm-smoke", version: "1.0" },
@@ -238,6 +241,8 @@ async function run() {
     }, 35, 200);
     assert.equal(observed, true, "REACHABLE_BUT_UNVERIFIED_UI_RESULT_NOT_OBSERVED");
     assert.equal(await tcp(port), true);
+    assert.deepEqual(readWindowsLocalTcpListeningPids(port), [host.pid],
+      "MCP_LISTENER_CHANGED_FROM_OWNED_TRACKED_HOST");
     process.stdout.write(JSON.stringify({
       schemaVersion: "1.0.0",
       operation: "dch.m0.native-desktop-tracked-mcp-transport-no-gm",
@@ -254,6 +259,7 @@ async function run() {
       mcpCallWithoutActiveGm: "DENIED",
       nativeDesktopResult: after.output,
       localMcpTcp8797ReachableDuringTest: true,
+      exactTcpListenerBoundToSpawnedHostPid: true,
       authenticatedActiveGmObserved: false,
       chatGptCallerAuthenticated: false,
       loadedDchModuleObserved: false,
