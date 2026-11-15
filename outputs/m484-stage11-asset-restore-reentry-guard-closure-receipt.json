@@ -1,1 +1,0 @@
-{"milestone":"M484","status":"PASS_LOCAL_CODE_ONLY","change":"exact trace-fixture reread/reuse guard; all drift remains blocked","validation":{"rust":"1 passed including byte-identical reuse","proposalUi":"10 passed","desktopSourceBuild":"passed"},"runtimeMutation":false,"foundryWrite":false,"evidenceLabel":"local"}

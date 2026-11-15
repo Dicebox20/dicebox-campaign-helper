@@ -1,1 +1,0 @@
-{"milestone":"M656","stage":"proposal-approval-history","status":"PASS LOCAL READ-ONLY","finding":"The inverse plan is explicitly non-executable. A future executor must consume a distinct explicitly approved execution revision rather than reinterpret this contract.","next":"M657 code-only execution-authorization envelope schema; no executor dispatch."}

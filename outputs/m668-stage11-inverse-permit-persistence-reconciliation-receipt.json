@@ -1,8 +1,0 @@
-{
-  "milestone": "M668",
-  "stage": "proposal-approval-history",
-  "status": "PASS LOCAL READ-ONLY",
-  "finding": "M667 supplies pure claim-state transitions, but the repository has no permit-specific persistence boundary. The existing staged journal is append-only per operation and cannot atomically reserve a single-use inverse permit before adapter dispatch.",
-  "selectedNext": "M669 code-only: define a serialized permit-claim store contract with exact identity, idempotent same-claim reread, conflicting-claim refusal, and unknown-write recovery; no adapter dispatch.",
-  "excluded": ["executor dispatch", "adapter call", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
-}

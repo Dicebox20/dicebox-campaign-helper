@@ -1,8 +1,0 @@
-{
-  "milestone": "M670",
-  "stage": "proposal-approval-history",
-  "status": "PASS LOCAL READ-ONLY",
-  "finding": "The authorized request, manifest, permit, claim state/store, reverse dependency order, and inverse adapter are individually compatible. A safe executor still needs one composed boundary: validate all hashes, persist the claim, reread the persisted claim and current active GM, dispatch exactly one reverse-ordered operation, reread its exact binding/ownership, and persist a terminal per-operation receipt before continuing.",
-  "selectedNext": "M671 code-only: define the pure inverse-executor orchestration input/result and injected current-GM/claim-store/adapter boundaries; no live dispatch.",
-  "excluded": ["adapter dispatch", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
-}

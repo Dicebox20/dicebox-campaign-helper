@@ -1,8 +1,0 @@
-{
-  "milestone": "M672",
-  "stage": "proposal-approval-history",
-  "status": "PASS LOCAL READ-ONLY",
-  "finding": "The M671 boundary structurally checks plan, manifest, permit, claim, and GM identifiers, but its synchronous validator does not recompute authorization/manifest/permit digests or compare claimState.permitSha256 to permit.permitSha256. A future executor must perform those asynchronous verifications before treating the claim as dispatch-ready.",
-  "selectedNext": "M673 code-only: add an asynchronous fail-closed boundary validator that verifies all canonical hashes and exact claim/permit identity before any executor implementation.",
-  "excluded": ["executor dispatch", "adapter call", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
-}

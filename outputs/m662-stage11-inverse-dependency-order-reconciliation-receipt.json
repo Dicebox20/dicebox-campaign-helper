@@ -1,8 +1,0 @@
-{
-  "milestone": "M662",
-  "stage": "proposal-approval-history",
-  "status": "PASS LOCAL READ-ONLY",
-  "finding": "Foundry IR carries a canonical dependency order, but the M651 inverse plan preserves only operations and exact bindings. It cannot prove whether inverse operations are independent or reverse an original dependency chain. The M661 lexical observation order therefore cannot become dispatch order.",
-  "selectedNext": "M663 code-only: extend the inverse-plan contract with an explicit, exact reverse dependency order that covers each inverse operation once and fails closed on drift.",
-  "excluded": ["executor dispatch", "adapter call", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
-}

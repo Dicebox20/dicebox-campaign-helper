@@ -1,8 +1,0 @@
-{
-  "milestone": "M412",
-  "status": "PASS_LOCAL",
-  "change": "The fixed test-only backup-promotion driver now awaits typed results from the existing preview, proposal, approval, and apply callbacks.",
-  "validation": {"focusedTests":"18 passed","desktopBuild":"passed"},
-  "excluded": ["package run","session transition","fixture mutation","recovery apply","Foundry","credentials","providers","player passwords"],
-  "nextBoundary": "M413 read-only reconciliation before any new packaged observation."
-}

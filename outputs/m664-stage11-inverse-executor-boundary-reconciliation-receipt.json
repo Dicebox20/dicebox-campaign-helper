@@ -1,8 +1,0 @@
-{
-  "milestone": "M664",
-  "stage": "proposal-approval-history",
-  "status": "PASS LOCAL READ-ONLY",
-  "finding": "The request, authorization, reverse dependency order, manifest, receipt, and adapter contracts are compatible, but each intentionally says execution:not-implemented. A future executor must therefore require a second, one-time execution permit; it cannot reinterpret planning or authorization records as dispatch authority.",
-  "selectedNext": "M665 code-only: define a distinct single-use inverse execution permit bound to the verified authorization, manifest, adapter, and current active GM.",
-  "excluded": ["executor dispatch", "adapter call", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
-}

@@ -1,1 +1,0 @@
-{"main":{"identifier":"main","description":"Minimal core window capability for the DiceBox desktop shell. No filesystem, shell, network plugin, or custom mutation command is enabled.","local":true,"windows":["main"],"permissions":["core:default"]}}

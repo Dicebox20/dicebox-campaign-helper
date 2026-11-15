@@ -1,8 +1,0 @@
-{
-  "milestone": "M658",
-  "stage": "proposal-approval-history",
-  "status": "PASS LOCAL READ-ONLY",
-  "finding": "M655 validates inverse-plan ID and active-GM equality, while M657 independently verifies the exact plan digest and authorization-time GM. The M655 input does not yet carry the M657 envelope, so no future executor could require the distinct authorization boundary.",
-  "selectedNext": "M659 code-only: require the M657 envelope in a pure inverse execution request and validate exact plan/GM identity before any future executor design.",
-  "excluded": ["executor dispatch", "adapter call", "Foundry action", "build", "launch", "runtime mutation", "Stage 11 acceptance"]
-}
