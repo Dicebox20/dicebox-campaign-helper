@@ -1,7 +1,12 @@
 # DiceBox Campaign Helper · Operations Dashboard
 
-Standalone GitHub Pages application for reviewable Roadmap v2 / M0 coordination. Published code is a privacy-safe shell with no private transcript contents or native receipt IDs embedded. Import private evidence through the browser's Settings & backups panel; imports remain in browser-local storage. Every edit requires a review and explicit local commit; no DCH project source, acceptance tracker, or Codex assignment is modified by the site.
+Standalone GitHub Pages application for reviewable Roadmap v2 coordination. The page displays a small public status feed from `public-status.json`; that feed contains only high-level status already published in the authoritative `main` branch.
 
-GitHub Pages configuration: Settings → Pages → Deploy from a branch → gh-pages → /(root). GitHub Pages websites are public even when source repositories are private, unless using eligible enterprise private publishing. Never commit private evidence JSON to the Pages branch.
+## Update cadence and authority
 
-Source of truth: `main` branch in this repository. This branch intentionally holds only site files to prevent publishing private project source.
+The Switchboard reviews the feed after each completed Foreman work turn (up to 20 minutes). It publishes when the public roadmap status changes, and refreshes at least once per day while work is active. The controlling sources are `main` branch Roadmap v2 and the chronological changelog. The dashboard site is deployed from `gh-pages` at the repository root.
+
+## Privacy and browser data
+
+Published files are public. The dashboard's work units, issues, receipts, handoffs, and review history remain in browser-local storage; they are not synchronized through GitHub. Never commit private evidence backups, worker chat IDs, assignments, transcripts, Bridge messages, credentials, or hidden reasoning to `gh-pages`. The branch intentionally contains only site code and the public-safe status feed, not DCH product source.
+

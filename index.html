@@ -57,7 +57,7 @@ kbd,code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12
 </style></head>
 <body><div class="shell"><aside><div class="brand"><div class="glyph">⬡</div><div><b>DICEBOX</b><small>CAMPAIGN HELPER · OPS</small></div></div>
 <nav id="nav"></nav><div class="asideend">● REVIEW-ONLY WORKSPACE<br>20-minute bounded work units<br>Local records · explicit commits</div></aside>
-<main><div class="top"><span>PROJECTS / DCH / ROADMAP V2</span><div class="flex"><span>● Browser-local database</span><button class="btn" id="quickexport">↓ Export backup</button></div></div><div id="app"></div>
+<main><div class="top"><span>PROJECTS / DCH / ROADMAP V2</span><div class="flex"><span>● Browser-local database</span><button class="btn" id="quickexport">↓ Export backup</button></div></div><section id="publicStatus" class="banner" aria-live="polite">Loading latest public project status…</section><div id="app"></div>
 <div class="fine">This coordination site never changes DCH source, Foundry worlds, Codex projects, worker assignments, or milestone acceptance. Files published on GitHub Pages are publicly accessible; imported evidence remains in this browser unless you export/share it.</div></main></div><div id="overlay"></div>
 <script>
 'use strict';
@@ -130,6 +130,23 @@ db.log.push({id:'REV-'+Date.now().toString(36),time:now(),actor:document.querySe
 function download(){const file=new Blob([JSON.stringify({...db,exportedAt:now()},null,2)],{type:'application/json'});const u=URL.createObjectURL(file),a=document.createElement('a');a.href=u;a.download='dch-operations-backup-'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1500)}
 function importFile(){const el=document.createElement('input');el.type='file';el.accept='.json,application/json';el.onchange=async()=>{try{const raw=await el.files[0].text();if(raw.length>15e6)throw Error('Backup is too large for browser-local storage');const data=norm(JSON.parse(raw));pendingImport=data;modal('Review private snapshot import','<p>This imports evidence into <strong>this browser only</strong>, replacing locally stored records after explicit confirmation.</p><div class="grid"><div class="card">Work units<div class="big">'+data.work.length+'</div></div><div class="card">Issues<div class="big">'+data.issues.length+'</div></div><div class="card">Receipts<div class="big">'+data.receipts.length+'</div></div><div class="card">Handoffs<div class="big">'+data.handoffs.length+'</div></div></div><p class="notice">Existing local records: '+db.work.length+' work units, '+db.log.length+' chronological changes. Export a backup first if you want to preserve them.</p><div class="actions"><button class="btn" id="cancelimport">Cancel</button><button class="btn primary" id="confirmimport">Confirm local import</button></div>');document.querySelector('#cancelimport').onclick=closeModal;document.querySelector('#confirmimport').onclick=()=>{const prev={work:db.work.length,issues:db.issues.length,receipts:db.receipts.length,handoffs:db.handoffs.length};db=pendingImport;db.log.push({id:'IMPORT-'+Date.now().toString(36),time:now(),actor:'Local reviewer',kind:'IMPORT REVIEWED',item:'Private JSON evidence snapshot',before:prev,after:{work:db.work.length,issues:db.issues.length,receipts:db.receipts.length,handoffs:db.handoffs.length}});save();closeModal();render()}}catch(e){modal('Import failed','<p>'+esc(e.message)+'</p><button class="btn" id="okay">Close</button>');document.querySelector('#okay').onclick=closeModal}};el.click()}
 function action(s,id){if(s==='export'){download();return}if(s==='import'){importFile();return}if(s==='tracker'){window.open(repo+'/blob/main/docs/M0-BOOTSTRAP-ACCEPTANCE-TRACKER.md','_blank','noopener');return}if(s==='go-work'){page='work';render();return}if(s.startsWith('add-'))beginEdit(s.slice(4));else if(s.startsWith('edit-'))beginEdit(s.slice(5),id)}
+async function loadPublicStatus(){
+const host=document.querySelector('#publicStatus');
+try{
+const response=await fetch('./public-status.json',{cache:'no-store'});
+if(!response.ok)throw Error('Public status unavailable');
+const s=await response.json();
+if(s.schemaVersion!==1||!s.activeMilestone||!Number.isInteger(s.verifiedCriteria)||!Number.isInteger(s.totalCriteria)||s.totalCriteria<1||!s.source||!/^[0-9a-f]{40}$/i.test(s.source.commit)||Number.isNaN(Date.parse(s.reviewedAt)))throw Error('Invalid public status');
+const reviewed=new Date(s.reviewedAt).toLocaleString();
+const state=String(s.milestoneStatus||'UNKNOWN');
+const stateClass=state.includes('NOT_ACCEPTED')?'not-accepted':state==='ACCEPTED'?'verified':'unknown';
+const commitUrl='https://github.com/Dicebox20/dicebox-campaign-helper/commit/'+s.source.commit;
+host.innerHTML='<div class="between"><strong>Latest public roadmap status</strong><span class="pill '+stateClass+'">'+esc(state)+'</span></div><p><strong>'+esc(s.activeMilestone.id+' · '+s.activeMilestone.title)+'</strong> · '+s.verifiedCriteria+'/'+s.totalCriteria+' acceptance criteria verified.</p><div class="sub">Reviewed '+esc(reviewed)+' · '+link(commitUrl,'Source main @ '+s.source.commit.slice(0,12))+' · '+link('https://github.com/Dicebox20/dicebox-campaign-helper/blob/main/docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md','Roadmap v2')+' · '+link('https://github.com/Dicebox20/dicebox-campaign-helper/blob/main/docs/DCH-CHRONOLOGICAL-CHANGELOG.md','Changelog')+'</div>';
+}catch(_){
+host.innerHTML='<strong>Public status feed unavailable.</strong> '+link('https://github.com/Dicebox20/dicebox-campaign-helper/blob/main/docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md','Open Roadmap v2')+' · '+link('https://github.com/Dicebox20/dicebox-campaign-helper/blob/main/docs/DCH-CHRONOLOGICAL-CHANGELOG.md','Open changelog');
+}
+}
 document.querySelector('#quickexport').onclick=download;
 render();
+loadPublicStatus();
 </script></body></html>
