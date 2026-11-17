@@ -1,7 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-15T19:21:11Z",
-  "roadmap": "DCH Roadmap v2",
+  "reviewedAt": "2026-11-17T17:00:46Z",
   "activeMilestone": {
     "id": "M0",
     "title": "ChatGPT Bootstrap"
@@ -9,13 +8,9 @@
   "milestoneStatus": "ACTIVE / NOT_ACCEPTED",
   "verifiedCriteria": 0,
   "totalCriteria": 8,
-  "summary": "Six criteria are collecting evidence and two are missing. The first authenticated read-only tool call inside DCH Desktop remains to be demonstrated.",
   "source": {
-    "repository": "Dicebox20/dicebox-campaign-helper",
-    "branch": "main",
     "commit": "0227f601c8421c9fe5bb9b7c72d90d69fce00c15",
-    "commitDate": "2026-11-15T09:52:05Z",
-    "roadmapPath": "docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
-    "changelogPath": "docs/DCH-CHRONOLOGICAL-CHANGELOG.md"
+    "roadmapUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/0227f601c8421c9fe5bb9b7c72d90d69fce00c15/docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
+    "changelogUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/0227f601c8421c9fe5bb9b7c72d90d69fce00c15/docs/DCH-CHRONOLOGICAL-CHANGELOG.md"
   }
 }
