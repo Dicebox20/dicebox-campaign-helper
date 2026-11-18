@@ -27,8 +27,8 @@ test('contains no mutation or executable launch command', () => {
   }
 });
 
-test('falls back to read-only Windows certutil when Get-FileHash is unavailable', () => {
-  assert.match(script, /Get-LauncherSha256/);
-  assert.match(script, /certutil\.exe -hashfile/);
-  assert.match(script, /SHA256 output was not recognized/);
+
+test('verifies explicit production bin target before release review', () => {
+  assert.match(script, /PRODUCTION_LAUNCHER_BIN_TARGET_MISSING/);
+  assert.match(script, /productionLauncherBinDeclared/);
 });
