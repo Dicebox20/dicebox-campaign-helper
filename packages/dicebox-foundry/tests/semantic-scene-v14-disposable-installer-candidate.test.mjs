@@ -243,3 +243,11 @@ test('throwing DataModel validator cannot leak its raw error before write',async
   });
   assert.deepEqual(h.writes,[]);
 });
+
+test('parent Scene ownership changed by a child creation hook prevents success',async()=>{
+  const h=harness({afterChild:(type,game)=>{if(type==='Region') game.scenes.contents[0].flags['dicebox-campaign-helper'].blueprintRevision=99;}});
+  const r=await installDisposableSceneV14({...goodOpts(h),...trusted});
+  assert.equal(r.status,'PARTIAL_OR_BLOCKED');assert.equal(r.failedPhase,'Region');
+  assert.equal(r.reasonCode,'DCH_DISPOSABLE_INSTALL_SCENE_OWNERSHIP_DRIFT');
+  assert.equal(r.recoveryRequired,true);assert.equal(r.acceptanceClaim,false);
+});
