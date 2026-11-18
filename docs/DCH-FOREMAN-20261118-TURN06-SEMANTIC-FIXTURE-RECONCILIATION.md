@@ -40,3 +40,24 @@ This is an execution/evidence receipt, **not** a competing product roadmap.
 Official v14 `SceneData` declares optional embedded `levels` and `lights` collections, plus `initialLevel`; `AmbientLightData` declares `x`, `y`, `config`, `walls`, `vision`, and metadata. The `BaseLevel` documentation shows creation through `scene.createEmbeddedDocuments("Level", ...)` and owns the background/foreground media. The B converter currently has no approved Level/background artifact, and the Foreman disposable installer candidate intentionally does not manufacture one. **No player-visible completed scene is established by a successful synthetic Scene/Wall/AmbientLight/Region receipt.** A subsequent integration slice must bind an approved Level and artwork/asset attestation before any player-view claim. Sources: https://foundryvtt.com/api/v14/interfaces/foundry.documents.types.SceneData.html ; https://foundryvtt.com/api/v14/interfaces/foundry.documents.types.AmbientLightData.html ; https://foundryvtt.com/api/v14/classes/foundry.documents.BaseLevel.html .
 
 The additional four-file source-only branch candidate has 99/99 combined synthetic tests in independent Node v22.16.0 scratch; none use installed Foundry or a selected ChatGPT account. The disposable installer candidate is not registered by module.json or exposed to a model tool catalog. A real runtime authorization/Level/asset and negative-player-observer test remain mandatory.
+
+## Source-only hardening, review revision 126 (2026-11-18)
+
+The expanded **isolated Node 22.16.0 test suite** passes **126/126**, 0 failures. The current feature branch contains the reviewed converter and three fixture suites; no source here is installed or exposed as a live ChatGPT tool. The original Worker B candidate stays in the Library review bundle and is not claimed to match the subsequently hardened source byte-for-byte.
+
+Independent Foreman negative-case review found and fixed:
+
+1. Partially overlapping collinear solid Walls and crossing/overlapping door portals were not rejected by the original converter. Seven new geometry regressions now cover these cases, retaining valid endpoint-only joins.
+2. A Scene.create call can commit then throw, leaving no return ID. The receipt now conservatively marks write outcome unknown and recovery required rather than claiming no write.
+3. World, build, elected GM, approved revision and blueprint source can drift during awaits. The adapter rechecks state and pins the complete blueprint across callbacks, with a full authored content snapshot passed to the trusted host approval verifier. The caller's declared SHA is not accepted as independent content authenticity.
+4. Successful child API counts and ownership flags alone were insufficient. The adapter now verifies exact return IDs, rejects additional helper-owned documents, and authoritatively compares the authored Wall geometry/limits, light coordinates/config and Region polygon with reread data.
+5. Approval and DataModel validation provider errors are redacted to safe error codes. Synthetic tests cannot themselves prove that those callbacks are backed by independently authenticated APIs.
+
+Source/test SHA-256 after this review:
+- semantic converter: `044c86594a3b3843e7488a8490a9a1dc7f693f74db42248d7451b47f1a01e283`
+- disposable installer: `5a9dc128ae74b4bb8ac28fdc4bb8fbc12678e316e4e486b2c3655b196b0ca59e` (verify against final bundled review manifest before accepting)
+- tests are available under `packages/dicebox-foundry/tests` on the isolated branch.
+
+The active GitHub main checkout is older than the previous Foreman's dirty Windows source: main `apps/campaign-helper-desktop/src-tauri/src/lib.rs` contains a local transport probe but not the reported uncommitted native `siwc_app_tools.rs` integration. No automatic merge of the remote feature branch into the Windows checkout is safe until the canonical writer lock and local source divergence are reconciled.
+
+Next acceptance gates: exact Foundry 14.367 DataModel schema and GM-controlled disposable world; approved Level/background asset and hash; real wall/door movement, vision/light, Region behavior and two-branch key/door puzzle; native ChatGPT selected-account verified proposal and permission receipts; player-view observation. The original M0 gate remains **NOT_ACCEPTED (0/8)**.
