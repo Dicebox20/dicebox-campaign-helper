@@ -93,7 +93,13 @@ export async function installDisposableSceneV14({runtime,authorization,blueprint
     if (JSON.stringify(blueprint)!==sourceSnapshot) fail('BLUEPRINT_MUTATED');
   };
   const src=Object.freeze(structuredClone(candidate.sourceBlueprint));
-  const proof = await verifyApproval({worldId:WORLD,gmId:runtime.game.user.id,blueprint:structuredClone(src)});
+  // Supply the complete authoring payload to the trusted verifier: a claimed
+  // sha256 field alone cannot prove that this particular geometry was approved.
+  let proof;
+  try {
+    proof = await verifyApproval({worldId:WORLD,gmId:runtime.game.user.id,
+      blueprint:structuredClone(src),fullBlueprint:structuredClone(blueprint)});
+  } catch { fail('APPROVAL_PROVIDER_ERROR'); }
   if (proof !== true) fail('APPROVAL_UNVERIFIED');
   ensureStableSource();
   // Async host approval may have yielded to a new world, GM or blueprint;
@@ -108,8 +114,11 @@ export async function installDisposableSceneV14({runtime,authorization,blueprint
       stableId:`scene:${src.id}`, status:'disposable-provisional'
     }}
   };
-  const validate = await validateModels({scene:structuredClone(sceneData),
-    documents:structuredClone(candidate.documents),worldId:WORLD,version:VERSION});
+  let validate;
+  try {
+    validate = await validateModels({scene:structuredClone(sceneData),
+      documents:structuredClone(candidate.documents),worldId:WORLD,version:VERSION});
+  } catch { fail('MODEL_PROVIDER_ERROR'); }
   if (validate !== true) fail('MODEL_VALIDATION_UNVERIFIED');
   ensureStableSource();
   guard(runtime,authorization,blueprint);
@@ -139,9 +148,15 @@ export async function installDisposableSceneV14({runtime,authorization,blueprint
       reread=runtime.game.scenes.get?.(created.id);
       const collection=arr(reread?.[COLLECTIONS[type]]);
       if (!collection) fail('CHILD_COLLECTION_REREAD');
+      const ownedForBlueprint=collection.filter(x=>owner(x)?.blueprintId===src.id
+        && owner(x)?.blueprintSha256===src.sha256);
+      if (ownedForBlueprint.length!==docs.length) fail('EXTRA_OWNED_CHILD');
+      const returnedIds=new Set(returned.map(x=>x?.id));
+      if (returnedIds.size!==docs.length || returnedIds.has(undefined)) fail('CHILD_RECEIPT_IDS');
       for (const d of docs) {
         const matches=collection.filter(x=>sameOwner(x,src,d.stableId));
         if (matches.length!==1 || !matches[0]?.id) fail('CHILD_OWNERSHIP_REREAD');
+        if (!returnedIds.has(matches[0].id)) fail('CHILD_RECEIPT_IDS');
         if (!sameSemantic(type,matches[0],d.data)) fail('CHILD_SEMANTIC_REREAD');
       }
       counts[type]=docs.length;
