@@ -59,6 +59,7 @@ $head = $null
 $branch = $null
 $trackedChanged = $null
 $untrackedCount = $null
+$productionBinDeclared = $null
 
 if (-not $sourceExists) {
   $warnings.Add('WORKSTATION_ROOT_NOT_FOUND')
@@ -67,6 +68,14 @@ if (-not $sourceExists) {
     if (-not (Test-Path -LiteralPath (Join-Path $root $rel) -PathType Leaf)) { $markerMissing += $rel }
   }
   if ($markerMissing.Count -gt 0) { $warnings.Add('WORKSTATION_MARKER_MISMATCH') }
+  $manifest = Join-Path $root 'apps\campaign-helper-desktop\src-tauri\Cargo.toml'
+  if (Test-Path -LiteralPath $manifest -PathType Leaf) {
+    $toml = [System.IO.File]::ReadAllText($manifest, [System.Text.Encoding]::UTF8)
+    $productionBinDeclared = [bool]($toml -match '(?m)^\[\[bin\]\]\r?\nname = "dicebox-campaign-helper-desktop"')
+    if (-not $productionBinDeclared) { $warnings.Add('PRODUCTION_LAUNCHER_BIN_TARGET_MISSING') }
+  } else {
+    $warnings.Add('CARGO_MANIFEST_MISSING')
+  }
   try {
     $head = @(Invoke-GitReadOnly -Root $root -Arguments @('rev-parse', 'HEAD'))[0]
     $branch = @(Invoke-GitReadOnly -Root $root -Arguments @('rev-parse', '--abbrev-ref', 'HEAD'))[0]
@@ -137,6 +146,7 @@ $report = [ordered]@{
   sourceBranch = $branch
   trackedChangedFileCount = $trackedChanged
   untrackedFileCount = $untrackedCount
+  productionLauncherBinDeclared = $productionBinDeclared
   launcherPath = $exe
   launcherExists = $exeExists
   launcherSha256 = $exeHash
