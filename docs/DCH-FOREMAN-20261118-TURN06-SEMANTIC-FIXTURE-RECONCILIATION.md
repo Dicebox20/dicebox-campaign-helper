@@ -61,3 +61,13 @@ Source/test SHA-256 after this review:
 The active GitHub main checkout is older than the previous Foreman's dirty Windows source: main `apps/campaign-helper-desktop/src-tauri/src/lib.rs` contains a local transport probe but not the reported uncommitted native `siwc_app_tools.rs` integration. No automatic merge of the remote feature branch into the Windows checkout is safe until the canonical writer lock and local source divergence are reconciled.
 
 Next acceptance gates: exact Foundry 14.367 DataModel schema and GM-controlled disposable world; approved Level/background asset and hash; real wall/door movement, vision/light, Region behavior and two-branch key/door puzzle; native ChatGPT selected-account verified proposal and permission receipts; player-view observation. The original M0 gate remains **NOT_ACCEPTED (0/8)**.
+
+## Confirmed Foundry 14.367 → 14.370 release delta
+
+Official release notes (read 2026-11-18):
+- [14.367 / Aug 18](https://foundryvtt.com/releases/14.367) is the pinned private fixture version. It corrected Level ordering and some data/client issues relative to 14.366.
+- [14.368 / Sep 16](https://foundryvtt.com/releases/14.368) changed default Level top elevation from `20` to `4 × grid distance`. Generated Levels should supply explicit elevation values instead of relying on cross-version defaults.
+- [14.369 / Oct 8](https://foundryvtt.com/releases/14.369) fixed Region shape scaling when Scenes resize, a Scene import-with-Wall rendering failure, and a case in which Ambient Light darkness rendering failed in Chromium. Its release also documents an issue where scene importing Walls could require manual refresh; real player-view acceptance at 14.367 must treat rendering vs persistence as separate checks.
+- [14.370 / Nov 2](https://foundryvtt.com/releases/14.370) explicitly recommends upgrading due to upstream Node.js security fixes; it adds Grid Space Region shapes, Level `_stats`, and many client changes. The current online v14 API likely describes these later changes, not a pinned 14.367 runtime.
+
+Decision: **do not silently upgrade an owner world or installed module** during source review. Use exact 14.367 as the existing disposable test baseline, and make a separate, backed-up migration/compatibility validation decision for 14.370. Do not mistake tests under 14.370 for a 14.367 acceptance receipt or vice versa. No Foundry version was installed, updated or runtime-tested in this Turn06.
