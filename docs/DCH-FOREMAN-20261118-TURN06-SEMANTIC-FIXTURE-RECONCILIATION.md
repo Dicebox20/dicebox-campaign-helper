@@ -43,7 +43,7 @@ The additional four-file source-only branch candidate has 99/99 combined synthet
 
 ## Source-only hardening, review revision 126 (2026-11-18)
 
-The expanded **isolated Node 22.16.0 test suite** passes **126/126**, 0 failures. The current feature branch contains the reviewed converter and three fixture suites; no source here is installed or exposed as a live ChatGPT tool. The original Worker B candidate stays in the Library review bundle and is not claimed to match the subsequently hardened source byte-for-byte.
+The expanded **isolated Node 22.16.0 test suite** passes **127/127**, 0 failures (including 24 complete feature-order permutations). The current feature branch contains the reviewed converter and three fixture suites; no source here is installed or exposed as a live ChatGPT tool. The original Worker B candidate stays in the Library review bundle and is not claimed to match the subsequently hardened source byte-for-byte.
 
 Independent Foreman negative-case review found and fixed:
 
@@ -71,3 +71,7 @@ Official release notes (read 2026-11-18):
 - [14.370 / Nov 2](https://foundryvtt.com/releases/14.370) explicitly recommends upgrading due to upstream Node.js security fixes; it adds Grid Space Region shapes, Level `_stats`, and many client changes. The current online v14 API likely describes these later changes, not a pinned 14.367 runtime.
 
 Decision: **do not silently upgrade an owner world or installed module** during source review. Use exact 14.367 as the existing disposable test baseline, and make a separate, backed-up migration/compatibility validation decision for 14.370. Do not mistake tests under 14.370 for a 14.367 acceptance receipt or vice versa. No Foundry version was installed, updated or runtime-tested in this Turn06.
+
+## Runtime-shape integration gap
+
+The no-write Worker B helper `previewSemanticSceneForActiveGm` currently validates its injected runtime as a plain object (`record(runtime)` requires `Object.prototype`). Synthetic tests pass a plain `{game, Scene}` wrapper; a real browser `window/globalThis` object is not that wrapper. Future installation wiring must supply a narrowly scoped authenticated adapter object instead of silently passing the page-global runtime, and must prove the actual `game.scenes` and embedded-document interfaces under Foundry 14.367. This is not a release-ready module entry point.
