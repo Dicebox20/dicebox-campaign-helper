@@ -14,7 +14,7 @@ const blueprint=()=>({schemaVersion:SEMANTIC_SLICE_VERSION,
     {kind:'door',stableId:'dbx:door:east',a:{x:900,y:300},b:{x:900,y:400},state:'closed'}
   ]});
 const authorization=()=>({worldId:'dbx-test-world',currentSingleWriterId:'gm-fixture',activeGmId:'gm-fixture',approvedBlueprintSha256:BLUEPRINT_SHA,approvedBlueprintId:'dbx:blueprint:fixture-one',approvedBlueprintRevision:3});
-function harness({mutateReceipt=false,truncateLight=false,failCreate=false,afterChild=null}={}){
+function harness({mutateReceipt=false,truncateLight=false,failCreate=false,throwAfterCreate=false,afterChild=null}={}){
   const writes=[];let nextId=1;
   const scenes={contents:[], get(id){return this.contents.find(x=>x.id===id);}};
   const game={version:'14.367',world:{id:'dbx-test-world'},system:{id:'dnd5e',version:'5.3.3'},
@@ -36,6 +36,7 @@ function harness({mutateReceipt=false,truncateLight=false,failCreate=false,after
       }
     };
     scenes.contents.push(scene);
+    if (throwAfterCreate) throw new Error('POST_COMMIT_HOST_TIMEOUT');
     return scene;
   }};
   return {runtime:{game,Scene},writes,scenes};
@@ -97,10 +98,17 @@ test('tampered Region readback is blocked and preserves partial receipt',async()
   assert.equal(result.status,'PARTIAL_OR_BLOCKED');assert.equal(result.failedPhase,'Region');
   assert.match(result.reasonCode,/CHILD_OWNERSHIP_REREAD/);assert.equal(result.recoveryRequired,true);
 });
-test('failed Scene.create has no partial recovery claim',async()=>{
+test('Scene.create rejection remains an unknown side effect until authoritative reread',async()=>{
   const h=harness({failCreate:true});const result=await installDisposableSceneV14({...goodOpts(h),...trusted});
-  assert.equal(result.failedPhase,'Scene');assert.equal(result.recoveryRequired,false);
-  assert.equal(result.sceneId,null);
+  assert.equal(result.failedPhase,'Scene');assert.equal(result.recoveryRequired,true);
+  assert.equal(result.writeOutcomeUnknown,true);assert.equal(result.sceneId,null);
+});
+test('Scene.create may commit and then reject: retain conservative recovery flag',async()=>{
+  const h=harness({throwAfterCreate:true});const result=await installDisposableSceneV14({...goodOpts(h),...trusted});
+  assert.equal(result.status,'PARTIAL_OR_BLOCKED');assert.equal(result.failedPhase,'Scene');
+  assert.equal(result.recoveryRequired,true);assert.equal(result.writeOutcomeUnknown,true);
+  assert.equal(result.sceneId,null);assert.equal(h.scenes.contents.length,1);
+  assert.equal(JSON.stringify(result).includes('POST_COMMIT_HOST_TIMEOUT'),false);
 });
 
 test('source revision mismatch blocks preflight even with matching id and digest',()=>{
@@ -140,4 +148,25 @@ test('raw server error is sanitized in recovery receipt',async()=>{
   const h=harness({failCreate:true});const r=await installDisposableSceneV14({...goodOpts(h),...trusted});
   assert.equal(r.reasonCode,'DCH_DISPOSABLE_INSTALL_RUNTIME_FAILURE');
   assert.equal(JSON.stringify(r).includes('CREATE_FAILURE'),false);
+});
+
+
+test('blueprint edit during asynchronous approval blocks before first write',async()=>{
+  const h=harness(),opts=goodOpts(h);
+  const approval=async()=>{opts.blueprint.scene.name='Evil changed scene';return true;};
+  await assert.rejects(installDisposableSceneV14({...opts,...trusted,verifyApproval:approval}),/BLUEPRINT_MUTATED/);
+  assert.deepEqual(h.writes,[]);
+});
+test('blueprint edit during asynchronous model validation blocks before first write',async()=>{
+  const h=harness(),opts=goodOpts(h);
+  const validate=async()=>{opts.blueprint.features[1].at.x=1;return true;};
+  await assert.rejects(installDisposableSceneV14({...opts,...trusted,validateModels:validate}),/BLUEPRINT_MUTATED/);
+  assert.deepEqual(h.writes,[]);
+});
+test('host approval callback cannot mutate pinned source used for scene flags',async()=>{
+  const h=harness(),opts=goodOpts(h);
+  const approval=async({blueprint:received})=>{received.sha256='f'.repeat(64);return true;};
+  const result=await installDisposableSceneV14({...opts,...trusted,verifyApproval:approval});
+  assert.equal(result.status,'DISPOSABLE_APPLY_RECEIPT');
+  assert.equal(h.scenes.contents[0].flags['dicebox-campaign-helper'].blueprintSha256,BLUEPRINT_SHA);
 });
