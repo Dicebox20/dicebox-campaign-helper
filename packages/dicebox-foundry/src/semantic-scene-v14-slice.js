@@ -61,6 +61,26 @@ function intersects(a,b,c,d) {
     || o3===0 && on(c,d,a) || o4===0 && on(c,d,b)) return true;
   return (o1>0)!==(o2>0) && (o3>0)!==(o4>0);
 }
+// Reject positive-length collinear overlap even when two segments have
+// different endpoints. Adjacent segments that meet at a single endpoint
+// remain valid as separate geometry features.
+function overlapsOnLine(first, second) {
+  const a=[first[0],first[1]], b=[first[2],first[3]];
+  const c=[second[0],second[1]], d=[second[2],second[3]];
+  if (orient(a,b,c)!==0 || orient(a,b,d)!==0) return false;
+  const axis=Math.abs(a[0]-b[0])>=Math.abs(a[1]-b[1]) ? 0 : 1;
+  return Math.min(Math.max(a[axis],b[axis]),Math.max(c[axis],d[axis]))
+    > Math.max(Math.min(a[axis],b[axis]),Math.min(c[axis],d[axis]));
+}
+function conflictingDoorPortals(one, two) {
+  const a=[one[0],one[1]], b=[one[2],one[3]];
+  const c=[two[0],two[1]], d=[two[2],two[3]];
+  if (!intersects(a,b,c,d)) return false;
+  if (overlapsOnLine(one,two)) return true;
+  // A common endpoint is a junction, not an overlapping portal. Any
+  // interior intersection (including endpoint-to-interior) is rejected.
+  return ![a,b].some(u=>[c,d].some(v=>u[0]===v[0]&&u[1]===v[1]));
+}
 function conflictsWithDoor(door, wall) {
   const a=[door[0],door[1]],b=[door[2],door[3]];
   const c=[wall[0],wall[1]],d=[wall[2],wall[3]];
@@ -176,6 +196,13 @@ export function convertSemanticSceneV14(blueprint) {
   for (const door of wallSegments.filter(s=>s.kind==='door')) {
     for (const wall of wallSegments.filter(s=>s.kind==='wall')) {
       if (conflictsWithDoor(door.c,wall.c)) reject('DOOR_OBSTRUCTED');
+    }
+  }
+  for (let i=0;i<wallSegments.length;i++) {
+    for (let j=i+1;j<wallSegments.length;j++) {
+      const a=wallSegments[i], b=wallSegments[j];
+      if (a.kind==='wall' && b.kind==='wall' && overlapsOnLine(a.c,b.c)) reject('OVERLAPPING_SEGMENT');
+      if (a.kind==='door' && b.kind==='door' && conflictingDoorPortals(a.c,b.c)) reject('DOOR_PORTAL_OVERLAP');
     }
   }
   if (KIND_SORT.some(k => !types.has(k))) reject('MISSING_SEMANTIC_KIND');
