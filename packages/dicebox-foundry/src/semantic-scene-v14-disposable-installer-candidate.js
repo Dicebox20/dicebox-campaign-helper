@@ -20,14 +20,22 @@ function sameOwner(doc, src, stableId) {
   return f?.stableId === stableId && f?.blueprintId === src.id
     && f?.blueprintSha256 === src.sha256 && f?.blueprintRevision === src.revision;
 }
-function guard(runtime, auth, blueprint) {
+function verifyExecutionIdentity(runtime,auth,src) {
   const game = runtime?.game;
   if (game?.version !== VERSION || game?.world?.id !== WORLD
       || game?.system?.id !== SYSTEM || game?.system?.version !== SYSTEM_VERSION) fail('EXACT_FIXTURE');
   if (!game.user?.isGM || !game.user?.id || game.users?.activeGM?.id !== game.user.id) fail('ELECTED_GM');
   if (auth?.worldId !== WORLD || auth.currentSingleWriterId !== game.user.id
       || auth.activeGmId !== game.user.id) fail('WRITER_AUTH');
+  if (src && (auth.approvedBlueprintId!==src.id
+      || auth.approvedBlueprintSha256!==src.sha256
+      || auth.approvedBlueprintRevision!==src.revision)) fail('APPROVAL_REVISION');
+}
+function guard(runtime, auth, blueprint) {
+  verifyExecutionIdentity(runtime,auth);
+  const game = runtime.game;
   const candidate = previewSemanticSceneForActiveGm(blueprint, runtime, auth);
+  verifyExecutionIdentity(runtime,auth,candidate.sourceBlueprint);
   const coll = arr(game.scenes);
   if (!coll) fail('SCENE_COLLECTION');
   const duplicates = coll.filter(scene => {
@@ -62,6 +70,9 @@ export async function installDisposableSceneV14({runtime,authorization,blueprint
   const src=candidate.sourceBlueprint;
   const proof = await verifyApproval({worldId:WORLD,gmId:runtime.game.user.id,blueprint:src});
   if (proof !== true) fail('APPROVAL_UNVERIFIED');
+  // Async host approval may have yielded to a new world, GM or blueprint;
+  // a fresh uniqueness and identity check is required before persistence.
+  guard(runtime,authorization,blueprint);
   const sceneData = {
     name:candidate.foundryScene.name, width:candidate.foundryScene.width,
     height:candidate.foundryScene.height, grid:structuredClone(candidate.foundryScene.grid),
@@ -74,21 +85,25 @@ export async function installDisposableSceneV14({runtime,authorization,blueprint
   const validate = await validateModels({scene:structuredClone(sceneData),
     documents:structuredClone(candidate.documents),worldId:WORLD,version:VERSION});
   if (validate !== true) fail('MODEL_VALIDATION_UNVERIFIED');
+  guard(runtime,authorization,blueprint);
   if (typeof runtime.Scene?.create !== 'function') fail('SCENE_CREATE_UNAVAILABLE');
   // No other world document is changed. When a partial write occurs, preserve
   // the disposable scene and return an explicit recovery-needed receipt.
   let created=null, phase='Scene'; const counts={Wall:0,AmbientLight:0,Region:0};
   try {
     created=await runtime.Scene.create(sceneData);
+    verifyExecutionIdentity(runtime,authorization,src);
     if (!created?.id) fail('SCENE_CREATE_REREAD');
     let reread=runtime.game.scenes.get?.(created.id);
     if (!reread || reread.id!==created.id || !sameOwner(reread,src,`scene:${src.id}`)) fail('SCENE_OWNERSHIP_REREAD');
     for (const type of PHASES) {
       phase=type;
+      verifyExecutionIdentity(runtime,authorization,src);
       if (typeof reread.createEmbeddedDocuments!=='function') fail('CHILD_API_UNAVAILABLE');
       const docs=candidate.documents[type];
       const payload=docs.map(d=>structuredClone(d.data));
       const returned=await reread.createEmbeddedDocuments(type,payload);
+      verifyExecutionIdentity(runtime,authorization,src);
       if (!Array.isArray(returned) || returned.length!==payload.length) fail('CHILD_CREATE_RECEIPT');
       reread=runtime.game.scenes.get?.(created.id);
       const collection=arr(reread?.[COLLECTIONS[type]]);
@@ -106,7 +121,9 @@ export async function installDisposableSceneV14({runtime,authorization,blueprint
   } catch (error) {
     return Object.freeze({status:'PARTIAL_OR_BLOCKED',evidenceClass:'runtime-unspecified',
       worldId:WORLD,blueprint:src,sceneId:created?.id??null,failedPhase:phase,
-      reason:String(error?.message??error).slice(0,160),recoveryRequired:Boolean(created),
+      reasonCode:typeof error?.message==='string' && /^DCH_DISPOSABLE_INSTALL_[A-Z_]+$/.test(error.message)
+        ? error.message : 'DCH_DISPOSABLE_INSTALL_RUNTIME_FAILURE',
+      recoveryRequired:Boolean(created),
       createdCounts:counts,acceptanceClaim:false});
   }
 }
