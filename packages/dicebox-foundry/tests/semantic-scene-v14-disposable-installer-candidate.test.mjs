@@ -13,8 +13,8 @@ const blueprint=()=>({schemaVersion:SEMANTIC_SLICE_VERSION,
     {kind:'wall',stableId:'dbx:wall:north',a:{x:100,y:100},b:{x:900,y:100}},
     {kind:'door',stableId:'dbx:door:east',a:{x:900,y:300},b:{x:900,y:400},state:'closed'}
   ]});
-const authorization=()=>({worldId:'dbx-test-world',currentSingleWriterId:'gm-fixture',activeGmId:'gm-fixture',approvedBlueprintSha256:BLUEPRINT_SHA,approvedBlueprintId:'dbx:blueprint:fixture-one'});
-function harness({mutateReceipt=false,truncateLight=false,failCreate=false}={}){
+const authorization=()=>({worldId:'dbx-test-world',currentSingleWriterId:'gm-fixture',activeGmId:'gm-fixture',approvedBlueprintSha256:BLUEPRINT_SHA,approvedBlueprintId:'dbx:blueprint:fixture-one',approvedBlueprintRevision:3});
+function harness({mutateReceipt=false,truncateLight=false,failCreate=false,afterChild=null}={}){
   const writes=[];let nextId=1;
   const scenes={contents:[], get(id){return this.contents.find(x=>x.id===id);}};
   const game={version:'14.367',world:{id:'dbx-test-world'},system:{id:'dnd5e',version:'5.3.3'},
@@ -30,6 +30,7 @@ function harness({mutateReceipt=false,truncateLight=false,failCreate=false}={}){
         const docs=payload.map(data=>({id:`child-${nextId++}`,...structuredClone(data)}));
         scenes.get(scene.id)[col].contents.push(...docs);
         if(mutateReceipt&&type==='Region') scenes.get(scene.id)[col].contents[0].flags['dicebox-campaign-helper'].stableId='tampered';
+        if (typeof afterChild==='function') afterChild(type,game);
         if(truncateLight&&type==='AmbientLight') return [];
         return docs;
       }
@@ -94,10 +95,49 @@ test('failed light operation reports partial-write recovery and halts Region pha
 test('tampered Region readback is blocked and preserves partial receipt',async()=>{
   const h=harness({mutateReceipt:true});const result=await installDisposableSceneV14({...goodOpts(h),...trusted});
   assert.equal(result.status,'PARTIAL_OR_BLOCKED');assert.equal(result.failedPhase,'Region');
-  assert.match(result.reason,/CHILD_OWNERSHIP_REREAD/);assert.equal(result.recoveryRequired,true);
+  assert.match(result.reasonCode,/CHILD_OWNERSHIP_REREAD/);assert.equal(result.recoveryRequired,true);
 });
 test('failed Scene.create has no partial recovery claim',async()=>{
   const h=harness({failCreate:true});const result=await installDisposableSceneV14({...goodOpts(h),...trusted});
   assert.equal(result.failedPhase,'Scene');assert.equal(result.recoveryRequired,false);
   assert.equal(result.sceneId,null);
+});
+
+test('source revision mismatch blocks preflight even with matching id and digest',()=>{
+  const h=harness(),opts=goodOpts(h);opts.authorization.approvedBlueprintRevision=4;
+  assert.throws(()=>previewDisposableSceneInstallV14(opts),/APPROVAL_REVISION/);
+  assert.deepEqual(h.writes,[]);
+});
+test('GM rotation during asynchronous approval aborts before Scene.create',async()=>{
+  const h=harness();const approval=async()=>{h.runtime.game.users.activeGM.id='other-gm';return true;};
+  await assert.rejects(installDisposableSceneV14({...goodOpts(h),...trusted,verifyApproval:approval}),/ELECTED_GM/);
+  assert.deepEqual(h.writes,[]);
+});
+test('Foundry build drift during DataModel validation aborts before Scene.create',async()=>{
+  const h=harness();const validate=async()=>{h.runtime.game.version='14.370';return true;};
+  await assert.rejects(installDisposableSceneV14({...goodOpts(h),...trusted,validateModels:validate}),/EXACT_FIXTURE/);
+  assert.deepEqual(h.writes,[]);
+});
+test('world drift during asynchronous model validation aborts before write',async()=>{
+  const h=harness();const validate=async()=>{h.runtime.game.world.id='owner-world';return true;};
+  await assert.rejects(installDisposableSceneV14({...goodOpts(h),...trusted,validateModels:validate}),/EXACT_FIXTURE/);
+  assert.deepEqual(h.writes,[]);
+});
+test('competing scene inserted during approval blocks duplicate before write',async()=>{
+  const h=harness();const approval=async()=>{h.scenes.contents.push({id:'other-scene',flags:{'dicebox-campaign-helper':{blueprintId:'dbx:blueprint:fixture-one'}}});return true;};
+  await assert.rejects(installDisposableSceneV14({...goodOpts(h),...trusted,verifyApproval:approval}),/PREEXISTING_BLUEPRINT/);
+  assert.deepEqual(h.writes,[]);
+});
+test('GM rotation after Wall write records partial receipt and stops light/Region',async()=>{
+  const h=harness({afterChild:(type,game)=>{if(type==='Wall') game.users.activeGM.id='other-gm';}});
+  const r=await installDisposableSceneV14({...goodOpts(h),...trusted});
+  assert.equal(r.status,'PARTIAL_OR_BLOCKED');assert.equal(r.failedPhase,'Wall');
+  assert.equal(r.reasonCode,'DCH_DISPOSABLE_INSTALL_ELECTED_GM');
+  assert.equal(r.recoveryRequired,true);
+  assert.deepEqual(h.writes.map(x=>x.type),['Scene','Wall']);
+});
+test('raw server error is sanitized in recovery receipt',async()=>{
+  const h=harness({failCreate:true});const r=await installDisposableSceneV14({...goodOpts(h),...trusted});
+  assert.equal(r.reasonCode,'DCH_DISPOSABLE_INSTALL_RUNTIME_FAILURE');
+  assert.equal(JSON.stringify(r).includes('CREATE_FAILURE'),false);
 });
