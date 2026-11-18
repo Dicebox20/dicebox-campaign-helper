@@ -146,6 +146,7 @@ export async function installDisposableSceneV14({runtime,authorization,blueprint
       verifyExecutionIdentity(runtime,authorization,src);
       if (!Array.isArray(returned) || returned.length!==payload.length) fail('CHILD_CREATE_RECEIPT');
       reread=runtime.game.scenes.get?.(created.id);
+      if (!reread || !sameOwner(reread,src,`scene:${src.id}`)) fail('SCENE_OWNERSHIP_DRIFT');
       const collection=arr(reread?.[COLLECTIONS[type]]);
       if (!collection) fail('CHILD_COLLECTION_REREAD');
       const ownedForBlueprint=collection.filter(x=>owner(x)?.blueprintId===src.id
