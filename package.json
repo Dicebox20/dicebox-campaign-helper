@@ -11,6 +11,7 @@
     "build": "npm run build:packages && npm run build -w @dicebox/campaign-helper-desktop",
     "build:packages": "tsc --noEmit",
     "test": "vitest run --configLoader runner --no-file-parallelism --pool=forks --maxWorkers=1 --minWorkers=1",
+    "test:launcher-audit": "node --test tests/dch-main-launcher-audit.contract.test.mjs",
     "check": "npm run build && npm test",
     "verify:tooling": "node tools/verify-tooling.mjs",
     "foundry:preflight": "node tools/foundry-preflight.mjs",
