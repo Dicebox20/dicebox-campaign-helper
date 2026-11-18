@@ -43,7 +43,7 @@ The additional four-file source-only branch candidate has 99/99 combined synthet
 
 ## Source-only hardening, review revision 126 (2026-11-18)
 
-The expanded **isolated Node 22.16.0 test suite** passes **127/127**, 0 failures (including 24 complete feature-order permutations). The current feature branch contains the reviewed converter and three fixture suites; no source here is installed or exposed as a live ChatGPT tool. The original Worker B candidate stays in the Library review bundle and is not claimed to match the subsequently hardened source byte-for-byte.
+The expanded **isolated Node 22.16.0 test suite** passes **128/128**, 0 failures (including 24 complete feature-order permutations). The current feature branch contains the reviewed converter and three fixture suites; no source here is installed or exposed as a live ChatGPT tool. The original Worker B candidate stays in the Library review bundle and is not claimed to match the subsequently hardened source byte-for-byte.
 
 Independent Foreman negative-case review found and fixed:
 
@@ -55,7 +55,7 @@ Independent Foreman negative-case review found and fixed:
 
 Source/test SHA-256 after this review:
 - semantic converter: `044c86594a3b3843e7488a8490a9a1dc7f693f74db42248d7451b47f1a01e283`
-- disposable installer: `4c00555fe7531f5f4f4598ad01347db323d015a3fc185def8363eddd3b46d803`
+- disposable installer: `31590f74ef265869abbc3464fe245e9a0cf24209e6cc8534c29572f82ebd0af5`
 - tests are available under `packages/dicebox-foundry/tests` on the isolated branch.
 
 The active GitHub main checkout is older than the previous Foreman's dirty Windows source: main `apps/campaign-helper-desktop/src-tauri/src/lib.rs` contains a local transport probe but not the reported uncommitted native `siwc_app_tools.rs` integration. No automatic merge of the remote feature branch into the Windows checkout is safe until the canonical writer lock and local source divergence are reconciled.
@@ -75,3 +75,5 @@ Decision: **do not silently upgrade an owner world or installed module** during 
 ## Runtime-shape integration gap
 
 The no-write Worker B helper `previewSemanticSceneForActiveGm` currently validates its injected runtime as a plain object (`record(runtime)` requires `Object.prototype`). Synthetic tests pass a plain `{game, Scene}` wrapper; a real browser `window/globalThis` object is not that wrapper. Future installation wiring must supply a narrowly scoped authenticated adapter object instead of silently passing the page-global runtime, and must prove the actual `game.scenes` and embedded-document interfaces under Foundry 14.367. This is not a release-ready module entry point.
+
+Final bounded fixture update: a new negative test verifies parent Scene ownership remains intact after Region child hooks. The installer rereads parent ownership after every embedded phase and fails closed with recovery required if it drifts. This adds one test for **128 passing synthetic tests** total.
