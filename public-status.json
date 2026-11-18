@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-17T17:00:46Z",
+  "reviewedAt": "2026-11-18T16:57:13Z",
   "activeMilestone": {
     "id": "M0",
     "title": "ChatGPT Bootstrap"
@@ -9,8 +9,8 @@
   "verifiedCriteria": 0,
   "totalCriteria": 8,
   "source": {
-    "commit": "0227f601c8421c9fe5bb9b7c72d90d69fce00c15",
-    "roadmapUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/0227f601c8421c9fe5bb9b7c72d90d69fce00c15/docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
-    "changelogUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/0227f601c8421c9fe5bb9b7c72d90d69fce00c15/docs/DCH-CHRONOLOGICAL-CHANGELOG.md"
+    "commit": "b626a88164323345aeab5a17cdbd9f7197d16b27",
+    "roadmapUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/b626a88164323345aeab5a17cdbd9f7197d16b27/docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
+    "changelogUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/b626a88164323345aeab5a17cdbd9f7197d16b27/docs/DCH-CHRONOLOGICAL-CHANGELOG.md"
   }
 }
