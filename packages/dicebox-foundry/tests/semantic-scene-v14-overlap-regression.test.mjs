@@ -30,3 +30,18 @@ test('allows distinct door portals joining exactly at one endpoint',()=>{
   const fixture=bp();fixture.features.push(door('east-extension',p(900,400),p(900,450)));
   assert.equal(convertSemanticSceneV14(fixture).documents.Wall.length,3);
 });
+
+function* permute(xs) {
+  if(xs.length===0){yield [];return;}
+  for(let i=0;i<xs.length;i++) for(const suffix of permute([...xs.slice(0,i),...xs.slice(i+1)])) yield [xs[i],...suffix];
+}
+test('authoring order does not affect deterministic approved blueprint compilation',()=>{
+  const initial=bp(),reference=JSON.stringify(convertSemanticSceneV14(initial));
+  let count=0;
+  for(const features of permute(initial.features)){
+    const changed=structuredClone(initial);changed.features=features;
+    assert.equal(JSON.stringify(convertSemanticSceneV14(changed)),reference);
+    count++;
+  }
+  assert.equal(count,24);
+});
