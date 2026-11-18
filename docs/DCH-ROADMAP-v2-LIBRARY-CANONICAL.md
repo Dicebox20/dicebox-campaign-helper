@@ -1,5 +1,53 @@
 # DiceBox Campaign Helper (DCH) Roadmap v2 — Executive Summary
 
+
+## Owner-aligned AI-first execution charter — November 17, 2026
+
+**Status: governing interpretation of this roadmap.** This charter reconciles the original August 23 Campaign Director architecture, the approved November workstation layout, and the owner's November 17 statement of intended functionality. It clarifies priorities without deleting historical milestones, tests, or evidence. When later legacy sections discuss an editor-led workflow, self-development as the end goal, or a multiuser marketplace, this charter takes precedence.
+
+### One product, one primary operator
+
+**DiceBox Campaign Helper is a fully AI-operated, conversation-first Foundry VTT campaign creation and management studio.** A user describes a complete campaign, adventure, scene, or change in ordinary language. The **internal ChatGPT Campaign Director** coordinates planning, generation, validation, repair, saving, and authorized Foundry installation. It must be able to create or update:
+
+- Story and campaign structure: setting, lore, locations, quests, branching encounters, journals, dialogue, handouts and continuity.
+- Scene geometry and presentation: true 90-degree overhead semantic layout, room/wall/door geometry, map artwork, textures, tiles, lighting, Regions, triggers, environmental effects, and player/GM previews.
+- Playable content: Actors, monsters, NPCs, tokens, portraits, Items, equipment, treasure, spells, mechanics, puzzles, traps, scripted interactions and rewards, within the selected Foundry game system.
+- Project operations: content references, asset storage, version history, diagnostics, correction, testing, deployment receipts, and recoverable changes.
+
+**No mandatory manual editor workflow.** ChatGPT operates semantic SceneCommands, the map/canvas engine, asset-generation providers, and Foundry adapters directly through typed, authenticated application tools. The GM can use the visual editor, Inspector, and advanced controls for optional adjustments; they must not be required to draw every wall, manipulate IDs, write scripts, or configure puzzle Regions to complete an ordinary campaign request.
+
+**Application execution authority remains deterministic.** The AI decides creative intent and selects tools; DCH validates schemas, geometry, permissions, content provenance, state revisions, approvals, and persistence. The canonical scene and campaign data belong to DCH, not to transient chat prose, image output, or an independent Codex process. Codex is an optional scoped technical builder for development and complex repairs, not a second required user-facing assistant.
+
+### Approved desktop experience
+
+Retain the owner's hand-made panel structure and approved GitHub-dark visual template: top-left File/Edit/Select/View/Help menus, left sidebar listing **user-created campaigns**, ChatGPT-style conversation with collapsible receipts/metadata, a dominant 90-degree vertical/top-down semantic workspace, upper-right **actual implemented/player-view scene** preview when rendering is proven, and lower-right optional Inspector/diagnostics. A local illustration or approved-background preview must never be labeled as a real Foundry render without an authenticated Foundry-session receipt.
+
+The normal flow is **describe → AI plans → AI builds → automated validation and revision → preview → save → authorized install/play**. The user's conversational request should automatically move all relevant campaign parts together; for example, flooding a dungeon updates its geometry, map art, effects, Regions, puzzle conditions, encounters, journals and preview consistently.
+
+### Corrected development priority — complete creative vertical slice
+
+This work is **one parallel program**, not a requirement to finish a manual editor or autonomous source-code editing system before creating gameplay content.
+
+1. **Internal chat foundation and tool discovery (M0/M1):** Make selected-account login, conversations and campaign context reliable. Expose a truthful, versioned native tool catalog with permissions, arguments, results and error receipts. Organize menus, diagnostic tools, source/receipt disclosures and user-readable progress. The existing read-only assistant is an *interim stage*, not the final Campaign Director.
+2. **Campaign Director command loop (M0/M2/M4):** Implement natural-language request → typed CampaignPlan and SceneCommands → DCH validation → apply to disposable/saved project → inspect result → automatic bounded repair → undo/recovery. Routine creation within an authorized project should not require manual scene-editor clicks; consequential changes and Foundry installation keep explicit safeguards.
+3. **Content-generation adapters (M3/M4):** Add reusable, provenance-tracked tools for battlemap artwork, assets, Actors, Items, journals, encounters, lighting and linked Regions/puzzle templates. Preserve semantic coordinates as authoritative. Prefer original approved art assets and fail visibly when required generation or verification is unavailable.
+4. **Foundry compile, installation and player-view proof (M2/M3/M4):** Apply generated content through the selected world/game system's verified APIs and permissions, test relationships and interactive mechanics in a disposable authorized Foundry world, and compare the actual player view to semantic/render intent. A Tauri/WebView2 desktop wrapper is not itself a substitute for this integration.
+5. **First end-to-end user acceptance (cross-milestone):** From one chat prompt, create a **playable short encounter** with a map, artwork, at least one Actor, Item, light, Region, and working key/door puzzle; compile it, validate both success and failure branches, show the actual Foundry preview, preserve continuity and recovery, and issue a verifiable completion receipt. The user should not need to open the manual canvas.
+6. **Complete campaign scale-up:** Extend the proven encounter workflow to a coherent multiscene campaign, consistent world/lore/character state, generation and repair of dependencies, cross-scene travel and content, durable project history, and resumable conversations.
+
+**Near-term sequence:** finish DCH menu/diagnostic/chat-tool setup; prove the first AI-authored, validated SceneCommand/ProjectCommand against a disposable campaign; connect map and game-content generators; then prove Foundry integration. Additional manual editor features must demonstrate that they support the AI command loop, not replace it.
+
+### Honest acceptance and current scope
+
+- M0's previous formal acceptance state remains **NOT_ACCEPTED (0/8)** until its original security/native-return criteria are independently met. Do not turn isolated UI tests, build success or source-only proposals into claims of production acceptance.
+- The approved desktop UI, local illustrative scene renderer, and selected saved-background hash-verification pipeline have reported isolated development checks. They are *building blocks*, not proof of automated complete-campaign creation or actual Foundry player rendering.
+- **Owner's current deployment scope is a private personal-use application.** Cross-user distribution, an online marketplace, public publishing, and generalized enterprise workflows are *optional future proposals*, not priorities or acceptance dependencies. Preserve the historical Milestone 5 discussion for context, but do not treat it as currently authorized work.
+- Source, reusable templates, roadmap, changelog and continuity should be centrally versioned (GitHub-first where appropriate), keeping only required runtime/cache/credential material on the computer. Project-private materials must not be uploaded indiscriminately; credentials remain in approved secure stores. Preserve the existing dirty worktree and installed Foundry data until reconciled—never assume a broad commit/reset/stash or install is safe.
+- This GitHub roadmap is the **single governing product roadmap**. Earlier August Stage 12 plans, stale Codex project states and exploratory architecture documents remain evidence/history. Update Foreman, Switchboard and agent startup pointers to this document; do not maintain a competing active roadmap. Individual work-unit checklists may track execution without changing this priority order.
+
+---
+
+
 DiceBox Campaign Helper (DCH) is envisioned as a **conversational AI-operated campaign development environment** for Foundry VTT.  In contrast to traditional module editors, DCH puts **ChatGPT at the center**: the GM describes what they want, and ChatGPT (via the DCH Desktop App) **automatically generates, installs, and verifies** all campaign content.  The guiding principle is that *no GM should need technical expertise*: diagnostic checks, repairs, and Foundry integration are handled internally. 
 
 The key shift in Roadmap v2 is **“Priority 0: ChatGPT Bootstrap.”**  We will first enable a ChatGPT-based developer agent to fully control the DCH desktop environment (via authenticated tools and the private DCH utility harness), so that the AI can inspect, modify, compile, and test the application without human intervention.  Success in this milestone proves the core concept that *ChatGPT operates DCH as a self-improving agent*. 
