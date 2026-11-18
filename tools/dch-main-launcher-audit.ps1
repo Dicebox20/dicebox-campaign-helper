@@ -29,7 +29,8 @@ function Invoke-GitReadOnly {
   param([string]$Root, [string[]]$Arguments)
   $lines = & git -C $Root @Arguments 2>$null
   if ($LASTEXITCODE -ne 0) { throw "Git read failed: $($Arguments[0])" }
-  return @($lines)
+  if ($null -eq $lines) { return }
+  return $lines
 }
 
 $root = [System.IO.Path]::GetFullPath($WorkstationRoot)
