@@ -6,10 +6,10 @@
 
 The dated 2026-11-14 primary-source inventory `DCH_Source_Navigation_2026-11-14.md` identifies:
 
-- `FOUNDATION`: `C:\Users\rujie\Documents\Codex\DiceBox Campaign Helper` (continuity authority, **not** assumed Git checkout).
+- `FOUNDATION`: `<USERPROFILE>\Documents\Codex\DiceBox Campaign Helper` (continuity authority, **not** assumed Git checkout).
 - `WORKSTATION`: `FOUNDATION\work\dch-workstation-layout-v001` (source of the actual running desktop application). Historical branch `dch/chatgpt-bootstrap-20261026`, HEAD `1baad152776bd137cd2138b62a2a1078eea4de1e`, three tracked changes at evidence cut. **Current revision and dirty state not checked**.
 - `LIVE_EXE`: `WORKSTATION\apps\campaign-helper-desktop\src-tauri\target\release\dicebox-campaign-helper-desktop.exe` (actual prior running executable). Historical SHA-256 `363439c044b31b79bc212dde85580551e2f7c262269326a5182ca55c7977f9c5`, last modified Oct 27. **Not a current live hash.**
-- `PR50`: `C:\Users\rujie\Documents\Codex\2026-08-20\dch-m0-pr50-fresh-main-verify-20261114`, disconnected history; rebuilding it does **not** update `LIVE_EXE`. No common Git merge base was found between `WORKSTATION` and `PR50` in the inventory.
+- `PR50`: `<USERPROFILE>\Documents\Codex\2026-08-20\dch-m0-pr50-fresh-main-verify-20261114`, disconnected history; rebuilding it does **not** update `LIVE_EXE`. No common Git merge base was found between `WORKSTATION` and `PR50` in the inventory.
 - This review branch `foreman/dch-ai-first-integration-20261117` holds standalone source-only v14 Foundry candidates. These are **not installed** or incorporated into `WORKSTATION`.
 - GitHub's connected repository cannot retrieve the former WORKSTATION HEAD `1baad152776bd137cd2138b62a2a1078eea4de1e` (commit lookup returned `422 No commit found`), and no matching workstation branch was found. Thus the actual running desktop source cannot be reconstructed from the connected GitHub repo alone; a live Windows checkout reconciliation is mandatory.
 
