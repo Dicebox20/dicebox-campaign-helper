@@ -26,3 +26,9 @@ test('contains no mutation or executable launch command', () => {
     assert.doesNotMatch(script, new RegExp(`\\b${verb.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i'), `Unexpected write/run verb ${verb}`);
   }
 });
+
+test('falls back to read-only Windows certutil when Get-FileHash is unavailable', () => {
+  assert.match(script, /Get-LauncherSha256/);
+  assert.match(script, /certutil\.exe -hashfile/);
+  assert.match(script, /SHA256 output was not recognized/);
+});
