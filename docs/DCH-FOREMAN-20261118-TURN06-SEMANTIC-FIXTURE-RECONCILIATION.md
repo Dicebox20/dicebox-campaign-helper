@@ -55,7 +55,7 @@ Independent Foreman negative-case review found and fixed:
 
 Source/test SHA-256 after this review:
 - semantic converter: `044c86594a3b3843e7488a8490a9a1dc7f693f74db42248d7451b47f1a01e283`
-- disposable installer: `5a9dc128ae74b4bb8ac28fdc4bb8fbc12678e316e4e486b2c3655b196b0ca59e` (verify against final bundled review manifest before accepting)
+- disposable installer: `4c00555fe7531f5f4f4598ad01347db323d015a3fc185def8363eddd3b46d803`
 - tests are available under `packages/dicebox-foundry/tests` on the isolated branch.
 
 The active GitHub main checkout is older than the previous Foreman's dirty Windows source: main `apps/campaign-helper-desktop/src-tauri/src/lib.rs` contains a local transport probe but not the reported uncommitted native `siwc_app_tools.rs` integration. No automatic merge of the remote feature branch into the Windows checkout is safe until the canonical writer lock and local source divergence are reconciled.
