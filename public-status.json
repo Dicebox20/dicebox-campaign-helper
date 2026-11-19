@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-19T17:06:26Z",
+  "reviewedAt": "2026-11-19T23:46:30Z",
   "activeMilestone": {
     "id": "M0",
-    "title": "ChatGPT Bootstrap"
+    "title": "Ordinary ChatGPT in the existing Campaign Assistant"
   },
   "milestoneStatus": "ACTIVE / NOT_ACCEPTED",
   "verifiedCriteria": 0,
