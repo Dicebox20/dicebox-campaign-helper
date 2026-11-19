@@ -1,5 +1,25 @@
 # DiceBox Campaign Helper (DCH) Roadmap v2 — Executive Summary
 
+## Owner priority and development style — November 19, 2026
+
+**First priority:** connect genuine ordinary ChatGPT to the existing Campaign Assistant conversation, within the existing DCH window, with its interface unchanged. Preserve the owner's subscription and usage requirements; do not silently substitute Codex, Work/SIWC, or separately billed API access. A real supported connection and verified in-panel conversation remain outstanding.
+
+**Working style:** develop through short, user-directed conversational iterations: turn intent into a small demonstrable change, build and try it, share the result, and adjust based on feedback. Keep planning and documentation proportional to the change. Existing safeguards for identity, user data, Foundry authority, recovery, and honest evidence still apply. M0 remains NOT_ACCEPTED (0/8) until its existing acceptance criteria are independently met.
+## OWNER-APPROVED HARD UI FREEZE — November 19, 2026 (supersedes earlier UX implementation interpretations)
+
+**Nonnegotiable current M0/M1 acceptance gate: DO NOT CHANGE THE EXISTING DCH USER INTERFACE.** The owner supplied screenshots of the **already existing Campaign Assistant panel inside the current DiceBox Campaign Helper main window** and explicitly directed that it must be the real normal ChatGPT chat. **Only its underlying chat functionality may change.** This is an explicit owner override of any earlier proposal to recreate, re-skin, embed, replace, move, resize, or otherwise modify the chat UI.
+
+**Locked UI baseline:** Preserve the exact existing Campaign Assistant panel, header, selected-account/status presentation, conversation message layout, scroll/history behavior, prompt textbox, Send button, widths, typography, colors, borders, spacing, surrounding campaign sidebar, Workspace, Scene Preview, Inspector, and overall DCH window structure. **No added child webview, embedded ChatGPT web page/iframe, browser popup, DiceBox Companion, secondary chat window, new app panel, rewritten frontend markup or CSS, or visible status copy changes** in this backend-integration workstream. Any later visible UI change requires *separate explicit owner approval*. Existing visual elements are not implementation blanks to fill.
+
+**Exactly what may change:** Behind-the-scenes provider identification and authorization, eligible account/session transport, message send/receive handling and streaming, conversation persistence, error routing that uses already-existing UI affordances, receipt/audit plumbing, and the DCH/Foundry-module MCP tool plane (under its existing approval gates). The intended chat is **genuine ordinary ChatGPT on the owner's ChatGPT subscription, not Codex, Work/SIWC allowances, or separately billed OpenAI API usage**. No automatic fallback to those transports, synthetic or misleading connection claims, browser-cookie extraction, undocumented session proxying, or other unauthorized bypass. A functioning existing pane requires a supported legitimate transport plus a verified real response and entitlement evidence. If no such path is supported, mark **BLOCKED** and obtain owner direction before altering provider semantics.
+
+**Acceptance proof:** At the *same window size* compare native screenshots and UIA layout/component geometry against the owner's November 19 reference screenshots to verify zero unapproved visual/layout/control changes; submit a real prompt through the existing input and receive a real reply in the existing history with verified ordinary-ChatGPT transport and no Codex/Work/API billing; restart and verify persisted continuity; separately verify authorized Foundry module-backed read-only tool receipt. None is currently proven end-to-end. **M0 remains ACTIVE / NOT_ACCEPTED, 0/8.**
+
+**Rejected/held candidates:** The T22 isolated native child-webview feasibility experiment is **REJECTED by owner scope correction**, never production and must not be promoted. T17 separate Companion remains REJECTED. The T19 isolated default-fail-closed and provider-label candidate contains visible UI copy changes and **must not be promoted as-is** under this UI freeze; its useful backend-only ideas may be independently reviewed after writer authorization. Preserve historical files as evidence, not implementation approval.
+
+**Authority/evidence:** Owner's direct November 19 instructions with full DCH window and Campaign Assistant close-up screenshots; local technical investigation and T19/T22 receipts. This is the latest owner directive and governs conflicting older roadmap descriptions. External ChatGPT Library/website synchronization and live Switchboard acknowledgments are not claimed until independently confirmed.
+
+
 
 ## Owner-aligned AI-first execution charter — November 17, 2026
 
