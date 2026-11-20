@@ -251,3 +251,14 @@ The deterministic validator is intentionally narrower than runtime certification
 ## Regression rule
 
 The 2026-10-05 ZIP packaging incident is a permanent regression case. Any future BUILD that produces a ZIP, more than one macro, a non-Markdown primary artifact, or a manual sequence of macro parts is a workflow failure and must be corrected before delivery.
+
+
+## DiceBox Injector 2.0 prototype (accepted scale preflight, not yet production-certified)
+
+Read `docs/DICEBOX-MAP-TOKEN-SCALE-STANDARD-2026-10-05.md` including the 2026-10-09 hardening, and `docs/DICEBOX-INJECTOR-2.0-PROTOTYPE-2026-10-09.md`.
+
+Before BUILD, verify independently approved **physical feet, integer logical cells, original source-raster dimensions, final Scene dimensions, and uniform coordinates**. Art dimensions alone cannot imply game-world size. Run the read-only pure preflight and treat `BLOCKED` as a hard stop. Do not silently change an installed Scene's grid value or resize the raster without adjusting/validating all geometry.
+
+The prototype's validator and self-tests supplement `tools/validate-dicebox-build.mjs`; they do not replace the **exactly one Markdown + one self-contained executable macro** contract or prove real Regionwright mechanic installation. M01 is the first read-only canary. Promote live installation behavior only after an isolated runtime fixture, authoritative readback, and verified recovery from interrupted writes.
+
+Preserve the existing internal injection sequence, level binding, GM authority, Foundry document APIs, name/semantic-key resolution, state preservation and receipt requirements.

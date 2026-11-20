@@ -152,3 +152,33 @@ A nonstandard scale is allowed only when PREPARE explicitly records the reason a
 ## Existing maze builds
 
 L1-01 through L1-03 are legacy v1 BUILDs. Their successful runtime result remains valid evidence, but their 50px/1800x1200 scale is superseded for future BUILD work. Do not silently mutate those installed Scenes. If they are rebuilt or patched, convert them deliberately to the current scale profile and reread all Wall/Region coordinates after the change.
+
+
+## Accepted 2026-10-09 Injector 2.0 scale preflight hardening
+
+This is an **additive acceptance**, not a change to the existing `battlemap-120` values or token-art targets. It is grounded in the official Foundry scenes, token, media, and Content Creation Style Guide documentation recorded in `docs/DICEBOX-GRID-TOKEN-RESOLUTION-RESEARCH-2026-10-09.md`.
+
+### PREPARE must lock five independent measurements
+
+1. **Game-world footprint:** width and height in feet, with an explicit approval source.
+2. **Logical cells:** integer columns and rows at 5 feet per cell, unless PREPARE explicitly approves a different distance.
+3. **Logical pixel density:** Gridless and **120 scene pixels per 5-foot cell** by default.
+4. **Approved source raster:** actual original image width/height, provenance and hash; never assume upscaling increases image detail.
+5. **Final Scene canvas and coordinate mapping:** `cols × gridSize` by `rows × gridSize`, with an explicit single uniform source-image-to-Scene transform for all bound Walls, Regions, lights, sounds, notes, tiles and arrival anchors.
+
+A scene's existing image dimensions, current grid value, and visual proportions are **not evidence of PREPARE-approved physical size**. If game-world feet or coordinate mapping are unresolved, `BUILD` cannot claim scale compliance. A novel default footprint must never be silently inferred from the source art's 3:2 aspect ratio.
+
+### Mandatory quality gates
+
+- Validate `physicalWidthFt = columns × distanceFt` and `physicalHeightFt = rows × distanceFt`.
+- Reject a nonuniform source-to-scene transform unless PREPARE explicitly approves a documented crop or coordinate reprojection that is geometry-tested.
+- Check corridor, door and walkable terrain clearance against **mechanical token footprint**. Keep D&D5e size synchronization as authority where applicable.
+- Distinguish native image detail from upscaled display pixels; record compressed file bytes separately from decoded image width/height and GPU texture risk.
+- For an existing Scene, **never change only the grid size**. Snapshot and reconcile the background, Level, Wall, Region, lighting, Tokens, and distances through one approved migration, and verify after mutation.
+- The common 24×16, 36×24, 48×32 examples are optional layout tiers, not universal map dimensions.
+- A default at 120px remains accepted; the optional 128px snapping threshold is not a reason to change the project's current Gridless default.
+- Unknown approved footprint/scale is `BLOCKED`, not a warning and not a reason to fabricate an exception.
+
+### Prototype evidence and limit
+
+`tools/dicebox-injector-v2-core.mjs` and its regression tests demonstrate **no-write preflight behavior only**; they do not confer production install capability or runtime certification. The M01 live read-only observation on October 9 showed 1536×1024 with a 64px grid, implying 24×16 logical spaces mathematically; that implication does not approve a 120×80ft map. The installation remains unchanged until a scale migration is explicitly reconciled.
