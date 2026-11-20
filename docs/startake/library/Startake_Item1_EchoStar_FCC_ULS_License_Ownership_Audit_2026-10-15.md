@@ -1,0 +1,32 @@
+# Startake Item 1 — EchoStar FCC ULS license ownership follow-up
+
+**Cutoff:** October 14, 2026 Pacific (October 15 UTC). **Claim:** `STARTAKE-20261015-item1-fcculs-3d84f1`, verified persisted in shared tracker v52. **Method:** scoped direct primary-source review and registry-discovery attempt, **not** Deep Research. **Decision:** Research pass complete with material gaps; formal acceptance not verified.
+
+## Findings
+
+1. **Official proceeding identified, not a certified live license census.** FCC GN Docket **25-302**, order **DA 26-471**, dated May 12, 2026, addresses a two-step assignment involving Spectrum Business Trust 2025-1, SpaceX and EchoStar, including AWS-4, AWS-H and unpaired AWS-3 licenses and certain earth stations. The FCC September 30, 2025 public notice **DA 25-917** establishes the initial procedural history. These decisions approve a regulatory pathway; the existence of approval is not a license-specific October 2026 authenticated ownership export.
+2. **Primary executed contract and call-sign schedule located.** The SpaceX/EchoStar/Spectrum Business Trust **Amended and Restated License Purchase Agreement**, dated November 5, 2025 and filed as SEC Exhibit 10.8, includes **Exhibit A-1**, with Part I captioned *AWS H Block Licenses* and columns for **Call Sign, Licensee, License Area (Market No.), Spectrum Band (MHz), Grant Date, Expiration Date and Final Buildout Date**. This is a crucial historical call-sign inventory lead, but a contract schedule is not equivalent to reading each current FCC ULS license record. The source webpage exceeded web-tool page-size retrieval; full schedule rows and live status were **not extracted or certified**. https://www.sec.gov/Archives/edgar/data/1181412/000162828026021860/filename13.htm
+3. **Distinct trusts must not be conflated.** EchoStar's June 26, 2026 **Wireless Creditor Trust Agreement**, SEC Exhibit 10.2 in the July 28 filing, creates a claims/escrow trust involving the Bank of New York Mellon as trustee for obligations tied to wireless network construction and a **$2.4 billion** contribution. Its recitals reference the **Spectrum Business Trust 2025-1** spectrum assignment as a separate entity and transaction. The Wireless Creditor Trust does not, by itself, prove title to the spectrum licenses. https://www.sec.gov/Archives/edgar/data/1415404/000141540426000035/sats-20260728xex10.htm
+4. **No new direct-final-closing proof.** EchoStar's June 2026 filing distinguishes the completed first transfer to Spectrum Business Trust from the later contemplated transfer to SpaceX. Neither a ULS-native current holder screen/export, a final consummation notification nor a SpaceX final-acquisition completion certificate was obtained in this narrow pass. Do not state the final trust-to-SpaceX transfer has occurred merely because an FCC order approved the sequence. https://www.sec.gov/Archives/edgar/data/1415404/000110465926089370/sats-20260630x10q.htm
+
+## Evidence index / method and confidence
+
+| ID | Source | What it establishes | What it does not establish |
+|---|---|---|---|
+| ULS-01 | FCC DA 25-917, September 30, 2025, https://docs.fcc.gov/public/attachments/DA-25-917A1.pdf | Formal filing of proposed two-step application, GN 25-302 | Present license holder or consummation |
+| ULS-02 | FCC DA 26-471, May 12, 2026, https://docs.fcc.gov/public/attachments/DA-26-471A1.pdf | Agency order/consent for the specified applications | Authenticated ULS-native current license roster; order PDF identified in FCC index, not screenshot-audited |
+| ULS-03 | SEC Exhibit 10.8, November 5, 2025 amended LPA, https://www.sec.gov/Archives/edgar/data/1181412/000162828026021860/filename13.htm | Source-native executed contractual schedule including license call-sign/market columns | Live FCC holder or row-complete independent roster: source too large for web retrieval |
+| ULS-04 | SEC Exhibit 10.2, June 26, 2026 Wireless Creditor Trust, https://www.sec.gov/Archives/edgar/data/1415404/000141540426000035/sats-20260728xex10.htm | Separate trust for creditor escrow/claims; $2.4bn contribution and cited FCC orders | Not Spectrum Business Trust asset-title certificate |
+| ULS-05 | EchoStar June 2026 10-Q, https://www.sec.gov/Archives/edgar/data/1415404/000110465926089370/sats-20260630x10q.htm | Issuer's reporting of initial trust transfer and expected second step | Current holder on Oct. 14 or final SpaceX title |
+
+**Source-quality notation:** ULS-01 and ULS-02 are FCC agency-issued materials located via indexed public records, not independently screenshot-inspected PDF pages. ULS-03/U04/U05 are issuer primary documents, not FCC registry exports. No proprietary database or paid registry query was performed. This report does not assert that ULS application status fields were retrieved.
+
+## Gap-to-acceptance crosswalk
+
+- **Open, critical:** Extract full Exhibit A-1/A-2 license call-sign schedules and reconcile **each** terrestrial ULS unique identifier, licensee, status, assignment file number and dated consummation notice against live FCC ULS records, not docket headline alone.
+- **Open, critical:** Retrieve signed Spectrum Business Trust 2025-1 operative trust instrument, transfer closing certificate, and any post-May FCC grants/consummations, with holder-to-holder chain and §310(d) restrictions.
+- **Open, high:** Match any terrestrial license list to separate earth-station/ICFS records, foreign rights, liabilities, escrow covenants, liens, and commercial Starlink-versus-Starshield asset perimeter.
+- **Open, high:** Extract FCC DA 26-471 appendices and conditions in screenshot-reviewed PDF form where required; distinguish authorization from actual transfer.
+- **Open, formal:** Recover original nine approved `Acquisition perimeter and beneficial ownership` subcategory headings; do not substitute report-created headings, per prior taxonomy audit.
+
+**Outcome:** This pass adds a useful original license roster lead and prevents conflation of two separate trusts. It does **not** resolve the central current-license-holder gap, satisfy an asset title certificate, or certify checklist Item 1. All seven first passes remain complete, but **0/7 practical** and **0/36 named research topics** formally verified. Preserve earlier reports and claims; release only this verified claim after Library report readback and merged tracker save/readback.

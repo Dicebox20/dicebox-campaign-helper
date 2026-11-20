@@ -1,0 +1,32 @@
+{
+  "USAspending_source_csv_sha256": "2ffd579ca6bb463072efdc3612094f6bb7792398952e5467b2ebfee21c64dd66",
+  "USAC_live_snapshot_sha256": "96294e62fc49fa7c8cc45cfbb66c34c9cc8a12b5f736a6211b44b94880d17d64",
+  "USAspending_refresh_attempt_sha256": "ede69805eeb09d7d5eb971257b0c9acaba53c45639e1a3f20d657a553c6e51d2",
+  "award_ids": 74,
+  "current_funded_frns": 74,
+  "exact_pairs": 68,
+  "unmatched_award_ids": [
+    "SL-2499028163",
+    "SL-2599016356",
+    "SL-2599016877",
+    "SL-2599016895",
+    "SL-2599029317",
+    "SL-2599045223"
+  ],
+  "unmatched_current_funded_frns": [
+    "2499031960",
+    "2499042130",
+    "2499050062",
+    "2499056696",
+    "2499056732",
+    "2499057486"
+  ],
+  "output_crosswalk_rows": 80,
+  "report_sha256": "9fde6fac04e8037f3ce7e0f5b7f2feaff9c2a646dac9b3eb9de82ba0a98cbc03",
+  "bill_v1_0_sha256": "24601913051d44cba8926982b7701d920566cd3da558a088c6596eb157791f5a",
+  "bill_sections": 31,
+  "changed_sections": [
+    "302"
+  ],
+  "all_other_sections_byte_identical": true
+}

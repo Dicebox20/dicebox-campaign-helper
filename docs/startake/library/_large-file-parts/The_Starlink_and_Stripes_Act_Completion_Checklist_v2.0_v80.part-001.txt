@@ -1,0 +1,999 @@
+## Current checkpoint — Practical Item 5 / legal 14.03 “Capital replacement and maintenance”; tracker v380; dashboard successor v102
+
+2026-10-19T22:08:15Z. The bounded official-source, issuer-disclosure, and workbook-evidence audit is complete. Claim STARTAKE-20261019-WORK-ITEM5-LEGAL-14-03-FLEET-VINTAGE-REPLACEMENT-e64628c9 was released in guarded tracker v380 after the audit report and Crosswalk v1.29 were saved and independently byte-verified. This checkpoint records evidence and receipts only; it does not change formal acceptance or readiness measures.
+
+- **Audit report:** /Startake/Startake_Item5_Legal_14_03_Fleet_Vintage_and_Replacement_Data_Audit_2026-10-19.md — Library ID libfile_a798a6175284819192660fe571595056; 21,099 bytes; SHA-256 17d816d075ca40cac582cd30e40689074025050575a9008bc0b4914a1cfaac54. Exact saved readback verified.
+- **Crosswalk Markdown v1.29:** /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.29_2026-10-19.md — Library ID libfile_b7ce88df34b08191976d0201ef7fec7d; 98,349 bytes; SHA-256 c2527623c65e61a8ad2826ecdca03dbfd13375475190b8eef4db5304b6c4d52b. It preserves the complete v1.28 Markdown as an exact byte suffix.
+- **Crosswalk CSV v1.29:** /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.29_2026-10-19.csv — Library ID libfile_ab9bed244aa08191afdf4b09e07fcfc9; 451,012 bytes; SHA-256 9b3ee20175e208a112bda791627fceae5ddc8087e5c7300da2a0e91f5f3c8f79. It retains 311 unique source labels and changes only five evidence/reference fields on legal row 14.03; all other rows and protected fields are unchanged.
+
+The audit verifies an issuer-reported aggregate of over 10,200 Starlink broadband and mobile satellites in LEO as of June 30, 2026, official mission-level launch examples, and FCC reporting conditions for removals, reentries, and disposal failures. The underlying FCC row-level report attachments were not authenticated or counted; no full satellite-level launch-to-active-status/retirement join or fleet-age estimate was produced. The workbook still has no fleet-age cohorts, and its Actual replacement-related capital drivers remain missing. No Bill or workbook edit was made. No cost, forecast, valuation, official score, or professional review is established.
+
+**Formal status remains unchanged:** initial coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; descriptive drafting maturity 29/50; congressional readiness unestablished. Practical Item 5, legal 14.03, and its parent topic remain formally unchecked. Practical Item 1 remains excluded. This dashboard is a descriptive synchronization checkpoint, not original acceptance authority.
+
+**Prior dashboard preservation:** v101 is 273,307 bytes with SHA-256 b3b875f93546bd868fc76fc6940c5f52108d9b8e5642cecf73fcaf7a2ff06752. This v102 candidate prepends the 14.03 checkpoint and preserves the complete v101 content below byte-for-byte as an exact suffix. After independent v102 readback, record its exact receipt in guarded final tracker v381 before selecting another scope.
+
+---
+
+## Current checkpoint — Practical Item 5 / legal 14.08 “Sensitivity and risk scenarios”; tracker v377; dashboard successor v101
+
+2026-10-19T06:27:35Z. The bounded direct-primary-source and workbook-evidence audit is complete. Claim STARTAKE-20261019-WORK-ITEM5-LEGAL-14-08-SENSITIVITY-RISK-a3aec4ea was released in guarded tracker v377 after the audit report and both Crosswalk v1.28 files were saved and independently byte-verified. This checkpoint records evidence and receipts only; final synchronization is pending the tracker’s dashboard receipt.
+
+- **Audit report:** /Startake/Startake_Item5_Legal_14_08_Sensitivity_and_Risk_Scenarios_Audit_2026-10-19.md — Library ID libfile_f58f241ea4f08191b0081acd7665b893; 21,429 bytes; SHA-256 531b0a018b2d0ed1696dfa797341e0063886e3cca1bb2b8ad26b42c8b1f15e20. Exact saved readback verified.
+- **Crosswalk Markdown v1.28:** /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.28_2026-10-19.md — Library ID libfile_e3ec5d1fb620819186094d61bd949fd8; 95,796 bytes; SHA-256 3fbd98fbcf00d84057d67c022149ad406818281999675d61d38191c0f33fbb58. It preserves the entire v1.27 Markdown as an exact byte suffix.
+- **Crosswalk CSV v1.28:** /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.28_2026-10-19.csv — Library ID libfile_0608cf1e428881918611b981427193c3; 450,058 bytes; SHA-256 6357454cdb639ef60d49f6293eea3e44fa27bda308edbbd170e39b41174683ee. It retains 311 unique original labels and changes only five evidence/reference fields on legal row 14.08; all other rows and protected fields remain unchanged.
+
+The audit maps demand, replacement costs, outages, interest rates, foreign permissions and geopolitical stress to the current workbook drivers, public evidence, dependencies and future evidence gates. The workbook still lacks all 34 Actual driver groups; empirical risk values, probabilities, valuation and official score remain unsupported. No Bill or workbook edit was made, and no formal scope or parent-topic acceptance is inferred.
+
+**Formal status remains unchanged:** initial coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; descriptive drafting maturity 29/50; congressional readiness unestablished. Practical Item 5, legal 14.08, and its parent topic remain formally unchecked. Practical Item 1 remains excluded. This dashboard is a descriptive synchronization checkpoint, not original acceptance authority.
+
+**Prior dashboard preservation:** v100 is 270,454 bytes with SHA-256 0faf2fba45ff9f49eabbcd9e43205cd7b2a6444f5845b1a28d2991bcb4030c23. This v101 candidate prepends the Item 5 checkpoint and preserves the complete v100 content below byte-for-byte as an exact suffix. After independent v101 readback, record its exact receipt in guarded final tracker v378 before selecting another scope.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M06.05 “Continuity obligations for defense users”; tracker v374; dashboard successor v100
+
+2026-10-19T06:08:52Z. The bounded M06.05 public-source review is complete. Claim STARTAKE-20261019-WORK-ITEM6-M06-05-DEFENSE-CONTINUITY-6679a7bb was released in guarded tracker v374 after the report and Crosswalk v1.27 were independently read back. The research pass is complete; final synchronization is pending the tracker’s dashboard receipt.
+
+- **Audit report:** /Startake/Startake_Item6_Moral_M06_05_Defense_User_Continuity_Obligations_Audit_2026-10-19.md — Library ID libfile_0da41e8e7300819183a5be318f959a9a; file ID file_00000000c9c481f49f852dbc3dae868b; 22,734 bytes; SHA-256 8344a260c3dcb9b31e96746b383f9d87085d034c68e3a1846e804aee22f58b4d. Exact byte readback verified.
+- **Crosswalk Markdown v1.27:** /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.27_2026-10-19.md — Library ID libfile_6f54141ec7848191896292c4af6c2959; file ID file_00000000212c820eb2168d8ab4d2ef6a; version 0; 93,706 bytes; SHA-256 a7a39b5184b7f65ce4daa0bf36b7f979382d75c8f353b201554a6819c6816fda. The complete v1.26 Markdown is preserved as an exact byte suffix.
+- **Crosswalk CSV v1.27:** /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.27_2026-10-19.csv — Library ID libfile_0559ebf8c4108191a7672dc959176c05; file ID file_0000000045c482108d75aa73a53a18c3; version 0; 449,581 bytes; SHA-256 cad5f742c13bad381fbb3946b7f7133e2e2c180af07c92c3597a78453bf6ff3c. It retains 311 unique original labels and changes only five M06.05 evidence/reference fields.
+- **Tracker v374:** canonical tracker file ID file_00000000ed6c81f48b71421d94e8bb6a, actual version 374; 691,076 bytes; SHA-256 83a03e95740d3cfa9153cb1383392e2b846c7ebc70fe21d0c447f9c494b7fa80. The guarded update releases only the M06.05 claim and preserves the full v373 suffix.
+
+The report distinguishes DoD agency continuity duties from provider obligations that arise through applicable contracts. FAR/DFARS rules support measurable service performance and conditional cyber reporting; they do not supply a universal commercial-provider uptime or operational change-control schedule. Bill v1.14 covers TSA schedules and pre-cutover tests but does not expressly require a continuing post-TSA defense-service schedule. No provider-specific contract, facts, or conduct were examined. No Bill/workbook edit was made.
+
+**Formal status remains unchanged:** initial coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; descriptive drafting maturity 29/50; congressional readiness unestablished. M06.05, its parent named topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded. This dashboard is a synchronization checkpoint, not original acceptance authority.
+
+**Prior dashboard preservation:** v99 is 267,214 bytes with SHA-256 56ece4424d010f8d452f09dc168185c529c27f45877bf694ce86061028404a8a. This v100 candidate prepends the M06.05 checkpoint and preserves the complete v99 content below byte-for-byte as an exact suffix. After independent v100 readback, record its exact receipt in final tracker v375 before selecting another scope.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M06.06 “Civilian-military infrastructure sharing”; tracker v371; dashboard successor v99
+
+2026-10-19T05:54:14Z. The bounded direct official-source M06.06 review is complete. Claim `STARTAKE-20261019-WORK-ITEM6-M06-06-SHARING-PRIORITY-INTERFERENCE-281c9f` was released in guarded tracker v371 after the report and Crosswalk v1.26 were saved and independently read back.
+
+- **Audit report:** `/Startake/Startake_Item6_Moral_M06_06_Civilian_Military_Infrastructure_Sharing_and_Interference_Audit_2026-10-19.md` — Library ID `libfile_0a06a4adea6c8191bd5fa79d17c72a5b`, file ID `file_000000002efc81fd9a1b0d9964b71e31`, version 0, 34,303 bytes, SHA-256 `628b3fc6c34f0aea7e0bbbe725dfdef63f9dc371a706c3e72c45dc3ce3e94b42`. Independent readback is byte-identical.
+- **Crosswalk Markdown v1.26:** `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.26_2026-10-19.md` — Library ID `libfile_8a6445c4f5ec8191b5fdbe56a6db2454`, file ID `file_000000007e5481f5b54a05427462da6b`, version 0, 92,039 bytes, SHA-256 `d6e43e5ba300eb698afa8b756410cfbee70ce2c5e1fb71737b4a5fb6a6f1164a`. The complete v1.25 Markdown is preserved as an exact byte suffix.
+- **Crosswalk CSV v1.26:** `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.26_2026-10-19.csv` — Library ID `libfile_514c9d00ecec8191a61aecb79fb92e65`, file ID `file_00000000ea3481f8a1de1e3fee78bc53`, version 0, 447,532 bytes, SHA-256 `5fe778670fc1275e896cfa8f5af3bac1810c6275831e4c059e423e641e9e9514`. It retains 311 unique original labels and changes only five M06.06 evidence/reference fields; all other rows and protected M06.06 fields are unchanged.
+
+The audit finds that federal/non-federal spectrum coordination, shared-band priority, harmful-interference rules, TSP/WPS, certain satellite coordination, and presidential emergency powers have different triggers and scopes. Public sources do not establish a general military-over-civilian priority rule for every commercial network. No Starlink-specific spectrum assignment, service priority, preemption term, interference event, or operational treatment was examined. Bill v1.14 and workbook v0.4 are unchanged. This is direct official-source review, not Legal Data Hunter-verified or professional review.
+
+**Formal status remains unchanged:** initial coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; drafting maturity 29/50; congressional readiness unestablished. M06.06, its parent named topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded. This dashboard is a synchronization checkpoint, not original acceptance authority.
+
+**Prior dashboard preservation:** v98 is 264,139 bytes with SHA-256 `2681da326572390866d115a76c44f76c52aace1b124b049c677e250721177c97`. This v99 candidate prepends the M06.06 checkpoint and preserves the complete v98 content below byte-for-byte as an exact suffix. After independent v99 readback, record its exact receipt in final tracker v372 before selecting another scope.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M06.01 “Commercial Starlink and Starshield boundaries”; tracker v368; dashboard successor v98
+
+2026-10-19T05:36:21Z. The bounded direct public-primary-source review is complete. Claim STARTAKE-20261019-WORK-ITEM6-M06-01-STARLINK-STARSHIELD-BOUNDARY-6b118c was reserved from tracker v366, independently verified in v367 before research, and released in guarded tracker v368 after the report and Crosswalk v1.25 were saved and independently read back. Formal acceptance remains unchecked.
+
+- Audit report: /Startake/Startake_Item6_Moral_M06_01_Starlink_Starshield_Boundary_Audit_2026-10-19.md — Library ID libfile_300042d607e08191b3359c0ddbfe8859, version 1, 25,731 bytes, SHA-256 ee20e66704c3730c55ae2168f161b2820aa2f104062a12770e65bcc75e73b914. Independent Library readback is byte-identical.
+- Crosswalk Markdown v1.25: /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.25_2026-10-19.md — Library ID libfile_5cbd2a75fb748191b68fe0fe531ed859, 90,805 bytes, SHA-256 d5be3f2c9cd5ae63abed1118f4317379ce0bf3d68f3d1ce70e25e723f359b09e. It preserves the entire v1.24 Markdown as an exact byte suffix.
+- Crosswalk CSV v1.25: /Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.25_2026-10-19.csv — Library ID libfile_043e162d94708191a36a9e9676ed3c02, 445,608 bytes, SHA-256 fb33663517e96455212cba56e1f82f1cb038e3fa83b9ba6bda96b3469aacc5df. It retains 311 unique labels and changes exactly five M06.01 evidence/reference fields; all other rows and M06.01 protected fields are unchanged.
+- Finding: SpaceX describes distinct commercial and government/national-security purposes and additional Starshield features, while also describing Starlink-derived/shared technology, manufacturing, launch and infrastructure foundations. Procurement lines and one non-classified exercise use do not establish complete technical or legal separation, asset title, or transfer rights. Open issue STARTAKE-ISSUE-M06-01-UNLINKED-X1-STARSHIELD-RECORD-20261019 remains unresolved.
+- No Bill v1.14 or workbook v0.4 edit is made. Direct-source review only; no Legal Data Hunter, counsel, or independent engineering review is represented.
+
+Initial coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; descriptive drafting maturity remains 29/50; congressional readiness remains unestablished. M06.01, its parent topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded.
+
+Tracker v368 release receipt: stable Library ID libfile_590fd34e579c819189c02261fe34c456; file ID file_000000007e8c81f5810215e4105ba72f; version 368; 662,975 bytes; SHA-256 606fe0e913da26ced4b8cce0263320db1a66e68bfeb6789ee02dbaa394fbf701. Fresh readback is byte-identical, preserves all v367 bytes as an exact suffix, and records only the M06.01 claim as released.
+
+This dashboard v98 candidate uses the freshly materialized dashboard v97 baseline (260,835 bytes; SHA-256 6f9f98196816d05e344ead80423e380cf57e80fd8f8e6f1b3e5bc890027df941), expected current version 97, and preserves the complete v97 content byte-for-byte as an exact suffix. After independent v98 readback, final tracker v369 will record its exact receipt; no other active claim is released by this checkpoint.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M04.06 “Foreseeable harm and duty of care”; tracker v365; dashboard successor v97
+
+2026-10-19T05:19:39Z. The bounded direct official-source M04.06 review is complete. Claim `STARTAKE-20261019-WORK-ITEM6-M04-06-FORESEEABLE-HARM-DUTY-OF-CARE-7479c119` was reserved against tracker v363, independently verified in v364, and released in guarded tracker v365 after the report and Crosswalk v1.24 were saved and independently read back. Formal acceptance remains unchecked.
+
+- Audit report: `/Startake/Startake_Item6_Moral_M04_06_Foreseeable_Harm_and_Duty_of_Care_Audit_2026-10-19.md` — Library ID `libfile_a4e690e029008191882a21dcca3d87b3`, 21,817 bytes, SHA-256 `2c79c8c0ff0503b5ec2df6ee0c49fc46e768c8095588b2d17f2239f519e44149`; fresh Library readback is byte-identical.
+- Crosswalk Markdown v1.24: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.24_2026-10-19.md` — Library ID `libfile_a923231984288191a305dc466decbbc4`, 87,755 bytes, SHA-256 `89ea655078b0d806ad02dacb0409cf5cb534eda83d28d69e25694d559293b6b3`; it preserves the entire v1.23 Markdown as an exact byte suffix and its Library readback is byte-identical.
+- Crosswalk CSV v1.24: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.24_2026-10-19.csv` — Library ID `libfile_eb2878fbb4208191956a5654696de863`, 443,724 bytes, SHA-256 `d698f87c6d0ad9f6dcef2da008326ffec7adfa14f9db2c080ba3b966bca90111`. It retains 311 unique source labels and changes five M04.06 evidence/reference fields only; all other rows and M04.06 fields are unchanged. Its Library readback is byte-identical.
+
+The reviewed federal carrier duties are conditional on classification, and the reviewed law does not establish a universal provider duty triggered solely by foreseeable interruption risk. The ethical recommendation is proportionate mitigation, accurate communication, and accountable documentation for a known material risk; it is not a legal finding. Bill v1.14 §§104(3), 205, 401(c)–(d), and 402(b), (d)–(e) provide risk-based transition safeguards but no general post-transition duty or universal service guarantee. No Bill v1.14 or workbook v0.4 change is recommended on this record. No Starlink-specific service or incident facts, contract, classification, or performance evidence is established; this is direct official-source review, not Legal Data Hunter-verified.
+
+Formal gates are unchanged: initial coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; descriptive drafting maturity 29/50; congressional readiness unestablished. M04.06, its parent named topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded. This dashboard is a synchronization checkpoint, not original acceptance authority.
+
+Tracker v365 closeout receipt: stable Library ID `libfile_590fd34e579c819189c02261fe34c456`, file ID `file_00000000a1a881f5868261036a99d519`, version 365, 652,050 bytes, SHA-256 `7817cbe1c4a48cf8b41df8a44f4178e9746426338a79e1e0157d828790f59db3`. Fresh Library readback is byte-identical; complete v364 content is preserved as an exact byte suffix and the M04.06 claim is released.
+
+Dashboard v96 baseline: stable Library ID `libfile_cc7518a16af48191815df91c0bc809da`, file ID `file_00000000ed5081fd8cc6ea40f0a58cfd`, 257,142 bytes, SHA-256 `ed9b1b7ef6de62620c4480b86de24e3316bd7764a3aa36296ce727c70121c906`. This v97 update prepends this M04.06 checkpoint and preserves the complete v96 content byte-for-byte as an exact suffix. After independent v97 readback, final tracker v366 will record its exact receipt; the active goal will then advance to iteration 80/106.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M04.05 “Continuity of public services”; tracker v362; dashboard successor v96
+
+2026-10-19T05:02:18Z. The bounded direct federal-source M04.05 audit is complete. Claim `STARTAKE-20261019-WORK-ITEM6-M04-05-CONTINUITY-PUBLIC-SERVICES-3d9780` was reserved against tracker v360, independently verified in v361, and released in v362 after the report and Crosswalk v1.23 were saved and independently read back. Formal acceptance remains unchecked.
+
+- Audit report: `/Startake/Startake_Item6_Moral_M04_05_Continuity_of_Public_Services_Audit_2026-10-19.md` — Library ID `libfile_433612e5da888191980b899bbc94dcd7`, 17,952 bytes, SHA-256 `2ce00800d3aeb928aa60701b5b1d6cec47a9e98633e46cb318a80d9b92b37a9c`.
+- Crosswalk Markdown v1.23: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.23_2026-10-19.md` — Library ID `libfile_6d23b9093f7c8191a686131a743d890b`, 85,092 bytes, SHA-256 `53892f937855fd86979ff9863beb63b09125c3141178549611cad9979f4e6b51`. The complete v1.22 Markdown is preserved as an exact suffix.
+- Crosswalk CSV v1.23: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.23_2026-10-19.csv` — Library ID `libfile_93d16293bac08191985ec14853218397`, 442,608 bytes, SHA-256 `f19d61a72ede1a1c97aeb994c9190d24dd354774eed21164a4a5af6c4605185d`. It retains 311 unique source labels and changes exactly five M04.05 evidence/reference fields; all other rows and fields are unchanged.
+
+The review found qualifying community-water-system risk/ERP duties, a mandatory NERC control-center availability/recovery planning standard for listed electric entities, and a conditional discounted-service duty for eligible school/library requests. EPA, CISA, and FEMA guidance supports public-service continuity planning. The reviewed sources do not establish a general satellite-provider obligation to provide failover service to every public-service entity. No Starlink-specific service facts are established. No change to Bill v1.14 or workbook v0.4 is recommended.
+
+Formal gates are unchanged: initial coverage 7/7; practical acceptance 0/7; named acceptance 0/36; all 311 proposed scopes remain outside acceptance; drafting maturity 29/50; congressional readiness unestablished. M04.05, its parent named topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded.
+
+Tracker v362 closeout receipt: stable Library ID `libfile_590fd34e579c819189c02261fe34c456`, file ID `file_00000000d73c81fd8243fb664fd397a9`, version 362, 637,860 bytes, SHA-256 `85c260a2e0d7a0f33af81bbe7506ad786cdd044d45eb5384af612213d76fa0db`. Independent readback is byte-identical; the M04.05 claim is released and the complete v361 reservation content remains an exact suffix.
+
+Current dashboard v95 baseline: stable Library ID `libfile_cc7518a16af48191815df91c0bc809da`, file ID `file_000000005fd081f9b795848b9a1e6465`, 253,936 bytes, SHA-256 `bd18bdd6de6690520418e5d6f75d4840d191d37951eba86e135405ed22ba6844`. This v96 update prepends this checkpoint and preserves the complete v95 content byte-for-byte as an exact suffix. After independent v96 readback, final tracker v363 will record its exact receipt before another claim is opened.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M04.04 “Civilian infrastructure failure”; tracker v359; dashboard successor v95
+
+2026-10-19T04:51:21Z. The bounded federal-source M04.04 audit is complete. Claim `STARTAKE-20261019-WORK-ITEM6-M04-04-CIVILIAN-INFRASTRUCTURE-FAILURE-dded83` was released in tracker v359 after the report and Crosswalk v1.22 were saved and independently read back. Formal acceptance remains unchecked.
+
+- Audit report: `/Startake/Startake_Item6_Moral_M04_04_Civilian_Infrastructure_Failure_Audit_2026-10-19.md` — Library ID `libfile_832e2534768c8191969e0e24de5cd6ff`, 15,258 bytes, SHA-256 `2d4d910b779b2caa0347fed8e089512c445734126e79baa17b2459fae9a18351`.
+- Crosswalk Markdown v1.22: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.22_2026-10-19.md` — Library ID `libfile_e6c7f38282bc819189b3f1cce8bb76a4`, 82,568 bytes, SHA-256 `0334659182554e3ab74d90bc3d87dce74a1f4b4838aee47e53326977872aeb25`.
+- Crosswalk CSV v1.22: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.22_2026-10-19.csv` — Library ID `libfile_35149a6e9dbc8191a667abfbf670b96c`, 440,881 bytes, SHA-256 `eeb299f1db728ba7f6fc6fd314ec0e401e1ae58a6b7500f61cd05de853b81524`. It retains 311 unique source labels and changes five M04.04 evidence/reference cells only.
+
+The review found a conditional federal unserved-community carrier-order path and support-linked deployment duties, but no generally applicable duty for commercial satellite broadband to be an alternate whenever terrestrial networks are absent, damaged, or overloaded. No provider-specific Starlink facts are established; the eCFR rule text retrieved displays Title 47 through 2025-09-25, and House code pages had direct-open access issues. Bill v1.14 and workbook v0.4 are unchanged.
+
+Formal gates are unchanged: initial coverage 7/7; practical acceptance 0/7; named acceptance 0/36; all 311 proposed scopes remain outside acceptance; drafting maturity 29/50; congressional readiness unestablished. M04.04, its parent named topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded.
+
+Tracker v359 closeout receipt: stable Library ID `libfile_590fd34e579c819189c02261fe34c456`, file ID `file_00000000b37881f9af2316a24c3b0a84`, version 359, 625,800 bytes, SHA-256 `a668ffcc2e6d9732dbfe19d21ab62b1fcb8a018f7762fab79e58cd28397cf346`. Independent readback is byte-identical; the M04.04 claim is released and the complete v358 content remains an exact suffix.
+
+Current dashboard v94 baseline: stable Library ID `libfile_cc7518a16af48191815df91c0bc809da`, file ID `file_00000000e0c481f5bbc5c2066b0fad65`, 250,992 bytes, SHA-256 `59dab5dec6ec32a411dfc754e95ceab1938234f5e4274ac37fd89d2d581d6761`. This v95 update prepends this checkpoint and preserves the complete v94 content byte-for-byte as an exact suffix. After independent v95 readback, final tracker v360 will record its exact receipt before another claim is opened.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M04.03 “Humanitarian relief operations”; tracker v356; dashboard successor v94
+
+2026-10-19T04:36:53Z. The bounded direct federal-source M04.03 research pass is complete. The claim was released in tracker v356 after the report and Crosswalk v1.21 were saved and independently read back. Formal acceptance remains unchecked.
+
+- Audit report: `/Startake/Starlink_Item6_Moral_M04_03_Humanitarian_Relief_Operations_Audit_2026-10-19.md` — Library ID `libfile_db8093ebb58c8191bcf910eece7dce62`, 21,915 bytes, SHA-256 `a5af5f728eb8341615480766198de787f73af1297f113210113f1de8297ab7b1`.
+- Crosswalk Markdown v1.21: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.21_2026-10-19.md` — Library ID `libfile_9fc39d6d3d908191b527fb03e82c247f`, 79,890 bytes, SHA-256 `8cce0183aad11419c028e1a8c6d8f31f7496b13430720d35dd747eeda197e653`.
+- Crosswalk CSV v1.21: `/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.21_2026-10-19.csv` — Library ID `libfile_94f195f44008819190fb6cc69369f2ad`, 439,254 bytes, SHA-256 `43061b05d4d151077ace32eb9157dd9757e8198a6e1b66a4b7c11df338f26f89`. It retains 311 unique scope labels; only the five M04.03 evidence/reference cells changed.
+
+The audit found no generally applicable federal commercial-satellite-broadband continuity, availability, or restoration duty in the reviewed sources. It makes no Starlink-specific finding and recommends no change to Bill v1.14 or workbook v0.4. Formal gates are unchanged: initial coverage 7/7; practical acceptance 0/7; named acceptance 0/36; all 311 proposed subscopes remain outside acceptance; drafting maturity 29/50; congressional readiness unestablished. M04.03, its parent named topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded.
+
+Current dashboard v93 baseline: stable Library ID `libfile_cc7518a16af48191815df91c0bc809da`, file ID `file_00000000e55881f7a89a31f6fd61e08d`, 248,678 bytes, SHA-256 `6dd80c0d43bb877f46e24ded81463abcb36717f171c8993c1e75dca185ea0d51`. This v94 update prepends this checkpoint and preserves the complete v93 content byte-for-byte as an exact suffix. After independent v94 readback, final tracker v357 will record its Library receipt and hash. Reconcile the transaction before reserving another scope.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M04.02 “Disaster response”; tracker v353; dashboard successor v93
+
+2026-10-19 UTC. The reserved M04.02 direct federal-source review is complete; its claim is being released by tracker v353. The report is saved at /Startake/Starlink_Item6_Moral_M04_02_Disaster_Response_Audit_2026-10-19.md (Library ID libfile_4252d165aed081919256bb8c7f93a890; 20,018 bytes; SHA-256 0566af04a87190c41a476704e7b429f321b5f19051dc3b307144667a07c547ac).
+
+Crosswalk v1.20 Markdown (Library ID libfile_ba20f5313ba08191bf172bfd4bb3809c) and CSV (Library ID libfile_ba0d1baa8eb08191a9aebc350c88b764) record the audit. The CSV retains 311 rows and changes only five M04.02 evidence/reference cells; the Markdown preserves all v1.19 content as an exact suffix.
+
+The bounded review finds Federal disaster coordination, a restoration-enabling site-access rule, mobile-wireless MDRI duties, assigned NSEP TSP priority, and voluntary satellite DIRS status reporting. It identifies no general Federal commercial satellite-broadband restoration or availability guarantee in the sources reviewed. No provider-specific Starlink service, classification, contract, coverage, or performance evidence was established. No Bill v1.14 or workbook v0.4 edit is made.
+
+**Formal status remains unchanged:** Initial coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes outside acceptance; maturity 29/50; congressional readiness unestablished. M04.02, its parent named topic, and Practical Item 6 remain unchecked. Practical Item 1 remains excluded. This dashboard is a synchronization checkpoint, not original acceptance authority.
+
+**Prior dashboard preservation:** v92 is 246,739 bytes with SHA-256 e8e2e05755a2b5a85a4649180bec3b28457a1ebfd9d3a31ba36463a17f5f9c43. The complete v92 file is preserved below as an exact suffix. Final tracker receipt will follow an independent v93 readback.
+
+---
+
+## Current checkpoint — Practical Item 6 / Moral M04.01 emergency medical communication; tracker v350; dashboard successor v92
+
+2026-10-19T03:53:23Z. Claim `STARTAKE-20261019-WORK-ITEM6-M04-01-EMERGENCY-MEDICAL-COMMUNICATION-4c85e2` was reserved against tracker v348, read back as v349, and released by guarded update v349→v350 after the bounded source review and report/crosswalk readbacks. Tracker v350 is 586,268 bytes, SHA-256 `21b7b103eeff9c7a204b691807ee652a6a6c341f3b8d1f8ab304283ae5490968`; its v349 baseline is an exact suffix.
+
+Saved the [M04.01 Emergency Medical Communication Audit](/Startake/Starlink_Item6_Moral_M04_01_Emergency_Medical_Communication_Audit_2026-10-19.md), Library ID `libfile_5a796a796bc4819197ad50a5a8c0da29`, version 0, 18,236 bytes, SHA-256 `5a403af4947c32aca54ed4e69e2e8af5611b415f8fb34c60fd409e918da8624d`; independent materialization is byte-identical. Direct official-source review maps emergency communications and information-continuity duties for specified hospitals, critical access hospitals, RHC/FQHCs, Medicare ambulance suppliers and HIPAA-regulated organizations; Medicare telehealth payment modalities; and the FirstNet public-safety broadband framework. It establishes no Starlink-specific use, classification, subscription, location coverage, performance, outage, or patient outcome. This is not Legal Data Hunter verified or counsel/EMS/clinical/engineering reviewed.
+
+Saved paired Crosswalk v1.19. Markdown stable Library ID `libfile_a2b64e9b16e881919334ff8139b5bc64`, version 5, 76,268 bytes, SHA-256 `f79794dc6956d1aa65f1d02624736c1e347629634c3cacc5bd89a391bf955982`; CSV stable Library ID `libfile_811f8898813c8191abc137ad62f5e35c`, version 4, 436,974 bytes, SHA-256 `505211233f3b4a7bd7a7c7b0d53706e2043e99987b7fdc3c93c34130e56914ee`. Both independent materializations exactly match. Markdown preserves the entire v1.18 history as an exact suffix. The CSV retains 311 rows and 311 unique preserved source labels; exactly five evidence/reference fields change on M04.01 and every other row and field remains unchanged.
+
+The reviewed facility and HIPAA rules place specified emergency-planning and ePHI continuity duties on covered organizations. The Medicare ambulance equipment rule delegates further requirements to State/local law; the reviewed telehealth provision governs payment modalities; neither establishes carrier uptime. FirstNet provides a public-safety network framework but does not prove universal eligibility, subscription, coverage, or service level. Bill v1.14 §§104(3), 205(d), 401(a)/(d), and 402(d)–(e) already cover closing continuity, a measured health/emergency access baseline, and risk-based transition registers/tests for qualifying contracted services. **No Bill text change is recommended** on this record; an ongoing post-transition medical-connectivity guarantee would require a separate policy decision and defined funding and standards. Bill v1.14 and workbook v0.4 remain unchanged.
+
+M04.01, its parent named topic, and Practical Item 6 remain formally unchecked. Initial research coverage is 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50; congressional readiness remains unestablished. No output stream advances based on this research report alone. Practical Item 1 remains excluded. Gaps include applicable State/local EMS rules, any actual provider contract/subscriber/location and alternate-path facts, mission tolerances, engineering/health-provider evidence, and a separate decision if ongoing service guarantees are intended.
+
+This dashboard v92 candidate uses the freshly materialized dashboard v91 baseline (242,570 bytes; SHA-256 `c38afc4b0f19ced223667a01ae12b7b670e686186430910d5c1f1b72a6762025`), expected current version 91, and preserves all dashboard v91 content as an exact suffix. After independent v92 readback, record its exact Library receipt in the canonical tracker and verify the final tracker. Then refresh both workflows, tracker, dashboard, and live claims before selecting one distinct unclaimed scope under Practical Items 2–7.
+
+---
+
+## Current checkpoint — Consistency erratum / M04.09 metadata; tracker v347; dashboard successor v91
+
+19 October 2026 UTC. Claim STARTAKE-20261019-WORK-CONSISTENCY-M04-09-ERRATUM-c7a14d was reserved against actual tracker v345, independently verified as v346, and released by conditional update v346→v347 after the erratum report and Crosswalk v1.18 were independently verified. The canonical tracker release receipt is v347, 572,902 bytes, SHA-256 454d3ab235c9ea8605a38ce0b33b7bea4e58f08f44ecb2844eb6035a6dc6fff0.
+
+Saved [M04.09 and workflow-digest consistency erratum](/Startake/Startake_Consistency_Erratum_M04_09_Placeholders_and_Workflow_Digest_2026-10-19.md), Library ID libfile_91c77db1436881919c48166a0059c58f, version 0, 7,912 bytes, SHA-256 55452b20b77c50a6ba091dfabce33bad14d132428c019d56152e83d24ab9a567; fresh Library materialization byte-matches.
+
+Saved [Crosswalk v1.18 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.18_2026-10-19.md), stable ID libfile_a2b64e9b16e881919334ff8139b5bc64, version 4, 72,633 bytes, SHA-256 f75132b66ffdd1e38e8181ff6155f0269c9177f8bb32067f5a292ae4b6bc3d49; and [Crosswalk v1.18 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.18_2026-10-19.csv), stable ID libfile_811f8898813c8191abc137ad62f5e35c, version 3, 435,768 bytes, SHA-256 6b7bbd0d839d41803feb4c3476ecc681eaf992df3d8cdeb13d34649af9613252. Both fresh materializations match their candidates. The CSV is byte-identical to v1.17, with 311 unique preserved source labels and no changed cells. The Markdown v1.17 history is an exact suffix; the M04.09 narrative now has the verified report path, Library ID, size, and digest in its v1.18 overlay.
+
+**Consistency issues resolved:** STARTAKE-ISSUE-CROSSWALK-M04-09-PLACEHOLDERS-20261019 is resolved by the current v1.18 overlay. STARTAKE-ISSUE-TRACKER-CONSISTENCY-WORKFLOW-SHA-20261019 is resolved using the independently materialized Consistency Workflow v1.0 digest 6c31bf961e4d7b31ea20b014ae030290e4996319b3022b759347bff3b04e8bcf; two erroneous historical tracker fields remain preserved and are explicitly corrected by the erratum and current receipts. Dashboard v90 below still carries its historical open-issue note; this v91 checkpoint supersedes that note.
+
+No new research or substantive finding is added. M04.09's original report is unchanged and remains direct-source review, not LDH-verified or counsel-reviewed. Practical Item 1 remains excluded. Bill v1.14 and workbook v0.4 remain unchanged. Initial research coverage remains **7/7**; formal acceptance remains **0/7 practical and 0/36 named**; all **311 proposed scopes** remain outside formal acceptance; descriptive maturity remains **29/50**; congressional readiness remains **unestablished**.
+
+This dashboard v91 candidate uses the freshly materialized dashboard v90 baseline (239,303 bytes; SHA-256 c157ea05edd8392d706ad3039f3f1553c3d8bc7ad4a48c6a40f15cdb74fd239f) and expected current version 90. It adds this checkpoint and preserves the entire dashboard v90 as an exact suffix. After independent v91 readback, record the exact dashboard receipt in the canonical tracker and verify the final tracker. Then refresh live claims and select a distinct unclaimed scope under Practical Items 2–7.
+
+---
+
+## Current checkpoint — Practical Item 6 / moral M04.08 reliability and redundancy; tracker v344; dashboard v90
+
+19 October 2026 UTC. Claim `STARTAKE-20261019-WORK-ITEM6-M04-08-RELIABILITY-REDUNDANCY-b60ae6` was reserved against actual tracker v341, saved v342, and independently verified after a guarded filename correction in tracker v343. It was released by conditional tracker update v343→v344. The v344 tracker readback matches byte-for-byte at 562,055 bytes, SHA-256 `37f37eb4189cf2c17f80334d6b812dba335b68f08dbf9513dfffbaf6a3bb4dbe`.
+
+Saved the [M04.08 Reliability and Redundancy Audit](/Startake/Startake_Item6_Moral_M04_08_Reliability_and_Redundancy_Audit_2026-10-19.md), Library ID `libfile_78ce561808d08191b06f6c8c610d8bed`, version 0, 19,965 bytes, SHA-256 `64222f9ef05beeb9b4c8f68e2e077f33ae3a6a1ebb8f7fc14c7fdb8630032690`; independent materialization byte-matches. The direct official-source review finds conditional Part 4 satellite-outage reporting and possible §214 discontinuance/facilities controls, but no general satellite-broadband uptime or diverse-path guarantee in the reviewed rules. Data-only coverage remains unresolved; no current Starlink classification, outage, performance, architecture, user impact, or noncompliance is established. No Legal Data Hunter verification or counsel/engineering review is represented.
+
+Saved [Crosswalk v1.17 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.17_2026-10-19.md), stable Library ID `libfile_a2b64e9b16e881919334ff8139b5bc64`, version 3, 70,156 bytes, SHA-256 `0d39a5a52dab6291e6ebdf9e6fea7068fd40feb28f081984f3af89285a25a936`; and [Crosswalk v1.17 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.17_2026-10-19.csv), stable Library ID `libfile_811f8898813c8191abc137ad62f5e35c`, version 2, 435,768 bytes, SHA-256 `6b7bbd0d839d41803feb4c3476ecc681eaf992df3d8cdeb13d34649af9613252`. Both fresh Library reads match exactly. The CSV retains 311 unique scope labels and changes exactly five evidence/reference fields on M04.08; all other rows and protected fields remain unchanged. Markdown v1.16–v1.0 history is byte-preserved.
+
+**Open consistency issue:** `STARTAKE-ISSUE-CROSSWALK-M04-09-PLACEHOLDERS-20261019`. The inherited v1.16 Markdown M04.09 paragraph has unresolved template tokens for path, Library ID, byte count, and hash; the v1.16 CSV row and tracker v341 receipt contain the populated reference. v1.17 flags the defect without altering the historical block. A separately controlled correction remains open.
+
+This dashboard v90 entry records a bounded research pass only. Practical Item 6, M04.08, and its parent named topic remain formally unchecked. Initial research coverage remains **7/7**; formal acceptance remains **0/7 practical and 0/36 named**; all **311 proposed scopes** remain outside formal acceptance; descriptive maturity remains **29/50**; congressional readiness remains **unestablished**. Item 1 remains excluded. Bill v1.14 and workbook v0.4 are unchanged.
+
+This conditional dashboard update uses the freshly materialized v89 baseline (235,886 bytes; SHA-256 `471c5d9b0d80fb03b73447cbbb486a74600260b14ca17c90d8aee98b18b8efc0`) and expected `current_version_number=89`; it adds this checkpoint and preserves the complete prior checklist as an exact suffix. After independent v90 readback, record its exact receipt in tracker v345 and verify the final tracker.
+
+---
+
+## Current checkpoint — Practical Item 6 / moral M04.09 allocation in scarcity; tracker v340; dashboard v89
+
+19 October 2026 UTC. Claim STARTAKE-20261019-WORK-ITEM6-M04-09-SCARCITY-ALLOCATION-82c750 was reserved from tracker v338 through v339, independently verified before research, and released by conditional update v339→v340. The independent v340 tracker readback matches at 549,681 bytes, SHA-256 68ab22e4c7faac54f11a3f9bc5ed00dbebd8332992bec379ff2d8c3250c42459.
+
+Saved the [M04.09 Allocation in Scarcity Audit](/Startake/Starlink_Item6_Moral_M04_09_Allocation_in_Scarcity_Audit_2026-10-19.md), Library ID libfile_632bd577ea6c8191b53e40f8220b3abb, version 0, 13,805 bytes, SHA-256 883cf6ee67e057f88a1fb0b9082f62fc85c4a2e722f408e38eea02a82effee7c; independent materialization byte-matches.
+
+Saved [Crosswalk v1.16 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.16_2026-10-19.md), stable Library ID libfile_a2b64e9b16e881919334ff8139b5bc64, version 2, 66,953 bytes, SHA-256 d8da29fe13a42accdce1594596d06b4140184be162927868eb2674800260288b; and [Crosswalk v1.16 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.16_2026-10-19.csv), stable Library ID libfile_811f8898813c8191abc137ad62f5e35c, version 1, 433,744 bytes, SHA-256 06df5b691b27b9c5a68edd966e3ebbb957ab029dd94229977266e4886d42014e. Both independent materializations byte-match. The CSV retains 311 unique scope labels and changes exactly five M04.09 evidence/reference fields; all other rows and protected fields are unchanged. Markdown v1.15–v1.0 history is byte-preserved.
+
+The bounded review finds that 47 U.S.C. §§201–202 common-carrier duties depend on classification, with §153(51) assigning fixed/mobile satellite common-carriage treatment to the FCC. The Sixth Circuit set aside the 2024 FCC Title II broadband order, and the FCC restored the relevant Part 8 rule text in 2025. Current 47 C.F.R. §8.1 requires qualifying BIAS providers to disclose network-management practices, performance, and terms; it does not prescribe a universal scarcity queue or guarantee terminal allocation. Proposed §205(a) would require published, technically justified capacity rules but does not state priority classes or a general equipment-rationing schedule; §§401–402 address transition/cutover registers and testing. No current Starlink classification, allocation practice, congestion, user impact, or equipment shortage is established.
+
+Legal Data Hunter reference resolution was unavailable because the free daily quota was exhausted. This was direct official-source review, not LDH-verified or counsel-reviewed. M04.09, its parent named topic, and Practical Item 6 remain formally unchecked. Initial coverage remains **7/7**; formal acceptance remains **0/7 practical and 0/36 named**; all **311 proposed scopes** remain outside acceptance; drafting maturity remains **29/50**; congressional readiness remains **unestablished**. Item 1 remains excluded. Bill v1.14 and workbook v0.4 are unchanged.
+
+This v89 dashboard entry records a bounded research pass only. Dashboard v89 is prepared from the freshly materialized v88 baseline using expected current_version_number=88; all prior checkpoint history is retained. After independent v89 readback, record its exact receipt in tracker v341 and verify the final tracker.
+
+---
+
+## Current checkpoint — Practical Item 6 / moral M04.07 access for vulnerable populations; tracker v337; dashboard v88
+
+19 October 2026 UTC. Claim `STARTAKE-20261019-WORK-ITEM6-M04-07-ACCESS-VULNERABLE-5dfc81` was reserved through conditional tracker update v335→v336 and independently verified before research; it was released by conditional update v336→v337. The v337 tracker readback is 537,456 bytes, SHA-256 `27d00d3a75a6689518020047edc42b401a56cfb770ff80abd7ad8d913703bf31`.
+
+Saved the [M04.07 Access for Vulnerable Populations Audit](/Startake/Startake_Item6_Moral_M04_07_Access_for_Vulnerable_Populations_Audit_2026-10-19.md), Library ID `libfile_32203a4fc47881918b19db144596b92a`, version 1, 20,833 bytes, SHA-256 `dc287bd45a7ecbdbb9bffb0c44b7a1a2ae5cb70dde3b4fdcfde5332748f4c911`; independent Library materialization byte-matches. Direct official-source review covers 47 U.S.C. §§153, 225, 254, 255, 617–618, 214(e), 29 U.S.C. §794, 47 C.F.R. Parts 14 and 54, and current USAC Lifeline guidance. Legal Data Hunter verification was unavailable under the active quota; no independent counsel review or formal acceptance is claimed.
+
+Saved [Crosswalk v1.15 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.15_2026-10-19.md), Library ID `libfile_a2b64e9b16e881919334ff8139b5bc64`, version 1, 64,355 bytes, SHA-256 `e08cbbd0c92dc7adb9fede2c04fcbce418444107ceca89f608c3fadb5f01209d`; and [Crosswalk v1.15 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.15_2026-10-19.csv), Library ID `libfile_811f8898813c8191abc137ad62f5e35c`, version 0, 431,697 bytes, SHA-256 `87f772e602961fa608de72bddf4b91334c999001bf186b5cdbaa6cbceaef5b57`. Both independent materializations byte-match. The CSV retains 311 unique scope labels and changes exactly five evidence/reference fields on M04.07; all other rows and protected source, custody, substantive-evidence, proposed-section, and formal-acceptance fields remain unchanged. The Markdown v1.14–v1.0 history is byte-preserved.
+
+The audit finds that disability-access duties depend on covered service/equipment and classification; Lifeline depends on ETC participation and household/program eligibility; §254 policy principles do not themselves assure an individual broadband line or price. Bill §205(d) requires a substantive affordability/rural-access baseline, and §§401–402 add continuity planning/testing for documented critical obligations. Those safeguards do not establish a funded minimum, universal coverage, or a cohort-specific benefit. No current Starlink service classification, Lifeline status, coverage, performance, user facts, or conflict-zone permission is established.
+
+This v88 dashboard entry records a research pass only. Practical Item 6, M04.07, and its parent named topic remain formally unchecked. Initial research coverage stays **7/7**; formal acceptance **0/7 practical and 0/36 named**; all **311 proposed scopes** remain outside formal acceptance; descriptive maturity stays **29/50**; congressional readiness remains **unestablished**. Item 1 remains excluded. Bill v1.14 and workbook v0.4 are unchanged.
+
+Dashboard v88 is prepared from the freshly materialized v87 baseline using expected `current_version_number=87`; all prior checkpoint history is retained. After independent v88 readback, record its exact receipt in tracker v338 and verify the final tracker.
+
+---
+
+## Current checkpoint — Practical Item 6 / moral M13.06 service-harm redress; tracker v334; dashboard v87
+
+19 October 2026 UTC. Claim `STARTAKE-20261019-WORK-ITEM6-M13-06-SERVICE-HARMS-e20f35` was conditionally reserved from tracker v332 to v333, independently read back before research, and released by conditional update from actual tracker v333 to v334. The independent v334 tracker readback matches byte-for-byte at 529,039 bytes, SHA-256 `6c90444fa0211075943812d0e53d89e6f47ab477fd6a8e1f69e973cf99773b7c`.
+
+Saved the [Practical Item 6 / M13.06 service-harm redress audit](/Startake/Startake_Item6_Moral_M13_06_Service_Harm_Redress_Audit_2026-10-19.md), Library ID `libfile_1b7f136a761c8191a295993974c225f3`, 21,553 bytes, SHA-256 `24e24f5222128fe11ebe11a8d6f582390a1318c841759cf6cb9620430919f2bf`; an independent Library materialization matches. The direct official-source review found that Bill v1.14 §§205(a)/(e) require accessible service terms, outage notices, complaint and restoration procedures; §§206(a)/(d) require reporting and audit metrics; §§207 and 501 provide nonmonetary relief and preserve other remedies but create no new damages remedy. FCC, Communications Act and FTCA pathways remain conditional on jurisdiction, covered status, statutory predicates, actual contract terms and facts. The FCC does not resolve every individual informal complaint; satellite common-carrier classification is for the FCC to determine. No actual service harm, operator classification, complaint, contract or entitlement was established. Legal Data Hunter’s quota was active, so this report is direct official-source review, not LDH-verified or counsel-reviewed.
+
+Saved [Crosswalk v1.14 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.14_2026-10-19.md), Library ID `libfile_c91ef2cdce5c8191b701552001b7a2ac`, 61,382 bytes, SHA-256 `59dadd75daed1f2917eea3aef37f74266b5819846a85aabad2d4ce458e0da2a0`; and [Crosswalk v1.14 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.14_2026-10-19.csv), Library ID `libfile_16e79b5c87e88191ab5b911256aa1394`, 429,750 bytes, SHA-256 `582e7b20a74ef249023d4bea05f6afb61064dbfa50d8754fbb7c411a399b5f21`. Both independently reread and byte-matched. The CSV retains 311 unique original scope labels; exactly five evidence/reference fields in M13.06 changed, with all other rows and the original text, source hash, custody, substantive-evidence and formal-acceptance fields preserved. Markdown v1.13 history is byte-for-byte preserved.
+
+This checkpoint records research synchronization only. Practical Item 6, M13.06 and its parent topic “Democratic Legitimacy and Public Accountability” remain formally unchecked. Initial research coverage remains **7/7**; practical formal acceptance **0/7**; named-topic acceptance **0/36**; all **311 proposed scopes** remain outside formal acceptance; descriptive maturity remains **29/50**; congressional readiness remains **unestablished**. Bill v1.14 and workbook v0.4 are unchanged. Item 1 remains excluded from this Work instance.
+
+This conditional dashboard update uses the freshly materialized v86 baseline (225,733 bytes, SHA-256 `f11c0c7d986eecb17f6a056b135a46b7bf889d65af1c17c04f08a6f2a817777a`) and expected `current_version_number=86`; it adds this checkpoint, corrects the current Item 1 scope references below, and preserves the prior dashboard history. After independent v87 readback, record its exact bytes and hash in final tracker v335, then update the pursued-goal record last.
+---
+## Current checkpoint — Practical Item 6 / moral M13.05 public participation; tracker v331; dashboard v86
+
+19 October 2026 UTC. The M13.05 claim `STARTAKE-20261019-WORK-ITEM6-M13-05-PUBLIC-PARTICIPATION-51e9b2` was conditionally reserved from tracker v329 to v330, independently verified before research, and released from actual tracker v330 to v331. The released tracker was independently reread byte-for-byte at 517,212 bytes, SHA-256 `e7d61bcb04822cce0407293f9fae0892194fcae04b6e34f784e0ae59d110b7df`.
+
+Saved the [Practical Item 6 / M13.05 public participation audit](/Startake/Startake_Item6_Moral_M13_05_Public_Participation_Audit_2026-10-19.md), Library ID `libfile_0af3c7c14f988191ba89697bfea0599c`, version 0, 27,586 bytes, SHA-256 `cabe895336293dceb798880306befc29cd5287ef32817281bb6f369cc6a537da`; independent materialization byte-matches. The report covers APA rulemaking/comment conditions, likely Sunshine Act Board coverage, FOIA record access limits, FACA applicability to a standing council, non-U.S. stakeholders, contrary readings, and Bill v1.14 implications. Legal Data Hunter’s quota remained active, so the report is direct official-source review and is not LDH-verified or professional legal advice.
+
+Saved [Crosswalk v1.13 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.13_2026-10-19.md), Library ID `libfile_33a2c64ca25c819188ce8350e5cb6732`, 58,757 bytes, SHA-256 `7a64cf55b3afe9a0e54838a79d55c2783e2d3402ef1f999e9d5835365781432a`; and [Crosswalk v1.13 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.13_2026-10-19.csv), Library ID `libfile_072fceeec1c081918cf41138612ca95f`, 428,218 bytes, SHA-256 `09130d163be12baa993e5f0cdddd92c8e3ac559edc1438e027bf2996a2a9aecf`. Both independently reread byte-for-byte. The CSV retains 311 unique rows; exactly five permitted evidence/reference fields changed in M13.05; all other 310 rows and all original/source/custody/substantive-evidence/formal-acceptance fields are unchanged. The Markdown v1.12–v1.0 history is byte-preserved.
+
+This dashboard entry synchronizes completed research only. Practical Item 6, M13.05, and its parent topic “Democratic Legitimacy and Public Accountability” remain formally unchecked. Initial research coverage remains **7/7**; formal practical-item acceptance **0/7**; named-topic acceptance **0/36**; all **311 proposed scopes** remain outside formal acceptance; descriptive maturity remains **29/50**; congressional readiness remains **unestablished**. Item 1 remains excluded. Bill v1.14 and workbook v0.4 are unchanged; no maturity, readiness, or acceptance status advances.
+
+This conditional dashboard update uses the freshly materialized v85 baseline (222,675 bytes, SHA-256 `407fe0fbda347c7f5ad6e13a57b93eef14bbf29d508320bbd096d529d8b0f060`) and expected `current_version_number=85`; it adds this checkpoint and preserves the complete prior checklist. After independent v86 readback, record the final tracker receipt from its actual current version, then update the pursued-goal record last.
+
+---
+
+## Current checkpoint — Practical Item 6 / M08.04 government information demands; tracker v328; dashboard v85
+
+19 October 2026 UTC. Claim `STARTAKE-20261019-WORK-M08-04-INFO-REQUESTS-c27f6e` was reserved by conditional tracker update v326→v327, independently verified before research, and released by conditional update v327→v328. The fresh v328 tracker readback matches byte-for-byte at 512,215 bytes, SHA-256 `1711b4fe846204dbbababbd36f31d685b9febf176025ad350855d7b29f77347c`.
+
+Saved the [Practical Item 6 / M08.04 government information demands audit](/Startake/Startake_Item6_Moral_M08_04_Government_Information_Demands_Audit_2026-10-19.md), Library ID `libfile_64aed73bbb2c81918772e07f0b835c9a`, version 0, 18,475 bytes, SHA-256 `658db52918e95f8555ba6968752bc1f9b5e4b5c88cdd5379cb5f324b1b8000b6`; independent materialization byte-matches. Concurrent direct official-source checks cover provider/data process tiers, cross-border rules, disclosure secrecy and transparency, statutory challenge routes, and limited constitutional decisions. Legal Data Hunter’s daily quota was active, so this is not LDH-verified or independent legal review. No actual Starlink/SpaceX demand, provider classification, private record, or law-specific application is established.
+
+Saved [Crosswalk v1.12 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.12_2026-10-19.md), Library ID `libfile_a4df829b481c819188b633feefb07200`, version 0, 56,189 bytes, SHA-256 `f0b77a9e20cc3b26e1fc2a743fc5d59a9ea14d3d0f47499fa0b2917bc08cd62e`; and [Crosswalk v1.12 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.12_2026-10-19.csv), Library ID `libfile_433eb891fb5081919533b492d57c6694`, version 0, 427,516 bytes, SHA-256 `0900291d183f5cf5f8e6feebbc043b81d461163a1726d29bbda2f3a31b53ad4e`. Both independently reread byte-for-byte. The CSV contains 311 unique rows; exactly M08.04 and its five evidence/reference fields changed. All other 310 rows and the original scope text, source provenance/hash, custody, substantive evidence, and formal-acceptance fields remain unchanged. Markdown v1.11–v1.0 history is byte-preserved.
+
+The report flags four questions for separate counsel review: whether Bill §204(a) preserves optional emergency disclosure; how qualifying §2523 foreign orders fit §§204(a)/(c); how reporting handles delayed notices and gag expiry; and how §207 interacts with statute-specific process review. The current §1881a repeal note states an effective date of 12 June 2026 subject to the statutory transition procedure; any post-sunset use requires a current transition or later-enactment check.
+
+Bill v1.14 and workbook v0.4 are unchanged. This is synchronization only; no original acceptance gate changed. Initial research coverage remains **7/7**; formal practical-item acceptance **0/7**; named-topic acceptance **0/36**; all **311 proposed scopes** remain outside formal acceptance; descriptive maturity remains **29/50**; congressional readiness remains **unestablished**. Practical Item 6, M08.04, and parent topic “Privacy, Surveillance, and Digital Autonomy” remain unchecked. Item 1 remains excluded under the controlling scope instruction, and no Item 1 research is claimed.
+
+Dashboard v85 is saved from the independently verified dashboard v84 baseline and tracker v328. The final tracker receipt will record this dashboard version’s exact saved/readback hash.
+
+---
+
+## Current checkpoint — Item 2 / original scope 15.03 §606(h) penalty review; tracker v324; dashboard v84
+
+19 October 2026 UTC. Claim `STARTAKE-20261019-WORK-ITEM2-1503-606H-PENALTIES-5a8e2c` was reserved by conditional tracker update v322→v323 and independently verified before research; it was released by conditional update v323→v324 and independently read back. Tracker v324 byte-matches its candidate at 502,099 bytes, SHA-256 `164f9b5665d0bd69f771d05920de3aa4ead44d0ef2b1b25776b175e8f2b949f4`.
+
+Saved the [§606(h) penalty analysis](/Startake/Startake_Item2_Scope1503_USC606_Subsection_H_Penalty_Analysis_2026-10-19.md), stable Library ID `libfile_083bb8ab8e4881919a9f7c7339b7a40d`; its initial saved version independently materialized byte-identically at 19,010 bytes, SHA-256 `b88fa33e5de882bfe43c37db16fa9b8461c2b51e7799ffe92d32e4bf7f5d2457`. The direct-source review describes a willful act/omission offense tied to exercised §606 authority, a separate intent-enhanced tier, likely Class A misdemeanor / Class C felony treatment, and the likely §3571 greater-of fine caps. It flags the offense-specific fine reading, entity intent/penalty issue, and absence of direct §606(h) case authority as requiring further legal verification. §§501–502 have separate or residual statutory predicates. The public-index case search was bounded; no reported federal decision directly construing §606(h) was located, which is not proof none exists. The work is not Legal Data Hunter verified because the daily quota was active, and it is not independent legal review. No actual proclamation, order, prosecution, affected operator or device, or Starlink-specific application was established.
+
+Saved [Crosswalk v1.11 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.11_2026-10-19.md), Library ID `libfile_029065de17148191b7f30653e737ef1a`, 53,663 bytes, SHA-256 `15d15cfe265c3946de1cd76dd9c2e7149dddfe3f2f911d44458240b8cc3bb5f5`; and [Crosswalk v1.11 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.11_2026-10-19.csv), Library ID `libfile_00df4f0423008191a0cc90b67f966260`, 426,653 bytes, SHA-256 `75adaa10686ca8e5c85b37b8ae11525c985078ec3942b9f9b478bfdec5d8047a`. Both fresh materializations byte-match. Exactly row 15.03 changes in five evidence/reference fields; the other 310 rows and original text, custody, substantive-evidence ledger and formal-acceptance fields are preserved.
+
+Bill v1.14 and workbook v0.4 are unchanged. Practical Item 2, original scope 15.03, and parent topic “Alternatives and necessity test” remain formally unchecked. Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50; congressional readiness remains unestablished. Dashboard v84 records synchronization only.
+
+**Next substantive step:** Refresh both active workflows, canonical tracker and dashboard after the final tracker receipt, then select a distinct unclaimed gap under Items 2–7. Preserve Item 1’s exclusion and all formal-acceptance gates.
+
+---
+
+## Previous checkpoint — Item 2 / scope 15.03 §606 current-text currency; tracker v321; dashboard v83
+
+19 October 2026 UTC. Claim `STARTAKE-20261018-WORK-ITEM2-1503-606-CURRENCY-91c4b8` was conditionally reserved from canonical tracker v319 to v320 and independently verified before research. The assignment was released by conditional tracker update v320→v321. A fresh v321 materialization byte-matches at 494,266 bytes, SHA-256 `9a6aab644cc2b2c68410fbfd5f63efbb7159a6afb6f232a7cab94a5f251fb316`.
+
+Saved [Item 2 / original legal scope 15.03 current-text currency check](/Startake/Startake_Item2_Scope1503_USC606_Current_Text_Currency_Check_2026-10-18.md), Library ID `libfile_e0e5facf51448191aa6b5aeba6524ee4`, 5,912 bytes, SHA-256 `eede2b3b7e635406c3ff13cd4e89644c816c4237436d3b563ce5b5c1b536b53a`; its independent Library readback matched.
+
+Saved [Crosswalk v1.10 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.10_2026-10-19.md), Library ID `libfile_971e6915dfa081919e4da54508d2bccb`, 50,636 bytes, SHA-256 `4c96d9623f83210b88c4f1fe7a6063b930b371d0c06c0402fb52e1c1709854d0`; and [Crosswalk v1.10 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.10_2026-10-19.csv), Library ID `libfile_771be4b85af88191a795f0cdf92d213d`, 426,079 bytes, SHA-256 `aca14ab5c6008874138b189fc8812f4fca3ba9b26dd95024691f5f42090a99ce`. Both independent readbacks matched. Exactly original legal row 15.03 changed, and only its current evidence/status, report-reference, scope-result and remaining-verification fields changed. All other 310 rows, original scope text, source hash, custody, substantive-evidence ledger, and formal-acceptance fields are unchanged.
+
+The official 2024 U.S. Code text and current House/OLRC text show no §606(a)–(h) text difference, and no post-2024 §606 amendment was identified in official records through Public Law 119-121 (9 October 2026); no later enacted public law was located through the assignment cutoff. The prior Item 2 audit covered (a)–(g). Subsection (h), “Penalties,” appears in both texts but remains unreviewed. This is a source-currency pass, not a merits or applicability finding. The work used official OLRC and GPO sources directly and is not Legal Data Hunter verified because its daily quota was active.
+
+No Bill v1.14 or workbook v0.4 change was made. Initial coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; descriptive maturity remains 29/50 (58%); congressional readiness remains unestablished. Practical Item 2, scope 15.03, and parent topic “Alternatives and necessity test” remain formally unchecked. No actual proclamation or invocation, affected Starlink stations/devices/operators, Starlink-specific applicability, contrary authority, or professional review is established. Dashboard v83 records synchronization only; no original acceptance criteria or formal status changed.
+
+**Next substantive step:** Refresh the canonical tracker and dashboard before reserving a distinct unclaimed scope. Preserve Item 1's exclusion and all formal-acceptance gates.
+
+---
+
+## Previous checkpoint — Item 7 / scope 15.02 transition-service audit; Bill v1.14 §401(c); dashboard v82
+
+18 October 2026 UTC. Claim `STARTAKE-20261018-WORK-LEGAL-15-02-TRANSITION-SLA-7c4e91` was conditionally reserved from canonical tracker v316 to v317 and independently verified before research. The claim was released by conditional tracker update v317→v318; a fresh v318 materialization byte-matches at 489,669 bytes, SHA-256 `a413733a9dc18e7ed5245b6c5c5c2433028654ad71c8160c0da735a3368175fa`.
+
+Saved [Item 7 / original legal scope 15.02 audit](/Startake/Startake_Item7_Scope1502_Transition_Service_Level_and_Funded_Exit_Plan_Audit_2026-10-18.md), Library ID `libfile_a6a5c61bdd888191a045cd54b9b040b6`, version 1, 17,697 bytes, SHA-256 `5f3928d13c954827997370f50f25296607d1481193c80d1aa353652f35141968`; and [Integrated Working Bill v1.14](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.14_2026-10-18.md), Library ID `libfile_0fb03f28404c8191a6c549b3c0abb8f0`, version 0, 150,978 bytes, SHA-256 `848e3dc59d671a56241f379ba9b9dcd427c679ca4051467674a5517edea6977e`. The bill changes only §401(c), adding a contract-level service measurement/reporting schedule and exit-plan cost/funding disclosure. No service threshold, price, staffing count, term, exit cost, or appropriation was set.
+
+Saved [Crosswalk v1.9 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.9_2026-10-18.md), Library ID `libfile_e7d6b9529eec81919392792e778c5d8e`, 48,835 bytes, SHA-256 `eead4410fce54aaa857088fd29e4b2adc0176ad7c44d529325fc474b9eb76285`; and [Crosswalk v1.9 CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.9_2026-10-18.csv), Library ID `libfile_c63f1dd43ab08191a72c7c3d55542cb3`, 425,400 bytes, SHA-256 `094c32adf4dd1c92882561fbfed042ac8a82faa1a7694cd054254e45ea60dfac`. Exactly original legal row 15.02 changed; the other 310 rows are field-identical, and its source text, hash, custody, substantive-ledger status, and formal-acceptance fields are preserved.
+
+The bundled Consistency Validator v1.0 passed all 19 unit checks and the candidate comparison against a fresh Bill v1.13/Crosswalk v1.8 baseline. It reports only Bill section 401 and CSV row 15.02 changed; 31 sections, 311 scopes and 36 named topics remain. This is a mechanical pass, not legal sufficiency or acceptance. The review used official FAR, GAO and Starlink public primary sources; the Legal Data Hunter daily limit was active, so this is not LDH-verified. No private or defense contract, actual mission SLA, performance dataset, price, staffing plan or exit-cost estimate was verified.
+
+Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**; all **311 proposed scopes** remain outside acceptance; descriptive maturity remains **29/50 (58%)**; congressional readiness remains **unestablished**. Item 7, original scope 15.02 and parent topic remain unchecked. Workbook v0.4 is unchanged. This checkpoint is a bounded audit and proposed drafting update, not proof that acquisition is necessary or that transition is technically independent.
+
+**Next substantive step:** Keep the pursued goal active. Refresh the canonical tracker and dashboard before selecting the next distinct unclaimed gap; preserve the original acceptance gates, Item 1 separation and all missing operational, contract, appropriation and professional-review evidence.
+
+---
+
+## Previous checkpoint — Item 5 §303 continuity-reserve gates and Bill v1.13; dashboard v81
+
+18 October 2026 UTC. Claim `STARTAKE-20261018-WORK-ITEM5-SEC303-RESERVE-RELEASE-GATES-6c9e21` was reserved by conditional tracker update actual v312→v313. The first Library write used a changed basename; the canonical filename was restored by conditional update v313→v314 and the reservation was independently verified before research. The claim was released by tracker v314→v315; tracker v315 independently read back at 481,118 bytes, SHA-256 `bdc3af656e05d4e32a2ccfff2197ae14789cba83bfbf93842e47799672c8fb45`.
+
+Saved [Integrated Working Bill v1.13](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.13_2026-10-18.md), Library ID `libfile_21ad2352857c8191ad89973873e1cf12`, 145,269 bytes, SHA-256 `5797622fe42923f46eb5e6e7728254e7212bcf59275b85e2bd650c2d8c24e94e`; and [Item 5 §303 Continuity-Reserve Gates Audit](/Startake/Startake_Item5_Section303_Continuity_Reserve_Gates_Audit_2026-10-18.md), Library ID `libfile_ab864c5862a88191a0e16ce8708601fb`, 15,449 bytes, SHA-256 `baa0ff1dcf53b7455dc21c82b4985a437196ad9e5928e04de6ba8138f0ae0be2`. Both independent saved-file readbacks matched.
+
+Only Bill §303(b) changed. Its continuity reserve stays inside the unresolved acquisition-and-transition appropriation; the new text limits eligible use to documented continuity arrangements tied to §§401–402, requires a written cost/alternatives and no-duplication determination, separate obligation/outlay/balance records, quarterly reporting, and bars diversion or extension of availability. Every appropriation/year/period placeholder and compensation safeguard remains. The other 30 operative sections are byte-identical; Crosswalk v1.8 and workbook v0.4 are unchanged.
+
+The consistency validator passed all 19 unit checks and the Bill/Crosswalk comparison: only section 303 changed, no crosswalk rows changed, and 31 sections, 311 scopes and 36 topics remain. Current Title 31 sources were checked; reserve/apportionment treatment remains for appropriations counsel. No price, amount, fiscal year, official score, operational fact, or professional approval is claimed. Initial coverage remains 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; descriptive maturity remains 29/50; overall readiness remains unestablished. Dashboard v81 is a synchronization checkpoint only.
+
+**Next substantive step:** After refreshing both active workflows and checking current claims for overlap, reserve a distinct audit of §401(c)'s measurable transition-service levels and funded exit plan. Compare its drafting gates with current public standards and verified bill dependencies; leave service thresholds, price, and staffing figures unresolved unless authenticated evidence supports them.
+
+---
+
+## Current checkpoint — Item 5 §303 funding-choice schedule, 18 October 2026 UTC; dashboard v80
+
+Claim `STARTAKE-20261018-WORK-ITEM5-303-FUNDING-DECISIONS-94c31f` was reserved at actual tracker v309→310 and released at v310→311. Tracker v311 was independently materialized and byte-matched before this dashboard update. The completed bounded audit maps the five §303 fiscal-year, diligence amount, availability period, acquisition/compensation amount, and continuity-reserve choices to evidence requests, calculation methods, and appropriation gates.
+
+Saved [Item 5 §303 Funding Choices and Cost Inputs Audit](/Startake/Startake_Item5_Section303_Funding_Choices_and_Cost_Inputs_Audit_2026-10-18.md), Library ID `libfile_9465b131ae048191998ef12dee9ebde8`, 14,442 bytes, SHA-256 `a9d2fc8f7e1a1667e04b075e7367b045e065b2212618184a2b825dcb02de96ec`; independent readback matched. The report checks official U.S. Code/CBO/GAO sources and inspects financial workbook v0.4. The workbook's Actual case has no authenticated inputs or outputs; all examples are synthetic. Thus no fiscal year, appropriation amount, reserve, purchase price, or official score is stated.
+
+Bill v1.12, workbook v0.4, and Crosswalk v1.8 are unchanged. No original acceptance boxes changed. Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; drafting maturity remains 29/50 (58%), unchanged; overall readiness remains unestablished. Five funding choices, 34 actual-model inputs, operational evidence, and independent review remain open. Current dashboard version 80 is a synchronization checkpoint, not an acceptance update. The next substantive task is a distinct sourceable Item 5 actual-input audit, using authenticated public inputs only and leaving transaction/private inputs missing.
+
+Tracker v311 independently verified: 475,610 bytes; SHA-256 `35d0115f34915d10362911a9c63a19c264fb2f0d0f108868596290cd84fa04cf`. Dashboard v80 is saved with a separate conditional version check; its readback and tracker receipt follow.
+
+---
+
+# The Starlink and Stripes Act — Completion Checklist v2.0
+
+## Current checkpoint — executable integrity controls, 18 October 2026 UTC
+
+Token STARTAKE-20261018-INTEGRITY-VALIDATOR-6e84c2 reserved actual tracker 306→307 and released 307→308; both independently byte-verified. Delivered [Consistency Validator v1.0](/Startake/Startake_Consistency_Validator_v1.0_2026-10-18.zip), libfile_705b81af99c08191a9b725627a866c08, and [Validation Report](/Startake/Startake_Consistency_Validator_Validation_Report_2026-10-18.md), libfile_e0180c28d12c8191b9153c0ff07a2c0e. Both independently retrieved byte-identical. All 19 controls and the unchanged-package check passed. Baseline: Bill v1.12, Crosswalk v1.8; 31 sections, 311 unique scopes, 36 topics. Explicit allowlists and protected original/custody/status fields now have executable checks.
+
+This closes the standalone-validator implementation gap from the preceding workflow checkpoint. Manual semantic, legal, financial, operational, source-currency and independent review duties remain. No retrospective source verification, model recalculation or expert sign-off is implied. Bill/crosswalk/model unchanged; formal 0/7 practical and 0/36 named; initial coverage 7/7; all 311 proposed scopes outside formal acceptance; ten stages 3,2,3,3,3,3,3,3,3,3 = 29/50 descriptive maturity, +0 this pass, +13 from original 16/50. Overall readiness unestablished. Original stages and acceptance boxes preserved. Funding choices, 34 model inputs and real operational/professional review remain open.
+
+Current checklist update uses refreshed actual 78. Its saved readback and tracker receipt will be recorded separately. Next substantive priority: funding-choice evidence-to-decision schedule under a fresh reservation. Historical manual-only checkpoint below remains preserved as history.
+
+---
+
+## Prior mandatory consistency controls activation — 18 October 2026 UTC
+
+The saved and independently byte-verified [Consistency Workflow v1.0](/Startake/Startake_Consistency_Workflow_v1.0_2026-10-18.md), stable ID libfile_24fa6dd38c4481919375a3026ed06a62, supplements active Workflow v2.2. Canonical tracker activation/release at actual v305 is independently verified before this dashboard update. Read both workflows and the live tracker before every assignment.
+
+Requires authoritative baselines, explicit changes/protected invariants, contradiction and decision records, dependency review, bill/crosswalk/model checks, ordered version-guarded saves, fresh byte verification, partial-save recovery and periodic whole-package reconciliation. Reports include the reusable transaction receipt. This establishes prospective process controls; it is not a retrospective accuracy audit, executable automation or expert sign-off.
+
+Administrative claim STARTAKE-20261018-CONSISTENCY-2b94e1 released. Bill v1.12, crosswalk v1.8 and financial workbook v0.4 unchanged. No original acceptance boxes changed. Initial coverage 7/7; formal 0/7 practical and 0/36 named; all 311 scopes retained outside formal acceptance; ten stages 3,2,3,3,3,3,3,3,3,3 = 29/50 (58%) drafting maturity, not completion; readiness unestablished. Existing funding/input/transition and independent-review gaps remain open. Checklist receipt is recorded in the canonical tracker only after independent verification.
+
+---
+
+
+**Purpose:** A readable, outcome-focused progress dashboard for the congressional-ready public-acquisition legislative package. STARTAKE is the internal research project; **The Starlink and Stripes Act** is the deliverable. This dashboard is a **companion view**, not a replacement for the canonical coordination register or original acceptance criteria. 
+
+
+## Current checkpoint — scope 12.08 whistleblower implementation and Bill v1.12; dashboard v77
+
+18 October 2026 UTC. Claim `STARTAKE-20261018-WORK-ITEM6-WHISTLEBLOWER-12-08-d74be4ab` was reserved from actual canonical tracker v300 to v301 and independently verified before research. The completed assignment and released claim are recorded at tracker v302, verified before this dashboard mutation. Only the bounded employee/contractor whistleblower interface of legal scope 12.08 was audited; the broader parent topic and Item 6 remain unchecked.
+
+**Saved outputs, independently byte-verified:**
+
+- [Startake_Item6_Scope1208_Whistleblower_Enforcement_Audit_2026-10-18.md](/Startake/Startake_Item6_Scope1208_Whistleblower_Enforcement_Audit_2026-10-18.md), Library ID `libfile_ca8a40f26bac8191886128a8b25d5a35`, 20,417 bytes, SHA-256 `6eff6f113e459bb57cb8d8a07f2ea05d828c0e39d7631a72b2778232ac06c246`; independent saved-byte readback matched.
+- [The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.12_2026-10-18.md](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.12_2026-10-18.md), Library ID `libfile_c136037b4f508191bf6fba3542de36a0`, 140,663 bytes, SHA-256 `79bdaf58f3f17c328c66815c86c8c5ef96b035b27ec96909b64bc9b0a77fe74a`; independent saved-byte readback matched.
+- [Startake_Original_Requirements_To_Bill_Crosswalk_v1.8_2026-10-18.md](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.8_2026-10-18.md), Library ID `libfile_c247ae275f988191afa06bc9b7b8131f`, 46,191 bytes, SHA-256 `26d9fb1c893ddbfa4e3a8ee87a0c139c9f9daa98dbdd923f5fa0513211ec1552`; independent saved-byte readback matched.
+- [Startake_Original_Requirements_To_Bill_Crosswalk_v1.8_2026-10-18.csv](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.8_2026-10-18.csv), Library ID `libfile_e42c4dc6fb288191b5e3fcddbc2134cd`, 424,097 bytes, SHA-256 `8ea18f5827773ad7f8c3cb0242b0438fea194551c727c25a258b64b64f3885a3`; independent saved-byte readback matched.
+
+Bill v1.12 adds a phase-specific coverage/remedies schedule, current personnel notices and applicable contractor notification/subcontract terms in §206(c). It preserves the original protected-reporting sentences and existing statutory coverage, forums, exhaustion, elections, deadlines and disclosure limits. §§207 and 501 stay unchanged. The bill retains 31 sections; other 30 sections are byte-identical. Crosswalk v1.8 changes only row 12.08; all other 310 records and all custody/original/formal-status fields are preserved.
+
+The audit found specified existing corporation-employee protections and a separate federal-contractor process. It does not find universal employee, contractor, foreign or court coverage. LDH searches/resolutions initially worked, then hit the daily limit; current statutory and case checks used official primary sources. Its 2024 snapshots are not represented as a complete current-law determination. Elgin and the May 2026 Margolin holding/concurrence are distinguished. Actual worker/award classification, coverage gaps, secure channels, notices, clause implementation, response tests and independent personnel/procurement/security/Legislative Counsel review remain open.
+
+| Output stream | Stage / 5 | Remaining limitation |
+|---|---:|---|
+| Public-interest and Ukraine evidence | 3 | Representative causal evidence and review |
+| Commercial perimeter and title | 2 | Actual title, assets, contracts and consents |
+| Constitutional and acquisition mechanisms | 3 | Transaction-specific and independent constitutional review |
+| Valuation and economics | 3 | Commercial inputs, populated range and appraisal |
+| Public funding and federal finance | 3 | Attributed receipts, actual funding choices and official score |
+| Operations and international transition | 3 | Real workforce/contract/permission schedules and witnessed tests |
+| Governance, privacy and safeguards | 3 | Coverage determinations, secure channels and independent validation |
+| Necessity, objections and alternatives | 3 | Common-basis comparison and independent challenge |
+| Full bill and appropriations | 3 | Specialist redlines and five §303 funding choices |
+| Dossier, criteria crosswalk and review | 3 | Substantive original-scope acceptance and external review |
+
+Descriptive maturity remains **29/50 (58%)**, unchanged this pass and +13 from the historical 16/50 baseline. Initial research coverage remains **7/7** separately from formal acceptance **0/7 practical** and **0/36 named**. All **311 proposed scope rows** remain outside formal acceptance. Overall congressional readiness remains **unestablished**. No appropriated amount, official score, populated valuation, actual workforce entitlement or independent sign-off is established. The goal stays active.
+
+This dashboard uses actual conditional source version 76. Its independent saved readback and the subsequent canonical tracker receipt govern synchronization; prior checkpoints remain as history. Next: refresh Workflow v2.2, the live tracker and goal before reserving another distinct unclaimed high-impact scope. No new claim is pre-reserved.
+
+---
+
+## Prior checkpoint — compensation-procedure audit and Bill v1.11; dashboard v76
+
+Canonical tracker v299 releases claim `STARTAKE-20261017-WORK-ITEM2-COMPENSATION-PROCEDURE-03-05-8f2c4d` after a bounded primary-source audit of original scope 03.05. The reservation was committed from tracker v297 to v298 and independently read back before research; the completed assignment and release are recorded at v299. This supports Item 2 and the named topic only; it is not formal acceptance.
+
+Saved the [Item 2 Scope 03.05 Compensation Procedure Audit](/Startake/Startake_Item2_Scope0305_Compensation_Procedure_Audit_2026-10-17.md), Library ID `libfile_9dcfed5a12a08191a7fe861253b9de4c`, 12,978 bytes, SHA-256 `7f35daf00e17e93cac20d0ee948b0ecc8aad52d0c87a2799dca9bafc3fc58eab`. Legal Data Hunter’s daily quota was unavailable for this pass. The report uses cited official primary authorities and is not represented as LDH-verified.
+
+Saved [Integrated Working Bill v1.11](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.11_2026-10-17.md), Library ID `libfile_0787cde14e908191a14039521faa59ca`, 136,647 bytes, SHA-256 `51566a3f1ed305b961de6c9d6d01b2f966f1bc0080363f0ebdc02b193151359d`. Only §106 changed from v1.10: §106(a) now directs the court to separately determine the legally required taking date and applicable valuation date for each interest. It adds no valuation formula, interest rate, numeric deadline, appropriation or acquisition power. The bill retains 31 numbered sections.
+
+Saved [Original Requirements to Bill Crosswalk v1.7 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.7_2026-10-17.md), Library ID `libfile_0796a7f5842c8191a6ff9fe972f3acfb`, 44,351 bytes, SHA-256 `1378f856af0ffa132fa1f4386124d45fd49aa1b11af1ebe319862d68faaa523e`; and [the 311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.7_2026-10-17.csv), Library ID `libfile_cbb9cc4aa3b4819182eab69b463419e4`, 422,288 bytes, SHA-256 `d27f7c62e8e7824a42a5fa98a92b5f2ff374c704a748d0cc196bf2ec52bbd6c1`. Exactly original legal scope 03.05 changes relative to v1.6; the other 310 records are field-identical. All four files were independently materialized from Library and byte-matched.
+
+The review distinguishes the land-specific Declaration of Taking Act’s deposit and interest rules from this bill’s process for tangible personal property. Rule 71.1 covers real and personal property but supplies no universal deadline or one-size-fits-all interest formula for the proposed bill. The edit clarifies application of existing constitutional and governing-law dates without prescribing a new compensation rule.
+
+Initial coverage stays 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scope rows remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall readiness remains unestablished. Scope 03.05, its parent topic and Item 2 remain unchecked. Independent Legislative Counsel and transactional-counsel review, scorekeeping and the five §303 funding choices remain pending.
+
+Dashboard v76 was conditionally replaced from actual version 75 and independently read back; the canonical tracker records its verified receipt at v300. The 18 October refresh confirmed the same saved v76 bytes. Next: refresh Workflow v2.2, tracker and dashboard before reserving another distinct unclaimed high-impact scope. Keep the goal active.
+
+
+## Prior checkpoint — original scope 03.06 shareholder, creditor and lienholder audit and Bill v1.10, 17 October 2026 project date
+
+Claim STARTAKE-20261017-WORK-ITEM2-CLAIMS-LIENHOLDER-03-06-5d8a3c is released after a bounded public-primary-source audit of original legal scope 03.06. Reservation was conditionally committed from canonical tracker v293 to v294 and independently read back; release was committed from actual v294 to v295 and independently byte-verified. This supports Item 2 and the named topic only; it is not formal acceptance.
+
+Saved the [Item 2 Scope 03.06 Shareholders, Creditors and Lienholders Audit](/Startake/Startake_Item2_Scope0306_Shareholders_Creditors_Lienholders_Audit_2026-10-17.md), Library ID libfile_a33d23de21148191aaea40e1dbade237, 14,264 bytes, SHA-256 ac910dcdc11ad4b27c0bf954dbcbfc2a04850f41c63156c87c1244a5bc10eaa5.
+
+Saved [Integrated Working Bill v1.10](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.10_2026-10-17.md), Library ID libfile_03c092ffd9a881918746909a4ead424f, 134,789 bytes, SHA-256 ee7486f7082dd556a63ad0d34ca654ac766c671b303316576e13b4fc30785ab5. Only §§101(c), 104(1) and 106(c) changed from v1.9. The edits clarify that a transaction schedule does not satisfy contractual notice/consent/waiver or release a lien, condition closing on any action already required by law or governing instruments, and direct courts to determine entitlement and priority under applicable law. No new lender veto, lien priority, compulsory share transfer, funding or acquisition authority was created; the bill retains 31 numbered sections.
+
+Saved [Original Requirements to Bill Crosswalk v1.6 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.6_2026-10-17.md), Library ID libfile_65f89c3b87d0819182841b3d390428a6, 42,609 bytes, SHA-256 811e8bab132770fcfa83abdc176410a5f2b458ecd5b0f438768083bb6fe46b92; and the [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.6_2026-10-17.csv), Library ID libfile_eb27a97d50c08191b3fbfb104bc84e3e, 423,263 bytes, SHA-256 77f570582d3657971f4f7a67f0726e534aacbab5ba71936dd31c130633ff26d0. Exactly original legal row 03.06 changes from v1.5; the other 310 rows are field-identical.
+
+The [public May 2026 credit agreement](https://www.sec.gov/Archives/edgar/data/1181412/000162828026039276/exhibit1010-sx1a1.htm) contains a Starlink-specific asset-transfer covenant. The [June 30, 2026 SEC filing](https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm) reports that the $20 billion bridge loan was repaid, the amended $5 billion revolving facility was unused at quarter end, $25 billion in senior unsecured notes remained, and other equipment-backed financings existed without identifying collateral as Starlink. No Starlink-specific lien, required lender consent, shareholder vote, payoff or lien release is established. The bill’s revised clauses are drafting clarifications; actual entity, collateral, covenant and priority questions remain for transaction-specific review.
+
+Initial coverage stays 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scope rows remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall readiness remains unestablished. Scope 03.06, its parent topic, Item 2 and all other acceptance structures remain unchecked. Independent Legislative Counsel and transactional-counsel review, scorekeeping and the five §303 funding choices remain pending.
+
+Dashboard v74 is conditionally replaced from actual version 73 and independently byte-verified. The canonical tracker receipt is pending a conditional update from actual v295 to v296. Next: record and verify that receipt, then refresh Workflow v2.2, tracker and dashboard before selecting another distinct unclaimed high-impact scope. Keep the goal active.
+
+## Prior checkpoint — original scope 17.11 drafting-form audit and Bill v1.9, 17 October 2026 project date
+
+Claim `STARTAKE-20261017-WORK-LEGAL-17-11-CONSISTENCY-9c7e21` is released after a bounded consistency audit of original legal scope 17.11. Reservation was conditionally committed from canonical tracker v290 to v291 and independently read back before analysis; release was conditionally committed from v291 to v292 and independently byte-verified. This is a drafting-form pass only; no practical item, subcategory, or full-title named-topic acceptance is claimed.
+
+Saved the [17.11 Legislative Drafting Form Consistency Audit](/Startake/Startake_Legal_17_11_Legislative_Drafting_Form_Consistency_Audit_2026-10-17.md), Library ID `libfile_0d339b7320f881919c13688ccaf6fcb4`, 7,159 bytes, SHA-256 `db5c583bd6dedfa4433549a33277be69a56a24f5aa636823e2b3df937b2bf690`.
+
+Saved [Integrated Working Bill v1.9](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.9_2026-10-17.md), Library ID `libfile_e017c8c59eec8191a9909ec51d3fda39`, 132,255 bytes, SHA-256 `d6e87837ff833ce919d1444c24bd2c59779ede004760869d7c7f7067d34346dd`. The first statutory section now follows the House Office of Legislative Counsel's `SECTION 1.` convention; §3 defines the Federal Communications Commission as “Commission”; and the §303 appropriations drafting note is separately labeled outside the proposed bill text. The Act retains 31 numbered sections. No substantive authority or funding choice changed.
+
+Saved [Original Requirements to Bill Crosswalk v1.5 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.5_2026-10-17.md), Library ID `libfile_2d538105ec0c819192f29fba3853fb4d`, 40,420 bytes, SHA-256 `e503ba62a3fab4b4efbaf7bb82cccd645eb0dfd2ab35538297d9d8ef3ba25acd`; and the [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.5_2026-10-17.csv), Library ID `libfile_f15153a5c5f88191bf3007c1e120abf9`, 421,934 bytes, SHA-256 `1cb661a6da6dfbcfa0ae2fdaae8acdae1af7d52de758627635173a9ee96880f5`. Exactly row 17.11 changes from v1.4; the other 310 rows are field-identical.
+
+The structure check found 31 unique sections in the expected sequence, with no missing section target among 27 internal section references and no missing subsection or paragraph labels. Five bracketed §303 fiscal choices remain open; the Legislative Counsel redline, independent substantive review and scorekeeping remain pending. Initial coverage stays 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside acceptance; drafting maturity remains 29/50 (58%); overall readiness remains unestablished. Scope 17.11, its parent topic and all practical-item boxes remain unchecked.
+
+Dashboard v73 is conditionally replaced from actual version 72 and independently byte-verified. The canonical tracker receipt is pending a conditional update from actual v292 to v293. Next: record and verify that receipt, then refresh Workflow v2.2, tracker and dashboard before selecting another distinct unclaimed high-impact scope. Keep the goal active.
+
+---
+
+
+## Prior checkpoint — Item 2 § 1498 IP-use audit and Bill v1.8, 17 October 2026 project date
+
+Claim `STARTAKE-20261017-WORK-ITEM2-INTANGIBLE-1498-1b72c6` is released after one bounded U.S. primary-law review. Reservation was conditionally committed from tracker CAS v287 to v288 and independently read back; release was conditionally committed from actual tracker v288 to v289 and independently read back. This is supporting evidence for practical Item 2 and original scope 03.03 only; no formal acceptance is claimed.
+
+Saved the [Item 2 § 1498 Patent and Copyright Government-Use Audit](/Startake/Startake_Item2_Section1498_IP_GovernmentUse_Audit_2026-10-17.md), Library ID `libfile_7f95fde45364819184a940511df826e3`, 16,152 bytes, SHA-256 `1e98ced14e955357d8ed51dc26a726e626566998f6e8c3306c1d681318a248e3`.
+
+Saved [Integrated Working Bill v1.8](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.8_2026-10-17.md), Library ID `libfile_e4218432e12481918be0d067763feb1c`, 131,141 bytes, SHA-256 `72d549d3e7388373a1ce773bd794ca97a2862a47a44ca328a35830e8304712e4`. Only §§ 105(c) and 108 changed from v1.7. The new domestic U.S.-patent order is written, necessity-based and time-limited, links covered use to § 1498(a) compensation against the United States, and transfers no title. It does not authorize copyright use, source-code/trade-secret/customer-data access, third-party performance, or foreign patent use.
+
+Saved [Original Requirements to Bill Crosswalk v1.4 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.4_2026-10-17.md), Library ID `libfile_7abf3de6ae408191ae11feb94ef2868c`, 39,178 bytes, SHA-256 `bbc88898ea875c6e08a09f1f14658cf313d2950f30e32ec0a3c708a363bd7c4d`; and the [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.4_2026-10-17.csv), Library ID `libfile_bdf15a8a5be08191ab14ca1a6918d6d3`, 421,021 bytes, SHA-256 `b064cccda5154162aeb2306e1c5b64dfe113392782556f88e024a3d57c64aac5`. Only original row 03.03 changed from v1.3; the other 310 data rows are field-identical. All four saved outputs independently byte-match their Library readbacks.
+
+Section 1498 provides compensation for qualifying patent and copyright use; it does not itself transfer title. Copyright remedies under § 1498(b) separately name U.S.-owned corporations. The audit does not determine whether any specific Starlink IP belongs to a particular entity or whether the proposed operator's patent use would qualify under existing § 1498(a). Legal Data Hunter's free-search quota was exhausted, so the report uses official House U.S. Code, Acquisition.gov and Federal Circuit sources and is not represented as LDH-verified.
+
+Initial coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; drafting maturity remains 29/50 (58%); overall readiness remains unestablished. Practical Item 2, original scope 03.03 and its parent named topic remain formally unchecked.
+
+Dashboard v72 is conditionally replaced from actual current version 71 and independently read back. The canonical tracker records this dashboard receipt after that readback. Next: continue with a distinct unclaimed high-impact scope and preserve formal acceptance, evidence verification, drafting maturity and readiness as separate statuses. Keep the goal active.
+
+---
+
+## Prior checkpoint — Item 5 Q2 2026 historical subscriber calibration, 17 October 2026 project date
+
+Claim `STARTAKE-20261017-WORK-ITEM5-HISTORICAL-CALIBRATION-Q2-5b91c4` is released after integrating already-audited public subscriber measures into the financial workbook. The reservation was conditionally committed from tracker CAS v281 to v282 and independently read back; release was conditionally committed from v282 to v283 and independently read back. This is Item 5 support for original scope 07.03 only; no formal acceptance is claimed.
+
+Saved the [Item 5 Q2 2026 Historical Calibration Integration Audit](/Startake/Startake_Item5_Q2_2026_Historical_Calibration_Integration_Audit_2026-10-17.md), Library ID `libfile_d8dafe4e34608191b36cede10f284a60`, 6,597 bytes, SHA-256 `33cdd986e5c7cbea510b1b367721fdcfad314be2be0f9e179e791842a2ed6094`.
+
+Saved [Financial Workbook v0.4](/Startake/Startake_Financial_Workbook_v0.4_2026-10-17.xlsx), Library ID `libfile_2a66a31519cc8191ba7786da678b1d87`, 48,117 bytes, SHA-256 `91f4689cc61abfdbaa87488bfde26c792110267071550bde91fc9bc741b300d8`. The new Historical Calibration sheet records SEC-reported service-line counts of 12.0 million as of 30 June 2026 and 6.0 million as of 30 June 2025, plus Q2/H1 ARPU of $66 in 2026 and $85 in 2025. The issuer metric includes personal and business plans but excludes managed enterprise and government customers with direct negotiated contracts. It is not a count of people or devices. The sheet is historical-only and does not feed the forecast; the Actual case still has 34 missing inputs and unavailable outputs.
+
+Saved [Original Requirements to Bill Crosswalk v1.3 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.3_2026-10-17.md), Library ID `libfile_d0e03a7680f481919b0923786adb8c49`, 37,517 bytes, SHA-256 `9189692061a964b9b3fc2c3e4def032a9a3f64562dd5494a9cae5365719c8e6f`; and the [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.3_2026-10-17.csv), Library ID `libfile_a4ebfb0ab0948191a2c41edf7fdea5c1`, 420,484 bytes, SHA-256 `58d8253d0d783429907a2100dec2464ea04991f089839306d02b02ab5bc357d2`. Only scope 07.03 changed from v1.2; the other 310 rows are field-identical. Both readbacks byte-match.
+
+Bill v1.7 remains unchanged. The historical observations do not establish standalone revenue or fill a forecast gap. Initial coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; drafting maturity remains 29/50 (58%); overall readiness remains unestablished. Item 5 and 07.03 remain unchecked.
+
+Dashboard v71 replaces the interim v70 self-receipt note and retains this Item 5 checkpoint and the preceding Item 1 and Item 6 evidence. Next: refresh Workflow v2.2 and the latest tracker/dashboard, then select one distinct, unclaimed high-impact source-backed scope. Keep the goal active.
+
+---
+
+## Prior checkpoint — Item 1 Goodyear E260343 successor STA status, 17 October 2026 project date
+
+Claim STARTAKE-20261016-WORK-ITEM1-GOODYEAR-STA-STATUS-4a6c9d is released after a bounded official FCC status check under its saved scope. The exact reservation was confirmed in current tracker v279 before research; release was conditionally committed from tracker CAS v279 to v280 and independently read back. This is Item 1 supporting evidence only; no practical-item, parent-topic or named-topic acceptance is claimed.
+
+Saved the [Item 1 Goodyear E260343 Successor STA Status Audit](/Startake/Startake_Item1_Goodyear_E260343_Successor_STA_Status_Audit_2026-10-17.md), Library ID libfile_c675701634f881918be6ea0ae4a7eb97, 6,992 bytes, SHA-256 e531e7e1b6a3d80211d983b32799a09e2be86de6dc482cfb3febe4b4c0616081. The official FCC notice confirms the prior grant ran through 28 September 2026. No source-native current status/action record for the successor or underlying application was retrievable; the 20 September third-party snapshot is a locator only. This is a bounded search/access limitation, not proof that no action or authority exists.
+
+Saved [Original Requirements to Bill Crosswalk v1.2 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.2_2026-10-17.md), Library ID libfile_3ae20105cf508191a7d7b0e1d476c8e8, 35,821 bytes, SHA-256 508db15fefddb3f4684ac61306b739361c6bbc55a45193270bac0db942e855de; and the [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.2_2026-10-17.csv), Library ID libfile_5f884d3939cc81918ebd484e2852fc67, 419,217 bytes, SHA-256 3014980fff97162690f21399eb76b08c8883640416476306ffe372541d17ebf1. Only original scope 04.02 changed from v1.1; the other 310 data rows are field-identical.
+
+Bill v1.7 remains unchanged. Proposed §107(b)(2) already calls for affected Commission filings/actions and their status, and the section requires unavailable or unverified status to be identified. The current evidence shows no new bill-text gap.
+
+Status remains: initial research coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes outside formal acceptance; descriptive maturity 29/50 (58%); overall congressional readiness unestablished. Item 1 and subcategory 04.02 remain formally unchecked.
+
+Dashboard v69 is saved; its receipt is pending in tracker CAS v281. Next: verify the v69 readback, record the receipt in tracker v281, then choose a distinct unclaimed source-backed gap within the remaining goal budget. Keep the goal active.
+
+---
+
+## Prior checkpoint — Item 6 Ukraine, diesel, Starlink and sanctions timeline audit, 17 October 2026 project date
+
+Claim `STARTAKE-20261017-WORK-ITEM6-UKRAINE-TIMELINE-T17-8C4A2E` is released after a bounded 9–17 October public-source audit. Reservation was conditionally saved from tracker CAS v276 to v277 and independently read back before research; release was conditionally saved from v277 to v278 and independently read back. This is Item 6 supporting evidence only, mapped to M02.01/M02.03/M02.04 and M05.03; formal acceptance remains unchecked.
+
+Saved the [Item 6 Ukraine, Diesel, Starlink, and Sanctions Timeline Audit](/Startake/Startake_Item6_Ukraine_Diesel_Starlink_Sanctions_Timeline_Audit_2026-10-17.md), Library ID `libfile_fc1486347c148191af57724aa7163cb3`, 14,729 bytes, SHA-256 `e6ddd5cf5942f5b3c75cb4e76c059f0e6d9b4e07a7b5687d760d2e70e7b5eb03`.
+
+The report corrects the timeline: the diesel statement and OFAC GL 135 are dated 9 October; Ukrainian service-restriction reporting began 14 October, with AP attributing the cap’s start to 15 October and identifying Starshield as the strongest supported product description; the White House Russia-related executive order is dated 16 October. A public supply announcement and general license do not establish a completed U.S. purchase or delivery. The Russia order waives enumerated provisions of the 2026 Graham Act and expressly preserves specified older executive-order measures; the report does not describe it as a suspension of all Russia sanctions. It flags unresolved interaction between GL 135 and the separate 2022 statutory import ban. The Ukraine decision chain and claimed operational effects remain unverified.
+
+Bill v1.7 and Crosswalk v1.1 remain unchanged: sections 2, 3, 205–207, 401–402 and 404 already cover evidence quality, Starshield scope/interface, service notice and review, independent audit, transition and tested redundancy. No specific source-supported bill-text gap was found; no crosswalk row was changed. This research pass is not formal verification.
+
+Status remains: initial research coverage 7/7; formal acceptance 0/7 practical and 0/36 named; all 311 proposed scopes outside formal acceptance; descriptive maturity 29/50 (58%); overall congressional readiness unestablished. The separate Item 1 Goodyear successor STA claim remains active and untouched.
+
+Next: record this dashboard v68 receipt in tracker CAS v278 and independently read it back. Then refresh the active workflow and live records before further work; do not overlap or alter the active Item 1 claim.
+
+## Prior checkpoint — Item 3 FCC Part 100 effective-date and transition-status update, 16 October 2026 project date
+
+Claim `STARTAKE-20261016-WORK-ITEM3-PART100-EFFECTIVE-DATE-6f61d5` is released after a bounded direct-primary-source status check of the FCC Part 100 transition. Reservation was conditionally saved from actual tracker v272 to v273 and independently read back before research; release was conditionally saved from v273 to v274 and independently read back. This is Item 3 supporting evidence only; no formal Item 3 or named-topic acceptance is claimed.
+
+Saved the [Item 3 FCC Part 100 Effective-Date and Transition-Status Update](/Startake/Startake_Item3_Part100_Effective_Date_Transition_Update_2026-10-16.md), Library ID `libfile_a9a0216723888191987132831cff7201`, 8,712 bytes, SHA-256 `d5f1bc5384ffaf30d1a726b854649bd51fd5bcad100c7637fd8c991401fa9828`; and [Original Requirements to Bill Crosswalk v1.1 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.1_2026-10-16.md), Library ID `libfile_a7316669ac088191b251b59425970ee0`, 34,507 bytes, SHA-256 `c1a53fc0e37d94bda5330ac84c11d9fa62eee01d4aa13b3640ec6ba6aba76a8d`; plus the 311-row CSV, Library ID `libfile_1a3c6136c51c8191890faebdd18276d4`, SHA-256 `a68b29e128c55eab4ea39b22330f779358fc07888d2ff7553920762b540cc33e`. Both crosswalk readbacks byte-match; exactly rows 05.09 and M16.01 changed from v1.0, with the other 309 unchanged.
+
+The latest located official FCC record treats existing Part 25 rules as operative and Part 100 as not yet effective. FCC 26-51 stated on 7 August that Part 100 was not in effect; FCC 26-59, published 14 September, said the existing fee approach would continue until Part 100 becomes effective. A targeted FCC/Federal Register search through 16 October found no later effective-date public notice. This is a bounded inference, not proof that no later notice exists; the September 14 fee-rule date is not Part 100’s effective date.
+
+The prior transfer work remains reflected in Bill v1.7 §107(b)’s pre-close handoff checklist. Bill v1.7 is unchanged. No actual authorization transfer, report filing, spacecraft compliance or performance, or deorbit cost is established.
+
+Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall congressional readiness remains unestablished. Item 3 and scopes 05.09/M16.01 remain formally unchecked.
+
+Next: record this dashboard v67 receipt in tracker v275 and independently read it back; then refresh Workflow v2.2 and select a distinct remaining source-backed gap within the active goal budget. No next claim is reserved.
+
+
+## Prior checkpoint — Item 6 federal cybersecurity and incident-reporting applicability audit, 16 October 2026 project date
+
+Claim `STARTAKE-20261016-WORK-ITEM6-CYBER-FISMA-bcc647` is released after a bounded primary-source review of original scope 12.07, *Cybersecurity and insider-risk governance*. Reservation was conditionally saved from tracker v269 to v270 and independently read back before research; release was conditionally saved from v270 to v271 and independently read back. This is supporting evidence only; no formal Item 6 or named-topic acceptance is claimed.
+
+Saved the [Item 6 Federal Cybersecurity and Incident-Reporting Applicability Audit](/Startake/Startake_Item6_Federal_Cybersecurity_FISMA_CIRCIA_Applicability_Audit_2026-10-16.md), Library ID `libfile_50eb8c1d4cf08191b45aee1feedc31ce`, 12,904 bytes, SHA-256 `bb3fbd4983ac85d9126751e7b2f3748a82f350696e0d712c295c44a3b9ef1fae`; and [Original Requirements to Bill Crosswalk v1.0 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.0_2026-10-16.md), Library ID `libfile_ee4a8373fc488191a82d100781f5d251`, 32,758 bytes, SHA-256 `94a0d57a12a62ed037f191b035484af1de304aa51db489b136f301d0bff82f17`, with its [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v1.0_2026-10-16.csv), Library ID `libfile_f4dd1f0afcf08191b0a28271ba6a335b`, 416,817 bytes, SHA-256 `a08a0baece01c7f781049c9e4b6e4ee264c7a5bd3211ffcc6a1c770fc57ec4f1`. Independent Library materializations byte-matched all three. Exactly original scope row 12.07 changed from v0.9; the other 310 rows are field-identical.
+
+If enacted, Bill v1.7 §201(c) treats the Corporation as an agency for federal information-security requirements, and FISMA's baseline applies to systems within statutory scope. It includes risk-based controls, annual testing of inventoried systems, incident procedures, continuity planning, and annual independent program evaluation. This does not establish that every commercial Starlink system or endpoint is covered, nor does it establish operational compliance: system boundaries and compliance remain unverified. CIRCIA's 72-hour covered-incident and 24-hour ransom-payment reporting periods depend on the effective date specified by CISA's final rule. CISA still describes that rule as in progress; no current CIRCIA reporting duty for Starlink or the proposed Corporation is established by this review.
+
+Bill v1.7 is unchanged. Sections 201(c), 206(c)–(d), 208(c), and 402 provide agency treatment and complementary disclosure, audit, security-cost, and cutover provisions. Remaining counsel questions concern designation of the Corporation's FISMA “head of agency” and a protected system-boundary/incident-handoff schedule. No system compliance, breach, test, security cost, or CIRCIA covered-entity finding is claimed.
+
+Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall congressional readiness remains unestablished. Item 6 and scope 12.07 remain formally unchecked.
+
+Dashboard v66 receipt was conditionally recorded in tracker v272 and independently read back. This checkpoint is retained as history; later updates supersede it.
+
+
+## Prior checkpoint — Item 4 quarterly Lifeline ETC and disbursement appendix cross-check, 16 October 2026 project date
+
+Claim STARTAKE-20261016-WORK-ITEM4-USF-QUARTERLY-ETC-SEARCH-3c7f20 is released after one bounded official-public-record review of original scope 04.07. Reservation was conditionally recorded from tracker v266 to v267 and independently read back; release was conditionally saved from v267 to v268 and independently byte-read back. This is supporting evidence only; no formal Item 4 or named-topic acceptance is claimed.
+
+Saved the [Quarterly Lifeline ETC and Disbursement Appendix Cross-check](/Startake/Startake_Item4_USF_Quarterly_Lifeline_ETC_Appendix_Entity_Crosscheck_2026-10-16.md), Library ID libfile_009bcd96c86c8191942a05b1744d4db9, 7,296 bytes, SHA-256 860b37a6e3b06ce4c084a8b6d83f057c182878b16cfcbf73d02aeea0d96f9c21; the LI03 source snapshot, Library ID libfile_9b117dba49cc8191a6c38fcdb292f4cf, SHA-256 1adc091e077ccf9906833a9a93a1ff3199c5f0863291b47bcdb9544e084dfba7; and the LI04 source snapshot, Library ID libfile_e804da9036d081919f8b0f803ae1dbfc, SHA-256 28a82f5e7cb9298c9a037025957b611352e580c014cebae5196ad063b1c37380. All three independent readbacks are byte-identical.
+
+USAC’s 4Q2026 demand filing is dated 31 July 2026; its latest Lifeline appendices LI03 and LI04 cover 2Q2026. The full LI03 roster has 2,835 rows and 56 state/jurisdiction codes but no numeric SPIN/498 ID field. LI04 has 2,125 provider rows, 1,349 unique SPINs, and April–June monthly disbursement columns. Neither schedule matched the previously authenticated provider name Space Exploration Technologies Corp.; LI04 had no row for 498 ID/SPIN 143053761. This period-bound schedule nonmatch does not establish current or historical nonparticipation, a current designation, award, cash receipt, service, or compliance.
+
+Saved [Original Requirements to Bill Crosswalk v0.9 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.9_2026-10-16.md), Library ID libfile_a925553166688191a67bdd4689ed4a02, 30,619 bytes, SHA-256 3a01c3bea15951c4fcbec101a845a0ef188cfb7f1e68bf640e3356c694c6103b; and its [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.9_2026-10-16.csv), Library ID libfile_216453b57a988191a582228d79c1d1dc, 416,326 bytes, SHA-256 2e7d041e73c9b25a042e70f930d460d4b93c41171d4de67f284a732908012c6d. Only scope 04.07 changed from v0.8; 310 rows are unchanged. Row 04.07 remains mapped to proposed §§107(b)(6) and 302(d)(1)–(6). Bill v1.7 is unchanged.
+
+Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall congressional readiness remains unestablished. Item 4 and scope 04.07 remain formally unchecked. No current ETC designation, program award/payment, cash receipt, service delivery, compliance or affordability result is established.
+
+Next: record this dashboard v65 checkpoint in tracker v268 and independently read back both records, then refresh Workflow v2.2 and select a distinct remaining source-backed gap within the active goal budget. No next claim is reserved.
+
+
+## Prior checkpoint — Item 4 §254 universal-service / ETC continuity audit and bill integration, 16 October 2026 project date
+
+Claim `STARTAKE-20261016-WORK-ITEM4-USF-LIFELINE-HIGHCOST-9d83a2` is released after a bounded official-primary-source review of original scope 04.07. The reservation was conditionally recorded from tracker v263 and independently read back at v264 before research; release was conditionally saved from v264 to v265 and independently byte-read back. No formal Item 4 or named-topic acceptance is claimed.
+
+Saved [Item 4 USF High Cost and Lifeline audit](/Startake/Startake_Item4_USF_High_Cost_Lifeline_Starlink_Eligibility_and_Public_Record_Audit_2026-10-16.md), Library ID `libfile_de7a4004e8288191991f2f7c89d89c1b`, 12,115 bytes, SHA-256 `1dfa5bce9bb95f11e18e6dbebfe55c9cc05379443a398e4310b4e950b3254dcd`; [Integrated Working Bill v1.7](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.7_2026-10-16.md), Library ID `libfile_ebe6b98788148191bf84d0769e3c9d4d`, 126,608 bytes, SHA-256 `0bb28a81cb67c6d154781633c0dcba4702ec9edcbaf2e0d17d533d3ce529b431`; [Crosswalk v0.8 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.8_2026-10-16.md), Library ID `libfile_78d449af70148191a6224a01a9df1f04`, 28,788 bytes, SHA-256 `ed77f65287dcac0c8a01b786116eda7a2358ad5c35a71a70ae95d67e2d3d7e1c`; and [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.8_2026-10-16.csv), Library ID `libfile_9d0e9593c9348191b1b1ebe57349bf51`, 415,696 bytes, SHA-256 `36d980815c30585548907b8b3d90ce7f31d9a23631c0622791920f2862e241b9`. All four were independently materialized and byte-compared.
+
+47 U.S.C. §254(e) limits specific Federal universal-service support to ETCs designated under §214(e) and to its intended facilities and services. The USAC Lifeline exact-498-ID search for known E-Rate identifier `143053761` returned “No Records Found Matching Your Criteria”; the High Cost public 498-ID filter showed no selectable matching value. The Lifeline Open Data dataset uses SAC and omits SPIN; the High Cost tool covers a rolling ten-year period with adjustments. The pass did not enumerate State/FCC ETC orders or all related entities. It establishes no Starlink-related designation, High Cost/Lifeline support amount, payment, cash receipt, service delivery, compliance, or affordability result. The bounded searches do not prove nonparticipation.
+
+Bill v1.7 changes only §107(b), adding proposed paragraph (6) for pre-close verification of any applicable ETC designation, service area, related Federal support and ongoing duties, legally required transaction or continuing-eligibility actions, and post-close responsibility. It creates no designation or support eligibility. The other 30 of 31 operative sections are byte-identical to v1.6. Existing §302(d)(1)–(6) already supplies public-support ledger and receipt controls, so §302 is unchanged. Crosswalk v0.8 changes only original row 04.07; the other 310 rows are unchanged. Row 04.07 maps to §§107(b)(6) and 302(d)(1)–(6), removing §403 because it concerns foreign permissions.
+
+The Fifth Circuit's 15 October 2026 *Consumers’ Research v. FCC* decision vacated the Q4 2025 contribution factor and remanded; no broader effect or appeal/mandate status is determined. No actual operating-compliance, provider-cash, cost, valuation, appropriation, or liability finding is added.
+
+Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall congressional readiness remains unestablished. Item 4 and scope 04.07 remain formally unchecked.
+
+Next: record this dashboard v64 checkpoint in tracker v266, independently read it back, then refresh Workflow v2.2 and select the next distinct source-backed gap within the remaining goal budget. No next claim is reserved.
+
+## Prior checkpoint — Item 6 §203(b) coercive-communication recordkeeping and bill integration, 16 October 2026 project date
+
+Claim STARTAKE-20261016-WORK-ITEM6-203B-COERCION-LOG-7c4e21 is released after a bounded official-primary-source drafting review; formal verification remains pending. The reservation was independently read back at tracker v261; the closeout was conditionally saved from actual tracker CAS 261 to v262 and independently byte-read back.
+
+Saved [Section 203(b) Coercive-Communication Recordkeeping Drafting Audit](/Startake/Startake_Item6_Section203b_Coercion_Recordkeeping_Drafting_Audit_2026-10-16.md), Library ID libfile_d27802f660708191b15530b8dbd1ef9b, 13,171 bytes, SHA-256 77730cfe5bb4620b65b3f08f3cea0ee58aadab11b23f3979bf5e0b442c345236; [Integrated Working Bill v1.6](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.6_2026-10-16.md), Library ID libfile_01c5f8b72b6881918ba5235fc5b5992c, 124,235 bytes, SHA-256 dcfdc168695ac73bc08e744d9f41fb1240a607f303a92d487fb7012c21c85001; [Original Requirements to Bill Crosswalk v0.7 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.7_2026-10-16.md), Library ID libfile_a5cc4b0406b081918e919de8cf658b90, 26,289 bytes, SHA-256 fa066dc34b7908054c768fece9f415311616163255481f8836ed46bf2604b533; and the [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.7_2026-10-16.csv), Library ID libfile_b83619d783788191bd4a7f8dfcc75d74, 414,525 bytes, SHA-256 bf4090a89a2ef08224f8f0f6917463f4b4da119af78a9274de78d8ea89827a7a. All four readbacks are byte-identical.
+
+*Vullo* and *Bantam Books* support a contextual, fact-dependent distinction between persuasion and coercion; they do not require this particular statutory logging process. Bill v1.6 adds a narrow internal §203(b) record-and-referral trigger for material contextual threats or selective-forbearance inducements tied to service restrictions or customer-data disclosures to punish or suppress protected expression or association. The amendment does not treat ordinary criticism or routine noncoercive coordination as coercion, and it does not delay lawful orders or emergency action. The interaction with existing §207 injunctive relief remains for Legislative Counsel.
+
+Bill v1.6 changes only §203(b); the other 30 operative sections remain byte-identical to v1.5. Crosswalk v0.7 changes only M07.02, M07.03 and M07.08; the other 308 CSV rows are unchanged. No actual government communication, censorship, customer-data demand, service restriction, liability, or implementation practice is established.
+
+Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50 (58%); overall congressional readiness remains unestablished. Item 6 and mapped M07 scopes remain formally unchecked. No operational compliance, government-official liability, valuation, or cost finding is added.
+
+Next: record the verified dashboard checkpoint in the tracker, then refresh Workflow v2.2 and the live claims before selecting a distinct source-backed gap within the remaining goal budget. No next claim is reserved.
+
+## Prior checkpoint — Item 3 debris successor responsibility and section 107(b) integration, 16 October 2026 project date
+
+Claim STARTAKE-20261016-WORK-ITEM3-DEBRIS-107-DRAFT-bd4e8a is released after a bounded primary-source drafting pass; formal verification remains pending. Reservation was independently read back at tracker v258, and the release was conditionally saved from v258 to v259 and independently read back.
+
+Saved [FCC Debris-Authorization Handoff and Section 107(b) Drafting Audit](/Startake/Startake_Item3_FCC_Debris_Successor_Responsibility_Section107_Drafting_Audit_2026-10-16.md), Library ID libfile_81bfb7f816dc8191aa3a51cfc18cd7df, 12,568 bytes, SHA-256 d2e6d989a40e9b5ceccece8bb4c65e3406fa0464e3af0186f77d5397f78a79b7; [Integrated Working Bill v1.5](/Startake/The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.5_2026-10-16.md), Library ID libfile_4f36cc569ec08191ae30cf20d83c68fc, 121,012 bytes, SHA-256 17f945835c927938c82e5603afd2363153212d853cd5263875aa0c85643ebd6c; and [Original Requirements to Bill Crosswalk v0.6 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.6_2026-10-16.md), Library ID libfile_88b6fed2e810819185ba7eb0d74ffc2c, 24,246 bytes, SHA-256 7f0ea7245d5b70d304c4557326a88c9cf2b186a4ac87faa2722bfb8ad6d2f550; with its [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.6_2026-10-16.csv), Library ID libfile_181665adedc88191b6cf6040ea5641e8, 413,539 bytes, SHA-256 b3221fd707ae82776da7b8cf921f632120e0c78b3403276b40ca8d216d89aeeb. All four independent readbacks are byte-identical.
+
+Bill v1.5 changes only §107(b); the other 30 operative sections are byte-identical to v1.4. The new checklist covers affected authorizations, transaction-specific FCC filings/actions and status, debris plans and conditions, reports/deadlines, deployment restrictions, record custody and proposed successor responsibility. The plan does not itself approve a transfer, satisfy a condition or prove filing. Crosswalk v0.6 changes only rows 05.09 and M16.01 relative to v0.5; the other 309 CSV rows are unchanged. FCC 26-51 said Part 100 was not yet effective on 7 August 2026; the draft refers to applicable rules without presuming a later effective date.
+
+No current authorization status, transaction, filing, report, spacecraft performance, compliance, deorbit cost, valuation or appropriation eligibility is established. Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance; descriptive maturity remains 29/50 (58%), with no stage advancement; overall congressional readiness remains unestablished. Item 3 remains formally unchecked.
+
+Next: refresh Workflow v2.2 and live claims, then select one distinct remaining source-backed gap within the remaining goal budget. No next claim is reserved.
+
+## Prior checkpoint — Item 1 FCC Starlink space-station authorization inventory, 16 October 2026 project date
+
+Claim STARTAKE-20261016-WORK-ITEM1-FCC-SPACE-STATION-INVENTORY-9f3c6b is released after one bounded direct-primary-source FCC record pass; formal verification remains pending. The reservation was independently read back at tracker v256 before research. The closeout was conditionally written from actual tracker CAS 256 to v257; independent readback verifies release and preserves prior claim history.
+
+Saved [Current FCC Starlink Space-Station Authorization Inventory](/Startake/Startake_Item1_FCC_Current_Starlink_Space_Station_Authorization_Inventory_2026-10-16.md), Library ID libfile_2fcf6dde59a48191909958f372c36a45, 13,146 bytes, SHA-256 ae47fba687bd55b1fd716923aeedc458d8953c5703c54c1cd49bfa861535135d; [Original Requirements to Bill Crosswalk v0.5 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.5_2026-10-16.md), Library ID libfile_4cf8c3738fcc81918bc3ba26744b75f1, 22,519 bytes, SHA-256 acc317f00ecd4981fa8449aecaa2cb16661b234f6608dd64fe420cfb8e3b7cd6; and [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.5_2026-10-16.csv), Library ID libfile_e8d5fbbfdd4481918f78b366b95c8595, 412,974 bytes, SHA-256 d5f08d7098916a21095b8403dccfc598d054946e12ab2e6ac9d18932922e55f7. All three readbacks are byte-identical. Exactly original scopes 04.01 and 04.04 changed from v0.4; the other 309 rows are unchanged.
+
+FCC orders identify Space Exploration Holdings, LLC with Starlink Gen1 space-station call signs S2983/S3018 and Gen2 S2992/S3069. DA 26-345 records a conditional Gen1 modification; DA 26-36 records a conditional partial Gen2 grant and deferral. The older FCC 25-11 fee table lists 11,908 authorized NGSO stations before DA 26-36; it is not a current total. Temporary Gen2 actions were found, but their present validity was not established. The live ICFS query/export and full current docket/transfer history were unavailable, so this is not a complete current license census. No transfer action was identified in accessible orders; absence is not proof none exists. DA 26-471 is a separate EchoStar spectrum/earth-station assignment, not a Starlink space-station transfer. No current authorization, ownership/title, deployment, compliance, or cost finding is made.
+
+Bill v1.4 remains unchanged. Section 107(b)'s pre-close plan should obtain or confirm the current source-native ICFS inventory, docket status, authorization terms and transfer/assignment records. Initial research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain unaudited; maturity remains 29/50 (58%); overall congressional readiness remains unestablished.
+
+Next: refresh Workflow v2.2 and live claims, then select one distinct remaining source-backed gap within the remaining goal budget. No next claim is reserved.
+
+## Prior checkpoint — Item 3 debris-authorization transfer continuity and bill crosswalk, 16 October 2026 project date
+
+Claim `STARTAKE-20261016-WORK-ITEM3-DEBRIS-TRANSFER-CROSSWALK-5c91ae` is released; bounded direct-primary-source transfer and legislative-integration pass complete, formal verification pending. The reservation was independently read back at tracker v254 before research; the closeout was prepared from CAS 254, saved at v255 and independently read back.
+
+Saved [FCC Debris-Authorization Transfer Continuity and Bill Crosswalk](/Startake/Startake_Item3_FCC_Debris_Authorization_Transfer_Continuity_Bill_Crosswalk_2026-10-16.md), Library ID `libfile_1cfec2f50a148191904feabe19dbf7b6`, 14,172 bytes, SHA-256 `5a49262303f6d8fab4104680013170ba3112c742971ca6eb915ab02f9368627a`; [Original Requirements to Bill Crosswalk v0.4 Markdown](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.4_2026-10-16.md), Library ID `libfile_99222611b26c81919cc78307fc00877a`, 21,028 bytes, SHA-256 `a74a1246f9c8c33a42107b8dfb22a506934db7459af5346919adea736ae3be7e`; and [311-row CSV](/Startake/Startake_Original_Requirements_To_Bill_Crosswalk_v0.4_2026-10-16.csv), Library ID `libfile_a7e050b5b26881918ae734591d618f4f`, 410,522 bytes, SHA-256 `ceba9439bdc6c4d4898e367745423f94c3dd2e7d66721b0c3df8aa8491e6a389`. All were independently materialized and byte-compared. Exactly rows 05.09 and M16.01 changed relative to v0.3; the other 309 rows are unchanged.
+
+Finding: §310(d) and 47 C.F.R. Part 25 require the applicable FCC authorization transfer or modification path. Bill v1.4 §107 preserves FCC approval but does not expressly identify debris plans, authorization conditions, reports, custodians, or proposed successor officers in its pre-close plan. The report provides a narrow §107(b) drafting recommendation; Bill v1.4 remains unchanged. No spacecraft-level compliance, Gen2 report filing or accuracy, deorbit cost, or appropriation eligibility was verified.
+
+Initial coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposals remain outside formal acceptance; maturity remains 29/50 (58%); overall congressional readiness remains unestablished.
+
+Next: refresh Workflow v2.2 and live claims, then select one distinct remaining source-backed gap. No next claim is reserved.
+
+## Prior checkpoint — Item 3 broadband and common-carrier classification audit, 16 October 2026 project date
+
+Claim `STARTAKE-20261016-WORK-ITEM3-0406-CLASS-7d3a91` is released; bounded primary-source pass complete, formal verification pending. The reservation was independently read back at tracker v252 before research. The closeout used tracker CAS 252 and is independently read back at v253.
+
+Saved [Broadband and Common-Carrier Classification Audit](Startake_Item3_Broadband_Common_Carrier_Classification_Audit_2026-10-16.md), Library ID `libfile_9ba93a2d392c8191b7cbe5c7f1d65eec`, 15,862 bytes, SHA-256 `c615e7974555fe9ee45d9fb3f58608820f27aedf2186e08d272badf271eb6b62`. Saved [Original Requirements to Bill Crosswalk v0.3](Startake_Original_Requirements_To_Bill_Crosswalk_v0.3_2026-10-16.md), Library ID `libfile_9bfbef8b5b2c819186000eb84033eac3`, 18,433 bytes, SHA-256 `66cda7b6ab60302b742217ff3b0a71b1b28d089be891c18682c1b2e84fb9bdea`; [311-row CSV](Startake_Original_Requirements_To_Bill_Crosswalk_v0.3_2026-10-16.csv), Library ID `libfile_ce3bcbd0912081918de24544b8eb0e90`, 408,969 bytes, SHA-256 `fb43b0b5f82ff38c8d1f56709981cbadc223efd552c3c931a75b5dcab812e630`. All three files were independently materialized and byte-compared. Exactly source 04.06 changed relative to crosswalk v0.2; the other 310 CSV rows are unchanged.
+
+Finding: FCC 17-166 and the post-vacatur record support information-service treatment of general mass-market satellite BIAS. FCC 24-52 was set aside. The separate statutory satellite common-carriage question, any Starlink-specific treatment, and future public-corporation status remain unresolved. No Bill redline or operating-compliance finding. Bill v1.4 remains unchanged.
+
+Initial coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; all 311 proposed scopes remain outside formal acceptance. Maturity remains 29/50 (58%); no stage advanced. Overall congressional readiness remains unestablished.
+
+Next: refresh Workflow v2.2 and live claims, then select one distinct remaining source-backed gap. No next claim is reserved.
+
+## Prior checkpoint — Item 6 First Amendment and public-expression audit, 16 October 2026 project date
+
+Claim `STARTAKE-20261016-WORK-ITEM6-FIRST-AMENDMENT-M07-01-08-3a6f91` is released; primary-source research pass complete, formal verification pending. The reservation was read back at tracker v249 before research. The claim closeout was saved from actual tracker v249 to v250, and tracker v251 records the independent v250 readback confirming release and preservation.
+
+Saved [First Amendment and public-expression audit](Startake_Item6_First_Amendment_Public_Expression_State_Action_Audit_2026-10-16.md), Library ID `libfile_33c92c2492f48191a17decb1bac6365c`, 16,672 bytes, 98 lines, SHA-256 `8eef09e7259fc57359b867152b68fd508b01be00ab48dbdc333d50c8f1933b96`. The report was independently materialized and byte-compared. Successor [Original Requirements to Bill Crosswalk v0.2](Startake_Original_Requirements_To_Bill_Crosswalk_v0.2_2026-10-16.md), Library ID `libfile_d5c4081015088191b04f74c963569ccf`, 16,452 bytes, SHA-256 `d932aa4b25234122be33b9ece1f67d4e14b6273bbda14f9e1a4623f0ec15ceaf`; [311-row CSV](Startake_Original_Requirements_To_Bill_Crosswalk_v0.2_2026-10-16.csv), Library ID `libfile_2852cd86b0988191afac57593b823114`, 408,173 bytes, SHA-256 `4cae016f3dc0032ddd7a00bd977294818f0ed2a1d1888fa8b3b814d6950d737c`. Both crosswalk files were independently materialized and byte-compared. Exactly M07.01–M07.08 are updated; the other 303 rows remain unchanged from the 15 October baseline.
+
+*Lebron* makes First Amendment state-action treatment conditional on a future special-law charter and continuing government control. *Halleck* says public benefit or regulation alone does not transform a private operator into the Government. *Vullo* bars materially coercive use of official power to suppress speech, including indirect pressure, while the Court’s pleading-stage remand made no final factual findings. *Moody* addresses curated expressive products and does not resolve ordinary satellite network management. *Mathews* and *Memphis Light* support context-specific process where a protected interest exists; neither establishes a universal constitutional right to broadband. *First Choice* concerns standing from a different donor-subpoena injury.
+
+Bill v1.4 §§203, 205 and 207 already propose viewpoint-neutral service rules, records of government directions, notice/review, emergency safeguards, and direct injunctive relief. No redline is supported. The narrow follow-up for counsel is whether §203(b) should record materially coercive informal requests, threats or indirect pressure, while preserving the distinction from ordinary government persuasion. No actual operator conduct, common-carrier classification, customer entitlement, or implementation compliance was assessed.
+
+Coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named. All 311 proposal scopes remain outside formal acceptance; this grouped audit supports the eight M07 scopes without accepting any subcategory or parent topic. Descriptive maturity remains 29/50 (58%), no stage advanced; overall congressional readiness remains unestablished. Bill v1.4 remains unchanged.
+
+Next: refresh Workflow v2.2 and live claims, then reserve one distinct remaining source-backed gap. No next claim is reserved.
+
+## Prior checkpoint — Item 3 Gen2 orbital-debris semiannual-report public-record audit, 16 October 2026 project date
+
+Claim `STARTAKE-20261016-WORK-ITEM3-GEN2-REPORTS-8c27d1` is released after the bounded public-record access review; formal verification pending. The reservation was independently read back from tracker v247 before retrieval. Tracker v248 now independently confirms release and preserves the earlier orbital-debris and NTIA/FCC records.
+
+Saved [Gen2 Orbital-Debris Semiannual Reports: Public-Record Access Audit](Startake_Item3_Gen2_Orbital_Debris_Semiannual_Report_Public_Record_Audit_2026-10-16.md), 5,702 bytes, 48 lines, SHA-256 `1c10038d1a4a56a8af0be3c340d5a2c887499bb4e7ac2869054e6853dec087d0`.
+
+FCC 22-91 and DA 26-36 establish the reporting and Gen2 authorization context. The official ICFS filing-summary page did not return readable content through the available public retrieval path. No actual filing entry, receipt metadata, report attachment, period-specific filing date, or publication status was authenticated. This does not establish nonfiling or operational compliance. Report accuracy, fleet status, and costs remain unverified.
+
+The Bill v1.4 §107 crosswalk is unchanged: the pre-close authorization plan should inventory applicable debris plans, conditions, reporting duties, outstanding filings, record custodians, and successor responsibility. Section 208 supplies no verified disposal-cost amount; no redline or cost input was made. Coverage remains 7/7; formal acceptance 0/7 practical and 0/36 named; 311 proposed scope texts remain unaudited; descriptive maturity 29/50 (58%); overall congressional readiness unestablished.
+
+Next: refresh the active workflow and released claims, then reserve one distinct unfilled public-source gap. No next claim is reserved at this checkpoint.
+
+## Prior checkpoint — Item 3 U.S. orbital-debris and post-mission disposal, 16 October 2026 project date
+
+Claim STARTAKE-20261015-WORK-ORBITAL-DEBRIS-05-09-M16-01-a6f15c is released; bounded direct-primary-source research pass complete, formal verification pending. Reservation was conditionally saved from tracker actual CAS 243→244; the 16 October cutoff amendment was conditionally saved from 244→245 and independently read back before substantive research. Closeout is conditionally prepared from materialized actual tracker version 245 to expected successor 246; independent live readback will verify it.
+
+Saved [U.S. Orbital-Debris Disposal Rules and Starlink FCC Conditions](Startake_Item3_US_Orbital_Debris_Disposal_Compliance_Starlink_FCC_Audit_2026-10-16.md), 17,230 bytes, 128 lines, SHA-256 c8112ef309cc986b68c603eb4a76f74659878e0cee70fbdf37c0fba4c0105bcd. The primary-source review distinguishes current Part 25 rules, FCC authorization-specific Gen2 conditions, legacy transition categories, and Part 100 rules not yet effective in the latest official status located. It does not infer satellite-level performance or compliance.
+
+Bill v1.4 §§107 and 208 were checked. No bill redline or workbook input is supported. Section 107 already prevents automatic authorization transfer and requires a pre-close authorization plan; the report recommends expressly inventorying debris plans, conditions, reporting duties, records, and successor responsibility. Section 208 contains general operating/maintenance authority but no explicit disposal-cost treatment. The existing Item 5 cost-evidence schedule remains open and unchanged.
+
+Coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; 311 proposed subcategories remain retained and unaudited. Descriptive maturity remains 29/50 (58%), with no stage advancement; overall congressional readiness is unestablished. Open evidence includes the complete FCC authorization/holder inventory, approved plan versions, actual Gen2 reports and supporting records, any applicable waiver/modification, verified object-years totals, and supported lifecycle costs. Independent legal, engineering, accounting, appraisal, and budget review remains outstanding.
+
+Next: refresh the active workflow and live claims, reuse the existing acquisition-perimeter and workbook evidence-request schedules, and reserve one distinct unfilled public-source gap. No next claim is reserved.
+
+## Prior checkpoint — Item 3 U.S. Federal spectrum administration (NTIA/FCC), 15 October 2026 project date
+
+Claim `STARTAKE-20261015-WORK-ITEM3-NTIA-0405-eb30af` is released; bounded research pass complete, formal verification pending. Reservation used tracker actual CAS 241→242 and was independently read back before research. Closeout used refreshed actual tracker CAS 242→243 at 2026-10-15T23:52:25Z; independent live readback at v243 confirms release and preservation of unrelated claim history.
+
+Saved [U.S. Federal Spectrum Administration: NTIA/FCC Boundary Audit](Startake_Item3_US_Federal_Spectrum_Administration_NTIA_FCC_Audit_2026-10-15.md), Library ID `libfile_872a01690aec819184aa269e946701d4`, 19,456 bytes, 132 lines. The saved report was reread in full. It documents the distinct 47 U.S.C. §§305, 902 and 903(e) tests, FCC/NTIA shared-band rules, Redbook’s control-based Federal-station guidance, and the limits of public Starlink-specific evidence. NTIA publicly confirmed interagency coordination during a commercial Starlink FCC proceeding; no Starlink-specific NTIA assignment or Federal-station classification was established, and the report does not infer none. The 2022 MOU’s four-year revisit fell around August 2026; no later public successor was located, and review status remains unverified.
+
+Bill v1.4 §§107, 201 and 403 were checked. No redline or model edit is supported: §107(a) already prevents automatic radio authorization/frequency assignment transfer, and §107(b) requires a pre-closing plan addressing Communications Act §§301, 305 and 310. The plan should include a station-by-station authorization, assignment, mission, operator-control and shared-band schedule. Bill v1.4 remains 31 sections.
+
+The public legal framework is now documented; Corporation Title 47 classification, actual Starlink station/assignment records, agency certifications and the current MOU review remain open. Formal verification remains pending, and no original Item 3 or named-topic criterion is marked accepted. Coverage 7/7; formal acceptance 0/7 practical and 0/36 named; 311 proposed scope texts retained and unaudited; descriptive maturity 29/50 (58%), with no stage advancement; overall readiness unestablished. Independent legal, engineering, accounting, appraisal and budget reviews remain outstanding.
+
+Next: refresh Workflow v2.2 and current claims, reuse the existing acquisition-perimeter and workbook evidence-request schedules, then reserve one distinct unfilled public-source gap. No next claim is reserved.
+
+
+## Prior checkpoint — Item 5 SEC financial-input eligibility, 15 October 2026 project date
+
+Claim `STARTAKE-20261015-WORK-ITEM5-SEC-INPUT-ELIG-41a79c` is released; bounded research pass complete, formal verification pending. The reservation was recorded in tracker v240 after source actual version 239; closeout was conditionally saved against actual tracker version 240, producing v241. Independent readback confirms the release and preserves previous claims.
+
+Saved [SEC financial-input eligibility reconciliation](Startake_Item5_SEC_Financial_Input_Eligibility_Reconciliation_2026-10-15.md), Library ID `libfile_f030e07cf62881919a9ad3b62c7a27c4`, 18,926 bytes; report reread in full (118 lines). The latest identified SEC 10-Q directly reports two bounded Starlink metrics: 12.0 million service lines at 30 June 2026 and $66 monthly ARPU for Q2/H1. Four workbook inputs have restricted Connectivity proxies; 28 inputs remain unavailable for commercial Starlink. All 34 actual-case inputs and the actual valuation date/perimeter remain missing. The report maps each row and preserves the Connectivity/Starshield, internal-launch, shared-cost, cash/accrual and customer-population boundaries.
+
+No source extrapolation, commercial carve-out, FCFF, valuation, formal Item 5 acceptance or professional opinion is claimed. All five original Item 5 exits remain open. Bill v1.4/31 sections, engine v0.2 and workbook v0.3 remain unchanged; no bill or model edits were made.
+
+Coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; 311 proposed scope texts remain preserved and unaudited. Descriptive maturity remains 29/50 (58%) with no stage advancement; congressional readiness remains unestablished. A Library overlap check found an existing acquisition-perimeter diligence ledger (`libfile_de924ae3dc4881918057be40bdacac27`) and a workbook input-evidence request matrix in the comparable/replacement-cost report (`libfile_8e6537bdfbf08191b74df68053962bf5`). Next: refresh Workflow v2.2 and the canonical tracker, reuse those existing requests, and select one distinct unfilled public-source gap before reserving further work. No third-party contact or actual-data assumption is authorized or implied.
+
+## Prior checkpoint — Items 3/5 capacity and terminal consistency, 15 October 2026 project date
+
+Claim `STARTAKE-20261015-WORK-CAPACITY-TERMINAL-53e9b1` is released; research/model-drafting pass complete, formal verification pending. Reservation was verified at tracker 238 after source version 237. Closeout was conditionally saved against tracker current version 238 as version 239; the independent readback verifies the release and preserves unrelated claims.
+
+Saved [capacity/terminal validation report](Startake_Items3_5_Capacity_Terminal_Consistency_Validation_2026-10-15.md), Library ID `libfile_d0d3561d53fc819193a14be40957d4dc`, 7,707 bytes; and [reproducible package](Startake_Capacity_Terminal_Consistency_v0.1_2026-10-15.zip), Library ID `libfile_55123269563c8191bb318f064c6f1a1b`, 6,680 bytes, SHA-256 `7b6fc4f8ded616e796659ad1db46b95c83b3874f832df2d31e0d91252f51427f`. The saved report was reread; the archived suite was independently rerun with 22 tests passing.
+
+The companion limits generation/region/time-slice allocation, exposes gateway/backhaul shortfalls, and supports a discounted terminal formula only for an explicitly reconciled stationary, constant-price, no-growth repeat cycle. These are synthetic consistency methods; operational readiness and sustainable service are not verified. Item 5 requirements 4, 5, 8 and 9 gain methods-level support only. All five original exits and all named-topic formal checks remain open.
+
+Bill v1.4/31 sections, financial engine v0.2 and workbook v0.3 remain unchanged. Research coverage remains 7/7; formal acceptance remains 0/7 practical and 0/36 named; 311 proposed scopes remain retained. Descriptive maturity remains 29/50 (58%), with no stage advancement; congressional readiness is unestablished. Actual capacity, life, cost, supplier rights, service mapping, sourced financial values and independent engineering/accounting/appraisal/legal/budget review remain open.
+
+Next distinct assignment after fresh verified reservation: reconcile currently filed commercial financial metrics to usable model inputs without treating a consolidated Connectivity segment as the Starlink carve-out. Existing pursued goal remains active; no unattended work is represented.
+
+## Prior checkpoint — three-assignment fleet/supply batch, 15 October 2026 project date
+
+Completed sequential reservations and verified closeouts: fleetmodel18tests (231→232→233), financialadapter12tests (233→234→235), supplier-sourceaudit (235→236→237). All three ownedclaims released; research/model-drafting pass complete — formal verification pending. Tracker237 independently byte-verified. Dashboard reconciled after each assignment (46→47→48, this successor48→49). No next claim reserved.
+
+Saved and independently byte-verified/reread: [fleet report](Startake_Item5_Fleet_Replacement_Model_Validation_2026-10-15.md),libfile_e03d99661e288191a726fded84797da1; [fleet package](Startake_Fleet_Replacement_Model_v0.1_2026-10-15.zip),libfile_17f8849e38508191993091e480d28d68; [adapter report](Startake_Item5_Fleet_Financial_Adapter_Validation_2026-10-15.md),libfile_2de3643a50d88191886acda83b66f458; [adapter package](Startake_Fleet_Financial_Adapter_v0.1_2026-10-15.zip),libfile_3194907d4cd88191ac0a51718b7042a5; [supplier evidence report](Startake_Items3_5_Launch_Manufacturing_Dependency_Input_Audit_2026-10-15.md),libfile_de73c40414d4819181144b49c5170d19.
+
+Closed method gaps: cohort/inventory/pipeline/loss/delay calculations, exact replacement-cost bridge to existing financialengine, separate unit-target feasibility reporting, dated V3test/orbital/design distinctions and input-eligibility/request exhibit. Operator dynamic-page entries rely on indexed primary text, not full durable mission-file verification; no independent flight/production certification. Actual costs/lifetimes, executable supplier rights, service-capacity mapping and sustainable terminal economics remain missing. No real valuation or procurement commitment. Next authorized batch: generation/service-capacity and terminal-replacement consistency, then remaining source financial/multi-method evidence under fresh reservations. Independent engineering/accounting/appraisal/legal/budget reviews, private records, regulatory approvals and witnessed cutover remain outstanding.
+
+Billv1.4/31sections, financialenginev0.2 and workbookv0.3 unchanged. No Item1/4 evidence changed. Coverage7/7; formal acceptance0/7 and0/36;311 proposed scopes preserved, no fabricated substantive denominator. Ten stages3,2,3,3,3,3,3,3,3,3=29/50(58%) unchanged: better methods within existingStage3 do not establishStage4. Congressional readiness unestablished. Existing pursuedgoal active; no unattended work claimed.
+
+## Prior checkpoint — fleet-financial adapterv0.1, 15 October 2026 project date
+
+Claim STARTAKE-20261015-WORK-ITEM5-FLEET-BRIDGE-1d703a released, research/model-drafting pass complete — formal verification pending. Reservation233→234 and closeout234→235 independently byte-verified. [Adapter package](Startake_Fleet_Financial_Adapter_v0.1_2026-10-15.zip), libfile_3194907d4cd88191ac0a51718b7042a5, and [validation report](Startake_Item5_Fleet_Financial_Adapter_Validation_2026-10-15.md), libfile_2de3643a50d88191886acda83b66f458, independently byte-verified/report reread.12integration tests passed; preceding fleet18tests also closed this invocation. Replacement drivers reconcile to capex/FCFF/fiscal outputs with provenance and basis/overlap/mixed-status controls. Fleetshortfall remains separate; continuity=false, no automatic revenue-capacity mapping or terminal validation. Actual sources and independent appraisal/accounting/engineering/legal/budget reviews remain open. Workbookv0.3, enginev0.2 and Billv1.4/31 unchanged. Coverage7/7; formal0/7 and0/36;311 retained; stages3,2,3,3,3,3,3,3,3,3=29/50(58%) unchanged. Next distinct bounded launch/manufacturing supplier primary-source evidence assignment under fresh reservation. Goal active.
+
+## Prior checkpoint — fleet replacement companionv0.1, 15 October 2026 project date
+
+Fleet claim STARTAKE-20261015-WORK-ITEM5-FLEET-a92c61 released, research/model-drafting pass complete — formal verification pending. Tracker231→232 reservation and232→233closeout independently byte-verified. [Fleet model package](Startake_Fleet_Replacement_Model_v0.1_2026-10-15.zip), libfile_17f8849e38508191993091e480d28d68, and [validation report](Startake_Item5_Fleet_Replacement_Model_Validation_2026-10-15.md), libfile_e03d99661e288191a726fded84797da1, independently byte-verified/report reread.18tests passed: lifetime boundary, inventories/pipeline, capacity/delay/loss, paid unused slots, conservation and missing/invalid inputs. Actual fleet/life/cost sources remain missing; this is a mechanism, not independence certification. Existing enginev0.2/workbookv0.3 unchanged; next separately reserved adapter to test cost/cash propagation and feasibility gap. Billv1.4/31 unchanged. Coverage7/7; formal0/7 and0/36;311 retained; ten stages3,2,3,3,3,3,3,3,3,3=29/50(58%) unchanged. Private records, approvals, source-based valuation and independent professional reviews remain open. Goal active.
+
+## Prior checkpoint — workbookv0.3 cash integration, 15 October 2026 project date
+
+Claim STARTAKE-20261015-WORK-ITEM5-XLSX-CASH-5e731a research/model-drafting pass complete — formal verification pending; released. Reservation229→230 verified; tracker closeout230→231 independently byte-verified. Successor [workbookv0.3](Startake_Financial_Workbook_v0.3_2026-10-15.xlsx), libfile_f41005b4791c81918bd8896a306eb3ad; [reproduction package](Startake_Financial_Workbook_v0.3_Reproduction_2026-10-15.zip), libfile_71f384b1cb308191983afdcb794f851e; [validation report](Startake_Item5_Workbook_v0.3_Cash_Integration_Validation_2026-10-15.md), libfile_68a8856723b08191b02b40c40e580308. All independently materialized and byte-compared, report reread.
+
+Three original synthetic scenarios and four collection-timing scenarios match enginev0.2, including annual cash/fiscal outputs, sensitivity and missing/invalid/unsupported-adjustment guards. Native two-variable sensitivity table and export/reimport passed. The spreadsheet integration gap noted in the prior checkpoint is closed by this successor; prior workbookv0.2 remains preserved. Actual inputs remain missing, with valuation blocked. No actual appraisal, fair-compensation range or official fiscal score. Desktop Excel/LibreOffice and independent accounting/engineering/legal review remain outstanding.
+
+Billv1.4/31 sections unchanged. Coverage7/7; formal acceptance0/7 and0/36;311 proposed scopes retained; descriptive maturity29/50(58%) unchanged. Remaining gaps include actual ownership/private records, defensible independent valuation, approvals, international continuity, launch/manufacturing independence and transition testing. Next authorized distinct scope: fleet-age/replacement-capex model and source-data reconciliation under a fresh reservation. No next claim reserved; pursued goal remains active.
+
+## Prior checkpoint — successor enginev0.2 cash integration, 15 October 2026 UTC
+
+Claim STARTAKE-20261015-WORK-ITEM5-ENGINE-CASH-72b931 research/model-drafting pass complete — formal verification pending; released. Reservation227→228 independently byte-verified; closeout228→229 independently materialized and byte-compared. [Enginev0.2 ZIP](Startake_Financial_Engine_v0.2_2026-10-15.zip), Library libfile_40c67988185081919de74e15f6466c09,142,048bytes, independently byte-compared; [validation report](Startake_Item5_Engine_v0.2_Cash_Integration_Validation_2026-10-15.md), libfile_dd9475a89d108191bc897b2fa85f862e,7,449bytes, full saved reread56lines.
+
+21tests passed:10original mechanics controls and11integration tests; independent cashbridge matches annual/fiscal outputs,3legacycases retain results with explicitzero timing, and handPV test confirms a delayed/recovered receivable's effect. Customer collections and total/other WC now flow into DCF/fiscal calculations without double-counting. Federal cash is capped by collections rather than earned revenue; old-schema aggregateWC cannot silently become otherWC.
+
+Original modelv0.1, bridgev0.1 and workbookv0.2 remain preserved. **Workbookv0.2 is not yet updated** and retains the predecessor revenue-based federalcash guard. No real financial data, appraisal/value range, official score, borrowing or appropriation claim. Unsupported noncash customer changes/refunds must be excluded or separately reconciled.
+
+Same invocation completed and released the preceding14test customerbridge assignment, checkpoint below. Both claims released; goal active. Next authorized distinct scope: spreadsheet successor cash integration and scenario/sensitivity/guard/export regression against enginev0.2, then fleet-age/source-data work. No next claim reserved.
+
+Billv1.4 unchanged31sections; Item1/4 untouched. Initialcoverage7/7; formal0/7 practical and0/36 named;311retained/unaudited. Tenstages3,2,3,3,3,3,3,3,3,3=29/50(58%) descriptive maturity, no advancement; readiness unestablished. Real title/financial/contracts, fullstatements, independent appraisal/accounting/budget/legal/engineering review, approvals and operationaltransition testing remain open. No background execution represented.
+
+## Prior checkpoint — customer cash and working-capital bridge, 15 October 2026 UTC
+
+Claim STARTAKE-20261015-WORK-ITEM5-CASHBRIDGE-9f27e4: research/model-drafting pass complete — formal verification pending; released. Reservation225→226 independently byte-verified before construction; closeout226→227 independently materialized and byte-compared. [Cash bridge report](Startake_Item5_Cash_Collections_Working_Capital_Bridge_2026-10-15.md), Library libfile_1a55be03a6b081918ef525fa3f1138a6,8,400bytes, independently reread77lines; [executable bundle](Startake_Customer_Cash_Bridge_v0.1_2026-10-15.zip), libfile_8de14ce4ae048191ac29024d939ab46e,71,915bytes, independently byte-compared;14tests passed.
+
+Draft gap closed: explicit earned-revenue/receivables/deferred-revenue cash conversion, separate other working capital, non-double-counting identity and fiscal-cash conservation. Material prior limitation found: federal cash collections can exceed current earned revenue when collecting opening receivables or taking prepayments. New bridge checks federal cash against total collections. Original enginev0.1 and workbookv0.2 remain unchanged; their old guard is a documented integration limit, not evidence that valid timing is impossible.
+
+Actual commercial input template remains missing. No writeoffs/refunds/FX/reclasses/factoring/contract assets are supported; exclusion must be confirmed or reconciled before evaluation. No real valuation, official score, complete statements or independent opinion. Next separate scope: integrate bridge into successor engine/workbook with regression tests and preserve predecessors, then address fleet-age replacement and real source data.
+
+Billv1.4 unchanged31sections. Item1/4 untouched. All7 original first passes covered; formal0/7 practical and0/36 named;311 retained/unaudited. Ten stages3,2,3,3,3,3,3,3,3,3=29/50(58%) descriptive maturity, no advancement. Congressional readiness unestablished. Actual title/financial/contracts, valuation/appropriations, approvals and transition tests, native spreadsheet QA and independent counsel/accounting/appraisal/budget/engineering review remain open. Existing pursued goal stays active; no next claim reserved or unattended execution represented.
+
+## Prior checkpoint — transparent financial workbook, 15 October 2026 UTC
+
+Item5 claim STARTAKE-20261015-WORK-ITEM5-WORKBOOK-3ca851 is research/drafting pass complete — formal verification pending; released. Reservation223→224 independently byte-verified before authoring; closeout224→225 independently materialized and byte-compared. Original modelv0.1 and earlier reports preserved; Item1 untouched.
+
+Saved [draft financial workbookv0.2](Startake_Financial_Workbook_v0.2_2026-10-15.xlsx), Library libfile_b3d87082b66081919fcea9bdec187c19; [reproducibility ZIP](Startake_Financial_Workbook_v0.2_Reproducibility.zip), libfile_5105eaa48c188191bb3e006d51c9a89d; and [validation report](Startake_Item5_Transparent_Financial_Workbook_Validation_Report_2026-10-15.md), libfile_7c2b10165b448191846860325c6cb507. Workbook/ZIP independently materialized and byte-compared; report fully reread77lines. Three synthetic cases, annual FCFF, native9-cell sensitivity, cash conservation, selected missing/zero/provenance and later-year edits, invalid funding controls and export/reimport recalculation tested. All3sheets rendered and visually inspected. Desktop Excel/LibreOffice execution remains untested.
+
+**Gap narrowed:** original Item5 exit2 now has a draft transparent spreadsheet with formulas, source/date/status fields, case selector and sensitivities. Real commercial inputs remain blank and outputs unavailable. This is not a Starlink value range, appraisal, appropriation or official score. Exit2 remains substantively incomplete pending authenticated inputs, detailed schedules and independent/native-application review; other four exits remain open. Strong adverse synthetic values retained.
+
+Billv1.4 unchanged31sections; no revised sections. Stages remain3,2,3,3,3,3,3,3,3,3=29/50(58%) descriptive maturity because the executable model had already justified Stage3; no Stage4 claim. Coverage7/7; formal0/7 practical and0/36 named;311 retained/unaudited. Congressional readiness unestablished. Actual commercial title/financial/contract inputs, multi-method valuation, financing/appropriations, cash-collection/working-capital and fleet-age schedules, regulatory approvals and tested operational continuity, and independent counsel/accounting/appraisal/budget/engineering reviews remain open.
+
+The same invocation completed UK NSI currency reconciliation (prior checkpoint below), identifying a primary-law explanation for the30September2026 date while retaining official-consolidation and actual-clearance limits. Both owned claims released; existing pursued goal remains active. Next authorized model scope: explicit collection/accrual and working-capital bridge, without invented real inputs, after workflow/tracker refresh and verified reservation. No next claim reserved and no unattended execution claimed.
+
+## Prior checkpoint — UK NSI currency reconciliation, 15 October 2026 UTC
+
+Claim STARTAKE-20261015-WORK-ITEM3-NSI-CURRENCY-a6d902: Research pass complete — formal verification pending; released. Reservation221→222 independently byte-verified before research; closeout222→223 independently materialized and byte-compared. [Currency reconciliation](Startake_Item3_UK_NSI_Regulatory_Currency_Reconciliation_2026-10-15.md), Library libfile_a3080a578e2c8191be040ababf0d19a7,8,236bytes, fully reread47lines.
+
+Closed the lack of a primary-law explanation for a matching30September2026 version date: SI2026/386 reg1(2)/Schedule3para28 substitutes the Information Commission name in NSI Schedule9; SI2026/1015 reg2(c) supplies commencement. This amendment does not change communications Schedule5 or satellite/space Schedule14. Earlier technical Schedule9 amendments also exist; the instrument must not be described as never amended. Prior report remains historical evidence, narrowed by this follow-up.
+
+Open: exhaustive current consolidation/other effects, proposed sector-reform enactment status, actual transaction/turnover/control facts, notification/clearance/orders and independent UK counsel. No global permission or technical-independence conclusion. Billv1.4 unchanged31sections; §§104(2)/403 adequate for the bounded finding. No formal acceptance or stream advancement.
+
+Coverage7/7; formal0/7 practical and0/36 named;311 retained/unaudited; stages3,2,3,3,3,3,3,3,3,3=29/50(58%) descriptive maturity; congressional readiness unestablished. Private title/financial records, defensible valuation, approvals, transition testing and independent counsel/accounting/appraisal/budget/engineering review remain blockers. Item1 untouched. Next: a distinct high-impact Item2–7 gap after verified reservation, rather than repeat the same date search while official consolidated access remains blocked.
+
+## Prior checkpoint — Item 3 UK NSI screening, 15 October 2026 UTC
+
+Claim STARTAKE-20261015-WORK-ITEM3-UK-NSI-4e91c2: **Research pass complete — formal verification pending; released**. Reservation CAS219→220 was independently byte-verified before research; closeout CAS220→221 independently materialized and byte-compared after full saved-report readback. No unrelated claims or Item1 evidence changed. Recovered Ofcom closeout at tracker219/dashboard40 remains preserved below.
+
+[UK NSI acquisition-screening audit](Startake_Item3_UK_NSI_Acquisition_Screening_Audit_2026-10-15.md), stable ID libfile_ccee76bcd1bc8191b8f7bc4b3fe9c80b, 11,161 bytes, independently reread in full (52 lines). It separates Ofcom licence continuity from control-acquisition screening, maps indirect-control/UK nexus and distinct communications/space sector tests, distinguishes mandatory entity and reviewable asset routes, and documents a proposed §403 UK NSI determination exhibit. State ownership is neither inherent disqualification nor authenticated exemption. No notification, clearance or transaction opinion obtained.
+
+**Material open currency issue:** an apparent secondary September2026 instrument-version date could not be reconciled against accessible official amendment/commencement history. The report explicitly labels enacted PDFs/guidance as a baseline, not certified current-law completeness. Current consolidated sector definitions, transaction rights/activity/turnover facts, purchaser status, actual clearance/conditions and UK counsel remain open. This bounded report closes a missing screening-layer analysis; it does not close actual UK permission or operational-independence gates.
+
+Bill **v1.4,31 sections unchanged**; §§104(2)/403 already require effective transaction-specific permissions. No new draft provisions, stream advancement, formal acceptance or expert sign-off. Initial coverage **7/7**; formal **0/7 practical,0/36 named**; **311 proposed scopes retained/unaudited**. Descriptive maturity **29/50 (58%)**, stages **3,2,3,3,3,3,3,3,3,3**. Congressional readiness remains unestablished. Private title/financial and continuity records, defensible valuation, approvals and independent legal/accounting/appraisal/budget/engineering reviews still block readiness.
+
+Next authorized work: authenticate the current UK NSI amendment/commencement chain and reconcile the sector baseline, or select another genuinely distinct unblocked Item2–7 gap after workflow/tracker refresh and verified reservation. No next claim reserved. Existing pursued goal remains active; no unattended background execution is represented.
+
+## Prior checkpoint — recovered UK Ofcom closeout, 15 October 2026 UTC
+
+The interrupted claim STARTAKE-20261015-WORK-ITEM3-UK-OFCOM-CTRL-71b6d4 is **Research pass complete — formal verification pending; released**. Conditional tracker replacement used actual version 218 and independent materialization/readback verified v219 byte-for-byte. The original report was recovered without repeating research or making a duplicate reservation.
+
+[UK Ofcom audit](Startake_Item3_UK_Ofcom_Starlink_Licence_Transfer_Control_Audit_2026-10-15.md), stable ID libfile_748cbe6253f08191bf5810482ceca364, version 1, 17,425 bytes, preserves the original 16,580 bytes verbatim and adds a dated citation erratum: OfW513 §2.5.3, printed page 13, governs corporate takeover; the original short-answer reference to §§3.1–3.2 was wrong. Independent post-save materialization matched the revised report bytes.
+
+Same-licensee share takeover is distinct from a spectrum-rights transfer to a new company. Upstream-parent application remains an inference; temporary E-band transfer, separate notice/security/competition duties, current instruments and actual transaction permissions remain unresolved. Bill v1.4 §§104(2) and 403 were reviewed; no change is supported. All 31 working sections remain in v1.4.
+
+Initial coverage **7/7**, formal practical acceptance **0/7**, formal named acceptance **0/36**, **311 proposed scopes retained and unaudited**. Descriptive maturity remains **29/50 (58%)**, stage vector **3,2,3,3,3,3,3,3,3,3**; no stream advanced. Congressional readiness remains unestablished. Independent legal, accounting, appraisal, budget and engineering reviews, actual title/financial records, valuation and technical continuity testing remain open. Item 1 unchanged.
+
+Next: after dashboard readback, refresh workflow and live claims and reserve one distinct Item 2–7 gap. The separate UK national-security screening layer is a candidate, subject to duplicate-scope checks. This update is not formal acceptance or a permission decision.
+
+## Prior checkpoint — Item 3 Canada ISED authorization audit, 15 October 2026 UTC
+
+The bounded Item 3 Canada claim STARTAKE-20261015-WORK-ITEM3-CANADA-ISED-8c4b62 was conditionally reserved from actual tracker v215 to v216 and independently read back before primary-source research. After report save and readback, the claim was released by conditional update from actual v216 to v217; independent v217 readback confirms release and overlap updates.
+
+The [Canada ISED Starlink authorization and change-of-control audit](Startake_Item3_Canada_ISED_Starlink_Approval_Change_of_Control_Audit_2026-10-15.md) is saved (Library ID libfile_6b8b5adb73f08191b084670e8d29f4a1; 11770 bytes; SHA-256 89ad071b82102a98d5209a65e8040aa0597b8f34d3985d9e703c37de2e47d3af). ISED’s FSS list publishes Starlink ITU filing names and frequency bands, but not the FSA holder or case-specific instrument. CPC-2-6-04 requires approval for specified operating changes; the general FSA procedure does not state a general corporate change-of-control trigger. The SMCS-specific non-transferability condition is not extended to the FSS entries. Separate Canadian station/earth-station licence-transfer approvals remain distinct.
+
+Bill v1.4 is unchanged. Sections 104(2) and 403 already require verified permissions and operator/authorization/ownership-control consent evidence. No actual transfer route, complete Canadian licence inventory, global permission, or practical independence is established.
+
+**Research verification and acceptance:** Initial coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 proposed scope texts remain unaudited without an invented denominator. This bounded pass does not formally verify Item 3 or the overlapping named topic.
+
+**Maturity and readiness:** Ten-stream descriptive document maturity remains **29/50 (58%)**, stage vector **3,2,3,3,3,3,3,3,3,3**. Overall congressional readiness remains **unestablished**. Actual ISED instruments, Canadian control/transfer determination, global permissions, independent counsel and technical continuity evidence remain open.
+
+**Next work:** The pursued goal remains active. Refresh Workflow v2.2 and reserve a distinct, unclaimed Item 2–7 evidence or drafting gap by conditional update and independent readback. The full original acceptance criteria remain in force.
+
+## Prior checkpoint — Item 6 Chapter 91 implementation audit and Bill v1.4, 15 October 2026 UTC
+
+The reserved Item 6 claim `STARTAKE-20261015-WORK-ITEM6-CH91-IMPLEMENTATION-8f2d6c` was recorded from actual tracker v213 to v214 and independently read back before primary-source research. After the audit and Bill v1.4 were saved, the claim was released by conditional tracker update from actual v214 to v215. Independent v215 materialization byte-matches the closeout and verifies the claim release and full-title overlap updates.
+
+The [Chapter 91 financial-oversight and implementation audit](Startake_Item6_Chapter91_Financial_Oversight_Implementation_Audit_2026-10-15.md) is saved (Library ID `libfile_9f86f11426d88191abd56654e70cc434`; 17,543 bytes; SHA-256 `8a42b71be3be89084a753d283341e4ceaee1cdfd147b4c371583d276b8f2b780`). It crosswalks §§9103–9109 to Bill §§201, 206, 208, and 301–303. Findings: Chapter 91 applies through §201(c)–(d); §301(b)’s ten-year submission is distinct from §9103’s annual business-type budget; §§9107–9108 fit the Treasury account and debt controls; and §9109 creates a conditional future fiscal-status exclusion.
+
+The [Integrated Working Bill v1.4](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.4_2026-10-15.md) is saved (Library ID `libfile_03ca9a5a45288191a4b45522926265aa`; 118,224 bytes; SHA-256 `888b110473b61158e3d92fc2ff0e37e6b4895706a66b8ba81c05a6c57fe77457`). It contains 31 numbered sections. A section-level comparison found changes only to §§206 and 301: §206(b) preserves the §9105 audit and §9106 management-report requirements even after a §9109 exclusion; §301(b) says the ten-year submission does not replace §9103’s annual budget. The other 29 numbered sections are byte-identical to v1.3.
+
+**Research verification and acceptance:** Initial coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 proposed scope texts remain unaudited without an invented acceptance denominator. This bounded pass does not formally verify Item 6 or the overlapping topics.
+
+**Maturity and readiness:** Ten-stream descriptive document maturity remains **29/50 (58%)**, stage vector **3,2,3,3,3,3,3,3,3,3**. Overall congressional readiness remains **unestablished**. Independent counsel review, OMB/CBO budget decisions, appropriations, compensation, financing, safeguards, privacy, operational cyber and continuity testing, and substantive scope verification remain open.
+
+**Next work:** The pursued goal remains active. Refresh Workflow v2.2 and the live tracker/dashboard, then reserve a distinct, unclaimed Item 2–7 evidence or drafting assignment. The full original acceptance criteria remain in force.
+
+## Prior checkpoint — Item 6 Chapter 91 conforming amendment integrated into Bill v1.3, 15 October 2026 UTC
+
+The separate drafting claim `STARTAKE-20261015-WORK-ITEM6-CH91-BILL-DRAFT-8e9c20` was conditionally reserved from tracker v211 to v212 and independently read back before drafting. After completing the bounded amendment, it was closed from actual tracker v212 to expected v213; a direct Library readback confirmed v213 and byte-matched the saved closeout. The claim is released. The [Integrated Working Bill v1.3](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.3_2026-10-15.md) is saved (Library ID `libfile_fa1a6de31ad481919f8b91a956e2e91a`; 116,421 bytes; SHA-256 `708bef33eb4d05c0962ae33395137e3598df2042310428f2f7e98eec44563ae1`). Its [revision note](Startake_Item6_Chapter91_Conforming_Amendment_Bill_v1.3_Revision_Note_2026-10-15.md) is saved (Library ID `libfile_a81e09d477f48191a3f5989233f90931`; 5,629 bytes; SHA-256 `6ee55f3e508fbc900ccb3bba4eba734b031236d18793fb2ee02cba383ce507a0`). Both deliverables were independently materialized and byte-matched.
+
+**Drafting result:** New §201(d) adds the U.S. Public Satellite Communications Corporation to 31 U.S.C. §9101(3) as paragraph (Q), with the preceding paragraph's terminal punctuation conformed. Existing §201(a)–(c) are byte-identical to Bill v1.2. All other 30 numbered sections are byte-identical to v1.2; the bill remains at 31 numbered sections. This conforms the list to §201(c)'s express Chapter 91 treatment; it does not change §9102, acquisition authority, or the prior audit's qualified conclusion that §201(c) likely already supplies Chapter 91 coverage. The amendment clarifies codification and does not claim a direct judicial decision on this exact clause combination.
+
+**Research verification and acceptance:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 proposed scope texts remain unaudited without an invented acceptance denominator. The bounded drafting pass does not formally verify Item 6 or either overlapping named topic.
+
+**Maturity and readiness:** Ten-stream descriptive document maturity remains **29/50 (58%)**, stage vector **3,2,3,3,3,3,3,3,3,3**. Overall congressional readiness remains **unestablished**. Independent counsel review, safeguards, privacy, operational cyber and continuity testing, compensation, financing, appropriations, and substantive scope verification remain open.
+
+**Next work:** Refresh Workflow v2.2 and reserve a distinct, unclaimed Item 2–7 evidence or drafting gap, preserving all formal acceptance and readiness criteria.
+
+## Prior checkpoint — Item 6 Chapter 91 corporation classification and charter audit, 15 October 2026 UTC
+
+The distinct Chapter 91 classification claim `STARTAKE-20261015-WORK-ITEM6-CHAPTER91-4c7a21` was reserved by conditional tracker update from actual v209 to v210 and independently read back before source review. After the report was saved and independently byte-matched, the claim was released by conditional update from actual tracker v210 to v211; independent v211 readback confirms release. The [corporation classification and charter audit](Startake_Item6_31_USC_Chapter91_Corporation_Classification_Charter_Audit_2026-10-15.md) is saved in `/Startake/` (Library ID `libfile_ab9a0468d9ac819184bf5de1ed114d9e`; 14,406 bytes; SHA-256 `4d4d3aa37c19de723323d0389d7d8a337fa30744a852af00f6fc9dcce24e7faf`).
+
+**Research finding:** Bill v1.2 §201(a) directly establishes the named, federally owned corporation, and §201(c) expressly directs Chapter 91 treatment. If enacted, this likely meets §9102's specific-law requirement and extends Chapter 91 coverage despite the current §9101(3) list not naming the new Corporation. Section 206(b) also references a Chapter 91 audit. The report recommends retaining the existing clauses and adding a conforming §9101(3) entry for codification clarity; no direct decision on this clause combination was identified.
+
+**Bill and checksum:** Integrated Working Bill v1.2 remains unchanged at 31 operative sections with verified SHA-256 `ee76507c71524e157cd9e4be0aa2e2c4ec954c23c27a557af425b55832611c04`. No bill edit was made during this audit.
+
+**Research verification and acceptance:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 proposed scope texts remain unaudited with no invented acceptance denominator. This pass does not formally verify Item 6 or either overlapping named topic.
+
+**Maturity and readiness:** Ten-stream descriptive document maturity remains **29/50 (58%)**, stage vector **3,2,3,3,3,3,3,3,3,3**. Overall congressional readiness remains **unestablished**. Independent counsel review, safeguards, data protection, operational cyber and continuity testing, compensation, financing, appropriations and substantive scope verification remain open.
+
+**Next work:** Separately reserve the §9101(3) conforming amendment as a Bill v1.3 drafting assignment, then continue the sequential evidence and legislative revision queue.
+
+## Prior checkpoint — Item 6 §202(c) CEO appointment Appointments Clause audit, 15 October 2026 UTC
+
+The distinct CEO appointment claim `STARTAKE-20261015-WORK-ITEM6-CEO-APPOINTMENTS-CLAUSE-7d29c4` was reserved by conditional tracker update v207→v208 and independently read back before source review. After the report was saved and independently byte-matched, the claim was released by conditional update from actual tracker v208 to v209; independent v209 readback confirms the release. The [CEO appointment audit](Startake_Item6_CEO_Appointment_Appointments_Clause_Audit_2026-10-15.md) is saved in `/Startake/` (Library ID `libfile_4f21a66974788191a44aeab0329c0867`; 18,000 bytes; SHA-256 `9f5d5eba156f85517923437eea7c8ade63ad8d56b0c14c15e3fe7bf9960fee75`).
+
+**Research finding:** Primary Supreme Court authority makes appointment by this Board plausible if the CEO is an inferior officer and the government corporation is a freestanding executive department headed by the Board. The CEO’s continuing management authority likely makes the office subject to the Appointments Clause. At-will removal and Board direction support inferior status, but §202(c) does not specify meaningful Board review of major CEO decisions; no definitive clearance or defect finding is made. The report recommends clarifying the Corporation’s executive-branch structure and actual Board supervision, with Presidential nomination and Senate confirmation as the clearest alternative.
+
+**Bill and checksum:** Integrated Working Bill v1.2 remains unchanged at 31 operative sections; all 31 are byte-identical to v1.1. Its independently verified SHA-256 is `ee76507c71524e157cd9e4be0aa2e2c4ec954c23c27a557af425b55832611c04`. The prior goal event contains a one-character checksum transcription discrepancy; the saved bill bytes themselves are unchanged.
+
+**Research verification and acceptance:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 proposed scope texts remain unaudited with no invented acceptance denominator. This bounded pass does not complete Item 6 or clear the separate 31 U.S.C. §§9101–9102 classification question.
+
+**Maturity and readiness:** Ten-stream descriptive document maturity remains **29/50 (58%)**, stage vector **3,2,3,3,3,3,3,3,3,3**. Overall congressional readiness remains **unestablished**. Independent constitutional counsel, corporate classification, privacy/safeguard review, operational cyber and continuity testing, compensation, financing, appropriations, and substantive scope verification remain open.
+
+**Next work:** If the project continues, reserve a distinct Item 2–7 assignment to resolve the separate 31 U.S.C. §§9101–9102 corporation-classification and charter gap, then continue the sequential research and review queue without changing formal acceptance absent its documented criteria.
+
+## Prior checkpoint — Item 6 Board independence and Presidential removal-law audit, 15 October 2026 UTC
+
+The bounded Item 6 assignment `STARTAKE-20261015-WORK-ITEM6-BOARD-INDEPENDENCE-4b72d1` is complete for research and released pending formal verification. It was reserved from tracker CAS 205 and independently read back in v206; the release was conditionally written from actual CAS 206 to expected v207 and independently verified. The [Board-independence and Presidential-removal law audit](Startake_Item6_Public_Operator_Board_Independence_Presidential_Removal_Law_Audit_2026-10-15.md) is saved in `/Startake/` (Library ID `libfile_4047fefbee208191be3003c694d13a0d`, SHA-256 `4e4bad1cdaa5d56043e4735e8032405da597741d67b8d030b6a169066df13e5a`).
+
+**Research verification:** The Supreme Court’s June 2026 *Trump v. Slaughter* decision invalidated the FTC’s for-cause removal protection and overruled *Humphrey’s Executor* to the extent it supported that protection. Applying the rule to this public network operator is an inference; the Court did not decide Starlink or this bill. Bill v1.2 §202(a) uses Presidential appointment with Senate confirmation and §202(b) allows at-will removal; the six-year staggered terms serve continuity, and the written notice to Congress does not delay or condition removal. Recommendation: retain §202(a)–(b) without amendment. The CEO appointment method in §202(c) and the corporation’s 31 U.S.C. §§9101–9102 classification remain unresolved. The *Wilcox* removal case was pending for Supreme Court conference on 16 October; no order was listed at this report’s 15 October cutoff.
+
+**Legislation drafted:** Integrated Working Bill v1.2 remains at 31 operative sections, unchanged by this audit. No authority, appropriation, policy independence guarantee, or formal acceptance status was added.
+
+**Research verification and acceptance:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 proposed scope texts remain unaudited without an invented acceptance denominator. This bounded pass does not complete Item 6 or clear CEO appointment or corporate classification.
+
+**Maturity and readiness:** Ten-stream descriptive document maturity remains **29/50 (58%)**, stage vector **3,2,3,3,3,3,3,3,3,3**. Overall congressional readiness remains **unestablished**; no defensible aggregate score or completion percentage is available. Independent legal and technical validation remains outstanding.
+
+**Remaining blockers:** CEO appointment and supervision analysis; final government-corporation charter/classification; legally enforceable safeguard review; operational cyber and continuity testing; source-based review of applicable scope texts; full compensation, valuation, funding, appropriation and scorekeeping schedules; and external professional review.
+
+**Next work:** Refresh Workflow v2.2 and the live tracker/dashboard after this closeout, then reserve one distinct unclaimed Item 2–7 evidence gap before new source retrieval. Continue the sequential evidence and drafting work without changing formal acceptance absent the documented criteria.
+
+## Prior checkpoint — Item 4 DARPA 12.910 award audit and Integrated Working Bill v1.2, 15 October 2026 UTC
+
+The bounded Item 4 assistance-award audit corrected the prior NASA label. Reservation was conditionally written from tracker v203 to v204 and independently read back before research; the released closeout was conditionally written from actual v204 to expected v205, preserving unrelated claims. See the [audit report](Startake_Item4_DARPA_12_910_Assistance_Award_Purpose_Attribution_Audit_2026-10-15.md) (Library ID `libfile_b7ee3acce6e48191bf124157cb5cad00`, SHA-256 `91cbe33e2e5d9af310eed6d01b45e4152a9e8d546088f90641a921e09bed45a0`), the [raw USAspending API responses](Startake_Item4_DARPA_12_910_USASpending_API_Responses_2026-10-15.json) (Library ID `libfile_752d0999a9bc819191b3f599ed6492fd`, SHA-256 `4a79317eee4b031706b84ce2a5e3c5150dc98e46182b362322347f80ce0d2714`), and [Integrated Working Bill v1.2](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.2_2026-10-15.md) (Library ID `libfile_245499a25db481919a9f337b39b22504`, SHA-256 `ee76507c71524e157cd9e4be0aa2e2c4ec954c23c27c557af425b55832611c04`). Each saved artifact was independently reread and hash-matched.
+
+**Research verification:** The unique award is FAIN `HR00112430314`, USAspending key `ASST_NON_HR00112430314_097`, issued by DoD/DARPA under CFDA 12.910, not NASA. Its two action obligations sum to $971,324.64. Reported outlay fields are zero or null and do not establish cash receipt. DARPA's Space-BACN work is a thematic lead only: no public source reviewed links this FAIN to that program or to commercial Starlink. The amount remains unallocated at recipient level.
+
+**Legislation drafted:** Bill v1.2 retains 31 sections. It corrects the explanatory evidence paragraph to identify DoD/DARPA and the FAIN. All 31 operative sections are byte-identical to v1.1; existing §302(d)(2)–(6) already directs recipient, program, outlay, and receipt separation. No statutory text change, appropriation, valuation, or acceptance status was added.
+
+**Deliverables completed:** One attribution report, one raw API-response appendix, and Bill v1.2 were saved and verified. The report documents the exact award fields, obligation arithmetic, zero/null outlay limits, plausible but unverified Space-BACN thematic lead, and remaining award-specific source gap.
+
+**Research verification and acceptance:** Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 proposed scope texts remain without an invented acceptance denominator. This bounded audit does not complete Item 4.
+
+**Maturity and readiness:** Ten-stream descriptive document maturity remains **29/50 (58%)**, with stage vector **3,2,3,3,3,3,3,3,3,3**. Overall congressional readiness remains **unestablished**; no defensible aggregate score or completion percentage is available. Independent legal, accounting, appraisal, engineering and budget reviews remain outstanding.
+
+**Remaining blockers:** Award-specific DARPA scope and Starlink cost allocation; payment/remittance and recipient cash records; complete commercial-only funding and receipts ledger; actual service and operating-cost inputs; populated valuation, compensation, liability, appropriation and scorekeeping schedules; title, contract and transfer-permission schedules; substantive audit of the 311 proposed scopes; and professional review.
+
+**Next work:** Refresh the canonical workflow, tracker and dashboard after closeout, then reserve the next distinct unclaimed Item 2–7 evidence gap and continue sequential research and bill revision.
+
+
+## Prior checkpoint — requirements-to-bill crosswalk and Bill v1.1, 15 October 2026 UTC
+
+The **Original Requirements to Bill Crosswalk v0.1** report (Library ID libfile_bd6aa3a89e5481918db3b83d7851f050) and 311-row CSV (libfile_f369c025abe48191b88c512832be0aea) are saved and independently byte-verified. Tracker claim STARTAKE-20261015-WORK-REQS-TO-BILL-311-8c3e6a was reserved from actual tracker v201, verified at v202, and released by conditional update from actual v202 to v203; independent readback confirms the release and preservation of prior claims.
+
+**Legislation drafted:** The Starlink and Stripes Act Integrated Working Bill v1.1 (Library ID libfile_698c976910ec819198b6532c9772fc10) retains 31 operative sections. It refreshes the explanatory funding evidence row and crosswalk references. All 31 operative sections are byte-identical to v1.0; no authority, appropriation, payment claim, or formal checklist status changed.
+
+**Deliverables completed:** The 311-row crosswalk carries each exact original title and scope text, source archive/member hash, parent topic, proposed bill sections, topic-level evidence/limits and current tracker evidence pointers where available. Five custody bundle files and all 38 original archive members passed hash checks; all 311 titles and scope texts match their source-member bytes. All 36 named topics matched exactly. The tracker’s compact current evidence table has 15 topic rows; the other 21 have no separate current evidence row there, which is not treated as missing research.
+
+**Research verification and acceptance:** Source custody and topic mapping were verified. No subject-level evidence sufficiency review, per-scope acceptance, or new Item 1 finding is claimed. Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**. The 311 entries remain proposed scope texts without a separate acceptance denominator.
+
+**Ten output streams:** Current maturity remains **29/50 (58%)**, compared with the 16/50 handoff baseline. This is drafting/output maturity, not an overall readiness percentage. The stage vector remains **3,2,3,3,3,3,3,3,3,3**; this crosswalk does not advance a stage.
+
+| Act output | Stage / 5 | Main remaining blocker |
+|---|---:|---|
+| Public-interest and Ukraine evidence | 3 | Causation, representative dependence evidence, and independent review |
+| Commercial perimeter and title | 2 | Complete commercial owner/title, asset and consent schedules |
+| Constitutional and acquisition mechanisms | 3 | Transaction-specific route and independent constitutional review |
+| Starlink valuation and economics | 3 | Commercial-only financial inputs, populated range and appraisal |
+| Public funding and federal finance | 3 | Complete attributed ledger, actual receipts, score and appropriations |
+| Operations and international transition | 3 | Executed dependencies, permissions, workforce terms and witnessed tests |
+| Governance, privacy and safeguards | 3 | Legal and technical validation of the proposed operator and protections |
+| Necessity, objections and alternatives | 3 | Common-basis quantitative comparison and independent review |
+| Full bill and appropriations | 3 | Dollar choices, score and specialist redlines |
+| Integrated dossier, criteria crosswalk and review | 3 | Substantive review of applicable scopes and external professional review |
+
+**Remaining blockers:** Provider payment and receipt evidence; complete commercial-only public-funding and wealth-attribution ledger; Starlink-only service and operating-cost inputs; populated valuation, compensation, liability and appropriation schedules; commercial title and transfer permissions; transaction-specific domestic and foreign authority; tested operational independence; substantive review of applicable scope texts; and independent legal, accounting, appraisal, engineering and budget review.
+
+**Readiness:** Overall congressional readiness remains **unestablished**; no defensible aggregate readiness score or completion percentage is available. No outside professional review is represented as completed.
+
+**Next work:** Reserve and verify one distinct, high-impact Item 2–7 evidence assignment under Workflow v2.2, then continue source verification and legislative revision without changing acceptance statuses absent the required evidence.
+
+## Prior checkpoint — Item 4 USAspending 74-award refresh, 15 October 2026 UTC
+
+The [Item 4 USAspending exact-ID refresh report](Startake_Item4_USASpending_Exact_74_Award_ID_Refresh_Retry_2026-10-15.md) (Library ID libfile_6d3cb2320c5081918abe1f06ffee9b65), the [v0.5 80-row crosswalk](Startake_Item4_USAC_USASpending_ERate_Crosswalk_v0.5_2026-10-15.csv) (libfile_70681a74afc88191b92e937ac0044d9c), full four-batch API appendix (libfile_418cf5f75acc8191b83bfa8bad3bc082), and QA manifest (libfile_920551e21b308191a89a5cbfa3c6fe39) are saved in /Startake/ and independently byte-matched to their recorded hashes. The assignment was reserved/read back from tracker CAS 198 to 199; the pre-query ID-format clarification was conditionally saved and verified at v200; the claim was released by conditional update from actual v200 to v201 and independently read back at v201.
+
+**Research verification:** The official USAspending v2 search returned all 74 submitted crosswalk Award IDs in four requests (20/20/20/14), each HTTP 200. The result contained 74 unique exact IDs, with no missing, extra or duplicate rows. All 74 identify recipient UEI C6M7C2FLKER5, SPACE EXPLORATION TECHNOLOGIES CORP., and CFDA 32.004. Award ID, CFDA, Award Amount, Total Outlays and Description match the prior v0.4 crosswalk on all 74 rows after numeric normalization. The source last-updated endpoint reports 10/15/2026. The previous refresh payload had literal quote wrappers; their presence is recorded but is not claimed to have caused the earlier 503.
+
+Within this exact cohort, reported Award Amount fields sum to USD 82,519.70 (30 positive, 44 zero); reported nonnull Total Outlays sum to USD 16,288.33 (7 positive, 49 zero, 18 null). These award-summary fields do not establish provider cash receipt or a national support total. The earlier 68 exact USAspending-to-current-funded-USAC suffix joins, six unmatched IDs on each side, and unresolved payment/receipt fields are unchanged.
+
+**Legislation drafted:** The 31-section Integrated Working Bill remains v1.0. No text changed because proposed §302(d)(1)–(6) already addresses data dates, award fields, outlay/receipt distinction, attribution/payment paths, source IDs, joins, and unresolved/null/zero handling.
+
+**Remaining blockers and readiness:** Payment/remittance evidence, a complete commercial-only public-funding ledger, service-receipt and operating-cost inputs, populated valuation/compensation/appropriation schedules, commercial title/permission records, reconciliation of the 311 proposed scope texts, and independent legal, accounting, appraisal, engineering and budget review remain open. Initial coverage remains **7/7**; formal acceptance **0/7 practical and 0/36 named**; 311 proposed scopes unaudited; drafting maturity **29/50 (58%)**; overall congressional readiness **unestablished**.
+
+**Next work:** Recheck the original requirements and custody records, identify which of the 311 proposed scopes are supported by authenticated source criteria, and crosswalk verified requirements to evidence and bill sections without changing any acceptance status absent the required evidence.
+
+## Prior checkpoint — Item 4 USAC invoice-cohort revalidation, 15 October 2026 UTC
+
+The saved [invoice-cohort revalidation report](Startake_Item4_USAC_Invoice_Cohort_Revalidation_2026-10-15.md) (Library ID libfile_b80372836084819186fe22013a827226; SHA-256 2c88ce58ff1a534239bb53aef29fba70ecfb959453b85e0ed7b272cb33934f0a) confirms that this pass reproduced the existing evidence rather than adding a new result. The assignment was reserved and read back from tracker CAS 196 to 197, then released by conditional update from actual 197 to 198 and independently verified in the live tracker v198.
+
+**Research verification:** A fresh official USAC query returned the same 74 unique Current/Funded FRNs for SPIN 143053761 as the preserved snapshot. Querying those exact IDs returned the same 56 invoice lines across 11 FY2024 Applicant/BEAR FRNs, with no substantive field mismatches after numeric-format normalization. Requested and approved totals remain $38,529.41 and match the 11 returned FRN total-authorized-disbursement values to the cent. The other 63 FRNs had no row or value in these datasets; absence is not recorded as zero. These records do not prove bank settlement, provider receipt, or SpaceX cash receipt.
+
+**Legislation drafted:** The 31-section Integrated Working Bill remains v1.0; this revalidation identified no new evidence or §302 drafting gap, so no bill text changed. Formal Item 4 and named-topic acceptance remain unchanged.
+
+**Remaining blockers and readiness:** Payment/remittance evidence, broader complete public-funding attribution, actual service receipts and operating-cost inputs, populated valuation/compensation/appropriation schedules, commercial title and permission records, the 311-scope audit, and independent specialist review remain open. Initial research coverage remains **7/7**; formal acceptance remains **0/7 practical and 0/36 named**; 311 proposed scopes remain unaudited; drafting maturity remains **29/50 (58%)**; overall congressional readiness remains **unestablished**.
+
+**Next assignment:** Retry the saved 74-ID USAspending cohort refresh through smaller exact-ID batches or an alternate official route, under a separate verified Item 4 claim. Preserve unmatched and payment/receipt fields as unresolved.
+
+## Prior checkpoint — Item 4 record-level crosswalk and Integrated Working Bill v1.0, 15 October 2026 UTC
+
+The Item 4 record-level audit and [Integrated Working Bill v1.0](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v1.0_2026-10-15.md) are saved in `/Startake/`. Claim `STARTAKE-20261015-WORK-ITEM4-RECJOIN-74-7e1b3c` was reserved and independently read at tracker v194 before source retrieval; release was conditionally committed from actual tracker version 194 to v195 and independently read back byte-for-byte. A subsequent conditional overlay cleanup advanced the tracker from actual v195 to v196; the current tracker was independently read back byte-for-byte (SHA-256 `68aa1b371cbda4df2ec7c7ba75f62e462ef985f5c4cf89ae0333af1a4bfdad0d`) with Item 4 marked “None — released.” Workflow v2.2 is active.
+
+**Research verification:** The official USAC live query returned 74 unique current-funded FRNs for SPIN 143053761. Exact string comparison of the suffixes in all 74 prior-cohort USAspending award IDs verified 68 one-to-one record joins; six award IDs did not match the filtered current-funded set and six current-funded FRNs were absent from the summary cohort. The 80-row crosswalk lists all records and both set differences. The USAspending exact-ID refresh returned HTTP 503, so the prior official-source summary cohort is transparently retained. This proves record identity only; it does not establish payments, service, final payees, SpaceX cash receipts or total Starlink public support.
+
+**Legislation drafted:** The 31-section working proposal is now **v1.0**. Only proposed §302 changed from v0.9, adding paragraph (d)(6) for source-record identifiers, exact join method/status, unmatched and duplicate/one-to-many records, and distinct null, zero and unavailable values. The other 30 numbered sections are byte-identical. No payment inference, appropriation amount or official score was added.
+
+**Completed deliverables:** [Item 4 audit report](Startake_Item4_USASpending_USAC_CurrentFunded_RecordLevel_Crosswalk_Audit_2026-10-15.md) (Library ID `libfile_bdfb5eb11c788191ba941c2a677f9a71`); [80-row crosswalk CSV](Startake_Item4_USASpending_USAC_CurrentFunded_RecordLevel_Crosswalk_2026-10-15.csv) (`libfile_f6db01956bac81919aef8a0e73b545b2`); [live USAC query snapshot](Startake_Item4_USAC_Current_Funded_FRN_Source_Snapshot_2026-10-15.json) (`libfile_e259a3c5cf708191ac4f015a5958966b`); [USAspending 503 request/response](usaspending_74_id_refresh_attempt_20261015.json) (`libfile_3fab9f7c1ff081918f354fe3c0bf06d0`); [QA summary](qa_summary.json) (`libfile_75d72817e2ac8191b67cb99e01994f24`); and Bill v1.0 (`libfile_d738eaa0f1648191ac0f8ad8446e2243`). All six files were independently materialized and byte-matched.
+
+**Remaining blockers and readiness:** The saved USAspending summary cohort could not be refreshed; provider payment and receipt evidence remains unverified; a complete commercial-only funding ledger, actual service receipts and operating costs, populated valuation/compensation/appropriations schedules, commercial title and permission records, the 311-scope audit, and independent legal/accounting/appraisal/engineering/budget review remain open. Initial research coverage remains **7/7**. Formal acceptance remains **0/7 practical and 0/36 named**; 311 proposed scope texts remain unaudited. Descriptive drafting maturity remains **29/50 (58%)**. **Overall congressional readiness score: unestablished; no defensible aggregate score or completion percentage is available.**
+
+The current user override makes this chat the sole STARTAKE inheritor, including Item 1. Formal Item 1 status remains unchecked; this Item 4 assignment did not research or change it. Historical handoff and cross-chat notes remain preserved as history.
+
+**Next work:** Refresh the live tracker and dashboard, then reserve the next distinct, unclaimed evidence task under Workflow v2.2. Continue with source verification and financial/legal gaps, retaining all unmatched records and unverified payment or receipt fields as unresolved.
+

@@ -1,0 +1,40 @@
+# Item 2 — 28 U.S.C. § 1498 Patent and Copyright Government-Use Audit
+
+**Date:** 17 October 2026 UTC  
+**Status:** Research pass complete; formal verification pending.  
+**Claim:** `STARTAKE-20261017-WORK-ITEM2-INTANGIBLE-1498-1b72c6`  
+**Original scope:** Practical Item 2, *Constitutional and statutory acquisition authority*; full-title named topic *Statutory acquisition procedure and property remedies*; original proposed scope 03.03, *Acquisition of intangible property*.
+
+## Question and scope
+
+This bounded U.S. primary-law review examined 28 U.S.C. § 1498(a) and (b), related current Federal Acquisition Regulation language, and Federal Circuit decisions relevant to whether the proposed federally owned communications corporation could use patented inventions or copyrighted works as an operating-access route. It compared only Bill v1.7 §§ 105(c) and 108, and made a narrow revision to those provisions. It does not determine ownership or licensing of any specific Starlink asset or right.
+
+The Legal Data Hunter search tool reported that the account had reached its 20-search/24-hour limit. I did not retry it. I reviewed the official House U.S. Code, Acquisition.gov FAR, and Federal Circuit opinions directly instead; this report is therefore source-verified from official public primary sources, not represented as a Legal Data Hunter-verified product. The Code page states that it includes laws effective through Public Law 119-120 of 7 October 2026; the FAR page displayed FAC 2026-01, effective 13 March 2026.
+
+## Findings
+
+### 1. Patent use under § 1498(a)
+
+Section 1498(a) addresses an invention covered by a U.S. patent that is used or manufactured “by or for the United States” without the owner's license or other lawful right. It routes the owner's action against the United States in the Court of Federal Claims for reasonable and entire compensation. It also deems patent use or manufacture by a contractor, subcontractor, or other person or corporation for the Government and with Government authorization or consent to be use or manufacture for the United States. The provision is a compensation-and-forum rule; it does not transfer patent title to the Government or the operator. [28 U.S.C. § 1498(a)](https://uscode.house.gov/us/usc/119-118/t28/s1498/)
+
+The current statute's patent subsection does not separately name the proposed corporation. The threshold still depends on whether the conduct is by or for the United States and, for contractor conduct, whether it is for the Government and with Government authorization or consent. The statute's text does not resolve every application to this proposed entity.
+
+### 2. Copyright and contractor treatment
+
+Section 1498(b) expressly covers copyright infringement by the United States, by a corporation owned or controlled by the United States, and by a contractor or other person acting for the Government with Government authorization or consent. It places the exclusive action against the United States in the Court of Federal Claims for reasonable and entire compensation, including minimum statutory damages under 17 U.S.C. § 504(c). It allows an appropriate Government-owned corporation or agency head to settle before suit from available appropriations, and generally bars recovery for infringement more than three years before filing, subject to its written-claim tolling language. This is an existing copyright remedy, not a general transfer, license, or affirmative source-code-access power. [28 U.S.C. § 1498(b)](https://uscode.house.gov/us/usc/119-118/t28/s1498/)
+
+The FAR describes § 1498 as the exclusive monetary remedy against the Government for covered patent or copyright infringement, says injunctive relief is unavailable under that route, and says no direct cause of action lies against a contractor using with Government authorization or consent. The FAR also provides an express authorization-and-consent clause for Government contractors. [FAR 27.201-1](https://www.acquisition.gov/far/subpart-27.2)
+
+### 3. Government-use boundary in cases
+
+In *Advanced Software Design Corp. v. Federal Reserve Bank of St. Louis*, the Federal Circuit applied § 1498(a) to use of a patented check-fraud system by private Federal Reserve Banks and Fiserv for Treasury checks. The United States was not a party to the vendor contract. The court relied on the Government's participation and communications, authorization or consent, and a direct Government benefit; it did not hold that a Government contract is required in every case. [Official Federal Circuit opinion](https://www.cafc.uscourts.gov/opinions-orders/08-1152.pdf)
+
+*IRIS Corp. v. Japan Airlines Corp.* reiterates that Government benefit must be more than incidental, while the Government need not be the sole beneficiary. These decisions provide relevant boundaries, not a ruling that the proposed Starlink corporation or every public-facing commercial use necessarily qualifies. [Official Federal Circuit opinion](https://www.cafc.uscourts.gov/opinions-orders/10-1051.opinion.10-17-2014.1.pdf)
+
+### 4. Software, source code, trade secrets, data, contracts, and foreign rights
+
+Copyright protects specified rights in expression, including reproduction, adaptation, distribution, performance, and display, while § 102(b) excludes ideas, processes, systems, and methods of operation from copyright protection. Patent permission therefore does not itself authorize copying or access to copyrighted software expression. [17 U.S.C. §§ 102(b), 106](https://uscode.house.gov/us/usc/119-118/t17/s102/)
+
+Section 1498(a) and (b) address U.S. patent and copyright claims; their text supplies no general power to compel delivery of trade secrets, source code, customer data, contract performance, foreign intellectual-property rights, or a transfer of title. Section 1498(c) excludes claims arising in a foreign country. This review makes no conclusion about any foreign law or specific software, data, or contractual right. [28 U.S.C. § 1498(b)–(c)](https://uscode.house.gov/us/usc/119-118/t28/s1498/)
+
+## Bill comparison and disposition

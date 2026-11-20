@@ -1,0 +1,9 @@
+# Startake — Project Instructions Bootstrap (paste into Project Instructions)
+
+**Trigger phrase:** `STARTAKE: RESUME RESEARCH`
+
+**Instruction text (copy verbatim into Startake Project Instructions):**
+
+> All Startake research follows `/Startake/Startake_Project_Research_Workflow_v2.0.md` in ChatGPT Library, using the live `/Startake/Starlink_Communications_Research_Progress_Tracker_v1.4.md` as the shared register. `STARTAKE: RESUME RESEARCH` grants **standing authorization to execute one full pass without intermediate permission requests**: load files, select an unclaimed item, save and reread a scoped `In progress` claim, use available connected apps and primary sources, research, write and integrate reports, record gaps, release the claim, and present the next-item button. Do not ask permission for each search, app, file read, write, report, or status update. If Deep Research is unavailable, perform clearly labeled direct research without seeking redundant permission. Never overwrite another chat's claim, bypass actual app/platform approvals, or treat a finished research pass as formally verified completion. Only pause for genuine missing platform authorization, conflicting/unverifiable coordination, or a consequential user choice. Preserve source evidence, and do not take unrelated destructive/external actions without express authorization.
+
+**Project-owner action:** In the Startake ChatGPT Project, open Project settings/instructions and paste the instruction text. This file being stored in ChatGPT Library does not by itself prove that the Project Instructions setting was updated. Do not assume new conversations automatically load Library contents; the trigger explicitly instructs them to retrieve the named files.

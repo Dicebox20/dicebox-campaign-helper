@@ -1,0 +1,49 @@
+{
+  "transaction": "STARTAKE-20261018-INTEGRITY-VALIDATOR-6e84c2",
+  "reservation_version": 307,
+  "release_version": 308,
+  "final_tracker_version": 309,
+  "checklist_version": 79,
+  "status": "reconciled; claim released",
+  "tests": 19,
+  "bill": "v1.12 unchanged",
+  "crosswalk": "v1.8 unchanged",
+  "formal_acceptance": {
+    "practical": "0/7",
+    "named": "0/36"
+  },
+  "readbacks": [
+    {
+      "name": "Starlink_Communications_Research_Progress_Tracker_v1.4_reservation_v276.md",
+      "library_file_id": "libfile_590fd34e579c819189c02261fe34c456",
+      "conditional_version": "309",
+      "bytes": 471311,
+      "sha256": "b5d90d54209b38f97a1730f1f24023b4c5fa6c55462ea85f6609c3164c84e99d",
+      "exact_comparison": "passed"
+    },
+    {
+      "name": "The_Starlink_and_Stripes_Act_Completion_Checklist_v2.0_v33.md",
+      "library_file_id": "libfile_cc7518a16af48191815df91c0bc809da",
+      "conditional_version": "79",
+      "bytes": 204596,
+      "sha256": "c650ec8bbed1b3bab4733b050ad8d0311452bd47d6ef0cc4d98a3fad4663f355",
+      "exact_comparison": "passed"
+    },
+    {
+      "name": "Startake_Consistency_Validator_v1.0_2026-10-18.zip",
+      "library_file_id": "libfile_705b81af99c08191a9b725627a866c08",
+      "conditional_version": "0",
+      "bytes": 156000,
+      "sha256": "40722477a60aaeb79c86474817446b631b519b21f33026241f218cff53fc7368",
+      "exact_comparison": "passed"
+    },
+    {
+      "name": "Startake_Consistency_Validator_Validation_Report_2026-10-18.md",
+      "library_file_id": "libfile_e0180c28d12c8191b9153c0ff07a2c0e",
+      "conditional_version": "0",
+      "bytes": 8417,
+      "sha256": "f21ed47c3afa942a827b969f4d95948e258eb5f427ddefad10675546f0611998",
+      "exact_comparison": "passed"
+    }
+  ]
+}

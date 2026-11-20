@@ -1,0 +1,42 @@
+# Startake — Item 4 BEAD state-award, agreement and disbursement evidence pass
+
+**Evidence date:** 2026-10-15 UTC. **Claim:** `STARTAKE-20261015-item4-bead-5d85bf83`. **Research mode:** Targeted, direct primary-source examination of NTIA and state government BEAD publications; **not an executable Deep Research app run** or comprehensive fifty-state extract. **Scope:** Commercial Starlink assistance only, not parent SpaceX launch/Starshield; distinct from previous federal-procurement / RDOF pass. **Disposition:** Research pass complete with key gaps; **formal verification pending**.
+
+## Significant newly documented distinction
+
+**NTIA approval of a state's BEAD final proposal, NIST release of federal funds to that state, a state identification of a selected vendor, an executed state-to-vendor subgrant, a state reimbursement or milestone payment, and a Starlink cash receipt are six different evidentiary events.** Neither a state-level deployment budget nor a preliminary provider selection is proof of cash paid to SpaceX/Starlink. The Starlink-only public-funding ledger must track each event and never sum them as though they were additive.
+
+## Official evidence register — targeted state samples
+
+| Evidence | Government source | Supported status and meaningful limitations | Ledger treatment |
+|---|---|---|---|
+| BEAD-01 | [NTIA Feb. 9, 2026 announcement](https://www.ntia.gov/press-release/2026/assistant-secretary-arielle-roth-announces-50-bead-final-proposals-approved) | NTIA said **50 of 56** proposals then approved. | **Program-wide milestone only**, not SpaceX funding receipt. |
+| BEAD-02 | [NTIA BEAD progress dashboard, May 4, 2026](https://www.ntia.gov/funding-programs/internet-all/broadband-equity-access-and-deployment-bead-program/progress-dashboard) | Dashboard described 54/56 NTIA final-proposal approvals, 52 NIST approvals making grant funds available, and 50 signed state award agreements at that published snapshot. | Not a Starlink subgrant or company payment. Avoid projecting that dated snapshot as current. |
+| BEAD-03 | [New Jersey BEAD state award page](https://www.nj.gov/connect/grants/bead/) | **Starlink** row reports **1,002 locations**, **$1,809,000 Total BEAD Award** and **$1,540,623 subgrantee match** across listed counties. This is a state-reported **award**, not proof of money transferred; exact subgrant contract, legal recipient and payment history not collected. | **Named award lead**: $1,809,000, exclude from *paid/outlay* totals until verified. Provider match is **not taxpayer funding**. |
+| BEAD-04 | [Louisiana broadband office, June 11, 2026](https://connect.la.gov/press-releases/louisiana-signs-bead-grant-agreement-with-spacexs-starlink-continuing-push-for-statewide-broadband-access) | State explicitly reports **signed BEAD grant agreement with SpaceX's Starlink**, targeting **10,635 locations** in over 50 parishes. No executed agreement amount or treasury reimbursement amount independently reproduced in this pass. | **Executed agreement confirmed by state announcement**, value and cash disbursement **unknown**. |
+| BEAD-05 | [Nebraska Broadband Office, May 22, 2026 news release](https://dot.nebraska.gov/media/xvllowbe/20260522-nbo-subgrant-agreements.pdf) | State identified **Space Exploration Technologies Corp. dba Starlink** among seven **signed subgrant agreements**. No Starlink-specific dollar total or payments identified in reviewed excerpt. | **Contract execution evidence**, not observed Starlink receipt. Verify underlying state contract. |
+| BEAD-06 | [Oregon Broadband Office BEAD program page](https://www.oregon.gov/biz/programs/BEAD/program/Pages/default.aspx) | Page names Starlink as a **BEAD awardee**, but states **Starlink and Comcast had not signed by the Sept. 18, 2026 deadline**, while 15 other named subgrantees signed. Oregon was pursuing next steps and reassigned projects. | **Important counterexample:** preliminary award/listing ≠ signed agreement or realized grant. **Do not count Oregon Starlink award as executed or paid.** |
+| BEAD-07 | [New Mexico Office of Broadband BEAD page](https://connect.nm.gov/bead.html) | Identifies **Space Exploration Technologies Corp.** in the provider list and makes downloadable approved final-proposal data (`fp_subgrantees.csv`, `fp_deployment_projects.csv`, etc.) available. This pass did not extract recipient-specific exact values or payments. | **Primary-source entity lead**, recipient amount/payment unknown. |
+| BEAD-08 | [NTIA 2025 Final Proposal Guidance v2.1](https://broadbandusa.ntia.gov/sites/default/files/2025-10/NTIA_Final_Proposal_Eligible_Entity_Guidance_v2.1.pdf) and [Jan 2026 BEAD FAQ v17](https://broadbandusa.ntia.gov/sites/default/files/2026-01/BEAD_FAQs_V17.pdf) | The program separates subgrant agreement deadlines and state reimbursement/milestone **disbursement** policy, including withholding/clawbacks. A binding award is not a verified paid invoice. | Cross-check agreement, deliverables, reimbursement and treasury transactions **per state**. |
+
+## Reconciliation and counterevidence
+
+The previous Startake Item 4 federal-award ledger separated government **procurement** from grants, obligations, outlays and denied RDOF support. This pass **does not supersede or sum over** that ledger. New Jersey's $1,809,000 is an identifiable *state-reported Starlink BEAD award*, unlike a generic LEO allocation. Louisiana and Nebraska announcements corroborate *actual signed subgrants*, but not their paid amounts. Oregon proves selected-award lists can precede and even fail contract execution. Collecting all state proposals, actual signatories, matching-share terms and paid invoices is essential before any nationwide Starlink cash or assistance total. State-reported matching dollars must not be misclassified as federal grant spending. A potential indirect payment to other carriers that purchase Starlink equipment requires separate substantiated classification.
+
+## Audit checklist and outstanding evidence gaps
+
+| Acceptance requirement | This pass | Missing verification |
+|---|---|---|
+| Named Starlink BEAD selections | **Some concrete examples located**: NJ, OR, NM | Full 56-jurisdiction state and territory census, legal subgrantee identity, amended selections, duplicates |
+| Signed Starlink state agreements | **State announcements** for LA and NE; Oregon **unsigned** example | Source-native executed contracts, current amendments, dollar ceilings and relevant signatory evidence |
+| Starlink BEAD financial awards | **NJ $1,809,000 state-reported award**, not a payment | Project IDs, legal recipient, award effective date, current modifications, NIST/state crosswalk |
+| Actual SpaceX/Starlink BEAD receipts | **Not established** | State voucher/treasury ledgers, subgrantee invoices, paid milestones, federal drawdown-to-provider path |
+| State/federal assistance overlap | **Open** | Unique program/project IDs, reconciliation to USAspending assistance recipient and parent-state grants |
+| Starlink vs Amazon Leo / other LEO | **State identification required** | Contract-by-contract provider reconciliation; do not attribute all LEO budget to Starlink |
+| Formal checklist acceptance | **No** | Complete independent audit of funded obligations vs actual payments, original named-topic requirements and all government support classes |
+
+## Handoff: targeted next pass
+
+Download **New Mexico `fp_subgrantees.csv` and deployment-project CSV**, New Jersey Starlink fact sheet, Louisiana and Nebraska executed agreements, and relevant state treasury/payment data. Build one normalized row per jurisdiction + project + legal recipient with fields for selection, approval, executed contract, awarded, adjusted obligated, state/federal paid, supplier match and repayment. Reconcile Oregon's unsigned Starlink selection before treating it as an award in force. Do not pay for services, claim hidden invoices, or infer cash from selection or NIST approval.
+
+**Outcome:** A distinct, source-backed BEAD grant-accounting pass is complete. The record adds actual named state award and signed-agreement evidence **without certifying public funds received**. Item 4 remains **formally unchecked**; 0/7 practical checklist verifications and 0/36 named topics verified. Preserve all historical funding reports and independent audits.

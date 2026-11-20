@@ -1,0 +1,39 @@
+# Startake — Item 4 targeted formal evidence-gap verification, pass 1
+
+**Date (UTC):** 2026-10-15. **Claim:** `STARTAKE-20261015-verify-item4-7ec92a`. **Method:** Targeted direct primary-source audit of existing Startake funding report and FCC/USAspending public records; **not a Deep Research app run**, bulk federal financial extraction, agency payment verification, or independent audit. **Disposition:** Verification research pass complete with unresolved evidence gaps; **formal Item 4 completion remains unchecked**. Hypothetical acquisition applies only to Starlink commercial communications, not all SpaceX or presumptively Starshield.
+
+## Verification questions and source-indexed results
+
+| Audit test | Primary source / original project reference | Supported conclusion | Evidence still missing |
+|---|---|---|---|
+| Denied RDOF award classification | FCC 23-105 (December 2023) https://docs.fcc.gov/public/attachments/FCC-23-105A1.pdf ; FCC DA 24-883 (August 2024) https://docs.fcc.gov/public/attachments/DA-24-883A1.pdf | **Verified historic denial:** $885,509,638.40 was a winning bid over ten years, **not an authorized or paid grant**. The Commission rejected Starlink's long-form application; subsequent third-party reconsideration request was dismissed. Do **not** include this bid as actual taxpayer or USF funds received. | Check later docket and USAC disbursement records for any subsequent action; distinction remains time-specific. |
+| Direct procurement classification | Original first-pass report, awards F-001–F-004: https://www.usaspending.gov/award/CONT_AWD_19TX1026P0301_1900_-NONE-_-NONE- ; https://www.usaspending.gov/award/CONT_AWD_19TX1026P0332_1900_-NONE-_-NONE- ; https://www.usaspending.gov/award/CONT_AWD_70Z04525PKODI0061_7008_-NONE-_-NONE- ; https://www.usaspending.gov/award/CONT_AWD_H9224022P0081_9700_-NONE-_-NONE- | Historical report recorded specific Starlink commercial procurement examples, properly separated from grants. Current web retrieval exposes generic USAspending award/search UI, **not fresh machine-readable modification/financial histories for each award**; the recorded amounts are retained as **previously observed**, not independently re-certified by this pass. | Fresh transaction-level API extract with award ID, recipient UEI, modifications, period of performance, reported net obligations/outlays and snapshot date. |
+| Obligations versus outlays versus cash receipt | USAspending Advanced Search https://www.usaspending.gov/search and USAspending award data framework; historical Item 4 report | An **obligation** is not synonymous with **cash disbursement, realized company revenue, or subsidy**. Zero outlay in a federal award display is not a proven absence of any payment. Contract ceiling and child-award obligations must not be added together. | Treasury/agency payment registers; FPDS/SAM or USASpending bulk award modifications; issuer-side revenue/receipts reconciliation and cancellation tests. |
+| Mixed national-security vehicle | First-pass report IDV `FA254125DB021`, https://www.usaspending.gov/award/CONT_IDV_FA254125DB021_9700 | Earlier source review identifies both Starshield-labeled orders and broader commercial satcom; **not established as Starlink-only procurement**. No new source-native child order export was obtained, so the prior combined obligation figure is **unrevalidated** in this pass. | Public child-PIID/PWS/SOW inventory, contract funding modifications and Starshield exclusion allocations; cleared review if necessary. |
+| Assistance programs and indirect funding | FCC RDOF decisions above; original report's NTIA/BEAD discussion, https://www.ntia.gov/press-release/2026/statement-assistant-secretary-roth-fcc-s-approval-spacex-s-gen2-version-3-application | Announced prospective participation, eligible provider status or auction bid does **not** demonstrate a grant disbursement. Neither BEAD nor indirect benefits are exhaustively inventoried. | State final proposals, grants, subgrant agreements, paid invoices; USAC/USF disbursements; state/local incentives and foreign grants; indirect consumer incentives separately identified. |
+| Perimeter and double counting | Startake original Item 4 research report and 2026 SpaceX SEC Form 10-Q https://www.sec.gov/Archives/edgar/data/1181412/000162828026052535/spcx-20260630.htm | SpaceX Connectivity segment is not a clean federal funding ledger or commercial Starlink carve-out. Separate government sales, defense Starshield, launch services, and parent/child IDVs. No source supports converting awards automatically into Musk personal wealth. | Verified SpaceX/Starlink recipient entity/UEI crosswalk, parent-child actions, cost/revenue allocation and historical net payments. |
+
+## Evidence sufficiency and strongest counterarguments
+
+- **Confirmed from directly accessible controlling FCC decisions:** one high-profile $885.5 million proposed RDOF support amount did **not** constitute a grant authorization or realized funding. This does not demonstrate that Starlink never received *other* assistance.
+- **Retained, not freshly certified:** original report's procurement award amounts and mixed IDV values. Official award links exist, but the current retrieval did not expose underlying transactions for independent re-totaling; the report makes no national sum.
+- **Counterevidence/nuance:** Procurement can deliver genuine value to federal users. Counting its full contract price as an unearned subsidy would misstate reciprocal performance; omitting legitimate disbursements would equally understate public spending. Public credit, licensing, infrastructure, procurement and tax treatment are distinct benefit classes.
+- **Data scope:** Federal prime awards alone omit subgrants, state/local contracts, eligible-consumer subsidies, foreign government procurement and some classified procurement. Data lag and reported zero outlays are not evidence of absence.
+
+## Formal acceptance matrix
+
+| Requirement | Result |
+|---|---|
+| RDOF exclusion supported by FCC order | **Supported for historic rejected award** |
+| Complete transaction-level Starlink-only federal obligation ledger, no duplicate IDVs | **Not verified** |
+| Independent federal cash outlay and receipt reconciliation | **Not verified** |
+| Assistance, local/state, indirect and international support inventory | **Not verified** |
+| Starshield and parent-SpaceX segmentation | **Partial, exclusion rules defined; contracts/allocations missing** |
+| Original nine named-topic subcategories checked verbatim | **Not verified; original approved outline not recovered in this pass** |
+| Independent auditor repeatability and formal sign-off | **Not verified** |
+
+**Next evidence tasks:** (1) Export all candidate federal award transactions and modification histories by actual beneficiary UEI/CAGE, with snapshots; (2) resolve every parent IDV and child award, plus Starshield scope; (3) reconstruct state/tribal/local, USAC, BEAD and foreign grants and disbursements; (4) obtain agency/Treasury payment evidence and issuer receipt reconciliation; (5) recover original named-topic subcategory definitions, conduct item-by-item independent audit. Do not publish a numerical comprehensive subtotal from this pass.
+
+## Tracker integration instruction / decision
+
+Report saved at `/Startake/Startake_Verification_Item4_Public_Funding_Obligations_Outlays_2026-10-15.md`. Mark **verification pass complete — formal acceptance pending**, **release only** the claim `STARTAKE-20261015-verify-item4-7ec92a` after readback, retain Item 4 formal `[ ]` and named-topic checkbox unchecked, preserve all other owners' active claims. **0/7 formal checklist and 0/36 named topics verified**. Next candidate for user-controlled pass: Item 5, subject to a fresh tracker check.

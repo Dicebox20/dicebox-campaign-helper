@@ -1,0 +1,96 @@
+# The Starlink and Stripes Act — Ukraine Incident Evidence Dossier v0.1
+
+Research cutoff: 15 October 2026 UTC. Claim STARTAKE-20261015-WORK-UKRAINE-0e7a6d, owner STARTAKE Work goal execution. Reserved from actual conditional tracker version 148; independently verified in 149. Sole-inheritor user reassignment, including Item 1, recorded and read back in tracker 150 during this assignment. Scope remains incident evidence, not an ownership/title audit. Method: direct primary-source review, attributed first-person statements and carefully bounded supplementary journalism; no executable Deep Research or independent forensic investigation. No raw terminal telemetry, signed military-service contract, internal directive, classified operational record or full casualty analysis was obtained.
+
+## Evidence finding and caution
+
+The public-interest argument can responsibly identify dependence and consequential private service-policy discretion. It must separately establish who ordered a change, what service was covered, when coverage existed, why it changed and what independently documented harm followed. An official inquiry verifies that questions were raised; an official's statement verifies the attributed account, not every asserted underlying fact. A company's denial and a journalist's correction must stay in the record. Public ownership is the proposal's objective, but this record alone does not prove that acquisition is the only effective solution.
+
+## Dated incident and policy chronology
+
+| Event date versus publication date | Source and narrowly supported finding | Evidentiary classification / unresolved point |
+|---|---|---|
+| September 2022 episode; Senate letter dated 18 September 2023 | [U.S. Senate letter to Secretary Austin](https://www.shaheen.senate.gov/imo/media/doc/secdef_starlink_letter_v9.pdf) records Musk's account of refusing a request to extend service toward Sevastopol and explicitly discusses Isaacson's correction from a contemporaneous cutoff account to preexisting geofencing. | Official inquiry and attributed statements, not an adjudication or operational log. Preserve the corrected distinction. Exact original request, coverage map, decision time and effects remain unverified. |
+| Late September 2022 episode; investigation published 25 July 2025, updated 27 July | [Reuters investigation](https://www.reuters.com/investigations/musk-ordered-shutdown-starlink-satellite-service-ukraine-retook-territory-russia-2025-07-25/) reports, on multiple sources, a separate Musk-directed interruption affecting Kherson. SpaceX called the reporting inaccurate. Exact timing, duration and scope were unresolved; no underlying directive or telemetry was independently obtained here. | Attributed investigative reporting with contrary company response. This event must not be merged with the Crimea episode. No independent casualty or counterfactual battle-outcome conclusion. |
+| 13 January 2023 publication | [Ukraine Ministry of Digital Transformation](https://thedigital.gov.ua/news/technologies/mikhaylo-fedorov-komandi-mintsifri-vdalos-zabezpechiti-mayzhe-30-tisyach-starlinkiv-dlya-ukraini) described approximately 30,000 terminals, uses in hospitals, public services, blackout connectivity and the military, and international donor support. | Primary government account of historic scale and dependence, not an October 2026 live-terminal count or independently tested user census. |
+| 8 February 2023 remarks/publication | [Defense News, reporting Shotwell's conference remarks](https://www.defensenews.com/battlefield-tech/space/2023/02/08/spacexs-shotwell-says-ukraine-weaponized-starlink-network/) records her objection to weaponized uses and distinction between intended connectivity and military applications. | Contemporary attributed company-leadership remarks. Not a complete service contract, dated restriction order or identification of a specific earlier interruption. |
+| 9 February 2023 interview/publication | [Ukrainska Pravda's direct comment from Fedorov](https://www.pravda.com.ua/news/2023/02/09/7388696/) says geofencing operation had changed months earlier but that terminal problems were not then being observed. | First-person ministerial account through interviewer, translated here in substance. Important contrary context to a claim that all service stopped that day. It does not independently resolve historic configuration or specialized military access. |
+| September 2023 disclosure and correction | [Isaacson correction reproduced by Mediaite](https://www.mediaite.com/media/print/walter-isaacson-corrects-reporting-on-elon-musk-cutting-ukrainian-militarys-access-to-starlink/) preserves his explanation that he had misinterpreted the timing of the policy. | Attributed correction by the original narrator; original social post not retrieved directly. Do not use the superseded account as an uncontested fact. |
+| 2023 Pentagon statement; source transcript date needs final archive confirmation | [DoD press-briefing transcript, Article 3534413](https://www.defense.gov/News/Transcripts/Transcript/Article/3534413/pentagon-press-secretary-air-force-gen-pat-ryder-holds-an-on-camera-press-brief/) confirms contracting for Ukraine support but withholds operational and financial details. | Official indexed transcript text retrieved; live opening failed. Does not authenticate any earlier specific refusal as breach of a particular contract or establish the actual contract's continuity clauses. |
+| 9 March 2025 statement/publication | [Musk's commitment reproduced by Ukrainska Pravda](https://www.pravda.com.ua/eng/news/2025/03/09/7502019/) states that terminals would not be turned off or used as a bargaining instrument despite policy disagreements. | Attributed public commitment, not proof of historical conduct, guaranteed coverage of every product/use, or a substitute for enforceable contracted scope. |
+| 29 August 2025 announcement | [DSCA Transmittal 25-58](https://www.dsca.mil/Press-Media/Major-Arms-Sales/Article-Display/Article/4290506/ukraine-satellite-communications-services) approves a possible $150 million sale extending satellite services for Ukraine's Starlink terminals; Starlink Services is named principal contractor. | Primary official proposed-sale notice; it explicitly distinguishes an estimate from final requirements, budget authority and signed agreements. Not a paid-outlay finding or proof that every operation is authorized. Live opening failed; official indexed text reviewed. |
+| Night of 13–14 October 2026; official military news publication 14 October, 11:21 | [Ukraine Defense Ministry's ArmyInform](https://armyinform.com.ua/2026/10/14/%C2%ABne-mozhe-buty-zbigom%C2%BB-sergij-%C2%ABflesh%C2%BB-pidtverdyv-obmezhennya-u-roboti-starlink-ta-zryv-nyzky-misij/) attributes to presidential adviser Serhiy Beskrestnov a new in-motion restriction, absent warning and disrupted missions. His account identifies a military StarShield service package. | Verified official publication of the allegation; product identity and authorization chain require actual contract/configuration records. His suggested political explanation is an interpretation, not proof of Musk's personal order or a U.S. direction. |
+| 14 October 2026, 06:34 UTC reporting | [Reuters current incident report](https://www.reuters.com/world/europe/spacex-limits-starlink-operations-ukraine-disrupting-military-missions-2026-10-14/) carries named Ukrainian official and military accounts of restrictions and mission disruption; SpaceX had not immediately responded. | Attributed reporting, not source-native service logs. The record does not establish motive, personal decision-maker, civilian injury or the acquired-commercial versus excluded-military boundary. |
+| 14 October 2026, 09:33 UTC reporting | [Reuters account of Sikorski's response](https://www.reuters.com/business/media-telecom/polands-sikorski-asks-big-man-musk-if-he-is-playing-politics-with-starlink-2026-10-14/) records the Polish minister questioning whether politics influenced access. | A diplomatic challenge, not an independent technical finding or proof of intent. No conclusive company response was established by this pass. |
+
+## What the primary record establishes, and what it does not
+
+The Senate PDF's first-page date is 18 September 2023, while its associated [press page](https://www.shaheen.senate.gov/news/press/shaheen-warren-and-duckworth-send-letter-to-secretary-austin-requesting-information-about-defense-contracts-with-commercial-providers-following-the-reported-starlink-incident-in-ukraine) is labeled 15 September. Both dates are retained; the difference is not silently repaired. Pages 1–2 of the PDF were visually inspected. The letter requests incident records, contract protections and redundancy information and acknowledges confusion. No responsive Pentagon findings were located in this bounded pass. Treating the senators' criticism as an independent factual verdict would overstate the record.
+
+Official Ukrainian descriptions support an essential civilian and military service role at the specified historical date. They do not supply a present-day nationwide service-availability measurement. A paid or proposed service arrangement likewise requires examination of its actual product, permission and use conditions before conclusions about control or breach. A label such as StarShield cannot safely be collapsed into the commercial Starlink acquisition perimeter.
+
+This pass distinguishes three evidentiary questions: whether a statement was made; whether the underlying technical event occurred as described; and whether a particular person ordered it for a particular reason. They require different evidence. No inference about a person's disability, diagnosis or character is used as causal evidence.
+
+## Original framework recovered and provenance
+
+Two preexisting native Library ZIPs were successfully materialized on this pass. Earlier reports' access failures remain historical; current recovery does not erase them. Only the two relevant Ukraine topic files were substantively read in this assignment.
+
+| Native archive and stable Library ID | SHA256 of retrieved archive | Exact member and SHA256 |
+|---|---|---|
+| Starlink_Research_Topic_Documents_17.zip; libfile_2bdac03cec008191ab652995c4c61ea6 | 53a528197249427a9b878a75c0a4a5fdcaba8c2edfaa65bb5e5fa7c641f2623f | Starlink_Research_Topics/10_ukraine_incident_and_service_interruption_evidence.md; 3f8c3b87291a0116235f7a2ed7454bd1b153b832ffda19548d9d63672b58b421 |
+| Starlink_Moral_Foundation_Research_Topics_19.zip; libfile_d51e095c82b88191807ddb3d6f4bdcfd | 26ab27f27c0099f19ee0ac32d02e3245ba32555196d001fd4b60756fac66c8e0 | starlink_moral_research_topics/05_ukraine_and_ethics_of_communications_in_armed_conflict.md; e349b1de8c1e943eefc1d1294ba3db9f8dc8751782733cf00c6f4cb156b1c6eb |
+
+These are original archived scoping frameworks, not completed investigations or proof that every heading has been accepted. The recovered 8/9 counts match the canonical named-topic counts. Source custody is now authenticated at archive/member level; substantive acceptance remains unchecked.
+
+### Ukraine incident and service interruption evidence — eight original subjects
+
+| Exact original subcategory title | Evidence supplied | Remaining acceptance gap |
+|---|---|---|
+| October 2026 Ukraine service restrictions | Current official attributed statement and corroborating report, dates/product ambiguity explicit | Native order, notice, service contract, configuration, duration, contemporaneous mission records and company response |
+| 2022 Crimea and Kherson controversies | Separated chronology, original narration correction and adverse company account retained | Direct requests, policy chronology, command/coverage logs and independent forensic reconciliation |
+| Commercial versus military service terms | Service-package distinction flagged; no equivalence presumed | Actual dated governing agreements, permitted uses, authority and commercial/classified interface |
+| Civilian communications effects | Historic primary government service-use account | Incident-specific civilian outages, alternatives and independently documented harms |
+| Military operational effects | Attributed military accounts, no casualty conclusion | Independent operational records and causation review without public disclosure of sensitive detail |
+| Technical reasons for service restrictions | Technical/security/sanctions explanations treated as questions, not presumed excuses or motives | Actual engineering/change-control record; specialist review of lawful limitations and hostile-use prevention |
+| Decision governance and transparency | Public statements, official inquiry and missing notice/authority records identified | Decision-maker, approval chain, service obligations, appeals, response and remediation evidence |
+| Independent connectivity and redundancy | Senate request and proposed-bill dependency gates | Tested equivalent alternatives, capacity, cost and recovery time by mission/service class |
+
+### Ukraine and Ethics of Communications in Armed Conflict — nine original subjects
+
+| Exact original subcategory title | Treatment | Remaining gap |
+|---|---|---|
+| Wartime civilian communications | Documented historic public-service uses | Incident-specific continuity and humanitarian evidence |
+| Military operational dependence | Sources distinguish communications and specialized service claims | Independent scope and impact records |
+| Service restrictions and their context | Dated episodes, corrections and competing accounts preserved | Technical cause and actual service obligations |
+| Risk to civilians from operational choices | No unproven casualties or inevitable harms asserted | Independently corroborated effects and counterfactual review |
+| Responsibility for escalation risk | Stated rationale classified as attributed judgment | Independent security/legal assessment; no hindsight certainty |
+| Neutrality, impartiality, and lawful limits | Commercial policy distinguished from a finding of applicable law | International/humanitarian/sanctions counsel; no legal ruling made here |
+| Government procurement and command authority | Official inquiry and proposed service-sale notice | Signed contracts, command/service decision rights and authorized controls |
+| Foreseeability, warning, and transition | Alleged absent notice and proposed continuity safeguards identified | Actual notices, enforceable service commitments and tested contingencies |
+| Conflict-of-interest and unequal treatment | Political-motive allegations kept separate from established facts | Comparable policy application, conflict records and independent evaluation |
+
+## Implications for the proposed Act
+
+These are policy-design inferences, not conclusions that existing contracts or law already impose them:
+
+1. Every critical-service agreement should specify product, geography, permitted uses, authority for material restrictions, notice, emergency exception, appeal, audit logging and recovery arrangements. A pledge or generic provider name is insufficient.
+2. The public operator should record consequential service decisions and their authority, protect customers against political retaliation, and maintain independent complaints and judicial review. Public ownership can itself concentrate coercive power, so enforceable restraints remain essential.
+3. Classified/military and commercial service dependencies must be separated before acquisition. The latest product ambiguity is a reason for a verified interface schedule, not automatic acquisition of Starshield.
+4. Dated congressional findings should describe documented dependence and governance risk, while identifying disputed incidents as disputed. Do not premise the bill on a retracted account, unverified military outcome or personal punishment.
+5. Consider contracts, multi-provider redundancy and regulation as serious continuity comparators. Neither the incidents nor a current public controversy alone proves that public ownership will be operationally superior.
+
+The [integrated working bill](The_Starlink_and_Stripes_Act_Integrated_Working_Bill_v0.1_2026-10-15.md) §§2, 104, 107–108, 203–207 and 401–404 already contain related proposed protections. Their application must be tested against the missing evidence; a later revision should incorporate a source-backed finding and explicit service-change notice/audit schedule after this dossier's gap review. No bill text is silently revised by this report.
+
+## Gap closure and remaining work
+
+Closed at source/custody level: the two relevant original 8/9-subject frameworks recovered; official Senate inquiry and its correction/date discrepancy inspected; primary historic civilian/military service account obtained; current official attributed restriction report located; dedicated chronology now distinguishes events, publication dates, product ambiguity and types of evidence.
+
+Still open: original service requests and coverage/change logs; signed service contracts and decision rights; a substantive Pentagon inquiry response; authenticated original social posts where access failed; independent incident-specific technical/causation evidence; measured civilian harms; complete company responses; lawful security/export/sanctions reasons; neutral expert evaluation; mission-specific alternatives. Obtaining confidential data or expert opinions is not represented as completed or promised without access.
+
+Formal status: one distinct research pass complete, verification pending; no practical item or named topic checked. Initial first-pass coverage remains 7/7; formal 0/7 and 0/36; 311 proposed with this limited original-framework recovery, not a completed project-wide audit. Public-interest stream may advance from scoped to evidence-foundation stage 2 after verified save/closeout, but a fully sourced current public-interest proposal and nationwide fleet/dependence baseline remain missing. Document/model maturity is separate from research verification and no overall congressional-readiness percentage is established.
+
+## Source index and retrieval limitations
+
+All sources checked 15 October 2026 UTC. URLs above identify the exact reviewed records. Primary: U.S. Senate letter and press page; Ukraine Ministry of Digital Transformation; Ukraine Defense Ministry ArmyInform; DoD indexed transcript; DSCA indexed notice. Attributed interview/public statements: Fedorov to Ukrainska Pravda, Shotwell via conference reporting, Isaacson correction via reproduction, Musk commitment via reproduction. Supplementary: bounded Reuters reports. No direct authenticated internal operational evidence.
+
+Original X request/statement access failed; no falsely claimed direct social-post authentication. Official DoD/DSCA indexed text was available while live opening failed. Senate PDF visibly confirms its own date and the correction. Ukrainian passages were read in the original and paraphrased in English; professionally reviewed translation remains advisable for congressional exhibits. Numerical claims are dated and attributed; no current global satellite percentage or funding subtotal is asserted.
