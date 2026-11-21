@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "reviewedAt": "2026-11-19T23:46:30Z",
+  "reviewedAt": "2026-11-21T17:03:07Z",
   "activeMilestone": {
     "id": "M0",
     "title": "Ordinary ChatGPT in the existing Campaign Assistant"
@@ -9,8 +9,8 @@
   "verifiedCriteria": 0,
   "totalCriteria": 8,
   "source": {
-    "commit": "b626a88164323345aeab5a17cdbd9f7197d16b27",
-    "roadmapUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/b626a88164323345aeab5a17cdbd9f7197d16b27/docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
-    "changelogUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/b626a88164323345aeab5a17cdbd9f7197d16b27/docs/DCH-CHRONOLOGICAL-CHANGELOG.md"
+    "commit": "e4b75d70c168f26421d64a78e8903d31cd91a807",
+    "roadmapUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/e4b75d70c168f26421d64a78e8903d31cd91a807/docs/DCH-ROADMAP-v2-LIBRARY-CANONICAL.md",
+    "changelogUrl": "https://github.com/Dicebox20/dicebox-campaign-helper/blob/e4b75d70c168f26421d64a78e8903d31cd91a807/docs/DCH-CHRONOLOGICAL-CHANGELOG.md"
   }
 }
